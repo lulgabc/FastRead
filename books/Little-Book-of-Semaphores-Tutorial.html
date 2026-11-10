@@ -432,28 +432,33 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · SYSTEMS</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">The Little Book of Semaphores
       <span>Classic Synchronization Problems in Python</span>
     </div>
-    <div class="sb-meta"><b>6</b> 章 · <b>291</b> 页</div>
+    <div class="sb-meta">291 页 · 18 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
-    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>并发的第一课：交错执行与丢失更新</span></a>
+    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>并发的第一课：交错、竞争与丢失更新</span></a>
     <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>信号量：一个你无权读取的整数</span></a>
     <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>四个基本积木：信号、会合、互斥、限流</span></a>
     <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>屏障：等所有人到齐，再把门打开</span></a>
-    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>队列：把「配对」写成一个计数器</span></a>
-    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>生产者消费者：两个计数，一把锁</span></a>
-    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>分类互斥：读者写者与三类线程</span></a>
+    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>队列：把“配对”写成一个计数器</span></a>
+    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>生产者-消费者：两个计数，一把锁</span></a>
+    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>分类互斥：读者-写者、饥饿与 Morris 算法</span></a>
     <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>哲学家就餐：破坏循环等待的三种手法</span></a>
     <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>抽烟者：不要让被唤醒的人去抢材料</span></a>
-    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>野蛮人与理发店：记分板加会合的复合题</span></a>
-    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>经典谜题：把新题拆成旧积木</span></a>
-    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>一页纸：看到约束，选出模式</span></a>
+    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>野蛮人与理发店：记分板、会合与 FIFO</span></a>
+    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>成组通过：圣诞老人、H2O、渡船与过山车</span></a>
+    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>三类线程、男女浴室与多数派：分类互斥的变体</span></a>
+    <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>寿司吧、托儿所与宿舍派对：记分板的三种进阶</span></a>
+    <a class="nav-link" href="#ch14" data-sec="ch14"><span class="nav-num">14</span> <span>参议院巴士、法尼尔厅与食堂：批次、闸门与“不落单”</span></a>
+    <a class="nav-link" href="#ch15" data-sec="ch15"><span class="nav-num">15</span> <span>在 Python 里验证：互斥检查器与可乐机</span></a>
+    <a class="nav-link" href="#ch16" data-sec="ch16"><span class="nav-num">16</span> <span>从伪代码到真实系统：C、Pthreads 与线程清理</span></a>
+    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
@@ -483,15 +488,15 @@ figcaption b{color:var(--ink2);font-weight:600}
 <div>
 <div class="hero-kicker">The Little Book of Semaphores · 同步模式手册</div>
 <h1>信号量<br>小书<span class="en">The Little Book of Semaphores</span></h1>
-<p class="hero-sub">Allen B. Downey 用一本薄书证明了一件事：并发难题不是靠天赋猜出来的，而是由<strong>少数几个可复用的积木</strong>拼出来的。旋转门、灯开关、记分板、传递接力棒——掌握它们，你也能从零推导出读者写者与哲学家就餐。</p>
+<p class="hero-sub">Allen B. Downey 用一本薄书证明了一件事：并发难题不是靠天赋猜出来的，而是由<strong>少数几个可复用的积木</strong>拼出来的。旋转门、灯开关、记分板、接力棒——掌握它们，你也能从零推导出读者-写者与哲学家就餐。</p>
 <div class="hero-actions">
-<a class="btn" href="#ch1">从并发模型开始 →</a>
-<a class="btn ghost" href="#ch12">直接看模式速查</a>
+<a class="btn" href="#ch1">从执行模型开始 →</a>
+<a class="btn ghost" href="#summary">直接看模式总表</a>
 </div>
 <div class="hero-stats">
-<div class="hstat"><b>12</b><span>讲解节</span></div>
-<div class="hstat"><b>25+</b><span>同步模式</span></div>
-<div class="hstat"><b>100%</b><span>Python 示例</span></div>
+<div class="hstat"><b>17</b><span>讲解节</span></div>
+<div class="hstat"><b>60+</b><span>同步模式与变体</span></div>
+<div class="hstat"><b>177</b><span>原书小节全覆盖</span></div>
 <div class="hstat"><b>0</b><span>外部依赖</span></div>
 </div>
 </div>
@@ -543,32 +548,101 @@ figcaption b{color:var(--ink2);font-weight:600}
 <div class="caption">信号量把一个整数藏起来，只留下两个动作：<br>拿走一张票，或放回一张票。</div>
 </div>
 </div>
+
+<div class="chap-intro" style="margin-top:34px">
+<p><b>怎么读。</b>第 1–2 节建立执行模型与信号量语义；第 3–6 节是四块基本积木（信号、会合、互斥、限流）以及屏障与队列；第 7–10 节是四个经典题；第 11–15 节把原书后半的二十多道“非经典”题逐题拆解；第 16 节落到 Python/C 的真实 API；第 17 节是一页纸决策表。</p>
+<span class="tag">Complete Mode</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">interleaving</span>
+<span class="chip">semaphore</span>
+<span class="chip">mutex</span>
+<span class="chip">barrier</span>
+<span class="chip">producer-consumer</span>
+<span class="chip">readers-writers</span>
+<span class="chip">dining philosophers</span>
+<span class="chip">scoreboard</span>
+<span class="chip">FIFO</span>
+<span class="chip">starvation</span>
+</div>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">导读</span><span class="thm-title">这本书的方法论：把“巧合”变成“证明”</span><span class="thm-id">0.1</span></div>
+<div class="thm-body">
+<p>并发程序跑一万次不出错，不构成正确性证据；它只说明这一万次调度没有踩中那条窄路径。Downey 的写法是反过来的：先写出约束（谁必须先于谁、谁与谁不能共存、最多几个、几个必须一起走），再选一个信号量并在注释里写明它的含义与初值，最后沿着“谁可能在这里被唤醒”逐条检查。全书没有复杂公式，真正的工具是<b>不变量</b>与<b>反例推演</b>。</p>
+<p>阅读时请始终区分三件事：<b>安全性</b>（坏的交错不会发生）、<b>前进性</b>（想进的人最终能进）、<b>公平性</b>（不会有人永远轮不到）。多数错误答案只违反了其中一条，而测试往往只暴露第一条。</p>
+</div>
+</div>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>术语（首次出现对照）</th><th>一句话</th></tr></thead>
+<tbody>
+<tr><td>信号量 (semaphore)</td><td>带记忆的计数器，只能 wait/signal</td></tr>
+<tr><td>互斥量 (mutex)</td><td>初值 1 的信号量，保护临界区</td></tr>
+<tr><td>临界区 (critical section)</td><td>访问共享资源的那段代码</td></tr>
+<tr><td>同步 (synchronization)</td><td>把合法交错限制在允许的集合内</td></tr>
+<tr><td>屏障 (barrier)</td><td>n 个线程全部到齐才放行</td></tr>
+<tr><td>生产者-消费者 (producer-consumer)</td><td>有界缓冲区的满/空两种等待</td></tr>
+<tr><td>读者-写者 (readers-writers)</td><td>同类可并发、异类互斥</td></tr>
+<tr><td>哲学家就餐 (dining philosophers)</td><td>每人两把叉，环形等待</td></tr>
+<tr><td>死锁 (deadlock)</td><td>互相等待，系统整体停住</td></tr>
+<tr><td>活锁 (livelock)</td><td>仍在运行，但动作互相抵消、没有进展</td></tr>
+<tr><td>饥饿 (starvation)</td><td>系统在前进，某个线程永远轮不到</td></tr>
+<tr><td>条件变量 (condition variable)</td><td>无记忆的等待队列，必须配 mutex 与 while 复查</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>原书章</th><th>主题</th><th>本教程位置</th><th>核心积木</th></tr></thead>
+<tbody>
+<tr><td>Ch 1</td><td>Synchronization / Execution model</td><td>第 1 节</td><td>交错、原子性、丢失更新</td></tr>
+<tr><td>Ch 2</td><td>Semaphores</td><td>第 2 节</td><td>wait/signal、初值、记忆性</td></tr>
+<tr><td>Ch 3</td><td>Basic synchronization patterns</td><td>第 3–6 节</td><td>signaling、rendezvous、mutex、multiplex、barrier、queue</td></tr>
+<tr><td>Ch 4</td><td>Classical synchronization problems</td><td>第 7–10 节</td><td>producer-consumer、readers-writers、philosophers、smokers</td></tr>
+<tr><td>Ch 5</td><td>Less classical problems</td><td>第 11–12 节</td><td>savages、barbershop、Santa、H2O、river、coaster</td></tr>
+<tr><td>Ch 6</td><td>Not-so-classical problems</td><td>第 13 节</td><td>search-insert-delete、unisex bathroom、baboon、Modus Hall</td></tr>
+<tr><td>Ch 7</td><td>Not remotely classical problems</td><td>第 14–15 节</td><td>sushi、child care、room party、bus、Faneuil、dining hall</td></tr>
+<tr><td>Ch 8–9</td><td>Python / C synchronization</td><td>第 16 节</td><td>threading.Semaphore、pthread mutex + cond</td></tr>
+<tr><td>Ch 10–11</td><td>Cleaning up threads</td><td>第 16 节</td><td>KeyboardInterrupt、join、编译与链接</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="small">约定：正文中的 <code>Sem(v)</code> 表示初值为 <code>v</code> 的计数信号量；<code>wait()</code> 等价于 P/acquire，<code>signal()</code> 等价于 V/release；<code>signal(k)</code> 表示连续放行 k 个等待者（原书使用的非标准扩展）。伪代码沿用原书的 Python 风格，行序与变量名尽量与书一致。</p>
 </div>
 </section>
 
 <section id="ch1" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 1 · Foundations</div>
-<h2><span class="num">1</span>并发的第一课：交错执行与丢失更新</h2>
-<p class="lede">同步之所以难，不是因为锁的 API 难记，而是因为程序的行为从「一条线」变成了「一张网」：任意两条语句之间，都可能插进另一个线程的任意多条语句。</p>
+<div class="sec-label">Chapter 1 · Foundations</div>
+<h2><span class="num">1</span>并发的第一课：交错、竞争与丢失更新</h2>
+<p class="lede">同步（synchronization）之所以难，不是因为锁的 API 难记，而是因为程序的行为从“一条线”变成了“一张网”：任意两条语句之间，都可能插进另一个线程的任意多条语句。</p>
 
 <div class="chap-intro">
-<p>本节先建立执行模型，再用一个计数器把「竞争条件」演示到肉眼可见，最后归纳出四类同步约束。后面所有模式，本质上都是在实现这四类约束中的一种或几种。</p>
+<p>本节对应原书 Preface 与第 1 章：先建立执行模型（execution model），用计数器把竞争条件（race condition）演示到肉眼可见，再讨论消息传递（serialization with messages）为何能替代共享内存，最后给出临界区（critical section）与互斥（mutual exclusion）的正式定义。</p>
 <span class="tag">Execution Model</span>
 </div>
 
 <div class="mapchips">
 <span class="chip hot">interleaving</span>
-<span class="chip">race condition</span>
-<span class="chip">atomicity</span>
-<span class="chip">lost update</span>
-<span class="chip">mutual exclusion</span>
-<span class="chip">serialization</span>
+<span class="chip">execution model</span>
+<span class="chip">serialization with messages</span>
+<span class="chip">non-determinism</span>
+<span class="chip">shared variables</span>
+<span class="chip">concurrent writes</span>
+<span class="chip">concurrent updates</span>
+<span class="chip">mutual exclusion with messages</span>
 </div>
 
-<h3><span class="sn">1.1</span>执行模型：没有「同时」，只有「交错」</h3>
-<p>操作系统给每个线程一个独立的程序计数器和栈，调度器在时钟中断、系统调用或阻塞发生时切换线程。对程序员而言，这意味着一条最重要的假设：<strong>两条语句之间没有原子性保证</strong>。你认为连续的两行，在真实执行中可能相隔几百万条别的指令。</p>
-<p>「原子」只发生在很小的粒度上：读取一个对齐的机器字、执行一条赋值指令。像 <code>count += 1</code> 这样的语句，在字节码层面是「读取—相加—写回」三步，任何一步之后都可能被切换。下面这段程序在四核机器上跑，几乎每次都会少算。</p>
+<div class="note"><b>原书小节：</b>Preface · Introduction · Synchronization · Execution model · Serialization with messages · Non-determinism · Shared variables · Concurrent writes · Concurrent updates · Mutual exclusion with messages.</div>
+
+<h3><span class="sn">1.1</span>执行模型：没有“同时”，只有“交错”</h3>
+<p>操作系统给每个线程一个独立的程序计数器和栈，调度器在时钟中断、系统调用或阻塞发生时切换线程。对程序员而言，这意味着一条最重要的假设：<strong>两条语句之间没有原子性（atomicity）保证</strong>。你认为连续的两行，在真实执行中可能相隔几百万条别的指令。</p>
+<p>“原子”只发生在很小的粒度上：读取一个对齐的机器字、执行一条赋值指令。像 <code>count += 1</code> 这样的语句，在字节码层面是“读取—相加—写回”三步，任何一步之后都可能被切换。下面这段程序在四核机器上跑，几乎每次都会少算。</p>
 
 <pre><code class="language-python">import threading
 
@@ -584,7 +658,7 @@ for t in ts: t.start()
 for t in ts: t.join()
 print(count)                # 期望 400000，实际通常更小</code></pre>
 
-<p>把两个线程的指令摊开，丢失更新就一目了然。两个线程都读到了旧值 0，各自加一，再各自写回 1：两次自增只留下一次效果。</p>
+<p>把两个线程的指令摊开，丢失更新（lost update）就一目了然。两个线程都读到了旧值 0，各自加一，再各自写回 1：两次自增只留下一次效果。</p>
 
 <div class="table-wrap">
 <table>
@@ -602,56 +676,133 @@ print(count)                # 期望 400000，实际通常更小</code></pre>
 
 <div class="intuition">
 <div class="ih">Intuition · 竞争条件的本质</div>
-<p>竞争条件不是「两个线程同时写」这么简单，而是<strong>一个线程的决策依赖于另一个线程可能修改的数据</strong>。只要「读—判断—写」这条链中间可能被插队，结果就取决于调度顺序。</p>
+<p>竞争条件不是“两个线程同时写”这么简单，而是<strong>一个线程的决策依赖于另一个线程可能修改的数据</strong>。只要“读—判断—写”这条链中间可能被插队，结果就取决于调度顺序。注意：即使每条机器指令都原子，<code>count += 1</code> 仍然不是原子的。</p>
 </div>
 
-<h3><span class="sn">1.2</span>四类同步约束</h3>
-<p>Downey 把全书的问题归到四种约束上，识别题型等于完成一半设计：<strong>顺序</strong>（A 必须先于 B）、<strong>互斥</strong>（同一时刻只一个）、<strong>计数</strong>（还剩几个名额）、<strong>成组</strong>（n 个必须到齐）。</p>
+<h3><span class="sn">1.2</span>非确定性（non-determinism）：同一程序，多种历史</h3>
+<p>给定同样的输入，并发程序可能产生不同结果，因为调度器可以在任意合法点切换。原书强调这不是“随机”，而是“未指定”：合法执行是一个集合，程序必须对集合中的<b>每一条</b>路径都正确。测试只采样了其中极少数路径，所以“跑通了”几乎没有证明力。</p>
+<p>更麻烦的是，错误往往不是均匀随机出现的。原书在 Python 章给过一个实测：把计数器循环从 10 次加到 100000 次，前几次都完美，直到 <code>end = 100000</code> 才出现 <code>{1: 27561, 2: 72439}</code> 这类直方图——错误一旦出现，就会以极高频率重复，因为程序进入了“总在临界区被切走”的固定节奏。<b>百万分之一的错误，可能连着一百万次发生。</b></p>
 
-<h3><span class="sn">1.3</span>为什么「跑一遍没出错」不算正确</h3>
-<p>并发 bug 依赖极窄的时间窗口。测试通过只说明「这次调度没踩中」，不说明没有错误路径；加日志、开调试器还会改变时序，让 bug 消失。</p>
-<p>因此这本书的方法不是「写完跑一下」，而是：先用信号量把约束写成显式的不变量（invariant），再沿着「谁可能在这个点被唤醒」逐条检查。三个必须同时成立的性质是：<strong>互斥</strong>（坏的交错不会发生）、<strong>前进</strong>（有人想进时最终能进）、<strong>有界等待</strong>（不会有人永远排队）。</p>
+<h3><span class="sn">1.3</span>串行化与消息传递</h3>
+<p>如果线程之间不共享内存，只通过消息通信，很多竞争条件会自然消失。最原始的串行化（serialization）是：A 完成 <code>a1</code> 后发消息，B 收到消息后才执行 <code>b1</code>。消息系统本身保证“发送先于接收”或“接收阻塞直到消息到达”。</p>
+
+<pre><code class="language-python"># 消息传递版：没有共享变量
+def thread_a():
+    a1()
+    send(B, "a1 done")
+
+def thread_b():
+    msg = receive(A)     # 阻塞直到消息到达
+    b1()</code></pre>
+
+<p>消息传递也能实现互斥：在 n 个线程之间传递一个“令牌”（token），只有持有令牌的线程才能进入临界区。它等价于初值为 1 的信号量，但令牌是显式对象。</p>
+
+<pre><code class="language-python"># 令牌环：token 在 n 个线程间循环
+def worker(i):
+    while True:
+        token = receive(prev(i))   # 等令牌
+        critical_section(i)
+        send(next(i), token)       # 交给下一个人</code></pre>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">观察</span><span class="thm-title">消息传递不是银弹</span><span class="thm-id">1.1</span></div>
+<div class="thm-body">
+<p>消息传递消除了共享内存的数据竞争，但没有消除<b>顺序问题</b>：令牌可能丢失、重复、乱序；接收方可能永远等不到消息（等价于死锁）。原书用它只是为了说明：同步的本质是“约束合法交错”，共享内存与消息只是两种实现介质。后面的所有模式都在共享内存模型下讨论。</p>
+</div>
+</div>
+
+<h3><span class="sn">1.4</span>共享变量的两种破坏方式</h3>
+<p>原书把共享变量的错误分成两类，这个区分决定了你该用哪种同步。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>类型</th><th>典型代码</th><th>危险点</th><th>需要的保护</th></tr></thead>
+<tbody>
+<tr><td><b>并发写</b> concurrent writes</td><td><code>x = 1</code> 与 <code>x = 2</code> 同时执行</td><td>结果可能是 1 或 2，取决于谁最后写；不会“半个值”</td><td>若只要求最终值确定，需互斥；若允许任一结果，可不管</td></tr>
+<tr><td><b>并发更新</b> concurrent updates</td><td><code>x += 1</code> 与 <code>x += 1</code></td><td>读—改—写三步被打断，更新丢失</td><td>必须互斥，且要覆盖整个读改写</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>并发写看起来“至少会留下一个完整值”，但如果写的是两个相关变量（例如 <code>a</code> 与 <code>b</code> 必须满足 <code>a == b</code>），读者可能看到“新 a + 旧 b”的撕裂状态（torn state）。这就是为什么互斥区常常要覆盖多于一行代码。</p>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">“我只读，不用加锁”</span><span class="thm-id">1.2</span></div>
+<div class="thm-body">
+<p>读者也可能看到中间状态：如果写者正在修改一个链表的两根指针，读者可能在两次写之间遍历，看到半个结构。只读线程同样需要某种一致性保证（读锁、RCU、快照或不可变数据）。“读不加锁”只在数据是原子的、或写者保证发布顺序时才成立。</p>
+</div>
+</div>
+
+<h3><span class="sn">1.5</span>临界区与互斥的定义</h3>
 
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">临界区与互斥</span><span class="thm-id">1.1</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">临界区与互斥</span><span class="thm-id">1.3</span></div>
 <div class="thm-body">
-<p>临界区（critical section）是访问共享资源的那段代码。互斥要求：对任意两个线程，它们处于同一临界区的执行区间不重叠。互斥只保证「不互相破坏」，并不保证「先来先得」——后者是公平性，需要额外机制。</p>
+<p>临界区（critical section）是访问共享资源的那段代码。互斥（mutual exclusion）要求：对任意两个线程，它们处于同一临界区的执行区间不重叠。形式化地，若线程 $i$ 在区间 $[e_i, x_i]$ 内处于临界区，则对所有 $i \ne j$，$[e_i,x_i] \cap [e_j,x_j] = \varnothing$。</p>
+<p>互斥只保证“不互相破坏”，并不保证“先来先得”——后者是公平性（fairness），需要额外机制。原书反复强调：一个正确的解要同时满足互斥、前进（progress）与有界等待（bounded waiting，若题目要求）。</p>
 </div>
 </div>
 
-<h3><span class="sn">1.4</span>一条贯穿全书的推理链</h3>
+<h3><span class="sn">1.6</span>一条贯穿全书的推理链</h3>
 <p>后面每个模式都将按同一节奏展开：先写清约束，再给出信号量与初值，然后读代码，最后问三个问题——<em>有没有一种交错会让两个线程同时进入？有没有一种交错会让所有人都在等？有没有一个线程可能永远轮不到？</em>把这三问练成条件反射，比背二十个答案更有用。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>概念</th><th>一句话</th><th>检查点</th></tr></thead>
+<tbody>
+<tr><td>execution model</td><td>语句之间可任意切换，只有单条机器指令近似原子</td><td>读—改—写是否被保护</td></tr>
+<tr><td>race condition</td><td>结果依赖未受控的调度顺序</td><td>是否存在“读后判断再写”</td></tr>
+<tr><td>lost update</td><td>两次自增只留下一次</td><td><code>x += 1</code> 是否在锁内</td></tr>
+<tr><td>serialization</td><td>强制 A 的一段先于 B 的一段</td><td>谁 signal、谁 wait</td></tr>
+<tr><td>critical section</td><td>访问共享资源的代码区间</td><td>区间是否可能重叠</td></tr>
+<tr><td>mutual exclusion</td><td>同一时刻至多一个线程在临界区</td><td>锁是否覆盖完整区间</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">本章三个常见错误</span><span class="thm-id">1.4</span></div>
+<div class="thm-body">
+<p><b>把“同时”理解成物理同时。</b>单核上同样有竞争：切换发生在两条指令之间，效果与多核一致。并发 bug 与核数无关，与“是否可切换”有关。</p>
+<p><b>用 sleep 排序。</b><code>sleep(0.1)</code> 只是概率上让出 CPU；系统负载一变就失效。任何“睡一会儿对方应该做完了”的代码都是错的。</p>
+<p><b>只保护写、不保护读。</b>互斥保护的是一个<b>不变式</b>（例如 <code>a == b</code>），所有可能观察到或破坏该不变式的代码都要在同一把锁下。</p>
+</div>
+</div>
 </div>
 </section>
 
 <section id="ch2" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 2 · Semantics</div>
+<div class="sec-label">Chapter 2 · Semantics</div>
 <h2><span class="num">2</span>信号量：一个你无权读取的整数</h2>
-<p class="lede">信号量把「还剩几个名额」和「谁在排队」封在一个不透明的盒子里，只暴露出两个动作：拿走一个，或放回一个。所有巧妙与所有灾难，都从这两个动作的时机而来。</p>
+<p class="lede">信号量（semaphore）把“还剩几个名额”和“谁在排队”封在一个不透明的盒子里，只暴露出两个动作：拿走一个，或放回一个。所有巧妙与所有灾难，都从这两个动作的时机而来。</p>
 
 <div class="chap-intro">
-<p>本节给出 Dijkstra 的原始定义、三种命名（P/V、wait/signal、acquire/release）、值的含义，以及在 Python 里从零实现一个信号量。理解「阻塞发生在 decrement 之后」是后面所有推导的前提。</p>
+<p>本节对应原书第 2 章的 Definition、Syntax、Why semaphores? 三节：给出 Dijkstra 的三条规则、四种命名、负数语义，以及在 Python 里从零实现一个信号量。理解“阻塞发生在 decrement 之后”是后面所有推导的前提。</p>
 <span class="tag">Definition</span>
 </div>
 
 <div class="mapchips">
 <span class="chip hot">P / V</span>
 <span class="chip">wait / signal</span>
+<span class="chip">acquire / release</span>
 <span class="chip">blocking</span>
 <span class="chip">counter</span>
 <span class="chip">no-read invariant</span>
 <span class="chip">memory</span>
 </div>
 
+<div class="note"><b>原书小节：</b>Semaphores · Definition · Syntax · Why semaphores?</div>
+
 <h3><span class="sn">2.1</span>定义：三个与普通整数不同的地方</h3>
 <p>信号量是一个整数，但有三条额外规则。第一，创建时可以给它任意初值，之后只允许加一和减一，<strong>不允许读取当前值</strong>。第二，减一时如果结果小于零，执行减法的线程立刻阻塞，直到别人加一。第三，加一时如果有线程在等，就唤醒其中一个。</p>
-<p>读不到值，就无法写出「看一眼再决定」的代码：判断与排队必须合并成一个原子动作。</p>
+<p>读不到值，就无法写出“看一眼再决定”的代码：判断与排队必须合并成一个原子动作。这正是信号量比“共享整数 + 轮询”强的地方——也是它表达力受限的地方。</p>
 
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">计数信号量</span><span class="thm-id">2.1</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">计数信号量（Dijkstra）</span><span class="thm-id">2.1</span></div>
 <div class="thm-body">
-<p>设信号量当前值为 <code>v</code>。执行 <code>wait()</code> 时 <code>v := v - 1</code>；若结果 <code>v &lt; 0</code>，调用者阻塞。执行 <code>signal()</code> 时 <code>v := v + 1</code>；若有等待者，唤醒其中一个。两个操作本身原子，但被唤醒的线程不保证立刻运行。</p>
+<p>设信号量当前值为 <code>v</code>。执行 <code>wait()</code>（P、decrement、acquire）时 <code>v := v - 1</code>；若结果 <code>v &lt; 0</code>，调用者阻塞。执行 <code>signal()</code>（V、increment、release）时 <code>v := v + 1</code>；若有等待者，唤醒其中一个。两个操作本身原子，但被唤醒的线程不保证立刻运行。</p>
+<p>三条直接推论：<b>(a)</b> 减一之前无法知道会不会阻塞；<b>(b)</b> 加一并唤醒之后，两个线程并发运行，谁先继续不确定；<b>(c)</b> signal 时不一定有人在等，被唤醒数可能是 0 或 1。</p>
 </div>
 </div>
 
@@ -666,10 +817,26 @@ print(count)                # 期望 400000，实际通常更小</code></pre>
 </table>
 </div>
 
-<h3><span class="sn">2.2</span>三种命名，一套语义</h3>
-<p>Dijkstra 用 P（尝试）和 V（提高）命名，故意让名字没有暗示性；后来的教材改用 wait/signal，Python 用 acquire/release。它们只是减一和加一，<strong>并不表示「等待条件成立」或「发送通知」</strong>。把信号量当条件变量用，是常见的语义错位。</p>
+<h3><span class="sn">2.2</span>四种命名，一套语义</h3>
+<p>Dijkstra 用 P（尝试，probe）和 V（提高，verhoog）命名，故意让名字没有暗示性；后来的教材改用 wait/signal，POSIX 用 sem_wait/sem_post，Python 用 acquire/release。它们只是减一和加一，<strong>并不表示“等待条件成立”或“发送通知”</strong>。把信号量当条件变量（condition variable）用，是常见的语义错位：条件变量没有记忆，signal 时没人等就丢失；信号量有记忆，票会留在桌上。</p>
 
-<h3><span class="sn">2.3</span>在 Python 里自己造一个</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>命名</th><th>减一 / 阻塞</th><th>加一 / 唤醒</th><th>来源</th></tr></thead>
+<tbody>
+<tr><td>P / V</td><td>P</td><td>V</td><td>Dijkstra，荷兰语</td></tr>
+<tr><td>wait / signal</td><td>wait</td><td>signal</td><td>本书、多数教材</td></tr>
+<tr><td>acquire / release</td><td>acquire</td><td>release</td><td>Java、Python</td></tr>
+<tr><td>decrement / increment</td><td>decrement</td><td>increment</td><td>描述动作，但漏掉阻塞</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">2.3</span>为什么需要信号量</h3>
+<p>原书给出三条理由：<b>约束</b>——信号量强迫你把“谁能进、同时几个、先后顺序”写成显式的、可检查的代码，而不是散落在 sleep 和标志位里；<b>可读</b>——一个信号量只表达一件事，方案通常短而整齐，正确性论证可以逐条对应；<b>可移植</b>——大多数系统能高效实现信号量，方案在不同平台上语义一致。</p>
+<p>反过来说，信号量不是万能表达。它不能直接表达“缓冲区非空且非满”这种复合条件，也不能读值做判断；这类问题要用“记分板（scoreboard）+ mutex”或条件变量。全书后半大量出现这种组合。</p>
+
+<h3><span class="sn">2.4</span>在 Python 里自己造一个</h3>
 <p>标准库够用；自己写一遍是为看清阻塞点。注意用 <code>while</code> 复查，票可能被别人抢先拿走。</p>
 
 <pre><code class="language-python">import threading
@@ -694,9 +861,16 @@ mutex = Sem(1)      # 互斥：同一时刻一个线程
 ready = Sem(0)      # 顺序：先 signal 的线程放行后 wait 的线程
 gate  = Sem(3)      # 限流：最多三个线程同时通过</code></pre>
 
-<p>这三行初始化几乎覆盖了后面一半的模式：<strong>初值 1 是锁，初值 0 是信号，初值 k 是名额</strong>。看到一个新问题，先问「我要限制的是数量还是顺序」，初值就出来了。</p>
+<p>这三行初始化几乎覆盖了后面一半的模式：<strong>初值 1 是锁，初值 0 是信号，初值 k 是名额</strong>。看到一个新问题，先问“我要限制的是数量还是顺序”，初值就出来了。</p>
 
-<h3><span class="sn">2.4</span>信号量有记忆</h3>
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">注意</span><span class="thm-title">实现里的 while 不是装饰</span><span class="thm-id">2.2</span></div>
+<div class="thm-body">
+<p><code>Condition.wait()</code> 可能被虚假唤醒（spurious wakeup），也可能在醒来与重新拿锁之间被第三个线程抢走票。因此必须 <code>while self._n == 0</code> 复查，不能写成 <code>if</code>。这与原书第 9 章用 <code>do...while (wakeups &lt; 1)</code> 的理由相同：醒来不等于条件成立。</p>
+</div>
+</div>
+
+<h3><span class="sn">2.5</span>信号量有记忆</h3>
 <p>如果 C 先 wait，它会阻塞；P signal 后被唤醒。反过来 P 先 signal，值变 1，C 再 wait 直接通过。提前发出的信号不会丢失——这是它与条件变量的分水岭。</p>
 
 <div class="table-wrap">
@@ -713,32 +887,44 @@ gate  = Sem(3)      # 限流：最多三个线程同时通过</code></pre>
 
 <div class="intuition">
 <div class="ih">Intuition · 票与门</div>
-<p>把信号量想成门口的一叠票：wait 是取票进门，没票就站在门边等；signal 是往桌上放一张票，如果有人在等，就把票递给他。<strong>票可以提前放在桌上</strong>，所以顺序可以反过来。旋转门（turnstile）则是「一次只放一个人」的特殊票机。</p>
+<p>把信号量想成门口的一叠票：wait 是取票进门，没票就站在门边等；signal 是往桌上放一张票，如果有人在等，就把票递给他。<strong>票可以提前放在桌上</strong>，所以顺序可以反过来。旋转门（turnstile）则是“一次只放一个人”的特殊票机。</p>
 </div>
 
-<h3><span class="sn">2.5</span>四个必须记住的坑</h3>
+<h3><span class="sn">2.6</span>四个必须记住的坑</h3>
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">信号量用错的四种方式</span><span class="thm-id">2.2</span></div>
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">信号量用错的四种方式</span><span class="thm-id">2.3</span></div>
 <div class="thm-body">
-<p><b>初值搞反。</b>想做互斥却写成 <code>Sem(0)</code>，第一个线程就永久阻塞；想做信号却写成 <code>Sem(1)</code>，顺序约束直接失效。</p>
-<p><b>一个信号量承担两个职责。</b>既当锁又当计数器，最后既说不清谁是临界区，也说不清谁该被唤醒。一个信号量只表达一件事。</p>
-<p><b>在持有一个锁时 wait 另一个信号量。</b>这是死锁的头号来源：你占着别人需要的资源睡觉。除非能证明对方永远不需要你的锁，否则先释放再等待。</p>
-<p><b>忘记 signal。</b>临界区里抛异常、提前 return，都会把名额永久吞掉。Python 里用 <code>try/finally</code>，或直接用 <code>with</code> 上下文管理器。</p>
+<p><b>初值搞反。</b>想做互斥却写成 <code>Sem(0)</code>，第一个线程就永久阻塞；想做信号却写成 <code>Sem(1)</code>，顺序约束直接失效，b1 可能在 a1 之前跑。</p>
+<p><b>一个信号量承担两个职责。</b>既当锁又当计数器，最后既说不清谁是临界区，也说不清谁该被唤醒。一个信号量只表达一件事；“非空”和“未满”必须分开。</p>
+<p><b>在持有一个锁时 wait 另一个信号量。</b>这是死锁（deadlock）的头号来源：你占着别人需要的资源睡觉。除非能证明对方永远不需要你的锁，否则先释放再等待。</p>
+<p><b>忘记 signal。</b>临界区里抛异常、提前 return，都会把名额永久吞掉。Python 里用 <code>try/finally</code>，或直接用 <code>with</code> 上下文管理器。原书 C 章特意提醒：<code>return</code> 之前必须 <code>sem_signal</code>。</p>
 </div>
 </div>
 
-<p>信号量只保证能唤醒一个等待者，不保证先来先得；要严格顺序，必须自己用队列建出来。</p>
+<p>最后一条容易被忽略：信号量只保证能唤醒一个等待者，不保证先来先得；要严格 FIFO，必须自己用队列建出来（第 6 节）。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>操作</th><th>语义</th><th>常见错误</th></tr></thead>
+<tbody>
+<tr><td><code>Sem(v)</code></td><td>创建初值 v</td><td>把“名额”写成“线程总数”</td></tr>
+<tr><td><code>wait()</code></td><td>v−1；若 v&lt;0 阻塞</td><td>以为返回值能告诉你剩余量</td></tr>
+<tr><td><code>signal()</code></td><td>v+1；唤醒一个等待者</td><td>忘记在异常路径释放</td></tr>
+<tr><td><code>signal(k)</code></td><td>连续放行 k 个（原书扩展）</td><td>以为整体原子；实际是循环</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 </section>
 
 <section id="ch3" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 3 · Primitives</div>
+<div class="sec-label">Chapter 3 · Basic Patterns I</div>
 <h2><span class="num">3</span>四个基本积木：信号、会合、互斥、限流</h2>
 <p class="lede">全书几十个难题，拆到最后几乎都落在这四块积木上。它们的代码都只有两三行，区别只在信号量的初值和 wait/signal 的先后。</p>
 
 <div class="chap-intro">
-<p>本节给出四个最小模式，每个都附正确写法、直觉解释和一处典型错误。读完应当能做到：看到「A 必须在 B 之前」「同时最多 k 个」这类句子，立刻写出初值。</p>
+<p>本节对应原书 3.1–3.5：Signaling、Sync.py、Rendezvous（含 hint、solution、Deadlock #1）、Mutex（含 hint、solution）、Multiplex（含 solution）。读完应当能做到：看到“A 必须在 B 之前”“同时最多 k 个”这类句子，立刻写出初值。</p>
 <span class="tag">Building Blocks</span>
 </div>
 
@@ -747,11 +933,14 @@ gate  = Sem(3)      # 限流：最多三个线程同时通过</code></pre>
 <span class="chip">rendezvous</span>
 <span class="chip">mutex</span>
 <span class="chip">multiplex</span>
+<span class="chip">deadlock #1</span>
 <span class="chip">try/finally</span>
 </div>
 
+<div class="note"><b>原书小节：</b>Signaling · Sync.py · Rendezvous · Rendezvous hint · Rendezvous solution · Deadlock #1 · Mutex · Mutual exclusion hint · Mutual exclusion solution · Multiplex · Multiplex solution.</div>
+
 <h3><span class="sn">3.1</span>信号（signaling）：把顺序钉死</h3>
-<p>最原始的同步需求是「<code>a1</code> 必须在 <code>b2</code> 之前」。没有共享数据，只有顺序：初值 0 的信号量，A 做完 signal，B 做之前 wait。</p>
+<p>最原始的同步需求是“<code>a1</code> 必须在 <code>b1</code> 之前”。没有共享数据，只有顺序：初值 0 的信号量，A 做完 signal，B 做之前 wait。</p>
 
 <pre><code class="language-python">ready = Sem(0)
 
@@ -761,12 +950,23 @@ def thread_a():
 
 def thread_b():
     ready.wait()        # 若 A 还没到，就在这里睡
-    b2()</code></pre>
+    b1()</code></pre>
 
-<p>好的同步方案只加必要的约束：这里只约束「a1 先于 b2」，不管 a1 与 b1 的先后。多加的约束会降低并发度，也更容易死锁。</p>
+<p>为什么两种到达顺序都对？若 B 先到，它把 0 减成 −1 并阻塞；A 随后 signal，把 −1 加回 0 并唤醒 B。若 A 先到，signal 把 0 变成 1；B 再 wait 时减成 0，直接通过。信号量的“记忆”让提前发出的通知不会丢失。</p>
+<p>好的同步方案只加必要的约束：这里只约束“a1 先于 b1”，不管 A、B 其他语句的先后。多加的约束会降低并发度，也更容易死锁。原书还建议命名要有意义：<code>a1Done.signal()</code> 读作“a1 完成了”，比 <code>sem.signal()</code> 清楚得多。</p>
 
-<h3><span class="sn">3.2</span>会合（rendezvous）：两个人都到齐才走</h3>
-<p>会合要求双向：a1 先于 b2，且 b1 先于 a2。做法是每人到达后先举手（signal 自己的信号量），再等对方举手。用两个初值为 0 的信号量，各自表达「我到了」。</p>
+<h3><span class="sn">3.2</span>Sync.py：把示例跑起来</h3>
+<p>原书 3.2 节介绍配套的 <code>sync.py</code>：它把每个示例封装成可运行的线程脚本，统一处理线程创建、随机延迟、日志与退出，让读者能观察“同一段代码的不同交错”。书中这一节本身只留下一句未完成的说明（“write about using sync, starting with signal.py”）——这是原书的未完成处，不影响模式本身。实践上你可以用 Python 的 <code>threading</code> 加随机 <code>sleep</code> 复现：把每个 <code>statement</code> 替换成打印 + 随机等待，跑几百次，观察输出顺序。</p>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">提醒</span><span class="thm-title">不要用随机测试证明正确</span><span class="thm-id">3.1</span></div>
+<div class="thm-body">
+<p><code>sync.py</code> 的价值是<b>暴露</b>错误路径，不是<b>排除</b>错误路径。随机延迟能让你看到“先 wait 后 signal”的双睡，但看不到一个需要极窄窗口才会发生的唤醒错人。正确性仍然靠不变量论证。</p>
+</div>
+</div>
+
+<h3><span class="sn">3.3</span>会合（rendezvous）：两个人都到齐才走</h3>
+<p>会合要求双向：a1 先于 b2，且 b1 先于 a2。做法是每人到达后先举手（signal 自己的信号量），再等对方举手。用两个初值为 0 的信号量，各自表达“我到了”。</p>
 
 <pre><code class="language-python">aArrived = Sem(0)
 bArrived = Sem(0)
@@ -783,13 +983,6 @@ def thread_b():
     aArrived.wait()
     b2()</code></pre>
 
-<div class="thm warn">
-<div class="thm-head"><span class="thm-kind">死锁</span><span class="thm-title">会合的错误顺序：先等后举手</span><span class="thm-id">3.1</span></div>
-<div class="thm-body">
-<p>如果把两行对调，A 先 <code>bArrived.wait()</code> 再 <code>aArrived.signal()</code>，B 也先 wait 再 signal，那么先到的人会一直等对方的「到达」信号，而对方永远发不出来——两个人都睡着了。这就是书中第一个死锁。<b>规则：先声明自己到达，再等待别人。</b></p>
-</div>
-</div>
-
 <div class="table-wrap">
 <table>
 <thead><tr><th>时刻</th><th>线程 A</th><th>线程 B</th><th>aArrived / bArrived</th></tr></thead>
@@ -803,8 +996,17 @@ def thread_b():
 </table>
 </div>
 
-<h3><span class="sn">3.3</span>互斥（mutex）：把临界区变成单人房</h3>
-<p>初值为 1 的信号量就是锁。第一个 wait 把 1 减成 0 并进入；第二个 wait 把 0 减成 -1 并阻塞；第一个出来时 signal，唤醒第二个。信号量本身没有「持有者」概念，所以谁 signal 都行——这既是灵活，也是事故来源。</p>
+<p>原书还讨论了一个“也能工作但多一次切换”的变体：A 先 wait 再 signal，B 先 signal 再 wait。它不会死锁，但先到的人会先睡，等对方把自己叫醒后还要再叫醒对方，上下文切换更多。设计时应优先选“先 signal 自己的到达，再 wait 对方”的对称写法。</p>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">死锁</span><span class="thm-title">Deadlock #1：先等后举手</span><span class="thm-id">3.2</span></div>
+<div class="thm-body">
+<p>如果把两行对调，A 先 <code>bArrived.wait()</code> 再 <code>aArrived.signal()</code>，B 也先 wait 再 signal，那么先到的人会一直等对方的“到达”信号，而对方永远发不出来——两个人都睡着了。这就是书中第一个死锁（deadlock）。<b>规则：先声明自己到达，再等待别人。</b></p>
+</div>
+</div>
+
+<h3><span class="sn">3.4</span>互斥（mutex）：把临界区变成单人房</h3>
+<p>初值为 1 的信号量就是锁。第一个 wait 把 1 减成 0 并进入；第二个 wait 把 0 减成 −1 并阻塞；第一个出来时 signal，唤醒第二个。信号量本身没有“持有者”概念，所以谁 signal 都行——这既是灵活，也是事故来源。</p>
 
 <pre><code class="language-python">mutex = Sem(1)
 total = 0
@@ -817,13 +1019,15 @@ def add(n):
     finally:
         mutex.signal()      # 异常也要还票</code></pre>
 
+<p>原书的互斥提示只有一句：创建一个初值为 1 的 <code>mutex</code>；值为 1 表示可以进，为 0 表示要等别人释放。这个“1 是许可、0 是占用”的读法与“信号量是票”的读法完全一致。</p>
+
 <div class="intuition">
 <div class="ih">Intuition · 锁不是信号</div>
-<p>互斥量的初值是 1，因为它表达「有一个名额」；顺序信号量的初值是 0，因为它表达「事件还没发生」。同样是 <code>Sem</code>，初值不同，语义就完全不同。写错初值，代码通常还能跑，只是偶尔永久卡住——这也是并发 bug 最难查的地方。</p>
+<p>互斥量的初值是 1，因为它表达“有一个名额”；顺序信号量的初值是 0，因为它表达“事件还没发生”。同样是 <code>Sem</code>，初值不同，语义就完全不同。写错初值，代码通常还能跑，只是偶尔永久卡住——这也是并发 bug 最难查的地方。</p>
 </div>
 
-<h3><span class="sn">3.4</span>限流（multiplex）：同时最多 k 个</h3>
-<p>限制并发的关键是数量上限。把初值设成 k，就得到「最多 k 个线程同时在内」的临界区；它不保证顺序，也不保证公平，只保证数量。餐厅的 k 张桌子、连接池的 k 个连接、哲学家问题里的「只允许 4 人上桌」，都是这个模式。</p>
+<h3><span class="sn">3.5</span>限流（multiplex）：同时最多 k 个</h3>
+<p>限制并发的关键是数量上限。把初值设成 k，就得到“最多 k 个线程同时在内”的临界区；它不保证顺序，也不保证公平，只保证数量。餐厅的 k 张桌子、连接池的 k 个连接、哲学家问题里的“只允许 4 人上桌”，都是这个模式。</p>
 
 <pre><code class="language-python">seats = Sem(3)          # 同时最多 3 人
 
@@ -834,7 +1038,7 @@ def customer(i):
     finally:
         seats.signal()</code></pre>
 
-<p>五个线程、三个名额时，可能的执行是：T1、T2、T3 进入，T4、T5 阻塞；T1 离开后 signal 唤醒 T4；此后任意时刻室内的线程数都不超过 3。注意「唤醒」与「进入」之间有一段窗口，但信号量的计数保证不会多发一张票。</p>
+<p>五个线程、三个名额时，可能的执行是：T1、T2、T3 进入，T4、T5 阻塞；T1 离开后 signal 唤醒 T4；此后任意时刻室内的线程数都不超过 3。注意“唤醒”与“进入”之间有一段窗口，但信号量的计数保证不会多发一张票。</p>
 
 <div class="table-wrap">
 <table>
@@ -843,35 +1047,61 @@ def customer(i):
 <tr><td><b>signaling</b></td><td class="id">0</td><td>A 的一段先于 B 的一段</td><td>B 先 wait 但 A 永不来</td></tr>
 <tr><td><b>rendezvous</b></td><td class="id">0, 0</td><td>双向顺序，双方都到齐</td><td>先 wait 后 signal，双睡</td></tr>
 <tr><td><b>mutex</b></td><td class="id">1</td><td>临界区互斥</td><td>忘记 signal / 重复 signal</td></tr>
-<tr><td><b>multiplex</b></td><td class="id">k</td><td>并发数不超过 k</td><td>初值当成「总数」写成 n</td></tr>
+<tr><td><b>multiplex</b></td><td class="id">k</td><td>并发数不超过 k</td><td>初值当成“总数”写成 n</td></tr>
 </tbody>
 </table>
 </div>
 
-<h3><span class="sn">3.5</span>组合时的硬规则</h3>
-<p>不要在持锁时做可能阻塞的等待：锁保护数据，等待放弃执行权，叠在一起就把别人需要的资源带进了睡眠。一个信号量也只表达一个事实，「非空」和「未满」必须分开。</p>
+<h3><span class="sn">3.6</span>组合时的硬规则</h3>
+<p>不要在持锁时做可能阻塞的等待：锁保护数据，等待放弃执行权，叠在一起就把别人需要的资源带进了睡眠。一个信号量也只表达一个事实，“非空”和“未满”必须分开。</p>
+<p>另一个容易被忽略的点是<b>约束的数量</b>。rendezvous 的第二种写法虽然正确，但多了一次不必要的切换；multiplex 用 <code>Sem(n)</code> 能保证“最多 n 个”，却不能保证“每个线程都能轮到自己”。每加一条约束，都要问它是否真的被题目要求。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>看到的需求</th><th>模式</th><th>写法</th></tr></thead>
+<tbody>
+<tr><td>a1 必须先于 b1</td><td>signaling</td><td>A: signal；B: wait；初值 0</td></tr>
+<tr><td>两边都到齐才继续</td><td>rendezvous</td><td>各 signal 自己的，再 wait 对方的</td></tr>
+<tr><td>临界区只许一个</td><td>mutex</td><td>wait/signal 包住，try/finally</td></tr>
+<tr><td>同时最多 k 个</td><td>multiplex</td><td>初值 k，进出各一次</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">基本积木的四个错误</span><span class="thm-id">3.3</span></div>
+<div class="thm-body">
+<p><b>把 mutex 当信号用。</b>用初值 1 的信号量做“A 先于 B”，B 可能先拿到票直接跑，顺序完全失效。</p>
+<p><b>把 signal 当“通知所有人”。</b>signal 只唤醒<b>一个</b>等待者；需要唤醒 n 个时必须 signal n 次或预装 n 张票。</p>
+<p><b>在临界区里 sleep。</b>睡眠不释放锁，等于把整条流水线停住。需要等待时，先退出临界区。</p>
+<p><b>重复 signal。</b>会让信号量的值超过初始上限，下一次本该阻塞的 wait 直接通过，互斥被破坏。每个 wait 恰好配一个 signal。</p>
+</div>
+</div>
 </div>
 </section>
 
 <section id="ch4" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 4 · Barrier</div>
+<div class="sec-label">Chapter 3 · Basic Patterns II</div>
 <h2><span class="num">4</span>屏障：等所有人到齐，再把门打开</h2>
-<p class="lede">屏障是「会合」的 n 人版本：先到的人不能走，必须等最后一个到；而可复用屏障还多一条——所有人过去之后，门要自动重新锁上，否则下一轮就有人能提前溜过去。</p>
+<p class="lede">屏障（barrier）是“会合”的 n 人版本：先到的人不能走，必须等最后一个到；而可复用屏障还多一条——所有人过去之后，门要自动重新锁上，否则下一轮就有人能提前溜过去。</p>
 
 <div class="chap-intro">
-<p>本节从一次性屏障写到两阶段可复用屏障，重点解释「旋转门为什么会多出一张票」，以及为什么把 wait 放进 mutex 会立刻死锁。可复用屏障是 H2O、滚石过山车等题目的基础设施。</p>
+<p>本节对应原书 3.6–3.7 的全部小节：Barrier hint、Barrier non-solution、Deadlock #2、Barrier solution、Deadlock #3，以及 Reusable barrier 的 non-solution #1、problem #1、non-solution #2、hint、solution、preloaded turnstile、barrier objects。重点是“旋转门为什么会多出一张票”和“为什么把 wait 放进 mutex 会立刻死锁”。</p>
 <span class="tag">Barrier</span>
 </div>
 
 <div class="mapchips">
 <span class="chip hot">turnstile</span>
 <span class="chip">rendezvous × n</span>
-<span class="chip">two-phase</span>
+<span class="chip">two-phase barrier</span>
 <span class="chip">count</span>
 <span class="chip">reusable</span>
-<span class="chip">preloaded</span>
+<span class="chip">preloaded turnstile</span>
+<span class="chip">barrier object</span>
 </div>
+
+<div class="note"><b>原书小节：</b>Barrier · Barrier hint · Barrier non-solution · Deadlock #2 · Barrier solution · Deadlock #3 · Reusable barrier · Reusable barrier non-solution #1 · Reusable barrier problem #1 · Reusable barrier non-solution #2 · Reusable barrier hint · Reusable barrier solution · Preloaded turnstile · Barrier objects.</div>
 
 <h3><span class="sn">4.1</span>一次性屏障：最后一个负责开门</h3>
 <p>n 个线程各自完成第一阶段工作，然后必须在屏障处集合，任何一个都不许先进入第二阶段。用一个受 mutex 保护的计数器统计到达人数，再用一个初值为 0 的 <strong>turnstile</strong>（旋转门）挡住大家。第 n 个到达者 signal 一次，把门打开。</p>
@@ -882,88 +1112,176 @@ barrier = Sem(0)
 
 def worker():
     global count
-    # 第一阶段
+    # rendezvous
     mutex.wait()
-    count += 1
+    count = count + 1
     if count == n:
         barrier.signal()    # 最后一个开门
     mutex.signal()
 
     barrier.wait()          # 前面的人在这里睡
     barrier.signal()        # 把票传给下一个人
-    # 第二阶段</code></pre>
+    # critical point</code></pre>
 
-<p>为什么 n-1 个人都能被放行，明明只 signal 了一次？因为每个穿过的人顺手把票传给下一个：第 n 个人唤醒第一个，第一个唤醒第二个，形成一条链。</p>
+<p>为什么 n−1 个人都能被放行，明明只 signal 了一次？因为每个穿过的人顺手把票传给下一个：第 n 个人唤醒第一个，第一个唤醒第二个，形成一条链。这种“wait 完立刻 signal”的组合有个名字，就叫旋转门：它一次只放一个人，也可以被锁住挡住所有人。</p>
+<p>原书的非解（non-solution）把最后那行 <code>barrier.signal()</code> 省掉了。它看起来也能让“第 n 个”通过，但只唤醒了一个人：值从 −(n−1) 变成 −(n−2)，之后再没人 signal，其余 n−2 个人永久睡死。这就是 <b>Deadlock #2</b>。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>时刻（n = 5）</th><th>动作</th><th>barrier 值</th><th>状态</th></tr></thead>
+<tbody>
+<tr><td class="id">t1</td><td>前 4 人到齐，wait</td><td>−4</td><td>4 人阻塞</td></tr>
+<tr><td class="id">t2</td><td>第 5 人 signal</td><td>−3</td><td>唤醒 1 人</td></tr>
+<tr><td class="id">t3</td><td>被唤醒者直接走（非解）</td><td>−3</td><td>剩余 3 人永远等</td></tr>
+<tr><td class="id">t4</td><td>被唤醒者再 signal（正解）</td><td>−2</td><td>链式传递，直到 0</td></tr>
+</tbody>
+</table>
+</div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">死锁</span><span class="thm-title">把旋转门放进 mutex</span><span class="thm-id">4.1</span></div>
+<div class="thm-head"><span class="thm-kind">死锁</span><span class="thm-title">Deadlock #3：把旋转门放进 mutex</span><span class="thm-id">4.1</span></div>
 <div class="thm-body">
-<p>看起来「检查 count 和通过屏障应该原子」，于是写成 <code>mutex.wait() … barrier.wait() … mutex.signal()</code>。结果是：第一个线程在门内睡着，且永远不释放 mutex；后面的人连 count 都无法增加，第 n 个人永远不会出现。<b>规则：绝不在持锁时等待一个需要别人来满足的条件。</b></p>
+<p>看起来“检查 count 和通过屏障应该原子”，于是写成 <code>mutex.wait() … barrier.wait() … mutex.signal()</code>。结果是：第一个线程在门内睡着，且永远不释放 mutex；后面的人连 count 都无法增加，第 n 个人永远不会出现。<b>规则：绝不在持锁时等待一个需要别人来满足的条件。</b>这是全书反复出现的头号死锁来源。</p>
 </div>
 </div>
 
 <h3><span class="sn">4.2</span>为什么一次性屏障不能直接用两遍</h3>
-<p>第一轮结束后，旋转门不是归零，而是留下 1 张「多出来的票」：每人都 wait 一次、signal 一次，第 n 个人却额外 signal 了一次。第二轮第一个到达者会直接穿过，跑到前面去——这就是超前线程。</p>
+<p>一次性屏障的计数器从不归零：第一轮结束时 <code>count == n</code>，而门在链式传递后又回到 0（锁上）。如果线程循环回到起点，第二轮的第一个到达者把 count 加到 <code>n+1</code>，而 <code>count == n</code> 这个条件再也不会成立，于是没有任何人 signal 门，这一轮所有人都会永久阻塞在 <code>barrier.wait()</code> 上。</p>
+<p>更隐蔽的情况是快线程与慢线程混轮次：快线程已经绕回第二轮，慢线程还在第一轮，计数把两轮的人加在一起，条件更不可能命中。一次性屏障只保证“某一轮的 n 个到达者一起通过”，它没有“轮次”概念，也没有复位机制。</p>
 
 <h3><span class="sn">4.3</span>可复用屏障：两道门，两个阶段</h3>
 <p>正确做法是让屏障有两个阶段：<strong>到齐</strong>与<strong>散场</strong>。第一道门在所有人到齐时打开；等所有人都离开临界点后，第二道门再打开，同时把第一道门重新锁上。这样下一轮开始时，门的状态与初始状态完全一致。</p>
+
+<p>原书先给了两个错误版本。非解 #1 在 mutex 外读 <code>count</code>：第 n−1 个线程刚释放 mutex、还没来得及判断时被切走，第 n 个线程也把 count 加到 n，两个人都看到 <code>count == n</code>，于是 signal 两次；反向阶段同理，可能有多人 wait，直接死锁。非解 #2 把判断移进 mutex，修好了重复 signal，但仍有“快线程绕圈”的问题：它在第二轮开始时已经越过第一道门，把 count 继续加过 n，而收尾阶段再也没有人把 count 减到 0，于是第一道门永远不锁、额外票不断累积，屏障失效。</p>
+
+<pre><code class="language-python"># 可复用屏障：turnstile 初始锁着(0)，turnstile2 初始开着(1)
+turnstile  = Sem(0)
+turnstile2 = Sem(1)
+mutex      = Sem(1)
+
+def wait_barrier():
+    global count
+    # rendezvous：等人到齐
+    mutex.wait()
+    count += 1
+    if count == n:
+        turnstile2.wait()       # 先锁上第二道门
+        turnstile.signal()      # 再打开第一道门
+    mutex.signal()
+
+    turnstile.wait()            # 依次通过第一道门
+    turnstile.signal()
+
+    # critical point：此刻 n 个人都在这里
+
+    # 散场：等所有人都离开
+    mutex.wait()
+    count -= 1
+    if count == 0:
+        turnstile.wait()        # 重新锁上第一道门
+        turnstile2.signal()     # 打开第二道门
+    mutex.signal()
+
+    turnstile2.wait()           # 依次通过第二道门
+    turnstile2.signal()</code></pre>
+
+<p>关键在第 n 个人做的两件事：<b>先把第二道门锁上，再打开第一道门</b>。这保证在任何人进入下一阶段之前，第二道门已经是关的；等最后一个人离开临界点，它再把第一道门锁上、第二道门打开。两道门的开关顺序不能反，否则会有一个窗口让快线程直接冲进下一轮。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>阶段</th><th>count</th><th>turnstile</th><th>turnstile2</th><th>谁在动</th></tr></thead>
+<tbody>
+<tr><td>初始</td><td class="id">0</td><td>0（锁）</td><td>1（开）</td><td>无人</td></tr>
+<tr><td>陆续到达</td><td class="id">1…n-1</td><td>0，等待者增加</td><td>1</td><td>前 n-1 人阻塞</td></tr>
+<tr><td>第 n 人到达</td><td class="id">n</td><td>开，链式放行</td><td>0（已先锁）</td><td>n 人依次通过</td></tr>
+<tr><td>陆续离开</td><td class="id">n-1…1</td><td>0（已重新锁上）</td><td>0，等待者增加</td><td>先到者阻塞</td></tr>
+<tr><td>最后一人离开</td><td class="id">0</td><td>0</td><td>开，链式放行</td><td>全部通过，状态复位</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="intuition">
+<div class="ih">Intuition · 两道门的记账</div>
+<p>第一道门放行 n 个人，正好把 n 张票取完；第二道门再放行 n 个人，也正好取完。每一轮结束时两个计数器都回到初始状态，所以下一轮可以从完全相同的状态开始。可复用性不是“记得重置”，而是<strong>通过配额自然归零</strong>。另外，第 n 个人在开第一道门前先关第二道门，等于把“下一轮的入口”提前封死。</p>
+</div>
+
+<h3><span class="sn">4.4</span>预装旋转门（preloaded turnstile）</h3>
+<p>链式传递的缺点是 n 次上下文切换。原书给出一个简化：让开门的线程一次性 <code>signal(n)</code>，预装 n 张票；每个线程取一张，取完门自然锁上。这样第 n 个人只需 signal 一次（带参数 n），其余人直接通过。</p>
+
+<pre><code class="language-python">def phase1(self):
+    self.mutex.wait()
+    self.count += 1
+    if self.count == self.n:
+        self.turnstile.signal(self.n)   # 预装 n 张票
+    self.mutex.signal()
+    self.turnstile.wait()               # 每人取走一张
+
+def phase2(self):
+    self.mutex.wait()
+    self.count -= 1
+    if self.count == 0:
+        self.turnstile2.signal(self.n)  # 第二道门同样预装
+    self.mutex.signal()
+    self.turnstile2.wait()</code></pre>
+
+<p>原书提醒：<code>signal(n)</code> 不是标准语义，实现上就是一个循环；循环本身可能被中断，所以 n 次 signal 不是原子的。在这个场景里没关系，因为门已经处于“只进不出”的状态，早发晚发都只是增加可用票数。</p>
+
+<h3><span class="sn">4.5</span>屏障对象（barrier object）</h3>
+<p>把两个阶段封装成类，外部只看到 <code>wait()</code>。每个屏障对象持有自己的 mutex 与两道门，因此同一程序里可以有多个互不干扰的屏障。</p>
 
 <pre><code class="language-python">class Barrier:
     def __init__(self, n):
         self.n = n
         self.count = 0
         self.mutex = Sem(1)
-        self.turnstile = Sem(0)     # 第一道门：初始锁着
-        self.turnstile2 = Sem(0)    # 第二道门：初始也锁着
+        self.turnstile = Sem(0)
+        self.turnstile2 = Sem(0)
 
-    def wait(self):
-        # 阶段一：等 n 个人到齐
+    def phase1(self):
         self.mutex.wait()
         self.count += 1
         if self.count == self.n:
-            self.turnstile.signal(self.n)   # 一次预装 n 张票
+            self.turnstile.signal(self.n)
         self.mutex.signal()
-        self.turnstile.wait()               # 每人取走一张
+        self.turnstile.wait()
 
-        # 临界点：此刻 n 个人都在这里
-
-        # 阶段二：等 n 个人都离开，再复位
+    def phase2(self):
         self.mutex.wait()
         self.count -= 1
         if self.count == 0:
             self.turnstile2.signal(self.n)
         self.mutex.signal()
-        self.turnstile2.wait()</code></pre>
+        self.turnstile2.wait()
 
-<p><code>signal(n)</code> 是「预装旋转门」：一次放 n 张票，取完归零，门重新锁上，比逐个传递少很多次上下文切换。</p>
+    def wait(self):
+        self.phase1()
+        self.phase2()</code></pre>
 
-<div class="table-wrap">
+<p>注意：这个类版本在 phase1 里不再显式“先锁第二道门”，而是直接 <code>turnstile.signal(n)</code>；第二道门 <code>turnstile2</code> 初始为 0，只有 phase2 中最后一个离开的人才会 signal 它。它之所以仍然正确，是因为 phase1 的预装票一次发完、取完即锁，快线程即使绕回 phase1，也必须先在 phase2 的 <code>turnstile2.wait()</code> 上等到“所有人都完成 phase2”才会被放行。换句话说，第二道门本身就是“散场屏障”，不需要额外的加锁动作。原书用它作为 H2O、过山车等题的基础设施。</p>
+
+<h3><span class="sn">4.6</span>小规模推演：n = 3，跑两轮</h3>
+<p>设 n=3。T1、T2 把 count 加到 1、2 后卡在第一道门；T3 加满 3，先锁第二道门，再打开第一道门，三人依次通过。各自把 count 减一，最后一个减到 0 的人重新锁上第一道门、打开第二道门；三人离开后 count 与两道门都回到初始状态，下一轮从头开始。跑得快的 T1 若先到第二道门，也会被“第二道门尚未打开”挡住，不会提前进入下一轮。</p>
+
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>阶段</th><th>count</th><th>turnstile</th><th>turnstile2</th><th>谁在动</th></tr></thead>
+<thead><tr><th>版本</th><th>问题</th><th>症状</th><th>修法</th></tr></thead>
 <tbody>
-<tr><td>初始</td><td class="id">0</td><td>0（锁）</td><td>0（锁）</td><td>无人</td></tr>
-<tr><td>陆续到达</td><td class="id">1…n-1</td><td>0，等待者增加</td><td>0</td><td>前 n-1 人阻塞</td></tr>
-<tr><td>第 n 人到达</td><td class="id">n</td><td>+n 张票</td><td>0</td><td>n 人依次通过</td></tr>
-<tr><td>陆续离开</td><td class="id">n-1…1</td><td>0（已重新锁上）</td><td>0，等待者增加</td><td>先到者阻塞</td></tr>
-<tr><td>最后一人离开</td><td class="id">0</td><td>0</td><td>+n 张票</td><td>全部通过，状态复位</td></tr>
+<tr><td>non-solution</td><td>只 signal 一次</td><td>只放行 1 人，其余永久等</td><td>每人通过后再 signal（turnstile）</td></tr>
+<tr><td>Deadlock #3</td><td>turnstile 放进 mutex</td><td>第一人持锁睡，count 永不到 n</td><td>锁外等待</td></tr>
+<tr><td>reusable #1</td><td>count 判断在锁外</td><td>多人同时看到 count==n，重复开门</td><td>判断移进 mutex</td></tr>
+<tr><td>reusable #2</td><td>只有一道门</td><td>快线程绕回下一轮，混轮次</td><td>两道门 + 先锁后开</td></tr>
+<tr><td>preloaded</td><td>signal(n) 非原子</td><td>一般无害；依赖“只进不出”</td><td>确认门已锁再预装</td></tr>
 </tbody>
 </table>
 </div>
 
-<div class="intuition">
-<div class="ih">Intuition · 两张票的记账</div>
-<p>第一道门放行 n 个人，正好把 n 张票取完；第二道门再放行 n 个人，也正好取完。每一轮结束时两个计数器都回到 0，所以下一轮可以从完全相同的状态开始。可复用性不是「记得重置」，而是<strong>通过配额自然归零</strong>。</p>
-</div>
-
-<h3><span class="sn">4.4</span>小规模推演：n = 3，跑两轮</h3>
-<p>设 n=3。T1、T2 把 count 加到 1、2 后卡在第一道门；T3 加满 3 并 <code>signal(3)</code>，三人一起通过。各自把 count 减一，最后一个减到 0 的人 <code>signal(3)</code> 打开第二道门；三人离开后 count 与两道门的余票都归零，下一轮从头开始。跑得快的人若先到第二道门，也会被「count 未归零」挡住。</p>
-
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">屏障的三个常见错误</span><span class="thm-id">4.2</span></div>
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">屏障的四个常见错误</span><span class="thm-id">4.2</span></div>
 <div class="thm-body">
-<p><b>只 signal 一次却指望放行 n 人。</b>必须有「每人取一张」或「链式传递」的机制，否则只有一个人能过。</p>
-<p><b>把计数判断放在锁外。</b>两个线程可能同时看到 count == n，导致门被多开一次；下一轮的状态就全乱了。</p>
+<p><b>只 signal 一次却指望放行 n 人。</b>必须有“每人取一张”或“链式传递”的机制，否则只有一个人能过。</p>
+<p><b>把计数判断放在锁外。</b>两个线程可能同时看到 <code>count == n</code>，导致门被多开一次；下一轮的状态就全乱了。</p>
 <p><b>线程数不固定。</b>屏障的 n 必须与实际参与者严格一致：少一个，所有人永久等待；多一个，计数永远回不到 0。</p>
+<p><b>两道门的开关顺序反了。</b>必须先锁下一阶段的门，再开当前阶段的门；反过来会留下一个窗口，让快线程在“散场”完成前冲进下一轮。</p>
 </div>
 </div>
 </div>
@@ -971,12 +1289,12 @@ def worker():
 
 <section id="ch5" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 5 · Queue</div>
-<h2><span class="num">5</span>队列：把「配对」写成一个计数器</h2>
-<p class="lede">领舞与跟舞必须一一配对。最难的并不是「互相等待」，而是保证同一时刻只有一对在跳——这需要在计数器和信号量之外，再加一条会合线。</p>
+<div class="sec-label">Chapter 3 · Basic Patterns III</div>
+<h2><span class="num">5</span>队列：把“配对”写成一个计数器</h2>
+<p class="lede">领舞与跟舞必须一一配对。最难的并不是“互相等待”，而是保证同一时刻只有一对在跳——这需要在计数器和信号量之外，再加一条会合线。</p>
 
 <div class="chap-intro">
-<p>本节先给出三行就能写完的朴素队列，再指出它「配对了数量、没配对上时间」的缺陷，最后用互斥量加会合信号量得到独占队列。这里的「锁可以跨线程释放」是全书最反直觉的一处。</p>
+<p>本节对应原书 3.8 Queue 的全部四个小节：Queue hint、Queue solution、Exclusive queue hint、Exclusive queue solution。先给出三行就能写完的朴素队列，再指出它“配对了数量、没配对上时间”的缺陷，最后用互斥量加会合信号量得到独占队列。这里的“锁可以跨线程释放”是全书最反直觉的一处。</p>
 <span class="tag">Queue</span>
 </div>
 
@@ -986,12 +1304,15 @@ def worker():
 <span class="chip">exclusive queue</span>
 <span class="chip">rendezvous</span>
 <span class="chip">mutex transfer</span>
+<span class="chip">no owner</span>
 </div>
 
-<h3><span class="sn">5.1</span>朴素队列：互相叫醒就够了</h3>
-<p>两类线程：leader 和 follower。leader 不能独自跳舞，follower 也不能。最直接的写法是准备两个「呼叫队列」：leader 到了就通知 follower 队列，然后等自己的队列；follower 反过来。</p>
+<div class="note"><b>原书小节：</b>Queue · Queue hint · Queue solution · Exclusive queue hint · Exclusive queue solution.</div>
 
-<pre><code class="language-python">leaderQueue = Sem(0)
+<h3><span class="sn">5.1</span>朴素队列：互相叫醒就够了</h3>
+<p>两类线程：leader 和 follower。leader 不能独自跳舞，follower 也不能。最直接的写法是准备两个“呼叫队列”：leader 到了就通知 follower 队列，然后等自己的队列；follower 反过来。</p>
+
+<pre><code class="language-python">leaderQueue   = Sem(0)
 followerQueue = Sem(0)
 
 def leader():
@@ -1004,10 +1325,23 @@ def follower():
     followerQueue.wait()
     dance()</code></pre>
 
-<p>这段代码保证「有多少 leader 通过，就有多少 follower 通过」，因为每次 signal 都对应一次 wait。但它不保证两人<em>同时</em>起舞：leader 被唤醒后可以先跳完一整支舞，而它的 follower 还在队列里没被调度；另一个 follower 又可能已经被下一个 leader 叫醒。数量配对成立，时间配对不成立。</p>
+<p>这段代码保证“有多少 leader 通过，就有多少 follower 通过”，因为每次 signal 都对应一次 wait。原书称它“本质上就是一个会合（rendezvous）”。但它不保证两人<em>同时</em>起舞：leader 被唤醒后可以先跳完一整支舞，而它的 follower 还在队列里没被调度；另一个 follower 又可能已经被下一个 leader 叫醒。数量配对成立，时间配对不成立。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>时刻</th><th>leader L1</th><th>follower F1</th><th>leaderQueue / followerQueue</th></tr></thead>
+<tbody>
+<tr><td class="id">t1</td><td>signal followerQueue</td><td>未到</td><td>0 / 1</td></tr>
+<tr><td class="id">t2</td><td>wait leaderQueue，睡</td><td>—</td><td>−1 / 1</td></tr>
+<tr><td class="id">t3</td><td>—</td><td>signal leaderQueue</td><td>0 / 1，唤醒 L1</td></tr>
+<tr><td class="id">t4</td><td>—</td><td>wait followerQueue，直接通过</td><td>0 / 0</td></tr>
+<tr><td class="id">t5</td><td>dance 结束，L2 已可入场</td><td>dance 尚未开始</td><td>顺序不保证</td></tr>
+</tbody>
+</table>
+</div>
 
 <h3><span class="sn">5.2</span>独占队列：一对一对地放行</h3>
-<p>加一条约束：每个 leader 只能与一个 follower 并排跳，反之亦然。做法是把「谁在等」记在计数器里，并用一把 mutex 保护计数与配对动作。配对成功时，先拿到 mutex 的那个人负责 signal 对方；两人跳完后，再由 leader 释放 mutex。</p>
+<p>加一条约束：每个 leader 只能与一个 follower 并排跳，反之亦然。做法是把“谁在等”记在计数器里，并用一把 mutex 保护计数与配对动作。配对成功时，先拿到 mutex 的那个人负责 signal 对方；两人跳完后，再由 leader 释放 mutex。</p>
 
 <pre><code class="language-python">leaders = 0
 followers = 0
@@ -1043,11 +1377,11 @@ def follower():
     dance()
     rendezvous.signal()             # 告诉 leader：我跳完了</code></pre>
 
-<p>关键细节：配对成功的那条路径<strong>不释放 mutex</strong>。它一路持有到 <code>dance()</code> 结束，再由 leader 在 <code>rendezvous.wait()</code> 之后释放。于是 mutex 实际上被「这一对」共同持有，而释放者始终是 leader。书里明确说：信号量没有所有者概念，一个线程获取、另一个线程释放完全合法，只要双方对「谁负责释放」有共识。</p>
+<p>关键细节：配对成功的那条路径<strong>不释放 mutex</strong>。它一路持有到 <code>dance()</code> 结束，再由 leader 在 <code>rendezvous.wait()</code> 之后释放。于是 mutex 实际上被“这一对”共同持有，而释放者始终是 leader。书里明确说：信号量没有所有者概念，一个线程获取、另一个线程释放完全合法，只要双方对“谁负责释放”有共识。</p>
 
 <div class="intuition">
 <div class="ih">Intuition · 锁是令牌，不是身份证</div>
-<p>把 mutex 想成一根接力棒，而不是一张写着你名字的门禁卡。配对时，先到的人把棒握在手里，叫醒对方；两人一起跑；最后固定由 leader 把棒交回。只要每对恰好交回一次，系统就守恒。</p>
+<p>把 mutex 想成一根接力棒，而不是一张写着你名字的门禁卡。配对时，先到的人把棒握在手里，叫醒对方；两人一起跑；最后固定由 leader 把棒交回。只要每对恰好交回一次，系统就守恒。注意 follower 在配对路径上永远不释放 mutex——它把“交棒”这件事交给了 leader。</p>
 </div>
 
 <h3><span class="sn">5.3</span>推演：L1、F1、L2 依次到达</h3>
@@ -1064,29 +1398,44 @@ def follower():
 </table>
 </div>
 
-<p>t4 说明 L2 被 mutex 挡在整支舞之外：独占不是靠计数，而是靠锁覆盖整个舞蹈区间。</p>
+<p>t4 说明 L2 被 mutex 挡在整支舞之外：独占不是靠计数，而是靠锁覆盖整个舞蹈区间。若 L2 在 t3 之前到达并成功拿到 mutex，它会把 leaders 加到 1 然后睡；这不会破坏正确性，只是排队。</p>
+
+<h3><span class="sn">5.4</span>为什么“谁释放”必须唯一</h3>
+<p>配对成功时，先到者持有 mutex 并 signal 对方。此时有两个线程都“在临界区里”，但只有一个人持有锁对象。如果两人都执行 <code>mutex.signal()</code>，锁的计数会从 0 变成 2，下一对可以有两个 leader 同时进入，独占性立刻失效。因此代码把释放权固定给 leader：它一定存在于每一对中，且一定走到 <code>rendezvous.wait()</code> 之后。</p>
+<p>反过来，如果让 follower 释放，就必须保证 follower 在每一对里都最后一个离开；在对称的会合里这并不成立。选择“每对都有的那一方”作为收尾人，是最稳妥的规则。</p>
 
 <div class="thm warn">
 <div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">队列模式的三个陷阱</span><span class="thm-id">5.1</span></div>
 <div class="thm-body">
 <p><b>登记后不释放 mutex 就睡。</b>如果写成 <code>leaders += 1; leaderQueue.wait()</code> 而中间不 signal，所有人都会卡在 mutex 上，包括本可以配对的对方。</p>
 <p><b>双方都以为自己是释放者。</b>配对路径必须约定唯一收尾人。这里选 leader，因为它一定存在于每一对中；若改成 follower 释放，就要保证 follower 在每一对里都走到最后。</p>
-<p><b>把 rendezvous 当成第二把锁。</b>它只表达「舞跳完了」，不保护任何共享数据。如果 dance 可能抛异常，必须用 try/finally 保证 rendezvous 与 mutex 都被处理，否则整对线程会把锁永久带走。</p>
+<p><b>把 rendezvous 当成第二把锁。</b>它只表达“舞跳完了”，不保护任何共享数据。如果 dance 可能抛异常，必须用 try/finally 保证 rendezvous 与 mutex 都被处理，否则整对线程会把锁永久带走。</p>
 </div>
 </div>
 
-<p>独占队列仍不保证先来先配；要严格 FIFO，就得像第 10 节那样给每个线程一个私有信号量并排队。</p>
+<p>独占队列仍不保证先来先配；要严格 FIFO，就得像第 11 节的 FIFO 理发店那样给每个线程一个私有信号量并排队。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>版本</th><th>变量</th><th>保证</th><th>不保证</th></tr></thead>
+<tbody>
+<tr><td>朴素队列</td><td>两个 <code>Sem(0)</code></td><td>数量配对：n 个 leader 配 n 个 follower</td><td>同时起舞；可能多人先跳</td></tr>
+<tr><td>独占队列</td><td>计数 + mutex + 两个队列 + rendezvous</td><td>每对独占，锁覆盖整支舞</td><td>先来先配（FIFO）</td></tr>
+<tr><td>FIFO 队列</td><td>每线程一个私有 <code>Sem(0)</code></td><td>按到达顺序配对</td><td>需要额外的队列数据结构</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 </section>
 
 <section id="ch6" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 6 · Producer-Consumer</div>
-<h2><span class="num">6</span>生产者消费者：两个计数，一把锁</h2>
-<p class="lede">有界缓冲区把两类完全不同的等待放在同一个数据结构上：生产者怕「满」，消费者怕「空」。用两个计数信号量分别表达这两种恐惧，再用一把 mutex 保护缓冲区本身，问题就拆干净了。</p>
+<div class="sec-label">Chapter 4 · Producer-Consumer</div>
+<h2><span class="num">6</span>生产者-消费者：两个计数，一把锁</h2>
+<p class="lede">有界缓冲区把两类完全不同的等待放在同一个数据结构上：生产者怕“满”，消费者怕“空”。用两个计数信号量分别表达这两种恐惧，再用一把 mutex 保护缓冲区本身，问题就拆干净了。</p>
 
 <div class="chap-intro">
-<p>本节从无界队列讲到容量为 N 的环形缓冲区，重点演示死锁 #4——先拿锁再等空位。还会给出一个可以直接用来检查代码的不变量：空位数加元素数恒等于 N。</p>
+<p>本节对应原书 4.1 的全部小节：Producer-consumer hint、solution、Deadlock #4、finite buffer、Finite buffer hint、Finite buffer solution。重点演示“先等条件，再拿锁”以及“释放锁之后再通知”的性能差异；不变量是 <code>items + spaces = bufferSize</code>。</p>
 <span class="tag">Classic</span>
 </div>
 
@@ -1096,49 +1445,56 @@ def follower():
 <span class="chip">spaces</span>
 <span class="chip">deadlock #4</span>
 <span class="chip">invariant</span>
+<span class="chip">waitForEvent</span>
 </div>
 
+<div class="note"><b>原书小节：</b>Producer-consumer problem · Producer-consumer hint · Producer-consumer solution · Deadlock #4 · Producer-consumer with a finite buffer · Finite buffer producer-consumer hint · Finite buffer producer-consumer solution.</div>
+
 <h3><span class="sn">6.1</span>约束</h3>
-<p>生产者不断生成事件放入缓冲区，消费者取出处理。三条约束：不能在空缓冲区上取；不能在满缓冲区上放；多人操作时缓冲区内部不能被破坏。前两条是计数，第三条是互斥。</p>
+<p>生产者不断生成事件放入缓冲区，消费者取出处理。三条约束：不能在空缓冲区上取；不能在满缓冲区上放；多人操作时缓冲区内部不能被破坏。前两条是计数，第三条是互斥。原书用 <code>waitForEvent()</code> 表示“生成事件”，并强调它可以并发执行，不需要锁。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">生产者-消费者（producer-consumer）</span><span class="thm-id">6.1</span></div>
+<div class="thm-body">
+<p>一组生产者线程反复生成事件并放入共享缓冲区；一组消费者线程反复取出事件并处理。要求：<b>(1)</b> 缓冲区满时生产者阻塞；<b>(2)</b> 缓冲区空时消费者阻塞；<b>(3)</b> 对缓冲区的插入/删除互斥。若缓冲区无界，则条件 (1) 不存在。</p>
+</div>
+</div>
 
 <h3><span class="sn">6.2</span>无界缓冲区：一个信号量数元素</h3>
-<pre><code class="language-python">import collections
-
-buffer = collections.deque()
+<pre><code class="language-python">mutex = Sem(1)          # 保护 buffer 的内部结构
 items = Sem(0)          # 缓冲区里有多少个元素
-mutex = Sem(1)          # 保护 deque 的内部结构
 
 def producer():
     while True:
-        e = produce()
+        event = waitForEvent()
         mutex.wait()
-        buffer.append(e)
+        buffer.add(event)
         mutex.signal()
-        items.signal()  # 元素数 +1，可能唤醒消费者
+        items.signal()      # 元素数 +1，可能唤醒消费者
 
 def consumer():
     while True:
-        items.wait()    # 先确认有货，再拿锁
+        items.wait()        # 先确认有货，再拿锁
         mutex.wait()
-        e = buffer.popleft()
+        event = buffer.get()
         mutex.signal()
-        consume(e)</code></pre>
+        event.process()</code></pre>
 
-<p>顺序很重要：消费者先 <code>items.wait()</code> 再 <code>mutex.wait()</code>。如果反过来，消费者会拿着锁睡觉，生产者永远进不来放货，直接死锁。这条「<strong>先等条件，再拿锁</strong>」的规则在有界版本里同样成立。</p>
+<p>顺序很重要：消费者先 <code>items.wait()</code> 再 <code>mutex.wait()</code>。如果反过来，消费者会拿着锁睡觉，生产者永远进不来放货，直接死锁。这条“<strong>先等条件，再拿锁</strong>”的规则在有界版本里同样成立。</p>
+<p>原书还给了一个性能改进：生产者应<b>先释放 mutex，再 signal items</b>。否则被唤醒的消费者会立刻去抢生产者仍持有的 mutex，抢不到又睡回去，多一次上下文切换。唯一的例外是另一个生产者抢先拿到锁，但那是小概率。</p>
 
-<h3><span class="sn">6.3</span>有界缓冲区：再加一个「空位」计数</h3>
-<pre><code class="language-python">N = 4
-buffer = collections.deque()
-spaces = Sem(N)         # 还可以放几个
-items  = Sem(0)         # 已经放了几个
+<h3><span class="sn">6.3</span>有界缓冲区：再加一个“空位”计数</h3>
+<pre><code class="language-python">bufferSize = 4
 mutex  = Sem(1)
+items  = Sem(0)             # 已经放了几个
+spaces = Sem(bufferSize)    # 还可以放几个
 
 def producer():
     while True:
-        e = produce()
+        event = waitForEvent()
         spaces.wait()           # 先占一个空位（可能阻塞）
         mutex.wait()
-        buffer.append(e)
+        buffer.add(event)
         mutex.signal()
         items.signal()
 
@@ -1146,17 +1502,18 @@ def consumer():
     while True:
         items.wait()            # 先确认有货
         mutex.wait()
-        e = buffer.popleft()
+        event = buffer.get()
         mutex.signal()
         spaces.signal()         # 归还一个空位
-        consume(e)</code></pre>
+        event.process()</code></pre>
 
 <p>注意 <code>spaces.signal()</code> 放在释放 mutex 之后。放在之前也不会错，但被唤醒的生产者会立刻去抢 mutex，抢不到又睡回去，多一次上下文切换。书里的建议是：<strong>互斥区里只做必要的操作，通知尽量放到区外</strong>。</p>
 
 <div class="thm theorem">
-<div class="thm-head"><span class="thm-kind">不变量</span><span class="thm-title">空位 + 元素 = N</span><span class="thm-id">6.1</span></div>
+<div class="thm-head"><span class="thm-kind">不变量</span><span class="thm-title">空位 + 元素 = bufferSize</span><span class="thm-id">6.2</span></div>
 <div class="thm-body">
-<p>忽略正在等待的线程，任意时刻都有 <code>spaces 的值 + items 的值 = N</code>，且 <code>items 的值 = len(buffer)</code>。生产者对 spaces 做减一、对 items 做加一，消费者相反，两边保持平衡。把这条式子写在纸上，任何一处 wait/signal 放错位置都会立刻暴露。</p>
+<p>忽略正在等待的线程，任意时刻都有 <code>spaces 的值 + items 的值 = bufferSize</code>，且 <code>items 的值 = len(buffer)</code>。生产者对 spaces 做减一、对 items 做加一，消费者相反，两边保持平衡。把这条式子写在纸上，任何一处 wait/signal 放错位置都会立刻暴露。</p>
+<p>更强的说法：<code>items</code> 的负值部分表示“等货的消费者数”，<code>spaces</code> 的负值部分表示“等空位的生产者数”；两者之和恒为 bufferSize。这正是“一个信号量只表达一件事”的代数体现。</p>
 </div>
 </div>
 
@@ -1167,36 +1524,61 @@ def consumer():
 <tbody>
 <tr><td class="id">t1</td><td>P1 放入 a</td><td>1</td><td>1</td><td>[a]</td></tr>
 <tr><td class="id">t2</td><td>P2 放入 b</td><td>0</td><td>2</td><td>[a, b]</td></tr>
-<tr><td class="id">t3</td><td>P3 等 spaces</td><td>0（P3 阻塞）</td><td>2</td><td>[a, b]</td></tr>
-<tr><td class="id">t4</td><td>C1 取走 a</td><td>1，唤醒 P3</td><td>1</td><td>[b]</td></tr>
-<tr><td class="id">t5</td><td>P3 放入 c</td><td>0</td><td>2</td><td>[b, c]</td></tr>
+<tr><td class="id">t3</td><td>P3 等 spaces</td><td>−1（P3 阻塞）</td><td>2</td><td>[a, b]</td></tr>
+<tr><td class="id">t4</td><td>C1 取走 a</td><td>0，唤醒 P3</td><td>1</td><td>[b]</td></tr>
+<tr><td class="id">t5</td><td>P3 恢复并放入 c</td><td>0</td><td>2</td><td>[b, c]</td></tr>
 </tbody>
 </table>
 </div>
 
-<p>任何时刻 buffer 的长度都没有超过 2，也没有消费者在空队列上取值。P3 在 t3 阻塞时并没有持有 mutex，所以 C1 可以顺利进入并把空位还回来——这正是「先等条件再拿锁」的收益。</p>
+<p>任何时刻 buffer 的长度都没有超过 2，也没有消费者在空队列上取值。P3 在 t3 阻塞时并没有持有 mutex，所以 C1 可以顺利进入并把空位还回来——这正是“先等条件再拿锁”的收益。</p>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">死锁</span><span class="thm-title">死锁 #4：拿着锁等空位</span><span class="thm-id">6.2</span></div>
+<div class="thm-head"><span class="thm-kind">死锁</span><span class="thm-title">Deadlock #4：拿着锁等空位</span><span class="thm-id">6.3</span></div>
 <div class="thm-body">
-<p>若生产者写成 <code>mutex.wait(); spaces.wait(); buffer.append(e)</code>，缓冲区满时它握着 mutex 睡觉。消费者要取货必须先拿 mutex，于是也睡；空位永远不会被归还。整个系统停死。<b>记忆法：锁只保护数据，信号量负责排队；先排队，后进锁。</b></p>
+<p>若消费者写成 <code>mutex.wait(); items.wait(); buffer.get()</code>，缓冲区空时它握着 mutex 睡觉。生产者要放货必须先拿 mutex，于是也睡；元素永远不会出现。整个系统停死。这是全书第四个死锁，也是最常见的一个。<b>记忆法：锁只保护数据，信号量负责排队；先排队，后进锁。</b></p>
 </div>
 </div>
 
-<h3><span class="sn">6.5</span>扩展到多生产者多消费者</h3>
-<p>代码无需修改就支持任意多生产者和消费者。若要优雅退出，需要 <code>done</code> 标志和「毒丸」消息，否则消费者会永远等在 <code>items</code> 上。</p>
+<h3><span class="sn">6.5</span>为什么不能“读一下 items 再决定”</h3>
+<p>原书提出一个诱人的错误写法：<code>if items &gt;= bufferSize: block()</code>。问题是我们<b>无权读取信号量的值</b>。即使某些实现暴露了 <code>value</code>，读到的也是瞬间快照：读完到真正 add 之间，别的生产者可能已经填满。正确的做法不是“读值判断”，而是“先用 wait 占住一个名额”——把判断与占位合并成一个原子动作。</p>
+
+<h3><span class="sn">6.6</span>扩展到多生产者多消费者与优雅退出</h3>
+<p>代码无需修改就支持任意多生产者和消费者。若要优雅退出，需要 <code>done</code> 标志和“毒丸”（poison pill）消息：生产者在结束时放入 n 个特殊事件，消费者遇到就退出，否则它们会永远等在 <code>items</code> 上。毒丸数量必须等于消费者数，且要放在所有真实事件之后。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>场景</th><th>信号量</th><th>初值</th><th>谁 wait / 谁 signal</th></tr></thead>
+<tbody>
+<tr><td>无界</td><td><code>items</code> + <code>mutex</code></td><td>0 / 1</td><td>消费者等 items；生产者发 items</td></tr>
+<tr><td>有界</td><td><code>items</code> + <code>spaces</code> + <code>mutex</code></td><td>0 / N / 1</td><td>生产者等 spaces；消费者发 spaces</td></tr>
+<tr><td>错误写法</td><td>先 mutex 后 items</td><td>—</td><td>持锁等待 → Deadlock #4</td></tr>
+<tr><td>性能写法</td><td>先释放 mutex 再 signal</td><td>—</td><td>避免“唤醒后立刻撞锁”</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">本章四个常见错误</span><span class="thm-id">6.4</span></div>
+<div class="thm-body">
+<p><b>把 items 当“缓冲区大小”。</b>items 数的是元素，spaces 数的才是空位；两者初值不能都写 N。</p>
+<p><b>在锁内 signal。</b>正确性通常不受影响，但会制造“唤醒—撞锁—再睡”的抖动；高并发下吞吐明显下降。</p>
+<p><b>只用一个信号量同时表达空与满。</b>一个计数无法区分“等在空”和“等在满”，必须两个。</p>
+<p><b>退出时没有毒丸。</b>消费者永远阻塞在 items 上，进程无法 join。毒丸是“用数据流传递结束信号”的标准做法。</p>
+</div>
+</div>
 </div>
 </section>
 
 <section id="ch7" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 7 · Categorical Exclusion</div>
-<h2><span class="num">7</span>分类互斥：读者写者与三类线程</h2>
-<p class="lede">这里的互斥不是「只许一个」，而是「同类可共存，异类必排斥」。一旦允许同类结伴，第一个进门的人和最后一个出门的人就获得了额外职责——这正是 Lightswitch 要封装的东西。</p>
+<div class="sec-label">Chapter 4 · Readers-Writers</div>
+<h2><span class="num">7</span>分类互斥：读者-写者、饥饿与 Morris 算法</h2>
+<p class="lede">这里的互斥不是“只许一个”，而是“同类可共存，异类必排斥”。一旦允许同类结伴，第一个进门的人和最后一个出门的人就获得了额外职责——这正是 Lightswitch 要封装的东西。</p>
 
 <div class="chap-intro">
-<p>本节讲读者写者的基础解、写者饿死的成因与两种补救，再把同一套 Lightswitch 复用到 search-insert-delete 的三类线程上。</p>
-<span class="tag">Classic + Three-way</span>
+<p>本节对应原书 4.2 Readers-writers（hint、solution、Starvation、no-starve hint/solution、writer-priority hint/solution）与 4.3 No-starve mutex（hint、Morris 算法）。先讲分类互斥与写者饥饿（starvation），再讲如何用旋转门与两个 Lightswitch 调整优先级，最后回到最基础的“弱信号量下互斥量本身也会饿死人”。</p>
+<span class="tag">Classical + Fairness</span>
 </div>
 
 <div class="mapchips">
@@ -1206,34 +1588,38 @@ def consumer():
 <span class="chip">starvation</span>
 <span class="chip">turnstile</span>
 <span class="chip">writer priority</span>
+<span class="chip">Morris</span>
+<span class="chip">weak semaphore</span>
 </div>
 
-<h3><span class="sn">7.1</span>约束与「分类互斥」</h3>
-<p>任意数量的读者可以同时读；写者必须独占。这被称为<strong>分类互斥</strong>：临界区里的线程只排斥其他类别。实现它的关键是一个「房间里有没有人」的信号量，以及一个统计读者人数的计数器。</p>
+<div class="note"><b>原书小节：</b>Readers-writers problem · Readers-writers hint · Readers-writers solution · Starvation · No-starve readers-writers hint · No-starve readers-writers solution · Writer-priority readers-writers hint · Writer-priority readers-writers solution · No-starve mutex · No-starve mutex hint · No-starve mutex solution.</div>
+
+<h3><span class="sn">7.1</span>约束与“分类互斥”</h3>
+<p>任意数量的读者可以同时读；写者必须独占。这被称为<strong>分类互斥</strong>（categorical mutual exclusion）：临界区里的线程只排斥其他类别。原书用三个变量起步：<code>readers</code> 计数、<code>mutex</code> 保护计数、<code>roomEmpty</code> 表示房间是否空。</p>
 
 <h3><span class="sn">7.2</span>Lightswitch：第一个开灯，最后一个关灯</h3>
 <p>把计数、首次加锁、末次解锁封装成可复用组件，外部传入房间锁。</p>
 
 <pre><code class="language-python">class Lightswitch:
     def __init__(self):
+        self.counter = 0
         self.mutex = Sem(1)
-        self.count = 0
 
-    def lock(self, room):
+    def lock(self, semaphore):
         self.mutex.wait()
-        self.count += 1
-        if self.count == 1:
-            room.wait()         # 第一个进来的人锁房间
+        self.counter += 1
+        if self.counter == 1:
+            semaphore.wait()        # 第一个进来的人锁房间
         self.mutex.signal()
 
-    def unlock(self, room):
+    def unlock(self, semaphore):
         self.mutex.wait()
-        self.count -= 1
-        if self.count == 0:
-            room.signal()       # 最后走的人开房间
+        self.counter -= 1
+        if self.counter == 0:
+            semaphore.signal()      # 最后走的人开房间
         self.mutex.signal()</code></pre>
 
-<p>第一个读者调用 <code>lock(roomEmpty)</code> 时把 roomEmpty 从 1 减到 0，等于告诉写者「里面有人」；后到的读者只增加计数，因此可以长驱直入。最后一个读者离开时才把房间还给写者。</p>
+<p>第一个读者调用 <code>lock(roomEmpty)</code> 时把 roomEmpty 从 1 减到 0，等于告诉写者“里面有人”；后到的读者只增加计数，因此可以长驱直入。最后一个读者离开时才把房间还给写者。</p>
 
 <h3><span class="sn">7.3</span>基础解：写者很简单，读者要靠开关</h3>
 <pre><code class="language-python">readSwitch = Lightswitch()
@@ -1241,50 +1627,50 @@ roomEmpty = Sem(1)
 
 def reader():
     readSwitch.lock(roomEmpty)
-    read_data()
+    # critical section for readers
     readSwitch.unlock(roomEmpty)
 
 def writer():
     roomEmpty.wait()
-    write_data()
+    # critical section for writers
     roomEmpty.signal()</code></pre>
 
 <div class="thm theorem">
 <div class="thm-head"><span class="thm-kind">正确性</span><span class="thm-title">为什么这能保证分类互斥</span><span class="thm-id">7.1</span></div>
 <div class="thm-body">
-<p>写者持 roomEmpty 时其值为 0，新读者一律阻塞；而写者能拿到它，前提是最后一个读者已经离开。反过来，只要房间里还有一个读者，roomEmpty 就为 0，写者也进不来。两类线程因此不可能同时在临界区。</p>
+<p>写者持 roomEmpty 时其值为 0，新读者一律阻塞；而写者能拿到它，前提是最后一个读者已经离开。反过来，只要房间里还有一个读者，roomEmpty 就为 0，写者也进不来。两类线程因此不可能同时在临界区。另一个可证明的断言是：<b>最多只有一个读者在 roomEmpty 上排队</b>，因为第一个读者持它时，其他读者都排在 Lightswitch 内部的 mutex 上。</p>
 </div>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">饿死</span><span class="thm-title">写者可能永远等不到房间空</span><span class="thm-id">7.2</span></div>
+<div class="thm-head"><span class="thm-kind">饥饿</span><span class="thm-title">写者可能永远等不到房间空</span><span class="thm-id">7.2</span></div>
 <div class="thm-body">
-<p>只要读者源源不断，新读者就能在前一个离开前继续增加 count，roomEmpty 始终为 0。写者每次眼看房间要空，又被新读者抢先。它没有违反互斥，却永远得不到执行——这是<strong>饿死</strong>，不是死锁。</p>
+<p>只要读者源源不断，新读者就能在前一个离开前继续增加 counter，roomEmpty 始终为 0。写者每次眼看房间要空，又被新读者抢先。它没有违反互斥，却永远得不到执行——这是<strong>饥饿</strong>（starvation），不是死锁（deadlock）。区别在于：系统仍在前进，只是某个线程被无限期跳过。</p>
 </div>
 </div>
 
 <h3><span class="sn">7.4</span>无饿死：在门口加一道旋转门</h3>
 <p>给入口加闸：写者一旦卡住，后来的读者必须排在它后面。</p>
 
-<pre><code class="language-python">turnstile = Sem(1)
+<pre><code class="language-python">readSwitch = Lightswitch()
+roomEmpty = Sem(1)
+turnstile = Sem(1)
 
 def reader():
     turnstile.wait()
     turnstile.signal()          # 只是路过，立刻放行下一个人
     readSwitch.lock(roomEmpty)
-    read_data()
+    # critical section for readers
     readSwitch.unlock(roomEmpty)
 
 def writer():
     turnstile.wait()            # 关闸：后来的读者排队
     roomEmpty.wait()            # 等房间里的人走空
-    write_data()
+    # critical section for writers
     turnstile.signal()          # 开闸
     roomEmpty.signal()</code></pre>
 
-<p>写者持有 turnstile 时等 roomEmpty，等待链不成环，因此安全。</p>
-
-<p>三种版本的取舍很清楚：基础版只保证安全；加 turnstile 后写者至少能进一次，但读者仍可能插队；写者优先版让写者排队后读者全停，代价是读者可能饿死。</p>
+<p>写者持有 turnstile 时等 roomEmpty，等待链不成环，因此安全。但注意：写者释放 turnstile 后，被唤醒的可能是读者也可能是写者；这个版本只保证“至少有一个写者能进”，不保证写者全部优先。读者仍可能在写者之间插队。</p>
 
 <h3><span class="sn">7.5</span>写者优先：两个 Lightswitch 对锁</h3>
 <p>写者优先用两个开关互相牵制：读者开关控制 <code>noWriters</code>，写者开关控制 <code>noReaders</code>。</p>
@@ -1298,20 +1684,1015 @@ def reader():
     noReaders.wait()                 # 写者排队时，这里会挡住新读者
     readSwitch.lock(noWriters)
     noReaders.signal()
-    read_data()
+    # critical section for readers
     readSwitch.unlock(noWriters)
 
 def writer():
     writeSwitch.lock(noReaders)      # 第一个写者关住读者入口
     noWriters.wait()
-    write_data()
+    # critical section for writers
     noWriters.signal()
     writeSwitch.unlock(noReaders)</code></pre>
 
-<h3><span class="sn">7.6</span>推演：R1、R2、W1、R3</h3>
-<p>基础版里 R1、R2 进入后写者 W1 阻塞，R3 仍能进入；加上 turnstile 后 W1 一到就关闸，R3 被挡在门外，R1、R2 离开后 W1 立刻接上。</p>
+<p>写者在临界区时同时持有 noReaders 与 noWriters；第一个写者把 noReaders 锁住，后续写者只在 noWriters 上排队，因此<b>多个写者可以连续通过</b>，直到最后一个写者离开才放开 noReaders。代价是读者可能饥饿——对某些应用，可预测的写延迟比读者的公平更重要。</p>
 
-<h3><span class="sn">7.7</span>三类线程：查找、插入、删除</h3>
+<h3><span class="sn">7.6</span>推演：R1、R2、W1、R3</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>版本</th><th>R1、R2 在 room</th><th>W1 到达</th><th>R3 到达</th><th>结果</th></tr></thead>
+<tbody>
+<tr><td>基础版</td><td>roomEmpty=0</td><td>阻塞在 roomEmpty</td><td>可直接进入（只加计数）</td><td>W1 可能无限等</td></tr>
+<tr><td>no-starve</td><td>roomEmpty=0，turnstile=1</td><td>拿 turnstile，阻塞在 roomEmpty</td><td>阻塞在 turnstile</td><td>读者走空后 W1 必进</td></tr>
+<tr><td>writer-priority</td><td>读者持 noWriters</td><td>锁 noReaders，等 noWriters</td><td>阻塞在 noReaders</td><td>写者全走完读者才进</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">7.7</span>更基础的问题：互斥量本身也会饿死人</h3>
+<p>原书 4.3 把“分类饥饿”推进到“单个线程饥饿”。考虑三个线程跑无限循环：<code>mutex.wait(); critical; mutex.signal()</code>。A 出来后立刻绕回队尾，B 出来后 A 又可能抢到，C 永远轮不到。即使信号量满足“有等待者就一定唤醒一个”（Property 3），也不够；要排除饥饿，需要更强的 <b>Property 4</b>：一个线程排队后，在它之前被唤醒的线程数有界。FIFO 信号量（强信号量，strong semaphore）满足 Property 4。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">弱信号量与强信号量</span><span class="thm-id">7.3</span></div>
+<div class="thm-body">
+<p><b>弱信号量</b>（weak semaphore）：若 signal 时有等待者，至少唤醒一个（Property 3），但不保证是谁。<b>强信号量</b>（strong semaphore）：等待者按 FIFO 唤醒，排队后前方人数有界（Property 4）。Dijkstra 曾猜想弱信号量无法实现无饥饿互斥；1979 年 J. M. Morris 在“线程数有限”的假设下给出了反例构造。</p>
+</div>
+</div>
+
+<h3><span class="sn">7.8</span>Morris 算法：两个候诊室，两道旋转门</h3>
+<p>思路类似可复用屏障：用两道旋转门把线程分成“第一候诊室”和“第二候诊室”。第一阶段 t1 开、t2 关，线程逐个进入第二室；当第一室清空时，最后一个进入者关闭 t1、打开 t2，第二室里的人整批进入临界区，任何新来的线程都被 t1 挡住。</p>
+
+<pre><code class="language-python">room1 = room2 = 0
+mutex = Sem(1)
+t1 = Sem(1)
+t2 = Sem(0)
+
+def thread():
+    global room1, room2
+    mutex.wait()
+    room1 += 1
+    mutex.signal()
+
+    t1.wait()
+    room2 += 1
+    mutex.wait()
+    room1 -= 1
+    if room1 == 0:
+        mutex.signal()
+        t2.signal()          # 第一室空了：打开第二道门
+    else:
+        mutex.signal()
+        t1.signal()          # 还有人在第一室：放一个进来
+
+    t2.wait()
+    room2 -= 1
+    # critical section
+
+    if room2 == 0:
+        t1.signal()          # 第二室空了：重新打开第一道门
+    else:
+        t2.signal()          # 把第二道门传给下一个人</code></pre>
+
+<p>直觉：一个线程进入临界区时，要么持有 t1，要么持有 t2，但不会同时持有。第一室不断有人时，t2 保持关闭，第二室的人等待；由于线程数有限，第一室终会清空，某个线程打开 t2，第二室整批放行。此后再来的线程卡在 t1 上，不能插到这批人前面。于是每个线程前面被插队的人数有界。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>方案</th><th>互斥</th><th>写者/线程饥饿</th><th>代价</th></tr></thead>
+<tbody>
+<tr><td>基础 readers-writers</td><td>是</td><td>写者可能饿死</td><td>读者吞吐最高</td></tr>
+<tr><td>加 turnstile</td><td>是</td><td>至少一个写者能进</td><td>读者仍可能插队</td></tr>
+<tr><td>writer-priority</td><td>是</td><td>写者优先，读者可能饿死</td><td>读者延迟不可控</td></tr>
+<tr><td>Morris</td><td>是</td><td>弱信号量下也无饥饿</td><td>实现复杂、并发度低</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">分类互斥的三个前提</span><span class="thm-id">7.4</span></div>
+<div class="thm-body">
+<p><b>写者或删除者绝不能去拿 Lightswitch 内部的 mutex。</b>读者正握着那把 mutex 等房间空；对方一来抢，就形成“读者等写者腾房间、写者等读者放 mutex”的循环。</p>
+<p><b>Lightswitch 不可重入。</b>同一线程第二次调用 <code>lock</code> 会锁死自己。另外，分类互斥不承诺公平：需要先来先得，就必须显式排队或加闸门。</p>
+<p><b>把“无死锁”当成“无饥饿”。</b>W1 一直等不到 roomEmpty 时，系统仍在运行；这不是死锁，但同样不可接受。检查清单要分开问：系统会不会整体停住？某个线程会不会永远轮不到？</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ch8" class="chapter">
+<div class="wrap">
+<div class="sec-label">Chapter 4 · Dining Philosophers</div>
+<h2><span class="num">8</span>哲学家就餐：破坏循环等待的三种手法</h2>
+<p class="lede">五个人围坐圆桌，每人需要两把叉子。所有人都先拿右边、再等左边，就会形成一条首尾相接的等待环——这是并发教材里最著名的死锁，也是最容易用“少一个人上桌”破解的死锁。</p>
+
+<div class="chap-intro">
+<p>本节对应原书 4.4 的全部小节：Dining philosophers、Deadlock #5、hint #1、solution #1（footman）、solution #2（左撇子）、Tanenbaum's solution、Starving Tanenbaums。先还原死锁 #5 的环形等待，再给出三种解法，最后说明为什么“无死锁”不等于“无饥饿”。</p>
+<span class="tag">Classic</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">circular wait</span>
+<span class="chip">footman</span>
+<span class="chip">leftie / rightie</span>
+<span class="chip">state array</span>
+<span class="chip">test()</span>
+<span class="chip">starvation</span>
+</div>
+
+<div class="note"><b>原书小节：</b>Dining philosophers · Deadlock #5 · Dining philosophers hint #1 · Dining philosophers solution #1 · Dining philosopher's solution #2 · Tanenbaum's solution · Starving Tanenbaums.</div>
+
+<h3><span class="sn">8.1</span>问题、约束与死锁 #5</h3>
+<p>五位哲学家在思考与进食之间循环。进食需要同时持有左右两把叉子，每把叉子同一时刻只能被一个人持有。原书用 <code>left(i) = i</code>、<code>right(i) = (i+1) % 5</code> 给叉子编号，<code>forks = [Sem(1) for i in range(5)]</code> 初始化。</p>
+<p>四条约束：<b>(1)</b> 一把叉子同时只给一个人；<b>(2)</b> 不可能死锁；<b>(3)</b> 不可能有人饿死；<b>(4)</b> 允许多人同时吃（否则退化成串行，没有意义）。最后一条是“效率”要求，也是区分好坏解法的地方。</p>
+
+<pre><code class="language-python">def get_forks(i):
+    fork[right(i)].wait()       # 先右
+    fork[left(i)].wait()        # 后左
+
+def put_forks(i):
+    fork[right(i)].signal()
+    fork[left(i)].signal()</code></pre>
+
+<p>如果五个人同时拿起右叉，每个人都在等左边那把握在邻居手里的叉子，等待关系成环，系统永久停住。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>哲学家</th><th>已持有</th><th>正在等待</th><th>被谁持有</th></tr></thead>
+<tbody>
+<tr><td>P0</td><td>叉 1</td><td>叉 0</td><td>P1</td></tr>
+<tr><td>P1</td><td>叉 2</td><td>叉 1</td><td>P2</td></tr>
+<tr><td>P2</td><td>叉 3</td><td>叉 2</td><td>P3</td></tr>
+<tr><td>P3</td><td>叉 4</td><td>叉 3</td><td>P4</td></tr>
+<tr><td>P4</td><td>叉 0</td><td>叉 4</td><td>P0</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">8.2</span>解法一：只允许四个人上桌（footman）</h3>
+<p>死锁需要“每个人都拿到一把、再等另一把”。如果最多只有四个人能同时尝试，那么第五把叉子一定空闲，而它两侧的两个人中至少有一个已经持有另一把，于是那个人可以吃到，环被打破。</p>
+
+<pre><code class="language-python">footman = Sem(4)        # 门童：最多放 4 人进来
+
+def get_forks(i):
+    footman.wait()
+    fork[right(i)].wait()
+    fork[left(i)].wait()
+
+def put_forks(i):
+    fork[right(i)].signal()
+    fork[left(i)].signal()
+    footman.signal()</code></pre>
+
+<p>这个解法还顺带避免了饿死：你等的叉子若在邻居手里，邻居吃完必然放下，而你是唯一等待者，下一次一定轮到你。原书的论证是：假设你在等右叉，右邻居正在吃；<code>eat</code> 必然终止，所以它最终会放下；而你是那把叉子的唯一等待者，因此必然拿到。同理左叉。于是你在桌边的时间有界，等门童的时间也有界（假设 footman 是强信号量）。</p>
+
+<h3><span class="sn">8.3</span>解法二：制造一个左撇子</h3>
+<p>只要五个人里至少有一个先拿左边、至少有一个先拿右边，环形等待就不可能形成。证明用反证：若发生死锁，任取一个左撇子，他必是“持左等右”，于是他的右邻居也必须是左撇子；沿着环推下去，所有人都是左撇子，与“至少有一个右撇子”矛盾。</p>
+
+<pre><code class="language-python">def get_forks(i):
+    if i == 0:                      # 只有 P0 是左撇子
+        first, second = left(i), right(i)
+    else:
+        first, second = right(i), left(i)
+    fork[first].wait()
+    fork[second].wait()
+
+def put_forks(i):
+    fork[second].signal()
+    fork[first].signal()</code></pre>
+
+<p>只改一个人拿叉的顺序，就破坏了对称性。这个技巧在分布式系统中很常见：给资源编号，要求所有人按同一全序申请，环就无法闭合。注意“全序申请”是比“一个左撇子”更强的规则：所有线程都按编号从小到大拿，任何环都不可能出现。</p>
+
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">证明思路</span><span class="thm-title">为什么一个左撇子就够</span><span class="thm-id">8.1</span></div>
+<div class="thm-body">
+<p>死锁只能发生在“5 个人各持一把、都在等另一把”的满环状态。设 P<sub>j</sub> 是左撇子，则它持左叉等右叉；它的右邻居 P<sub>k</sub> 要持着 P<sub>j</sub> 等的右叉，只能是“持左等右”，即 P<sub>k</sub> 也是左撇子。沿右方向归纳，所有人都是左撇子，矛盾。若从右撇子出发同理可得所有人都是右撇子。因此死锁不可能。</p>
+</div>
+</div>
+
+<h3><span class="sn">8.4</span>解法三：Tanenbaum 的状态数组</h3>
+<p>前两种解法靠限制并发或打破对称，第三种则把“谁能吃”交给一个中央裁判。每位哲学家有 <code>thinking / hungry / eating</code> 三态，另有一个私有信号量。拿叉时在 mutex 内把自己标为 hungry，然后测试左右邻居是否在吃；只有都不吃，才把自己标为 eating 并 signal 自己。</p>
+
+<pre><code class="language-python">state = ["thinking"] * 5
+sem   = [Sem(0) for _ in range(5)]
+mutex = Sem(1)
+
+def test(i):
+    if (state[i] == "hungry"
+            and state[left(i)] != "eating"
+            and state[right(i)] != "eating"):
+        state[i] = "eating"
+        sem[i].signal()             # 允许自己继续
+
+def get_fork(i):
+    mutex.wait()
+    state[i] = "hungry"
+    test(i)
+    mutex.signal()
+    sem[i].wait()                   # 若没被批准，就在这里等
+
+def put_fork(i):
+    mutex.wait()
+    state[i] = "thinking"
+    test(right(i))                  # 也许邻居现在能吃了
+    test(left(i))
+    mutex.signal()</code></pre>
+
+<p>死锁不可能发生：唯一被多人共享的信号量是 mutex，而没有任何线程在持有 mutex 时等待 sem[i]。但<strong>饿死仍然可能</strong>。Gingras 给过一个循环：初始 P2、P4 在吃，P1、P3 饥饿；P2 起身后 P1 坐下，P4 起身后 P3 坐下，局面变成镜像；再把 P3、P4 与 P1、P2 轮换一次，就回到初始状态。P0 永远等不到两个邻居同时不吃。</p>
+
+<h3><span class="sn">8.5</span>推演：footman = 4</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>时刻</th><th>事件</th><th>叉子状态</th><th>谁在等</th></tr></thead>
+<tbody>
+<tr><td class="id">t1</td><td>P0–P3 通过门童</td><td>0,1,2,3 各被持一把</td><td>P4 在 footman 上</td></tr>
+<tr><td class="id">t2</td><td>P3 拿叉 4</td><td>P3 持 3、4</td><td>P2 等叉 3</td></tr>
+<tr><td class="id">t3</td><td>P3 吃完，放下 4、3</td><td>3、4 空闲</td><td>P2、P4 可继续</td></tr>
+<tr><td class="id">t4</td><td>P2 拿 3，P4 进门拿 4</td><td>链条从末端解开</td><td>无人永久阻塞</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">无死锁 ≠ 无饿死</span><span class="thm-id">8.2</span></div>
+<div class="thm-body">
+<p>footman 与非对称解法都同时消除了死锁和饿死；Tanenbaum 的状态数组只消除了死锁。检查并发方案时要分开问：<b>系统会不会整体停住？</b>（安全性）与<b>某个线程会不会永远轮不到？</b>（公平性）。两者需要不同的论证。</p>
+<p>另一个常见误解是“按编号拿叉”只适用于哲学家。它其实是通用的<b>资源全序</b>规则：把全部锁编号，任何线程只能按升序获取；这样等待关系不可能成环。代价是可能降低并发度。</p>
+</div>
+</div>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>解法</th><th>死的？</th><th>饿的？</th><th>并发度</th></tr></thead>
+<tbody>
+<tr><td>naive（先右后左）</td><td>会死锁</td><td>—</td><td>—</td></tr>
+<tr><td>footman = n−1</td><td>不会</td><td>不会</td><td>最多 n−1 人尝试</td></tr>
+<tr><td>一个左撇子</td><td>不会</td><td>不会</td><td>接近 n 人</td></tr>
+<tr><td>Tanenbaum</td><td>不会</td><td>可能（Gingras 循环）</td><td>局部最优，邻居可同吃</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="ch9" class="chapter">
+<div class="wrap">
+<div class="sec-label">Chapter 4 · Cigarette Smokers</div>
+<h2><span class="num">9</span>抽烟者：不要让被唤醒的人去抢材料</h2>
+<p class="lede">代理每次放出两种材料，拥有第三种材料的抽烟者才能卷烟。天真的写法会让两个抽烟者各抢到一种、再互等对方手里的另一种——这不是资源不够，而是唤醒错了人。</p>
+
+<div class="chap-intro">
+<p>本节对应原书 4.5 的全部小节：Cigarette smokers problem、Deadlock #6、Smokers problem hint、Smoker problem solution、Generalized Smokers Problem（hint、solution）。核心是 Parnas 的 pusher（推手）方案：把“查看桌面”从抽烟者手里拿走，交给三个串行的推手，用一块记分板决定该叫醒谁。</p>
+<span class="tag">Classic</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">agent</span>
+<span class="chip">pusher</span>
+<span class="chip">scoreboard</span>
+<span class="chip">deadlock #6</span>
+<span class="chip">wake the right one</span>
+<span class="chip">generalized smokers</span>
+</div>
+
+<div class="note"><b>原书小节：</b>Cigarette smokers problem · Deadlock #6 · Smokers problem hint · Smoker problem solution · Generalized Smokers Problem · Generalized Smokers Problem Hint · Generalized Smokers Problem Solution.</div>
+
+<h3><span class="sn">9.1</span>问题与约束</h3>
+<p>四类线程：一个代理（实际是三个并发线程 A/B/C）和三个抽烟者。材料是烟草（tobacco）、纸（paper）、火柴（match）。每个抽烟者拥有一种材料的无限供应，缺另外两种；代理拥有三种材料的无限供应，每次随机放出<b>两种不同</b>的材料。拥有第三种材料的人应拿走桌上两种、卷烟，抽完通知代理。</p>
+<p>代理代码固定，不能修改——这是“有趣版本”的唯一限制。代理的三个线程各自等 <code>agentSem</code>，醒来后放两种材料：</p>
+
+<pre><code class="language-python">agentSem = Sem(1)
+tobacco  = Sem(0)
+paper    = Sem(0)
+match    = Sem(0)
+
+def agent_A():
+    agentSem.wait()
+    tobacco.signal()
+    paper.signal()
+
+def agent_B():
+    agentSem.wait()
+    paper.signal()
+    match.signal()
+
+def agent_C():
+    agentSem.wait()
+    tobacco.signal()
+    match.signal()</code></pre>
+
+<p>约束是：不叫醒材料不齐的人，也不让材料齐了却没人醒。Patil 的原始版本还不许用条件语句或信号量数组，并声称无解；Parnas 指出“禁条件语句”过于人为，去掉后即可解。原书聚焦这个“有趣版本”。</p>
+
+<h3><span class="sn">9.2</span>天真写法为什么死锁（Deadlock #6）</h3>
+<pre><code class="language-python"># 反例：不要这样写
+def smoker_with_matches():      # 自己有火柴，等烟草 + 纸
+    tobacco.wait()
+    paper.wait()
+    agentSem.signal()
+    smoke()
+
+def smoker_with_tobacco():      # 自己有烟草，等纸 + 火柴
+    paper.wait()
+    match.wait()
+    agentSem.signal()
+    smoke()
+
+def smoker_with_paper():        # 自己有纸，等烟草 + 火柴
+    tobacco.wait()
+    match.wait()
+    agentSem.signal()
+    smoke()</code></pre>
+<p>假设代理放出烟草和纸。拥有火柴的人被 <code>tobacco</code> 唤醒，拥有烟草的人被 <code>paper</code> 唤醒；两人各拿走一样，然后分别等对方手里的那样。桌上明明凑齐了，却没有人能继续。更糟的是，第三个抽烟者根本没被唤醒，连“材料齐了”都不知道。</p>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">死锁</span><span class="thm-title">Deadlock #6：唤醒是单播，材料不是</span><span class="thm-id">9.1</span></div>
+<div class="thm-body">
+<p>信号量只负责“叫醒一个人”，不负责“告诉他桌上有什么”。当一个事件同时 signal 两个材料信号量时，两个不同的抽烟者都可能被唤醒，而每个人只看到自己等的那一个。<b>解决办法不是加更多信号量，而是把“谁该醒”的判断集中到一个串行的地方。</b></p>
+</div>
+</div>
+
+<h3><span class="sn">9.3</span>推手方案：三个串行的裁判</h3>
+<p>为每种材料配一个“推手”（pusher）。推手不会被抽烟者直接调用，而是等代理放出自己负责的材料。它进入 mutex 后查看桌面记分板：如果另外两种里已经有一种在桌上，说明材料凑齐，立刻把那位拥有缺失材料的抽烟者叫醒，并清掉桌上的记录；如果桌上什么都没有，就把自己的材料记下，安静离开。</p>
+
+<pre><code class="language-python">isTobacco = isPaper = isMatch = False
+tobaccoSem = Sem(0)
+paperSem   = Sem(0)
+matchSem   = Sem(0)
+mutex      = Sem(1)
+
+def pusher_A():                     # 响应“桌上有烟草”
+    while True:
+        tobacco.wait()
+        mutex.wait()
+        if isPaper:
+            isPaper = False
+            matchSem.signal()       # 有烟草 + 纸 → 叫醒有火柴的人
+        elif isMatch:
+            isMatch = False
+            paperSem.signal()       # 有烟草 + 火柴 → 叫醒有纸的人
+        else:
+            isTobacco = True        # 先记下，等另一个推手
+        mutex.signal()
+
+def pusher_B():                     # 响应“桌上有纸”
+    while True:
+        paper.wait()
+        mutex.wait()
+        if isMatch:
+            isMatch = False
+            tobaccoSem.signal()
+        elif isTobacco:
+            isTobacco = False
+            matchSem.signal()
+        else:
+            isPaper = True
+        mutex.signal()
+
+def pusher_C():                     # 响应“桌上有火柴”
+    while True:
+        match.wait()
+        mutex.wait()
+        if isTobacco:
+            isTobacco = False
+            paperSem.signal()
+        elif isPaper:
+            isPaper = False
+            tobaccoSem.signal()
+        else:
+            isMatch = True
+        mutex.signal()
+
+def smoker_with_tobacco():
+    while True:
+        tobaccoSem.wait()           # 我拥有的材料正是桌上缺的
+        makeCigarette()
+        agentSem.signal()           # 通知代理：继续
+        smoke()</code></pre>
+
+<p>三个推手分别以 <code>tobacco</code>、<code>paper</code>、<code>match</code> 触发。代理的三个线程仍然只负责 <code>agentSem.wait()</code> 后放出两种材料，不需要知道抽烟者的存在——这一点很重要，它满足“不修改代理”的原始约束。</p>
+
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">正确性</span><span class="thm-title">为什么不会叫错人</span><span class="thm-id">9.2</span></div>
+<div class="thm-body">
+<p>推手全部串行经过 mutex，因此“读记分板 + 修改记分板 + 发信号”是一个原子事务。第一个推手若看不到另一种材料，只能记下自己的；第二个推手一定能看到它，因为两者之间没有别人能清空桌面。此时桌上恰好有两种材料，缺失的那种唯一确定，signal 的正是拥有它的抽烟者。被叫醒的人面对的是完整的一套材料，不需要再抢。</p>
+</div>
+</div>
+
+<h3><span class="sn">9.4</span>推演：代理放出烟草 + 纸</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>时刻</th><th>谁在跑</th><th>记分板</th><th>动作</th></tr></thead>
+<tbody>
+<tr><td class="id">t1</td><td>Agent A</td><td>全 False</td><td>signal tobacco、signal paper</td></tr>
+<tr><td class="id">t2</td><td>Pusher A</td><td>isTobacco=True</td><td>没看到纸或火柴，记下烟草</td></tr>
+<tr><td class="id">t3</td><td>Pusher B</td><td>isTobacco=False</td><td>看到烟草 → 缺火柴 → signal matchSem</td></tr>
+<tr><td class="id">t4</td><td>拥有火柴者</td><td>全 False</td><td>取走烟草与纸，卷烟</td></tr>
+<tr><td class="id">t5</td><td>拥有火柴者</td><td>全 False</td><td>抽完，signal agentSem</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">9.5</span>广义抽烟者：材料会累积</h3>
+<p>Parnas 的扩展去掉了“代理放完材料后必须等抽烟者”的限制。于是代理可以连续放多轮，桌上可能出现多份同种材料；布尔值不够，要改成整数计数。</p>
+
+<pre><code class="language-python">numTobacco = numPaper = numMatch = 0
+
+def pusher_A():                     # 响应“桌上有烟草”
+    while True:
+        tobacco.wait()
+        mutex.wait()
+        if numPaper:
+            numPaper -= 1
+            matchSem.signal()
+        elif numMatch:
+            numMatch -= 1
+            paperSem.signal()
+        else:
+            numTobacco += 1
+        mutex.signal()</code></pre>
+
+<p>直觉：每个代理线程醒来后“创建两个推手”，各拿一种材料，把它们和所有其他推手一起丢进一个房间。由于 mutex，推手们逐个进入房间，看到桌上已有三张睡着的抽烟者和一张桌子。能凑齐一套就取走材料、叫醒对应的人；凑不齐就把自己的材料留在桌上离开。计数版本与布尔版本的结构完全一样，只是“在不在”换成了“有几个”。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>方案</th><th>记分板</th><th>能否处理累积</th><th>问题</th></tr></thead>
+<tbody>
+<tr><td>天真写法</td><td>无</td><td>否</td><td>Deadlock #6：两人各抢一半</td></tr>
+<tr><td>Parnas pusher</td><td>三个 bool</td><td>否（每轮清空）</td><td>代理必须等抽烟者</td></tr>
+<tr><td>广义 pusher</td><td>三个 int</td><td>是</td><td>需要处理计数下溢</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">本章三个常见错误</span><span class="thm-id">9.3</span></div>
+<div class="thm-body">
+<p><b>让抽烟者自己检查桌面。</b>检查与取材料之间没有原子性，两个抽烟者会各拿一半。检查必须由串行的推手完成。</p>
+<p><b>忘记在推手分支里清记分板。</b>叫醒一个人后没有把对应布尔/计数清零，下一轮会把同一份材料再配一次，导致材料“凭空出现”。</p>
+<p><b>把 agentSem 初始化为 0。</b>代理的三个线程会一起睡死，永远不放材料。它必须初始为 1，表示“代理可以开始工作”。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ch10" class="chapter">
+<div class="wrap">
+<div class="sec-label">Chapter 5 · Service Problems</div>
+<h2><span class="num">10</span>野蛮人与理发店：记分板、会合与 FIFO</h2>
+<p class="lede">当一个问题同时包含“还剩多少”和“谁该醒来”时，单靠计数信号量不够。野蛮人的锅、理发店的椅子，都需要一块记分板记录状态，再用会合把“叫醒”和“确认完成”串起来。</p>
+
+<div class="chap-intro">
+<p>本节对应原书 5.1–5.4：Dining savages（hint、solution）、Barbershop（hint、solution）、FIFO barbershop（hint、solution）、Hilzer's Barbershop（hint、solution）。前三题是“记分板 + 会合”的递进；Hilzer 把椅子、沙发、收银台叠在一起，是全书代码最长的一题。</p>
+<span class="tag">Less Classical</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">scoreboard</span>
+<span class="chip">rendezvous</span>
+<span class="chip">balk</span>
+<span class="chip">per-thread semaphore</span>
+<span class="chip">FIFO</span>
+<span class="chip">sofa / cash register</span>
+</div>
+
+<div class="note"><b>原书小节：</b>The dining savages problem · Dining Savages hint · Dining Savages solution · The barbershop problem · Barbershop hint · Barbershop solution · The FIFO barbershop · FIFO barbershop hint · FIFO barbershop solution · Hilzer's Barbershop problem · Hilzer's barbershop hint · Hilzer's barbershop solution.</div>
+
+<h3><span class="sn">10.1</span>野蛮人：锅空才叫厨师</h3>
+<p>一锅能装 M 份，任意多个野蛮人各自取一份吃。约束：锅空时野蛮人不能取；厨师只能在锅空时加料。这里不能用“份数信号量”直接表达，因为野蛮人在减一之前无法知道“减完是否为负”——而信号量不允许读取值。于是改用记分板：用普通变量 <code>servings</code> 记录剩余份数，用 mutex 保护它。</p>
+
+<pre><code class="language-python">M = 10
+servings = 0
+mutex = Sem(1)
+emptyPot = Sem(0)       # 野蛮人 → 厨师：锅空了
+fullPot  = Sem(0)       # 厨师 → 野蛮人：锅满了
+
+def cook():
+    while True:
+        emptyPot.wait()
+        putServingsInPot(M)     # 重新装满
+        fullPot.signal()
+
+def savage():
+    global servings
+    while True:
+        mutex.wait()
+        if servings == 0:
+            emptyPot.signal()   # 叫厨师
+            fullPot.wait()      # 等他装好（仍持锁）
+            servings = M        # 由被唤醒者填写
+        servings -= 1
+        getServingFromPot()
+        mutex.signal()
+
+        eat()</code></pre>
+
+<p>让被唤醒的野蛮人写 <code>servings = M</code>，是为了让所有访问都在同一把锁内：此刻它正持有 mutex；厨师若也来写就得抢锁，而锁在等锅的人手里。原书说这不是必须的（厨师可以安全地写，因为持锁者正在等 fullPot），但这样写让“所有 servings 访问都在 mutex 内”一眼可见。</p>
+<p>死锁分析：唯一可能卡住的是“野蛮人持锁等 fullPot”。但厨师不需要 mutex，它只需要 emptyPot 的信号；信号已经发出，厨师必然能装锅并 signal fullPot。等待链只有一层，不会成环。</p>
+<p>小推演（M=2）：S1、S2 各取一份，锅空；S3 见 0，signal emptyPot 后持锁睡；厨师装 2 份、signal fullPot；S3 醒来把 servings 置 2、取 1，释放锁，其余人继续排队。</p>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">注</span><span class="thm-title">锅的线程安全性</span><span class="thm-id">10.1</span></div>
+<div class="thm-body">
+<p>原书问：这个解是否保证 <code>putServingsInPot</code> 与 <code>getServingFromPot</code> 互斥？答案是否。它只保证“锅空时不会有人取、锅满前不会有人取”，但取份动作本身在 mutex 内，所以对 <code>servings</code> 的访问是互斥的；锅的物理操作是否线程安全，取决于实现。如果 <code>getServingFromPot</code> 只是“舀一勺”，它不需要额外锁；如果它会修改锅的结构，就需要把锅也纳入保护。</p>
+</div>
+</div>
+
+<h3><span class="sn">10.2</span>理发店：三把椅子加一把理发椅</h3>
+<p>店里最多容纳 n 个顾客（含理发椅）。原书取 n=4：三把等候椅 + 一把理发椅。顾客进门时若已满就 balk（直接离开，不返回）；否则坐下等理发师叫号。理发师没客人时睡觉。约束：剪发时恰好一个顾客在 <code>getHairCut</code>，剪完之前不接待下一位。</p>
+
+<pre><code class="language-python">n = 4
+customers = 0
+mutex = Sem(1)
+customer     = Sem(0)   # 顾客 → 理发师：有人来了
+barber       = Sem(0)   # 理发师 → 顾客：轮到你
+customerDone = Sem(0)   # 顾客 → 理发师：剪完了
+barberDone   = Sem(0)   # 理发师 → 顾客：你可以走了
+
+def customer_thread():
+    global customers
+    mutex.wait()
+    if customers == n:
+        mutex.signal()
+        balk()                  # 满员：直接离开（balk 不返回）
+        return
+    customers += 1
+    mutex.signal()
+
+    customer.signal()           # 叫理发师
+    barber.wait()               # 等他示意坐下
+    getHairCut()
+    customerDone.signal()       # 剪完了
+    barberDone.wait()           # 等他确认
+
+    mutex.wait()
+    customers -= 1              # 离店，腾出名额
+    mutex.signal()
+
+def barber_thread():
+    while True:
+        customer.wait()         # 没客人就睡
+        barber.signal()         # 请这位顾客坐下
+        cutHair()
+        customerDone.wait()     # 等这位剪完
+        barberDone.signal()     # 放他走</code></pre>
+
+<p>两个会合缺一不可：第一对保证“顾客坐下”与“理发师开剪”同步；第二对保证理发师不会在顾客还没离开椅子时就开始下一位。原书特别解释命名：<code>customer.wait()</code> 读作“等一个顾客”，不是“顾客在这里等”。</p>
+<p>推演：C1 进店（customers=1）叫醒理发师并坐下；C2–C4 陆续坐满；C5 见 4 人，balk。C1 剪完、确认、离店（customers=3），理发师才叫 C2。</p>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">balk 路径上的三个错误</span><span class="thm-id">10.2</span></div>
+<div class="thm-body">
+<p><b>忘了释放 mutex 就 balk。</b>满员时直接 return，锁被永久带走，之后所有人都在门口卡死。</p>
+<p><b>balk 前先加了 customers。</b>顺序必须是“检查满 → 释放锁 → 离开”，不能先加再减。否则计数器会在一瞬间超过 n，把后来者错误地拒之门外。</p>
+<p><b>把 n 理解成等候椅数量。</b>书里的 n 是店内总容量（含理发椅）。如果题目说“三把等候椅”，容量就是 4，别把两个数字混用。</p>
+</div>
+</div>
+
+<h3><span class="sn">10.3</span>FIFO 理发店：给每个人一个信号量</h3>
+<p>上面的版本不保证先来先剪：多个顾客都睡在同一个 <code>barber</code> 信号量上，理发师 signal 一次，醒来的是谁由调度器决定。要做到严格 FIFO，必须<strong>把等待者本身排成队列</strong>，每人持有一个只属于自己的信号量。原书用 <code>self</code> 指当前线程对象，因此 <code>self.sem = Sem(0)</code> 是“每个线程各有一把锁”。</p>
+
+<pre><code class="language-python">queue = []              # 存放每位顾客的私有信号量
+
+def customer_thread():
+    global customers
+    self.sem = Sem(0)               # 只属于我
+    mutex.wait()
+    if customers == n:
+        mutex.signal()
+        balk()
+        return
+    customers += 1
+    queue.append(self.sem)          # 按到达顺序入队
+    mutex.signal()
+
+    customer.signal()
+    self.sem.wait()                 # 只等我自己的号
+    getHairCut()
+    customerDone.signal()
+    barberDone.wait()
+
+    mutex.wait()
+    customers -= 1
+    mutex.signal()
+
+def barber_thread():
+    while True:
+        customer.wait()
+        mutex.wait()
+        sem = queue.pop(0)          # 取队首，严格 FIFO
+        mutex.signal()
+        sem.signal()                # 精确叫醒这一个人
+        cutHair()
+        customerDone.wait()
+        barberDone.signal()</code></pre>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>时刻</th><th>事件</th><th>queue</th><th>被叫醒</th></tr></thead>
+<tbody>
+<tr><td class="id">t1</td><td>C1 入队，理发师睡着</td><td>[s1]</td><td>理发师（customer）</td></tr>
+<tr><td class="id">t2</td><td>C2 入队</td><td>[s1, s2]</td><td>无人，C2 等 s2</td></tr>
+<tr><td class="id">t3</td><td>C3 入队</td><td>[s1, s2, s3]</td><td>无人，C3 等 s3</td></tr>
+<tr><td class="id">t4</td><td>理发师取队首 s1</td><td>[s2, s3]</td><td>C1</td></tr>
+<tr><td class="id">t5</td><td>C1 剪完离店</td><td>[s2, s3]</td><td>理发师取 s2</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="intuition">
+<div class="ih">Intuition · 顺序是数据结构，不是信号量的属性</div>
+<p>信号量只承诺“唤醒一个等待者”，从不承诺“唤醒最早的那个”。想要 FIFO，就不要让多个人等同一个信号量；把顺序写进队列，让每个人等自己的那一格。这个思路可以推广到所有“必须按序服务”的题。</p>
+</div>
+
+<h3><span class="sn">10.4</span>Hilzer 理发店：沙发、三把椅子与收银台</h3>
+<p>扩展版有 3 把理发椅、3 位理发师、一张可坐 4 人的沙发、若干站位，消防规定店内总人数不超过 20。顾客依次调用 <code>enterShop、sitOnSofa、getHairCut、pay</code>；理发师调用 <code>cutHair、acceptPayment</code>。沙发坐满时不能坐；剪发最多 3 人并发；付款一次一人（只有一个收银台）；理发师必须收完款，顾客才能离开。</p>
+
+<pre><code class="language-python">n = 20
+customers = 0
+mutex  = Sem(1)
+sofa   = Sem(4)
+customer1 = Sem(0)
+customer2 = Sem(0)
+barber    = Sem(0)
+payment   = Sem(0)
+receipt   = Sem(0)
+queue1 = []      # 等沙发的人（每线程一个私有信号量）
+queue2 = []      # 等理发椅的人
+
+def customer_thread():
+    self.sem1 = Sem(0)
+    self.sem2 = Sem(0)
+
+    mutex.wait()
+    if customers == n:
+        mutex.signal()
+        balk()
+        return
+    customers += 1
+    queue1.append(self.sem1)
+    mutex.signal()
+
+    enterShop()
+    customer1.signal()          # 通知理发师：队列里有人
+    self.sem1.wait()            # 等沙发空位
+
+    sofa.wait()
+    sitOnSofa()
+    self.sem1.signal()          # 把 sem1 传给下一位（接力棒）
+    mutex.wait()
+    queue2.append(self.sem2)
+    mutex.signal()
+    customer2.signal()
+    self.sem2.wait()            # 等理发椅
+    sofa.signal()               # 离开沙发
+
+    sitInBarberChair()
+    pay()
+    payment.signal()
+    receipt.wait()
+
+    mutex.wait()
+    customers -= 1
+    mutex.signal()
+
+def barber_thread():
+    customer1.wait()
+    mutex.wait()
+    sem = queue1.pop(0)
+    sem.signal()                # 让队首顾客去坐沙发
+    sem.wait()                  # 等他真正离开队列
+    mutex.signal()
+    sem.signal()                # 接力棒：允许下一位
+
+    customer2.wait()
+    mutex.wait()
+    sem = queue2.pop(0)
+    mutex.signal()
+    sem.signal()                # 精确叫醒队首
+
+    barber.signal()
+    cutHair()
+
+    payment.wait()
+    acceptPayment()
+    receipt.signal()</code></pre>
+
+<p>原书自己评价：“这个解比我预想的复杂得多。”它还指出一个浪费：因为只有 3 位理发师，沙发上永远不可能超过 3 人，<code>sofa</code> 这个 multiplex 其实是多余的。若要真正用满 4 个沙发位，需要引入第四类线程“引座员”（usher）来管理 queue1，理发师只管理 queue2。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>题目</th><th>核心变量</th><th>关键动作</th><th>难点</th></tr></thead>
+<tbody>
+<tr><td>dining savages</td><td>servings + emptyPot/fullPot</td><td>锅空者叫厨师并持锁等</td><td>不能读信号量值，必须用记分板</td></tr>
+<tr><td>barbershop</td><td>customers + 4 个会合信号量</td><td>两次会合：坐下/剪完</td><td>balk 路径要释放 mutex</td></tr>
+<tr><td>FIFO barbershop</td><td>queue of Sem(0)</td><td>理发师 pop(0) 后精确 signal</td><td>顺序靠数据结构，不靠信号量</td></tr>
+<tr><td>Hilzer</td><td>queue1/queue2 + sofa + payment</td><td>两段排队 + 收银会合</td><td>20 人上限、沙发复用、接力棒</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">服务类问题的三个共性错误</span><span class="thm-id">10.3</span></div>
+<div class="thm-body">
+<p><b>把“容量”与“等候人数”混为一谈。</b>理发店 n 含理发椅；Hilzer 的 20 含沙发与站位。数字定义错，所有边界判断都错。</p>
+<p><b>用同一个信号量表达“有人”与“轮到你”。</b>前者是计数，后者是逐个点名；混用会导致唤醒错人。FIFO 版本用私有信号量把两者分开。</p>
+<p><b>忘记“服务完成”的第二次会合。</b>理发师在顾客还没离开椅子时就叫下一位，会让两个顾客同时处于“被服务”状态，违反互斥。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ch11" class="chapter">
+<div class="wrap">
+<div class="sec-label">Chapter 5 · Grouping Problems</div>
+<h2><span class="num">11</span>成组通过：圣诞老人、H2O、渡船与过山车</h2>
+<p class="lede">这一类题的共同点是“必须凑够一组才能继续”：9 只驯鹿、1 氧 + 2 氢、4 个人一条船、C 个乘客一节车厢。难点不在“等”，而在“凑齐之后，下一组不许混进来”。</p>
+
+<div class="chap-intro">
+<p>本节对应原书 5.5–5.8：Santa Claus（hint、solution）、Building H2O（hint、solution）、River crossing（hint、solution）、Roller coaster（hint、solution）、Multi-car Roller Coaster（hint、solution）。核心积木是复用第 4 节的屏障（barrier），再加一个“谁持有 mutex、谁负责释放”的约定。</p>
+<span class="tag">Grouping</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">multiplex + barrier</span>
+<span class="chip">scoreboard</span>
+<span class="chip">ownership transfer</span>
+<span class="chip">elfTex</span>
+<span class="chip">captain</span>
+<span class="chip">loadingArea</span>
+</div>
+
+<div class="note"><b>原书小节：</b>The Santa Claus problem · Santa problem hint · Santa problem solution · Building H2O · H2O hint · H2O solution · River crossing problem · River crossing hint · River crossing solution · The roller coaster problem · Roller Coaster hint · Roller Coaster solution · Multi-car Roller Coaster problem · Multi-car Roller Coaster hint · Multi-car Roller Coaster solution.</div>
+
+<h3><span class="sn">11.1</span>Santa Claus：两组不同的“凑齐”</h3>
+<p>圣诞老人睡觉，只有两种情况唤醒他：<b>(1)</b> 九只驯鹿全部度假归来；<b>(2)</b> 三只小精灵同时有麻烦。若他醒来发现两组都满足，优先驯鹿（要赶在圣诞节前装雪橇）。三只精灵接受帮助期间，其他精灵不得进入。第九只驯鹿负责叫醒圣诞老人，其余驯鹿在暖房里等。</p>
+
+<pre><code class="language-python">elves = 0
+reindeer = 0
+santaSem    = Sem(0)
+reindeerSem = Sem(0)
+elfTex      = Sem(1)
+mutex       = Sem(1)
+
+def santa():
+    while True:
+        santaSem.wait()
+        mutex.wait()
+        if reindeer &gt;= 9:
+            prepareSleigh()
+            reindeerSem.signal(9)       # 九只一起套上雪橇
+            reindeer -= 9
+        elif elves == 3:
+            helpElves()
+        mutex.signal()
+
+def reindeer_thread():
+    global reindeer
+    mutex.wait()
+    reindeer += 1
+    if reindeer == 9:
+        santaSem.signal()
+    mutex.signal()
+
+    reindeerSem.wait()
+    getHitched()
+
+def elf_thread():
+    global elves
+    elfTex.wait()               # 只允许 3 只精灵进入
+    mutex.wait()
+    elves += 1
+    if elves == 3:
+        santaSem.signal()
+    else:
+        elfTex.signal()         # 前两只放行下一位
+    mutex.signal()
+
+    getHelp()
+
+    mutex.wait()
+    elves -= 1
+    if elves == 0:
+        elfTex.signal()         # 最后一只离开，开放下一批
+    mutex.signal()</code></pre>
+
+<p>关键在 <code>elfTex</code>：前两只精灵在离开 mutex 时也释放 elfTex，第三只则一直握着，直到三只都完成 <code>getHelp</code> 并由最后一只释放。这样“第四只精灵”无法在第一批没结束时混进来。驯鹿侧不需要类似的闸门，因为只有 9 只，且 <code>reindeerSem.signal(9)</code> 一次性放行。</p>
+<p>优先级的实现很简单：Santa 先检查 <code>reindeer &gt;= 9</code>，再检查 elves。若两组同时满足，驯鹿分支先执行，精灵继续等。</p>
+
+<h3><span class="sn">11.2</span>Building H2O：1 氧 + 2 氢</h3>
+<p>氧线程与氢线程要组成水分子：一个氧加两个氢。约束不是“三个都到齐”这么简单，而是“同一组的三个线程都调用过 <code>bond</code> 之后，下一组才能开始”。做法是用计数器判断当前是否凑齐，凑齐的那位负责 signal 同伴并保留 mutex，等三人在屏障处会合后，再由氧线程释放 mutex。</p>
+
+<pre><code class="language-python">mutex = Sem(1)
+oxygen = 0
+hydrogen = 0
+barrier = Barrier(3)        # 第 4 节的可复用屏障
+oxyQueue = Sem(0)
+hydroQueue = Sem(0)
+
+def oxygen_thread():
+    global oxygen, hydrogen
+    mutex.wait()
+    oxygen += 1
+    if hydrogen &gt;= 2:               # 我凑齐了一组
+        hydroQueue.signal(2)
+        hydrogen -= 2
+        oxyQueue.signal()
+        oxygen -= 1
+    else:
+        mutex.signal()              # 让出锁，去睡
+        oxyQueue.wait()
+    bond()
+    barrier.wait()                  # 三人到齐才继续
+    mutex.signal()                  # 每组只有氧线程释放
+
+def hydrogen_thread():
+    global oxygen, hydrogen
+    mutex.wait()
+    hydrogen += 1
+    if hydrogen &gt;= 2 and oxygen &gt;= 1:
+        hydroQueue.signal(2)
+        hydrogen -= 2
+        oxyQueue.signal()
+        oxygen -= 1
+    else:
+        mutex.signal()
+        hydroQueue.wait()
+    bond()
+    barrier.wait()</code></pre>
+
+<p>这段代码里 mutex 的持有者是“这一组中最后凑齐的人”，但释放者固定为氧线程。因此氧线程可能在并不持有 mutex 的情况下执行 <code>mutex.signal()</code>。书里专门指出：信号量没有所有者，这样做合法；真正要保证的是“每组恰好释放一次”。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>时刻</th><th>事件</th><th>oxygen / hydrogen</th><th>mutex</th></tr></thead>
+<tbody>
+<tr><td class="id">t1</td><td>O1 到达，氢不足</td><td>1 / 0</td><td>释放，O1 等 oxyQueue</td></tr>
+<tr><td class="id">t2</td><td>H1 到达，仍不足</td><td>1 / 1</td><td>释放，H1 等 hydroQueue</td></tr>
+<tr><td class="id">t3</td><td>H2 到达，凑齐</td><td>0 / 0</td><td>持有；signal 两个氢与一个氧</td></tr>
+<tr><td class="id">t4</td><td>三人 bond</td><td>0 / 0</td><td>仍由 H2 持有</td></tr>
+<tr><td class="id">t5</td><td>barrier 打开，O1 释放</td><td>0 / 0</td><td>归零，下一组可进</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">11.3</span>River crossing：禁止 1:3</h3>
+<p>一条船恰好坐 4 人；不能 1 个黑客 + 3 个微软员工（serf），也不能 1 个 serf + 3 个黑客。任意 2:2、4:0、0:4 都安全。四个乘客都调用 <code>board</code> 后，恰好一人调用 <code>rowBoat</code>。</p>
+
+<pre><code class="language-python">barrier = Barrier(4)
+mutex = Sem(1)
+hackers = 0
+serfs = 0
+hackerQueue = Sem(0)
+serfQueue   = Sem(0)
+
+def hacker_thread():
+    global hackers, serfs
+    isCaptain = False
+    mutex.wait()
+    hackers += 1
+    if hackers == 4:                    # 4 个黑客
+        hackerQueue.signal(4)
+        hackers = 0
+        isCaptain = True
+    elif hackers == 2 and serfs &gt;= 2:   # 2 黑客 + 2 serf
+        hackerQueue.signal(2)
+        serfQueue.signal(2)
+        serfs -= 2
+        hackers = 0
+        isCaptain = True
+    else:
+        mutex.signal()                  # 人不够，让出锁去等
+
+    hackerQueue.wait()
+    board()
+    barrier.wait()
+
+    if isCaptain:
+        rowBoat()
+        mutex.signal()                  # 只有船长释放 mutex</code></pre>
+
+<p>serf 的代码完全对称，只是把 hackers 与 serfs 对调。船长在凑齐一组后<b>不释放</b> mutex，而是一直持有到全船 board 完、<code>rowBoat</code> 执行后才释放——这和 H2O 的所有权转移是同一种手法。这样下一批人无法在船开走前混进来。</p>
+
+<h3><span class="sn">11.4</span>Roller Coaster：坐满才发车</h3>
+<p>n 个乘客、一节车厢，容量 C &lt; n。乘客反复排队坐车；车厢只有在满 C 人时才出发。约束：车厢调用 <code>load</code> 之前乘客不能 board；C 人上齐之前车厢不能 depart；车厢调用 <code>unload</code> 之前乘客不能 unboard。</p>
+
+<pre><code class="language-python">mutex  = Sem(1)
+mutex2 = Sem(1)
+boarders = 0
+unboarders = 0
+boardQueue   = Sem(0)
+unboardQueue = Sem(0)
+allAboard = Sem(0)
+allAshore = Sem(0)
+
+def car():
+    while True:
+        load()
+        boardQueue.signal(C)        # 放 C 个人上车
+        allAboard.wait()            # 等最后一个上完
+        run()
+        unload()
+        unboardQueue.signal(C)      # 放 C 个人下车
+        allAshore.wait()
+
+def passenger():
+    global boarders, unboarders
+    while True:
+        boardQueue.wait()
+        board()
+
+        mutex.wait()
+        boarders += 1
+        if boarders == C:
+            allAboard.signal()
+            boarders = 0
+        mutex.signal()
+
+        unboardQueue.wait()
+        unboard()
+
+        mutex2.wait()
+        unboarders += 1
+        if unboarders == C:
+            allAshore.signal()
+            unboarders = 0
+        mutex2.signal()</code></pre>
+
+<p>用两个独立计数器（上车的、下车的）而不是一个，是为了让“上一轮下车”和“下一轮上车”互不干扰。每个计数器有自己的 mutex，减少争用。原书强调：乘客在 <code>boardQueue</code> 上等，是等“车厢叫我”，不是等“车厢有空位”；空位由 signal(C) 一次性发放。</p>
+
+<h3><span class="sn">11.5</span>Multi-car Roller Coaster：车厢也要排队</h3>
+<p>多节车厢增加四条约束：同一时刻只有一节在装人；多节可同时在轨道上；不能超车，所以必须按上车顺序下车；前一节的人全部下完，后一节的人才能下。</p>
+
+<pre><code class="language-python">loadingArea   = [Sem(0) for i in range(m)]
+unloadingArea = [Sem(0) for i in range(m)]
+loadingArea[0].signal()         # 只有 0 号车可以先装
+unloadingArea[0].signal()       # 只有 0 号车可以先卸
+
+def next(i):
+    return (i + 1) % m
+
+def car(i):
+    while True:
+        loadingArea[i].wait()
+        load()
+        boardQueue.signal(C)
+        allAboard.wait()
+        loadingArea[next(i)].signal()   # 把装人权交给下一节
+
+        run()
+
+        unloadingArea[i].wait()
+        unload()
+        unboardQueue.signal(C)
+        allAshore.wait()
+        unloadingArea[next(i)].signal() # 把卸人权交给下一节</code></pre>
+
+<p>“装人区”和“卸人区”各是一个信号量数组，初始只有 0 号开着；每节车用完自己的名额后，把下一节的名额打开。由于车不能超车，卸人顺序与装人顺序一致，数组下标自然满足。乘客代码完全不变。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>题目</th><th>一组的组成</th><th>谁判断凑齐</th><th>谁释放 mutex</th></tr></thead>
+<tbody>
+<tr><td>Santa（驯鹿）</td><td>9 只驯鹿</td><td>第 9 只</td><td>Santa（signal 9 只）</td></tr>
+<tr><td>Santa（精灵）</td><td>3 只精灵</td><td>第 3 只</td><td>最后离开的精灵释放 elfTex</td></tr>
+<tr><td>H2O</td><td>1 O + 2 H</td><td>最后凑齐者</td><td>氧线程（每组唯一）</td></tr>
+<tr><td>River</td><td>4 人，禁 1:3</td><td>凑成合法组合者</td><td>船长</td></tr>
+<tr><td>Coaster</td><td>C 人</td><td>第 C 个上车者</td><td>车厢（allAboard）</td></tr>
+<tr><td>Multi-car</td><td>C 人 + 车厢顺序</td><td>同上</td><td>车厢 + 数组接力</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">成组题的两个致命点</span><span class="thm-id">11.1</span></div>
+<div class="thm-body">
+<p><b>让持有 mutex 的线程在屏障处永久等待。</b>H2O 里这是刻意的：它阻止下一组进入。但如果屏障的 n 与实际参与者不匹配，这一组永远到不齐，mutex 也永远不释放，整个系统停死。成组题必须先数清“一组到底几个人”。</p>
+<p><b>每组释放次数不唯一。</b>如果氧线程和最后凑齐的氢线程都执行 <code>mutex.signal()</code>，下一组会有两个线程同时进入，1:2 的比例立刻被破坏。所有权可以转移，但释放者必须唯一。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ch12" class="chapter">
+<div class="wrap">
+<div class="sec-label">Chapter 6 · Not-so-classical</div>
+<h2><span class="num">12</span>三类线程、男女浴室与多数派：分类互斥的变体</h2>
+<p class="lede">分类互斥一旦超过两类，问题就从“谁和谁不能共存”变成一张矩阵。先画矩阵，再决定每类线程需要持有哪几张“证明”，比直接写代码可靠得多。</p>
+
+<div class="chap-intro">
+<p>本节对应原书第 6 章：Search-insert-delete（hint、solution）、Unisex bathroom（hint、solution、no-starve）、Baboon crossing、Modus Hall（hint、solution）。search-insert-delete 是双 Lightswitch 的复用；unisex bathroom 引入“同类可并发 + 总数上限”；Modus Hall 把控制权交给“人数多数派”。</p>
+<span class="tag">Categorical Exclusion</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">three-way exclusion</span>
+<span class="chip">Lightswitch ×2</span>
+<span class="chip">bathroom</span>
+<span class="chip">no-starve turnstile</span>
+<span class="chip">baboon</span>
+<span class="chip">majority rule</span>
+</div>
+
+<div class="note"><b>原书小节：</b>The search-insert-delete problem · Search-Insert-Delete hint · Search-Insert-Delete solution · The unisex bathroom problem · Unisex bathroom hint · Unisex bathroom solution · No-starve unisex bathroom problem · No-starve unisex bathroom solution · Baboon crossing problem · The Modus Hall Problem · Modus Hall problem hint · Modus Hall problem solution.</div>
+
+<h3><span class="sn">12.1</span>查找-插入-删除：三类线程的共存矩阵</h3>
 <p>三类线程共享一条单链表：查找者只读；插入者在尾部追加；删除者从任意位置移除。查找之间可并发，插入之间必须互斥（否则两个插入会同时改尾指针），插入可与查找并发，删除必须与所有人互斥。</p>
 
 <div class="table-wrap">
@@ -1325,9 +2706,6 @@ def writer():
 </table>
 </div>
 
-<p>矩阵右下角说明删除者需要两把证明；查找者与插入者各用一张开关、争不同的信号量，所以能同时在场。</p>
-
-<h3><span class="sn">7.8</span>解法：两个开关，两把证明</h3>
 <pre><code class="language-python">insertMutex = Sem(1)     # 插入者之间互斥
 noSearcher  = Sem(1)     # 当前没有查找者
 noInserter  = Sem(1)     # 当前没有插入者
@@ -1353,542 +2731,1092 @@ def deleter():
     noInserter.signal()
     noSearcher.signal()</code></pre>
 
-<div class="thm theorem">
-<div class="thm-head"><span class="thm-kind">正确性</span><span class="thm-title">为什么不会漏掉任何一个类别</span><span class="thm-id">7.4</span></div>
-<div class="thm-body">
 <p>删除者必须让两个信号量都归零：noSearcher 归零说明开关计数为 0、没有查找者；noInserter 归零说明最后一个插入者也已离开。两个条件同时成立，房间里确实没有别人；反过来，删除者持有其一，对应类别就进不来。</p>
-</div>
-</div>
+<p>这个解无死锁（等待链不成环），但会饥饿：查找者与插入者源源不断时，删除者可能永远等不到两个信号量同时可用。原书说，要同时做到“最大并发”与“无饥饿”是很困难的。</p>
 
-<h3><span class="sn">7.9</span>推演：S1、S2、I1、D1</h3>
-<div class="table-wrap">
-<table>
-<thead><tr><th>时刻</th><th>事件</th><th>noSearcher</th><th>noInserter</th><th>房间内</th></tr></thead>
-<tbody>
-<tr><td class="id">t1</td><td>S1 进入</td><td>0（第一个锁住）</td><td>1</td><td>S1</td></tr>
-<tr><td class="id">t2</td><td>S2 进入</td><td>0（只加计数）</td><td>1</td><td>S1, S2</td></tr>
-<tr><td class="id">t3</td><td>I1 进入</td><td>0</td><td>0（第一个锁住）</td><td>S1, S2, I1</td></tr>
-<tr><td class="id">t4</td><td>D1 到达，等 noSearcher</td><td>0</td><td>0</td><td>不变，D1 排队</td></tr>
-<tr><td class="id">t5</td><td>S1、S2 离开</td><td>1，唤醒 D1</td><td>0</td><td>I1、D1（等第二把）</td></tr>
-<tr><td class="id">t6</td><td>I1 离开</td><td>0（被 D1 持有）</td><td>1，唤醒 D1</td><td>D1 独占</td></tr>
-</tbody>
-</table>
-</div>
+<h3><span class="sn">12.2</span>Unisex bathroom：两性互斥 + 最多三人</h3>
+<p>约束：男女不能同时在浴室；任何时候最多 3 人；不能死锁（先不管饥饿）。做法是每性一个 Lightswitch 控制“房间空”，再加每性一个 multiplex=3 限制人数。</p>
 
-<p>t5 时 D1 只拿到第一把证明，I1 仍在房间里——它只在门口等。查找者不断时，删除者会饿死。</p>
+<pre><code class="language-python">empty = Sem(1)
+maleSwitch   = Lightswitch()
+femaleSwitch = Lightswitch()
+maleMultiplex   = Sem(3)
+femaleMultiplex = Sem(3)
 
-<div class="thm warn">
-<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">分类互斥的三个前提</span><span class="thm-id">7.5</span></div>
+def female():
+    femaleSwitch.lock(empty)        # 第一个女性锁住“空”
+    femaleMultiplex.wait()          # 最多 3 人
+    # bathroom code here
+    femaleMultiplex.signal()
+    femaleSwitch.unlock(empty)
+
+def male():
+    maleSwitch.lock(empty)
+    maleMultiplex.wait()
+    # bathroom code here
+    maleMultiplex.signal()
+    maleSwitch.unlock(empty)</code></pre>
+
+<p>这个解的问题与读者-写者基础版一样：只要女性络绎不绝，男性就可能永远等不到 empty。修复方法是加一道旋转门，让“等待中的异性”把后来者挡住。</p>
+
+<pre><code class="language-python">turnstile = Sem(1)
+
+def male():
+    turnstile.wait()                # 男性到达时先关闸
+    maleSwitch.lock(empty)
+    turnstile.signal()              # 进房间后开闸（只放行同性）
+    maleMultiplex.wait()
+    # bathroom code here
+    maleMultiplex.signal()
+    maleSwitch.unlock(empty)</code></pre>
+
+<p>原书只给出男性代码，女性对称。直觉：只要房间里有男性，新到的男性会穿过旋转门进入；若房间里有女性，男性会卡在旋转门里，从而挡住所有后来者（无论男女），直到当前占用者离开。代价是效率：繁忙时通常只有 1–2 人在浴室里，无法用满 3 个名额。原书明确指出这个解“可能不高效”，但满足无饥饿。</p>
+
+<h3><span class="sn">12.3</span>Baboon crossing：方向互斥 + 绳载上限 + 无饥饿</h3>
+<p>峡谷上一条绳，狒狒只能朝一个方向走；相向而行会在中间打架坠落；绳最多承重 5 只；一个方向持续不断时，另一个方向不能被无限期挡住。这是“分类互斥 + multiplex + 公平”的三合一。</p>
+<p>原书<b>没有给出解答</b>，并说明“原因很明显”。这题真正的难点是同时满足三条：方向互斥（同类可多个）、容量 5、双向无饥饿。常见的错误解法只用两个计数器加一个 mutex，结果要么允许 6 只上绳，要么让少数方向饿死。一个可用的骨架是：用 <code>crossing</code> 计数、<code>direction</code> 状态、<code>mutex</code> 保护状态，再给每个方向一个旋转门；当某一方向的等待者达到多数或另一方向清空时切换方向，并用 <code>Sem(5)</code> 限制绳上总数。</p>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">思考题</span><span class="thm-title">为什么“两个计数器”不够</span><span class="thm-id">12.1</span></div>
 <div class="thm-body">
-<p><b>写者或删除者绝不能去拿 Lightswitch 内部的 mutex。</b>读者正握着那把 mutex 等房间空；对方一来抢，就形成「读者等写者腾房间、写者等读者放 mutex」的循环。</p>
-<p><b>Lightswitch 不可重入。</b>同一线程第二次调用 <code>lock</code> 会锁死自己。另外，分类互斥不承诺公平：需要先来先得，就必须显式排队或加闸门。</p>
+<p>如果只统计“当前方向上有几只”，新来的狒狒看到方向一致就上绳，那么在第 5 只上绳与第 6 只检查之间有一个窗口：第 6 只可能也看到“方向一致、人数未满”而挤上去。必须把“检查人数 + 占位”放在同一个 mutex 内，或者用一个初值 5 的 multiplex 先占位再检查方向。前者是记分板，后者是“先排队后判断”的变体。</p>
 </div>
 </div>
-</div>
-</section>
 
-<section id="ch8" class="chapter">
-<div class="wrap">
-<div class="sec-label">Pattern 8 · Dining Philosophers</div>
-<h2><span class="num">8</span>哲学家就餐：破坏循环等待的三种手法</h2>
-<p class="lede">五个人围坐圆桌，每人需要两把叉子。所有人都先拿右边、再等左边，就会形成一条首尾相接的等待环——这是并发教材里最著名的死锁，也是最容易用「少一个人上桌」破解的死锁。</p>
+<h3><span class="sn">12.4</span>Modus Hall：多数派统治</h3>
+<p>一条只容一人宽的小路，两侧居民（heathens 与 prudes）互相敌视。同类相遇会侧身让路；异类相遇时，<b>人数多的一派</b>迫使对方等待。目标：实现“多数派控制临界区”的分类互斥，并避免饥饿——少数派不断累积，直到成为多数，就能翻转控制权。</p>
 
-<div class="chap-intro">
-<p>本节先还原死锁 #5 的环形等待，再给出限流（footman）、非对称（左撇子）与状态数组（Tanenbaum）三种解法，最后说明为什么「无死锁」不等于「无饿死」。</p>
-<span class="tag">Classic</span>
-</div>
-
-<div class="mapchips">
-<span class="chip hot">circular wait</span>
-<span class="chip">footman</span>
-<span class="chip">asymmetry</span>
-<span class="chip">state array</span>
-<span class="chip">starvation</span>
-</div>
-
-<h3><span class="sn">8.1</span>约束与死锁 #5</h3>
-<p>五位哲学家在思考与进食之间循环。进食需要同时持有左右两把叉子，每把叉子同一时刻只能被一个人持有。最自然的写法是：拿起右边的，再拿起左边的，吃完依次放下。</p>
-<p>如果五个人同时拿起右叉，每个人都在等左边那把握在邻居手里的叉子，等待关系成环，系统永久停住。</p>
-
-<div class="table-wrap">
-<table>
-<thead><tr><th>哲学家</th><th>已持有</th><th>正在等待</th><th>被谁持有</th></tr></thead>
-<tbody>
-<tr><td>P0</td><td>叉 0</td><td>叉 1</td><td>P1</td></tr>
-<tr><td>P1</td><td>叉 1</td><td>叉 2</td><td>P2</td></tr>
-<tr><td>P2</td><td>叉 2</td><td>叉 3</td><td>P3</td></tr>
-<tr><td>P3</td><td>叉 3</td><td>叉 4</td><td>P4</td></tr>
-<tr><td>P4</td><td>叉 4</td><td>叉 0</td><td>P0</td></tr>
-</tbody>
-</table>
-</div>
-
-<h3><span class="sn">8.2</span>解法一：只允许四个人上桌</h3>
-<p>死锁需要「每个人都拿到一把、再等另一把」。如果最多只有四个人能同时尝试，那么第五把叉子一定空闲，而它两侧的两个人中至少有一个已经持有另一把，于是那个人可以吃到，环被打破。</p>
-
-<pre><code class="language-python">N = 5
-forks = [Sem(1) for _ in range(N)]
-footman = Sem(N - 1)        # 门童：最多放 4 人进来
-
-def philosopher(i):
-    while True:
-        think(i)
-        footman.wait()
-        try:
-            forks[i].wait()                 # 先右
-            forks[(i + 1) % N].wait()       # 后左
-            eat(i)
-        finally:
-            forks[(i + 1) % N].signal()
-            forks[i].signal()
-            footman.signal()</code></pre>
-
-<p>这个解法还顺带避免了饿死：你等的叉子若在邻居手里，邻居吃完必然放下，而你是唯一等待者，下一次一定轮到你。</p>
-
-<h3><span class="sn">8.3</span>解法二：制造一个左撇子</h3>
-<p>只要五个人里至少有一个先拿左边、至少有一个先拿右边，环形等待就不可能形成。证明用反证：若发生死锁，任取一个左撇子，他必是「持左等右」，于是他的右邻居也必须是左撇子；沿着环推下去，所有人都是左撇子，与「至少有一个右撇子」矛盾。</p>
-
-<pre><code class="language-python">def philosopher(i):
-    while True:
-        think(i)
-        first, second = (i, (i + 1) % N) if i == 0 else ((i + 1) % N, i)
-        forks[first].wait()
-        try:
-            forks[second].wait()
-            eat(i)
-        finally:
-            forks[second].signal()
-            forks[first].signal()</code></pre>
-
-<p>只改一个人拿叉的顺序，就破坏了对称性。这个技巧在分布式系统中很常见：给资源编号，要求所有人按同一全序申请，环就无法闭合。</p>
-
-<h3><span class="sn">8.4</span>解法三：Tanenbaum 的状态数组</h3>
-<p>前两种解法靠限制并发或打破对称，第三种则把「谁能吃」交给一个中央裁判。每位哲学家有 <code>thinking / hungry / eating</code> 三态，另有一个私有信号量。拿叉时在 mutex 内把自己标为 hungry，然后测试左右邻居是否在吃；只有都不吃，才把自己标为 eating 并 signal 自己。</p>
-
-<pre><code class="language-python">state = ["thinking"] * N
-sem   = [Sem(0) for _ in range(N)]
+<pre><code class="language-python">heathens = 0
+prudes = 0
+status = "neutral"      # neutral / heathens rule / prudes rule / transition ...
 mutex = Sem(1)
+heathenTurn = Sem(1)
+prudeTurn   = Sem(1)
+heathenQueue = Sem(0)
+prudeQueue   = Sem(0)
 
-def test(i):
-    if (state[i] == "hungry"
-            and state[(i - 1) % N] != "eating"
-            and state[(i + 1) % N] != "eating"):
-        state[i] = "eating"
-        sem[i].signal()             # 允许自己继续
+def heathen():
+    global heathens, prudes, status
+    heathenTurn.wait()
+    heathenTurn.signal()            # 只是路过旋转门
 
-def get_forks(i):
     mutex.wait()
-    state[i] = "hungry"
-    test(i)
-    mutex.signal()
-    sem[i].wait()                   # 若没被批准，就在这里等
+    heathens += 1
+    if status == "neutral":
+        status = "heathens rule"
+        mutex.signal()
+    elif status == "prudes rule":
+        if heathens &gt; prudes:
+            status = "transition to heathens"
+            prudeTurn.wait()        # 关住对方入口
+        mutex.signal()
+        heathenQueue.wait()
+    elif status == "transition to heathens":
+        mutex.signal()
+        heathenQueue.wait()
+    else:
+        mutex.signal()              # 已在 heathens rule，直接过
 
-def put_forks(i):
+    # cross the field
+
     mutex.wait()
-    state[i] = "thinking"
-    test((i - 1) % N)               # 也许邻居现在能吃了
-    test((i + 1) % N)
+    heathens -= 1
+    if heathens == 0:
+        if status == "transition to prudes":
+            prudeTurn.signal()
+        if prudes:
+            prudeQueue.signal(prudes)
+            status = "prudes rule"
+        else:
+            status = "neutral"
+    if status == "heathens rule" and prudes &gt; heathens:
+        status = "transition to prudes"
+        heathenTurn.wait()          # 关住自己人入口
     mutex.signal()</code></pre>
 
-<p>死锁不可能发生：唯一被多人共享的信号量是 mutex，而没有任何线程在持有 mutex 时等待 sem[i]。但<strong>饿死仍然可能</strong>。Gingras 给过一个循环：P2、P4 在吃，P1、P3 饥饿；P2 起身后 P1 坐下，P4 起身后 P3 坐下，局面镜像；再把 P3、P4 与 P1、P2 轮换一次，就回到初始状态。P0 永远等不到两个邻居同时不吃。</p>
+<p>prude 的代码对称。状态机有五个值：中立、heathens 统治、prudes 统治、向 heathens 过渡、向 prudes 过渡。检查时按“当前状态 + 双方人数”决定是直接过、排队，还是翻转并关闸；离开时若自己是最后一个，负责开对方闸门、唤醒对方队列、更新状态。</p>
+<p>原书指出一个有趣的细节：线程可能在第 3 行“过了旋转门但还没登记”时被中断，因此“多数”只统计已登记的人；过渡结束时也可能有已过闸但未登记的人。这影响效率（不保证最大并发），但不影响正确性——只要接受“多数派规则只适用于已登记选民”。</p>
 
-<div class="thm warn">
-<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">无死锁 ≠ 无饿死</span><span class="thm-id">8.1</span></div>
-<div class="thm-body">
-<p>footman 与非对称解法都同时消除了死锁和饿死；Tanenbaum 的状态数组只消除了死锁。检查并发方案时要分开问：<b>系统会不会整体停住？</b>（安全性）与<b>某个线程会不会永远轮不到？</b>（公平性）。两者需要不同的论证。</p>
-</div>
-</div>
-
-<h3><span class="sn">8.5</span>推演：footman = 4</h3>
-<p>P0 到 P3 通过门童，各拿右叉；P4 被挡在外面。P3 发现叉 4 是空的（P4 没上桌），拿到第二把，吃完放下，链条从末端解开。</p>
-</div>
-</section>
-
-<section id="ch9" class="chapter">
-<div class="wrap">
-<div class="sec-label">Pattern 9 · Cigarette Smokers</div>
-<h2><span class="num">9</span>抽烟者：不要让被唤醒的人去抢材料</h2>
-<p class="lede">代理每次放出两种材料，拥有第三种材料的抽烟者才能卷烟。天真的写法会让两个抽烟者各抢到一种、再互等对方手里的另一种——这不是资源不够，而是唤醒错了人。</p>
-
-<div class="chap-intro">
-<p>本节说明死锁 #6 的成因，给出 Parnas 的 pusher（推手）方案：把「查看桌面」这件事从抽烟者手里拿走，交给三个串行的推手，用一块记分板决定该叫醒谁。这是全书「记分板」模式的第一次完整登场。</p>
-<span class="tag">Classic</span>
-</div>
-
-<div class="mapchips">
-<span class="chip hot">agent</span>
-<span class="chip">pusher</span>
-<span class="chip">scoreboard</span>
-<span class="chip">deadlock #6</span>
-<span class="chip">wake the right one</span>
-</div>
-
-<h3><span class="sn">9.1</span>问题与约束</h3>
-<p>三类材料：烟草、纸、火柴。三个抽烟者各拥有一种，缺另外两种；代理每次随机放出两种。拥有第三种材料的人应拿走桌上两种、卷烟，抽完通知代理。约束是：不叫醒材料不齐的人，也不让材料齐了却没人醒。</p>
-
-<h3><span class="sn">9.2</span>天真写法为什么死锁</h3>
-<pre><code class="language-python"># 反例：不要这样写
-def smoker_with_matches():
-    tobacco.wait()
-    paper.wait()        # 拿到烟草后，卡在这里等纸
-    agentSem.signal()
-    smoke()</code></pre>
-<p>假设代理放出烟草和纸。拥有火柴的人被烟草唤醒，拥有烟草的人被纸唤醒；两人各拿走一样，然后分别等对方手里的那样。桌上明明凑齐了，却没有人能继续。更糟的是，第三个抽烟者根本没被唤醒，连「材料齐了」都不知道。</p>
-
-<div class="thm warn">
-<div class="thm-head"><span class="thm-kind">死锁</span><span class="thm-title">死锁 #6：唤醒是广播式的，材料不是</span><span class="thm-id">9.1</span></div>
-<div class="thm-body">
-<p>信号量只负责「叫醒一个人」，不负责「告诉他桌上有什么」。当一个事件同时 signal 两个材料信号量时，两个不同的抽烟者都可能被唤醒，而每个人只看到自己等的那一个。解决办法不是加更多信号量，而是<strong>把「谁该醒」的判断集中到一个串行的地方</strong>。</p>
-</div>
-</div>
-
-<h3><span class="sn">9.3</span>推手方案：三个串行的裁判</h3>
-<p>为每种材料配一个「推手」。推手不会被抽烟者直接调用，而是等代理放出自己负责的材料。它进入 mutex 后查看桌面记分板：如果另外两种里已经有一种在桌上，说明材料凑齐，立刻把那位拥有缺失材料的抽烟者叫醒，并清掉桌上的记录；如果桌上什么都没有，就把自己的材料记下，安静离开。</p>
-
-<pre><code class="language-python">ORDER = ["tobacco", "paper", "match"]
-
-agent  = {"tobacco": Sem(0), "paper": Sem(0), "match": Sem(0)}
-smoker = {"tobacco": Sem(0), "paper": Sem(0), "match": Sem(0)}
-agentSem = Sem(1)
-mutex = Sem(1)
-on_table = {k: False for k in ORDER}   # 记分板：桌上有什么
-
-def pusher(mine):
-    while True:
-        agent[mine].wait()             # 代理放出了我负责的材料
-        mutex.wait()
-        others = [x for x in ORDER if x != mine]
-        placed = [x for x in others if on_table[x]]
-        if placed:                     # 另一种已在桌上 → 凑齐了
-            missing = next(x for x in ORDER
-                           if x != mine and x != placed[0])
-            on_table[placed[0]] = False
-            smoker[missing].signal()   # 叫醒拥有缺失材料的人
-        else:
-            on_table[mine] = True      # 先记下，等另一个推手
-        mutex.signal()
-
-def smoker_thread(has):
-    while True:
-        smoker[has].wait()             # 我拥有的材料正是桌上缺的
-        make_cigarette()
-        agentSem.signal()              # 通知代理：继续
-        smoke()</code></pre>
-
-<p>三个推手分别以 <code>tobacco</code>、<code>paper</code>、<code>match</code> 调用 <code>pusher</code>。代理的三个线程仍然只负责 <code>agentSem.wait()</code> 后放出两种材料，不需要知道抽烟者的存在——这一点很重要，它满足「不修改代理」的原始约束。</p>
-
-<div class="thm theorem">
-<div class="thm-head"><span class="thm-kind">正确性</span><span class="thm-title">为什么不会叫错人</span><span class="thm-id">9.2</span></div>
-<div class="thm-body">
-<p>推手全部串行经过 mutex，因此「读记分板 + 修改记分板 + 发信号」是一个原子事务。第一个推手若看不到另一种材料，只能记下自己的；第二个推手一定能看到它，因为两者之间没有别人能清空桌面。此时桌上恰好有两种材料，缺失的那种唯一确定，signal 的正是拥有它的抽烟者。被叫醒的人面对的是完整的一套材料，不需要再抢。</p>
-</div>
-</div>
-
-<h3><span class="sn">9.4</span>推演：代理放出烟草 + 纸</h3>
-<div class="table-wrap">
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>时刻</th><th>谁在跑</th><th>on_table</th><th>动作</th></tr></thead>
+<thead><tr><th>题目</th><th>分类关系</th><th>关键机制</th><th>公平性</th></tr></thead>
 <tbody>
-<tr><td class="id">t1</td><td>Agent A</td><td>空</td><td>signal tobacco、signal paper</td></tr>
-<tr><td class="id">t2</td><td>Pusher tobacco</td><td>{tobacco}</td><td>没看到纸或火柴，记下烟草</td></tr>
-<tr><td class="id">t3</td><td>Pusher paper</td><td>{paper}</td><td>看到烟草 → 缺火柴 → 叫醒火柴拥有者</td></tr>
-<tr><td class="id">t4</td><td>拥有火柴者</td><td>{paper}</td><td>取走烟草与纸，卷烟</td></tr>
-<tr><td class="id">t5</td><td>拥有火柴者</td><td>空</td><td>抽完，signal agentSem</td></tr>
+<tr><td>search-insert-delete</td><td>读读/读写可并发，写写互斥，删除全斥</td><td>双 Lightswitch + 两把证明</td><td>删除者可能饿死</td></tr>
+<tr><td>unisex bathroom</td><td>男女互斥，同类 ≤3</td><td>Lightswitch + multiplex</td><td>基础版会饿死；加 turnstile 修复</td></tr>
+<tr><td>baboon</td><td>方向互斥，绳上 ≤5</td><td>方向状态 + multiplex + 闸门</td><td>要求双向无饥饿（原书无解）</td></tr>
+<tr><td>Modus Hall</td><td>多数派控制，少数派可翻转</td><td>状态机 + 计数 + 两道闸</td><td>靠“累积成多数”避免饥饿</td></tr>
 </tbody>
 </table>
 </div>
 
-<h3><span class="sn">9.5</span>边界注脚</h3>
-<p>Patil 的最初版本不许改代理、不许用条件语句；Parnas 指出后者过于人为，去掉后推手方案即标准答案。<code>agentSem</code> 必须初始为 1，否则代理会一起睡死。</p>
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">多类问题的三个陷阱</span><span class="thm-id">12.2</span></div>
+<div class="thm-body">
+<p><b>不画矩阵就写代码。</b>三类线程有 6 对关系，靠脑子记必然漏。先把“可共存/互斥”填成 3×3 表，再决定每类持哪几把锁。</p>
+<p><b>让删除者去抢 Lightswitch 的内部 mutex。</b>读者正握着它等房间空，删除者一抢就成环。删除者只能等“房间空”的信号量。</p>
+<p><b>把“无饥饿”当成“加个 turnstile 就完事”。</b>turnstile 只保证“等待者能进一次”，不保证“每类按比例前进”；真正的公平需要 FIFO 队列或多数派规则。</p>
+</div>
+</div>
 </div>
 </section>
 
-<section id="ch10" class="chapter">
+<section id="ch13" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 10 · Scoreboard &amp; Service</div>
-<h2><span class="num">10</span>野蛮人与理发店：记分板加会合的复合题</h2>
-<p class="lede">当一个问题同时包含「还剩多少」和「谁该醒来」时，单靠计数信号量不够。野蛮人的锅、理发店的椅子，都需要一块记分板记录状态，再用会合把「叫醒」和「确认完成」串起来。</p>
+<div class="sec-label">Chapter 7 · Not Remotely Classical I</div>
+<h2><span class="num">13</span>寿司吧、托儿所与宿舍派对：记分板的三种进阶</h2>
+<p class="lede">这三题都不再是“一个信号量一件事”。它们要求你在同一块记分板上同时表达“几个人在吃”“几个人在等”“现在该谁动”，并且让离开的人替等待者把状态改好。</p>
 
 <div class="chap-intro">
-<p>本节连讲三题：野蛮人（资源计数 + 会合）、理发店（记分板 + 双重会合）、FIFO 理发店（每线程一个私有信号量）。第三题是「让信号量遵守先来后到」的标准答案。</p>
-<span class="tag">Less Classical</span>
+<p>本节对应原书 7.1–7.3：Sushi bar（hint、non-solution、solution #1、solution #2）、Child care（hint、non-solution、solution、extended hint/solution）、Room party（hint、solution）。两个新元模式在这里登场：<b>I'll do it for you</b>（离开者替等待者更新状态）与 <b>Pass the baton</b>（把 mutex 直接交给下一个线程）。</p>
+<span class="tag">Scoreboard++</span>
 </div>
 
 <div class="mapchips">
-<span class="chip hot">scoreboard</span>
-<span class="chip">rendezvous</span>
-<span class="chip">balk</span>
-<span class="chip">per-thread semaphore</span>
-<span class="chip">FIFO</span>
+<span class="chip hot">I'll do it for you</span>
+<span class="chip">pass the baton</span>
+<span class="chip">sushi bar</span>
+<span class="chip">child care</span>
+<span class="chip">room party</span>
+<span class="chip">state machine</span>
 </div>
 
-<h3><span class="sn">10.1</span>野蛮人：锅空才叫厨师</h3>
-<p>一锅能装 M 份，任意多个野蛮人各自取一份吃。锅空时，第一个发现的野蛮人叫醒厨师，然后等锅被装满；厨师只在锅空时加料。这里不能用「份数信号量」直接表达，因为野蛮人在减一之前无法知道「减完是否为负」——而信号量不允许读取值。于是改用记分板：用普通变量 <code>servings</code> 记录剩余份数，用 mutex 保护它。</p>
+<div class="note"><b>原书小节：</b>The sushi bar problem · Sushi bar hint · Sushi bar non-solution · Sushi bar solution #1 · Sushi bar solution #2 · The child care problem · Child care hint · Child care non-solution · Child care solution · Extended child care problem · Extended child care hint · Extended child care solution · The room party problem · Room party hint · Room party solution.</div>
 
-<pre><code class="language-python">M = 10
-servings = 0
+<h3><span class="sn">13.1</span>寿司吧：满座后整批等待</h3>
+<p>5 个座位。有空位就立刻坐下；满座意味着 5 个人在“一起用餐”，新来者必须等整批人离开。变量：<code>eating</code>、<code>waiting</code>、<code>must_wait</code>、<code>block</code>。</p>
+
+<pre><code class="language-python">eating = waiting = 0
 mutex = Sem(1)
-emptyPot = Sem(0)       # 野蛮人 → 厨师：锅空了
-fullPot = Sem(0)        # 厨师 → 野蛮人：锅满了
+block = Sem(0)
+must_wait = False
 
-def cook():
-    while True:
-        emptyPot.wait()
-        put_servings(M)         # 重新装满
-        fullPot.signal()
-
-def savage():
-    global servings
-    while True:
-        mutex.wait()
-        if servings == 0:
-            emptyPot.signal()   # 叫厨师
-            fullPot.wait()      # 等他装好
-            servings = M        # 由被唤醒者填写，仍在锁内
-        servings -= 1
-        get_serving()
-        mutex.signal()
-        eat()</code></pre>
-
-<p>让被唤醒的野蛮人写 <code>servings = M</code>，是为了让所有访问都在同一把锁内：此刻它正持有 mutex；厨师若也来写就得抢锁，而锁在等锅的人手里。</p>
-
-<p>死锁分析：唯一可能卡住的是「野蛮人持锁等 fullPot」。但厨师不需要 mutex，它只需要 emptyPot 的信号；信号已经发出，厨师必然能装锅并 signal fullPot。等待链只有一层，不会成环。</p>
-
-<p>小推演（M=2）：S1、S2 各取一份，锅空；S3 见 0，signal emptyPot 后持锁睡；厨师装 2 份、signal fullPot；S3 醒来把 servings 置 2、取 1，释放锁，其余人继续排队。</p>
-
-<h3><span class="sn">10.2</span>理发店：三把椅子加一把理发椅</h3>
-<p>店里最多容纳 n 个顾客（含理发椅）。顾客进门时若已满就 balk（直接离开）；否则坐下等理发师叫号。理发师没客人时睡觉。约束：剪发时恰好一个顾客在 <code>getHairCut</code>，剪完之前不接待下一位。</p>
-
-<pre><code class="language-python">n = 4
-customers = 0
-mutex = Sem(1)
-customer = Sem(0)       # 顾客 → 理发师：有人来了
-barber = Sem(0)         # 理发师 → 顾客：轮到你
-customerDone = Sem(0)   # 顾客 → 理发师：剪完了
-barberDone = Sem(0)     # 理发师 → 顾客：你可以走了
-
-def customer_thread():
-    global customers
+# 非解：等待者醒来后要重新抢 mutex
+def customer_bad():
+    global eating, waiting, must_wait
     mutex.wait()
-    if customers == n:
+    if must_wait:
+        waiting += 1
         mutex.signal()
-        balk()                  # 满员：直接离开
-        return
-    customers += 1
+        block.wait()
+        mutex.wait()            # 重新拿锁
+        waiting -= 1
+    eating += 1
+    must_wait = (eating == 5)
     mutex.signal()
-
-    customer.signal()           # 叫理发师
-    barber.wait()               # 等他示意坐下
-    get_haircut()
-    customerDone.signal()       # 剪完了
-    barberDone.wait()           # 等他确认
-
+    # eat sushi
     mutex.wait()
-    customers -= 1              # 离店，腾出名额
-    mutex.signal()
+    eating -= 1
+    if eating == 0:
+        n = min(5, waiting)
+        block.signal(n)
+        must_wait = False
+    mutex.signal()</code></pre>
 
-def barber_thread():
-    while True:
-        customer.wait()         # 没客人就睡
-        barber.signal()         # 请这位顾客坐下
-        cut_hair()
-        customerDone.wait()     # 等这位剪完
-        barberDone.signal()     # 放他走</code></pre>
+<p>非解的问题：被唤醒的等待者要重新抢 mutex，而新来的顾客也在抢。如果新顾客先拿到锁，他们可能把 5 个座位全部占满，导致等待者醒来后再次阻塞；更糟的是，超过 5 个线程可能同时进入临界区，直接违反约束。</p>
 
-<p>两个会合缺一不可：第一对保证「顾客坐下」与「理发师开剪」同步；第二对保证理发师不会在顾客还没离开椅子时就开始下一位。</p>
+<p><b>解法 #1（I'll do it for you）：</b>让离开的人——它已经持有 mutex——替等待者完成状态更新。</p>
 
-<p>推演：C1 进店（customers=1）叫醒理发师并坐下；C2–C4 陆续坐满；C5 见 4 人，balk。C1 剪完、确认、离店（customers=0），理发师才叫 C2。</p>
-
-<div class="thm warn">
-<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">balk 路径上的三个错误</span><span class="thm-id">10.1</span></div>
-<div class="thm-body">
-<p><b>忘了释放 mutex 就 balk。</b>满员时直接 return，锁被永久带走，之后所有人都在门口卡死。</p>
-<p><b>balk 前先加了 customers。</b>顺序必须是「检查满 → 释放锁 → 离开」，不能先加再减。否则计数器会在一瞬间超过 n，把后来者错误地拒之门外。</p>
-<p><b>把 n 理解成等候椅数量。</b>书里的 n 是店内总容量（含理发椅）。如果题目说「三把等候椅」，容量就是 4，别把两个数字混用。</p>
-</div>
-</div>
-
-<h3><span class="sn">10.3</span>FIFO 理发店：给每个人一个信号量</h3>
-<p>上面的版本不保证先来先剪：多个顾客都睡在同一个 <code>barber</code> 信号量上，理发师 signal 一次，醒来的是谁由调度器决定。要做到严格 FIFO，必须<strong>把等待者本身排成队列</strong>，每人持有一个只属于自己的信号量。</p>
-
-<pre><code class="language-python">queue = []              # 存放每位顾客的私有信号量
-
-def customer_thread():
-    global customers
-    mine = Sem(0)                   # 只属于我
+<pre><code class="language-python">def customer_1():
+    global eating, waiting, must_wait
     mutex.wait()
-    if customers == n:
+    if must_wait:
+        waiting += 1
         mutex.signal()
-        balk()
-        return
-    customers += 1
-    queue.append(mine)              # 按到达顺序入队
-    mutex.signal()
-
-    customer.signal()
-    mine.wait()                     # 只等我自己的号
-    get_haircut()
-    customerDone.signal()
-    barberDone.wait()
-
-    mutex.wait()
-    customers -= 1
-    mutex.signal()
-
-def barber_thread():
-    while True:
-        customer.wait()
-        mutex.wait()
-        mine = queue.pop(0)         # 取队首，严格 FIFO
+        block.wait()            # 醒来时状态已被离开者改好
+    else:
+        eating += 1
+        must_wait = (eating == 5)
         mutex.signal()
-        mine.signal()               # 精确叫醒这一个人
-        cut_hair()
-        customerDone.wait()
-        barberDone.signal()</code></pre>
+    # eat sushi
+    mutex.wait()
+    eating -= 1
+    if eating == 0:
+        n = min(5, waiting)
+        waiting -= n
+        eating += n
+        must_wait = (eating == 5)
+        block.signal(n)
+    mutex.signal()</code></pre>
+
+<p>最后一个离开的人直接把 <code>n</code> 个等待者“搬进” eating，并替他们 signal。等待者醒来时不需要再拿锁，因为它的名额已经被记在账上。代价是状态更新分散在“进入”和“离开”两处，验证时要同时看两条路径。</p>
+
+<p><b>解法 #2（Pass the baton）：</b>把 mutex 像接力棒一样交给下一个等待者。</p>
+
+<pre><code class="language-python">def customer_2():
+    global eating, waiting, must_wait
+    mutex.wait()
+    if must_wait:
+        waiting += 1
+        mutex.signal()
+        block.wait()            # 恢复时“已经持有 mutex”
+        waiting -= 1
+    eating += 1
+    must_wait = (eating == 5)
+    if waiting and not must_wait:
+        block.signal()          # 把 mutex 传给下一个等待者
+    else:
+        mutex.signal()
+    # eat sushi
+    mutex.wait()
+    eating -= 1
+    if eating == 0:
+        must_wait = False
+    if waiting and not must_wait:
+        block.signal()          # 继续传棒
+    else:
+        mutex.signal()</code></pre>
+
+<p>关键约定：<code>block.signal()</code> 不仅唤醒一个人，还“把 mutex 的所有权交给他”。信号量语义本身不保证这一点，是程序员用注释和纪律维持的不变量。原书说这个版本“更容易确认计数一致”，但“更难确认 mutex 用得对”。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>时刻</th><th>事件</th><th>queue</th><th>被叫醒</th></tr></thead>
+<thead><tr><th>版本</th><th>谁更新状态</th><th>等待者醒来后</th><th>风险</th></tr></thead>
 <tbody>
-<tr><td class="id">t1</td><td>C1 入队，理发师睡着</td><td>[s1]</td><td>理发师（customer）</td></tr>
-<tr><td class="id">t2</td><td>C2 入队</td><td>[s1, s2]</td><td>无人，C2 等 s2</td></tr>
-<tr><td class="id">t3</td><td>C3 入队</td><td>[s1, s2, s3]</td><td>无人，C3 等 s3</td></tr>
-<tr><td class="id">t4</td><td>理发师取队首 s1</td><td>[s2, s3]</td><td>C1</td></tr>
-<tr><td class="id">t5</td><td>C1 剪完离店</td><td>[s2, s3]</td><td>理发师取 s2</td></tr>
+<tr><td>非解</td><td>等待者自己</td><td>重新抢 mutex</td><td>可能超过 5 人 / 再次阻塞</td></tr>
+<tr><td>#1 I'll do it</td><td>离开者</td><td>直接吃</td><td>状态逻辑分散</td></tr>
+<tr><td>#2 baton</td><td>接力者</td><td>已持锁</td><td>依赖“signal 即传锁”的约定</td></tr>
 </tbody>
 </table>
 </div>
 
-<div class="intuition">
-<div class="ih">Intuition · 顺序是数据结构，不是信号量的属性</div>
-<p>信号量只承诺「唤醒一个等待者」，从不承诺「唤醒最早的那个」。想要 FIFO，就不要让多个人等同一个信号量；把顺序写进队列，让每个人等自己的那一格。这个思路可以推广到所有「必须按序服务」的题。</p>
+<h3><span class="sn">13.2</span>托儿所：一个成人最多带三个孩子</h3>
+<p>约束：任意时刻 <code>children &lt;= 3 * adults</code>。天真想法是让成人进入时 <code>multiplex.signal(3)</code>，离开时 wait 三次；孩子进入前 wait 一次。单个成人时没问题，但两个成人同时离开时会各拿一部分票，双双阻塞。</p>
+
+<pre><code class="language-python"># 非解：成人离开
+multiplex.signal(3)
+# critical section
+multiplex.wait()
+multiplex.wait()
+multiplex.wait()</code></pre>
+
+<p>假设有 3 个孩子、2 个成人，multiplex 值为 3。两个成人同时离开，一个拿走 2 张票后阻塞等第 3 张，另一个拿走 1 张后也阻塞；票被分光，谁也走不了。修复只需一把 mutex，把三次 wait 变成原子：</p>
+
+<pre><code class="language-python"># 成人离开（修复版）
+mutex.wait()
+multiplex.wait()
+multiplex.wait()
+multiplex.wait()
+mutex.signal()</code></pre>
+
+<p>这样第一个拿到 mutex 的成人要么拿满 3 张票走人，要么一张都拿不到、在 mutex 上等；不会出现“各拿一半”。</p>
+
+<p><b>扩展版</b>要求“不必要地挡住孩子”也不行：一个准备离开的成人拿走 2 张票后等第 3 张时，新来的孩子其实可以合法进入（因为成人还没走，比例仍够）。原书用四个计数器与两个队列实现：</p>
+
+<pre><code class="language-python">children = adults = waiting = leaving = 0
+mutex = Sem(1)
+childQueue = Sem(0)
+adultQueue = Sem(0)
+
+def child():
+    global children, waiting
+    mutex.wait()
+    if children &lt; 3 * adults:
+        children += 1
+        mutex.signal()
+    else:
+        waiting += 1
+        mutex.signal()
+        childQueue.wait()
+    # critical section
+    mutex.wait()
+    children -= 1
+    if leaving and children &lt;= 3 * (adults - 1):
+        leaving -= 1
+        adults -= 1
+        adultQueue.signal()
+    mutex.signal()
+
+def adult():
+    global adults, children, waiting, leaving
+    mutex.wait()
+    adults += 1
+    if waiting:
+        n = min(3, waiting)
+        childQueue.signal(n)
+        waiting -= n
+        children += n
+    mutex.signal()
+    # critical section
+    mutex.wait()
+    if children &lt;= 3 * (adults - 1):
+        adults -= 1
+        mutex.signal()
+    else:
+        leaving += 1
+        mutex.signal()
+        adultQueue.wait()</code></pre>
+
+<p>成人进入时“顺手”把孩子放进来（I'll do it for you）；孩子离开时“顺手”放走一个等着的成人。注意 <code>leaving</code> 的成人仍算在 <code>adults</code> 里，所以等待期间孩子仍可按比例进入——这正是“避免不必要等待”的关键。</p>
+
+<h3><span class="sn">13.3</span>宿舍派对：院长的五种状态</h3>
+<p>约束：<b>(1)</b> 任意多学生在房间；<b>(2)</b> 院长只能在“房间空”或“学生 &gt; 50”时进入；<b>(3)</b> 院长在房间时学生不能进、但可以出；<b>(4)</b> 院长必须等所有学生离开才能走；<b>(5)</b> 只有一个院长。</p>
+
+<pre><code class="language-python">students = 0
+dean = "not here"        # not here / waiting / in the room
+mutex = Sem(1)
+turn = Sem(1)
+clear = Sem(0)
+lieIn = Sem(0)
+
+def dean_thread():
+    global students, dean
+    mutex.wait()
+    if 0 &lt; students &lt; 50:
+        dean = "waiting"
+        mutex.signal()
+        lieIn.wait()            # 醒来时“已持有 mutex”
+    if students &gt;= 50:
+        dean = "in the room"
+        breakup()
+        turn.wait()             # 锁住学生入口
+        mutex.signal()
+        clear.wait()            # 等最后一个学生离开
+        turn.signal()           # 开闸
+    else:
+        search()                # students == 0
+    dean = "not here"
+    mutex.signal()
+
+def student_thread():
+    global students, dean
+    mutex.wait()
+    if dean == "in the room":
+        mutex.signal()
+        turn.wait()             # 院长在：在闸门外等
+        turn.signal()
+        mutex.wait()
+    students += 1
+    if students == 50 and dean == "waiting":
+        lieIn.signal()          # 把 mutex 交给院长
+    else:
+        mutex.signal()
+    party()
+    mutex.wait()
+    students -= 1
+    if students == 0 and dean == "waiting":
+        lieIn.signal()
+    elif students == 0 and dean == "in the room":
+        clear.signal()
+    else:
+        mutex.signal()</code></pre>
+
+<p>院长醒来后为什么能确定 <code>students == 0</code> 或 <code>&gt;= 50</code>？只有两条路径到达那里：第一条条件为假（本来就 0 或 ≥50），或者在 lieIn 上被学生叫醒（学生只在 50 人或 0 人时 signal）。这个“到达点的路径分析”是原书推荐的验证方法。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>题目</th><th>状态变量</th><th>元模式</th><th>最易错处</th></tr></thead>
+<tbody>
+<tr><td>sushi</td><td>eating / waiting / must_wait</td><td>I'll do it / baton</td><td>醒来后重新抢锁导致超员</td></tr>
+<tr><td>child care</td><td>children / adults / waiting / leaving</td><td>scoreboard + 两个队列</td><td>成人离开时各拿一半票</td></tr>
+<tr><td>room party</td><td>students / dean 状态</td><td>状态机 + 传棒</td><td>院长持锁等学生 → 死锁</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">本章三个常见错误</span><span class="thm-id">13.1</span></div>
+<div class="thm-body">
+<p><b>让被唤醒者重新竞争。</b>这正是寿司吧非解的病根。要么离开者替它改好状态，要么把锁直接交给它。</p>
+<p><b>把“等待中的成人”排除在计数外。</b>扩展托儿所里，<code>leaving</code> 的成人仍算成人，否则孩子会被不必要地挡住，比例也会算错。</p>
+<p><b>院长持锁等待。</b>院长在 lieIn/clear 上等时必须先释放 mutex，否则学生无法更新 students，永远凑不到唤醒条件。</p>
+</div>
 </div>
 </div>
 </section>
 
-<section id="ch11" class="chapter">
+<section id="ch14" class="chapter">
 <div class="wrap">
-<div class="sec-label">Pattern 11 · Puzzle Toolkit</div>
-<h2><span class="num">11</span>经典谜题：把新题拆成旧积木</h2>
-<p class="lede">剩下的题目看起来五花八门——造水、圣诞老人、过山车、 Senate Bus、寿司吧——但拆开之后，无非是记分板、屏障、旋转门和「接力棒」的重新组合。</p>
+<div class="sec-label">Chapter 7 · Not Remotely Classical II</div>
+<h2><span class="num">14</span>参议院巴士、法尼尔厅与食堂：批次、闸门与“不落单”</h2>
+<p class="lede">这一组题目都在处理“一批人一起行动”：一车人上完才能开、一批移民宣誓完才能走、一个学生不能独自坐在桌边。批次边界比单个线程的状态更难维护。</p>
 
 <div class="chap-intro">
-<p>本节先给出五种可迁移的元模式，再用 H2O 完整演示「计数 + 屏障 + 所有权转移」，最后用一张表把其余名题映射到已有积木。目标是：遇到没见过的题，能说出它像哪一个。</p>
-<span class="tag">Meta-Patterns</span>
+<p>本节对应原书 7.4–7.6：Senate Bus（hint、solution #1、solution #2）、Faneuil Hall（hint、solution、extended hint、extended solution）、Dining Hall（hint、solution、extended hint、extended solution）。重点看“传棒”如何让最后一个人把控制权交回给批次发起者。</p>
+<span class="tag">Batch Problems</span>
 </div>
 
 <div class="mapchips">
 <span class="chip hot">pass the baton</span>
-<span class="chip">I'll do it for you</span>
-<span class="chip">scoreboard</span>
-<span class="chip">ownership transfer</span>
-<span class="chip">preloaded turnstile</span>
+<span class="chip">min(waiting, 50)</span>
+<span class="chip">noJudge</span>
+<span class="chip">allSignedIn</span>
+<span class="chip">okToLeave</span>
+<span class="chip">never alone</span>
 </div>
 
-<h3><span class="sn">11.1</span>五种元模式</h3>
-<div class="cards">
-<div class="card"><div class="k">01</div><h4>记分板 Scoreboard</h4><p>用普通变量记录系统状态（几个人、几份材料、锅空没空），所有读写都在同一把 mutex 内。信号量只负责睡眠与唤醒，决策交给记分板。</p></div>
-<div class="card"><div class="k">02</div><h4>接力棒 Pass the baton</h4><p>一个线程把 mutex 直接交给下一个线程，自己不再持有。Senate Bus 的乘客依次唤醒下一位，H2O 的成组线程也靠它串行化。</p></div>
-<div class="card"><div class="k">03</div><h4>我替你办 I'll do it for you</h4><p>即将离开的线程顺手把后来者的状态改好、信号发好，省得对方醒来还要重新抢锁。寿司吧用它避免「醒来发现座位又被占」。</p></div>
-<div class="card"><div class="k">04</div><h4>预装旋转门</h4><p>一次 signal(n)，让 n 个线程各取一张票。屏障、过山车都用它减少上下文切换。</p></div>
-</div>
+<div class="note"><b>原书小节：</b>The Senate Bus problem · Bus problem hint · Bus problem solution #1 · Bus problem solution #2 · The Faneuil Hall problem · Faneuil Hall Problem Hint · Faneuil Hall problem solution · Extended Faneuil Hall Problem Hint · Extended Faneuil Hall problem solution · Dining Hall problem · Dining Hall problem hint · Dining Hall problem solution · Extended Dining Hall problem · Extended Dining Hall problem hint · Extended Dining Hall problem solution.</div>
 
-<h3><span class="sn">11.2</span>H2O：按 1:2 成组通过</h3>
-<p>氧线程与氢线程要组成水分子：一个氧加两个氢。约束不是「三个都到齐」这么简单，而是「同一组的三个线程都调用过 bond 之后，下一组才能开始」。做法是用计数器判断当前是否凑齐，凑齐的那位负责 signal 同伴并保留 mutex，等三人在屏障处会合后，再由氧线程释放 mutex。</p>
+<h3><span class="sn">14.1</span>Senate Bus：上满或没人就开</h3>
+<p>乘客到站等车；车来时所有<b>已在等</b>的人上车，车到之后才来的人等下一班；容量 50；所有人都上完后车才能 <code>depart</code>；没人等则立刻开走。</p>
 
-<pre><code class="language-python">mutex = Sem(1)
-oxygen = 0
-hydrogen = 0
-barrier = Barrier(3)        # 第 4 节的可复用屏障
-oxyQueue = Sem(0)
-hydroQueue = Sem(0)
+<pre><code class="language-python">riders = 0
+mutex = Sem(1)
+multiplex = Sem(50)
+bus = Sem(0)
+allAboard = Sem(0)
 
-def oxygen_thread():
-    global oxygen
+def bus_thread():
     mutex.wait()
-    oxygen += 1
-    if hydrogen &gt;= 2:               # 我凑齐了一组
-        hydroQueue.signal(2)
-        hydrogen -= 2
-        oxyQueue.signal()
-        oxygen -= 1
+    if riders &gt; 0:
+        bus.signal()            # 叫醒一位乘客，并把 mutex 交给他
+        allAboard.wait()        # 等最后一位把 mutex 交回
+    mutex.signal()
+    depart()
+
+def rider():
+    global riders
+    multiplex.wait()            # 等候区最多 50 人
+    mutex.wait()
+    riders += 1
+    mutex.signal()
+
+    bus.wait()                  # 醒来时“已持有 mutex”
+    multiplex.signal()
+    boardBus()
+
+    riders -= 1
+    if riders == 0:
+        allAboard.signal()      # 最后一位：把锁交回车
     else:
-        mutex.signal()              # 让出锁，去睡
-        oxyQueue.wait()
-    bond()
-    barrier.wait()                  # 三人到齐才继续
-    mutex.signal()                  # 每组只有氧线程释放
+        bus.signal()            # 还有乘客：把锁交给下一位</code></pre>
 
-def hydrogen_thread():
-    global hydrogen
+<p>这是“传棒”的典型：车把 mutex 交给第一位乘客；每位乘客上完车，把 mutex 交给下一位；最后一位把 mutex 交回车，车再释放并出发。全程只有一把锁在流动，没有额外竞争。</p>
+
+<p><b>解法 #2</b>（Grant Hutchins）不传锁，改用“车控制上车节奏”：</p>
+
+<pre><code class="language-python">waiting = 0
+mutex = Sem(1)
+bus = Sem(0)
+boarded = Sem(0)
+
+def bus_thread():
+    global waiting
     mutex.wait()
-    hydrogen += 1
-    if hydrogen &gt;= 2 and oxygen &gt;= 1:
-        hydroQueue.signal(2)
-        hydrogen -= 2
-        oxyQueue.signal()
-        oxygen -= 1
+    n = min(waiting, 50)
+    for i in range(n):
+        bus.signal()            # 逐个放行
+        boarded.wait()          # 等他上完
+    waiting = max(waiting - 50, 0)   # I'll do it for you
+    mutex.signal()
+    depart()
+
+def rider():
+    global waiting
+    mutex.wait()
+    waiting += 1
+    mutex.signal()
+
+    bus.wait()
+    board()
+    boarded.signal()            # 告诉车：我上完了</code></pre>
+
+<p>车在整个 boarding 过程中持有 mutex，所以新车到达无法插进这一批；它按 <code>min(waiting, 50)</code> 精确放行，不会多叫。上完后再替乘客更新 <code>waiting</code>，这是“我替你办”。</p>
+
+<h3><span class="sn">14.2</span>Faneuil Hall：法官清场与宣誓</h3>
+<p>三类线程：移民（enter、checkIn、sitDown、swear、getCertificate、leave）、法官（enter、confirm、leave）、旁观者（enter、spectate、leave）。约束：法官在楼里时任何人不得进入、移民不得离开（旁观者可以离开）；法官必须等所有已进入的移民都 checkIn 才能 confirm；移民必须等 confirm 之后才能 getCertificate。</p>
+
+<pre><code class="language-python">noJudge = Sem(1)
+entered = 0
+checked = 0
+judge = 0
+mutex = Sem(1)
+confirmed = Sem(0)
+allSignedIn = Sem(0)
+
+def immigrant():
+    global entered, checked
+    noJudge.wait()              # 法官在时被挡在门外
+    enter()
+    entered += 1                # 注意：原书在 noJudge 保护下递增
+    noJudge.signal()
+
+    mutex.wait()
+    checkIn()
+    checked += 1
+    if judge == 1 and entered == checked:
+        allSignedIn.signal()    # 把 mutex 交给法官
     else:
         mutex.signal()
-        hydroQueue.wait()
-    bond()
-    barrier.wait()</code></pre>
 
-<p>这段代码里 mutex 的持有者是「这一组中最后凑齐的人」，但释放者固定为氧线程。因此氧线程可能在并不持有 mutex 的情况下执行 <code>mutex.signal()</code>。书里专门指出：信号量没有所有者，这样做合法；真正要保证的是「每组恰好释放一次」。</p>
+    sitDown()
+    confirmed.wait()
+    swear()
+    getCertificate()
 
-<div class="table-wrap">
+    noJudge.wait()
+    leave()
+    noJudge.signal()
+
+def judge_thread():
+    global entered, checked, judge
+    noJudge.wait()              # 关住入口
+    mutex.wait()
+    enter()
+    judge = 1
+    if entered &gt; checked:
+        mutex.signal()
+        allSignedIn.wait()      # 等最后一个移民 checkIn，拿回 mutex
+    confirm()
+    confirmed.signal(checked)   # 每个已 checkIn 的移民一张票
+    entered = checked = 0
+    leave()
+    judge = 0
+    mutex.signal()
+    noJudge.signal()
+
+def spectator():
+    noJudge.wait()
+    enter()
+    noJudge.signal()
+    spectate()
+    leave()</code></pre>
+
+<p>法官持 noJudge 挡住新来者，持 mutex 读写计数器。如果到达时“已进入 &gt; 已 checkIn”，说明还有人没签到，法官释放 mutex 去 allSignedIn 上等；最后一个签到的移民 signal 并把 mutex 交回。confirm 之后，法官按 <code>checked</code> 的数量 signal confirmed，然后<b>替移民把计数器清零</b>（I'll do it for you）。</p>
+
+<p><b>扩展版</b>增加约束：法官离开后，所有已宣誓的移民必须走完，下一批（或下一位法官）才能进入。做法是在移民离开路径上加一道 <code>exit</code> 闸门，并用 <code>allGone</code> 把控制权交回法官。</p>
+
+<pre><code class="language-python">exit = Sem(0)
+allGone = Sem(0)
+
+# 移民结尾（替换原 leave 部分）
+exit.wait()                 # 醒来时已持有 mutex
+leave()
+checked -= 1
+if checked == 0:
+    allGone.signal()        # 最后一个：把 mutex 交回法官
+else:
+    exit.signal()           # 传给下一个移民
+
+# 法官结尾（替换原 leave 部分）
+leave()
+judge = 0
+exit.signal()               # 放一个移民离开，并交出 mutex
+allGone.wait()              # 等最后一个移民把 mutex 交回
+mutex.signal()
+noJudge.signal()</code></pre>
+
+<p>原书注：这个扩展解里，移民拿到证书后可能被“下一批宣誓”挡住，得再等一轮；这是约束本身要求的，不是 bug。</p>
+
+<h3><span class="sn">14.3</span>Dining Hall：不能独自坐在桌边</h3>
+<p>学生调用 <code>dine</code> 后、<code>leave</code> 前算“准备离开”。约束：一个学生不能独自坐一桌——“独自”指其他所有已 <code>dine</code> 的人都在她吃完前 <code>leave</code>。只有一种情况需要等：1 人在吃、1 人想走。</p>
+
+<pre><code class="language-python">eating = 0
+readyToLeave = 0
+mutex = Sem(1)
+okToLeave = Sem(0)
+
+def student():
+    global eating, readyToLeave
+    getFood()
+
+    mutex.wait()
+    eating += 1
+    if eating == 2 and readyToLeave == 1:
+        okToLeave.signal()      # 新来者替等待者解围
+        readyToLeave -= 1
+    mutex.signal()
+
+    dine()
+
+    mutex.wait()
+    eating -= 1
+    readyToLeave += 1
+    if eating == 1 and readyToLeave == 1:
+        mutex.signal()
+        okToLeave.wait()        # 我走了就只剩他一个：等
+    elif eating == 0 and readyToLeave == 2:
+        okToLeave.signal()      # 两个都想走：互相解围
+        readyToLeave -= 2
+        mutex.signal()
+    else:
+        readyToLeave -= 1
+        mutex.signal()
+
+    leave()</code></pre>
+
+<p>为什么只有这一种等待？因为“独自”需要桌上只剩一个人。若 eating ≥ 2，任何人离开都不会让剩下的人落单；若 eating == 1 且 readyToLeave == 1，离开者一走，桌上就只剩那个想走的人——所以必须等。等待者不需要重新拿锁：解围者在 signal 的同时已经替它更新了 <code>readyToLeave</code>。</p>
+
+<p><b>扩展版</b>增加“准备吃”（readyToEat）阶段：学生拿到食物后、dine 前算 readyToEat；如果她 dine 时桌上没人、也没有别人准备吃，她就独自开桌，不允许。于是第一个到达空桌的人要等第二个人。</p>
+
+<pre><code class="language-python">readyToEat = 0
+eating = 0
+readyToLeave = 0
+mutex = Sem(1)
+okToSit = Sem(0)
+okToLeave = Sem(0)
+
+def student():
+    global readyToEat, eating, readyToLeave
+    getFood()
+
+    mutex.wait()
+    readyToEat += 1
+    if eating == 0 and readyToEat == 1:
+        mutex.signal()
+        okToSit.wait()          # 独自到达空桌：等第二个人
+    elif eating == 0 and readyToEat == 2:
+        okToSit.signal()        # 第二个人：两人一起开桌
+        readyToEat -= 2
+        eating += 2
+        mutex.signal()
+    else:
+        readyToEat -= 1
+        eating += 1
+        if eating == 2 and readyToLeave == 1:
+            okToLeave.signal()
+            readyToLeave -= 1
+        mutex.signal()
+
+    dine()
+
+    mutex.wait()
+    eating -= 1
+    readyToLeave += 1
+    if eating == 1 and readyToLeave == 1:
+        mutex.signal()
+        okToLeave.wait()
+    elif eating == 0 and readyToLeave == 2:
+        okToLeave.signal()
+        readyToLeave -= 2
+        mutex.signal()
+    else:
+        readyToLeave -= 1
+        mutex.signal()
+
+    leave()</code></pre>
+
+<p>扩展版的关键是“两个人一起开桌”：第二个人 signal okToSit 时，直接把两人的名额都记进 eating，等待的第一个人醒来即可吃，不需要再拿锁。离开逻辑与原版相同。</p>
+
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>时刻</th><th>事件</th><th>oxygen / hydrogen</th><th>mutex</th></tr></thead>
+<thead><tr><th>题目</th><th>批次单位</th><th>谁发起</th><th>谁收尾</th></tr></thead>
 <tbody>
-<tr><td class="id">t1</td><td>O1 到达，氢不足</td><td>1 / 0</td><td>释放，O1 等 oxyQueue</td></tr>
-<tr><td class="id">t2</td><td>H1 到达，仍不足</td><td>1 / 1</td><td>释放，H1 等 hydroQueue</td></tr>
-<tr><td class="id">t3</td><td>H2 到达，凑齐</td><td>0 / 0</td><td>持有；signal 两个氢与一个氧</td></tr>
-<tr><td class="id">t4</td><td>三人 bond</td><td>0 / 0</td><td>仍由 H2 持有</td></tr>
-<tr><td class="id">t5</td><td>barrier 打开，O1 释放</td><td>0 / 0</td><td>归零，下一组可进</td></tr>
-</tbody>
-</table>
-</div>
-
-<h3><span class="sn">11.3</span>其余名题的模式映射</h3>
-<div class="table-wrap">
-<table>
-<thead><tr><th>题目</th><th>核心机制</th><th>一句话记法</th></tr></thead>
-<tbody>
-<tr><td><b>Santa Claus</b></td><td>记分板 + multiplex + 屏障</td><td>9 只驯鹿到齐才出发；3 只精灵成组才求助</td></tr>
-<tr><td><b>River Crossing</b></td><td>计数器 + 成组屏障</td><td>四人一船，禁止 1:3 组合</td></tr>
-<tr><td><b>Roller Coaster</b></td><td>multiplex + 双向会合</td><td>坐满才发车，下完才上下一批</td></tr>
-<tr><td><b>Senate Bus</b></td><td>接力棒 + 计数</td><td>乘客逐个上船，最后一个通知司机</td></tr>
-<tr><td><b>Sushi Bar</b></td><td>我替你办</td><td>离店的人顺手把等候者的状态改好</td></tr>
-<tr><td><b>Child Care</b></td><td>记分板 + 屏障</td><td>家长离开必须等孩子数量归零</td></tr>
-<tr><td><b>Faneuil Hall</b></td><td>分类互斥 + 计数器</td><td>法官清场，移民与旁观者分批</td></tr>
+<tr><td>Senate Bus #1</td><td>一车 ≤50 人</td><td>车 signal bus</td><td>最后一位乘客 signal allAboard</td></tr>
+<tr><td>Senate Bus #2</td><td>一车 ≤50 人</td><td>车逐个 signal</td><td>车自己更新 waiting</td></tr>
+<tr><td>Faneuil Hall</td><td>一批移民</td><td>法官 confirm</td><td>最后一位 checkIn 者 signal allSignedIn</td></tr>
+<tr><td>Extended Faneuil</td><td>一批移民离场</td><td>法官 signal exit</td><td>最后一位移民 signal allGone</td></tr>
+<tr><td>Dining Hall</td><td>一桌 ≥2 人</td><td>第二个到达者</td><td>最后离开者更新计数</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">成组题的两个致命点</span><span class="thm-id">12.1</span></div>
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">批次问题的三个陷阱</span><span class="thm-id">14.1</span></div>
 <div class="thm-body">
-<p><b>让持有 mutex 的线程在屏障处永久等待。</b>H2O 里这是刻意的：它阻止下一组进入。但如果屏障的 n 与实际参与者不匹配，这一组永远到不齐，mutex 也永远不释放，整个系统停死。成组题必须先数清「一组到底几个人」。</p>
-<p><b>每组释放次数不唯一。</b>如果氧线程和最后凑齐的氢线程都执行 <code>mutex.signal()</code>，下一组会有两个线程同时进入，1:2 的比例立刻被破坏。所有权可以转移，但释放者必须唯一。</p>
+<p><b>让“车”或“法官”持锁等整批人。</b>Senate Bus #2 是例外：车确实持锁，但它用 <code>boarded</code> 逐个会合，且乘客不需要 mutex；如果乘客也要拿 mutex，就会死锁。</p>
+<p><b>忘记重置计数器。</b>Faneuil Hall 的法官 confirm 后必须把 entered/checked 清零，否则下一批一来就认为“所有人都签到了”，直接 confirm。</p>
+<p><b>把“准备离开”当成“已经离开”。</b>Dining Hall 的 readyToLeave 是“想走但还没走”；只有真正 leave 之后，桌上人数才减少。计数与动作的先后必须与约束一致。</p>
 </div>
 </div>
-
-<p>解新题时，先写下「一组/一队/一船」的容量与组成，再找出谁判断「凑齐了」，最后决定谁在何时释放保护状态的锁。</p>
 </div>
 </section>
 
-<section id="ch12" class="chapter">
+<section id="ch15" class="chapter">
 <div class="wrap">
-<div class="sec-label">Cheat Sheet</div>
-<h2><span class="num">12</span>一页纸：看到约束，选出模式</h2>
-<p class="lede">真正的能力不是记住二十份代码，而是听到「必须等三个都到」「最多两个」「写者不许饿死」时，能在十秒内说出该用哪个积木、初值填几、以及最容易死在哪里。</p>
+<div class="sec-label">Chapter 8 · Python</div>
+<h2><span class="num">15</span>在 Python 里验证：互斥检查器与可乐机</h2>
+<p class="lede">伪代码省略了真实 API 的细节。Python 这一章用两个可以运行的程序，把“理论正确”变成“可观测的错误率”：一个用直方图抓竞争，一个用有界缓冲区抓越界。</p>
 
 <div class="chap-intro">
-<p>这是全书的压缩版：一张约束到模式的映射表、一条初值口诀、一套四步设计法、一份死锁与饿死清单，外加两道自测。</p>
-<span class="tag">Decision Table</span>
+<p>本节对应原书第 8 章：Mutex checker problem（hint、solution）与 The coke machine problem（hint、solution）。前者展示“错误不是随机，而是成串出现”；后者把生产者-消费者落到 <code>threading.Semaphore</code> 上。</p>
+<span class="tag">Python</span>
 </div>
 
-<h3><span class="sn">12.1</span>约束 → 模式</h3>
+<div class="mapchips">
+<span class="chip hot">threading.Semaphore</span>
+<span class="chip">histogram</span>
+<span class="chip">race detector</span>
+<span class="chip">coke machine</span>
+<span class="chip">bounded buffer</span>
+</div>
+
+<div class="note"><b>原书小节：</b>Synchronization in Python · Mutex checker problem · Mutex checker hint · Mutex checker solution · The coke machine problem · Coke machine hint · Coke machine solution.</div>
+
+<h3><span class="sn">15.1</span>互斥检查器：让竞争条件留下指纹</h3>
+<p>程序让两个线程各自把共享计数器从 0 加到 <code>end</code>，并用一个数组记录“每个计数值被用了几次”。如果同步正确，每个下标恰好被用一次，数组全是 1；如果发生丢失更新，某些下标会被用两次以上。</p>
+
+<pre><code class="language-python">from threading_cleanup import *
+from collections import Counter
+
+class Shared:
+    def __init__(self, end=10):
+        self.counter = 0
+        self.end = end
+        self.array = [0] * self.end
+
+def child_code(shared):
+    while True:
+        if shared.counter &gt;= shared.end:
+            break
+        shared.array[shared.counter] += 1
+        shared.counter += 1
+
+shared = Shared(10)
+children = [Thread(child_code, shared) for i in range(2)]
+for child in children: child.join()
+print(Counter(shared.array))</code></pre>
+
+<p>原书实测：<code>end=10</code> 时输出 <code>{1: 10}</code>；<code>end=100000</code> 时输出 <code>{1: 27561, 2: 72439}</code>。这个结果说明两件事：<b>(1)</b> 错误需要足够多的上下文切换才会出现；<b>(2)</b> 一旦出现，就不是“偶尔一次”，而是程序进入了固定节奏，反复踩同一个窗口。</p>
+
+<p>修复只需一把信号量，但要注意提前退出路径：</p>
+
+<pre><code class="language-python">class Shared:
+    def __init__(self, end=10):
+        self.counter = 0
+        self.end = end
+        self.array = [0] * self.end
+        self.mutex = Semaphore(1)
+
+def child_code(shared):
+    while True:
+        shared.mutex.wait()
+        if shared.counter &lt; shared.end:
+            shared.array[shared.counter] += 1
+            shared.counter += 1
+            shared.mutex.signal()
+        else:
+            shared.mutex.signal()   # 退出前必须还锁
+            break</code></pre>
+
+<p>原书特别提醒：<b>最容易错的是在 break 前忘记 signal</b>。这会把 mutex 永久吞掉，另一个线程永远阻塞，程序看起来像“跑完了”，其实是挂住了。用 <code>with</code> 或 <code>try/finally</code> 可以根治这类问题。</p>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">注意</span><span class="thm-title">“测了一百万次都对”说明什么</span><span class="thm-id">15.1</span></div>
+<div class="thm-body">
+<p>原书用 <code>end=1000000</code> 跑修复版，得到 <code>{1: 1000000}</code>。作者自己说：“这不能证明我的解正确，但至少是个好的开始。”测试只能提高信心，不能替代不变量论证；反过来，一次失败就足以否定正确性。</p>
+</div>
+</div>
+
+<h3><span class="sn">15.2</span>可乐机：把有界缓冲区写成可运行程序</h3>
+<p>机器容量 10，初始 5 瓶。两个生产者、两个消费者，各自按指数分布随机 sleep。未同步版本会看到 <code>cokes</code> 低于 0 或高于 10。</p>
+
+<pre><code class="language-python">import random
+
+class Shared:
+    def __init__(self, start=5):
+        self.cokes = start
+
+def consume(shared):
+    shared.cokes -= 1
+    print(shared.cokes)
+
+def produce(shared):
+    shared.cokes += 1
+    print(shared.cokes)
+
+def loop(shared, f, mu=1):
+    while True:
+        t = random.expovariate(1.0 / mu)
+        time.sleep(t)
+        f(shared)</code></pre>
+
+<p>同步版把整数换成两个信号量，并保留一把 mutex 只用于“打印时读值”：</p>
+
+<pre><code class="language-python">class Shared:
+    def __init__(self, start=5, capacity=10):
+        self.cokes = Semaphore(start)          # 已有几瓶
+        self.slots = Semaphore(capacity - start)  # 还能放几瓶
+        self.mutex = Semaphore(1)
+
+def consume(shared):
+    shared.cokes.wait()        # 先确认有货
+    shared.mutex.wait()
+    print(shared.cokes._value)   # 仅用于观察，不应在正式代码里读
+    shared.mutex.signal()
+    shared.slots.signal()      # 归还一个空位
+
+def produce(shared):
+    shared.slots.wait()        # 先确认有空位
+    shared.mutex.wait()
+    print(shared.cokes._value)
+    shared.mutex.signal()
+    shared.cokes.signal()      # 放入一瓶</code></pre>
+
+<p>约束对应得很直接：<code>cokes.wait()</code> 保证不会取到负数；<code>slots.wait()</code> 保证不会超过 10；mutex 保证打印时读到的值不被别人改。原书半开玩笑地提醒：Python 没有真正的私有属性，早期版本可以用 <code>Semaphore._Semaphore__value</code> 读到内部值，Python 3 里这个属性叫 <code>_value</code>；但<b>永远不要在业务逻辑里读信号量的值</b>——一旦读了，你就会写出依赖瞬时快照的错误判断。</p>
+
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">正确性</span><span class="thm-title">可乐机为什么不会越界</span><span class="thm-id">15.3</span></div>
+<div class="thm-body">
+<p>把 <code>cokes</code> 与 <code>slots</code> 看作一对互补的票：<code>cokes + slots = capacity</code> 恒成立。生产者先取一张 slots（没有空位就睡），再放一张 cokes；消费者先取一张 cokes（没有货就睡），再放一张 slots。每次转移都保持总和不变，且任一时刻 <code>0 ≤ cokes ≤ capacity</code>。mutex 只保护打印，不参与容量控制，因此不会出现“持锁等货”的死锁。</p>
+</div>
+</div>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>约束</th><th>信号量</th><th>初值</th><th>谁等待</th></tr></thead>
+<tbody>
+<tr><td>cokes ≥ 0</td><td><code>cokes</code></td><td>5</td><td>消费者</td></tr>
+<tr><td>cokes ≤ 10</td><td><code>slots</code></td><td>5</td><td>生产者</td></tr>
+<tr><td>打印互斥</td><td><code>mutex</code></td><td>1</td><td>双方</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">观察</span><span class="thm-title">为什么 cokes 和 slots 的初值加起来等于容量</span><span class="thm-id">15.2</span></div>
+<div class="thm-body">
+<p><code>5 + 5 = 10</code>。这不是巧合：<code>cokes</code> 数“已占用”，<code>slots</code> 数“空位”，两者互补。生产者 <code>slots.wait(); cokes.signal()</code>，消费者 <code>cokes.wait(); slots.signal()</code>，正好保持总和不变。若初始不是半满，两个初值仍必须满足 <code>start + (capacity - start) = capacity</code>。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ch16" class="chapter">
+<div class="wrap">
+<div class="sec-label">Chapters 9–11 · Real APIs</div>
+<h2><span class="num">16</span>从伪代码到真实系统：C、Pthreads 与线程清理</h2>
+<p class="lede">伪代码里 wait/signal 是天经地义的原子操作；到了 C，你要自己用 mutex 和条件变量（condition variable）把它造出来，还要处理信号、编译、join 与 Ctrl-C。</p>
+
+<div class="chap-intro">
+<p>本节对应原书第 9 章 Synchronization in C（Mutual exclusion 的 parent/child/synchronization errors/hint/solution，Make your own semaphores 的 hint/implementation/detail）以及附录 A、B（Cleaning up Python threads / POSIX threads）。重点是 <code>do...while (wakeups &lt; 1)</code> 为什么不能换成 <code>while</code>。</p>
+<span class="tag">C / Pthreads</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">pthread_mutex_t</span>
+<span class="chip">pthread_cond_t</span>
+<span class="chip">wakeups</span>
+<span class="chip">sem_wait / sem_post</span>
+<span class="chip">-lpthread</span>
+<span class="chip">KeyboardInterrupt</span>
+</div>
+
+<div class="note"><b>原书小节：</b>Synchronization in C · Mutual exclusion · Parent code · Child code · Synchronization errors · Mutual exclusion hint · Mutual exclusion solution · Make your own semaphores · Semaphore implementation hint · Semaphore implementation · Semaphore implementation detail · Cleaning up Python threads · Semaphore methods · Creating threads · Handling keyboard interrupts · Cleaning up POSIX threads · Compiling Pthread code · Creating threads · Joining threads · Semaphores.</div>
+
+<h3><span class="sn">16.1</span>C 版互斥检查器：与 Python 同样的实验</h3>
+<p>共享结构与 Python 版同构：<code>counter</code>、<code>end</code>、<code>array</code>。父线程创建 NUM_CHILDREN 个线程并 join，最后统计 <code>array[i] != 1</code> 的个数。</p>
+
+<pre><code class="language-c">typedef struct {
+    int counter;
+    int end;
+    int *array;
+} Shared;
+
+Shared *make_shared(int end)
+{
+    int i;
+    Shared *shared = check_malloc(sizeof(Shared));
+    shared-&gt;counter = 0;
+    shared-&gt;end = end;
+    shared-&gt;array = check_malloc(shared-&gt;end * sizeof(int));
+    for (i = 0; i &lt; shared-&gt;end; i++) {
+        shared-&gt;array[i] = 0;
+    }
+    return shared;
+}
+
+void child_code(Shared *shared)
+{
+    while (1) {
+        if (shared-&gt;counter &gt;= shared-&gt;end) {
+            return;
+        }
+        shared-&gt;array[shared-&gt;counter]++;
+        shared-&gt;counter++;
+    }
+}
+
+void check_array(Shared *shared)
+{
+    int i, errors = 0;
+    for (i = 0; i &lt; shared-&gt;end; i++) {
+        if (shared-&gt;array[i] != 1) errors++;
+    }
+    printf("%d errors.\n", errors);
+}</code></pre>
+
+<p>未同步版本在 <code>end = 100000</code> 时通常还是 0 errors（一个线程可能一口气跑完），要加到 <code>100000000</code> 才稳定出现错误。加锁后：</p>
+
+<pre><code class="language-c">void child_code(Shared *shared)
+{
+    while (1) {
+        sem_wait(shared-&gt;mutex);
+        if (shared-&gt;counter &gt;= shared-&gt;end) {
+            sem_signal(shared-&gt;mutex);   // return 前必须释放
+            return;
+        }
+        shared-&gt;array[shared-&gt;counter]++;
+        shared-&gt;counter++;
+        sem_signal(shared-&gt;mutex);
+    }
+}</code></pre>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">注意</span><span class="thm-title">C 里没有 finally</span><span class="thm-id">16.1</span></div>
+<div class="thm-body">
+<p>每一个 <code>return</code>、<code>break</code>、<code>goto</code> 之前都要手动 <code>sem_signal</code>。这是 C 并发代码最常见的泄漏源：锁没丢，但名额永远回不来。防御性写法是“单入口单出口”，或者用 <code>goto cleanup</code> 统一释放。</p>
+</div>
+</div>
+
+<h3><span class="sn">16.2</span>自己造信号量：value + wakeups</h3>
+<p>Pthreads 只给你 mutex 和条件变量，信号量要自己封装。结构体需要三个字段：<code>value</code>（当前值）、<code>wakeups</code>（已发信号但尚未恢复执行的线程数）、以及保护它们的 mutex 与 cond。</p>
+
+<pre><code class="language-c">typedef struct {
+    int value, wakeups;
+    Mutex *mutex;
+    Cond *cond;
+} Semaphore;
+
+Semaphore *make_semaphore(int value)
+{
+    Semaphore *semaphore = check_malloc(sizeof(Semaphore));
+    semaphore-&gt;value = value;
+    semaphore-&gt;wakeups = 0;
+    semaphore-&gt;mutex = make_mutex();
+    semaphore-&gt;cond = make_cond();
+    return semaphore;
+}
+
+void sem_wait(Semaphore *semaphore)
+{
+    mutex_lock(semaphore-&gt;mutex);
+    semaphore-&gt;value--;
+
+    if (semaphore-&gt;value &lt; 0) {
+        do {
+            cond_wait(semaphore-&gt;cond, semaphore-&gt;mutex);
+        } while (semaphore-&gt;wakeups &lt; 1);
+        semaphore-&gt;wakeups--;
+    }
+    mutex_unlock(semaphore-&gt;mutex);
+}
+
+void sem_signal(Semaphore *semaphore)
+{
+    mutex_lock(semaphore-&gt;mutex);
+    semaphore-&gt;value++;
+
+    if (semaphore-&gt;value &lt;= 0) {
+        semaphore-&gt;wakeups++;
+        cond_signal(semaphore-&gt;cond);
+    }
+    mutex_unlock(semaphore-&gt;mutex);
+}</code></pre>
+
+<p>为什么 <code>wakeups</code>？因为条件变量的 <code>signal</code> 没有记忆：如果被唤醒的线程还没拿到 mutex，另一个线程可能抢先 <code>sem_wait</code> 并把值减回负数，然后“catch its own signal”。<code>wakeups</code> 记录“已经承诺出去但还没兑现的唤醒”，保证每个 signal 至少对应一个真正能继续的等待者。</p>
+
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">细节</span><span class="thm-title">为什么必须是 do...while，不能是 while</span><span class="thm-id">16.2</span></div>
+<div class="thm-body">
+<p>用 <code>while (wakeups &lt; 1)</code> 时，线程被唤醒后先检查条件；如果此时 <code>wakeups</code> 已被别的线程消费为 0，它就继续睡——但那个“唤醒”已经被消耗掉了，可能造成丢失唤醒。更关键的是，<code>do...while</code> 确保线程<b>至少进入一次等待</b>，把“检查—等待”合并成一个不可分割的队列动作，从而满足 Property 3：signal 时若有等待者，一定有一个会被真正唤醒。原书也承认，极端情况下的虚假唤醒（spurious wakeup）仍可能破坏这个保证。</p>
+</div>
+</div>
+
+<h3><span class="sn">16.3</span>Python 线程清理：让 API 顺眼一点</h3>
+<p>附录 A 做了三件事。第一，把 <code>acquire/release</code> 改名为 <code>wait/signal</code>：</p>
+
+<pre><code class="language-python">import threading
+
+class Semaphore(threading._Semaphore):
+    wait = threading._Semaphore.acquire
+    signal = threading._Semaphore.release
+
+mutex = Semaphore()
+mutex.wait()
+mutex.signal()</code></pre>
+
+<p>第二，封装 <code>Thread</code>，让创建即启动，参数不用写 <code>target=</code>/<code>args=</code>：</p>
+
+<pre><code class="language-python">class Thread(threading.Thread):
+    def __init__(self, t, *args):
+        threading.Thread.__init__(self, target=t, args=args)
+        self.start()
+
+thread  = Thread(function, 1, 2, 3)
+threads = [Thread(function, i, i, i) for i in range(10)]</code></pre>
+
+<p>第三，解决 <code>join</code> 无法被 Ctrl-C 打断的问题。做法是在创建线程前 fork 一个“看门”进程：子进程跑真正的程序，父进程 <code>os.wait()</code>；捕获 <code>KeyboardInterrupt</code> 后杀掉子进程并退出。</p>
+
+<pre><code class="language-python">import threading, time, os, signal, sys
+
+def watcher():
+    child = os.fork()
+    if child == 0:
+        return                  # 子进程继续执行主程序
+    try:
+        os.wait()
+    except KeyboardInterrupt:
+        print("KeyboardInterrupt")
+        os.kill(child, signal.SIGKILL)
+        sys.exit()
+
+watcher()
+parent_code()</code></pre>
+
+<p>这套代码放在 <code>threading_cleanup.py</code> 里；第 8 章的示例默认它已经执行。注意它只适用于 UNIX/macOS，Windows 没有 <code>fork</code>。</p>
+
+<h3><span class="sn">16.4</span>Pthreads 清理：编译、创建、join 与信号量</h3>
+<p>编译要加 <code>-lpthread</code>：</p>
+
+<pre><code class="language-bash">gcc -g -O2 -o array array.c -lpthread</code></pre>
+
+<p>创建线程前要定义 <code>Shared</code> 结构，并写一个 <code>void *entry(void *arg)</code> 作为线程入口；<code>pthread_create</code> 的返回值是 <code>pthread_t</code> 句柄，具有值语义，可以复制。join 用 <code>pthread_join(thread, NULL)</code>。</p>
+
+<p>POSIX 信号量的类型是 <code>sem_t</code>，具有<b>结构语义</b>：赋值会复制整个结构，复制后的行为未定义。因此必须用指针操作，并包一层：</p>
+
+<pre><code class="language-c">typedef sem_t Semaphore;
+
+Semaphore *make_semaphore(int n)
+{
+    Semaphore *sem = check_malloc(sizeof(Semaphore));
+    int ret = sem_init(sem, 0, n);      // 0：线程间共享
+    if (ret == -1) {
+        perror("sem_init failed");
+        exit(-1);
+    }
+    return sem;
+}
+
+int sem_signal(Semaphore *sem)
+{
+    return sem_post(sem);               // POSIX 叫 post，不叫 signal
+}</code></pre>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>环境</th><th>创建</th><th>等待</th><th>通知</th><th>陷阱</th></tr></thead>
+<tbody>
+<tr><td>本书伪代码</td><td><code>Semaphore(1)</code></td><td><code>wait()</code></td><td><code>signal()</code></td><td>初值/配对</td></tr>
+<tr><td>Python</td><td><code>threading.Semaphore(1)</code></td><td><code>acquire()</code></td><td><code>release()</code></td><td>异常路径忘记 release</td></tr>
+<tr><td>POSIX sem</td><td><code>sem_init(sem,0,n)</code></td><td><code>sem_wait</code></td><td><code>sem_post</code></td><td><code>sem_t</code> 不可按值复制</td></tr>
+<tr><td>Pthreads</td><td><code>pthread_mutex_init</code></td><td><code>pthread_mutex_lock</code></td><td><code>pthread_mutex_unlock</code></td><td>条件变量必须配 mutex</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">误区</span><span class="thm-title">真实 API 的四个坑</span><span class="thm-id">16.3</span></div>
+<div class="thm-body">
+<p><b>复制 <code>sem_t</code>。</b>它是结构体，按值传递会复制内部状态，行为未定义。永远传指针。</p>
+<p><b>用 <code>while</code> 替代 <code>do...while</code>。</b>会破坏“signal 必唤醒一个等待者”的保证，造成丢失唤醒。</p>
+<p><b>忘记 <code>-lpthread</code>。</b>链接失败或运行期行为异常；在 macOS 上该库已并入 libSystem，但显式写出更可移植。</p>
+<p><b>在 <code>join</code> 上按 Ctrl-C。</b>Python 的 <code>Thread.join</code> 不可中断；要么用超时轮询，要么用附录 A 的 watcher 方案。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="summary" class="chapter">
+<div class="wrap">
+<div class="sec-label">Wrap-up · Decision Table</div>
+<h2><span class="num">17</span>一页纸：看到约束，选出模式</h2>
+<p class="lede">真正的能力不是记住二十份代码，而是听到“必须等三个都到”“最多两个”“写者不许饿死”时，能在十秒内说出该用哪个积木、初值填几、以及最容易死在哪里。</p>
+
+<div class="chap-intro">
+<p>这是全书的压缩版：一张约束到模式的映射表、一条初值口诀、一套四步设计法、一份死锁与饥饿清单、全书 178 个小节的英文索引，外加三道自测。速查表只做复习，不替代前面各节的推导。</p>
+<span class="tag">Master Cheat Sheet</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">constraint → pattern</span>
+<span class="chip">initial value</span>
+<span class="chip">4-step design</span>
+<span class="chip">deadlock</span>
+<span class="chip">livelock</span>
+<span class="chip">starvation</span>
+</div>
+
+<h3><span class="sn">17.1</span>约束 → 模式</h3>
 <div class="table-wrap">
 <table>
 <thead><tr><th>你看到的约束</th><th>首选模式</th><th>信号量与初值</th><th>一句话要点</th></tr></thead>
@@ -1905,22 +3833,48 @@ def hydrogen_thread():
 <tr><td>严格先来先服务</td><td>FIFO queue</td><td>每线程一个 <code>Sem(0)</code></td><td>顺序写进队列，别指望信号量公平</td></tr>
 <tr><td>圆桌资源，邻居互等</td><td>footman / 全序编号</td><td><code>Sem(n-1)</code></td><td>破坏循环等待，或让一人反序</td></tr>
 <tr><td>按状态唤醒特定线程</td><td>scoreboard + pusher</td><td>mutex + 每类事件信号量</td><td>先串行判断，再精确 signal</td></tr>
+<tr><td>必须凑够一组才放行</td><td>barrier + 所有权转移</td><td>计数 + 屏障 + <code>Sem(0)</code></td><td>每组恰好一人释放 mutex</td></tr>
+<tr><td>离开者能顺手帮等待者</td><td>I'll do it for you</td><td>记分板 + 条件信号量</td><td>醒来时状态已改好，不再抢锁</td></tr>
+<tr><td>要把锁交给下一个人</td><td>pass the baton</td><td>mutex + 队列信号量</td><td>signal 同时意味着“锁归你了”</td></tr>
 </tbody>
 </table>
 </div>
 
-<h3><span class="sn">12.2</span>初值速查</h3>
+<h3><span class="sn">17.2</span>初值速查</h3>
 <p>一句话：<b>0</b> 等事件，<b>1</b> 是锁或令牌，<b>k</b> 是名额，<b>n</b> 是预装票。两个答案都说得通，说明该拆成两个信号量。</p>
 
-<h3><span class="sn">12.3</span>四步设计法</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>初值</th><th>语义</th><th>典型用途</th></tr></thead>
+<tbody>
+<tr><td class="id">0</td><td>事件尚未发生；先 signal 会留票</td><td>signaling、rendezvous、队列、per-thread 通知</td></tr>
+<tr><td class="id">1</td><td>有一个名额 / 房间空 / 令牌可用</td><td>mutex、roomEmpty、turnstile 初始开</td></tr>
+<tr><td class="id">k</td><td>同时最多 k 个</td><td>multiplex、座位、连接池</td></tr>
+<tr><td class="id">n</td><td>一次性预装 n 张票</td><td>屏障、批量放行、signal(n)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">17.3</span>四步设计法</h3>
 <ol>
 <li><b>写约束。</b>把题目翻译成四类句子：谁必须先于谁、谁与谁不能共存、同时最多几个、几个必须一起走。</li>
-<li><b>画状态。</b>列出「谁在等、等什么、谁负责叫醒、叫醒后第一件事做什么」。这一步能提前发现「叫醒错人」。</li>
+<li><b>画状态。</b>列出“谁在等、等什么、谁负责叫醒、叫醒后第一件事做什么”。这一步能提前发现“叫醒错人”。</li>
 <li><b>定信号量。</b>一个信号量只表达一件事，写明初值与含义；计数器用普通变量加 mutex。</li>
 <li><b>写代码与验三问。</b>先等条件再拿锁，不持锁等待。再问：会不会两类线程同时进场？会不会所有人都在等？会不会有人永远轮不到？</li>
 </ol>
 
-<h3><span class="sn">12.4</span>死锁与饿死检查清单</h3>
+<h3><span class="sn">17.4</span>三种失败模式：死锁、活锁、饥饿</h3>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">死锁 / 活锁 / 饥饿</span><span class="thm-id">17.1</span></div>
+<div class="thm-body">
+<p><b>死锁</b>（deadlock）：一组线程互相等待对方持有的资源，谁也无法前进；系统整体停住。书中的 Deadlock #1–#6 都是这一类。</p>
+<p><b>活锁</b>（livelock）：线程并没有阻塞，仍在执行指令，但彼此的动作互相抵消，系统状态原地打转，没有人完成有意义的工作。典型例子是两个人在窄路上反复左右让路。活锁与死锁的区别是“CPU 还在烧，但没进展”。</p>
+<p><b>饥饿</b>（starvation）：系统整体在前进，但某个线程被无限期跳过。写者饿死、删除者饿死、Tanenbaum 的循环都属于此类。它不是死锁，因为其他线程仍在完成工作。</p>
+</div>
+</div>
+
+<h3><span class="sn">17.5</span>死锁与饥饿检查清单</h3>
 <div class="table-wrap">
 <table>
 <thead><tr><th>死锁条件</th><th>含义</th><th>书里的破解手法</th></tr></thead>
@@ -1932,20 +3886,23 @@ def hydrogen_thread():
 </tbody>
 </table>
 </div>
-<p>饿死是另一条轴：系统一直在动，但某个线程永远轮不到。查等待队列是否 FIFO、有没有插队路径、是否有类别长期占住入口。写者饿死、删除者饿死、Tanenbaum 的循环都属此类。</p>
+<p>饥饿是另一条轴：系统一直在动，但某个线程永远轮不到。查等待队列是否 FIFO、有没有插队路径、是否有类别长期占住入口。写者饿死、删除者饿死、Tanenbaum 的循环都属此类。</p>
 
-<div class="thm warn">
-<div class="thm-head"><span class="thm-kind">最后提醒</span><span class="thm-title">五条最容易在 review 中漏掉的错</span><span class="thm-id">12.1</span></div>
-<div class="thm-body">
-<p><b>持锁等待。</b>看到 <code>mutex.wait()</code> 后面紧跟另一个 <code>wait()</code>，先怀疑死锁。</p>
-<p><b>异常路径吞票。</b>临界区里的 <code>return</code> 或异常没有走到 signal，名额永久消失。</p>
-<p><b>用 if 判断条件。</b>在条件变量上必须 while 复查；在信号量上则要确认「一个信号量只对应一件事」。</p>
-<p><b>把公平当默认。</b>信号量只保证唤醒一个，不保证唤醒最早的那个。</p>
-<p><b>用 sleep 代替同步。</b>测试通过不等于正确；先证明不变量，再谈性能。</p>
-</div>
+<h3><span class="sn">17.6</span>全书小节索引（英文原题）</h3>
+<div class="note">
+<p><b>Ch 1：</b>Preface · Introduction · Synchronization · Execution model · Serialization with messages · Non-determinism · Shared variables · Concurrent writes · Concurrent updates · Mutual exclusion with messages.</p>
+<p><b>Ch 2：</b>Semaphores · Definition · Syntax · Why semaphores?</p>
+<p><b>Ch 3：</b>Basic synchronization patterns · Signaling · Sync.py · Rendezvous · Rendezvous hint · Rendezvous solution · Deadlock #1 · Mutex · Mutual exclusion hint · Mutual exclusion solution · Multiplex · Multiplex solution · Barrier · Barrier hint · Barrier non-solution · Deadlock #2 · Barrier solution · Deadlock #3 · Reusable barrier · Reusable barrier non-solution #1 · Reusable barrier problem #1 · Reusable barrier non-solution #2 · Reusable barrier hint · Reusable barrier solution · Preloaded turnstile · Barrier objects · Queue · Queue hint · Queue solution · Exclusive queue hint · Exclusive queue solution.</p>
+<p><b>Ch 4：</b>Classical synchronization problems · Producer-consumer problem · Producer-consumer hint · Producer-consumer solution · Deadlock #4 · Producer-consumer with a finite buffer · Finite buffer producer-consumer hint · Finite buffer producer-consumer solution · Readers-writers problem · Readers-writers hint · Readers-writers solution · Starvation · No-starve readers-writers hint · No-starve readers-writers solution · Writer-priority readers-writers hint · Writer-priority readers-writers solution · No-starve mutex · No-starve mutex hint · No-starve mutex solution · Dining philosophers · Deadlock #5 · Dining philosophers hint #1 · Dining philosophers solution #1 · Dining philosopher's solution #2 · Tanenbaum's solution · Starving Tanenbaums · Cigarette smokers problem · Deadlock #6 · Smokers problem hint · Smoker problem solution · Generalized Smokers Problem · Generalized Smokers Problem Hint · Generalized Smokers Problem Solution.</p>
+<p><b>Ch 5：</b>Less classical synchronization problems · The dining savages problem · Dining Savages hint · Dining Savages solution · The barbershop problem · Barbershop hint · Barbershop solution · The FIFO barbershop · FIFO barbershop hint · FIFO barbershop solution · Hilzer's Barbershop problem · Hilzer's barbershop hint · Hilzer's barbershop solution · The Santa Claus problem · Santa problem hint · Santa problem solution · Building H2O · H2O hint · H2O solution · River crossing problem · River crossing hint · River crossing solution · The roller coaster problem · Roller Coaster hint · Roller Coaster solution · Multi-car Roller Coaster problem · Multi-car Roller Coaster hint · Multi-car Roller Coaster solution.</p>
+<p><b>Ch 6：</b>Not-so-classical problems · The search-insert-delete problem · Search-Insert-Delete hint · Search-Insert-Delete solution · The unisex bathroom problem · Unisex bathroom hint · Unisex bathroom solution · No-starve unisex bathroom problem · No-starve unisex bathroom solution · Baboon crossing problem · The Modus Hall Problem · Modus Hall problem hint · Modus Hall problem solution.</p>
+<p><b>Ch 7：</b>Not remotely classical problems · The sushi bar problem · Sushi bar hint · Sushi bar non-solution · Sushi bar solution #1 · Sushi bar solution #2 · The child care problem · Child care hint · Child care non-solution · Child care solution · Extended child care problem · Extended child care hint · Extended child care solution · The room party problem · Room party hint · Room party solution · The Senate Bus problem · Bus problem hint · Bus problem solution #1 · Bus problem solution #2 · The Faneuil Hall problem · Faneuil Hall Problem Hint · Faneuil Hall problem solution · Extended Faneuil Hall Problem Hint · Extended Faneuil Hall problem solution · Dining Hall problem · Dining Hall problem hint · Dining Hall problem solution · Extended Dining Hall problem · Extended Dining Hall problem hint · Extended Dining Hall problem solution.</p>
+<p><b>Ch 8：</b>Synchronization in Python · Mutex checker problem · Mutex checker hint · Mutex checker solution · The coke machine problem · Coke machine hint · Coke machine solution.</p>
+<p><b>Ch 9：</b>Synchronization in C · Mutual exclusion · Parent code · Child code · Synchronization errors · Mutual exclusion hint · Mutual exclusion solution · Make your own semaphores · Semaphore implementation hint · Semaphore implementation · Semaphore implementation detail.</p>
+<p><b>Ch 10–11：</b>Cleaning up Python threads · Semaphore methods · Creating threads · Handling keyboard interrupts · Cleaning up POSIX threads · Compiling Pthread code · Creating threads · Joining threads · Semaphores.</p>
 </div>
 
-<h3><span class="sn">12.5</span>两道自测</h3>
+<h3><span class="sn">17.7</span>三道自测</h3>
 <div class="quiz" data-quiz>
 <div class="quiz-q"><span class="qmark">Q1</span>为什么 <code>Sem(0)</code> 的 signal 可以先于 wait 执行？</div>
 <div class="quiz-opts">
@@ -1959,15 +3916,37 @@ def hydrogen_thread():
 <div class="quiz" data-quiz>
 <div class="quiz-q"><span class="qmark">Q2</span>屏障为什么需要两道旋转门？</div>
 <div class="quiz-opts">
-<button data-correct="true">第一道门要在所有人离开后重新锁上，第二道门负责「等所有人离开」。</button>
+<button data-correct="true">第一道门要在所有人离开后重新锁上，第二道门负责“等所有人离开”。</button>
 <button>为了让 n 个线程分成两批通过，提高吞吐。</button>
 <button>因为一个信号量一次最多只能加一。</button>
 </div>
-<div class="quiz-exp">第一道门放行后余票归零，但下一轮的人可能已经混进来；第二道门把「离开」也变成一次会合，最后一人到达时才复位。</div>
+<div class="quiz-exp">第一道门放行后余票归零，但下一轮的人可能已经混进来；第二道门把“离开”也变成一次会合，最后一人到达时才复位。</div>
 </div>
 
-<h3><span class="sn">12.6</span>一页纸总结</h3>
-<p>同步的本质是把不受控的交错裁剪成允许的少数几种顺序。0 等事件，1 是独占，k 是名额；计数器加锁是记分板，两道门是阶段。遇到新题，先画「谁等谁」，再问「谁负责叫醒」，最后查「持锁等待」与「唤醒错人」。</p>
+<div class="quiz" data-quiz>
+<div class="quiz-q"><span class="qmark">Q3</span>读者-写者基础版没有死锁，为什么仍被认为有缺陷？</div>
+<div class="quiz-opts">
+<button data-correct="true">写者可能被源源不断的读者无限期跳过，即饥饿。</button>
+<button>读者之间没有互斥，会同时改写数据。</button>
+<button>roomEmpty 初值应为 0，否则写者永远进不去。</button>
+</div>
+<div class="quiz-exp">互斥成立、系统也在前进，但写者可能永远等不到房间空。饥饿不等于死锁，需要额外的旋转门或写者优先策略。</div>
+</div>
+
+<h3><span class="sn">17.8</span>学习路线</h3>
+<p>第一遍：第 1–5 节，把 signaling、rendezvous、mutex、multiplex、barrier、queue 六段代码默写出来。第二遍：第 6–10 节，每道经典题先自己写，再对照“谁在等、谁叫醒、谁释放”。第三遍：第 11–15 节，不要背答案，只记“这题像哪一块积木”；遇到新题，先画共存矩阵与批次边界。第四遍：第 16 节，把至少一个模式落到 Python 或 C 的可运行代码，观察真实调度。</p>
+<p>最后记住 Downey 的底层方法论：<b>同步不是让程序“看起来对”，而是把合法交错限制在一个可证明的集合里。</b>信号量只是工具；真正可迁移的能力，是从约束推导出状态机，再用三问（互斥？前进？有界等待？）逐条验收。</p>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">最后提醒</span><span class="thm-title">五条最容易在 review 中漏掉的错</span><span class="thm-id">17.2</span></div>
+<div class="thm-body">
+<p><b>持锁等待。</b>看到 <code>mutex.wait()</code> 后面紧跟另一个 <code>wait()</code>，先怀疑死锁。</p>
+<p><b>异常路径吞票。</b>临界区里的 <code>return</code> 或异常没有走到 signal，名额永久消失。</p>
+<p><b>用 if 判断条件。</b>在条件变量上必须 while 复查；在信号量上则要确认“一个信号量只对应一件事”。</p>
+<p><b>把公平当默认。</b>信号量只保证唤醒一个，不保证唤醒最早的那个。</p>
+<p><b>用 sleep 代替同步。</b>测试通过不等于正确；先证明不变量，再谈性能。</p>
+</div>
+</div>
 </div>
 </section>
 
@@ -1978,7 +3957,7 @@ def hydrogen_thread():
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 Allen B. Downey 的《The Little Book of Semaphores》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1986,7 +3965,7 @@ def hydrogen_thread():
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>6 章 · 291 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
@@ -2176,7 +4155,8 @@ window.MathJax = {
       norm: ['{\\left\\|#1\\right\\|}', 1], abs: ['{\\left|#1\\right|}', 1],
       loc: '{\\mathrm{loc}}', dist: '{\\operatorname{dist}}', spt: '{\\operatorname{spt}}',
       osc: '{\\operatorname{osc}}', dH: '{d_H}', pa: '{\\partial}',
-      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}'
+      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}',
+      boldsymbol: ['{\\mathbf{#1}}', 1], bm: ['{\\mathbf{#1}}', 1]
     }
   },
   svg: { fontCache: 'local', scale: 1.02 },

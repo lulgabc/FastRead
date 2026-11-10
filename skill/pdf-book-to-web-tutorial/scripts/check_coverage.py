@@ -149,6 +149,10 @@ def salient_terms(chapters):
 
 
 def main() -> None:
+    try:
+        sys.stdout.reconfigure(errors='replace')
+    except Exception:
+        pass
     ap = argparse.ArgumentParser()
     ap.add_argument("--work", required=True, help="work dir from extract_book.py")
     ap.add_argument("--html", required=True, help="generated tutorial HTML")

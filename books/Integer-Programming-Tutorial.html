@@ -432,28 +432,42 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · MATH</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">Integer Programming
       <span>Models, Algorithms and Applications</span>
     </div>
-    <div class="sb-meta"><b>8</b> 章 · <b>360</b> 页</div>
+    <div class="sb-meta">360 页 · 18 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
-    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>把离散决策写成整数规划</span></a>
-    <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>好模型与坏模型：让 LP 松弛说真话</span></a>
-    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>松弛、对偶与界：怎么证明“已经最优”</span></a>
-    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>全幺模与网络流：LP 何时自动整数</span></a>
-    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>动态规划：无容量批量生产</span></a>
-    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>分支定界：把分数解劈成两半</span></a>
-    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>割平面：把分数解切掉，而不切掉整数解</span></a>
-    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>覆盖、包装与背包：从结构里榨出强割</span></a>
-    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>旅行商：子回路、割与 2-opt</span></a>
-    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>调度：析取、时间索引与大 $M$</span></a>
-    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>列生成：变量太多时，只生成有用的列</span></a>
-    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>计算实践：从模型到可信答案</span></a>
+    <div class="nav-part">路线</div>
+    <a class="nav-link" href="#ch0" data-sec="ch0"><span class="nav-num">§</span> <span>全书地图：界、结构、分解</span></a>
+    <div class="nav-part">Part I · 建模与界</div>
+    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>把决策写成整数规划</span></a>
+    <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>松弛、对偶与界</span></a>
+    <div class="nav-part">Part II · 好问题</div>
+    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>全幺模与网络流</span></a>
+    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>匹配与指派</span></a>
+    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>动态规划</span></a>
+    <div class="nav-part">Part III · 难度</div>
+    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>复杂性：P、NP 与近似</span></a>
+    <div class="nav-part">Part IV · 精确算法</div>
+    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>分支定界</span></a>
+    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>割平面与 Gomory</span></a>
+    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>强不等式与 branch-and-cut</span></a>
+    <div class="nav-part">Part V · 分解</div>
+    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>拉格朗日松弛</span></a>
+    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>列生成与 branch-and-price</span></a>
+    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>Benders 分解</span></a>
+    <div class="nav-part">Part VI · 落地</div>
+    <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>原始启发式</span></a>
+    <a class="nav-link" href="#ch14" data-sec="ch14"><span class="nav-num">14</span> <span>从理论到求解</span></a>
+    <div class="nav-part">专题</div>
+    <a class="nav-link" href="#ch15" data-sec="ch15"><span class="nav-num">15</span> <span>TSP：子回路与 1-tree</span></a>
+    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>算法选择：一张图</span></a>
+
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
@@ -481,126 +495,190 @@ figcaption b{color:var(--ink2);font-weight:600}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="hero-kicker">Integer Programming · Wolsey</div>
-        <h1>整数规划<span class="en">Formulations, Algorithms, and Computation</span></h1>
-        <p class="hero-sub">当决策只能是“开或关”“整批生产”“先做哪道工序”时，线性规划就不够用了。本教程沿 Wolsey 的框架，把<b>建模、松弛、分支、割平面、分解与计算</b>串成一条可操作的路线。</p>
+        <div class="hero-kicker">Laurence A. Wolsey · Second Edition · 360 pages</div>
+        <h1>整数规划<span class="en">Models, Algorithms and Applications</span></h1>
+        <p class="hero-sub">整数规划（integer programming）的核心不是“多写几个 0–1 变量”，而是<b>让一个线性模型准确说出离散决策的逻辑</b>，并且知道它的线性松弛（LP relaxation）会在哪里撒谎。本页按原书 14 章重排：每个模型给变量与约束，每个算法给步骤、界与复杂度，每个结论给可复算的数字例子。</p>
         <div class="hero-actions">
           <a class="btn" href="#ch1">从建模开始</a>
-          <a class="btn ghost" href="#ch12">直达建模清单</a>
+          <a class="btn ghost" href="#summary">直接看算法选择图</a>
         </div>
         <div class="hero-stats">
-          <div class="hstat"><b>12</b><span>主题章节</span></div>
-          <div class="hstat"><b>223</b><span>书中编号结果</span></div>
-          <div class="hstat"><b>3</b><span>算法主线</span></div>
+          <div class="hstat"><b>14</b><span>原书章</span></div>
+          <div class="hstat"><b>223</b><span>编号结果</span></div>
+          <div class="hstat"><b>16</b><span>本页章</span></div>
+          <div class="hstat"><b>70+</b><span>模型与算例</span></div>
         </div>
       </div>
       <div class="hero-art">
-        <svg viewBox="0 0 340 380" role="img" aria-label="线性规划松弛与整数可行点的对比">
-          <line x1="40" y1="330" x2="315" y2="330" stroke="#726a5c" stroke-width="1.5"/>
-          <line x1="40" y1="330" x2="40" y2="50" stroke="#726a5c" stroke-width="1.5"/>
-          <polygon points="40,330 265,330 127.7,171.5 40,70.5" fill="#dcebe7" stroke="#11645c" stroke-width="2"/>
-          <g fill="#1c1b18" opacity="0.55">
-            <circle cx="40" cy="330" r="2.2"/><circle cx="40" cy="297.8" r="2.2"/><circle cx="40" cy="265.6" r="2.2"/>
-            <circle cx="85" cy="330" r="2.2"/><circle cx="85" cy="297.8" r="2.2"/><circle cx="85" cy="265.6" r="2.2"/><circle cx="85" cy="233.4" r="2.2"/>
-            <circle cx="130" cy="330" r="2.2"/><circle cx="130" cy="297.8" r="2.2"/><circle cx="130" cy="265.6" r="2.2"/><circle cx="130" cy="233.4" r="2.2"/><circle cx="130" cy="201.2" r="2.2"/>
-            <circle cx="175" cy="330" r="2.2"/><circle cx="175" cy="297.8" r="2.2"/><circle cx="175" cy="265.6" r="2.2"/><circle cx="175" cy="233.4" r="2.2"/>
-            <circle cx="220" cy="330" r="2.2"/><circle cx="220" cy="297.8" r="2.2"/>
+        <svg viewBox="0 0 520 500" role="img" aria-label="例 1.1 的整数可行点、线性松弛顶点与整数最优解">
+          <rect x="0" y="0" width="520" height="500" rx="16" fill="#faf6ec"/>
+          <text x="36" y="38" font-family="Georgia, serif" font-style="italic" font-size="21" fill="#726a5c">LP relaxation vs. integer hull</text>
+          <line x1="70" y1="440" x2="480" y2="440" stroke="#c4b7a0" stroke-width="1.4"/>
+          <line x1="70" y1="440" x2="70" y2="58" stroke="#c4b7a0" stroke-width="1.4"/>
+          <text x="470" y="466" font-family="Georgia, serif" font-size="15" fill="#726a5c">x₁</text>
+          <text x="42" y="66" font-family="Georgia, serif" font-size="15" fill="#726a5c">x₂</text>
+          <polygon points="70,440 434,440 212,100 70,302" fill="#11645c" fill-opacity="0.10" stroke="#11645c" stroke-width="1.8"/>
+          <line x1="186" y1="60" x2="434" y2="440" stroke="#b23a26" stroke-width="2.2"/>
+          <line x1="70" y1="302" x2="240" y2="60" stroke="#9a6f13" stroke-width="2.2"/>
+          <g fill="#3b372f" opacity="0.45">
+            <circle cx="70" cy="440" r="2.6"/><circle cx="143" cy="440" r="2.6"/><circle cx="216" cy="440" r="2.6"/><circle cx="288" cy="440" r="2.6"/><circle cx="361" cy="440" r="2.6"/><circle cx="434" cy="440" r="2.6"/>
+            <circle cx="70" cy="371" r="2.6"/><circle cx="143" cy="371" r="2.6"/><circle cx="216" cy="371" r="2.6"/><circle cx="288" cy="371" r="2.6"/><circle cx="361" cy="371" r="2.6"/>
+            <circle cx="70" cy="302" r="2.6"/><circle cx="143" cy="302" r="2.6"/><circle cx="216" cy="302" r="2.6"/><circle cx="288" cy="302" r="2.6"/>
+            <circle cx="70" cy="233" r="2.6"/><circle cx="143" cy="233" r="2.6"/><circle cx="216" cy="233" r="2.6"/>
+            <circle cx="70" cy="164" r="2.6"/><circle cx="143" cy="164" r="2.6"/>
+            <circle cx="70" cy="95" r="2.6"/>
           </g>
-          <circle cx="127.7" cy="171.5" r="6" fill="none" stroke="#b23a26" stroke-width="2.4"/>
-          <circle cx="265" cy="330" r="6" fill="#b23a26"/>
-          <text x="139" y="166" font-size="13" fill="#b23a26" font-family="Georgia, serif">LP</text>
-          <text x="196" y="356" font-size="13" fill="#b23a26" font-family="Georgia, serif">IP (5,0)</text>
-          <text x="300" y="352" font-size="12" fill="#726a5c" font-family="Georgia, serif">x₁</text>
-          <text x="24" y="62" font-size="12" fill="#726a5c" font-family="Georgia, serif">x₂</text>
+          <circle cx="212" cy="100" r="7" fill="#b23a26"/>
+          <text x="224" y="98" font-family="PingFang SC, sans-serif" font-size="14" fill="#b23a26">LP 顶点 (1.95, 4.92)</text>
+          <circle cx="434" cy="440" r="7" fill="#11645c"/>
+          <text x="330" y="428" font-family="PingFang SC, sans-serif" font-size="14" fill="#11645c">IP 最优 (5, 0)</text>
+          <text x="92" y="400" font-family="PingFang SC, sans-serif" font-size="14" fill="#3b372f">可行域</text>
+          <text x="92" y="420" font-family="PingFang SC, sans-serif" font-size="12" fill="#726a5c">取整会直接跳出可行域</text>
+          <text x="36" y="486" font-family="PingFang SC, sans-serif" font-size="12.5" fill="#726a5c">红线：50x₁+31x₂=250；金线：3x₁−2x₂=−4</text>
         </svg>
-        <div class="caption">例 1.1：LP 最优 (1.95, 4.92)，值 5.098；整数最优 (5, 0)，值 5。四舍五入到 (2, 4) 只有 4.56。</div>
+        <div class="caption">同一个可行域，线性松弛最优值 5.098，整数最优值 5。差距只有 0.098，但把 LP 解四舍五入到 (2,5) 会违反预算约束——这就是为什么需要分支定界与割平面，而不是“算完再取整”。</div>
       </div>
     </div>
   </div>
   <div class="hero-bgword">IP</div>
 </section>
 
-<section id="ch1" class="chapter">
+<section id="ch0" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 1</div>
-<h2><span class="num">1</span>把离散决策写成整数规划</h2>
-<p class="lede">整数规划的第一件事不是求解，而是把“开不开厂、做几批、走哪条边”翻译成变量、线性约束和一个可比较的目标。</p>
+<div class="sec-label">Reading Map · 全书路线</div>
+<h2><span class="num">0</span>十四条章，一条主线：界、结构、分解</h2>
+<p class="lede">整数规划的全部技术可以压成一句话：<strong>用松弛得到界，用结构得到强不等式，用分解把大问题拆成能解的小问题。</strong></p>
+<div class="chap-intro"><p>第 1 章把现实决策写成 IP/BIP/MIP；第 2 章建立“松弛—界—最优性证明”的语言；第 3–5 章讲三类“LP 自动整数”或“可动态规划”的好结构；第 6 章说明为什么其余问题难；第 7–9 章是三大主力算法：分支定界、割平面、强不等式与 branch-and-cut；第 10–12 章是三种分解：拉格朗日、列生成、Benders；第 13–14 章把这一切落到启发式与工程实践。读书时始终问：这个模型的 LP 界有多紧？这个算法每步付出多少？这个结论依赖哪条结构假设？</p><span class="tag">14 chapters → 16 节</span></div>
+<div class="mapchips"><span class="chip">formulation</span><span class="chip">LP bound</span><span class="chip hot">branch &amp; cut</span><span class="chip">TU / network</span><span class="chip">knapsack</span><span class="chip">Lagrangian</span><span class="chip">column generation</span><span class="chip">Benders</span><span class="chip">heuristics</span></div>
 
-<div class="chap-intro">
-<p>本章建立 IP、MIP、BIP 与组合优化问题的统一写法，用固定成本选址和 Wolsey 的经典反例说明：整数约束不是给 LP 加个“取整”按钮。最后估算完全枚举的规模，解释为什么必须发明算法。</p>
-<span class="tag">Formulations</span>
-</div>
-
-<div class="mapchips">
-<span class="chip">IP / MIP / BIP</span>
-<span class="chip">固定成本</span>
-<span class="chip">设施选址</span>
-<span class="chip hot">组合爆炸</span>
-<span class="chip">线性化</span>
-</div>
-
-<h3><span class="sn">1.1</span>四种标准写法</h3>
-<p>线性规划允许变量取实数。把其中一部分或全部变量限制为整数，就得到整数规划。若整数变量还只能取 0 或 1，则称为 0–1 规划，它负责表达“是/否”的离散选择。</p>
-
-<div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">IP、MIP 与 BIP</span><span class="thm-id">§1.2</span></div>
-<div class="thm-body">
-<p>混合整数规划（MIP）的标准形式为</p>
-<p>$$\max\ cx+hy\quad \text{s.t.}\quad Ax+Gy\le b,\ x\in\mathbb{Z}^n_+,\ y\in\mathbb{R}^p_+.$$</p>
-<p>若没有连续变量 $y$，称为（纯）整数规划（IP）；若进一步 $x\in\{0,1\}^n$，称为 0–1 或二进制整数规划（BIP）。所有约束都必须是线性的，离散逻辑只能靠辅助 0–1 变量和足够大的常数 $M$ 编码。</p>
-</div>
-</div>
-
-<h3><span class="sn">1.2</span>一个真实模型：带固定成本的设施选址</h3>
-<p>有 $m$ 个候选仓库、$n$ 个客户。开仓库 $j$ 付固定费 $f_j$，客户 $i$ 的需求由仓库 $j$ 服务的单位运费为 $c_{ij}$。令 $x_j=1$ 表示开仓，$y_{ij}$ 表示客户 $i$ 由 $j$ 满足的比例：</p>
-<p>$$\min\ \sum_{j=1}^{m} f_jx_j+\sum_{i=1}^{n}\sum_{j=1}^{m} c_{ij}y_{ij}$$</p>
-<p>$$\text{s.t.}\quad \sum_{j=1}^{m}y_{ij}=1\ (i=1,\dots,n),\qquad \sum_{i=1}^{n}y_{ij}\le n\,x_j\ (j=1,\dots,m).$$</p>
-<p>第一组约束保证需求被满足，第二组把“用了仓库”与“开了仓库”连起来：只要有一个客户分配给 $j$，右边就必须让 $x_j=1$。这里 $M$ 取 $n$ 而不是 $10^6$，因为 $y$ 的比例之和天然不超过 $n$。</p>
-
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">四舍五入为什么会错</span><span class="thm-id">Example 1.1</span></div>
-<div class="thm-body">
-<p>考虑</p>
-<p>$$\max\ x_1+0.64x_2\quad\text{s.t.}\quad 50x_1+31x_2\le 250,\quad 3x_1-2x_2\ge -4,\quad x_1,x_2\in\mathbb{Z}_+.$$</p>
-<p>LP 最优解是 $(376/193,\,950/193)\approx(1.948,\,4.922)$，目标值约 $5.098$。最近的整数点 $(2,5)$ 不可行（$100+155=255&gt;250$）；把它“修”成 $(2,4)$ 虽可行，目标只有 $2+2.56=4.56$。真正的最优整数解是 $(5,0)$，目标值 $5$——它离 LP 最优点很远，却比任何朴素取整都好。</p>
-</div>
+<div class="cards">
+<div class="card"><div class="k">Part I · Ch 1–2</div><h4>建模与界</h4><p>变量、约束、目标；松弛给出上界，可行解给出下界。好坏模型的差别，就是 LP 顶点离整数凸包有多远。</p></div>
+<div class="card"><div class="k">Part II · Ch 3–5</div><h4>好问题</h4><p>全幺模矩阵、网络流、匹配、动态规划。它们要么 LP 直接给整数解，要么有 $O(nb)$、$O(n^2)$ 的专用算法。</p></div>
+<div class="card"><div class="k">Part III · Ch 6</div><h4>难度</h4><p>P、NP、NP-complete、NP-hard；多项式归约；扩展 formulations 的指数下界；近似比。</p></div>
+<div class="card"><div class="k">Part IV · Ch 7–9</div><h4>精确算法</h4><p>分支定界负责搜索，割平面负责收紧，强不等式负责把结构写进模型；三者合成 branch-and-cut。</p></div>
+<div class="card"><div class="k">Part V · Ch 10–12</div><h4>分解</h4><p>拉格朗日松弛把难约束放进目标；Dantzig–Wolfe 把变量换成列；Benders 把连续变量投影掉。</p></div>
+<div class="card"><div class="k">Part VI · Ch 13–14</div><h4>落地</h4><p>启发式先给可行解；建模语言、预求解、割平面与调参决定一个 MIP 能否在时限内给出可信答案。</p></div>
 </div>
 
 <div class="intuition">
-<div class="ih">直觉</div>
-<p>LP 的最优点总在可行多面体的顶点上，而整数点稀疏地散落在多面体内部。两者之间不是“差一点点”，而可能隔着整个多面体的宽度。对 0–1 问题，LP 甚至经常给出全 $0.5$ 的解，连方向都指不准。</p>
+<div class="ih">◆ 直觉：整数规划是一门“证明最优”的学问</div>
+<p>找到一个好解并不等于解决问 题。你需要同时握住两个数：可行解的值 $\underline{Z}$ 与松弛的值 $\overline{Z}$。当 $\overline{Z}-\underline{Z}\le\varepsilon$ 时，你才知道离最优有多远。所有算法——分支、割、分解、启发式——都在做同一件事：把这两个数挤到一起。</p>
 </div>
 
-<h3><span class="sn">1.3</span>算法：完全枚举与它的代价</h3>
-<pre><code class="language-python">best = -inf
-for x1 in range(0, U1 + 1):
-    for x2 in range(0, U2 + 1):
-        # ... 其余变量
-        if A @ x &lt;= b and c @ x &gt; best:
-            best = c @ x
-            best_x = x
-# 复杂度 O(prod(Uj + 1))，Uj 为变量上界</code></pre>
-<p>枚举的正确性毋庸置疑，代价却是灾难性的。$n$ 个 0–1 变量有 $2^n$ 个子集；$n$ 个城市的旅行商有 $(n-1)!/2$ 条不同回路。$n=100$ 时后者约为 $9.33\times10^{157}$，而可观测宇宙的原子数只有约 $10^{80}$。</p>
-
-<div class="table-wrap">
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>模型</th><th>变量取值</th><th>可行解规模</th><th>典型来源</th></tr></thead>
+<thead><tr><th>你面对的情况</th><th>先看哪章</th><th>核心工具</th><th>典型复杂度 / 界</th></tr></thead>
 <tbody>
-<tr><td class="id">LP</td><td>实数</td><td>无限（多面体）</td><td>连续资源分配</td></tr>
-<tr><td class="id">IP</td><td>非负整数</td><td>可数但可能无界</td><td>批量、计数</td></tr>
-<tr><td class="id">BIP</td><td>0 或 1</td><td>至多 $2^n$</td><td>选址、指派、排序</td></tr>
-<tr><td class="id">MIP</td><td>整数 + 连续</td><td>混合</td><td>生产计划、能源</td></tr>
-<tr><td class="id">COP</td><td>子集 $S\subseteq N$</td><td>至多 $2^n$</td><td>图、匹配、路径</td></tr>
+<tr><td class="id">不会写模型</td><td>Ch 1</td><td>变量 + 逻辑约束 + big-$M$</td><td>模型大小比求解时间更关键</td></tr>
+<tr><td class="id">LP 解全是小数</td><td>Ch 2, 8, 9</td><td>松弛、割平面、强不等式</td><td>界越紧，树越小</td></tr>
+<tr><td class="id">矩阵像网络</td><td>Ch 3</td><td>全幺模、最短路、最大流</td><td>$O(m\log n)$ / $O(nm)$</td></tr>
+<tr><td class="id">两两配对</td><td>Ch 4</td><td>增广路、匈牙利算法、blossom</td><td>$O(n^3)$</td></tr>
+<tr><td class="id">有阶段与状态</td><td>Ch 5</td><td>动态规划、最短路径</td><td>$O(nb)$ 伪多项式</td></tr>
+<tr><td class="id">规模大、结构块状</td><td>Ch 10–12</td><td>Lagrangian、列生成、Benders</td><td>子问题可解即可</td></tr>
+<tr><td class="id">只要好解、要得快</td><td>Ch 13</td><td>greedy、local search、pump</td><td>无保证或常数比</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="ch1" class="chapter">
+<div class="wrap">
+<div class="sec-label">Part I · Chapter 1</div>
+<h2><span class="num">1</span>把离散决策写成整数规划</h2>
+<p class="lede">建模的第一步不是选算法，而是决定“一个变量代表什么”。变量选对了，约束几乎自己写出来；变量选错了，后面所有割平面都在替建模还债。</p>
+<div class="chap-intro"><p>本章给出 IP、MIP、BIP 与组合优化问题（combinatorial optimization problem）的标准形式，然后用四个经典模型——指派、背包、集合覆盖、旅行商——演示“变量—约束—目标”的三步法。接着讨论固定成本、选址、批量生产与 either/or 析取这些混合整数技巧，最后引入凸包（convex hull）与理想模型（ideal formulation）：为什么有些模型让 LP 直接给出整数解，有些模型却让 LP 停在荒谬的分数点。</p><span class="tag">§1.1 – §1.8</span></div>
+<div class="mapchips"><span class="chip">IP / MIP / BIP</span><span class="chip">incidence vector</span><span class="chip hot">big-M</span><span class="chip">fixed charge</span><span class="chip">facility location</span><span class="chip">lot sizing</span><span class="chip">convex hull</span><span class="chip">ideal formulation</span></div>
+
+<h3><span class="sn">1.1</span>四种标准形式与一个反例</h3>
+<p>线性规划（linear program）写成 $\max\{cx:Ax\le b,\ x\ge 0\}$。若要求一部分变量取整数，得到<strong>混合整数规划</strong>（mixed integer program, MIP）：</p>
+$$\max\ cx+hy\quad \text{s.t.}\quad Ax+Gy\le b,\quad x\in\mathbb{Z}^n_+,\quad y\in\mathbb{R}^p_+.$$
+<p>若全部变量整数，就是<strong>整数规划</strong>（integer program, IP）$\max\{cx:Ax\le b,\ x\in\mathbb{Z}^n_+\}$；若进一步限制 $x\in\{0,1\}^n$，就是<strong>0–1 规划</strong>（binary integer program, BIP）。组合优化问题则写成 $\min_{S\subseteq N}\{\sum_{j\in S}c_j:S\in\mathcal{F}\}$，其中 $\mathcal{F}$ 是可行子集族；用子集的<strong>关联向量</strong>（incidence vector）$x^S_j=1\iff j\in S$，就能把它翻译成 0–1 规划。</p>
+<p>一个常见误解是“LP 解四舍五入即可”。Wolsey 的 Example 1.1 给出最小反例：</p>
+$$\max\ x_1+0.64x_2\quad \text{s.t.}\quad 50x_1+31x_2\le 250,\quad 3x_1-2x_2\ge -4,\quad x_1,x_2\in\mathbb{Z}_+.$$
+<p>LP 最优解是 $(376/193,\,950/193)\approx(1.948,\,4.922)$，值 $984/193\approx5.098$。整数最优解却是 $(5,0)$，值 $5$。把 LP 解逐项取整得到 $(2,5)$，预算 $50\cdot2+31\cdot5=255&gt;250$，根本不可行；舍入到 $(2,4)$ 值只有 $4.56$，也不是最优。这个例子说明：<strong>整数规划的困难不在目标函数，而在可行域的“格子化”</strong>。</p>
+
+<h3><span class="sn">1.2</span>四个必须背下来的模型</h3>
+<p><strong>指派问题</strong>（assignment problem）：$n$ 个人做 $n$ 件事，$c_{ij}$ 是成本，$x_{ij}=1$ 表示人 $i$ 做任务 $j$。约束是每行每列各一个 1：</p>
+$$\sum_{j=1}^{n}x_{ij}=1\ (i=1,\dots,n),\qquad \sum_{i=1}^{n}x_{ij}=1\ (j=1,\dots,n),\qquad x_{ij}\in\{0,1\}.$$
+<p><strong>0–1 背包问题</strong>（knapsack）：预算 $b$，项目 $j$ 的费用 $a_j$、收益 $c_j$，$x_j=1$ 表示选中：</p>
+$$\max\ \sum_{j=1}^{n}c_jx_j\quad \text{s.t.}\quad \sum_{j=1}^{n}a_jx_j\le b,\quad x\in\{0,1\}^n.$$
+<p><strong>集合覆盖问题</strong>（set covering）：区域集合 $M=\{1,\dots,m\}$，候选中心 $N=\{1,\dots,n\}$，$S_j\subseteq M$ 是中心 $j$ 能覆盖的区域，$c_j$ 是建设成本。令 $a_{ij}=1$ 当且仅当 $i\in S_j$，$x_j=1$ 表示建中心：</p>
+$$\min\ \sum_{j=1}^{n}c_jx_j\quad \text{s.t.}\quad \sum_{j=1}^{n}a_{ij}x_j\ge 1\ (i\in M),\quad x\in\{0,1\}^n.$$
+<p>注意 $\ge 1$ 而不是 $=1$：重复覆盖允许，但每个区域至少要覆盖一次。把 $\ge$ 换成 $\le$、目标换成 $\max$，就得到<strong>集合包装问题</strong>（set packing）：每个元素最多被选一次，典型例子是稳定集（stable set）$\sum_{j\in U}x_j\le1$ 对每个团 $U$ 成立。</p>
+<p><strong>旅行商问题</strong>（traveling salesman problem, TSP）：$x_{ij}=1$ 表示从城市 $i$ 直接到 $j$。先写“每个城市进一次、出一次”：</p>
+$$\sum_{j\ne i}x_{ij}=1,\qquad \sum_{i\ne j}x_{ij}=1,\qquad x_{ij}\in\{0,1\}.$$
+<p>这组约束恰好是指派问题，它的解可能是一堆互不相连的子回路（subtour）。要排除子回路，可以加<strong>割集约束</strong>（cut-set constraints）</p>
+$$\sum_{i\in S}\sum_{j\notin S}x_{ij}\ge1\quad \text{for all }\varnothing\ne S\subset N,$$
+<p>或等价的<strong>子回路消除约束</strong>（subtour elimination constraints）$\sum_{i\in S}\sum_{j\in S}x_{ij}\le|S|-1$，$2\le|S|\le n-1$。这两族约束的数量都是指数级的，但可以按需分离——这正是 branch-and-cut 的入口。</p>
+<p>这些抽象模型对应大量现实场景：列车时刻表按 week 重复，stations 之间的运行时间与停站时间决定可行性；航空公司把 flights 编成 crew 的 weekly schedule，每个 duty period 受飞行时间与休息约束；制造企业要在多个 depot 与客户之间制定生产/运输计划；应急 service centers 的选址就是集合覆盖；医院护士与工厂 workers 的排班则常写成带覆盖约束的整数规划。formulating 这些问题的第一步，是严格区分 data 与 variables，再用变量把“如果……则……”写成线性约束。很多 problems 的难点不在求解，而在把业务逻辑说清楚——模型错一行，后面的割与分支都只是在错误的空间里搜索。</p>
+
+<h3><span class="sn">1.3</span>组合爆炸：为什么不能枚举</h3>
+<p>指派问题有 $n!$ 个排列；背包与覆盖问题有 $2^n$ 个子集；TSP 固定起点后有 $(n-1)!$ 条回路。原书 Table 1.1 的对比很直观：$n=10$ 时 $2^{10}\approx1.02\times10^3$、$10!\approx3.6\times10^6$；$n=100$ 时 $2^{100}\approx1.27\times10^{30}$、$100!\approx9.33\times10^{157}$。一个 $n=101$ 的 TSP 约有 $9.33\times10^{157}$ 条回路，按每秒检查 $10^9$ 条算，也远超宇宙年龄。因此必须“隐式枚举”：用界剪掉整片区域，用结构直接刻画凸包。复杂度上，枚举是 $O(n!)$ 或 $O(2^n)$，而一个好的 formulation 至少让 LP 松弛在多项式时间内给出可用的界——这两者的差距，就是后面 13 章要填的沟。</p>
+
+<h3><span class="sn">1.4</span>混合整数建模的五个常用机关</h3>
+<p><strong>(a) 固定成本</strong>（fixed charge）：$h(y)=f+py$ 当 $y&gt;0$，$h(0)=0$。引入 $x\in\{0,1\}$，用 $fx+py$ 替代 $h(y)$，并加</p>
+$$y\le Cx,\qquad x\in\{0,1\},$$
+<p>其中 $C$ 是 $y$ 的合法上界。严格说这允许 $(y,x)=(0,1)$，但最小化目标会把它排除；若必须排除，可加 $y\ge\epsilon x$，其中 $\epsilon$ 是 $y$ 的最小正单位。</p>
+<p><strong>(b) 无容量选址</strong>（uncapacitated facility location, UFL）：$y_{ij}$ 是客户 $i$ 的需求由仓库 $j$ 满足的比例，$x_j$ 表示开仓。弱模型用</p>
+$$\sum_{j\in N}y_{ij}=1\ (i\in M),\qquad \sum_{i\in M}y_{ij}\le m x_j\ (j\in N),\qquad y\ge0,\ x\in\{0,1\},$$
+<p>强模型把“$m x_j$”换成逐客户的连接约束 $y_{ij}\le x_j$。二者可行整数点相同，但 LP 界差别巨大：弱模型允许 $x_j=1/m$ 就“分摊”所有客户，强模型则要求任何正流量都先付 $x_j=1$。</p>
+<p><strong>(c) 无容量批量生产</strong>（uncapacitated lot-sizing, ULS）：$y_t$ 产量、$s_t$ 期末库存、$x_t$ 是否开工，需求 $d_t$，成本 $p_t,h_t,f_t$：</p>
+$$\min\ \sum_t(p_ty_t+h_ts_t+f_tx_t)\quad \text{s.t.}\quad s_{t-1}+y_t=d_t+s_t,\quad y_t\le M x_t,\quad s_0=s_n=0.$$
+<p>$M$ 不应随便取大数：若 $s_n=0$，可紧化为 $y_t\le(\sum_{i=t}^{n}d_i)x_t$。还可消去库存：$c_t=p_t+\sum_{i=t}^{n}h_i$，目标变成 $\sum_t c_ty_t+\sum_t f_tx_t-\sum_t h_t(\sum_{i=1}^{t}d_i)$。</p>
+<p><strong>(d) either/or 析取</strong>：若 $0\le y\le u$ 且必须满足 $a_1y\le b_1$ 或 $a_2y\le b_2$，取 $M_i\ge\max_{0\le y\le u}(a_iy-b_i)$，写</p>
+$$a_iy-b_i\le M_i(1-z_i),\quad z_1+z_2=1,\quad z_i\in\{0,1\}.$$
+<p>调度里的“工序先后”就是这种结构：$t_2\ge t_1+p_1$ 或 $t_1\ge t_2+p_2$。$M$ 取可行上界的最小值，否则 LP 松弛会被过大的 $M$ 拖垮。</p>
+<p><strong>(e) 分段线性与指示变量</strong>：用 $z_k\in\{0,1\}$ 选区间、$\sum_k z_k=1$、$y=\sum_k y_k$、$L_kz_k\le y_k\le U_kz_k$。这比给每段加大 $M$ 更紧，也是后面“扩展 formulation”的雏形。</p>
+
+<h3><span class="sn">1.5</span>好模型、理想模型与凸包</h3>
+<p>同一个整数集合 $X$ 有无穷多个 formulation $P=\{x:Ax\le b\}$ 满足 $X=P\cap\mathbb{Z}^n$。几何上越小的 $P$ 越好；最小的那个是 $\mathrm{conv}(X)$。</p>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">formulation、凸包与理想模型</span><span class="thm-id">Def 1.2–1.4</span></div>
+<div class="thm-body">
+<p>$P\subseteq\mathbb{R}^{n+p}$ 是 $X\subseteq\mathbb{Z}^n\times\mathbb{R}^p$ 的 formulation，当且仅当 $X=P\cap(\mathbb{Z}^n\times\mathbb{R}^p)$。$X$ 的凸包是</p>
+$$\mathrm{conv}(X)=\left\{\sum_{i=1}^{t}\lambda_ix^i:\ \sum_{i=1}^{t}\lambda_i=1,\ \lambda_i\ge0,\ x^i\in X\right\}.$$
+<p>若 $P=\mathrm{conv}(X)$，称 $P$ 为理想 formulation（ideal formulation）。此时对任意 $c$，LP $\max\{cx:x\in P\}$ 的某个顶点就是 IP 的最优解。</p>
+</div>
+</div>
+<p>原书用同一个 0–1 集合 $X=\{(0,0,0,0),(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1),(0,1,0,1),(0,0,1,1)\}$ 给出三个 formulation：</p>
+$$P_1=\{0\le x\le1,\ 83x_1+61x_2+49x_3+20x_4\le100\},$$
+$$P_2=\{0\le x\le1,\ 4x_1+3x_2+2x_3+x_4\le4\},$$
+$$P_3=\{x\ge0,\ x_1+x_2+x_3\le1,\ x_1+x_4\le1\}.$$
+<p>$P_1$ 与 $P_2$ 都合法，但 $P_3$ 是理想模型：它的顶点全是 0–1 点，LP 直接解出整数最优。更一般地，若 $A$ 全幺模且 $b$ 整数，则 $P=\{x:Ax\le b,x\ge0\}$ 的顶点全整数，LP 自动解 IP——这是第 3 章的主题。</p>
+<p>“更好”可以严格比较：若 $P_1\subset P_2$ 且两者都是 $X$ 的 formulation，则对任何 $c$ 都有 $Z^{LP}_1\le Z^{LP}_2$。证明只需注意 $P_1$ 的可行域更小。但“更好”不等于“更小”：扩展 formulation 引入辅助变量 $w$，在 $(x,w)$ 空间里约束更少、结构更干净，投影回 $x$ 空间却可能更强。ULS 的 $w_{it}$ 模型就是典型：$w_{it}$ 表示“在 $i$ 生产、在 $t$ 使用”的量，约束 $\sum_{i\le t}w_{it}=d_t$、$w_{it}\le d_tx_i$，变量数 $O(n^2)$，但 LP 界等于凸包。</p>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">选址：弱模型与强模型的界差</span><span class="thm-id">§1.6–1.7, Example 8.9</span></div>
+<div class="thm-body">
+<p>两个仓库、两个客户，$f_1=f_2=10$，运输成本 $c_{11}=c_{22}=0$、$c_{12}=c_{21}=100$。弱模型允许 $x_1=x_2=0.5$、$y_{11}=y_{22}=1$，成本 $10$；强模型 $y_{ij}\le x_j$ 迫使 $x_1=x_2=1$，成本 $20$。整数最优也是 $20$。弱模型的 LP 界 $10$ 只有真值的一半，分支定界会多探索大量节点；强模型在根节点就给出 $20$，树立即关闭。</p>
+</div>
+</div>
+<p>这个例子说明：<strong>formulation 的强度不是美学问题，而是搜索空间的直接度量</strong>。在写模型时多花十分钟加一条 $y_{ij}\le x_j$，可能省掉求解器一小时。</p>
+
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>模型</th><th>变量</th><th>关键约束</th><th>LP 松弛的典型弱点</th></tr></thead>
+<tbody>
+<tr><td class="id">指派</td><td>$x_{ij}\in\{0,1\}$</td><td>行和 = 列和 = 1</td><td>本身全幺模，LP 直接整数</td></tr>
+<tr><td class="id">背包</td><td>$x_j\in\{0,1\}$</td><td>$\sum a_jx_j\le b$</td><td>LP 最多一个分数变量，但取整会超重</td></tr>
+<tr><td class="id">集合覆盖</td><td>$x_j\in\{0,1\}$</td><td>$\sum a_{ij}x_j\ge1$</td><td>LP 会用“半个中心”覆盖，界常为真值一半</td></tr>
+<tr><td class="id">TSP</td><td>$x_{ij}\in\{0,1\}$</td><td>度约束 + 子回路消除</td><td>只有度约束时 LP 给 2-factor，可能是多个环</td></tr>
+<tr><td class="id">UFL 弱</td><td>$y_{ij}\ge0,x_j\in\{0,1\}$</td><td>$\sum_i y_{ij}\le mx_j$</td><td>可用 $x_j=1/m$ 分摊全部客户</td></tr>
+<tr><td class="id">UFL 强</td><td>同上</td><td>$y_{ij}\le x_j$</td><td>接近凸包，根界通常等于或接近整数最优</td></tr>
+<tr><td class="id">ULS</td><td>$y_t,s_t\ge0,x_t\in\{0,1\}$</td><td>流守恒 + $y_t\le Mx_t$</td><td>$M$ 过大时 LP 可“半开工”生产</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三句话最容易写坏模型</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">建模阶段的四个坑</span></div>
 <div class="thm-body">
-<p><b>“先解 LP 再四舍五入”</b>：例 1.1 已经说明取整可能又不可行又远离最优，甚至无法修复。</p>
-<p><b>“整数变量就是 0–1 变量”</b>：产量、批次、人数是整数但可以大于 1；只有“是否”类决策才用 0–1。</p>
-<p><b>“约束可以随便写成非线性”</b>：求解器只认线性（或少数二次）结构，乘积、最大值、指示函数都必须用辅助变量线性化。</p>
+<p><strong>1. 用大 $M$ 代替推导上界。</strong> $M=10^9$ 会让 LP 松弛几乎不起作用，还会造成数值病态；应取 $M=\min\{C_{\max},\sum_t d_t,\ldots\}$，其中 $C_{\max}$ 是单期产能上界。</p>
+<p><strong>2. 把“或”写成两个不等式相加。</strong> $a_1y\le b_1$ 与 $a_2y\le b_2$ 同时成立比“任一成立”强得多；必须用 0–1 选择变量。</p>
+<p><strong>3. 忘记关联约束。</strong> 开了仓库却没有任何客户流量（$x_j=1,y_{ij}=0$）在最小化下通常无害，但在最大化或固定成本符号相反时会给出错误解；要显式写 $y_{ij}\le x_j$ 或 $x_j\le\sum_i y_{ij}$。</p>
+<p><strong>4. 把 formulation 的“等价”当成“同样好”。</strong> 整数可行点相同，LP 界可以差一个数量级；分支定界的时间也随之差一个数量级。</p>
 </div>
 </div>
 </div>
@@ -608,75 +686,94 @@ for x1 in range(0, U1 + 1):
 
 <section id="ch2" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 2</div>
-<h2><span class="num">2</span>好模型与坏模型：让 LP 松弛说真话</h2>
-<p class="lede">同一个整数可行集可以有无穷多个线性描述。描述越紧，LP 松弛给出的界越接近真实最优，搜索树也越小。</p>
+<div class="sec-label">Part I · Chapter 2</div>
+<h2><span class="num">2</span>松弛、对偶与界：怎么证明“已经最优”</h2>
+<p class="lede">整数规划算法从不直接“找到最优”，它同时维护一个可行解和一个上界；当两者相等，最优性就被证明了。</p>
+<div class="chap-intro"><p>本章建立全书的证明语言：<strong>松弛</strong>（relaxation）放大可行域或放大目标，给出上界；<strong>限制</strong>（restriction）缩小可行域，给出下界。线性松弛是最常用的一种，组合松弛（assignment、1-tree）与拉格朗日松弛（Lagrangian relaxation）则利用问题结构。随后用对偶与多面体语言解释“为什么 LP 顶点能证明整数最优”，最后用贪心与局部搜索构造原始界，并在背包、TSP、选址、图划分四个例子里把界算出来。</p><span class="tag">§2.1 – §2.9</span></div>
+<div class="mapchips"><span class="chip">primal / dual bound</span><span class="chip hot">LP relaxation</span><span class="chip">restriction</span><span class="chip">combinatorial relaxation</span><span class="chip">Lagrangian</span><span class="chip">duality</span><span class="chip">greedy</span><span class="chip">local search</span></div>
 
-<div class="chap-intro">
-<p>本章给出“formulation”与“理想模型”的精确定义，用固定成本模型展示 $M$ 的取值如何改变 LP 界，并给出收紧变量上界的系统做法。核心结论：建模阶段花的一小时，往往等于求解阶段的一小时。</p>
-<span class="tag">Strength of Formulations</span>
-</div>
+<h3><span class="sn">2.1</span>上下界夹逼：算法的停止条件</h3>
+<p>对 $\max\{c(x):x\in X\}$，任何可行解 $x^\ast$ 给出<strong>原始界</strong>（primal bound）$\underline{Z}=c(x^\ast)\le Z$；任何松弛的最优值给出<strong>对偶界</strong>（dual bound）$\overline{Z}\ge Z$。算法维持单调序列</p>
+$$\overline{Z}_1&gt;\overline{Z}_2&gt;\cdots\ge Z,\qquad \underline{Z}_1&lt;\underline{Z}_2&lt;\cdots\le Z,$$
+<p>当 $\overline{Z}_s-\underline{Z}_t\le\varepsilon$ 时停止。注意：只有 $\overline{Z}=\underline{Z}$ 才能宣称“最优”；间隙非零时只能报告“在 $\varepsilon$ 内最优”。求最小化问题时不等式方向全部反过来。</p>
 
-<div class="mapchips">
-<span class="chip">big-M</span>
-<span class="chip">变量上界</span>
-<span class="chip">理想模型</span>
-<span class="chip hot">整数间隙</span>
-<span class="chip">凸包</span>
-</div>
-
-<h3><span class="sn">2.1</span>什么叫“一个模型”</h3>
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Formulation 与理想模型</span><span class="thm-id">§1.6–1.7</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">松弛与限制</span><span class="thm-id">Def 2.1, 2.8</span></div>
 <div class="thm-body">
-<p>设 $X\subseteq\mathbb{Z}^n\times\mathbb{R}^p$ 是全部可行解。多面体 $P=\{(x,y):Ax+Gy\le b\}$ 称为 $X$ 的一个 formulation，当且仅当</p>
-<p>$$X=P\cap(\mathbb{Z}^n\times\mathbb{R}^p).$$</p>
-<p>若进一步 $P=\operatorname{conv}(X)$，即 $P$ 的每个顶点都落在 $X$ 中，则称 $P$ 是理想（ideal）模型。此时解一次 LP 就得到原 IP 的最优值。</p>
+<p>问题 $(RP)$：$\max\{f(x):x\in T\}$ 是 $(IP)$：$\max\{c(x):x\in X\}$ 的松弛，若 $X\subseteq T$ 且对一切 $x\in X$ 有 $f(x)\ge c(x)$。此时 $Z_{RP}\ge Z$。</p>
+<p>反过来，$(RE)$：$\max\{f(x):x\in T\}$ 是限制，若 $T\subseteq X$ 且对一切 $x\in X$ 有 $f(x)\le c(x)$。此时 $Z_{RE}\le Z$，且 $RE$ 的可行解一定是 $IP$ 的可行解。</p>
 </div>
 </div>
 
-<h3><span class="sn">2.2</span>同一个问题的三种松紧</h3>
-<p>固定成本生产：需求为 5，开机固定费 10，单位生产成本 1，产能恰好 5。模型是</p>
-<p>$$\min\ 10x+y\quad\text{s.t.}\quad y\ge 5,\quad y\le Mx,\quad x\in\{0,1\},\ y\ge 0.$$</p>
-<p>真实最优显然要开机：$x=1,y=5$，成本 15。但若随手写 $M=100$，LP 会取 $x=0.05,y=5$，成本 $5.5$——它假装“只开 5% 的机器就能生产 5 件”。若取 $M=5$，约束变成 $y\le 5x$，与 $y\ge5$ 联立迫使 $x=1$，LP 界立刻等于 15。</p>
-<p>这就是变量上界（variable upper bound, VUB）的力量。多周期批量生产里，同理应把 $y_t\le Mx_t$ 换成</p>
-<p>$$y_t\le \Big(\sum_{i=t}^{n}d_i\Big)x_t,$$</p>
-<p>因为第 $t$ 期生产至多覆盖从 $t$ 到期末的全部需求，更大的 $M$ 永远不可能被用到。</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">松弛的三个用途</span><span class="thm-id">Prop 2.1–2.3</span></div>
+<div class="thm-body">
+<p>(i) 若松弛不可行，则原问题不可行。(ii) 若松弛的最优解 $x^\ast$ 落在 $X$ 中且 $f(x^\ast)=c(x^\ast)$，则 $x^\ast$ 是原问题最优解。(iii) 若 $P_1\subset P_2$ 是两个 formulation，则 $Z^{LP}_1\le Z^{LP}_2$：更小的可行域给出更紧的界。</p>
+</div>
+</div>
 
+<h3><span class="sn">2.2</span>线性松弛：最便宜也最常用</h3>
+<p>对 $Z=\max\{cx:x\in P\cap\mathbb{Z}^n\}$，<strong>线性松弛</strong>（LP relaxation）就是丢掉整数约束：$Z_{LP}=\max\{cx:x\in P\}$。它显然是松弛，因为 $P\cap\mathbb{Z}^n\subseteq P$ 且目标不变。</p>
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">两种写法的 LP 界</span><span class="thm-id">§14.3</span></div>
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 2.1：LP 界与向下取整</span><span class="thm-id">§2.2</span></div>
 <div class="thm-body">
-<p>需求 $d=(6,7,4,6,3,8)$，开机固定费 $f=(8,12,8,6,10,23)$，库存费 $h=(1,1,3,1,1,2)$，生产成本为 0。若只写 $y_t\le 100x_t$，LP 可以把某一期的开机变量压到接近 0，用“百分之几台机器”覆盖整期需求；即使换成按剩余需求的上界，也可能出现 $x_2=0.25$ 这样的分数开机。两种写法的整数最优值相同，但根节点的 LP 界相差可达数十个百分点，分支定界的节点数也随之差一个数量级。</p>
+<p>$$\max\ 4x_1-x_2\quad \text{s.t.}\quad 7x_1-2x_2\le14,\quad x_2\le3,\quad 2x_1-2x_2\le3,\quad x\in\mathbb{Z}^2_+.$$</p>
+<p>可行点 $(2,1)$ 给出 $\underline{Z}=7$。LP 最优解是 $(20/7,\,3)$，$Z_{LP}=59/7\approx8.428$，所以 $Z\le8.428$。由于 $Z$ 必须整数，可把上界收紧为 $\lfloor59/7\rfloor=8$。真正的整数最优是 $(2,1)$，值 $7$；间隙 $1$，相对 $14\%$。这个“目标值整数 ⇒ 上界可向下取整”的小技巧，在纯整数问题里几乎总是免费地收紧界。</p>
 </div>
 </div>
+<p>LP 界不一定紧。Example 2.2 中 $\max\{7x_1+4x_2+5x_3+2x_4:3x_1+3x_2+4x_3+2x_4\le6,\ x\in\{0,1\}^4\}$ 的 LP 最优解是 $(1,1,0,0)$，本身整数，于是直接解出 IP。这种“碰巧整数”不是运气，而是矩阵结构（第 3 章的全幺模）在起作用。</p>
 
-<h3><span class="sn">2.3</span>算法：把 $M$ 算出来，而不是猜</h3>
-<pre><code class="language-python"># 对每个联动约束 y_t &lt;= M_t * x_t，用数据推出最小可用上界
-for t in range(1, n + 1):
-    M_t = min(capacity[t], sum(d[t:n + 1]))   # 产能与剩余需求取小
-    # 若有其他约束给出更紧的界，继续取 min
-    model.addConstr(y[t] &lt;= M_t * x[t])
-# 检查：M_t 太小会切掉可行解，太大则削弱 LP 界</code></pre>
-<p>系统化的收紧叫 bound tightening：从每条约束中隔离出一个变量，用其他变量的上下界推出它的新上下界，反复扫描直到不再改进。商用求解器的 presolve 会自动做这件事，但建模者仍需提供正确的初始上界，否则 presolve 也无从下手。</p>
+<h3><span class="sn">2.3</span>组合松弛：丢掉最难的那组约束</h3>
+<p>若松弛后的问题仍是组合优化问题，称为<strong>组合松弛</strong>（combinatorial relaxation）。四个标准例子：</p>
+<ul>
+<li><strong>TSP → 指派</strong>：丢掉子回路约束，得到指派问题；$Z_{TSP}\ge Z_{ASS}$。指派解可能是多个环，界通常很松。</li>
+<li><strong>对称 TSP → 1-tree</strong>：每个 tour 由节点 1 的两条边加上 $\{2,\dots,n\}$ 上的一棵树组成，称为 1-tree。$Z_{STSP}\ge Z_{1\text{-}tree}$。1-tree 可用最小生成树加两条最便宜的边在 $O(n^2)$ 内求出，是 Held–Karp 界的核心。</li>
+<li><strong>二次 0–1 → 线性</strong>：把负的 $q_{ij}x_ix_j$ 全部替换为 0，得到线性松弛；第 9 章会把它转成最大流来解。</li>
+<li><strong>整数背包 → 取整系数</strong>：$X'=\{x\in\mathbb{Z}^n_+:\sum\lfloor a_j\rfloor x_j\le\lfloor b\rfloor\}$ 是松弛；系数变小，可行域变大。</li>
+</ul>
 
-<div class="table-wrap">
+<h3><span class="sn">2.4</span>拉格朗日松弛：把难约束变成价格</h3>
+<p>设 $Z=\max\{cx:Ax\le b,\ x\in X\}$，其中 $Ax\le b$ 是“ complicating constraints”，而 $X$ 上的优化很容易。对 $u\ge0$ 定义</p>
+$$Z(u)=\max\{cx+u(b-Ax):x\in X\}.$$
+<p>这就是<strong>拉格朗日松弛</strong>（Lagrangian relaxation）。因为 $x$ 可行时 $b-Ax\ge0$，所以 $Z(u)\ge Z$；$u$ 是违反约束的“罚价”。最好的上界是拉格朗日对偶 $W_{LD}=\min_{u\ge0}Z(u)$。第 10 章会证明 $W_{LD}$ 等于“把 $X$ 换成 $\mathrm{conv}(X)$ 后的 LP 界”，并给出次梯度算法。</p>
+<p>一个小但重要的判别：若 $u\ge0$、$x(u)$ 解出 $Z(u)$、$Ax(u)\le b$，且 $u_i&gt;0$ 时 $(Ax(u))_i=b_i$（互补松弛），则 $x(u)$ 就是原问题最优解。此时拉格朗日松弛不仅给界，还直接给出解。</p>
+
+<h3><span class="sn">2.5</span>对偶与多面体：界的几何</h3>
+<p>一般地，$(IP)$ 与 $(D)$ 构成<strong>弱对偶对</strong>，若对一切 $x\in X,u\in U$ 有 $c(x)\le\omega(u)$；若 $\max c(x)=\min\omega(u)$，则是<strong>强对偶对</strong>。LP 的对偶 $\min\{ub:uA\ge c,u\ge0\}$ 是最重要的例子。</p>
+<p>多面体 $P=\{x\ge0:Ax\le b\}$ 的顶点形如 $x_B=B^{-1}b$。若 $P\ne\varnothing$ 且目标在某个极射线 $r$ 上满足 $cr&gt;0$，则 $Z\to+\infty$；若 $P$ 与对偶可行域都非空，则</p>
+$$Z=\max_{s=1,\dots,S}cx_s=\min_{k=1,\dots,K}u_kb=W,$$
+<p>其中 $x_s$ 与 $u_k$ 分别是原始、对偶的顶点。这条命题（Prop 2.9）把“解 LP”变成“检查有限个顶点”，也解释了为什么切平面只要切掉当前顶点就够。</p>
+
+<h3><span class="sn">2.6</span>原始界：贪心与局部搜索</h3>
+<p>限制（restriction）是构造可行解的系统方法：固定某些变量、把不等式改成等式、或增加约束，使问题变简单。Example 2.5 把批量生产的 $y_t\le C_tx_t$ 改成 $y_t=C_tx_t$，得到“满产”限制；它通常能在毫秒级给出一个不错的可行解。</p>
+<p><strong>贪心</strong>（greedy）从空集开始，每步选“单位资源收益最大”的元素。背包实例</p>
+$$\max\ 12x_1+8x_2+17x_3+11x_4+6x_5+2x_6+2x_7\quad \text{s.t.}\quad 4x_1+3x_2+7x_3+5x_4+3x_5+2x_6+3x_7\le9$$
+<p>已按 $c_j/a_j$ 降序排列。依次取 $x_1=1$（剩 5）、$x_2=1$（剩 2）；$x_3,x_4,x_5$ 都放不下；$x_6=1$（剩 0）；$x_7=0$。贪心解 $(1,1,0,0,0,1,0)$，值 $22$。但 $(1,0,0,1,0,0,0)$ 用满 $4+5=9$ 的预算，值 $12+11=23$，更优。贪心失败的原因很清楚：它按单位重量收益排序，却没有“留出空间给高价值大件”的前瞻。这个 $22$ 与 $23$ 的差距，就是第 6 章 $1/2$ 近似比与第 13 章改进启发式要处理的对象。复杂度上，排序 $O(n\log n)$、扫描 $O(n)$；局部搜索每轮检查 $O(n)$ 个单点邻居或 $O(n^2)$ 个替换邻居。</p>
+<p>对称 TSP 的贪心按边权从小到大加边，只要不形成度 $&gt;2$ 或子回路：依次选 $(1,3)=2$、$(4,6)=3$、$(3,6)=6$、$(1,2)=9$、$(2,5)=10$、$(4,5)=24$，得到 tour $(1,3,6,4,5,2,1)$，长度 $54$。换一条 tour（例如 $1\to4\to6\to3\to2\to5\to1$）只有 $46$，可见“每步选最便宜的边”会被早期决策锁死；局部搜索的 2-opt 正是用来修正这种锁死。</p>
+<p><strong>局部搜索</strong>（local search）从一个可行解出发，在邻域 $Q(S)$ 里找更好的解，直到局部最优。UFL 实例 $m=6,n=4$，$f=(21,16,11,24)$，距离矩阵给出 $c(\{1,2\})=61$。邻域是“加一个/删一个仓库”：$c(\{1,2,3\})=60$、$c(\{2,3\})=42$、$c(\{3\})=31$，然后 $\{3\}$ 的所有邻居都不更好，停在局部最优 $31$。图划分实例从 $S_0=\{1,2,3\}$（割边 6）出发，换一个点可到 $\{2,3,5\}$（割边 2），随后局部最优。局部最优不保证全局最优；第 13 章的 tabu、模拟退火、遗传算法就是为跳出局部最优设计的。</p>
+
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>写法</th><th>LP 界（上例）</th><th>约束/变量</th><th>适用场景</th></tr></thead>
+<thead><tr><th>界</th><th>来源</th><th>方向（max）</th><th>代价</th><th>典型紧度</th></tr></thead>
 <tbody>
-<tr><td>自然 $y\le 10^6x$</td><td>5.5</td><td>最少</td><td>快速原型，不推荐求解</td></tr>
-<tr><td>紧 VUB $y\le Cx$</td><td>15</td><td>相同</td><td>有明确产能或需求上界</td></tr>
-<tr><td>按剩余需求 $y_t\le d_{t,n}x_t$</td><td>更紧</td><td>相同</td><td>批量/库存问题</td></tr>
-<tr><td>理想模型（凸包）</td><td>等于 IP</td><td>可能指数多</td><td>小规模、结构化问题</td></tr>
+<tr><td class="id">原始界</td><td>任何可行解、贪心、局部搜索</td><td>$\underline{Z}\le Z$</td><td>低</td><td>取决于启发式</td></tr>
+<tr><td class="id">LP 松弛</td><td>丢掉整数约束</td><td>$\overline{Z}\ge Z$</td><td>多项式</td><td>中；UFL 弱模型很差</td></tr>
+<tr><td class="id">组合松弛</td><td>丢掉子回路等难约束</td><td>$\overline{Z}\ge Z$</td><td>取决于子问题</td><td>中；1-tree 较强</td></tr>
+<tr><td class="id">拉格朗日</td><td>难约束进目标</td><td>$\overline{Z}\ge Z$</td><td>每步解一个 $X$</td><td>等于 $\mathrm{conv}(X)$ 上的 LP</td></tr>
+<tr><td class="id">限制</td><td>固定变量/加约束</td><td>$\underline{Z}\le Z$</td><td>低</td><td>可行但可能差</td></tr>
+<tr><td class="id">对偶可行解</td><td>任何 $u\ge0$</td><td>$\overline{Z}\ge Z$</td><td>低</td><td>需满足 $uA\ge c$</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于 big-M 的两极错误</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">界不是“估计”，是严格不等式</span></div>
 <div class="thm-body">
-<p><b>越大越安全</b>：错。$M$ 过大会让 LP 几乎不受联动约束，界变得极松，分支树爆炸；数值上还会造成系数矩阵条件数恶化。</p>
-<p><b>越小越好</b>：也错。$M$ 小于真实可能取值时会切掉可行解，得到“最优”却不可行或漏解，而且这种错误通常不会报错。</p>
-<p><b>只看目标值不看界</b>：两个模型都能算出同样的最优解，但一个根节点 gap 为 0.1%、另一个为 40%，计算时间天差地别。</p>
+<p><strong>1. 把 LP 解取整当作可行解。</strong> 取整可能违反约束；必须先检查可行性，再更新 $\underline{Z}$。若不可行，它连下界都不是。</p>
+<p><strong>2. 忘记最大化/最小化的方向。</strong> 最小化时 LP 界是下界，可行解是上界；写反会让分支定界的剪枝条件完全错误。</p>
+<p><strong>3. 认为“间隙小”等于“解接近”。</strong> 目标值接近不代表变量接近；存在大量目标值相同但结构迥异的最优解。</p>
+<p><strong>4. 用不可行的对偶解当上界。</strong> 对偶可行要求 $uA\ge c$（或等式对应的无符号限制），不是任意 $u\ge0$。</p>
 </div>
 </div>
 </div>
@@ -684,87 +781,98 @@ for t in range(1, n + 1):
 
 <section id="ch3" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 3</div>
-<h2><span class="num">3</span>松弛、对偶与界：怎么证明“已经最优”</h2>
-<p class="lede">整数规划没法直接靠解方程证明最优。所有实用算法都靠同一套逻辑：用松弛算出一个界，用可行解算出另一个界，两者相遇才算结束。</p>
+<div class="sec-label">Part II · Chapter 3</div>
+<h2><span class="num">3</span>全幺模与网络流：LP 何时自动整数</h2>
+<p class="lede">有些整数规划根本不需要分支：约束矩阵的结构保证每个 LP 顶点都是整数。认出这种结构，比调快求解器有用一个数量级。</p>
+<div class="chap-intro"><p>本章先给“好问题”的四个等价特征——高效优化、强对偶、高效分离、显式凸包；再引入<strong>全幺模</strong>（totally unimodular, TU）矩阵与判定条件。网络流矩阵是 TU 的典型：最小费用流、最短路、最大流、最小割、最小生成树都能在多项式时间内求解，而且 LP 对偶给出组合定理（potentials、max-flow min-cut）。最后讨论拟阵（matroid）与子模（submodular）结构，以及固定费用网络流、Steiner 树这两个“网络但变难”的边界。</p><span class="tag">§3.1 – §3.9</span></div>
+<div class="mapchips"><span class="chip">four properties</span><span class="chip hot">total unimodularity</span><span class="chip">node-arc incidence</span><span class="chip">shortest path</span><span class="chip">max-flow min-cut</span><span class="chip">MST</span><span class="chip">matroid</span><span class="chip">Steiner tree</span></div>
 
-<div class="chap-intro">
-<p>本章把 LP 松弛、组合松弛与 Lagrangian 松弛放在同一个框架里：对最大化问题，任何松弛都给上界，任何可行解都给下界。随后用背包例子算出三种界，并说明对偶间隙为什么是算法的“燃料”。</p>
-<span class="tag">Relaxation &amp; Bounds</span>
-</div>
+<h3><span class="sn">3.1</span>“好问题”的四个特征</h3>
+<p>对 $\max\{cx:x\in X\subseteq\mathbb{R}^n\}$，原书列出四条经常同时出现的性质：</p>
+<ol>
+<li><strong>高效优化</strong>（efficient optimization）：存在多项式算法。</li>
+<li><strong>强对偶</strong>（strong dual）：存在对偶问题，$x^\ast$ 最优当且仅当存在 $u^\ast$ 使 $cx^\ast=\omega(u^\ast)$。</li>
+<li><strong>高效分离</strong>（efficient separation）：给定 $x^\ast$，能多项式时间判定 $x^\ast\in\mathrm{conv}(X)$，若不在则输出一条被违反的合法不等式。</li>
+<li><strong>显式凸包</strong>（explicit convex hull）：知道 $\mathrm{conv}(X)$ 的紧凑线性描述。</li>
+</ol>
+<p>第 6 章会说明：优化与分离在多项式意义下等价（Grötschel–Lovász–Schrijver）。因此，只要你能高效分离某一族不等式，就能用椭球法或内点法优化，而不必把指数条约束全部写出来。</p>
 
-<div class="mapchips">
-<span class="chip">LP 松弛</span>
-<span class="chip">Lagrangian</span>
-<span class="chip">弱对偶</span>
-<span class="chip hot">对偶间隙</span>
-<span class="chip">次梯度</span>
-</div>
-
-<h3><span class="sn">3.1</span>界的两个方向</h3>
+<h3><span class="sn">3.2</span>全幺模：行列式全是 0、±1</h3>
+<p>LP 的基本解是 $x_B=B^{-1}b$。由 Cramer 法则，$B^{-1}=B^\ast/\det B$。若 $\det B=\pm1$，则 $B^{-1}$ 整数，$B^{-1}b$ 对整数 $b$ 也整数。于是：</p>
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">松弛与对偶界</span><span class="thm-id">§2.1–2.5</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">全幺模矩阵</span><span class="thm-id">Def 3.2</span></div>
 <div class="thm-body">
-<p>对最大化问题 $Z=\max\{cx:x\in X\}$，若 $R\supseteq X$ 且 $Z_R=\max\{cx:x\in R\}$ 容易计算，则 $Z_R\ge Z$，$Z_R$ 是上界（对偶界）。任一 $x^H\in X$ 给出下界 $cx^H\le Z$，称为原始界。若 $Z_R=cx^H$，则 $x^H$ 已被证明最优。</p>
-<p>LP 松弛取 $R=\{x:Ax\le b,x\ge0\}$；组合松弛则用一个更容易的离散问题替代原问题，例如把旅行商问题放松成指派问题。</p>
+<p>矩阵 $A$ 称为<strong>全幺模</strong>（totally unimodular），若它的每个方子阵的行列式都是 $+1$、$-1$ 或 $0$。若 $A$ 是 TU 且 $b$ 整数，则多面体 $\{x\ge0:Ax\le b\}$ 的每个顶点都是整数向量。</p>
 </div>
 </div>
-<p>绝对间隙与相对间隙通常写成</p>
-<p>$$\Delta=Z_R-cx^H,\qquad \rho=\frac{Z_R-cx^H}{\max\{|Z_R|,\varepsilon\}}.$$</p>
-<p>求解器报告 “gap 1%” 时，意思是：即使还没找到最优解，也已证明它不可能比当前可行解好 1% 以上。</p>
-
-<h3><span class="sn">3.2</span>Lagrangian 松弛：把难约束搬到目标里</h3>
-<p>把 $Ax\le b$ 视为“难约束”，乘上非负乘子 $\lambda$ 后移入目标：</p>
-<p>$$Z_{LR}(\lambda)=\max_{x\in X}\ \big[cx+\lambda(b-Ax)\big],\qquad Z_{LD}=\min_{\lambda\ge0}Z_{LR}(\lambda).$$</p>
-<p>对任意 $\lambda\ge0$，$Z_{LR}(\lambda)$ 都是原问题的上界，因为可行解满足 $b-Ax\ge0$。内层问题去掉了难约束，常常可以拆成互相独立的小问题或直接用动态规划求解。</p>
-
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">同一个背包的三种界</span><span class="thm-id">§2.4</span></div>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">TU 的等价刻画与充分条件</span><span class="thm-id">Prop 3.1–3.3</span></div>
 <div class="thm-body">
-<p>$$\max\ 10x_1+13x_2+18x_3\quad\text{s.t.}\quad 3x_1+5x_2+9x_3\le13,\quad x\in\{0,1\}^3.$$</p>
-<p><b>LP 界</b>：按单位重量价值排序，取 $x_1=x_2=1$，再用剩余 5 单位装 $5/9$ 个物品 3，得 $33$。</p>
-<p><b>可行解</b>：$(1,0,1)$ 重量 12，价值 $28$；$(1,1,0)$ 只有 23。故 $28\le Z\le33$。</p>
-<p><b>Lagrangian 界</b>：取 $\lambda=2$，系数变为 $4,3,0$，内层最优为 $x=(1,1,0)$ 或 $(1,1,1)$，值 $4+3+2\times13=33$。恰好等于 LP 界——因为此例的 $X$ 是完整的立方体，$\operatorname{conv}(X)$ 没有额外割平面可用。</p>
+<p>(i) $A$ 是 TU $\iff$ $A^{\top}$ 是 TU $\iff$ $(A,I)$ 是 TU。</p>
+<p>(ii) 若 $a_{ij}\in\{+1,-1,0\}$，每列至多两个非零元，且存在行集划分 $(M_1,M_2)$，使每列两个非零元满足 $\sum_{i\in M_1}a_{ij}-\sum_{i\in M_2}a_{ij}=0$，则 $A$ 是 TU。</p>
+<p>(iii) 反过来，$\max\{cx:Ax\le b,x\ge0\}$ 对所有整数 $b$（有限最优时）都有整数最优解，当且仅当 $A$ 是 TU。</p>
 </div>
 </div>
+<p>条件 (ii) 的证明是一个极小林非零子阵论证：若存在最小反例 $B$，它每列必须有两个非零元；按划分把 $M_1$ 的行相加、$M_2$ 的行相减，得到零向量，故 $\det B=0$，矛盾。这个条件直接覆盖了<strong>节点—弧关联矩阵</strong>（node-arc incidence matrix）：每列对应一条弧 $(i,j)$，在行 $i$ 为 $+1$、行 $j$ 为 $-1$，取 $M_1$ 为全部行、$M_2=\varnothing$ 即可。</p>
 
-<div class="intuition">
-<div class="ih">直觉</div>
-<p>Lagrangian 把“违反约束的代价”变成价格：$\lambda$ 太低，解会狂用被放松的资源；$\lambda$ 太高，解又过度保守。次梯度法就是在价格上试探，直到内层解刚好落在约束边界附近。它并不神奇，只是在替你解对偶。</p>
+<h3><span class="sn">3.3</span>最小费用网络流</h3>
+<p>有向图 $D=(V,A)$，弧容量 $h_{ij}$，节点供需 $b_i$（$\sum_i b_i=0$），单位流成本 $c_{ij}$：</p>
+$$\min\ \sum_{(i,j)\in A}c_{ij}x_{ij}\quad \text{s.t.}\quad \sum_{k\in V^+(i)}x_{ik}-\sum_{k\in V^-(i)}x_{ki}=b_i\ (i\in V),\quad 0\le x_{ij}\le h_{ij}.$$
+<p>约束矩阵是节点—弧关联矩阵加单位阵，仍是 TU；因此容量与供需为整数时，LP 最优解自动整数。求解可用网络单纯形（network simplex），实践上比通用 LP 快几个数量级；强多项式算法则有 $O(nm\log n)$ 量级的实现。</p>
+
+<h3><span class="sn">3.4</span>最短路、最大流与最小割</h3>
+<p><strong>最短路</strong>（shortest path）可写成：$\min\sum c_{ij}x_{ij}$，满足 $s$ 净流出 1、$t$ 净流入 1、其余节点流量守恒、$x\ge0$。其对偶是<strong>势函数</strong>（potentials）问题：</p>
+$$\max\ \pi_t-\pi_s\quad \text{s.t.}\quad \pi_j-\pi_i\le c_{ij}\ \text{for all }(i,j)\in A.$$
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">最短路的对偶刻画</span><span class="thm-id">Theorem 3.1</span></div>
+<div class="thm-body">
+<p>$Z$ 是最短 $s$–$t$ 路长度，当且仅当存在 $\pi_i$ 使 $\pi_s=0$、$\pi_t=Z$、且 $\pi_j-\pi_i\le c_{ij}$ 对所有弧成立。取 $\pi_i$ 为 $s$ 到 $i$ 的最短距离即得一个最优对偶解。</p>
 </div>
+</div>
+<p>非负权时 Dijkstra 用二叉堆是 $O(m\log n)$；有负权时 Bellman–Ford 是 $O(nm)$，若存在负环则最短路无界。这里的“无界”对应对偶不可行，正好是 LP 强对偶的两种例外之一。</p>
+<p><strong>最大流</strong>（maximum flow）加一条 $t\to s$ 的 Backward 弧，目标 $\max x_{ts}$，流量守恒、$0\le x_{ij}\le h_{ij}$。对偶变量 $u_i$ 可解释为节点势，$w_{ij}$ 为弧的“切割价格”。由 TU，存在 0–1 最优对偶解；令 $X=\{j:u_j\le0\}$，则 $(X,V\setminus X)$ 是一个 $s$–$t$ 割，且</p>
+$$\sum_{(i,j)\in A}h_{ij}w_{ij}=\sum_{i\in X,j\notin X}h_{ij}.$$
+<p>于是得到<strong>最大流最小割定理</strong>（max-flow min-cut）：最大 $s$–$t$ 流量等于最小 $s$–$t$ 割容量。Ford–Fulkerson 增广路算法在整数容量下复杂度 $O(m\cdot\text{maxflow})$，不是强多项式；Edmonds–Karp（每次选最短增广路）是 $O(nm^2)$，Dinic 是 $O(n^2m)$。</p>
 
-<h3><span class="sn">3.3</span>算法：次梯度迭代</h3>
-<pre><code class="language-python">lam = 0.0
-best_ub = +inf
-for k in range(max_iter):
-    x = solve_subproblem(lam)          # 在 X 上最大化 cx + lam*(b - A x)
-    ub = c @ x + lam * (b - A @ x)
-    best_ub = min(best_ub, ub)
-    g = b - A @ x                      # 次梯度：约束被违反的方向
-    if norm(g) == 0: break
-    step = theta * (ub - lower_bound) / norm(g)**2
-    lam = max(0.0, lam - step * g)     # 对 max 问题沿负次梯度走
-</code></pre>
-<p>步长 $\theta$ 通常从 2 开始，连续若干轮界不改进就减半。注意内层解 $x$ 未必满足原约束，所以它是“候选上界解”，不能直接当作可行解；通常还要用贪心修复才能得到下界。</p>
+<h3><span class="sn">3.5</span>最小生成树与拟阵</h3>
+<p>树是连通无环图。原书给出五个等价刻画：$G$ 是树 $\iff$ 有 $n-1$ 条边的森林 $\iff$ 边极小连通 $\iff$ 任意两点间唯一路径 $\iff$ 加任一条非树边产生唯一环。求最大权树用 Kruskal 贪心：按权降序扫描，只要不形成环就加入；一旦选够 $n-1$ 条边即停。</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">贪心算法对生成树最优</span><span class="thm-id">Theorem 3.3</span></div>
+<div class="thm-body">
+<p>设贪心选出的边为 $g_1,\dots,g_{n-1}$（按权降序），最优树为 $f_1,\dots,f_{n-1}$。若首次分歧在 $k$，则 $c_{g_k}&gt;c_{f_k}$。把 $g_k$ 加入最优树会形成唯一环，环中必有一条 $f^\ast$ 不在 $\{g_1,\dots,g_k\}$ 中；用 $g_k$ 替换 $f^\ast$ 得到更优树，矛盾。</p>
+</div>
+</div>
+<p>更抽象地，若独立集族满足遗传性与交换性，就构成<strong>拟阵</strong>（matroid）；图的森林、线性无关向量组、部分拟阵都是例子。拟阵的基交换性质保证“按权排序 + 可行性检查”的贪心对任意权都最优。这也是为什么最小生成树、最大权森林、以及某些调度问题可以“闭眼贪心”。</p>
+<p>与拟阵相邻的是<strong>子模函数</strong>（submodular function）$f(S)+f(T)\ge f(S\cup T)+f(S\cap T)$：边际收益递减。最小割、覆盖函数、秩函数都是子模；子模最小化有多项式算法，子模最大化一般很难，但贪心有 $1-1/e$ 保证（第 6 章与第 13 章会再遇到）。</p>
 
-<div class="table-wrap">
+<h3><span class="sn">3.6</span>两个“看起来像网络、其实很难”的问题</h3>
+<p><strong>固定费用网络流</strong>（fixed-charge network flow）：若弧 $(i,j)$ 上走正流，先付固定费用 $f_{ij}$。模型加 $x_{ij}\le h_{ij}y_{ij}$、$y_{ij}\in\{0,1\}$，目标加 $\sum f_{ij}y_{ij}$。约束矩阵不再 TU，问题变成 NP-hard；但它的 LP 松弛、割平面与 Benders 分解都很好用（第 12 章）。</p>
+<p><strong>Steiner 树</strong>（Steiner tree）：给定终端集 $T\subseteq V$，找连接所有终端的最小权树。允许引入非终端 Steiner 点后，问题从“最小生成树”的 $O(m\log n)$ 跳到 NP-hard；判定版本是 Karp 的经典 NP-complete 问题之一。它与 TSP 的 1-tree 松弛、网络设计、VLSI 布线都有关系。</p>
+
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>松弛方式</th><th>本例界</th><th>计算代价</th><th>主要局限</th></tr></thead>
+<thead><tr><th>问题</th><th>矩阵/结构</th><th>算法</th><th>复杂度</th><th>对偶对象</th></tr></thead>
 <tbody>
-<tr><td>LP 松弛</td><td>33</td><td>多项式，极快</td><td>整数性完全丢失</td></tr>
-<tr><td>Lagrangian（$X$ 上精确求解）</td><td>33</td><td>每轮一个子问题</td><td>需调步长；可能弱于加入割的 LP</td></tr>
-<tr><td>组合松弛（如指派松弛 TSP）</td><td>依赖结构</td><td>多项式</td><td>可能含子回路等不可行结构</td></tr>
-<tr><td>贪心可行解</td><td>28（下界）</td><td>近线性</td><td>无最优性证明</td></tr>
+<tr><td class="id">最小费用流</td><td>节点—弧关联，TU</td><td>网络单纯形 / 容量缩放</td><td>强多项式，实践近线性</td><td>节点势</td></tr>
+<tr><td class="id">最短路（非负权）</td><td>TU</td><td>Dijkstra</td><td>$O(m\log n)$</td><td>$\pi_j-\pi_i\le c_{ij}$</td></tr>
+<tr><td class="id">最短路（负权）</td><td>TU</td><td>Bellman–Ford</td><td>$O(nm)$</td><td>势 + 负环检测</td></tr>
+<tr><td class="id">最大流</td><td>TU</td><td>Dinic / push-relabel</td><td>$O(n^2m)$ / $O(n^3)$</td><td>最小割</td></tr>
+<tr><td class="id">最小生成树</td><td>拟阵</td><td>Kruskal / Prim</td><td>$O(m\log m)$ / $O(m+n\log n)$</td><td>割性质、环性质</td></tr>
+<tr><td class="id">指派</td><td>二部图匹配，TU</td><td>匈牙利</td><td>$O(n^3)$</td><td>行/列势</td></tr>
+<tr><td class="id">固定费用网络流</td><td>不再 TU</td><td>branch-and-cut / Benders</td><td>NP-hard</td><td>—</td></tr>
+<tr><td class="id">Steiner 树</td><td>—</td><td>DP / 割平面 / 近似</td><td>NP-hard</td><td>—</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">界的方向与强度</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">TU 不是“系数都是整数”</span></div>
 <div class="thm-body">
-<p><b>把上界当下界</b>：最大化问题的松弛值一定不小于最优值；把它当成“至少能做到”会系统性高估收益。最小化问题方向相反。</p>
-<p><b>以为 Lagrangian 一定强于 LP</b>：只有当子问题多面体具有整数性（如网络流）时，两者才重合或 Lagrangian 更强；对一般 0–1 集合，LP 加了割之后往往更紧。</p>
-<p><b>把 gap 当误差</b>：gap 是“未证明部分”，不是“解错了多少”。可行解可能已经最优，只是还没证明。</p>
+<p><strong>1. 整数矩阵就以为 TU。</strong> $\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$ 的行列式是 $-2$，不是 TU；$\{0\le x\le1,\ x_1+x_2\le1.5\}$ 的 LP 顶点 $(0.5,1)$ 就不是整数。</p>
+<p><strong>2. 只看原矩阵，忘了加松弛变量后的 $(A,I)$。</strong> TU 对 $(A,I)$ 封闭；若原矩阵满足条件 (ii)，加单位阵后仍满足。</p>
+<p><strong>3. 把“存在一个整数最优解”与“所有顶点整数”混为一谈。</strong> TU 保证后者；非 TU 问题也可能碰巧有整数最优解，但不能依赖。</p>
+<p><strong>4. 认为网络流一定快。</strong> Ford–Fulkerson 在容量为无理数时不收敛，整数容量下也可能是伪多项式；大规模要用 Dinic、push-relabel 或容量缩放。</p>
 </div>
 </div>
 </div>
@@ -772,87 +880,83 @@ for k in range(max_iter):
 
 <section id="ch4" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 4</div>
-<h2><span class="num">4</span>全幺模与网络流：LP 何时自动整数</h2>
-<p class="lede">有些整数规划根本不需要分支：约束矩阵的结构保证 LP 的每个顶点都是整数点。识别这种结构，比事后拼命加割更划算。</p>
+<div class="sec-label">Part II · Chapter 4</div>
+<h2><span class="num">4</span>匹配与指派：增广路与对偶势</h2>
+<p class="lede">匹配问题的美在于：算法每走一步都在同时改进原始解与对偶证书；当找不到增广路时，你手里已经有一个大小相同的节点覆盖。</p>
+<div class="chap-intro"><p>本章从<strong>匹配</strong>（matching）与<strong>节点覆盖</strong>（node cover）的弱对偶出发，证明“无增广路 ⇒ 最大匹配”，给出二部图最大基数匹配的标号算法与 König 定理。然后把匹配变成<strong>指派问题</strong>（assignment problem），用对偶势 $u_i+v_j\le c_{ij}$ 与互补松弛解释匈牙利算法。最后讨论非二部图的奇环（blossom）不等式与 Edmonds 的多项式算法——这是组合优化史上第一个“LP 描述不显然、但多项式可解”的里程碑。</p><span class="tag">§4.1 – §4.6</span></div>
+<div class="mapchips"><span class="chip">matching</span><span class="chip">augmenting path</span><span class="chip hot">König</span><span class="chip">assignment</span><span class="chip">Hungarian</span><span class="chip">dual potentials</span><span class="chip">blossom</span><span class="chip">odd set</span></div>
 
-<div class="chap-intro">
-<p>本章给出全幺模（TU）的判定与整数性定理，说明有向图的节点–弧关联矩阵为什么是 TU，并把最短路、最大流、指派、匹配统一成 min-cost flow。最后划出边界：三维匹配和旅行商就没有这种好运。</p>
-<span class="tag">Well-Solved Problems</span>
-</div>
-
-<div class="mapchips">
-<span class="chip">全幺模</span>
-<span class="chip">网络流</span>
-<span class="chip">指派问题</span>
-<span class="chip hot">多项式可解</span>
-<span class="chip">匹配</span>
-</div>
-
-<h3><span class="sn">4.1</span>全幺模矩阵</h3>
+<h3><span class="sn">4.1</span>匹配、覆盖与增广路</h3>
+<p>图 $G=(V,E)$ 中，匹配 $M\subseteq E$ 是两两不共端点的边集；节点覆盖 $R\subseteq V$ 是每条边至少有一个端点落入的节点集。对任何匹配与覆盖都有 $|M|\le|R|$：匹配的每条边需要一个不同的覆盖点。这个弱对偶给出了最优性证书的雏形。</p>
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Totally Unimodular</span><span class="thm-id">§3.2</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">交替路与增广路</span><span class="thm-id">Def 4.3</span></div>
 <div class="thm-body">
-<p>整数矩阵 $A$ 称为全幺模的，若它的每个方子矩阵的行列式都属于 $\{0,+1,-1\}$。等价地，$A$ 的每个基矩阵的逆仍是整数矩阵。</p>
+<p>相对 $M$ 的<strong>交替路</strong>（alternating path）是 $v_0,e_1,v_1,\dots,e_p,v_p$，其中奇数边不在 $M$、偶数边在 $M$，且 $v_0$ 未被 $M$ 覆盖。若 $p$ 为奇数且 $v_p$ 也未被覆盖，则称<strong>增广路</strong>（augmenting path）。</p>
 </div>
 </div>
 <div class="thm theorem">
-<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">TU 蕴含整数顶点</span><span class="thm-id">§3.2</span></div>
+<div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">增广路定理</span><span class="thm-id">Prop 4.1–4.2</span></div>
 <div class="thm-body">
-<p>若 $A$ 全幺模、$b$ 为整数向量，则多面体 $P=\{x:Ax\le b,\ x\ge0\}$ 的所有顶点都是整数向量。因此对任意整数目标 $c$，LP $\max\{cx:x\in P\}$ 的最优解可以直接取整使用，无需分支。</p>
+<p>若存在增广路 $P$，则对称差 $M'=(M\cup P)\setminus(M\cap P)$ 是匹配且 $|M'|=|M|+1$。反过来，若 $M$ 不是最大匹配，则必存在增广路。</p>
+<p>证明思路：取更大的匹配 $M'$，看 $M\triangle M'$ 的连通分量。每个分量是交替路或偶环；由于 $|M'|&gt;|M|$，必有一条路含更多 $M'$ 边，它的两端都未被 $M$ 覆盖，正是增广路。</p>
 </div>
 </div>
-<p>这条定理的解释很短：顶点由某个基 $B$ 解出 $x_B=B^{-1}b$，而 $B^{-1}$ 的每个元素都是整数，$b$ 又是整数，所以 $x_B$ 必然是整数。难点全部转移到“如何认出 TU”。</p>
+<p>这条定理把“判断最优”化成“搜索增广路”。二部图里搜索是多项式；一般图里要处理奇环，难度陡增。</p>
 
-<h3><span class="sn">4.2</span>真实模型：最小费用流</h3>
-<p>给定有向图 $G=(V,E)$，弧 $a$ 的容量 $u_a$、单位费用 $c_a$，节点 $v$ 的净供给 $b_v$（正为供给、负为需求）：</p>
-<p>$$\min\ \sum_{a\in E}c_af_a\quad\text{s.t.}\quad \sum_{a\in\delta^+(v)}f_a-\sum_{a\in\delta^-(v)}f_a=b_v\ \ (\forall v),\quad 0\le f_a\le u_a.$$</p>
-<p>约束矩阵的每一列只有两个非零元：$+1$（弧的起点）与 $-1$（终点）。这样的节点–弧关联矩阵是 TU，所以只要供给和容量是整数，最小费用流就有整数最优解。最短路、最大流、二分图匹配、运输问题都是它的特例。</p>
+<h3><span class="sn">4.2</span>二部图最大匹配：标号算法</h3>
+<p>设 $G=(V_1,V_2,E)$，当前匹配 $M$。从 $V_1$ 中所有未匹配点打上标号 $\ast$，然后交替扩展：从 $V_1$ 的已标号点沿非匹配边走到 $V_2$，再从 $V_2$ 沿匹配边回到 $V_1$。若到达 $V_2$ 中未匹配点，就找到增广路；否则标号无法扩展。</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">König：最大匹配 = 最小节点覆盖</span><span class="thm-id">Theorem 4.1</span></div>
+<div class="thm-body">
+<p>算法终止时，令 $V_1^-$ 为 $V_1$ 中未标号点、$V_2^+$ 为 $V_2$ 中已标号点，则 $R=V_1^-\cup V_2^+$ 是节点覆盖，且 $|M|=|R|$。因此 $M$ 最大、$R$ 最小，二者相等。</p>
+</div>
+</div>
+<p>复杂度：每次增广最多标号 $O(m)$ 条边，最多增广 $O(n)$ 次，总计 $O(nm)$；用 Hopcroft–Karp 分层增广可做到 $O(m\sqrt{n})$。Example 4.1 中初始 $M=\{(3,8),(5,10)\}$，两条增广路 $(1,8),(3,8),(3,7)$ 与 $(4,10),(5,10),(5,9)$ 把它扩成 $\{(1,8),(3,7),(4,10),(5,9)\}$，大小 4；无法再标号时 $R=\{3,4,5,8\}$ 也是 4，故最优。</p>
 
+<h3><span class="sn">4.3</span>指派问题：把匹配写成 LP</h3>
+<p>二部图匹配的 LP 是</p>
+$$\min\ \sum_{i,j}c_{ij}x_{ij}\quad \text{s.t.}\quad \sum_j x_{ij}=1,\quad \sum_i x_{ij}=1,\quad x_{ij}\ge0.$$
+<p>约束矩阵是二部图的节点—弧关联矩阵，TU；因此 LP 顶点自动 0–1，不需要显式写 $x_{ij}\in\{0,1\}$。对偶是</p>
+$$\max\ \sum_i u_i+\sum_j v_j\quad \text{s.t.}\quad u_i+v_j\le c_{ij}\ \text{for all }i,j.$$
+<p>互补松弛要求：若 $x_{ij}=1$，则 $u_i+v_j=c_{ij}$；若 $u_i+v_j&lt;c_{ij}$，则 $x_{ij}=0$。匈牙利算法维护一组对偶可行势，把“紧边”$u_i+v_j=c_{ij}$ 组成的子图当作等值图，在等值图里找最大匹配；若匹配不完备，就调整势（相当于最短路/Dijkstra 的标号），扩大等值图。每一轮至少让一个变量“紧”，最多 $n$ 轮，每轮 $O(n^2)$，总计 $O(n^3)$。</p>
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">2×2 指派：LP 直接给出整数解</span><span class="thm-id">§4.3</span></div>
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">3×3 指派的势与紧边</span><span class="thm-id">§4.3</span></div>
 <div class="thm-body">
-<p>成本矩阵为 $\begin{pmatrix}4&amp;1\\2&amp;3\end{pmatrix}$。LP 为 $\min\sum c_{ij}x_{ij}$，每个工人和每项任务各被分配一次，$x\ge0$。两条可行排列是 $(1\to1,2\to2)$ 成本 $7$ 与 $(1\to2,2\to1)$ 成本 $3$，LP 最优恰好取后者，没有分数。</p>
-<p>若把“任务”换成“三人小组”，约束变成三维指派，问题立刻变为 NP-难；LP 会出现分数解，例如某个工人只承担 $1/2$ 个任务，无法直接解释为排班。</p>
+<p>成本矩阵</p>
+$$C=\begin{pmatrix}4&amp;1&amp;3\\2&amp;0&amp;5\\3&amp;2&amp;2\end{pmatrix}.$$
+<p>取 $u=(0,0,0)$、$v=(0,0,0)$，等值图只有 $c_{22}=0$ 一条紧边，匹配 $\{(2,2)\}$ 不完备。算法通过调整势逐步扩大等值图，最终得到最优指派 $1\to2$（成本 1）、$2\to1$（成本 2）、$3\to3$（成本 2），总成本 $5$。对应的对偶可行解是 $u=(3,2,2)$、$v=(0,-2,0)$：三条匹配边都取等号</p>
+$$u_1+v_2=3-2=1,\quad u_2+v_1=2+0=2,\quad u_3+v_3=2+0=2,$$
+<p>其余边满足 $\le$，对偶目标 $\sum u_i+\sum v_j=7-2=5$，与原始值相等。枚举其余五个排列：$6,9,7,11,6$，所以 $5$ 确实最优。</p>
 </div>
 </div>
 
-<h3><span class="sn">4.3</span>算法：连续最短路增广</h3>
-<pre><code class="language-python">flow = 0
-while flow &lt; required:
-    # 残量网络：正向弧费用 c，反向弧费用 -c
-    dist, parent = shortest_path(residual, source)
-    if dist[sink] == inf: break          # 无增广路，当前流已最大
-    delta = min_residual_capacity(parent)
-    augment(parent, delta)               # 沿路径推 delta 单位流
-    flow += delta
-# 若所有费用非负且每次增广最短路，得到最小费用流</code></pre>
-<p>每次增广至少让流量增加一个整数单位（在整数容量下），最多 $F$ 轮；用 Dijkstra 加势函数可实现 $O(Fm\log n)$。真正的工程实现会用容量缩放把对 $F$ 的依赖降下来。</p>
+<h3><span class="sn">4.4</span>非二部图：奇环与 blossom</h3>
+<p>一般图的最大匹配不能只用度约束 $\sum_{e\in\delta(i)}x_e\le1$ 描述。三角形 $K_3$ 的 LP 顶点是 $x_e=1/2$，值 $1.5$，但整数最大匹配只有 1。需要<strong>奇集不等式</strong>（odd set / blossom inequality）：对任意奇数点集 $T\subseteq V$，</p>
+$$\sum_{e\in E(T)}x_e\le\frac{|T|-1}{2}.$$
+<p>对 $K_3$ 它给出 $x_{12}+x_{13}+x_{23}\le1$，正好切掉 $1/2$ 顶点。Edmonds 证明：度约束 + 所有奇集不等式描述了匹配多面体；他的 blossom 算法通过“收缩奇环、在收缩图上增广、再展开”在 $O(n^3)$ 内找到最大匹配。原书把这条不等式作为“整数舍入 + 组合论证”的范例：先用度约束加权 $1/2$ 得到 $\sum_{e\in E(T)}x_e+\frac12\sum_{e\in\delta(T,V\setminus T)}x_e\le|T|/2$，丢掉非负的第二项，再对整数左端向下取整。</p>
+<p>一般图匹配的 LP 描述有指数条奇集约束，但可以多项式分离（最小奇割），所以仍属“好问题”。这与 TSP 的 subtour 约束形式相似，但匹配的分离与多面体结构更完整——也是为什么匹配是 P、TSP 是 NP-hard 的分水岭。</p>
 
-<div class="table-wrap">
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>问题</th><th>矩阵/结构</th><th>算法</th><th>复杂度或局限</th></tr></thead>
+<thead><tr><th>问题</th><th>模型</th><th>算法</th><th>复杂度</th><th>最优性证书</th></tr></thead>
 <tbody>
-<tr><td class="id">最短路</td><td>关联矩阵，TU</td><td>Dijkstra / Bellman–Ford</td><td>$O(m\log n)$；负权需 Bellman–Ford</td></tr>
-<tr><td class="id">最大流</td><td>关联矩阵，TU</td><td>增广路 / 预流推进</td><td>多项式；整数容量给整数流</td></tr>
-<tr><td class="id">指派</td><td>二分图匹配，TU</td><td>匈牙利 / 拍卖算法</td><td>$O(n^3)$</td></tr>
-<tr><td class="id">非二分匹配</td><td>需奇集约束</td><td>Blossom</td><td>$O(n^3)$，实现复杂</td></tr>
-<tr><td class="id">三维匹配</td><td>非 TU</td><td>分支定界</td><td>NP-难</td></tr>
-<tr><td class="id">0–1 背包</td><td>单约束</td><td>DP $O(nb)$</td><td>伪多项式，$b$ 大时不可行</td></tr>
+<tr><td class="id">二部最大匹配</td><td>$\sum_{e\in\delta(i)}x_e\le1$</td><td>标号增广 / Hopcroft–Karp</td><td>$O(nm)$ / $O(m\sqrt n)$</td><td>节点覆盖 $R$</td></tr>
+<tr><td class="id">指派</td><td>行和 = 列和 = 1</td><td>匈牙利 / 拍卖算法</td><td>$O(n^3)$</td><td>势 $u_i+v_j\le c_{ij}$</td></tr>
+<tr><td class="id">一般图最大匹配</td><td>度约束 + 奇集不等式</td><td>blossom</td><td>$O(n^3)$</td><td>odd-set 对偶</td></tr>
+<tr><td class="id">最小权完美匹配</td><td>同上 + 目标</td><td>blossom + 势</td><td>$O(n^3)$</td><td>对偶奇集势</td></tr>
+<tr><td class="id">最大权匹配</td><td>$\max\sum c_ex_e$</td><td>原始—对偶</td><td>多项式</td><td>互补松弛</td></tr>
 </tbody>
 </table>
 </div>
 
-<h3><span class="sn">4.4</span>复杂度边界：为什么有些结构救不了</h3>
-<p>判定问题按是否存在多项式时间算法分为 $\mathcal{P}$ 与 $\mathcal{NP}$；若所有 $\mathcal{NP}$ 问题都能多项式归约到它，则称为 $\mathcal{NP}$-完全。0–1 背包的 $O(nb)$ 动态规划是伪多项式的：$b$ 的二进制输入长度只有 $\log b$，所以它并不是多项式算法。TSP、三维匹配、带 release date 的单机调度都是 $\mathcal{NP}$-难的。</p>
-<p>这解释了为什么“找一个好模型”与“换一个更聪明的算法”同样重要：若问题本身是 $\mathcal{NP}$-难的，就不要指望某个建模技巧把它变成多项式可解；能做的只是把 LP 界抬高、把搜索树压小，或者对特殊数据给出近似保证。</p>
-
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">TU 不是“看起来像网络”就行</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">匹配算法的三个细节</span></div>
 <div class="thm-body">
-<p><b>忘记 $b$ 为整数</b>：TU 只保证顶点是整数，前提是右端项整数；若 $b=(1/2,1/2)$，顶点自然可能是半整数。</p>
-<p><b>只查行列式不为零</b>：TU 要求所有方子矩阵的行列式为 $0,\pm1$，包括 $1\times1$ 子矩阵，因此矩阵元素本身只能是 $0,\pm1$。</p>
-<p><b>把二分图结论套到一般图</b>：一般图匹配的度约束 LP 有奇环导致的半整数顶点（如三角形取 $1/2$），必须加奇集（blossom）不等式才完整。</p>
+<p><strong>1. 增广后忘记翻转边。</strong> 增广路必须做对称差，而不是简单把路径上的边全加入；否则会破坏匹配性质。</p>
+<p><strong>2. 二部图算法直接套到一般图。</strong> 奇环会让标号算法死循环或给出错误覆盖；必须用 blossom 收缩，或改用奇集约束的 LP/整数规划。</p>
+<p><strong>3. 指派问题忘了对偶可行性。</strong> 匈牙利算法中的势必须始终满足 $u_i+v_j\le c_{ij}$；只满足匹配边等号而不检查非匹配边，会得到不可行的“证书”。</p>
+<p><strong>4. 把最大基数与最大权混为一谈。</strong> 最大基数匹配不关心边权；最大权匹配可能选择更少的边，两者的对偶与算法都不同。</p>
 </div>
 </div>
 </div>
@@ -860,91 +964,101 @@ while flow &lt; required:
 
 <section id="ch5" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 5</div>
-<h2><span class="num">5</span>动态规划：无容量批量生产</h2>
-<p class="lede">当最优解具有“生产就生产到下一次开机前”的结构时，指数级的组合选择会坍缩成 $O(n^2)$ 的递推。</p>
+<div class="sec-label">Part II · Chapter 5</div>
+<h2><span class="num">5</span>动态规划：把阶段写成状态</h2>
+<p class="lede">动态规划（dynamic programming）不是“递归”，而是“用一张表记录每个子问题的最优值，并证明大问题的最优解由子问题的最优解拼成”。</p>
+<div class="chap-intro"><p>本章从最短路的最优子结构出发，给出<strong>最优性原理</strong>（principle of optimality）的三种用法：无容量批量生产（ULS）的 $O(n^2)$ 前向递推、树的最优子树 $O(n)$ 后序递推、0–1 与整数背包的 $O(nb)$ 状态递推。随后把背包的递推解释成有向无环图上的最长路，得到全幺模的扩展 formulation；最后用切割库存（cutting stock）说明“变量数指数级、但列可生成”的模型如何为第 11 章铺路。</p><span class="tag">§5.1 – §5.7</span></div>
+<div class="mapchips"><span class="chip">principle of optimality</span><span class="chip hot">lot sizing</span><span class="chip">knapsack DP</span><span class="chip">longest path</span><span class="chip">extended formulation</span><span class="chip">cutting stock</span><span class="chip">pseudo-polynomial</span></div>
 
-<div class="chap-intro">
-<p>本章研究无容量批量生产（ULS）：每个周期有需求、生产费、库存费和开机费。我们先证明最优解的两个结构性质，再据此写出前向递推，并用一组四周期数据手算到最优。</p>
-<span class="tag">Dynamic Programming</span>
-</div>
+<h3><span class="sn">5.1</span>最优子结构：从最短路说起</h3>
+<p>若 $s\to t$ 的最短路经过 $p$，则 $s\to p$ 与 $p\to t$ 的两段也必须是最短路；否则用更短的子路径替换，能得到更短的 $s\to t$ 路。设 $d(v)$ 为 $s$ 到 $v$ 的最短距离，则</p>
+$$d(v)=\min_{i\in V^-(v)}\{d(i)+c_{iv}\}.$$
+<p>在<strong>有向无环图</strong>（DAG）中，按拓扑序计算这个递推只需 $O(m)$。一般非负权图则定义 $D^k(j)$ 为“最多 $k$ 条弧到 $j$ 的最短距离”，递推</p>
+$$D^k(j)=\min\left\{D^{k-1}(j),\ \min_{i\in V^-(j)}[D^{k-1}(i)+c_{ij}]\right\},$$
+<p>从 $k=1$ 做到 $n-1$，得到 $O(nm)$ 的 Bellman–Ford。这里“阶段”是 $k$，“状态”是节点 $j$；动态规划的本质就是把“指数条路径”压成“多项式个状态”。</p>
 
-<div class="mapchips">
-<span class="chip">ULS</span>
-<span class="chip">Wagner–Whitin</span>
-<span class="chip">前向递推</span>
-<span class="chip hot">$O(n^2)$</span>
-<span class="chip">固定成本网络流</span>
-</div>
-
-<h3><span class="sn">5.1</span>模型与结构性质</h3>
-<p>在 $n$ 个周期内满足需求 $d_t$。第 $t$ 期生产 $y_t$、期末库存 $s_t$，开机费 $f_t$、单位生产费 $p_t$、单位库存费 $h_t$：</p>
-<p>$$\min\ \sum_{t=1}^{n}\big(p_ty_t+h_ts_t+f_tx_t\big)\quad\text{s.t.}\quad s_{t-1}+y_t=d_t+s_t,\quad y_t\le Mx_t,\quad s_0=s_n=0.$$</p>
-<p>把库存变量消掉，目标可写成 $\sum_t c_ty_t+\sum_t f_tx_t-\sum_t h_td_{1t}$，其中 $c_t=p_t+\sum_{i=t}^{n}h_i$ 是“第 $t$ 期生产、一直存到用掉”的完整单位成本。</p>
-
-<div class="thm lem">
-<div class="thm-head"><span class="thm-kind">性质</span><span class="thm-title">最优解的形状</span><span class="thm-id">Proposition 5.1</span></div>
+<h3><span class="sn">5.2</span>无容量批量生产：$O(n^2)$ 的前向递推</h3>
+<p>ULS 的模型是 $\min\sum_t(p_ty_t+h_ts_t+f_tx_t)$，满足 $s_{t-1}+y_t=d_t+s_t$、$y_t\le Mx_t$、$s_0=s_n=0$。它的最优解有两个结构性质：</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">ULS 的零库存生产性质</span><span class="thm-id">Prop 5.1</span></div>
 <div class="thm-body">
-<p>存在最优解满足：(i) $s_{t-1}y_t=0$，即开机时库存为零；(ii) 若 $y_t&gt;0$，则 $y_t=\sum_{i=t}^{t+k}d_i$，即一次生产恰好覆盖从 $t$ 到某个 $t+k$ 的连续需求。</p>
-<p>直觉来自网络流：把每期看成节点，生产是 $0\to t$ 的弧，库存是 $t\to t+1$ 的弧。最优极值流不会含环，因此进入某节点的两条弧不可能同时有正流。</p>
+<p>(i) 存在最优解使 $s_{t-1}y_t=0$：只在库存为零时生产。(ii) 若 $y_t&gt;0$，则对某个 $k\ge0$ 有 $y_t=\sum_{i=t}^{t+k}d_i$：一次生产恰好覆盖从 $t$ 到 $t+k$ 的需求。</p>
+<p>证明思路：把问题看成固定费用网络流；最优极端流对应的正流弧集是一棵树，因此进入节点 $t$ 的两条弧（期初库存与当期生产）不可能同时为正。</p>
 </div>
 </div>
-
-<h3><span class="sn">5.2</span>手算一个四周期实例</h3>
+<p>把库存消去：$c_t=p_t+\sum_{i=t}^{n}h_i$，常数项 $-\sum_t h_t(\sum_{i=1}^{t}d_i)$ 最后减掉。令 $H(k)$ 为前 $k$ 期的最小成本，若最后一次生产在 $t$，则</p>
+$$H(k)=\min_{1\le t\le k}\{H(t-1)+f_t+c_td_{tk}\},\qquad H(0)=0,$$
+<p>其中 $d_{tk}=\sum_{i=t}^{k}d_i$。计算 $H(1),\dots,H(n)$ 需 $O(n^2)$，回代得到生产区间。</p>
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">$n=4$ 的完整递推</span><span class="thm-id">Example 5.1</span></div>
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 5.1：四期 ULS</span><span class="thm-id">§5.2</span></div>
 <div class="thm-body">
-<p>数据：$d=(2,4,5,1)$，$p=(3,3,3,3)$，$h=(1,2,1,1)$，$f=(12,20,16,8)$。先算 $c=(8,7,5,4)$，常数项 $\sum h_td_{1t}=1\cdot2+2\cdot6+1\cdot11+1\cdot12=37$。</p>
-<p>令 $H(k)$ 为按改写后成本计的前 $k$ 期最小成本，$H(0)=0$：</p>
-<p>$$H(k)=\min_{1\le t\le k}\big\{H(t-1)+f_t+c_t\,d_{t,k}\big\}.$$</p>
-<p>$H(1)=12+8\cdot2=28$；$H(2)=\min\{12+8\cdot6,\ 28+20+7\cdot4\}=60$；$H(3)=\min\{100,111,101\}=100$；$H(4)=\min\{108,118,106,112\}=106$。</p>
-<p>回溯：$H(4)=H(2)+f_3+c_3d_{34}$，故第 3 期开机生产 6 件；$H(2)=H(0)+f_1+c_1d_{12}$，故第 1 期开机生产 6 件。得到 $y=(6,0,6,0)$、$x=(1,0,1,0)$、$s=(4,0,1,0)$，还原后成本 $106-37=69$。</p>
+<p>$n=4$，$d=(2,4,5,1)$，$p=(3,3,3,3)$，$h=(1,2,1,1)$，$f=(12,20,16,8)$。先算 $c=(8,7,5,4)$，$d_{1t}=(2,6,11,12)$，常数 $\sum h_td_{1t}=1\cdot2+2\cdot6+1\cdot11+1\cdot12=37$。</p>
+<p>$H(1)=12+8\cdot2=28$。</p>
+<p>$H(2)=\min\{12+8\cdot6,\ 28+20+7\cdot4\}=\min\{60,76\}=60$。</p>
+<p>$H(3)=\min\{12+8\cdot11,\ 28+20+7\cdot9,\ 60+16+5\cdot5\}=\min\{100,111,101\}=100$。</p>
+<p>$H(4)=\min\{12+8\cdot12,\ 28+20+7\cdot10,\ 60+16+5\cdot6,\ 100+8+4\cdot1\}=\min\{108,118,106,112\}=106$。</p>
+<p>回代：$H(4)=H(2)+f_3+c_3d_{34}=60+16+30=106$，故第 3 期生产 6 单位覆盖第 3、4 期；$H(2)=f_1+c_1d_{12}=12+48=60$，故第 1 期生产 6 单位覆盖第 1、2 期。最优 $y=(6,0,6,0)$、$x=(1,0,1,0)$、$s=(4,0,1,0)$，原成本 $106-37=69$。直接验算：$6\cdot3+12+6\cdot3+16+4\cdot1+1\cdot1=69$。</p>
+</div>
+</div>
+<p>同一实例也可建最短路图：节点 $0,\dots,n$，弧 $(i,j)$ 的权为 $f_{i+1}+c_{i+1}d_{i+1,j}$，求 $0\to n$ 最短路。图是 DAG，$O(n^2)$ 条弧，和递推完全等价。</p>
+
+<h3><span class="sn">5.3</span>树的最优子树：后序 $O(n)$</h3>
+<p>给定带点权 $c_v$ 的树与根 $r$，选一棵包含根（或为空）的子树使权和最大。设 $H(v)$ 为以 $v$ 为根的子树最优值，$S(v)$ 为 $v$ 的直接后继，则</p>
+$$H(v)=\max\left\{0,\ c_v+\sum_{w\in S(v)}H(w)\right\}.$$
+<p>从叶子往上算；叶子 $H(v)=\max\{c_v,0\}$。每个节点只被访问一次，$O(n)$。Example 5.2 中叶子 $H(4)=H(6)=H(7)=H(11)=0$、$H(9)=5$、$H(10)=3$、$H(12)=H(13)=3$；向上得 $H(5)=2$、$H(8)=8$、$H(2)=4$、$H(3)=0$、$H(1)=2$；最优子树为 $\{1,2,5,9,10\}$。注意 $H(v)=0$ 表示“整棵子树都不要”，这是“空解合法”带来的边界条件。</p>
+
+<h3><span class="sn">5.4</span>背包：$O(nb)$ 的状态表</h3>
+<p><strong>0–1 背包</strong>：设 $f_r(\lambda)$ 为只用前 $r$ 件、容量 $\lambda$ 的最优值：</p>
+$$f_r(\lambda)=\max\{f_{r-1}(\lambda),\ c_r+f_{r-1}(\lambda-a_r)\}\quad(a_r\le\lambda),\qquad f_r(\lambda)=f_{r-1}(\lambda)\ \text{otherwise}.$$
+<p>对 $r=1,\dots,n$、$\lambda=0,\dots,b$ 填表，$O(nb)$ 时间与 $O(b)$ 空间（滚动数组）。用 $p_r(\lambda)\in\{0,1\}$ 记录是否取了第 $r$ 件，回代得到解。</p>
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 5.3：0–1 背包</span><span class="thm-id">§5.4.1</span></div>
+<div class="thm-body">
+<p>$$\max\ 10x_1+7x_2+25x_3+24x_4\quad \text{s.t.}\quad 2x_1+x_2+6x_3+5x_4\le7,\quad x\in\{0,1\}^4.$$</p>
+<p>填表得 $f_4(7)=34$。回代：$p_4(7)=1\Rightarrow x_4=1$；$p_3(2)=p_2(2)=0\Rightarrow x_3=x_2=0$；$p_1(2)=1\Rightarrow x_1=1$。最优 $x=(1,0,0,1)$，重量 $2+5=7$，值 $10+24=34$。</p>
+</div>
+</div>
+<p><strong>整数背包</strong>（每件可取多件）若照抄 0–1 递推，要枚举 $x_r=t$，复杂度 $O(nb^2)$。关键观察：若最优解中 $x_r\ge1$，把它减 1 后，剩余部分必须是对容量 $\lambda-a_r$ 的最优解。于是</p>
+$$g_r(\lambda)=\max\{g_{r-1}(\lambda),\ c_r+g_r(\lambda-a_r)\},$$
+<p>注意第二项是 $g_r$ 而不是 $g_{r-1}$，允许继续取第 $r$ 件；复杂度降为 $O(nb)$。Example 5.4 中 $\max 7x_1+9x_2+2x_3+15x_4$、$3x_1+4x_2+x_3+7x_4\le10$，递推得 $g_4(10)=23$，回代 $x=(2,1,0,0)$：$6+4=10$，值 $14+9=23$。</p>
+<p>把递推看成图：节点 $0,\dots,b$，对每件 $j$ 连弧 $(\lambda,\lambda+a_j)$、权 $c_j$，再连零权弧 $(\lambda,\lambda+1)$；$g_n(b)$ 就是 $0\to b$ 的最长路。这个 DAG 的弧—节点关联矩阵是 TU，于是可以得到一个扩展 formulation：用 $z(j,\lambda)\in\{0,1\}$ 表示是否走“用一件 $j$ 从 $\lambda$ 到 $\lambda+a_j$”的弧，流量守恒加 $\sum_\lambda z(j,\lambda)=x_j$。LP 松弛自动整数，直接解背包。变量数 $O(nb)$，是伪多项式大小的扩展 formulation。</p>
+
+<h3><span class="sn">5.5</span>切割库存：指数条列的第一个例子</h3>
+<p>有无限多张长度 $L$ 的原料，需求为 $q_j$ 段长度 $a_j$。设所有可行切割模式为 $x^t=(x^t_1,\dots,x^t_n)$，满足 $\sum_j a_jx^t_j\le L$；令 $w_t$ 为使用模式 $t$ 的次数：</p>
+$$\min\ \sum_{t=1}^{T}w_t\quad \text{s.t.}\quad \sum_{t=1}^{T}x^t_jw_t\ge q_j\ (j=1,\dots,n),\quad w\in\mathbb{Z}^T_+.$$
+<p>模式数 $T$ 可能是指数级，不能显式枚举；但给定对偶价格 $\pi_j$，定价子问题是一个背包：$\max\{\sum_j\pi_jx_j:\sum_j a_jx_j\le L,\ x\in\mathbb{Z}^n_+\}$。这正是第 11 章列生成的模板。</p>
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 5.5：$L=5$ 的切割库存</span><span class="thm-id">§5.5</span></div>
+<div class="thm-body">
+<p>$a=(1,2,4)$，$q=(10,6,3)$。只需极大模式：$(5,0,0)$、$(1,2,0)$、$(3,1,0)$、$(1,0,1)$。模型为</p>
+$$\min\ w_1+w_2+w_3+w_4\quad \text{s.t.}\quad \begin{pmatrix}5\\0\\0\end{pmatrix}w_1+\begin{pmatrix}1\\2\\0\end{pmatrix}w_2+\begin{pmatrix}3\\1\\0\end{pmatrix}w_3+\begin{pmatrix}1\\0\\1\end{pmatrix}w_4\ge\begin{pmatrix}10\\6\\3\end{pmatrix}.$$
+<p>最优 $w=(0,2,2,3)$，值 $7$：$w_2$ 给 2 段长 1、4 段长 2；$w_3$ 给 6 段长 1、2 段长 2；$w_4$ 给 3 段长 1、3 段长 4。合计长 1 为 $2+6+3=11\ge10$，长 2 为 $4+2=6$，长 4 为 $3$。下界 $\lceil(10\cdot1+6\cdot2+3\cdot4)/5\rceil=\lceil28/5\rceil=6$，实际 7，间隙来自组合浪费。</p>
 </div>
 </div>
 
-<div class="intuition">
-<div class="ih">直觉</div>
-<p>每一期只问一个问题：<b>最后一次开机发生在哪一期？</b> 如果答案是 $t$，那么 $t$ 之前的最优方案与后面无关（最优子结构），$t$ 之后到 $k$ 的需求全部由这一次生产覆盖。于是 $n$ 个状态、每个状态枚举 $t$，总共 $n^2$ 次加法。</p>
-</div>
-
-<h3><span class="sn">5.3</span>算法：前向递推与回溯</h3>
-<pre><code class="language-python">H = [0] * (n + 1)
-prev = [0] * (n + 1)
-for k in range(1, n + 1):
-    best, arg = inf, None
-    for t in range(1, k + 1):
-        cost = H[t - 1] + f[t] + c[t] * d[t:k + 1].sum()
-        if cost &lt; best:
-            best, arg = cost, t
-    H[k], prev[k] = best, arg
-
-k = n
-while k &gt; 0:
-    t = prev[k]
-    produce[t] = d[t:k + 1].sum()   # 第 t 期一次生产覆盖 t..k
-    k = t - 1
-# 答案需减去常数 sum(h[t] * d[1:t+1])</code></pre>
-<p>等价的视角是建一张 $0,\dots,n$ 的 DAG，弧 $(i,j)$ 的权为 $f_{i+1}+c_{i+1}d_{i+1,j}$，求 $0\to n$ 的最短路。DAG 最短路是线性的，边数 $O(n^2)$，因此总复杂度 $O(n^2)$、空间 $O(n)$。</p>
-
-<div class="table-wrap">
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>变体</th><th>状态/递推</th><th>复杂度</th><th>局限</th></tr></thead>
+<thead><tr><th>问题</th><th>状态</th><th>递推</th><th>复杂度</th><th>备注</th></tr></thead>
 <tbody>
-<tr><td class="id">ULS（无容量）</td><td>$H(k)$ 枚举最后开机期</td><td>$O(n^2)$</td><td>依赖 $s_{t-1}y_t=0$</td></tr>
-<tr><td class="id">ULS + 允许缺货</td><td>增加回补状态</td><td>$O(n^2)$</td><td>需同时向前/向后看</td></tr>
-<tr><td class="id">带容量 CLSP</td><td>状态含剩余产能</td><td>伪多项式，通常 NP-难</td><td>Wagner–Whitin 性质失效</td></tr>
-<tr><td class="id">多产品共享产能</td><td>需列生成/分支</td><td>NP-难</td><td>不能逐产品独立递推</td></tr>
-<tr><td class="id">一般固定成本网络流</td><td>—</td><td>NP-难</td><td>ULS 只是树形特例</td></tr>
+<tr><td class="id">DAG 最短路</td><td>$d(v)$</td><td>$d(v)=\min_i d(i)+c_{iv}$</td><td>$O(m)$</td><td>拓扑序</td></tr>
+<tr><td class="id">一般最短路</td><td>$D^k(j)$</td><td>最多 $k$ 条弧</td><td>$O(nm)$</td><td>Bellman–Ford</td></tr>
+<tr><td class="id">ULS</td><td>$H(k)$</td><td>$H(k)=\min_t H(t-1)+f_t+c_td_{tk}$</td><td>$O(n^2)$</td><td>零库存性质</td></tr>
+<tr><td class="id">最优子树</td><td>$H(v)$</td><td>$\max(0,c_v+\sum H(w))$</td><td>$O(n)$</td><td>后序</td></tr>
+<tr><td class="id">0–1 背包</td><td>$f_r(\lambda)$</td><td>取/不取两分支</td><td>$O(nb)$</td><td>伪多项式</td></tr>
+<tr><td class="id">整数背包</td><td>$g_r(\lambda)$</td><td>$\max(g_{r-1},c_r+g_r(\lambda-a_r))$</td><td>$O(nb)$</td><td>注意 $g_r$ 自引用</td></tr>
+<tr><td class="id">切割库存</td><td>模式 $w_t$</td><td>主问题 + 背包定价</td><td>列生成</td><td>$T$ 可指数</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">递推里最容易错的三处</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">DP 的三个边界条件</span></div>
 <div class="thm-body">
-<p><b>忘记常数项</b>：用 $c_t$ 改写目标后必须减去 $\sum h_td_{1t}$，否则答案整体偏移，而方案看起来仍然“合理”。</p>
-<p><b>把性质当成约束</b>：$s_{t-1}y_t=0$ 只保证存在一个最优解满足，不是所有可行解都满足；若强行加进模型会改变可行域。</p>
-<p><b>把 ULS 结论套到有容量问题</b>：一旦每期产能有限，一次生产未必能覆盖到下一次开机，$O(n^2)$ 递推不再成立，问题通常变成 NP-难。</p>
+<p><strong>1. 状态定义漏掉“容量/预算”。</strong> 只按件数 $r$ 定义状态会丢失可行性；背包必须同时有 $r$ 与 $\lambda$。</p>
+<p><strong>2. 整数背包写成 $g_{r-1}(\lambda-a_r)$。</strong> 那是最多取一件；要允许重复取，第二项必须是 $g_r(\lambda-a_r)$。</p>
+<p><strong>3. 把 $O(nb)$ 当多项式。</strong> $b$ 的输入长度是 $\log b$，所以 $O(nb)$ 是伪多项式；$b=10^{18}$ 时表根本建不起来。第 6 章会用它说明背包是 NP-hard。</p>
+<p><strong>4. 忘记 $s_n=0$ 或空树合法。</strong> 边界条件错一个，递推值会整体偏移；ULS 的常数项、子树的 $\max(0,\cdot)$ 都是常见坑。</p>
 </div>
 </div>
 </div>
@@ -952,92 +1066,79 @@ while k &gt; 0:
 
 <section id="ch6" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 6</div>
-<h2><span class="num">6</span>分支定界：把分数解劈成两半</h2>
-<p class="lede">分支定界是整数规划的骨架算法：不断把可行域切开，用松弛界决定哪一半根本不值得看。</p>
+<div class="sec-label">Part III · Chapter 6</div>
+<h2><span class="num">6</span>复杂性：为什么有些问题注定要分支</h2>
+<p class="lede">复杂性理论不告诉你“这个实例难不难”，它告诉你“这一类问题的所有实例，是否可能存在一个多项式算法”。这是选择算法的边界条件，不是学术装饰。</p>
+<div class="chap-intro"><p>本章把优化问题改写成判定问题，定义输入长度、$P$、$NP$、$NP$-complete 与 $NP$-hard；用 Cook 定理与多项式归约（polynomial reduction）建立问题之间的“难度传递”。随后讨论优化与分离（separation）的等价性、扩展 formulation（extended formulation）的指数下界，以及带最坏情况保证的近似算法：背包贪心的 $1/2$、生成树双倍法的 $2$、树/匹配法的 $3/2$。最后给出一个重要的工程结论：$NP$-hard 不等于“放弃”，而是“用界、结构、分解与启发式组合出可信答案”。</p><span class="tag">§6.1 – §6.9</span></div>
+<div class="mapchips"><span class="chip">decision problem</span><span class="chip">P vs NP</span><span class="chip hot">NP-complete</span><span class="chip">reduction</span><span class="chip">separation</span><span class="chip">extended formulation</span><span class="chip">approximation ratio</span></div>
 
-<div class="chap-intro">
-<p>本章用一个小型二维整数规划走完整棵搜索树，区分三种剪枝（不可行、界、整数），并讨论分支变量与节点选择这两个工程决策。所有商用求解器的外循环仍然是它，只是中间塞满了割与启发式。</p>
-<span class="tag">Branch &amp; Bound</span>
-</div>
-
-<div class="mapchips">
-<span class="chip">分支</span>
-<span class="chip">定界</span>
-<span class="chip">剪枝</span>
-<span class="chip hot">搜索树</span>
-<span class="chip">incumbent</span>
-</div>
-
-<h3><span class="sn">6.1</span>算法骨架</h3>
+<h3><span class="sn">6.1</span>从优化到判定：输入长度与 $P$</h3>
+<p>优化问题 $\max\{cx:x\in S\}$ 对应的判定问题是“是否存在 $x\in S$ 使 $cx\ge k$？”实例由 $(c,S,k)$ 的标准编码组成。输入长度 $L(X)$ 是二进制编码的长度，不只是变量个数；这一点决定了“$O(nb)$”为什么不是多项式。</p>
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">节点、上界与 incumbent</span><span class="thm-id">§7.1–7.4</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">$P$、$NP$、$NP$-complete</span><span class="thm-id">Def 6.1–6.6</span></div>
 <div class="thm-body">
-<p>搜索树的每个节点对应原问题加上一条或多条变量界（如 $x_j\le k$）后的子问题。节点的上界是该子问题 LP 松弛的最优值；全局下界是当前最好整数可行解（incumbent）的目标值。若某节点的上界不超过全局下界，该节点及其后代都不可能改进答案。</p>
+<p>$P$：存在多项式时间算法的判定问题。$NP$：答案为 YES 时，存在一个多项式长度的“证书”，且可在多项式时间内验证。若问题 $P$ 的每个实例都能多项式时间归约到 $Q$，记 $P\le_p Q$。$Q$ 是 $NP$-complete，若 $Q\in NP$ 且对所有 $R\in NP$ 有 $R\le_p Q$。</p>
 </div>
 </div>
-<p>对最大化问题，维护一个活动节点列表、当前最好可行解（incumbent）$x^*$ 及其值 $\underline{Z}$。每个节点解一次 LP 松弛，得到上界 $\bar{Z}_i$：</p>
+<p>Cook 在 1970 年证明 SATISFIABILITY 是 $NP$-complete。把 SAT 写成 0–1 规划：对每个子句 $i$，</p>
+$$\sum_{j\in C_i}x_j+\sum_{j\in D_i}(1-x_j)\ge1,\qquad x\in\{0,1\}^n,$$
+<p>就得到 SAT $\le_p$ 0–1 IP，因此 0–1 IP 是 $NP$-complete。背包、集合覆盖、TSP、UFL、Steiner 树、切割库存的判定版本也都是 $NP$-complete；优化版本则称 $NP$-hard（判定问题属于 $NP$-complete 的优化问题）。</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">归约引理</span><span class="thm-id">Prop 6.1, 6.3</span></div>
+<div class="thm-body">
+<p>若 $Q$ 容易且 $P\le_p Q$，则 $P$ 容易；若 $P$ 难且 $P\le_p Q$，则 $Q$ 难。形式化地：$Q\in P$ 且 $P\le_p Q$ $\Rightarrow P\in P$；$P\in NP$-complete 且 $P\le_p Q$ $\Rightarrow Q\in NP$-complete。</p>
+<p>推论：若 $P\cap NP$-complete $\ne\varnothing$，则 $P=NP$。这是反证法证明“某问题不太可能有多项式算法”的标准路径。</p>
+</div>
+</div>
+<p>注意归约的方向：要证明新问题 $Q$ 难，必须把已知难问题 $P$ 归约到 $Q$（$P\le_p Q$），即“用 $Q$ 的算法能解 $P$”。方向写反是初学者最常见的错误。</p>
+
+<h3><span class="sn">6.2</span>哪些问题在 $P$ 里：结构决定命运</h3>
+<p>原书 Example 6.1 用输入长度重新检查了几个“看起来像 DP 就行”的问题：ULS 的 DP 是 $O(n^2)$ 次算术，输入长度 $L$ 包含 $n$ 与各数据的对数，因此 $O(L^2)$，ULS $\in P$。0–1 背包的 DP 是 $O(nb)$，但 $b$ 的二进制长度只有 $\log b$，$nb$ 不是 $L$ 的多项式，所以该算法不能证明背包 $\in P$；事实上背包是 $NP$-complete。这个对比说明：<strong>伪多项式算法不是多项式算法</strong>。</p>
+<p>另一条分界线是“固定维数”：Lenstra 证明整数变量个数固定时，IP 有多项式算法（复杂度对输入长度多项式、对维数指数）。这解释了为什么 2 维、3 维几何问题常常好解，而 1000 个 0–1 变量的问题很难。</p>
+
+<h3><span class="sn">6.3</span>优化与分离：同一枚硬币的两面</h3>
+<p>第 3 章定义了分离问题：给定 $x^\ast$，判定 $x^\ast\in\mathrm{conv}(X)$，若不在则输出一条被违反的合法不等式。Grötschel–Lovász–Schrijver 的结果（原书 §6.5）说：对一类多面体，优化多项式可解当且仅当分离多项式可解。这解释了为什么 branch-and-cut 可以在指数条约束中“只生成需要的那几条”：只要分离器是多项式的，整个算法就可能保持多项式（椭球法意义下）。</p>
+<p>但“多项式分离”不等于“多项式大小的描述”。扩展 formulation 把 $x$ 投影到辅助变量 $w$：$Q=\{(x,w):Ax+Gw\le d\}$，$\mathrm{proj}_xQ=\mathrm{conv}(X)$。若 $Q$ 有 $poly(n)$ 条约束，则原问题 $\in P$。反过来，若证明所有扩展 formulation 都需要指数条约束，就证明不存在“把凸包写小”的捷径。</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">扩展 formulation 的指数下界</span><span class="thm-id">Theorem 6.1–6.2</span></div>
+<div class="thm-body">
+<p>(i) 完美匹配多面体的每个扩展 formulation 至少需要 $O(2^{cn})$ 条约束（某个 $c&gt;0$）；对称 TSP 多面体同理。(ii) 稳定集多面体的每个扩展 formulation 至少需要 $1.5^{\sqrt n}$ 条约束。</p>
+<p>含义：匹配、TSP、稳定集虽然属于 $P$ 或 $NP$-hard 的不同阵营，但都不存在多项式大小的线性规划描述。匹配靠组合算法（blossom），TSP 靠割平面 + 分支，稳定集靠分支或近似。</p>
+</div>
+</div>
+
+<h3><span class="sn">6.4</span>近似算法：有保证的“退而求其次”</h3>
+<p>对最小化问题，若算法输出 $Z_H$ 满足 $Z_H/Z\le\rho$（最大化则 $Z_H/Z\ge\rho$），称 $\rho$ 为<strong>近似比</strong>（approximation ratio）。原书给出三个经典结果：</p>
 <ul>
-<li>若 LP 不可行，剪枝（prune by infeasibility）；</li>
-<li>若 $\bar{Z}_i\le\underline{Z}$，剪枝（prune by bound）；</li>
-<li>若 LP 解已经整数，更新 incumbent 并剪枝（prune by optimality）；</li>
-<li>否则选一个分数变量 $x_j$，分成 $x_j\le\lfloor x_j^*\rfloor$ 与 $x_j\ge\lceil x_j^*\rceil$ 两个子节点。</li>
+<li><strong>整数背包贪心</strong>：只取单位重量收益最高的那一件，$\lfloor b/a_1\rfloor$ 件；$Z_H/Z\ge1/2$。证明用 LP 界 $Z_{LP}=c_1b/a_1$ 与 $\lfloor b/a_1\rfloor/(b/a_1)\ge1/2$。注意这是“只取一种物品”的贪心，不是第 2 章那个逐件扫描的贪心。</li>
+<li><strong>树双倍法</strong>（tree doubling）：最小生成树每条边复制一次，得到欧拉图，再抄近路成 tour；$Z_H/Z\le2$，因为 $Z_T\le Z$ 且 $Z_H\le2Z_T$。</li>
+<li><strong>树 + 最小完美匹配</strong>：把生成树的奇度点做最小完美匹配，再欧拉化；$Z_H/Z\le3/2$。证明把最优 tour 拆成两个匹配 $M_1,M_2$，$2Z_M\le Z_{M_1}+Z_{M_2}\le Z$，于是 $Z_H\le Z_T+Z_M\le Z+Z/2$。</li>
 </ul>
+<p>这些比值是最坏情况保证，实际通常好得多。更重要的是它们展示了分析范式：<strong>下界用松弛，上界用构造，比较两者</strong>。集合覆盖也有类似结论：贪心每次选“覆盖最多未覆盖元素”的集合，近似比为 $H(n)=1+\frac12+\cdots+\frac1n\approx\ln n$；这个界是紧的，不能指望贪心给出常数比。</p>
 
-<h3><span class="sn">6.2</span>完整算例</h3>
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">两变量、七个节点</span><span class="thm-id">§7.4</span></div>
-<div class="thm-body">
-<p>$$\max\ 5x_1+4x_2\quad\text{s.t.}\quad 6x_1+4x_2\le24,\quad x_1+2x_2\le6,\quad x\in\mathbb{Z}^2_+.$$</p>
-<p><b>根节点</b>：两条约束交于 $(3,1.5)$，LP 值 $21$。对 $x_2$ 分支。</p>
-<p><b>左节点 $x_2\le1$</b>：LP 解 $(10/3,1)$，值 $62/3\approx20.67$。再对 $x_1$ 分支：$x_1\le3$ 得 $(3,1)$，值 $19$，更新 incumbent；$x_1\ge4$ 得 $(4,0)$，值 $20$，更新 incumbent。</p>
-<p><b>右节点 $x_2\ge2$</b>：LP 解 $(2,2)$，值 $18$。虽然整数，但 $18\le20$，按界剪掉。</p>
-<p><b>结论</b>：最优解 $(4,0)$，值 $20$。注意 $(3,1)$ 先被找到，却并非最优；incumbent 的作用就是让后来的节点有机会被“比下去”。</p>
-</div>
-</div>
-
-<div class="intuition">
-<div class="ih">直觉</div>
-<p>LP 界是每个节点的“乐观估计”。如果连最乐观的估计都赢不了当前冠军，这个节点里不可能藏着更好的解，整枝砍掉即可。分支则是把“$x_1=2.7$ 这种不可能”逐步逼成整数。</p>
-</div>
-
-<h3><span class="sn">6.3</span>伪代码</h3>
-<pre><code class="language-python">stack = [root]
-incumbent, best = None, -inf
-while stack:
-    node = select(stack)                 # 深度优先 / 最佳界优先
-    status, z, x = solve_lp(node)
-    if status == INFEASIBLE: continue
-    if z &lt;= best: continue               # 按界剪枝
-    if is_integer(x):
-        incumbent, best = x, z           # 按最优性剪枝
-        continue
-    j = choose_fractional(x)             # 最分数 / 伪费用 / 可靠性
-    stack.append(child(node, x[j] &lt;= floor(x[j])))
-    stack.append(child(node, x[j] &gt;= ceil(x[j])))
-return incumbent, best</code></pre>
-<p>工程上有两个关键选择。<b>分支变量</b>：最分数变量（$f_j$ 接近 $1/2$）实现简单但效果一般；伪费用（pseudocost）用历史平均退化率估计两侧的目标变化，更常用。<b>节点选择</b>：深度优先能快速找到可行解、且热启动 LP 便宜；最佳界优先能最小化节点数，但内存开销大。实践通常先深度优先找到 incumbent，再混合最佳界。</p>
-
-<div class="table-wrap">
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>组件</th><th>常见策略</th><th>优点</th><th>局限</th></tr></thead>
+<thead><tr><th>问题</th><th>判定复杂度</th><th>已知算法</th><th>近似/特殊结构</th></tr></thead>
 <tbody>
-<tr><td class="id">分支变量</td><td>最分数、伪费用、strong branching</td><td>后者界提升大</td><td>strong branching 每节点多解很多 LP</td></tr>
-<tr><td class="id">节点选择</td><td>DFS、BFS、最佳界</td><td>DFS 省内存、易找解</td><td>可能长时间困在坏子树</td></tr>
-<tr><td class="id">初始 incumbent</td><td>贪心、舍入、可行性泵</td><td>显著提前剪枝</td><td>质量差时作用有限</td></tr>
-<tr><td class="id">节点 LP</td><td>对偶单纯形热启动</td><td>子节点通常只加一条界</td><td>数值退化时反复迭代</td></tr>
-<tr><td class="id">完整性</td><td>穷尽所有未剪节点</td><td>可证明最优</td><td>最坏情况指数节点</td></tr>
+<tr><td class="id">ULS</td><td>$P$</td><td>DP $O(n^2)$</td><td>凸包可显式描述</td></tr>
+<tr><td class="id">0–1 背包</td><td>$NP$-complete</td><td>DP $O(nb)$</td><td>贪心比 $1/2$；FPTAS 存在</td></tr>
+<tr><td class="id">集合覆盖</td><td>$NP$-complete</td><td>分支 / 列生成</td><td>贪心 $H(n)\approx\ln n$</td></tr>
+<tr><td class="id">TSP</td><td>$NP$-complete</td><td>branch-and-cut</td><td>度量 TSP：$3/2$、$2$</td></tr>
+<tr><td class="id">UFL</td><td>$NP$-complete</td><td>branch-and-cut / Lagrangian</td><td>无常数比（一般）</td></tr>
+<tr><td class="id">匹配</td><td>$P$</td><td>blossom $O(n^3)$</td><td>无 poly-size 扩展 formulation</td></tr>
+<tr><td class="id">IP（维数固定）</td><td>$P$</td><td>Lenstra</td><td>对维数指数</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">剪枝条件写错，答案就悄悄错</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">复杂性论证的四个坑</span></div>
 <div class="thm-body">
-<p><b>用 $&lt;$ 而不是 $\le$</b>：当 $\bar{Z}_i=\underline{Z}$ 时，该节点不可能改进 incumbent，可以安全剪掉；写成严格小于会多搜整棵等价子树。</p>
-<p><b>找到整数解就停</b>：整数 LP 解只说明该节点最优，不代表全局最优；必须等所有活动节点的界都不超过 incumbent。</p>
-<p><b>忘记更新 incumbent</b>：只记录“找到了整数解”而不更新 $\underline{Z}$，后续所有按界剪枝都会失效，树会爆炸。</p>
-<p><b>把 LP 不可行当成原问题不可行</b>：单个节点不可行只说明该分支无解，其他分支仍可能存在可行解。</p>
+<p><strong>1. 把“没有已知多项式算法”说成“已证明不存在”。</strong> $P\ne NP$ 仍未证明；$NP$-hard 只表示“若 $P\ne NP$ 则无多项式算法”。</p>
+<p><strong>2. 归约方向反了。</strong> 证明 $Q$ 难要把已知难问题归约到 $Q$，不是把 $Q$ 归约到已知问题。</p>
+<p><strong>3. 把伪多项式当多项式。</strong> $O(nb)$ 依赖 $b$ 的数值，不依赖 $\log b$；$b=2^{100}$ 时表不可建。</p>
+<p><strong>4. 以为 $NP$-hard 就不能解。</strong> 实际实例有结构、有界、可分解；branch-and-cut 能解几十万变量的工业 MIP。理论难度是“最坏情况”，工程是“这一批实例”。</p>
 </div>
 </div>
 </div>
@@ -1045,85 +1146,76 @@ return incumbent, best</code></pre>
 
 <section id="ch7" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 7</div>
-<h2><span class="num">7</span>割平面：把分数解切掉，而不切掉整数解</h2>
-<p class="lede">分支是“分而治之”，割平面是“直接把不可能的分数区域削掉”。两者合起来，就是今天商用求解器的 branch-and-cut。</p>
+<div class="sec-label">Part IV · Chapter 7</div>
+<h2><span class="num">7</span>分支定界：把分数解劈成两半</h2>
+<p class="lede">分支定界（branch and bound，也写 branch-and-bound，简称 B&amp;B）的全部智慧只有一句：<b>用松弛给每个子问题一个上界，上界不如当前可行解就直接扔掉。</b>剩下的问题是：怎么分、先看谁、怎么快速重解。</p>
+<div class="chap-intro"><p>本章从“分治 + 隐式枚举”出发，给出三种剪枝：按最优性、按界、按不可行。然后进入 LP-based branch and bound：选一个分数变量 $x_j=\bar x_j\notin\mathbb{Z}$，分成 $x_j\le\lfloor\bar x_j\rfloor$ 与 $x_j\ge\lceil\bar x_j\rceil$ 两支；每支用对偶单纯形从父节点的基热启动。完整算例追踪到每个节点的 LP 值。最后讨论节点选择（深度优先、最佳界优先）、分支变量选择（伪成本、强分支）与预求解（presolve）：收紧界、固定变量、去冗余约束、系数强化。</p><span class="tag">§7.1 – §7.8</span></div>
+<div class="mapchips"><span class="chip">divide &amp; conquer</span><span class="chip">pruning</span><span class="chip hot">LP-based B&amp;B</span><span class="chip">branching</span><span class="chip">incumbent</span><span class="chip">best-bound</span><span class="chip">pseudocost</span><span class="chip">presolve</span></div>
 
-<div class="chap-intro">
-<p>本章从有效不等式的定义出发，给出 Chvátal–Gomory 三步法、Gomory 分数割的表格推导，以及 MIR 与 split cut 的位置。所有割的共同底线只有一条：不能切掉任何整数可行点。</p>
-<span class="tag">Cutting Planes</span>
-</div>
+<h3><span class="sn">7.1</span>分治与枚举树</h3>
+<p>把可行域 $S$ 分成 $S_1\cup\cdots\cup S_K$，则 $Z=\max_k Z_k$。二叉分支是最常见的形式：对 $x_j$ 的分数值 $\bar x_j$，取</p>
+$$S_1=S\cap\{x:x_j\le\lfloor\bar x_j\rfloor\},\qquad S_2=S\cap\{x:x_j\ge\lceil\bar x_j\rceil\}.$$
+<p>两者不交且并集覆盖 $S$；而且当前 LP 解不在任一子问题中，所以（非退化时）两个子问题的上界都会严格下降。TSP 也可以多路分支：按“从城市 1 出发走哪条弧”分成 $n-1$ 支，再逐层固定。</p>
+<p><strong>隐式枚举</strong>的关键是剪枝。设节点 $t$ 的上界 $\overline{Z}_t$、下界 $\underline{Z}_t$、当前最优可行解（incumbent）$\underline{Z}$：</p>
+<ul>
+<li><strong>按最优性剪枝</strong>：$\overline{Z}_t=\underline{Z}_t$，该子问题已解完。</li>
+<li><strong>按界剪枝</strong>：$\overline{Z}_t\le\underline{Z}$，不可能改进 incumbent。</li>
+<li><strong>按不可行剪枝</strong>：$S_t=\varnothing$。</li>
+</ul>
+<p>全局上界是 $\max_t\overline{Z}_t$，全局下界是 $\max_t\underline{Z}_t$。只要还有活跃节点，就继续。</p>
 
-<div class="mapchips">
-<span class="chip">有效不等式</span>
-<span class="chip">Chvátal–Gomory</span>
-<span class="chip">Gomory 割</span>
-<span class="chip hot">MIR</span>
-<span class="chip">split cut</span>
-</div>
+<h3><span class="sn">7.2</span>完整算例：一棵四节点的树</h3>
+<p>原书 Example 7.4 的 IP 是</p>
+$$Z=\max\ 4x_1-x_2\quad \text{s.t.}\quad 7x_1-2x_2\le14,\quad x_2\le3,\quad 2x_1-2x_2\le3,\quad x\in\mathbb{Z}^2_+.$$
+<p>加松弛 $x_3,x_4,x_5$ 后解 LP，最优表为</p>
+$$Z=\frac{59}{7}-\frac47x_3-\frac17x_4,\quad x_1+\frac17x_3+\frac27x_4=\frac{20}{7},\quad x_2+x_4=3,\quad -\frac27x_3+\frac{10}{7}x_4+x_5=\frac{23}{7}.$$
+<p>LP 解 $(20/7,3)$，值 $59/7\approx8.43$；无可行整数解，$\underline{Z}=-\infty$。选 $x_1=20/7$ 分支：$S_1=\{x_1\le2\}$、$S_2=\{x_1\ge3\}$。</p>
+<p><strong>节点 $S_1$</strong>：加 $x_1+s=2$，用 $x_1=20/7-\frac17x_3-\frac27x_4$ 消元得 $-\frac17x_3-\frac27x_4+s=-\frac67$，对偶单纯形两步后</p>
+$$Z_1=\frac{15}{2}-\frac12x_5-3s,\quad x_1+s=2,\quad x_2-\frac12x_5+s=\frac12,\quad x_3-x_5-5s=1,\quad x_4+\frac12x_5+6s=\frac52,$$
+<p>解 $(2,\frac12)$，值 $7.5$。仍分数，继续按 $x_2$ 分支：$S_3=\{x_2\le0\}$、$S_4=\{x_2\ge1\}$。</p>
+<p><strong>节点 $S_2$</strong>：$x_1\ge3$ 写成 $x_1-t=3$，代入得 $\frac17x_3+\frac27x_4+t=-\frac17$。左边非负、右边为负，LP 不可行，剪枝。</p>
+<p><strong>节点 $S_4$</strong>：$x_2\ge1$ 后 LP 解 $(2,1)$，值 $7$，整数。更新 incumbent $\underline{Z}=7$，按最优性剪枝。</p>
+<p><strong>节点 $S_3$</strong>：LP 解 $(3/2,0)$，值 $6$。因为 $6&lt;7=\underline{Z}$，按界剪枝。</p>
+<p>活跃节点清空，最优解 $(2,1)$，值 $7$。整棵树只有 5 个节点；完全枚举要检查多少整数点？在 $0\le x_1\le2$、$0\le x_2\le3$ 的盒子里最多有 $3\times4=12$ 个整数点，分支定界省得不多，但规模一大，剪枝的复利就显现出来。</p>
 
-<h3><span class="sn">7.1</span>Chvátal–Gomory 三步法</h3>
-<div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">有效不等式</span><span class="thm-id">§8.3</span></div>
-<div class="thm-body">
-<p>若 $X=\{x\in\mathbb{Z}^n_+:Ax\le b\}$ 的每个点都满足 $\pi x\le\pi_0$，则称该不等式对 $X$ 有效（valid）。割平面就是一个能切掉当前 LP 最优点、但对 $X$ 仍然有效的不等式。</p>
-</div>
-</div>
-<p>设 $u\ge0$ 是约束的乘子。由 $Ax\le b$ 得到 $\sum_j(ua_j)x_j\le ub$。因为 $x\ge0$，把每个系数向下取整仍然有效；又因为 $x$ 是整数，左边是整数，右边也可以向下取整：</p>
-<p>$$\sum_{j=1}^{n}\lfloor ua_j\rfloor x_j\le\lfloor ub\rfloor.$$</p>
-<p>这三步（非负组合、系数取整、右端取整）就是 Chvátal–Gomory 过程。Wolsey 书中的一个深刻结论是：对整数规划，<b>所有</b>有效不等式都可以通过有限次重复这个过程得到。</p>
+<h3><span class="sn">7.3</span>工程细节：顺序、分支、重解</h3>
+<p><strong>节点选择</strong>：深度优先（DFS）内存小、能快速找到可行解，但可能一头扎进坏分支；最佳界优先（best-bound）优先展开 $\overline{Z}_t$ 最大的节点，能最快抬高全局下界、证明最优，但内存开销大。实践常用“最佳界 + 偶尔 diving”的混合策略。</p>
+<p><strong>分支变量选择</strong>：最分数（most fractional）选 $\min(\bar x_j-\lfloor\bar x_j\rfloor,\lceil\bar x_j\rceil-\bar x_j)$ 最大者；<strong>伪成本</strong>（pseudocost）用历史观测估计“每单位分支带来的界变化”，选 $\min\{f_j^-,f_j^+\}$ 最大者；<strong>强分支</strong>（strong branching）真的对候选变量各解一次 LP，选界提升最大的，代价高但常把树砍得很小。</p>
+<p><strong>重解</strong>：子节点只加了一条 bound 约束，父节点的最优基仍对偶可行，直接用对偶单纯形热启动，通常几步就收敛。这是 B&amp;B 能处理成千上万节点的原因之一。另一个加速是<strong>切割</strong>：在节点上先加几轮割平面再分支，即 branch-and-cut（第 9 章）。复杂度上，最坏情况要枚举 $2^n$ 个节点、每节点解一个 LP；实际节点数由界与分支策略决定，没有多项式保证。</p>
 
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">一刀把 LP 值从 8 砍到 6</span><span class="thm-id">§8.3</span></div>
-<div class="thm-body">
-<p>$$\max\ 3x_1+3x_2\quad\text{s.t.}\quad x_1+2x_2\le4,\quad 2x_1+x_2\le4,\quad x\in\mathbb{Z}^2_+.$$</p>
-<p>LP 最优在 $(4/3,4/3)$，值 $8$。取 $u=(1/3,1/3)$，两式相加得 $3x_1+3x_2\le8$，乘以 $1/3$ 得 $x_1+x_2\le8/3$。左边是整数，故</p>
-<p>$$x_1+x_2\le\Big\lfloor\frac{8}{3}\Big\rfloor=2.$$</p>
-<p>这条割切掉了 $(4/3,4/3)$（和为 $2.67$），但保留 $(0,2),(1,1),(2,0)$。加入后 LP 最优值降为 $6$，恰好是整数最优值，求解结束。</p>
-</div>
-</div>
+<h3><span class="sn">7.4</span>预求解：在分支之前把模型变小</h3>
+<p>预求解（presolve）是一组不改变整数可行域的化简规则，通常在根节点前反复执行到不动点：</p>
+<ul>
+<li><strong>界收紧</strong>：由约束 $a_ix\le b_i$ 与变量界推出 $x_j\le\lfloor(b_i-\sum_{k\ne j}\min(a_kx_k))/a_j\rfloor$。</li>
+<li><strong>变量固定</strong>：若上下界相等，或某变量在目标与约束中都可 dominance 掉，则固定或删除。</li>
+<li><strong>冗余约束</strong>：若某行被其他行加权支配，删除。</li>
+<li><strong>系数强化</strong>：对 0–1 背包 $3x_1+3x_2+3x_3\le8$，可把系数降到 2（因为左边最多取 2 个 3），得到 $2x_1+2x_2+2x_3\le8$ 的等价加强。</li>
+<li><strong>探测</strong>（probing）：临时固定 $x_j=0/1$，看是否导致不可行或强制其他变量，从而推出逻辑不等式。</li>
+</ul>
+<p>预求解常常把工业模型的规模砍掉一半以上；它不保证多项式时间，但每一步都便宜，收益极高。</p>
 
-<h3><span class="sn">7.2</span>Gomory 分数割</h3>
-<p>解完 LP 后取一张最优单纯形表，把基变量 $x_{B_u}$ 的方程写成</p>
-<p>$$x_{B_u}+\sum_{j\in NB}a_{uj}x_j=a_{u0}.$$</p>
-<p>若 $a_{u0}$ 不是整数，令 $f_{uj}=a_{uj}-\lfloor a_{uj}\rfloor$、$f_{u0}=a_{u0}-\lfloor a_{u0}\rfloor$，则</p>
-<p>$$\sum_{j\in NB}f_{uj}x_j\ge f_{u0}$$</p>
-<p>对整数可行点有效，且在当前 LP 解处左边为 0、右边为正，因此一定切掉当前解。新增的松弛变量可取非负整数值，所以可以继续用单纯形法迭代。</p>
-
-<h3><span class="sn">7.3</span>算法：割—解—再割</h3>
-<pre><code class="language-python">while True:
-    status, z, x = solve_lp(model)
-    if status != OPTIMAL: return INFEASIBLE
-    frac = [j for j in integer_vars if abs(x[j] - round(x[j])) &gt; 1e-6]
-    if not frac:
-        return OPTIMAL, z, x
-    cut = gomory_cut_from_tableau(frac[0])   # 或调用 MIR / cover 分离器
-    if cut is None or separation_fails(cut):
-        return BRANCH                     # 交给分支定界
-    model.addConstr(cut)
-    if iterations &gt; limit: return BRANCH</code></pre>
-<p>纯 Gomory 割在理论上有限步收敛，但实践中会遇到数值退化、割越加越密、LP 重新求解变慢。所以现代系统只在根节点和少数节点生成割，其余交给分支；这叫 branch-and-cut。</p>
-
-<div class="table-wrap">
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>割族</th><th>来源</th><th>强度/用途</th><th>局限</th></tr></thead>
+<thead><tr><th>决策</th><th>常用规则</th><th>优点</th><th>风险</th></tr></thead>
 <tbody>
-<tr><td class="id">CG / Gomory 分数割</td><td>单纯形表一行</td><td>通用，任意 MIP</td><td>数值不稳定，可能产生密集割</td></tr>
-<tr><td class="id">MIR</td><td>单行混合整数松弛</td><td>对含连续变量的行很强</td><td>需要合适的行与界</td></tr>
-<tr><td class="id">Split cut</td><td>整数变量的析取 $x_j\le k$ 或 $x_j\ge k+1$</td><td>统一解释多种割</td><td>分离需解子问题</td></tr>
-<tr><td class="id">Cover / clique</td><td>0–1 背包或冲突图</td><td>纯 0–1 结构极强</td><td>只适用于特定结构</td></tr>
-<tr><td class="id">Lift-and-project</td><td>投影高维可行域</td><td>理论优雅、可嵌套</td><td>计算代价高</td></tr>
+<tr><td class="id">分支变量</td><td>最分数 / 伪成本 / 强分支</td><td>强分支树小</td><td>每节点 LP 次数多</td></tr>
+<tr><td class="id">分支方向</td><td>先试“更接近 LP 解”的一侧</td><td>易找 incumbent</td><td>可能偏离最优</td></tr>
+<tr><td class="id">节点顺序</td><td>DFS / best-bound / 混合</td><td>省内存 / 快证最优</td><td>DFS 可能深、best-bound 费内存</td></tr>
+<tr><td class="id">上界</td><td>LP 松弛 / 拉格朗日 / 组合松弛</td><td>越紧剪得越多</td><td>每节点计算越贵</td></tr>
+<tr><td class="id">下界</td><td>舍入 + 修复 / 启发式</td><td>早剪枝</td><td>修复可能失败</td></tr>
+<tr><td class="id">预处理</td><td>presolve + probing</td><td>规模骤降</td><td>数值误差、误删风险</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">割的合法性没有“差不多”</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">B&amp;B 的四个“看起来对”</span></div>
 <div class="thm-body">
-<p><b>先取整系数再乘乘子</b>：顺序必须是“非负组合 → 系数取整 → 右端取整”；把顺序换掉可能得到切掉整数点的非法割。</p>
-<p><b>只用当前 LP 解检验</b>：割必须对所有整数可行点有效，而不只是对“看起来合理”的点。最稳妥的检查是回代原约束或做小规模枚举。</p>
-<p><b>割越多越好</b>：大量近线性相关的割会让 LP 基变得病态，求解时间反而上升；需要过滤、正交化和年龄淘汰。</p>
-<p><b>把 Gomory 割当万能</b>：纯割算法在退化问题上可能长期停滞，必须与分支、预处理配合。</p>
+<p><strong>1. 用父节点的界直接当子节点的界。</strong> 子节点继承了父节点的上界，但必须重新解 LP 才能得到更紧的界；不重解就剪枝会剪掉最优解。</p>
+<p><strong>2. 分支变量选错导致“分支无效”。</strong> 若选了一个在 LP 中已经整数、但在子问题中可能变分数的变量，两个子节点的界可能都不下降，树会爆炸。要选当前 LP 中确实分数的变量。</p>
+<p><strong>3. 认为 DFS 找到的第一个整数解就是最优。</strong> 它只是 incumbent；必须继续处理活跃节点，直到所有上界都不优于它。</p>
+<p><strong>4. 忽略数值误差。</strong> LP 求解器的 $10^{-9}$ 可行性容差会让“整数”变量变成 $0.999999$；分支前要设整数容差，否则会在同一变量上无限分支。</p>
 </div>
 </div>
 </div>
@@ -1131,85 +1223,90 @@ return incumbent, best</code></pre>
 
 <section id="ch8" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 8</div>
-<h2><span class="num">8</span>覆盖、包装与背包：从结构里榨出强割</h2>
-<p class="lede">通用割（Gomory、MIR）保证“有割可用”，结构化割（cover、clique、flow cover）则追求“一刀顶十刀”。</p>
+<div class="sec-label">Part IV · Chapter 8</div>
+<h2><span class="num">8</span>割平面：切掉分数解，不切掉整数解</h2>
+<p class="lede">割平面（cutting plane）是“用一条合法不等式，把当前 LP 顶点从可行域里削掉”。它不搜索，只收紧；收到凸包时，LP 自己就给出整数解。</p>
+<div class="chap-intro"><p>本章从合法不等式（valid inequality）的定义出发，给出三类构造：逻辑不等式、整数舍入（Chvátal–Gomory 过程）、混合整数舍入（MIR）。核心定理是：对纯整数问题，反复应用 CG 过程可以生成<strong>所有</strong>合法不等式。然后进入 Gomory 分数割：从最优单纯形表的一行直接读出 $\sum f_{uj}x_j\ge f_{u0}$，加入后对偶单纯形重解，直到整数。最后讨论 MIR、Gomory 混合整数割、split cut 与 lift-and-project——它们构成现代 MIP 求解器默认割平面的理论骨架。</p><span class="tag">§8.1 – §8.10</span></div>
+<div class="mapchips"><span class="chip">valid inequality</span><span class="chip hot">Chvátal–Gomory</span><span class="chip">Gomory cut</span><span class="chip">MIR</span><span class="chip">GMI</span><span class="chip">split cut</span><span class="chip">lift-and-project</span><span class="chip">separation</span></div>
 
-<div class="chap-intro">
-<p>本章聚焦 0–1 背包集 $X=\{x\in\{0,1\}^n:\sum a_jx_j\le b\}$。先定义覆盖与极小覆盖，导出 cover inequality，再做扩展覆盖与提升，最后说明分离问题为什么本身就是一个背包问题。</p>
-<span class="tag">Strong Valid Inequalities</span>
-</div>
-
-<div class="mapchips">
-<span class="chip">cover</span>
-<span class="chip">minimal cover</span>
-<span class="chip">extended cover</span>
-<span class="chip hot">lifting</span>
-<span class="chip">separation</span>
-</div>
-
-<h3><span class="sn">8.1</span>覆盖不等式</h3>
-<div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Cover 与极小 Cover</span><span class="thm-id">Definition 9.6</span></div>
+<h3><span class="sn">8.1</span>合法不等式与 CG 过程</h3>
+<p>不等式 $\pi x\le\pi_0$ 对 $X\subseteq\mathbb{R}^n$ 合法，若所有 $x\in X$ 满足它。对 LP $P=\{x\ge0:Ax\le b\}$，由对偶，$\pi x\le\pi_0$ 合法当且仅当存在 $u\ge0$ 使 $uA\ge\pi$ 且 $ub\le\pi_0$：它必须是原约束的非负线性组合。</p>
+<p>整数性给出额外一步。设 $u\ge0$，先有 $\sum_j(ua_j)x_j\le ub$。因为 $x_j\ge0$，可把系数降到 $\lfloor ua_j\rfloor$；因为 $x$ 整数且系数整数，左端整数，可把右端降到 $\lfloor ub\rfloor$。于是得到<strong>Chvátal–Gomory 不等式</strong>：</p>
+$$\sum_{j=1}^{n}\lfloor ua_j\rfloor x_j\le\lfloor ub\rfloor.$$
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">CG 过程的完备性</span><span class="thm-id">Theorem 8.1</span></div>
 <div class="thm-body">
-<p>对背包集 $X$（设 $a_j&gt;0$、$b&gt;0$），若 $C\subseteq N$ 满足 $\sum_{j\in C}a_j&gt;b$，则 $C$ 是一个覆盖。若对每个 $j\in C$，$C\setminus\{j\}$ 都不再是覆盖，则称 $C$ 极小。</p>
-<p>覆盖的含义很直白：这些物品不能同时全选。于是</p>
-<p>$$\sum_{j\in C}x_j\le|C|-1$$</p>
-<p>对 $X$ 有效。它和“容量”是两类不同的信息：原约束限制总重量，cover 限制某个子集的同时出现。</p>
+<p>对 $X=\{x\in\mathbb{Z}^n:Ax\le b\}$，每条合法不等式都可以通过有限次应用 CG 过程得到。证明骨架（0–1 情形）：先用 LP 最优值把右端放宽到整数 $t$，再用大 $M$ 把“分数顶点”用 $\sum_{j\in N_0}x_j+\sum_{j\in N_1}(1-x_j)$ 惩罚掉；通过 $1/2$ 权重的凸组合逐次消去变量，最终把 $t$ 降到 0。</p>
 </div>
 </div>
+<p>这条定理是“割平面为什么可能有效”的理论保证，但它不是算法：$u$ 的选取空间太大。实际算法只挑特定结构（单纯形表的一行、一个背包、一个流覆盖）来生成 $u$。</p>
 
+<h3><span class="sn">8.2</span>整数舍入：一个可手算的例子</h3>
+<p>Example 8.5：$X=\{x\in\mathbb{Z}^4_+:13x_1+20x_2+11x_3+6x_4\ge72\}$。两边除以 11：</p>
+$$\frac{13}{11}x_1+\frac{20}{11}x_2+x_3+\frac{6}{11}x_4\ge6+\frac{6}{11}.$$
+<p>把左端系数向上取整（因为 $x\ge0$，放大左端保持“$\ge$”方向）：$2x_1+2x_2+x_3+x_4\ge6\frac{6}{11}$。左端整数，所以至少为 7：</p>
+$$2x_1+2x_2+x_3+x_4\ge7.$$
+<p>原来 LP 可能取 $x_3=6.545$ 满足约束；新不等式要求整数组合至少 7，直接切掉。这个“除以某系数、向上取整、右端再向上取整”的套路，是 MIR 与 Gomory 割的共同祖先。</p>
+
+<h3><span class="sn">8.3</span>Gomory 分数割：从单纯形表直接读</h3>
+<p>解纯整数 IP 的 LP 松弛，得到最优表。对每个基变量 $x_{B_u}$：</p>
+$$x_{B_u}+\sum_{j\in NB}a_{uj}x_j=a_{u0},\qquad x\ge0.$$
+<p>若 $a_{u0}\notin\mathbb{Z}$，令 $f_{uj}=a_{uj}-\lfloor a_{uj}\rfloor$、$f_{u0}=a_{u0}-\lfloor a_{u0}\rfloor\in(0,1)$。对整行应用 CG（把 $x_{B_u}$ 消去）得到</p>
+$$\sum_{j\in NB}f_{uj}x_j\ge f_{u0}.$$
+<p>当前 LP 解中所有非基变量为 0，左端为 0、右端为正，故该点被切掉。把松弛变量 $s=-f_{u0}+\sum f_{uj}x_j$ 加入，$s$ 是非负整数，表格规模只增一行。</p>
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">一个七物品背包的三层强化</span><span class="thm-id">Example 9.6</span></div>
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 8.11：两刀切到整数</span><span class="thm-id">§8.6</span></div>
 <div class="thm-body">
-<p>$$X=\Big\{x\in\{0,1\}^7:\ 11x_1+6x_2+6x_3+5x_4+5x_5+4x_6+x_7\le19\Big\}.$$</p>
-<p>取 $C=\{3,4,5,6\}$，重量 $6+5+5+4=20&gt;19$，且删去任何一个都不超过 19，故为极小覆盖。得到 $x_3+x_4+x_5+x_6\le3$。</p>
-<p><b>扩展覆盖</b>：把所有系数不小于 $C$ 中最大系数（6）的外部物品并进来，得到 $E(C)=\{1,2,3,4,5,6\}$，于是 $x_1+\dots+x_6\le3$。它比原式更强：任何四个物品的重量至少为 $4+5+5+6=20$。</p>
-<p><b>提升</b>：继续问 $x_1$ 的系数最多能放到多少。若 $x_1=1$，剩余容量只有 8，在 $\{3,4,5,6\}$ 中最多再选一个（$6+5=11&gt;8$），故 $x_1$ 的系数至多为 $3-1=2$，得到 $2x_1+x_2+x_3+x_4+x_5+x_6\le3$，这是该覆盖对应的最强形式。</p>
+<p>仍用第 7 章的 IP。初始 LP 表给出 $x_1+\frac17x_3+\frac27x_4=\frac{20}{7}$。对第一行，$f_{13}=\frac17$、$f_{14}=\frac27$、$f_{10}=\frac67$，割为</p>
+$$\frac17x_3+\frac27x_4\ge\frac67.$$
+<p>加入后重解，LP 解变为 $(2,\frac12)$，值 $\frac{15}{2}$。第二行 $x_2-\frac12x_5+s=\frac12$ 中 $x_2$ 分数，$f=\frac12$，割为 $\frac12x_5\ge\frac12$，即 $x_5\ge1$。再加入并重解，得到 $x=(2,1)$，值 $7$，整数且最优。</p>
+<p>把两刀写回原变量：第一刀用 $x_3=14-7x_1+2x_2$、$x_4=3-x_2$ 代入，得 $x_1\le2$；第二刀用 $x_5=\frac{23}{7}+\frac27x_3-\frac{10}{7}x_4$ 代入，得 $x_1-x_2\le1$。两条都是“人一眼能看出”的合法不等式，但单纯形表自动找到了它们。</p>
 </div>
 </div>
+<p>Gomory 割的收敛性：对纯整数问题，有限步终止（在精确算术下）。实际实现有两个问题：第一，割可能非常密（一行有大量非零），加入后 LP 变慢；第二，浮点误差会累积，导致“切掉整数解”或循环。现代求解器会做割的稀疏化、可靠性检查、以及“只加几轮就分支”的混合策略。复杂度上，每轮做一个 LP 加一行割，轮数与树的大小最坏都是指数；实际受割管理与数值安全约束。</p>
 
-<div class="intuition">
-<div class="ih">直觉</div>
-<p>cover inequality 说的是“这些物品里至少有一个不能选”。扩展覆盖把“比它们更重、更占地方”的物品也拉进来；提升则给每个外部物品一个 $0,1,2,\dots$ 的系数，精确衡量“如果选它，还能剩几个位置”。三步依次把同一个几何事实翻译得越来越紧。</p>
-</div>
+<h3><span class="sn">8.4</span>混合整数：MIR 与 GMI</h3>
+<p>混合问题不能直接用 $\lfloor\cdot\rfloor$，因为连续变量不受整数性约束。基本工具是<strong>混合整数舍入</strong>（mixed integer rounding, MIR）。对</p>
+$$X=\{x\in\mathbb{Z}^2_+,\ y\in\mathbb{R}_+:a_1x_1+a_2x_2\le b+y\},$$
+<p>令 $f=b-\lfloor b\rfloor$、$f_i=a_i-\lfloor a_i\rfloor$。一般规则是：小数部分 $f_j\le f$ 的变量保留 $\lfloor a_j\rfloor$；$f_j&gt;f$ 的变量把系数升到 $\lfloor a_j\rfloor+\frac{f_j-f}{1-f}$；连续松弛 $y$ 的系数为 $\frac{1}{1-f}$。两变量情形（$f_1\le f&lt;f_2$）即</p>
+$$\lfloor a_1\rfloor x_1+\left(\lfloor a_2\rfloor+\frac{f_2-f}{1-f}\right)x_2\le\lfloor b\rfloor+\frac{y}{1-f}.$$
+<p>直觉：整数部分照常取整，小数部分超过 $f$ 的变量要“补足缺口”，连续松弛 $y$ 按 $1/(1-f)$ 放大。Example 8.12 中 $\frac{10}{3}x_1+x_2+\frac{11}{4}x_3\le\frac{21}{2}+y$，$f=\frac12$、$f_1=\frac13$、$f_2=0$、$f_3=\frac34$：$f_1,f_2\le f$ 取 $\lfloor\cdot\rfloor$ 得 3 与 1；$f_3&gt;f$ 得 $2+\frac{3/4-1/2}{1/2}=\frac52$。于是</p>
+$$3x_1+x_2+\frac52x_3\le10+2y.$$
+<p><strong>Gomory 混合整数割</strong>（GMI）把同一思想用在单纯形表的一行：整数变量用 $f_j$ 与 $f_j-1$ 的分段系数，连续变量按符号取不同斜率。它是 MIP 求解器最常用的割之一，因为每一行都能生成一条，成本极低。</p>
+<p><strong>split cut</strong> 的观点更几何：任取整数变量 $x_j$ 与整数 $k$，可行域被分成 $x_j\le k$ 与 $x_j\ge k+1$ 两半；分别求两半的凸包，再取凸包，就得到一条合法割。GMI 与 MIR 都可以由 split cut 导出。反复对所有变量做 split 闭包，极限就是整数凸包（Balas 的 lift-and-project）。</p>
 
-<h3><span class="sn">8.2</span>算法：分离一个违反的 cover</h3>
-<p>给定 LP 解 $x^*$，覆盖 $C$ 被违反当且仅当 $\sum_{j\in C}x^*_j&gt;|C|-1$，等价于 $\sum_{j\in C}(1-x^*_j)&lt;1$。因此分离问题变成：找重量超过 $b$、但“代价”小于 1 的集合。</p>
-<pre><code class="language-python"># 精确分离是一个 0-1 背包：min sum (1-x*[j]) z[j]
-#                        s.t. sum a[j] z[j] &gt;= b + 1
-# 若最优值 &lt; 1，则对应集合 C 是违反的 cover。
-# 大规模时用贪心近似：
-order = sorted(items, key=lambda j: a[j] / max(1e-9, 1 - x[j]), reverse=True)
-C, weight = [], 0
-for j in order:
-    C.append(j); weight += a[j]
-    if weight &gt; b: break
-if sum(1 - x[j] for j in C) &lt; 1 - 1e-6:
-    add_cover_cut(C)          # 可选：先做 extended cover / lifting 再添加</code></pre>
-<p>精确分离本身是 NP-难，但规模通常很小，且可以用动态规划在 $O(nb)$ 内求解；商用求解器更多用贪心加局部改进，因为“找到一个足够违反的割”比“找到最违反的割”更划算。</p>
+<h3><span class="sn">8.5</span>割平面算法与“加多少”</h3>
+<p>通用框架：解 LP → 若整数停 → 否则调用分离器找一条被违反的合法不等式 → 加入 → 重解。若分离器找不到，停止并转分支（此时得到改进了的 formulation）。</p>
+<p>实践中的取舍：</p>
+<ul>
+<li><strong>一轮加多条</strong>：不要一次只加一条；按 violation 排序，加 5–50 条，但注意 LP 规模。</li>
+<li><strong>割的层级</strong>：根节点多用强割（GMI、cover、flow cover），树深处少用，以免每节点 LP 太慢。</li>
+<li><strong>数值安全</strong>：割系数过大、过密会造成数值不稳定；要做 scaling、稀疏化、以及“割后可行性”检查。</li>
+<li><strong>有限终止</strong>：纯 Gomory 理论有限步，但浮点下可能循环；通常加割几轮后强制分支，保证终止。</li>
+</ul>
 
-<div class="table-wrap">
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>不等式</th><th>形式</th><th>相对强度</th><th>代价/局限</th></tr></thead>
+<thead><tr><th>割族</th><th>适用结构</th><th>生成方式</th><th>强度/代价</th></tr></thead>
 <tbody>
-<tr><td class="id">原背包约束</td><td>$\sum a_jx_j\le b$</td><td>基础</td><td>LP 可大量取分数</td></tr>
-<tr><td class="id">Cover</td><td>$\sum_{C}x_j\le|C|-1$</td><td>中</td><td>依赖找到好覆盖</td></tr>
-<tr><td class="id">Extended cover</td><td>$\sum_{E(C)}x_j\le|C|-1$</td><td>较强</td><td>只加系数更大的物品</td></tr>
-<tr><td class="id">Lifted cover</td><td>$\sum\alpha_jx_j\le|C|-1$</td><td>最强（对给定 $C$）</td><td>每个系数要解子背包</td></tr>
-<tr><td class="id">Clique（集合包装）</td><td>$\sum_{C}x_j\le1$</td><td>冲突图上的强割</td><td>需构造冲突图</td></tr>
-<tr><td class="id">Flow cover</td><td>含连续流量与固定变量</td><td>固定成本网络很强</td><td>结构与分离更复杂</td></tr>
+<tr><td class="id">CG 舍入</td><td>纯整数</td><td>$\lfloor ua_j\rfloor,\lfloor ub\rfloor$</td><td>理论完备，实际需选 $u$</td></tr>
+<tr><td class="id">Gomory 分数割</td><td>纯整数</td><td>最优表一行 $\sum f_{uj}x_j\ge f_{u0}$</td><td>便宜、可能很密</td></tr>
+<tr><td class="id">MIR</td><td>混合整数</td><td>单行 + 连续松弛</td><td>便宜、常用</td></tr>
+<tr><td class="id">GMI</td><td>混合整数</td><td>单纯形表一行</td><td>每行可生成，主力</td></tr>
+<tr><td class="id">split cut</td><td>任意整数变量</td><td>两半凸包</td><td>统一框架，含 GMI</td></tr>
+<tr><td class="id">lift-and-project</td><td>0–1</td><td>依次投影</td><td>理论强，计算贵</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">cover 的适用条件常被忽略</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">割平面的四个陷阱</span></div>
 <div class="thm-body">
-<p><b>系数有负值也直接套</b>：标准 cover 假设 $a_j&gt;0$。遇到负系数要先做变量补变换 $x_j\leftarrow1-x_j$，否则不等式方向可能反掉。</p>
-<p><b>不是极小覆盖也无所谓</b>：非极小覆盖对应的不等式通常被更小的覆盖支配，加了只是浪费 LP 时间。</p>
-<p><b>提升系数拍脑袋</b>：提升系数必须通过解“剩余容量下最多还能选几个”的子问题得到；随手写大常数会切掉整数解。</p>
-<p><b>把 cover 用到集合覆盖问题</b>：$Ax\ge b$ 的覆盖型问题需要的是不同的不等式（如扩展覆盖的下界形式），不能照搬 $\le|C|-1$。</p>
+<p><strong>1. 割掉了整数解。</strong> 最常见的原因是浮点误差或系数缩放；加入前必须验证“当前 incumbent 满足新割”，并在可靠算术/后验检查下使用。</p>
+<p><strong>2. 只加割不分支。</strong> 纯割平面在浮点下可能不终止；现代求解器都是 branch-and-cut，割用于收紧，分支用于保证有限性。</p>
+<p><strong>3. 认为割越多越好。</strong> 割太多会让 LP 变得巨大且病态，每节点求解时间上升，总时间反而变长。</p>
+<p><strong>4. 把 CG 完备性当成“CG 算法多项式”。</strong> 完备性说的是“存在有限步构造”，不是“能高效找到”；分离 NP-hard 问题的凸包仍然 NP-hard。</p>
 </div>
 </div>
 </div>
@@ -1217,96 +1314,91 @@ if sum(1 - x[j] for j in C) &lt; 1 - 1e-6:
 
 <section id="ch9" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 9</div>
-<h2><span class="num">9</span>旅行商：子回路、割与 2-opt</h2>
-<p class="lede">TSP 是整数规划最好的教学案例：模型只有一行目标、两类度约束，却需要指数多条子回路约束才能描述凸包。</p>
+<div class="sec-label">Part IV · Chapter 9</div>
+<h2><span class="num">9</span>强不等式：把结构写进模型</h2>
+<p class="lede">通用割平面（Gomory、MIR）什么模型都能用，但它们不知道“这是背包”“这是 TSP”。强不等式（strong valid inequality）把问题结构直接翻译成面（facet），一条顶一百条通用割。</p>
+<div class="chap-intro"><p>本章先定义支配（dominance）、冗余（redundancy）、面与 facet，说明“最强”的合法不等式就是凸包的面。然后系统构造三类结构割：0–1 背包的覆盖不等式（cover）与提升（lifting）、单节点流的流覆盖不等式（flow cover）、TSP 的广义子回路约束（generalized subtour）。每类都给分离问题——把“找最违反的割”化成另一个优化问题（背包、最小割、最短路）。最后把这些割嵌入分支定界，得到 branch-and-cut，并用一个完整的搜索流程说明“割—分支—再割”的节奏。</p><span class="tag">§9.1 – §9.8</span></div>
+<div class="mapchips"><span class="chip">dominance</span><span class="chip hot">cover inequality</span><span class="chip">lifting</span><span class="chip">facet</span><span class="chip">flow cover</span><span class="chip">subtour</span><span class="chip">separation</span><span class="chip">branch-and-cut</span></div>
 
-<div class="chap-intro">
-<p>本章写出 DFJ 模型，用四城市实例展示“指派松弛给出两个二环”的典型失败，说明子回路约束如何逐步修复；随后给出分离算法、MTZ 的对比，以及 2-opt 在原始启发式中的位置。</p>
-<span class="tag">Traveling Salesman</span>
-</div>
+<h3><span class="sn">9.1</span>强弱、面与 facet</h3>
+<p>两条合法不等式 $\pi x\le\pi_0$ 与 $\mu x\le\mu_0$，若存在 $u&gt;0$ 使 $\pi\ge u\mu$、$\pi_0\le u\mu_0$，则前者<strong>支配</strong>（dominate）后者：前者的可行域更小。若一条不等式是其他若干条的非负组合且被支配，则它<strong>冗余</strong>（redundant）。</p>
+<p>多面体 $P$ 的<strong>面</strong>（face）是 $F=\{x\in P:\pi x=\pi_0\}$；若 $\dim F=\dim P-1$，称为<strong>facet</strong>。对满维多面体，一条合法不等式是描述 $P$ 所必需的，当且仅当它定义 facet；因此“最强割”就是 facet。验证 facet 有两种办法：找 $n$ 个仿射无关的紧点；或设所有紧点满足一个一般超平面 $\mu x=\mu_0$，证明 $(\mu,\mu_0)$ 只能是 $(\pi,\pi_0)$ 的倍数。</p>
 
-<div class="mapchips">
-<span class="chip">DFJ</span>
-<span class="chip">subtour</span>
-<span class="chip">min-cut 分离</span>
-<span class="chip hot">NP-难</span>
-<span class="chip">2-opt</span>
-</div>
-
-<h3><span class="sn">9.1</span>模型</h3>
-<p>令 $x_{ij}=1$ 表示从城市 $i$ 直接前往 $j$。每个城市恰好离开一次、到达一次：</p>
-<p>$$\sum_{j\ne i}x_{ij}=1,\qquad \sum_{i\ne j}x_{ij}=1.$$</p>
-<p>这两组约束合起来就是指派问题，允许若干互不相连的回路。为排除真子集 $S$ 内部自成回路，加入子回路消除约束（DFJ）：</p>
-<p>$$\sum_{i\in S}\sum_{j\in S}x_{ij}\le|S|-1,\qquad 2\le|S|\le n-1.$$</p>
-<p>等价的割集形式是 $\sum_{i\in S}\sum_{j\notin S}x_{ij}\ge1$：任何真子集都必须至少有一条边通向外部。约束条数随 $n$ 指数增长，所以不能一次写全，只能在 branch-and-cut 中按需分离。</p>
-
-<div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">巡回与子回路</span><span class="thm-id">§1.3</span></div>
-<div class="thm-body">
-<p>一个巡回是访问每个城市恰好一次并回到起点的有向环。若 0–1 解 $x$ 的边集分解为 $k\ge2$ 个互不相交的环，则称它含有子回路；此时它满足所有度约束，却不是可行巡回。子回路消除约束的作用就是把这类解排除。</p>
-</div>
-</div>
-
+<h3><span class="sn">9.2</span>背包覆盖：从“装不下”到“最多选几个”</h3>
+<p>对 $X=\{x\in\{0,1\}^n:\sum_j a_jx_j\le b\}$（$a_j&gt;0$），若 $C\subseteq N$ 满足 $\sum_{j\in C}a_j&gt;b$，称 $C$ 为<strong>覆盖</strong>（cover）。覆盖里的物品不能全选，于是</p>
+$$\sum_{j\in C}x_j\le|C|-1$$
+<p>是合法不等式。若 $C$ 极小（去掉任一元素就不再是覆盖），这条不等式更强。进一步，若 $j\notin C$ 且 $a_j\ge\max_{i\in C}a_i$，则把 $j$ 加进左边仍然合法，得到<strong>扩展覆盖</strong>（extended cover）：$\sum_{j\in E(C)}x_j\le|C|-1$，其中 $E(C)=C\cup\{j:a_j\ge\max_{i\in C}a_i\}$。</p>
+<p>还能更强：给每个 $j\notin C$ 一个提升系数 $\alpha_j$，求最大的 $\alpha_j$ 使 $\sum_{j\in C}x_j+\sum_{j\notin C}\alpha_jx_j\le|C|-1$ 仍合法。按某个顺序 $j_1,\dots,j_r$ 逐个计算：</p>
+$$\zeta_t=\max\left\{\sum_{i&lt;t}\alpha_{j_i}x_{j_i}+\sum_{j\in C}x_j:\sum_{i&lt;t}a_{j_i}x_{j_i}+\sum_{j\in C}a_jx_j\le b-a_{j_t},\ x\in\{0,1\}\right\},$$
+<p>令 $\alpha_{j_t}=|C|-1-\zeta_t$。每个 $\zeta_t$ 是一个小背包；顺序影响最终强度，但任意顺序都得到合法不等式。若 $C$ 极小且 $a_j\le b$，最终不等式是 facet。</p>
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">四城市：松弛值 4，真最优 6</span><span class="thm-id">§1.3</span></div>
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 9.6：覆盖、扩展覆盖与提升</span><span class="thm-id">§9.3</span></div>
 <div class="thm-body">
-<p>取 $c_{12}=c_{21}=c_{34}=c_{43}=1$，其余六条有向边费用为 2。指派松弛的最优解是 $1\leftrightarrow2$ 与 $3\leftrightarrow4$ 两个二环，总费用 $4$，显然不是一条巡回。</p>
-<p>对 $S=\{1,2\}$ 加割 $x_{12}+x_{21}\le1$，这个最便宜的解被切掉。剩下的整数指派解中，另一组二环 $1\leftrightarrow3$、$2\leftrightarrow4$ 的费用是 $8$，而巡回 $1\to2\to3\to4\to1$ 的费用是 $6$，所以整数最优变成这条巡回。实际 branch-and-cut 会在分数解上反复做最小割分离，直到没有违反的割；这个例子只加一条就改变了整数最优，是因为替代的二环更贵。</p>
+<p>$$X=\{x\in\{0,1\}^7:11x_1+6x_2+6x_3+5x_4+5x_5+4x_6+x_7\le19\}.$$</p>
+<p>$C=\{3,4,5,6\}$ 的重量 $6+5+5+4=20&gt;19$，去掉任一个都 $\le19$，是极小覆盖，给出 $x_3+x_4+x_5+x_6\le3$。</p>
+<p>扩展覆盖把 $a_j\ge6$ 的 $x_1,x_2$ 也加进来：$x_1+x_2+x_3+x_4+x_5+x_6\le3$。</p>
+<p>提升 $x_1$：令 $x_1=1$ 时剩余容量 $19-11=8$，在 $\{3,4,5,6\}$ 中最多选 1 件（$6+5&gt;8$），故 $\zeta_1=1$，$\alpha_1=3-1=2$。再提升 $x_2$：剩余容量 $19-6=13$，在 $\{3,4,5,6\}$ 中最多选 2 件（$6+5+5=16&gt;13$），$\zeta_2=2$，$\alpha_2=1$。最后 $x_7$：剩余容量 $19-1=18$，四件全选重量 20 超，最多 3 件，$\zeta_3=3$，$\alpha_7=0$。最终</p>
+$$2x_1+x_2+x_3+x_4+x_5+x_6\le3$$
+<p>是 facet。它比扩展覆盖强：当 $x_1=1$ 时，右边只剩 1 件配额，而扩展覆盖还允许 2 件。</p>
 </div>
 </div>
 
-<div class="intuition">
-<div class="ih">直觉</div>
-<p>度约束只保证“每个城市进出各一次”，却不管全局连通性。子回路约束是在说：<b>你不能把地图切成几块、每块内部自己玩</b>。凸包需要所有可能的切法，因此约束数指数多；但给定一个分数解，找出最“便宜”的切法只需要一次最小割。</p>
+<h3><span class="sn">9.3</span>分离覆盖：又一个小背包</h3>
+<p>给定分数点 $x^\ast$，要找一条被违反的覆盖不等式。把 $\sum_{j\in C}x_j\le|C|-1$ 改写成 $\sum_{j\in C}(1-x_j)\ge1$，于是需要找 $C$ 使 $\sum_{j\in C}a_j&gt;b$ 且 $\sum_{j\in C}(1-x^\ast_j)&lt;1$。令 $z_j=1$ 表示 $j\in C$，解</p>
+$$\zeta=\min\left\{\sum_{j\in N}(1-x^\ast_j)z_j:\sum_{j\in N}a_jz_j&gt;b,\ z\in\{0,1\}^n\right\}.$$
+<p>若 $\zeta\ge1$，所有覆盖不等式都满足；若 $\zeta&lt;1$，最优 $z^R$ 给出割 $\sum_{j\in R}x_j\le|R|-1$，违反量 $1-\zeta$。这是一个 0–1 背包，规模大时用贪心/动态规划启发式分离。</p>
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 9.7：分离出 $x_3+x_4+x_5\le2$</span><span class="thm-id">§9.3.3</span></div>
+<div class="thm-body">
+<p>$$X=\{x\in\{0,1\}^6:45x_1+46x_2+79x_3+54x_4+53x_5+125x_6\le178\},\quad x^\ast=(0,0,\tfrac34,\tfrac12,1,0).$$</p>
+<p>分离背包的目标系数为 $(1,1,\frac14,\frac12,0,1)$，重量为 $(45,46,79,54,53,125)$，要求重量 $&gt;178$。最优 $z=(0,0,1,1,1,0)$：重量 $79+54+53=186&gt;178$，代价 $\frac14+\frac12+0=\frac34&lt;1$。于是割 $x_3+x_4+x_5\le2$ 被违反 $\frac14$。</p>
+</div>
 </div>
 
-<h3><span class="sn">9.2</span>算法：分离与 2-opt</h3>
-<pre><code class="language-python"># branch-and-cut 主循环（简化）
-while True:
-    z, x = solve_lp(model)
-    S = global_min_cut(x)          # 以 x_ij 为容量，找最弱的割
-    if cut_value(S) &lt; 1 - 1e-6:
-        model.addConstr(sum(x[i,j] for i in S for j not in S) &gt;= 1)
-    elif is_integer(x):
-        return x, z
-    else:
-        branch_on_fractional_edge()
+<h3><span class="sn">9.4</span>单节点流与流覆盖</h3>
+<p>固定费用网络的一个节点可写成</p>
+$$X=\left\{(x,y)\in\{0,1\}^n\times\mathbb{R}^n_+:\sum_{j\in N_1}y_j\le b+\sum_{j\in N_2}y_j,\ y_j\le a_jx_j\right\}.$$
+<p>若 $C=C_1\cup C_2$（$C_1\subseteq N_1,C_2\subseteq N_2$）满足 $\sum_{j\in C_1}a_j-\sum_{j\in C_2}a_j=b+\lambda$，$\lambda&gt;0$，称 $C$ 为<strong>广义覆盖</strong>（generalized cover），$\lambda$ 为超量。流覆盖不等式为</p>
+$$\sum_{j\in C_1}y_j+\sum_{j\in C_1}(a_j-\lambda)^+(1-x_j)\le b+\sum_{j\in C_2}a_j+\lambda\sum_{j\in L_2}x_j+\sum_{j\in N_2\setminus(C_2\cup L_2)}y_j.$$
+<p>直觉：若覆盖里的“大件”都没开（$x_j=0$），左边要补上 $(a_j-\lambda)^+$，把容量缺口补回来；右边允许用 $C_2$ 的流入与 $L_2$ 的额外容量。Example 9.8 中 $C_1=\{1,3\}$（容量 3、6）、$C_2=\{4\}$（容量 3）、$b=4$，$\lambda=3+6-3-4=2$，$L_2=\{5\}$，得</p>
+$$y_1+y_3+(1-x_1)+4(1-x_3)\le7+2x_5+y_6.$$
+<p>这类割是固定费用网络、批量生产、设施选址的“主力结构割”；分离常化成背包或最小割。</p>
 
-# 原始启发式：2-opt
-tour = nearest_neighbor(c)
-improved = True
-while improved:
-    improved = False
-    for i in range(n - 1):
-        for j in range(i + 2, n):
-            delta = (c[t[i]][t[j]] + c[t[i+1]][t[j+1]]
-                     - c[t[i]][t[i+1]] - c[t[j]][t[j+1]])
-            if delta &lt; 0:
-                reverse_segment(t, i + 1, j)   # 翻转中间段
-                improved = True</code></pre>
-<p>分离子回路约束的标准做法是：把当前 LP 的 $x_{ij}$ 当作有向容量，对每个终端求最小 $s$-$t$ 割；若某个割的容量小于 1，就得到一个违反的 $S$。全局最小割（Stoer–Wagner）或 $n-1$ 次最大流都可实现多项式时间分离，这正是 DFJ 模型可用的关键。</p>
+<h3><span class="sn">9.5</span>TSP 的广义子回路与 branch-and-cut</h3>
+<p>对称 TSP 的度约束给 2-factor（每个点度 2），可能是多个环。子回路约束 $x(E(S))\le|S|-1$ 对每个 $2\le|S|\le n-1$ 成立。更一般地，若把某些边“必须选/不能选”固定，可得到<strong>广义子回路约束</strong>（generalized subtour）：对 $S$ 与 $T\subseteq\delta(S)$，</p>
+$$x(E(S))+x(T)\le|S|-\frac{|T|+1}{2}\quad(\text{odd case}).$$
+<p>分离最基础的子回路约束：给定分数解 $x^\ast$，构造有向/无向支撑图，边权 $x^\ast_e$，找最小割；若最小割 $&lt;1$（有向）或 $&lt;2$（无向），就得到一个被违反的 $S$。最小割用最大流在多项式时间求解，因此 TSP 的 subtour 分离是多项式的。</p>
+<p><strong>Branch-and-cut</strong> 把割与分支交替：</p>
+<ol>
+<li>解当前节点的 LP，得到 $x^\ast$ 与上界。</li>
+<li>调用分离器：子回路、cover、flow cover、GMI；加入所有违反的割，重解。</li>
+<li>若 $x^\ast$ 整数，更新 incumbent；若上界不优于 incumbent，剪枝。</li>
+<li>否则选分数变量分支，子节点继承割池。</li>
+</ol>
+<p>它的最坏复杂度仍是指数（问题 NP-hard），但实际性能来自“割把根界抬到接近整数最优 + 分支只处理少量歧义”。原书强调：branch-and-cut 不是“branch 加 cut”的简单拼接，割池、割的管理、以及“在根节点用强割、在深处用轻割”的策略决定成败。</p>
 
-<div class="table-wrap">
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>模型</th><th>变量/约束规模</th><th>LP 界</th><th>局限</th></tr></thead>
+<thead><tr><th>结构</th><th>不等式</th><th>分离</th><th>典型场景</th></tr></thead>
 <tbody>
-<tr><td class="id">指派松弛</td><td>$O(n^2)$ / $O(n)$</td><td>弱，常含子回路</td><td>不能单独使用</td></tr>
-<tr><td class="id">DFJ + 分离</td><td>$O(n^2)$ / 指数，按需生成</td><td>很强（Held–Karp 级）</td><td>需最小割分离</td></tr>
-<tr><td class="id">MTZ</td><td>$O(n^2)$ / $O(n^2)$</td><td>很弱</td><td>大 $M$ 导致松弛差</td></tr>
-<tr><td class="id">多商品流</td><td>$O(n^3)$ / $O(n^3)$</td><td>较强</td><td>规模大、对称性重</td></tr>
-<tr><td class="id">2-opt / Lin–Kernighan</td><td>无模型</td><td>仅给可行解</td><td>无最优性证明</td></tr>
+<tr><td class="id">0–1 背包</td><td>$\sum_{j\in C}x_j\le|C|-1$</td><td>背包（NP-hard，启发式）</td><td>预算、装载</td></tr>
+<tr><td class="id">扩展覆盖</td><td>$\sum_{j\in E(C)}x_j\le|C|-1$</td><td>直接构造</td><td>系数差异大</td></tr>
+<tr><td class="id">提升覆盖</td><td>$\sum\alpha_jx_j\le|C|-1$</td><td>逐个小背包</td><td>facet 级</td></tr>
+<tr><td class="id">流覆盖</td><td>见 §9.4</td><td>背包/最小割</td><td>固定费用网络</td></tr>
+<tr><td class="id">子回路</td><td>$x(E(S))\le|S|-1$</td><td>最小割</td><td>TSP、VRP</td></tr>
+<tr><td class="id">奇集</td><td>$x(E(T))\le(|T|-1)/2$</td><td>最小奇割</td><td>匹配</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">TSP 建模的四个坑</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">强不等式的三个边界</span></div>
 <div class="thm-body">
-<p><b>只加“当前整数解”的子回路</b>：每次找到一条非法巡回才加一条割，会退化成低效枚举；应在 LP 分数解上做最小割分离。</p>
-<p><b>MTZ 一定更好写就更好用</b>：MTZ 只需 $O(n^2)$ 约束，但 LP 界通常远弱于 DFJ；省下的建模时间会以搜索时间偿还。</p>
-<p><b>忽略对称性</b>：无向 TSP 中 $x_{ij}$ 与 $x_{ji}$ 重复，回路方向也重复，节点数会成倍膨胀；应固定起点或用对称破除约束。</p>
-<p><b>把 2-opt 的局部最优当全局最优</b>：2-opt 只保证在“翻转一段”的邻域内不能改进，离最优可能很远。</p>
+<p><strong>1. 把“合法”当“有用”。</strong> 任何合法不等式都切不掉整数解，但可能离当前 LP 点很远；分离器要找的是“被违反最多”的那条。</p>
+<p><strong>2. 提升顺序无所谓？</strong> 顺序会影响 $\alpha$ 与最终强度；不同顺序得到不同 facet，实践要试多种排序（按系数、按 $x^\ast$、按重量）。</p>
+<p><strong>3. 加入所有子回路约束。</strong> 子回路约束是指数级的；只能按需分离。全写进模型会让 LP 巨大且无法求解。</p>
+<p><strong>4. 认为 facet 一定比其他割好。</strong> facet 在凸包描述意义下最强，但数值上可能很密、很慢；工程上“稍弱但稀疏”的割常常更快。</p>
 </div>
 </div>
 </div>
@@ -1314,90 +1406,96 @@ while improved:
 
 <section id="ch10" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 10</div>
-<h2><span class="num">10</span>调度：析取、时间索引与大 $M$</h2>
-<p class="lede">调度问题的核心是“同一台机器上，两个工件谁先谁后”。这句话不是线性约束，而是一个析取；把它变成 IP 需要 0–1 变量和足够大的常数。</p>
+<div class="sec-label">Part V · Chapter 10</div>
+<h2><span class="num">10</span>拉格朗日松弛：把难约束变成价格</h2>
+<p class="lede">如果一个模型“除了几条讨厌的约束之外都很好解”，那就别硬解它：给每条讨厌的约束标一个价格，违反就罚款，剩下的好结构用专用算法解。</p>
+<div class="chap-intro"><p>本章系统展开拉格朗日松弛（Lagrangian relaxation）：把 $Ax\le b$ 放进目标，得到 $Z(u)=\max\{cx+u(b-Ax):x\in X\}$；$u\ge0$ 时它是原问题的松弛，$Z(u)\ge Z$。拉格朗日对偶（Lagrangian dual）$W_{LD}=\min_{u\ge0}Z(u)$ 给出最好的上界。核心定理：$W_{LD}$ 等于“把 $X$ 换成 $\mathrm{conv}(X)$ 后的 LP 界”，因此它至少和 LP 松弛一样强，且当 $X$ 的凸包容易描述时严格更强。求解用次梯度（subgradient）法；最后讨论用对偶信息做变量固定、构造可行解，以及如何在多个可选分解中挑选对偶最强者。</p><span class="tag">§10.1 – §10.7</span></div>
+<div class="mapchips"><span class="chip">complicating constraints</span><span class="chip hot">Lagrangian dual</span><span class="chip">subgradient</span><span class="chip">conv(X)</span><span class="chip">variable fixing</span><span class="chip">step size</span><span class="chip">decomposition choice</span></div>
 
-<div class="chap-intro">
-<p>本章以单机总延误 $1\|\sum T_j$ 为例，写出析取模型与时间索引模型，用三工件实例手算最优顺序，并比较两类模型的规模与 LP 强度。结论是：调度建模的第一敌人不是目标函数，而是时间。</p>
-<span class="tag">Scheduling</span>
-</div>
-
-<div class="mapchips">
-<span class="chip">析取</span>
-<span class="chip">big-M</span>
-<span class="chip">时间索引</span>
-<span class="chip hot">NP-难</span>
-<span class="chip">总延误</span>
-</div>
-
-<h3><span class="sn">10.1</span>析取模型</h3>
-<p>工件 $j$ 的加工时间为 $p_j$、交期为 $d_j$，完成时刻为 $C_j$，延误 $T_j=\max(0,C_j-d_j)$。对每一对工件 $i&lt;j$ 引入 $y_{ij}=1$ 表示 $i$ 先于 $j$：</p>
-<p>$$C_j\ge C_i+p_j-M(1-y_{ij}),\qquad C_i\ge C_j+p_i-My_{ij},$$</p>
-<p>$$C_j\ge p_j,\qquad T_j\ge C_j-d_j,\qquad T_j\ge0,\qquad \min\sum_jT_j.$$</p>
-<p>$M$ 不必取一个巨大的数。若所有工件在时间窗 $[0,H]$ 内完成，取 $M=H=\sum_jp_j$ 就足够；再大只会让 LP 松弛更松。</p>
-
-<div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">析取约束</span><span class="thm-id">§1.5</span></div>
+<h3><span class="sn">10.1</span>模型与弱对偶</h3>
+<p>把 IP 写成</p>
+$$Z=\max\{cx:Ax\le b,\ x\in X\},\qquad X=\{x\in\mathbb{Z}^n_+:Dx\le d\},$$
+<p>其中 $Ax\le b$ 是 complicating constraints。对 $u\ge0$ 定义</p>
+$$Z(u)=\max\{cx+u(b-Ax):x\in X\}.$$
+<p>因为 $x$ 在原问题中满足 $b-Ax\ge0$，所以 $cx+u(b-Ax)\ge cx$；又 $X$ 包含原可行域，故 $Z(u)\ge Z$。$u_i$ 就是第 $i$ 条约束的“价格”：违反一单位，罚 $u_i$。拉格朗日对偶是</p>
+$$W_{LD}=\min_{u\ge0}Z(u).$$
+<p>若被对偶化的是等式 $Ax=b$，则 $u\in\mathbb{R}^m$ 无符号限制。</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">拉格朗日对偶的强度</span><span class="thm-id">Theorem 10.1, Cor 10.1</span></div>
 <div class="thm-body">
-<p>若两个工件在同一台机器上加工且不能重叠，则必须满足 $C_j\ge C_i+p_j$ 或 $C_i\ge C_j+p_i$ 之一。这种“或”关系称为析取（disjunction）。引入 $y_{ij}\in\{0,1\}$ 后，两条不等式用大 $M$ 互相“开关”，就把逻辑析取编码成了线性约束。</p>
+<p>$$W_{LD}=\max\{cx:Ax\le b,\ x\in\mathrm{conv}(X)\}.$$</p>
+<p>若 $X=\{x\in\mathbb{Z}^n_+:Dx\le d\}$ 且 $\mathrm{conv}(X)=\{x\ge0:Dx\le d\}$（即 $D$ 全幺模），则 $W_{LD}$ 等于原 LP 松弛值。否则 $W_{LD}$ 严格更强。</p>
 </div>
 </div>
+<p>这条定理解释了拉格朗日的“魔法”：它不需要显式写出 $\mathrm{conv}(X)$ 的指数条不等式，却能精确优化 $\mathrm{conv}(X)$ 上的线性函数。代价是 $Z(u)$ 是分段线性凸函数，不可微，需要次梯度。</p>
 
+<h3><span class="sn">10.2</span>次梯度算法：只算方向，不算斜率</h3>
+<p>$Z(u)=\max_t[(b-Ax^t)u+cx^t]$ 是一族线性函数的最大值，故凸。若 $x(u)$ 是 $Z(u)$ 的最优解，则 $g=b-Ax(u)$ 是 $Z$ 在 $u$ 处的一个<strong>次梯度</strong>（subgradient）：对任意 $v$，$Z(v)\ge Z(u)+g^\top(v-u)$。几何上，$g$ 指向“使 $Z$ 上升”的方向，我们要最小化 $Z$，所以沿 $-g$ 走：</p>
+$$u_i^{k+1}=\max\{0,\ u_i^k-\mu_k(b-Ax(u^k))_i\},\qquad i=1,\dots,m.$$
+<p>步长 $\mu_k$ 的选择决定成败。原书 Theorem 10.2 给三种规则：</p>
+<ul>
+<li>(a) $\sum_k\mu_k\to\infty$ 且 $\mu_k\to0$：保证收敛，但如 $\mu_k=1/k$ 太慢。</li>
+<li>(b) $\mu_k=\mu_0\rho^k$（$\rho&lt;1$）：几何下降，$\mu_0,\rho$ 要足够大，否则过早停在非最优。</li>
+<li>(c) $\mu_k=\epsilon_k[Z(u^k)-W]/\|b-Ax(u^k)\|^2$，$0&lt;\epsilon_k&lt;2$：用目标值 $W$ 缩放，实践中最好用。$W$ 通常是已知的原始下界；若 $W&lt;W_{LD}$，步长不会趋于 0，需要调高 $W$。</li>
+</ul>
+<p>实践技巧：每 $\nu$ 次迭代把 $\mu$ 减半（$\nu$ 常取变量数或 10–50）；记录最好的 $Z(u)$ 与对应的 $x(u)$；若连续多轮无改进，重启或换分解。复杂度上，每轮只解一个“容易的子问题”（背包、最短路、生成树），单轮代价低；但次梯度只有渐近收敛，没有有限步保证，通常跑几百到几千轮。</p>
+
+<h3><span class="sn">10.3</span>算例：选址与集合覆盖</h3>
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">三工件、六个排列</span><span class="thm-id">§1.5</span></div>
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 10.1：UFL 的分解</span><span class="thm-id">§10.1</span></div>
 <div class="thm-body">
-<p>$p=(3,2,4)$，$d=(4,6,8)$。枚举全部 $3!=6$ 个顺序：</p>
-<p>$(1,2,3)$：完成时刻 $(3,5,9)$，延误 $(0,0,1)$，总和 1；$(2,1,3)$：$(2,5,9)$，总和 1；$(1,3,2)$：$(3,7,9)$，总和 2；$(3,1,2)$：$(4,7,9)$，总和 2；$(2,3,1)$：$(2,6,9)$，总和 1；$(3,2,1)$：$(4,6,9)$，总和 1。</p>
-<p>最优值为 1，共有四个最优排列。这个例子说明调度解的高度对称：目标只关心延误，不关心谁先谁后，除非它改变了完成时刻。</p>
+<p>对 UFL 的强模型对偶化需求约束 $\sum_j y_{ij}=1$，得到</p>
+$$Z(u)=\sum_{j\in N}Z_j(u)+\sum_{i\in M}u_i,\qquad Z_j(u)=\max\left\{0,\ \sum_{i\in M}\max(c_{ij}-u_i,0)-f_j\right\}.$$
+<p>每个仓库独立判断：开仓的净收益是“所有正修订利润之和减固定成本”。取 $m=6,n=5$、$f=(2,4,5,3,3)$、$u=(5,6,3,2,5,4)$，修订利润矩阵为</p>
+$$\begin{pmatrix}1&amp;-3&amp;-4&amp;-2&amp;0\\-2&amp;4&amp;-4&amp;0&amp;-5\\0&amp;-1&amp;1&amp;-2&amp;0\\0&amp;-2&amp;2&amp;-1&amp;2\\-4&amp;3&amp;1&amp;-3&amp;0\\-1&amp;-2&amp;0&amp;4&amp;-3\end{pmatrix}.$$
+<p>逐列算：$j=2$ 的正项 $4+3=7$，减 $f_2=4$ 得 $3$；$j=4$ 的正项只有 $c_{64}-u_6=8-4=4$，减 $f_4=3$ 得 $1$。于是 $Z(u)=3+1+25=29$，对应 $x_2=x_4=1$、$y_{22}=y_{52}=y_{64}=1$。这个界已经接近最优；次梯度继续调整 $u$ 还能再降一到两个单位。</p>
 </div>
 </div>
+<p><strong>集合覆盖</strong>的拉格朗日更简单：对偶化 $\sum_j a_{ij}x_j\ge1$（写成 $\le$ 形式或用 $u\ge0$ 的乘子），子问题按 $c_j-\sum_i u_ia_{ij}$ 的符号独立决定 $x_j\in\{0,1\}$。Example 10.3 中 $m=4,n=6$、$c=(6,7,11,5,8,5)$、$u=(4,4,3,3)$，子问题为</p>
+$$Z(u)=14+\min\{-x_1+0x_2+x_3+x_4+x_5+x_6\},$$
+<p>解 $x(u)=(1,0,0,0,0,0)$，$Z(u)=13$。它覆盖第 1、3 行，剩下第 2、4 行；用贪心补一个 $x_5=1$（成本 8），得到可行解值 $14$。若 incumbent 是 14，则可用 Proposition 10.3 做变量固定：对 $k\in N_1$（修订成本为正），若 $14+\sum_{j\in N_0}r_j+r_k\ge14$，则任何更好解中 $x_k=0$。这把大量变量在分支前就固定掉。</p>
 
-<div class="intuition">
-<div class="ih">直觉</div>
-<p>析取模型把“排序”交给 $y_{ij}$：每一对工件选一个方向，所有方向必须无环，才能对应一个真实顺序。$M$ 的作用是“关闭”未被选中的那条不等式。时间索引模型则换一种语言：直接决定“工件 $j$ 是否在时刻 $t$ 开始”，用时间段占用约束代替先后逻辑。</p>
-</div>
+<h3><span class="sn">10.4</span>从对偶到原始：构造可行解</h3>
+<p>拉格朗日松弛只给上界，$x(u)$ 通常不可行（违反 $Ax\le b$）。常见修复：</p>
+<ol>
+<li>把 $x(u)$ 已覆盖的行删掉，对剩余行解一个小的覆盖/背包问题（贪心或精确）。</li>
+<li>把 $x(u)$ 与修复解合并；再尝试删掉冗余的 1。</li>
+<li>用局部搜索在合并解附近改进。</li>
+</ol>
+<p>若 $x(u)$ 恰好可行且满足互补松弛 $u_i(b-Ax(u))_i=0$，则它就是原问题最优解——这是拉格朗日版的“证毕”。</p>
 
-<h3><span class="sn">10.2</span>时间索引模型与伪代码</h3>
-<p>令 $x_{jt}=1$ 表示工件 $j$ 在时刻 $t$ 开始，$H$ 为时间窗：</p>
-<p>$$\sum_{t=0}^{H-p_j}x_{jt}=1,\qquad \sum_{j}\sum_{s=t-p_j+1}^{t}x_{js}\le1\ \ (\forall t),\qquad C_j=\sum_t(t+p_j)x_{jt}.$$</p>
-<p>第二行表示任何时刻机器最多加工一个工件。它的 LP 松弛通常比大 $M$ 析取模型紧得多，代价是变量数 $O(nH)$。</p>
-<pre><code class="language-python">H = sum(p)
-for j in jobs:
-    model.addConstr(sum(x[j, t] for t in range(H - p[j] + 1)) == 1)
-for t in range(H):
-    model.addConstr(sum(x[j, s]
-                        for j in jobs
-                        for s in range(max(0, t - p[j] + 1),
-                                       min(t, H - p[j]) + 1)) &lt;= 1)
-for j in jobs:
-    C[j] = sum((t + p[j]) * x[j, t] for t in range(H - p[j] + 1))
-    T[j] = model.addVar(lb=0)
-    model.addConstr(T[j] &gt;= C[j] - d[j])
-model.setObjective(sum(T[j] for j in jobs), GRB.MINIMIZE)</code></pre>
-<p>若工件数少而时间窗短，时间索引模型往往能在根节点给出几乎整数的解；若 $H$ 很大（例如带 release date 的周计划），变量数会爆炸，此时应回到析取模型加有效不等式，或使用专门的分支规则。</p>
+<h3><span class="sn">10.5</span>选哪个分解？</h3>
+<p>同一个 IP 有多组“难约束”，选哪组做拉格朗日，决定了界的强度与子问题的难度。原书给出三条经验：</p>
+<ul>
+<li><strong>子问题要真的容易</strong>：最好是无约束、背包、最短路、最小生成树或指派；如果子问题本身要分支，收益就被吃掉了。</li>
+<li><strong>对偶界要强</strong>：比较 $W_{LD}$ 与 LP 界；若 $\mathrm{conv}(X)$ 的描述已知且包含很多原约束，拉格朗日可能严格强于 LP。</li>
+<li><strong>维数要小</strong>：对偶变量 $u$ 的维数是难约束条数；太多会让次梯度收敛慢。</li>
+</ul>
+<p>一个典型对比是 GAP（广义指派）：把“每个人做一件事”对偶化，子问题是每个机器的背包；把“每台机器容量”对偶化，子问题是每个人选一台机器（指派）。前者界更强，后者子问题更简单。实际要两个都试，或用列生成（第 11 章）得到与拉格朗日相同或更强的界。</p>
 
-<div class="table-wrap">
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>问题</th><th>可解性</th><th>代表算法</th><th>建模注意</th></tr></thead>
+<thead><tr><th>要素</th><th>公式/规则</th><th>要点</th></tr></thead>
 <tbody>
-<tr><td class="id">$1\|\sum C_j$</td><td>多项式</td><td>SPT（最短加工时间优先）</td><td>交换论证即可证明</td></tr>
-<tr><td class="id">$1\|\sum w_jC_j$</td><td>多项式</td><td>Smith 规则（按 $p_j/w_j$）</td><td>权重为 0 时需特殊处理</td></tr>
-<tr><td class="id">$1\|L_{\max}$</td><td>多项式</td><td>EDD（最早交期优先）</td><td>只控制最大延误</td></tr>
-<tr><td class="id">$1\|\sum T_j$</td><td>NP-难</td><td>分支定界 / DP</td><td>析取模型 LP 弱</td></tr>
-<tr><td class="id">$1|r_j|\sum C_j$</td><td>NP-难</td><td>分支定界</td><td>release date 破坏对称</td></tr>
-<tr><td class="id">$1\|\,|\,$ 时间索引</td><td>规模依赖 $H$</td><td>直接 MIP</td><td>$O(nH)$ 变量，$H$ 大时不可行</td></tr>
+<tr><td class="id">松弛</td><td>$Z(u)=\max\{cx+u(b-Ax):x\in X\}$</td><td>$u\ge0$，弱对偶</td></tr>
+<tr><td class="id">对偶</td><td>$W_{LD}=\min_{u\ge0}Z(u)$</td><td>凸、分段线性</td></tr>
+<tr><td class="id">强度</td><td>$W_{LD}=\max\{cx:Ax\le b,x\in\mathrm{conv}(X)\}$</td><td>至少等于 LP 界</td></tr>
+<tr><td class="id">次梯度</td><td>$g=b-Ax(u)$</td><td>沿 $-g$ 走</td></tr>
+<tr><td class="id">步长(c)</td><td>$\mu_k=\epsilon_k(Z(u)-W)/\|g\|^2$</td><td>$0&lt;\epsilon&lt;2$，最常用</td></tr>
+<tr><td class="id">最优性</td><td>$Ax(u)\le b$ 且 $u_i(b-Ax(u))_i=0$</td><td>直接得到原最优解</td></tr>
+<tr><td class="id">变量固定</td><td>Prop 10.3</td><td>用 $Z(u)$ 与修订成本</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">调度模型里的“时间陷阱”</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">拉格朗日的四个细节</span></div>
 <div class="thm-body">
-<p><b>$M$ 取 $10^6$</b>：LP 会让两条先后约束同时“半开”，$y_{ij}$ 取 $1/2$，得到物理上不存在的重叠加工，界极松。</p>
-<p><b>$M$ 取太小</b>：若 $M&lt;H$，某些合法顺序被错误禁止，模型可能报“不可行”或给出更差的解。</p>
-<p><b>忘记机器空闲</b>：时间索引模型允许机器空闲（没有工件开始时占用和为 0），这是对的；但析取模型若不显式允许 $C_j$ 大于前序完成时刻，会错误地强制无空闲。</p>
-<p><b>把 NP-难问题当小问题</b>：$1\|\sum T_j$ 在 $n=50$ 时也可能很难；不要因为变量少就低估搜索空间。</p>
+<p><strong>1. 对偶变量符号错。</strong> 对 $\le$ 约束且最大化，$u\ge0$；对等式，$u$ 无限制。符号错会让“界”变成无效值。</p>
+<p><strong>2. 把 $Z(u)$ 当可行解。</strong> 它通常违反被对偶化的约束；必须修复并检查可行性，才能更新下界。</p>
+<p><strong>3. 步长规则 (c) 用了错误方向的 $W$。</strong> 最大化问题的 $W$ 应是原始下界；若 $W$ 高于 $W_{LD}$，算法会震荡或发散。</p>
+<p><strong>4. 以为拉格朗日总比 LP 强。</strong> 当 $X$ 的凸包就是 LP 可行域时（例如 $X$ 是全幺模网络流），$W_{LD}$ 恰好等于 LP 界，白忙一场。</p>
 </div>
 </div>
 </div>
@@ -1405,84 +1503,88 @@ model.setObjective(sum(T[j] for j in jobs), GRB.MINIMIZE)</code></pre>
 
 <section id="ch11" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 11</div>
+<div class="sec-label">Part V · Chapter 11</div>
 <h2><span class="num">11</span>列生成：变量太多时，只生成有用的列</h2>
-<p class="lede">有些模型有指数多条“列”，但最优解只用到其中少数几条。列生成把列当作资源，用 pricing 子问题按需生产。</p>
+<p class="lede">列生成（column generation）把“指数个变量”变成“每次只找一个负 reduced cost 的变量”。它不是枚举列，而是用子问题证明“没有更好的列了”。</p>
+<div class="chap-intro"><p>本章从 Dantzig–Wolfe 重写出发：整数规划 $X$ 中的点写成凸组合 $\sum_t\lambda_tz^t$，原问题变成对 $\lambda$ 的<strong>主问题</strong>（master problem）。主问题列数指数，但可以只保留少量列，解<strong>受限主问题</strong>（restricted master），用其对偶价格 $\pi$ 构造<strong>定价子问题</strong>（pricing）：$\max\{(c-\pi A)x-\pi_0:x\in X\}$。若最优值 $\zeta\le0$，主问题已最优；若 $\zeta&gt;0$，把子问题解 $z$ 作为新列加入。LP 解不整数时，在 $x$ 变量上分支，每个节点重新列生成，即 branch-and-price。最后讨论多子问题、相同子问题、CVRP 的 branch-cut-and-price 与数值问题。</p><span class="tag">§11.1 – §11.9</span></div>
+<div class="mapchips"><span class="chip">Dantzig–Wolfe</span><span class="chip hot">column generation</span><span class="chip">restricted master</span><span class="chip">pricing</span><span class="chip">reduced cost</span><span class="chip">branch-and-price</span><span class="chip">CVRP</span><span class="chip">stabilization</span></div>
 
-<div class="chap-intro">
-<p>本章以下料问题（cutting stock）为主线：先写出按模式（pattern）展开的 Dantzig–Wolfe 主问题，再说明 restricted master 与 pricing 如何交替，最后讨论 branch-and-price 为什么不能简单地对 $\lambda$ 分支。</p>
-<span class="tag">Column Generation</span>
-</div>
+<h3><span class="sn">11.1</span>Dantzig–Wolfe 重写</h3>
+<p>原问题 $\max\{cx:Ax\le b,\ x\in X\}$，其中 $X=\{x\in\mathbb{Z}^n_+:Dx\le d\}$。若 $X$ 的极点是 $z^1,\dots,z^T$，任何 $x\in\mathrm{conv}(X)$ 写成 $x=\sum_t\lambda_tz^t$、$\sum_t\lambda_t=1$、$\lambda\ge0$。代入得</p>
+$$\max\ \sum_{t=1}^{T}(cz^t)\lambda_t\quad \text{s.t.}\quad \sum_{t=1}^{T}(Az^t)\lambda_t\le b,\quad \sum_{t=1}^{T}\lambda_t=1,\quad \lambda\ge0.$$
+<p>若 $X$ 有极射线，还要加射线项；本章默认 $X$ 有界。这个主问题的 LP 界等于 $\max\{cx:Ax\le b,x\in\mathrm{conv}(X)\}$，通常比原 LP 松弛强，因为 $X$ 的整数结构被完整保留在“列”里。</p>
 
-<div class="mapchips">
-<span class="chip">Dantzig–Wolfe</span>
-<span class="chip">restricted master</span>
-<span class="chip">pricing</span>
-<span class="chip hot">branch-and-price</span>
-<span class="chip">下料问题</span>
-</div>
+<h3><span class="sn">11.2</span>受限主问题与定价</h3>
+<p>只保留 $p$ 列 $z^1,\dots,z^p$，解 RLM。设对偶为 $(\pi,\pi_0)$，其中 $\pi$ 对应 $Ax\le b$，$\pi_0$ 对应凸组合等式。列 $z$ 的 reduced cost 是</p>
+$$\bar c(z)=cz-\pi Az-\pi_0.$$
+<p>若所有 $z\in X$ 都有 $\bar c(z)\le0$，当前解最优；否则加入正 reduced cost 的列。定价子问题就是</p>
+$$\zeta=\max_{z\in X}\{(c-\pi A)z-\pi_0\}.$$
+<p>它必须比原问题容易：通常是背包、最短路、最小生成树、TSP 子问题。若 $\zeta&gt;0$，新列改善主问题；若 $\zeta\le0$，证毕。上界可用 $\pi b+\pi_0+\zeta$ 给出（即使 $\zeta&gt;0$，它也是主问题最优值的上界）。</p>
+<p>另一个停止条件：若子问题解 $z^\ast$ 本身满足 complicating constraints $Az^\ast\le b$ 且 $\pi(Az^\ast-b)=0$，则 $z^\ast$ 是主问题最优解，无需继续。复杂度上，每轮解一个 RLM 与一个定价子问题；若定价是多项式（如最短路），单轮多项式，但列生成轮数最坏可指数，且分支后每节点都要重跑。</p>
 
-<h3><span class="sn">11.1</span>主问题与 pricing</h3>
-<p>设 $\mathcal{P}$ 是全部可行模式，$a_{ip}$ 为模式 $p$ 切出物品 $i$ 的数量，$c_p$ 为该模式成本。主问题为</p>
-<p>$$\min\sum_{p\in\mathcal{P}}c_p\lambda_p\quad\text{s.t.}\quad\sum_{p\in\mathcal{P}}a_{ip}\lambda_p\ge d_i\ (\forall i),\quad \lambda_p\ge0.$$</p>
-<p>$\mathcal{P}$ 可能极大，无法显式枚举。只保留一小部分模式得到 restricted master（RLM），解出对偶价格 $\pi_i$。检验数（reduced cost）为</p>
-<p>$$\bar{c}_p=c_p-\sum_i\pi_i a_{ip}.$$</p>
-<p>若存在 $\bar{c}_p&lt;0$，把该列加入 RLM；若所有列的检验数都非负，当前 RLM 解就是完整主问题的最优解。寻找最负检验数的子问题就是 pricing。</p>
-
-<div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Restricted master 与检验数</span><span class="thm-id">§11.2–11.3</span></div>
-<div class="thm-body">
-<p>只保留部分列 $\mathcal{P}'\subset\mathcal{P}$ 得到的主问题称为 restricted master（RLM）。它的对偶解 $\pi$ 给每个被省略的列一个价格；列 $p$ 的检验数为 $\bar{c}_p=c_p-\pi a_p$。若所有 $\bar{c}_p\ge0$，则 RLM 的最优值等于完整 LP 主问题的最优值；否则把负检验数的列加入 $\mathcal{P}'$。</p>
-</div>
-</div>
-
+<h3><span class="sn">11.3</span>完整算例：三次迭代</h3>
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">卷长 10，切 6 与 4</span><span class="thm-id">§11.7</span></div>
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 11.1：两约束、五变量</span><span class="thm-id">§11.3</span></div>
 <div class="thm-body">
-<p>卷材长 10，需 6 米段 4 根、4 米段 5 根。可行模式有：$A=(1,1)$ 用满 10；$B=(1,0)$ 余 4；$C=(0,2)$ 用 8；$D=(0,1)$ 余 6。</p>
-<p>主问题：$\min\lambda_A+\lambda_B+\lambda_C+\lambda_D$，满足 $\lambda_A+\lambda_B\ge4$、$\lambda_A+2\lambda_C+\lambda_D\ge5$。LP 最优取 $\lambda_A=4,\lambda_C=0.5$，值 $4.5$：4 整卷加“半卷”切出最后 1 根 4 米段。</p>
-<p>对偶价格为 $\pi=(0.5,0.5)$（分别对应 6 米与 4 米需求）。pricing 解 $\max 0.5a_6+0.5a_4$ s.t. $6a_6+4a_4\le10$，最优 $a=(1,1)$，检验数 $1-1=0$，无负列，LP 收敛。</p>
-<p>但 LP 值 $4.5$ 不能直接取整为 5；整数最优确实是 5 卷（4 个 $A$ 加 1 个 $D$）。这 $0.5$ 的 gap 必须靠分支消除。</p>
+<p>$$\max\ 6x_1+7x_2+4x_3+3x_4+2x_5\quad \text{s.t.}\quad 5x_1+8x_2+6x_3+4x_4+2x_5\le8,\quad 7x_1+8x_2+6x_3+3x_4+3x_5\le10.$$</p>
+<p>把第一约束当 complicating，$X$ 是满足第二约束的 0–1 点。初始列 $z^1=e_1,z^2=e_2,z^3=e_3$。</p>
+<p><strong>迭代 1</strong>：RLM 为 $\max 6\lambda_1+7\lambda_2+4\lambda_3$，$5\lambda_1+8\lambda_2+6\lambda_3\le8$，$\sum\lambda=1$。解 $\lambda=(0,1,0)$，$Z=7$，对偶 $(\pi,\pi_0)=(0,7)$。子问题 $\max(6,7,4,3,2)x-7$，约束 $7x_1+8x_2+6x_3+3x_4+3x_5\le10$；最优 $x=(1,0,0,1,0)$，$\zeta=6+3-7=2&gt;0$，加入列 $(cz,Az,1)=(9,9,1)$。</p>
+<p><strong>迭代 2</strong>：RLM 解 $\lambda=(\frac14,0,0,\frac34)$，$Z=8.25$，对偶 $(\frac34,\frac94)$。子问题目标为 $2.25x_1+1x_2-0.5x_3+0x_4+0.5x_5-2.25$；最优 $x=(1,0,0,0,1)$，$\zeta=0.5&gt;0$，加入列 $(8,7,1)$。</p>
+<p><strong>迭代 3</strong>：RLM 解 $\lambda=(0,0,0,\frac12,\frac12)$，$Z=8.5$，对偶 $(\frac12,\frac92)$。子问题 $\zeta=0$，停止。主问题解 $x=\frac12(1,0,0,1,0)+\frac12(1,0,0,0,1)=(1,0,0,\frac12,\frac12)$，值 $8.5$。它不整数，所以还需 branch-and-price。</p>
 </div>
 </div>
 
-<div class="intuition">
-<div class="ih">直觉</div>
-<p>主问题只关心“每种模式用几次”，pricing 只关心“在当前价格下，哪种新模式最划算”。价格 $\pi_i$ 是物品的边际价值：如果一种模式切出的物品总价值超过它的成本，就值得生产这一列。列生成本质上是在对偶空间里做“按需枚举”。</p>
-</div>
+<h3><span class="sn">11.4</span>Branch-and-price：分支要小心</h3>
+<p>LP 主问题解不整数时，不能简单对 $\lambda_t$ 分支：固定 $\lambda_t=0$ 只排除一列，树会极度不平衡；固定 $\lambda_t=1$ 又可能排除其他组合。正确做法是<strong>对原变量 $x_j$ 分支</strong>：$x_j=0$ 或 $x_j=1$，并把分支约束传进定价子问题。若子问题是背包，加 $x_j=0/1$ 仍是背包，称为<strong>robust</strong> column generation；若加了复杂约束使子问题变难，称为 non-robust。</p>
+<p>原书 Example 11.2 继续上面的例子：根节点 $Z=8.5$、$x=(1,0,0,\frac12,\frac12)$，对 $x_4$ 分支。</p>
+<ul>
+<li><strong>节点 $x_4=0$</strong>：把所有 $z_t$ 中 $z_{t4}&gt;0$ 的列删掉（这里 $\lambda_4=0$），RLM 得 $Z=8$、$x=(1,0,0,0,1)$，整数，incumbent $=8$。</li>
+<li><strong>节点 $x_4=1$</strong>：RLM 初始不可行，加人工列（成本 $M=100$）做 phase 1；列生成后下界升到 $Z=8$，与 incumbent 相等，按界剪枝。最终最优仍是节点 2 的 $x=(1,0,0,0,1)$、值 $8$。</li>
+</ul>
+<p>最终最优值 $8$。注意节点 $x_4=1$ 的 RLM 一度不可行：所有现有列都不满足 $x_4=1$，必须靠人工列启动；这是 branch-and-price 的常见工程问题。</p>
 
-<h3><span class="sn">11.2</span>算法：主问题—子问题循环</h3>
-<pre><code class="language-python">patterns = initial_patterns()          # 例如每个物品单独一刀
-while True:
-    z, lam, pi = solve_lp_master(patterns)
-    # pricing：在模式集合上最大化对偶价值（这里是整数背包）
-    a_star, value = knapsack(weights, profits=pi, capacity=L)
-    if 1 - value &gt;= -1e-8:             # 单位成本为 1
-        break                          # 没有负检验数列，LP 最优
-    patterns.append(a_star)            # 加入新列，热启动重新求解
-# 此时 z 是原 IP 的 LP 下界；接着在分支树中重复上述循环</code></pre>
-<p>branch-and-price 的难点在于：不能对 $\lambda_p$ 分支，因为列的编号会随节点变化。常用做法是对原始变量（如“使用卷数”）或 Ryan–Foster 分支（同一物品对是否在同一模式中）分支，并把分支约束传进 pricing 子问题。pricing 因此从普通背包变成带附加约束的背包，仍可 DP 求解。</p>
+<h3><span class="sn">11.5</span>问题变体：多子问题、额外变量与相同子问题</h3>
+<p>原书 §11.5 讨论三类常见变体。第一，<strong>多子问题</strong>：若 $X=X_1\times\cdots\times X_K$，每块独立，则主问题对每块保留一个凸组合约束 $\sum_t\lambda_{k,t}=1$，定价也对每块分别求解，可并行；代价是主问题约束变多、对偶价格按块分裂。</p>
+<p>第二，<strong>带额外变量的划分/包装问题</strong>：列不仅包含 $z$，还包含连续或整数变量 $w$（例如路线的时间、机器的切换）。主问题列变成 $(cz,cw,Az,Aw,1)$，定价目标要同时优化 $w$；若 $w$ 连续，子问题仍是 LP/背包，若 $w$ 整数则可能变成小 MIP，列生成不再是“纯”组合定价。</p>
+<p>第三，<strong>相同子问题</strong>：所有客户、机器或场景共享同一个 $X$，可行模式相同，只是“分配给谁”不同。此时列大量对称，主问题会出现无数等价最优解，分支树爆炸。常用对策是聚合变量（按模式类型合并）、Ryan–Foster 分支（对“两个对象是否在同一列”分支）或对称破缺约束。理解这三类变体，才能判断一个实际问题该用列生成、拉格朗日还是直接 branch-and-cut。</p>
 
-<div class="table-wrap">
+<h3><span class="sn">11.6</span>加割：branch-cut-and-price</h3>
+<p>若根节点 LP 解 $x=(1,0,0,\frac12,\frac12)$ 被一条 cover 割 $x_1+x_2+x_4\le1$ 违反，可以把它放在两个位置：</p>
+<ul>
+<li><strong>放主问题</strong>：列系数变成 $(cz,Az,Cz,1)$，定价子问题结构不变；主问题更强，但列池要记录新系数。</li>
+<li><strong>放子问题</strong>：定价变成 $\max\{(c-\pi A)x-\pi_0:x\in X,\ Cx\le g\}$；界更强，但子问题可能从背包变成双约束背包，求解变难。</li>
+</ul>
+<p>Example 11.3 中两种放法都在根节点得到 $Z=8$、$x=(1,0,0,0,1)$，整数最优。选择取决于“子问题还能不能快速解”与“界能强多少”的权衡。</p>
+
+<h3><span class="sn">11.7</span>CVRP：列是整条路线</h3>
+<p>带容量车辆路径（capacitated vehicle routing problem, CVRP）：一个仓库、$n$ 个客户、车辆容量 $Q$、客户需求 $d_i$、边成本 $c_{ij}$。列是一条从仓库出发、服务若干客户、总需求 $\le Q$、回到仓库的路线 $r$，成本 $c_r$。主问题（集合划分）是</p>
+$$\min\ \sum_{r}c_r\lambda_r\quad \text{s.t.}\quad \sum_{r}a_{ir}\lambda_r=1\ (i=1,\dots,n),\quad \lambda_r\in\{0,1\},$$
+<p>其中 $a_{ir}=1$ 表示路线 $r$ 服务客户 $i$。定价子问题是在“资源约束（容量、时间窗）”下找 reduced cost 最小的路线，即<strong>资源约束最短路</strong>（resource-constrained shortest path, ESPPRC），通常用标签算法（label setting）在状态空间上做动态规划；状态是（当前节点、已用容量、已访问集合/时间），最坏指数，但实际可解。</p>
+<p>列生成的 LP 界通常非常强（接近整数最优），但 $\lambda$ 可能分数；branch-and-price 在“两个客户是否同车”“某条弧是否使用”等变量上分支。原书 §11.7 的完整例子把容量约束放在子问题、把客户覆盖放在主问题，并用 branch-cut-and-price 求解。</p>
+
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>组件</th><th>作用</th><th>常见实现</th><th>局限</th></tr></thead>
+<thead><tr><th>组件</th><th>公式/做法</th><th>关键点</th></tr></thead>
 <tbody>
-<tr><td class="id">Restricted master</td><td>给对偶价格与下界</td><td>单纯形 / 内点</td><td>初始列不足可能不可行</td></tr>
-<tr><td class="id">Pricing</td><td>找负检验数列</td><td>背包 DP、最短路、资源约束最短路</td><td>子问题本身可能 NP-难</td></tr>
-<tr><td class="id">Branch-and-price</td><td>恢复整数性</td><td>原始变量分支、Ryan–Foster</td><td>分支后 pricing 变形</td></tr>
-<tr><td class="id">列管理</td><td>控制主问题规模</td><td>淘汰低价值列、列池</td><td>淘汰过早会丢最优列</td></tr>
-<tr><td class="id">退化处理</td><td>避免长期停滞</td><td>扰动、对偶稳定化</td><td>参数难调</td></tr>
+<tr><td class="id">主问题</td><td>$\min\sum c_rz_r\lambda_r$，$\sum a_{ir}\lambda_r=1$</td><td>列 = 可行模式/路线</td></tr>
+<tr><td class="id">受限主问题</td><td>只保留 $p$ 列</td><td>用对偶 $\pi,\pi_0$</td></tr>
+<tr><td class="id">定价</td><td>$\zeta=\max_{z\in X}(c-\pi A)z-\pi_0$</td><td>$\zeta\le0$ 停</td></tr>
+<tr><td class="id">上界</td><td>$\pi b+\pi_0+\zeta$</td><td>$\zeta&gt;0$ 也可用</td></tr>
+<tr><td class="id">分支</td><td>对原 $x_j$，不对 $\lambda_t$</td><td>保持树平衡</td></tr>
+<tr><td class="id">CVRP 定价</td><td>ESPPRC / 标签算法</td><td>容量、时间窗</td></tr>
+<tr><td class="id">数值</td><td>列池、去重、stabilization</td><td>避免震荡</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">列生成的四个“以为”</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">列生成的四个工程坑</span></div>
 <div class="thm-body">
-<p><b>以为 RLM 最优就是原问题最优</b>：它只是完整 LP 主问题的最优，通常仍是分数解；整数性要靠分支。</p>
-<p><b>以为 $\lambda$ 可以直接四舍五入</b>：$\lambda_p=0.5$ 表示“半卷”，取整后可能既不满足需求也不最优；必须重新解整数主问题或分支。</p>
-<p><b>以为 pricing 可以随便近似</b>：若子问题没有精确求解，可能漏掉负检验数列，提前宣布最优，得到错误下界。近似 pricing 只能用于启发式，不能用于证明。</p>
-<p><b>忘了凸性约束</b>：多子问题（如多辆车、多个 depot）时，每个子问题对应一条 $\sum_t\lambda_t=1$ 的凸性约束，其对偶必须进入 pricing，否则定价符号会错。</p>
+<p><strong>1. 对 $\lambda_t$ 分支。</strong> 固定一列只排除一个模式，树会极不平衡；应对原变量 $x_j$ 或结构变量分支。</p>
+<p><strong>2. 定价子问题没解到最优。</strong> 若启发式漏掉正 reduced cost 列，主问题会过早“证明最优”，得到错误上界。要么精确解，要么用可靠下界 + 继续搜索。</p>
+<p><strong>3. 列池爆炸。</strong> 每轮加入大量相似列会让 RLM 变慢；要去重、按 reduced cost 排序、限制列池大小，或定期清理非活跃列。</p>
+<p><strong>4. 退化导致震荡。</strong> 对偶价格在多个最优解间跳动，列生成会反复加同一条列；用 stabilization（对偶价格平滑、box-step）或对偶单纯形热启动。</p>
 </div>
 </div>
 </div>
@@ -1490,94 +1592,525 @@ while True:
 
 <section id="ch12" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 12</div>
-<h2><span class="num">12</span>计算实践：从模型到可信答案</h2>
-<p class="lede">同一个模型，换个写法、换个参数，求解时间可能差三个数量级。计算实践的目标不是“跑出结果”，而是“知道结果为什么可信”。</p>
+<div class="sec-label">Part V · Chapter 12</div>
+<h2><span class="num">12</span>Benders 分解：把连续变量投影掉</h2>
+<p class="lede">Benders 分解（Benders decomposition）只对“难变量”分支，把连续变量留在一个可解的 LP 里；每解一次子问题，就给主问题补一条割，直到主问题与子问题的值吻合。</p>
+<div class="chap-intro"><p>本章处理 $x$ 整数、$y$ 连续的 MIP。固定 $x$ 后，$y$ 子问题是一个 LP；它的对偶极射线给出<strong>可行性割</strong>（feasibility cut），对偶极点给出<strong>最优性割</strong>（optimality cut）。主问题只含 $x$ 与辅助变量 $\eta$，规模小、可分支。原书用完整算例追踪 Benders 主问题从 $Z=222$ 一路收紧到 $16.4$ 的过程。随后讨论多子问题（块对角、随机规划）、LP 子问题的求解、以及 $y$ 也整数时的两种处理：在 $(x,\eta,y)$ 空间分支，或在 $(x,\eta)$ 空间分支并用 no-good 割排除已删的 $y$。</p><span class="tag">§12.1 – §12.7</span></div>
+<div class="mapchips"><span class="chip">projection</span><span class="chip">master problem</span><span class="chip hot">optimality cut</span><span class="chip">feasibility cut</span><span class="chip">extreme ray</span><span class="chip">multi-cut</span><span class="chip">no-good cut</span><span class="chip">stochastic</span></div>
 
-<div class="chap-intro">
-<p>本章把前十一章收束成一条求解流水线：presolve、根节点割、原始启发式、分支定界、数值校验。我们用一个两产品产能分配模型演示 gap 的含义，并以一页纸建模清单收尾。</p>
-<span class="tag">From Theory to Solutions</span>
-</div>
+<h3><span class="sn">12.1</span>重写：只留 $x$ 与 $\eta$</h3>
+<p>考虑</p>
+$$Z=\max\{cx+hy:\ Fx+Gy\le d,\ x\in X\subseteq\mathbb{Z}^n,\ y\in\mathbb{R}^p_+\}.$$
+<p>固定 $x$，子问题为 $\phi(x)=\max\{hy:Gy\le d-Fx,\ y\ge0\}$。原问题等价于 $\max\{cx+\eta:\eta\le\phi(x),\ x\in X\}$。$\phi$ 是分段线性凹函数（最大化 LP 的值关于右端是凹的），不能直接写成线性约束；但可以用它的对偶极点/极射线线性化。</p>
+<p>子问题的对偶是</p>
+$$\phi(x)=\min\{u(d-Fx):uG\ge h,\ u\ge0\}.$$
+<p>设对偶可行域 $U=\{u\ge0:uG\ge h\}$ 的极点为 $u^1,\dots,u^S$，极射线为 $v^1,\dots,v^T$。则 $\phi(x)$ 要么无界（对应某条极射线 $v^t(d-Fx)&lt;0$），要么等于某个极点值。于是完整 Benders 重写为</p>
+$$\max\ cx+\eta\quad \text{s.t.}\quad v^t(d-Fx)\ge0\ (t\in T),\quad \eta\le u^s(d-Fx)\ (s\in S),\quad x\in X.$$
+<p>第一组保证子问题可行，第二组保证 $\eta$ 不超过真实 $\phi(x)$。约束数可能指数，但按需生成：解主问题得 $(x^\ast,\eta^\ast)$，解子问题，若不可行就加一条可行性割；若 $\phi(x^\ast)&lt;\eta^\ast$ 就加一条最优性割。复杂度上，每轮一个主 MIP/LP 加一个子问题 LP；Benders 本身有限（极点/射线有限），但主问题要分支，最坏仍指数。</p>
 
-<div class="mapchips">
-<span class="chip">presolve</span>
-<span class="chip">root cuts</span>
-<span class="chip">heuristics</span>
-<span class="chip hot">gap</span>
-<span class="chip">数值稳定</span>
-</div>
-
-<h3><span class="sn">12.1</span>一个小模型与它的计算画像</h3>
-<p>两产品共享产能：单位利润 $p=(5,4)$，单位占用 $a=(2,3)$，产能 $b=12$，开机费 $f=(3,2)$，销量上限 $U=(5,4)$。</p>
-<p>$$\max\ 5x_1+4x_2-3y_1-2y_2\quad\text{s.t.}\quad 2x_1+3x_2\le12,\quad x_j\le U_jy_j,\quad x\in\mathbb{Z}^2_+,\ y\in\{0,1\}^2.$$</p>
-<p>整数最优是 $(5,0)$：利润 $25-3=22$。LP 松弛取 $y_1=1$、$x_1=5$、$x_2=2/3$、$y_2=1/6$，目标约 $24.33$，根节点 gap 约 $9.6\%$，分支几步即可闭合。若把 $x_j\le U_jy_j$ 错写成 $x_j\le 100y_j$，LP 会把 $y_1$ 压到 $0.05$、$y_2$ 压到 $1/150$，目标冲到约 $27.5$，gap 变成 $20\%$，树立刻变大。</p>
-
+<h3><span class="sn">12.2</span>完整算例：从 222 到 16.4</h3>
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">gap 怎么读</span><span class="thm-id">§7.5</span></div>
+<div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Example 12.1：两整数、三连续</span><span class="thm-id">§12.2</span></div>
 <div class="thm-body">
-<p>求解器报告：best bound $=1{,}000{,}000$，incumbent $=985{,}000$。则绝对 gap 为 $15{,}000$，相对 gap 为 $15{,}000/1{,}000{,}000=1.5\%$。这只说明“按上界计最多还有 1.5% 的改进空间”，不说明当前解离最优正好 1.5%；真实差距可能远小于此。</p>
-<p>若业务只要求 2% 精度，此时可以提前终止；若要求证明最优，则必须继续。把“gap 目标”写进求解配置，比盲目设时间上限更可控。</p>
+<p>$$\max\ 4x_1+7x_2+2y_1-3y_2+y_3$$</p>
+<p>$$\text{s.t.}\quad 2x_1+4x_2+4y_1-2y_2+3y_3\le12,\quad 3x_1+5x_2+2y_1+3y_2-y_3\le10,\quad x\le2,\ x\in\mathbb{Z}^2_+,\ y\in\mathbb{R}^3_+.$$</p>
+<p>对偶可行域 $U$ 的极射线为 $v^1=(3,2)$、$v^2=(1,3)$，极点为 $u^1=(\frac25,\frac15)$、$u^2=(\frac12,0)$、$u^3=(\frac32,0)$。完整重写是</p>
+$$\max\ 4x_1+7x_2+\eta\quad \text{s.t.}\quad 12x_1+22x_2\le56,\quad 11x_1+19x_2\le42,$$
+$$\frac75x_1+\frac{13}{5}x_2+\eta\le\frac{34}{5},\quad x_1+2x_2+\eta\le6,\quad 3x_1+6x_2+\eta\le18,\quad x\le2.$$
+<p><strong>节点 1，迭代 1</strong>：$T'=S'=\varnothing$，只加 $\eta\le200$。解 $x=(2,2)$、$\eta=200$、$Z=222$。子问题对偶在 $x=(2,2)$ 处无界，找到射线 $v^2=(1,3)$，加可行性割 $11x_1+19x_2\le42$。</p>
+<p><strong>迭代 2</strong>：$x=(4/11,2)$、$\eta=200$、$Z=215.45$。子问题值 $\phi=12/11$，小于 $\eta$；对偶最优点 $u^1=(\frac25,\frac15)$，加最优性割 $\frac75x_1+\frac{13}{5}x_2+\eta\le\frac{34}{5}$。</p>
+<p><strong>迭代 3</strong>：$x=(2,1.0526)$、$\eta=1.26316$、$Z=16.6316$；此时 $\phi(x)=\eta$，节点 1 的 LP 解完。$x_2$ 分数，分支 $x_2\le1$（节点 2）与 $x_2\ge2$（节点 3）。</p>
+<p><strong>节点 2</strong>：解 $x=(2,1)$、$\eta=1.4$、$Z=16.4$；$\phi=\eta$，整数，incumbent $=16.4$，$y=(0.1,0,1.2)$。剪枝。</p>
+<p><strong>节点 3</strong>：$x=(4/11,2)$、$\eta=12/11$、$Z=16.545$；$x_1$ 分数，分支 $x_1\le0$（节点 4）、$x_1\ge1$（节点 5）。节点 4 的 $Z=15.6&lt;16.4$，按界剪枝；节点 5 子问题无界，加可行性割后主问题不可行，按不可行剪枝。</p>
+<p>全部节点关闭，最优 $x=(2,1)$、$y=(0.1,0,1.2)$、$Z=16.4$。</p>
 </div>
 </div>
+<p>这个例子展示了 Benders 的“节奏”：主问题先给一个离谱的上界（222），每加一条割就砍掉一大块；通常 3–10 条割就能把界拉到接近最优，剩下的工作交给分支。</p>
 
-<h3><span class="sn">12.2</span>流水线与伪代码</h3>
-<pre><code class="language-python">model = build_model(data)
-model = presolve(model)                 # 去冗余、紧界、系数缩放
-model.optimize(heuristics=True, cuts='aggressive',
-               mip_gap=0.005, time_limit=600)
+<h3><span class="sn">12.3</span>多子问题与随机规划</h3>
+<p>若 MIP 有块对角结构</p>
+$$\max\ cx+\sum_{k=1}^{K}h_ky_k\quad \text{s.t.}\quad F_kx+G_ky_k\le d_k,\ y_k\ge0,\ x\in X,$$
+<p>则每个 $k$ 是一个独立子问题，$\phi_k(x)=\max\{h_ky_k:G_ky_k\le d_k-F_kx\}$。主问题变成 $\max\{cx+\sum_k\eta_k\}$，每块分别加割。这就是<strong>多割 Benders</strong>（multi-cut）：割更多、主问题更大，但每轮能同时收紧多个方向，通常比单割收敛快。</p>
+<p>两阶段随机规划是典型：第一阶段决策 $x$（建仓、买设备），第二阶段在场景 $k$ 下做补救 $y_k$，目标 $\max cx+\sum_kP_k e_ky_k$。每个场景一个子问题；Benders 割就是“场景 $k$ 的边际价值”。场景数上千时，多割主问题会很大，常用“只加最违反的若干割”“场景聚合”“并行解子问题”等工程手段。</p>
 
-if model.status == INFEASIBLE:
-    diagnose_infeasibility(model)       # IIS：最小不可行子系统
-elif model.status == UNBOUNDED:
-    check_missing_bounds(model)         # 常见于忘写上界
-else:
-    ub, lb = model.obj_bound, model.obj_val
-    report_gap(ub, lb)
-    verify_solution(model.solution)     # 独立回代所有约束
-    run_sensitivity(model, deltas=[0.05, 0.10])</code></pre>
-<p>求解器内部的顺序大致是：presolve 缩小模型 → 根节点生成割并跑启发式 → 分支定界 → 在节点上继续加割 → 最后做可行性校验与目标截断。建模者能控制的是输入质量、参数与终止条件，而不是算法细节。</p>
+<h3><span class="sn">12.4</span>当 $y$ 也整数：两种分支</h3>
+<p>若子问题的 $y$ 必须整数，$\phi(x)$ 不再凹，Benders 割不再充分。两条路线：</p>
+<ul>
+<li><strong>在 $(x,\eta,y)$ 空间分支</strong>：把 $y$ 也放进主问题，主问题变成完整 MIP；子问题只用于验证/加割。树大，但每节点信息完整。</li>
+<li><strong>在 $(x,\eta)$ 空间分支 + no-good 割</strong>：固定 $x^\ast$ 后解出 $y^\ast$；若 $y^\ast$ 不可行或不是整数，就加一条“排除这个 $y^\ast$”的割。对 0–1 的 $y$，no-good 割是
+$$\sum_{j:y^\ast_j=1}(1-y_j)+\sum_{j:y^\ast_j=0}y_j\ge1,$$
+<p>意思是“至少有一个分量与 $y^\ast$ 不同”。它只排除一个点，不排除整个区域；需要配合分支才有完整体搜索。</p></li>
+</ul>
+<p>原书 §12.5 给出两种算法的伪代码：在 $(x,\eta,y)$ 空间分支时，每个节点解 LP 松弛，若 $y$ 整数则更新 incumbent，否则对分数 $y_j$ 分支；在 $(x,\eta)$ 空间分支时，先解主问题得 $x^\ast$，再解整数子问题，若子问题无可行 $y$ 则加 no-good 割，若 $\phi(x^\ast)&lt;\eta^\ast$ 则加最优性割（但 $\phi$ 非凹，割只在局部有效，需谨慎）。</p>
 
-<div class="table-wrap">
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
 <table>
-<thead><tr><th>症状</th><th>可能原因</th><th>处理</th></tr></thead>
+<thead><tr><th>对象</th><th>公式</th><th>作用</th></tr></thead>
 <tbody>
-<tr><td>根节点 gap 极大</td><td>big-M 过大、缺 VUB、对称性</td><td>收紧上界、加有效不等式、破对称</td></tr>
-<tr><td>长时间无 incumbent</td><td>可行域窄、启发式失败</td><td>提供初始解、放宽 gap、检查约束</td></tr>
-<tr><td>节点数爆炸</td><td>分支变量差、LP 弱</td><td>换分支规则、加 cover/MIR 割</td></tr>
-<tr><td>数值警告/不可行误判</td><td>系数尺度差异大、容差过小</td><td>缩放、合并单位、放宽容差</td></tr>
-<tr><td>解在业务上荒谬</td><td>漏约束或目标方向错</td><td>小实例手算、逐条回代、IIS 诊断</td></tr>
-<tr><td>换数据后不可行</td><td>硬约束过紧、缺少松弛变量</td><td>加弹性变量并惩罚、分场景求解</td></tr>
+<tr><td class="id">子问题</td><td>$\phi(x)=\max\{hy:Gy\le d-Fx,y\ge0\}$</td><td>固定 $x$ 后的连续优化</td></tr>
+<tr><td class="id">对偶</td><td>$\min\{u(d-Fx):uG\ge h,u\ge0\}$</td><td>极射线/极点</td></tr>
+<tr><td class="id">可行性割</td><td>$v^t(d-Fx)\ge0$</td><td>排除使子问题无界的 $x$</td></tr>
+<tr><td class="id">最优性割</td><td>$\eta\le u^s(d-Fx)$</td><td>把 $\eta$ 压到 $\phi(x)$ 以下</td></tr>
+<tr><td class="id">主问题</td><td>$\max cx+\eta$ + 已生成割</td><td>只含 $x$，可分支</td></tr>
+<tr><td class="id">多割</td><td>$\sum_k\eta_k$，每块单独割</td><td>随机规划、块对角</td></tr>
+<tr><td class="id">no-good</td><td>$\sum_{y^\ast_j=1}(1-y_j)+\sum_{y^\ast_j=0}y_j\ge1$</td><td>整数子问题排除单点</td></tr>
 </tbody>
 </table>
 </div>
 
-<div class="thm def">
-<div class="thm-head"><span class="thm-kind">清单</span><span class="thm-title">一页纸建模检查表</span><span class="thm-id">Final Checklist</span></div>
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">Benders 的四个陷阱</span></div>
 <div class="thm-body">
-<ol>
-<li><b>变量语义</b>：每个变量的单位、时间粒度、取值含义是否一句话说清？0–1 变量是否只用于“是/否”？</li>
-<li><b>约束来源</b>：每条约束对应哪条业务规则？有没有“为了让它可行”而硬加的约束？</li>
-<li><b>界与 big-M</b>：每个 $M$ 是否由数据推出？是否存在更紧的 VUB 或产能上界？</li>
-<li><b>目标方向</b>：min/max 是否与业务一致？固定成本、库存、惩罚项是否漏项或重复计？</li>
-<li><b>整数性</b>：哪些变量必须整数？连续松弛会不会给出物理上不可能的解？</li>
-<li><b>对称性</b>：相同机器、相同车辆、相同班组是否造成大量等价解？是否需要破对称约束？</li>
-<li><b>可行性与弹性</b>：数据极端时是否必然不可行？是否需要弹性变量与惩罚，而不是让模型直接崩掉？</li>
-<li><b>小实例验证</b>：能否用 2–5 个变量手算最优，并与求解器逐项对照？</li>
-<li><b>LP 界检查</b>：根节点 LP 值离整数解多远？若 gap 超过 20%，先改模型再调参数。</li>
-<li><b>数值尺度</b>：系数是否跨越 $10^6$ 以上？能否统一单位、缩放目标、避免 $10^{12}$ 级大数？</li>
-<li><b>求解日志</b>：是否记录了 incumbent 曲线、割数量、节点数、gap 与终止原因？</li>
-<li><b>可复现与解释</b>：模型、数据、参数、随机种子是否版本化？能否向业务方解释“为什么选这个方案”？</li>
-</ol>
+<p><strong>1. 忘记可行性割。</strong> 只加最优性割会在子问题无界时出错；无界对应极射线，必须加 $v(d-Fx)\ge0$。</p>
+<p><strong>2. 主问题没有 $\eta$ 的上界。</strong> 初始 $\eta$ 无界会让主问题解到 $+\infty$；要给一个合法上界（如可行解值 + 余量）。</p>
+<p><strong>3. 子问题没解到最优。</strong> 用启发式解子问题会低估 $\phi$，导致加入错误的最优性割，切掉真正最优的 $x$。</p>
+<p><strong>4. 整数子问题直接套凹函数割。</strong> $\phi$ 非凹时，基于对偶极点的割只在局部有效；必须配合分支或 no-good 割，不能假装它是全局线性化。</p>
 </div>
+</div>
+</div>
+</section>
+
+<section id="ch13" class="chapter">
+<div class="wrap">
+<div class="sec-label">Part VI · Chapter 13</div>
+<h2><span class="num">13</span>原始启发式：先找到一个可行解</h2>
+<p class="lede">精确算法需要下界，分支定界需要 incumbent；很多工业模型的第一难题不是“证明最优”，而是“连一个可行解都找不到”。启发式（heuristic）就是为此存在。</p>
+<div class="chap-intro"><p>本章把第 2 章的贪心与局部搜索形式化，再介绍三种“跳出局部最优”的元启发式：禁忌搜索（tabu search）、模拟退火（simulated annealing）、遗传算法（genetic algorithm）。然后进入 MIP 求解器内部的构造启发式：rounding、diving、feasibility pump；改进启发式：local branching、proximity search、RINS、polishing。最后讨论用户自定义启发式：如何利用问题知识固定变量、缩小邻域，并仍然拿到一个对偶界来评估解的质量。</p><span class="tag">§13.1 – §13.7</span></div>
+<div class="mapchips"><span class="chip">greedy</span><span class="chip">local search</span><span class="chip hot">tabu</span><span class="chip">simulated annealing</span><span class="chip">genetic</span><span class="chip">feasibility pump</span><span class="chip">local branching</span><span class="chip">RINS</span></div>
+
+<h3><span class="sn">13.1</span>贪心与局部搜索的形式化</h3>
+<p>把组合问题写成 $\min\{c(S):v(S)\ge k\}$，$v$ 单调、$v(\varnothing)=0$。贪心每步选“单位资源成本最小”的元素：</p>
+$$j_t=\arg\min_{j\notin S_{t-1}}\frac{c(S_{t-1}\cup\{j\})-c(S_{t-1})}{v(S_{t-1}\cup\{j\})-v(S_{t-1})}.$$
+<p>若加入后已经可行且成本不再下降，停止。Example 13.1 的 UFL 有 $m=6,n=5$、$f=(21,16,30,24,11)$，单仓成本 $c(1)=63$、$c(2)=66$、$c(3)=59$、$c(4)=64$、$c(5)=61$，先选 3；再加入 5 使成本降到 58（$c(3,5)-c(3)=-1$），其余加入都变贵，故贪心解 $\{3,5\}$，成本 58。</p>
+<p>局部搜索需要邻域 $Q(S)$。两种最常用：单元素增删（$O(n)$ 邻居）、单元素替换（$O(n^2)$ 邻居）。对 TSP，删两条边后恰好有唯一方式重连成 tour，这就是 <strong>2-opt</strong>：邻域是所有与当前 tour 共享 $n-2$ 条边的 tour，即 $Q(S)=\{S':|S'\cap S|=n-2\}$；若没有改进，称 2-optimal。2-opt 的每步检查 $O(n^2)$，一次完整邻域扫描 $O(n^2)$，通常迭代几十到几百次。</p>
+<p><strong>GRASP</strong>（greedy randomized adaptive search）把贪心随机化：每步从“最好的 $k$ 个候选”里随机选一个，构造出多样化的初始解，再对每个解做局部搜索。它用随机性换多样性，适合多起点场景。</p>
+
+<h3><span class="sn">13.2</span>禁忌搜索：记住最近走过的路</h3>
+<p>局部最优时，允许走到稍差的邻居，但用<strong>禁忌表</strong>（tabu list）禁止回到最近访问过的解或移动，避免 $S_0\to S_1\to S_0$ 的循环。基本流程：</p>
+<ol>
+<li>初始化空禁忌表，取初始解 $S$。</li>
+<li>在非禁忌邻居 $Q'(S)\subseteq Q(S)$ 中选目标值最好的 $S'$。</li>
+<li>更新 $S=S'$，把这次移动加入禁忌表（长度 $t$）。</li>
+<li>满足停止条件（固定迭代数、连续无改进）则停，返回历史最好解。</li>
+</ol>
+<p>禁忌长度 $t$ 是关键：$t=1,2$ 容易循环，原书提到“$t=7$ 常被引用为好选择”。<strong> aspiration level</strong>（渴望水平）允许“虽然被禁忌，但比历史最好还好”的解破禁。禁忌表可以记录“最近加入的元素”和“最近删除的元素”：不能删最近加入的 $t$ 个，也不能加最近删除的 $t$ 个。</p>
+
+<h3><span class="sn">13.3</span>模拟退火：以概率接受坏解</h3>
+<p>随机选一个邻居 $S'$，若 $\Delta=f(S')-f(S)\le0$ 就接受；若 $\Delta&gt;0$，以概率 $e^{-\Delta/T}$ 接受。$T$ 是温度：高温时几乎什么都接受（探索），低温时几乎只接受改进（开发）。算法：</p>
+<ol>
+<li>取初始解 $S$、初始温度 $T$、降温系数 $0&lt;r&lt;1$、每温度迭代次数 $L$。</li>
+<li>重复 $L$ 次：随机邻居，按上述概率接受。</li>
+<li>$T\leftarrow rT$；若“冻结”（$T$ 足够小或达到迭代上限）停止，返回历史最好解。</li>
+</ol>
+<p>收敛直觉：若每温度迭代足够多，马尔可夫链会逼近玻尔兹曼分布 $\propto e^{-f(S)/T}$；$T\to0$ 时质量集中到全局最优。但“足够多”可能指数大，所以实际是启发式。参数 $T_0$、$r$、$L$ 依问题规模调；$r$ 常取 0.95–0.99。</p>
+
+<h3><span class="sn">13.4</span>遗传算法：用种群交换结构</h3>
+<p>维护 $k$ 个解的种群，每代做：评估适应度、按适应度选父代（$S_i$ 被选概率 $f(S_i)/\sum_jf(S_j)$）、交叉、变异、选择新种群。交叉方式：</p>
+<ul>
+<li><strong>1 点交叉</strong>：$x_1\cdots x_p y_{p+1}\cdots y_r$ 与 $y_1\cdots y_p x_{p+1}\cdots x_r$。</li>
+<li><strong>2 点交叉</strong>：交换中间段。</li>
+<li><strong>均匀交叉</strong>：每个位置随机从两个父代取。</li>
+</ul>
+<p>变异是随机改一位（1 点）或交换两位（2 点）。对排列型问题（TSP、调度），普通交叉会产生重复/缺失城市，要用 OX、PMX 等保序交叉。遗传算法的优势是“种群并行探索”，缺点是没有收敛保证、参数多、评估次数大。</p>
+
+<h3><span class="sn">13.5</span>求解器内部：构造与改进</h3>
+<p><strong>Dive-and-fix</strong>：从 LP 解出发，反复选最接近整数的分数变量，固定到 0 或 1，重解 LP；若 LP 不可行则失败。它像“沿一条分支一直走到底”，快但可能走进死胡同。</p>
+<p><strong>Neighborhood rounding</strong>：对 LP 解 $x^\ast$，解一个小 IP：$\max\{cx:x\in X,\ \lfloor x^\ast_j\rfloor\le x_j\le\lceil x^\ast_j\rceil\}$。它只在 LP 解附近找整数点，规模小、成功率高。</p>
+<p><strong>Feasibility pump</strong>：在“整数点”和“LP 可行点”之间交替投影。初始化 $x^\ast=x_{LP}$；令 $\hat x=\lceil x^\ast\rfloor$（四舍五入）；若 $\hat x\notin P$，解投影 LP</p>
+$$\min\sum_j|x_j-\hat x_j|\quad \text{s.t.}\quad x\in P,$$
+<p>把解记为新的 $x^\ast$，再四舍五入。若循环，随机扰动若干变量。它是现代 MIP 求解器寻找首个可行解的主力。</p>
+<p><strong>Local branching</strong>：给定 incumbent $x^\ast$，在 Hamming 球内找更好的解：</p>
+$$\max\left\{cx:x\in X\cap\left\{\sum_{j:x^\ast_j=0}x_j+\sum_{j:x^\ast_j=1}(1-x_j)\le k\right\}\right\}.$$
+<p>$k$ 小则子问题易解，$k$ 大则探索广；常从 $k=10$–20 开始，失败则增大。</p>
+<p><strong>Proximity search</strong>：固定改进量 $\delta$，在“至少改进 $\delta$”的约束下，最小化与 $x^\ast$ 的 Hamming 距离：$\min\sum_j|x_j-x^\ast_j|$ s.t. $cx\le cx^\ast-\delta$。它找的是“够好且离当前解近”的解，便于后续修复。</p>
+<p><strong>RINS</strong>（relaxation induced neighborhood search）：比较 incumbent $x^\ast$ 与 LP 解 $x_{LP}$，把两者取值相同的变量固定，解剩余的小 MIP。直觉：两者都同意的变量大概率在最优解中也相同。<strong>Polishing</strong> 类似，但固定多个精英解的共同变量。复杂度上，构造类每步一个 LP（$O(\text{LP})$），改进类每轮解一个缩小规模 MIP；总预算由时间片控制，不保证找到改进。</p>
+
+<h3><span class="sn">13.6</span>用户自定义：把问题知识变成固定策略</h3>
+<p>原书 §13.5 强调：最有效的启发式往往来自“你知道哪些变量重要”。常用套路是 <strong>relax-and-fix</strong>：按时间或阶段把变量分块，先解第一块并固定，再解第二块，逐步推进；早期决策错会导致后面不可行，所以常保留少量“回退”变量。<strong>Fix-and-optimize</strong> 则固定大部分变量，只对一个滑动窗口（若干时段、若干客户）重解小 MIP，窗口在模型上来回移动。</p>
+<p>在求解器内部，可以用 callback 在找到 incumbent 时做局部搜索，或把启发式解作为 warm start 注入；在求解器外部，可以把 tabu/SA 的每次评估换成一个“固定大部分变量的小 MIP”，质量更高但每次更贵。关键原则是：<strong>启发式负责给可行解，精确算法负责给对偶界</strong>；两者一起才能报告可信的 gap。</p>
+
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>方法</th><th>核心机制</th><th>参数</th><th>适用</th></tr></thead>
+<tbody>
+<tr><td class="id">贪心</td><td>单位资源收益最大</td><td>排序、可行性检查</td><td>快速构造</td></tr>
+<tr><td class="id">2-opt</td><td>删两边重连</td><td>邻域大小</td><td>TSP/VRP</td></tr>
+<tr><td class="id">禁忌搜索</td><td>禁忌表 + 渴望水平</td><td>表长 $t\approx7$</td><td>组合调度</td></tr>
+<tr><td class="id">模拟退火</td><td>概率接受坏解</td><td>$T_0,r,L$</td><td>无结构黑箱</td></tr>
+<tr><td class="id">遗传算法</td><td>种群 + 交叉 + 变异</td><td>种群大小、交叉率</td><td>多峰、排列问题</td></tr>
+<tr><td class="id">dive-and-fix</td><td>固定最近整数，重解 LP</td><td>固定比例</td><td>快速可行解</td></tr>
+<tr><td class="id">feasibility pump</td><td>整数投影 ↔ LP 投影</td><td>扰动、轮数</td><td>找首个可行解</td></tr>
+<tr><td class="id">local branching</td><td>Hamming 球内重解</td><td>半径 $k$</td><td>改进 incumbent</td></tr>
+<tr><td class="id">RINS</td><td>固定与 LP 一致的变量</td><td>固定比例</td><td>MIP 改进</td></tr>
+</tbody>
+</table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">最后三条忠告</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">启发式的四个现实</span></div>
 <div class="thm-body">
-<p><b>“求解器说最优”不等于“模型对”</b>：最优解只对写下的模型成立；漏一条业务约束，数学上再完美也是错的。</p>
-<p><b>“gap 为 0”不等于“数值可信”</b>：系数病态时，求解器可能在容差内把不可行点当成可行；务必独立回代并检查约束违反量。</p>
-<p><b>“调参数”不能替代“改模型”</b>：根节点 gap 大、对称性重、big-M 松，这些是建模问题，换求解器或加时间通常无效。</p>
+<p><strong>1. 把启发式解当最优。</strong> 除少数有近似比的方法外，启发式没有证书；必须同时报告对偶界或“未证明最优”。</p>
+<p><strong>2. 参数照搬论文。</strong> 禁忌长度、温度、种群大小强依赖问题规模与目标地形；要在验证集上调，不要盲信默认值。</p>
+<p><strong>3. 只跑一次。</strong> 随机算法方差大；要多次重启、报告均值/最好值/耗时，否则结论不可复现。</p>
+<p><strong>4. 用启发式替代预求解。</strong> 很多“难找可行解”的模型，其实 presolve 几分钟就能固定一半变量；先做确定性化简，再上启发式。</p>
 </div>
+</div>
+</div>
+</section>
+
+<section id="ch14" class="chapter">
+<div class="wrap">
+<div class="sec-label">Part VI · Chapter 14</div>
+<h2><span class="num">14</span>从理论到求解：建模语言、强 formulation 与工程案例</h2>
+<p class="lede">真实项目里，90% 的成败在模型进入求解器之前就决定了：变量是否紧、$M$ 是否小、有没有加结构割、分解是否匹配。剩下的 10% 才是调求解器参数。</p>
+<div class="chap-intro"><p>本章把前面所有工具放进一个工作流：用建模语言写模型，交给 MIP 系统做 presolve、branch-and-cut、启发式；如果性能不够，按“改进 formulation → 加结构割 → 换分解 → 写自定义启发式”的顺序优化。原书用两个案例走完这个流程：多品种单机批量生产（multi-item single-machine lot-sizing）与复接器指配（multiplexer assignment）。最后简要讨论整数规划与机器学习的交叉：用学习预测分支、选择割、构造可行解，以及把 IP 作为 ML 的求解器。</p><span class="tag">§14.1 – §14.8</span></div>
+<div class="mapchips"><span class="chip">modeling language</span><span class="chip">MPS/LP</span><span class="chip hot">presolve</span><span class="chip">callback</span><span class="chip">lot-sizing cuts</span><span class="chip">multiplexer</span><span class="chip">Benders</span><span class="chip">machine learning</span></div>
+
+<h3><span class="sn">14.1</span>工具链：从公式到求解器</h3>
+<p>一个 MIP 项目通常有两层工具：<strong>建模语言</strong>（modeling language，如 Mosel、AMPL、GAMS、Pyomo、JuMP）负责“把数学公式写成可读的代码、读数据、生成 MPS/LP 文件”；<strong>MIP 系统</strong>（CPLEX、Gurobi、Xpress、HiGHS、SCIP、CBC）负责 presolve、割平面、分支、启发式。建模语言的价值在于文档化与可维护：改一条约束、换一组数据，几分钟就能重跑。</p>
+<p>原书给出一个 Mosel 的固定费用网络流模型片段：声明节点数 $N$、弧数 $M$、供需 $B$、弧尾/弧头、固定成本 $C$、变量 $x_e\in\{0,1\}$ 与流量 $y_e\ge0$；约束是每个节点的流量守恒、每条弧的 $y_e\le -B_1x_e$（$B_1$ 是最大可能流量），目标是 $\sum C_ex_e$。这个例子的关键不是语法，而是“变量上界要用数据推导，不要写 $10^9$”。</p>
+<p>MIP 系统通常提供 callback/插件接口：你可以加入新割、改变分支规则、插入自定义启发式、或实现 Benders/列生成。工业问题的性能突破往往来自这些“问题特定”的扩展，而不是调 gap 容差。复杂度上，presolve 的每条规则是多项式，但反复执行到不动点最多 $O(n)$ 轮；branch-and-cut 本身最坏指数，工程上用时间上限、gap 容差与节点上限来兜底。</p>
+
+<h3><span class="sn">14.2</span>改进 formulation 的六个问题</h3>
+<p>原书用一串问题引导“如何找到一个更好的 formulation”：</p>
+<ol>
+<li><strong>这个问题多项式可解吗？</strong> 若是（如 ULS），有机会写出凸包的显式描述；若否（如 CLS），只能近似。</li>
+<li><strong>LP 解长什么样？</strong> 解 LP，观察哪些变量分数、哪些约束紧；分数模式就是割的入口。</li>
+<li><strong>能否用已知割？</strong> 背包 cover、流覆盖、MIR、Gomory；先试通用结构。</li>
+<li><strong>能否直接推导？</strong> 从“若 $x=0$ 则必须满足什么”出发，写出逻辑不等式。</li>
+<li><strong>这些不等式是 facet 吗？</strong> 是则最强；不是则可能还能提升。</li>
+<li><strong>分离容易吗？</strong> 若容易，按需生成；若难，a priori 加一部分。</li>
+</ol>
+<p>ULS 是完美的教学案例。弱模型只有 $s_{t-1}+y_t=d_t+s_t$、$y_t\le Mx_t$，LP 会给出 $x_2=0.25$、$y_2=7$ 这种“四分之一开工”的解。原书逐步推导：</p>
+<ul>
+<li>先由流覆盖得到 $y_t\le d_tx_t+s_t$；</li>
+<li>等价地 $s_{t-1}\ge d_t(1-x_t)$；</li>
+<li>再推广到多期：$s_{k-1}\ge(\sum_{t=k}^{l}d_t)(1-x_k-\cdots-x_l)$；</li>
+<li>最后加强为
+$$s_{k-1}\ge\sum_{t=k}^{l}d_t(1-x_k-\cdots-x_t)\qquad(1\le k\le l\le n).\tag{14.1}$$
+</li>
+</ul>
+<p>这族 $O(n^2)$ 不等式是 facet-defining；加入后 LP 解变整数。分离也简单：固定 $k$，找最小的 $l\ge k$ 使 $x^\ast_k+\cdots+x^\ast_l\ge1$，若 $l&gt;k$ 且 $s^\ast_{k-1}&lt;\sum_{t=k}^{l-1}d_t(1-x^\ast_k-\cdots-x^\ast_t)$，就得到最违反的割。原书还提醒：还有 $y_k\le(\sum_{t=k}^{l}d_t)x_k+s_l$ 这族 facet，不能只用 (14.1) 就宣称描述了整个凸包。</p>
+
+<h3><span class="sn">14.3</span>案例一：多品种单机批量生产</h3>
+<p>一台机器、多种产品、按周期排产；换型有时间和成本，某些产品有最小连续生产时间与最小停机时间。变量：$y^i_t$ 生产时间、$s^i_t$ 库存、$x^i_t$ 是否设置、$z^i_t$ 是否启动、$\chi^{ij}_t$ 是否从 $i$ 切换到 $j$。核心约束：</p>
+$$s^i_{t-1}+y^i_t=d^i_t+s^i_t,\qquad y^i_t\le Cx^i_t-\sum_{j\ne i}\Delta_{ji}\chi^{ji}_t,$$
+$$z^i_t\ge x^i_t-x^i_{t-1},\quad z^i_t\le x^i_t,\quad z^i_t\le1-x^i_{t-1},$$
+$$\chi^{ij}_t\ge x^i_{t-1}+x^j_t-1,\quad \chi^{ij}_t\le x^i_{t-1},\quad \chi^{ij}_t\le x^j_t,$$
+$$\sum_i x^i_t=1,\qquad \sum_{u=1}^{\alpha_i}z^i_{t-u+1}\le y^i_t,\qquad \sum_{u=1}^{\beta_i}z^i_{t+u}\le1-y^i_t.$$
+<p>最后两行分别是最小连续生产时间 $\alpha_i$ 与最小停机时间 $\beta_i$ 的“窗口”约束。原书给出三条工程观察：</p>
+<ul>
+<li>$z$ 与 $\chi$ 在 $x$ 为 0–1 且链接约束存在时自动 0–1，可以放松为连续变量，减少分支维度。</li>
+<li>若启动/换型成本为正，某些“上界”约束（$z\le x$、$\chi\le x$）可以删掉，因为目标会自然把 $z,\chi$ 压到 0；但删之前要确认没有负成本或强制逻辑。</li>
+<li>给 $x^i_t$ 设置分支优先级（按周期或产品重要性），比默认顺序快很多。</li>
+</ul>
+<p>问题特定割：ULS/CLS 的 (14.1) 对每个产品都成立；有启动变量时可加强为</p>
+$$s_{k-1}\ge\sum_{t=k}^{l}d_t(1-x_k-z_{k+1}-\cdots-z_t),$$
+<p>因为它只要求“没有启动”就足以说明中间没有生产。最小连续生产时间还可写成 $\sum_{u=1}^{\alpha_i}z_{t-u+1}\le y_t$，替代原来的大窗口约束，LP 更紧。</p>
+
+<h3><span class="sn">14.4</span>案例二：复接器指配</h3>
+<p>给定图 $G=(V,E)$、边需求 $d_e&gt;0$、容量 $C$ 的环 $k=1,\dots,K$。每条需求必须整条分配到某个环，不能拆分；若边 $e=(i,j)$ 分到环 $k$，则环 $k$ 在 $i,j$ 各装一个复接器，成本 $\alpha$。变量 $y^k_e\in\{0,1\}$、$x^k_i\in\{0,1\}$：</p>
+$$\min\ \alpha\sum_{k}\sum_{i\in V}x^k_i\quad \text{s.t.}\quad \sum_k y^k_e=1,\quad \sum_e d_ey^k_e\le C,\quad y^k_e\le x^k_i,\ y^k_e\le x^k_j.$$
+<p>问题 B 增加“每个复接器 8 个槽，每槽容量 16；加一张特殊卡（成本 $\beta$）把槽容量提到 63”。变量 $z^k_i$（16 容量槽数）、$w^k_i$（63 容量槽数）：</p>
+$$\sum_{e\in\delta(i)}d_ey^k_e\le16z^k_i+63w^k_i,\qquad z^k_i+w^k_i\le8x^k_i.$$
+<p>全局下界：节点 $i$ 的总需求 $D(i)=\sum_{e\in\delta(i)}d_e$，每个环最多一个复接器、最大容量 $\min(C,8\cdot63)=\min(C,504)$，故 $\sum_kx^k_i\ge\lceil D(i)/\min(C,504)\rceil$。槽位下界：$16\sum_kz^k_i+63\sum_kw^k_i\ge D(i)$。这些简单不等式常能把根界抬高一截。</p>
+<p>算法选择：问题有 $K$ 个相同子问题，适合拉格朗日松弛（对偶化 $\sum_k y^k_e=1$）、列生成（每列是一个环的配置）或 Benders（$x$ 主问题、$y$ 子问题）。原书强调：先判断“MIP 系统能否直接解”；若不能，再按“加全局下界 → 加结构割 → 分解”的顺序升级，而不是一上来就写复杂算法。</p>
+
+<h3><span class="sn">14.5</span>整数规划与机器学习</h3>
+<p>在进入 ML 之前，值得说明这些结果的来源：本书的许多定理与算法来自 mathematical programming 与 operations research 的经典期刊，例如 <i>Mathematical Programming</i>、<i>Operations Research</i>、<i>Mathematics of Operations Research</i>、<i>SIAM Journal on Computing</i>。大学与研究机构的 research 仍在推进 branch-and-cut、扩展 formulation 下界与分解算法；工业界的 computer 实现则把这些结果工程化。读论文时要注意：期刊里的 worst-case 分析、实验设置与你的实例分布往往不同，不能直接照搬常数。</p>
+<p>原书 §14.6 给出三个方向的简述：</p>
+<ul>
+<li><strong>学习分支</strong>：用监督学习预测“哪个变量分支后树最小”，或学习强分支的模仿策略；推理时要保证可行性。</li>
+<li><strong>学习割与启发式</strong>：预测哪些割最可能被违反、哪些变量在最优解中固定；把学习结果作为 callback 的建议，而不是硬替换精确算法。</li>
+<li><strong>IP 作为 ML 的求解器</strong>：把稀疏回归、最优决策树、对抗样本、多标签分类写成 MIP；优点是全局最优与约束可解释，缺点是大规模慢。</li>
+</ul>
+<p>需要警惕：学习模型在训练分布外可能给出错误建议；MIP 的正确性仍由分支/割的精确逻辑保证，学习只应加速，不应破坏可行性。</p>
+
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>阶段</th><th>动作</th><th>收益</th><th>风险</th></tr></thead>
+<tbody>
+<tr><td class="id">建模</td><td>紧上界、强链接、避免大 $M$</td><td>根界大幅提升</td><td>约束变多</td></tr>
+<tr><td class="id">presolve</td><td>界收紧、固定、冗余删除</td><td>规模骤降</td><td>数值误判</td></tr>
+<tr><td class="id">割</td><td>cover、flow cover、MIR、GMI</td><td>根界接近整数</td><td>LP 变慢/病态</td></tr>
+<tr><td class="id">分支</td><td>伪成本、强分支、优先级</td><td>树变小</td><td>每节点开销</td></tr>
+<tr><td class="id">启发式</td><td>pump、RINS、local branching</td><td>早得 incumbent</td><td>时间片竞争</td></tr>
+<tr><td class="id">分解</td><td>Lagrangian、列生成、Benders</td><td>利用块结构</td><td>实现复杂</td></tr>
+<tr><td class="id">调参</td><td>gap、threads、cuts 级别</td><td>最后 10–30%</td><td>过拟合实例</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">工程落地的四个顺序错误</span></div>
+<div class="thm-body">
+<p><strong>1. 先调参后建模。</strong> 一个弱 formulation 的根界可能差 50%，任何参数都救不回来；先检查 $M$、链接约束、变量界。</p>
+<p><strong>2. 一上来就写列生成/Benders。</strong> 很多模型加几条结构割就能在时限内解；分解的实现与维护成本很高，应作为第二/第三手段。</p>
+<p><strong>3. 用启发式解“证明”最优。</strong> 必须同时报告对偶界与 gap；没有证书的“最优”只是“最好找到”。</p>
+<p><strong>4. 忽略数值。</strong> 大 $M$、系数差 $10^9$、容差过紧都会让求解器误判不可行或无限分支；要做 scaling、合理性检查、以及不同求解器交叉验证。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ch15" class="chapter">
+<div class="wrap">
+<div class="sec-label">Part IV–V · Cross-cutting · TSP</div>
+<h2><span class="num">15</span>旅行商问题：子回路、1-tree 与 branch-and-cut</h2>
+<p class="lede">TSP 是整数规划最好的试金石：模型一行就能写，LP 松弛却会给出多个环；割平面、分支、启发式在这里全部登场，而且每一步都能画出来。</p>
+<div class="chap-intro"><p>本章把散落在第 1、2、7、9、10、13 章的 TSP 材料收拢成一条线。先给有向与对称两种 0–1 模型，说明度约束为什么等价于指派、为什么会产出子回路；再给 DFJ 子回路约束与 MTZ 紧凑模型，比较两者的 LP 强度。接着讨论三种松弛：指派、1-tree、 Held–Karp 次梯度；三种启发式：最近邻、贪心、2-opt/3-opt；最后是把它们串起来的 branch-and-cut 流程，以及一个 6 城市算例的精确数字。</p><span class="tag">Ch 1, 2, 7, 9, 10, 13</span></div>
+<div class="mapchips"><span class="chip">DFJ</span><span class="chip">MTZ</span><span class="chip hot">subtour</span><span class="chip">assignment relaxation</span><span class="chip">1-tree</span><span class="chip">Held–Karp</span><span class="chip">2-opt</span><span class="chip">branch-and-cut</span></div>
+
+<h3><span class="sn">15.1</span>两种模型：有向与对称</h3>
+<p><strong>有向 TSP</strong>（ATSP）：$x_{ij}=1$ 表示从 $i$ 直接到 $j$，$i\ne j$。度约束为</p>
+$$\sum_{j\ne i}x_{ij}=1,\qquad \sum_{i\ne j}x_{ij}=1,\qquad x_{ij}\in\{0,1\}.$$
+<p>这正是指派模型。它的解是若干个互不相交的有向环；要变成一条 Hamiltonian 回路，需加<strong>子回路消除约束</strong>（subtour elimination constraints, SEC）：</p>
+$$\sum_{i\in S}\sum_{j\in S}x_{ij}\le|S|-1\quad(2\le|S|\le n-1),$$
+<p>或等价的割形式 $\sum_{i\in S,j\notin S}x_{ij}\ge1$。约束数 $2^{n-1}-2$，不能全写。</p>
+<p><strong>对称 TSP</strong>（STSP）：无向边 $e=\{i,j\}$，$x_e=1$ 表示走这条边。度约束 $\sum_{e\in\delta(i)}x_e=2$；SEC 为 $x(E(S))\le|S|-1$。由于每条 tour 的每条边被两个方向各算一次，STSP 的 LP 松弛常写成“2-factor”：每个点度 2，可能是多个环。</p>
+<p><strong>MTZ 模型</strong>用辅助序变量 $u_i$ 消子回路：对 $i,j\ne1$，</p>
+$$u_i-u_j+n x_{ij}\le n-1,\qquad 2\le u_i\le n-1.$$
+<p>它只需 $O(n^2)$ 条约束，但 LP 界很弱：$x$ 可以取 $1/n$ 之类的分数而 $u$ 仍可行。DFJ 的约束数指数，但 LP 界强得多；现代求解器用 DFJ + 按需分离，而不是 MTZ。</p>
+
+<h3><span class="sn">15.2</span>松弛：指派与 1-tree</h3>
+<p><strong>指派松弛</strong>：丢掉 SEC，得到 ATSP 的指派问题，$Z_{ASS}\le Z_{TSP}$。它可用匈牙利 $O(n^3)$ 求解；解可能是多个环。对随机距离，指派界通常离最优 20–40%，不够紧。</p>
+<p><strong>1-tree 松弛</strong>：对称 TSP 中，任一条 tour 由节点 1 的两条边加上 $\{2,\dots,n\}$ 上的一条路径组成；路径是树的特例。于是</p>
+$$Z_{1\text{-}tree}=\min\left\{\sum_{e\in T}c_e:T\ \text{is a 1-tree}\right\}\le Z_{STSP}.$$
+<p>1-tree 的求法：先求 $\{2,\dots,n\}$ 的最小生成树，再加与节点 1 相连的最便宜两条边；$O(n^2)$（Prim）。它对 tour 的约束只差“每个点度 2”，所以界比指派紧。</p>
+<p><strong>Held–Karp 界</strong>：给每个节点 $i$ 一个势 $\pi_i$，把边权改成 $c_{ij}+\pi_i+\pi_j$；任何 tour 的势和是 $2\sum_i\pi_i$，减去它不改变 tour 的相对顺序。对每个 $\pi$ 求 1-tree，得到</p>
+$$Z_{HK}=\max_{\pi}\left\{Z_{1\text{-}tree}(c+\pi)-2\sum_i\pi_i\right\}\le Z_{STSP}.$$
+<p>这就是拉格朗日松弛（第 10 章）：把“度 = 2”约束对偶化，子问题是 1-tree。用次梯度 $g_i=2-\deg_T(i)$ 更新 $\pi$，步长按 $\mu_k=\epsilon_k(Z_{HK}-W)/\|g\|^2$。Held–Karp 界通常离最优 1–2%，是 TSP 最著名的组合界。</p>
+
+<h3><span class="sn">15.3</span>启发式：从 54 到 46</h3>
+<p>用第 2 章的 6 城市对称实例（只给上三角）：$c_{12}=9,c_{13}=2,c_{14}=8,c_{15}=12,c_{16}=11$；$c_{23}=7,c_{24}=19,c_{25}=10,c_{26}=32$；$c_{34}=29,c_{35}=18,c_{36}=6$；$c_{45}=24,c_{46}=3$；$c_{56}=19$。</p>
+<p><strong>贪心</strong>按边权升序加边，保持度 $\le2$ 且不提前成环：选 $(1,3)=2$、$(4,6)=3$、$(3,6)=6$、$(1,2)=9$、$(2,5)=10$、$(4,5)=24$，得到 $1\to3\to6\to4\to5\to2\to1$，长度 $2+6+3+24+10+9=54$。</p>
+<p><strong>2-opt</strong>：删两条边 $(a,b)$、$(c,d)$，把中间段反转，改成 $(a,c)$、$(b,d)$；若变短就接受。对上面的 54 长 tour，第一步反转 $5,2$ 这一段，得到 $1\to3\to6\to4\to2\to5\to1$：去掉 $(4,5)=24$、$(2,1)=9$，加入 $(4,2)=19$、$(5,1)=12$，长度 $54-24-9+19+12=52$。第二步反转 $3,6,4$ 这一段，得到 $1\to4\to6\to3\to2\to5\to1$：去掉 $(1,3)=2$、$(4,2)=19$，加入 $(1,4)=8$、$(3,2)=7$，长度 $52-2-19+8+7=46$。两步都严格改进，且 46 就是全局最优。3-opt（删三条边）或 Lin–Kernighan（变深度）能在更大邻域里更快到达，但 2-opt 已经把这个实例从贪心的 $17.4\%$ 误差降到 $0$。</p>
+<p><strong>最近邻</strong>：从某点出发，每次去最近的未访问城市。它可能一开始很便宜，最后一条回边很贵；最坏情况可比最优长 $O(\log n)$ 倍（度量 TSP），实际通常 15–25%。</p>
+<p>精确枚举 6 城市：固定起点 1，共 $5!=120$ 条 tour；最优是 $1\to4\to6\to3\to2\to5\to1$，长度 46。贪心 54，相对误差 $17.4\%$；2-opt 两步从 54 降到 52、再降到 46，正好到最优。</p>
+
+<h3><span class="sn">15.4</span>Branch-and-cut：割与分支的节奏</h3>
+<ol>
+<li><strong>根节点</strong>：解度约束 LP（2-factor）。若解是一个 tour，结束；否则得到若干环。</li>
+<li><strong>分离子回路</strong>：在支撑图上找最小割。对称情形：把 $x^\ast_e$ 当容量，求全局最小割；若割值 $&lt;2$，对应 $S$ 的 SEC 被违反。最小割用 Stoer–Wagner 或最大流，$O(n^3)$ 级。</li>
+<li><strong>加割</strong>：加入所有违反的 SEC（可能几十条），重解 LP。重复直到无违反。</li>
+<li><strong>分支</strong>：若 $x^\ast$ 仍分数，选一条分数边分支 $x_e=0/1$；子节点继承割池。</li>
+<li><strong>更强的割</strong>：comb（梳子）、clique tree、blossom 等；它们能进一步抬高根界，但分离更难。</li>
+</ol>
+<p>原书 §9.5 的“广义子回路”正是这一步的推广：在固定某些边后，子回路约束可以写成 $x(E(S))+x(T)\le|S|-(|T|+1)/2$ 等形式。TSP 的 branch-and-cut 是这一思路最成功的应用：Concorde 用它精确求解了 85,900 城市的实例（2006 年），根界通常只差最优 0.1–1%。</p>
+<p>复杂度：TSP 是 NP-hard；度量 TSP 有 Christofides 的 $3/2$ 近似（以及后续改进），一般 TSP 没有常数比近似（除非 $P=NP$）。branch-and-cut 的最坏情况指数，但实际实例的割结构极强，常能在根节点或浅树解决。</p>
+
+<p class="small"><strong>全章结果速查表</strong>（复习索引，不替代正文）</p>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>组件</th><th>模型/算法</th><th>复杂度</th><th>界/保证</th></tr></thead>
+<tbody>
+<tr><td class="id">DFJ</td><td>度约束 + SEC</td><td>SEC 指数，需分离</td><td>LP 界强</td></tr>
+<tr><td class="id">MTZ</td><td>$u_i-u_j+nx_{ij}\le n-1$</td><td>$O(n^2)$ 约束</td><td>LP 界弱</td></tr>
+<tr><td class="id">指派松弛</td><td>匈牙利</td><td>$O(n^3)$</td><td>下界，可能多环</td></tr>
+<tr><td class="id">1-tree</td><td>MST + 两条边</td><td>$O(n^2)$</td><td>比指派紧</td></tr>
+<tr><td class="id">Held–Karp</td><td>1-tree + 次梯度</td><td>每轮 $O(n^2)$</td><td>通常差 1–2%</td></tr>
+<tr><td class="id">最近邻</td><td>贪心路径</td><td>$O(n^2)$</td><td>无常数比保证</td></tr>
+<tr><td class="id">2-opt</td><td>删两边重连</td><td>$O(n^2)$/轮</td><td>局部最优</td></tr>
+<tr><td class="id">branch-and-cut</td><td>SEC 分离 + 分支</td><td>指数最坏</td><td>精确</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">TSP 的四个坑</span></div>
+<div class="thm-body">
+<p><strong>1. 只用度约束。</strong> 度约束的 LP 解是 2-factor，可能是多个环；不加 SEC，得到的“tour”根本不相连。</p>
+<p><strong>2. 用 MTZ 代替 DFJ 求强界。</strong> MTZ 紧凑但 LP 界很弱；要强界必须用 SEC 分离，或 1-tree/Held–Karp。</p>
+<p><strong>3. 2-opt 陷入局部最优就停。</strong> 2-opt 的局部最优可能比最优长 5%；要 3-opt、Lin–Kernighan 或扰动重启。</p>
+<p><strong>4. 把 Held–Karp 界当可行解。</strong> 1-tree 通常不是 tour（有点度 $&gt;2$ 或 $&lt;2$）；它只是下界，不能直接输出。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="summary" class="chapter">
+<div class="wrap">
+<div class="sec-label">Wrap-up · Algorithm Selection</div>
+<h2><span class="num">F</span>算法选择：一张图、十条戒律</h2>
+<p class="lede">整数规划没有“万能算法”，只有“匹配”：匹配问题的结构、匹配你能付出的时间、匹配你要的证明强度。</p>
+<div class="chap-intro"><p>这一节把全书 14 章压成三张表：按结构选算法、按界选松弛、按失败模式排查。它不是正文的替代，而是你合上书之后还能记住的那一页。所有选择都围绕三个问题：LP 界够不够紧？子问题是否真的容易？我能不能证明最优？</p><span class="tag">Ch 1 – 14 · 全书中枢</span></div>
+
+<h3><span class="sn">F.1</span>先问五个问题</h3>
+<ol>
+<li><strong>变量是什么？</strong> 0–1、整数、连续混合，还是排列/集合？变量类型决定模型语言。</li>
+<li><strong>LP 松弛长什么样？</strong> 解一次 LP，看分数模式；若 LP 全整数，检查是否全幺模/网络结构。</li>
+<li><strong>有没有块结构？</strong> 按时间、场景、机器、客户分块？有则考虑 Lagrangian、列生成、Benders。</li>
+<li><strong>要精确还是近似？</strong> 精确要界与证书；近似要时间与质量，必须报告 gap。</li>
+<li><strong>失败模式是什么？</strong> 根界太松、找不到可行解、树太大、数值病态——分别对应割、启发式、分支策略、scaling。</li>
+</ol>
+
+<h3><span class="sn">F.2</span>按结构选算法</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>结构/问题</th><th>首选</th><th>备选</th><th>关键界/复杂度</th><th>别用</th></tr></thead>
+<tbody>
+<tr><td class="id">全幺模 / 网络流</td><td>网络单纯形、Dijkstra、Dinic</td><td>通用 LP</td><td>LP 自动整数；$O(m\log n)$ 起</td><td>分支定界（浪费）</td></tr>
+<tr><td class="id">指派 / 匹配</td><td>匈牙利、blossom</td><td>LP + 奇集割</td><td>$O(n^3)$</td><td>MTZ 式紧凑化</td></tr>
+<tr><td class="id">ULS / 树 / 最短路</td><td>动态规划</td><td>最短路扩展图</td><td>$O(n^2)$ / $O(n)$</td><td>通用 MIP（慢）</td></tr>
+<tr><td class="id">0–1 背包</td><td>DP $O(nb)$ / 分支定界</td><td>贪心 + 核</td><td>NP-hard；贪心比 $1/2$</td><td>纯枚举</td></tr>
+<tr><td class="id">集合覆盖</td><td>branch-and-cut + 贪心</td><td>列生成</td><td>贪心 $H(n)$</td><td>只取整 LP</td></tr>
+<tr><td class="id">TSP</td><td>branch-and-cut + SEC</td><td>Held–Karp + 2-opt</td><td>HK 界差 1–2%</td><td>MTZ 求强界</td></tr>
+<tr><td class="id">UFL / 固定费用</td><td>强 formulation + B&amp;C</td><td>Lagrangian / Benders</td><td>弱模型界可差 50%</td><td>弱模型硬解</td></tr>
+<tr><td class="id">多周期批量</td><td>ULS/CLS 割 + B&amp;C</td><td>列生成</td><td>(14.1) 族 facet</td><td>大 $M$ 模型</td></tr>
+<tr><td class="id">块对角 / 场景</td><td>Benders / 多割</td><td>Lagrangian</td><td>子问题 LP</td><td>整体硬解</td></tr>
+<tr><td class="id">列数指数</td><td>列生成 / branch-and-price</td><td>Lagrangian</td><td>定价子问题</td><td>枚举所有列</td></tr>
+<tr><td class="id">只求好解</td><td>feasibility pump / RINS</td><td>tabu / SA / GA</td><td>无证书</td><td>声称最优</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">F.3</span>按“症状”排查</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>症状</th><th>最可能原因</th><th>先做什么</th><th>再做什么</th></tr></thead>
+<tbody>
+<tr><td class="id">根界离最优很远</td><td>弱 formulation / 大 $M$</td><td>加链接约束、紧上界</td><td>加 cover/MIR/GMI 割</td></tr>
+<tr><td class="id">找不到可行解</td><td>约束太紧 / 模型错</td><td>presolve、feasibility pump</td><td>放宽/修复、检查逻辑</td></tr>
+<tr><td class="id">树爆炸</td><td>分支变量差 / 对称性</td><td>伪成本、强分支</td><td>加对称破缺、割</td></tr>
+<tr><td class="id">每节点 LP 很慢</td><td>割太多/太密</td><td>减少割、稀疏化</td><td>换分解、热启动</td></tr>
+<tr><td class="id">数值失败</td><td>系数差 $10^9$、容差</td><td>scaling、紧 $M$</td><td>换求解器交叉验证</td></tr>
+<tr><td class="id">解忽好忽坏</td><td>启发式随机性</td><td>固定随机种子、多次跑</td><td>报告均值/方差</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">F.4</span>十条戒律</h3>
+<ol>
+<li><strong>先建模，后算法。</strong> 变量与约束选错，任何求解器都救不了。</li>
+<li><strong>所有 $M$ 都要有推导上界。</strong> 大 $M$ 是 LP 松弛的头号杀手。</li>
+<li><strong>先解 LP，再看分数模式。</strong> 分数变量告诉你该加什么割、该分什么支。</li>
+<li><strong>能识别结构就别通用求解。</strong> 网络、匹配、ULS 有专用算法，快几个数量级。</li>
+<li><strong>松弛要为“可解”服务。</strong> 拉格朗日/列生成的子问题必须真的容易。</li>
+<li><strong>割是收紧，不是替代分支。</strong> 纯割在浮点下可能不终止。</li>
+<li><strong>分支要选“真分数”的变量。</strong> 分支无效比分支慢更可怕。</li>
+<li><strong>启发式必须报告 gap。</strong> 没有对偶界的“最优”只是“最好找到”。</li>
+<li><strong>分解看块结构。</strong> 时间、场景、机器、客户分块，往往就是 Lagrangian/Benders/列生成的入口。</li>
+<li><strong>数值与可复现性是工程问题。</strong> 固定种子、记录版本、交叉验证；不要用一次运行下结论。</li>
+</ol>
+
+<h3><span class="sn">F.5</span>英中术语对照（按出现顺序）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>English</th><th>中文</th><th>章节</th></tr></thead>
+<tbody>
+<tr><td class="id">integer programming</td><td>整数规划</td><td>Ch 1</td></tr>
+<tr><td class="id">formulation</td><td>模型/表述</td><td>Ch 1</td></tr>
+<tr><td class="id">budget</td><td>预算</td><td>Ch 1</td></tr>
+<tr><td class="id">assignment</td><td>指派</td><td>Ch 1, 4</td></tr>
+<tr><td class="id">knapsack</td><td>背包</td><td>Ch 1, 5</td></tr>
+<tr><td class="id">set covering</td><td>集合覆盖</td><td>Ch 1, 9</td></tr>
+<tr><td class="id">set packing</td><td>集合包装</td><td>Ch 1</td></tr>
+<tr><td class="id">traveling salesman (TSP)</td><td>旅行商问题</td><td>Ch 1, 15</td></tr>
+<tr><td class="id">facility location</td><td>设施选址</td><td>Ch 1, 10</td></tr>
+<tr><td class="id">lot sizing</td><td>批量生产</td><td>Ch 1, 5, 14</td></tr>
+<tr><td class="id">fixed charge</td><td>固定费用</td><td>Ch 1</td></tr>
+<tr><td class="id">depot</td><td>仓库</td><td>Ch 1</td></tr>
+<tr><td class="id">client</td><td>客户</td><td>Ch 1</td></tr>
+<tr><td class="id">centers</td><td>中心</td><td>Ch 1</td></tr>
+<tr><td class="id">schedule</td><td>排程</td><td>Ch 1</td></tr>
+<tr><td class="id">workers</td><td>工人</td><td>Ch 1</td></tr>
+<tr><td class="id">LP relaxation</td><td>线性松弛</td><td>Ch 2</td></tr>
+<tr><td class="id">bounds</td><td>界</td><td>Ch 2</td></tr>
+<tr><td class="id">duality gap</td><td>对偶间隙</td><td>Ch 2</td></tr>
+<tr><td class="id">totally unimodular</td><td>全幺模</td><td>Ch 3</td></tr>
+<tr><td class="id">network flow</td><td>网络流</td><td>Ch 3</td></tr>
+<tr><td class="id">shortest path</td><td>最短路</td><td>Ch 3</td></tr>
+<tr><td class="id">maximum flow</td><td>最大流</td><td>Ch 3</td></tr>
+<tr><td class="id">minimum cut</td><td>最小割</td><td>Ch 3</td></tr>
+<tr><td class="id">spanning tree</td><td>生成树</td><td>Ch 3</td></tr>
+<tr><td class="id">matroid</td><td>拟阵</td><td>Ch 3</td></tr>
+<tr><td class="id">submodular</td><td>子模</td><td>Ch 3</td></tr>
+<tr><td class="id">cycle</td><td>环</td><td>Ch 3, 15</td></tr>
+<tr><td class="id">separation</td><td>分离</td><td>Ch 3, 6</td></tr>
+<tr><td class="id">matching</td><td>匹配</td><td>Ch 4</td></tr>
+<tr><td class="id">bipartite</td><td>二部图</td><td>Ch 4</td></tr>
+<tr><td class="id">cardinality</td><td>基数</td><td>Ch 4</td></tr>
+<tr><td class="id">augmenting path</td><td>增广路</td><td>Ch 4</td></tr>
+<tr><td class="id">dynamic programming</td><td>动态规划</td><td>Ch 5</td></tr>
+<tr><td class="id">pseudo-polynomial</td><td>伪多项式</td><td>Ch 5</td></tr>
+<tr><td class="id">periods</td><td>周期</td><td>Ch 5</td></tr>
+<tr><td class="id">complexity</td><td>复杂性</td><td>Ch 6</td></tr>
+<tr><td class="id">NP-hard</td><td>NP 难</td><td>Ch 6</td></tr>
+<tr><td class="id">approximation ratio</td><td>近似比</td><td>Ch 6</td></tr>
+<tr><td class="id">reduction</td><td>归约</td><td>Ch 6</td></tr>
+<tr><td class="id">class</td><td>类</td><td>Ch 6</td></tr>
+<tr><td class="id">analysis</td><td>分析</td><td>Ch 6</td></tr>
+<tr><td class="id">difficulty</td><td>难度</td><td>Ch 6</td></tr>
+<tr><td class="id">dimensional</td><td>维数</td><td>Ch 6</td></tr>
+<tr><td class="id">extended formulation</td><td>扩展模型</td><td>Ch 6</td></tr>
+<tr><td class="id">branch and bound</td><td>分支定界</td><td>Ch 7</td></tr>
+<tr><td class="id">incumbent</td><td>当前最好可行解</td><td>Ch 7</td></tr>
+<tr><td class="id">presolve</td><td>预求解</td><td>Ch 7, 14</td></tr>
+<tr><td class="id">iteration</td><td>迭代</td><td>Ch 7, 13</td></tr>
+<tr><td class="id">cutting plane</td><td>割平面</td><td>Ch 8</td></tr>
+<tr><td class="id">valid inequality</td><td>合法不等式</td><td>Ch 8</td></tr>
+<tr><td class="id">coefficients</td><td>系数</td><td>Ch 8</td></tr>
+<tr><td class="id">facet</td><td>面</td><td>Ch 9</td></tr>
+<tr><td class="id">cover</td><td>覆盖</td><td>Ch 9</td></tr>
+<tr><td class="id">lifting</td><td>提升</td><td>Ch 9</td></tr>
+<tr><td class="id">flow cover</td><td>流覆盖</td><td>Ch 9</td></tr>
+<tr><td class="id">subtour</td><td>子回路</td><td>Ch 9, 15</td></tr>
+<tr><td class="id">branch-and-cut</td><td>分支割</td><td>Ch 9</td></tr>
+<tr><td class="id">Lagrangian relaxation</td><td>拉格朗日松弛</td><td>Ch 10</td></tr>
+<tr><td class="id">subgradient</td><td>次梯度</td><td>Ch 10</td></tr>
+<tr><td class="id">column generation</td><td>列生成</td><td>Ch 11</td></tr>
+<tr><td class="id">Dantzig-Wolfe</td><td>Dantzig–Wolfe 重写</td><td>Ch 11</td></tr>
+<tr><td class="id">master problem</td><td>主问题</td><td>Ch 11</td></tr>
+<tr><td class="id">pricing</td><td>定价</td><td>Ch 11</td></tr>
+<tr><td class="id">columns</td><td>列</td><td>Ch 11</td></tr>
+<tr><td class="id">branch-and-price</td><td>分支定价</td><td>Ch 11</td></tr>
+<tr><td class="id">Benders decomposition</td><td>Benders 分解</td><td>Ch 12</td></tr>
+<tr><td class="id">feasibility cut</td><td>可行性割</td><td>Ch 12</td></tr>
+<tr><td class="id">optimality cut</td><td>最优性割</td><td>Ch 12</td></tr>
+<tr><td class="id">heuristic</td><td>启发式</td><td>Ch 13</td></tr>
+<tr><td class="id">tabu search</td><td>禁忌搜索</td><td>Ch 13</td></tr>
+<tr><td class="id">simulated annealing</td><td>模拟退火</td><td>Ch 13</td></tr>
+<tr><td class="id">genetic algorithm</td><td>遗传算法</td><td>Ch 13</td></tr>
+<tr><td class="id">feasibility pump</td><td>可行性泵</td><td>Ch 13</td></tr>
+<tr><td class="id">local branching</td><td>局部分支</td><td>Ch 13</td></tr>
+<tr><td class="id">RINS</td><td>松弛诱导邻域搜索</td><td>Ch 13</td></tr>
+<tr><td class="id">swap</td><td>交换</td><td>Ch 13</td></tr>
+<tr><td class="id">changeover</td><td>换型</td><td>Ch 14</td></tr>
+<tr><td class="id">multiplexer</td><td>复接器</td><td>Ch 14</td></tr>
+<tr><td class="id">detail</td><td>细节</td><td>Ch 14</td></tr>
+<tr><td class="id">item</td><td>物品/项目</td><td>Ch 5, 13</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="intuition">
+<div class="ih">◆ 最后一句话</div>
+<p>整数规划的“精确”不是把 $2^n$ 个点都看一遍，而是用<strong>松弛</strong>给出界、用<strong>结构</strong>给出割、用<strong>分解</strong>把大问题拆小、用<strong>搜索</strong>处理剩下的歧义。四件事各司其职，缺一不可。</p>
+</div>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>章节</th><th>一句话</th><th>最该记住的公式/数字</th></tr></thead>
+<tbody>
+<tr><td class="id">Ch 1</td><td>建模决定上限</td><td>$\mathrm{conv}(X)$；UFL 弱/强模型</td></tr>
+<tr><td class="id">Ch 2</td><td>界夹逼证明最优</td><td>$\underline{Z}\le Z\le\overline{Z}$；LP 界</td></tr>
+<tr><td class="id">Ch 3</td><td>TU 让 LP 自动整数</td><td>$\det B=\pm1$；max-flow = min-cut</td></tr>
+<tr><td class="id">Ch 4</td><td>增广路 + 对偶势</td><td>$|M|=|R|$；$O(n^3)$ 匈牙利</td></tr>
+<tr><td class="id">Ch 5</td><td>状态压缩枚举</td><td>ULS $O(n^2)$；背包 $O(nb)$</td></tr>
+<tr><td class="id">Ch 6</td><td>难度边界</td><td>NP-hard；近似比 $1/2,2,3/2$</td></tr>
+<tr><td class="id">Ch 7</td><td>分支 + 剪枝</td><td>三种剪枝；节点 LP 热启动</td></tr>
+<tr><td class="id">Ch 8</td><td>割掉分数点</td><td>CG、Gomory、MIR、GMI</td></tr>
+<tr><td class="id">Ch 9</td><td>结构割最强</td><td>cover、flow cover、subtour</td></tr>
+<tr><td class="id">Ch 10</td><td>难约束变价格</td><td>$W_{LD}=\max_{x\in\mathrm{conv}(X)}$</td></tr>
+<tr><td class="id">Ch 11</td><td>只生成有用的列</td><td>定价 $\zeta=\max(c-\pi A)z-\pi_0$</td></tr>
+<tr><td class="id">Ch 12</td><td>投影掉连续变量</td><td>可行性割 / 最优性割</td></tr>
+<tr><td class="id">Ch 13</td><td>先有解再优化</td><td>pump、RINS、local branching</td></tr>
+<tr><td class="id">Ch 14</td><td>工程顺序</td><td>建模 → presolve → 割 → 分解</td></tr>
+</tbody>
+</table>
 </div>
 </div>
 </section>
@@ -1589,7 +2122,7 @@ else:
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 Laurence A. Wolsey 的《Integer Programming》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1597,7 +2130,7 @@ else:
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>8 章 · 360 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
@@ -1787,7 +2320,8 @@ window.MathJax = {
       norm: ['{\\left\\|#1\\right\\|}', 1], abs: ['{\\left|#1\\right|}', 1],
       loc: '{\\mathrm{loc}}', dist: '{\\operatorname{dist}}', spt: '{\\operatorname{spt}}',
       osc: '{\\operatorname{osc}}', dH: '{d_H}', pa: '{\\partial}',
-      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}'
+      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}',
+      boldsymbol: ['{\\mathbf{#1}}', 1], bm: ['{\\mathbf{#1}}', 1]
     }
   },
   svg: { fontCache: 'local', scale: 1.02 },

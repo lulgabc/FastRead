@@ -1,84 +1,30 @@
 [
   {
-    "file": "Absolute-FreeBSD-Tutorial.html",
-    "title": "Absolute FreeBSD",
-    "subtitle": "The Complete Guide to FreeBSD",
-    "author": "Michael W. Lucas",
-    "pages": 708,
-    "category": "系统 · 数据 · 网络",
-    "batch": "Books"
+    "file": "Game-Theory-Tutorial.html",
+    "title": "An Introductory Course on Mathematical Game Theory and Applications",
+    "subtitle": "",
+    "author": "Julio González-Díaz, Ignacio García-Jurado & M. Gloria Fiestras-Janeiro",
+    "pages": 432,
+    "category": "优化 · 金融 · 概率",
+    "batch": "Books2"
   },
   {
-    "file": "Black-Hat-Python-Tutorial.html",
-    "title": "Black Hat Python",
-    "subtitle": "Python Programming for Hackers and Pentesters",
-    "author": "Justin Seitz & Tim Arnold",
-    "pages": 217,
-    "category": "安全 · 二进制 · 逆向",
-    "batch": "Books"
+    "file": "Financial-Mathematics-Tutorial.html",
+    "title": "Financial Mathematics",
+    "subtitle": "A Comprehensive Treatment",
+    "author": "Giuseppe Campolieti & Roman N. Makarov",
+    "pages": 826,
+    "category": "优化 · 金融 · 概率",
+    "batch": "Books2"
   },
   {
-    "file": "Build-a-Large-Language-Model-Tutorial.html",
-    "title": "Build a Large Language Model",
-    "subtitle": "From Scratch",
-    "author": "Sebastian Raschka",
-    "pages": 370,
-    "category": "机器学习 · 语言模型",
-    "batch": "Books"
-  },
-  {
-    "file": "Concrete-Mathematics-Tutorial.html",
-    "title": "Concrete Mathematics",
-    "subtitle": "A Foundation for Computer Science",
-    "author": "Graham, Knuth & Patashnik",
-    "pages": 690,
-    "category": "数学 · 分析与代数",
-    "batch": "Books"
-  },
-  {
-    "file": "Deep-Learning-with-PyTorch-Tutorial.html",
-    "title": "Deep Learning with PyTorch",
-    "subtitle": "Training and Applying Deep Learning and Generative AI",
-    "author": "Howard Huang et al.",
-    "pages": 546,
-    "category": "机器学习 · 语言模型",
-    "batch": "Books"
-  },
-  {
-    "file": "Deep-Learning-with-Python-Tutorial.html",
-    "title": "Deep Learning with Python",
-    "subtitle": "Third Edition",
-    "author": "François Chollet & Matthew Watson",
-    "pages": 650,
-    "category": "机器学习 · 语言模型",
-    "batch": "Books"
-  },
-  {
-    "file": "Designing-Data-Intensive-Applications-Tutorial.html",
-    "title": "Designing Data-Intensive Applications",
-    "subtitle": "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
-    "author": "Martin Kleppmann & Chris Riccomini",
-    "pages": 673,
-    "category": "系统 · 数据 · 网络",
-    "batch": "Books"
-  },
-  {
-    "file": "Formal-Reasoning-About-Programs-Tutorial.html",
-    "title": "Formal Reasoning About Programs",
-    "subtitle": "Verifying Software with Proof Assistants",
-    "author": "Adam Chlipala",
-    "pages": 160,
-    "category": "逻辑 · 形式方法 · 理论计算机",
-    "batch": "Books"
-  },
-  {
-    "file": "Grokking-AI-Algorithms-Tutorial.html",
-    "title": "Grokking AI Algorithms",
-    "subtitle": "How AI Solves Complex Problems",
-    "author": "Rishal Hurbans",
-    "pages": 594,
-    "category": "机器学习 · 语言模型",
-    "batch": "Books"
+    "file": "Stochastic-Filtering-Tutorial.html",
+    "title": "Fundamentals of Stochastic Filtering",
+    "subtitle": "",
+    "author": "Alan Bain & Dan Crisan",
+    "pages": 395,
+    "category": "优化 · 金融 · 概率",
+    "batch": "Books2"
   },
   {
     "file": "Integer-Programming-Tutorial.html",
@@ -90,48 +36,39 @@
     "batch": "Books"
   },
   {
-    "file": "Logic-in-Computer-Science-Tutorial.html",
-    "title": "Logic in Computer Science",
-    "subtitle": "Modelling and Reasoning about Systems",
-    "author": "Michael Huth & Mark Ryan",
-    "pages": 556,
-    "category": "逻辑 · 形式方法 · 理论计算机",
-    "batch": "Books"
+    "file": "Linear-Convex-Optimization-Tutorial.html",
+    "title": "Linear and Convex Optimization",
+    "subtitle": "",
+    "author": "Michael H. Veatch",
+    "pages": 387,
+    "category": "优化 · 金融 · 概率",
+    "batch": "Books2"
   },
   {
-    "file": "Linear-Algebra-Vision-Robotics-ML-Tutorial.html",
-    "title": "Linear Algebra for Computer Vision, Robotics, and Machine Learning",
-    "subtitle": "A Geometric and Computational Introduction",
-    "author": "Jean Gallier & Jocelyn Quaintance",
-    "pages": 788,
-    "category": "数学 · 分析与代数",
-    "batch": "Books"
+    "file": "Portfolio-Theory-Arbitrage-Tutorial.html",
+    "title": "Portfolio Theory and Arbitrage",
+    "subtitle": "A Course in Mathematical Finance",
+    "author": "Ioannis Karatzas & Constantinos Kardaras",
+    "pages": 328,
+    "category": "优化 · 金融 · 概率",
+    "batch": "Books2"
   },
   {
-    "file": "Little-Book-of-Semaphores-Tutorial.html",
-    "title": "The Little Book of Semaphores",
-    "subtitle": "Classic Synchronization Problems in Python",
-    "author": "Allen B. Downey",
-    "pages": 291,
-    "category": "系统 · 数据 · 网络",
-    "batch": "Books"
+    "file": "Probability-and-Computing-Tutorial.html",
+    "title": "Probability and Computing",
+    "subtitle": "",
+    "author": "Randomization and Probabilistic Techniques in Algorithms and Data Analysis",
+    "pages": 490,
+    "category": "优化 · 金融 · 概率",
+    "batch": "Books2"
   },
   {
-    "file": "Logic-for-Programmers-Tutorial.html",
-    "title": "Logic for Programmers",
-    "subtitle": "Practical Logic for Working Developers",
-    "author": "Hillel Wayne",
-    "pages": 150,
-    "category": "逻辑 · 形式方法 · 理论计算机",
-    "batch": "Books"
-  },
-  {
-    "file": "Numerical-Methods-for-Engineers-Tutorial.html",
-    "title": "Numerical Methods for Engineers",
-    "subtitle": "Eighth Edition",
-    "author": "Steven C. Chapra & Raymond P. Canale",
-    "pages": 1006,
-    "category": "数值计算 · 工程",
+    "file": "Black-Hat-Python-Tutorial.html",
+    "title": "Black Hat Python",
+    "subtitle": "Python Programming for Hackers and Pentesters",
+    "author": "Justin Seitz & Tim Arnold",
+    "pages": 217,
+    "category": "安全 · 二进制 · 逆向",
     "batch": "Books"
   },
   {
@@ -150,6 +87,24 @@
     "author": "Bruce Dang, Alexandre Gazet & Elias Bachaalany",
     "pages": 383,
     "category": "安全 · 二进制 · 逆向",
+    "batch": "Books"
+  },
+  {
+    "file": "Car-Hackers-Handbook-Tutorial.html",
+    "title": "The Car Hacker’s Handbook",
+    "subtitle": "A Guide for the Penetration Tester",
+    "author": "Craig Smith",
+    "pages": 306,
+    "category": "安全 · 二进制 · 逆向",
+    "batch": "Books3"
+  },
+  {
+    "file": "Numerical-Methods-for-Engineers-Tutorial.html",
+    "title": "Numerical Methods for Engineers",
+    "subtitle": "Eighth Edition",
+    "author": "Steven C. Chapra & Raymond P. Canale",
+    "pages": 1006,
+    "category": "数值计算 · 工程",
     "batch": "Books"
   },
   {
@@ -180,51 +135,6 @@
     "batch": "Books"
   },
   {
-    "file": "Linear-Algebra-Golan-Tutorial.html",
-    "title": "Linear Algebra",
-    "subtitle": "A Beginning Graduate Student’s Guide",
-    "author": "Jonathan S. Golan",
-    "pages": 444,
-    "category": "数学 · 分析与代数",
-    "batch": "Books"
-  },
-  {
-    "file": "xv6-Tutorial.html",
-    "title": "xv6: A Simple, Unix-like Teaching Operating System",
-    "subtitle": "Processes, Memory, File Systems and System Calls",
-    "author": "Russ Cox, Frans Kaashoek & Robert Morris",
-    "pages": 116,
-    "category": "系统 · 数据 · 网络",
-    "batch": "Books"
-  },
-  {
-    "file": "Game-Theory-Tutorial.html",
-    "title": "An Introductory Course on Mathematical Game Theory and Applications",
-    "subtitle": "",
-    "author": "Julio González-Díaz, Ignacio García-Jurado & M. Gloria Fiestras-Janeiro",
-    "pages": 432,
-    "category": "优化 · 金融 · 概率",
-    "batch": "Books2"
-  },
-  {
-    "file": "Chicago-Price-Theory-Tutorial.html",
-    "title": "Chicago Price Theory",
-    "subtitle": "",
-    "author": "Sonia Jaffe, Robert Minton, Casey Mulligan & Kevin Murphy",
-    "pages": 457,
-    "category": "经济学",
-    "batch": "Books2"
-  },
-  {
-    "file": "Turing-Collected-Works-Tutorial.html",
-    "title": "Collected Works of A. M. Turing",
-    "subtitle": "",
-    "author": "A. M. Turing",
-    "pages": 307,
-    "category": "逻辑 · 形式方法 · 理论计算机",
-    "batch": "Books2"
-  },
-  {
     "file": "Turing-Morphogenesis-Tutorial.html",
     "title": "Collected Works of Alan M. Turing, Vol. 3: Morphogenesis",
     "subtitle": "",
@@ -234,40 +144,13 @@
     "batch": "Books2"
   },
   {
-    "file": "Decision-Procedures-Tutorial.html",
-    "title": "Decision Procedures",
-    "subtitle": "An Algorithmic Point of View",
-    "author": "Daniel Kroening & Ofer Strichman",
-    "pages": 369,
-    "category": "逻辑 · 形式方法 · 理论计算机",
-    "batch": "Books2"
-  },
-  {
-    "file": "Domain-Specific-SLMs-Tutorial.html",
-    "title": "Domain-Specific Small Language Models",
-    "subtitle": "Efficient AI for Local Deployment",
-    "author": "Guglielmo Iozzia",
-    "pages": 376,
-    "category": "机器学习 · 语言模型",
-    "batch": "Books2"
-  },
-  {
-    "file": "Financial-Mathematics-Tutorial.html",
-    "title": "Financial Mathematics",
-    "subtitle": "A Comprehensive Treatment",
-    "author": "Giuseppe Campolieti & Roman N. Makarov",
-    "pages": 826,
-    "category": "优化 · 金融 · 概率",
-    "batch": "Books2"
-  },
-  {
-    "file": "Formal-Methods-Appetizer-Tutorial.html",
-    "title": "Formal Methods: An Appetizer",
-    "subtitle": "",
-    "author": "Flemming Nielson & Hanne Riis Nielson",
-    "pages": 171,
-    "category": "逻辑 · 形式方法 · 理论计算机",
-    "batch": "Books2"
+    "file": "Concrete-Mathematics-Tutorial.html",
+    "title": "Concrete Mathematics",
+    "subtitle": "A Foundation for Computer Science",
+    "author": "Graham, Knuth & Patashnik",
+    "pages": 690,
+    "category": "数学 · 分析与代数",
+    "batch": "Books"
   },
   {
     "file": "Fourier-Analysis-Tutorial.html",
@@ -276,15 +159,6 @@
     "author": "Loukas Grafakos",
     "pages": 416,
     "category": "数学 · 分析与代数",
-    "batch": "Books2"
-  },
-  {
-    "file": "Stochastic-Filtering-Tutorial.html",
-    "title": "Fundamentals of Stochastic Filtering",
-    "subtitle": "",
-    "author": "Alan Bain & Dan Crisan",
-    "pages": 395,
-    "category": "优化 · 金融 · 概率",
     "batch": "Books2"
   },
   {
@@ -297,13 +171,193 @@
     "batch": "Books2"
   },
   {
-    "file": "Linear-Convex-Optimization-Tutorial.html",
-    "title": "Linear and Convex Optimization",
+    "file": "Linear-Algebra-Golan-Tutorial.html",
+    "title": "Linear Algebra",
+    "subtitle": "A Beginning Graduate Student’s Guide",
+    "author": "Jonathan S. Golan",
+    "pages": 444,
+    "category": "数学 · 分析与代数",
+    "batch": "Books"
+  },
+  {
+    "file": "Linear-Algebra-Vision-Robotics-ML-Tutorial.html",
+    "title": "Linear Algebra for Computer Vision, Robotics, and Machine Learning",
+    "subtitle": "A Geometric and Computational Introduction",
+    "author": "Jean Gallier & Jocelyn Quaintance",
+    "pages": 788,
+    "category": "数学 · 分析与代数",
+    "batch": "Books"
+  },
+  {
+    "file": "Renormalization-Group-Tutorial.html",
+    "title": "The Renormalization Group and Condensed Matter Physics",
     "subtitle": "",
-    "author": "Michael H. Veatch",
-    "pages": 387,
-    "category": "优化 · 金融 · 概率",
+    "author": "David R. Nelson & Grace H. Zhang",
+    "pages": 329,
+    "category": "数学 · 分析与代数",
     "batch": "Books2"
+  },
+  {
+    "file": "Discrete-Morse-Theory-Tutorial.html",
+    "title": "Discrete Morse Theory",
+    "subtitle": "A combinatorial bridge between topology and algebra",
+    "author": "Nicholas A. Scoville",
+    "pages": 289,
+    "category": "数学 · 物理 · 理论",
+    "batch": "Books3"
+  },
+  {
+    "file": "Fashion-Faith-Fantasy-Tutorial.html",
+    "title": "Fashion, Faith, and Fantasy",
+    "subtitle": "In the New Physics of the Universe",
+    "author": "Roger Penrose",
+    "pages": 518,
+    "category": "数学 · 物理 · 理论",
+    "batch": "Books3"
+  },
+  {
+    "file": "Fly-by-Night-Physics-Tutorial.html",
+    "title": "Fly by Night Physics",
+    "subtitle": "How Physicists Use the Backs of Envelopes",
+    "author": "A. Zee",
+    "pages": 455,
+    "category": "数学 · 物理 · 理论",
+    "batch": "Books3"
+  },
+  {
+    "file": "General-Relativity-Tutorial.html",
+    "title": "General Relativity for the Gifted Amateur",
+    "subtitle": "A guided tour from Newton to black holes",
+    "author": "Stephen Blundell & Tom Lancaster",
+    "pages": 641,
+    "category": "数学 · 物理 · 理论",
+    "batch": "Books3"
+  },
+  {
+    "file": "Modern-Classical-Physics-Tutorial.html",
+    "title": "Modern Classical Physics",
+    "subtitle": "Optics, fluids, plasmas, elasticity, relativity and statistical physics",
+    "author": "Roger D. Blandford & Kip S. Thorne",
+    "pages": 1552,
+    "category": "数学 · 物理 · 理论",
+    "batch": "Books3"
+  },
+  {
+    "file": "Optimal-Transport-Tutorial.html",
+    "title": "Optimal Transport",
+    "subtitle": "Old and New",
+    "author": "Cédric Villani",
+    "pages": 997,
+    "category": "数学 · 物理 · 理论",
+    "batch": "Books3"
+  },
+  {
+    "file": "Symmetry-Shape-Space-Tutorial.html",
+    "title": "Symmetry, Shape and Space",
+    "subtitle": "An Introduction to Mathematics through Geometry",
+    "author": "L. Christine Kinsey & Teresa E. Moore",
+    "pages": 514,
+    "category": "数学 · 物理 · 理论",
+    "batch": "Books3"
+  },
+  {
+    "file": "Thermal-Physics-Tutorial.html",
+    "title": "Thermal Physics",
+    "subtitle": "An Introduction to Thermal Physics",
+    "author": "Daniel V. Schroeder",
+    "pages": 432,
+    "category": "数学 · 物理 · 理论",
+    "batch": "Books3"
+  },
+  {
+    "file": "Build-a-Large-Language-Model-Tutorial.html",
+    "title": "Build a Large Language Model",
+    "subtitle": "From Scratch",
+    "author": "Sebastian Raschka",
+    "pages": 370,
+    "category": "机器学习 · 语言模型",
+    "batch": "Books"
+  },
+  {
+    "file": "Deep-Learning-with-PyTorch-Tutorial.html",
+    "title": "Deep Learning with PyTorch",
+    "subtitle": "Training and Applying Deep Learning and Generative AI",
+    "author": "Howard Huang et al.",
+    "pages": 546,
+    "category": "机器学习 · 语言模型",
+    "batch": "Books"
+  },
+  {
+    "file": "Deep-Learning-with-Python-Tutorial.html",
+    "title": "Deep Learning with Python",
+    "subtitle": "Third Edition",
+    "author": "François Chollet & Matthew Watson",
+    "pages": 650,
+    "category": "机器学习 · 语言模型",
+    "batch": "Books"
+  },
+  {
+    "file": "Domain-Specific-SLMs-Tutorial.html",
+    "title": "Domain-Specific Small Language Models",
+    "subtitle": "Efficient AI for Local Deployment",
+    "author": "Guglielmo Iozzia",
+    "pages": 376,
+    "category": "机器学习 · 语言模型",
+    "batch": "Books2"
+  },
+  {
+    "file": "Grokking-AI-Algorithms-Tutorial.html",
+    "title": "Grokking AI Algorithms",
+    "subtitle": "How AI Solves Complex Problems",
+    "author": "Rishal Hurbans",
+    "pages": 594,
+    "category": "机器学习 · 语言模型",
+    "batch": "Books"
+  },
+  {
+    "file": "Why-Machines-Learn-Tutorial.html",
+    "title": "Why Machines Learn",
+    "subtitle": "The Elegant Maths Behind Modern AI",
+    "author": "Anil Ananthaswamy",
+    "pages": 433,
+    "category": "机器学习 · 语言模型",
+    "batch": "Books3"
+  },
+  {
+    "file": "Computable-Structure-Theory-Tutorial.html",
+    "title": "Computable Structure Theory",
+    "subtitle": "Computability, definability and algebraic structures",
+    "author": "Rod Downey",
+    "pages": 553,
+    "category": "理论 · 计算 · 逻辑",
+    "batch": "Books3"
+  },
+  {
+    "file": "Handbook-of-Satisfiability-Tutorial.html",
+    "title": "Handbook of Satisfiability",
+    "subtitle": "Theory, algorithms and applications of SAT",
+    "author": "Armin Biere, Marijn Heule & Hans van Maaren",
+    "pages": 1486,
+    "category": "理论 · 计算 · 逻辑",
+    "batch": "Books3"
+  },
+  {
+    "file": "Absolute-FreeBSD-Tutorial.html",
+    "title": "Absolute FreeBSD",
+    "subtitle": "The Complete Guide to FreeBSD",
+    "author": "Michael W. Lucas",
+    "pages": 708,
+    "category": "系统 · 数据 · 网络",
+    "batch": "Books"
+  },
+  {
+    "file": "Designing-Data-Intensive-Applications-Tutorial.html",
+    "title": "Designing Data-Intensive Applications",
+    "subtitle": "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
+    "author": "Martin Kleppmann & Chris Riccomini",
+    "pages": 673,
+    "category": "系统 · 数据 · 网络",
+    "batch": "Books"
   },
   {
     "file": "Linux-LPIC1-Tutorial.html",
@@ -312,33 +366,6 @@
     "author": "Jason Eckert",
     "pages": 786,
     "category": "系统 · 数据 · 网络",
-    "batch": "Books2"
-  },
-  {
-    "file": "Portfolio-Theory-Arbitrage-Tutorial.html",
-    "title": "Portfolio Theory and Arbitrage",
-    "subtitle": "A Course in Mathematical Finance",
-    "author": "Ioannis Karatzas & Constantinos Kardaras",
-    "pages": 328,
-    "category": "优化 · 金融 · 概率",
-    "batch": "Books2"
-  },
-  {
-    "file": "Model-Checking-Tutorial.html",
-    "title": "Principles of Model Checking",
-    "subtitle": "",
-    "author": "Christel Baier & Joost-Pieter Katoen",
-    "pages": 994,
-    "category": "逻辑 · 形式方法 · 理论计算机",
-    "batch": "Books2"
-  },
-  {
-    "file": "Probability-and-Computing-Tutorial.html",
-    "title": "Probability and Computing",
-    "subtitle": "",
-    "author": "Randomization and Probabilistic Techniques in Algorithms and Data Analysis",
-    "pages": 490,
-    "category": "优化 · 金融 · 概率",
     "batch": "Books2"
   },
   {
@@ -360,6 +387,42 @@
     "batch": "Books2"
   },
   {
+    "file": "Little-Book-of-Semaphores-Tutorial.html",
+    "title": "The Little Book of Semaphores",
+    "subtitle": "Classic Synchronization Problems in Python",
+    "author": "Allen B. Downey",
+    "pages": 291,
+    "category": "系统 · 数据 · 网络",
+    "batch": "Books"
+  },
+  {
+    "file": "xv6-Tutorial.html",
+    "title": "xv6: A Simple, Unix-like Teaching Operating System",
+    "subtitle": "Processes, Memory, File Systems and System Calls",
+    "author": "Russ Cox, Frans Kaashoek & Robert Morris",
+    "pages": 116,
+    "category": "系统 · 数据 · 网络",
+    "batch": "Books"
+  },
+  {
+    "file": "Human-Action-Tutorial.html",
+    "title": "Human Action",
+    "subtitle": "A Treatise on Economics",
+    "author": "Ludwig von Mises",
+    "pages": 930,
+    "category": "经济 · 金融",
+    "batch": "Books3"
+  },
+  {
+    "file": "Chicago-Price-Theory-Tutorial.html",
+    "title": "Chicago Price Theory",
+    "subtitle": "",
+    "author": "Sonia Jaffe, Robert Minton, Casey Mulligan & Kevin Murphy",
+    "pages": 457,
+    "category": "经济学",
+    "batch": "Books2"
+  },
+  {
     "file": "Border-Seeing-Thinking-Tutorial.html",
     "title": "The Border Between Seeing and Thinking",
     "subtitle": "",
@@ -378,12 +441,66 @@
     "batch": "Books2"
   },
   {
-    "file": "Renormalization-Group-Tutorial.html",
-    "title": "The Renormalization Group and Condensed Matter Physics",
+    "file": "Turing-Collected-Works-Tutorial.html",
+    "title": "Collected Works of A. M. Turing",
     "subtitle": "",
-    "author": "David R. Nelson & Grace H. Zhang",
-    "pages": 329,
-    "category": "数学 · 分析与代数",
+    "author": "A. M. Turing",
+    "pages": 307,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books2"
+  },
+  {
+    "file": "Decision-Procedures-Tutorial.html",
+    "title": "Decision Procedures",
+    "subtitle": "An Algorithmic Point of View",
+    "author": "Daniel Kroening & Ofer Strichman",
+    "pages": 369,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books2"
+  },
+  {
+    "file": "Formal-Methods-Appetizer-Tutorial.html",
+    "title": "Formal Methods: An Appetizer",
+    "subtitle": "",
+    "author": "Flemming Nielson & Hanne Riis Nielson",
+    "pages": 171,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books2"
+  },
+  {
+    "file": "Formal-Reasoning-About-Programs-Tutorial.html",
+    "title": "Formal Reasoning About Programs",
+    "subtitle": "Verifying Software with Proof Assistants",
+    "author": "Adam Chlipala",
+    "pages": 160,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books"
+  },
+  {
+    "file": "Logic-for-Programmers-Tutorial.html",
+    "title": "Logic for Programmers",
+    "subtitle": "Practical Logic for Working Developers",
+    "author": "Hillel Wayne",
+    "pages": 150,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books"
+  },
+  {
+    "file": "Logic-in-Computer-Science-Tutorial.html",
+    "title": "Logic in Computer Science",
+    "subtitle": "Modelling and Reasoning about Systems",
+    "author": "Michael Huth & Mark Ryan",
+    "pages": 556,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books"
+  },
+  {
+    "file": "Model-Checking-Tutorial.html",
+    "title": "Principles of Model Checking",
+    "subtitle": "",
+    "author": "Christel Baier & Joost-Pieter Katoen",
+    "pages": 994,
+    "category": "逻辑 · 形式方法 · 理论计算机",
     "batch": "Books2"
   }
 ]

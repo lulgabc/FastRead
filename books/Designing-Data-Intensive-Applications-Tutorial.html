@@ -432,30 +432,31 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · SYSTEMS</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">Designing Data-Intensive Applications
       <span>The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</span>
     </div>
-    <div class="sb-meta"><b>14</b> 章 · <b>673</b> 页</div>
+    <div class="sb-meta">673 页 · 16 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
     <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>架构的第一课：没有答案，只有取舍</span></a>
     <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>把“快、稳、好维护”写成可验证的指标</span></a>
-    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>数据模型决定了你能问什么问题</span></a>
-    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>存储引擎：写入放大的账单，迟早要还</span></a>
-    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>编码与演化：让新旧版本在同一张网里共存</span></a>
-    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>复制：把同一份数据放在多处，然后处理“不同步”</span></a>
-    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>分片：把一台机器装不下的数据，切成能装下的部分</span></a>
-    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>事务：把并发与故障关进一个可推理的盒子</span></a>
-    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>分布式系统的麻烦：超时、时钟与“我以为它死了”</span></a>
-    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>一致性与共识：让多个节点对“现在”达成同一答案</span></a>
-    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>批处理：用不可变输入换可重算的正确性</span></a>
-    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>流处理：把“无界输入”变成可重放、可恢复的日志</span></a>
-    <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>流式系统哲学：把数据库拆开，再按日志装回去</span></a>
-    <a class="nav-link" href="#wrapup" data-sec="wrapup"><span class="nav-num">F</span> <span>总结</span></a>
+    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>数据模型决定你能问什么问题</span></a>
+    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>存储引擎：把写放大、读放大、空间放大摆上桌</span></a>
+    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>编码与演进：让新旧代码在同一份数据上共存</span></a>
+    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>复制：让同一份数据活在多台机器上</span></a>
+    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>分片：把一台装不下的数据切开</span></a>
+    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>事务：把并发与故障的复杂度收进数据库</span></a>
+    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>分布式系统的麻烦：网络、时钟与“半死”的节点</span></a>
+    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>一致性与共识：让分布式系统“像一台机器”</span></a>
+    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>批处理：把输入当只读，把输出当可重算</span></a>
+    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>流处理：无界数据上的时间、状态与一致性</span></a>
+    <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>数据整合的哲学：把数据库拆开，再按数据流装回去</span></a>
+    <a class="nav-link" href="#ch14" data-sec="ch14"><span class="nav-num">14</span> <span>做正确的事：数据系统里的伦理与权力</span></a>
+    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
@@ -485,17 +486,18 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="hero-grid">
       <div>
         <div class="hero-kicker">O'Reilly · Second Edition</div>
-        <h1>设计数据密集型应用<span class="en">Designing Data-Intensive Applications</span></h1>
+        <h1>设计数据密集型<wbr>应用<span class="en">Designing Data-Intensive Applications</span></h1>
         <p class="hero-sub">从一条写入日志出发，走过<b>存储引擎、复制、分片、事务、共识</b>，最后落到批流一体的数据平台。这里没有银弹，只有一张张写清代价的取舍表。</p>
         <div class="hero-actions">
           <a class="btn" href="#ch1">开始阅读 →</a>
-          <a class="btn ghost" href="#wrapup">设计清单</a>
+          <a class="btn ghost" href="#summary">学习路线</a>
         </div>
         <div class="hero-stats">
           <div class="hstat"><b>14</b><span>原书章节</span></div>
-          <div class="hstat"><b>13</b><span>主题精讲</span></div>
-          <div class="hstat"><b>1</b><span>页设计清单</span></div>
+          <div class="hstat"><b>16</b><span>主题精讲</span></div>
+          <div class="hstat"><b>40+</b><span>系统与故障案例</span></div>
         </div>
+        <details class="proof" style="margin-top:18px"><summary>前言与阅读说明（Preface）</summary><p>Who Should Read This Book? · What’s New in the Second Edition? · References and Further Reading · Conventions Used in This Book · O’Reilly Online Learning · How to Contact Us · Acknowledgments</p></details>
       </div>
       <div class="hero-art">
         <svg viewBox="0 0 420 440" role="img" aria-label="数据系统从写入到查询的分层结构">
@@ -553,8 +555,8 @@ figcaption b{color:var(--ink2);font-weight:600}
     <p class="lede">数据密集型系统的设计不是选一个“最好的数据库”，而是在读写模式、运维成本、一致性要求和团队能力之间，明确地说出你放弃了什么。</p>
 
     <div class="chap-intro">
-      <p>本章建立全书的地图：先把系统分成交易处理与分析处理两类，再讨论数据仓库、记录系统与派生数据的关系，最后比较云与自建、单机与分布式。目标不是记住结论，而是学会在给定约束下推导结论。</p>
-      <span class="tag">OLTP · OLAP · Cloud · Distribution</span>
+      <p>本章建立全书的地图：先把系统分成交易处理与分析处理两类，再讨论数据仓库、记录系统与派生数据的关系，然后比较云与自建、单机与分布式，最后把法律与社会后果纳入架构决策。目标不是记住结论，而是学会在给定约束下推导结论。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">OLTP · OLAP · Cloud · Distribution</span>
     </div>
 
     <div class="mapchips">
@@ -562,16 +564,42 @@ figcaption b{color:var(--ink2);font-weight:600}
       <span class="chip">system of record</span><span class="chip">derived data</span><span class="chip">single node</span><span class="chip">serverless</span>
     </div>
 
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Operational Versus Analytical Systems · Characterizing Transaction Processing and Analytics · Data Warehousing · Systems of Record and Derived Data · Cloud Versus Self-Hosting · Pros and Cons of Cloud Services · Cloud Native System Architecture · Operations in the Cloud Era · Distributed Versus Single-Node Systems · Problems with Distributed Systems · Microservices and Serverless · Cloud Computing Versus Supercomputing · Data Systems, Law, and Society · Summary</p></details>
+
     <div class="thm def">
       <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">数据密集型，而不是计算密集型</span></div>
       <div class="thm-body">
         <p>当一个应用的主要挑战是<b>数据量、数据变更速度、数据多样性</b>，而不是单次计算的浮点吞吐时，它就是一个 data-intensive application。典型构件包括数据库、缓存、搜索索引、消息队列与批/流处理框架。</p>
+        <p>与之相对，compute-intensive 系统的瓶颈在 CPU：天气模拟、渲染、模型训练。二者的工程重点不同——前者怕数据不一致与放大，后者怕并行度与通信开销。</p>
       </div>
     </div>
 
     <h3><span class="sn">1.1</span>交易系统与分析系统，为什么要分家</h3>
-    <p>OLTP 面向“取出一条或几条记录、按主键更新”，查询形状窄而深；OLAP 面向“扫描大量行、只取少数列做聚合”，查询形状宽而浅。把两者塞进同一个实例，最直接的后果是分析查询占满 buffer pool 与 I/O，线上事务的 p99 被拖垮。</p>
-    <p>于是有了数据仓库：抽取、清洗、加载业务库的变更，用分钟级的新鲜度换取不影响线上、可自由重算。</p>
+    <p>OLTP 面向“取出一条或几条记录、按主键更新”，查询形状窄而深；OLAP 面向“扫描大量行、只取少数列做聚合”，查询形状宽而浅。把两者塞进同一个实例，最直接的后果是分析查询占满 buffer pool 与 I/O，线上事务的 p99 被拖垮。于是有了数据仓库：抽取、清洗、加载业务库的变更，用分钟级的新鲜度换取不影响线上、可自由重算。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>维度</th><th>OLTP（operational）</th><th>OLAP（analytical）</th></tr></thead>
+        <tbody>
+          <tr><td class="id">主要读模式</td><td>按主键/二级索引取少量记录</td><td>对大量行做扫描、聚合、分组</td></tr>
+          <tr><td class="id">主要写模式</td><td>随机写，低延迟、高并发</td><td>批量导入（ETL），追加为主</td></tr>
+          <tr><td class="id">典型查询</td><td>“用户 42 的最近 20 条订单”</td><td>“2024 年各品类按周销量的同比”</td></tr>
+          <tr><td class="id">数据规模</td><td>GB～TB，热数据可全放内存</td><td>TB～PB，冷热分层</td></tr>
+          <tr><td class="id">衡量指标</td><td>QPS、p99、事务成功率</td><td>扫描吞吐、查询时延、成本/查询</td></tr>
+          <tr><td class="id">代表系统</td><td>PostgreSQL、MySQL、MongoDB</td><td>Snowflake、BigQuery、DuckDB、ClickHouse</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一条订单查询与一条销售报表，为什么不能共用一个引擎</span></div>
+      <div class="thm-body">
+        <p>订单查询只碰 3 行，靠 B-tree 三次页访问就能完成，缓存命中率高；销售报表要扫 20 亿行、只读 4 列，如果按行存储，每一行 100 多个字段都要从磁盘读入再丢掉。列式存储把同样查询的 I/O 降低一个数量级，还能对同列做字典编码与位图压缩。把报表压到订单库上，等于让一个全表扫描与十万次点查争抢同一个 page cache。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">1.2</span>数据仓库、记录系统与派生数据</h3>
+    <p>数据仓库的经典流程是 ETL：从业务库抽取变更，清洗成一致的维度与事实，再加载进列式存储。现代栈常写成 ELT——先把原始数据落进对象存储（data lake），再用 dbt/Spark 在仓库内转换。无论顺序如何，关键是<b>原始事实只存一份，所有报表都是可重算的派生结果</b>。</p>
 
     <div class="thm def">
       <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">记录系统与派生数据</span></div>
@@ -581,30 +609,63 @@ figcaption b{color:var(--ink2);font-weight:600}
       </div>
     </div>
 
+    <p>这条区分能直接指导故障处理：搜索索引坏了，从主库重放一遍即可；主库误删了，副本只会忠实地把删除复制到所有节点，必须靠备份或 PITR（point-in-time recovery）。所以“有副本”不等于“有备份”，二者解决的是不同问题。</p>
+
+    <h3><span class="sn">1.3</span>云还是自建：把固定成本换成可变成本</h3>
+    <p>云的核心经济性不是“更便宜”，而是把 capex 换成 opex：不必提前 18 个月采购机器，流量高峰按需扩容，低峰缩容。代价是单位资源更贵、网络出口费、跨区流量费，以及被托管服务的 API 锁死。</p>
+
     <div class="cards">
-      <div class="card"><div class="k">OLTP</div><h4>低延迟、点查、强约束</h4><p>行存或 KV，按主键访问，事务保证并发正确性。瓶颈常在随机 I/O 与锁竞争。</p></div>
-      <div class="card"><div class="k">OLAP</div><h4>高吞吐、列扫、可重算</h4><p>列式存储 + 压缩 + 向量化执行。瓶颈常在扫描带宽与 shuffle。</p></div>
-      <div class="card"><div class="k">Derived</div><h4>可重建、可最终一致</h4><p>缓存、索引、特征库。设计重点是“如何从日志重放”，而不是“如何备份”。</p></div>
+      <div class="card"><div class="k">Cloud 优势</div><h4>弹性与托管</h4><p>按秒计费、全球区域、托管复制/备份/升级；小团队可以把运维人力投到产品上。</p></div>
+      <div class="card"><div class="k">Cloud 代价</div><h4>账单与锁定</h4><p>egress 费、跨 AZ 流量、托管服务溢价；专有 API（如 BigQuery 的 SQL 方言）迁移成本高。</p></div>
+      <div class="card"><div class="k">Self-host</div><h4>控制与单位成本</h4><p>可深度调参、可预测的容量成本；但要自己承担值班、升级、硬件故障与容量规划。</p></div>
     </div>
 
-    <div class="table-wrap">
+    <p><b>Cloud-native architecture</b> 的典型形态是存算分离：对象存储（S3/GCS）做持久层，无状态计算集群按查询拉起，元数据服务（catalog）独立扩展。Snowflake、BigQuery、Databricks 都是这个思路；Kubernetes 则把“调度”也变成托管能力。存算分离的好处是计算可以秒级伸缩、不同引擎共享同一份数据；坏处是对象存储的 GET 延迟（数十毫秒）与按请求计费，让“小文件太多”成为新的性能陷阱。</p>
+
+    <h3><span class="sn">1.4</span>单机还是分布式：先榨干一台机器</h3>
+    <p>现代单机可以做到上百核、数 TB 内存、数十 TB NVMe。很多“大数据”问题在一台大机器上更快：没有网络往返、没有跨节点协调、没有部分失败。分布式的必要性通常来自三条硬约束之一：数据量超过单机、写入吞吐超过单机、或需要跨地域容灾。</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">把“分布式”当成架构成熟度</span></div>
+      <div class="thm-body">
+        <p>分布式系统引入的每一类新故障——消息丢失、时钟漂移、部分失败、脑裂——都会转化为代码里的分支与值班时的告警。若单机加只读副本已能满足 3 年容量，先别拆。真正的分布式收益要能算出来：多出来的容量、可用性或地理延迟，是否值得多一个失败模式。</p>
+      </div>
+    </div>
+
+    <p>分布式的问题清单很长：网络不可靠且可能任意延迟；节点可能“半死”（进程还在、但处理极慢）；时钟不同步；GC 或虚拟机迁移造成秒级停顿；跨服务调用没有全局事务。更麻烦的是<b>部分失败</b>：单机要么工作要么崩溃，分布式系统却常常处于“一部分工作、一部分不工作”的灰色状态。</p>
+
+    <p><b>Microservices</b> 把这一代价显性化：服务边界带来独立部署与团队自治，也带来跨服务一致性、重试放大、分布式追踪的需求。<b>Serverless</b> 进一步把机器抽象掉，但冷启动、执行时长上限、按请求计费与无状态约束，使它更适合事件驱动、短任务，而不是长连接与重事务。</p>
+
+    <div class="thm rem">
+      <div class="thm-head"><span class="thm-kind">辨析</span><span class="thm-title">云计算不等于超级计算</span></div>
+      <div class="thm-body">
+        <p>HPC 集群追求极致浮点吞吐：MPI 进程间通信、RDMA、共享并行文件系统、定期 checkpoint，假设节点同构、网络极低延迟、故障时整作业重启。云计算假设节点异构、网络是瓶颈、故障是常态，因此软件必须容忍部分失败、数据复制与弹性伸缩。把 HPC 的“全局 barrier + 共享存储”思路搬到云上，通常会被跨节点延迟和尾延迟击穿。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">1.5</span>法律、社会与数据系统</h3>
+    <p>数据系统从来不是价值中立的。GDPR 的“被遗忘权”要求系统能真正删除个人数据，而 append-only 日志、备份、搜索索引、机器学习训练集都会让删除变成跨系统工程；数据本地化（data sovereignty）要求某些数据不出境，直接决定区域架构；出口管制与 AI 训练数据许可则影响数据能否跨境汇聚。架构评审时把这些要求写进非功能需求，比上线后再补便宜得多。</p>
+
+    <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>维度</th><th>单机</th><th>分布式</th><th>云托管</th></tr></thead>
+        <thead><tr><th>概念</th><th>一句话</th><th>决策含义</th></tr></thead>
         <tbody>
-          <tr><td class="id">扩展方式</td><td>垂直加 CPU/内存/SSD，上限明确</td><td>水平加节点，但受网络与协调成本约束</td><td>弹性伸缩，代价是单位成本与厂商锁定</td></tr>
-          <tr><td class="id">故障域</td><td>整机故障即全停</td><td>部分故障，需要处理超时与脑裂</td><td>故障被抽象成 API 错误，但仍会发生</td></tr>
-          <tr><td class="id">延迟</td><td>纳秒到微秒级内存访问，无跨网</td><td>每次跨节点至少多一次 RTT</td><td>可用区之间通常 1–2 ms 起</td></tr>
-          <tr><td class="id">运维负担</td><td>低，但容量规划靠人</td><td>高：升级、再平衡、监控都复杂</td><td>低，但可观测性与成本控制转移给用户</td></tr>
-          <tr><td class="id">适用</td><td>数据能装下、SLA 要求极低延迟</td><td>数据或吞吐超出单机，且能接受部分故障</td><td>团队小、需求波动大、合规允许</td></tr>
+          <tr><td class="id">OLTP</td><td>低延迟、小范围读写</td><td>行存、B-tree/LSM、强事务</td></tr>
+          <tr><td class="id">OLAP</td><td>大范围扫描聚合</td><td>列存、压缩、向量化执行</td></tr>
+          <tr><td class="id">Data warehouse</td><td>面向分析的独立副本</td><td>ETL/ELT，不干扰线上</td></tr>
+          <tr><td class="id">System of record</td><td>事实的权威来源</td><td>先保护它，再谈派生</td></tr>
+          <tr><td class="id">Derived data</td><td>可重建的缓存/索引/视图</td><td>可最终一致、可重放</td></tr>
+          <tr><td class="id">Cloud-native</td><td>存算分离 + 托管服务</td><td>弹性换单位成本与锁定</td></tr>
+          <tr><td class="id">Scale up / out</td><td>纵向 / 横向扩展</td><td>先单机，后分布式</td></tr>
+          <tr><td class="id">Partial failure</td><td>系统一部分坏、一部分好</td><td>超时、重试、幂等、共识</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">在事务库上直接跑报表</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">本章四条</span></div>
       <div class="thm-body">
-        <p>一条没有合适索引的 <code>GROUP BY</code> 扫描几千万行，会把 OLTP 实例的页缓存冲刷干净，随后所有点查的延迟一起抬升。正确的做法不是“加个从库就完了”（从库仍会争用同一份热数据与网络），而是把分析负载导向列式仓库，并用 CDC 持续同步。</p>
-        <p>另一类坑是 <b>dual write</b>：应用同时写数据库和搜索引擎，任一侧失败就永久不一致。可靠做法是只写记录系统，再从日志派生。</p>
+        <p>① “OLTP 与 OLAP 只是查询不同”——真正的差异在存储布局、索引与故障模型，混跑会互相拖垮。② “数据仓库的数据必须实时”——多数分析要的是可重算与一致口径，分钟级新鲜度通常足够。③ “云一定比自建便宜”——把 egress、跨 AZ、托管溢价和人力算进去再比较。④ “分布式更可靠”——分布式提高的是部分故障下的可用性，同时引入了更多故障类型。</p>
       </div>
     </div>
   </div>
@@ -617,8 +678,8 @@ figcaption b{color:var(--ink2);font-weight:600}
     <p class="lede">功能需求决定系统做什么，非功能需求决定它在大流量、坏机器和坏运气面前还能不能活。可靠性、可扩展性、可维护性必须先被定义，才谈得上被满足。</p>
 
     <div class="chap-intro">
-      <p>以社交网络首页时间线为贯穿案例，本章给出三组工具：用吞吐与分位数描述性能，用故障与容错描述可靠性，用负载参数与增减容方式描述可扩展性，最后用可运维性、简单性、可演化性收束可维护性。</p>
-      <span class="tag">SLO · Percentiles · Fault Tolerance · Scalability</span>
+      <p>以社交网络首页时间线为贯穿案例，本章给出三组工具：用吞吐与分位数描述性能，用故障与容错描述可靠性，用负载参数与增减容方式描述可扩展性，最后用可运维性、简单性、可演化性收束可维护性。所有指标都要能被监控验证，而不是写在 PPT 上。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">SLO · Percentiles · Fault Tolerance · Scalability</span>
     </div>
 
     <div class="mapchips">
@@ -626,8 +687,31 @@ figcaption b{color:var(--ink2);font-weight:600}
       <span class="chip">load parameter</span><span class="chip">fan-out</span><span class="chip">operability</span><span class="chip">evolvability</span>
     </div>
 
-    <h3><span class="sn">2.1</span>性能：平均值会骗人，尾部才会杀人</h3>
-    <p>响应时间是一个分布：每次请求都含排队、调度、GC、重传等随机成分，均值几乎没有意义。应报告分位数：p50 是典型体验，p99 是“倒霉用户”，p999 往往对应最重的请求——而他们通常贡献最多数据。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Case Study: Social Network Home Timelines · Representing Users, Posts, and Follows · Materializing and Updating Timelines · Describing Performance · Latency and Response Time · Average, Median, and Percentiles · Use of Response Time Metrics · Reliability and Fault Tolerance · Fault Tolerance · Hardware and Software Faults · Humans and Reliability · Scalability · Understanding Load · Shared-Memory, Shared-Disk, and Shared-Nothing Architectures · Principles for Scalability · Maintainability · Operability: Making Life Easy for Operations · Simplicity: Managing Complexity · Evolvability: Making Change Easy · Summary</p></details>
+
+    <h3><span class="sn">2.1</span>案例：5 亿条帖子的一天</h3>
+    <p>假设一个 X 风格的社交网络：每天 5 亿条帖子，平均约 $5.8\times 10^{3}$ 条/秒，突发峰值可达 $1.5\times 10^{5}$ 条/秒；平均每个用户关注 200 人、有 200 个粉丝，但分布极偏——多数人只有几十个粉丝，少数名人超过一亿。</p>
+
+<pre><code class="language-sql">-- 读时扇出：每次打开首页，查关注对象最近的帖子
+SELECT posts.* FROM posts
+  JOIN follows ON posts.author_id = follows.followee_id
+ WHERE follows.follower_id = $user_id
+ ORDER BY posts.created_at DESC
+ LIMIT 1000;</code></pre>
+
+    <p>这条查询在平均用户身上要合并 200 个作者的时间线；对关注了 5000 人的重度用户，代价线性增长。<b>写时扇出</b>则相反：发帖时把帖子 ID 插入每个粉丝的收件箱（home timeline），读首页只需一次范围查询。代价是名人发一条帖子要写一亿次——这就是所谓的“名人问题”。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">混合扇出：普通用户写扩散，名人读扩散</span></div>
+      <div class="thm-body">
+        <p>生产系统通常给每个用户维护一个物化时间线，发帖时异步写入粉丝收件箱；对粉丝数超过阈值（例如 10 万）的账号，不写扩散，而是在读路径临时合并其最近帖子。读时把“收件箱”和“名人列表”两路结果归并排序。这样把最坏情况的写放大限制在阈值内，同时保证普通用户读到的是预计算好的结果。</p>
+        <p>工程细节：收件箱只需保留最近 N 条（例如 800 条），更早的翻页回源查询；删除与隐私变更要通过 tombstone 或重放修正，不能只删主表。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">2.2</span>性能：平均值会骗人，尾部才会杀人</h3>
+    <p><b>Latency</b> 是请求等待的时间，<b>response time</b> 是用户看到结果的总时间，后者还包含排队、网络与客户端渲染。讨论性能时必须说清是哪一个。响应时间是一个分布：每次请求都含排队、调度、GC、重传等随机成分，均值几乎没有意义。</p>
+    <p>应报告分位数：p50 是典型体验，p99 是“倒霉用户”，p999 往往对应最重的请求——而他们通常贡献最多数据。若中位数是 200 ms，意味着一半请求在 200 ms 内完成；p99 是 1 s，意味着每 100 个请求就有 1 个等了一秒。</p>
 
     <div class="thm theorem">
       <div class="thm-head"><span class="thm-kind">规则</span><span class="thm-title">分位数不可平均，SLO 要落到比例</span></div>
@@ -639,22 +723,20 @@ figcaption b{color:var(--ink2);font-weight:600}
 
     <p>尾部延迟还会<b>放大</b>：一次页面请求若串行调用 20 个服务，只要每个服务有 1% 的概率超过 1 秒，那么整页至少一次慢的概率约为</p>
     $$ 1-(1-0.01)^{20}\approx 18\%. $$
-    <p>所以微服务架构下，减少串行深度、设置超时与降级，比优化单服务均值更有效。</p>
+    <p>所以微服务架构下，减少串行深度、设置超时与降级，比优化单服务均值更有效。排队论还告诉我们：利用率接近 100% 时，等待时间非线性爆炸；把 CPU 打到 95% 看起来“省钱”，实际上 p99 已经不可控。</p>
 
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">首页时间线：写扩散还是读扩散</span></div>
-      <div class="thm-body">
-        <p>假设每天 5 亿条帖子，平均约 $5.8\times10^{3}$ 条/秒，峰值可达 $1.5\times10^{5}$ 条/秒；平均每个用户关注 200 人。</p>
-        <p><b>读时扇出</b>：发帖只写一次，读首页时拉取关注列表再合并。写便宜，读要访问 200 个来源，尾延迟高。<b>写时扇出</b>：发帖时写入所有粉丝的收件箱，读只需一次查询。读快，但一个千万粉账号发一条帖子就是千万次写。</p>
-        <p>真实系统通常是混合：普通用户走写扩散，大 V 走读扩散，在读路径合并两路结果。</p>
-      </div>
-    </div>
+    <h3><span class="sn">2.3</span>可靠性：fault 不等于 failure</h3>
+    <p><b>Fault</b> 是部件偏离规格（磁盘坏、网线断、代码抛异常）；<b>failure</b> 是系统整体停止提供服务。容错的目标是让 fault 不升级为 failure。硬件故障是随机的：大盘阵每年坏几块盘是常态，靠副本、纠删码与自动重建吸收；软件故障往往是确定性的，会在所有节点同时触发（例如闰秒、配置推送、证书过期），更难靠冗余解决；人为操作则是最大单一故障源，需要审批、灰度、回滚与“防呆”设计。</p>
 
     <div class="cards">
-      <div class="card"><div class="k">Reliability</div><h4>出了故障仍能正确工作</h4><p>区分 fault（部件异常）与 failure（系统停止提供服务）。容错是把 fault 挡在 failure 之前：冗余、隔离、重试、降级。</p></div>
+      <div class="card"><div class="k">Reliability</div><h4>出了故障仍能正确工作</h4><p>冗余、隔离、超时、重试、降级、限流；关键是故障注入与演练，而不是祈祷。</p></div>
       <div class="card"><div class="k">Scalability</div><h4>加资源能换来多少容量</h4><p>先声明负载参数（QPS、读写比、数据量、扇出），再测量加一倍机器时吞吐是否接近翻倍。</p></div>
       <div class="card"><div class="k">Maintainability</div><h4>别人十年后还敢改</h4><p>可运维性（可观测、可部署）、简单性（消除偶然复杂度）、可演化性（接口与数据格式能演进）。</p></div>
     </div>
+
+    <h3><span class="sn">2.4</span>可扩展性：先说清负载，再谈加机器</h3>
+    <p>可扩展性不是“能加机器”，而是“加机器后单位成本不恶化”。描述负载要用参数：每秒请求数、读写比、活跃用户数、缓存命中率、每个请求的 fan-out、数据量与保留期。同一系统在“读多写少”和“写多读少”下的扩展曲线完全不同。</p>
+    <p>扩展方式分纵向（scale up，换更大的机器）与横向（scale out，加更多机器）。前者简单，受单机上限与成本曲线约束；后者理论无限，但要处理分片、协调与部分失败。共享内存（多核同一地址空间）、共享磁盘（多机挂同一存储）、shared-nothing（每节点独立 CPU/内存/磁盘，靠网络协作）是三种基本架构；shared-nothing 最容易横向扩展，也最需要处理网络故障。</p>
 
     <div class="table-wrap">
       <table>
@@ -668,15 +750,34 @@ figcaption b{color:var(--ink2);font-weight:600}
       </table>
     </div>
 
+    <h3><span class="sn">2.5</span>可维护性：运维、简单、可演化</h3>
+    <p><b>Operability</b>：让日常运维可预测——良好的监控与日志、自动化部署、清晰的 runbook、避免“只有某个人会修”。<b>Simplicity</b>：消除偶然复杂度（accidental complexity），用抽象隐藏实现细节；不是少写代码，而是让改一处不必理解全部。<b>Evolvability</b>：需求会变，数据格式与接口要能双向兼容，团队要能小步发布。</p>
+
     <div class="intuition">
       <div class="ih">直觉</div>
       <p>可靠性不是“不出错”，而是“出错时影响有边界”。可扩展性不是“能加机器”，而是“加机器后单位成本不恶化”。可维护性不是“代码好看”，而是“改一行不需要理解全部”。</p>
     </div>
 
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>术语</th><th>一句话定义</th><th>可操作做法</th></tr></thead>
+        <tbody>
+          <tr><td class="id">latency / response time</td><td>等待时间 / 用户看到结果的总时间</td><td>分开监控，别混为一谈</td></tr>
+          <tr><td class="id">p50 / p99 / p999</td><td>典型 / 尾部 / 极尾部延迟</td><td>合并直方图，按端点拆分</td></tr>
+          <tr><td class="id">SLO</td><td>可量化的服务水平目标</td><td>“99% &lt; 300 ms”，配误差预算</td></tr>
+          <tr><td class="id">fault / failure</td><td>部件异常 / 系统不可用</td><td>冗余、隔离、故障注入</td></tr>
+          <tr><td class="id">load parameter</td><td>描述负载的关键变量</td><td>QPS、读写比、fan-out、数据量</td></tr>
+          <tr><td class="id">scale up / out</td><td>纵向 / 横向扩展</td><td>先算单机上限与成本拐点</td></tr>
+          <tr><td class="id">shared-nothing</td><td>节点独立资源，靠网络协作</td><td>分片 + 复制 + 超时</td></tr>
+          <tr><td class="id">operability</td><td>运维友好的程度</td><td>可观测、自动化、runbook</td></tr>
+        </tbody>
+      </table>
+    </div>
+
     <div class="thm warn">
       <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">把平均值写进 SLO，把重试当成容错</span></div>
       <div class="thm-body">
-        <p>用平均延迟做告警，会在系统已经严重劣化时仍然“绿灯”；用无上限的自动重试做容错，会在下游过载时把流量放大数倍，形成 retry storm。重试必须带指数退避、抖动、预算与熔断，并且只对幂等操作重试。</p>
+        <p>用平均延迟做告警，会在系统已经严重劣化时仍然“绿灯”；用无上限的自动重试做容错，会在下游过载时把流量放大数倍，形成 retry storm。重试必须带指数退避、抖动、预算与熔断，并且只对幂等操作重试。另一个常见错误是只压测读路径：写放大、锁竞争与日志 fsync 往往才是峰值下的瓶颈。</p>
       </div>
     </div>
   </div>
@@ -685,73 +786,120 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch3" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 3 · Data Models and Query Languages</div>
-    <h2><span class="num">3</span>数据模型决定了你能问什么问题</h2>
-    <p class="lede">关系、文档、图、事件流不是四代技术，而是四种“把现实压平”的方式。选模型，本质上是在选连接成本、模式约束和演化路径。</p>
+    <h2><span class="num">3</span>数据模型决定你能问什么问题</h2>
+    <p class="lede">关系、文档、图、事件流与 DataFrame 不是新旧替代关系，而是五种不同的“世界表示法”。选错模型，后面的查询、演进与性能优化都会逆着纹理走。</p>
 
     <div class="chap-intro">
-      <p>本章从关系与文档的分歧讲起：阻抗不匹配、规范化与反规范化、模式写时校验与读时校验；随后进入图模型与查询语言，再讨论事件溯源与 CQRS 如何把“状态”换成“变更历史”，最后简单交代 DataFrame 与多维数组这类数值计算模型。</p>
-      <span class="tag">Relational · Document · Graph · CQRS</span>
+      <p>本章从“对象—数据模型—字节”的分层讲起，比较关系与文档模型在连接、规范化与模式演进上的差异；再进入图模型（property graph、Cypher、SPARQL、Datalog、GraphQL），最后讨论事件溯源/CQRS 与 DataFrame/矩阵。每种模型都给出适用场景与反例。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Relational · Document · Graph · Event Sourcing · DataFrame</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">normalization</span><span class="chip">impedance mismatch</span><span class="chip">schema-on-read</span>
-      <span class="chip">Cypher / SPARQL</span><span class="chip">event sourcing</span><span class="chip">CQRS</span><span class="chip">DataFrame</span>
+      <span class="chip hot">object-relational mismatch</span><span class="chip">normalization</span><span class="chip">many-to-many</span>
+      <span class="chip">star schema</span><span class="chip">Cypher</span><span class="chip">Datalog</span><span class="chip">CQRS</span>
     </div>
 
-    <h3><span class="sn">3.1</span>关系与文档：一对多与多对多的分水岭</h3>
-    <p>文档模型擅长“一棵自包含的树”：一份简历读一次拿全，局部性好。关系模型擅长实体间任意重连：多对多靠外键与连接，数据只存一份。</p>
-    <p>真正的分水岭是<b>多对多</b>。若把用户、公司、学校都嵌进简历文档，同一家公司改名就要更新成千上万份文档；若拆成实体表，一次更新即可。反过来，若数据天然是树，硬拆成十几张表会让每次读取都付出大量连接成本。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Relational Versus Document Models · The Object-Relational Mismatch · Normalization, Denormalization, and Joins · Many-to-One and Many-to-Many Relationships · Stars and Snowflakes: Schemas for Analytics · When to Use Which Model · Graph-Like Data Models · Property Graphs · The Cypher Query Language · Graph Queries in SQL · Triple Stores and SPARQL · Datalog: Recursive Relational Queries · GraphQL · Event Sourcing and CQRS · DataFrames, Matrices, and Arrays · Summary</p></details>
+
+    <h3><span class="sn">3.1</span>关系模型与文档模型：谁更贴近数据</h3>
+    <p>关系模型把数据摊平成表，用外键表达关联，由查询优化器决定连接顺序；文档模型把一棵对象树塞进一个 JSON/BSON 文档，读一次就能取回整棵子树。前者擅长多对多与任意组合查询，后者擅长“自包含、一次读取”的聚合。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">阻抗不匹配与模式时点</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">object-relational mismatch（阻抗失配）</span></div>
       <div class="thm-body">
-        <p><b>Impedance mismatch</b>：应用对象与行/表结构不一致，需要一层映射；文档模型缩小缝隙，但没有消除事务与连接需求。</p>
-        <p><b>Schema-on-write</b>：写入时校验，坏数据进不来，演化需要迁移；<b>schema-on-read</b>：读取时解释，写入灵活，但每个读者都要处理历史遗留形状。二者是约束位置的取舍，不是有无模式的区别。</p>
+        <p>应用代码用对象、列表与继承组织数据，关系库用表、行与外键组织数据。把一张简历（用户、多个职位、多个教育经历）拆成多张表再 JOIN 回来，代码里要做大量映射；文档模型则把简历存成一个文档，结构接近内存中的对象。失配不是“关系库不好”，而是“聚合边界与存储边界不一致”时产生的翻译成本。</p>
       </div>
     </div>
 
+    <p>文档模型的优势是<b>数据局部性</b>：整棵文档连续存放，一次读盘就能取回；关系库要多次索引查找。劣势是<b>多对多关系</b>：如果多个实体共享同一份数据（例如同一家公司、同一所学校），文档要么重复存储导致更新异常，要么退化成“文档里存 ID、应用层做连接”。</p>
+
+    <p><b>规范化</b>用 ID 代替重复文本，保证一份事实只存一处，更新只需改一行；<b>反规范化</b>把常用字段复制进读路径，减少 JOIN，代价是要维护一致性。二者不是道德选择，而是读写比与一致性要求的函数：写多、强一致用规范化；读多、可容忍延迟用反规范化，并配 CDC 或物化视图同步。</p>
+
     <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">社交图：从连接表到属性图</span></div>
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">社交网络：一条帖子该嵌在用户文档里吗</span></div>
       <div class="thm-body">
-        <p>“找出 A 的三度以内、住在同城、且在过去 30 天互动过的用户”，在关系库里是一次次自连接，深度一变，SQL 与执行计划都急剧复杂。属性图把关系本身变成一等公民：边有类型、方向和属性，查询语言可以写成变长路径。</p>
-        <pre><code class="language-cypher">MATCH (me:User {id: 'alice'})-[:FOLLOWS*1..3]-(other:User)
-WHERE other.city = me.city
-RETURN DISTINCT other.name, count(*) AS paths
-ORDER BY paths DESC LIMIT 20;</code></pre>
-        <p>代价是图查询的局部性依赖存储布局，跨分片的变长路径可能退化成全网广播。</p>
+        <p>若帖子只属于一个作者、且总与作者一起读，嵌进用户文档很自然。但首页要按时间合并多个作者的帖子，帖子还会被点赞、评论、举报，涉及多对多；此时独立 posts 表 + 按 author_id 的二级索引更合适。LinkedIn 式简历适合文档，Twitter 式信息流适合关系/图混合。</p>
       </div>
     </div>
+
+    <h3><span class="sn">3.2</span>星型与雪花：分析场景的固定套路</h3>
+    <p>数据仓库常用<b>星型模式</b>：一张巨大的事实表（fact_sales）记录事件与度量，周围一圈维度表（dim_product、dim_date、dim_store）。维度表可以进一步规范化成雪花，但多一次 JOIN 换来更少的重复；分析查询通常只碰事实表的少数列，所以列存 + 星型是默认组合。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>模型</th><th>最擅长</th><th>连接成本</th><th>演化方式</th><th>典型失败</th></tr></thead>
+        <thead><tr><th>模型</th><th>最擅长</th><th>不擅长</th><th>典型系统</th></tr></thead>
         <tbody>
-          <tr><td class="id">关系</td><td>多对多、强约束、即席查询</td><td>查询时 join，可被优化器重排</td><td>迁移 + 版本化 schema</td><td>宽表爆炸、N+1 查询</td></tr>
-          <tr><td class="id">文档</td><td>自包含聚合、快速整取</td><td>应用层拼接，易产生重复</td><td>读时兼容多种形状</td><td>跨文档一致性、更新遗漏</td></tr>
-          <tr><td class="id">图</td><td>深链、路径、推荐</td><td>指针跳转，深度敏感</td><td>加节点/边类型即可</td><td>超级节点导致热点</td></tr>
-          <tr><td class="id">事件流</td><td>审计、重放、派生视图</td><td>在消费者侧重建状态</td><td>事件版本 + 兼容规则</td><td>无限增长、重放不可幂等</td></tr>
-          <tr><td class="id">数组/矩阵</td><td>数值计算、特征、统计</td><td>向量化批量运算</td><td>列式 schema 演进</td><td>稀疏数据被当稠密存储</td></tr>
+          <tr><td class="id">关系</td><td>多对多、任意条件连接、强约束</td><td>深层嵌套对象的整体读写</td><td>PostgreSQL、MySQL</td></tr>
+          <tr><td class="id">文档</td><td>自包含聚合、schema-on-read、快速演进</td><td>跨文档连接、多对多、全局约束</td><td>MongoDB、CouchDB</td></tr>
+          <tr><td class="id">图</td><td>多跳关系、路径、推荐、欺诈环</td><td>全表聚合、大批量扫描</td><td>Neo4j、JanusGraph</td></tr>
+          <tr><td class="id">事件流</td><td>审计、回放、派生多个读模型</td><td>低延迟点查（需物化）</td><td>Kafka + 物化视图</td></tr>
+          <tr><td class="id">DataFrame</td><td>列式批处理、特征工程、统计</td><td>高并发事务、细粒度更新</td><td>pandas、Polars、Spark</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">事件溯源与 CQRS</span></div>
+    <h3><span class="sn">3.3</span>图模型：当“关系”本身是数据</h3>
+    <p>当多对多是常态、且查询要沿关系走多跳（朋友的朋友、商品共购、资金环路），图模型比反复 JOIN 更自然。属性图（property graph）用顶点和边，二者都可带键值属性；Cypher 用 ASCII art 表达模式：</p>
+
+<pre><code class="language-cypher">MATCH (alice:Person {name: 'Alice'})-[:FOLLOWS]-&gt;(friend)-[:POSTED]-&gt;(post)
+WHERE post.created_at &gt; $since
+RETURN friend.name, post.text
+ORDER BY post.created_at DESC
+LIMIT 20;</code></pre>
+
+    <p>SQL 也能查图，现代数据库支持递归 CTE；但多跳的可变长度路径在 SQL 里写起来冗长，优化器也未必能利用图的局部性。图数据库的真正优势是<b>把邻接关系存成指针</b>，遍历时无需索引查找，代价是跨超级节点的 fan-out 爆炸。</p>
+
+    <div class="cards">
+      <div class="card"><div class="k">Property graph</div><h4>顶点 + 边 + 属性</h4><p>Neo4j 的模型；边有类型和方向，适合社交、推荐、权限继承。</p></div>
+      <div class="card"><div class="k">Triple store</div><h4>主语—谓语—宾语</h4><p>RDF 三元组，SPARQL 查询；适合本体、知识图谱、跨域数据整合。</p></div>
+      <div class="card"><div class="k">Datalog</div><h4>规则与递归</h4><p>用逻辑规则推导新事实，天然支持递归闭包；语义清晰，适合静态分析与权限推理。</p></div>
+    </div>
+
+    <p><b>SPARQL</b> 查询三元组模式，支持 OPTIONAL 与 UNION；<b>Datalog</b> 把查询写成规则，引擎反复应用规则直到不动点，递归传递闭包非常简洁。二者共同点是<b>声明式</b>：你描述“要什么关系”，不写“怎么遍历”。</p>
+
+    <div class="thm rem">
+      <div class="thm-head"><span class="thm-kind">辨析</span><span class="thm-title">GraphQL 不是图数据库查询语言</span></div>
       <div class="thm-body">
-        <p><b>Event sourcing</b> 只追加“发生了什么”，当前状态由事件折叠得到；<b>CQRS</b> 把写模型与读模型分离，读侧可以是搜索索引、宽表或缓存。</p>
-        <p>它带来完整审计与时间旅行，代价是事件模式近乎永久、读模型需重建。它不是默认架构，只在“历史本身有价值”时成立。</p>
+        <p>GraphQL 是 API 的查询语言：客户端声明需要的字段树，服务端负责取数。它解决的是“前端多次往返、响应字段过多或过少”的问题，不规定底层存储是不是图。把它当图数据库用，会在解析器里写出 N+1 查询；真正的图遍历仍要底层图引擎或预计算。</p>
       </div>
     </div>
 
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>文档模型像把一张表单塑封起来：拿取方便，改一处要重印整张。关系模型像把表单拆成字段卡片：改一处只动一张卡，但每次阅读都要把卡片拼回去。图模型则把卡片之间的线也当成实体。</p>
+    <h3><span class="sn">3.4</span>事件溯源与 CQRS</h3>
+    <p><b>Event sourcing</b> 不存“当前状态”，而存“导致状态变化的事件”序列：账户不是 balance=100，而是“存入 150、取出 50”。当前状态由事件重放得到；要审计、要回滚、要新建读模型，都只需重放。代价是事件模式一旦发布就很难改、重放成本随历史增长、外部副作用必须幂等。</p>
+    <p><b>CQRS</b>（command-query responsibility segregation）把写模型与读模型分开：写侧校验命令并产生事件，读侧订阅事件维护为查询优化的物化视图。二者常一起用，但并非必须：CQRS 可以没有事件溯源，事件溯源也可以只有一个读模型。</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">事件不是“消息”，读模型不是“缓存”</span></div>
+      <div class="thm-body">
+        <p>事件是事实，必须永久可重放、不可原地修改；消息可以丢、可以重投。读模型是派生数据，必须能从事件重建，因此要记录消费位点、支持幂等与回填。把事件当临时消息、把读模型当唯一真相，是事件溯源项目最常见的翻车方式。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">3.5</span>DataFrame、矩阵与数组</h3>
+    <p>DataFrame 是“带列名的二维表 + 类 SQL 算子”，在内存中按列组织，适合统计、特征工程与探索性分析。pandas 单机、Polars 多线程、Spark DataFrame 分布式；它们与 SQL 的边界越来越模糊（Spark SQL、DuckDB）。矩阵/张量则是数值计算模型：推荐系统的用户—物品矩阵、图算法的邻接矩阵、神经网络的权重张量。选择依据是<b>算子形态</b>：关系代数用 SQL/DataFrame，线性代数用矩阵库，两者之间靠 Arrow 等列式内存格式零拷贝转换。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>概念</th><th>一句话</th><th>适用信号</th></tr></thead>
+        <tbody>
+          <tr><td class="id">阻抗失配</td><td>对象树与关系表的翻译成本</td><td>聚合边界清晰时用文档</td></tr>
+          <tr><td class="id">规范化</td><td>一份事实只存一处</td><td>写多、强一致、多对多</td></tr>
+          <tr><td class="id">反规范化</td><td>复制字段换读性能</td><td>读多、可容忍延迟</td></tr>
+          <tr><td class="id">星型 / 雪花</td><td>事实表 + 维度表</td><td>OLAP 建模默认解</td></tr>
+          <tr><td class="id">property graph</td><td>顶点与边都带属性</td><td>多跳关系、路径查询</td></tr>
+          <tr><td class="id">SPARQL</td><td>RDF 三元组查询</td><td>知识图谱、跨域整合</td></tr>
+          <tr><td class="id">Datalog</td><td>递归规则到不动点</td><td>传递闭包、权限推理</td></tr>
+          <tr><td class="id">event sourcing</td><td>存事件、重放得状态</td><td>审计、回放、多读模型</td></tr>
+          <tr><td class="id">CQRS</td><td>读写模型分离</td><td>读写负载差异大</td></tr>
+          <tr><td class="id">DataFrame</td><td>列式二维表 + 算子</td><td>统计、特征、批处理</td></tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">用文档模型存“会变的多对多”，再用应用代码补连接</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">本章四条</span></div>
       <div class="thm-body">
-        <p>先是嵌入评论，后来作者改名，于是每份帖子都要更新；再要按作者查评论，只能全表扫描。这不是文档库“不行”，而是模型与访问模式错配：同一事实若要多处一致，就该抽成独立实体。</p>
+        <p>① “文档数据库不需要 schema”——schema 只是从写入时校验挪到了读取时代码里。② “图数据库一定比 SQL 快”——只在多跳局部遍历时成立，全表聚合反而更慢。③ “事件溯源自动带来审计”——事件若可被篡改或删除，审计价值归零。④ “DataFrame 只是玩具”——在单机可容纳的数据上，DuckDB/Polars 常比分布式集群更快且更便宜。</p>
       </div>
     </div>
   </div>
@@ -760,73 +908,110 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch4" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 4 · Storage and Retrieval</div>
-    <h2><span class="num">4</span>存储引擎：写入放大的账单，迟早要还</h2>
-    <p class="lede">数据库的性能差异，多半不在于 SQL 解析，而在于它如何把随机写变成顺序写、如何用额外的读与空间换取写吞吐。B-tree 与 LSM 是两种根本不同的还债方式。</p>
+    <h2><span class="num">4</span>存储引擎：把写放大、读放大、空间放大摆上桌</h2>
+    <p class="lede">数据库最底层只做两件事：把字节放进去，再按某种顺序找回来。B-tree 与 LSM-tree 的差别，不是“新旧”，而是把成本记在写路径还是读路径、压缩还是查询上。</p>
 
     <div class="chap-intro">
-      <p>先看 OLTP 的两种索引结构：B-tree 原地更新页，LSM 追加不可变 SSTable 再合并；再看 OLAP 的列式存储、压缩与向量化；最后补上多维索引与全文索引，解释为什么“一个 B-tree 打天下”在分析场景会失效。</p>
-      <span class="tag">B-tree · LSM · Column Store · Index</span>
+      <p>本章先看 OLTP 的两大索引家族：追加式的日志结构（SSTable/LSM）与原地更新的 B-tree；再比较写放大、读放大、空间放大与 SSD 上的表现。随后转入分析存储：列式布局、压缩、向量化执行、物化视图，以及多维索引、全文检索与向量索引。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">B-tree · LSM · Columnar · Full-text · Vector index</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">SSTable</span><span class="chip">memtable</span><span class="chip">compaction</span>
-      <span class="chip">write amplification</span><span class="chip">Bloom filter</span><span class="chip">columnar</span><span class="chip">inverted index</span>
+      <span class="chip hot">SSTable</span><span class="chip">memtable</span><span class="chip">Bloom filter</span><span class="chip">WAL</span>
+      <span class="chip">columnar</span><span class="chip">Parquet</span><span class="chip">HNSW</span>
     </div>
 
-    <h3><span class="sn">4.1</span>B-tree：原地改页，用 WAL 保命</h3>
-    <p>B-tree 把数据切成固定大小的页（常见 4–16 KB），每个页用一组有序键与子指针指向下一层。点查是 $O(\log n)$ 次页跳转；写入时定位叶子页、修改、若溢出则分裂，并把“改页”这一动作先写进 write-ahead log，崩溃后可重放。</p>
-    <p>它的代价是：每次逻辑写至少产生一次 WAL 写 + 一次页写；页分裂还会再写多个页。这种<b>写放大</b>在 SSD 上尤其要命，因为 SSD 的擦除块寿命有限。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Storage and Indexing for OLTP · Log-Structured Storage · B-Trees · Comparing B-Trees and LSM-Trees · Multicolumn and Secondary Indexes · Storing Values Within the Index · Keeping Everything in Memory · Data Storage for Analytics · Cloud Data Warehouses · Column-Oriented Storage · Query Execution: Compilation and Vectorization · Materialized Views and Data Cubes · Multidimensional and Full-Text Indexes · Full-Text Search · Vector Embeddings · Summary</p></details>
 
-    <h3><span class="sn">4.2</span>LSM-tree：只追加，用合并换顺序写</h3>
-    <p>LSM 把写入先放进内存的 memtable（通常是有序结构），写满后冻结、顺序刷成一个不可变的 SSTable。后台 compaction 把多个 SSTable 归并，丢弃被覆盖的旧值与墓碑标记。点查要自新到旧依次查找，因此读会被放大。</p>
+    <h3><span class="sn">4.1</span>从两个 bash 函数到索引</h3>
+    <p>最简单的键值库就是追加写日志：<code>db_set</code> 把 <code>key,value</code> 追加到文件末尾，<code>db_get</code> 反向扫描取最后一条。写入是顺序 I/O，极快；读取是 $O(n)$ 扫描，数据一大就不可用。索引由此诞生：额外维护一份“键 → 文件偏移”的结构，用空间与写放大换读取速度。</p>
+
+<pre><code class="language-bash">db_set () { echo "$1,$2" &gt;&gt; database; }
+db_get () { grep "^$1," database | sed -e "s/^$1,//" | tail -n 1; }</code></pre>
+
+    <p><b>Hash index</b>（如 Bitcask）在内存里存 key 到偏移的映射，读一次磁盘即可；但范围查询要逐键查，且所有 key 必须放得进内存。它适合“键数量可控、以点查为主”的场景。</p>
+
+    <h3><span class="sn">4.2</span>SSTable 与 LSM-tree：只追加，不原地改</h3>
+    <p>SSTable（Sorted String Table）要求文件内按 key 排序，且每个 key 只出现一次。排序带来三个好处：合并段文件像归并排序一样线性；查找可用稀疏索引 + 二分；范围扫描连续。写入先进入内存的 <b>memtable</b>（有序结构，如跳表/红黑树），超过阈值就刷成新的 SSTable；后台再按策略合并旧段。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">三种放大</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">LSM-tree 的写路径</span></div>
       <div class="thm-body">
-        <p><b>写放大</b>：一次用户写入最终落盘多少次；<b>读放大</b>：一次查询要读多少个文件/页；<b>空间放大</b>：磁盘占用 / 逻辑数据量。任何存储引擎都在三者之间取舍，没有一项能同时最优。</p>
-        <p>B-tree 写放大较高但读路径稳定；LSM 写放大低、顺序写友好，但读放大与空间放大依赖 compaction 是否跟得上。</p>
+        <p>写入 → 追加 WAL（崩溃恢复）→ 插入 memtable → memtable 满后冻结并刷盘为 L0 SSTable → 后台 compaction 把多层 SSTable 归并成更大的有序文件。删除用 <b>tombstone</b> 标记，读取时屏蔽旧值，直到 compaction 真正回收。</p>
+        <p>读取顺序：memtable → L0（可能多个重叠文件）→ L1 → L2 …；每层可用 Bloom filter 跳过不含目标 key 的文件。</p>
       </div>
     </div>
 
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">公式</span><span class="thm-title">Bloom filter 的假阳性率</span></div>
-      <div class="thm-body">
-        <p>用 $m$ 位、$k$ 个哈希函数表示 $n$ 个键，查询一个不存在的键时误判为“可能存在”的概率约为</p>
-        $$ \left(1-e^{-kn/m}\right)^{k}. $$
-        <p>它只会假阳性、不会假阴性，因此适合放在 LSM 的读路径最前面：用一个很小的内存代价，省掉大量必然落空的磁盘查找。最优哈希个数约为 $k=\frac{m}{n}\ln 2$。</p>
-      </div>
+    <div class="cards">
+      <div class="card"><div class="k">Size-tiered</div><h4>小段合并成大段</h4><p>写入快、空间放大高；HBase 早期、Cassandra 常用。大段合并时临时占用双倍空间。</p></div>
+      <div class="card"><div class="k">Leveled</div><h4>分层、每层有序不重叠</h4><p>读放大低、空间效率高；compaction 频繁搬运数据，写放大明显（RocksDB、LevelDB）。</p></div>
+      <div class="card"><div class="k">Tiered / hybrid</div><h4>按时间分层</h4><p>时序与日志负载常用，兼顾写吞吐与查询；ScyllaDB 等提供多种策略。</p></div>
     </div>
+
+    <p>compaction 是 LSM 的心脏，也是它的痛点：合并会持续占用磁盘带宽与 CPU，写放大多倍于原始数据；如果写入速率长期高于 compaction 吞吐，L0 文件堆积，读延迟骤升。监控要盯 <b>L0 file count</b>、pending compaction bytes 与写停顿。</p>
+
+    <h3><span class="sn">4.3</span>B-tree：原地更新与页分裂</h3>
+    <p>B-tree 把数据切成固定大小的页（通常 4～16 KB），页内有序，页间用子指针组织成高扇出的平衡树。查找是 $O(\log n)$ 次页访问；插入若页满就分裂成两页并更新父节点。为了让崩溃后仍能恢复，修改前先写 <b>WAL</b>（redo log）；并发控制用 latch（短锁）保护页。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>维度</th><th>B-tree</th><th>LSM-tree</th><th>列式（OLAP）</th></tr></thead>
+        <thead><tr><th>维度</th><th>B-tree</th><th>LSM-tree</th></tr></thead>
         <tbody>
-          <tr><td class="id">写入方式</td><td>原地更新页 + WAL</td><td>追加 memtable → SSTable</td><td>批量导入、按列编码</td></tr>
-          <tr><td class="id">点查</td><td>稳定，$O(\log n)$ 页访问</td><td>受层数与 Bloom filter 影响</td><td>不擅长，需整块解压</td></tr>
-          <tr><td class="id">范围扫描</td><td>叶子链表顺序读，局部性好</td><td>需合并多个有序文件</td><td>只读相关列，扫描带宽低</td></tr>
-          <tr><td class="id">写放大</td><td>高（WAL + 页 + 分裂）</td><td>低到中（取决于 compaction 策略）</td><td>导入时高，之后只读</td></tr>
-          <tr><td class="id">空间放大</td><td>较低，页内可有空洞</td><td>较高，旧版本待合并</td><td>压缩率高（RLE/字典）</td></tr>
-          <tr><td class="id">典型系统</td><td>PostgreSQL、MySQL InnoDB</td><td>RocksDB、Cassandra、ScyllaDB</td><td>Parquet、ClickHouse、DuckDB</td></tr>
+          <tr><td class="id">写路径</td><td>原地改页 + WAL，随机写</td><td>顺序追加 + 后台合并</td></tr>
+          <tr><td class="id">读路径</td><td>固定树高，延迟可预测</td><td>多层查找，依赖 Bloom filter</td></tr>
+          <tr><td class="id">写放大</td><td>较低（页 + WAL）</td><td>较高（compaction 反复搬运）</td></tr>
+          <tr><td class="id">空间放大</td><td>页内碎片，通常较低</td><td>多版本共存，可能较高</td></tr>
+          <tr><td class="id">典型系统</td><td>PostgreSQL、MySQL InnoDB、SQLite</td><td>RocksDB、Cassandra、ScyllaDB、HBase</td></tr>
+          <tr><td class="id">适合</td><td>读多、范围查询、事务</td><td>写密集、高吞吐摄入、SSD</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="cards">
-      <div class="card"><div class="k">Columnar</div><h4>只读需要的列</h4><p>同一列类型一致，适合 RLE、字典编码、位图；再配合向量化执行，把 CPU 分支预测的损失补回来。</p></div>
-      <div class="card"><div class="k">Compression</div><h4>排序本身就是压缩</h4><p>按低基数或相关列排序后，相邻值重复度高，压缩率显著提升；代价是排序键之外的查询要扫更多块。</p></div>
-      <div class="card"><div class="k">Multi-dim</div><h4>R-tree / 网格 / 倒排</h4><p>空间查询用最小外接矩形剪枝；全文检索用倒排索引记录词项到文档的映射，再配合位置信息做短语查询。</p></div>
+    <p>SSD 改变了部分结论：随机写不再像机械盘那样昂贵，但写放大仍消耗寿命与带宽，LSM 的顺序写依然有优势。反过来，B-tree 的原地更新在 SSD 上会产生“写整页”的额外开销，且页分裂造成碎片。没有绝对赢家，只有负载匹配。</p>
+
+    <h3><span class="sn">4.4</span>多列索引、覆盖索引与内存库</h3>
+    <p><b>Concatenated index</b> 把多个列按顺序拼成键，只有前缀能高效查询：(last_name, first_name) 支持按姓查，也支持姓+名，但不支持只按名查。<b>多维索引</b>（R-tree、kd-tree、网格、空间填充曲线）用于“经度与纬度同时范围过滤”这类查询，B-tree 的单维有序性在这里失效。</p>
+    <p><b>Covering index</b> 把查询需要的列直接存进索引，避免回表；代价是索引更大、写入更慢。<b>聚簇索引</b>（clustered index）让表数据按主键顺序存放，MySQL InnoDB 的主键即聚簇索引；二级索引叶子存主键，再回表。</p>
+    <p><b>In-memory database</b>（Redis、Memcached、SAP HANA）把热数据放内存，用快照/AOF 或副本保证持久性。内存库的真正优势不是“不用读盘”，而是避免了编码/解码与页布局的开销；代价是容量受 RAM 限制、成本高。anti-caching 把冷数据换出到磁盘，是折中方案。</p>
+
+    <h3><span class="sn">4.5</span>分析存储：列式、压缩与向量化</h3>
+    <p>事实表往往上百列，查询只读四五列。行存要把整行读进来再丢掉，列存则只读需要的列。列存还让同列数据类型一致，压缩率大幅提升：字典编码（低基数字符串）、RLE（连续重复）、位图、Delta 编码（时间戳）。Parquet/ORC 把数据切成 row group，每个 column chunk 独立压缩，并带 min/max 统计用于跳过。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一条报表查询的 I/O 账</span></div>
+      <div class="thm-body">
+        <p>20 亿行、120 列、每行 1 KB 的事实表约 2 TB。行存扫全表要读 2 TB；列存只读 date_key、product_sk、quantity 三列，假设每列压缩后 20 GB，总计 60 GB，少读 30 倍。再叠加 row group 的 min/max 剪枝与向量化执行，实际耗时可以从小时级降到秒级。</p>
+      </div>
     </div>
 
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>B-tree 像一本不断修订的字典：每次改一个词条就翻到那一页划掉重写，还得先在草稿本上记一笔“我改了什么”。LSM 像只写新页、从不涂改的笔记本：查一个词要从最后一页往前翻，翻得多了就合订成一本。</p>
-    </div>
+    <p><b>向量化执行</b>让算子一次处理一批值（batch），用 CPU SIMD 与缓存友好循环替代逐行虚函数调用；<b>JIT 编译</b>把查询编译成机器码，减少解释开销。二者常同时出现在 DuckDB、ClickHouse、Snowflake 等引擎里。</p>
+    <p><b>Materialized view</b> 预计算聚合结果，查询直接读；<b>data cube / ROLLUP</b> 预计算多维组合。代价是写入时维护成本与存储放大，且只对可枚举的查询模式有效。</p>
+
+    <h3><span class="sn">4.6</span>多维、全文与向量索引</h3>
+    <p><b>全文检索</b>的核心是倒排索引（inverted index）：词项 → 文档 ID 列表（postings list），配合词干化、停用词、同义词与 BM25 打分。Lucene（Elasticsearch/Solr 的引擎）还支持模糊匹配（编辑距离自动机）与短语查询。它解决的是“文本相关性排序”，不是“精确条件过滤”。</p>
+    <p><b>向量索引</b>用于语义搜索：嵌入模型把查询与文档映射到高维向量，用余弦相似度或欧氏距离找最近邻。Flat 索引精确但需全量比较；IVF 先聚类再只探测少数簇（probes 越大越准）；HNSW 建多层近邻图，从稀疏顶层逐层下降，查询快但结果为近似。Faiss、pgvector 都实现了这些结构。</p>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">compaction 跟不上写入</span></div>
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">索引不是免费的</span></div>
       <div class="thm-body">
-        <p>LSM 的写入吞吐看起来很美，直到磁盘带宽被后台合并吃满：读变慢，空间放大飙升，写停顿（write stall）出现。监控必须看未合并的 SSTable 数量、每层大小与 compaction pending 字节数，而不只是 QPS。</p>
+        <p>每个二级索引都要在写入时更新，写放大与锁竞争随之上升；过多索引会让写入吞吐断崖式下降。向量索引的“近似”意味着召回率不是 100%，要用 recall@k 评估，而不是只看 QPS。全文索引与向量索引都需要重建 pipeline：模型升级后旧向量必须重算，否则查询空间不一致。</p>
       </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>结构</th><th>一句话</th><th>代价 / 适用</th></tr></thead>
+        <tbody>
+          <tr><td class="id">hash index</td><td>key → 文件偏移</td><td>点查快；范围查差，受内存限制</td></tr>
+          <tr><td class="id">SSTable</td><td>有序、不可变的段文件</td><td>顺序写；需 compaction</td></tr>
+          <tr><td class="id">LSM-tree</td><td>memtable + 多层 SSTable</td><td>写吞吐高；读放大与写放大</td></tr>
+          <tr><td class="id">B-tree</td><td>固定页、原地更新</td><td>读稳定；随机写与页分裂</td></tr>
+          <tr><td class="id">Bloom filter</td><td>判断“肯定不在”</td><td>省读；有假阳性、无假阴性</td></tr>
+          <tr><td class="id">columnar</td><td>按列存储 + 压缩</td><td>扫描快；点查/更新弱</td></tr>
+          <tr><td class="id">inverted index</td><td>词项 → 文档列表</td><td>全文相关性；写入与存储开销</td></tr>
+          <tr><td class="id">HNSW</td><td>多层近邻图</td><td>近似最近邻；召回率可调</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -834,75 +1019,111 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch5" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 5 · Encoding and Evolution</div>
-    <h2><span class="num">5</span>编码与演化：让新旧版本在同一张网里共存</h2>
-    <p class="lede">滚动发布意味着旧代码与新代码必须同时读写同一份数据。编码格式的选择，决定了你能不能只升级一半节点而不停机。</p>
+    <h2><span class="num">5</span>编码与演进：让新旧代码在同一份数据上共存</h2>
+    <p class="lede">滚动升级意味着旧代码、新代码、旧数据、新数据会同时存在。编码格式的选择，决定了你能否在不宕机的情况下加字段、删字段、改类型。</p>
 
     <div class="chap-intro">
-      <p>本章先比较文本格式与二进制格式的表达力与体积，再给出模式演化的两条硬规则：向后兼容与向前兼容；最后把编码放回数据流中考察——数据库、RPC、消息队列，三者的兼容性责任方并不相同。</p>
-      <span class="tag">Protobuf · Avro · Compatibility · RPC</span>
+      <p>本章先比较语言内置序列化、JSON/XML、Protocol Buffers、Thrift 与 Avro 的编码方式与兼容性规则，再讨论数据经由数据库、REST/RPC、持久化工作流与事件日志流动时，如何保持向后与向前兼容。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Protobuf · Avro · REST · gRPC · Schema Registry</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">schema evolution</span><span class="chip">field tag</span><span class="chip">backward / forward</span>
-      <span class="chip">Avro resolution</span><span class="chip">REST / gRPC</span><span class="chip">message broker</span>
+      <span class="chip hot">backward compatibility</span><span class="chip">forward compatibility</span><span class="chip">field tag</span>
+      <span class="chip">writer / reader schema</span><span class="chip">gRPC</span><span class="chip">durable execution</span>
     </div>
 
-    <h3><span class="sn">5.1</span>为什么 JSON 不够，为什么二进制也不是免费的</h3>
-    <p>JSON/XML/CSV 人类可读、跨语言，但数字没有统一精度约定（大整数在 JavaScript 里会丢），重复键与空值语义模糊，且没有 schema，字段含义只能靠文档。二进制格式用字段编号代替字段名，体积更小、解析更快，但把“兼容性”变成了一条必须遵守的纪律。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Formats for Encoding Data · Language-Specific Formats · JSON, XML, and Binary Variants · Protocol Buffers · Avro · The Merits of Schemas · Modes of Dataflow · Dataflow Through Databases · Dataflow Through Services: REST and RPC · Durable Execution and Workflows · Event-Driven Architectures · Summary</p></details>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">向后兼容与向前兼容</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">两种兼容性</span></div>
       <div class="thm-body">
-        <p><b>Backward compatible</b>：新代码能读旧数据——升级读路径时不出错。<b>Forward compatible</b>：旧代码能读新数据——还没升级的节点遇到新字段时能忽略它。</p>
-        <p>滚动升级要求两者同时成立，因此“删字段”与“改类型”永远比“加字段”危险。</p>
+        <p><b>Backward compatibility</b>：新代码能读旧代码写的数据。<b>Forward compatibility</b>：旧代码能读新代码写的数据。滚动升级期间两者必须同时成立，否则旧节点会崩溃或丢字段。</p>
+        <p>在 API 语境下：旧客户端调新服务，需要请求向后兼容、响应向前兼容；新客户端调旧服务，需要请求向前兼容、响应向后兼容。</p>
       </div>
     </div>
 
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">规则</span><span class="thm-title">Protobuf / Thrift 的编号纪律</span></div>
-      <div class="thm-body">
-        <p>字段名可以随便改，<b>字段编号不能复用</b>。删除字段时应保留编号（reserved），否则未来某个新字段复用了旧编号，旧数据会被错误解释成新含义，且往往不报错。</p>
-        <p>新增字段必须可选或有默认值；把 required 改成 optional 在部分实现中会破坏兼容；改变整数位宽（int32 → int64）在负数编码上也可能出问题。</p>
-      </div>
-    </div>
+    <h3><span class="sn">5.1</span>语言内置格式：方便，但把未来锁死</h3>
+    <p>Java 的 <code>Serializable</code>、Python 的 <code>pickle</code>、Ruby 的 <code>Marshal</code> 能把对象图直接落盘，几行代码就能用。问题是：它们与语言运行时强绑定，其他语言难以读取；反序列化常能执行任意代码（pickle 是典型）；版本兼容靠类定义，字段一改就可能失败；体积与性能通常也差。它们适合进程内缓存或临时传输，不适合作为跨服务、跨年份的数据格式。</p>
 
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">Avro：读时用 writer schema 解释</span></div>
-      <div class="thm-body">
-        <p>Avro 不在每条记录里带字段编号，而是把整份 writer schema 放在文件头或 RPC 握手中。读取时用 reader schema 与 writer schema 做字段名匹配，缺失字段填默认值，多余字段忽略。</p>
-        <p>因此 Avro 对“改名”不友好（默认按名字匹配），但换来的好处是：每条记录没有标签开销，适合大批量数据文件。兼容性由 schema registry 在发布时检查，而不是靠运行时运气。</p>
-      </div>
-    </div>
+    <h3><span class="sn">5.2</span>JSON、XML 与二进制变体</h3>
+    <p>JSON 胜在通用、可读、浏览器原生；缺点是数字精度（大整数在 JavaScript 中丢精度）、无二进制类型（Base64 膨胀 33%）、无 schema、字段名重复传输。XML 更冗长，但有命名空间与 schema（XSD）。MessagePack、CBOR、BSON 等二进制 JSON 变体压缩了体积，却保留了“无 schema”的灵活与风险。</p>
+
+    <p>文本格式的兼容性靠“忽略未知字段 + 默认值”约定，但没有强制约束：删字段、改类型、改语义都可能悄悄破坏下游。它们适合对外 API 与调试友好的场景，不适合高吞吐内部 RPC。</p>
+
+    <h3><span class="sn">5.3</span>Protocol Buffers 与 Thrift：字段标签是契约</h3>
+    <p>二者都用 schema 定义消息，编译成多语言代码，二进制编码省空间。核心是<b>字段标签（tag/number）</b>而不是字段名：线上传输的是 tag 与类型，字段名只在代码里。只要 tag 不变，改名不影响兼容。</p>
+
+<pre><code class="language-protobuf">message Person {
+  required string user_name = 1;
+  optional int64  favorite_number = 2;
+  repeated string interests = 3;
+}</code></pre>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>格式</th><th>体积</th><th>模式</th><th>演化能力</th><th>主要风险</th></tr></thead>
+        <thead><tr><th>变更</th><th>Protobuf</th><th>Avro</th></tr></thead>
         <tbody>
-          <tr><td class="id">JSON</td><td>大</td><td>无/弱</td><td>加字段容易，语义靠约定</td><td>数字精度、空值歧义</td></tr>
-          <tr><td class="id">Protobuf</td><td>小</td><td>有，编号绑定</td><td>加可选字段安全</td><td>复用 tag、required 变更</td></tr>
-          <tr><td class="id">Thrift</td><td>小</td><td>有</td><td>类似 Protobuf</td><td>实现间行为差异</td></tr>
-          <tr><td class="id">Avro</td><td>很小</td><td>有，随数据携带</td><td>默认值驱动，改名需别名</td><td>registry 成为关键路径</td></tr>
-          <tr><td class="id">Parquet</td><td>很小</td><td>列式 schema</td><td>按列增删，读时投影</td><td>嵌套结构演化复杂</td></tr>
+          <tr><td class="id">加字段</td><td>用新 tag，旧代码忽略</td><td>给默认值即可</td></tr>
+          <tr><td class="id">删字段</td><td>标记 reserved，禁止复用 tag</td><td>reader 用默认值填补</td></tr>
+          <tr><td class="id">改字段名</td><td>安全（tag 不变）</td><td>需别名或按位置解析时小心</td></tr>
+          <tr><td class="id">改类型</td><td>受 wire type 限制，可能不兼容</td><td>支持部分提升（int → long）</td></tr>
+          <tr><td class="id">required</td><td>危险：旧数据可能没有</td><td>无 required 概念</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="cards">
-      <div class="card"><div class="k">Database</div><h4>写入即编码，读取即解码</h4><p>旧行与新行长期共存，迁移只能渐进；加列通常安全，删列要先停止读写再物理清理。</p></div>
-      <div class="card"><div class="k">RPC</div><h4>客户端与服务端版本错配</h4><p>REST 靠 HTTP 语义与内容协商；gRPC 靠 IDL。网络错误与业务错误必须区分，重试要幂等。</p></div>
-      <div class="card"><div class="k">Messaging</div><h4>生产者与消费者解耦</h4><p>broker 长期保存消息，消费者可能落后数天；向前兼容在这里不是可选项，而是运行前提。</p></div>
+    <p>Protobuf 的 <code>required</code> 是兼容性陷阱：一旦发布，后续无法安全删除；新代码写入时若旧读者不认识，会直接失败。实践里几乎只用 <code>optional</code>/<code>repeated</code>。Thrift 有类似的 required/optional 区分，但编码更复杂（TBinary、TCompact、TJSON）。</p>
+
+    <h3><span class="sn">5.4</span>Avro：把 schema 放在数据旁边</h3>
+    <p>Avro 不在每个字段前写 tag，而是把整个 writer schema 与数据一起存（文件头或 RPC 握手）。读取时用 reader schema 与 writer schema 做<b>schema resolution</b>：按字段名匹配，缺失字段用默认值，多余字段忽略。因为没有 tag，字段名和顺序可以变，但改名必须靠 alias；二进制更紧凑。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">Avro 的兼容性判定</span></div>
+      <div class="thm-body">
+        <p>writer 有 <code>{id, name}</code>，reader 有 <code>{id, name, email=null}</code>：新字段有默认值，旧数据可读，向后兼容。反过来，writer 有 email、reader 没有：reader 忽略未知字段，向前兼容。若 writer 删除了一个无默认值的字段，reader 就无从填补，解析失败。因此 Avro 的规则是：<b>加字段必须带默认值，删字段只能删有默认值的</b>。</p>
+      </div>
     </div>
 
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>模式演化像给一座仍在使用的大楼换管线：不能停水停电，只能一段段换，并且保证旧管线流出的水，新阀门也认。</p>
+    <p>Avro 适合大数据文件（Parquet 的 schema、Kafka 的消息）与需要“整批数据自带 schema”的场景；Protobuf 适合低延迟 RPC 与字段经常增删的 API。两者都优于无 schema 的 JSON，但都需要 schema 注册与版本管理。</p>
+
+    <div class="thm rem">
+      <div class="thm-head"><span class="thm-kind">辨析</span><span class="thm-title">schema 的价值不是“类型检查”</span></div>
+      <div class="thm-body">
+        <p>schema 真正的价值是<b>让演进可推理</b>：你能明确知道加字段、删字段、改类型对旧读者意味着什么；能在 CI 里做兼容性检查；能让代码生成与文档同步。没有 schema 时，兼容性只能靠约定与祈祷。</p>
+      </div>
     </div>
+
+    <h3><span class="sn">5.5</span>数据流之一：数据库与滚动升级</h3>
+    <p>数据库是“被写进去的数据永远比代码活得久”的地方。滚动升级时，新旧代码同时读写同一张表：新代码写入新字段，旧代码读到时必须忽略；旧代码写入旧格式，新代码读到时必须补默认值。因此数据库 schema 变更通常分三步：先加可空列/新表，双写并回填，确认所有读者升级后再删旧列。</p>
+
+    <p><b>Schema migration</b> 在大型表上可能锁表数小时。在线工具（gh-ost、pt-online-schema-change）用影子表 + binlog 同步来避免长锁；但真正的风险在应用层：一次删除列，可能让仍在运行的旧版本实例写入失败。</p>
+
+    <h3><span class="sn">5.6</span>数据流之二：REST、RPC 与持久化工作流</h3>
+    <p><b>REST</b> 用 HTTP 动词与资源路径，强调无状态、可缓存、统一接口；<b>RPC</b> 把远程调用伪装成本地函数，gRPC 用 Protobuf + HTTP/2 多路复用，性能好但耦合更紧。RPC 的经典陷阱是“把网络当本地”：超时、重试、部分失败、幂等都必须显式处理；服务发现与负载均衡也不能假装不存在。</p>
+
+    <p><b>Durable execution</b>（Temporal、Cadence、AWS Step Functions 等）把工作流状态持久化：每一步的输入输出记录在事件日志里，进程崩溃后从上次完成处继续。它让“跨服务的长事务”可以用普通代码写，但要求步骤<b>确定性</b>、副作用<b>幂等</b>，否则重放会重复下单或重复发邮件。</p>
+
+    <h3><span class="sn">5.7</span>数据流之三：事件驱动与 Schema Registry</h3>
+    <p>事件日志（Kafka、Pulsar）把生产者与消费者解耦：生产者只保证事件按 key 分区有序，消费者各自维护位点。事件 schema 的演进比 RPC 更严格，因为一个 topic 会被多个团队、多个版本、甚至历史回放作业读取。常见做法是 <b>Schema Registry</b> 强制兼容性检查（BACKWARD、FORWARD、FULL），并禁止删除必填字段。</p>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">“这个字段没人用了，删掉吧”</span></div>
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">兼容性不是“能解析”</span></div>
       <div class="thm-body">
-        <p>删除字段只是让新代码不再写它，历史数据、离线任务、尚未升级的消费者仍在读。正确顺序是：先停止写入并观察一个发布周期，确认无读取；再把字段标记为 deprecated；最后保留编号并物理清理。跳过任何一步，都可能在某次回滚时读到“空但非空”的旧记录。</p>
+        <p>字段从 <code>string</code> 改成 <code>int</code> 可能“能解析”但语义全错；把“金额单位从元改成分”这种语义变更，schema 检查完全抓不到。兼容性要覆盖<b>语法、语义、默认值、枚举值</b>四层。另一个坑是复用已删除的 Protobuf tag：旧数据会被错误解释成新字段，必须用 <code>reserved</code> 永久占位。</p>
       </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>格式</th><th>编码</th><th>兼容机制</th><th>适用</th></tr></thead>
+        <tbody>
+          <tr><td class="id">JSON / XML</td><td>文本</td><td>忽略未知字段 + 默认值</td><td>对外 API、调试</td></tr>
+          <tr><td class="id">Protobuf</td><td>二进制 + tag</td><td>tag 稳定、reserved</td><td>gRPC、低延迟内部服务</td></tr>
+          <tr><td class="id">Thrift</td><td>二进制 + tag</td><td>required/optional 规则</td><td>跨语言 RPC</td></tr>
+          <tr><td class="id">Avro</td><td>二进制 + writer schema</td><td>reader/writer schema resolution</td><td>数据文件、Kafka</td></tr>
+          <tr><td class="id">Parquet</td><td>列式 + schema</td><td>列裁剪、schema evolution</td><td>数据湖分析</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -910,71 +1131,108 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch6" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 6 · Replication</div>
-    <h2><span class="num">6</span>复制：把同一份数据放在多处，然后处理“不同步”</h2>
-    <p class="lede">复制的目的只有三个：降低延迟、提高可用性、提升读吞吐。但每一份副本都是一次延迟到达的承诺，复制滞后会以三种典型异常的形式出现在用户面前。</p>
+    <h2><span class="num">6</span>复制：让同一份数据活在多台机器上</h2>
+    <p class="lede">复制不难在“拷贝一次”，难在“持续拷贝变更，并在节点宕机、网络分区、写入冲突时仍然给出可解释的结果”。</p>
 
     <div class="chap-intro">
-      <p>本章按拓扑展开：单主复制及其同步/异步取舍与故障切换；多主复制与写冲突；无主复制与 quorum、读修复、反熵。重点不是背算法，而是识别“用户看到了什么不该看到的东西”。</p>
-      <span class="tag">Single-Leader · Multi-Leader · Quorum</span>
+      <p>本章按三种拓扑展开：单 leader（最常用）、多 leader（多地域/离线优先）、leaderless（Dynamo 风格）。每种都讨论同步策略、故障切换、复制日志实现与延迟带来的不一致，最后落到冲突检测与因果顺序。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Single-leader · Multi-leader · Leaderless · Quorum · CRDT</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">replication lag</span><span class="chip">failover</span><span class="chip">read-your-writes</span>
-      <span class="chip">monotonic reads</span><span class="chip">conflict resolution</span><span class="chip">quorum</span><span class="chip">version vector</span>
+      <span class="chip hot">failover</span><span class="chip">replication lag</span><span class="chip">read-your-writes</span>
+      <span class="chip">LWW</span><span class="chip">version vector</span><span class="chip">quorum</span><span class="chip">hinted handoff</span>
     </div>
 
-    <h3><span class="sn">6.1</span>单主复制：简单，但故障切换是事故高发区</h3>
-    <p>所有写先到 leader，leader 把变更流发给 follower，读可以分散到任意副本。同步复制保证 follower 确认后才返回，代价是任一 follower 慢就拖住写；异步复制不拖写，但 leader 崩溃时可能丢掉尚未传播的已提交写。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Single-Leader Replication · Synchronous Versus Asynchronous Replication · Setting Up New Followers · Handling Node Outages · Implementation of Replication Logs · Problems with Replication Lag · Solutions for Replication Lag · Multi-Leader Replication · Geographically Distributed Operation · Sync Engines and Local-First Software · Dealing with Conflicting Writes · Leaderless Replication · Writing to the Database When a Node Is Down · Single-Leader Versus Leaderless Replication Performance · Multi-Region Operation · Detecting Concurrent Writes · Summary</p></details>
+
+    <h3><span class="sn">6.1</span>单 leader：所有写走一个入口</h3>
+    <p>单 leader 复制把写请求集中到 leader，leader 把变更写入本地日志，followers 按顺序拉取并应用。读可以走 leader（强一致）或 follower（最终一致）。这是 PostgreSQL、MySQL、MongoDB 副本集、Kafka 分区 leader 的默认模型。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">复制滞后的三种读异常</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">同步、异步与半同步</span></div>
       <div class="thm-body">
-        <p><b>Read-your-writes</b>：用户刚提交的内容，刷新后却看不到——因为读到了滞后的副本。<b>Monotonic reads</b>：用户先看到较新的状态，再刷新却退回较旧的状态——因为两次读到了不同滞后程度的副本。<b>Consistent prefix</b>：观察者看到事件 B 却还没看到它之前的 A——因果顺序被打乱。</p>
-        <p>三者都不是“数据错了”，而是“会话看到的时间线不合法”。修复方式分别是：写后读主、按用户固定副本、按因果顺序回放。</p>
+        <p><b>Synchronous</b>：leader 等 follower 确认后才向客户端返回成功。保证 follower 有最新数据，但任一 follower 慢或挂都会阻塞写入。<b>Asynchronous</b>：leader 写完本地即返回，延迟低，但 leader 崩溃可能丢失尚未复制的写。<b>Semi-synchronous</b>：至少一个 follower 确认即可，兼顾耐久与可用（MySQL 的 semi-sync、PostgreSQL 的 synchronous_commit=remote_write）。</p>
       </div>
     </div>
 
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">异步复制的自动 failover</span></div>
-      <div class="thm-body">
-        <p>leader 失联，编排系统在 30 秒后提升一个滞后 5 秒的 follower。这 5 秒内已向客户端确认的写入，随旧 leader 的磁盘一起“消失”。更糟的是旧 leader 恢复后仍以为自己在线，接受写入，形成两个真相。</p>
-        <p>防御手段：切换前尽量等待追赶；用 fencing token 让旧 leader 的写被存储层拒绝；对新 leader 的写入做唯一性约束校验。RPO 必须写进设计，而不是留给运气。</p>
-      </div>
+    <p><b>新 follower 上线</b>不能简单“从某个时间点开始拉日志”，因为日志可能已被清理。标准流程是：在 leader 上取一致性快照并记录对应的日志位点（LSN/binlog position），把快照传到新节点恢复，再从该位点追日志。快照期间不能锁库，通常用 MVCC 快照或文件系统快照。</p>
+
+    <p><b>节点宕机</b>：follower 崩溃后，从本地记录的位点继续追；若日志已被清理，只能重新做快照。leader 崩溃则需要 failover：选举新 leader、客户端重定向、其他 follower 改追新 leader。failover 的坑最多：</p>
+
+    <div class="cards">
+      <div class="card"><div class="k">丢写</div><h4>异步复制的固有代价</h4><p>新 leader 可能没收到旧 leader 的最后一批写；旧 leader 恢复后若直接重新加入，会造成“幽灵写”。需要 fencing 或强制回滚。</p></div>
+      <div class="card"><div class="k">脑裂</div><h4>两个 leader 同时接受写</h4><p>网络分区时旧 leader 以为自己还活着；必须靠多数派、租约与 fencing token 阻止双写。</p></div>
+      <div class="card"><div class="k">误判</div><h4>超时太短或太长</h4><p>太短会频繁切主，太长会延长不可用；超时阈值要基于 p99 与故障检测模型，而非拍脑袋。</p></div>
     </div>
 
-    <h3><span class="sn">6.2</span>多主与无主：冲突是必答题</h3>
-    <p>多主复制允许每个区域本地接受写，降低跨区延迟，代价是冲突解决。last-write-wins 看似简单，实际会静默丢数据：两个并发更新，时间戳较小的那个直接消失。更可靠的做法是保留两者让应用合并（购物车并集），或用 CRDT 做可交换合并。</p>
-    <p>无主复制（Dynamo 风格）让客户端直接写多个副本。</p>
+    <h3><span class="sn">6.2</span>复制日志的四种实现</h3>
+    <p><b>Statement-based</b>：把 SQL 语句原样转发。遇到 <code>NOW()</code>、<code>RAND()</code>、自增、触发器、非确定性函数就会分叉；现在很少单独使用。<b>WAL shipping</b>：把存储引擎的物理日志块发过去，字节级一致，但版本耦合强（PostgreSQL 物理复制要求主备版本/架构一致）。<b>Logical row-based</b>：按行记录“插入/更新/删除”及新旧值，MySQL binlog ROW 格式是典型，跨版本兼容好。<b>Trigger-based</b>：用触发器把变更写入另一张表，灵活但开销大，常用于异构同步。</p>
 
-    <div class="thm lem">
-      <div class="thm-head"><span class="thm-kind">引理</span><span class="thm-title">quorum 读写必相交</span></div>
-      <div class="thm-body">
-        <p>共有 $N$ 个副本，写需 $W$ 个确认，读需 $R$ 个响应。当 $R+W \gt N$ 时，读写集合必然相交，读至少能看到一个最新写入。</p>
-        <p>但相交只保证看到，不保证看到最新：并发写可能以不同顺序落地，仍需版本向量或时间戳裁决。</p>
-      </div>
-    </div>
+    <h3><span class="sn">6.3</span>复制延迟：最终一致到底承诺了什么</h3>
+    <p>异步复制下，follower 可能落后几毫秒到几分钟。用户刚写完就读不到自己的写，是最常见的投诉。三种会话保证可以用工程手段实现：</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>拓扑</th><th>写延迟</th><th>冲突</th><th>故障切换</th><th>适用</th></tr></thead>
+        <thead><tr><th>保证</th><th>要解决的问题</th><th>实现方式</th></tr></thead>
         <tbody>
-          <tr><td class="id">单主</td><td>跨区写高</td><td>不存在（单点定序）</td><td>复杂，可能丢写/脑裂</td><td>强约束业务、默认选择</td></tr>
-          <tr><td class="id">多主</td><td>本地写低</td><td>必须显式解决</td><td>各区域可独立写</td><td>多地域协作、离线客户端</td></tr>
-          <tr><td class="id">无主</td><td>可调，看 W</td><td>版本向量 + 应用合并</td><td>无切换，靠 quorum</td><td>高可用、可容忍最终一致</td></tr>
+          <tr><td class="id">read-your-writes</td><td>用户写完立刻读，必须看到自己的更新</td><td>读自己的写走 leader；或记录用户最后写入的 LSN，只读追平该位点的副本</td></tr>
+          <tr><td class="id">monotonic reads</td><td>同一用户多次读，不能“时光倒流”</td><td>同一会话粘在同一副本；或按用户 ID 做一致性哈希</td></tr>
+          <tr><td class="id">consistent prefix</td><td>不能先看到答案、后看到问题</td><td>按因果顺序读同一分区；跨分区用版本号/逻辑时钟排序</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>单主像只有一个收银台：排队但账目清楚。多主像每个分店都能开票：不用排队，但月底对账要处理“同一笔货被两家店各卖一次”。无主像让顾客自己找几个店员确认：只要问的人够多，总能问到一个知道最新情况的人。</p>
+    <p>这些保证不是数据库默认给的，而是应用层要显式选择的。把“最终一致”当成“随便读”会在演示时翻车：用户改完头像刷新看不到，再刷新又出现。</p>
+
+    <h3><span class="sn">6.4</span>多 leader：地理分布与离线优先</h3>
+    <p>多 leader 允许每个地域/每个设备本地接受写，再异步同步。好处是写延迟低、区域故障可继续写；代价是<b>写冲突</b>不可避免。冲突解决策略：</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">同一会议室的预订，两个地域同时写入</span></div>
+      <div class="thm-body">
+        <p>用户 A 在美东订了 3 点会议室，用户 B 在欧西也订了 3 点。两个 leader 都本地成功，复制后才发现冲突。<b>LWW</b> 按时间戳保留一个，但会静默丢掉另一个预订；<b>版本向量</b>能检测“并发写”，把冲突交给应用合并；<b>CRDT</b> 用可交换的合并函数（如集合的并、计数器的增减）让副本自动收敛。</p>
+      </div>
     </div>
 
-    <div class="thm rem">
-      <div class="thm-head"><span class="thm-kind">提醒</span><span class="thm-title">quorum 不是强一致</span></div>
+    <p><b>Sync engines / local-first</b> 把多 leader 思想推到客户端：每个设备保留本地副本，离线可读写，联网后同步。Figma、Linear、Obsidian Sync、CRDT 协作编辑器都是这个模式。难点不是传输，而是冲突语义：文本用 OT/CRDT，列表用 fractional indexing，权限与删除需要 tombstone 与因果依赖。</p>
+
+    <h3><span class="sn">6.5</span>Leaderless：quorum 与读修复</h3>
+    <p>Dynamo 风格系统（Cassandra、Riak、Voldemort）让客户端直接写多个副本，不设 leader。若副本数 $N=3$，写入需 $W=2$ 个确认，读取需 $R=2$ 个响应，则 $R+W&gt;N$ 保证读写集合有交集，读总能碰到至少一个最新副本。</p>
+
+    <div class="thm theorem">
+      <div class="thm-head"><span class="thm-kind">规则</span><span class="thm-title">quorum 的算术与它的漏洞</span></div>
       <div class="thm-body">
-        <p>$R+W \gt N$ 只保证读写集合相交，不保证线性一致：并发的写可能在不同副本上以不同顺序落地，读仍可能返回旧值。要实现线性一致，还需要读修复、写全量 quorum，或引入共识层。</p>
+        <p>$R+W&gt;N$ 只保证“读集合与写集合相交”，不保证相交节点是最新的：如果写只成功了 $W$ 个但其中一个后来失效，读仍可能拿到旧值。要让 quorum 真正可靠，需要读修复（read repair）、 hinted handoff（暂存失败节点的写）与反熵（Merkle tree 对比）。</p>
+        <p>常见配置：$N=3, W=2, R=2$ 兼顾一致与可用；$W=1$ 写快但读可能旧；$W=N$ 写慢但读简单。跨地域时，等待多数派意味着跨区 RTT。</p>
       </div>
+    </div>
+
+    <p><b>读修复</b>：读时发现副本版本不一致，把新值写回旧副本。<b>Hinted handoff</b>：目标节点暂时不可达，代理把写暂存在其他节点，待其恢复再转交。<b>反熵</b>：后台用 Merkle tree 比较副本差异，修复冷数据。三者配合，才能让“最终一致”在有限时间内收敛。</p>
+
+    <h3><span class="sn">6.6</span>检测并发写：版本向量与 LWW 的边界</h3>
+    <p>两个写是否并发，不能靠墙上时钟判断——时钟可能回拨、节点可能漂移。版本向量（version vector）为每个副本维护计数器：若向量 A 的每个分量都 ≤ B 且至少一个严格小于，则 A 是 B 的祖先；若互不包含，则二者并发，需要合并。Dynamo 用向量时钟识别冲突，把多个版本一起返回给应用。</p>
+
+    <p><b>LWW（last write wins）</b>实现简单，但“最后”依赖时间戳，会丢并发写；对购物车这类需要合并语义的数据不合适。更稳妥的是保留多版本（sibling values），由应用定义合并规则，或用 CRDT 让合并可交换、可结合、幂等。</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">复制不是备份，副本不是真相</span></div>
+      <div class="thm-body">
+        <p>副本会忠实复制误删除与坏数据；备份要能回到过去某个时间点。failover 后旧 leader 重新加入前必须 fencing，否则会双写。跨地域多 leader 时，唯一约束（用户名、库存）无法本地判断，必须把所有权集中到一个分区或用共识协调。最后，监控复制延迟要看“时间落后”而不只是“字节落后”，因为大事务会让字节数失真。</p>
+      </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>拓扑</th><th>写入口</th><th>优点</th><th>代价</th></tr></thead>
+        <tbody>
+          <tr><td class="id">single-leader</td><td>一个</td><td>无冲突、易推理</td><td>写扩展受限、failover 复杂</td></tr>
+          <tr><td class="id">multi-leader</td><td>多个</td><td>低延迟、区域容灾</td><td>写冲突、合并语义</td></tr>
+          <tr><td class="id">leaderless</td><td>任意副本</td><td>高可用、无切换</td><td>quorum 调参、读修复</td></tr>
+          <tr><td class="id">sync replication</td><td>leader 等确认</td><td>不丢写</td><td>可用性下降</td></tr>
+          <tr><td class="id">async replication</td><td>leader 本地返回</td><td>低延迟</td><td>故障丢写</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -982,60 +1240,99 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch7" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 7 · Sharding</div>
-    <h2><span class="num">7</span>分片：把一台机器装不下的数据，切成能装下的部分</h2>
-    <p class="lede">分片解决容量与写吞吐的上限，却把“一次查询”变成“一次路由 + 可能的多分片合并”。分片键选错，系统会在数据增长后突然失去扩展性。</p>
+    <h2><span class="num">7</span>分片：把一台装不下的数据切开</h2>
+    <p class="lede">分片解决容量与写吞吐，却把“一个查询”变成“跨网络的多路查询”。分片键选错，集群越扩越慢；再平衡策略选错，运维半夜被叫醒。</p>
 
     <div class="chap-intro">
-      <p>本章先讨论什么时候值得分片、多租户如何映射到分片；再比较按键范围与按哈希两种切分方式，以及一致性哈希如何减少迁移；随后处理请求路由与二级索引这两个最容易被低估的难点。</p>
-      <span class="tag">Range · Hash · Routing · Secondary Index</span>
+      <p>本章先讲分片的收益与代价、多租户场景，再比较按键范围与按哈希分片、热点与倾斜的处理，随后讨论请求路由、再平衡，以及本地/全局二级索引的取舍。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Key range · Hash · Rebalancing · Request routing · Secondary index</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">shard key</span><span class="chip">skew / hot spot</span><span class="chip">consistent hashing</span>
-      <span class="chip">rebalancing</span><span class="chip">request routing</span><span class="chip">global index</span>
+      <span class="chip hot">shard key</span><span class="chip">hot spot</span><span class="chip">consistent hashing</span>
+      <span class="chip">rebalance</span><span class="chip">routing tier</span><span class="chip">global index</span>
     </div>
 
-    <h3><span class="sn">7.1</span>两种切分：保序还是保均匀</h3>
-    <p><b>按键范围</b>分片保留键的全局顺序，范围扫描只需访问相邻分片，天然适合时间序列与排行榜；缺点是顺序写入会集中到最后一个分片，形成写热点。</p>
-    <p><b>按哈希</b>分片把键打散，写入均匀；代价是范围查询要访问所有分片，且“相邻”这个语义消失。组合键（如 <code>(user_id, timestamp)</code>）可以两者兼得：先按用户哈希定位分片，再在分片内按时间有序。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Pros and Cons of Sharding · Sharding for Multitenancy · Sharding of Key-Value Data · Sharding by Key Range · Sharding by Hash of Key · Skewed Workloads and Relieving Hot Spots · Operations: Automatic Versus Manual Rebalancing · Request Routing · Sharding and Secondary Indexes · Local Secondary Indexes · Global Secondary Indexes · Summary</p></details>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">一致性哈希的两个性质</span></div>
+    <h3><span class="sn">7.1</span>为什么分片，以及为什么先别分</h3>
+    <p>分片（partitioning/sharding）把数据切成互不重叠的子集，放到不同节点。它带来三件事：单机放不下的数据、单机扛不住的写吞吐、按租户/地域隔离故障与资源。代价同样明确：跨分片查询要 scatter-gather，跨分片事务要 2PC 或共识，再平衡会搬数据，唯一约束与自增 ID 变复杂。</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">把分片当成性能开关</span></div>
       <div class="thm-body">
-        <p>把键与节点映射到同一个环上，键归属顺时针方向的第一个节点。它满足：每个分片承载的键数大致均衡；节点增减时，只有相邻区间的键需要迁移。</p>
-        <p>这里的“一致”与副本一致性、ACID 一致性无关，指的是“键尽量留在原分片”。虚拟节点（每个物理节点映射多个环上位置）用于进一步平滑负载。</p>
+        <p>如果瓶颈是慢查询、缺索引、锁竞争或单条大事务，分片只会把这些问题的调试难度乘以节点数。先做读写分离、索引优化、缓存与归档；只有当单表行数/写入吞吐确实超过单机可持续范围，才引入分片。</p>
       </div>
     </div>
 
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">明星账号把分片打穿</span></div>
-      <div class="thm-body">
-        <p>按 <code>user_id</code> 哈希分片后，某明星的粉丝写入全部落到同一个分片；一条动态触发千万级写，单分片 CPU 打满，其他分片空闲。哈希只保证“键数量均匀”，不保证“访问热度均匀”。</p>
-        <p>解法：对热点键再加随机后缀拆成多个子分片，读时合并；或把该账号的写路径改为异步扇出，并对粉丝列表做批处理。</p>
-      </div>
-    </div>
+    <p><b>多租户</b>是分片最自然的场景：按 tenant_id 分片，既能让大客户独占节点，也能把中小客户打包共享。关键是避免“超级租户”压垮共享分片，通常会给大租户独立分片或独立集群。</p>
+
+    <h3><span class="sn">7.2</span>按键范围 vs 按哈希</h3>
+    <p><b>Key-range sharding</b> 让相邻 key 落在同一分片，范围扫描高效（时序数据、按用户 ID 前缀查询），但顺序写入会集中到最后一个分片，形成写热点。<b>Hash sharding</b> 对 key 取哈希后分配，写入均匀，却失去范围查询的局部性；范围查询要广播到所有分片。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>方案</th><th>范围扫描</th><th>写入均匀</th><th>扩容迁移</th><th>典型问题</th></tr></thead>
+        <thead><tr><th>策略</th><th>优点</th><th>缺点</th><th>典型系统</th></tr></thead>
         <tbody>
-          <tr><td class="id">键范围</td><td>好，局部读</td><td>差，尾部热点</td><td>拆分裂点，需再平衡</td><td>单调递增键集中写</td></tr>
-          <tr><td class="id">哈希</td><td>差，需全分片</td><td>好</td><td>虚拟节点/固定多分片</td><td>热点键仍集中</td></tr>
-          <tr><td class="id">目录式</td><td>取决于目录</td><td>可手工调度</td><td>改映射表</td><td>目录自身成为单点</td></tr>
-          <tr><td class="id">多租户</td><td>按租户聚合</td><td>大租户倾斜</td><td>大租户单独拆出</td><td>小租户碎片化</td></tr>
+          <tr><td class="id">key range</td><td>范围扫描、有序遍历、前缀查询</td><td>顺序写热点、热点 key 集中</td><td>HBase、TiDB、CockroachDB</td></tr>
+          <tr><td class="id">hash of key</td><td>写入均匀、热点分散</td><td>范围查询广播、无法有序扫描</td><td>Cassandra、MongoDB hashed</td></tr>
+          <tr><td class="id">compound key</td><td>先哈希分区、再按第二列排序</td><td>设计需预判查询模式</td><td>Cassandra 复合主键</td></tr>
+          <tr><td class="id">directory</td><td>灵活、可手动迁移</td><td>目录服务成为单点与瓶颈</td><td>早期 HBase、自建路由表</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3><span class="sn">7.2</span>请求路由与二级索引</h3>
-    <p>请求路由要回答“这个键在哪个节点”。常见做法有三类：客户端直接持有分片映射；通过独立的协调服务（ZooKeeper/etcd）维护映射并监听变更；或经过一个感知分片的代理层。无论哪种，映射变更都必须有版本，否则客户端会在再平衡期间把请求发到旧节点。</p>
-    <p>二级索引更棘手。<b>本地索引</b>（文档分区索引）让每个分片只索引自己的数据，写入只需更新本地，但按索引查询要 scatter-gather 到所有分片再合并。<b>全局索引</b>（词项分区索引）按索引键分区，读只需一个分片，但写入可能跨多个分片，通常异步维护，因而存在索引滞后。</p>
+    <p><b>复合键</b>是折中：用 <code>(user_id, timestamp)</code> 做分区键，先按 user_id 哈希决定分片，再在分片内按 timestamp 排序。这样同一用户的时间线可以范围扫描，写入又不会全压在一个分片。Cassandra 的 partition key + clustering columns 就是这个思路。</p>
+
+    <h3><span class="sn">7.3</span>热点与倾斜</h3>
+    <p>即使哈希均匀，<b>单个 key</b> 仍可能成为热点：名人发帖、秒杀商品、热门话题。处理方式有：给 key 加随机后缀（写扩散到多个分片，读时合并）；把热点数据复制到多台机器（读扩散）；应用层缓存；或对计数类写做本地聚合再合并。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">秒杀库存的写热点</span></div>
+      <div class="thm-body">
+        <p>库存 key 只有一个，所有扣减都打到一个分片，QPS 再高也没用。做法是把库存拆成 N 份（bucket），请求按哈希落到不同 bucket 扣减，总量由异步汇总；或者用队列串行化，把“抢”变成“排队 + 抽签”。前者提升写吞吐，后者保护正确性，二者常组合。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">7.4</span>再平衡：自动还是手动</h3>
+    <p>节点增减、磁盘不均、热点迁移都需要再平衡。策略有三类：<b>固定数量的分片</b>（例如一开始建 1024 个，节点多了就搬整个分片，简单可预测）；<b>动态分裂</b>（分片太大就 split，像 B-tree 页分裂）；<b>按节点比例分配</b>（Cassandra 的 vnode 思路）。</p>
+
+    <p>全自动再平衡看起来很美好，实际常被限速：搬数据会占满网络与磁盘，可能把线上延迟打爆。成熟系统通常提供“自动检测 + 人工/限速执行”，并在迁移时保证副本仍有 quorum。再平衡期间还要避免“刚搬完又搬回”的抖动，需要滞回与冷却时间。</p>
+
+    <h3><span class="sn">7.5</span>请求路由：客户端怎么知道该找谁</h3>
+    <p>分片后，请求必须落到正确节点。常见三种架构：<b>客户端直连</b>（客户端持有分片映射，如 Kafka producer）；<b>路由层/代理</b>（如 MongoDB mongos、Vitess、ProxySQL），客户端只连代理；<b>任意节点转发</b>（节点收到请求后按映射转发，如 Cassandra 的 coordinator）。</p>
+
+    <p>映射信息本身需要高可用：ZooKeeper/etcd 保存元数据，或通过 gossip 协议在节点间传播。路由层不能成为单点，通常要无状态、可水平扩展；客户端缓存映射时要能处理“映射过期”，否则会持续打错节点。</p>
+
+    <h3><span class="sn">7.6</span>分片与二级索引</h3>
+    <p>二级索引是分片最纠结的地方。按 <code>user_id</code> 分片后，想按 <code>city</code> 查询，索引该放哪？</p>
+
+    <div class="cards">
+      <div class="card"><div class="k">Local index</div><h4>每个分片维护自己的索引</h4><p>写入只改本地，简单；但按 city 查询要广播到所有分片再合并（scatter-gather），尾延迟随分片数上升。</p></div>
+      <div class="card"><div class="k">Global index</div><h4>按索引键单独分片</h4><p>查询只读一个索引分片，快；但写入要跨分片更新索引，通常异步，存在索引滞后与一致性窗口。</p></div>
+      <div class="card"><div class="k">Covered / 物化</div><h4>为查询建专用读模型</h4><p>用 CDC 把数据同步到搜索集群或宽表，查询走派生索引；代价是运维多一套系统。</p></div>
+    </div>
+
+    <p>全局索引的写入放大很明显：一条记录更新可能触发多个索引分片的写。DynamoDB 的 GSI 是异步维护的，读到的可能是旧值；Materialize/ClickHouse 这类系统则用流式物化视图持续更新。选择时要问：查询延迟与索引新鲜度，哪个更重要？</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>决策点</th><th>选 A</th><th>选 B</th></tr></thead>
+        <tbody>
+          <tr><td class="id">分片键</td><td>范围：要范围扫描</td><td>哈希：要写均匀</td></tr>
+          <tr><td class="id">热点</td><td>加盐/拆 bucket</td><td>缓存/读扩散</td></tr>
+          <tr><td class="id">再平衡</td><td>固定分片数，搬整片</td><td>动态分裂，细粒度</td></tr>
+          <tr><td class="id">路由</td><td>客户端直连，少一跳</td><td>代理层，易治理</td></tr>
+          <tr><td class="id">二级索引</td><td>本地：写简单、读广播</td><td>全局：读快、写复杂</td></tr>
+          <tr><td class="id">跨片事务</td><td>避免，按同一分片建模</td><td>2PC/共识，成本高</td></tr>
+        </tbody>
+      </table>
+    </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">用自增 ID 做哈希分片键</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">本章四条</span></div>
       <div class="thm-body">
-        <p>自增 ID 经过哈希后确实均匀，但“按时间查最近订单”会退化为扫描所有分片；更常见的是把单调时间戳直接做范围分片键，导致所有新写入落到最后一个分片，扩容时该分片无法拆分。</p>
-        <p>另一个坑是再平衡时一次性迁移大量分片：网络与磁盘同时打满，线上读写超时。应限制迁移速率，并让路由层在新旧位置之间做双读过渡。</p>
+        <p>① “哈希分片就没有热点”——单 key 热点依旧存在。② “分片数越多越好”——每个分片都有开销，跨片查询与元数据管理成本上升。③ “全局索引强一致”——多数系统异步维护，读到的可能是旧值。④ “再平衡是运维细节”——它直接影响 p99 与数据迁移期间的正确性，必须设计限速与回滚。</p>
       </div>
     </div>
   </div>
@@ -1044,74 +1341,121 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch8" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 8 · Transactions</div>
-    <h2><span class="num">8</span>事务：把并发与故障关进一个可推理的盒子</h2>
-    <p class="lede">事务不是“数据库的一个功能”，而是一组关于并发的承诺。多数生产事故不是因为没开事务，而是因为开了弱隔离级别，却按强隔离的直觉写代码。</p>
+    <h2><span class="num">8</span>事务：把并发与故障的复杂度收进数据库</h2>
+    <p class="lede">事务不是自然规律，而是一种工程约定：把多条读写打包，让应用可以假装故障与并发不存在。代价是锁、版本、日志与协调。</p>
 
     <div class="chap-intro">
-      <p>本章从 ACID 的真实含义出发，逐层拆解读已提交、快照隔离、可串行化，重点讲清 lost update 与 write skew 的区别；最后讨论跨库事务、两阶段提交，以及为什么分布式事务慢且脆。</p>
-      <span class="tag">ACID · Isolation · SSI · 2PC</span>
+      <p>本章先拆解 ACID 的真实含义与单对象/多对象边界，再逐层检视弱隔离级别（read committed、snapshot isolation、lost update、write skew），然后讨论三种可串行化实现（串行执行、2PL、SSI），最后进入分布式事务与两阶段提交。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">ACID · MVCC · Write skew · SSI · 2PC</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">isolation level</span><span class="chip">snapshot</span><span class="chip">write skew</span>
-      <span class="chip">phantom</span><span class="chip">2PL</span><span class="chip">SSI</span><span class="chip">2PC</span>
+      <span class="chip hot">isolation</span><span class="chip">dirty read</span><span class="chip">snapshot</span>
+      <span class="chip">write skew</span><span class="chip">phantom</span><span class="chip">SSI</span><span class="chip">2PC</span>
     </div>
 
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>What Exactly Is a Transaction? · The Meaning of ACID · Single-Object and Multi-Object Operations · Weak Isolation Levels · Read Committed · Snapshot Isolation and Repeatable Read · Preventing Lost Updates · Write Skew and Phantoms · Serializability · Actual Serial Execution · Two-Phase Locking · Serializable Snapshot Isolation · Distributed Transactions · Two-Phase Commit · Distributed Transactions Across Different Systems · Database-Internal Distributed Transactions · Exactly-Once Message Processing Revisited · Summary</p></details>
+
+    <h3><span class="sn">8.1</span>ACID 到底承诺了什么</h3>
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">ACID 里的 C 其实不归数据库管</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">ACID</span></div>
       <div class="thm-body">
-        <p><b>Atomicity</b>：要么全做，要么全不做（崩溃时回滚）。<b>Consistency</b>：应用定义的不变量保持成立——数据库只能提供约束，不能替你判断业务是否自洽。<b>Isolation</b>：并发事务互不干扰。<b>Durability</b>：提交后即使断电也不丢。</p>
-        <p>因此“用了事务就一致”是误解：转账总额守恒靠的是应用逻辑与约束，不是 BEGIN/COMMIT 这两个词。</p>
+        <p><b>Atomicity</b>：事务内的写要么全生效，要么全不生效；失败时回滚已写部分。<b>Consistency</b>：事务前后满足应用定义的约束（这更多是应用责任，不是数据库单独能保证的）。<b>Isolation</b>：并发事务互不干扰，效果等价于某种串行顺序。<b>Durability</b>：提交后的数据在崩溃后仍在（WAL、fsync、副本）。</p>
       </div>
     </div>
 
-    <h3><span class="sn">8.1</span>从读已提交到快照隔离</h3>
-    <p>读已提交只保证两件事：不读到未提交的写（no dirty reads），不覆盖未提交的写（no dirty writes）。它允许<b>不可重复读</b>：同一事务内两次读同一行，结果可能不同。</p>
-    <p>快照隔离让事务看到固定时间点的快照，读不阻塞写、写不阻塞读。实现通常用 MVCC：每行保留多版本，按事务 ID 判断可见性，旧版本后台清理。</p>
+    <p>ACID 的 I 不是“完全没有并发问题”，而是由隔离级别定义的一组保证。多数数据库默认是 read committed，不是 serializable；把“支持事务”当成“支持串行化”是常见误解。</p>
+
+    <p><b>单对象 vs 多对象</b>：单条记录的原子更新（compare-and-set、自增）可以由存储引擎保证；跨多行、多表、多对象的原子性才需要事务。很多 NoSQL 只提供单对象原子性，应用要自己处理部分失败。反过来说，如果业务天然可按单 key 建模，单对象操作就足够，且扩展性更好。</p>
+
+    <h3><span class="sn">8.2</span>Read committed：最常见，也最容易被低估</h3>
+    <p>Read committed 保证两点：<b>no dirty reads</b>（只读到已提交数据）与 <b>no dirty writes</b>（不覆盖未提交的写）。实现通常是：写时对行加排他锁直到提交；读时用 MVCC 快照，读语句开始时可见的已提交版本。它能防止“看到别人半更新的账户”，但防不住不可重复读与幻读。</p>
 
     <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">值班医生：快照隔离挡不住的 write skew</span></div>
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">转账看到“消失的钱”</span></div>
       <div class="thm-body">
-        <p>约束是“至少一名医生在岗”。Alice 和 Bob 同时查询，各自看到还有两人在岗，于是都提交“我不值班”。两个事务读写的是不同行，快照隔离下都能成功，最终零人在岗。</p>
-        <p>这不是 lost update（没有覆盖同一行），而是 <b>write skew</b>：两个事务读了同一组数据，却写了组内不同成员，合起来破坏了跨行不变量。单行原子操作、数据库约束都救不了它，除非显式加锁或使用可串行化。</p>
+        <p>事务 A 从账户 1 扣 100，尚未提交；事务 B 读账户 1 看到少了 100，读账户 2 还没加 100，于是总资产“凭空少了 100”。Read committed 禁止 B 读到 A 的未提交写，因此 B 看到的是扣款前的版本，总额不变。若用 read uncommitted，就会出现这种脏读。</p>
       </div>
     </div>
+
+    <p>但 read committed 下，同一事务内两次读可能看到不同结果（不可重复读）：第一次读余额 100，第二次读变成 80，因为别的事务提交了扣款。对报表、对账、幂等校验，这会导致同一请求内前后矛盾。</p>
+
+    <h3><span class="sn">8.3</span>Snapshot isolation 与 repeatable read</h3>
+    <p>快照隔离让事务在整个生命周期内看到同一个一致性快照：读不阻塞写，写不阻塞读，靠 MVCC 保留多版本。PostgreSQL 的 repeatable read、MySQL InnoDB 的 consistent snapshot、Oracle 的 flashback query 都属此类。它解决了不可重复读与部分幻读，但引入了新的异常：<b>write skew</b>。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">值班医生：两个人都请假</span></div>
+      <div class="thm-body">
+        <p>规则要求“至少一名医生在岗”。Alice 和 Bob 同时值班，两人各自查询“当前在岗人数 = 2”，都认为少自己一个还有别人，于是各自提交“请假”。两个事务读写的是不同行，快照隔离不冲突，提交后在岗人数变成 0。这不是丢失更新，而是<b>写偏斜</b>：每个事务读了“另一行”来决定自己这行能不能写。</p>
+      </div>
+    </div>
+
+    <p><b>Lost update</b> 是另一种常见异常：两个事务都读同一个值、加一、写回，后提交者覆盖前者。解决办法：原子自增（<code>UPDATE counters SET value = value + 1</code>）、显式加锁（<code>SELECT ... FOR UPDATE</code>）、compare-and-set（带旧值条件更新）、或数据库自动检测冲突后重试。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>隔离级别</th><th>挡住</th><th>挡不住</th><th>实现代价</th></tr></thead>
+        <thead><tr><th>隔离级别</th><th>脏读</th><th>不可重复读</th><th>幻读</th><th>写偏斜</th></tr></thead>
         <tbody>
-          <tr><td class="id">Read committed</td><td>脏读、脏写</td><td>不可重复读、幻读、write skew</td><td>最低，默认级别</td></tr>
-          <tr><td class="id">Snapshot / RR</td><td>不可重复读、部分幻读</td><td>write skew、并发写冲突</td><td>MVCC 版本与清理成本</td></tr>
-          <tr><td class="id">Serializable</td><td>所有上述异常</td><td>—（但可能牺牲吞吐）</td><td>2PL 锁等待 / SSI 冲突回滚</td></tr>
+          <tr><td class="id">read uncommitted</td><td>可能</td><td>可能</td><td>可能</td><td>可能</td></tr>
+          <tr><td class="id">read committed</td><td>否</td><td>可能</td><td>可能</td><td>可能</td></tr>
+          <tr><td class="id">snapshot / RR</td><td>否</td><td>否</td><td>部分</td><td>可能</td></tr>
+          <tr><td class="id">serializable</td><td>否</td><td>否</td><td>否</td><td>否</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3><span class="sn">8.2</span>可串行化的三条路</h3>
-    <p><b>实际串行执行</b>：单线程逐事务执行，彻底消除并发冲突。适合事务短、数据能全放内存的场景（如 Redis、VoltDB 类系统）；长事务会直接拖垮吞吐。</p>
-    <p><b>两阶段锁（2PL）</b>：读加共享锁、写加排他锁，持有到提交。它能严格保证可串行化，但写会阻塞读、锁等待可能形成死锁，尾延迟显著变差。</p>
-    <p><b>可串行化快照隔离（SSI）</b>：在快照隔离基础上乐观检测冲突——记录事务读过的数据范围，提交时若发现有人写了这些范围，就回滚。它不阻塞读，但高冲突负载下回滚率上升，应用必须能重试整个事务。</p>
+    <p><b>Phantom</b>：事务按条件查询一组行，另一事务插入符合条件的新行，前者再查时“多出”记录。快照隔离对同一快照内的查询是稳定的，但若事务基于查询结果做写决定，仍可能被新插入破坏约束。解决要靠 predicate lock、索引范围锁，或 SSI 的读写冲突检测。</p>
+
+    <h3><span class="sn">8.4</span>可串行化之一：真的串行执行</h3>
+    <p>最简单可靠的方案是单线程执行事务：所有事务排成一条队，天然串行。VoltDB、Redis（Lua 脚本/单线程命令）、早期 H-Store 走这条路。前提是事务短、数据集能放内存、吞吐要求不超过单核；跨分片时仍要协调。存储过程把网络往返省掉，否则“单线程”会被客户端 RTT 拖死。</p>
+
+    <h3><span class="sn">8.5</span>可串行化之二：两阶段锁（2PL）</h3>
+    <p>2PL 在读写时加锁：读加共享锁，写加排他锁，锁持有到事务结束（严格 2PL）。它能防止写偏斜与幻读，但代价是锁等待、死锁与吞吐下降。数据库要检测死锁（等待图环）并回滚牺牲者；长事务会阻塞一片。</p>
+
+    <p>幻读靠 <b>predicate lock</b>（锁住“满足条件的范围”）或 <b>index-range lock</b>（锁住索引区间）解决；MySQL InnoDB 的 next-key lock 就是索引记录锁 + 间隙锁。2PL 的 p99 通常比 MVCC 差，因为读写互相阻塞；但在写冲突低的负载下，它仍是最成熟的可串行化实现。</p>
+
+    <h3><span class="sn">8.6</span>可串行化之三：SSI（可串行化快照隔离）</h3>
+    <p>SSI 在快照隔离之上做乐观检测：记录事务读过的数据与写过的数据，提交时检查是否存在“读-写依赖”构成的危险结构（尤其是两个事务都读了对方会写的对象）。发现冲突就中止其中一个，让客户端重试。PostgreSQL 的 serializable 就是 SSI。</p>
+
+    <div class="thm theorem">
+      <div class="thm-head"><span class="thm-kind">规则</span><span class="thm-title">SSI 的代价是重试，不是锁</span></div>
+      <div class="thm-body">
+        <p>SSI 不阻塞读，适合读多写少、冲突率低的负载；高冲突下会频繁 abort，吞吐反而下降。应用必须能安全重试整个事务，且事务不能有不可回滚的外部副作用（发邮件、扣款）。这也是“事务内不要做 I/O”的硬理由。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">8.7</span>分布式事务与两阶段提交</h3>
+    <p>跨多个数据库/分片时，单机事务不够。2PC 引入协调者（coordinator）：第一阶段询问所有参与者“能否提交”（prepare，锁定资源并写日志）；全部同意后，第二阶段发 commit；任一拒绝则发 abort。</p>
+
+    <div class="cards">
+      <div class="card"><div class="k">Blocking</div><h4>协调者崩溃，参与者卡住</h4><p>已 prepare 的参与者持有锁，等待最终决定；在恢复前既不能提交也不能回滚，形成 in-doubt transaction。</p></div>
+      <div class="card"><div class="k">Heuristic</div><h4>超时后的猜测</h4><p>参与者自行决定提交/回滚，可能与协调者最终决定不一致，造成数据分叉；只能靠人工对账修复。</p></div>
+      <div class="card"><div class="k">XA</div><h4>标准接口</h4><p>数据库实现 XA 协议，应用服务器当协调者；跨异构数据库可用，但运维复杂、故障恢复困难。</p></div>
+    </div>
+
+    <p><b>Exactly-once 消息处理</b>常被误认为靠 2PC 实现。更常见的组合是：消息队列的“至少一次”投递 + 消费端幂等（去重表/唯一键）+ 事务性写入（把消费位点与业务写放在同一事务）。这样重复投递不会产生重复副作用。真正跨系统的 exactly-once 需要端到端的去重与协调，不能只靠中间件宣称。</p>
+
+    <p><b>数据库内部</b>的分布式事务（Spanner、CockroachDB、TiDB）用共识复制 + 2PC 变体，把协调者本身也做成高可用；代价是跨地域提交要多次 RTT。单分区事务仍走本地路径，这也是“选择好的分片键”能显著降低事务成本的原因。</p>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">在“可重试”的系统里做不可重试的副作用</span></div>
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">隔离级别的名字会骗人</span></div>
       <div class="thm-body">
-        <p>SSI 回滚、死锁重试、网络超时重试都会让事务体执行多次。若事务里发了邮件、扣了第三方支付、写了外部日志，重试就会重复副作用。</p>
-        <p>正确做法是把副作用移出事务：事务只写本地状态与 outbox 表，提交后由投递器至少一次发送，消费端按幂等键去重。</p>
+        <p>MySQL 的 “repeatable read” 并不完全可串行化，仍可能写偏斜；Oracle 的 “serializable” 实际是 snapshot isolation；某些云数据库的 “strong consistency” 只指单行。选型时必须看它具体防哪些异常，而不是看级别名称。另一个坑是把长事务当普通请求：它持有旧版本、阻塞 vacuum、放大锁冲突，必须设超时与拆分。</p>
       </div>
     </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">两阶段提交与 in-doubt 事务</span></div>
-      <div class="thm-body">
-        <p>2PC 先询问所有参与者能否提交（prepare），全部同意后再发 commit。若协调者在发出部分 commit 后崩溃，参与者长期持锁并处于 in-doubt：既不能提交也不能回滚。</p>
-        <p>这就是为什么跨微服务的事务通常不用 2PC，而用 saga + 补偿：牺牲原子性，换取可用性与可运维性。</p>
-      </div>
-    </div>
-
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>弱隔离级别像给每个事务发一副降噪耳机：各听各的，很顺畅，但可能同时听到“还有人在岗”的旧广播。可串行化则是让所有人轮流发言，顺序清晰，但会议会变慢。</p>
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>机制</th><th>防什么</th><th>代价</th></tr></thead>
+        <tbody>
+          <tr><td class="id">read committed</td><td>脏读、脏写</td><td>不可重复读、幻读</td></tr>
+          <tr><td class="id">snapshot isolation</td><td>不可重复读、部分幻读</td><td>写偏斜、旧版本膨胀</td></tr>
+          <tr><td class="id">2PL</td><td>全部可串行化异常</td><td>锁等待、死锁、p99 差</td></tr>
+          <tr><td class="id">SSI</td><td>写偏斜、幻读</td><td>冲突重试、应用需幂等</td></tr>
+          <tr><td class="id">2PC</td><td>跨库原子提交</td><td>阻塞、in-doubt、协调者单点</td></tr>
+          <tr><td class="id">idempotency</td><td>重复消息/重试</td><td>去重表、唯一键、TTL</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -1119,65 +1463,97 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch9" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 9 · The Trouble with Distributed Systems</div>
-    <h2><span class="num">9</span>分布式系统的麻烦：超时、时钟与“我以为它死了”</h2>
-    <p class="lede">在单机上，“失败”是一个确定的事件；在分布式系统里，失败是一个你无法与“慢”区分开的猜测。所有超时、租约、主节点判定，都建立在这个猜测之上。</p>
+    <h2><span class="num">9</span>分布式系统的麻烦：网络、时钟与“半死”的节点</h2>
+    <p class="lede">单机要么工作要么崩溃；分布式系统最常见的状态是“一部分在工作、一部分不工作”，而你无法从一台机器内部区分“对方挂了”和“对方只是慢”。</p>
 
     <div class="chap-intro">
-      <p>本章不提供银弹，而是拆掉三个常见幻觉：网络可靠、时钟可信、进程会及时响应。随后引入部分失败、系统模型、安全性与活性，以及 fencing token 这类把“猜测”变成“可证明”的工程手段。</p>
-      <span class="tag">Partial Failure · Timeout · Clock · Fencing</span>
+      <p>本章把悲观调到最大：先看部分失败与不可靠网络（TCP 的局限、超时、无界延迟），再看不可靠时钟（单调钟 vs 墙钟、NTP 漂移、进程停顿），最后讨论知识、真相与谎言——多数派、租约、fencing、Byzantine 故障、系统模型与形式化验证。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Partial failure · Timeout · Clock skew · Fencing · Byzantine</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">partial failure</span><span class="chip">timeout</span><span class="chip">clock skew</span>
-      <span class="chip">GC pause</span><span class="chip">fencing token</span><span class="chip">safety / liveness</span>
+      <span class="chip hot">partial failure</span><span class="chip">unbounded delay</span><span class="chip">monotonic clock</span>
+      <span class="chip">GC pause</span><span class="chip">lease</span><span class="chip">fencing token</span><span class="chip">Byzantine</span>
     </div>
 
-    <h3><span class="sn">9.1</span>网络：没有“消息丢失”，只有“你不知道”</h3>
-    <p>TCP 会重传、去重、按序交付，却无法区分“没收到”“回包丢了”“处理到一半崩了”。调用方只能设超时，然后面对三种未知。</p>
-    <p>超时太短会把慢当死，太长会拖慢恢复；应使用自适应超时、重试预算与幂等键，而不是拍一个固定值。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Faults and Partial Failures · Unreliable Networks · The Limitations of TCP · Network Faults in Practice · Fault Detection · Timeouts and Unbounded Delays · Synchronous Versus Asynchronous Networks · Unreliable Clocks · Monotonic Versus Time-of-Day Clocks · Clock Synchronization and Accuracy · Relying on Synchronized Clocks · Process Pauses · Knowledge, Truth, and Lies · The Majority Rules · Distributed Locks and Leases · Byzantine Faults · System Model and Reality · Formal Methods and Randomized Testing · Summary</p></details>
+
+    <h3><span class="sn">9.1</span>部分失败：没有全局的“它挂了”</h3>
+    <p>在单机上，函数调用要么返回要么抛异常；在分布式系统里，请求可能成功但响应丢失，可能还在对方队列里排队，也可能对方处理到一半崩溃。发送方只能通过<b>超时</b>猜测失败，而超时无法区分“慢”与“死”。这就是部分失败的核心：<b>没有共享的全局状态，每个节点只能基于本地观察做判断</b>。</p>
+
+    <h3><span class="sn">9.2</span>不可靠网络：TCP 也不能给你保证</h3>
+    <p>TCP 保证字节流按序到达（在连接未断的前提下），但不保证<b>何时</b>到达：重传、拥塞控制、路由抖动、交换机缓冲区都能让延迟从毫秒跳到秒级。TCP 也检测不到“对端进程已经死了但机器还在”，连接可能一直挂着。应用层的超时、重试、幂等、熔断，才是可靠性的真正来源。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">部分失败与系统模型</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">无界延迟与故障检测</span></div>
       <div class="thm-body">
-        <p><b>Partial failure</b>：系统的一部分坏了，其他部分仍在工作，且故障边界不确定。这是分布式系统与单机最本质的区别。</p>
-        <p>常见模型：网络分为可靠/公平丢失/任意丢失；节点分为崩溃即停、崩溃后恢复、拜占庭（可发送错误信息）；时间假设分为同步（有已知延迟上界）、部分同步（大部分时间同步）、异步（无上界）。算法能容忍什么，取决于它假设了什么。</p>
+        <p>在异步网络模型中，消息延迟没有上界：你不能因为 10 秒没收到回复就断定节点死亡，因为它可能只是被 GC、缺页、CPU 抢占或网络拥塞卡住。故障检测器只能给出“怀疑”，不能给出确定结论；超时越短，误判越多；超时越长，故障恢复越慢。</p>
       </div>
     </div>
 
-    <h3><span class="sn">9.2</span>时钟：墙上时钟会跳，单调时钟会漂</h3>
-    <p><code>System.currentTimeMillis()</code> 返回 wall-clock time，可能因为 NTP 校正而<b>倒退</b>，也可能因为闰秒处理而跳变。它适合记录“人类时间”，不适合计算耗时或判断事件先后。耗时应该用单调时钟（<code>nanoTime</code>），它只保证不回退，不保证跨节点可比。</p>
-    <p>即使所有机器都同步 NTP，跨节点的时钟偏差仍可达数十毫秒；虚拟机暂停、CPU 抢占、GC 都会让“本机时间”与真实时间脱节。用时间戳做 last-write-wins，等于把并发冲突交给了一个会撒谎的裁判。</p>
+    <p>实际网络里，延迟分布有长尾：p99 可能是 p50 的几十倍。跨地域链路的抖动、交换机固件 bug、虚拟机迁移、磁盘 fsync 阻塞，都会制造“偶发但致命”的停顿。设计协议时不能假设延迟有上界，只能假设“最终会到达或永远不到”。</p>
+
+    <h3><span class="sn">9.3</span>不可靠时钟：墙钟会跳，单调钟会漂</h3>
+    <p><b>Time-of-day clock</b>（墙上时钟）返回日历时间，可能因为 NTP 校正而<b>回拨</b>或跳跃；<b>monotonic clock</b>（单调钟）只保证不回退，适合测时间间隔，但不同节点的单调钟起点不同，不能跨节点比较。</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">用时间戳决定“谁后写”</span></div>
+      <div class="thm-body">
+        <p>节点 A 的时钟快 500 ms，节点 B 的写明明更晚，却因为时间戳更小而被 LWW 丢掉。NTP 同步误差在公网可达几十到几百毫秒，虚拟机里更差；闰秒、时区变更、手动改时间都会让墙钟跳变。跨节点排序要用逻辑时钟/版本向量，或使用带误差界的 TrueTime/HLC，并明确“不确定区间”内怎么办。</p>
+      </div>
+    </div>
+
+    <p><b>进程停顿</b>比时钟漂移更阴险：GC 一次 stop-the-world 可能停几百毫秒到几秒；虚拟机热迁移、CPU 超卖、磁盘 swap 都能让进程“假死”。在停顿期间，节点可能错过租约续期、被误判为死亡、甚至恢复后继续执行过期操作。所有依赖“我还在任期内”的协议，都必须用 fencing token 或版本号防止旧 leader 的写落地。</p>
+
+    <h3><span class="sn">9.4</span>知识、真相与谎言</h3>
+    <p>分布式系统里没有“上帝视角”。一个节点只能知道“我收到了什么”，无法直接知道“别人是否提交了”。多数派（quorum）是把局部观察变成全局决定的工具：只要多数节点同意，就能排除少数派的过期信息。但多数派本身也依赖时钟与网络假设，且在大分区时会牺牲可用性。</p>
 
     <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">租约过期，旧主仍在写</span></div>
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">租约 + fencing：旧 leader 的写必须被拒绝</span></div>
       <div class="thm-body">
-        <p>节点 A 持有 10 秒租约，因 GC 停顿 12 秒。租约在协调者看来已过期，B 被选为新主并开始服务。A 恢复后仍以为自己合法，继续接受写——两个主同时写同一份数据。</p>
-        <p>仅靠“检查租约是否过期”不够，因为 A 的检查与它的写之间仍可能停顿。真正有效的是<b>fencing token</b>：每次选主发放单调递增的 token，存储层拒绝比已见 token 更小的写。A 的 token 是 33，B 是 34，A 的写会被直接拒绝。</p>
+        <p>leader 拿到 10 秒租约，因 GC 停顿 12 秒；新 leader 已选出并开始服务。旧 leader 恢复后以为自己还在租约内，继续接受写。若存储层只认“leader 身份”，双写就会发生。解决办法是每次选主发放单调递增的 fencing token，存储层拒绝 token 小于已见值的写；旧 leader 的请求即使到达也会被丢弃。</p>
       </div>
     </div>
+
+    <p><b>Byzantine 故障</b>指节点可能撒谎、伪造消息，而不只是崩溃。容忍 $f$ 个 Byzantine 节点通常需要 $3f+1$ 个副本（PBFT 类协议），成本高；多数互联网系统假设节点是“崩溃-恢复”模型，不防恶意。区块链把 Byzantine 容忍推到开放网络，代价是性能与能耗。</p>
+
+    <h3><span class="sn">9.5</span>系统模型与验证</h3>
+    <p>系统模型是对故障的假设：网络是同步（有延迟上界）还是异步；节点是崩溃即停、崩溃后恢复，还是可能 Byzantine；时钟是精确的还是仅单调。协议的正确性必须在明确模型下陈述，否则“证明”没有意义。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>假设</th><th>现实</th><th>后果</th><th>防御</th></tr></thead>
+        <thead><tr><th>模型</th><th>假设</th><th>可实现性</th></tr></thead>
         <tbody>
-          <tr><td class="id">网络可靠</td><td>会丢包、会乱序、会分区</td><td>请求状态未知，重复执行</td><td>超时 + 幂等 + 去重表</td></tr>
-          <tr><td class="id">延迟有上界</td><td>尾延迟可无限长</td><td>误判节点死亡</td><td>自适应超时、租约 + fencing</td></tr>
-          <tr><td class="id">时钟同步</td><td>偏差与回退都存在</td><td>事件顺序错乱、LWW 丢数据</td><td>逻辑时钟、版本向量</td></tr>
-          <tr><td class="id">进程及时响应</td><td>GC/缺页/CPU 抢占造成停顿</td><td>心跳超时、锁过期</td><td>把停顿当故障设计</td></tr>
+          <tr><td class="id">synchronous</td><td>消息延迟与时钟误差有上界</td><td>现实难满足，仅作理论基准</td></tr>
+          <tr><td class="id">partially synchronous</td><td>大部分时间同步，偶发异步</td><td>多数共识协议的实际假设</td></tr>
+          <tr><td class="id">asynchronous</td><td>无时间上界</td><td>FLP 下无法保证终止</td></tr>
+          <tr><td class="id">crash-stop</td><td>节点崩溃后不再恢复</td><td>简单，但不现实</td></tr>
+          <tr><td class="id">crash-recovery</td><td>崩溃后可从磁盘恢复</td><td>数据库/共识的常用模型</td></tr>
+          <tr><td class="id">Byzantine</td><td>节点可任意作恶</td><td>需 3f+1，成本高</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>分布式系统里没有“死亡证明”，只有“失联记录”。你永远无法区分“它死了”和“它只是暂时说不出话”，所以任何基于“它死了”的动作，都必须能被撤销或被 fencing 挡住。</p>
+    <p><b>形式化方法</b>（TLA+、Coq、Isabelle）能把协议写成状态机并检查不变量，AWS 用 TLA+ 验证 S3/DynamoDB 的若干协议；<b>随机化测试</b>（Jepsen、FoundationDB 的 simulation）用故障注入与线性化检查找反例。二者互补：证明给信心，测试给现实。没有银弹，只有更多证据。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>现象</th><th>根因</th><th>工程对策</th></tr></thead>
+        <tbody>
+          <tr><td class="id">请求超时</td><td>网络延迟/对端停顿</td><td>超时 + 重试 + 幂等 + 熔断</td></tr>
+          <tr><td class="id">误判死亡</td><td>GC/VM 迁移/拥塞</td><td>租约、心跳、fencing token</td></tr>
+          <tr><td class="id">时钟回拨</td><td>NTP 校正/闰秒</td><td>单调钟测间隔，逻辑钟排序</td></tr>
+          <tr><td class="id">双主</td><td>分区 + 租约过期</td><td>多数派 + fencing + 版本号</td></tr>
+          <tr><td class="id">幽灵写</td><td>旧 leader 恢复</td><td>存储层拒绝旧 token</td></tr>
+          <tr><td class="id">长尾延迟</td><td>排队/重传/缺页</td><td>减少串行、隔离资源、降级</td></tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">用时间戳决定“谁是新版本”</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">本章四条</span></div>
       <div class="thm-body">
-        <p>客户端 A 的时钟慢 3 秒，它后写入的值时间戳更小，被 LWW 直接丢弃；用户看到的是旧值，且日志里没有任何冲突记录。这类丢数据是静默的，监控指标一切正常。</p>
-        <p>需要“最后写入获胜”时，至少应使用带节点 ID 的混合逻辑时钟，或改为保留多版本、由业务合并。时间只能做提示，不能做裁决。</p>
+        <p>① “TCP 可靠，所以网络可靠”——TCP 只保证连接内的字节顺序，不保证时限与对端存活。② “时间戳能排序分布式事件”——墙钟会回拨，跨节点不可比。③ “心跳超时就是节点死了”——可能只是 GC 或网络拥塞。④ “有了副本就不怕脑裂”——没有 fencing 的副本只会把双写复制得更彻底。</p>
       </div>
     </div>
   </div>
@@ -1186,74 +1562,109 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch10" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 10 · Consistency and Consensus</div>
-    <h2><span class="num">10</span>一致性与共识：让多个节点对“现在”达成同一答案</h2>
-    <p class="lede">线性一致是给单个对象的实时承诺，共识是让一群节点对一条日志的顺序达成一致。前者是用户体验，后者是前者的实现手段之一。</p>
+    <h2><span class="num">10</span>一致性与共识：让分布式系统“像一台机器”</h2>
+    <p class="lede">强一致的精确形式是线性一致性：每个操作看起来在某个全局时间点原子生效。共识是它的实现基石，也是最贵的一类协调。</p>
 
     <div class="chap-intro">
-      <p>本章先定义线性一致及其与可串行化的区别，再用 CAP 澄清“分区时到底放弃了什么”；随后讨论 ID 生成与逻辑时钟，最后进入共识：quorum、领导者选举、Raft/Paxos 的直觉，以及 FLP 给出的理论边界。</p>
-      <span class="tag">Linearizability · CAP · Logical Clock · Consensus</span>
+      <p>本章先给出 linearizability 的定义与代价（CAP），再讨论 ID 生成与逻辑时钟（Lamport、向量时钟、HLC、TrueTime），最后进入共识：协议要满足什么、Paxos/Raft 如何工作、ZooKeeper/etcd 提供什么，以及什么时候不该用共识。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Linearizability · CAP · Lamport clock · Raft · ZooKeeper</span>
     </div>
 
     <div class="mapchips">
       <span class="chip hot">linearizability</span><span class="chip">CAP</span><span class="chip">Lamport clock</span>
-      <span class="chip">Snowflake ID</span><span class="chip">Raft</span><span class="chip">quorum</span><span class="chip">FLP</span>
+      <span class="chip">HLC</span><span class="chip">total order broadcast</span><span class="chip">Raft</span><span class="chip">fencing</span>
     </div>
 
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Linearizability · What Makes a System Linearizable? · Relying on Linearizability · Implementing Linearizable Systems · The Cost of Linearizability · ID Generators and Logical Clocks · Logical Clocks · Linearizable ID Generators · Consensus · The Many Faces of Consensus · Consensus in Practice · Coordination Services · Summary</p></details>
+
+    <h3><span class="sn">10.1</span>线性一致性：一个对象，一条时间线</h3>
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">线性一致：写完成之后，所有读都必须看到它</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Linearizability</span></div>
       <div class="thm-body">
-        <p>系统表现得像只有一个副本：每个操作在开始与结束之间某个瞬间原子生效，且所有客户端看到同一顺序。一旦写操作返回，任何后续读都必须返回该值或更新的值。</p>
-        <p>锁、选主、唯一约束依赖它；信息流与推荐可接受最终一致。</p>
+        <p>系统对外表现为一个单副本对象：每个读操作返回“最近一次已完成写”的值；若写 W 在写/读 R 开始前已经完成，则 R 必须看到 W 或之后的值。所有操作可以排成一条全序，且与真实时间兼容（real-time order）。</p>
+        <p>关键点：线性一致性是<b>单对象</b>属性；跨对象需要额外的事务/快照机制。它也不等于“所有副本时刻相同”，而是“对外等价于单副本”。</p>
       </div>
     </div>
 
-    <div class="thm rem">
-      <div class="thm-head"><span class="thm-kind">辨析</span><span class="thm-title">线性一致 ≠ 可串行化</span></div>
+    <p>例子：客户端 A 写入 <code>x=1</code> 并收到成功；随后客户端 B 读 <code>x</code>，必须读到 1（或更新的值），不能读到 0。若 B 读到 0，则违反线性一致性——即使 A 的写最终会到达 B 所在的副本。</p>
+
+    <div class="cards">
+      <div class="card"><div class="k">锁与选主</div><h4>只能有一个持有者</h4><p>分布式锁、leader election 依赖线性一致的 compare-and-set，否则会双持有。</p></div>
+      <div class="card"><div class="k">唯一性约束</div><h4>用户名不能重复</h4><p>注册时“先查再写”必须原子，否则并发注册会撞车；靠唯一索引或线性一致 CAS。</p></div>
+      <div class="card"><div class="k">跨通道时序</div><h4>消息与存储的先后</h4><p>用户上传图片后发消息，消息先到、图片元数据后到，读者会看到坏链接；需要“读己之写”或线性一致的元数据。</p></div>
+    </div>
+
+    <h3><span class="sn">10.2</span>怎么实现，以及为什么贵</h3>
+    <p><b>单 leader + 同步复制</b>：所有读写走 leader，天然线性一致；代价是 leader 成为瓶颈与单点。<b>共识</b>：用 Raft/Paxos 复制日志，读也走 leader 或经过 read index 确认。<b>多 leader / leaderless</b>：默认不线性一致；即使用 quorum，若读没有 read repair 与写确认的严格交叠，仍可能读到旧值。</p>
+
+    <div class="thm theorem">
+      <div class="thm-head"><span class="thm-kind">规则</span><span class="thm-title">CAP 的准确说法</span></div>
       <div class="thm-body">
-        <p><b>可串行化</b>是关于多对象事务的隔离：结果等价于某个串行顺序，但不要求这个顺序与真实时间一致。<b>线性一致</b>是关于单对象的实时性：每个读都必须看到最近一次已完成的写。</p>
-        <p>两者可以独立存在：快照隔离可串行化但非实时；单对象 CAS 线性一致但不涉及多对象事务。严格串行化（strict serializability）= 可串行化 + 线性一致。</p>
+        <p>当网络分区发生时，系统只能在<b>一致性（C）</b>与<b>可用性（A）</b>之间选一个：要么拒绝部分请求以保证线性一致，要么继续服务但可能返回旧数据。CAP 不是说“三选二”，P（分区）不是可选项，而是必须面对的现实。</p>
+        <p><b>PACELC</b> 补充了无分区时的取舍：Partition 时在 A/C 间选，Else 时在 Latency/C 间选。跨地域强一致要等跨洋 RTT，这就是延迟成本。</p>
       </div>
     </div>
 
-    <h3><span class="sn">10.1</span>CAP：不是“三选二”，而是“分区时二选一”</h3>
-    <p>CAP 的准确表述是：当网络分区发生时，系统只能在一致性（线性一致）与可用性（每个请求都得到非错误响应）之间选择。没有分区时，C 与 A 可以同时成立。把 CAP 理解成“任何系统只能选两个”，会导致大量无意义的设计争论。</p>
+    <p>线性一致的代价不止可用性：跨地域写要等待多数派确认，p99 受最慢副本影响；协调服务的心跳、租约与选举也会消耗资源。很多系统只在“元数据/控制面”用线性一致，把“数据面”留给最终一致，这是务实的折中。</p>
 
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">分布式 ID：自增、UUID 与 Snowflake</span></div>
-      <div class="thm-body">
-        <p>单库自增简单、有序、64 位足够，但跨库无法保证全局唯一与顺序。UUIDv4 随机、无需协调，但不可排序，做聚簇索引会造成随机写。</p>
-        <p>Snowflake 把 64 位切成“时间戳 + 机器号 + 序列号”：既大致有序，又无需每次协调。风险在时钟回拨与机器号分配；UUIDv7 则把毫秒时间戳放在高位，牺牲一点长度换取更好的索引局部性。</p>
-      </div>
-    </div>
+    <h3><span class="sn">10.3</span>ID 生成与逻辑时钟</h3>
+    <p>单机自增简单，但分布式下会冲突；UUID 无需协调但无序、索引局部性差；<code>timestamp + node_id</code> 近似有序，却受时钟回拨影响。Snowflake 用“时间戳 + 机器 ID + 序列号”生成 64 位 ID，靠时钟单调与序列号防重；时钟回拨时要等待或报错。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>机制</th><th>保证</th><th>成本</th><th>适用</th></tr></thead>
+        <thead><tr><th>方案</th><th>有序性</th><th>协调</th><th>风险</th></tr></thead>
         <tbody>
-          <tr><td class="id">单主 + 同步复制</td><td>接近线性一致</td><td>跨区写延迟、切换复杂</td><td>元数据、配置、锁</td></tr>
-          <tr><td class="id">quorum 读写</td><td>读写相交，非严格线性</td><td>可调延迟，需读修复</td><td>高可用 KV、会话存储</td></tr>
-          <tr><td class="id">共识（Raft/Paxos）</td><td>线性一致的日志</td><td>多数派往返、吞吐受限</td><td>选主、成员变更、分布式锁</td></tr>
-          <tr><td class="id">逻辑时钟</td><td>因果顺序，非实时</td><td>需携带版本/向量</td><td>冲突检测、增量同步</td></tr>
+          <tr><td class="id">auto increment</td><td>严格递增</td><td>单点/分段</td><td>单点瓶颈、段耗尽</td></tr>
+          <tr><td class="id">UUIDv4</td><td>无序</td><td>无</td><td>索引随机写、可读性差</td></tr>
+          <tr><td class="id">Snowflake</td><td>近似时间有序</td><td>机器 ID 分配</td><td>时钟回拨、机器 ID 冲突</td></tr>
+          <tr><td class="id">Lamport clock</td><td>因果有序</td><td>无</td><td>不反映真实时间、并发不可比</td></tr>
+          <tr><td class="id">vector clock</td><td>因果可比</td><td>无</td><td>元数据随节点数增长</td></tr>
+          <tr><td class="id">HLC</td><td>接近墙钟且因果</td><td>弱</td><td>仍有误差界</td></tr>
+          <tr><td class="id">TrueTime</td><td>带不确定区间</td><td>GPS/原子钟</td><td>基础设施昂贵</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3><span class="sn">10.2</span>共识：多数派、任期与日志</h3>
-    <p>共识算法要满足：所有正确节点对同一位置的值达成一致（agreement）、已决定的值不会被推翻（integrity）、只有被提议的值才能被决定（validity）、在部分同步模型下最终能结束（termination）。</p>
-    <p>Raft 的直觉是“带任期的日志复制”：每个任期最多一个 leader，leader 只有在拿到多数派确认后才提交日志；选举时用日志新旧程度投票，保证新 leader 拥有所有已提交条目。</p>
-    <p>FLP 不可能性告诉我们：在完全异步、允许一个节点崩溃的模型里，不存在既保证安全性又保证终止性的确定性共识算法。工程系统通过随机化超时、部分同步假设来绕开，而不是“解决”它。</p>
+    <p><b>Lamport clock</b>：每个事件递增本地计数，发消息时带上，接收方取最大值再加一。它保证“若 A 因果先于 B，则 $L(A) &lt; L(B)$”，但反过来不成立——计数小不代表因果先。<b>Vector clock</b> 为每个节点维护一个分量，能判断因果与并发，代价是元数据大小。<b>HLC</b> 把物理时间与逻辑计数结合，既接近墙钟又能保持因果；CockroachDB 用它做事务时间戳。<b>TrueTime</b> 返回一个区间 $[earliest, latest]$，Spanner 在提交时等待区间过去（commit-wait），用延迟换全球线性一致。</p>
 
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>共识像一个小型议会：只要过半数议员在场，就能通过法案；任期内只有一个议长；新议长必须拥有此前所有已公布的法案。网络分区时，少数派议会可以继续开会，但通过不了任何法案——这就是用可用性换一致性。</p>
+    <h3><span class="sn">10.4</span>共识：让多个节点对同一件事达成一致</h3>
+    <p>共识要满足：<b>一致同意</b>（所有正确节点决定同一个值）、<b>完整性</b>（决定的值必须被提出过）、<b>终止</b>（在部分同步模型下最终做出决定）、<b>有效性</b>（不决定垃圾值）。FLP 不可能定理说：在完全异步、允许一个节点崩溃的模型下，确定性共识无法保证终止；实际协议靠随机化或部分同步假设绕过。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">共识的四种等价外衣</span></div>
+      <div class="thm-body">
+        <p>① <b>Leader election</b>：选出唯一 leader；② <b>Atomic commit</b>：所有参与者对提交/回滚达成一致；③ <b>Total order broadcast</b>：所有节点按同一顺序交付消息；④ <b>Linearizable compare-and-set</b>：注册一个唯一值。它们可以互相实现，所以“会一个”基本等于“会一套”。</p>
+      </div>
     </div>
 
+    <p><b>Raft</b> 把共识拆成 leader election、log replication、safety 三块：任期（term）单调递增，候选人拉票，获得多数派即成为 leader；日志按索引复制，只有包含所有已提交条目的候选人才可能当选。Paxos 更早、更难懂，ZAB（ZooKeeper）针对主备广播优化。三者都要求多数派（$2f+1$ 容忍 $f$ 个故障），3 节点容忍 1 个，5 节点容忍 2 个。</p>
+
+    <p><b>协调服务</b>（ZooKeeper、etcd、Consul）把共识包装成易用原语：临时节点做成员管理、watch 做变更通知、租约做锁、CAS 做配置更新。它们适合存小量元数据，不适合存业务大数据——所有写都要经过共识，吞吐有限。</p>
+
+    <h3><span class="sn">10.5</span>什么时候不该用共识</h3>
+    <p>共识的每次写都要多数派 RTT，跨地域时延高；节点不足多数派时不可写。对“可容忍旧读”的缓存、推荐、日志采集，最终一致更划算。把共识用在每个用户请求上，会把系统变成“全局串行”，吞吐与可用性都受最慢节点拖累。</p>
+
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">把所有读写都塞进共识</span></div>
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">读也要一致</span></div>
       <div class="thm-body">
-        <p>共识的每次写入都要一次多数派往返，吞吐受限于 leader 与网络 RTT。把它用在每秒数十万次的业务写入上，会得到一条又慢又贵的流水线。</p>
-        <p>常见分层是：共识只管理元数据、租约、分片映射与选主；业务数据走单主复制或 quorum，读走本地副本。先问“这个决策真的需要全局唯一顺序吗”，再决定是否引入共识。</p>
+        <p>很多人只把写走共识，读直接打 follower，然后声称“强一致”。follower 可能落后，读到的就是旧值。要线性一致读，必须走 leader、或用 read index/lease 确认 leader 仍是当前 leader、或等待 apply 到读位点。另一个坑是把 ZooKeeper 当数据库：它适合 KB 级元数据与低频写，塞进大量业务数据会拖垮整个协调层。</p>
       </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>概念</th><th>一句话</th><th>代价/边界</th></tr></thead>
+        <tbody>
+          <tr><td class="id">linearizability</td><td>单对象、实时顺序、最新读</td><td>跨地域延迟、分区时不可用</td></tr>
+          <tr><td class="id">CAP</td><td>分区时 C/A 二选一</td><td>P 不可选；无分区时看 PACELC</td></tr>
+          <tr><td class="id">Lamport clock</td><td>因果必要非充分</td><td>并发不可比</td></tr>
+          <tr><td class="id">vector clock</td><td>因果可判定</td><td>元数据膨胀</td></tr>
+          <tr><td class="id">HLC</td><td>墙钟 + 逻辑计数</td><td>仍有误差界</td></tr>
+          <tr><td class="id">Raft</td><td>选主 + 日志复制</td><td>多数派、RTT</td></tr>
+          <tr><td class="id">total order broadcast</td><td>所有节点同序交付</td><td>等价于共识</td></tr>
+          <tr><td class="id">ZooKeeper/etcd</td><td>协调原语</td><td>小数据、低频写</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -1261,67 +1672,111 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch11" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 11 · Batch Processing</div>
-    <h2><span class="num">11</span>批处理：用不可变输入换可重算的正确性</h2>
-    <p class="lede">批处理的核心不是“跑得久”，而是“输入有界、结果可重算”。这让你可以用重跑代替复杂的容错逻辑，也让错误修复变成一次回溯计算。</p>
+    <h2><span class="num">11</span>批处理：把输入当只读，把输出当可重算</h2>
+    <p class="lede">批处理的核心不是“跑得久”，而是“输入不可变、输出可重建”。这让你能在代码有 bug 时回滚重跑，而不是对着被污染的生产库发抖。</p>
 
     <div class="chap-intro">
-      <p>本章从 Unix 管道讲起：小工具、纯文本、stdin/stdout。然后把它放大到分布式：HDFS 的分块与副本、MapReduce 的 shuffle、Spark 类数据流引擎的 DAG 与内存复用，最后讨论 join 策略、数据倾斜与常见用例。</p>
-      <span class="tag">MapReduce · Shuffle · Dataflow · Skew</span>
+      <p>本章从 Unix 管道讲起，进入分布式文件系统与对象存储、作业编排，再拆解 MapReduce 与 dataflow 引擎的 shuffle、join、查询编译，最后落到 ETL、分析、机器学习与派生数据服务四类用例。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">MapReduce · Spark · Shuffle · HDFS · ETL</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">immutable input</span><span class="chip">shuffle</span><span class="chip">partition / sort</span>
-      <span class="chip">DAG</span><span class="chip">broadcast join</span><span class="chip">data skew</span><span class="chip">recompute</span>
+      <span class="chip hot">immutable input</span><span class="chip">shuffle</span><span class="chip">HDFS</span>
+      <span class="chip">object store</span><span class="chip">DAG</span><span class="chip">broadcast join</span><span class="chip">DataFrame</span>
     </div>
 
-    <h3><span class="sn">11.1</span>从管道到集群：同一种思维</h3>
-    <p><code>cat access.log | cut -d' ' -f1 | sort | uniq -c | sort -rn | head</code> 已经包含批处理的全部要素：逐行流式读取、无共享的转换、按 key 排序聚合、有界输出。分布式批处理只是把“一台机器上的 sort”换成“先按 key 分区，再在各分区内排序”。</p>
-    <p>这个 shuffle 是批处理最贵的步骤：它要把中间数据写盘、跨网络传输、再按 key 归并。所有优化——减少 shuffle 数据量、提前聚合（combiner）、选择正确的 join 策略——都围绕它展开。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Batch Processing with Unix Tools · Simple Log Analysis · Chain of Commands Versus Custom Program · Sorting Versus In-Memory Aggregation · Batch Processing in Distributed Systems · Distributed Filesystems · Object Stores · Distributed Job Orchestration · Batch Processing Models · MapReduce · Dataflow Engines · Shuffling Data · Joins and Grouping · Query Languages · DataFrames · Batch Use Cases · Extract–Transform–Load · Analytics · Machine Learning · Serving Derived Data · Summary</p></details>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">有界输入与可重算</span></div>
+    <h3><span class="sn">11.1</span>Unix 管道：批处理的原型</h3>
+    <p>分析一亿行日志，最经典的做法是几条命令串起来：过滤、切字段、排序、计数。每条命令只做一件事，通过 stdin/stdout 传递文本流；操作系统负责缓冲与调度。它的哲学是<b>组合</b>：没有一个大程序，而是一组可替换的小工具。</p>
+
+<pre><code class="language-bash"># 统计访问量最高的 10 个 URL
+cat access.log |
+  awk '{print $7}' |
+  sort |
+  uniq -c |
+  sort -rn |
+  head -10</code></pre>
+
+    <p>这条管道的瓶颈是 <code>sort</code>：它要把全部输入读进内存（或溢写到磁盘）才能输出第一条。Unix 的排序用外部归并排序处理超大文件；而 <code>uniq</code> 只能处理相邻重复，所以必须先排序。若数据能放进内存，用哈希表计数会更快；不能，就必须接受排序的 $O(n\log n)$ 与磁盘 I/O。</p>
+
+    <div class="thm rem">
+      <div class="thm-head"><span class="thm-kind">辨析</span><span class="thm-title">链式命令 vs 自定义程序</span></div>
       <div class="thm-body">
-        <p>批处理的输入是<b>有界</b>的（一个时间范围、一批文件），因此可以整体重跑。失败时不必逐条恢复，直接重算失败的分区即可；这也意味着输出必须能被幂等覆盖（写新分区、原子替换），否则重跑会产生重复。</p>
-        <p>流处理的输入通常无界，不能“从头再来”，所以它的容错必须依赖 checkpoint、状态快照与可重放日志。</p>
+        <p>管道胜在可读、可复用、可逐步调试；自定义程序胜在能控制内存、并行与数据格式。真实批处理框架（Spark、Flink）本质上是“把管道编译成分布式 DAG”，既保留声明式组合，又能跨机器 shuffle。</p>
       </div>
     </div>
 
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">三种 join，三种代价</span></div>
-      <div class="thm-body">
-        <p><b>广播哈希 join</b>：小表全量分发到每个节点，大表本地探测。省 shuffle，但小表必须真的小。<b>排序合并 join</b>：两边按 join key 分区排序，再线性归并。适合大表对大表，代价是两次 shuffle。<b>map 端 join</b>：输入已按同一 key 分区且有序，直接在 map 阶段合并，最省，但依赖上游布局。</p>
-      </div>
-    </div>
+    <h3><span class="sn">11.2</span>分布式存储：HDFS 与对象存储</h3>
+    <p><b>HDFS</b> 把文件切成大块（默认 128 MB），每块复制到多台 DataNode；NameNode 保存元数据（文件 → 块 → 位置）。它为大文件顺序读写优化，不适合大量小文件与随机写。计算尽量靠近数据（data locality），减少网络传输。</p>
+    <p><b>对象存储</b>（S3、GCS、Azure Blob）提供桶与对象，按 PUT/GET 计费，几乎无限扩展；但延迟高（数十毫秒）、不支持原地追加/随机写、LIST 操作可能很贵。现代数据湖把 Parquet 文件放对象存储，用 Iceberg/Delta 表格式管理“哪些文件组成一张表”，从而支持快照、时间旅行与并发写。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>引擎</th><th>执行模型</th><th>容错</th><th>优势</th><th>短板</th></tr></thead>
+        <thead><tr><th>维度</th><th>HDFS</th><th>对象存储</th></tr></thead>
         <tbody>
-          <tr><td class="id">Unix 管道</td><td>流式、单机</td><td>重跑命令</td><td>极简、可组合</td><td>受单机资源限制</td></tr>
-          <tr><td class="id">MapReduce</td><td>map → shuffle → reduce</td><td>任务重试、落盘中间结果</td><td>模型简单、容错稳</td><td>多阶段落盘，慢</td></tr>
-          <tr><td class="id">Spark / Flink batch</td><td>DAG、流水线、内存复用</td><td>血缘重算 + checkpoint</td><td>快，算子丰富</td><td>内存压力、调参复杂</td></tr>
-          <tr><td class="id">MPP 数仓</td><td>向量化、列式、CBO</td><td>查询级重试</td><td>SQL 生态、交互式</td><td>并发与弹性受限</td></tr>
+          <tr><td class="id">写入</td><td>追加、流式写</td><td>整对象 PUT，覆盖写</td></tr>
+          <tr><td class="id">延迟</td><td>低（本地/同机房）</td><td>较高（HTTP + 远端）</td></tr>
+          <tr><td class="id">扩展</td><td>需运维集群</td><td>托管、近乎无限</td></tr>
+          <tr><td class="id">成本</td><td>机器 + 运维</td><td>存储便宜、请求与 egress 计费</td></tr>
+          <tr><td class="id">适合</td><td>大数据批处理、临时 shuffle</td><td>数据湖、长期归档、存算分离</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="cards">
-      <div class="card"><div class="k">ETL</div><h4>把脏数据挡在仓库外</h4><p>清洗、去重、维度对齐；失败要能按分区重跑，而不是整条链路重来。</p></div>
-      <div class="card"><div class="k">ML 特征</div><h4>训练/服务一致性</h4><p>批处理生成特征快照，必须与线上实时特征用同一套定义，否则训练-服务偏斜。</p></div>
-      <div class="card"><div class="k">报表</div><h4>可审计的重算</h4><p>输入不可变 + 版本化输出，才能回答“上个月的数为什么变了”。</p></div>
+    <h3><span class="sn">11.3</span>作业编排：谁来决定在哪跑</h3>
+    <p><b>YARN</b> 让 ResourceManager 分配容器，NodeManager 在节点上启动任务；<b>Kubernetes</b> 用 Pod 调度，Spark/Flink 以 operator 形式提交作业；<b>云托管</b>（EMR、Dataproc、Databricks）把集群生命周期也包了。编排要解决：资源隔离、优先级/队列、失败重试、数据本地性、日志收集与动态伸缩。</p>
+
+    <p>批作业的失败是常态：某个 task 的节点挂了、磁盘满了、shuffle 文件丢了。框架要能重跑单个 task 而不是整个作业；但重跑要求 task 是<b>确定性且幂等</b>的，否则输出会重复或错乱。输出通常写到临时目录，成功后原子重命名/提交，避免半成品被下游读到。</p>
+
+    <h3><span class="sn">11.4</span>MapReduce：map、shuffle、reduce</h3>
+    <p>MapReduce 把计算拆成两个阶段：<b>map</b> 处理每条输入记录，输出 $(k,v)$ 对；<b>shuffle</b> 按 key 分区、排序、把同一 key 的所有值送到同一 reducer；<b>reduce</b> 对每个 key 的值列表做聚合。框架负责分区、排序、容错与重试。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">词频统计</span></div>
+      <div class="thm-body">
+        <p>map：每行拆词，输出 <code>(word, 1)</code>。shuffle：按 word 哈希分区，排序后同一 word 的 1 聚在一起。reduce：求和，输出 <code>(word, count)</code>。combiner 可在 map 端先局部求和，把网络传输从“每个词一次”降到“每个 map 每个词一次”。</p>
+      </div>
     </div>
 
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>批处理像每天凌晨把整座仓库重新盘一遍：慢，但只要有原始单据，任何时候都能重算出正确答案。流处理像边收货边记账：快，但一旦记错，必须回到某个已知正确的时点重放。</p>
+    <p>MapReduce 的局限是“每个阶段都落盘”：map 输出写本地磁盘，reduce 拉取，链式作业反复读写 HDFS。Dataflow 引擎（Spark、Flink、Tez）把多个算子组成 DAG，能在内存中流水线传递，减少落盘；但 shuffle 仍然要落盘（或至少落内存/本地盘），因为要跨节点按 key 重分布。</p>
+
+    <p><b>数据倾斜</b>是 shuffle 的头号敌人：某个 key 特别多（例如 null、大客户），一个 reducer 要处理 80% 的数据，其他 reducer 早早空闲。对策：给热点 key 加随机后缀做两阶段聚合、广播小表、拆分大 key、或对 null 单独处理。</p>
+
+    <h3><span class="sn">11.5</span>Join 与分组：三种物理计划</h3>
+    <p><b>Broadcast hash join</b>：小表复制到每个节点，与大表分区做哈希连接；适合维度表。 <b>Partitioned hash join</b>：两张大表按 join key 重分区，同 key 落到同一分区；网络开销大但可扩展。<b>Sort-merge join</b>：两表按 key 排序后归并；适合已经有序或需要范围连接的场景。</p>
+
+    <p>SQL 引擎会根据统计信息（表大小、NDV、直方图）选择计划；统计过期会导致“该广播的没广播，该分区的没分区”，查询慢十倍。DataFrame API 最终也编译成这些物理算子，所以“用 DataFrame 就不用懂执行计划”是错觉。</p>
+
+    <h3><span class="sn">11.6</span>批处理的四类用例</h3>
+    <div class="cards">
+      <div class="card"><div class="k">ETL</div><h4>清洗与建模</h4><p>把业务库/日志/第三方数据抽取、去重、规范化，加载进仓库；dbt 把 SQL 转换做成可测试的 DAG。</p></div>
+      <div class="card"><div class="k">Analytics</div><h4>报表与指标</h4><p>大规模聚合、窗口、 cohort；结果写入 BI 层，按天/小时刷新。</p></div>
+      <div class="card"><div class="k">ML</div><h4>特征与训练</h4><p>批处理生成特征、训练模型、评估；特征工程的可重放性直接决定模型可复现性。</p></div>
+      <div class="card"><div class="k">Serving</div><h4>派生数据回灌</h4><p>把批处理结果（搜索索引、推荐、宽表）导入在线存储，供低延迟查询。</p></div>
     </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">数据倾斜：99 个 reducer 等 1 个</span></div>
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">批处理不是“慢查询”</span></div>
       <div class="thm-body">
-        <p>按 <code>user_id</code> 聚合时，某个机器人账号占了 40% 的事件。所有数据涌向同一个 reduce 分区，其他任务早已完成，整个作业卡在 99%。加机器没用，因为瓶颈是单个 key。</p>
-        <p>解法：对热点 key 加随机前缀做两阶段聚合（先局部聚合，再去前缀合并）；或把该 key 单独走广播/特殊路径。监控应看<b>分区大小分布</b>，而不是平均任务时长。</p>
+        <p>批作业的输出是派生数据，必须能重跑；如果作业有非幂等副作用（发通知、调外部 API、追加而非覆盖），重跑就会重复。另一个坑是“只看作业成功，不看数据质量”：空输入、schema 漂移、时区错位都会让作业“成功产出错数据”。要在管道里加行数、空值率、分布漂移的断言。</p>
       </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>概念</th><th>一句话</th><th>关键代价</th></tr></thead>
+        <tbody>
+          <tr><td class="id">immutable input</td><td>输入只读、输出可重建</td><td>存储冗余、重跑成本</td></tr>
+          <tr><td class="id">shuffle</td><td>按 key 跨节点重分布</td><td>网络 + 磁盘 + 倾斜</td></tr>
+          <tr><td class="id">HDFS</td><td>块复制、NameNode 元数据</td><td>小文件、随机写弱</td></tr>
+          <tr><td class="id">object store</td><td>桶 + 对象、按请求计费</td><td>延迟、LIST 费用</td></tr>
+          <tr><td class="id">MapReduce</td><td>map → shuffle → reduce</td><td>阶段落盘、链式慢</td></tr>
+          <tr><td class="id">dataflow DAG</td><td>算子流水线、少落盘</td><td>shuffle 仍重</td></tr>
+          <tr><td class="id">broadcast join</td><td>小表复制到各节点</td><td>小表必须真小</td></tr>
+          <tr><td class="id">partitioned join</td><td>两表按 key 重分区</td><td>网络开销、倾斜</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -1329,63 +1784,99 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch12" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 12 · Stream Processing</div>
-    <h2><span class="num">12</span>流处理：把“无界输入”变成可重放、可恢复的日志</h2>
-    <p class="lede">流的难点不是“实时”，而是“无界”：没有终点，就不能靠重跑；没有全局顺序，就必须区分事件时间与处理时间。</p>
+    <h2><span class="num">12</span>流处理：无界数据上的时间、状态与一致性</h2>
+    <p class="lede">批处理的输入有尽头，流处理的输入永远没有。于是“什么时候算完”“迟到的事件怎么办”“故障后从哪继续”成为核心问题。</p>
 
     <div class="chap-intro">
-      <p>本章从消息传递的三种语义讲起，进入基于日志的 broker（分区、偏移量、消费者组），再讨论 CDC 与事件溯源如何把数据库变更变成流；随后是流式 join、窗口、水位线与状态容错，最后落到“到底能不能做到 exactly-once”。</p>
-      <span class="tag">Log · CDC · Event Time · Exactly-Once</span>
+      <p>本章先看事件如何传输（消息队列、日志型 broker、投递语义），再看数据库与流的结合（CDC、事件溯源、物化视图），最后讨论流处理的时间语义、窗口、join 与容错。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Kafka · CDC · Event time · Watermark · Exactly-once</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">partitioned log</span><span class="chip">consumer group</span><span class="chip">offset</span>
-      <span class="chip">at-least-once</span><span class="chip">CDC</span><span class="chip">watermark</span><span class="chip">state snapshot</span>
+      <span class="chip hot">log-based broker</span><span class="chip">consumer group</span><span class="chip">CDC</span>
+      <span class="chip">event time</span><span class="chip">watermark</span><span class="chip">checkpoint</span><span class="chip">idempotence</span>
     </div>
 
-    <h3><span class="sn">12.1</span>日志：把消息队列变成可重放的真相</h3>
-    <p>传统消息队列在消费确认后删除消息；日志则只追加、按分区保留、消费者用偏移量记录位置。于是同一份流可以被多个消费者独立读取，也可以从旧偏移量重放。代价是存储与保留策略：删早了无法重放，留久了成本上升。</p>
-    <p>分区是并行与顺序的边界：同一分区内有序，跨分区无序。若业务要求“同一订单的事件严格有序”，分区键就必须是订单 ID，而不是随机值。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Transmitting Event Streams · Messaging Systems · Log-Based Message Brokers · Databases and Streams · Keeping Systems in Sync · Change Data Capture · State, Streams, and Immutability · Processing Streams · Uses of Stream Processing · Reasoning About Time · Stream Joins · Fault Tolerance · Summary</p></details>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">三种投递语义的真实含义</span></div>
-      <div class="thm-body">
-        <p><b>At-most-once</b>：先提交偏移再处理，崩溃会丢消息。<b>At-least-once</b>：先处理再提交，崩溃会重复。所谓 <b>exactly-once</b> 并不是“消息只到达一次”，而是“处理效果只生效一次”——通常靠幂等写或事务性提交实现。</p>
-        <p>因此 exactly-once 是端到端属性：生产者、broker、消费者、外部存储必须共同参与。只在 broker 内开事务，不能保证写数据库也只发生一次。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">事件时间迟到 40 分钟</span></div>
-      <div class="thm-body">
-        <p>移动端离线缓存后批量上报，一条“点击”事件在发生 40 分钟后才到达。若按处理时间开 5 分钟窗口，它会被算进错误的时段，报表与真实行为错位。</p>
-        <p>正确做法是按事件时间开窗，并用水位线表示“我预计不会再有早于 T 的事件”。水位线是启发式：设得太激进会丢迟到数据，太保守会让结果延迟。工程上通常允许窗口在水位线后保留一段 allowed lateness，迟到数据触发增量修正。</p>
-      </div>
-    </div>
+    <h3><span class="sn">12.1</span>消息系统：从队列到可重放日志</h3>
+    <p><b>传统消息队列</b>（RabbitMQ、ActiveMQ、SQS）把消息推给消费者，消费后删除；适合任务分发，但消息一旦确认就消失，难以回放。<b>日志型 broker</b>（Kafka、Pulsar、Kinesis）把事件追加到分区日志，消费者按 offset 拉取，消息保留一段时间（或按大小/压缩），可以重置 offset 重放。这一差异决定了架构能力：日志能当“事实来源”，队列更像“临时缓冲”。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>概念</th><th>作用</th><th>代价/风险</th></tr></thead>
+        <thead><tr><th>维度</th><th>队列</th><th>日志</th></tr></thead>
         <tbody>
-          <tr><td class="id">分区日志</td><td>有序、可重放、多消费者</td><td>跨分区无序；保留成本</td></tr>
-          <tr><td class="id">消费者组</td><td>并行消费、自动再均衡</td><td>再均衡期间暂停；重复投递</td></tr>
-          <tr><td class="id">CDC</td><td>把数据库变更变成流</td><td>依赖日志格式；schema 演化</td></tr>
-          <tr><td class="id">水位线</td><td>界定事件时间完整性</td><td>迟到数据与延迟的取舍</td></tr>
-          <tr><td class="id">状态快照</td><td>故障后恢复算子状态</td><td>快照开销；恢复时长</td></tr>
-          <tr><td class="id">幂等写</td><td>让重复投递无副作用</td><td>需要唯一键与去重存储</td></tr>
+          <tr><td class="id">消费后</td><td>删除/确认</td><td>保留，按 offset 读</td></tr>
+          <tr><td class="id">重放</td><td>困难</td><td>原生支持</td></tr>
+          <tr><td class="id">顺序</td><td>通常不保证</td><td>分区内有序</td></tr>
+          <tr><td class="id">多消费者</td><td>竞争消费</td><td>consumer group 各自位点</td></tr>
+          <tr><td class="id">典型</td><td>SQS、RabbitMQ</td><td>Kafka、Pulsar</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3><span class="sn">12.2</span>流式 join 与状态</h3>
-    <p><b>流-流 join</b> 需要双方都保留一段时间窗口内的状态，等待对端事件到达；窗口越大，状态越大。<b>流-表 join</b> 把表当成不断更新的 changelog，用当前版本补全事件；表变更的时序决定了补全结果，因而必须保证同一 key 的变更有序。</p>
-    <p>有状态算子必须能恢复：定期做一致性快照（对齐 barrier 或异步拷贝），失败后从快照恢复并从对应偏移量重放。若快照与偏移量不一致，就会重复或丢失。</p>
+    <p><b>投递语义</b>：at-most-once（可能丢，不重复）、at-least-once（不丢，可能重复）、effectively-once（至少一次 + 幂等/去重，效果一次）。真正的 exactly-once 需要端到端：生产端幂等、 broker 事务、消费端去重与位点原子提交，缺一不可。</p>
+
+    <p><b>Consumer group</b> 让多个消费者分摊分区：一个分区同一时刻只被组内一个消费者处理，从而保证分区内顺序；消费者增减触发 rebalance，期间可能重复消费或短暂停顿。分区数决定最大并行度，也决定顺序的粒度。</p>
+
+    <h3><span class="sn">12.2</span>数据库与流：双写、CDC 与事件溯源</h3>
+    <p>“写数据库 + 发消息”是典型的<b>双写</b>：两个系统分别成功/失败，无法原子。若先写库再发消息，消息可能丢；先发消息再写库，可能消费到不存在的记录。解决办法是把数据库的变更日志变成流：<b>CDC</b>（change data capture）读取 binlog/WAL，解析成行级事件，发送到 Kafka，下游按序应用。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">搜索索引的同步</span></div>
+      <div class="thm-body">
+        <p>商品服务更新数据库后，Debezium 捕获 <code>products</code> 表的 insert/update/delete，写入 <code>product-changes</code> topic；搜索服务消费并更新 Elasticsearch。若搜索服务挂了，重启后从上次 offset 继续，不会漏；若重复消费，用文档 ID 做幂等 upsert。这样数据库仍是唯一真相，搜索索引是可重建的派生数据。</p>
+      </div>
+    </div>
+
+    <p><b>日志压缩</b>（log compaction）保留每个 key 的最新值，删除旧版本，让 topic 可以当“可回放的 KV 表”。Kafka 的 <code>compact</code> 策略适合配置、用户资料这类“只关心当前值”的数据；事件流则应保留完整历史。</p>
+
+    <p><b>事件溯源</b>把事件日志当唯一真相，状态由重放得到；CDC 则是“数据库是真相，日志是变更投影”。二者都强调<b>不可变日志 + 派生视图</b>，区别在谁拥有写模型。</p>
+
+    <h3><span class="sn">12.3</span>时间：事件时间、处理时间与水印</h3>
+    <p><b>Event time</b> 是事件实际发生的时间（设备时钟/服务端写入时间）；<b>processing time</b> 是流处理器看到它的时间。二者可能相差几秒到几天（离线设备、重放、积压）。按事件时间做窗口，结果可重放且稳定；按处理时间做窗口，简单但结果依赖到达顺序。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Watermark 与允许迟到</span></div>
+      <div class="thm-body">
+        <p><b>Watermark</b> 是处理器对“事件时间进度”的估计：它宣称“不会再有早于 $t$ 的事件到达”。窗口在水位线越过窗口结束时间后触发。由于无法确定迟到事件是否还会来，watermark 本质是启发式；可配置 allowed lateness，在窗口关闭后仍接受一段时间的迟到事件并更新结果。</p>
+      </div>
+    </div>
+
+    <p>窗口类型：滚动（tumbling，固定不重叠）、滑动（sliding，固定长度、可重叠）、会话（session，按活动间隙切分）。会话窗口没有固定边界，需要按 key 维护状态并合并。</p>
+
+    <h3><span class="sn">12.4</span>流上的 Join</h3>
+    <div class="cards">
+      <div class="card"><div class="k">Stream-stream</div><h4>双边都无界</h4><p>维护两个流最近一段时间的状态，按 join key 匹配；需要窗口界定“多久之内算相关”，否则状态无限增长。</p></div>
+      <div class="card"><div class="k">Stream-table</div><h4>一边是变更流</h4><p>把表的最新值物化在处理器本地（或查外部 KV），流事件到来时 enrich；表更新通过 CDC 流同步。</p></div>
+      <div class="card"><div class="k">Table-table</div><h4>两个物化视图</h4><p>等价于维护 join 结果的物化视图；任一侧变更都要触发增量更新，状态与一致性最难。</p></div>
+    </div>
+
+    <h3><span class="sn">12.5</span>容错：checkpoint、幂等与事务</h3>
+    <p>流处理器是有状态的：窗口计数、join 缓存、去重集合。故障恢复要么<b>重放</b>（从 checkpoint 的输入 offset 重新计算），要么<b>恢复状态</b>（从远程状态后端加载）。Flink 用分布式快照（checkpoint barrier）做一致性检查点；Spark Structured Streaming 用 micro-batch 的 offset 与状态存储。</p>
+
+    <p>“恰好一次”通常靠：输入 offset 与输出写在同一事务（Kafka 事务、数据库事务），或输出幂等（唯一键 upsert），或去重表。若 sink 不支持事务，就只能做到 at-least-once + 幂等。</p>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">用处理时间做业务时间</span></div>
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">时间与顺序的错觉</span></div>
       <div class="thm-body">
-        <p>“最近 5 分钟下单量”若按消费者收到消息的时间统计，会在积压时出现虚假峰值：消息堆积两小时后突然被消费，所有旧订单都算进“现在”。</p>
-        <p>另一个坑是 at-least-once + 非幂等写：重试导致重复扣款、重复发券。修复顺序应是：先给写入加唯一键，再谈吞吐；先保证可重放，再谈低延迟。</p>
+        <p>① 以为 Kafka 全局有序——只有分区内有序；跨分区要按 key 或全局排序。② 用处理时间做“每日活跃”，重放历史时结果全变。③ 忘记迟到事件，窗口结果永远偏低。④ 把 exactly-once 当成 broker 的开关，忽略 sink 的幂等。⑤ 状态无限增长：没有 TTL 的 join/去重会在几周后 OOM。</p>
       </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>概念</th><th>一句话</th><th>边界</th></tr></thead>
+        <tbody>
+          <tr><td class="id">log-based broker</td><td>可重放的分区日志</td><td>分区内有序、保留策略</td></tr>
+          <tr><td class="id">consumer group</td><td>组内分摊分区</td><td>rebalance 停顿</td></tr>
+          <tr><td class="id">CDC</td><td>把数据库变更变成流</td><td>schema 演进、去重</td></tr>
+          <tr><td class="id">event time</td><td>事件发生时间</td><td>迟到、乱序</td></tr>
+          <tr><td class="id">watermark</td><td>事件时间进度估计</td><td>启发式、需 allowed lateness</td></tr>
+          <tr><td class="id">checkpoint</td><td>状态与位点的一致性快照</td><td>恢复时长、状态大小</td></tr>
+          <tr><td class="id">exactly-once</td><td>端到端效果一次</td><td>需事务或幂等 sink</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -1393,139 +1884,215 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
 <section id="ch13" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 13 · A Philosophy of Streaming Systems</div>
-    <h2><span class="num">13</span>流式系统哲学：把数据库拆开，再按日志装回去</h2>
-    <p class="lede">当存储、索引、缓存、物化视图都能订阅同一份变更日志时，数据集成就从“点对点同步”变成了“从源头派生”。这是全书最像架构宣言的一章。</p>
+    <h2><span class="num">13</span>数据整合的哲学：把数据库拆开，再按数据流装回去</h2>
+    <p class="lede">没有一个数据库能同时把事务、搜索、分析、推荐都做到最好。务实的方向不是造一个全能库，而是让每个专用系统通过可重放的日志派生同一份事实。</p>
 
     <div class="chap-intro">
-      <p>本章讨论 data integration 的两种路径：federation（查询时联合）与 unbundling（把数据库拆成可组合的日志与派生视图）；随后用 end-to-end argument 审视“exactly-once”与“正确性”到底该由哪一层负责，最后落到 timeliness 与 integrity 的取舍。</p>
-      <span class="tag">Unbundling · Federation · End-to-End · Integrity</span>
+      <p>本章把前 12 章收束成一套方法论：用派生数据组合专用工具；把数据库“拆开”成存储、索引、查询、协调等可组合部件；围绕数据流设计应用；用端到端论证、约束执行、及时性与完整性、审计与自校验来追求正确性。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Data integration · Unbundling · Dataflow · End-to-end · Integrity</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">data integration</span><span class="chip">unbundled DB</span><span class="chip">derived view</span>
-      <span class="chip">end-to-end</span><span class="chip">timeliness</span><span class="chip">integrity</span><span class="chip">idempotence</span>
+      <span class="chip hot">derived data</span><span class="chip">unbundled database</span><span class="chip">dataflow</span>
+      <span class="chip">end-to-end argument</span><span class="chip">timeliness</span><span class="chip">integrity</span><span class="chip">audit</span>
     </div>
 
-    <h3><span class="sn">13.1</span>联邦与拆分：两种相反的整合方向</h3>
-    <p><b>Federation</b> 把多个异构系统包在一个查询层后面：写入仍发生在各自系统，查询时做联合。</p>
-    <p><b>Unbundling</b> 则把数据库拆成日志、索引、缓存、查询引擎等独立组件，让它们通过统一的变更流组合。记录系统只负责产生变更，其余系统都是订阅者与派生者。这更接近 Unix 的哲学：小工具、统一接口、可组合。</p>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Data Integration · Combining Specialized Tools by Deriving Data · Batch and Stream Processing · Unbundling Databases · Composing Data Storage Technologies · Designing Applications Around Dataflow · Observing Derived State · Aiming for Correctness · The End-to-End Argument for Databases · Enforcing Constraints · Timeliness and Integrity · Trust, but Verify · Summary</p></details>
+
+    <h3><span class="sn">13.1</span>组合专用工具：不要造全能库</h3>
+    <p>搜索引擎擅长相关性排序，OLTP 库擅长事务，列存擅长聚合，推荐系统擅长向量召回。让一个系统全包，通常意味着在每个维度都平庸。可行的方法是：选一个<b>记录系统</b>保存事实，其他系统通过日志/CDC 派生，各自用最适合的索引与查询引擎。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">及时性与完整性</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Data integration（数据整合）</span></div>
       <div class="thm-body">
-        <p><b>Timeliness</b>：读者多快能看到最新写入。<b>Integrity</b>：数据没有丢失、没有重复、没有错误派生。两者在故障下不能同时最优：要更快可见，就得接受短暂不一致；要绝对完整，就得等确认与对账。</p>
-        <p>关键洞察：完整性不依赖“实时”。批处理可以慢，但只要输入完整、转换确定，结果仍然正确。很多“实时”需求，其实是“及时”，不是“完整”。</p>
+        <p>让多个专用系统对同一份事实保持一致：一个系统是权威来源，其他系统是派生视图；变更通过可重放的日志传播；每个派生视图都能从日志重建。整合的难点不是“连起来”，而是<b>定义清楚谁拥有哪条事实、冲突时听谁的</b>。</p>
       </div>
     </div>
 
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">原则</span><span class="thm-title">端到端论证：重复只能在终点消除</span></div>
-      <div class="thm-body">
-        <p>如果链路中每一跳都可能重传，那么中间层无法单独保证“只处理一次”。真正的去重必须发生在最终产生副作用的端点：用请求 ID / 事件 ID 做唯一约束，或让写入本身幂等。</p>
-        <p>因此“Kafka 支持 exactly-once”只描述了 Kafka 内部的读写事务；一旦 sink 是外部数据库，端到端语义仍取决于 sink 的幂等性。</p>
-      </div>
-    </div>
+    <p>批与流不是对立：批处理重算历史、修正错误、训练模型；流处理降低新鲜度延迟、驱动实时视图。Lambda 架构同时维护批层与速度层，代价是两套代码；Kappa 架构用流重放历史，要求日志保留足够久。现代 lakehouse 用同一套表格式 + 增量查询，试图把两者统一。</p>
+
+    <h3><span class="sn">13.2</span>拆开数据库：存储、索引、查询、协调</h3>
+    <p>传统数据库把存储引擎、索引、查询优化器、事务管理、协调服务打包在一起。所谓 <b>unbundling</b>，是把这些能力拆成独立服务：对象存储做持久层，Parquet/Iceberg 做表格式，Trino/Spark 做查询，Kafka 做变更流，etcd 做协调。好处是每层可独立扩展与替换；坏处是跨层一致性、延迟与运维复杂度上升。</p>
 
     <div class="table-wrap">
       <table>
-        <thead><tr><th>方案</th><th>一致性</th><th>新鲜度</th><th>复杂度</th><th>典型问题</th></tr></thead>
+        <thead><tr><th>数据库部件</th><th>拆出后的形态</th><th>代价</th></tr></thead>
         <tbody>
-          <tr><td class="id">双写</td><td>无保证</td><td>高</td><td>低</td><td>一侧失败即永久不一致</td></tr>
-          <tr><td class="id">定时批量同步</td><td>最终一致</td><td>低（小时级）</td><td>中</td><td>窗口内变更丢失/覆盖</td></tr>
-          <tr><td class="id">CDC + 日志</td><td>最终一致、可重放</td><td>秒级</td><td>中高</td><td>schema 演化、顺序保证</td></tr>
-          <tr><td class="id">联邦查询</td><td>取决于源</td><td>高</td><td>中</td><td>跨源 join 慢、语义漂移</td></tr>
-          <tr><td class="id">事件溯源</td><td>强（单流内）</td><td>高</td><td>高</td><td>事件版本、重放成本</td></tr>
+          <tr><td class="id">存储引擎</td><td>对象存储 + 列式文件</td><td>延迟高、无原地更新</td></tr>
+          <tr><td class="id">索引</td><td>Elasticsearch / 向量库</td><td>最终一致、重建成本</td></tr>
+          <tr><td class="id">查询优化</td><td>Trino / Spark / DuckDB</td><td>统计信息与治理</td></tr>
+          <tr><td class="id">事务</td><td>Iceberg/Delta 快照 + 协调</td><td>并发写冲突</td></tr>
+          <tr><td class="id">协调</td><td>ZooKeeper / etcd</td><td>小数据、额外跳数</td></tr>
+          <tr><td class="id">消息</td><td>Kafka / Pulsar</td><td>保留、顺序、运维</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="cards">
-      <div class="card"><div class="k">Federation</div><h4>查询时整合</h4><p>适合遗留系统多、写入不愿改的组织；代价是每次查询都要面对各源的延迟与语义差异。</p></div>
-      <div class="card"><div class="k">Unbundling</div><h4>写入时派生</h4><p>适合新建平台：一份日志驱动搜索、缓存、数仓、特征。要求团队接受“派生系统可重建”的心智模型。</p></div>
-      <div class="card"><div class="k">Coordination</div><h4>能不做就不做</h4><p>需要跨节点协调的写入，延迟与可用性都会变差；把约束设计成可交换、可合并，往往比引入共识更划算。</p></div>
+    <p><b>围绕数据流设计应用</b>：把用户请求、数据库变更、外部事件都看作流；每个派生视图声明“我订阅哪些流、如何转换、写到哪”。这样新增一个搜索索引或推荐特征，只是新增一个消费者，而不是改主库。关键是给每个流定义稳定的 schema 与 key，并明确幂等与重放语义。</p>
+
+    <h3><span class="sn">13.3</span>观察派生状态：可观测性也是数据问题</h3>
+    <p>派生系统会滞后、会出错、会重复。你需要能回答：这个视图消费到哪个位点？与源头的差异有多大？重建需要多久？做法包括：记录端到端延迟、对比行数与校验和、定期从源头重算抽样、把“视图版本/模型版本”写进数据。没有这些，派生数据就是不可信的黑盒。</p>
+
+    <h3><span class="sn">13.4</span>正确性：端到端论证</h3>
+    <p><b>End-to-end argument</b>：某个功能只有在端点上实现才能保证正确，中间层的优化不能替代端点的校验。例如“消息不重复”不能只靠 broker 的去重，因为生产端重试、消费端崩溃都可能引入重复；最终要在业务写入处做幂等（唯一键/去重表）。同理，“数据不丢”要靠端到端的确认与对账，而不是相信某一层的承诺。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">唯一用户名：约束该放哪</span></div>
+      <div class="thm-body">
+        <p>若用户数据按 user_id 分片，而用户名唯一性是全局的，本地唯一索引不够。方案一：把用户名映射到独立分区，用线性一致 CAS 占位；方案二：用共识服务做注册；方案三：接受“先到先得”的异步去重，冲突时人工/自动合并。三种方案的成本与用户体验不同，必须显式选择。</p>
+      </div>
     </div>
 
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>传统数据库像一家自营餐厅：点菜、做菜、结账都在内部完成，效率高但难扩张。拆分后的流式架构像美食广场：每个档口只做一件事，共用一套水电与结算，出问题时可以单独换档口。</p>
-    </div>
+    <p><b>Timeliness vs integrity</b>：及时性是“多久能看到”，完整性是“数据对不对”。二者可以分开取舍：报表晚一小时但准确，通常比实时但错更可接受；支付则相反。把这两个维度写进 SLO，能避免“既要实时又要绝对正确”的空话。</p>
+
+    <h3><span class="sn">13.5</span>Trust, but verify</h3>
+    <p>再严密的协议也假设了故障模型；现实会超出假设（磁盘静默损坏、CPU 位翻转、软件 bug、恶意输入）。所以要<b>审计</b>：不可变日志、校验和、端到端对账、定期恢复演练、独立监控。审计不是不信任团队，而是承认“系统会犯错”。</p>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">“我们有日志，所以一定一致”</span></div>
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">整合不是“多接几个管道”</span></div>
       <div class="thm-body">
-        <p>日志只保证“变更被记录”，不保证“每个消费者都正确处理”。若某个消费者把解析失败的事件静默跳过，派生数据就会永久缺失，而且没有重放能修复——因为偏移量已经前移。</p>
-        <p>必须把消费失败当作一等状态：死信队列、可观测的滞后指标、按事件 ID 的对账。日志是基础设施，不是正确性证明。</p>
+        <p>① 没有唯一真相：两个系统都能改同一字段，冲突时无法裁决。② 派生视图没有重建路径：一旦逻辑出错，只能手工修数据。③ 只监控管道“是否在跑”，不监控数据“是否对”。④ 把端到端一致性寄希望于某一层中间件。⑤ 忽略删除与隐私：派生视图、备份、训练集里的个人数据都要能按同一语义删除。</p>
       </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原则</th><th>一句话</th><th>落地</th></tr></thead>
+        <tbody>
+          <tr><td class="id">data integration</td><td>一个真相，多个派生</td><td>日志/CDC + 可重建视图</td></tr>
+          <tr><td class="id">unbundling</td><td>存储/索引/查询/协调拆开</td><td>湖仓 + 专用引擎</td></tr>
+          <tr><td class="id">dataflow</td><td>围绕流声明依赖</td><td>订阅、转换、幂等写</td></tr>
+          <tr><td class="id">end-to-end</td><td>正确性在端点保证</td><td>幂等、对账、校验和</td></tr>
+          <tr><td class="id">timeliness</td><td>多久能看到</td><td>延迟 SLO</td></tr>
+          <tr><td class="id">integrity</td><td>数据是否对</td><td>约束、审计、重算</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<section id="wrapup" class="chapter">
+<section id="ch14" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 14 · Doing the Right Thing · 设计清单</div>
-    <h2><span class="num">14</span>一页纸：在按下“创建集群”之前</h2>
-    <p class="lede">技术选型只是前半程。真正决定系统能否长期成立的，是数据是否可重建、故障是否有边界，以及系统对人是否负责。</p>
+    <div class="sec-label">Chapter 14 · Doing the Right Thing</div>
+    <h2><span class="num">14</span>做正确的事：数据系统里的伦理与权力</h2>
+    <p class="lede">技术没有善恶，使用它的人有。数据系统一旦上线，就会影响人的机会、隐私与自由；工程师不能把“产品需求”当成免责声明。</p>
 
     <div class="chap-intro">
-      <p>原书最后一章把视角从“能不能跑”拉回到“该不该这样跑”：预测性分析会放大偏见，过度收集会制造风险，隐私不是合规附件而是系统属性。下面把全书压成一组可执行的问题，供架构评审时逐条过。</p>
-      <span class="tag">Ethics · Privacy · Review Checklist</span>
+      <p>本章从预测分析的偏见、责任与反馈回路，转到隐私、监控、同意与数据权力，最后讨论立法与行业自律。它不是清单，而是一种持续的反思实践：在设计与运营中反复问“这会伤害谁”。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Bias · Accountability · Privacy · Surveillance · Power</span>
     </div>
 
     <div class="mapchips">
-      <span class="chip hot">system of record</span><span class="chip">rebuildable</span><span class="chip">RPO / RTO</span>
-      <span class="chip">idempotence</span><span class="chip">observability</span><span class="chip">data minimization</span>
+      <span class="chip hot">algorithmic bias</span><span class="chip">feedback loop</span><span class="chip">informed consent</span>
+      <span class="chip">surveillance</span><span class="chip">data sovereignty</span><span class="chip">GDPR</span><span class="chip">differential privacy</span>
     </div>
 
-    <h3><span class="sn">14.1</span>架构评审的十二个问题</h3>
+    <details class="proof"><summary>英文小节索引 · 对照原书</summary><p>Predictive Analytics · Bias and Discrimination · Responsibility and Accountability · Feedback Loops · Privacy and Tracking · Surveillance · Consent and Freedom of Choice · Privacy and Use of Data · Data as Assets and Power · Remembering the Industrial Revolution · Legislation and Self-Regulation · Summary</p></details>
+
+    <h3><span class="sn">14.1</span>预测分析：模型会放大历史</h3>
+    <p>机器学习模型从历史数据中学习，也继承了历史中的偏见。若过去招聘数据以男性为主，模型会把“像男性”的特征当成能力信号；若警务数据更多覆盖少数族裔社区，预测性巡逻会把警力进一步集中到那里，产生自我实现的预言。这不是“算法故意歧视”，而是<b>目标函数、训练数据与部署环境</b>共同作用的结果。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">反馈回路：预测越准，世界越偏</span></div>
+      <div class="thm-body">
+        <p>用于预测犯罪热点的模型，依据历史抓捕数据训练；警力被派往预测热点，抓捕更多，数据更“验证”模型。模型准确率上升，但社区关系与司法公平受损。类似地，推荐系统优化点击率，会放大标题党与极端内容；信用评分把“ neighborhood”当特征，会让贫困地区更难获得贷款。</p>
+      </div>
+    </div>
+
+    <p><b>责任与可解释性</b>：当模型拒绝贷款、提高保费、决定保释，用户需要知道“为什么”，机构需要能审计“谁改了模型、用了哪些特征”。黑箱模型不是不能用于高风险决策，但必须配套影响评估、人工复核、申诉渠道与漂移监控。把责任推给“算法自己学的”，在伦理与法律上都站不住。</p>
+
+    <h3><span class="sn">14.2</span>隐私与监控：数据是人的延伸</h3>
+    <p>“数据”常被当成抽象资源，但每一行都对应具体的人：位置、健康、社交、消费、生物特征。大规模收集与关联，能把匿名数据重新识别（Netflix Prize 的“匿名”评分被去匿名化；AOL 搜索日志泄露用户身份）。<b>k-anonymity</b> 等脱敏方法在面对多源关联时很脆弱，真正强的保证需要差分隐私这类形式化框架。</p>
+
+    <div class="cards">
+      <div class="card"><div class="k">Surveillance</div><h4>收集本身即权力</h4><p>即使数据不被滥用，持续监控也会改变人的行为（寒蝉效应），尤其是弱势群体。</p></div>
+      <div class="card"><div class="k">Consent</div><h4>同意必须是知情的</h4><p>长达几十页的隐私政策不是同意；默认勾选、暗模式、捆绑授权都不构成自由选择。</p></div>
+      <div class="card"><div class="k">Purpose limitation</div><h4>用途要限定</h4><p>为提供服务收集的数据，不应无限期用于广告、训练或转售；二次使用需要新的合法基础。</p></div>
+    </div>
+
+    <p><b>数据作为资产与权力</b>：掌握数据的一方能看到别人看不到的模式，并据此定价、推荐、筛选。数据集中会形成垄断与信息不对称；平台上的用户、商家、骑手处于不同议价位置。讨论“数据治理”不能只看合规，还要看权力如何分配、谁能申诉、谁承担错误代价。</p>
+
+    <h3><span class="sn">14.3</span>立法、自律与技术设计</h3>
+    <p>GDPR 赋予访问、更正、删除、可携带与反对自动化决策的权利；数据本地化要求某些数据留在境内；AI 法案按风险分级监管。立法给出底线，但技术细节仍需工程师落地：删除要穿透备份、日志、搜索索引与训练集；数据最小化要写进 schema 与保留策略；访问控制要默认拒绝。</p>
+
+    <p><b>Privacy by design</b> 不是上线前加一个勾选框，而是在架构里减少收集、缩短保留、本地化处理、加密与去标识。能端侧算的不要上传；能不存原始数据的只存聚合；能给假名的不给实名。<b>可验证性</b>同样重要：你声称删除，就要有审计日志与抽检。</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">伦理不是合规 checklist</span></div>
+      <div class="thm-body">
+        <p>① 认为“用户同意了”就万事大吉——同意可能不自由、不知情。② 认为“匿名化”就安全——关联攻击可以重识别。③ 只评估模型准确率，不评估对群体的差异影响。④ 把伦理评审放在上线前最后一刻，而不是需求与架构阶段。⑤ 出了事只修模型，不改数据收集与激励结构。</p>
+      </div>
+    </div>
+
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>#</th><th>问题</th><th>答不上来的后果</th></tr></thead>
+        <thead><tr><th>议题</th><th>核心问题</th><th>工程动作</th></tr></thead>
         <tbody>
-          <tr><td class="id">01</td><td>这条数据的<b>记录系统</b>是哪一个？其余副本如何派生？</td><td>多份真相，冲突时无法裁决</td></tr>
-          <tr><td class="id">02</td><td>派生数据能否从源头<b>完整重建</b>？重建一次要多久？</td><td>索引损坏即永久数据丢失</td></tr>
-          <tr><td class="id">03</td><td>写入是否<b>幂等</b>？重试会不会重复扣款/发券？</td><td>至少一次投递变成重复副作用</td></tr>
-          <tr><td class="id">04</td><td>故障切换的 <b>RPO/RTO</b> 是多少？演练过吗？</td><td>异步复制下静默丢已确认写入</td></tr>
-          <tr><td class="id">05</td><td>分片键是什么？热点键与再平衡如何处置？</td><td>数据增长后单分片打满</td></tr>
-          <tr><td class="id">06</td><td>跨分片/跨库操作需要分布式事务吗？能改成 saga 吗？</td><td>2PC in-doubt 长期持锁</td></tr>
-          <tr><td class="id">07</td><td>隔离级别是什么？代码是否依赖了它不提供的保证？</td><td>write skew 破坏跨行不变量</td></tr>
-          <tr><td class="id">08</td><td>是否用墙上时钟排序或判活？有 fencing token 吗？</td><td>时钟回拨、双主同时写</td></tr>
-          <tr><td class="id">09</td><td>消息按什么键分区？同键事件是否严格有序？</td><td>同一订单状态被乱序覆盖</td></tr>
-          <tr><td class="id">10</td><td>窗口按事件时间还是处理时间？迟到数据怎么办？</td><td>积压时报表出现虚假峰值</td></tr>
-          <tr><td class="id">11</td><td>schema 演化规则是什么？字段编号/默认值由谁审查？</td><td>滚动升级期间解析失败</td></tr>
-          <tr><td class="id">12</td><td>出问题时，能否从指标定位到<b>具体分片与事件</b>？</td><td>故障可见但不可归因</td></tr>
+          <tr><td class="id">bias</td><td>模型是否系统性伤害某群体</td><td>分层评估、公平性指标、人工复核</td></tr>
+          <tr><td class="id">accountability</td><td>谁对决策负责</td><td>模型卡、审计日志、申诉通道</td></tr>
+          <tr><td class="id">feedback loop</td><td>预测是否改变被预测的世界</td><td>对照实验、长期监测</td></tr>
+          <tr><td class="id">surveillance</td><td>收集是否过度</td><td>最小化、端侧处理、保留期限</td></tr>
+          <tr><td class="id">consent</td><td>同意是否真实自由</td><td>分层授权、可撤回、无暗模式</td></tr>
+          <tr><td class="id">deletion</td><td>删除是否端到端</td><td>备份/索引/训练集联动删除</td></tr>
+          <tr><td class="id">power</td><td>数据收益与风险如何分配</td><td>透明度、可携带、独立审计</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="summary" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Wrap-up · 学习路线与设计清单</div>
+    <h2>把所有取舍装回一张图</h2>
+    <p class="lede">这本书不提供“最佳架构”，只提供一套提问方式：数据从哪来、谁是真相、失败时会发生什么、加机器能换到什么、十年后谁还敢改。</p>
+
+    <div class="chap-intro">
+      <p>下面给出四轮阅读路线、一张系统选型决策表、一份上线前检查清单，以及十个自测问题。建议第一遍通读建立地图，第二遍按问题回查章节，第三遍用自己系统的数字重做一遍取舍。</p>
+      <span class="tag" style="white-space:normal;max-width:260px;text-align:right">Reading path · Checklist · Self-test</span>
+    </div>
+
+    <h3><span class="sn">A</span>四轮阅读路线</h3>
+    <div class="cards">
+      <div class="card"><div class="k">第 1 轮 · 地基</div><h4>Ch1–2</h4><p>建立 OLTP/OLAP、记录系统/派生数据、性能/可靠性/可扩展性/可维护性的共同语言。先能写出一条可验证的 SLO。</p></div>
+      <div class="card"><div class="k">第 2 轮 · 单机</div><h4>Ch3–5</h4><p>数据模型决定查询形状；存储引擎决定读写放大；编码决定演进能力。三者共同决定“一台机器能走多远”。</p></div>
+      <div class="card"><div class="k">第 3 轮 · 分布式</div><h4>Ch6–10</h4><p>复制、分片、事务、故障、共识。重点不是背协议，而是能说出每种选择在分区/宕机/延迟下的行为。</p></div>
+      <div class="card"><div class="k">第 4 轮 · 数据流</div><h4>Ch11–14</h4><p>批与流是同一套“不可变输入 + 派生输出”的思想；最后用数据整合与伦理把技术决策放回真实世界。</p></div>
+    </div>
+
+    <h3><span class="sn">B</span>选型决策表</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>你的问题</th><th>先看</th><th>关键取舍</th></tr></thead>
+        <tbody>
+          <tr><td class="id">点查多、要事务</td><td>B-tree / 单 leader</td><td>写放大 vs 读稳定；同步 vs 异步复制</td></tr>
+          <tr><td class="id">写吞吐极高、可容忍读放大</td><td>LSM / leaderless</td><td>compaction 成本；quorum 调参</td></tr>
+          <tr><td class="id">大范围聚合报表</td><td>列存 / 湖仓</td><td>新鲜度 vs 成本；ETL vs 直接查对象存储</td></tr>
+          <tr><td class="id">多地域低延迟写</td><td>多 leader / local-first</td><td>冲突合并；唯一约束</td></tr>
+          <tr><td class="id">跨分片强一致</td><td>共识 + 2PC</td><td>延迟、可用性、运维复杂度</td></tr>
+          <tr><td class="id">事件驱动/派生视图</td><td>Kafka + CDC</td><td>重复消费、schema 演进、状态增长</td></tr>
+          <tr><td class="id">离线重算/特征</td><td>Spark / DuckDB</td><td>shuffle、倾斜、数据质量</td></tr>
+          <tr><td class="id">实时指标</td><td>流处理 + 窗口</td><td>事件时间、watermark、迟到</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3><span class="sn">14.2</span>把系统当作对人的承诺</h3>
-    <p>数据系统处理的是人的行为与关系。预测会编码历史偏见，个性化会形成反馈回路；工程师不能用“模型自己学的”免责。</p>
-    <p>工程手段包括：数据最小化、目的限制、可删除（能定位并抹除全部派生数据）、访问审计，以及上线前评估“谁会被伤害”。隐私不是勾选框，而是减少数据复制次数。</p>
+    <h3><span class="sn">C</span>上线前 12 问</h3>
+    <p>① 谁是 system of record？② 哪些是派生数据，如何重建？③ 读写比与 p99 目标是多少？④ 单机上限在哪，何时必须分片？⑤ 分片键是否会造成热点？⑥ 复制是同步还是异步，故障丢多少？⑦ 事务隔离级别实际防哪些异常？⑧ 跨服务失败如何重试，操作幂等吗？⑨ 时钟能否用于排序，误差多大？⑩ 批/流作业能否重放，输出是否幂等？⑪ 删除个人数据能否穿透备份与索引？⑫ 出故障时，谁值班、如何回滚、如何对账？</p>
 
-    <div class="thm rem">
-      <div class="thm-head"><span class="thm-kind">提醒</span><span class="thm-title">删除一个人，比插入一个人难得多</span></div>
-      <div class="thm-body">
-        <p>当数据被复制到缓存、搜索索引、数仓、特征库、备份与日志中，“删除用户 X”就变成了一个跨系统的分布式事务。若没有从一开始就按主体 ID 建立可追踪的血缘，最终只能靠全量重算。</p>
-        <p>设计阶段就该问：哪些派生数据包含个人数据？保留多久？如何按主体删除？答案会反过来影响分片键与日志保留策略。</p>
-      </div>
-    </div>
+    <h3><span class="sn">D</span>十个自测问题</h3>
+    <p>1. 为什么 p99 不能取平均？2. B-tree 与 LSM 的写放大分别来自哪里？3. 文档模型什么时候会输给关系模型？4. Protobuf 删除字段为什么要 reserved？5. 异步复制 failover 可能丢什么？6. $R+W&gt;N$ 为什么仍可能读到旧值？7. 快照隔离下 write skew 如何发生？8. 2PC 的协调者崩溃后参与者为什么阻塞？9. 线性一致读为什么不能随便打 follower？10. 流处理的水位线为什么只是估计？</p>
 
-    <div class="cards">
-      <div class="card"><div class="k">先做对</div><h4>正确性优先于性能</h4><p>没有幂等、没有对账、没有重放能力的“高吞吐”，只是把错误放大得更快。</p></div>
-      <div class="card"><div class="k">再做快</div><h4>用分位数与队列长度</h4><p>优化 p99 与排队时间，而不是平均值；先消除串行深度，再考虑加机器。</p></div>
-      <div class="card"><div class="k">最后做省</div><h4>把复杂度当成本</h4><p>每引入一个系统，就多一份运维、监控、升级与故障面。能用一个系统解决的，不要用三个。</p></div>
-    </div>
+    <h3><span class="sn">E</span>最后一页</h3>
+    <p>数据系统的设计，最终是在<b>正确性、延迟、成本、可运维性、可演化性</b>之间做显式取舍。每一个“最佳实践”都要带上前提：在什么负载、什么故障模型、什么团队规模下成立。能说清前提，才算真正掌握。</p>
+
+    <details class="proof"><summary>附录与术语索引 · 对照原书</summary><p>Glossary · About the Authors · Colophon</p></details>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">最后的坑</span><span class="thm-title">把架构图当成系统</span></div>
+      <div class="thm-head"><span class="thm-kind">使用说明</span><span class="thm-title">本页怎么用</span></div>
       <div class="thm-body">
-        <p>架构图里每条箭头都标着“异步”“最终一致”，但没人写清楚：滞后多少算正常、滞后超限谁告警、重放从哪个偏移量开始、下游能否承受重复。真正决定可靠性的，是这些没画在图上的约定。</p>
-        <p>评审不要只问“用了什么”，要问“坏了怎么知道、怎么止损、怎么证明修好了”。</p>
+        <p>左侧目录跳章，顶栏搜索概念；每章末尾的速查表用于复习，不替代正文。遇到具体系统选型，先回到对应章节的“代价”一栏，用自己的数字重算一遍，而不是照搬结论。</p>
       </div>
-    </div>
-
-    <div class="intuition">
-      <div class="ih">一句话</div>
-      <p>数据系统的目标不是“存下所有数据”，而是在明确的取舍下，让正确的数据在正确的时间到达正确的人，并且在出错时能够说清楚发生了什么。</p>
     </div>
   </div>
 </section>
@@ -1537,7 +2104,7 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 Martin Kleppmann & Chris Riccomini 的《Designing Data-Intensive Applications》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1545,7 +2112,7 @@ ORDER BY paths DESC LIMIT 20;</code></pre>
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>14 章 · 673 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
@@ -1735,7 +2302,8 @@ window.MathJax = {
       norm: ['{\\left\\|#1\\right\\|}', 1], abs: ['{\\left|#1\\right|}', 1],
       loc: '{\\mathrm{loc}}', dist: '{\\operatorname{dist}}', spt: '{\\operatorname{spt}}',
       osc: '{\\operatorname{osc}}', dH: '{d_H}', pa: '{\\partial}',
-      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}'
+      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}',
+      boldsymbol: ['{\\mathbf{#1}}', 1], bm: ['{\\mathbf{#1}}', 1]
     }
   },
   svg: { fontCache: 'local', scale: 1.02 },

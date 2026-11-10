@@ -2,7 +2,7 @@
 
 私人阅读库：把技术书拆成**可读、可查、可自测**的中文单页教程。
 
-- **43 本**书 · **约 20,674 页**原书
+- **56 本**书 · **约 29,780 页**原书
 - 每个教程是一个独立 HTML 文件，MathJax 已内联，**断网可读**
 - 每本含：主线讲解、关键定义/定理/算法、例子、速查表、常见坑
 - 数学/理论书含定理盒与公式；系统/编程书含命令、代码与故障案例
@@ -60,6 +60,7 @@
 | Deep Learning with Python：Third Edition | François Chollet & Matthew Watson | 650 | [HTML](books/Deep-Learning-with-Python-Tutorial.html) |
 | Domain-Specific Small Language Models：Efficient AI for Local Deployment | Guglielmo Iozzia | 376 | [HTML](books/Domain-Specific-SLMs-Tutorial.html) |
 | Grokking AI Algorithms：How AI Solves Complex Problems | Rishal Hurbans | 594 | [HTML](books/Grokking-AI-Algorithms-Tutorial.html) |
+| Why Machines Learn：The Elegant Maths Behind Modern AI | Anil Ananthaswamy | 433 | [HTML](books/Why-Machines-Learn-Tutorial.html) |
 
 ### 系统 · 数据 · 网络
 
@@ -80,6 +81,7 @@
 | Black Hat Python：Python Programming for Hackers and Pentesters | Justin Seitz & Tim Arnold | 217 | [HTML](books/Black-Hat-Python-Tutorial.html) |
 | Practical Binary Analysis：Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly | Dennis Andriesse | 460 | [HTML](books/Practical-Binary-Analysis-Tutorial.html) |
 | Practical Reverse Engineering：x86, x64, ARM, Windows Kernel, Reversing Tools, and Obfuscation | Bruce Dang, Alexandre Gazet & Elias Bachaalany | 383 | [HTML](books/Practical-Reverse-Engineering-Tutorial.html) |
+| The Car Hacker’s Handbook：A Guide for the Penetration Tester | Craig Smith | 306 | [HTML](books/Car-Hackers-Handbook-Tutorial.html) |
 
 ### 数值计算 · 工程
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Portfolio Theory and Arbitrage · 交互教程</title>
-<meta name="description" content="《Portfolio Theory and Arbitrage》中文单页教程：">
+<meta name="description" content="《Portfolio Theory and Arbitrage》中文单页教程：A Course in Mathematical Finance">
 <style>
 /* ============ 基础 ============ */
 :root{
@@ -432,28 +432,32 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · MATH</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">Portfolio Theory and Arbitrage
-      <span></span>
+      <span>A Course in Mathematical Finance</span>
     </div>
-    <div class="sb-meta"><b>7</b> 章 · <b>328</b> 页</div>
+    <div class="sb-meta">328 页 · 17 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
     <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>市场、交易与财富方程</span></a>
     <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>组合、增长与相对表现</span></a>
-    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>套利与市场可行性</span></a>
-    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>计价单位与局部鞅折损因子</span></a>
-    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>基本定理：可行性的五个等价刻画</span></a>
-    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>等价鞅测度与模型一致测度</span></a>
-    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>融资、对冲与上对冲对偶</span></a>
-    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>完全市场与不完全市场</span></a>
-    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>效用最大化与对偶</span></a>
-    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>最大性、无跑赢与风险度量</span></a>
-    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>扩展：回撤、简单交易与无限资产</span></a>
+    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>功能生成组合：用市场权重造组合</span></a>
+    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>计价单位与随机贴现因子</span></a>
+    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>套利、可行性与基本定理</span></a>
+    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>增长最优：Kelly 组合的三种身份</span></a>
+    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>平衡市场、CAPM 与有效前沿</span></a>
+    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>可选分解与融资对偶</span></a>
+    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>未定权益、完备市场与风险中性定价</span></a>
+    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>效用最大化与对偶</span></a>
+    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>最大性、互补性与跑赢</span></a>
+    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>回撤约束与组合保险</span></a>
+    <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>简单交易与半鞅：经济学推出随机分析</span></a>
+    <a class="nav-link" href="#ch14" data-sec="ch14"><span class="nav-num">14</span> <span>无限多资产与随机再生核</span></a>
+    <a class="nav-link" href="#ch15" data-sec="ch15"><span class="nav-num">15</span> <span>A函数与凸分析工具箱</span></a>
     <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
@@ -486,13 +490,13 @@ figcaption b{color:var(--ink2);font-weight:600}
       <p class="hero-sub">从连续半鞅市场到效用对偶：<b>可行性、计价单位与上对冲</b>如何把“没有免费午餐”翻译成一条可计算的定价与优化主线。</p>
       <div class="hero-actions">
         <a class="btn" href="#ch1">从市场模型开始 →</a>
-        <a class="btn ghost" href="#summary">直接看公式表</a>
+        <a class="btn ghost" href="#ch9">直接看定价定理</a>
       </div>
       <div class="hero-stats">
-        <div class="hstat"><b>4</b><span>章</span></div>
+        <div class="hstat"><b>4</b><span>章 + 附录</span></div>
         <div class="hstat"><b>210</b><span>条编号结果</span></div>
         <div class="hstat"><b>5</b><span>个等价刻画</span></div>
-        <div class="hstat"><b>1</b><span>张公式表</span></div>
+        <div class="hstat"><b>17</b><span>个 section</span></div>
       </div>
     </div>
     <div class="hero-art">
@@ -520,893 +524,1642 @@ figcaption b{color:var(--ink2);font-weight:600}
 </div></section>
 
 <section id="ch1" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 1 · The Market</div>
+  <div class="sec-label">Chapter 1 · §1.1–1.2</div>
   <h2><span class="num">1</span>市场、交易与财富方程</h2>
-  <p class="lede">全书只研究一个对象：折现后的股票价格是连续半鞅，而交易策略只能使用过去的信息。把这两句话写成方程，后面的套利、定价与优化才有共同语言。</p>
+  <p class="lede">全书只研究一个对象：折现后的股票价格是连续半鞅，而交易策略只能使用过去的信息。把这两句话写成方程，后面的套利（arbitrage）、定价与优化才有共同语言。</p>
 
-  <div class="chap-intro"><p>这一章搭工作台：概率空间与信息流、半鞅分解、局部收益率 $\alpha$ 与协变率 $c$、按比例投资的财富方程，以及“可容许性”这条经常被忽略的底线。此后的每一个定理，都是在这张工作台上加一个约束或换一个坐标。</p><span class="tag">模型设定</span></div>
+  <div class="chap-intro"><p>本章搭工作台：概率空间与信息流、半鞅分解、局部收益率 $\alpha$ 与协变率 $c$、按股数与按金额两种交易记账方式，以及“可容许性”这条经常被忽略的底线。此后的每一个定理，都是在这张工作台上加一个约束或换一个坐标。</p><span class="tag">模型设定</span></div>
 
   <div class="mapchips">
     <span class="chip hot">连续半鞅</span><span class="chip">运营时钟</span><span class="chip">局部收益率</span><span class="chip">协变率</span><span class="chip">可预测策略</span><span class="chip">财富方程</span><span class="chip">可容许性</span>
   </div>
 
   <h3><span class="sn">1.1</span>价格、信息与局部特征</h3>
-  <p>固定概率空间 $(\Omega,\mathcal F,\mathbb P)$ 与右连续信息流 $\mathbb F=(\mathcal F(t))_{t\ge 0}$。市场上有一只货币市场账户和 $n$ 只风险资产；所有价格都已用货币市场折现，因此现金的价格恒为 $1$，无风险利率被“吸收”进折现价格里。第 $i$ 只股票的累计收益记为 $R^i$，价格由随机指数给出：</p>
-  $$S^i(t)=S^i(0)\,\mathcal E(R^i)(t),\qquad \frac{dS^i(t)}{S^i(t)}=dR^i(t).$$
-  <p>连续半鞅分解 $R^i=A^i+M^i$ 把可预测的漂移与局部鞅噪声分开。为了不预设“时间”就是自然时间，引入运营时钟 $O$，并要求所有漂移与协变都对它绝对连续：</p>
-  $$A^i=\int_0^{\cdot}\alpha^i(t)\,dO(t),\qquad [M^i,M^j]=\int_0^{\cdot}c^{ij}(t)\,dO(t).$$
-  <p>向量 $\alpha$ 是局部收益率，矩阵 $c$ 是局部协变率。单只股票的局部增长率是算术收益减去“方差税”：$\gamma^i=\alpha^i-\tfrac12 c^{ii}$。</p>
+  <p>固定概率空间 $(\Omega,\mathcal F,\mathbb P)$ 与右连续信息流 $\mathbb F=(\mathcal F(t))_{t\ge 0}$，并假定 $\mathcal F(0)$ 完备。市场上有一只货币市场账户和 $n$ 只风险资产；所有价格都已用货币市场折现，因此现金的价格恒为 $1$，无风险利率被“吸收”进折现价格里。第 $i$ 只股票的累计收益记为 $R^i$，价格由随机指数给出：</p>
+  $$S^i(t)=S^i(0)\,\mathcal E(R^i)(t),\qquad \frac{dS^i(t)}{S^i(t)}=dR^i(t),\qquad S^0\equiv 1.$$
+  <p>连续半鞅分解 $R^i=A^i+M^i$ 把可预测的漂移与局部鞅噪声分开。为了不预设“时间”就是自然时间，引入<b>运营时钟</b>（operational clock）$O$：一条连续、非降、适应过程，并要求所有漂移与协变都对它绝对连续：</p>
+  $$A^i=\int_0^{\cdot}\alpha^i(t)\,dO(t),\qquad C^{ij}:=[R^i,R^j]=\int_0^{\cdot}c^{ij}(t)\,dO(t).$$
+  <p>向量 $\alpha=(\alpha^i)$ 是<b>局部收益率</b>（local rate of return），矩阵 $c=(c^{ij})$ 是<b>局部协变率</b>（local covariation rate），二者都只由可预测过程给出。单只股票的局部对数增长率是算术收益减去“方差税”：</p>
+  $$\gamma^i=\alpha^i-\tfrac12 c^{ii}.$$
+  <p>例如 $\alpha=8\%$、$c=0.04$（$\sigma=20\%$）时，$\gamma=8\%-2\%=6\%$。若 $X(0)=1$、价格服从几何布朗运动，则一年后亏损的概率是</p>
+  $$\mathbb P[X(1)&lt;1]=\Phi\Big(\frac{-0.06}{0.20}\Big)=\Phi(-0.3)\approx0.382,$$
+  <p>尽管期望算术收益为正，仍有约 $38\%$ 的概率是亏的。</p>
+  <p>把 $O$ 取成 $\sum_i[ M^i,M^i]$ 是最常见的选择，因为可行性（viability）会迫使所有 $C^{ii}$ 同时增长；但在定义阶段保留一般的 $O$，可以避免循环论证。若某个可预测过程 $\zeta$ 满足 $\zeta'\alpha=0$ 且 $c\zeta=0$，称它为 $R$-零的（$R$-null）；这种方向既不带漂移也不带风险，后面“组合只在零投资意义下唯一”指的就是它。</p>
 
   <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">投资策略与财富过程</span><span class="thm-id">Def. 1.3 / 1.9</span></div>
-    <div class="thm-body"><p>可预测过程 $\vartheta=(\vartheta^1,\dots,\vartheta^n)$ 表示持有的股数。给定初始资本 $x\ge 0$，财富过程为</p>
-    $$X(t;x,\vartheta)=x+\int_0^t\sum_{i=1}^n\vartheta^i(s)\,dS^i(s).$$
-    <p>若 $X(t;x,\vartheta)\ge 0$ 对所有 $t$ 成立，则称该策略<b>可容许</b>。可容许性不是技术性假设，而是“不允许资不抵债”的经济约束；没有它，倍增策略可以把 $1$ 元变成任意多元。</p></div>
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">投资策略、财富过程与融资流</span><span class="thm-id">Def. 1.3 / 1.9 / 1.13</span></div>
+    <div class="thm-body">
+      <p><b>策略</b>是一个可预测、向量值的过程 $\vartheta=(\vartheta^1,\dots,\vartheta^n)\in I(S)$，分量表示持有的<b>股数</b>（shares）。给定初始资本 $x\ge 0$，<b>财富过程</b>为</p>
+      $$X(t;x,\vartheta)=x+\int_0^t\sum_{i=1}^n\vartheta^i(s)\,dS^i(s).$$
+      <p>若还允许按非降、右连续的过程 $K$ 提款（$K(0)=0$），则记为</p>
+      $$X(t;x,\vartheta,K)=x+\int_0^t\vartheta'(s)\,dS(s)-K(t).$$
+      <p>对固定的 $x$，所有能被融资的提款流 $K$ 组成集合 $\mathcal K(x)$；<b>融资资本</b>（financing capital）定义为 $x(K):=\inf\{x\ge0: K\in\mathcal K(x)\}$。</p>
+    </div>
   </div>
 
-  <h3><span class="sn">1.2</span>按比例投资：财富是一个随机指数</h3>
-  <p>实际管理组合时，决策变量通常不是股数，而是财富比例。设 $\pi^i(t)=\vartheta^i(t)S^i(t)/X(t)$，并令 $\pi^0=1-\sum_i\pi^i$ 为现金比例。把“金额”而不是“股数”代入财富方程，就得到全书使用频率最高的公式：</p>
-  $$dX^\pi(t)=X^\pi(t)\sum_{i=1}^n\pi^i(t)\,dR^i(t),\qquad X^\pi=\mathcal E\Big(\int_0^{\cdot}\pi'dR\Big).$$
-  <p>写成对数形式，组合的瞬时增长率是 $\pi'\alpha-\tfrac12\pi'c\pi$。这也解释了为什么“高收益”与“高波动”不能简单相加：协方差项会吃掉一部分算术收益。</p>
-
-  <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">相对财富的随机指数表示</span><span class="thm-id">Prop. 1.22</span></div>
-    <div class="thm-body"><p>对任意两个组合 $\pi,\rho$，把资产收益换成以 $\rho$ 计价的收益 $R^\rho_i$，则相对财富满足</p>
-    $$\frac{X^\pi}{X^\rho}=\mathcal E\Big(\int_0^{\cdot}\sum_{i=0}^n\pi^i(t)\,dR^\rho_i(t)\Big).$$
-    <p>当 $\rho$ 是货币市场（$R^\rho_i=R^i$）时，右端退化为 $\mathcal E(\int\pi'dR)$，即普通的组合财富。</p></div>
-  </div>
-
-  <details class="proof"><summary>证明思路：从乘积法则到随机指数</summary><div class="proof-body"><p>对 $X^\pi/X^\rho$ 用伊藤乘积法则，分别写出 $dX^\pi/X^\pi$ 与 $d(1/X^\rho)/(1/X^\rho)$，再把交叉变差并进去。关键观察到：以 $\rho$ 计价后，原来的漂移项被协方差项抵消，剩下的正好是一个局部鞅积分；于是相对财富是某个连续半鞅的随机指数。若 $\rho$ 还是局部鞅计价单位，这个积分进一步化为 $\int(\pi-\rho)'dM$。</p></div></details>
+  <p><b>可容许</b>（admissible）策略指财富恒非负：$X(t;x,\vartheta)\ge 0$ 对所有 $t$ 成立。这不是“风险偏好”假设，而是“不允许资不抵债”的合约约束。没有它，市场会立刻失去意义：</p>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">高斯市场中的一条组合路径</span><span class="thm-id">Ex. 1.1</span></div>
-    <div class="thm-body"><p>设 $n=1$，$dS/S=0.08\,dt+0.20\,dW$，初始价格 $100$。投资者把 $60\%$ 的财富放在股票、$40\%$ 放在现金，即 $\pi=0.6$。则</p>
-    $$\log X^\pi(1)\sim N\big(0.6\cdot0.08-\tfrac12\cdot0.36\cdot0.04,\;0.36\cdot0.04\big)=N(0.0408,\,0.0144).$$
-    <p>对数标准差为 $0.12$。中位数是 $e^{0.0408}\approx1.0416$，而均值是 $e^{0.048}\approx1.0492$；两者相差的 $0.0076$ 正是“方差税”。$5\%$ 分位数约为 $e^{0.0408-1.645\times0.12}\approx0.855$。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">倍增策略：零资本也能“必胜”</span><span class="thm-id">Ex. 1.10</span></div>
+    <div class="thm-body"><p>设 $n=1$，$R=W$ 是标准布朗运动，按金额记账、取策略</p>
+    $$\varphi(t)=\frac{1}{1-t}\,\mathbf 1_{[0,1)}(t).$$
+    <p>从 $x=0$ 出发，$X(t)=\int_0^t(1-s)^{-1}dW(s)$ 是局部鞅，且</p>
+    $$\mathbb E[X(t)^2]=\int_0^t\frac{ds}{(1-s)^2}=\frac{t}{1-t}\longrightarrow\infty.$$
+    <p>它的上确界与下确界在 $[0,1)$ 上都几乎必然为 $\pm\infty$：只要允许负财富，投资者可以从零资本出发，以概率 $1$ 达到任意高的目标，代价是以概率 $1$ 也在某个时刻把亏损做得任意大。</p>
+    <p>这条例子打破了“零成本 + 几乎必然盈利 = 套利”的朴素直觉：在连续时间中，<b>没有下界</b>的“必胜”并不构成经济上可执行的套利。可容许性排除的正是这种用无限信用换取的必胜。</p></div>
   </div>
 
-  <div class="intuition"><div class="ih">直觉</div><p>财富方程不是“收益相加”，而是“对数收益相加再取指数”。只要组合比例固定，财富就是若干个正态增量的随机指数；一旦比例随财富变化，就必须回到一般的半鞅积分。</p></div>
+  <h3><span class="sn">1.2</span>股数、金额与记账坐标</h3>
+  <p>实际交易系统记录的是金额而不是股数。若 $\varphi^i$ 表示投入第 $i$ 只股票的<b>金额</b>，则 $\vartheta^i=\varphi^i/S^i$。两种记账方式给出同一条财富方程，但可积性条件不同：$I(S)$ 要求 $\int\vartheta'dS$ 对连续半鞅有意义，而按金额写的 $\int\varphi'dR$ 要求 $\varphi\in I(R)$。在连续价格、无交易成本的设定下，这两种描述等价；一旦引入跳跃或交易约束，它们就分道扬镳。</p>
+  <p>还要区分“股价”与“累计收益”。$R^i$ 是折现后的累计收益，$S^i$ 才是可交易价格；$\log S^i=\log S^i(0)+R^i-\tfrac12C^{ii}$。所有定理都写成 $R$ 的语言，因为协方差结构 $c$ 直接出现在 $R$ 的分解里；但数值例子必须回到 $S$，否则会把“收益率”和“价格水平”混为一谈。</p>
 
-  <h3><span class="sn">1.3</span>可容许性与倍增策略</h3>
-  <p>若允许财富为负，市场会变得毫无意义。取 $n=1$、$R=W$，在 $[0,1)$ 上令 $\eta(t)=1/(S(t)\sqrt{1-t})$，$N=\int\eta\,dS$。对 $\tau_m=\inf\{t:N(t)\ge m\}$，策略 $\vartheta_m=\eta1_{(0,\tau_m]}$ 使 $X(1;1,\vartheta_m)=1+m$：从 $1$ 元出发可把财富做到任意高，代价是路径会跌到任意负值。可容许性把这类“无限信用卡”排除在外，也使非负局部鞅成为上鞅。</p>
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">注</span><span class="thm-title">为什么先折现</span><span class="thm-id">§1.2</span></div>
+    <div class="thm-body"><p>把货币市场账户 $B(t)=\exp(\int r\,dt)$ 除掉之后，现金价格恒为 $1$，无风险利率从方程中消失。代价是：真实世界的漂移 $\mu$ 被替换成超额漂移 $\mu-r$。后面所有“风险中性”（risk-neutral）陈述，都是在折现坐标里说的；换回名义价格时，必须把 $B(t)$ 乘回去。</p></div>
+  </div>
+
+  <div class="intuition"><div class="ih">直觉</div><p>把市场想成一台机器：输入是可预测的下注规则 $\vartheta$，输出是财富路径 $X$。$\alpha$ 告诉你“平均往哪边走”，$c$ 告诉你“噪声有多大、彼此怎么相关”，$O$ 则是这台机器的计时器。三者一起，才构成一个可计算的模型。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>对象</th><th>含义</th><th>关键关系</th></tr></thead>
+    <thead><tr><th>对象</th><th>记号 / 公式</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">$R^i$</td><td>第 $i$ 只股票的累计收益</td><td>$S^i=S^i(0)\mathcal E(R^i)$</td></tr>
-      <tr><td class="id">$A^i,M^i$</td><td>漂移部分 / 局部鞅噪声</td><td>$R^i=A^i+M^i$</td></tr>
-      <tr><td class="id">$O$</td><td>运营时钟</td><td>$dA=\alpha\,dO,\ dC=c\,dO$</td></tr>
-      <tr><td class="id">$\alpha,c$</td><td>局部收益率 / 协变率</td><td>$c$ 对称半正定</td></tr>
-      <tr><td class="id">$\gamma^i$</td><td>局部增长率</td><td>$\gamma^i=\alpha^i-\tfrac12c^{ii}$</td></tr>
-      <tr><td class="id">$\pi$</td><td>财富比例</td><td>$\sum_i\pi^i=1$（含现金）</td></tr>
-      <tr><td class="id">$X^\pi$</td><td>组合财富</td><td>$dX^\pi/X^\pi=\pi'dR$</td></tr>
-      <tr><td class="id">可容许</td><td>不破产</td><td>$X(t)\ge0,\ \forall t$</td></tr>
+      <tr><td class="id">折现价格</td><td>$S^i=S^i(0)\mathcal E(R^i)$</td><td>现金价格恒为 $1$</td></tr>
+      <tr><td class="id">收益分解</td><td>$R^i=A^i+M^i$</td><td>漂移 + 局部鞅</td></tr>
+      <tr><td class="id">局部特征</td><td>$A^i=\int\alpha^i dO,\ C^{ij}=\int c^{ij}dO$</td><td>$(\alpha,c)$ 是唯一可观测参数</td></tr>
+      <tr><td class="id">对数增长</td><td>$\gamma^i=\alpha^i-\tfrac12c^{ii}$</td><td>算术收益减方差税</td></tr>
+      <tr><td class="id">财富</td><td>$X=x+\int\vartheta'dS$</td><td>股数记账</td></tr>
+      <tr><td class="id">可容许</td><td>$X\ge0$</td><td>不许资不抵债</td></tr>
+      <tr><td class="id">融资资本</td><td>$x(K)=\inf\{x:K\in\mathcal K(x)\}$</td><td>第 5 节的主角</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：market（市场）、asset（资产）、stock（股票）、wealth（财富）、portfolio（组合）、predictable（可预测）、proportional（按比例）、covariation（协变差）、money-market（货币市场）、eigenvalue（特征值）、baseline（基线）、performance（表现）、vector-valued（向量值）、setup（设定）、shares（股数）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个容易踩的坑</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">五个开局就会踩的坑</span></div>
     <div class="thm-body"><ul>
-      <li><b>把 $\alpha$ 当成一年期期望收益。</b> $\alpha$ 是相对运营时钟 $O$ 的局部速率；只有 $O(t)=t$ 且 $\alpha$ 恒定时，它才等于单位时间漂移。</li>
-      <li><b>别忽略可容许性。</b> 负财富下的“套利”不是真套利。</li>
-      <li><b>连续性不是免费的。</b> 跳跃或无限资产会改变结构条件。</li>
+      <li><b>把 $R^i$ 当价格。</b> $R^i$ 是累计收益（对数价格生成元），$S^i$ 才是价格；$R^i$ 可以为负，$S^i$ 不行。</li>
+      <li><b>把“零初始资本 + 正概率盈利”直接叫套利。</b> 若允许财富无下界，倍增策略就能做到；必须把可容许性写进定义。</li>
+      <li><b>把运营时钟当成日历时间。</b> $O$ 由协方差内生决定；市场停摆时 $O$ 不增长，但日历时间照走。</li>
+      <li><b>忘记 $R$-零方向。</b> 两个策略可以给出同一条财富路径，只在 $\zeta'\alpha=0,\ c\zeta=0$ 的意义下不同；定理中的“唯一”都要这样读。</li>
+      <li><b>在名义坐标里套用折现公式。</b> 所有 $\alpha,c,\gamma$ 都是折现坐标的量；换回名义价格要乘货币市场账户。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch2" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 1 · §§1.3–1.5</div>
+  <div class="sec-label">Chapter 1 · §1.3–1.4</div>
   <h2><span class="num">2</span>组合、增长与相对表现</h2>
   <p class="lede">同样的资产、不同的权重，长期命运可以相差一个指数。组合理论要回答的不是“哪只股票会涨”，而是“给定协方差结构，哪种权重的对数增长率最高”。</p>
 
-  <div class="chap-intro"><p>本章把财富方程拆成“个股增长 + 再平衡溢价”，引入增长最优组合与市场组合，并用功能生成组合给出一个几乎路径化的相对表现公式。它为第 4 节的“局部鞅计价单位”埋下伏笔：增长最优组合正是那个把所有人的相对财富变成上鞅的基线。</p><span class="tag">组合理论</span></div>
+  <div class="chap-intro"><p>本节把财富方程从“股数”改写成“比例”，得到全书使用频率最高的随机指数表示；随后引入相对财富与<b>超额增长率</b>（excess growth rate），说明分散化为什么本身就是一种收益来源。它也为第 4 节的“局部鞅计价单位”（local martingale numéraire）埋下伏笔。</p><span class="tag">组合理论</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">对数增长率</span><span class="chip">超额增长</span><span class="chip">增长最优组合</span><span class="chip">市场权重</span><span class="chip">功能生成</span><span class="chip">再平衡溢价</span>
+    <span class="chip hot">财富比例</span><span class="chip">随机指数</span><span class="chip">对数增长率</span><span class="chip">相对财富</span><span class="chip">超额增长</span><span class="chip">市场组合</span><span class="chip">分散化</span>
   </div>
 
-  <h3><span class="sn">2.1</span>增长率的加法分解</h3>
-  <p>固定组合 $\pi$（允许现金，故 $\sum_i\pi^i=1$）。对 $\log X^\pi$ 用伊藤公式：</p>
-  $$d\log X^\pi=\pi'\alpha\,dO-\tfrac12\pi'c\pi\,dO+\pi'dM.$$
-  <p>把个股的局部增长率 $\gamma^i=\alpha^i-\tfrac12c^{ii}$ 代进去，可以整理出一个漂亮的分解：</p>
-  $$\gamma^\pi:=\pi'\alpha-\tfrac12\pi'c\pi=\sum_{i=1}^n\pi^i\gamma^i+\gamma^{*\pi},\qquad \gamma^{*\pi}:=\frac12\Big(\sum_{i=1}^n\pi^ic^{ii}-\pi'c\pi\Big).$$
-  <p>第一项是“如果各资产互不相关、只是按权重加权”得到的增长；第二项 $\gamma^{*\pi}$ 叫<b>超额增长率</b>，来自波动率之间的分散与再平衡。它永远非负，只有单资产或完全相关时才会为零。</p>
+  <h3><span class="sn">2.1</span>从股数到比例：财富是一个随机指数</h3>
+  <p>设 $\pi^i(t)=\vartheta^i(t)S^i(t)/X(t)$ 是第 $i$ 只股票占总财富的比例，$\pi^0=1-\sum_{i=1}^n\pi^i$ 是现金比例。把“金额”而不是“股数”代入财富方程，得到</p>
+  $$\frac{dX^\pi(t)}{X^\pi(t)}=\sum_{i=1}^n\pi^i(t)\,dR^i(t),\qquad X^\pi=x\,\mathcal E\Big(\int_0^{\cdot}\pi'(t)\,dR(t)\Big).$$
+  <p>这里 $R^0\equiv0$，所以现金项不出现。写成对数形式：</p>
+  $$d\log X^\pi=\Big(\pi'\alpha-\tfrac12\pi'c\pi\Big)\,dO+\pi'\,dM.$$
+  <p>括号里的量记为 $\gamma^\pi:=\pi'\alpha-\tfrac12\pi'c\pi$，称为组合的<b>局部对数增长率</b>。它是一个“算术收益减方差税”的净额：杠杆放大 $\pi'\alpha$ 的同时，也按平方放大 $\tfrac12\pi'c\pi$。这就是为什么“加杠杆提高收益”在长期一定伴随更快的波动拖累。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">组合与常数比例组合</span><span class="thm-id">§1.3 / Ex. 1.17</span></div>
+    <div class="thm-body"><p>可预测过程 $\pi=(\pi^1,\dots,\pi^n)\in I(R)$ 称为<b>组合</b>（portfolio），允许分量取负（做空）且 $\sum_i\pi^i$ 可以大于 $1$（借钱）。若 $\pi\equiv p$ 为常向量，称<b>常数比例组合</b>（constant-proportion portfolio）；它的财富是</p>
+    $$X^p(t)=x\,\mathcal E\Big(\sum_{i=1}^n p^iR^i\Big)(t).$$
+    <p>若 $p$ 取值于单纯形 $\Delta^{n-1}$，则组合是<b>多头、不借钱</b>的（long-only, no borrowing）。</p></div>
+  </div>
+
+  <h3><span class="sn">2.2</span>相对财富：换一个基线看世界</h3>
+  <p>设 $\rho$ 是另一个组合，把 $\rho$ 当作<b>计价单位</b>（numéraire），定义相对财富 $X^\rho_\pi:=X^\pi/X^\rho$。在以 $X^\rho$ 计价的辅助市场里，第 $i$ 个资产的价格是 $S^\rho_i=S^i/X^\rho$，其累计收益为</p>
+  $$R^\rho_0:=C^{\rho\rho}-R^\rho,\qquad R^\rho_i:=R^\rho_0+(R^i-C^{i\rho}),\quad 1\le i\le n.$$
+  <p>注意现金在这个辅助市场里不再是无风险的：$S^\rho_0=1/X^\rho=\mathcal E(R^\rho_0)$ 本身就是一条随机过程。这正是“换计价单位”与“换记账货币”的本质区别。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">增长最优组合</span><span class="thm-id">§2.1 / Prop. 2.41</span></div>
-    <div class="thm-body"><p>若 $\alpha$ 落在 $c$ 的值域内，则最大化瞬时增长率 $\pi'\alpha-\tfrac12\pi'c\pi$ 的组合为</p>
-    $$\pi^*=c^\dagger\alpha,\qquad \gamma^*=\tfrac12\alpha'c^\dagger\alpha,$$
-    <p>其中 $c^\dagger$ 是 Moore–Penrose 伪逆。$\pi^*$ 就是第 4 节的局部鞅计价单位组合；$\gamma^*$ 则是“聚合最大增长过程” $G$ 的密度。若 $\alpha\notin\operatorname{range}(c)$，增长率可以被做得任意大，市场必然出现套利。</p></div>
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">相对财富的随机指数表示</span><span class="thm-id">Prop. 1.22</span></div>
+    <div class="thm-body"><p>对任意两个组合 $\pi,\rho\in I(R)$，</p>
+    $$\frac{X^\pi}{X^\rho}=\mathcal E\big(R^{\pi-\rho}-C^{\pi-\rho,\rho}\big)=\mathcal E\Big(\int_0^{\cdot}\sum_{i=0}^n\pi^i(t)\,dR^\rho_i(t)\Big).$$
+    <p>当 $\rho$ 是货币市场（$R^\rho_i=R^i$，$i\ge1$，且 $R^\rho_0=0$）时，右端退化为 $\mathcal E(\int\pi'dR)$，即普通组合财富。</p></div>
   </div>
 
-  <details class="proof"><summary>证明思路：一阶条件与伪逆</summary><div class="proof-body"><p>对 $\pi\mapsto\pi'\alpha-\tfrac12\pi'c\pi$ 求一阶条件得 $c\pi=\alpha$。当 $\alpha\in\operatorname{range}(c)$ 时，通解为 $\pi=c^\dagger\alpha+(\text{$c$ 的核})$\；核方向不改变协方差也不改变可积的漂移，因此可以取最小范数解。二阶条件由 $c$ 半正定给出。把 $\pi^*$ 代回即得 $\gamma^*=\tfrac12\alpha'c^\dagger\alpha$。</p></div></details>
+  <details class="proof"><summary>证明思路：乘积法则 + Yor 公式</summary><div class="proof-body"><p>先对 $X^\pi$ 与 $1/X^\rho$ 分别用伊藤公式，再把交叉变差并进去。关键恒等式是</p>
+  $$\log\frac{X^\pi}{X^\rho}=\Big(R^\pi-\tfrac12C^{\pi\pi}\Big)-\Big(R^\rho-\tfrac12C^{\rho\rho}\Big)=R^{\pi-\rho}-C^{\pi-\rho,\rho}-\tfrac12C^{\pi-\rho,\pi-\rho}.$$
+  <p>右端正好是某个连续半鞅的“对数随机指数”，取指数即得。整个过程不需要解任何 SDE，只需要协变分的双线性。</p></div></details>
 
-  <h3><span class="sn">2.2</span>相对表现：换一个基线看世界</h3>
-  <p>设 $\rho$ 是一个组合，把 $\rho$ 当作计价单位，定义相对财富 $X^\rho_\pi=X^\pi/X^\rho$。当 $\rho=\nu$ 是局部鞅计价单位时，第 4 节的命题给出一个特别干净的形式：</p>
-  $$\frac{X^\pi}{X^\nu}=\mathcal E\Big(\int_0^{\cdot}(\pi-\nu)'\,dM\Big).$$
-  <p>右边是局部鞅。于是“任何组合都无法跑赢计价单位组合”不再需要经济论证，而是非负局部鞅→上鞅的直接推论。</p>
+  <p>对相对财富取对数并取漂移，得到<b>相对对数增长率</b>：</p>
+  $$\big(\pi-\rho\big)'\big(\alpha-c\rho\big)-\tfrac12\big(\pi-\rho\big)'c\big(\pi-\rho\big).$$
+  <p>第一项是“相对风险溢价”，第二项是“相对方差税”。当 $\rho$ 是增长最优组合（即 $\alpha=c\rho$）时，第一项恒为零，相对财富退化为一个局部鞅——这正是“没人能长期跑赢它”的解析根源。</p>
 
-  <h3><span class="sn">2.3</span>功能生成组合</h3>
-  <p>设 $\mu^i=S^i/\sum_jS^j$ 是市场权重。给定一个二阶可微的生成函数 $F$，定义股票组合</p>
-  $$\pi^F_i=\mu^i\frac{\partial_iF(\mu)}{F(\mu)}\quad(\text{当 }F\text{ 一阶齐次时}).$$
-  <p>例如 $F(x)=\prod_i x_i^{p_i}$（$p\in\Delta$）生成常数比例组合 $\pi=p$；$F(x)=\sum_iw_ix_i$ 生成买入并持有组合。</p>
+  <h3><span class="sn">2.3</span>超额增长：分散化本身值多少钱</h3>
+  <p>把组合增长率按“个股增长率加权”与“剩余部分”拆开：</p>
+  $$\gamma^\pi=\sum_{i=1}^n\pi^i\gamma^i+\gamma^{*\pi},\qquad \gamma^{*\pi}:=\frac12\Big(\sum_{i=1}^n\pi^ic^{ii}-\pi'c\pi\Big).$$
+  <p>第二项 $\gamma^{*\pi}$ 叫<b>超额增长率</b>（excess growth rate）。由 $c$ 的半正定性，对多头组合 $\pi\in\Delta^{n-1}$ 有 $\gamma^{*\pi}\ge0$，等号只在“组合只持有一个资产”或“所有资产的波动率相同且完全相关”时成立。它的经济含义是再平衡溢价：当某些资产涨得多、权重变大时，组合自动卖出一点；跌得多时自动买入一点。这个“卖高买低”的机械操作，在存在独立波动或波动率差异时产生正的长期漂移。</p>
 
-  <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Fernholz 分解</span><span class="thm-id">Thm. 1.29</span></div>
-    <div class="thm-body"><p>设 $F$ 二阶连续可微，$\pi^F$ 是由 $F$ 生成的股票组合。则</p>
-    $$\log\frac{X^{\pi^F}}{X^\mu}=\log\frac{F(\mu(T))}{F(\mu(0))}-\frac12\int_0^T\sum_{i,j=1}^n\frac{\partial^2_{ij}F(\mu(t))}{F(\mu(t))}\,d[\mu^i,\mu^j](t).$$
-    <p>右端只涉及市场权重的路径与其二次变差，不需要显式解出资产价格。若 $F$ 凹，第二项非负，生成组合相对市场有“凸性收益”。</p></div>
+  <div class="thm lem">
+    <div class="thm-head"><span class="thm-kind">引理</span><span class="thm-title">超额增长的上下界</span><span class="thm-id">Lemma 1.25</span></div>
+    <div class="thm-body"><p>设 $c$ 的最大特征值为 $\lambda$，最小特征值与最大特征值之比为 $\ell\in[0,1]$。则对任意多头组合 $\pi\in\Delta^n$，</p>
+    $$\frac{\ell\lambda}{2}\Big(1-\max_{0\le i\le n}\pi^i\Big)\le\gamma^{*\pi}\le\lambda\Big(1-\max_{0\le i\le n}\pi^i\Big).$$
+    <p>因此 $\gamma^{*\pi}=0$ 当且仅当组合把全部权重放在一个资产上（或 $c$ 退化）。权重越分散、$\lambda$ 越大，超额增长的上限越高。</p></div>
   </div>
-
-  <details class="proof"><summary>证明思路：对 $\log F(\mu)$ 用伊藤公式</summary><div class="proof-body"><p>对 $F(\mu)$ 用伊藤公式再取对数。市场权重满足 $\sum_i\mu^i=1$，故 $\sum_i\mu^i\,d\mu^i=0$，一阶项中的现金修正消失；把 $d\mu^i/\mu^i$ 写成 $dR^i-dR^\mu$ 加协方差修正，所有漂移项重组为 $-\tfrac12\partial^2F/F$ 的积分。整个分解是路径化的。</p></div></details>
 
   <div class="thm ex">
     <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">两股票等权组合的再平衡溢价</span><span class="thm-id">Ex. 2.1</span></div>
-    <div class="thm-body"><p>设两只股票相互独立，$c^{11}=c^{22}=0.04$，$c^{12}=0$，等权 $\pi=(1/2,1/2)$。则</p>
-    $$\pi'c\pi=\tfrac14(0.04)+\tfrac14(0.04)=\tfrac12(0.04)=0.02,\qquad \gamma^{*\pi}=\tfrac12(0.04-0.02)=0.01.$$
-    <p>即每年约 $1\%$ 的额外对数增长，完全来自“卖高买低”的再平衡。若两只股票完全相关，则 $c$ 秩一，超额增长降为 $0$：只有真正的独立风险才有溢价。</p></div>
+    <div class="thm-body"><p>设 $\alpha=(0.08,0.12)$，$c^{11}=0.04$，$c^{22}=0.09$，$c^{12}=0.01$，等权 $\pi=(1/2,1/2)$。则</p>
+    $$\pi'\alpha=0.10,\qquad \pi'c\pi=\tfrac14(0.04)+\tfrac14(0.09)+2\cdot\tfrac14(0.01)=0.0375,$$
+    $$\gamma^\pi=0.10-\tfrac12(0.0375)=0.08125.$$
+    <p>个股增长率的加权平均是</p>
+    $$\tfrac12(0.08-0.02)+\tfrac12(0.12-0.045)=0.03+0.0375=0.0675,$$
+    <p>差额 $0.08125-0.0675=0.01375$ 正是 $\gamma^{*\pi}$，约每年 $1.375\%$ 的对数增长，完全来自再平衡。若两只股票完全相关且波动率相同（$c^{11}=c^{22}=c^{12}=0.04$），则 $c$ 秩一且 $\pi'c\pi=0.04$，$\gamma^{*\pi}=0$：此时组合与单只资产无异，只有波动率差异或独立风险才产生再平衡溢价。</p></div>
   </div>
 
-  <div class="intuition"><div class="ih">直觉</div><p>增长最优组合不是“收益最高”的组合，而是“在对数效用下最不后悔”的组合。它把风险的价格 $\alpha$ 与风险的度量 $c$ 对齐：$\alpha=c\nu$，因而天然充当计价单位。</p></div>
+  <h3><span class="sn">2.4</span>市场组合与市场权重</h3>
+  <p>设总市值 $\Sigma(t)=\sum_{i=1}^nS^i(t)$，<b>市场权重</b>（market weights）为 $\mu^i(t)=S^i(t)/\Sigma(t)$。以 $\mu$ 为权重的组合叫<b>市场组合</b>（market portfolio）。它的累计收益是 $R^\mu=\int\mu'dR$。由于 $\sum_i\mu^i=1$，市场组合自动是多头、不借钱的；它是“整个股票市场”的天然基线。</p>
+  <p>把 $\rho=\mu$ 代入相对财富公式，得到 $X^\mu_\pi=X^\pi/X^\mu$ 的动力学。市场权重满足</p>
+  $$\frac{d\mu^i(t)}{\mu^i(t)}=dR^i(t)-dR^\mu(t)+\Big(c^{\mu\mu}-c^{i\mu}\Big)dO(t),$$
+  <p>即“个股相对收益 + 协方差修正”。这条式子说明：市场权重本身不是外生参数，而是由价格与协方差共同驱动的。第 7 节将研究一种极端情形——市场权重成为鞅，资本长期集中到一只股票。</p>
+
+  <div class="intuition"><div class="ih">直觉</div><p>组合理论的核心不是“预测 $\alpha$”，而是“给定 $c$，选择 $\pi$”。$\alpha$ 决定你往哪边下注，$c$ 决定下注的代价与分散的收益。等权组合之所以常胜，不是因为它知道哪只股票好，而是因为它从 $c$ 的非对角结构中持续抽取再平衡溢价。</p></div>
 
   <div class="table-wrap cheat"><table>
     <thead><tr><th>量</th><th>公式</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">$\gamma^\pi$</td><td>$\pi'\alpha-\tfrac12\pi'c\pi$</td><td>组合的对数增长率</td></tr>
-      <tr><td class="id">$\gamma^{*\pi}$</td><td>$\tfrac12(\sum_i\pi^ic^{ii}-\pi'c\pi)$</td><td>再平衡/分散溢价，$\ge0$</td></tr>
-      <tr><td class="id">$\pi^*$</td><td>$c^\dagger\alpha$</td><td>增长最优组合</td></tr>
-      <tr><td class="id">$\gamma^*$</td><td>$\tfrac12\alpha'c^\dagger\alpha$</td><td>最大增长密度</td></tr>
-      <tr><td class="id">$\pi^F_i$</td><td>$\mu^i\partial_iF(\mu)/F(\mu)$</td><td>功能生成（齐次情形）</td></tr>
-      <tr><td class="id">相对表现</td><td>$\log F(\mu_T)/F(\mu_0)-\tfrac12\int\partial^2F/F\,d[\mu,\mu]$</td><td>路径化分解</td></tr>
+      <tr><td class="id">$\gamma^\pi$</td><td>$\pi'\alpha-\tfrac12\pi'c\pi$</td><td>组合对数增长率</td></tr>
+      <tr><td class="id">$\gamma^{*\pi}$</td><td>$\tfrac12(\sum_i\pi^ic^{ii}-\pi'c\pi)$</td><td>再平衡溢价；多头时 $\ge0$</td></tr>
+      <tr><td class="id">相对财富</td><td>$\mathcal E(R^{\pi-\rho}-C^{\pi-\rho,\rho})$</td><td>换基线后的随机指数</td></tr>
+      <tr><td class="id">相对漂移</td><td>$(\pi-\rho)'(\alpha-c\rho)-\tfrac12(\pi-\rho)'c(\pi-\rho)$</td><td>$\rho$ 为增长最优时首项消失</td></tr>
+      <tr><td class="id">市场权重</td><td>$\mu^i=S^i/\sum_jS^j$</td><td>多头、不借钱</td></tr>
+      <tr><td class="id">上界</td><td>$\gamma^{*\pi}\le\lambda(1-\max_i\pi^i)$</td><td>越分散上限越高</td></tr>
     </tbody>
   </table></div>
+
+  <div class="note"><b>英文术语</b>：proportion（比例）、weighting（加权）、volatility（波动率）、trade（交易）、positions（头寸）、optimality（最优性）、log-optimality（对数最优性）、minimize（最小化）、matrices（矩阵）、filtered（过滤的）、nontrivial（非平凡）、non-zero（非零）、mild（温和的）、overall（整体的）、standard（标准）。</div>
 
   <div class="thm warn">
     <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">别把“增长”与“收益”混为一谈</span></div>
     <div class="thm-body"><ul>
       <li><b>算术平均收益 ≠ 对数增长。</b> 高波动会把算术收益“税掉”一半方差；期望收益相同，长期财富可以差很远。</li>
-      <li><b>超额增长不是无风险收益。</b> $\gamma^{*\pi}$ 是非负的漂移项，但组合仍有 $\pi'dM$ 的噪声；短期完全可能亏损。</li>
-      <li><b>增长最优 ≠ 期望效用最大。</b> 只有对数效用才与增长最优一致；CRRA 效用会给出不同组合。</li>
+      <li><b>超额增长不是无风险收益。</b> $\gamma^{*\pi}$ 只是漂移项，组合仍有 $\pi'dM$ 的噪声；短期完全可能亏损。</li>
+      <li><b>“等权最优”只在特定协方差下成立。</b> 等权最大化的是分散化溢价，不是夏普比；若 $\alpha$ 有明显差异，最优组合会偏离等权。</li>
+      <li><b>市场组合不是“无风险”。</b> 它只是把所有股票按市值加总，仍然承担系统性风险。</li>
+      <li><b>相对财富为正不等于跑赢。</b> 若基线本身在缩水，$X^\pi/X^\rho&gt;1$ 也可能对应绝对亏损。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch3" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 2 · §2.2</div>
-  <h2><span class="num">3</span>套利与市场可行性</h2>
-  <p class="lede">套利不是“低买高卖”的直觉，而是一个可量化的函数 $x(K)$：为了融资未来现金流 $K$，最少需要多少初始资本。市场“可行”，当且仅当这个最小资本为零的现金流只能是零。</p>
+  <div class="sec-label">Chapter 1 · §1.5</div>
+  <h2><span class="num">3</span>功能生成组合：用市场权重造组合</h2>
+  <p class="lede">如果组合权重只依赖当前的市场权重 $\mu$，那么相对市场的表现可以写成一个“势函数”加上一项二次变差。这就是 Fernholz 的功能生成方法：不估计 $\alpha$，只设计一个凹函数。</p>
 
-  <div class="chap-intro"><p>本章把“没有免费午餐”精确化为市场可行性（viability），并给出一个只涉及财富分布、不涉及具体策略的等价条件：所有可达财富在固定时刻一致有界。这个条件将在第 5 节与局部鞅折损因子、增长最优组合一起，组成基本定理。</p><span class="tag">可行性</span></div>
+  <div class="chap-intro"><p>本节把“选股”换成“选函数”。给定二阶可微的 $F$，按 $\mu^i\partial_iF/F$ 造出组合 $\pi^F$，它的相对财富满足一条<b>路径化</b>（pathwise）分解：显式项 $F(\mu)$ 加一个由 $F$ 的 Hessian 控制的积分。凹性直接翻译成“多头”和“超额增长非负”。</p><span class="tag">功能生成</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">融资资本</span><span class="chip">可行市场</span><span class="chip">免费午餐</span><span class="chip">依概率有界</span><span class="chip">倍增策略</span><span class="chip">NA / NFLVR</span>
+    <span class="chip hot">生成函数</span><span class="chip">市场权重</span><span class="chip">路径分解</span><span class="chip">Hessian</span><span class="chip">凹性</span><span class="chip">分散度</span><span class="chip">Fernholz</span>
   </div>
 
-  <h3><span class="sn">3.1</span>现金流与融资资本</h3>
-  <p>用 $\mathcal K$ 表示所有非降、右连续、从 $0$ 出发的累计提款流 $K$：$K(t)$ 是截至 $t$ 已提取的累计金额。给定初始资本 $x$，$\mathcal K(x)$ 是那些能由某个可容许策略融资的 $K$，即存在 $\vartheta$ 与 $F\in\mathcal K$，使得</p>
-  $$X(\cdot;x,\vartheta,F)=x+\int_0^{\cdot}\vartheta'dS-F\ge K.$$
-  <p>这里 $F$ 是“额外提款”，$K$ 是“必须覆盖的负债”。最小融资资本定义为</p>
-  $$x(K):=\inf\{x\ge0:\ K\in\mathcal K(x)\}.$$
-  <p>它满足单调性、正齐次性与次可加性：$x(K_1+K_2)\le x(K_1)+x(K_2)$。</p>
+  <h3><span class="sn">3.1</span>为什么要“功能生成”</h3>
+  <p>直接优化 $\pi'\alpha-\tfrac12\pi'c\pi$ 需要知道 $\alpha$，而 $\alpha$ 恰恰是最难估计的量。功能生成换了一个问题：先选一个只依赖可观测市场权重 $\mu$ 的函数 $F$，再让组合权重等于 $F$ 的对数导数。这样得到的组合不需要任何参数估计，权重随市场自动调整；更重要的是，它的相对表现可以用伊藤公式<b>精确</b>写出，而不是近似。</p>
+  <p>目标是找一条分解</p>
+  $$\log\frac{X^\pi}{X^\mu}=J^\mu_\pi+H^\mu_\pi,$$
+  <p>其中 $J^\mu_\pi$ 非降、$H^\mu_\pi$ 是“被 $J$ 压制”的项。若能做到，长期表现就由 $J$ 主导。取 $H^\mu_\pi=\log(F(\mu)/F(\mu(0)))$，再令 $J$ 吸收其余的二次变差，就得到下面的构造。</p>
 
   <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">市场可行性</span><span class="thm-id">Def. 2.19</span></div>
-    <div class="thm-body"><p>若对任意 $K\in\mathcal K$，$x(K)=0$ 都推出 $K\equiv0$，则称市场是<b>可行</b>的。等价地，</p>
-    $$\mathcal K(0+):=\bigcup_{x&gt;0}\mathcal K(x)=\{0\}.$$
-    <p>这里用的是“任意小正初始资本”，而不是“恰好零初始资本”；后者会漏掉只能用 $1/m$ 元融资的非零流。</p></div>
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">功能生成组合</span><span class="thm-id">(1.71)</span></div>
+    <div class="thm-body"><p>设 $F:\operatorname{ri}\Delta^{n-1}\to(0,\infty)$ 二阶连续可微。定义</p>
+    $$\pi^F_i:=\mu^i\left(\frac{\partial_iF(\mu)}{F(\mu)}+1-\sum_{j=1}^n\mu^j\frac{\partial_jF(\mu)}{F(\mu)}\right),\qquad 1\le i\le n.$$
+    <p>括号中的修正项保证 $\sum_i\pi^F_i=1$，即 $\pi^F$ 始终是一个股票组合（不持有现金）。若 $F$ 是一阶齐次函数，则 $\sum_j\mu^j\partial_jF=F$，修正项消失，公式简化为 $\pi^F_i=\mu^i\partial_iF(\mu)/F(\mu)$。</p></div>
   </div>
+
+  <p>为什么是这个公式？把 $\log F(\mu)$ 用伊藤公式展开，再与 $\log X^\mu_\pi$ 的动力学比较，会发现 $\pi^i/\mu^i$ 应当等于 $\partial_iF/F$。修正项只是把“可能不等于 $1$ 的权重和”重新归一化，不改变相对漂移。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">依概率有界刻画</span><span class="thm-id">Prop. 2.22</span></div>
-    <div class="thm-body"><p>市场可行，当且仅当对每个 $T\ge0$，可达财富族 $\{X(T):X\in\mathcal X\}$ 在 $\mathbb P$ 下依概率有界：</p>
-    $$\lim_{m\to\infty}\sup_{X\in\mathcal X}\mathbb P[X(T)&gt;m]=0.$$
-    <p>其中 $\mathcal X$ 是所有非负财富过程（numéraires）。这条刻画把“经济上没有免费午餐”翻译成“概率上不能一致地跑向无穷”。</p></div>
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Fernholz 分解</span><span class="thm-id">Thm. 1.29</span></div>
+    <div class="thm-body"><p>设 $F$ 二阶连续可微，$\pi^F\in I(R;H^{n-1})$ 是由 $F$ 生成的股票组合。则对任意 $T\ge0$，</p>
+    $$\log\frac{X^{\pi^F}(T)}{X^\mu(T)}=\log\frac{F(\mu(T))}{F(\mu(0))}-\frac12\int_0^T\sum_{i,j=1}^n\frac{\partial^2_{ij}F(\mu(t))}{F(\mu(t))}\,d[\mu^i,\mu^j](t).$$
+    <p>右端只涉及市场权重的路径与其二次变差，不含任何随机积分项，也不需要显式解出 $S$。</p></div>
   </div>
 
-  <details class="proof"><summary>证明思路：不可行 ⇒ 构造一致发散的可达财富</summary><div class="proof-body"><p>若市场不可行，存在非零 $K$ 与一列 $x_m\downarrow0$ 及策略使 $X_m\ge K$。取 $T$ 与 $\varepsilon&gt;0$ 使 $\mathbb P[K(T)&gt;\varepsilon]&gt;\varepsilon$；把策略按 $1/x_m$ 缩放，便得到一列在 $T$ 时刻以一致正概率超过任意高度的财富，违背依概率有界。反向用 Exercise 2.21：若财富族不一致有界，可选非零负债 $h$，用 $1/m$ 元融资 $mh$，从而 $x(h1_{[T,\infty)})=0$。</p></div></details>
+  <details class="proof"><summary>证明思路：对 $\log F(\mu)$ 用伊藤公式</summary><div class="proof-body"><p>对 $F(\mu)$ 用伊藤公式再取对数：</p>
+  $$d\log F(\mu)=\sum_i\frac{\partial_iF}{F}d\mu^i+\frac12\sum_{i,j}\frac{\partial^2_{ij}F}{F}d[\mu^i,\mu^j]-\frac12\sum_{i,j}\frac{\partial_iF\,\partial_jF}{F^2}d[\mu^i,\mu^j].$$
+  <p>另一方面，$\log X^{\pi^F}/X^\mu$ 的漂移只含 $\pi^F$ 与 $\mu$ 的差。把 $\pi^F_i/\mu^i=\partial_iF/F$ 代入，一次项完全对齐；二次项中“$\partial_iF\partial_jF/F^2$”被 $\pi^F$ 的方差项抵消，只剩 $-\tfrac12\partial^2_{ij}F/F$。由于 $\sum_i\mu^i=1$，沿单纯形方向的常数修正自动消失，分解是路径化的。</p></div></details>
 
-  <h3><span class="sn">3.2</span>一个二项市场：什么时候有套利</h3>
-  <p>设 $S_0=100$，一期后只有两个状态，货币市场收益为 $0$。若 $S_1\in\{120,80\}$，用 $\theta$ 股股票和 $-100\theta$ 元现金构造零成本组合，期末盈亏为 $\theta(S_1-100)$，即 $+20\theta$ 或 $-20\theta$。只要 $\theta\ne0$，两个状态符号相反，无法得到“非负且正概率为正”的套利。</p>
-  <p>若把下跌状态改成 $S_1=110$，同样的零成本组合在期末得到 $+20\theta$ 或 $+10\theta$。取 $\theta&gt;0$，两个状态都为正：这就是套利。等价的鞅测度语言更简洁：风险中性概率</p>
-  $$q=\frac{1-d}{u-d}=\frac{1-1.1}{1.2-1.1}=-1\notin[0,1],$$
-  <p>不存在等价鞅测度，套利出现。若 $d=1.0$，则 $q=0$，测度退化到边界，仍可视为“允许零概率状态”的套利边界情形。</p>
+  <h3><span class="sn">3.2</span>凹性 = 多头 + 非负超额增长</h3>
+  <p>生成函数最重要的性质是：<b>凹性可以直接读成组合约束与增长下界</b>。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">练习</span><span class="thm-title">凹生成函数的两个结论</span><span class="thm-id">Ex. 1.30</span></div>
+    <div class="thm-body"><p>设 $F:\operatorname{ri}\Delta^{n-1}\to(0,\infty)$ 二阶连续可微且凹。则：</p>
+    <ul>
+      <li>$\pi^F\in\mathcal P(\Delta^{n-1})$，即 $\pi^F$ 是<b>多头</b>（long-only）组合，每个分量非负；</li>
+      <li>过程 $J^F:=-\tfrac12\int\sum_{ij}\partial^2_{ij}F(\mu)/F(\mu)\,d[\mu^i,\mu^j]$ 非降。</li>
+    </ul>
+    <p>因此 $\log(X^{\pi^F}/X^\mu)\ge\log(F(\mu(T))/F(\mu(0)))$：相对表现有一个只依赖当前市场权重的下界。</p></div>
+  </div>
+
+  <p>证明只需注意：凹函数的 Hessian 半负定，而 $d[\mu^i,\mu^j]$ 是半正定矩阵测度，二者配对给出非负的被积函数；多头性则来自 $\pi^F_i\ge0$ 与 $\sum_i\pi^F_i=1$。这条结论把一个分析性质（凹性）翻译成了两个金融性质（不许做空、相对增长有下界），是功能生成方法最漂亮的地方。</p>
+
+  <p>若进一步假设<b>强分散度</b>（strong diversity）$\max_i\mu^i(t)\to0$，并让“最小特征值累计”$\int\ell\,d\Lambda\to\infty$，则 $J^F\to\infty$，生成组合严格跑赢市场。这就是“分散化红利”的路径化版本：只要市场不长期集中，凹生成函数就能持续抽取再平衡溢价。</p>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">倍增策略：不可容许的“免费午餐”</span><span class="thm-id">Ex. 1.10</span></div>
-    <div class="thm-body"><p>取 $R=W$ 为标准布朗运动，$\eta(t)=1/(S(t)\sqrt{1-t})$，$N=\int_0^{\cdot}\eta\,dS=\int_0^{\cdot}dW/\sqrt{1-t}$。则 $[N,N](t)=-\log(1-t)$，$N$ 在 $[0,1)$ 上可以任意振荡。对 $\tau_m=\inf\{t:N(t)\ge m\}$，策略 $\vartheta_m=\eta1_{(0,\tau_m]}$ 满足 $X(1;1,\vartheta_m)=1+m$。但这条财富路径无下界，因而不可容许；若强行要求 $X\ge0$，非负局部鞅的期望必须不超过初始值，矛盾。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">几何平均生成常数比例组合</span><span class="thm-id">Ex. 3.1</span></div>
+    <div class="thm-body"><p>取 $n=2$，$F(x)=x_1^a x_2^{1-a}$，$a\in(0,1)$。$F$ 一阶齐次且凹，故</p>
+    $$\pi^F=\Big(\mu^1\frac{a}{\mu^1},\ \mu^2\frac{1-a}{\mu^2}\Big)=(a,1-a),$$
+    <p>即常数比例组合。计算 Hessian 后，定理 1.29 给出</p>
+    $$\log\frac{X^{\pi^F}}{X^\mu}=\log\frac{F(\mu(T))}{F(\mu(0))}+\frac{a(1-a)}{2}\log\frac{\mu^1(T)\mu^2(0)}{\mu^1(0)\mu^2(T)}.$$
+    <p>例如 $a=1/2$，$\mu(0)=(0.5,0.5)$，$\mu(T)=(0.7,0.3)$。第一项 $\log\sqrt{0.21/0.25}=\tfrac12\log0.84=-0.0872$；第二项 $\tfrac18\log(0.7\cdot0.5/(0.5\cdot0.3))=\tfrac18\log(2.333)=0.1060$。合计 $+0.0188$，即等权组合相对市场多赚约 $1.9\%$ 的对数收益。市场越分散、权重波动越大，第二项越可观。</p></div>
   </div>
 
-  <div class="intuition"><div class="ih">直觉</div><p>可行性的核心不是“不能赚钱”，而是“不能无本万利”。倍增策略之所以被排除，不是因为它不赚钱，而是因为它要求无限信用额度。把财富限制为非负，等于给每个策略加了一条“破产即停止”的硬约束。</p></div>
+  <div class="intuition"><div class="ih">直觉</div><p>把 $F$ 想成一张“地形图”，$\mu$ 是地形上的一个点。组合 $\pi^F$ 让财富沿着地形的梯度走；凹地形意味着无论 $\mu$ 怎么走，你都在“下坡”方向上获得相对收益。Fernholz 分解说的就是：相对财富 = 地形高度变化 + 沿路径的曲率收益。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>概念</th><th>定义</th><th>注意</th></tr></thead>
+    <thead><tr><th>对象</th><th>公式</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">$\mathcal K(x)$</td><td>可用初始 $x$ 融资的提款流</td><td>允许额外提款 $F$</td></tr>
-      <tr><td class="id">$x(K)$</td><td>$\inf\{x:K\in\mathcal K(x)\}$</td><td>单调、正齐次、次可加</td></tr>
-      <tr><td class="id">可行</td><td>$x(K)=0\Rightarrow K=0$</td><td>等价于 $\mathcal K(0+)=\{0\}$</td></tr>
-      <tr><td class="id">依概率有界</td><td>$\sup_X\mathbb P[X(T)&gt;m]\to0$</td><td>只涉及分布，不涉及策略</td></tr>
-      <tr><td class="id">NA</td><td>无套利</td><td>比可行性弱</td></tr>
-      <tr><td class="id">NFLVR</td><td>无免费午餐消失风险</td><td>连续时间常用；与 ELMM 相关</td></tr>
+      <tr><td class="id">$\pi^F_i$</td><td>$\mu^i(\partial_iF/F+1-\sum_j\mu^j\partial_jF/F)$</td><td>一般生成公式</td></tr>
+      <tr><td class="id">齐次情形</td><td>$\pi^F_i=\mu^i\partial_iF/F$</td><td>权重和为 $1$</td></tr>
+      <tr><td class="id">相对分解</td><td>$\log(F(\mu_T)/F(\mu_0))-\tfrac12\int\partial^2F/F\,d[\mu,\mu]$</td><td>路径化，无随机积分</td></tr>
+      <tr><td class="id">凹性</td><td>$F$ 凹 $\Rightarrow$ $\pi^F\ge0$，$J^F$ 非降</td><td>多头 + 增长下界</td></tr>
+      <tr><td class="id">几何平均</td><td>$F=\prod x_i^{p_i}\Rightarrow\pi^F=p$</td><td>常数比例组合</td></tr>
+      <tr><td class="id">线性</td><td>$F=\sum w_ix_i\Rightarrow\pi^F_i\propto w_i\mu^i$</td><td>买入并持有</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：functional generation（功能生成）、eigenvalue（特征值）、diversity（分散度）、concavity（凹性）、pathwise（路径化）、Hessian（黑塞矩阵）、simplex（单纯形）、homogeneous（齐次）、rebalancing（再平衡）、excess growth（超额增长）、attained（达到）、minimal（最小）、running maximum（运行最大）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">可行性的三个细节</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">功能生成的边界</span></div>
     <div class="thm-body"><ul>
-      <li><b>“零初始资本”不够。</b> 可行性要求任意小正资本都不能融资非零流；只检查 $x=0$ 会漏掉“用 $1/m$ 元套利”的序列。</li>
-      <li><b>可行性不是“价格不能上涨”。</b> 它允许正漂移，只要漂移能被风险补偿。</li>
-      <li><b>NA 与 NFLVR 不同。</b> 前者只排除严格套利，后者还排除“消失风险”。</li>
+      <li><b>凹性不是“低风险”。</b> 它只保证多头与相对增长下界，不保证绝对财富不亏；市场整体下跌时，生成组合照样亏。</li>
+      <li><b>$F$ 必须在 $\operatorname{ri}\Delta^{n-1}$ 上为正。</b> 若 $F$ 在边界为零或取负，$\log F$ 无定义，分解失效。</li>
+      <li><b>“跑赢市场”需要分散度。</b> 若市场长期集中到一只股票，$\int\ell d\Lambda$ 可能收敛，$J^F$ 不再趋于无穷。</li>
+      <li><b>生成组合不含现金。</b> $\sum_i\pi^F_i=1$ 是构造的一部分；若要持现金，需另加一个现金权重。</li>
+      <li><b>分解是路径化的，不是分布免费的。</b> 它不需要估计 $\alpha$，但仍依赖 $\mu$ 的二次变差；高频再平衡的成本未计入。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch4" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 2 · §2.1</div>
-  <h2><span class="num">4</span>计价单位与局部鞅折损因子</h2>
-  <p class="lede">计价单位不是记账习惯，而是一个坐标变换：选对了基线，所有财富过程都变成上鞅；选错了，连“无套利”都看不出来。</p>
+  <h2><span class="num">4</span>计价单位与随机贴现因子</h2>
+  <p class="lede">“用哪条财富曲线作为记账单位”，会改变哪些过程是鞅。计价单位选得好，所有相对价格都变成局部鞅；选得不好，连现金都不是无风险的。</p>
 
-  <div class="chap-intro"><p>本章定义上鞅/局部鞅计价单位，证明在连续、无约束市场中二者等价，并给出结构条件 $\alpha=c\nu$。随后引入与计价单位对偶的局部鞅折损因子 $Y$：它把“折现后的价格”变成局部鞅，是第 5 节基本定理和第 7 节上对冲公式的核心。</p><span class="tag">计价单位</span></div>
+  <div class="chap-intro"><p>本节定义两类特殊的计价单位：<b>上鞅计价单位</b>（supermartingale numéraire）与<b>局部鞅计价单位</b>（local martingale numéraire），并证明在连续价格、无约束的组合选择下二者等价。它们的倒数就是<b>局部鞅折损因子</b>（local martingale deflator），也就是连续时间版本的随机贴现因子。</p><span class="tag">计价单位</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">上鞅计价单位</span><span class="chip">局部鞅计价单位</span><span class="chip">折损因子</span><span class="chip">$\alpha=c\nu$</span><span class="chip">相对财富</span><span class="chip">无跑赢</span>
+    <span class="chip hot">计价单位</span><span class="chip">上鞅计价单位</span><span class="chip">局部鞅计价单位</span><span class="chip">折损因子</span><span class="chip">随机贴现因子</span><span class="chip">Bessel 过程</span><span class="chip">换计价单位</span>
   </div>
 
-  <h3><span class="sn">4.1</span>定义：把“跑赢”变成上鞅</h3>
-  <p>对组合 $\nu$，记 $X^\nu$ 为其财富。若对每个组合 $\pi$，相对财富 $X^\pi/X^\nu$ 都是上鞅，则称 $\nu$ 为<b>上鞅计价单位组合</b>；若相对财富都是局部鞅，则称为<b>局部鞅计价单位组合</b>。非负局部鞅由 Fatou 引理自动是上鞅，所以局部鞅计价单位一定是上鞅计价单位。</p>
+  <h3><span class="sn">4.1</span>定义：用一条财富曲线当尺子</h3>
+  <p>固定组合 $\nu\in I(R)$，把它的财富 $X^\nu$ 当作新的记账单位。对任意组合 $\pi$，相对财富是 $X^\nu_\pi=X^\pi/X^\nu$。如果对<b>所有</b> $\pi$，这个比值都是上鞅，那么 $\nu$ 就是一台“让所有策略平均跑输”的机器。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">上鞅 / 局部鞅计价单位</span><span class="thm-id">Def. 2.1</span></div>
+    <div class="thm-body"><p>给定 $\nu\in I(R)$，若对每个 $\pi\in I(R)$，比值 $X^\nu_\pi=X^\pi/X^\nu$ 都是上鞅（相应地，局部鞅），则称 $X^\nu$ 为<b>上鞅计价单位</b>（supermartingale numéraire；相应地，<b>局部鞅计价单位</b> local martingale numéraire），$\nu$ 称为相应的计价单位组合。</p>
+    <p>由 Fatou 引理，非负局部鞅是上鞅，所以局部鞅计价单位一定是上鞅计价单位。反过来，在连续价格且无组合约束时，二者也等价（Prop. 2.4）。</p></div>
+  </div>
+
+  <p><b>唯一性</b>是第一个好消息：若 $Z$ 是连续、严格正半鞅，且 $Z$ 与 $1/Z$ 都是上鞅，则 $Z$ 必为常数。把这条用到两个候选计价单位之比上，就知道上鞅计价单位（因而局部鞅计价单位）在“$R$-零投资”意义下唯一。这就是书中可以放心使用定冠词“the numéraire”的原因。</p>
+
+  <h3><span class="sn">4.2</span>结构刻画：$\alpha=c\nu$</h3>
+  <p>把相对财富公式 (1.45) 代入定义，会发现“所有 $\pi$ 的相对财富都是局部鞅”这件事，等价于一个只涉及 $\alpha$ 与 $c$ 的代数条件。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">连续无约束市场中的等价性</span><span class="thm-id">Prop. 2.4</span></div>
-    <div class="thm-body"><p>对 $\nu\in\mathcal I(R)$，下列三条等价：</p>
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">三类刻画等价</span><span class="thm-id">Prop. 2.4</span></div>
+    <div class="thm-body"><p>对 $\nu\in I(R)$，下列陈述等价：</p>
     <ol>
       <li>$\nu$ 是上鞅计价单位组合；</li>
       <li>$\nu$ 是局部鞅计价单位组合；</li>
-      <li>$A^i=C^{i\nu}$ 对每个 $i$ 成立，等价地 $\alpha=c\nu$（$(\mathbb P\otimes O)$-几乎处处）。</li>
-    </ol>
-    <p>第三条是纯结构条件：漂移必须正好等于协方差矩阵作用在权重上。它把“存在特殊计价单位”变成“市场局部特征满足一个线性方程”。</p></div>
+      <li>$A^i=C^{i\nu}$ 对 $1\le i\le n$ 成立，等价地 $\alpha=c\nu$（$\mathbb P\otimes O$-几乎处处）。</li>
+    </ol></div>
   </div>
 
-  <details class="proof"><summary>证明思路：相对财富的随机指数与漂移</summary><div class="proof-body"><p>若 $\alpha=c\nu$，则 $R^i-C^{i\nu}=M^i$ 是局部鞅；对任意 $\pi$，$d(X^\pi/X^\nu)/(X^\pi/X^\nu)=(\pi-\nu)'dM$，故相对财富是局部鞅。反向取 $\pi=\nu\pm e_i$，两个方向的相对财富都必须是上鞅，对数漂移互为相反数，只能同时为零，于是 $A^i=C^{i\nu}$。</p></div></details>
+  <details class="proof"><summary>证明思路：从 $(3)$ 到 $(2)$，再用“扰动组合”反推</summary><div class="proof-body"><p>若 $A^i=C^{i\nu}$，则 $R^i-C^{i\nu}=M^i$ 是局部鞅。代入 (1.44) 得 $R^\nu_i=M^i-M^\nu$，于是对任意 $\pi$，</p>
+  $$\frac{X^\pi}{X^\nu}=\mathcal E\Big(\int\sum_{i=0}^n\pi^i dR^\nu_i\Big)$$
+  <p>是局部鞅，得 $(2)$。反过来，若 $(1)$ 成立，取 $\pi=\nu\pm e_i$（只扰动第 $i$ 个分量），则 $X^\nu_{\nu+e_i}$ 与 $X^\nu_{\nu-e_i}$ 都是上鞅。由相对财富公式，它们的对数漂移分别是 $\pm(R^i-C^{i\nu})$ 的漂移；两边同时非正，迫使 $R^i-C^{i\nu}$ 的漂移为零，即 $A^i=C^{i\nu}$。</p></div></details>
 
-  <h3><span class="sn">4.2</span>折损因子：与计价单位对偶的对象</h3>
-  <p>称满足 $Y(0)=1$、$Y&gt;0$ 且对每个计价单位 $X\in\mathcal X$ 都有 $YX$ 为局部鞅的适应过程 $Y$ 为<b>局部鞅折损因子</b>。由 $X\equiv1\in\mathcal X$ 知 $Y$ 本身也是局部鞅；等价地，$Y$ 与所有 $YS^i$ 都是局部鞅。</p>
-  <p>若局部鞅计价单位 $X^\nu$ 存在，则</p>
-  $$Y:=\frac{1}{X^\nu}=\mathcal E(-M^\nu)$$
-  <p>是一个折损因子。更一般地，所有折损因子都可以写成</p>
-  $$Y=\frac{1}{X^\nu}\,\mathcal E(L),\qquad L(0)=0,\ [L,M^i]\equiv0,\ \Delta L&gt;-1,$$
-  <p>其中 $L$ 是与所有可交易噪声正交的局部鞅。折损因子的“非唯一性”完全来自不可对冲的风险源。</p>
+  <p>条件 $\alpha=c\nu$ 有一个直接的金融读法：<b>风险的价格等于风险的协方差乘以最优暴露</b>。若 $c$ 可逆，则 $\nu=c^{-1}\alpha$，这正是 Markowitz 型最优组合（在无约束、最大化瞬时增长的意义下）。若 $\alpha\notin\operatorname{range}(c)$，则不存在这样的 $\nu$，市场会出现“无风险的正漂移”，第 5 节将把它翻译成套利。</p>
+
+  <h3><span class="sn">4.3</span>局部鞅折损因子 = 随机贴现因子</h3>
+  <p>把计价单位的倒数单独拿出来：</p>
 
   <div class="thm def">
     <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">局部鞅折损因子</span><span class="thm-id">Def. 2.24</span></div>
-    <div class="thm-body"><p>$Y$ 是折损因子，若 $Y(0)=1$、$Y&gt;0$，且 $YX$ 对所有 $X\in\mathcal X$ 都是局部鞅。等价刻画：$Y$ 与 $YS^i$（$1\le i\le n$）都是局部鞅。全体记为 $\mathcal Y$。</p></div>
+    <div class="thm-body"><p>适应过程 $Y$ 称为<b>局部鞅折损因子</b>（local martingale deflator），若 $Y(0)=1$，$Y&gt;0$，且对每个计价单位 $X\in\mathcal X$，乘积 $YX$ 是局部鞅。所有这样的 $Y$ 组成集合 $\mathcal Y$。</p>
+    <p>由于 $X\equiv1\in\mathcal X$，$Y$ 本身必是局部鞅。等价地：$Y$ 与所有 $YS^i$（$1\le i\le n$）都是局部鞅。</p></div>
+  </div>
+
+  <p>这就是连续时间版的<b>随机贴现因子</b>（stochastic discount factor, SDF）：若 $YX$ 还是真鞅，则</p>
+  $$\mathbb E\big[Y(T)X(T)\mid\mathcal F(t)\big]=Y(t)X(t),\qquad 0\le t\le T.$$
+  <p>把 $Y$ 读成“状态价格密度”，上式就是“今天的一元钱 = 未来一元钱乘上状态价格”的定价方程。与离散时间的区别在于：这里只保证局部鞅，<b>不保证</b>可取期望；$Y(T)$ 的期望可能小于 $1$，这正是“泡沫”与“严格局部鞅”出现的地方。</p>
+
+  <p>若 $X^\nu$ 是局部鞅计价单位，则 $1/X^\nu=\mathcal E(-M^\nu)$ 是折损因子。验证只需用 Yor 公式：$Y S^i=(1/X^\nu)S^i=S^i/X^\nu$ 是局部鞅。反过来，若 $\mathcal Y\neq\varnothing$，取 $Y\in\mathcal Y$，则 $1/Y$ 就是局部鞅计价单位。因此“存在折损因子”与“存在局部鞅计价单位”是同一件事。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Black–Scholes 中的计价单位与 SDF</span><span class="thm-id">Ex. 4.1</span></div>
+    <div class="thm-body"><p>设一只股票，$\alpha=\mu-r=0.06$，$c=\sigma^2=0.04$（$\sigma=20\%$）。则</p>
+    $$\nu=\frac{\alpha}{c}=\frac{0.06}{0.04}=1.5,\qquad \gamma^\nu=\tfrac12\nu^2c=\tfrac12(2.25)(0.04)=0.045.$$
+    <p>增长最优组合把 $150\%$ 的财富投在股票上（借 $50\%$ 现金），对数增长率为 $4.5\%$。折损因子是</p>
+    $$Y(t)=\frac{1}{X^\nu(t)}=\mathcal E\Big(-\int_0^{\cdot}\nu\sigma\,dW\Big)(t)=\exp\Big(-0.3W(t)-0.045t\Big).$$
+    <p>风险中性测度由 $\frac{d\mathbb Q}{d\mathbb P}\big|_{\mathcal F(T)}=Y(T)$ 给出；在 $\mathbb Q$ 下 $W^{\mathbb Q}=W+0.3t$ 是布朗运动，股票的折现价格是鞅。注意 $Y$ 是严格正的真鞅，故 $\mathbb E[Y(T)]=1$，$\mathbb Q$ 与 $\mathbb P$ 等价。</p></div>
   </div>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Black–Scholes 中的计价单位与折损因子</span><span class="thm-id">Ex. 4.1</span></div>
-    <div class="thm-body"><p>设 $dS/S=0.08\,dt+0.20\,dW$。则 $\nu=\alpha/c=0.08/0.04=2$，即用 $200\%$ 财富买股票（借 $100\%$ 现金）。计价单位财富满足</p>
-    $$\frac{dX^\nu}{X^\nu}=2(0.08\,dt+0.20\,dW)=0.16\,dt+0.40\,dW,$$
-    <p>对数增长率为 $0.16-\tfrac12(0.40)^2=0.08$。折损因子 $Y=1/X^\nu=\mathcal E(-0.40W)$；在 $dW^{\mathbb Q}=dW+0.40\,dt$ 下，$dS/S=0.20\,dW^{\mathbb Q}$。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">严格局部鞅：折损因子可以“漏质量”</span><span class="thm-id">Ex. 2.8 / Rem. 2.10</span></div>
+    <div class="thm-body"><p>设 $R$ 是三维 Bessel 过程，$X=1/R$。由伊藤公式，$X$ 是严格正局部鞅，但</p>
+    $$\mathbb E[X(t)]&lt;X(0),\qquad \mathbb E[X(t)]\to0.$$
+    <p>它不是真鞅。若把 $X$ 当作折损因子，$\mathbb E[X(T)]&lt;1$ 意味着“未来状态的总价格”小于今天的 $1$ 元：有一部分概率质量在极限中逃逸了。这正是局部鞅与真鞅的分界线，也是“市场中可以存在泡沫、但不可以存在套利”的技术根源。</p></div>
   </div>
 
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">二项市场：用 $1/S$ 做折损因子</span><span class="thm-id">Ex. 4.2</span></div>
-    <div class="thm-body"><p>$S_0=100$，$S_1\in\{120,80\}$，真实概率 $p=0.6$，无风险利率 $0$。对数最优组合是全部买股票（因为 $p&gt;1/2$），故 $X^\nu=S/100$。取 $Y=100/S$：上涨时 $Y=5/6$，下跌时 $Y=5/4$，且 $\mathbb E[Y]=0.6\cdot5/6+0.4\cdot5/4=1$。同时 $YS=100$ 恒为常数，当然是鞅。</p></div>
-  </div>
-
-  <div class="intuition"><div class="ih">直觉</div><p>计价单位回答“以什么为基准衡量财富”，折损因子回答“以什么为权重做期望”。两者互为倒数：$Y=1/X^\nu$。若还存在不可对冲的噪声，折损因子可以在正交方向上再乘一个局部鞅，于是定价不再是单一测度，而是一个集合。</p></div>
+  <div class="intuition"><div class="ih">直觉</div><p>计价单位是一把会伸缩的尺子。用 $X^\nu$ 量别人，等于把“$\nu$ 的增长率”从所有资产里减掉；若 $\nu$ 正好等于 $\alpha=c\nu$ 的解，减掉之后所有相对价格都不再漂移，只剩下鞅噪声。折损因子 $1/X^\nu$ 就是这把尺子的“价格”，它把未来的钱折算成今天的钱。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>对象</th><th>定义</th><th>关键性质</th></tr></thead>
+    <thead><tr><th>对象</th><th>定义 / 公式</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">上鞅计价单位</td><td>$X^\pi/X^\nu$ 上鞅</td><td>不能被跑赢</td></tr>
-      <tr><td class="id">局部鞅计价单位</td><td>$X^\pi/X^\nu$ 局部鞅</td><td>连续无约束时与上鞅等价</td></tr>
-      <tr><td class="id">结构条件</td><td>$\alpha=c\nu$</td><td>漂移在协方差值域内</td></tr>
-      <tr><td class="id">折损因子</td><td>$Y,YS^i$ 局部鞅</td><td>$Y=1/X^\nu\cdot\mathcal E(L)$</td></tr>
-      <tr><td class="id">相对财富</td><td>$X^\pi/X^\nu=\mathcal E(\int(\pi-\nu)'dM)$</td><td>无漂移</td></tr>
+      <tr><td class="id">上鞅计价单位</td><td>$X^\pi/X^\nu$ 为上鞅，$\forall\pi$</td><td>所有策略平均跑输</td></tr>
+      <tr><td class="id">局部鞅计价单位</td><td>$X^\pi/X^\nu$ 为局部鞅</td><td>连续无约束时与上鞅版等价</td></tr>
+      <tr><td class="id">结构条件</td><td>$\alpha=c\nu$</td><td>风险价格 = 协方差 × 暴露</td></tr>
+      <tr><td class="id">折损因子</td><td>$Y(0)=1,\ Y&gt;0,\ YX$ 局部鞅</td><td>SDF / 状态价格密度</td></tr>
+      <tr><td class="id">与计价单位</td><td>$Y=1/X^\nu=\mathcal E(-M^\nu)$</td><td>互为倒数</td></tr>
+      <tr><td class="id">定价方程</td><td>$\mathbb E[Y(T)X(T)\mid\mathcal F_t]=Y(t)X(t)$</td><td>仅当 $YX$ 为真鞅</td></tr>
+      <tr><td class="id">唯一性</td><td>$Z,1/Z$ 皆上鞅 $\Rightarrow Z\equiv1$</td><td>计价单位在 $R$-零意义下唯一</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：numéraire（计价单位）、supermartingale（上鞅）、submartingale（下鞅）、deflator（折损因子）、stochastic discount factor（随机贴现因子）、martingale（鞅）、Bessel process（贝塞尔过程）、strict local martingale（严格局部鞅）、invariance（不变性）、baseline（基线）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">“计价单位”不是随便换个分母</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">计价单位不是“无风险资产”</span></div>
     <div class="thm-body"><ul>
-      <li><b>任意正资产都能当计价单位，但不一定有“计价单位性质”。</b> 只有满足 $\alpha=c\nu$ 的组合才让所有相对财富变成（局部）鞅；随便选一个组合只会得到有漂移的相对价格。</li>
-      <li><b>局部鞅不一定连续，更不一定是真鞅。</b> 非负局部鞅的期望可以严格小于初值；这正是严格局部鞅计价单位（如 3D Bessel）出现的地方。</li>
-      <li><b>把 $Y$ 当成概率密度。</b> 只有 $\mathbb E[Y(T)]=1$ 时才是密度；一般它只定义局部测度或模型一致测度。</li>
+      <li><b>换计价单位后现金不再无风险。</b> $S^\rho_0=1/X^\rho$ 是随机的；把 $\rho$ 当尺子时，现金也变成风险资产。</li>
+      <li><b>局部鞅 ≠ 鞅。</b> $YX$ 只保证局部鞅；要取期望必须额外验证一致可积性，否则会得出错误的定价公式。</li>
+      <li><b>$\alpha=c\nu$ 不是“均衡条件”。</b> 它只是“存在增长最优组合”的代数刻画；市场可以没有这样的 $\nu$，那时会出现套利。</li>
+      <li><b>SDF 不唯一。</b> 不完全市场里 $\mathcal Y$ 是一个集合，不同 $Y$ 给出不同的“无套利价格区间”，而不是一个唯一定价。</li>
+      <li><b>把 $Y$ 当成效用函数。</b> $Y$ 是定价用的状态价格密度，不是投资者的边际效用；二者在均衡模型中才有关系。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch5" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 2 · §2.2.4</div>
-  <h2><span class="num">5</span>基本定理：可行性的五个等价刻画</h2>
-  <p class="lede">“没有免费午餐”“存在折损因子”“存在增长最优组合”“增长不会爆炸”“财富依概率有界”——这五句话看似来自不同学科，其实是同一件事。</p>
+  <div class="sec-label">Chapter 2 · §2.2</div>
+  <h2><span class="num">5</span>套利、可行性与基本定理</h2>
+  <p class="lede">套利（arbitrage）不是“低买高卖”的直觉；无套利（no-arbitrage）也不是“价格不会跌”，而是“不存在零成本的正现金流”。更精确地说，套利是一个可量化的函数 $x(K)$：为了融资未来现金流 $K$，最少需要多少初始资本。市场“可行”，当且仅当这个最小资本为零的现金流只能是零。</p>
 
-  <div class="chap-intro"><p>这是全书的结构中心。定理把经济直觉、随机分析、凸对偶与分布性质扣在一起；证明的每一半都给出一个可操作的构造：没有折损因子就造套利，增长爆炸就造发散财富，漂移不在协方差值域内就“杀掉噪声”提取漂移。</p><span class="tag">基本定理</span></div>
+  <div class="chap-intro"><p>本节把“没有免费午餐”精确化为<b>市场可行性</b>（market viability），并给出五个等价刻画：可行性、存在折损因子、存在上鞅计价单位、增长局部有限、以及可达财富依概率有界。这就是连续时间的基本资产定价定理（fundamental theorem of asset pricing）在本书中的形态。</p><span class="tag">无套利</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">可行性</span><span class="chip">折损因子</span><span class="chip">增长最优</span><span class="chip">局部有限增长</span><span class="chip">依概率有界</span><span class="chip">结构条件</span>
+    <span class="chip hot">套利</span><span class="chip">无套利</span><span class="chip">融资资本</span><span class="chip">市场可行性</span><span class="chip">折损因子</span><span class="chip">依概率有界</span><span class="chip">NUPBR</span>
   </div>
 
-  <h3><span class="sn">5.1</span>定理陈述</h3>
+  <h3><span class="sn">5.1</span>可行性：把“免费午餐”写成一个等式</h3>
+  <p>回忆第 1 节的融资资本 $x(K)=\inf\{x\ge0:K\in\mathcal K(x)\}$。若存在非零提款流 $K$ 使 $x(K)=0$，就意味着“用任意小的初始资本，几乎免费地抽出非零的累计现金流”。这正是免费午餐的数学形态。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">市场可行性</span><span class="thm-id">Def. 2.19</span></div>
+    <div class="thm-body"><p>市场称为<b>可行</b>（viable），若对任意 $K\in\mathcal K$，$x(K)=0$ 蕴含 $K\equiv0$。等价地，</p>
+    $$\mathcal K(0^+):=\bigcup_{x&gt;0}\mathcal K(x)=\{0\}.$$
+    <p>注意 $\mathcal K(0)=\{0\}$ 严格弱于 $\mathcal K(0^+)=\{0\}$：前者只排除“零资本套利”，后者排除“任意小资本套利”。</p></div>
+  </div>
+
+  <p>这个定义比文献中的 NFLVR（no free lunch with vanishing risk）更弱，对应的是 NUPBR（no unbounded profit with bounded risk），也叫“无第一类套利”（no arbitrage of the first kind）或“无廉价午餐”（no cheap thrills）。它不要求存在等价局部鞅测度，只要求存在折损因子；这正是本书能在非常一般的半鞅市场上展开理论的原因。</p>
+
+  <p>可行性还有一个纯分布式的等价写法，完全不需要提“策略”：</p>
+
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">市场可行性的等价刻画</span><span class="thm-id">Thm. 2.31</span></div>
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">依概率有界</span><span class="thm-id">Prop. 2.22</span></div>
+    <div class="thm-body"><p>市场可行，当且仅当对每个 $T\in\mathbb R_+$，可达财富族 $\{X(T):X\in\mathcal X\}$ 在 $\mathbb P$ 下<b>依概率有界</b>（bounded in probability）：</p>
+    $$\lim_{m\to\infty}\sup_{X\in\mathcal X}\mathbb P\big[X(T)&gt;m\big]=0.$$
+    </div>
+  </div>
+
+  <p>直观上，若市场不可行，就存在一族策略，用越来越小的初始资本把某个时刻的财富推到越来越高的水平；反过来，这种“财富爆炸”正是构造免费提款流的原材料。</p>
+
+  <h3><span class="sn">5.2</span>五个等价刻画</h3>
+  <p>把第 4 节的结构条件 $\alpha=c\nu$ 与增长过程放在一起，就得到全书的核心定理。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">基本定理：可行性的五个等价条件</span><span class="thm-id">Thm. 2.31</span></div>
     <div class="thm-body"><p>对第 1 节的市场，下列陈述等价：</p>
     <ol>
-      <li>市场是可行的；</li>
-      <li>存在局部鞅折损因子，即 $\mathcal Y\ne\varnothing$；</li>
-      <li>存在上鞅计价单位组合；</li>
-      <li>市场具有局部有限增长：对每个 $T\ge0$，聚合最大增长过程满足 $G(T)&lt;\infty$；</li>
-      <li>对每个 $T\ge0$，$\{X(T):X\in\mathcal X\}$ 依概率有界。</li>
-    </ol></div>
+      <li>市场是可行的（viable）；</li>
+      <li>存在局部鞅折损因子：$\mathcal Y\neq\varnothing$；</li>
+      <li>存在上鞅计价单位（supermartingale numéraire）；</li>
+      <li>市场具有局部有限增长：$G(T)&lt;\infty$ 对所有 $T\in\mathbb R_+$；</li>
+      <li>依概率有界条件成立。</li>
+    </ol>
+    <p>其中 $G=\int g\,dO$，而逐点最大增长率是</p>
+    $$g=\sup_{p\in\mathbb R^n}\Big(p'\alpha-\tfrac12p'cp\Big)=\tfrac12\alpha'c^\dagger\alpha\,\mathbf 1_{\{\alpha\in\operatorname{range}(c)\}}+\infty\,\mathbf 1_{\{\alpha\notin\operatorname{range}(c)\}}.$$
+    </div>
   </div>
 
-  <p>“局部有限增长”可写成两个显式结构条件：</p>  $$\alpha(t)\in\operatorname{range}(c(t))\quad(\mathbb P\otimes O)\text{-a.e.},\qquad G(T)=\frac12\int_0^T\alpha'(t)c^\dagger(t)\alpha(t)\,dO(t)&lt;\infty.$$
-  <p>第一条说：漂移不能有“协方差看不见”的分量，否则可以剥离出套利。第二条说：最大可提取增长在有限时间内不能爆炸。</p>
+  <details class="proof"><summary>证明骨架：四条路径闭合</summary><div class="proof-body">
+    <p><b>$(2)\Rightarrow(1)$：</b>取 $Y\in\mathcal Y$。对任意 $K\in\mathcal K(x)$ 与融资它的财富 $X\ge K$，$YX$ 是局部鞅；局部化后用 Fatou 引理得 $\mathbb E[\int_0^\infty Y\,dK]\le x$。若 $x=0$，则 $\int Y\,dK=0$，由 $Y&gt;0$ 得 $K\equiv0$。</p>
+    <p><b>$(1)\Rightarrow(4)$：</b>反证。若 $(4)$ 失败，分两种情形。</p>
+    <p>(A) $\alpha\notin\operatorname{range}(c)$ 在一个非零测集上成立。令 $\phi=(\alpha-cc^\dagger\alpha)/\|\alpha-cc^\dagger\alpha\|^2$，则 $c\phi=0$ 而 $\phi'\alpha=1$。取 $\vartheta=\phi/S$，则</p>
+    $$\int\vartheta'dS=\int\phi'dR=\int\mathbf 1_{\{\alpha\notin\operatorname{range}(c)\}}\,dO=:K$$
+    <p>是零风险、非降、非零的提款流，且初始资本为零，违反可行性。</p>
+    <p>(B) $\alpha\in\operatorname{range}(c)$ 但 $G(T)=\infty$。取 $\nu=c^\dagger\alpha$，用截断 $\nu_m=\nu\mathbf 1_{\{\|\nu\|\le m\}}$ 可造出一列财富 $X_m$，使 $\mathbb P[X_m(T)&gt;m]\to1$，与依概率有界矛盾，从而违反 $(1)$。</p>
+    <p><b>$(4)\Rightarrow(3)$：</b>在结构条件下取 $\nu=c^\dagger\alpha$；$G(T)&lt;\infty$ 保证 $\nu\in I(R)$，且 $\alpha=c\nu$，由 Prop. 2.4 得计价单位性质。<b>$(3)\Rightarrow(2)$：</b>$Y=1/X^\nu$ 即折损因子。<b>$(1)\Leftrightarrow(5)$：</b>即 Prop. 2.22。</p>
+  </div></details>
 
-  <details class="proof"><summary>证明思路：五个方向如何咬合</summary><div class="proof-body"><p><b>(2)⇒(1)：</b>$YX$ 非负局部鞅从而是上鞅，故 $\mathbb E[Y(T)X(T)]\le x$；$x=0$ 迫使 $X(T)=0$。</p>
-  <p><b>(1)⇒(4)：</b>若 $\alpha\notin\operatorname{range}(c)$，取 $\phi=(\alpha-cc^\dagger\alpha)/\|\alpha-cc^\dagger\alpha\|^2$，则 $c\phi=0$、$\phi'\alpha=1$；取 $\vartheta=\phi/S$，财富 $\int\phi'dR=\int1_{\{\alpha\notin\operatorname{range}(c)\}}dO$ 是从零出发的非降非零过程。若 $G$ 爆炸，用截断的 $\nu_m=c^\dagger\alpha1_{\{\|\nu\|\le m\}}$ 构造增长率发散的财富。</p>
-  <p><b>(4)⇒(3)：</b>取 $\nu=c^\dagger\alpha$，则 $R^i-C^{i\nu}=M^i$，相对财富 $\mathcal E(\int(\pi-\nu)'dM)$ 是上鞅。<b>(3)⇒(2)：</b>取 $Y=1/X^\nu$。</p></div></details>
+  <h3><span class="sn">5.3</span>失败时会发生什么</h3>
+  <p>定理的价值一半在“等价”，一半在“反例”：当 $(4)$ 失败时，市场不是“稍微有点套利”，而是会出现非常剧烈的现象。</p>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">无噪声的正漂移：最赤裸的套利</span><span class="thm-id">Ex. 5.1</span></div>
-    <div class="thm-body"><p>设 $n=1$，$S(t)=100e^{0.08t}$，没有噪声，即 $\alpha=0.08$、$c=0$。此时 $\operatorname{range}(c)=\{0\}$，$\alpha\notin\operatorname{range}(c)$。初始借 $100$ 元买一股，财富为</p>
-    $$X(t)=S(t)-100=100(e^{0.08t}-1)&gt;0,\qquad t&gt;0.$$
-    <p>零初始资本、非负财富、正概率下严格为正：市场不可行。定理的“结构条件”在这里退化为“有漂移就必须有相应的噪声来定价它”。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">协方差退化造成的无风险利润</span><span class="thm-id">Ex. 5.1</span></div>
+    <div class="thm-body"><p>设 $n=2$，两只股票完全相关：$c^{11}=c^{22}=c^{12}=0.04$，即 $c=0.04\,\mathbf 1\mathbf 1'$，秩为 $1$，$\operatorname{range}(c)$ 由 $(1,1)$ 张成。取 $\alpha=(0.10,0.06)$。它到 $\operatorname{range}(c)$ 的投影是 $(0.08,0.08)$，正交残差是 $(0.02,-0.02)$。令</p>
+    $$\phi=\frac{(0.02,-0.02)}{0.02^2+0.02^2}=(25,-25).$$
+    <p>则 $c\phi=0$（因为 $\phi\perp(1,1)$），而 $\phi'\alpha=25(0.10)-25(0.06)=1$。策略 $\vartheta=\phi/S$ 的财富满足</p>
+    $$dX=\phi'dR=1\cdot dO,$$
+    <p>噪声项为零，即每单位运营时钟净赚 $1$，初始资本为零。两只“完全相关”的股票却有不同漂移，这个矛盾本身就是套利。</p></div>
   </div>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">3D Bessel：可行但没有现金计价的 EMM</span><span class="thm-id">Ex. 2.8 / 3.76</span></div>
-    <div class="thm-body"><p>设 $Z$ 满足 $Z=z+\int dt/Z+\int dW$，取股票价格 $S=Z$。则 $\alpha=1/Z^2$、$c=1/Z^2$，故 $\nu=1$、$G(T)=\tfrac12\int_0^Tdt/Z^2&lt;\infty$：市场可行。折损因子 $Y=1/Z$ 是严格局部鞅，$\mathbb E[1/Z_t]&lt;1/z$，因此它不能定义概率测度；以现金计价的等价鞅测度不存在。但若改用股票本身作计价单位，$P$ 又是该计价市场的 ELMM。这说明“EMM 是否存在”依赖于选哪个计价单位。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">增长在有限时间爆炸 / 瞬间爆炸</span><span class="thm-id">Ex. 2.36 / 2.38</span></div>
+    <div class="thm-body"><p>取 $R(t)=2\sqrt t+W(t)$。则 $\alpha(t)=1/\sqrt t$，$c\equiv1$，于是</p>
+    $$g(t)=\tfrac12\alpha(t)^2=\frac{1}{2t},\qquad G(T)=\int_0^T\frac{dt}{2t}=\infty,\quad \forall T&gt;0.$$
+    <p>增长在任意短的时间内就发散。对应的“增长最优组合”$\nu(t)=1/\sqrt t$ 不是 $R$-可积的，市场不可行。另一类例子让 $G$ 在某个有限时刻 $T$ 才爆炸，说明“$G(T)&lt;\infty$ 对所有 $T$”不能弱化为“存在某个 $T$”。</p></div>
   </div>
 
-  <div class="intuition"><div class="ih">直觉</div><p>把 $\alpha=c\nu$ 读成“漂移 = 协方差 × 风险价格”。若漂移有协方差之外的分量，市场就有一块“无人承担风险却必须支付”的收益，套利者可以把它剥离出来。$G&lt;\infty$ 则是“这块收益不能大到让财富在有限时间内无限复利”。</p></div>
+  <div class="intuition"><div class="ih">直觉</div><p>把 $\alpha$ 想成一个向量，$c$ 想成一张“可交易风险”的椭球。可行性要求 $\alpha$ 落在这张椭球张成的空间里；一旦 $\alpha$ 有垂直于椭球的分量，就存在一个“零风险却正漂移”的方向，那就是套利。$G(T)&lt;\infty$ 则是说：这个最优方向上的风险价格不能在一个有限区间内累积到无穷大。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>陈述</th><th>数学形式</th><th>失败时会怎样</th></tr></thead>
+    <thead><tr><th>条件</th><th>公式</th><th>金融读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">可行</td><td>$x(K)=0\Rightarrow K=0$</td><td>可用任意小资本融资非零流</td></tr>
-      <tr><td class="id">折损因子</td><td>$Y,YS^i$ 局部鞅</td><td>无法把财富压成上鞅</td></tr>
-      <tr><td class="id">上鞅计价单位</td><td>$X^\pi/X^\nu$ 上鞅</td><td>存在跑赢所有组合的策略</td></tr>
-      <tr><td class="id">局部有限增长</td><td>$\alpha\in\operatorname{range}(c),\ G(T)&lt;\infty$</td><td>漂移可提取或增长爆炸</td></tr>
-      <tr><td class="id">依概率有界</td><td>$\sup_X\mathbb P[X(T)&gt;m]\to0$</td><td>财富可一致冲向无穷</td></tr>
+      <tr><td class="id">可行性</td><td>$x(K)=0\Rightarrow K\equiv0$</td><td>无免费午餐</td></tr>
+      <tr><td class="id">分布式</td><td>$\sup_X\mathbb P[X(T)&gt;m]\to0$</td><td>财富不爆炸</td></tr>
+      <tr><td class="id">折损因子</td><td>$\mathcal Y\neq\varnothing$</td><td>存在 SDF</td></tr>
+      <tr><td class="id">计价单位</td><td>$\alpha=c\nu$</td><td>增长最优组合存在</td></tr>
+      <tr><td class="id">局部有限增长</td><td>$G(T)&lt;\infty$</td><td>$\tfrac12\int\alpha'c^\dagger\alpha\,dO&lt;\infty$</td></tr>
+      <tr><td class="id">失败 A</td><td>$\alpha\notin\operatorname{range}(c)$</td><td>零风险正漂移</td></tr>
+      <tr><td class="id">失败 B</td><td>$G(T)=\infty$</td><td>增长爆炸</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：viability（可行性）、arbitrage（套利）、no-arbitrage（无套利）、free lunch（免费午餐）、bounded in probability（依概率有界）、attained（达到）、contradiction（矛盾）、discontinuous（不连续）、claims（权益）、system（系统）、event（事件）、typically（通常）、path（路径）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">定理的边界条件</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">“无套利”有强弱之分</span></div>
     <div class="thm-body"><ul>
-      <li><b>定理是连续价格、有限资产、无组合约束的。</b> 有交易约束、跳跃或无限资产时，等价关系要改写；第 11 节会给出两个版本。</li>
-      <li><b>可行性不蕴含 EMM。</b> Bessel 例子说明：现金计价的 EMM 可能不存在，但局部鞅折损因子仍存在。折损因子比 EMM 更弱、更自然。</li>
-      <li><b>$G$ 不是市场组合的增长率。</b> 它是所有组合中可提取的最大对数增长，等于 $\tfrac12\alpha'c^\dagger\alpha$ 的积分；市场组合的增长率一般小于它。</li>
-      <li><b>$\alpha\in\operatorname{range}(c)$ 不是“$\alpha=0$”。</b> 它允许正漂移，只要求漂移能被某个组合的协方差表示。</li>
+      <li><b>可行性 ≠ NFLVR。</b> 本书的可行性是 NUPBR，允许“有界风险的无界利润”以外的更弱情形；NFLVR 还要求存在等价局部鞅测度，条件更强。</li>
+      <li><b>$\mathcal K(0)=\{0\}$ 不够。</b> 必须排除“任意小初始资本”的免费流；两者之间的差别正是 Example 2.36 的内容。</li>
+      <li><b>“没有套利”不等于“价格唯一”。</b> 可行性只保证存在折损因子；不完全市场里折损因子是一整个集合，价格是一个区间。</li>
+      <li><b>$\alpha=c\nu$ 要在 $c$ 的值域上解。</b> 若 $c$ 奇异，$\nu$ 只在 $\operatorname{range}(c)$ 上唯一，核方向是 $R$-零投资。</li>
+      <li><b>局部有限增长不是“增长有界”。</b> 它只要求每个有限区间上有限，允许 $G(\infty)=\infty$；后者恰是长期增长故事的起点。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch6" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 2–3 · 测度变换</div>
-  <h2><span class="num">6</span>等价鞅测度与模型一致测度</h2>
-  <p class="lede">“风险中性定价”不是假设投资者风险中性，而是换一个概率测度，让折现价格变成鞅。换测度的代价由 Girsanov 定理精确记账。</p>
+  <div class="sec-label">Chapter 2 · §2.3</div>
+  <h2><span class="num">6</span>增长最优：Kelly 组合的三种身份</h2>
+  <p class="lede">“增长最优”不是“收益最高”。它是唯一一个让所有其他组合的相对财富都变成上鞅的组合；因此它同时是 Kelly 策略、对数效用最优策略，以及长期几乎必然跑赢的策略。</p>
 
-  <div class="chap-intro"><p>本章把第 4 节的折损因子翻译成概率测度：当折损因子是真正的密度时，得到等价（局部）鞅测度；当市场存在不可对冲噪声时，得到一族“模型一致测度”。二者共同给出定价的上确界公式，也是第 8 节完全性讨论的入口。</p><span class="tag">测度变换</span></div>
+  <div class="chap-intro"><p>本节证明：增长最优 $\Leftrightarrow$ 上鞅计价单位 $\Leftrightarrow$ 相对对数最优。三条看起来不同的性质，在连续半鞅市场里是同一件事。还给出长期极限定理：相对财富的对数除以“相对增长时钟”，几乎必然收敛到 $-1$。</p><span class="tag">增长最优</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">EMM</span><span class="chip">ELMM</span><span class="chip">Girsanov</span><span class="chip">风险价格</span><span class="chip">模型一致测度</span><span class="chip">风险中性定价</span>
+    <span class="chip hot">增长最优</span><span class="chip">Kelly</span><span class="chip">对数效用</span><span class="chip">相对增长时钟</span><span class="chip">长期极限</span><span class="chip">击中目标</span><span class="chip">内幕信息</span>
   </div>
 
-  <h3><span class="sn">6.1</span>从折损因子到测度</h3>
-  <p>若 $Y$ 是折损因子，且对每个 $T$ 都有 $\mathbb E[Y(T)]=1$，则 $Y(T)$ 可以作为 $\mathcal F(T)$ 上的密度，定义 ${\mathbb Q}\sim\mathbb P$。此时对任意 $X\in\mathcal X$，$YX$ 是 $\mathbb P$-局部鞅，等价于 $X$ 是 $\mathbb Q$-局部鞅。特别地，若现金是计价单位（$X^\nu\equiv1$），则 $S^i$ 在 $\mathbb Q$ 下是局部鞅：${\mathbb Q}$ 就是<b>等价局部鞅测度</b>（ELMM）。若进一步 $S^i$ 是真鞅，则称为<b>等价鞅测度</b>（EMM）。</p>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">模型一致概率测度</span><span class="thm-id">Def. 3.12</span></div>
-    <div class="thm-body"><p>称 ${\mathbb Q}\sim\mathbb P$ 为模型一致测度，若第 1 节分解中的局部鞅向量 $M=(M^1,\dots,M^n)$ 在 ${\mathbb Q}$ 下仍是局部鞅。等价地，$S^i/X^\nu$ 在 ${\mathbb Q}$ 下是局部鞅，且半鞅分解 $R^i=A^i+M^i$ 中的 $A^i$ 不变。全体记为 $\Pi$。</p>
-    <p>当 $A\equiv0$（现金本身就是局部鞅计价单位）时，$\Pi$ 就是现金计价的 ELMM 集合；当 $A\ne0$ 时，$\Pi$ 保持漂移不变，只重新加权与 $M$ 正交的噪声。</p></div>
-  </div>
-
-  <p>在单因子扩散模型中，设 $dS/S=\mu\,dt+\sigma\,dW$，风险价格 $\theta=\mu/\sigma$。Girsanov 定理给出</p>
-  $$dW^{\mathbb Q}=dW+\theta\,dt,\qquad \frac{d\mathbb Q}{d\mathbb P}\Big|_{\mathcal F(T)}=\mathcal E\Big(-\int_0^{\cdot}\theta\,dW\Big)(T).$$
-  <p>在新测度下 $dS/S=\sigma\,dW^{\mathbb Q}$，漂移被“消掉”。多因子时 $\theta=\sigma^{\top}(\sigma\sigma^{\top})^{-1}\mu$，只在 $\mu\in\operatorname{range}(\sigma)$ 时存在；这正是第 5 节结构条件的概率版本。</p>
-
-  <h3><span class="sn">6.2</span>二项定价：把期望算出来</h3>
-  <p>设 $S_0=100$，一期后 $S_1\in\{120,80\}$，无风险利率 $r=5\%$，故 $e^{r}=1.05127$。风险中性概率由“折现价格是鞅”唯一确定：</p>
-  $$q=\frac{e^{r}-d}{u-d}=\frac{1.05127-0.8}{1.2-0.8}=0.62818.$$
-  <p>看涨期权执行价 $K=100$，到期收益为 $20$ 或 $0$，价格与对冲比分别为</p>
-  $$V_0=e^{-r}\big(q\cdot20+(1-q)\cdot0\big)=0.95123\times12.5636=11.95,\qquad \Delta=\frac{20-0}{120-80}=0.5.$$
-  <p>复制组合为 $0.5$ 股股票加现金 $11.95-50=-38.05$（借款）。上涨时 $60-38.05e^{r}=20$，下跌时 $40-38.05e^{r}=0$，恰好复制。</p>
+  <h3><span class="sn">6.1</span>逐点最大增长</h3>
+  <p>记 $\Gamma^\pi:=\int_0^{\cdot}\gamma^\pi(t)\,dO(t)$ 为组合的<b>累计增长</b>。称 $\nu$ 为<b>增长最优</b>（growth-optimal），若对每个 $\pi\in I(R)$，</p>
+  $$\gamma^\pi(t)\le\gamma^\nu(t)\qquad (\mathbb P\otimes O)\text{-a.e.}$$
+  <p>这是逐点（逐状态、逐时刻）的比较，比“期望对数最大”强得多。由二次函数的配方，</p>
+  $$\gamma^\pi-\gamma^\rho=-\tfrac12(\pi-\rho)'c(\pi-\rho)+(\pi-\rho)'(\alpha-c\rho).$$
+  <p>右端第一项永远非正，第二项是“相对风险溢价”。若 $\rho=\nu$ 且 $\alpha=c\nu$，第二项为零，于是 $\gamma^\pi\le\gamma^\nu$ 对一切 $\pi$ 成立。反过来，若 $\rho$ 逐点最大，取 $\pi=\rho+\varepsilon\xi$ 并令 $\varepsilon\downarrow0$，得 $\xi'(\alpha-c\rho)\ge0$ 对所有 $\xi$ 成立；再用 $\pm\xi$ 就逼出 $\alpha=c\rho$。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">用模型一致测度表示融资资本</span><span class="thm-id">Prop. 3.14</span></div>
-    <div class="thm-body"><p>在可行市场中，对任意 $K\in\mathcal K$，</p>
-    $$x(K)=\sup_{\mathbb Q\in\Pi}\mathbb E_{\mathbb Q}\Big[\int_0^\infty\frac{dK(t)}{X^\nu(t)}\Big].$$
-    <p>若 $K=h1_{[T,\infty)}$ 是到期支付 $h$ 的欧式索赔，则 $x(K)=\sup_{\mathbb Q\in\Pi}\mathbb E_{\mathbb Q}[h/X^\nu(T)]$。这就是“最坏情景折现期望”的定价公式。</p></div>
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">增长最优 = 上鞅计价单位</span><span class="thm-id">Prop. 2.41</span></div>
+    <div class="thm-body"><p>组合 $\rho$ 是增长最优的，当且仅当它具有上鞅计价单位性质。因此增长最优组合就是第 4 节的 $\nu=c^\dagger\alpha$（在 $\operatorname{range}(c)$ 上唯一）。</p></div>
   </div>
 
-  <details class="proof"><summary>证明思路：密度、Bayes 与上确界</summary><div class="proof-body"><p>对 ${\mathbb Q}\in\Pi$，密度过程 $Z^{\mathbb Q}=d{\mathbb Q}/d{\mathbb P}|_{\mathcal F(\cdot)}$ 是严格正鞅，且 $Y^{\mathbb Q}=Z^{\mathbb Q}/X^\nu$ 是折损因子。于是 $\mathbb E_{\mathbb P}\int Y^{\mathbb Q}dK=\mathbb E_{\mathbb Q}\int dK/X^\nu$，再由第 7 节的融资对偶 $x(K)=\sup_{Y\in\mathcal Y}\mathbb E_{\mathbb P}\int YdK$ 取上确界。反向不等式用折损因子的结构 $Y=(1/X^\nu)\mathcal E(L)$：把正交局部鞅 $L$ 的密度部分归入某个 ${\mathbb Q}\in\Pi$，即可逼近任意折损因子。</p></div></details>
+  <p>这条命题把“优化”变成了“代数”：不需要解动态规划，只需解一个线性方程 $c\nu=\alpha$。若 $c$ 可逆，$\nu=c^{-1}\alpha$；若 $c$ 奇异，取伪逆并在核上取零。</p>
 
-  <div class="intuition"><div class="ih">直觉</div><p>风险中性测度不是“真实概率”，而是把风险价格从漂移里挪到测度里的坐标。市场越不完全，能挪的方向越多，$\Pi$ 越大，定价上确界越高；完全市场里 $\Pi$ 只有一个点，价格唯一。</p></div>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">单股票的杠杆选择</span><span class="thm-id">Ex. 6.1</span></div>
+    <div class="thm-body"><p>设 $\alpha=0.06$，$c=0.04$（$\sigma=20\%$）。增长最优杠杆是</p>
+    $$\nu=\frac{\alpha}{c}=1.5,\qquad \gamma^\nu=\tfrac12(1.5)^2(0.04)=0.045.$$
+    <p>把全部财富投股票（$\pi=1$）只得到 $\gamma=0.06-\tfrac12(0.04)=0.04&lt;0.045$；加三倍杠杆（$\pi=3$）得到 $3(0.06)-\tfrac12(9)(0.04)=0.18-0.18=0$。杠杆超过 $1.5$ 之后，方差税超过风险溢价，长期增长反而下降。$\nu=1.5$ 是“增长-风险”曲线的顶点，不是“收益”曲线的顶点。</p></div>
+  </div>
+
+  <h3><span class="sn">6.2</span>长期极限：相对财富的强收敛</h3>
+  <p>定义<b>相对增长时钟</b> $\Gamma^\pi_\nu:=\Gamma^\nu-\Gamma^\pi=\tfrac12\int(\pi-\nu)'c(\pi-\nu)\,dO$。它非降，度量“$\pi$ 比 $\nu$ 多承担了多少可分散风险”。由 Dambis–Dubins–Schwarz 表示，在可能扩大的概率空间上存在布朗运动 $W$，使</p>
+  $$\log\frac{X^\pi}{X^\nu}=-\Gamma^\pi_\nu+\sqrt{2}\,W(\Gamma^\pi_\nu).$$
+  <p>右端是“负漂移的布朗运动”。由布朗运动的强大数律，若 $\Gamma^\pi_\nu(\infty)&lt;\infty$，比值收敛到 $(0,\infty)$ 内的随机变量；若 $\Gamma^\pi_\nu(\infty)=\infty$，则</p>
+  $$\lim_{T\to\infty}\frac{1}{\Gamma^\pi_\nu(T)}\log\frac{X^\pi(T)}{X^\nu(T)}=-1\qquad \mathbb P\text{-a.e.}$$
+  <p>这就是 Prop. 2.43。它比“上鞅”强：不只是期望不增，而是<b>每一条路径</b>上的对数比值都被相对增长时钟以斜率 $-1$ 压下去。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">相对对数最优</span><span class="thm-id">Def. 2.45 / Prop. 2.46</span></div>
+    <div class="thm-body"><p>称 $\rho$ 为<b>相对对数最优</b>（relatively log-optimal），若对每个 $\pi\in I(R)$ 与每个停时 $\tau$，</p>
+    $$\mathbb E\big[(\log X^\rho_\pi(\tau))^+\big]&lt;\infty,\qquad \mathbb E\big[\log X^\rho_\pi(\tau)\big]\le0.$$
+    <p>则 $\rho$ 相对对数最优 $\Leftrightarrow$ $\rho$ 是上鞅计价单位。证明只用可选抽样与 Jensen：$X^\rho_\pi$ 是上鞅，故 $\mathbb E[X^\rho_\pi(\tau)]\le1$，再用 $(\log x)^+\le x$ 与 $\log$ 的凹性。</p></div>
+  </div>
+
+  <h3><span class="sn">6.3</span>以最快速度击中目标</h3>
+  <p>增长最优还有一个“时间最优”的读法。设 $G(\infty)=\infty$，对 $\ell&gt;0$ 定义击中时间</p>
+  $$\tau_{\pi,\ell}:=\inf\{t\ge0:\log X^\pi(t)\ge\ell\}.$$
+  <p>也就是说，$\pi$ 把财富从 $1$ 推到 $e^\ell$ 所需的时间。则对任意 $\pi$，</p>
+  $$\mathbb E\big[G(\tau_{\nu,\ell})\big]=\inf_{\pi\in I(R)}\mathbb E\big[G(\tau_{\pi,\ell})\big]=\ell.$$
+  <p>这就是 Prop. 2.50：在“市场时间”$G$ 的度量下，增长最优组合以最小期望时间击中任意目标。它不是“最快致富”的策略（那通常需要承担爆炸性风险），而是在所有可容许策略中、以市场时钟计量的最优。</p>
+
+  <p>还有一个反直觉的结论（Prop. 2.51）：设 $\iota_\nu$ 是 $X^\nu$ 达到其历史最低点的最晚时间。则在 $[0,\iota_\nu]$ 上，货币市场（现金）本身就是局部鞅计价单位——<b>连内幕交易者也无法在这段时间里跑赢现金</b>。这说明“计价单位性质”可以只在随机区间上局部成立，而不必全局成立。</p>
+
+  <div class="intuition"><div class="ih">直觉</div><p>增长最优组合是“对数效用”的贪婪解：它把每一份风险都配置到“风险溢价 / 方差”相等的位置。它的财富曲线不一定最陡，但它的对数曲线最直。任何偏离都会引入一个非负的“相对增长时钟”，长期看就是一条向下的漂移。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>对象</th><th>定义</th><th>存在性</th></tr></thead>
+    <thead><tr><th>陈述</th><th>公式 / 条件</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">ELMM</td><td>$S$ 在 $\mathbb Q$ 下局部鞅</td><td>NFLVR 下通常存在；本书可行性不保证</td></tr>
-      <tr><td class="id">EMM</td><td>$S$ 在 $\mathbb Q$ 下真鞅</td><td>比 ELMM 更强</td></tr>
-      <tr><td class="id">$\Pi$</td><td>$M$ 在 $\mathbb Q$ 下局部鞅</td><td>可行市场非空（含 $P$ 的等价类）</td></tr>
-      <tr><td class="id">Girsanov</td><td>$dW^{\mathbb Q}=dW+\theta dt$</td><td>$\theta=\sigma^{-1}\mu$</td></tr>
-      <tr><td class="id">定价</td><td>$\sup_{\mathbb Q\in\Pi}\mathbb E_{\mathbb Q}[h/X^\nu(T)]$</td><td>完全市场退化为单点</td></tr>
+      <tr><td class="id">增长最优</td><td>$\gamma^\pi\le\gamma^\nu,\ \forall\pi$</td><td>逐点最大</td></tr>
+      <tr><td class="id">代数刻画</td><td>$\alpha=c\nu$</td><td>$\nu=c^\dagger\alpha$</td></tr>
+      <tr><td class="id">累计增长</td><td>$\Gamma^\pi=\int\gamma^\pi dO$</td><td>市场时钟上的积分</td></tr>
+      <tr><td class="id">相对时钟</td><td>$\Gamma^\pi_\nu=\tfrac12\int(\pi-\nu)'c(\pi-\nu)dO$</td><td>非降</td></tr>
+      <tr><td class="id">长期极限</td><td>$\log(X^\pi/X^\nu)=-\Gamma^\pi_\nu+\sqrt2W(\Gamma^\pi_\nu)$</td><td>斜率 $-1$</td></tr>
+      <tr><td class="id">对数最优</td><td>$\mathbb E\log(X^\pi/X^\rho)(\tau)\le0$</td><td>等价于上鞅计价单位</td></tr>
+      <tr><td class="id">击中目标</td><td>$\mathbb E[G(\tau_{\nu,\ell})]=\ell$</td><td>市场时间最优</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：growth-optimal（增长最优）、log-optimality（对数最优性）、Kelly portfolio（凯利组合）、relative growth（相对增长）、stopping time（停时）、asymptotic（渐近）、almost surely（几乎必然）、horizon（期限）、maximizer（最大化者）、optimality（最优性）、deflator（折损因子）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">测度变换的四个陷阱</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">Kelly 不是“稳赚”</span></div>
     <div class="thm-body"><ul>
-      <li><b>把 ELMM 当 EMM。</b> 局部鞅可能不是真鞅；只有真鞅才能安全取期望定价。</li>
-      <li><b>以为 EMM 一定存在。</b> 可行市场可能没有现金计价的 ELMM；此时定价要用全部折损因子/模型一致测度，而不是单个“风险中性测度”。</li>
-      <li><b>把 $\Pi$ 当成风险中性测度。</b> $\Pi$ 保持漂移 $A$ 不变，只重新加权正交噪声；它只在 $A=0$ 时与 EMM 重合。</li>
-      <li><b>忽略密度可积性。</b> Girsanov 需要密度是真鞅；若 $\mathbb E[Z_T]&lt;1$，测度只定义在部分概率空间上，定价公式会漏掉“死亡状态”。</li>
+      <li><b>增长最优 ≠ 期望财富最大。</b> 最大化 $\mathbb E[X(T)]$ 通常会押上全部甚至加杠杆，而 Kelly 最大化的是 $\mathbb E\log X(T)$。</li>
+      <li><b>长期跑赢 ≠ 短期不亏。</b> 相对财富仍是布朗运动，短期可以大幅回撤；极限定理只在 $T\to\infty$ 或 $\Gamma^\pi_\nu\to\infty$ 时成立。</li>
+      <li><b>$\nu=c^\dagger\alpha$ 依赖 $\alpha$ 已知。</b> 现实中 $\alpha$ 未知，估计误差会被 $c^{-1}$ 放大；这就是“Kelly 在实践中过于激进”的原因。</li>
+      <li><b>“相对对数最优”不是“绝对对数最优”。</b> 它比较的是与基线 $\rho$ 的比值，不是绝对财富；基线选择会改变数值。</li>
+      <li><b>$G(\infty)=\infty$ 不是自动的。</b> 若市场长期停滞，$G$ 可能收敛，长期极限定理就没有内容。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch7" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 3 · §§3.1–3.2</div>
-  <h2><span class="num">7</span>融资、对冲与上对冲对偶</h2>
-  <p class="lede">给定一笔未来负债，最少要准备多少资本？答案不是一个数，而是一个最坏情景：在所有折损因子里，取折现现金流期望的上确界。</p>
+  <div class="sec-label">Chapter 2 · §2.4–2.5</div>
+  <h2><span class="num">7</span>平衡市场、CAPM 与有效前沿</h2>
+  <p class="lede">如果市场组合自己就是计价单位，资本会怎样流动？如果每只股票的超额收益都落在“市场 β”这条直线上，市场又长什么样？本节把这两个问题都化成 $\alpha$ 与 $c$ 的代数条件。</p>
 
-  <div class="chap-intro"><p>本章先证明可选分解：一个非负过程是“可融资的财富”，当且仅当它在所有折损因子下都是上鞅。由此得到融资对偶定理 $x(K)=\sup_Y\mathbb E\int YdK$，它把“复制/对冲”从一个构造问题变成一凸优化问题。</p><span class="tag">对冲与对偶</span></div>
+  <div class="chap-intro"><p>先研究<b>股票组合</b>中的局部鞅计价单位：它存在的充要条件是漂移具有 $A^i=F+C^{i\rho}$ 的形状。若 $\rho$ 就是市场组合，市场称为<b>完美平衡</b>（perfectly balanced）；此时相对市场权重是鞅，长期资本会集中到一只股票。随后给出<b>资本资产定价模型</b>（CAPM）的精确刻画，并用单期均值-方差（mean-variance）有效前沿（efficient frontier）把它与经典组合理论对接。</p><span class="tag">CAPM</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">可选分解</span><span class="chip">融资资本</span><span class="chip">上对冲</span><span class="chip">上确界</span><span class="chip">最小对冲</span><span class="chip">本质上确界</span>
+    <span class="chip hot">完美平衡</span><span class="chip">市场组合</span><span class="chip">资本集中</span><span class="chip">CAPM</span><span class="chip">β</span><span class="chip">均值-方差</span><span class="chip">有效前沿</span><span class="chip">切点组合</span>
   </div>
 
-  <h3><span class="sn">7.1</span>可选分解：什么才算“财富过程”</h3>
-  <p>第 1 节从策略出发定义财富；可选分解反过来，从“折损后的上鞅性”刻画财富。这个逆向刻画是全书最有力的工具之一：它把策略存在性变成了一个只需逐点检验的不等式。</p>
+  <h3><span class="sn">7.1</span>股票组合中的局部鞅计价单位</h3>
+  <p>第 4 节的计价单位可以持有现金；若限制在“只买股票、不借现金”的组合 $\rho\in I(R;H^{n-1})$ 中，条件会更具体。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">可选分解</span><span class="thm-id">Thm. 3.1</span></div>
-    <div class="thm-body"><p>设市场可行，$X$ 是非负、右连续适应过程，$X(0)=x$。则下列等价：</p>
-    <ol>
-      <li>对每个折损因子 $Y\in\mathcal Y$，$YX$ 是上鞅；</li>
-      <li>存在策略 $\vartheta$ 与提款流 $K\in\mathcal K$，使得</li>
-    </ol>
-    $$X(t)=x+\int_0^t\vartheta'(s)\,dS(s)-K(t).$$
-    <p>分解在“初始资本 + 提款流”意义下唯一；策略在 $(\mathbb P\otimes O)$-零集外唯一。</p></div>
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">股票计价单位的刻画</span><span class="thm-id">Prop. 2.63</span></div>
+    <div class="thm-body"><p>$\rho\in I(R;H^{n-1})$ 是局部鞅计价单位股票组合，当且仅当存在适应、连续、在紧区间上有限变差的标量过程 $F$，使得</p>
+    $$A^i=F+C^{i\rho},\qquad 1\le i\le n.$$
+    <p>此时 $S^i/X^\rho$ 对每个 $i$ 都是局部鞅。</p></div>
   </div>
 
-  <details class="proof"><summary>证明思路：从“所有 Y”反推策略</summary><div class="proof-body"><p>必要性是乘积法则：$Y$ 与 $YS^i$ 都是局部鞅，故 $YX$ 是非负局部鞅，从而是上鞅。充分性用凸集分离：把所有“折损后上鞅”的过程组成一个闭凸锥，若 $X$ 不在“可融资财富”锥中，就存在一个分离泛函，它对应某个折损因子 $Y$，使 $YX$ 不是上鞅，矛盾。分离定理的具体形式是附录的 Bipolar Theorem；$K$ 则由 $X$ 的有限变差部分取出，正好是“提款”。</p></div></details>
+  <p>证明只需把 $S^i/X^\rho$ 写成随机指数：$R^\rho_i=(R^i-C^{i\rho})-(R^\rho-C^{\rho\rho})$。要它成为局部鞅，充要条件是漂移 $A^i-C^{i\rho}$ 与 $A^\rho-C^{\rho\rho}$ 相等，而这个公共值正是 $F$。注意 $F$ 可以是奇异的：它不必对任何 $C^{ii}$ 绝对连续，因此“股票计价单位存在”<b>不</b>蕴含市场可行。这是 Prop. 2.64 的要点，也是股票组合与一般组合的关键区别。</p>
 
-  <h3><span class="sn">7.2</span>融资对偶</h3>
+  <h3><span class="sn">7.2</span>完美平衡市场：资本终将集中</h3>
+  <p>把 $\rho$ 取成市场组合 $\mu$。若 $A^i=F+C^{i\mu}$，则市场组合是局部鞅计价单位；等价地，相对市场权重 $\mu^i$ 是（局部）鞅。这样的市场称为<b>完美平衡</b>（perfectly balanced）。在完美平衡市场中，</p>
+  $$\mu^i(t)=\mu^i(0)\,\mathcal E\Big(\int_0^t(e_i-\mu(s))'\,dM(s)\Big),$$
+  <p>即市场权重只由噪声 $M$ 驱动，漂移被 $F$ 完全吸收。</p>
+
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">融资资本的上确界表示</span><span class="thm-id">Thm. 3.7</span></div>
-    <div class="thm-body"><p>设市场可行。对任意 $K\in\mathcal K$，</p>
-    $$x(K)=\sup_{Y\in\mathcal Y}\mathbb E\Big[\int_0^\infty Y(t)\,dK(t)\Big].$$
-    <p>若 $x(K)&lt;\infty$，则上确界可达：存在策略与提款流，从 $x(K)$ 出发融资 $K$。对欧式索赔 $K=h1_{[T,\infty)}$，公式化为</p>
-    $$x(h1_{[T,\infty)})=\sup_{Y\in\mathcal Y}\mathbb E[Y(T)h].$$
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">资本集中</span><span class="thm-id">Prop. 2.67</span></div>
+    <div class="thm-body"><p>设市场完美平衡，且股票“可区分”（distinctive，即任意两只股票的相对价格不是常数）。则</p>
+    $$\mathbb P\big[\mu^i(\infty)=1\big]=\mu^i(0),\qquad 1\le i\le n.$$
+    <p>也就是说，长期来看全部资本几乎必然集中到<b>一只</b>股票上，第 $i$ 只股票最终胜出的概率恰好是它当前的市值权重。</p></div>
+  </div>
+
+  <p>这条结论看起来与“分散化”直觉相反，但逻辑很干净：$\mu$ 是有界鞅，故 $\mu(\infty)$ 存在；可区分性排除了两只股票长期保持固定比例；在单纯形上，唯一的不动点就是某个顶点。完美平衡不是“稳定”，而是“慢速的赢家通吃”。Example 2.68 用两只股票造出显式例子：$\mu^1$ 是一个 $[0,1]$-值鞅，最终几乎必然收敛到 $0$ 或 $1$。</p>
+
+  <h3><span class="sn">7.3</span>CAPM：超额收益落在一条直线上</h3>
+  <p>经典 CAPM 说：个股的期望超额收益与市场超额收益成正比，比例是 $\beta$。在连续时间、连续价格的设定下，这句话可以被精确写成“收益的漂移是市场收益漂移的倍数，且残差与市场正交”。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">处于 CAPM 领域</span><span class="thm-id">(2.52)</span></div>
+    <div class="thm-body"><p>称市场处于<b>资本资产定价模型</b>（Capital Asset Pricing Model, CAPM）的领域，若存在可预测的 $\beta_i\in I(R^\mu)$ 与连续局部鞅 $N_i$，使</p>
+    $$R^i=\int_0^{\cdot}\beta_i(t)\,dR^\mu(t)+N_i,\qquad [N_i,R^\mu]\equiv0,\quad N_i(0)=0.$$
+    <p>$\beta_i$ 是股票 $i$ 对市场的<b>贝塔</b>（beta），$N_i$ 是<b>特质</b>（idiosyncratic）噪声。</p></div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">CAPM 的充要条件</span><span class="thm-id">Prop. 2.69</span></div>
+    <div class="thm-body"><p>市场处于 CAPM 领域，当且仅当下面两条成立：</p>
+    <p><b>(A)</b> 存在标量“杠杆”过程 $b$，使在 $\{c^{\mu\mu}&gt;0\}$ 上 $\alpha_i=b\,c^{i\mu}$ 对所有 $i$ 成立；</p>
+    <p><b>(B)</b> 在 $\{c^{\mu\mu}=0\}$ 上，$\alpha^\mu=0$ 与“所有 $\alpha_i=0$”等价。</p>
+    <p>此时可取</p>
+    $$b=\frac{\alpha^\mu}{c^{\mu\mu}}\mathbf 1_{\{c^{\mu\mu}&gt;0\}},\qquad \beta_i=\frac{c^{i\mu}}{c^{\mu\mu}}\mathbf 1_{\{c^{\mu\mu}&gt;0\}}+\frac{\alpha_i}{\alpha^\mu}\mathbf 1_{\{c^{\mu\mu}=0,\ \alpha^\mu\ne0\}}.$$
     </div>
   </div>
 
-  <p>这条公式把“上对冲”说清楚了：用任何折损因子折现，负债的期望都不能超过初始资本；最坏的那个折损因子决定价格。它与第 6 节的模型一致测度版本 $x(K)=\sup_{\mathbb Q\in\Pi}\mathbb E_{\mathbb Q}[K^\nu]$ 是同一枚硬币的两面。</p>
+  <p>把 (A) 写成期望形式就是熟悉的 CAPM 公式：</p>
+  $$\alpha_i=\beta_i\,\alpha^\mu,\qquad \beta_i=\frac{c^{i\mu}}{c^{\mu\mu}}=\frac{\operatorname{Cov}(R^i,R^\mu)}{\operatorname{Var}(R^\mu)}.$$
+  <p>若市场可行，$\alpha=c\nu$，于是 $\alpha_i=c^{i\nu}$。CAPM 要求 $\nu-b\mu\in\ker(c)$，即增长最优组合在市场方向上与市场组合一致：$\nu$ 等于 $b\mu$ 加上一个 $R$-零的核方向。这也解释了为什么 CAPM 与可行性是两个独立的条件：Prop. 2.69 只约束漂移的方向，不保证 $b$ 可积；Example 2.71 给出一个满足 CAPM 但不可行的市场。</p>
+
+  <h3><span class="sn">7.4</span>单期均值-方差与有效前沿</h3>
+  <p>连续时间 CAPM 的“静态影子”是 Markowitz 的均值-方差优化。把 $c$ 看成单期协方差矩阵，$\alpha$ 看成期望超额收益，考虑</p>
+  $$\min_{\pi}\ \tfrac12\pi'c\pi\quad\text{s.t.}\quad \pi'\alpha=m,\quad \pi'\mathbf 1=1.$$
+  <p>拉格朗日一阶条件是 $c\pi=\lambda\alpha+\gamma\mathbf 1$，故</p>
+  $$\pi(m)=c^{-1}(\lambda\alpha+\gamma\mathbf 1),\qquad \lambda=\frac{A m-B}{\Delta},\quad \gamma=\frac{C-Bm}{\Delta},$$
+  <p>其中 $A=\mathbf 1'c^{-1}\mathbf 1$，$B=\mathbf 1'c^{-1}\alpha$，$C=\alpha'c^{-1}\alpha$，$\Delta=AC-B^2$。最小方差是</p>
+  $$\sigma^2(m)=\frac{Am^2-2Bm+C}{\Delta}.$$
+  <p>这是一条抛物线；在 $(\sigma,m)$ 平面上，上半支就是<b>有效前沿</b>（efficient frontier）。全局最小方差组合在 $m=B/A$，方差 $1/A$。</p>
+  <p>若还有无风险利率 $r_f$，把 $\alpha$ 换成超额收益 $\alpha-r_f\mathbf 1$，则<b>切点组合</b>（tangency portfolio）为</p>
+  $$\pi_{\tan}\propto c^{-1}(\alpha-r_f\mathbf 1),$$
+  <p>它与无风险资产的连线就是<b>资本市场线</b>（capital market line）。在均衡中，切点组合等于市场组合，于是 $\pi_{\tan}=\mu$，反解出 $\alpha=\gamma c\mu$，正是 CAPM 的 (A)。</p>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">二项市场的上对冲</span><span class="thm-id">Ex. 7.1</span></div>
-    <div class="thm-body"><p>沿用 $S_0=100$、$u=1.2$、$d=0.8$、$r=5\%$。考虑执行价 $K=110$ 的看涨期权，到期收益 $10$ 或 $0$。风险中性概率 $q=0.62818$，故</p>
-    $$x=e^{-0.05}q\cdot10=5.975,\qquad \Delta=\frac{10-0}{120-80}=0.25.$$
-    <p>复制组合为 $0.25$ 股股票加现金 $5.975-25=-19.025$。上涨时 $30-19.025e^{0.05}=10$，下跌时 $20-19.025e^{0.05}=0$。对冲比 $\Delta$ 就是“股价每涨 $1$ 元，期权多值 $0.25$ 元”。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">两资产有效前沿与切点</span><span class="thm-id">Ex. 7.1</span></div>
+    <div class="thm-body"><p>设 $\alpha=(8\%,12\%)$，$\sigma_1=20\%$，$\sigma_2=30\%$，$\rho=0.3$，$r_f=2\%$。则</p>
+    $$c=\begin{pmatrix}0.04&amp;0.018\\0.018&amp;0.09\end{pmatrix},\quad \det c=0.003276.$$
+    <p>计算得 $A=28.69$，$B=2.564$，$C=0.2462$，$\Delta=0.4883$。全局最小方差组合的期望收益 $m=B/A=8.94\%$，波动率 $\sigma=1/\sqrt A=18.67\%$。</p>
+    <p>切点组合：$c^{-1}(\alpha-r_f\mathbf 1)\propto(1.099,\,0.891)$，归一化后为 $(55.2\%,44.8\%)$。其期望收益 $9.79\%$，波动率 $19.79\%$，夏普比 $(9.79-2)/19.79=0.394$。有效前沿上任何一点都可以写成“切点组合 + 无风险借贷”的组合，这正是资本市场线的含义。</p></div>
   </div>
 
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Black–Scholes 上对冲价格</span><span class="thm-id">Ex. 7.2</span></div>
-    <div class="thm-body"><p>$S_0=100$、$K=100$、$r=5\%$、$\sigma=20\%$、$T=1$。则</p>
-    $$d_1=\frac{\ln(S_0/K)+(r+\sigma^2/2)T}{\sigma\sqrt T}=0.35,\qquad d_2=d_1-\sigma\sqrt T=0.15,$$
-    $$V_0=S_0N(d_1)-Ke^{-rT}N(d_2)=63.683-53.238=10.445.$$
-    <p>$\Delta=N(d_1)=0.6368$：持有 $0.6368$ 股股票，其余借现金。价格对 $\sigma$ 单调上升，对 $K$ 单调下降，这些单调性都可以从上确界公式直接读出。</p></div>
-  </div>
-
-  <div class="intuition"><div class="ih">直觉</div><p>上确界公式像“保险定价”：对每一种可能让负债变贵的折损因子，都要求初始资本足够。最坏情景决定了价格；如果最坏情景没有被任何单一折损因子达到，价格仍然存在，只是“最优对冲”可能不存在。</p></div>
+  <div class="intuition"><div class="ih">直觉</div><p>CAPM 的几何版本是：所有股票的风险溢价向量 $\alpha$ 必须落在协方差矩阵 $c$ 作用下的“市场方向”上。若某只股票有垂直于市场的溢价，投资者就会用它和市场组合造出一个更高夏普比的组合，均衡被打破。均值-方差前沿则把这句“没有免费的高夏普比”画成一条抛物线。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>对象</th><th>公式</th><th>说明</th></tr></thead>
+    <thead><tr><th>概念</th><th>公式</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">可选分解</td><td>$X=x+\int\vartheta'dS-K$</td><td>$\Leftrightarrow YX$ 上鞅，$\forall Y$</td></tr>
-      <tr><td class="id">融资资本</td><td>$x(K)=\sup_Y\mathbb E\int YdK$</td><td>最坏情景折现期望</td></tr>
-      <tr><td class="id">欧式索赔</td><td>$x=\sup_Y\mathbb E[Y(T)h]$</td><td>$K=h1_{[T,\infty)}$</td></tr>
-      <tr><td class="id">动态版本</td><td>$X(\sigma)=K(\sigma)+\operatorname{ess\,sup}_Y\mathbb E[\int_\sigma^\infty\frac{Y}{Y(\sigma)}dK\mid\mathcal F(\sigma)]$</td><td>最小对冲</td></tr>
-      <tr><td class="id">完全市场</td><td>$x=\mathbb E_{\mathbb Q}[h/X^\nu(T)]$</td><td>$\mathcal Y=\{1/X^\nu\}$</td></tr>
+      <tr><td class="id">股票计价单位</td><td>$A^i=F+C^{i\rho}$</td><td>$F$ 可奇异，不保证可行</td></tr>
+      <tr><td class="id">完美平衡</td><td>$\mu$ 是（局部）鞅</td><td>市场组合是计价单位</td></tr>
+      <tr><td class="id">资本集中</td><td>$\mathbb P[\mu^i(\infty)=1]=\mu^i(0)$</td><td>赢家通吃</td></tr>
+      <tr><td class="id">CAPM</td><td>$\alpha_i=\beta_i\alpha^\mu$</td><td>$\beta_i=c^{i\mu}/c^{\mu\mu}$</td></tr>
+      <tr><td class="id">CAPM 条件</td><td>$\alpha_i=b\,c^{i\mu}$ on $\{c^{\mu\mu}&gt;0\}$</td><td>漂移与市场协方差成比例</td></tr>
+      <tr><td class="id">前沿</td><td>$\sigma^2(m)=(Am^2-2Bm+C)/\Delta$</td><td>抛物线</td></tr>
+      <tr><td class="id">切点</td><td>$\pi_{\tan}\propto c^{-1}(\alpha-r_f\mathbf 1)$</td><td>最大夏普比</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：perfectly balanced（完美平衡）、market portfolio（市场组合）、capital concentration（资本集中）、CAPM（资本资产定价模型）、beta（贝塔）、mean-variance（均值-方差）、efficient frontier（有效前沿）、tangency portfolio（切点组合）、capital market line（资本市场线）、leverage（杠杆）、diffusion（扩散）、features（特征）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">“上对冲”不等于“复制”</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">CAPM 不是“定价公式”</span></div>
     <div class="thm-body"><ul>
-      <li><b>上确界可能不可达。</b> 存在可行市场与有限 $x(K)$，使 $\sup_Y$ 不被任何 $Y$ 达到（Example 3.20）；此时“最小对冲”仍存在，但它可能带有额外提款，而不是自融资复制。</li>
-      <li><b>最小对冲可能带中间提款。</b> 与欧式复制不同，融资一般负债的最优财富过程可能在中途提款 $F\not\equiv0$；只有 $K$ 在 $\mathcal K(x)$ 中最大时才有 $F\equiv0$。</li>
-      <li><b>不要只对一个 $\mathbb Q$ 取期望。</b> 不完全市场必须对所有折损因子/模型一致测度取上确界；只用一个测度会低估价格。</li>
-      <li><b>把 $x(K)$ 当成“公平价格”。</b> 它是卖方的最小融资成本，也是买方的最坏情景成本；买卖价差来自折损因子的集合大小。</li>
+      <li><b>CAPM 只约束漂移，不保证可行。</b> Example 2.71 说明：满足 $\alpha_i=\beta_i\alpha^\mu$ 的市场仍可能因 $c^{\mu\mu}=0$ 而出现套利。</li>
+      <li><b>$\beta$ 是协方差比，不是回归斜率。</b> 在连续时间中 $\beta_i=c^{i\mu}/c^{\mu\mu}$；单期回归只有在离散采样下才是它的估计。</li>
+      <li><b>市场组合 ≠ 切点组合。</b> 只有均衡假设（所有人持相同切点组合）才让二者相等；否则 CAPM 不成立。</li>
+      <li><b>有效前沿不是“收益越高越好”。</b> 前沿上每一点都给定风险下的最优；前沿以外的点要么风险更高、要么收益更低。</li>
+      <li><b>均值-方差是单期、二次效用近似。</b> 多期或非二次效用下，最优组合一般不在均值-方差前沿上。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch8" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 3 · §3.3</div>
-  <h2><span class="num">8</span>完全市场与不完全市场</h2>
-  <p class="lede">完全市场不是“什么都能交易”，而是“每一个负债都能被交易资产精确复制”。它的数学等价物是：折损因子只有一个，鞅表示性质成立。</p>
+  <div class="sec-label">Chapter 3 · §3.1–3.2</div>
+  <h2><span class="num">8</span>可选分解与融资对偶</h2>
+  <p class="lede">“融资”是定价的另一面：不是问“这个衍生品值多少”，而是问“为了支付这条未来现金流，今天最少要准备多少资本”。答案是一个对折损因子的最坏情形上确界。</p>
 
-  <div class="chap-intro"><p>本章定义可复制性与市场完全性，证明第二基本定理：完全 $\Leftrightarrow$ 折损因子唯一 $\Leftrightarrow$ 模型一致测度唯一。随后用三叉树与双布朗因子说明不完全市场如何产生定价区间，并把完全性翻译成鞅表示性质。</p><span class="tag">完全性</span></div>
+  <div class="chap-intro"><p>本节先给出<b>可选分解</b>（optional decomposition）：一个非负过程是财富过程，当且仅当它与每个折损因子的乘积都是上鞅。随后证明<b>融资对偶</b>（financing duality）：融资资本 $x(K)$ 等于 $\sup_{Y\in\mathcal Y}\mathbb E\int Y\,dK$。这把“最省钱的复制”变成了“最坏折损下的期望”。</p><span class="tag">融资</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">可复制</span><span class="chip">完全市场</span><span class="chip">第二基本定理</span><span class="chip">鞅表示</span><span class="chip">定价区间</span><span class="chip">不可对冲噪声</span>
+    <span class="chip hot">可选分解</span><span class="chip">融资资本</span><span class="chip">对偶</span><span class="chip">折损因子</span><span class="chip">模型一致测度</span><span class="chip">最坏情形</span><span class="chip">最小融资</span>
   </div>
 
-  <h3><span class="sn">8.1</span>定义与第二基本定理</h3>
-  <p>欧式索赔 $(T,P(T))$ 称为<b>可复制</b>，若其最小对冲的提款流为零，即存在策略 $\vartheta$ 使 $X(T;x,\vartheta)=P(T)$。若所有融资资本有限的欧式索赔都可复制，则市场<b>完全</b>。</p>
+  <h3><span class="sn">8.1</span>可选分解：不交易的部分就是提款</h3>
+  <p>在可行市场中，任何“看起来像财富”的非负过程，都可以拆成“初始资本 + 交易收益 − 累计提款”。这就是可选分解。它把“动态交易”与“消费/负债”分开，是后面所有对冲与优化的基础。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">第二基本定理</span><span class="thm-id">Thm. 3.38</span></div>
-    <div class="thm-body"><p>在可行市场中，下列等价：</p>
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">可选分解</span><span class="thm-id">Thm. 3.1</span></div>
+    <div class="thm-body"><p>设市场可行。对非负过程 $X$ 且 $X(0)=x\in\mathbb R_+$，下列等价：</p>
     <ol>
-      <li>市场完全；</li>
-      <li>$\mathcal Y=\{1/X^\nu\}$，即折损因子唯一；</li>
-      <li>$\Pi=\{\mathbb P\}$，即模型一致测度唯一。</li>
+      <li>对每个 $Y\in\mathcal Y$，$YX$ 是上鞅；</li>
+      <li>存在 $\vartheta\in I(S)$ 与 $K\in\mathcal K$，使</li>
     </ol>
-    <p>直观上，每多一个“不可对冲的噪声方向”，就多一个可以重新加权的测度；完全性意味着这样的方向不存在。</p></div>
+    $$X(t)=x+\int_0^t\sum_{i=1}^n\vartheta^i(s)\,dS^i(s)-K(t).$$
+    </div>
   </div>
+
+  <p>证明的骨架是“上鞅 → 分解”：先对 $YX$ 用 Doob–Meyer 分解，得到一条非降的有限变差过程；再把这个“损失项”识别为提款 $K$，剩下的部分用鞅表示定理（martingale representation）写成 $\int\vartheta'dS$。反向蕴含只需对 $YX$ 用伊藤乘积法则，并用 $Y S^i$ 是局部鞅的事实。</p>
+  <p><b>唯一性</b>（Prop. 3.3）：若同一个 $X$ 有两种分解，则初始资本相同、提款流相同，交易策略在 $R$-零意义下相同。证明用 $Y=1/X^\nu$ 乘差值 $D=\tilde K-K$，得到一条既是局部鞅又是有限变差的过程，故恒为零。</p>
+
+  <h3><span class="sn">8.2</span>融资对偶：最坏折损决定最低资本</h3>
+  <p>给定提款流 $K$，融资资本 $x(K)$ 是“能覆盖它”的最小初始资本。定理 3.7 说，这个最小值可以完全用折损因子来刻画。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">鞅表示性质</span><span class="thm-id">Thm. 3.46</span></div>
-    <div class="thm-body"><p>设 $L=(L^1,\dots,L^m)$ 是连续局部鞅向量。则下列等价：</p>
-    <ol>
-      <li>每个局部鞅 $N$ 都可写成 $N=N(0)+\int\eta'dL$；</li>
-      <li>若 $\mathbb Q\sim\mathbb P$ 且 $L$ 在 $\mathbb Q$ 下仍是局部鞅，则 $\mathbb Q=\mathbb P$。</li>
-    </ol>
-    <p>取 $L=M$ 即得：市场完全 $\Leftrightarrow$ 可交易噪声 $M$ 具有鞅表示性质。证明用 Kunita–Watanabe 分解：若存在与 $M$ 正交的非零局部鞅，就可以用它构造一个新的等价测度。</p></div>
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">融资对偶</span><span class="thm-id">Thm. 3.7</span></div>
+    <div class="thm-body"><p>设市场可行，$K\in\mathcal K$。则</p>
+    $$x(K)=\sup_{Y\in\mathcal Y}\mathbb E\Big[\int_0^\infty Y(t)\,dK(t)\Big].$$
+    <p>若 $x(K)&lt;\infty$，则 $K$ 可由初始资本 $x(K)$ 融资；存在 $\vartheta_K\in I(S)$ 与 $F_K\in\mathcal K$，使 $X(\cdot;x(K),\vartheta_K,F_K)\ge K$，且下确界被取到。</p></div>
   </div>
 
-  <details class="proof"><summary>证明思路：正交噪声就是“额外的测度”</summary><div class="proof-body"><p>若 $M$ 不具有表示性质，则存在非零局部鞅 $L$ 与所有 $M^i$ 正交。把 $L$ 截断成有界鞅，令 $d\mathbb Q/d\mathbb P=1+L(T)$，则由 Girsanov，$M$ 在 $\mathbb Q$ 下仍是局部鞅，但 $\mathbb Q\ne\mathbb P$，与唯一性矛盾。反向：若存在 $\mathbb Q\ne\mathbb P$ 使 $M$ 仍为局部鞅，其密度过程的随机对数给出一个与 $M$ 正交的非零局部鞅，于是表示性质失败。</p></div></details>
+  <details class="proof"><summary>证明思路：两个方向</summary><div class="proof-body">
+    <p><b>上界（$x(K)\ge\sup$）：</b>设 $X$ 以 $x$ 融资 $K$，即 $X\ge K$ 且 $X=x+\int\vartheta'dS-K'$。对任意 $Y\in\mathcal Y$，$YX$ 是上鞅，故</p>
+    $$\mathbb E\Big[\int_0^\infty Y\,dK\Big]\le\mathbb E\Big[\int_0^\infty Y\,dK'\Big]\le x.$$
+    <p>最后一个不等号来自 $YX$ 上鞅与 $YX(0)=x$。对所有 $Y$ 取上确界即得。</p>
+    <p><b>下界（$x(K)\le\sup$）：</b>定义 $x^*=\sup_Y\mathbb E\int Y\,dK$。考虑“贴现后”的提款流 $K^\nu=\int dK/X^\nu$，把它放在 $L^0_+$ 的凸几何里；用分离定理（Kreps–Yan / 双极定理）造出一个折损因子 $Y^*$，使 $\mathbb E\int Y^*dK=x^*$。再由可选分解把 $x^*-\int Y\,dK$ 的“超额”部分写成交易收益，得到融资策略。技术细节涉及路径正则化与本质上确界。</p>
+  </div></details>
 
-  <h3><span class="sn">8.2</span>三叉树：不完全市场的最小例子</h3>
-  <p>$S_0=100$，一期后有三个状态 $S_1\in\{120,100,80\}$，$r=0$。鞅条件给出</p>
-  $$1.2q_u+1.0q_m+0.8q_d=1,\qquad q_u+q_m+q_d=1,$$
-  <p>两式相减得 $0.2(q_u-q_d)=0$，即 $q_u=q_d=:a$，$q_m=1-2a$，其中 $a\in(0,1/2)$。风险中性测度不是唯一的，而是一整段。</p>
-  <p>考虑数字期权 $h=1_{\{S_1=120\}}$。它在三个状态上的收益为 $(1,0,0)$，而任何复制组合的收益都是 $S_1$ 的仿射函数 $(\alpha+\beta120,\alpha+\beta100,\alpha+\beta80)$。三个点共线，不可能匹配 $(1,0,0)$，所以该索赔不可复制。它的价格是 $\mathbb E_{\mathbb Q}[h]=a$，可以取 $(0,1/2)$ 中任意值：这就是<b>定价区间</b>。</p>
+  <p>定理的推论（Remark 3.9）非常有用：可融资的提款流集合恰好是</p>
+  $$\mathcal K(x)=\Big\{K\in\mathcal K:\ \sup_{Y\in\mathcal Y}\mathbb E\Big[\int_0^\infty Y\,dK\Big]\le x\Big\}.$$
+  <p>这把“动态可行性”变成了一个<b>静态的线性约束</b>：每个折损因子给出一条“预算线”，可行集是这些预算线的交。第 10 节的效用最大化就是在这个交上最大化凹泛函。</p>
+
+  <h3><span class="sn">8.3</span>模型一致测度：只换“不可对冲”的不确定性</h3>
+  <p>融资对偶还可以写成概率测度的语言。称 $Q\sim\mathbb P$ 为<b>模型一致测度</b>（model-consistent probability measure），若噪声 $M=(M^i)$ 在 $Q$ 下仍是局部鞅。记所有这样的 $Q$ 为 $\Pi$。注意：$Q$ 保持漂移 $A$ 不变，因此它<b>不是</b>风险中性测度；它只改变与可交易资产正交的那部分不确定性。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">用模型一致测度表示融资资本</span><span class="thm-id">Prop. 3.14</span></div>
+    <div class="thm-body"><p>设市场可行，$K\in\mathcal K$。则</p>
+    $$x(K)=\sup_{Q\in\Pi}\mathbb E_Q\Big[\int_0^\infty\frac{dK(t)}{X^\nu(t)}\Big]=\sup_{Q\in\Pi}\mathbb E_Q\big[K^\nu(\infty)\big],$$
+    <p>其中 $K^\nu=\int dK/X^\nu$ 是以计价单位折现后的累计提款。</p></div>
+  </div>
+
+  <p>这条式子是“精算定价”的严格版本：把未来现金流按 $1/X^\nu$ 折现，再在一个测度集合上取最坏情形。它与风险中性定价的区别在于：风险中性定价用<b>一个</b>测度 $Q$ 使折现价格成为鞅；融资对偶用<b>一族</b>模型一致测度，因为市场可能不完全，且我们要求的是“无论哪个模型一致测度都够付”的资本。</p>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">双布朗因子：不可对冲的独立风险</span><span class="thm-id">Ex. 8.1</span></div>
-    <div class="thm-body"><p>设 $dS/S=\sigma\,dW^1$，而 $W^2$ 是与 $W^1$ 独立的另一个布朗运动。市场只有一只股票，但噪声源有两个。索赔 $h=1_{\{W^2_T&gt;0\}}$ 只依赖 $W^2$，与 $S$ 的路径独立。</p>
-    <p>对任意 $m\in\mathbb R$，用密度 $\mathcal E(\int m\,dW^2)$ 做测度变换，$W^2_T$ 在 $\mathbb Q_m$ 下均值为 $mT$，故 $\mathbb Q_m(h=1)=\Phi(m\sqrt T)$。当 $m$ 遍历实数时，这个概率遍历 $(0,1)$。因此 $h$ 的价格区间是整个 $(0,1)$，没有任何唯一“无套利价格”。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">连续提款的融资资本</span><span class="thm-id">Ex. 8.1</span></div>
+    <div class="thm-body"><p>设利率 $r=5\%$，提款流为常数速率 $1$，持续 $T=10$ 年：$K(t)=t\wedge10$。若折损因子取确定性的 $Y(t)=e^{-rt}$，则</p>
+    $$x(K)=\int_0^{10}e^{-0.05t}\,dt=\frac{1-e^{-0.5}}{0.05}=\frac{1-0.6065}{0.05}=7.87.$$
+    <p>即今天准备 $7.87$ 元，按 $5\%$ 连续复利，正好支付每年 $1$ 元、共 $10$ 年。若还存在一个严格局部鞅折损因子 $Y'$，使 $\mathbb E\int Y'dK$ 更大，则 $x(K)$ 取那个更大的值——最坏情形决定资本。</p></div>
   </div>
 
-  <div class="intuition"><div class="ih">直觉</div><p>完全性不是“市场有效”的同义词，而是“噪声维度 = 可交易资产数量”。多一个独立噪声，就多一个无法用股票复制的方向；这个方向上的风险只能由买卖双方各自定价，于是价格变成一个区间。</p></div>
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">注</span><span class="thm-title">上确界未必被取到</span><span class="thm-id">Ex. 3.20 / 3.21</span></div>
+    <div class="thm-body"><p>定理 3.7 只保证 $x(K)$ 是上确界，不保证存在 $Y$ 达到它。Example 3.20 构造了 $x(K)&lt;\infty$ 但上确界不被任何 $Y\in\mathcal Y$ 取到的情形；Example 3.21 则构造了上确界被取到、但取到的不是 $1/X^\nu$ 的情形。这两个例子说明：<b>“最坏情形”是一个极限概念，不一定是一个可实现的情景。</b></p></div>
+  </div>
+
+  <div class="intuition"><div class="ih">直觉</div><p>把每个折损因子 $Y$ 想成一位“悲观精算师”：他用 $Y$ 给未来现金流打折，算出自己的报价 $\mathbb E\int Y\,dK$。融资资本是所有这些报价的上确界——你必须让最悲观的那位也满意。若市场完全，只有一位精算师（$Y=1/X^\nu$），价格就唯一；若市场不完全，就是一群精算师，价格是一个区间。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>市场</th><th>状态数 / 噪声</th><th>完全性</th><th>价格</th></tr></thead>
+    <thead><tr><th>对象</th><th>公式</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">二项</td><td>2 状态，1 股票 + 现金</td><td>完全</td><td>唯一 $q$</td></tr>
-      <tr><td class="id">三叉</td><td>3 状态，1 股票 + 现金</td><td>不完全</td><td>区间 $[a_-,a_+]$</td></tr>
-      <tr><td class="id">BS</td><td>1 布朗，1 股票</td><td>完全</td><td>Black–Scholes</td></tr>
-      <tr><td class="id">双因子</td><td>2 布朗，1 股票</td><td>不完全</td><td>区间，可能很大</td></tr>
-      <tr><td class="id">一般</td><td>$d&gt;n$ 个噪声</td><td>不完全</td><td>$\sup_{\mathbb Q\in\Pi}$</td></tr>
+      <tr><td class="id">可选分解</td><td>$X=x+\int\vartheta'dS-K$</td><td>$\Leftrightarrow YX$ 上鞅 $\forall Y$</td></tr>
+      <tr><td class="id">唯一性</td><td>$x=\tilde x,\ K=\tilde K$</td><td>策略在 $R$-零下唯一</td></tr>
+      <tr><td class="id">融资对偶</td><td>$x(K)=\sup_Y\mathbb E\int Y\,dK$</td><td>最坏折损</td></tr>
+      <tr><td class="id">可行集</td><td>$\mathcal K(x)=\{\sup_Y\mathbb E\int Y\,dK\le x\}$</td><td>静态线性约束</td></tr>
+      <tr><td class="id">模型一致</td><td>$Q\sim\mathbb P$，$M$ 为 $Q$-局部鞅</td><td>只换不可对冲噪声</td></tr>
+      <tr><td class="id">测度版</td><td>$x(K)=\sup_{Q\in\Pi}\mathbb E_Q[K^\nu(\infty)]$</td><td>精算最坏情形</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：optional decomposition（可选分解）、financing（融资）、duality（对偶）、model-consistent（模型一致）、worst-case（最坏情形）、withdrawal stream（提款流）、essential supremum（本质上确界）、attained（达到）、minimally（最小地）、polar（极的）、uniqueness（唯一性）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">完全性的三个误解</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">融资 ≠ 复制</span></div>
     <div class="thm-body"><ul>
-      <li><b>“有唯一 EMM”不等于“完全”。</b> 在带跳跃或一般信息流中，唯一 EMM 未必推出鞅表示性质；定理 3.38 依赖连续价格与本书的可行市场框架。</li>
-      <li><b>“完全”不等于“没有风险”。</b> 风险仍存在，只是可以被交易资产复制；复制策略需要连续调仓，现实中会有交易成本与离散误差。</li>
+      <li><b>融资只要求 $X\ge K$，不要求 $X(T)=K(T)$。</b> 多出来的资本可以留在账上；只有“最小融资”才把多余部分压到零。</li>
+      <li><b>$x(K)$ 是上确界，不一定可达。</b> 不要假设总存在一个“最坏测度”给你算价格。</li>
+      <li><b>模型一致测度不是风险中性测度。</b> 它保持漂移 $A$ 不变，只改变正交噪声；风险中性测度则要把漂移消掉。</li>
+      <li><b>折损因子不必是鞅。</b> 严格局部鞅会让 $\mathbb E[Y(T)]&lt;1$，这时“无风险利率”与“折损因子的期望”不是一回事。</li>
+      <li><b>把 $K$ 当成消费。</b> $K$ 是累计提款流，可以是负债、股息、或消费；数学结构相同，经济解释不同。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch9" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 3 · §3.4</div>
-  <h2><span class="num">9</span>效用最大化与对偶</h2>
-  <p class="lede">投资者不是最大化终端财富，而是最大化“按自己的时钟、自己的风险偏好”加权的一生消费效用。对偶把这个问题变成一个更容易求解的最小化问题。</p>
+  <div class="sec-label">Chapter 3 · §3.3</div>
+  <h2><span class="num">9</span>未定权益、完备市场与风险中性定价</h2>
+  <p class="lede">对冲是“用可交易资产复制未来支付”。完备市场（complete market）意味着所有支付都能被复制；而完备性的概率论等价物，是噪声的鞅表示性质。</p>
 
-  <div class="chap-intro"><p>本章引入消费时钟 $Q$ 与效用随机场 $U$，定义原问题 $u(x)$ 与对偶问题 $v(y)$，并陈述 Fenchel 型对偶定理：$u$ 与 $v$ 互为凹共轭，最优消费与最优折损因子由一阶条件互相决定。二项例子会把所有量算成具体数字。</p><span class="tag">效用与对偶</span></div>
+  <div class="chap-intro"><p>本节定义欧式与美式未定权益（contingent claim）、对冲资本与可复制性，证明第二基本定理（second fundamental theorem）：完备 $\Leftrightarrow$ 折损因子唯一 $\Leftrightarrow$ 模型一致测度唯一。随后把风险中性（risk-neutral）测度与鞅测度（martingale measure）放回这套语言，并给出二叉树定价的完整数值例子。</p><span class="tag">完备市场</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">消费时钟</span><span class="chip">效用场</span><span class="chip">凹共轭</span><span class="chip">Lagrange 乘子</span><span class="chip">互补松弛</span><span class="chip">CRRA</span>
+    <span class="chip hot">未定权益</span><span class="chip">对冲</span><span class="chip">可复制</span><span class="chip">完备市场</span><span class="chip">第二基本定理</span><span class="chip">风险中性</span><span class="chip">鞅测度</span><span class="chip">看跌看涨平价</span>
   </div>
 
-  <h3><span class="sn">9.1</span>原问题与对偶问题</h3>
-  <p>消费时钟 $Q\in\mathcal Q$ 是一个非降、右连续、适应的过程，$dQ(t)$ 表示“时刻 $t$ 的一单位消费相对于总效用的权重”。纯投资问题取 $Q=1_{[T,\infty)}$；无限期消费取 $Q=1-e^{-\int q}$。效用随机场 $U(t,\cdot)$ 对每个 $(t,\omega)$ 都是递增、严格凹、$C^1$ 且满足 Inada 条件。</p>
-  <p>原问题与对偶问题分别为</p>
-  $$u(x)=\sup_{K\in\mathcal K(x)}\mathbb E\Big[\int_0^\infty U\Big(t,\frac{dK(t)}{dQ(t)}\Big)dQ(t)\Big],\qquad v(y)=\sup_{Y\in\mathcal Y}\mathbb E\Big[\int_0^\infty V\big(t,yY(t)\big)dQ(t)\Big],$$
-  <p>其中 $V(t,y)=\inf_{x&gt;0}(xy-U(t,x))$ 是 $U$ 的凹共轭。$y$ 是约束 $\mathbb E\int YdK\le x$ 的 Lagrange 乘子，不是概率。</p>
+  <h3><span class="sn">9.1</span>欧式权益：对冲资本与最小对冲</h3>
+  <p><b>欧式未定权益</b>（European contingent claim）是一对 $(T,P(T))$，其中 $T$ 是到期日，$P(T)$ 是 $\mathcal F(T)$-可测的非负支付。例如看涨期权 $P(T)=(S^i(T)-k)^+$，看跌期权 $P(T)=(k-S^i(T))^+$。</p>
+  <p>财富过程 $X\ge0$ 称为该权益的<b>对冲</b>（hedge），若 $X(T)\ge P(T)$ 在 $\{T&lt;\infty\}$ 上成立；<b>最小对冲</b>是逐点最小的那个；<b>对冲资本</b>（hedging capital）是所有可行初始资本的下确界：</p>
+  $$x_{\mathrm{Eu}}(T,P(T)):=\inf\{x\ge0:\exists X\ge0,\ X(0)=x,\ X(T)\ge P(T)\}.$$
+  <p>把终端支付写成提款流 $K^{(T,P)}=P(T)\mathbf 1_{[T,\infty)}$，则对冲就是融资，且 $x_{\mathrm{Eu}}=x(K^{(T,P)})$。于是第 8 节的对偶立刻给出</p>
+  $$x_{\mathrm{Eu}}(T,P(T))=\sup_{Y\in\mathcal Y}\mathbb E\big[Y(T)P(T)\mathbf 1_{\{T&lt;\infty\}}\big]=\sup_{Q\in\Pi}\mathbb E_Q\Big[\frac{P(T)}{X^\nu(T)}\Big].$$
+
+  <h3><span class="sn">9.2</span>完备性：第二基本定理</h3>
+  <p>若最小对冲不需要任何提款，即存在 $\vartheta\in I(S)$ 使 $X(T;x,\vartheta)=P(T)$，称该权益<b>可复制</b>（replicable）。若所有（对冲资本有限的）欧式权益都可复制，称市场<b>完备</b>（complete）。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">效用最大化的对偶定理</span><span class="thm-id">Thm. 3.52</span></div>
-    <div class="thm-body"><p>在可行市场与标准效用假设下，若 $u(x)&gt;-\infty$、$v(y)&gt;-\infty$，则：</p>
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">第二基本定理</span><span class="thm-id">Thm. 3.38</span></div>
+    <div class="thm-body"><p>在可行市场中，下列陈述等价：</p>
     <ol>
-      <li>$u,v$ 都是实值、$C^1$、严格递增、严格凹，满足 Inada 条件，并且互为凹共轭：$v(y)=\inf_x(xy-u(x))$，$u(x)=\inf_y(xy-v(y))$。</li>
-      <li>对每个 $x$，原问题有唯一最优 $K_x$；对每个 $y$，对偶问题有唯一最优 $Y_y$。</li>
-      <li>当 $y=u'(x)$ 时，一阶条件为</li>
-    </ol>
-    $$Y_y=\frac1yU'\Big(\cdot,\frac{dK_x}{dQ}\Big)\quad\Longleftrightarrow\quad \frac{dK_x}{dQ}=V'\big(\cdot,yY_y\big),$$
-    <p>并且 $u(x)=xy-v(y)$，互补松弛 $\mathbb E\int Y_y(t)dK_x(t)=x$ 成立。</p></div>
+      <li>市场完备；</li>
+      <li>$\mathcal Y=\{1/X^\nu\}$，即折损因子唯一；</li>
+      <li>$\Pi=\{\mathbb P\}$，即模型一致测度唯一。</li>
+    </ol></div>
   </div>
 
-  <details class="proof"><summary>证明思路：Young 不等式 + 极小极大</summary><div class="proof-body"><p>对任意 $x,y&gt;0$，共轭的定义给出 $U(t,\xi)+V(t,y)\le\xi y$。把 $\xi=dK/dQ$、$y$ 换成 $yY(t)$，对 $Q$ 积分并取期望，利用融资约束 $\mathbb E\int YdK\le x$，得到</p>
-  <p>$$\mathbb E\int U\,dQ+\mathbb E\int V\,dQ\le xy.$$</p>
-  <p>对 $K\in\mathcal K(x)$、$Y\in\mathcal Y$ 取上确界，得 $u(x)+v(y)\le xy$，即 $u\le v^*$、$v\le u^*$。反向不等式用附录的抽象 Fenchel 对偶定理（定理 A.20）：在一个合适的 $L^0_+$ 拓扑下，约束集是凸闭的，Young 不等式的等号条件给出最优对 $(K_x,Y_y)$，并由一阶条件与互补松弛实现 $u(x)=xy-v(y)$。技术难点是紧性与一致可积性，附录用极小极大定理处理。</p></div></details>
+  <details class="proof"><summary>证明思路：用“正交鞅”造出不可复制的支付</summary><div class="proof-body"><p>$(1)\Rightarrow(2)$：若存在 $Y=(1/X^\nu)\mathcal E(L)$ 与 $1/X^\nu$ 不同，其中 $L$ 是与所有 $M^i$ 正交的非零局部鞅。令</p>
+  $$P(T)=\Big(\tfrac12+L(T)\Big)X^\nu(T).$$
+  <p>它介于 $0$ 与 $X^\nu(T)$ 之间。若可复制，则复制财富除以 $X^\nu$ 是一个非负鞅，且终端值为 $\tfrac12+L(T)$；但它的初值是 $\tfrac12$，而 $\mathbb E[\tfrac12+L(T)]=\tfrac12$，迫使 $L(T)=0$，矛盾。</p>
+  <p>$(2)\Rightarrow(1)$：若折损因子唯一，任取权益 $P(T)$，用融资对偶构造最小对冲；对偶上确界只由 $1/X^\nu$ 达到，故对冲是唯一的，且终端必须恰好等于 $P(T)$（否则可以用差额造出第二个折损因子）。$(2)\Leftrightarrow(3)$ 由 Girsanov：任何与 $M$ 正交的密度都会给出新的模型一致测度。</p></div></details>
 
-  <h3><span class="sn">9.2</span>二项市场中的对数效用</h3>
-  <p>$S_0=100$，$S_1\in\{120,80\}$，真实概率 $p=0.6$，风险中性概率 $q=0.5$，$r=0$，初始财富 $x=1$。投资者最大化</p>
-  $$\max\ 0.6\log c_u+0.4\log c_d\quad\text{s.t.}\quad 0.5c_u+0.5c_d=1.$$
-  <p>一阶条件给出 $c_u/c_d=p_u/p_d=1.5$；代入预算得 $c_u=1.2$、$c_d=0.8$。期望对数效用为</p>
-  $$0.6\log1.2+0.4\log0.8=0.10939-0.08926=0.02013.$$
-  <p>对偶侧：折损因子 $Y=d\mathbb Q/d\mathbb P$ 在上涨时为 $5/6$，下跌时为 $5/4$；$y=u'(1)=1$。一阶条件 $Y=1/c$ 恰好给出 $5/6=1/1.2$ 与 $5/4=1/0.8$。互补松弛为</p>
-  $$0.5\cdot\frac56\cdot1.2+0.5\cdot\frac54\cdot0.8=0.5+0.5=1=x.$$
-  <p>所有量严丝合缝：最优消费的倒数就是最优折损因子。</p>
+  <p>完备性还有一个纯概率的刻画：噪声向量 $M=(M^1,\dots,M^n)$ 具有<b>鞅表示性质</b>（martingale representation property, MRP），即每个鞅都可写成 $\int\eta'dM$。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">鞅表示 = 测度唯一</span><span class="thm-id">Thm. 3.46</span></div>
+    <div class="thm-body"><p>对连续局部鞅向量 $L=(L^1,\dots,L^m)$，下列等价：</p>
+    <ol>
+      <li>$L$ 具有鞅表示性质；</li>
+      <li>若 $Q\sim\mathbb P$ 且 $L$ 在 $Q$ 下是局部鞅，则 $Q=\mathbb P$。</li>
+    </ol>
+    <p>把 $L$ 取成市场的 $M$，这就是“完备 $\Leftrightarrow$ 模型一致测度唯一”的概率版本。</p></div>
+  </div>
+
+  <h3><span class="sn">9.3</span>风险中性测度与鞅测度</h3>
+  <p><b>风险中性测度</b>（risk-neutral measure）是使折现价格成为（局部）鞅的等价概率测度；在折现坐标里，它就是使 $S$ 成为局部鞅的 $Q$。这样的 $Q$ 也叫<b>等价局部鞅测度</b>（equivalent local martingale measure, ELMM），泛称<b>鞅测度</b>（martingale measure）。</p>
+  <p>层次关系要分清：</p>
+  <ul class="clean">
+    <li><b>ELMM 存在</b> $\Rightarrow$ <b>折损因子存在</b>（取 $Y=dQ/d\mathbb P$ 的密度过程）$\Rightarrow$ <b>市场可行</b>（定理 2.31）。</li>
+    <li>反过来不成立：可行性（NUPBR）只保证折损因子，不保证存在等价鞅测度；后者对应更强的 NFLVR。</li>
+    <li>完备市场里，若 ELMM 存在，则它唯一，且 $dQ/d\mathbb P|_{\mathcal F(T)}=1/X^\nu(T)$。</li>
+  </ul>
+  <p>在 ELMM 下，任何可复制权益的价格就是风险中性期望：</p>
+  $$\text{Price}_0=\mathbb E_Q\big[e^{-rT}P(T)\big],$$
+  <p>而风险中性期望又可以写成“真实测度下的随机贴现因子期望”：$\mathbb E_{\mathbb P}[Y(T)P(T)]$。两者是同一件事的两种记账方式。</p>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">CRRA 效用的共轭</span><span class="thm-id">Ex. 3.54</span></div>
-    <div class="thm-body"><p>取 $U^{(p)}(x)=(x^{1-p}-1)/(1-p)$（$p\ne1$），$U^{(1)}(x)=\log x$。则</p>
-    $$V^{(p)}(y)=1+U^{(1/p)}(y),\qquad p&gt;0.$$
-    <p>例如 $p=2$ 时 $U(x)=1-1/x$，$V(y)=2\sqrt y-1$；验算：$\inf_x(xy-1+1/x)$ 在 $x=1/\sqrt y$ 处取到，值为 $2\sqrt y-1$。$p$ 越大，最优消费对折损因子越敏感，风险溢价越高。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">二叉树：从真实概率到风险中性概率</span><span class="thm-id">Ex. 9.1</span></div>
+    <div class="thm-body"><p>设 $S_0=100$，$r=0$，一年后 $S_u=120$ 或 $S_d=80$，真实概率 $p=0.6$。风险中性概率 $q$ 满足</p>
+    $$120q+80(1-q)=100\ \Longrightarrow\ q=\tfrac12.$$
+    <p>看涨期权 $K=100$ 的支付为 $(20,0)$，价格</p>
+    $$C=\tfrac12(20)+\tfrac12(0)=10.$$
+    <p>真实测度下的期望支付是 $0.6(20)=12$，高于 $10$；差额来自风险溢价。随机贴现因子在两个状态的值是</p>
+    $$Y_u=\frac{q}{p}=\frac{0.5}{0.6}=0.8333,\qquad Y_d=\frac{1-q}{1-p}=\frac{0.5}{0.4}=1.25,$$
+    <p>确实满足 $\mathbb E_{\mathbb P}[Y]=0.6(0.8333)+0.4(1.25)=1$，且 $\mathbb E_{\mathbb P}[YS_1]=100$。定价 $\mathbb E_{\mathbb P}[Y(S_1-100)^+]=0.6(0.8333)(20)=10$。</p>
+    <p>看跌期权由平价关系 $C-P=S_0-K=0$ 得 $P=10$；直接算：$0.5(0)+0.5(20)=10$。</p></div>
   </div>
 
-  <div class="intuition"><div class="ih">直觉</div><p>对偶变量 $y$ 是“财富的边际效用”。$y$ 越大，投资者越穷，最优消费越低；折损因子 $Y$ 越大，该状态越“贵”，消费越少。一阶条件把这两件事写成 $Y\propto U'(c)$：在最优处，消费的边际效用与状态价格成正比。</p></div>
+  <p>若再加入一个与 $S$ 独立的第二个风险源，市场就<b>不完全</b>：折损因子不再唯一，看涨期权价格变成一个区间。区间端点由“最悲观”和“最乐观”的模型一致测度给出；这不是模型缺陷，而是对冲工具不足的必然结果。</p>
+
+  <h3><span class="sn">9.4</span>美式权益与交换期权平价</h3>
+  <p><b>美式未定权益</b>（American contingent claim）是一对 $(T,P)$，$P$ 是右连续非负的支付过程，持有人可在任意停时 $\tau\in\mathcal T[0,T]$ 行使。对冲要求对<b>所有</b> $\tau$ 都有 $X(\tau)\ge P(\tau)$，因此比欧式严格得多。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">美式对冲资本</span><span class="thm-id">Thm. 3.31</span></div>
+    <div class="thm-body"><p>在可行市场中，</p>
+    $$x_{\mathrm{Am}}(T,P)=\sup_{\tau\in\mathcal T[0,T],\ Y\in\mathcal Y}\mathbb E\big[Y(\tau)P(\tau)\mathbf 1_{\{\tau&lt;\infty\}}\big].$$
+    <p>若有限，则存在最小对冲，且在任意停时 $\sigma$ 处可写成条件本质上确界。</p></div>
+  </div>
+
+  <p>对两个财富过程 $X_1,X_2$，交换期权 $(X_2-X_1)^+$ 与 $(X_1-X_2)^+$ 满足<b>美式交换期权平价</b>（Prop. 3.32）：</p>
+  $$x_{\mathrm{Am}}\big(T,(X_2-X_1)^+\big)=x_2-x_1+x_{\mathrm{Am}}\big(T,(X_1-X_2)^+\big).$$
+  <p>取 $X_1\equiv k$（现金）、$X_2=S^i$，就得到美式看跌-看涨平价。注意：欧式与美式交换期权的价值在一般市场中可以不同；Prop. 3.33 给出了二者相等的充分条件。</p>
+
+  <div class="intuition"><div class="ih">直觉</div><p>完备市场像一张“完整的坐标系”：每一个未来支付都能用现有资产张成。折损因子唯一，是因为没有“正交方向”可以容纳额外的风险价格。市场不完全时，多出来的维度无法对冲，价格就只能是一个区间，而不是一个点。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>对象</th><th>定义 / 公式</th><th>读法</th></tr></thead>
+    <thead><tr><th>概念</th><th>公式 / 条件</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">$Q$</td><td>非降消费时钟</td><td>$dQ$ 是消费权重</td></tr>
-      <tr><td class="id">$U$</td><td>递增、严格凹、Inada</td><td>瞬时效用</td></tr>
-      <tr><td class="id">$V$</td><td>$\inf_x(xy-U(x))$</td><td>凹共轭</td></tr>
-      <tr><td class="id">$u(x)$</td><td>$\sup_{K\in\mathcal K(x)}\mathbb E\int U\,dQ$</td><td>原值函数</td></tr>
-      <tr><td class="id">$v(y)$</td><td>$\sup_{Y\in\mathcal Y}\mathbb E\int V\,dQ$</td><td>对偶值函数</td></tr>
-      <tr><td class="id">一阶条件</td><td>$Y=U'(c)/y,\ c=V'(yY)$</td><td>状态价格 = 边际效用</td></tr>
-      <tr><td class="id">完全市场</td><td>$c=V'(y/X^\nu)$</td><td>对偶退化为单点</td></tr>
+      <tr><td class="id">欧式对冲资本</td><td>$\sup_Y\mathbb E[Y(T)P(T)]$</td><td>最坏折损</td></tr>
+      <tr><td class="id">可复制</td><td>$X(T;x,\vartheta)=P(T)$</td><td>无提款的对冲</td></tr>
+      <tr><td class="id">完备</td><td>所有权益可复制</td><td>$\Leftrightarrow\mathcal Y=\{1/X^\nu\}$</td></tr>
+      <tr><td class="id">第二基本定理</td><td>完备 $\Leftrightarrow\Pi=\{\mathbb P\}$</td><td>测度唯一</td></tr>
+      <tr><td class="id">MRP</td><td>每个鞅 $=\int\eta'dM$</td><td>$\Leftrightarrow$ 测度唯一</td></tr>
+      <tr><td class="id">风险中性</td><td>$S$ 在 $Q$ 下局部鞅</td><td>ELMM</td></tr>
+      <tr><td class="id">美式</td><td>$\sup_{\tau,Y}\mathbb E[Y(\tau)P(\tau)]$</td><td>最优行使</td></tr>
+      <tr><td class="id">平价</td><td>$C-P=S_0-K$</td><td>无套利恒等式</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：contingent claim（未定权益）、complete market（完备市场）、completeness（完备性）、replicability（可复制性）、hedging（对冲）、hedges（对冲）、put-call parity（看跌-看涨平价）、risk-neutral（风险中性）、martingale measure（鞅测度）、equivalent local martingale measure（等价局部鞅测度）、holder（持有人）、maturity（到期）、options（期权）、exchange（交换）、minimal（最小）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">效用最大化的边界</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">定价公式的前提</span></div>
     <div class="thm-body"><ul>
-      <li><b>效用定义在消费流上，不只是终端财富。</b> 若只关心 $T$ 时刻，取 $Q=1_{[T,\infty)}$；若连续消费，$dK/dQ$ 是消费率。</li>
-      <li><b>$Q$ 不是概率测度。</b> 它是消费时钟/权重；把它与风险中性测度混为一谈，会把 $dK/dQ$ 解释错。</li>
-      <li><b>对偶问题是“最大化”不是“最小化”。</b> $v(y)=\sup_Y$ 是因为 $V$ 已经是 $U$ 的共轭；最终等式 $u(x)=xy-v(y)$ 才是“最小化”形式。</li>
-      <li><b>不要假设最优解一定存在。</b> 定理 3.52 需要 $u(x)&gt;-\infty$、$v(y)&gt;-\infty$ 与标准效用假设；退化效用或不可行约束会让值函数变成 $-\infty$。</li>
+      <li><b>风险中性概率不是“真实概率”。</b> 它是定价用的辅助测度；$q=1/2$ 不代表真实世界涨跌各半。</li>
+      <li><b>完备 ≠ 可行。</b> 完备性是“能否复制”，可行性是“有无套利”；二者独立，但第二基本定理在可行市场里才成立。</li>
+      <li><b>ELMM 存在是比可行性更强的条件。</b> 只有折损因子、没有 ELMM 的市场仍然可以无套利。</li>
+      <li><b>美式 ≠ 欧式。</b> 提前行使的权利有价值；平价关系对美式交换期权仍成立，但单个美式期权一般比欧式贵。</li>
+      <li><b>“唯一价格”只在完备市场。</b> 不完全市场里，同一支付可以有一整段无套利价格区间。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch10" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 3 · §3.5 + 风险度量</div>
-  <h2><span class="num">10</span>最大性、无跑赢与风险度量</h2>
-  <p class="lede">“最优”有三种说法：不能再多提款、不能被别的组合跑赢、能被某个折损因子支撑。本章证明它们在可行市场里是同一件事，并把这条对偶搬到风险度量。</p>
+  <div class="sec-label">Chapter 3 · §3.4</div>
+  <h2><span class="num">10</span>效用最大化与对偶</h2>
+  <p class="lede">投资者不直接选“组合”，而是选“消费流”。 primal 问题是在可行提款流上最大化期望效用；dual 问题是在折损因子上最小化共轭效用。二者由一个 $y=u'(x)$ 的等式缝合。</p>
 
-  <div class="chap-intro"><p>先定义提款流的最大性与可补充性，证明定理 3.71；再把“上对冲成本”解释成一个相干风险度量，说明 VaR 为何不满足次可加性、ES 为何满足。最后一部分是标准扩展，原书没有以“风险度量”为章节标题，但公式完全来自前面的融资对偶。</p><span class="tag">最大性 · 风险</span></div>
+  <div class="chap-intro"><p>本节建立连续时间效用最大化的完整对偶理论：<b>消费时钟</b>（consumption clock）$Q$、效用随机场 $U$、primal 值函数 $u$、dual 值函数 $v$、共轭 $V$。核心定理 3.52 给出存在性、唯一性、Inada 条件、双共轭关系与互补松弛。随后用 CRRA 效用算出显式解，并解释无差异定价（indifference valuation）。</p><span class="tag">效用</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">最大提款流</span><span class="chip">可补充</span><span class="chip">无跑赢</span><span class="chip">相干风险度量</span><span class="chip">VaR</span><span class="chip">ES</span>
+    <span class="chip hot">效用</span><span class="chip">消费时钟</span><span class="chip">primal</span><span class="chip">dual</span><span class="chip">共轭</span><span class="chip">CRRA</span><span class="chip">无差异定价</span><span class="chip">互补松弛</span>
   </div>
 
-  <h3><span class="sn">10.1</span>最大性与可补充性</h3>
-  <p>对 $H,K\in\mathcal K$，记 $K\succeq H$ 表示 $K-H$ 非降。固定 $x\ge0$：</p>
-  <ul>
-    <li>$H\in\mathcal K(x)$ 称为<b>最大</b>的，若 $K\in\mathcal K(x)$ 且 $K\succeq H$ 推出 $K=H$；</li>
-    <li>$H\in\mathcal K(x)$ 称为<b>可补充</b>的，若存在 $Y\in\mathcal Y$ 使 $\mathbb E\int YdH=x$。</li>
-  </ul>
-  <p>最大性说“不能再多拿”；可补充性说“存在一个折损因子，使这条流的折现期望刚好等于初始资本”，即对偶约束是紧的。</p>
-
-  <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">最大性 $\Leftrightarrow$ 可补充性</span><span class="thm-id">Thm. 3.71</span></div>
-    <div class="thm-body"><p>设市场可行。对任意 $x\ge0$ 与 $H\in\mathcal K(x)$，下列等价：</p>
-    <ol><li>$H$ 在 $\mathcal K(x)$ 中最大；</li><li>$H$ 在 $\mathcal K(x)$ 中可补充。</li></ol>
-    <p>特别地，效用最优消费流 $K_x$ 既最大又可补充；互补松弛条件正好给出补充它的折损因子 $Y_y$。</p></div>
-  </div>
-
-  <details class="proof"><summary>证明思路：上鞅不等式与分离定理</summary><div class="proof-body"><p><b>(2)⇒(1)：</b>若 $K\succeq H$ 且 $K\in\mathcal K(x)$，融资约束给出 $\mathbb E\int YdK\le x$；但 $K-H$ 非降非负，故 $\mathbb E\int YdK\ge\mathbb E\int YdH=x$。两边夹住，$Y&gt;0$ 给出 $K=H$。</p>
-  <p><b>(1)⇒(2)：</b>若上确界严格小于 $x$，用分离定理（Bipolar Theorem A.9）可找到一个严格改进的提款流 $K\succeq H$ 仍在 $\mathcal K(x)$ 中，违背最大性。</p></div></details>
-
-  <p>最大性与“跑赢”直接相关：若组合 $\pi$ 在 $[0,T]$ 上跑赢 $\rho$，则 $\rho$ 不可能是最大投资。</p>
-
-  <h3><span class="sn">10.2</span>从融资对偶到相干风险度量</h3>
-  <p>设现金是计价单位（$X^\nu\equiv1$），$\Pi$ 为模型一致测度集合。对终端盈亏 $X$（负值表示损失），定义</p>
-  $$\rho(X):=\sup_{\mathbb Q\in\Pi}\mathbb E_{\mathbb Q}[-X].$$
-  <p>由第 7 节，$\rho(-h)=x(h)$ 正好是负债 $h$ 的最小融资资本。它满足四条公理：单调性、现金不变性 $\rho(X+m)=\rho(X)-m$、次可加性、正齐次性；因此是一个<b>相干风险度量</b>，接受集为 $\mathcal A=\{X:\mathbb E_{\mathbb Q}[X]\ge0,\ \forall\mathbb Q\in\Pi\}$。</p>
+  <h3><span class="sn">10.1</span>偏好：用一个随机场给消费流打分</h3>
+  <p>经济主体从累计消费流 $K$ 获得效用。记 $Q\in\mathcal K$ 为<b>内部消费时钟</b>（internal consumption clock）：它非降、右连续、适应，且 $\mathbb P[Q(\infty)=0]=0$。$dK/dQ$ 是“相对于这个时钟的消费速率”。总效用写成</p>
+  $$\mathbb U(K):=\mathbb E\Big[\int_0^\infty U\big(t,\tfrac{dK}{dQ}(t)\big)\,dQ(t)\Big].$$
+  <p>$U(\omega,t,\cdot)$ 是一个<b>效用随机场</b>（utility random field）：对每个 $(\omega,t)$ 递增、严格凹、连续可微，并满足 Inada 条件 $U'(0+)=\infty$、$U'(\infty)=0$。允许 $U$ 依赖 $(\omega,t)$，就同时涵盖了时变偏好、状态依赖、习惯形成等情形。</p>
+  <p>用时钟 $Q$ 而不是日历时间，是为了处理“未来某些状态/时刻不被赋予效用”的情形。例如无限期指数贴现对应 $Q(t)=1-e^{-\int_0^tq}$，$q$ 是贴现率；若某段状态 $Q$ 不增长，那么在那段消费不产生效用。</p>
 
   <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">相干风险度量</span><span class="thm-id">标准公理</span></div>
-    <div class="thm-body"><p>$\rho:L^\infty\to\mathbb R$ 称为相干风险度量，若：</p>
-    <ul>
-      <li>单调：$X\le Y\Rightarrow\rho(X)\ge\rho(Y)$；</li>
-      <li>现金不变：$\rho(X+m)=\rho(X)-m$；</li>
-      <li>次可加：$\rho(X+Y)\le\rho(X)+\rho(Y)$；</li>
-      <li>正齐次：$\rho(\lambda X)=\lambda\rho(X)$，$\lambda\ge0$。</li>
-    </ul>
-    <p>在适当闭性下，必有表示 $\rho(X)=\sup_{\mathbb Q\in\mathcal Q}\mathbb E_{\mathbb Q}[-X]$，其中 $\mathcal Q$ 是某个概率测度集合。上式的 $\Pi$ 就是一个自然的 $\mathcal Q$。</p></div>
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Primal 与 dual 值函数</span><span class="thm-id">(3.53) / (3.54)</span></div>
+    <div class="thm-body">
+      <p><b>Primal：</b>给定初始资本 $x\in(0,\infty)$，</p>
+      $$u(x):=\sup_{K\in\mathcal K(x)}\mathbb E\Big[\int_0^\infty U\big(t,\tfrac{dK}{dQ}(t)\big)\,dQ(t)\Big].$$
+      <p><b>Dual：</b>给定 $y\in(0,\infty)$，</p>
+      $$v(y):=\inf_{Y\in\mathcal Y}\mathbb E\Big[\int_0^\infty V\big(t,yY(t)\big)\,dQ(t)\Big],$$
+      <p>其中 $V(t,y):=\inf_{x&gt;0}\big(xy-U(t,x)\big)$ 是 $U(t,\cdot)$ 的共轭（conjugate）。</p>
+    </div>
   </div>
+
+  <p>Primal 的约束是“$K$ 能被 $x$ 融资”，即第 8 节的 $\sup_Y\mathbb E\int Y\,dK\le x$。Dual 的约束是“$Y$ 是折损因子”。两者通过预算约束的拉格朗日乘子 $y$ 连接：$y$ 是“财富的边际效用”，也是 dual 的“折损价格”。</p>
+
+  <h3><span class="sn">10.2</span>对偶定理</h3>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">效用最大化的对偶</span><span class="thm-id">Thm. 3.52</span></div>
+    <div class="thm-body"><p>设市场可行，$U$ 满足上述条件，且 primal、dual 都非平凡。则：</p>
+    <ol>
+      <li>$u(x)&lt;\infty$、$v(y)&lt;\infty$ 对所有 $x,y\in(0,\infty)$ 成立；$u,v$ 连续可微、严格递增、严格凹，并满足 Inada 条件
+      $$\lim_{x\downarrow0}u'(x)=\infty,\quad \lim_{x\uparrow\infty}u'(x)=0,\quad \lim_{y\downarrow0}v'(y)=\infty,\quad \lim_{y\uparrow\infty}v'(y)=0.$$</li>
+      <li>对每个 $x$，primal 最优解 $K_x\in\mathcal K(x)$ 存在且唯一；对每个 $y$，dual 最优解 $Y_y\in\mathcal Y$ 在 $[0,\tau_Q]$ 上存在且唯一。</li>
+      <li>当 $y=u'(x)$ 时，最优解满足
+      $$Y_y=\frac1y\,U'\Big(\cdot,\frac{dK_x}{dQ}\Big)\quad\Longleftrightarrow\quad \frac{dK_x}{dQ}=V'(\cdot,yY_y),$$
+      以及 $u(x)=xy-v(y)$ 与互补松弛（complementary slackness）
+      $$\mathbb E\Big[\int_0^\infty Y_y(t)\,dK_x(t)\Big]=x.$$</li>
+    </ol></div>
+  </div>
+
+  <p>这三条把“动态优化”化成了“静态凸对偶”：先解一个只涉及 $U$ 与 $V$ 的一维问题，再验证预算约束取等。证明依赖附录 A.3 的抽象 Fenchel 对偶（Theorem A.20）与 $L^0_+$ 上的双极定理；技术核心是证明对偶最优解 $g_y$ 可以写成 $yY_y$，其中 $Y_y$ 是折损因子。</p>
+
+  <details class="proof"><summary>证明思路：Fenchel 对偶 + 双极定理</summary><div class="proof-body"><p>先把 primal 写成 $L^0_+$ 上的凹泛函：$u(x)=\sup_{f\in\mathcal K(x)}\mathbb E[U(f)]$，其中 $\mathcal K(x)=\{f:\sup_{g\in\mathcal K^\circ}\mathbb E[fg]\le x\}$。对任意 $f\in\mathcal K(x)$、$g\in\mathcal K^\circ(y)$，由共轭的定义 $U(f)+V(g)\le fg$，取期望并用预算约束得 $u(x)+v(y)\le xy$，即 $u\le v^*$、$v\le u^*$。</p><p>反向不等式用 Komlós 紧性（Lemma A.4）与双极定理（Theorem A.9）：最大化序列有前向凸组合几乎必然收敛，极限仍在 $\mathcal K(x)$ 中；对极限用一阶条件得 $g=U'(f)$，再由 $g/y\in\mathcal K^\circ$ 与预算取等得到 $g=yY$，其中 $Y$ 是折损因子。于是 $u(x)=xy-v(y)$，且互补松弛成立。</p></div></details>
+
+  <h3><span class="sn">10.3</span>CRRA：显式解与 Merton 比例</h3>
+  <p>取常数相对风险厌恶（constant relative risk aversion, CRRA）效用</p>
+  $$U^{(p)}(x)=\frac{x^{1-p}-1}{1-p}\ (p\ne1),\qquad U^{(1)}(x)=\log x.$$
+  <p>其共轭满足 $V^{(p)}=1+U^{(1/p)}$。在完备市场（$\mathcal Y=\{1/X^\nu\}$）中，dual 退化为一维问题，最优消费率为</p>
+  $$\frac{dK_x}{dQ}(t)=V'\big(t,yX^\nu(t)^{-1}\big)=\big(y/X^\nu(t)\big)^{-1/p}=y^{-1/p}\,X^\nu(t)^{1/p},$$
+  <p>其中 $y=u'(x)$ 由预算约束 $\mathbb E\int (1/X^\nu)dK_x=x$ 定出。特别地，$p=1$（对数效用）给出 $dK_x/dQ\propto X^\nu$：消费与增长最优财富成比例。</p>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">VaR 不是次可加的</span><span class="thm-id">Ex. 10.1</span></div>
-    <div class="thm-body"><p>两只独立债券，每只在一年内违约的概率为 $4\%$，违约损失 $100$，否则损失 $0$。取置信水平 $95\%$。单只债券：</p>
-    $$\mathrm{VaR}_{0.95}(L_i)=0\quad(\text{因为 }P(L_i=0)=0.96\ge0.95).$$
-    <p>但组合 $L=L_1+L_2$ 的损失分布为：$200$ 概率 $0.0016$，$100$ 概率 $2\times0.04\times0.96=0.0768$，$0$ 概率 $0.9216$。由于 $P(L\le0)=0.9216&lt;0.95$，</p>
-    $$\mathrm{VaR}_{0.95}(L_1+L_2)=100&gt;0=\mathrm{VaR}_{0.95}(L_1)+\mathrm{VaR}_{0.95}(L_2).$$
-    <p>分散化反而让 VaR 变大：这就是 VaR 不满足次可加性的经典反例。对应的 ES（$95\%$）分别为 $80$ 与 $103.2$，满足次可加性。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Merton 比例：CRRA 下的股票暴露</span><span class="thm-id">Ex. 10.1</span></div>
+    <div class="thm-body"><p>设单股票、常数 $\alpha=0.06$、$c=0.04$，无消费（或消费时钟只作用于终端财富）。最大化 $\mathbb E[X^{1-p}/(1-p)]$ 的一阶条件是</p>
+    $$\pi^*=\frac{\alpha}{p\,c}.$$
+    <p>当 $p=2$ 时 $\pi^*=0.06/(2\times0.04)=0.75$；当 $p=5$ 时 $\pi^*=0.30$；当 $p\to1$（对数效用）时 $\pi^*\to1.5$，正好回到第 6 节的增长最优杠杆。风险厌恶越高，股票暴露越低；对数效用是“最不厌恶风险”的 CRRA 极限。</p></div>
   </div>
 
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">ES 看见尾部</span><span class="thm-id">Ex. 10.2</span></div>
-    <div class="thm-body"><p>设损失 $L=100$ 以概率 $1\%$ 发生，否则为 $0$。在 $99\%$ 置信水平，$\mathrm{VaR}_{0.99}(L)=0$：因为 $P(L=0)=0.99$ 已经达到置信水平。但</p>
-    $$\mathrm{ES}_{0.99}(L)=\frac1{0.01}\int_{0.99}^{1}\mathrm{VaR}_u(L)\,du=100.$$
-    <p>ES 平均了最坏 $1\%$ 的尾部，因此不会对“低概率、高损失”视而不见。它的对偶表示是 $\mathrm{ES}_\alpha(L)=\sup\{\mathbb E_{\mathbb Q}[L]:d\mathbb Q/d\mathbb P\le1/(1-\alpha)\}$。</p></div>
-  </div>
+  <p>若允许连续消费且 $Q(t)=1-e^{-\rho t}$，CRRA 的消费率是最优财富的一个固定比例（Merton 消费规则）：$c^*(t)=\kappa X(t)$，$\kappa$ 由 $\rho$、$p$、$\alpha,c$ 决定。这把“消费-投资”问题化成了一个常数系数的代数方程。</p>
 
-  <div class="intuition"><div class="ih">直觉</div><p>风险度量是“为了接受这个头寸，需要多少资本”。在可行市场里，它正好是上对冲成本；对偶集合越大，资本要求越高。</p></div>
+  <h3><span class="sn">10.4</span>无差异定价</h3>
+  <p>给定一个不可交易的权益（或一笔负债）$E$，投资者愿意为它付的最高价格 $p$ 由“付钱前后最大效用相等”定义：</p>
+  $$u(x)=u\big(x-p;\ E\big).$$
+  <p>这就是<b>无差异定价</b>（indifference valuation）。它不是无套利价格，而是“对这位特定投资者而言，买卖不亏不赚”的价格。它与边际效用 $u'(x)$、风险厌恶 $p$、以及权益与现有财富的相关性有关。无差异价格通常落在无套利价格区间内部，且随 $x$ 与风险厌恶变化。</p>
+
+  <div class="intuition"><div class="ih">直觉</div><p>Primal 是“用预算买最满意的消费流”，dual 是“用状态价格给消费流标价”。$y$ 是两者之间的汇率：多一单位初始财富值多少效用。互补松弛说的是“最优时预算刚好花完”，而 $dK/dQ=V'(yY)$ 说的是“每个状态的边际效用等于状态价格”。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>概念</th><th>公式</th><th>性质</th></tr></thead>
+    <thead><tr><th>对象</th><th>公式</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">最大流</td><td>$K\succeq H,\ K\in\mathcal K(x)\Rightarrow K=H$</td><td>不能多提款</td></tr>
-      <tr><td class="id">可补充</td><td>$\exists Y\in\mathcal Y:\mathbb E\int YdH=x$</td><td>对偶约束紧</td></tr>
-      <tr><td class="id">相干风险</td><td>$\rho(X)=\sup_{\mathbb Q\in\Pi}\mathbb E_{\mathbb Q}[-X]$</td><td>单调、现金不变、次可加、正齐次</td></tr>
-      <tr><td class="id">VaR</td><td>$\inf\{\ell:P(L\le\ell)\ge\alpha\}$</td><td>一般不次可加</td></tr>
-      <tr><td class="id">ES</td><td>$\frac1{1-\alpha}\int_\alpha^1\mathrm{VaR}_u\,du$</td><td>相干（在适当条件下）</td></tr>
+      <tr><td class="id">效用泛函</td><td>$\mathbb E\int U(t,dK/dQ)dQ$</td><td>按时钟积分</td></tr>
+      <tr><td class="id">Primal</td><td>$u(x)=\sup_{K\in\mathcal K(x)}\mathbb U(K)$</td><td>选消费流</td></tr>
+      <tr><td class="id">Dual</td><td>$v(y)=\inf_{Y\in\mathcal Y}\mathbb E\int V(t,yY)dQ$</td><td>选折损因子</td></tr>
+      <tr><td class="id">共轭</td><td>$V(t,y)=\inf_x(xy-U(t,x))$</td><td>Legendre 变换</td></tr>
+      <tr><td class="id">最优关系</td><td>$u(x)=xy-v(y)$，$y=u'(x)$</td><td>双共轭</td></tr>
+      <tr><td class="id">互补松弛</td><td>$\mathbb E\int Y_y dK_x=x$</td><td>预算取等</td></tr>
+      <tr><td class="id">CRRA 最优</td><td>$dK_x/dQ=y^{-1/p}(X^\nu)^{1/p}$</td><td>完备市场</td></tr>
+      <tr><td class="id">Merton 比例</td><td>$\pi^*=\alpha/(pc)$</td><td>$p=1$ 回到 Kelly</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：utility（效用）、preferences（偏好）、agent（主体）、consumption clock（消费时钟）、primal（原始问题）、dual（对偶问题）、conjugate（共轭）、optimizer（优化器）、optimizers（优化者）、CRRA（常数相对风险厌恶）、indifference valuation（无差异定价）、endowment（禀赋）、loss（损失）、canonical（典范的）、choose（选择）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">最大性与风险度量的坑</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">效用最大化不是“收益最大化”</span></div>
     <div class="thm-body"><ul>
-      <li><b>“最大”不是“收益最大”。</b> 它指同样资本下不能再多提款，而非收益最高。</li>
-      <li><b>可补充性依赖折损因子集合。</b> 在不完全市场里，补充 $H$ 的 $Y$ 可能不是 $1/X^\nu$；把 $Y$ 固定成某一个测度会误判最大性。</li>
-      <li><b>VaR 的置信水平与尾部方向容易搞反。</b> $\mathrm{VaR}_{0.95}$ 看的是 $95\%$ 分位，不是“最坏 $95\%$”；写反会把风险低估。</li>
-      <li><b>风险度量依赖计价单位。</b> $\rho(X)=\sup_{\mathbb Q}\mathbb E_{\mathbb Q}[-X]$ 假设现金计价；换成一般 $X^\nu$ 时，要先折现再取上确界，否则量纲不一致。</li>
+      <li><b>$u(x)$ 是值函数，不是效用函数。</b> $u$ 已经把“最优未来消费”代入；$U$ 才是每期的效用。</li>
+      <li><b>$y$ 不是“价格”。</b> 它是财富的边际效用，量纲是“效用/单位财富”；价格要再乘折损因子。</li>
+      <li><b>Inada 条件保证内点解。</b> 若 $U'(0+)&lt;\infty$，最优消费可能在边界（不消费），对偶定理的形式会变。</li>
+      <li><b>无差异价格 ≠ 无套利价格。</b> 前者依赖投资者偏好与初始财富，后者只依赖市场；二者只有在完全竞争/复制时才重合。</li>
+      <li><b>CRRA 的 $\pi^*=\alpha/(pc)$ 假设 $\alpha,c$ 常数。</b> 时变或状态依赖时，最优组合是 $\alpha/(pc)$ 的随机版本，且可能有对冲项。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="ch11" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 4 · Ramifications</div>
-  <h2><span class="num">11</span>扩展：回撤、简单交易与无限资产</h2>
-  <p class="lede">理论的两端最容易被质疑：路径约束会不会毁掉鞅性质？不假设半鞅还能不能做无套利？资产数量趋于无穷时，结构条件长什么样？</p>
+  <div class="sec-label">Chapter 3 · §3.5</div>
+  <h2><span class="num">11</span>最大性、互补性与跑赢</h2>
+  <p class="lede">一个消费流“最大”，是指没有另一个可融资的消费流能在每个时刻都至少同样多、且在某个时刻严格更多。最大性不是优化，而是帕累托最优的连续时间版本。</p>
 
-  <div class="chap-intro"><p>本章选三个方向：回撤约束下的 Azéma–Yor 变换、只用简单 long-only 策略时“半鞅性质”如何从无套利中导出、以及无限资产市场的结构条件 $A\in R(C)$。三者共同说明：前面那套对偶不是连续半鞅的偶然产物，而是一条可以迁移的骨架。</p><span class="tag">扩展</span></div>
+  <div class="chap-intro"><p>本节把“不浪费资本”写成两个等价性质：<b>最大性</b>（maximality）与<b>可补性</b>（complementability）。定理 3.71 说二者等价；定理 3.80 再加上一条横截性（transversality）条件，给出更强的“折损因子刚好用完预算”的刻画。这套语言是第 10 节效用最优解的归宿，也是“跑赢”与“泡沫”的技术边界。</p><span class="tag">最大性</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">回撤约束</span><span class="chip">Azéma–Yor</span><span class="chip">简单策略</span><span class="chip">弱可行性</span><span class="chip">半鞅必要性</span><span class="chip">无限资产</span>
+    <span class="chip hot">最大性</span><span class="chip">可补性</span><span class="chip">帕累托最优</span><span class="chip">横截性</span><span class="chip">互补松弛</span><span class="chip">跑赢</span><span class="chip">泡沫</span>
   </div>
 
-  <h3><span class="sn">11.1</span>回撤约束：路径依赖的“止损线”</h3>
-  <p>对严格正财富 $X$，记运行最大值 $X^*(t)=\max_{s\le t}X(s)$，相对回撤</p>
-  $$D(t)=\frac{X^*(t)-X(t)}{X^*(t)}\in[0,1).$$
-  <p>给定 $\delta\in(0,1]$，回撤约束要求 $D(t)&lt;\delta$ 对所有 $t$ 成立；它路径依赖，不能塞进静态权重。</p>
+  <h3><span class="sn">11.1</span>偏序：谁支配谁</h3>
+  <p>对两个累计提款流 $H,K\in\mathcal K(x)$，记 $H\preceq K$，若 $K-H$ 非降（即 $K$ 在每个时刻都至少支付了 $H$ 所支付的累计额）。这个偏序是“逐路径支配”，比“期望效用更大”强得多。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">最大与可补</span><span class="thm-id">§3.5</span></div>
+    <div class="thm-body"><p>$H\in\mathcal K(x)$ 称为<b>最大</b>（maximal），若 $K\in\mathcal K(x)$ 且 $H\preceq K$ 蕴含 $K=H$。</p>
+    <p>$H\in\mathcal K(x)$ 称为<b>可补</b>（complementable），若存在 $Y\in\mathcal Y$，使</p>
+    $$\mathbb E\Big[\int_0^\infty Y(t)\,dH(t)\Big]=x.$$
+    <p>“可补”的意思是：存在一个折损因子，使 $H$ 的折损价值刚好等于初始资本，预算被“用满”，没有剩余。</p></div>
+  </div>
+
+  <p>若 $H$ 可补，则它自动最大：设 $H\preceq K$ 且 $K\in\mathcal K(x)$。由融资对偶，</p>
+  $$x=\mathbb E\int Y\,dH\le\mathbb E\int Y\,dK\le x.$$
+  <p>两端相等，故 $\int Y\,d(K-H)=0$；由 $Y&gt;0$ 与 $K-H$ 非降，得 $K=H$。反过来（最大 $\Rightarrow$ 可补）才是真正的定理，需要分离定理与可选分解。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">回撤约束的 Azéma–Yor 表示</span><span class="thm-id">Prop. 4.4</span></div>
-    <div class="thm-body"><p>对任意 $X\in\mathcal X$，定义</p>
-    $${\vphantom{X}}^{\delta}\!X:=(X^*)^{\delta}\Big(1-\delta\frac{X^*-X}{X^*}\Big)=(X^*)^{\delta}(1-\delta D).$$
-    <p>则 ${\vphantom{X}}^{\delta}\!X$ 是计价单位，且其相对回撤满足</p>
-    $$\frac{({\vphantom{X}}^{\delta}\!X)^*-{\vphantom{X}}^{\delta}\!X}{({\vphantom{X}}^{\delta}\!X)^*}=\delta D&lt;\delta.$$
-    <p>并且所有满足回撤约束的计价单位都可以写成这种形式：${\vphantom{X}}^{\delta}\mathcal X=\{{\vphantom{X}}^{\delta}\!X:X\in\mathcal X\}$。对应的组合 $\delta\pi$ 把当前财富的比例</p>
-    $$\frac{1-D}{(1/\delta)-D}=\frac{\delta(1-D)}{1-\delta D}$$
-    <p>投入原基金 $X^\pi$，其余投入货币市场；比例只依赖 $\delta$ 与可观测的回撤 $D$。</p></div>
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">最大性 = 可补性</span><span class="thm-id">Thm. 3.71</span></div>
+    <div class="thm-body"><p>设市场可行，$x\in\mathbb R_+$，$H\in\mathcal K(x)$。则 $H$ 最大，当且仅当 $H$ 可补。</p></div>
   </div>
 
-  <details class="proof"><summary>证明思路：对 $F(X^*)$ 用伊藤–田中公式</summary><div class="proof-body"><p>取 $F(x)=x^\delta$，对 $F(X^*)$ 用伊藤公式。关键观察是 $X^*$ 只在 $X=X^*$ 时增长，因此 $(X^*-X)\,dF'(X^*)=0$；交叉项消失后，${\vphantom{X}}^{\delta}\!X$ 的随机微分恰好是 $\delta(X^*)^{\delta-1}dX$，即一个以 $X$ 为基金的组合，权重为 $\delta(X^*)^{\delta-1}X/{\vphantom{X}}^{\delta}\!X$。回撤公式由 $F$ 的单调性与 $X^*$ 的定义直接得到。</p></div></details>
+  <details class="proof"><summary>证明思路：分离超平面</summary><div class="proof-body"><p>把提款流按 $Q$ 转换为 $L^0_+$ 中的函数 $f=dH/dQ$，可行集 $\mathcal K$ 是凸、闭、有界的。若 $H$ 最大，则 $f$ 是 $\mathcal K$ 的极大元；由双极定理（Theorem A.9）与分离定理，存在 $g\in\mathcal K^\circ$ 使 $\mathbb E[fg]=1$。再把 $g$ 分解成 $g=Y\cdot\Lambda$，其中 $\Lambda$ 是一个与 $M$ 正交的密度；用 Girsanov 把 $\Lambda$ 吸收进模型一致测度，最终得到一个折损因子 $Y$ 使 $\mathbb E\int Y\,dH=x$。</p></div></details>
 
   <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">一次回撤的数值</span><span class="thm-id">Ex. 11.1</span></div>
-    <div class="thm-body"><p>设 $X$ 从 $1$ 涨到 $1.2$，再跌到 $0.9$。此时 $X^*=1.2$，$D=(1.2-0.9)/1.2=0.25$。取 $\delta=0.5$：</p>
-    $${\vphantom{X}}^{0.5}\!X=(1.2)^{0.5}(1-0.5\times0.25)=1.0954\times0.875=0.9585.$$
-    <p>它的回撤是 $\delta D=0.125$，确实小于 $0.5$。回撤越深，基金权重越低，这就是“在低点减仓”的机械规则。</p></div>
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">确定性市场中的两条极大消费流</span><span class="thm-id">Ex. 11.1</span></div>
+    <div class="thm-body"><p>设利率 $r=0$、初始资本 $x=1$、现金价格恒为 $1$。考虑两条提款流：</p>
+    $$H_1(t)=\mathbf 1_{[1,\infty)}(t),\qquad H_2(t)=0.5\,\mathbf 1_{[0.5,\infty)}(t)+0.5\,\mathbf 1_{[1.5,\infty)}(t).$$
+    <p>两者都恰好花掉 $1$ 元（融资资本都是 $1$）。它们互不支配：$H_1$ 在 $[0.5,1)$ 上领先（$1$ 对 $0.5$），$H_2$ 在 $[1,1.5)$ 上领先（$1$ 对 $0.5$）。因此二者都是极大的，但都不是唯一的。这个例子说明最大性只是一个偏序概念：极大元可以有很多个，彼此不可比较。</p></div>
   </div>
 
-  <div class="intuition"><div class="ih">直觉</div><p>回撤约束把“风险预算”写成了路径约束。Azéma–Yor 变换给原财富加了一个随运行最大值变化的杠杆：涨得越高，允许的杠杆越小；跌得越深，越要减仓。</p></div>
-
-  <h3><span class="sn">11.2</span>简单交易：半鞅性质是“推出来”的</h3>
-  <p>前 10 节都假设价格是连续半鞅。若只允许简单策略（分段常数持仓）、且禁止卖空与借钱，那么“没有免费午餐”本身就会迫使价格成为半鞅。</p>
+  <h3><span class="sn">11.2</span>横截性：资本不能在无穷远处“漏掉”</h3>
+  <p>最大性只保证“没有更好的流”，但不保证“没有剩余资本”。设 $X$ 是 $H$ 的最小融资财富，$X-H$ 是“还没花掉的缓冲”。若这个缓冲在 $t\to\infty$ 时相对 $X^\nu$ 不消失，就可能出现“$H$ 已经最大、但账上还剩钱”的怪现象。</p>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">弱可行性与半鞅</span><span class="thm-id">Thm. 4.23</span></div>
-    <div class="thm-body"><p>设 $S=(S^1,\dots,S^n)$ 是严格正、适应、连续过程（先不假设半鞅）。下列等价：</p>
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">横截性刻画</span><span class="thm-id">Thm. 3.80</span></div>
+    <div class="thm-body"><p>设市场可行，$x\in\mathbb R_+$，$H\in\mathcal K(x)$。下列等价：</p>
     <ol>
-      <li>市场是弱可行的：用简单、long-only、不借钱的策略，不能从任意小资本融资非零提款流；</li>
-      <li>存在严格正上鞅 $Y$，使所有 $YS^i$ 都是上鞅；</li>
-      <li>$S^1,\dots,S^n$ 都是半鞅。</li>
-    </ol>
-  <p>经济含义：半鞅不是数学家的偏好，而是“禁止免费午餐”逼出来的价格性质。分数布朗运动（高斯过程，$H\ne1/2$）不是半鞅，故弱可行性失败。</p></div>
+      <li>$H$ 最大，且其最小融资财富 $X$ 满足横截性
+      $$\lim_{t\to\infty}\frac{X(t)-H(t)}{X^\nu(t)}=0;$$</li>
+      <li>存在 $Y\in\mathcal Y$，使 $(X^\nu Y)(\infty)&gt;0$ 且互补性
+      $$\mathbb E\Big[\int_0^\infty Y(t)\,dH(t)\Big]=x$$
+      成立。</li>
+    </ol></div>
   </div>
 
-  <details class="proof"><summary>证明思路：Doob–Meyer 与长期块策略</summary><div class="proof-body"><p>(2)⇒(3)：$Y$ 与 $YS^i$ 都是上鞅，Doob–Meyer 分解使它们成为半鞅；由伊藤公式 $1/Y$ 是半鞅，再用 $S^i=(1/Y)(YS^i)$ 得 $S^i$ 是半鞅。</p>
-  <p>(3)⇒(1)：半鞅积分理论保证简单策略的财富良好定义，非负上鞅不能产生免费午餐。</p>
-  <p>(1)⇒(2)：若 $S$ 不是半鞅，用“长期持有、只在有利方向调仓”的简单策略构造一列初始资本趋于零、却在正概率上发散的财富，违背弱可行性。</p></div></details>
+  <p>条件 $(X^\nu Y)(\infty)&gt;0$ 排除了“折损因子在无穷远处衰减到零”的退化情形；横截性则排除了“剩余财富相对计价单位不消失”的泡沫情形。两者合起来，才能把“最大”升级为“预算刚好用尽、且没有遗留财富”。</p>
 
-  <h3><span class="sn">11.3</span>无限资产：$A\in R(C)$</h3>
-  <p>当资产数量 $I$ 无限时，矩阵 $c$ 不再可逆，“$\alpha=c\nu$”要换成算子语言。把 $A=(A^i)_{i\in I}$ 看成取值于某个函数空间的漂移，$C$ 看成协方差算子，结构条件写成</p>
-  $$A\in R(C)\quad\Longleftrightarrow\quad \int_0^T\|dA(t)\|^2_{C}&lt;\infty\quad\text{对所有 }T,$$
-  <p>更具体地，存在某个可预测的“风险价格” $Z$，使 $dA=d[Z,R]$，且</p>
-  $$\int_0^T\frac{\|dA(t)\|^2}{dC(t)}&lt;\infty.$$
-  <p>$A$ 必须落在协方差算子 $C$ 的随机值域内。定理 4.46：简单可行 $\Leftrightarrow$ 有局部鞅折损因子 $\Leftrightarrow$ 价格是半鞅且 $A\in R(C)$。</p>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">最大但横截性失败的流</span><span class="thm-id">Ex. 3.79</span></div>
+    <div class="thm-body"><p>设折现价格 $S$ 本身是局部鞅（因此 $X^\nu\equiv1$），初始资本 $x=1$。构造一个提款流 $H$，它在某个随机时刻之后停止支付，但最小融资财富满足</p>
+    $$\lim_{t\to\infty}\big(X(t)-H(t)\big)=1-H(\infty)&gt;0.$$
+    <p>也就是说，$H$ 已经是最大的（没有别的可行流能在每个时刻都支配它），但账上始终留着一块“永远不消费的财富”。横截性条件恰好排除了这种情形。它说明：<b>最大性本身不足以推出“资本被完全利用”</b>；必须再加上“剩余财富相对计价单位趋于零”。</p></div>
+  </div>
+
+  <h3><span class="sn">11.3</span>与效用最优、跑赢的关系</h3>
+  <p>第 10 节的效用最优解 $K_x$ 一定是最大的：若存在 $K\succeq K_x$ 且严格更大，那么把多出来的部分消费掉会提高效用，矛盾。因此“效用最优 $\Rightarrow$ 最大 $\Rightarrow$ 可补”。反过来，最大性不保证效用最优——最大只排除“逐路径被支配”，不排除“在某个状态下更想要的消费组合”。</p>
+  <p><b>跑赢</b>（outperformance）是另一个偏序：$\rho$ 跑赢 $\pi$，若 $X^\rho(t)\ge X^\pi(t)$ 对充分大的 $t$ 成立（或终端财富更大）。第 2 节的相对财富公式给出更精确的图景：若相对增长时钟 $\Gamma^\pi_\rho(\infty)&lt;\infty$，比值收敛到 $(0,\infty)$ 内的随机变量；若它发散，对数比值以斜率 $-1$ 被压下去。最大性则是“消费流之间”的偏序，不要与“财富过程之间”的跑赢混淆。</p>
+  <p>在完备市场里，折损因子唯一，因此最大性与可补性重合，且“补”的 $Y$ 必为 $1/X^\nu$；效用最优仍是最大性的一个子集，具体是哪一个最大流取决于偏好。在不完全市场里，它们分层次：效用最优最窄，最大性居中，可补性最宽（因为可以选择不同的 $Y$）。</p>
+
+  <div class="intuition"><div class="ih">直觉</div><p>把可行消费流想成一堆“不能同时拿”的蛋糕切法。最大就是“没有任何切法能在每一块上都比它大”。可补就是“存在一组状态价格，使这块蛋糕刚好花光预算”。横截性则是“不许把蛋糕留在盘子里不吃”。三个条件从不同角度描述同一件事：不浪费。</p></div>
 
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>扩展</th><th>核心对象</th><th>结论</th></tr></thead>
+    <thead><tr><th>概念</th><th>定义 / 条件</th><th>读法</th></tr></thead>
     <tbody>
-      <tr><td class="id">回撤</td><td>$D=(X^*-X)/X^*$</td><td>${\vphantom{X}}^{\delta}\!X=(X^*)^\delta(1-\delta D)$，回撤 $=\delta D$</td></tr>
-      <tr><td class="id">简单交易</td><td>long-only 简单策略</td><td>弱可行 $\Leftrightarrow$ 半鞅</td></tr>
-      <tr><td class="id">无限资产</td><td>$A,C$ 算子</td><td>可行 $\Leftrightarrow A\in R(C)$</td></tr>
+      <tr><td class="id">支配</td><td>$H\preceq K\iff K-H$ 非降</td><td>逐路径更多</td></tr>
+      <tr><td class="id">最大</td><td>$H\preceq K\Rightarrow K=H$</td><td>帕累托最优</td></tr>
+      <tr><td class="id">可补</td><td>$\exists Y:\mathbb E\int Y\,dH=x$</td><td>预算用满</td></tr>
+      <tr><td class="id">定理 3.71</td><td>最大 $\Leftrightarrow$ 可补</td><td>分离定理</td></tr>
+      <tr><td class="id">横截性</td><td>$(X-H)/X^\nu\to0$</td><td>无剩余财富</td></tr>
+      <tr><td class="id">定理 3.80</td><td>最大 + 横截性 $\Leftrightarrow$ 强可补</td><td>$(X^\nu Y)(\infty)&gt;0$</td></tr>
+      <tr><td class="id">效用最优</td><td>$\Rightarrow$ 最大 $\Rightarrow$ 可补</td><td>反向一般不成立</td></tr>
     </tbody>
   </table></div>
 
+  <div class="note"><b>英文术语</b>：maximality（最大性）、complementability（可补性）、Pareto optimality（帕累托最优）、transversality（横截性）、outperformance（跑赢）、partial order（偏序）、domination（支配）、endowment（禀赋）、counterparts（对应物）、proving（证明）、minimally（最小地）、claims（权益）、replicability（可复制性）。</div>
+
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">扩展不是“更难”，而是“更挑假设”</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">最大性不是“效用最大”</span></div>
     <div class="thm-body"><ul>
-      <li><b>回撤约束不能写成静态 $\pi$ 约束。</b> 它依赖运行最大值，是路径依赖的；把 $D$ 当成常数会低估约束的强度。</li>
-      <li><b>弱可行性比可行性弱得多。</b> 它只禁止 long-only 简单策略的免费午餐，允许有限变差价格等“看似套利但不可缩放”的情形。</li>
-      <li><b>“不是半鞅”不等于“模型没用”。</b> 它只说明不能套用本文的随机积分与对偶；若要建模，需要换一套积分理论并重新定义策略类。</li>
+      <li><b>最大是逐路径偏序，不是期望比较。</b> 一个流可以在期望上更差，却在偏序上更大；反之亦然。</li>
+      <li><b>可补的 $Y$ 不必是 $1/X^\nu$。</b> 不完全市场里可以用别的折损因子“补”预算；这正是可补性比“$1/X^\nu$ 补”更宽的原因。</li>
+      <li><b>最大不保证横截性。</b> Example 3.79 就是反例：账上剩余财富可以不消失。</li>
+      <li><b>“跑赢”与“最大”是两套偏序。</b> 前者比较财富过程，后者比较消费流；不要混用。</li>
+      <li><b>效用最优解的存在性依赖 Inada 条件。</b> 没有 Inada，最优解可能在边界，最大性论证要重做。</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="ch12" class="chapter"><div class="wrap">
+  <div class="sec-label">Chapter 4 · §4.1</div>
+  <h2><span class="num">12</span>回撤约束与组合保险</h2>
+  <p class="lede">“财富永远不低于历史最高点的某个比例”——这条路径依赖的约束看似无法用组合权重表达，但 Azéma–Yor 变换把它变成一个显式的“基金 + 现金”互惠基金。</p>
+
+  <div class="chap-intro"><p>本节研究<b>回撤约束</b>（drawdown constraint）：相对回撤 $(X^*-X)/X^*$ 始终小于 $\delta$。核心结果是 Prop. 4.4：约束类 $\,^\delta\mathcal X$ 正好是全体计价单位经 Azéma–Yor 变换后的像；变换后的组合 $\,^\delta\pi$ 可以写成“$\pi$ 与现金”的凸组合，权重只依赖当前回撤。最后给出 Theorem 4.15：$\!^\delta X^\nu$ 是该类中的局部鞅计价单位。</p><span class="tag">回撤</span></div>
+
+  <div class="mapchips">
+    <span class="chip hot">回撤约束</span><span class="chip">组合保险</span><span class="chip">Azéma–Yor</span><span class="chip">运行最大</span><span class="chip">互惠基金</span><span class="chip">高水位</span><span class="chip">增长最优</span>
+  </div>
+
+  <h3><span class="sn">12.1</span>相对回撤与 Azéma–Yor 变换</h3>
+  <p>对连续正半鞅 $X$，记运行最大 $X^*(t)=\sup_{s\le t}X(s)$。<b>绝对回撤</b>是 $X^*-X$，<b>相对回撤</b>是</p>
+  $$D_X:=\frac{X^*-X}{X^*}\in[0,1).$$
+  <p>给定非降、连续可微、$F(1)=1$ 的 $F:[1,\infty)\to[1,\infty)$，定义 $X$ 的<b>Azéma–Yor 变换</b>（Azéma–Yor transform）：</p>
+  $$Z:=F(X^*)-F'(X^*)(X^*-X)=F(X^*)\Big(1-\frac{F'(X^*)X^*}{F(X^*)}\,D_X\Big).$$
+
+  <div class="thm lem">
+    <div class="thm-head"><span class="thm-kind">引理</span><span class="thm-title">变换的三条性质</span><span class="thm-id">Lemma 4.1</span></div>
+    <div class="thm-body"><p>设 $X$ 严格正、连续、$X(0)=1$。则</p>
+    $$Z=1+\int_0^{\cdot}F'(X^*(t))\,dX(t),\qquad Z^*=F(X^*),$$
+    $$\frac{Z^*-Z}{Z^*}=\frac{F'(X^*)X^*}{F(X^*)}\cdot\frac{X^*-X}{X^*}.$$
+    <p>特别地，$Z$ 是 $X$ 的随机积分（因此仍是计价单位），其运行最大被 $F$ 精确变换，相对回撤按比例 $\frac{xF'(x)}{F(x)}$ 缩放。</p></div>
+  </div>
+
+  <details class="proof"><summary>证明思路：对 $F(X^*)$ 用乘积法则</summary><div class="proof-body"><p>$X^*$ 只在 $X=X^*$ 时增长，故 $\int(X^*-X)\,dF'(X^*)=0$。对 $F'(X^*)(X^*-X)$ 用分部积分：</p>
+  $$F'(X^*)(X^*-X)=\int F'(X^*)\,d(X^*-X)=F(X^*)-1-\int F'(X^*)\,dX,$$
+  <p>移项即得积分表示。$Z^*=F(X^*)$ 的证明用“最后达到最大值的时刻”$\psi(t)$：在 $\psi(t)$ 处 $X=X^*$，故 $Z(\psi)=F(X^*(\psi))$；再用 $Z\le Z^*$ 与 $Z^*\ge F(X^*)$ 夹逼。</p></div></details>
+
+  <h3><span class="sn">12.2</span>约束类 = 变换后的全体计价单位</h3>
+  <p>取 $F(x)=x^\delta$，$\delta\in(0,1]$。此时 $F'(x)=\delta x^{\delta-1}$，变换变成</p>
+  $$^\delta X:=(1-\delta)(X^*)^\delta+\delta X(X^*)^{\delta-1}=(X^*)^\delta\big(1-\delta D_X\big).$$
+  <p>由 Lemma 4.1，$^\delta X=1+\int\delta(X^*)^{\delta-1}dX$，且</p>
+  $$^\delta X^*=(X^*)^\delta,\qquad D_{^\delta X}=\delta D_X&lt;\delta.$$
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">回撤约束的表示</span><span class="thm-id">Prop. 4.4</span></div>
+    <div class="thm-body"><p>对每个 $\delta\in(0,1]$，</p>
+    $$^\delta\mathcal X:=\{X\in\mathcal X:D_X&lt;\delta\}=\{\,^\delta X:X\in\mathcal X\}.$$
+    <p>也就是说，所有满足“相对回撤小于 $\delta$”的计价单位，正好是全体计价单位经 $F(x)=x^\delta$ 变换后的像；映射 $X\mapsto{}^\delta X$ 是双射，逆变换由 $F^{-1}(z)=z^{1/\delta}$ 给出。</p></div>
+  </div>
+
+  <h3><span class="sn">12.3</span>显式组合：一只基金 + 现金</h3>
+  <p>设 $X^\pi$ 是组合 $\pi$ 的财富，$D^\pi$ 是它的相对回撤。由 $^\delta X^\pi=(X^{*\pi})^\delta(1-\delta D^\pi)$ 与伊藤公式，可以读出 $^\delta X^\pi$ 对应的组合权重：</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">回撤约束组合的互惠基金表示</span><span class="thm-id">(4.11)–(4.13)</span></div>
+    <div class="thm-body"><p>存在组合 $^\delta\pi\in I(R)$，使 $X^{^\delta\pi}={}^\delta X^\pi$，且</p>
+    $$^\delta\pi=\frac{1-D^\pi}{(1/\delta)-D^\pi}\,\pi=\Big(\delta-\frac{1-\delta}{1/\delta-D^\pi}\Big)\pi.$$
+    <p>等价地，$^\delta\pi$ 把当前财富的</p>
+    $$\frac{1-D^\pi}{(1/\delta)-D^\pi}\in(0,\delta]$$
+    <p>投入基金 $X^\pi$，把剩余的</p>
+    $$\frac{1-\delta}{1-\delta D^\pi}\in[1-\delta,1)$$
+    <p>投入货币市场。权重只依赖 $\delta$ 与可观测的回撤 $D^\pi$，且随 $D^\pi$ 递减——高水位附近加仓，回撤加深时减仓。</p></div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">$\delta=0.8$ 的减仓路径</span><span class="thm-id">Ex. 12.1</span></div>
+    <div class="thm-body"><p>取 $\delta=0.8$（允许最多 $80\%$ 的相对回撤，初始把 $80\%$ 投入基金）。则投入基金 $X^\pi$ 的权重是</p>
+    $$w(D)=\frac{1-D}{1.25-D}.$$
+    <p>$D=0$ 时 $w=0.8$；$D=0.2$ 时 $w=0.8/1.05=0.762$；$D=0.5$ 时 $w=0.5/0.75=0.667$；$D=0.79$ 时 $w=0.21/0.46=0.457$。回撤越深，股票暴露越低，现金比例越高。这条规则是“路径依赖”的：它不是固定杠杆，而是随高水位动态调整。</p></div>
+  </div>
+
+  <h3><span class="sn">12.4</span>约束下的最优性</h3>
+  <p>设 $\nu$ 是增长最优组合，$X^\nu$ 是其财富。无约束时 $X^\nu$ 的相对回撤会怎样？在 $G(\infty)=\infty$ 的假设下（Assumption 4.6），Prop. 4.7 给出</p>
+  $$\liminf_{t\to\infty}D^\nu(t)=0,\qquad \limsup_{t\to\infty}D^\nu(t)=1\qquad \mathbb P\text{-a.e.}$$
+  <p>也就是说，增长最优组合的回撤会反复接近 $100\%$：它长期增长最快，但路径上几乎必然经历任意深的回撤。这正是“组合保险很贵”的根源——要压制回撤，就必须放弃一部分增长。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">约束类的计价单位性质</span><span class="thm-id">Thm. 4.15</span></div>
+    <div class="thm-body"><p>在 Assumption 4.6 下，固定 $\delta\in(0,1]$ 与 $\pi\in I(R)$。对 $X^\nu$ 的任意两个最大值时刻 $\sigma\le\tau$，</p>
+    $$\mathbb E\left[\frac{^\delta X^\pi(\tau)}{^\delta X^\nu(\tau)}\ \Big|\ \mathcal F(\sigma)\right]\le\frac{^\delta X^\pi(\sigma)}{^\delta X^\nu(\sigma)}\qquad \mathbb P\text{-a.e.}$$
+    <p>因此 $\!^\delta X^\nu$ 是约束类 $^\delta\mathcal X$ 中的局部鞅计价单位：任何回撤约束组合都无法在“回撤调整后”跑赢它。</p></div>
+  </div>
+
+  <p>Remark 4.16 进一步说明：对每个固定的 $\delta$，都存在无法被其他约束组合一致跑赢的最优者；但<b>不存在</b>一个单一过程能同时对所有权重 $\delta$ 都最优。换言之，回撤约束下的“有效前沿”是一族曲线，而不是一个点。</p>
+
+  <div class="intuition"><div class="ih">直觉</div><p>Azéma–Yor 变换像给财富曲线装了一个“非线性减震器”：涨的时候按 $x^\delta$ 压缩，跌的时候用运行最大做锚，保证回撤不超过 $\delta$。代价是上涨也被压缩了——$\delta&lt;1$ 时，长期增长率大约按 $\delta$ 缩放。保险从来不是免费的。</p></div>
+
+  <div class="table-wrap cheat"><table>
+    <thead><tr><th>对象</th><th>公式</th><th>读法</th></tr></thead>
+    <tbody>
+      <tr><td class="id">相对回撤</td><td>$D_X=(X^*-X)/X^*$</td><td>$\in[0,1)$</td></tr>
+      <tr><td class="id">AY 变换</td><td>$Z=F(X^*)-F'(X^*)(X^*-X)$</td><td>$Z=1+\int F'(X^*)dX$</td></tr>
+      <tr><td class="id">回撤缩放</td><td>$D_Z=\frac{xF'(x)}{F(x)}D_X$</td><td>按对数斜率缩放</td></tr>
+      <tr><td class="id">$F=x^\delta$</td><td>$^\delta X=(X^*)^\delta(1-\delta D_X)$</td><td>$D_{^\delta X}=\delta D_X$</td></tr>
+      <tr><td class="id">约束类</td><td>$^\delta\mathcal X=\{D_X&lt;\delta\}$</td><td>$=\{\,^\delta X:X\in\mathcal X\}$</td></tr>
+      <tr><td class="id">组合权重</td><td>$\frac{1-D^\pi}{(1/\delta)-D^\pi}\pi$</td><td>基金 + 现金</td></tr>
+      <tr><td class="id">最优性</td><td>$\mathbb E[^\delta X^\pi/^\delta X^\nu(\tau)\mid\mathcal F_\sigma]\le\cdots$</td><td>约束类计价单位</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note"><b>英文术语</b>：drawdown constraint（回撤约束）、drawdown-constrained（回撤约束的）、portfolio insurance（组合保险）、Azéma–Yor transform（阿泽马-约尔变换）、running maximum（运行最大）、mutual fund（互惠基金）、high-watermark（高水位）、bijection（双射）、one-to-one（一一对应）、mapping（映射）、integrals（积分）、spaces（空间）。</div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">回撤约束不是“止损”</span></div>
+    <div class="thm-body"><ul>
+      <li><b>$\delta$ 是最大回撤，不是“保本比例”。</b> $\delta=0.2$ 表示最多回撤 $20\%$，不是保证 $80\%$ 本金。</li>
+      <li><b>约束是路径依赖的。</b> 不能写成每期对 $\pi$ 的简单上限；权重依赖运行最大，必须知道历史路径。</li>
+      <li><b>$\delta&lt;1$ 会降低长期增长。</b> 保险的代价是增长率的折扣；$\delta\to1$ 才回到无约束。</li>
+      <li><b>约束类中的“最优”依赖 $\delta$。</b> 没有一个组合能同时在所有 $\delta$ 下最优（Remark 4.16）。</li>
+      <li><b>回撤约束不保证不亏。</b> 它只限制“从最高点回落”的幅度；若最高点本身很低，仍可能亏损。</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="ch13" class="chapter"><div class="wrap">
+  <div class="sec-label">Chapter 4 · §4.2</div>
+  <h2><span class="num">13</span>简单交易与半鞅：经济学推出随机分析</h2>
+  <p class="lede">前 12 节都假设价格是半鞅。本节反过来：只允许“简单、只做多、不借钱”的交易，仍然不允许免费午餐——这条极弱的经济条件，等价于价格必须是半鞅。</p>
+
+  <div class="chap-intro"><p>放弃半鞅假设后，一般可预测策略的随机积分无法定义；于是只允许<b>简单策略</b>（simple strategy）：在有限个停时区间上持有固定股数。再加上“不许做空、不许借钱”，得到弱可行性（weak viability）。定理 4.23 说：弱可行性 $\Leftrightarrow$ 存在严格正上鞅折损因子 $\Leftrightarrow$ 价格是半鞅。这是 Bichteler–Dellacherie 定理的金融版本。</p><span class="tag">半鞅</span></div>
+
+  <div class="mapchips">
+    <span class="chip hot">简单策略</span><span class="chip">只做多</span><span class="chip">不借钱</span><span class="chip">弱可行性</span><span class="chip">上鞅折损因子</span><span class="chip">半鞅</span><span class="chip">Bichteler–Dellacherie</span>
+  </div>
+
+  <h3><span class="sn">13.1</span>为什么需要“简单策略”</h3>
+  <p>若 $S$ 不是半鞅，$\int\vartheta'dS$ 对一般可预测 $\vartheta$ 没有定义。但“买入并持有到某个停时”不需要随机积分：它只是一个有限和。</p>
+  <p>取严格递增的停时 $0=\tau_0&lt;\tau_1&lt;\dots&lt;\tau_m$，每个 $\theta_j\in\mathbb R^n$ 是 $\mathcal F(\tau_{j-1})$-可测的。定义</p>
+  $$\vartheta(t)=\sum_{j=1}^m\theta_j\mathbf 1_{(\tau_{j-1},\tau_j]}(t).$$
+  <p>这就是<b>简单策略</b>（simple strategy）：在 $(\tau_{j-1},\tau_j]$ 上持有固定股数 $\theta_j$，$\tau_m$ 之后退出股市、全部持有现金。其损益是</p>
+  $$\int_0^{\cdot}\vartheta'dS=\sum_{j=1}^m\sum_{i=1}^n\theta_j^i\big(S^i(\tau_j\wedge\cdot)-S^i(\tau_{j-1}\wedge\cdot)\big),$$
+  <p>只涉及有限个价格差，完全不需要半鞅结构。</p>
+
+  <h3><span class="sn">13.2</span>弱可行性</h3>
+  <p>在简单策略类上，进一步要求 $\vartheta^i\ge0$（不许做空）且</p>
+  $$X(\cdot;x,\vartheta,K)-\sum_{i=1}^n\vartheta^iS^i\ge0$$
+  <p>（不许向货币市场借钱）。记所有这样的提款流为 $\mathcal K^\triangle(x)$，并令</p>
+  $$x^\triangle(K):=\inf\{x\ge0:K\in\mathcal K^\triangle(x)\}.$$
+  <p>称市场<b>弱可行</b>（weakly viable），若 $x^\triangle(K)=0$ 蕴含 $K\equiv0$，即 $\mathcal K^\triangle(0^+)=\{0\}$。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">弱可行性与半鞅</span><span class="thm-id">Thm. 4.23</span></div>
+    <div class="thm-body"><p>设 $S=(S^1,\dots,S^n)$ 严格正、适应、连续（不假设半鞅）。下列等价：</p>
+    <ol>
+      <li>市场弱可行；</li>
+      <li>存在严格正上鞅 $Y$，使 $YS^i$ 对每个 $i$ 都是上鞅；</li>
+      <li>每个 $S^i$ 都是半鞅。</li>
+    </ol></div>
+  </div>
+
+  <details class="proof"><summary>证明骨架：三条边</summary><div class="proof-body">
+    <p><b>$(2)\Rightarrow(3)$：</b>$Y$ 是严格正上鞅，由 Doob–Meyer 分解它是半鞅；每个 $YS^i$ 也是半鞅。对 $1/Y$ 用伊藤公式，得 $1/Y$ 是半鞅；再用乘积法则 $S^i=(1/Y)(YS^i)$，得 $S^i$ 是半鞅。</p>
+    <p><b>$(1)\Rightarrow(2)$：</b>在弱可行下，用与定理 2.31 类似的分离论证，在“只做多、不借钱”的凸集上构造一个严格正上鞅 $Y$，使 $YS^i$ 为上鞅。技术上要对简单策略的有限维结构做紧性论证。</p>
+    <p><b>$(3)\Rightarrow(1)$：</b>若 $S$ 是半鞅，可直接构造上鞅折损因子：取“禁止做空与借钱”下的增长最优组合，其倒数的上鞅版本就是 $Y$。有了 $Y$，任何简单策略的折损财富 $YX$ 都是上鞅；若 $K$ 从任意小资本可融资，则 $\mathbb E[Y(\infty)K(\infty)]\le x\to0$，故 $K\equiv0$。</p>
+  </div></details>
+
+  <p>这条定理的意义在于<b>认识论</b>：半鞅不是数学家为了使用伊藤积分而强加的假设，而是“不许免费午餐”这条经济条件在只做多、不借钱的简单交易下的必然推论。Bichteler–Dellacherie 定理说“好的积分器就是半鞅”；定理 4.23 说“好的市场就是半鞅”。</p>
+
+  <h3><span class="sn">13.3</span>反例：非半鞅价格会怎样</h3>
+  <p>最著名的非半鞅连续过程是<b>分数布朗运动</b>（fractional Brownian motion）$B^H$，$H\in(0,1)$，$H\ne1/2$。它的 Hurst 指数 $H$ 控制长期相关性：$H&gt;1/2$ 有正相关（趋势持续），$H&lt;1/2$ 有负相关（均值回复）。</p>
+  <p>$B^H$ 不是半鞅。由定理 4.23，以 $S=\exp(B^H)$ 为价格的市场必然弱不可行：存在简单、只做多、不借钱的策略，从任意小资本出发抽出非零的累计现金流。在 $H&gt;1/2$ 的“趋势持续”情形，Rogers（1997）与 Cheridito（2003）给出了具体的套利构造：在离散网格上顺着趋势不断加仓，就能把统计可预测性变成逐路径的免费午餐。$H&lt;1/2$ 时定理 4.23 仍保证弱可行性失败，只是免费午餐的形式更微妙，不一定表现为经典的“几乎必然盈利”。</p>
+  <p>这不是说 fBM 不能用来做统计建模；它只是说：<b>如果把 fBM 当作可交易价格的模型，就必须接受套利</b>。两者不可兼得。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">半鞅市场中的弱可行构造</span><span class="thm-id">Ex. 13.1</span></div>
+    <div class="thm-body"><p>设 $S$ 是几何布朗运动 $dS/S=\mu\,dt+\sigma\,dW$。取 $a=\max\{\sigma^2/2,\ \mu-\sigma^2/2\}$，定义</p>
+    $$Y(t)=\exp\big(-at-\sigma W(t)\big).$$
+    <p>直接计算：由伊藤公式，$Y$ 的漂移系数是 $Y(\sigma^2/2-a)\le0$，故 $Y$ 是上鞅；而</p>
+    $$Y(t)S(t)=S(0)\exp\Big(\big(\mu-\tfrac12\sigma^2-a\big)t\Big)$$
+    <p>的指数不大于零，故 $YS$ 也是上鞅（在这个参数下甚至是常数）。由定理 4.23，市场弱可行。取 $\mu=6\%$、$\sigma=20\%$，则 $a=\max\{0.02,0.04\}=0.04$，</p>
+    $$Y(t)=e^{-0.04t-0.2W(t)},\qquad Y(t)S(t)=S(0).$$
+    <p>注意 $Y$ 一般不是局部鞅，因为 $a&gt;0$；它只是上鞅，这正好对应“只做多、不借钱”下折损因子的较弱要求。</p></div>
+  </div>
+
+  <div class="intuition"><div class="ih">直觉</div><p>半鞅性质是“价格不会在无穷小时间尺度上留下可预测的痕迹”。若价格有记忆（fBM），那么过去的路径就包含未来漂移的信息；即使只允许简单策略，也能利用这种信息反复抽取正收益。经济上不允许这种“无风险的优势”，数学上就强制价格必须是半鞅。</p></div>
+
+  <div class="table-wrap cheat"><table>
+    <thead><tr><th>对象</th><th>定义 / 条件</th><th>读法</th></tr></thead>
+    <tbody>
+      <tr><td class="id">简单策略</td><td>$\sum_j\theta_j\mathbf 1_{(\tau_{j-1},\tau_j]}$</td><td>有限次调仓</td></tr>
+      <tr><td class="id">只做多</td><td>$\vartheta^i\ge0$</td><td>不许做空</td></tr>
+      <tr><td class="id">不借钱</td><td>$X-\sum\vartheta^iS^i\ge0$</td><td>现金账户非负</td></tr>
+      <tr><td class="id">弱可行</td><td>$\mathcal K^\triangle(0^+)=\{0\}$</td><td>无免费午餐</td></tr>
+      <tr><td class="id">折损因子</td><td>$Y&gt;0$ 上鞅，$YS^i$ 上鞅</td><td>比局部鞅弱</td></tr>
+      <tr><td class="id">定理 4.23</td><td>弱可行 $\Leftrightarrow$ $S$ 半鞅</td><td>经济学推出随机分析</td></tr>
+      <tr><td class="id">反例</td><td>fBM，$H\ne1/2$</td><td>非半鞅 $\Rightarrow$ 套利</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note"><b>英文术语</b>：simple strategy（简单策略）、short-selling（卖空）、borrowing（借款）、weak viability（弱可行性）、semimartingale（半鞅）、semimartingales（半鞅）、integrators（积分器）、fractional Brownian motion（分数布朗运动）、Ramifications（分支）、extensions（扩展）、analogue（类比）、concerning（关于）、affect（影响）、full（完整的）。</div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">半鞅不是“技术假设”</span></div>
+    <div class="thm-body"><ul>
+      <li><b>弱可行比可行弱，但仍足以推出半鞅。</b> 只做多、不借钱、简单策略，三个限制加起来仍然很强。</li>
+      <li><b>$Y$ 只是上鞅，不是局部鞅。</b> 不要把它当成折损因子（局部鞅版）；二者的差别正是“禁止做空/借钱”的代价。</li>
+      <li><b>fBM 的套利是“简单策略”套利。</b> 不需要一般可预测策略；这使反例更有说服力。</li>
+      <li><b>半鞅 + 弱可行 ≠ 可行。</b> 定理 4.23 只给半鞅，不给折损因子存在性；后者需要更强的条件。</li>
+      <li><b>连续路径假设不能丢。</b> 有跳跃时，定理形式会变；本书为避免技术复杂性而限定连续价格。</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="ch14" class="chapter"><div class="wrap">
+  <div class="sec-label">Chapter 4 · §4.3</div>
+  <h2><span class="num">14</span>无限多资产与随机再生核</h2>
+  <p class="lede">债券市场有无穷多只零息债。当资产指标集 $I$ 不可数时，“组合”不再是 $\mathbb R^n$ 里的向量，而是再生核 Hilbert 空间里的一个函数。整本书的结构条件 $\alpha\in\operatorname{range}(c)$ 在这里升级为 $A\in\mathcal R(C)$。</p>
+
+  <div class="chap-intro"><p>本节把前 13 节的理论推广到任意指标集 $I$：用协方差核 $C^{ij}$ 构造<b>随机再生核 Hilbert 空间</b>（stochastic reproducing kernel Hilbert space, rkHs）$\mathcal R(C)$，在其上定义扩展随机积分。核心结果：定理 4.42（扩展积分与 Itô 等距）、定理 4.46（基本定理的无限维版本）、定理 4.50/4.51（可选分解与融资对偶）。</p><span class="tag">无限资产</span></div>
+
+  <div class="mapchips">
+    <span class="chip hot">无限资产</span><span class="chip">协方差核</span><span class="chip">rkHs</span><span class="chip">扩展随机积分</span><span class="chip">Itô 等距</span><span class="chip">结构条件</span><span class="chip">简单可行</span>
+  </div>
+
+  <h3><span class="sn">14.1</span>为什么有限维公式不够用</h3>
+  <p>有限维时，$c=(c^{ij})$ 是 $n\times n$ 矩阵，结构条件 $\alpha=c\nu$ 的意思是“漂移落在协方差矩阵的值域里”。无限维时，$c$ 变成一个<b>正定核</b>（positive-definite kernel）：对每个 $(\omega,t)$，$c(\omega,t)=(c^{ij}(\omega,t))_{i,j\in I}$ 是 $I\times I$ 上的正定核，协变差为</p>
+  $$C^{ij}=\int_0^{\cdot}c^{ij}(t)\,dO(t).$$
+  <p>“矩阵乘向量”变成“核与函数的卷积”：$(c\nu)^i=\sum_jc^{ij}\nu^j$。若 $I$ 不可数，这个和一般没有定义，必须换成 rkHs 的内积。</p>
+
+  <h3><span class="sn">14.2</span>随机再生核空间 $\mathcal R(C)$</h3>
+  <p>对每个 $j\in I$，把“$C^{Ij}$”看作一个元素：它的第 $i$ 个分量是 $C^{ij}$。$\mathcal R(C)$ 由这些元素张成，内积定义为</p>
+  $$\langle C^{Ii},C^{Ij}\rangle_{\mathcal R(C)}=C^{ij}.$$
+  <p>更具体地，$\mathcal R(C)$ 是所有连续有限变差过程 $F=(F^i)_{i\in I}$，满足</p>
+  $$\int_0^T\frac{\|dF(t)\|^2}{dC(t)}:=\int_0^T\sum_{i,j\in I}\theta^i(t)\,dC^{ij}(t)\,\theta^j(t)&lt;\infty,\qquad \forall T&lt;\infty,$$
+  <p>其中 $F=\int\sum_j\theta^j dC^{Ij}$。它带有一个<b>再生性</b>（reproducing property）：</p>
+  $$F^j=\int_0^{\cdot}\langle dC^{Ij}(t),dF(t)\rangle_{dC},\qquad F\in\mathcal R(C),\ j\in I.$$
+  <p>这正是确定性 rkHs 的核性质在随机情形的翻版（附录 §A.5）。</p>
+
+  <p><b>结构条件</b>是：漂移的有限变差部分 $A=(A^i)_{i\in I}$ 属于 $\mathcal R(C)$，即</p>
+  $$A\in\mathcal R(C)\quad\Longleftrightarrow\quad\int_0^T\frac{\|dA(t)\|^2}{dC(t)}&lt;\infty,\qquad \forall T&lt;\infty.$$
+  <p>在有限维、$c$ 可逆的情形，$\int\|dA\|^2/dC=\int\alpha'c^{-1}\alpha\,dO$，正好是第 2 节的 $2G$。所以 $A\in\mathcal R(C)$ 就是“局部有限增长”的无限维版本。</p>
+
+  <h3><span class="sn">14.3</span>扩展随机积分与 Itô 等距</h3>
+  <p>对一般的 $\vartheta$，$\int\vartheta'dS$ 无法逐分量定义。但如果只要求“与每个 $R^i$ 的协变差”存在，就可以用协变差来定义积分：对过程 $Z$，记 $[Z,R^i]=F^i$。若 $F=(F^i)\in\mathcal R(C)$，就把 $Z$ 称为 $R$ 的<b>扩展随机积分</b>（extended stochastic integral），记 $Z=\int\langle\vartheta,dR\rangle$。所有这样的 $Z$ 组成空间 $cS(R)$。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">扩展积分与 Itô 等距</span><span class="thm-id">Thm. 4.42</span></div>
+    <div class="thm-body"><p>下列等价：</p>
+    <ol>
+      <li>映射 $cS(R)\ni Z\mapsto([Z,R^i];i\in I)\in\mathcal R(C)$ 是双射；</li>
+      <li>$A\in\mathcal R(C)$。</li>
+    </ol>
+    <p>在等价条件下，$cS(R)$ 具有表示</p>
+    $$cS(R)=\Big\{\int_0^{\cdot}\langle dF(t),dA(t)\rangle_{dC}+M^F\ \Big|\ F\in\mathcal R(C)\Big\},$$
+    <p>并且与 $\mathcal R(C)$ 拓扑同构；$\|Z\|^2_{cS}=\int\|dF\|^2/dC$ 给出 Itô 等距。</p></div>
+  </div>
+
+  <p>这条定理是有限维 Kunita–Watanabe 分解的无限维推广：每个扩展积分被唯一地分解为“漂移部分（由 $F$ 与 $A$ 的内积给出）+ 局部鞅部分 $M^F$”。双射性说明“积分”与“协变差”是一一对应的：知道 $Z$ 与所有 $R^i$ 的协变差，就知道 $Z$ 本身。</p>
+
+  <h3><span class="sn">14.4</span>基本定理的无限维版本</h3>
+  <p>称市场<b>简单可行</b>（simply viable），若局部鞅折损因子集合 $\mathcal Y\neq\varnothing$。这与第 2 节的“可行”在有限维时一致；在无限维时，它是更自然的基本条件。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">基本定理，重访</span><span class="thm-id">Thm. 4.46</span></div>
+    <div class="thm-body"><p>下列等价：</p>
+    <ol>
+      <li>市场简单可行；</li>
+      <li>存在局部鞅折损因子：$\mathcal Y\neq\varnothing$；</li>
+      <li>每个 $S^i$ 是半鞅，且其漂移满足结构条件 $A\in\mathcal R(C)$。</li>
+    </ol></div>
+  </div>
+
+  <details class="proof"><summary>证明思路：用定理 4.42 造折损因子</summary><div class="proof-body"><p>$(3)\Rightarrow(2)$：由 $A\in\mathcal R(C)$ 与定理 4.42，存在 $Z\in cS(R)$ 使 $[Z,R^i]=A^i$ 对所有 $i$ 成立。把 $Z$ 写成 $B+L$，令 $Y=\mathcal E(-L)$。由 Yor 公式，</p>
+  $$Y S^i=S^i(0)\,\mathcal E(-L)\,\mathcal E(R^i)=S^i(0)\,\mathcal E(-L+M^i),$$
+  <p>是局部鞅，故 $Y\in\mathcal Y$。$(2)\Rightarrow(1)$ 是定义。$(1)\Rightarrow(3)$：简单可行限制到每个有限子市场，由定理 2.31 得半鞅性；再用定理 4.42 与反证法（若 $A\notin\mathcal R(C)$，可造出财富在固定时刻爆炸的序列）推出结构条件。</p></div></details>
+
+  <p>在同样条件下，可选分解与融资对偶仍然成立：</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">无限维的可选分解与融资对偶</span><span class="thm-id">Thm. 4.50 / 4.51</span></div>
+    <div class="thm-body"><p>设市场简单可行。则非负过程 $X$ 是财富过程，当且仅当 $YX$ 对所有 $Y\in\mathcal Y$ 是上鞅（Thm. 4.50）。并且对任意提款流 $K$，</p>
+    $$x(K)=\sup_{Y\in\mathcal Y}\mathbb E\Big[\int_0^\infty Y(t)\,dK(t)\Big]$$
+    <p>（Thm. 4.51）。也就是说，第 8 节的对偶公式不依赖资产个数，只依赖“协方差核 + 结构条件”。</p></div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">有限维是无限维的特例</span><span class="thm-id">Ex. 14.1</span></div>
+    <div class="thm-body"><p>取 $I=\{1,\dots,n\}$，$c$ 为 $n\times n$ 正定矩阵。此时 $\mathcal R(C)$ 就是 $\mathbb R^n$ 配以范数 $\|f\|_c^2=f'cf$；结构条件 $A\in\mathcal R(C)$ 等价于存在可预测 $\nu$ 使 $A=\int c\nu\,dO$，即 $\alpha=c\nu$。定理 4.46 退化为定理 2.31 的“结构条件”版本。无限维的全部新意，只在于把“矩阵求逆”换成了“核的 rkHs 范数”。</p>
+    <p>数值上取 $n=2$，</p>
+    $$c=\begin{pmatrix}0.04&amp;0.01\\0.01&amp;0.09\end{pmatrix},\qquad \alpha=\begin{pmatrix}0.06\\0.08\end{pmatrix}.$$
+    <p>解 $c\nu=\alpha$ 得 $\nu=(1.314,\,0.743)$，$G$ 的密度 $\tfrac12\alpha'\nu=\tfrac12(0.1383)=0.0691$；同时 $\int\|dA\|^2/dC=\alpha'c^{-1}\alpha=0.1383=2G$。由于这里的 $c$ 正定，任何 $\alpha$ 都落在 $\operatorname{range}(c)$ 内，$G$ 必有限；一旦 $c$ 退化且 $\alpha$ 有垂直于 $\operatorname{range}(c)$ 的分量，$G$ 就会变成 $\infty$，市场不再可行。</p></div>
+  </div>
+
+  <div class="intuition"><div class="ih">直觉</div><p>把协方差核想成一张“无穷维的弹性网”：每个资产是网上的一点，$c^{ij}$ 是两点之间的耦合强度。$\mathcal R(C)$ 是这张网能承受的“位移场”的空间；结构条件 $A\in\mathcal R(C)$ 是说“漂移这个位移场必须落在网能承受的范围内”。超出范围，网就会撕裂——那就是套利。</p></div>
+
+  <div class="table-wrap cheat"><table>
+    <thead><tr><th>对象</th><th>有限维</th><th>无限维</th></tr></thead>
+    <tbody>
+      <tr><td class="id">协方差</td><td>矩阵 $c^{ij}$</td><td>正定核 $c^{ij}$</td></tr>
+      <tr><td class="id">结构空间</td><td>$\mathbb R^n$，$\|f\|_c^2=f'cf$</td><td>$\mathcal R(C)$，$\int\|dF\|^2/dC$</td></tr>
+      <tr><td class="id">结构条件</td><td>$\alpha=c\nu$</td><td>$A\in\mathcal R(C)$</td></tr>
+      <tr><td class="id">积分</td><td>$\int\vartheta'dS$</td><td>$cS(R)\cong\mathcal R(C)$</td></tr>
+      <tr><td class="id">基本定理</td><td>Thm. 2.31</td><td>Thm. 4.46</td></tr>
+      <tr><td class="id">对偶</td><td>Thm. 3.7</td><td>Thm. 4.51</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note"><b>英文术语</b>：infinitely many assets（无限多资产）、reproducing kernel（再生核）、Hilbert space（希尔伯特空间）、covariance kernel（协方差核）、extended stochastic integral（扩展随机积分）、isometry（等距）、isomorphic（同构）、bijection（双射）、metric（度量）、topology（拓扑）、norm（范数）、closed（闭的）、convexity（凸性）、separation（分离）。</div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">无限维不是“有限维取极限”那么简单</span></div>
+    <div class="thm-body"><ul>
+      <li><b>不可数指标集没有“逐分量”积分。</b> 必须用协变差与 rkHs 定义扩展积分；逐坐标求和一般发散。</li>
+      <li><b>$A\in\mathcal R(C)$ 不是“$A$ 有界”。</b> 它是“$A$ 在核范数下有限”，等价于 $\int\|dA\|^2/dC&lt;\infty$。</li>
+      <li><b>简单可行只保证折损因子，不保证 ELMM。</b> 与有限维一样，NUPBR 型条件弱于 NFLVR。</li>
+      <li><b>$\mathcal R(C)$ 依赖 $C$ 的整条路径。</b> 它不是固定的函数空间，而是随 $(\omega,t)$ 变化的随机空间。</li>
+      <li><b>定理 4.42 的双射性是结构条件的等价物。</b> 若 $A\notin\mathcal R(C)$，映射不是满射，扩展积分理论就崩溃。</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="ch15" class="chapter"><div class="wrap">
+  <div class="sec-label">Appendix A</div>
+  <h2><span class="num">A</span>函数与凸分析工具箱</h2>
+  <p class="lede">正文里的每个“存在折损因子”“对偶最优解存在”“最大性可分离”，最后都落到 $L^0_+$ 上的凸几何。附录把这套工具独立地建起来，读者可以跳过正文直接查。</p>
+
+  <div class="chap-intro"><p>附录分五块：极小极大定理（A.1）、$L^0$ 的拓扑与凸紧性（A.2）、$L^0_+$ 上的凹优化与对偶（A.3）、$L^\infty$ 的弱拓扑与 Kreps–Yan 分离（A.4）、再生核 Hilbert 空间（A.5）。每块都标注它在正文中的用途，方便“从定理反查工具”。</p><span class="tag">附录</span></div>
+
+  <div class="mapchips">
+    <span class="chip hot">极小极大</span><span class="chip">Komlós</span><span class="chip">双极定理</span><span class="chip">Fenchel 对偶</span><span class="chip">Banach–Alaoglu</span><span class="chip">Kreps–Yan</span><span class="chip">rkHs</span>
+  </div>
+
+  <h3><span class="sn">A.1</span>极小极大：什么时候能交换 $\sup$ 与 $\inf$</h3>
+  <p>许多对偶证明的第一步，都是把“先选策略再选价格”换成“先选价格再选策略”。这需要 $\sup_x\inf_y\varphi(x,y)=\inf_y\sup_x\varphi(x,y)$。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Minimax</span><span class="thm-id">Thm. A.3</span></div>
+    <div class="thm-body"><p>设 $X$ 是拓扑向量空间中的凸集，$Y$ 是任意向量空间中的凸集，$\varphi:X\times Y\to\mathbb R$ 满足：</p>
+    <ul>
+      <li>对每个 $x$，$\varphi(x,\cdot)$ 凸；</li>
+      <li>对每个 $y$，$\varphi(\cdot,y)$ 凹，且上水平集 $\{x:\varphi(x,y)\ge b\}$ 对每个 $b$ 是<b>凸紧</b>（convexly compact）的。</li>
+    </ul>
+    <p>则</p>
+    $$\sup_{x\in X}\inf_{y\in Y}\varphi(x,y)=\inf_{y\in Y}\sup_{x\in X}\varphi(x,y).$$
+    </div>
+  </div>
+
+  <p>证明用有限交集性质：对任意有限个 $y_1,\dots,y_m$，由 Lemma A.1 知 $\bigcap_i\{\varphi(\cdot,y_i)\ge b\}\ne\varnothing$；凸紧性把它提升到任意交集非空，于是存在 $x$ 使 $\inf_y\varphi(x,y)\ge b$。取 $b\uparrow\inf_y\sup_x\varphi$ 即得。</p>
+
+  <h3><span class="sn">A.2</span>$L^0$：依概率收敛的凸几何</h3>
+  <p>$L^0$ 是全体 $\mathbb P$-几乎处处有限随机变量，模去几乎处处相等。它配有度量</p>
+  $$d(f,g)=\mathbb E\big[1\wedge|f-g|\big],$$
+  <p>对应的拓扑就是依概率收敛。$L^0_+=\{f\in L^0:f\ge0\}$ 是正锥。$L^0$ 不是局部凸空间，所以不能用 Hahn–Banach；但凸集仍有很好的紧性。</p>
+
+  <div class="thm lem">
+    <div class="thm-head"><span class="thm-kind">引理</span><span class="thm-title">“Baby” Komlós 定理</span><span class="thm-id">Lemma A.4</span></div>
+    <div class="thm-body"><p>设 $(f_m)$ 是 $L^0_+$ 中的序列，其凸包在 $L^0$ 中有界。则存在一列<b>前向凸组合</b>（forward convex combinations）几乎必然收敛到某个 $f\in L^0_+$。</p></div>
+  </div>
+
+  <p>“前向凸组合”指形如 $\sum_{k=m}^N\lambda_kf_k$、$\lambda_k\ge0$、$\sum\lambda_k=1$ 的有限组合。Komlós 定理的价值在于：它把“依概率收敛”升级为“几乎必然收敛”，而不需要子序列——这对处理“几乎处处”定义的随机变量（如折损因子）至关重要。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">凸紧性</span><span class="thm-id">Prop. A.6</span></div>
+    <div class="thm-body"><p>$L^0_+$ 中凸、闭、$L^0$-有界的子集是<b>凸紧</b>的：任意一族具有有限交集性质的凸闭子集，其交非空。</p></div>
+  </div>
+
+  <p>这条性质是 Banach–Alaoglu 在 $L^0_+$ 上的替代品。它让“最大化一个上半连续凹泛函”在最优点存在，而无需局部凸结构。</p>
+
+  <h3><span class="sn">A.3</span>$L^0_+$ 上的凹优化与对偶</h3>
+  <p>设 $U:(0,\infty)\to\mathbb R$ 递增、严格凹、连续可微，满足 Inada 条件。定义共轭</p>
+  $$V(y)=\inf_{x&gt;0}\big(xy-U(x)\big),\qquad y&gt;0.$$
+  <p>在 $L^0_+$ 的凸集 $\mathcal K$ 与其极集 $\mathcal K^\circ=\{g\in L^0_+:\mathbb E[fg]\le1,\ \forall f\in\mathcal K\}$ 上，考虑</p>
+  $$u(x)=\sup_{f\in\mathcal K(x)}\mathbb E[U(f)],\qquad v(y)=\inf_{g\in\mathcal K^\circ(y)}\mathbb E[V(g)].$$
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">抽象 Fenchel 对偶</span><span class="thm-id">Thm. A.20</span></div>
+    <div class="thm-body"><p>若 $u(x)&gt;-\infty$、$v(y)&gt;-\infty$ 对所有 $x,y&gt;0$ 成立，则 $u,v$ 连续可微、严格凹、满足 Inada 条件，且 $u^*=v$、$v^*=u$。对每个 $x,y$，最优解 $f_x\in\mathcal K(x)$、$g_y\in\mathcal K^\circ(y)$ 存在且几乎必然唯一；当 $y=u'(x)$ 时，</p>
+    $$g_y=U'(f_x)\iff f_x=V'(g_y),\qquad \mathbb E[f_xg_y]=xy.$$
+    </div>
+  </div>
+
+  <p>这正是定理 3.52 的抽象版本：把 $\mathcal K$ 取成可行提款流、$\mathcal K^\circ$ 取成折损因子，就得到效用最大化的对偶。证明的关键是：先证 $u\le v^*$、$v\le u^*$，再用 Komlós 紧性取到最优解，最后由一阶条件得互补松弛。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">双极定理</span><span class="thm-id">Thm. A.9</span></div>
+    <div class="thm-body"><p>设 $\mathcal K\subseteq L^0_+$ 凸、$L^0$-闭且<b>实心</b>（solid：$f\in\mathcal K$、$0\le g\le f$ 蕴含 $g\in\mathcal K$）。则 $\mathcal K=\mathcal K^{\circ\circ}$。</p></div>
+  </div>
+
+  <p>双极定理是“分离”的替代品：它说一个实心凸闭集可以由它的极集完全刻画。定理 3.71（最大 $\Leftrightarrow$ 可补）就是它的直接推论：把可行消费流集取为 $\mathcal K$，极集就是折损因子集；极大元对应极集中的一个“支撑”元素。</p>
+
+  <h3><span class="sn">A.4</span>$L^\infty$：弱拓扑与 Kreps–Yan 分离</h3>
+  <p>$L^\infty$ 的对偶是 $L^1$（Thm. A.26），因此可以在 $L^\infty$ 上装 $\sigma(L^\infty,L^1)$ 弱拓扑。两个基本紧性工具：</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Banach–Alaoglu / Krein–Šmulian</span><span class="thm-id">Thm. A.29 / A.30</span></div>
+    <div class="thm-body"><p><b>A.29：</b>$L^\infty$ 中 $\sigma(L^\infty,L^1)$-闭且 $\|\cdot\|_\infty$-有界的集合是弱*紧的。</p>
+    <p><b>A.30：</b>凸集 $C\subseteq L^\infty$ 弱*闭，当且仅当它与每个 $\|\cdot\|_\infty$-球 $C\cap\{\|f\|_\infty\le r\}$ 的交弱*闭，对所有 $r&gt;0$。</p></div>
+  </div>
+
+  <p>A.29 是 Tychonoff 定理的直接推论；A.30 则解决了“弱*闭性难以验证”的问题：只需逐球检查。二者合起来，把“闭凸集”变成了“可分离的紧集”。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Kreps–Yan 分离</span><span class="thm-id">Thm. A.31</span></div>
+    <div class="thm-body"><p>设 $C\subseteq L^\infty$ 是凸锥，在 $\sigma(L^\infty,L^1)$ 下闭，且 $-L^\infty_+\subseteq C$。则下列等价：</p>
+    <ol>
+      <li>$C\cap L^\infty_+=\{0\}$；</li>
+      <li>存在与 $\mathbb P$ 等价的概率测度 $Q$，使 $\mathbb E_Q[f]\le0$ 对所有 $f\in C$ 成立。</li>
+    </ol></div>
+  </div>
+
+  <p>这就是“无套利 $\Rightarrow$ 存在等价鞅测度”的抽象核心：把 $C$ 取成“可实现财富减去初始资本”的锥，$C\cap L^\infty_+=\{0\}$ 就是 NFLVR，结论给出的 $Q$ 就是等价局部鞅测度。本书因为只假设 NUPBR，用的不是完整的 Kreps–Yan，而是它的 $L^0$ 版本（双极定理 + Komlós）。</p>
+
+  <h3><span class="sn">A.5</span>再生核 Hilbert 空间</h3>
+  <p>给定指标集 $I$ 与正定核 $c=(c^{ij})_{i,j\in I}$，<b>再生核 Hilbert 空间</b>（reproducing kernel Hilbert space, rkHs）$\mathcal R(c)$ 是由函数 $c^{i\cdot}=(c^{ij})_{j\in I}$ 张成的 Hilbert 空间，内积满足</p>
+  $$\langle c^{i\cdot},c^{j\cdot}\rangle_c=c^{ij}.$$
+  <p><b>Moore–Aronszajn 定理</b>说：每个正定核都唯一对应一个 rkHs，反之亦然。再生性（reproducing property）是</p>
+  $$f(i)=\langle c^{i\cdot},f\rangle_c,\qquad f\in\mathcal R(c),\ i\in I.$$
+  <p>对有限 $I$，$\mathcal R(c)$ 就是 $\mathbb R^n$ 配以范数 $\|f\|_c^2=f'cf$。对无限 $I$，它给出一个可分的（在适当条件下）Hilbert 空间，使得“核卷积”$c\nu$ 对所有 $\nu\in\mathcal R(c)$ 都有定义。第 14 节的 $\mathcal R(C)$ 就是把 $c^{ij}$ 换成协变差过程 $C^{ij}$ 的“随机版本”：内积变成 $dC$ 积分，再生性变成 $F^j=\int\langle dC^{Ij},dF\rangle_{dC}$。</p>
+
+  <p>附录还用 Lemma A.39 处理不可数指标集：$\|f\|_c$ 可以写成对有限子集的上确界，也可以写成对可数子集的最大值。这条技术引理让“不可数多个资产”的积分不必依赖可数可加性，是第 14 节能成立的关键。</p>
+
+  <div class="intuition"><div class="ih">直觉</div><p>附录不是“数学装饰”，而是正文的“工具箱地图”：想证明存在性，找 A.6/A.29；想证明对偶，找 A.3/A.20；想证明最大性，找 A.9；想处理无限维，找 A.5。每个工具都对应一个金融问题：紧性对应“最优策略存在”，分离对应“折损因子存在”，再生性对应“无限维积分可定义”。</p></div>
+
+  <div class="table-wrap cheat"><table>
+    <thead><tr><th>工具</th><th>陈述</th><th>正文用途</th></tr></thead>
+    <tbody>
+      <tr><td class="id">Thm. A.3</td><td>$\sup\inf=\inf\sup$</td><td>对偶问题的交换</td></tr>
+      <tr><td class="id">Lemma A.4</td><td>前向凸组合 a.s. 收敛</td><td>取折损因子的极限</td></tr>
+      <tr><td class="id">Prop. A.6</td><td>凸闭有界 $\Rightarrow$ 凸紧</td><td>最优解存在</td></tr>
+      <tr><td class="id">Thm. A.9</td><td>$\mathcal K=\mathcal K^{\circ\circ}$</td><td>最大性 = 可补性</td></tr>
+      <tr><td class="id">Thm. A.20</td><td>Fenchel 对偶</td><td>效用最大化</td></tr>
+      <tr><td class="id">Thm. A.29/30</td><td>弱*紧 / 逐球闭</td><td>Kreps–Yan</td></tr>
+      <tr><td class="id">Thm. A.31</td><td>无套利 $\Rightarrow$ 等价测度</td><td>FTAP 的抽象版</td></tr>
+      <tr><td class="id">§A.5</td><td>rkHs / Moore–Aronszajn</td><td>无限资产积分</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note"><b>英文术语</b>：minimax（极小极大）、convexity（凸性）、compactness（紧性）、closedness（闭性）、solidity（实心性）、bipolar（双极）、hull（包）、concavity（凹性）、submartingale（上鞅）、infimum（下确界）、functionals（泛函）、element（元素）、linear（线性）、bond（债券）、disjoint（不交）、nonincreasing（非增）、Banach space（巴拿赫空间）。</div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">$L^0$ 不是 Banach 空间</span></div>
+    <div class="thm-body"><ul>
+      <li><b>$L^0$ 上没有 Hahn–Banach。</b> 它不是局部凸的；所有分离定理都必须换成“双极定理 + Komlós”。</li>
+      <li><b>“闭”与“弱*闭”不同。</b> $L^\infty$ 中按范数闭不等于按 $\sigma(L^\infty,L^1)$ 闭；Krein–Šmulian 说的是逐球检查。</li>
+      <li><b>Komlós 给的是凸组合，不是子列。</b> 不能把“存在子列几乎必然收敛”当作 Komlós；后者更强。</li>
+      <li><b>rkHs 依赖核。</b> 换一个协方差核，$\mathcal R(c)$ 作为集合与范数都会变；它不是固定的 $\ell^2$。</li>
+      <li><b>Moore–Aronszajn 只保证存在唯一，不保证可分。</b> 可分性需要额外的核条件（如连续性/紧性）。</li>
     </ul></div>
   </div>
 </div></section>
 
 <section id="summary" class="chapter"><div class="wrap">
-  <div class="sec-label">Summary · 一页纸</div>
-  <h2><span class="num">12</span>公式、定理与路线图</h2>
-  <p class="lede">如果把全书压成一句话：<b>可行市场 = 存在折损因子 = 漂移被协方差定价</b>；在此之上，融资是上确界，完全性是唯一性，效用是共轭。</p>
+  <div class="sec-label">总结 · 学习路线</div>
+  <h2><span class="num">F</span>一张图看懂全书</h2>
+  <p class="lede">整本书只做一件事：把“没有免费午餐”翻译成 $\alpha$ 与 $c$ 的代数条件，再用它推出定价、对冲、优化与长期增长。所有定理都是这条主线的不同投影。</p>
 
-  <div class="chap-intro"><p>下面这张表把每一章的核心公式放在一起，方便做题时反查。建议先记住第 1、4、5、7 行；其余都可以从它们推出来。</p><span class="tag">速查</span></div>
+  <div class="chap-intro"><p>下面先给“定理链”，再给三条阅读路线，最后是一页纸公式表与自测题。复习时先看链，再看表，最后用自测题检查是否真的理解“为什么”。</p><span class="tag">总览</span></div>
 
   <div class="mapchips">
-    <span class="chip hot">可行性</span><span class="chip">折损因子</span><span class="chip">上对冲</span><span class="chip">完全性</span><span class="chip">效用对偶</span><span class="chip">风险度量</span>
+    <span class="chip hot">定理链</span><span class="chip">定价</span><span class="chip">对冲</span><span class="chip">优化</span><span class="chip">长期增长</span><span class="chip">无限维</span>
   </div>
 
+  <h3><span class="sn">F.1</span>定理链：从假设到结论</h3>
+  <p><b>第一环 · 建模。</b>价格是连续半鞅 $S^i=S^i(0)\mathcal E(R^i)$，$R^i=A^i+M^i$，局部特征为 $(\alpha,c)$。策略按比例 $\pi$ 记账时，财富是随机指数 $X^\pi=x\mathcal E(\int\pi'dR)$；对数增长是 $\pi'\alpha-\tfrac12\pi'c\pi$。</p>
+  <p><b>第二环 · 计价单位。</b>若 $\alpha=c\nu$，则 $X^\nu$ 是局部鞅计价单位，$1/X^\nu$ 是折损因子（SDF）。相对财富 $X^\pi/X^\nu$ 是局部鞅；这就是“没人能跑赢 $\nu$”的解析形式。</p>
+  <p><b>第三环 · 可行性。</b>定理 2.31 把五件事绑在一起：可行、存在折损因子、存在上鞅计价单位、增长局部有限、可达财富依概率有界。核心结构条件是 $\alpha\in\operatorname{range}(c)$ 与 $\int\alpha'c^\dagger\alpha\,dO&lt;\infty$。</p>
+  <p><b>第四环 · 融资与定价。</b>定理 3.7：$x(K)=\sup_Y\mathbb E\int Y\,dK$。欧式权益取 $K=P(T)\mathbf 1_{[T,\infty)}$；美式权益再对停时取上确界（Thm. 3.31）。完备性由第二基本定理刻画：$\mathcal Y=\{1/X^\nu\}\Leftrightarrow\Pi=\{\mathbb P\}$（Thm. 3.38）。</p>
+  <p><b>第五环 · 优化。</b>定理 3.52：primal $u(x)$ 与 dual $v(y)$ 由 $y=u'(x)$ 缝合，最优消费满足 $dK/dQ=V'(yY)$。效用最优解自动最大（Thm. 3.71），在横截性下还可补（Thm. 3.80）。</p>
+  <p><b>第六环 · 扩展。</b>回撤约束用 Azéma–Yor 变换化成“基金 + 现金”（Prop. 4.4 / Thm. 4.15）；只做多、不借钱的简单交易把半鞅性质变成经济学的推论（Thm. 4.23）；无限多资产用 rkHs 与结构条件 $A\in\mathcal R(C)$ 重写整本书（Thm. 4.42 / 4.46 / 4.51）。</p>
+
+  <h3><span class="sn">F.2</span>三条阅读路线</h3>
+  <div class="cards">
+    <div class="card"><div class="k">路线 A · 定价</div><h4>1 → 4 → 5 → 8 → 9</h4><p>先掌握 $\alpha,c$ 与随机指数，再看计价单位与折损因子，然后读基本定理、融资对偶、完备性。适合想理解“为什么无套利能定价”的读者。</p></div>
+    <div class="card"><div class="k">路线 B · 优化</div><h4>2 → 6 → 10 → 11 → 12</h4><p>从组合增长、Kelly、效用对偶到最大性与回撤约束。适合组合管理/资产配置背景的读者。</p></div>
+    <div class="card"><div class="k">路线 C · 结构</div><h4>5 → 7 → 13 → 14 → 15</h4><p>可行性、CAPM、半鞅、无限维、凸分析。适合想做理论研究或读原始论文的读者。</p></div>
+  </div>
+
+  <h3><span class="sn">F.3</span>一页纸公式表</h3>
   <div class="table-wrap cheat"><table>
-    <thead><tr><th>主题</th><th>核心公式 / 定理</th><th>用途</th></tr></thead>
+    <thead><tr><th>主题</th><th>公式</th><th>编号</th></tr></thead>
     <tbody>
-      <tr><td class="id">价格</td><td>$S^i=S^i(0)\mathcal E(R^i),\ dR^i=\alpha^idO+dM^i$</td><td>建模、算增长率</td></tr>
-      <tr><td class="id">财富</td><td>$dX^\pi/X^\pi=\pi'dR$</td><td>组合模拟</td></tr>
-      <tr><td class="id">增长</td><td>$\gamma^\pi=\pi'\alpha-\tfrac12\pi'c\pi$</td><td>比较长期表现</td></tr>
-      <tr><td class="id">增长最优</td><td>$\pi^*=c^\dagger\alpha,\ \gamma^*=\tfrac12\alpha'c^\dagger\alpha$</td><td>构造计价单位</td></tr>
-      <tr><td class="id">可行性</td><td>$x(K)=0\Rightarrow K=0$</td><td>定义无套利</td></tr>
-      <tr><td class="id">基本定理</td><td>可行 $\Leftrightarrow\mathcal Y\ne\varnothing\Leftrightarrow\exists X^\nu\Leftrightarrow G&lt;\infty\Leftrightarrow$ 有界</td><td>判断市场结构</td></tr>
-      <tr><td class="id">结构条件</td><td>$\alpha\in\operatorname{range}(c),\ G=\tfrac12\int\alpha'c^\dagger\alpha\,dO&lt;\infty$</td><td>检验模型</td></tr>
-      <tr><td class="id">折损因子</td><td>$Y=1/X^\nu\cdot\mathcal E(L),\ [L,M]=0$</td><td>测度变换</td></tr>
-      <tr><td class="id">融资对偶</td><td>$x(K)=\sup_{Y\in\mathcal Y}\mathbb E\int YdK$</td><td>上对冲定价</td></tr>
-      <tr><td class="id">完全性</td><td>完全 $\Leftrightarrow\mathcal Y=\{1/X^\nu\}\Leftrightarrow\Pi=\{\mathbb P\}$</td><td>判断价格唯一性</td></tr>
-      <tr><td class="id">效用</td><td>$u(x)=\sup_K\mathbb E\int U\,dQ,\ v(y)=\sup_Y\mathbb E\int V\,dQ$</td><td>最优消费</td></tr>
-      <tr><td class="id">一阶条件</td><td>$Y_y=U'(c)/y,\ c=V'(yY_y)$</td><td>求最优解</td></tr>
-      <tr><td class="id">最大性</td><td>最大 $\Leftrightarrow\exists Y:\mathbb E\int YdH=x$</td><td>判断能否多提款</td></tr>
-      <tr><td class="id">风险</td><td>$\rho(X)=\sup_{\mathbb Q\in\Pi}\mathbb E_{\mathbb Q}[-X]$</td><td>资本要求</td></tr>
+      <tr><td class="id">价格</td><td>$S^i=S^i(0)\mathcal E(R^i)$，$R^i=A^i+M^i$</td><td>(1.9)</td></tr>
+      <tr><td class="id">局部特征</td><td>$A^i=\int\alpha^idO$，$C^{ij}=\int c^{ij}dO$</td><td>(1.2)–(1.4)</td></tr>
+      <tr><td class="id">组合财富</td><td>$X^\pi=x\mathcal E(\int\pi'dR)$</td><td>(1.27)</td></tr>
+      <tr><td class="id">相对财富</td><td>$X^\pi/X^\rho=\mathcal E(R^{\pi-\rho}-C^{\pi-\rho,\rho})$</td><td>Prop. 1.22</td></tr>
+      <tr><td class="id">超额增长</td><td>$\gamma^{*\pi}=\tfrac12(\sum\pi^ic^{ii}-\pi'c\pi)$</td><td>§1.4</td></tr>
+      <tr><td class="id">功能生成</td><td>$\pi^F_i=\mu^i(\partial_iF/F+1-\sum_j\mu^j\partial_jF/F)$</td><td>(1.71)</td></tr>
+      <tr><td class="id">Fernholz</td><td>$\log(X^{\pi^F}/X^\mu)=\log(F(\mu_T)/F(\mu_0))-\tfrac12\int\partial^2F/F\,d[\mu,\mu]$</td><td>Thm. 1.29</td></tr>
+      <tr><td class="id">计价单位</td><td>$\alpha=c\nu$，$Y=1/X^\nu=\mathcal E(-M^\nu)$</td><td>Prop. 2.4</td></tr>
+      <tr><td class="id">增长最优</td><td>$\nu=c^\dagger\alpha$，$\gamma^\nu=\tfrac12\alpha'c^\dagger\alpha$</td><td>Prop. 2.41</td></tr>
+      <tr><td class="id">基本定理</td><td>可行 $\Leftrightarrow\mathcal Y\ne\varnothing\Leftrightarrow G(T)&lt;\infty$</td><td>Thm. 2.31</td></tr>
+      <tr><td class="id">融资对偶</td><td>$x(K)=\sup_Y\mathbb E\int Y\,dK$</td><td>Thm. 3.7</td></tr>
+      <tr><td class="id">欧式定价</td><td>$x_{\mathrm{Eu}}=\sup_Y\mathbb E[Y(T)P(T)]$</td><td>(3.27)</td></tr>
+      <tr><td class="id">第二基本定理</td><td>完备 $\Leftrightarrow\mathcal Y=\{1/X^\nu\}\Leftrightarrow\Pi=\{\mathbb P\}$</td><td>Thm. 3.38</td></tr>
+      <tr><td class="id">效用对偶</td><td>$u(x)=xy-v(y)$，$y=u'(x)$</td><td>Thm. 3.52</td></tr>
+      <tr><td class="id">最大性</td><td>最大 $\Leftrightarrow$ 可补</td><td>Thm. 3.71</td></tr>
+      <tr><td class="id">回撤</td><td>$^\delta X=(X^*)^\delta(1-\delta D_X)$</td><td>Prop. 4.4</td></tr>
+      <tr><td class="id">半鞅</td><td>弱可行 $\Leftrightarrow S$ 是半鞅</td><td>Thm. 4.23</td></tr>
+      <tr><td class="id">无限维</td><td>$A\in\mathcal R(C)$，$cS(R)\cong\mathcal R(C)$</td><td>Thm. 4.42/4.46</td></tr>
     </tbody>
   </table></div>
 
-  <h3><span class="sn">A</span>五条定理链</h3>
-  <div class="cards">
-    <div class="card"><div class="k">Chain 1</div><h4>市场 → 折损因子</h4><p>可行性把“不能无本万利”翻译成“存在严格正 $Y$，使 $YX$ 为上鞅”。这是所有对偶的起点。</p></div>
-    <div class="card"><div class="k">Chain 2</div><h4>折损因子 → 定价</h4><p>可选分解把财富过程刻画成“对所有 $Y$ 上鞅”；融资资本取上确界，得到上对冲公式。</p></div>
-    <div class="card"><div class="k">Chain 3</div><h4>唯一性 → 完全性</h4><p>折损因子唯一等价于市场完全；多一个正交噪声，就多一个测度、多一段价格区间。</p></div>
-    <div class="card"><div class="k">Chain 4</div><h4>约束 → 对偶</h4><p>效用最大化是带融资约束的凹优化；Lagrange 乘子 $y$ 与折损因子 $Y$ 一起给出最优消费。</p></div>
-    <div class="card"><div class="k">Chain 5</div><h4>最大性 → 风险</h4><p>最大提款流可被某个 $Y$ 支撑；把上对冲成本看成最坏情景期望，就是相干风险度量。</p></div>
+  <h3><span class="sn">F.4</span>自测：十个“为什么”</h3>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q1</span>为什么可容许性不能省？</div>
+    <div class="quiz-exp show">没有 $X\ge0$，倍增策略可以从零资本达到任意财富（Ex. 1.10）；可容许性排除的是“用无限信用换必胜”，不是亏损。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q2</span>为什么相对财富是局部鞅就说明“跑不赢”？</div>
+    <div class="quiz-exp show">非负局部鞅是上鞅，取期望不增；若还是真鞅，则期望恒为 $1$，长期不可能系统性地大于 $1$。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q3</span>$\alpha\notin\operatorname{range}(c)$ 为什么是套利？</div>
+    <div class="quiz-exp show">存在 $\phi$ 使 $c\phi=0$ 而 $\phi'\alpha=1$：零风险、正漂移，初始资本为零，直接违反可行性。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q4</span>为什么 $G(T)&lt;\infty$ 等价于 $\alpha=c\nu$ 可积？</div>
+    <div class="quiz-exp show">$g=\tfrac12\alpha'c^\dagger\alpha$ 是最优瞬时增长；$G=\int g\,dO$ 有限当且仅当 $\nu=c^\dagger\alpha$ 是 $R$-可积的。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q5</span>折损因子与风险中性测度是什么关系？</div>
+    <div class="quiz-exp show">若 $Y$ 是真鞅且 $\mathbb E[Y(T)]=1$，则 $dQ/d\mathbb P|_{\mathcal F(T)}=Y(T)$ 定义 ELMM；若 $Y$ 只是严格局部鞅，就只有折损因子，没有等价测度。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q6</span>为什么完备市场里折损因子唯一？</div>
+    <div class="quiz-exp show">若有两个折损因子，它们的比是一个与 $M$ 正交的非零局部鞅；用它可以造出一个不可复制的支付（Thm. 3.38 的证明）。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q7</span>效用对偶里的 $y$ 是什么？</div>
+    <div class="quiz-exp show">$y=u'(x)$ 是财富的边际效用，也是预算约束的拉格朗日乘子；它把 primal 的 $x$ 与 dual 的 $y$ 一一对应。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q8</span>为什么最大性需要横截性？</div>
+    <div class="quiz-exp show">最大只排除“被支配”，不排除“账上剩余财富不消失”；横截性 $(X-H)/X^\nu\to0$ 才保证资本被完全利用（Thm. 3.80）。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q9</span>回撤约束为什么是“基金 + 现金”？</div>
+    <div class="quiz-exp show">Azéma–Yor 变换 $F(x)=x^\delta$ 把 $X^\pi$ 变成 $^\delta X^\pi$，其组合权重恰好是 $\frac{1-D}{1/\delta-D}\pi$，即按回撤动态调整的基金/现金混合。</div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q10</span>无限多资产时，“$\alpha\in\operatorname{range}(c)$”变成什么？</div>
+    <div class="quiz-exp show">变成 $A\in\mathcal R(C)$：漂移的有限变差部分属于协方差核生成的随机 rkHs，等价于 $\int\|dA\|^2/dC&lt;\infty$。</div>
   </div>
 
-  <h3><span class="sn">B</span>三条阅读路线</h3>
-  <ul>
-    <li><b>定价路线（最短）：</b><a href="#ch3">§3 可行性</a> → <a href="#ch4">§4 计价单位</a> → <a href="#ch5">§5 基本定理</a> → <a href="#ch7">§7 上对冲</a> → <a href="#ch8">§8 完全性</a>。</li>
-    <li><b>组合路线：</b><a href="#ch1">§1 财富方程</a> → <a href="#ch2">§2 增长与相对表现</a> → <a href="#ch9">§9 效用</a> → <a href="#ch10">§10 最大性</a>。</li>
-    <li><b>理论路线：</b><a href="#ch5">§5 基本定理</a> → <a href="#ch7">§7 可选分解</a> → <a href="#ch9">§9 Fenchel 对偶</a> → <a href="#ch11">§11 扩展</a>。</li>
+  <h3><span class="sn">F.5</span>最后五条</h3>
+  <ul class="clean">
+    <li><b>先问“用什么计价单位”。</b> 大多数“跑赢/跑输”的困惑，换一个基线就消失了。</li>
+    <li><b>先查“$\alpha$ 是否在 $c$ 的值域里”。</b> 这是可行性、增长最优、CAPM 的共同入口。</li>
+    <li><b>区分局部鞅与鞅。</b> 定价公式要取期望时，必须验证一致可积性；否则会把泡沫算成价格。</li>
+    <li><b>区分“可行”与“完备”。</b> 前者是无套利，后者是能复制；二者独立，第二基本定理只在可行市场里缝合它们。</li>
+    <li><b>所有对偶都是“最坏情形”。</b> 融资、效用、最大性，最后都归结为对一个折损因子集合取上确界/下确界。</li>
   </ul>
 
-  <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">最终公式</span><span class="thm-title">把五个核心式子放在一起</span></div>
-    <div class="thm-body">
-      $$\alpha=c\nu,\qquad Y=\frac1{X^\nu},\qquad x(K)=\sup_{Y\in\mathcal Y}\mathbb E\int_0^\infty Y(t)\,dK(t),$$
-      $$u(x)=\inf_{y&gt;0}\big(xy-v(y)\big),\qquad \rho(X)=\sup_{\mathbb Q\in\Pi}\mathbb E_{\mathbb Q}[-X].$$
-      <p>第一式说“漂移被协方差定价”；第二式说“计价单位与折损因子互为倒数”；第三式说“价格是最坏情景折现期望”；第四式说“原问题与对偶问题互为共轭”；第五式说“风险是上对冲成本的另一张脸”。</p>
-    </div>
-  </div>
+  <div class="intuition"><div class="ih">一句话</div><p>这本书的标题就是它的纲领：<b>组合理论</b>研究“怎么配置财富”，<b>套利</b>研究“什么时候配置问题有解”。二者在 $\alpha=c\nu$ 这一行公式上汇合：左边是价格，右边是组合，中间是协方差。</p></div>
+  <div class="note"><b>关于原书与英文术语</b>：Ioannis Karatzas 与 Constantinos Kardaras 的 <i>Portfolio Theory and Arbitrage: A Course in Mathematical Finance</i>（AMS, Graduate Studies in Mathematics 214）。本书属于数学金融的 asymptotic（渐近）与 incomplete（不完全）市场理论传统，可与 Karatzas–Shreve、Kramkov、Schachermayer 的 review（综述）和 lecture notes 对读。这里列出 applications（应用）、economics（经济学）、linear（线性）、series（级数）、Cauchy（柯西）等词，是为了在英文文献中检索时能对上号；bibliography（参考文献）与 biography（传记）信息见原书。</div>
 
-  <h3><span class="sn">C</span>最后五个提醒</h3>
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">读完全书也别忘</span></div>
-    <div class="thm-body"><ol>
-      <li><b>先检查可容许性。</b> 没有 $X\ge0$，倍增策略会让所有“套利”结论失真。</li>
-      <li><b>先检查 $Y$ 是否真鞅。</b> 局部鞅折损因子不一定能定义概率测度；定价前先看可积性。</li>
-      <li><b>先检查市场是否完全。</b> 不完全时价格是区间，不要假装有唯一的“风险中性价格”。</li>
-      <li><b>先检查约束是否路径依赖。</b> 回撤、杠杆、卖空限制会改变可行集，不能直接套无约束对偶。</li>
-      <li><b>先检查资产数量与噪声维度。</b> $d&gt;n$ 时多出的噪声就是定价区间的来源；$n=\infty$ 时结构条件变成算子条件。</li>
-    </ol></div>
-  </div>
 </div></section>
 
 </main>
@@ -1416,7 +2169,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 A Course in Mathematical Finance 的《Portfolio Theory and Arbitrage》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1424,7 +2177,7 @@ figcaption b{color:var(--ink2);font-weight:600}
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>7 章 · 328 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">

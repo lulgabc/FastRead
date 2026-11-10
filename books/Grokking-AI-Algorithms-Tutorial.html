@@ -432,29 +432,41 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · ML</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">Grokking AI Algorithms
       <span>How AI Solves Complex Problems</span>
     </div>
-    <div class="sb-meta"><b>12</b> 章 · <b>594</b> 页</div>
+    <div class="sb-meta">594 页 · 16 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
-    <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
-    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>先认清问题，再挑算法</span></a>
-    <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>搜索与图：把可能性排成队</span></a>
-    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>约束求解：早点知道此路不通</span></a>
-    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>有信息与有对手的搜索</span></a>
-    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>遗传算法：让一群解自己繁衍</span></a>
-    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>群体智能：蚂蚁与粒子</span></a>
-    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>机器学习：把经验变成规则</span></a>
-    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>神经网络：加权求和与误差分摊</span></a>
-    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>强化学习：从奖励里学策略</span></a>
-    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>大语言模型：预测下一个 token</span></a>
-    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>生成图像：学会去噪，就会造图</span></a>
-    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>负责任地使用算法</span></a>
-    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
+<div class="nav-part">开始</div>
+<a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
+
+<div class="nav-part">搜索与优化</div>
+<a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">01</span> <span>先认清问题，再挑算法</span></a>
+<a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">02</span> <span>搜索与图：把可能性排成队</span></a>
+<a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">03</span> <span>有信息与有对手的搜索</span></a>
+<a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">04</span> <span>遗传算法：让一群解繁衍</span></a>
+<a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">05</span> <span>高级进化：换选择与编码</span></a>
+<a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">06</span> <span>蚁群：信息素是共享记忆</span></a>
+<a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">07</span> <span>粒子群：三个声音决定下一步</span></a>
+<a class="nav-link" href="#sup" data-sec="sup"><span class="nav-num">S</span> <span>补充：退火与约束满足</span></a>
+
+<div class="nav-part">从数据学习</div>
+<a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">08</span> <span>机器学习：经验压成规则</span></a>
+<a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">09</span> <span>神经网络：误差分摊</span></a>
+<a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>强化学习：奖励与试错</span></a>
+
+<div class="nav-part">生成式 AI</div>
+<a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>大语言模型：下一个 token</span></a>
+<a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>生成图像：学会去噪</span></a>
+
+<div class="nav-part">收束</div>
+<a class="nav-link" href="#app" data-sec="app"><span class="nav-num">A</span> <span>应用地图与责任</span></a>
+<a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>一页纸速查</span></a>
+
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
@@ -484,52 +496,65 @@ figcaption b{color:var(--ink2);font-weight:600}
 <div>
 <div class="hero-kicker">Grokking AI Algorithms · Second Edition</div>
 <h1>AI 算法直觉<span class="en">How AI Solves Complex Problems</span></h1>
-<p class="hero-sub">不背公式，先建立<b>问题 → 表示 → 搜索或学习 → 评估</b>的直觉。从迷宫里的 BFS，到会写句子的 Transformer，12 章把同一套思路拆开给你看。</p>
+<p class="hero-sub">把「黑箱」拆成四步：<b>问题 → 表示 → 搜索或学习 → 评估</b>。从迷宫里的 BFS，到会写句子的 Transformer、会去噪的扩散模型，12 章共用同一套思路。</p>
 <div class="hero-actions">
 <a class="btn" href="#ch1">从问题分类开始 →</a>
 <a class="btn ghost" href="#summary">直接看算法选择表</a>
 </div>
 <div class="hero-stats">
-<div class="hstat"><b>12</b><span>算法家族</span></div>
+<div class="hstat"><b>12</b><span>原书章节</span></div>
+<div class="hstat"><b>16</b><span>本篇板块</span></div>
 <div class="hstat"><b>30+</b><span>可手算例子</span></div>
-<div class="hstat"><b>12</b><span>复杂度速查表</span></div>
 <div class="hstat"><b>0</b><span>外部依赖</span></div>
 </div>
 </div>
 <div class="hero-art">
-<svg viewBox="0 0 440 470" role="img" aria-label="搜索、优化、学习三类问题的示意图">
-<text x="24" y="30" font-family="Helvetica,Arial" font-size="10.5" letter-spacing="2.4" fill="#b23a26">SEARCH</text>
-<text x="24" y="52" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#1c1b18">搜索：把解组织成图</text>
-<path d="M220 88 L160 124 M220 88 L280 124 M160 124 L120 160 M160 124 L200 160 M280 124 L240 160 M280 124 L320 160" stroke="#c4b7a0" stroke-width="1.4" fill="none"/>
-<path d="M220 88 L160 124 L120 160" stroke="#b23a26" stroke-width="2.6" fill="none"/>
-<circle cx="220" cy="88" r="7" fill="#1c1b18"/>
-<circle cx="160" cy="124" r="6.5" fill="#b23a26"/>
-<circle cx="280" cy="124" r="6.5" fill="#fffdf7" stroke="#1c1b18" stroke-width="1.6"/>
-<circle cx="120" cy="160" r="6" fill="#b23a26"/>
-<circle cx="200" cy="160" r="5.5" fill="#fffdf7" stroke="#726a5c" stroke-width="1.4"/>
-<circle cx="240" cy="160" r="5.5" fill="#fffdf7" stroke="#726a5c" stroke-width="1.4"/>
-<circle cx="320" cy="160" r="5.5" fill="#fffdf7" stroke="#726a5c" stroke-width="1.4"/>
-<text x="340" y="150" font-family="Helvetica,Arial" font-size="10.5" fill="#726a5c">一条路径</text>
-
-<text x="24" y="212" font-family="Helvetica,Arial" font-size="10.5" letter-spacing="2.4" fill="#9a6f13">OPTIMIZE</text>
-<text x="24" y="234" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#1c1b18">优化：在适应度地形上找路</text>
-<path d="M40 316 C80 316 100 254 145 254 C190 254 205 300 245 300 C285 300 300 228 345 228 C380 228 395 262 408 262" stroke="#11645c" stroke-width="2.2" fill="none"/>
-<line x1="40" y1="316" x2="408" y2="316" stroke="#d8cdb9" stroke-width="1"/>
-<circle cx="145" cy="254" r="6" fill="#9a6f13"/>
-<circle cx="345" cy="228" r="6" fill="#b23a26"/>
-<path d="M96 250 L138 254" stroke="#9a6f13" stroke-width="1" opacity=".7"/>
-<text x="48" y="247" font-family="Helvetica,Arial" font-size="10.5" fill="#726a5c">局部最优</text>
-<text x="322" y="216" font-family="Helvetica,Arial" font-size="10.5" fill="#b23a26">全局最优</text>
-<text x="40" y="338" font-family="Helvetica,Arial" font-size="10.5" fill="#9b9487">梯度会停在第一个坡顶</text>
-
-<text x="24" y="382" font-family="Helvetica,Arial" font-size="10.5" letter-spacing="2.4" fill="#5a4a78">LEARN</text>
-<text x="24" y="404" font-family="Helvetica,Arial" font-size="15" font-weight="bold" fill="#1c1b18">学习：把规律压进参数</text>
-<path d="M124 420 L216 402 M124 420 L216 432 M124 420 L216 456 M124 452 L216 402 M124 452 L216 432 M124 452 L216 456 M124 484 L216 402 M124 484 L216 432 M124 484 L216 456 M216 402 L308 420 M216 432 L308 420 M216 456 L308 420 M216 402 L308 452 M216 432 L308 452 M216 456 L308 452" stroke="#5a4a78" stroke-width="1" opacity=".28"/>
-<circle cx="124" cy="420" r="6" fill="#5a4a78"/><circle cx="124" cy="452" r="6" fill="#5a4a78"/><circle cx="124" cy="484" r="6" fill="#5a4a78"/>
-<circle cx="216" cy="402" r="6" fill="#fffdf7" stroke="#5a4a78" stroke-width="1.8"/><circle cx="216" cy="432" r="6" fill="#fffdf7" stroke="#5a4a78" stroke-width="1.8"/><circle cx="216" cy="456" r="6" fill="#fffdf7" stroke="#5a4a78" stroke-width="1.8"/>
-<circle cx="308" cy="420" r="6" fill="#b23a26"/><circle cx="308" cy="452" r="6" fill="#b23a26"/>
+<svg viewBox="0 0 420 440" role="img" aria-label="从问题到算法的四步示意">
+<rect x="0" y="0" width="420" height="440" fill="none"/>
+<g font-family="Georgia, serif" fill="#1c1b18">
+<text x="26" y="34" font-size="11" letter-spacing="2" fill="#b23a26">THE LOOP</text>
+<text x="26" y="60" font-size="19" font-weight="bold">问题 → 表示 → 求解 → 评估</text>
+</g>
+<g stroke="#c4b7a0" stroke-width="1.2" fill="none">
+<path d="M62 96 h300"/>
+<path d="M62 96 v16"/><path d="M362 96 v16"/>
+</g>
+<g font-family="PingFang SC, sans-serif" font-size="12" fill="#3b372f">
+<text x="46" y="134">状态 / 动作 / 目标</text>
+<text x="170" y="134">图 · 向量 · 染色体</text>
+<text x="296" y="134">BFS · GA · ANN</text>
+</g>
+<g stroke="#1c1b18" stroke-width="1.4" fill="#fffdf7">
+<circle cx="86" cy="190" r="18"/><circle cx="210" cy="190" r="18"/><circle cx="334" cy="190" r="18"/>
+</g>
+<g font-family="Georgia, serif" font-size="12" fill="#1c1b18" text-anchor="middle">
+<text x="86" y="195">S</text><text x="210" y="195">R</text><text x="334" y="195">A</text>
+</g>
+<g stroke="#b23a26" stroke-width="1.6" fill="none">
+<path d="M104 190 h88"/><path d="M228 190 h88"/>
+</g>
+<g stroke="#11645c" stroke-width="1.6" fill="none">
+<path d="M86 208 v40"/><path d="M210 208 v40"/><path d="M334 208 v40"/>
+</g>
+<g font-family="PingFang SC, sans-serif" font-size="11" fill="#726a5c">
+<text x="118" y="182">编码</text><text x="244" y="182">搜索</text>
+<text x="62" y="270">离散</text><text x="190" y="270">连续</text><text x="310" y="270">概率</text>
+</g>
+<g stroke="#d8cdb9" stroke-width="1" stroke-dasharray="4 5">
+<path d="M30 300 h360"/>
+</g>
+<g font-family="PingFang SC, sans-serif" font-size="11.5" fill="#3b372f">
+<text x="30" y="326">能判断候选解好坏？</text>
+<text x="30" y="348" fill="#b23a26">能枚举 → 搜索 / 约束</text>
+<text x="30" y="368">不能枚举 → 进化 / 群智能 / 退火</text>
+<text x="30" y="388">有标签 → 监督学习　无标签 → 聚类</text>
+<text x="30" y="408">只有奖励 → 强化学习</text>
+</g>
+<g font-family="Georgia, serif" font-size="10" fill="#9a6f13">
+<text x="30" y="430">one book, one mental model</text>
+</g>
 </svg>
-<div class="caption">同一件事的三种看法：图、地形、参数。</div>
+<div class="caption">同一件事的三种看法：图、地形、参数。算法不同，问法相同。</div>
 </div>
 </div>
 </div>
@@ -537,13 +562,13 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <section id="ch1" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 1 · Problem Framing</div>
+<div class="sec-label">Chapter 1 · Intuition of AI</div>
 <h2><span class="num">1</span>先认清问题，再挑算法</h2>
-<p class="lede">同一句"从 A 到 B"，可以是搜索题、优化题，也可以是预测题。框错了问题，后面的算法再漂亮也白费。</p>
+<p class="lede">同一句「从 A 到 B」，可以是搜索题、优化题，也可以是预测题。框错了问题，后面的算法再漂亮也白费。</p>
 
 <div class="chap-intro">
-<p>对应原书第 1 章。先建立对五类问题（搜索、优化、预测、分类、聚类）的判别力，再谈几乎所有 AI 算法都要面对的"局部最优"陷阱，最后区分确定性与概率性模型。</p>
-<span class="tag">问题分类</span>
+<p>对应原书第 1 章 <em>Intuition of AI</em>：AI 的定义、数据与算法的关系、五类问题、确定性模型与概率性模型、ANI/AGI/ASI，以及「旧 AI」与「新 AI」的分野。这一章不写代码，但它决定了你后面每一章该带着什么问题去读。</p>
+<span class="tag">问题分类 · 术语地基</span>
 </div>
 
 <div class="mapchips">
@@ -553,70 +578,133 @@ figcaption b{color:var(--ink2);font-weight:600}
 <span class="chip">classification</span>
 <span class="chip">clustering</span>
 <span class="chip">local vs global</span>
+<span class="chip">deterministic vs probabilistic</span>
 </div>
 
-<h3><span class="sn">1.1</span>五类问题：看输入输出，不看行业</h3>
-<p>原书把 AI 常见问题归成五类。判别方法不是"这是金融还是医疗"，而是"解长什么样、我怎么判断它好坏"。</p>
+<h3><span class="sn">1.1</span>AI 是什么：自主、适应、以数据为燃料</h3>
+<p>原书没有给 AI 下一个哲学定义，而是给了一个可操作的边界：<b>AI 是执行通常需要人类智能的任务的系统</b>——识别图像、理解语言、下棋、开车。更底层的两条性质是<b>自主</b>（autonomous，不需要每一步指令）与<b>适应</b>（adaptive，能随环境变化调整）。</p>
+<p>Douglas Hofstadter 的那句「AI 就是还没被做出来的东西」在这里很合用：计算器曾经也算「智能」，现在没人这么叫。所以原书的态度是——别纠结定义，关注它是否<b>自主地解决了复杂问题</b>。</p>
 
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">五种问题的形状</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">数据、信息、知识</span></div>
 <div class="thm-body">
+<p><b>数据</b>（data）是原始事实；<b>信息</b>（information）是带上下文解释后的数据；<b>知识</b>（knowledge）是把信息与经验结合后可用于决策的东西。原书用病人举例：</p>
 <ul class="clean">
-<li><b>搜索</b>：解是一条从起点到目标的路径，中间每一步都可验证。</li>
-<li><b>优化</b>：解空间巨大，每个解有目标函数值，通常还带约束。</li>
-<li><b>预测</b>：给定特征，输出一个连续数值。</li>
-<li><b>分类</b>：给定特征，输出一个离散标签。</li>
-<li><b>聚类</b>：没有标签，只有样本，想找出成群的结构。</li>
+<li>数据：体温 $38^\circ\mathrm{C}$。</li>
+<li>信息：这个病人发烧了。</li>
+<li>知识：应该给药降温。</li>
 </ul>
+<p>三者逐层加语境，也逐层加主观性——这正是偏差（bias）进入系统的入口。</p>
 </div>
 </div>
 
-<p>同一个出行场景可以拆成五种问法：最短路线是搜索；一天逛八个景点是优化；预计几点到是预测；这趟行程是否"亲子友好"是分类；把历史订单分成几种出行模式是聚类。问题类型决定了你该用 BFS、遗传算法，还是决策树。</p>
+<p>数据还分<b>定量</b>（quantitative，温度、数量、年龄）与<b>定性</b>（qualitative，花香、影评、主观感受）。定量数据看似「绝对真实」，但<b>采样</b>方式仍会引入偏差：只统计城市中心的车流量，得到的就不是全国的道路规律。算法只对喂给它的数据负责。</p>
+
+<h3><span class="sn">1.2</span>算法像菜谱，模型像做好的菜</h3>
+<p>算法是「一组有限步骤的指令」，有输入、有状态推进、有输出。原书把它比作菜谱：食材和工具是输入，步骤是算法，菜是输出。这个比喻在全书反复出现，但第 1 章特别强调了一个区分：</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">算法作为求解者 vs 算法作为构建者</span></div>
+<div class="thm-body">
+<p><b>算法即求解者</b>：搜索、A*、Minimax 这类算法每次运行都在现场解题，部署的就是算法本身。输入变了，它重新算一遍。</p>
+<p><b>算法即构建者</b>：机器学习、神经网络、LLM 里，算法的作用是<b>训练出模型</b>；部署到生产的是模型（一堆权重），算法留在训练管线里。模型才是承载「智能」的工件。</p>
+</div>
+</div>
+
+<p>这个区分能解释很多工程现象：搜索算法「改参数」是改运行时行为；模型「改参数」通常意味着重新训练。也解释了为什么模型需要版本管理、灰度发布、回滚，而 BFS 不需要。</p>
+
+<h3><span class="sn">1.3</span>五类问题：看输入输出，不看行业</h3>
+<p>原书把常见问题归成五类。判别方法不是「这是金融还是医疗」，而是「解长什么样、我怎么判断它好坏」。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>问题类型</th><th>解的形状</th><th>你手里有什么</th><th>代表算法</th></tr></thead>
+<tbody>
+<tr><td class="id">搜索</td><td>一条从起点到目标的路径</td><td>状态、动作、转移、目标测试</td><td>BFS、DFS、A*、Minimax</td></tr>
+<tr><td class="id">优化</td><td>解空间里的一个点（或一组参数）</td><td>目标函数，通常还有约束</td><td>GA、ACO、PSO、模拟退火</td></tr>
+<tr><td class="id">预测</td><td>一个连续数值</td><td>特征 + 连续标签</td><td>线性回归、神经网络</td></tr>
+<tr><td class="id">分类</td><td>一个离散标签</td><td>特征 + 类别标签</td><td>决策树、逻辑回归、SVM</td></tr>
+<tr><td class="id">聚类</td><td>若干成群的结构</td><td>只有特征，没有标签</td><td>K-means、层次聚类</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>原书的「公寓找房」例子可以拆成五种问法：最短通勤路线是搜索；一天看八套房是优化；预测月租是回归；判断「是否适合养猫」是分类；把历史成交记录分成几种市场类型是聚类。问题类型决定了你该用 BFS、遗传算法，还是决策树。</p>
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">指数墙：为什么需要"聪明"算法</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">指数墙：为什么需要「聪明」算法</span></div>
 <div class="thm-body">
-<p>8 个景点的路线有 $8! = 40320$ 条，暴力枚举还能接受；20 个景点是 $20! \approx 2.4\times10^{18}$ 条，按每秒一亿条算也要跑 770 年。背包问题同样：30 件物品有 $2^{30}\approx10.7$ 亿个子集。搜索、优化、进化、群智能，本质上都是在绕开这堵指数墙。</p>
+<p>原书用 26 件物品的背包问题做贯穿案例。每件物品选或不选，共 $2^{26}=67{,}108{,}864$ 种组合——原书说「超过 6000 万种」。暴力枚举在普通个人电脑上要跑约 <b>7 分钟</b>；一个配置得当的遗传算法在同样的问题上 <b>3 秒</b>就找到了最优解。第 4 章会回到这个对比。</p>
+<p>20 个景点的路线有 $20!\approx 2.43\times 10^{18}$ 条；按每秒一亿条算，也要 770 年。搜索、优化、进化、群智能，本质上都是在绕开这堵指数墙。</p>
 </div>
 </div>
 
 <pre><code class="language-python">from math import factorial
 
-print(factorial(8))    # 40320          还能暴力
-print(factorial(20))   # 2432902008176640000  别暴力了
-print(2 ** 30)         # 1073741824     背包的子集数
+print(factorial(8))    # 40320                 还能暴力
+print(factorial(20))   # 2432902008176640000   别暴力了
+print(2 ** 26)         # 67108864              26 件物品的背包
 
-# 结论：问题规模一旦过线，就必须换算法，而不是换更快的机器</code></pre>
+# 结论：规模一旦过线，要换算法，而不是换更快的机器</code></pre>
+
+<h3><span class="sn">1.4</span>局部最优：所有算法的共同敌人</h3>
+<p>优化问题里，「附近最好」不等于「全局最好」。原书的比喻是找餐厅：你家楼下那家可能是本街区最好，但不是全国最好。梯度下降会停在局部最优，贪心搜索会锁死在第一个可行解，遗传算法会早熟收敛——现象不同，病根相同：<b>只看得到邻居</b>。</p>
+<p>工程上的解法不是「更用力地下降」，而是换策略：多起点重启、模拟退火（以一定概率接受更差的解）、种群并行（GA、PSO）、以及把问题建模得更凸。先问「我的搜索会不会被困在一个小盆地里」，比调参有用得多。</p>
 
 <div class="intuition">
 <div class="ih">直觉</div>
-<p>选算法的第一问不是"哪个最先进"，而是"我能不能判断一个候选解的好坏"。能判断且能枚举 → 搜索；能判断但不能枚举 → 优化或启发式；有标准答案样本 → 监督学习；只有交互反馈 → 强化学习。</p>
+<p>局部最优不是 bug，是「只用局部信息」的必然结果。要跳出局部最优，必须引入某种<b>全局信息</b>：随机性（退火）、多个起点（重启）、一群个体（GA/PSO）、或者一个可采纳的启发式（A*）。四种手段，对应后面四章。</p>
 </div>
 
-<h3><span class="sn">1.2</span>局部最优：所有算法的共同敌人</h3>
-<p>优化问题里，"附近最好"不等于"全局最好"。原书的比喻是找餐厅：你家楼下那家可能是本街区最好，但不是全国最好。梯度下降会停在局部最优，贪心搜索会锁死在第一个可行解，遗传算法会早熟收敛——现象不同，病根相同：<b>只看得到邻居</b>。</p>
-<p>工程上的解法不是"更用力地下降"，而是换策略：多起点重启、模拟退火（以一定概率接受更差的解）、种群并行（GA、PSO）、以及把问题建模得更凸。先问"我的搜索会不会被困在一个小盆地里"，比调参有用得多。</p>
+<h3><span class="sn">1.5</span>确定性模型与概率性模型</h3>
+<p>单位换算 $100^\circ\mathrm{C}\to 212^\circ\mathrm{F}$ 是确定性的：同样输入永远同样输出。输入法联想「The best pet is a ___」给出 cat 40%、dog 35%、goldfish 25%，是概率性的：同一个输入，采样两次可能不同。</p>
+<p>原书用这个对比说明：确定性模型可以缓存、可以复现、可以写单元测试断言相等；概率性模型必须考虑采样、评测方差，以及用户看到不一致结果时的体验。大模型的 temperature 就是把这个分布调尖或调平的旋钮——第 11 章会看到，它同时也是 RLHF 收集多样性回答的工具。</p>
 
-<h3><span class="sn">1.3</span>确定性模型与概率性模型</h3>
-<p>单位换算 100°C → 212°F 是确定性的：同样的输入永远同样的输出。输入法联想"最好的宠物是___"给出 cat 40%、dog 35%、goldfish 25%，是概率性的：同一个输入，采样两次可能不同。大模型的 temperature 就是把这个分布调尖或调平的旋钮。做系统设计时，前者可以缓存、可以复现；后者必须考虑采样、评测方差与用户看到不一致结果时的体验。</p>
+<h3><span class="sn">1.6</span>ANI、AGI、ASI，以及旧 AI 与新 AI</h3>
+<div class="cards">
+<div class="card"><div class="k">Narrow</div><h4>ANI 狭义智能</h4><p>只擅长一个领域，不能迁移。分析消费行为的模型不会认猫。但多个 ANI 可以拼起来「假装」通用：语音助手 = 语音识别 + 搜索 + 语音合成。</p></div>
+<div class="card"><div class="k">General</div><h4>AGI 通用智能</h4><p>能像人一样把知识从一个问题迁移到另一个问题。被烫过就知道「极热 = 危险」。真正的 AGI 仍未实现，现代 LLM 被视为迈向灵活推理的一步。</p></div>
+<div class="card"><div class="k">Super</div><h4>ASI 超级智能</h4><p>在所有领域都超过最聪明的人类。定义只是「超出我们理解的智能」，是否可能仍是哲学争论。</p></div>
+</div>
+
+<p><b>旧 AI</b>（Old AI）是显式逻辑与搜索：人把规则写进去，机器只负责算，例如国际象棋的 Minimax——人定义走法与棋盘评分。<b>新 AI</b>（New AI）从数据里学规则，例如用自我对弈学出来的棋类网络。原书强调两者不是替代关系：LLM 生成时仍会用搜索策略挑词，不懂搜索就很难理解神经网络的「找最优解」。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>问题类型</th><th>你手里有什么</th><th>代表算法</th><th>常见误用</th></tr></thead>
+<thead><tr><th>维度</th><th>旧 AI</th><th>新 AI</th></tr></thead>
 <tbody>
-<tr><td class="id">搜索</td><td>起点、目标、转移规则</td><td>BFS、DFS、Dijkstra、A*</td><td>状态空间没定义清楚就开始写循环</td></tr>
-<tr><td class="id">优化</td><td>目标函数、约束</td><td>GA、ACO、PSO、爬山</td><td>用暴力枚举硬扛指数规模</td></tr>
-<tr><td class="id">预测</td><td>特征 + 连续标签</td><td>线性回归、神经网络</td><td>输出越界不做截断</td></tr>
-<tr><td class="id">分类</td><td>特征 + 离散标签</td><td>决策树、逻辑回归、SVM</td><td>类别不平衡只看准确率</td></tr>
-<tr><td class="id">聚类</td><td>只有特征</td><td>K-means、层次聚类</td><td>把聚类结果当成真实标签</td></tr>
+<tr><td class="id">知识来源</td><td>人写的规则、评分函数</td><td>数据、奖励、自我对弈</td></tr>
+<tr><td class="id">典型代表</td><td>BFS、A*、Minimax、专家系统</td><td>决策树、ANN、RL、LLM</td></tr>
+<tr><td class="id">可解释性</td><td>高，能逐步追踪</td><td>低，靠评估与可视化</td></tr>
+<tr><td class="id">失败方式</td><td>规则没覆盖到</td><td>分布外样本、幻觉、奖励劫持</td></tr>
+<tr><td class="id">本书章节</td><td>2–7</td><td>8–12</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">1.7</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>概念</th><th>一句话</th><th>判别/用法</th></tr></thead>
+<tbody>
+<tr><td class="id">数据→信息→知识</td><td>逐层加语境</td><td>38°C → 发烧 → 给药</td></tr>
+<tr><td class="id">算法 vs 模型</td><td>菜谱 vs 做好的菜</td><td>搜索部署算法；ML 部署模型</td></tr>
+<tr><td class="id">搜索</td><td>找一条路径</td><td>状态空间可枚举</td></tr>
+<tr><td class="id">优化</td><td>找最好的点</td><td>有目标函数与约束</td></tr>
+<tr><td class="id">预测 / 分类</td><td>连续值 / 离散标签</td><td>看输出类型，不看行业</td></tr>
+<tr><td class="id">聚类</td><td>无标签找结构</td><td>结果不是「真实标签」</td></tr>
+<tr><td class="id">局部 vs 全局最优</td><td>街区最好 vs 全国最好</td><td>需要全局信息才能跳出</td></tr>
+<tr><td class="id">确定性 / 概率性</td><td>同输入同输出 / 从分布采样</td><td>决定能否缓存与复现</td></tr>
+<tr><td class="id">ANI / AGI / ASI</td><td>专才 / 通才 / 超人</td><td>当前落地几乎全是 ANI</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三个高频混淆</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个高频混淆</span></div>
 <div class="thm-body">
-<p>① 把分类当回归：用 MSE 训练，再拍一个阈值，概率没有校准；② 把优化当搜索：在 $10^{18}$ 的解空间里做 BFS，永远跑不完；③ 把聚类当分类：没有标签却报"准确率"。写代码前先用一句话说清"解长什么样、怎么打分"，能省掉后面几天。</p>
+<p>① <b>把分类当回归</b>：用 MSE 训练分类器，再拍一个阈值，概率没有校准。② <b>把优化当搜索</b>：在 $10^{18}$ 的解空间里做 BFS，永远跑不完。③ <b>把聚类当分类</b>：没有标签却报「准确率」。④ <b>把「AI」当银弹</b>：数据有偏、问题没定义清楚时，换更先进的模型只会更快地给出错误答案。</p>
+<p>写代码前先用一句话说清「解长什么样、怎么打分、失败长什么样」，能省掉后面几天。</p>
 </div>
 </div>
 </div>
@@ -624,85 +712,245 @@ print(2 ** 30)         # 1073741824     背包的子集数
 
 <section id="ch2" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 2 · Search &amp; Graphs</div>
+<div class="sec-label">Chapter 2 · Search fundamentals</div>
 <h2><span class="num">2</span>搜索与图：把可能性排成队</h2>
-<p class="lede">搜索不是"聪明"，而是"有秩序"：先把可能性组织成状态图，再用一种确定的顺序去翻它。</p>
+<p class="lede">搜索不是「聪明」，而是「有秩序」：先把可能性组织成状态图，再用一种确定的顺序去翻它。</p>
 
 <div class="chap-intro">
-<p>对应原书第 2 章。原书用 10×10 迷宫讲状态、队列、栈与访问标记；这里再补一张工程里更常用的图算法地图：什么时候 BFS 够用，什么时候必须 Dijkstra。</p>
-<span class="tag">BFS / DFS / 最短路</span>
+<p>对应原书第 2 章。原书用 10×10 迷宫讲状态、队列、栈与访问标记，并补了图/树的术语、七类图和四种表示法。这里在此基础上补一张工程里更常用的最短路地图：什么时候 BFS 够用，什么时候必须 Dijkstra。</p>
+<span class="tag">BFS / DFS / 图表示</span>
 </div>
 
-<h3><span class="sn">2.1</span>状态空间：先定义"一步"是什么</h3>
+<div class="mapchips">
+<span class="chip hot">state space</span>
+<span class="chip">BFS</span>
+<span class="chip">DFS</span>
+<span class="chip">queue / stack</span>
+<span class="chip">graph types</span>
+<span class="chip">Dijkstra</span>
+<span class="chip">topological sort</span>
+</div>
+
+<h3><span class="sn">2.1</span>规划与搜索：计划总会变形</h3>
+<p>原书用一次海边自驾开场：500 km 路程、两站（宠物动物园、披萨店）、8 小时车程、下午 2 点前必须通过的私人捷径。结果披萨店倒闭、捷径 2:20 才到，计划被迫两次改写。结论不是「计划没用」，而是：<b>搜索是计划在不确定环境里的修正机制</b>——每次环境变化，都从当前状态重新评估未来状态，找一条到目标的最优路径。</p>
+
 <div class="thm def">
 <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">搜索问题的五个部件</span></div>
 <div class="thm-body">
-<p><b>状态</b>（现在在哪）、<b>动作</b>（能怎么走）、<b>转移</b>（走完到哪）、<b>目标测试</b>（到没到）、<b>路径代价</b>（一共花了多少）。迷宫 10×10 里，状态是坐标 $(r,c)$，动作是上下左右，约束是不回到已访问格，解是一条 9 个节点的路径。</p>
+<p><b>状态</b>（state，现在在哪）、<b>动作</b>（action，能怎么走）、<b>转移</b>（transition，走完到哪）、<b>目标测试</b>（goal test，到没到）、<b>路径代价</b>（path cost，一共花了多少）。迷宫 10×10 里，状态是坐标 $(r,c)$，动作是上下左右，约束是不回到已访问格，解是一条 9 个节点的路径。</p>
 </div>
 </div>
 
-<p>表示方式决定规模。只记坐标是 100 个状态；如果状态里塞进"已访问集合"，就变成 $2^{100}$。所以搜索建模的第一步永远是把<b>必要的历史</b>压进状态，把不必要的历史丢掉。这一步做错，后面的算法再优也救不回来。</p>
+<p>表示方式决定规模。只记坐标是 100 个状态；如果状态里塞进「已访问集合」，就变成 $2^{100}$。所以搜索建模的第一步永远是把<b>必要的历史</b>压进状态，把不必要的历史丢掉。这一步做错，后面的算法再优也救不回来。</p>
 
-<h3><span class="sn">2.2</span>BFS：一层层摊开</h3>
-<p>BFS 用 FIFO 队列：先看距离 1 的所有状态，再看距离 2 的。在无权图里，第一次到达某状态时的路径一定最短——因为任何更短的路径都会先被展开。</p>
-<p>代价是空间。分支因子 $b=4$、目标在第 8 层时，BFS 要碰 $1+4+\dots+4^7=21845$ 个节点才轮到目标，而且这些节点都要留在队列里。时间与空间都是 $O(b^d)$，<b>空间才是先爆的那一个</b>。</p>
+<h3><span class="sn">2.2</span>计算成本：Big O 是「规模变大时谁先垮」</h3>
+<p>原书用握手比喻三档复杂度：$O(1)$ 是和一个人握手，$O(n)$ 是和房间里每个人握手，$O(n^2)$ 是每个人和每个人握手。它衡量的是「输入变大时操作数怎么长」，不是「在小数据上谁快」。原书还提醒：一个复杂度更差的算法，如果能并行到 GPU 上，实际可能更快——所以复杂度、内存、硬件要一起看。</p>
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">解只有 8 步，搜索却拜访了两万个状态</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">解只有 7 步，搜索却拜访了两万个状态</span></div>
 <div class="thm-body">
-<p>原书 10×10 迷宫的一个解是 9 个节点、8 次移动。但 BFS 不直奔目标：它先把第 0 层（1 个）、第 1 层（最多 4 个）、第 2 层（最多 16 个）……直到第 7 层全部展开，累计 $1+4+\dots+4^7=21845$ 次入队，才第一次触到第 8 层的终点。这就是"解很短、搜索很长"的典型：<b>最优性是用遍历换来的</b>。</p>
+<p>原书图 2.13 画出的解路径有 9 个节点、8 次移动；而 BFS 在深度 7 找到的是另一条更短的路径：<b>南、南、西、西、北、北、北</b>（7 步）。但 BFS 不直奔目标：它先把第 0 层（1 个）、第 1 层（最多 4 个）、第 2 层（最多 16 个）……直到第 7 层全部展开，累计 $1+4+\dots+4^7=21{,}845$ 次入队，才第一次触到目标。这就是「解很短、搜索很长」的典型：<b>最优性是用遍历换来的</b>。</p>
+</div>
+</div>
+
+<h3><span class="sn">2.3</span>图与树：先统一术语</h3>
+<p><b>图</b>由节点（node/vertex）和边（edge）组成。图能直接表达「关系」，所以搜索、路径、网络、社交关系都落在图上。<b>树</b>是连通无环图：一个根节点、若干子节点、每个子节点只有一个父节点。</p>
+<ul class="clean">
+<li><b>root</b> 根；<b>parent/child</b> 父/子；<b>sibling</b> 兄弟；<b>edge</b> 边；<b>path</b> 路径。</li>
+<li><b>descendant/ancestor</b> 后代/祖先；<b>leaf</b> 叶（度为 0）；<b>degree</b> 子节点数。</li>
+<li><b>depth</b> 当前节点到根的距离（根为 0）；<b>height</b> 树的最大深度。</li>
+</ul>
+<p>原书强调：树的术语大量借用家族关系，记住这个类比，后面看「父指针回溯路径」就不会晕。</p>
+
+<h3><span class="sn">2.4</span>BFS：一层层摊开</h3>
+<p>BFS 用 FIFO 队列：先看距离 1 的所有状态，再看距离 2 的。在无权图里，第一次到达某状态时的路径一定最短——因为任何更短的路径都会先被展开。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">算法</span><span class="thm-title">BFS 的 13 步（原书流程）</span></div>
+<div class="thm-body">
+<ol>
+<li>根节点入队。</li>
+<li>标记根节点已访问。</li>
+<li>队列空？空则无解，转第 4 步；否则继续。</li>
+<li>返回「无路径」。</li>
+<li>出队，作为当前节点。</li>
+<li>取当前节点的下一个邻居。</li>
+<li>邻居已访问？是则跳过。</li>
+<li>标记邻居已访问。</li>
+<li>把当前节点设为邻居的父节点（用于回溯路径）。</li>
+<li>邻居入队。</li>
+<li>邻居是目标？是则转第 12 步。</li>
+<li>沿父指针回溯，返回路径。</li>
+<li>当前节点还有下一个邻居？有则回第 6 步。</li>
+</ol>
 </div>
 </div>
 
 <pre><code class="language-python">from collections import deque
 
 def bfs(start, goal, neighbors):
-    q = deque([(start, [start])])
-    seen = {start}
+    q = deque([start])
+    parent = {start: None}
     while q:
-        node, path = q.popleft()
+        node = q.popleft()
         if node == goal:
-            return path
+            path = []
+            while node is not None:          # 沿父指针回溯
+                path.append(node)
+                node = parent[node]
+            return path[::-1]
         for nxt in neighbors(node):
-            if nxt not in seen:
-                seen.add(nxt)              # 入队时就标记，别等到出队
-                q.append((nxt, path + [nxt]))
-    return None                            # 队列空了 = 无解
+            if nxt not in parent:            # 入队时就标记，别等出队
+                parent[nxt] = node
+                q.append(nxt)
+    return None                              # 队列空了 = 无解
 
-# 生产代码别复制 path：存 parent 指针，最后回溯，
+# 存 parent 而不是复制整条 path：
 # 空间从 O(b^d * d) 降到 O(b^d)</code></pre>
 
-<h3><span class="sn">2.3</span>DFS：一条路走到黑</h3>
-<p>DFS 用栈（或递归），只记当前路径，空间 $O(bd)$。在"只问有没有解"的场景很划算，比如连通性判断、拓扑排序、回溯枚举。但它不保证最短：第一个找到的解可能绕了很远。递归实现还要注意 Python 默认约 1000 层的递归限制，深图会直接 <code>RecursionError</code>，应改成显式栈。</p>
+<p>代价是空间。分支因子 $b=4$、目标在第 $d$ 层时，BFS 要碰 $O(b^d)$ 个节点，而且这些节点都要留在队列里。时间与空间都是 $O(b^d)$，<b>空间才是先爆的那一个</b>。</p>
 
-<h3><span class="sn">2.4</span>图算法地图：无权、带权、负权</h3>
-<p>迷宫只是无权图。真实问题一旦带权（距离、费用、时间），BFS 的"边数最少"就不等于"代价最小"。记住这张分工表，比背实现有用：</p>
-<ul class="clean">
-<li><b>无权最短路</b> → BFS，每个节点只处理一次。</li>
-<li><b>非负权</b> → Dijkstra，用 <code>heapq</code> 每次取当前距离最小的节点，$O((V+E)\log V)$。</li>
-<li><b>负权</b> → Bellman-Ford，$O(VE)$，还能顺便检测负环。</li>
-<li><b>有可靠启发</b> → A*，下一章的主角。</li>
-<li><b>依赖排序</b> → 拓扑排序（Kahn 入度法），有环时结果一定不完整。</li>
-</ul>
+<h3><span class="sn">2.5</span>DFS：一条路走到黑</h3>
+<p>DFS 用栈（或递归），只记当前路径，空间 $O(bd)$。在「只问有没有解」的场景很划算，比如连通性判断、拓扑排序、回溯枚举。但它不保证最短：第一个找到的解可能绕了很远。</p>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">同一个迷宫，DFS 给出 9 步解</span></div>
+<div class="thm-body">
+<p>按「北、南、东、西」的固定顺序，DFS 在原书迷宫里找到的路径是<b>南、东、东、北、北、北、西、西、西</b>，共 9 步；BFS 找到的是 7 步。两者都是合法解，但 DFS 的解更长。原书特别指出：<b>子节点的顺序会显著改变 DFS 的结果</b>——换个方向顺序，得到的可能是另一条完全不同的路径。</p>
+</div>
+</div>
+
+<pre><code class="language-python">def dfs(start, goal, neighbors):
+    stack = [start]
+    parent = {start: None}
+    while stack:
+        node = stack.pop()                   # LIFO
+        if node == goal:
+            path = []
+            while node is not None:
+                path.append(node)
+                node = parent[node]
+            return path[::-1]
+        for nxt in neighbors(node):
+            if nxt not in parent:
+                parent[nxt] = node
+                stack.append(nxt)
+    return None</code></pre>
+
+<p>递归实现要注意 Python 默认约 1000 层的递归限制；百万节点的深图会直接 <code>RecursionError</code>，应改成显式栈。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>算法</th><th>时间</th><th>空间</th><th>适用</th><th>坑</th></tr></thead>
+<thead><tr><th>算法</th><th>时间</th><th>空间</th><th>最优性</th><th>适用</th></tr></thead>
 <tbody>
-<tr><td class="id">BFS</td><td>$O(V+E)$</td><td>$O(V)$</td><td>无权最短路、层序</td><td>带权图上必错</td></tr>
-<tr><td class="id">DFS</td><td>$O(V+E)$</td><td>$O(d)$</td><td>连通性、拓扑、回溯</td><td>不保证最短</td></tr>
-<tr><td class="id">Dijkstra</td><td>$O((V+E)\log V)$</td><td>$O(V)$</td><td>非负权最短路</td><td>负边会锁死错误距离</td></tr>
-<tr><td class="id">Bellman-Ford</td><td>$O(VE)$</td><td>$O(V)$</td><td>负权、判负环</td><td>大图上太慢</td></tr>
-<tr><td class="id">A*</td><td>取决于 $h$</td><td>$O(V)$</td><td>有可采纳启发</td><td>$h$ 高估则失最优</td></tr>
-<tr><td class="id">拓扑排序</td><td>$O(V+E)$</td><td>$O(V)$</td><td>DAG 依赖</td><td>有环时结果不完整</td></tr>
+<tr><td class="id">BFS</td><td>$O(b^d)$</td><td>$O(b^d)$</td><td>无权图最优</td><td>最短步数、层序</td></tr>
+<tr><td class="id">DFS</td><td>$O(b^m)$</td><td>$O(bm)$</td><td>不保证</td><td>连通性、拓扑、回溯</td></tr>
+<tr><td class="id">Dijkstra</td><td>$O((V+E)\log V)$</td><td>$O(V)$</td><td>非负权最优</td><td>带权最短路</td></tr>
+<tr><td class="id">Bellman-Ford</td><td>$O(VE)$</td><td>$O(V)$</td><td>可处理负权</td><td>负权、判负环</td></tr>
+<tr><td class="id">拓扑排序</td><td>$O(V+E)$</td><td>$O(V)$</td><td>—</td><td>DAG 依赖排序</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">2.6</span>图的七种分类与四种表示</h3>
+<p>原书的「Optional」小节列了七类图，这些词在后面 ACO、决策树、神经网络里都会再出现：</p>
+<div class="cards">
+<div class="card"><div class="k">Direction</div><h4>有向 / 无向</h4><p>无向边是双向关系（城市间的路）；有向边有方向（父子关系，子不能反过来当父）。</p></div>
+<div class="card"><div class="k">Connectivity</div><h4>连通 / 不连通</h4><p>不连通图里有节点没有边相连，像被海洋隔开的大陆。</p></div>
+<div class="card"><div class="k">Cycles</div><h4>有环 / 无环</h4><p>无环图（DAG）像课程先修关系：不能出现「课程最终要求自己作为先修」。</p></div>
+<div class="card"><div class="k">Density</div><h4>完全图 / 完全二分图</h4><p>完全图每对节点都有边；完全二分图只在两个分区之间连边（人尝奶酪，人不尝人）。</p></div>
+<div class="card"><div class="k">Weights</div><h4>带权图</h4><p>边上带权重，像城市间距离；无权图是所有权重都为 1 的特例。</p></div>
+</div>
+
+<p>表示法决定内存和遍历速度。原书给了四种：</p>
+<ul class="clean">
+<li><b>边数组</b>（array of arrays）：最直观，$O(E)$ 存储，查「某点的邻居」要扫全表。</li>
+<li><b>关联矩阵</b>（incidence matrix）：行是节点、列是边，$V\times E$。无向图一列两个 1；有向图用 $+1$（源）和 $-1$（汇）。适合「边比点重要」的场景，如电路、流网络。</li>
+<li><b>邻接矩阵</b>（adjacency matrix）：$V\times V$，查边 $O(1)$，空间 $O(V^2)$，稠密图合适。</li>
+<li><b>邻接表</b>（adjacency list）：每个节点存邻居链表，空间 $O(V+E)$，稀疏图首选。</li>
+</ul>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">6 个景点的完全图有多少条边</span></div>
+<div class="thm-body">
+<p>完全图边数 $\binom{n}{2}=\frac{n(n-1)}{2}$。6 个景点是 $15$ 条边；15 个景点是 $105$ 条；48 个景点是 $1128$ 条。边数按平方增长，这正是 TSP 类问题规模一上来就不可 brute-force 的原因（第 6 章）。</p>
+</div>
+</div>
+
+<h3><span class="sn">2.7</span>工程补全：BFS 之外的三张牌</h3>
+<p>迷宫只是无权图。真实问题一旦带权（距离、费用、时间），BFS 的「边数最少」就不等于「代价最小」。下面三个算法原书没有展开，但它们是搜索章节在工程里的直接延伸。</p>
+
+<h4>Dijkstra：每次取当前距离最小的点</h4>
+<p>维护一个优先队列，键是「从起点到该点的已知最短距离」。每次弹出最小值，松弛它的邻居。要求所有边权非负——否则一个已经「确定」的距离可能被后面的负边推翻。</p>
+<pre><code class="language-python">import heapq
+
+def dijkstra(graph, src):
+    dist = {src: 0}
+    pq = [(0, src)]
+    while pq:
+        d, u = heapq.heappop(pq)
+        if d &gt; dist.get(u, float('inf')):
+            continue                          # 过期条目
+        for v, w in graph[u]:
+            nd = d + w
+            if nd &lt; dist.get(v, float('inf')):
+                dist[v] = nd
+                heapq.heappush(pq, (nd, v))
+    return dist                               # O((V+E) log V)</code></pre>
+
+<h4>Bellman-Ford：允许负权，还能抓负环</h4>
+<p>对所有边做 $V-1$ 轮松弛。第 $V$ 轮还能松弛，就说明存在负环——因为一条不含环的最短路径最多 $V-1$ 条边。</p>
+<pre><code class="language-python">def bellman_ford(edges, n, src):
+    dist = [float('inf')] * n
+    dist[src] = 0
+    for _ in range(n - 1):
+        for u, v, w in edges:
+            if dist[u] + w &lt; dist[v]:
+                dist[v] = dist[u] + w
+    for u, v, w in edges:                     # 第 n 轮
+        if dist[u] + w &lt; dist[v]:
+            return None                       # 负环
+    return dist</code></pre>
+
+<h4>拓扑排序：依赖关系的合法顺序</h4>
+<p>Kahn 算法：统计入度，把入度为 0 的点入队，弹出后把邻居入度减一。若最终输出的点数小于 $V$，说明有环，依赖无解。课程先修、构建系统、任务调度都用它。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>场景</th><th>选谁</th><th>理由</th></tr></thead>
+<tbody>
+<tr><td class="id">无权、要最少步数</td><td>BFS</td><td>第一次到达即最短</td></tr>
+<tr><td class="id">内存吃紧、只问可达</td><td>DFS</td><td>空间 $O(bd)$</td></tr>
+<tr><td class="id">非负权最短路</td><td>Dijkstra</td><td>贪心 + 优先队列</td></tr>
+<tr><td class="id">负权 / 判负环</td><td>Bellman-Ford</td><td>允许负边，$V-1$ 轮收敛</td></tr>
+<tr><td class="id">依赖排序</td><td>拓扑排序</td><td>只适用于 DAG</td></tr>
+<tr><td class="id">有可靠启发</td><td>A*</td><td>下一章主角</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">2.8</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">状态五件套</td><td>状态/动作/转移/目标/代价</td><td>历史该压进状态的要压</td></tr>
+<tr><td class="id">BFS 容器</td><td>FIFO 队列</td><td>入队即标记</td></tr>
+<tr><td class="id">DFS 容器</td><td>LIFO 栈</td><td>顺序影响解</td></tr>
+<tr><td class="id">BFS 空间</td><td>$O(b^d)$</td><td>先爆的是内存</td></tr>
+<tr><td class="id">DFS 空间</td><td>$O(bm)$</td><td>$m$ 为最大深度</td></tr>
+<tr><td class="id">迷宫 BFS 解</td><td>7 步</td><td>南南西西 北北北</td></tr>
+<tr><td class="id">迷宫 DFS 解</td><td>9 步</td><td>南东东 北北北 西西西</td></tr>
+<tr><td class="id">完全图边数</td><td>$n(n-1)/2$</td><td>6 点 15 条</td></tr>
+<tr><td class="id">表示法</td><td>边数组/关联矩阵/邻接矩阵/邻接表</td><td>稀疏图用邻接表</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三个会让结果悄悄出错的细节</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个会让结果悄悄出错的细节</span></div>
 <div class="thm-body">
-<p>① <code>visited</code> 在出队时才标记，同一节点会被重复入队，队列膨胀数倍；② 用 BFS 解带权图，把"3 条短边"当成比"1 条长边"便宜；③ 递归 DFS 在百万节点图上爆栈，应该改用显式栈。前两个不会报错，只会给你一个看起来合理的错答案。</p>
+<p>① <code>visited</code> 在出队时才标记，同一节点会被重复入队，队列膨胀数倍；② 用 BFS 解带权图，把「3 条短边」当成比「1 条长边」便宜；③ 递归 DFS 在百万节点图上爆栈，应该改用显式栈；④ 把树当成一般图来遍历却忘了环检测，或者在 DAG 上套用 Dijkstra 的「已确定」假设。前两个不会报错，只会给你一个看起来合理的错答案。</p>
 </div>
 </div>
 </div>
@@ -710,80 +958,229 @@ def bfs(start, goal, neighbors):
 
 <section id="ch3" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 3 · Constraint Solving</div>
-<h2><span class="num">3</span>约束求解：早点知道此路不通</h2>
-<p class="lede">约束求解的加速不在"算得更快"，而在"更早知道这条路走不通"。</p>
+<div class="sec-label">Chapter 3 · Intelligent search</div>
+<h2><span class="num">3</span>有信息与有对手的搜索</h2>
+<p class="lede">启发式是「有根据的猜测」：它不保证对，但能把搜索从「翻遍所有可能」变成「先翻最像的」。</p>
 
 <div class="chap-intro">
-<p>原书没有单列 CSP，但它是搜索最实用的分支。这一节补上：变量、值域、约束，回溯搜索，前向检查与 AC-3，以及数独为什么可以被"秒解"。</p>
-<span class="tag">CSP / 回溯 / 传播</span>
+<p>对应原书第 3 章。前半是 A*：$f=g+h$、可采纳与一致性、优先队列、曼哈顿距离；后半是对抗搜索：零和博弈、Minimax、Alpha-Beta 剪枝。原书用「重力迷宫」（南北移动贵 5 倍）讲代价，用四子棋讲对手。</p>
+<span class="tag">A* / Minimax / Alpha-Beta</span>
 </div>
 
-<h3><span class="sn">3.1</span>三件套：变量、值域、约束</h3>
+<div class="mapchips">
+<span class="chip hot">heuristic</span>
+<span class="chip">A*</span>
+<span class="chip">admissible</span>
+<span class="chip">consistent</span>
+<span class="chip">minimax</span>
+<span class="chip">alpha-beta</span>
+<span class="chip">zero-sum</span>
+</div>
+
+<h3><span class="sn">3.1</span>启发式：把领域知识变成分数</h3>
+<p>原书给的定义很朴素：<b>启发式（heuristic）是一组评估状态的规则</b>，可以是「必须满足的条件」，也可以是「给状态打分」。它是经验法则，不是定理。披萨好不好吃，可以按「番茄酱、奶酪、蘑菇、菠萝、厚底、脆边」打分；GPS 路线好不好，可以按「堵车时间 + 距离 + 过路费」打分。</p>
+<p>反例同样重要：用「两点间直线距离」当通勤启发式就是坏启发式——鸟能飞直线，车不能。原书还举了音频指纹：把上传片段与版权库逐段比对太贵，于是用「频率分布差异」当启发式，先筛掉明显不像的。</p>
+
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">约束满足问题 CSP</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">可采纳与一致</span></div>
 <div class="thm-body">
-<p>一个 CSP 是三元组 $(X,D,C)$：$X$ 是变量集合，$D$ 是每个变量的值域，$C$ 是约束集合。解是给每个变量取一个值，使所有约束同时成立。地图着色是最小可讲的例子：7 个区域、3 种颜色，相邻区域不同色。数独是同一结构：81 个变量、值域 1–9，每行、每列、每宫各一条 AllDifferent 约束。</p>
+<p><b>可采纳</b>（admissible）：对任意节点 $n$，$h(n)\le h^*(n)$，即启发式永不高估到目标的真实代价。它是「乐观的」。若 $h$ 高估，A* 可能错过最优路径。</p>
+<p><b>一致</b>（consistent / monotone）：对任意边 $(n,n')$，$h(n)\le c(n,n')+h(n')$。等价于「沿路径往目标走，$h$ 的下降速度不超过实际代价」。一致性蕴含可采纳性；图搜索里有一致性，每个节点只需展开一次。</p>
 </div>
 </div>
 
-<p>和普通搜索的区别在于：普通搜索只在"到达目标"时判对错，CSP 可以在<b>任何中间状态</b>判死。这个额外的信号，就是剪枝的全部来源。</p>
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>把 $h$ 想成导航预估的「还剩多久」。预估不能比真实还久（可采纳），否则你会绕开一条其实更快的路；预估也不能忽高忽低（一致），否则算法会反复推翻已经确定的节点。</p>
+</div>
 
-<h3><span class="sn">3.2</span>回溯 + 前向检查：一次零回溯的着色</h3>
-<p>朴素回溯按固定顺序赋值，撞墙才回退。前向检查多做一步：每赋一个值，就把邻居值域里因此不可能的值删掉；某个邻居值域空了，立刻回退，不必等到后面几层才发现。</p>
+<h3><span class="sn">3.2</span>A*：把代价拆成两半</h3>
+<p>A* 的核心公式只有一行：</p>
+$$f(n)=g(n)+h(n)$$
+<p>$g(n)$ 是从起点到 $n$ 的<b>实际</b>代价，$h(n)$ 是从 $n$ 到目标的<b>估计</b>代价。A* 用优先队列（最小堆）每次弹出 $f$ 最小的节点。它不像 BFS 那样按层推进，也不像 DFS 那样一头扎到底，而是「哪条路看起来总账最便宜，就先走哪条」。</p>
 
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">7 区域 3 色，按 MRV 顺序</span></div>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">算法</span><span class="thm-title">A* 的 13 步（原书流程）</span></div>
 <div class="thm-body">
-<p>WA=红 → NT、SA 去掉红。MRV 选候选最少的 NT=绿 → SA 被前向检查逼到只剩蓝，直接 SA=蓝。Q 邻接 NT、SA、NSW，去掉绿和蓝 → Q=红。NSW 邻接 SA、Q、V，去掉蓝和红 → NSW=绿。V 邻接 SA、NSW、T，去掉蓝和绿 → V=红。T 邻接 NSW、V，去掉绿和红 → T=蓝。7 个区域全部赋完，<b>一次都没有回退</b>。</p>
+<ol>
+<li>根节点入优先队列。</li>
+<li>队列空？空则无解。</li>
+<li>返回「无路径」。</li>
+<li>弹出 $f$ 最小的节点作为当前节点。</li>
+<li>当前节点已访问？是则跳过。</li>
+<li>标记已访问。</li>
+<li>是目标？是则转第 8 步。</li>
+<li>沿父指针回溯，返回路径。</li>
+<li>当前节点还有下一个邻居？没有则回第 2 步。</li>
+<li>由优先队列自动排序，最小 $f$ 浮到堆顶。</li>
+<li>把当前节点设为邻居的父节点。</li>
+<li>计算邻居的代价 $f=g+h$。</li>
+<li>邻居入优先队列。</li>
+</ol>
 </div>
 </div>
 
-<pre><code class="language-python">def solve(assign, domains, neighbors):
-    if len(assign) == len(domains):
-        return assign
-    var = min((v for v in domains if v not in assign),
-              key=lambda v: len(domains[v]))        # MRV：候选最少
-    for value in list(domains[var]):
-        if any(assign.get(n) == value for n in neighbors[var]):
-            continue                                # 与已赋值邻居冲突
-        new = {k: set(d) for k, d in domains.items()}
-        new[var] = {value}
-        ok = True
-        for n in neighbors[var]:
-            if n not in assign:
-                new[n].discard(value)               # 前向检查
-                if not new[n]:
-                    ok = False
-        if ok:
-            res = solve({**assign, var: value}, new, neighbors)
-            if res:
-                return res
+<pre><code class="language-python">import heapq, itertools
+
+def astar(start, goal, neighbors, h):
+    tie = itertools.count()                  # 打破 f 相等时的平局
+    pq = [(h(start), next(tie), start)]
+    g = {start: 0}
+    parent = {start: None}
+    closed = set()
+    while pq:
+        f, _, node = heapq.heappop(pq)
+        if node in closed:
+            continue
+        closed.add(node)
+        if node == goal:
+            path = []
+            while node is not None:
+                path.append(node)
+                node = parent[node]
+            return path[::-1]
+        for nxt, w in neighbors(node):
+            ng = g[node] + w
+            if ng &lt; g.get(nxt, float('inf')):
+                g[nxt] = ng
+                parent[nxt] = node
+                heapq.heappush(pq, (ng + h(nxt), next(tie), nxt))
     return None</code></pre>
 
-<p>两个启发式几乎总该一起加：<b>MRV</b>（最小剩余值，先选候选最少的变量）和 <b>degree</b>（先选约束最多的变量）。它们不改变最坏复杂度，但通常能把搜索树砍掉一个数量级。数独从"能解"到"毫秒解"，靠的就是这两条加传播。</p>
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">四节点图上的一次 A* 演算</span></div>
+<div class="thm-body">
+<p>节点 $S,A,B,G$；边权 $S\to A=2$，$S\to B=5$，$A\to G=6$，$B\to G=2$。启发式 $h(S)=7$，$h(A)=5$，$h(B)=1$，$h(G)=0$。</p>
+<table>
+<thead><tr><th>步骤</th><th>弹出</th><th>$g$</th><th>$h$</th><th>$f=g+h$</th><th>队列（按 $f$）</th></tr></thead>
+<tbody>
+<tr><td class="id">1</td><td>$S$</td><td>0</td><td>7</td><td>7</td><td>$B(6), A(7)$</td></tr>
+<tr><td class="id">2</td><td>$B$</td><td>5</td><td>1</td><td>6</td><td>$A(7), G(7)$</td></tr>
+<tr><td class="id">3</td><td>$A$</td><td>2</td><td>5</td><td>7</td><td>$G(7), G(8)$</td></tr>
+<tr><td class="id">4</td><td>$G$</td><td>7</td><td>0</td><td>7</td><td>—</td></tr>
+</tbody>
+</table>
+<p>返回路径 $S\to B\to G$，总代价 7。注意：A* 没有先扩展更「浅」的 $A$，因为 $B$ 的 $f=6$ 更小。若把 $h(B)$ 改成 10（高估），$f(B)=15$，A* 会先走 $A$，最终得到 8，丢掉最优解。这就是「可采纳」的必要性。</p>
+</div>
+</div>
 
-<h3><span class="sn">3.3</span>弧一致性：AC-3 在搜之前先缩值域</h3>
-<p>前向检查只看"当前赋值"的邻居，传播一层就停。AC-3 看整个约束图：对每条弧 $(X,Y)$，删掉 $X$ 中在 $Y$ 里找不到支持的值，把受影响的弧重新入队，直到稳定。最坏 $O(ed^3)$，换来的是搜索前就大幅缩小的值域。</p>
-<p>要清醒：AC-3 只保证局部一致，<b>不保证有解</b>。它删掉的是不可能的值，剩下的仍然要搜。工程上通常先用 AC-3 预处理，再用 MRV 回溯。</p>
+<p>迷宫里的 $h$ 用<b>曼哈顿距离</b>：$h(n)=|x_n-x_g|+|y_n-y_g|$。因为不能斜走，它既是下界又满足一致性。若允许八方向移动，应换切比雪夫距离；若允许任意方向，用欧氏距离。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>方法</th><th>最坏复杂度</th><th>什么时候用</th><th>坑</th></tr></thead>
+<thead><tr><th>量</th><th>含义</th><th>性质</th></tr></thead>
 <tbody>
-<tr><td class="id">朴素回溯</td><td>$O(d^n)$</td><td>小规模、约束稀疏</td><td>变量顺序随意，树巨大</td></tr>
-<tr><td class="id">前向检查</td><td>仍是指数，常数更小</td><td>大多数 CSP 的默认配置</td><td>只传播一层，漏远处冲突</td></tr>
-<tr><td class="id">AC-3</td><td>$O(ed^3)$</td><td>预处理与持续传播</td><td>不保证可解；队列维护有成本</td></tr>
-<tr><td class="id">MRV + degree</td><td>不改变最坏界</td><td>几乎总该加</td><td>只看静态度数会误判</td></tr>
-<tr><td class="id">min-conflicts</td><td>期望多项式</td><td>大规模、可容忍不完全</td><td>可能不收敛，需要重启</td></tr>
+<tr><td class="id">$g(n)$</td><td>起点到 $n$ 的实际代价</td><td>随搜索单调增加</td></tr>
+<tr><td class="id">$h(n)$</td><td>$n$ 到目标的估计代价</td><td>可采纳 / 一致</td></tr>
+<tr><td class="id">$f(n)$</td><td>经过 $n$ 的总代价估计</td><td>优先队列的键</td></tr>
+<tr><td class="id">最优性</td><td>$h$ 可采纳时保证最优</td><td>图搜索需一致性</td></tr>
+<tr><td class="id">最坏时间</td><td>$O(b^d)$</td><td>与 BFS 同阶，但常数小得多</td></tr>
+<tr><td class="id">空间</td><td>$O(b^d)$</td><td>仍要存边界</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">3.3</span>A* 的近亲：贪婪、加权、束搜索</h3>
+<ul class="clean">
+<li><b>贪婪最佳优先</b>（greedy best-first）：只用 $f=h$。快，但会被「看起来近」的死胡同骗，不保证最优。</li>
+<li><b>加权 A*</b>：$f=g+w\cdot h$，$w&gt;1$。用最优性换速度，$w$ 越大越像贪婪。</li>
+<li><b>束搜索</b>（beam search）：每层只保留 $k$ 个最优节点。LLM 解码常用，$k$ 是显存与质量的折中。</li>
+<li><b>IDA*</b>：迭代加深 + $f$ 阈值，把空间降到 $O(d)$，代价是重复展开。</li>
+</ul>
+
+<h3><span class="sn">3.4</span>对抗搜索：对手也在搜索</h3>
+<p>迷宫只有一个行动者；棋类有两个，且目标相反。原书把这类问题叫<b>零和博弈</b>：一方 $+10$，另一方必然 $-10$，总和为 0。四子棋（Connect Four）是贯穿例子：双方轮流把棋子丢进列，先连成四子者胜，棋盘满了算平局。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Minimax 的三类终局分数</span></div>
+<div class="thm-body">
+<p>原书规定：智能体胜 $+10$，对手胜 $-10$，平局 $0$。叶节点才计算启发式分数；内部节点按「轮到谁」取最大值或最小值。由于完整博弈树会爆炸，通常只搜到固定深度 $d$；深度 4 意味着双方各走两步。</p>
+</div>
+</div>
+
+<pre><code class="language-python">def minimax(state, depth, maximize):
+    if state.is_terminal() or depth == 0:
+        return state.score(), None
+    best_move, best = None, (-INF if maximize else INF)
+    for move in state.legal_moves():
+        child = state.apply(move)
+        score, _ = minimax(child, depth - 1, not maximize)
+        if (maximize and score &gt; best) or (not maximize and score &lt; best):
+            best, best_move = score, move
+    return best, best_move</code></pre>
+
+<p>原书的 Python 实现用 $+1/-1$ 代表 MAX/MIN，每次递归乘 $-1$ 翻转角色；这行技巧让代码里不需要写两套分支。每次模拟都要 <code>deepcopy</code> 棋盘——这是 Minimax 最容易被低估的成本。</p>
+
+<h3><span class="sn">3.5</span>Alpha-Beta：不改变结果，只少算</h3>
+<p>Alpha 是 MAX 已知的最好下界，Beta 是 MIN 已知的最好上界。搜索中若 $\alpha\ge\beta$，说明这个分支的结果不可能影响上层决策，直接剪掉。原书的比喻是查路线：A 线 30 分钟；B 线第一段轮渡就要 45 分钟——不用再算后面，B 一定更差。</p>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一次剪枝：从 4 个叶节点省掉 1 个</span></div>
+<div class="thm-body">
+<p>根是 MAX，左子是 MIN（叶 3、5），右子是 MIN（叶 2、9）。</p>
+<ol>
+<li>左 MIN 看到 3，$\beta=3$；再看到 5，取小仍为 3；返回 3 给根，$\alpha=3$。</li>
+<li>右 MIN 看到第一个叶 2，$\beta=2$。此时 $\alpha=3\ge\beta=2$，剪枝：第二个叶 9 不必再看。</li>
+<li>右 MIN 返回 2；根 MAX 在 3 与 2 中取 3。</li>
+</ol>
+<p>结果与完整 Minimax 相同，但少评估了一个叶节点。树越大、排序越好，省得越多：理想情况下 Alpha-Beta 把复杂度从 $O(b^d)$ 降到 $O(b^{d/2})$——同样的算力可以多搜一倍深度。</p>
+</div>
+</div>
+
+<pre><code class="language-python">def alpha_beta(state, depth, alpha, beta, maximize):
+    if state.is_terminal() or depth == 0:
+        return state.score()
+    if maximize:
+        value = -INF
+        for move in state.legal_moves():
+            value = max(value, alpha_beta(state.apply(move),
+                                          depth - 1, alpha, beta, False))
+            alpha = max(alpha, value)
+            if alpha &gt;= beta:
+                break                         # MIN 不会允许这个分支
+        return value
+    value = INF
+    for move in state.legal_moves():
+        value = min(value, alpha_beta(state.apply(move),
+                                      depth - 1, alpha, beta, True))
+        beta = min(beta, value)
+        if alpha &gt;= beta:
+            break                             # MAX 不会允许这个分支
+    return value</code></pre>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>算法</th><th>时间</th><th>空间</th><th>保证</th><th>适用</th></tr></thead>
+<tbody>
+<tr><td class="id">Minimax</td><td>$O(b^d)$</td><td>$O(bd)$</td><td>在搜索深度内最优</td><td>完全信息零和博弈</td></tr>
+<tr><td class="id">Alpha-Beta</td><td>$O(b^{d/2})$（理想）</td><td>$O(bd)$</td><td>与 Minimax 同结果</td><td>同上，必配</td></tr>
+<tr><td class="id">A*</td><td>$O(b^d)$ 最坏</td><td>$O(b^d)$</td><td>$h$ 可采纳时最优</td><td>单智能体路径</td></tr>
+<tr><td class="id">束搜索</td><td>$O(kbd)$</td><td>$O(kb)$</td><td>不保证最优</td><td>大动作空间、解码</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">3.6</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">A* 公式</td><td>$f=g+h$</td><td>$g$ 实际，$h$ 估计</td></tr>
+<tr><td class="id">可采纳</td><td>$h\le h^*$</td><td>不高估</td></tr>
+<tr><td class="id">一致</td><td>$h(n)\le c+h(n')$</td><td>图搜索每点展开一次</td></tr>
+<tr><td class="id">曼哈顿距离</td><td>$|dx|+|dy|$</td><td>四方向网格</td></tr>
+<tr><td class="id">迷宫重力</td><td>南北 5 倍代价</td><td>A* 会选更多东西向移动</td></tr>
+<tr><td class="id">Minimax 分数</td><td>胜 +10 / 负 -10 / 平 0</td><td>零和</td></tr>
+<tr><td class="id">剪枝条件</td><td>$\alpha\ge\beta$</td><td>结果不变，只少算</td></tr>
+<tr><td class="id">复杂度收益</td><td>$b^d\to b^{d/2}$</td><td>理想排序下</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">约束建模的四个坑</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">五个容易踩的坑</span></div>
 <div class="thm-body">
-<p>① 只在赋值后检查、不在赋值前过滤，等于把剪枝推迟到撞墙；② 数独的数字置换、地图的颜色置换都是对称解，会让搜索重复，可加对称性破缺约束；③ 把软约束（"尽量"）写成硬约束，直接导致无解，该用加权 CSP 或优化目标；④ 以为 AC-3 之后就不用搜索了。</p>
+<p>① <b>$h$ 高估仍宣称最优</b>：可采纳性是定理前提，不是「差不多就行」。② <b>把一致性当可采纳的替代</b>：树搜索只需可采纳，图搜索（有环、重复状态）需要一致性，否则要重开已关闭节点。③ <b>Minimax 的深度按「步」算</b>：深度 4 是双方各两步，不是四步。④ <b>忘了动作排序</b>：Alpha-Beta 的剪枝量极度依赖先试好棋，随机顺序可能几乎不剪。⑤ <b>把「搜得更深」当成「更强」</b>：固定深度会遇到地平线效应（horizon effect），明明几步后必败，却在边界上看起来很好。</p>
 </div>
 </div>
 </div>
@@ -791,84 +1188,213 @@ def bfs(start, goal, neighbors):
 
 <section id="ch4" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 4 · Heuristic &amp; Adversarial Search</div>
-<h2><span class="num">4</span>有信息与有对手的搜索</h2>
-<p class="lede">有信息时，搜索不必盲目：一个"还剩多远"的估计，就能把指数棵树剪成一条走廊。有对手时，还得假设对方也在最优地出招。</p>
+<div class="sec-label">Chapter 4 · Evolutionary algorithms</div>
+<h2><span class="num">4</span>遗传算法：让一群解自己繁衍</h2>
+<p class="lede">进化不设计最优解，它只是让「稍微好一点」的变异不断累积。算法照抄这套逻辑：一群候选解、一个适应度、一轮轮选择与繁殖。</p>
 
 <div class="chap-intro">
-<p>对应原书第 3 章。前半是 A* 与启发式的可采纳性，后半是 Minimax 与 α-β 剪枝——两种完全不同的"智能"，共同点是都在用额外知识缩小搜索。</p>
-<span class="tag">启发式 / 对抗</span>
+<p>对应原书第 4 章。用 26 件物品的背包问题串起完整生命周期：编码、初始种群、适应度、轮盘赌选择、单点/两点/均匀交叉、位变异、种群更替、停止条件与十个可调参数。原书实测：暴力 7 分钟，GA 3 秒。</p>
+<span class="tag">Genetic Algorithm</span>
 </div>
 
-<h3><span class="sn">4.1</span>A*：把代价拆成两半</h3>
-<p>Dijkstra 只按已花代价 $g$ 排序，像一个不知道目的地在哪的出租车；贪心最佳优先只看估计 $h$，像只看直线距离的愣头青。A* 把两者相加：</p>
-<p>$$f(n)=g(n)+h(n)$$</p>
-<p>每次展开 $f$ 最小的节点。$g$ 是已经走过的真实代价，$h$ 是对"从 n 到目标还要多少"的乐观估计。</p>
+<div class="mapchips">
+<span class="chip hot">chromosome</span>
+<span class="chip">fitness</span>
+<span class="chip">roulette wheel</span>
+<span class="chip">crossover</span>
+<span class="chip">mutation</span>
+<span class="chip">elitism</span>
+<span class="chip">exploration vs exploitation</span>
+</div>
+
+<h3><span class="sn">4.1</span>从生物进化到算法</h3>
+<p>进化的三个必要条件：<b>变异</b>（variety，个体不同）、<b>遗传</b>（hereditary，子代继承父代）、<b>选择</b>（selection，更适应者更可能存活）。原书用桦尺蛾（peppered moth）说明选择压力：工业革命前深色个体只占约 2%，污染让树皮变黑后，深色个体升到约 95%。颜色不是「主动变」的，而是深色基因在污染环境里更容易留下后代。</p>
+<p>算法里的对应物：种群 = 一组候选解；基因 = 解的一个分量；适应度 = 目标函数；代 = 一次迭代。原书特别强调：<b>进化算法是随机的</b>，同样输入跑两次结果可能不同。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">染色体、基因、等位基因、基因型、表现型</span></div>
+<div class="thm-body">
+<p><b>染色体</b>（chromosome）是一个候选解，由若干<b>基因</b>（gene）组成；<b>等位基因</b>（allele）是某个基因位置上的具体取值；<b>基因型</b>（genotype）是解的计算表示，<b>表现型</b>（phenotype）是它在现实中的实际形态。原书的烘焙比喻：基因型是菜谱，表现型是烤出来的蛋糕，适应度是蛋糕好不好吃。</p>
+</div>
+</div>
+
+<h3><span class="sn">4.2</span>背包问题：一个能手算的优化题</h3>
+<p>背包容量 9 kg，8 件物品：</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>ID</th><th>物品</th><th>重量 kg</th><th>价值（美元）</th></tr></thead>
+<tbody>
+<tr><td class="id">1</td><td>Pearls 珍珠</td><td>3</td><td>4</td></tr>
+<tr><td class="id">2</td><td>Gold 金块</td><td>7</td><td>7</td></tr>
+<tr><td class="id">3</td><td>Crown 王冠</td><td>4</td><td>5</td></tr>
+<tr><td class="id">4</td><td>Coin 金币</td><td>1</td><td>1</td></tr>
+<tr><td class="id">5</td><td>Axe 斧头</td><td>5</td><td>4</td></tr>
+<tr><td class="id">6</td><td>Sword 剑</td><td>4</td><td>3</td></tr>
+<tr><td class="id">7</td><td>Ring 戒指</td><td>2</td><td>5</td></tr>
+<tr><td class="id">8</td><td>Cup 杯子</td><td>3</td><td>1</td></tr>
+</tbody>
+</table>
+</div>
+<p>三个候选解：$\{1,4,6\}$ 重 8 kg、价值 8；$\{1,3,7\}$ 重 9 kg、价值 14（最优）；$\{2,3,6\}$ 价值 15 但重 15 kg，超重无效。8 件物品只有 $2^8=256$ 种组合；换成 26 件就是 $2^{26}=67{,}108{,}864$ 种。</p>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>GA 不保证找到全局最优。它找的是「足够好」的解（desirable solution）。对推荐系统，「够好」可能就够了；对医疗剂量，可能必须精确求解。选 GA 之前先问：这个场景能接受近似吗？</p>
+</div>
+
+<h3><span class="sn">4.3</span>生命周期：五步循环</h3>
+<ol>
+<li><b>创建种群</b>：随机生成一组候选解。</li>
+<li><b>测量适应度</b>：给每个解打分。</li>
+<li><b>选择父母</b>：按适应度选，但保留随机性。</li>
+<li><b>繁殖后代</b>：交叉 + 变异。</li>
+<li><b>填充下一代</b>：保留谁、淘汰谁。</li>
+</ol>
+
+<h4>编码：二进制串</h4>
+<p>26 件物品用 26 位 0/1 串表示，第 $i$ 位为 1 表示选第 $i$ 件。二进制编码内存小、位运算快，适合「选/不选」的离散问题；不适合精确小数（价格）或顺序（城市访问次序），那要用实数编码或顺序编码（第 5 章）。</p>
+
+<pre><code class="language-python">import random
+
+def generate_initial_population(size, gene_count=26):
+    population = []
+    for _ in range(size):
+        chromosome = ''.join(random.choice('01') for _ in range(gene_count))
+        population.append([chromosome, 0, 0])   # 染色体, 适应度, 概率
+    return population</code></pre>
+
+<p>初始化有一个陷阱：从左到右逐位随机，会让左侧物品更容易被选中（因为一旦超重，后面的位就没机会了）。原书的做法是<b>先整条随机生成，再判合法</b>；不合法就给 0 分，或者用<b>修复函数</b>（从超重背包里拿掉一件）把它修好。</p>
+
+<h4>适应度：目标 + 约束</h4>
+<pre><code class="language-python">def calculate_individual_fitness(individual, maximum_weight):
+    total_weight = 0
+    total_value = 0
+    for i, gene in enumerate(individual[0]):
+        if gene == '1':
+            total_weight += knapsack_items[i][WEIGHT]
+            total_value  += knapsack_items[i][VALUE]
+    if total_weight &gt; maximum_weight:
+        return 0                                 # 超重 = 重罚
+    return total_value</code></pre>
+<p>超重就给 0，而不是「价值减去一点罚分」。原书的理由很直接：背不动的金子等于没有。约束处理有三种常见做法——惩罚函数、修复函数、以及只生成合法解；选哪种取决于合法解在空间中是否容易构造。</p>
+
+<h4>轮盘赌选择</h4>
+<p>每个个体的被选概率 $p_i=f_i/\sum_j f_j$，在 $[0,1]$ 上拼成一条条区间，随机数落在哪段就选谁。适应度高 → 扇区大 → 更容易被选中，但差个体仍有机会，保留基因多样性。</p>
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">两条路，先展开谁</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">四个个体的轮盘</span></div>
 <div class="thm-body">
-<p>S→G 有两条路：S-A-G 已花 10，A 的估计 1，$f=11$；S-B-G 已花 12，B 的估计 0.5，$f=12.5$。A* 先展开 A。若 A 之后发现要绕远，再回头展开 B——排序是动态的，不是一次性选路。</p>
+<p>适应度 $10,20,30,40$，总和 100。概率分别为 $0.1,0.2,0.3,0.4$，累计区间 $[0,0.1),[0.1,0.3),[0.3,0.6),[0.6,1]$。</p>
+<p>随机数 $0.65$ 落在 $[0.6,1]$，选第 4 个；随机数 $0.25$ 落在 $[0.1,0.3)$，选第 2 个。若随机数是 $0.0$，选第 1 个。注意：同一个个体可以被多次选中当父母。</p>
 </div>
 </div>
 
-<div class="thm theorem">
-<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">可采纳性与一致性</span></div>
-<div class="thm-body">
-<p>若对所有节点 $n$ 有 $h(n)\le h^{*}(n)$（从不高估真实剩余代价），称 $h$ 可采纳，A* 保证返回最优解。图搜索还需要一致性 $h(n)\le c(n,n')+h(n')$，否则同一节点可能被重复展开；不满足时要么允许重开，要么放弃最优性保证。</p>
+<pre><code class="language-python">def roulette_wheel_selection(population, n):
+    total = sum(ind[FITNESS] for ind in population)
+    for ind in population:
+        ind[PROB] = ind[FITNESS] / total
+    chosen, acc = [], 0
+    for ind in population:
+        chosen.append((acc, acc + ind[PROB], ind))
+        acc += ind[PROB]
+    picks = []
+    for _ in range(n):
+        spin = random.random()
+        for lo, hi, ind in chosen:
+            if lo &lt; spin &lt;= hi:
+                picks.append(ind)
+                break
+    return picks</code></pre>
+
+<h4>交叉：单点、两点、均匀</h4>
+<ul class="clean">
+<li><b>单点交叉</b>：选一个切点，父 A 的前段 + 父 B 的后段；反向再得一个孩子。适用于二进制、顺序、实数编码。</li>
+<li><b>两点交叉</b>：选两个切点，A-B-A 三段拼接。适合二进制与实数。</li>
+<li><b>均匀交叉</b>：逐位掷硬币决定取哪个父本，通常多样性最高。</li>
+</ul>
+
+<pre><code class="language-python">def one_point_crossover(a, b, point):
+    return [a[:point] + b[point:], b[:point] + a[point:]]
+
+def two_point_crossover(a, b, p1, p2):
+    return [a[:p1] + b[p1:p2] + a[p2:],
+            b[:p1] + a[p1:p2] + b[p2:]]
+
+def uniform_crossover(a, b):
+    c1 = ''.join(x if random.random() &lt; 0.5 else y for x, y in zip(a, b))
+    c2 = ''.join(y if x == c else x for x, y, c in zip(a, b, c1))
+    return [c1, c2]</code></pre>
+
+<h4>变异：位翻转变异与全翻转</h4>
+<p><b>位变异</b>（bit-string mutation）随机选一个基因，0 变 1、1 变 0；<b>全翻转</b>（flip-bit mutation）把整条串取反，破坏性极大，只在需要持续注入多样性时用。变异率太高会毁掉好解，太低会早熟收敛。原书建议变异率随代数下降：前期多探索，后期多利用。</p>
+
+<pre><code class="language-python">def mutate_bit(child, rate):
+    if random.random() &lt; rate:
+        i = random.randrange(len(child))
+        child = list(child)
+        child[i] = '1' if child[i] == '0' else '0'
+    return ''.join(child)</code></pre>
+
+<h4>填充下一代：稳态 vs 世代</h4>
+<p><b>世代模型</b>（generational）：每代用后代整体替换旧种群，100 个个体就产生 100 个新个体。<b>稳态模型</b>（steady-state）：只替换一小部分（例如 100 个里换 20 个），大部分老个体保留。稳态更稳、更省算力，世代探索更强。</p>
+<p><b>精英保留</b>（elitism）把最好的几个个体直接复制到下一代，保证「已找到的最好解」不会因交叉变异丢失。但精英比例太高会让种群同质化，陷入局部最优。</p>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>探索 vs 利用，原书用雾山比喻：<b>变异</b>像滑翔伞把你丢到随机新地点，可能落在山谷，也可能发现新山脉；<b>交叉与选择</b>像从当前位置往上爬，保证变高，但可能困在小山包。好的 GA 是「先广泛撒点，再集中爬坡」。</p>
 </div>
-</div>
 
-<p>实践：四向网格用曼哈顿距离，八向网格用欧氏距离或 octile；路网用直线距离通常可采纳。$h=0$ 时 A* 退化成 Dijkstra；$h$ 过大则变成贪心，快但可能不最优。启发式越接近真实，扩展的节点越少，但算 $h$ 本身也有成本——这是一笔要算的账。</p>
-
-<pre><code class="language-python">import heapq
-
-def astar(start, goal, neighbors, h):
-    heap = [(h(start), 0.0, start, [start])]
-    best_g = {start: 0.0}
-    while heap:
-        f, g, node, path = heapq.heappop(heap)
-        if node == goal:
-            return path, g
-        if g &gt; best_g[node]:
-            continue                        # 堆里的旧条目，跳过
-        for nxt, cost in neighbors(node):
-            ng = g + cost
-            if ng &lt; best_g.get(nxt, float("inf")):
-                best_g[nxt] = ng
-                heapq.heappush(heap, (ng + h(nxt), ng, nxt, path + [nxt]))
-    return None, float("inf")</code></pre>
-
-<h3><span class="sn">4.2</span>Minimax：对手也在搜索</h3>
-<p>井字棋、四子棋、象棋是"对抗搜索"：你走一步之后，对手会选对他最有利的回应。Minimax 把局面树按层交替标成 MAX（自己）和 MIN（对手），叶子用评估函数打分，再自底向上取最大或最小。</p>
-<p>规模很吓人：四子棋分支约 7，深度 8 就是 $7^8\approx5.7\times10^6$ 个叶子；深度 12 到 $1.4\times10^{10}$。不剪枝，算力撑不住。</p>
-
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">三层树：一个 9 被剪掉</span></div>
-<div class="thm-body">
-<p>根是 MAX，两个子节点 A、B 是 MIN。A 的孩子是 3、5 → A=3；B 的孩子是 2、9 → B=2；根 $=\max(3,2)=3$。加入 α-β：展开 A 得到 3 后，$\alpha=3$；在 B 下看到第一个孩子 2，已经 $\le\alpha$，剩下的 9 不必再看。少算一个叶子，深树上就是指数级的节省。</p>
-</div>
-</div>
-
-<p>α 是 MAX 已保证的下界，β 是 MIN 已保证的上界；$\alpha\ge\beta$ 即剪枝。最好情况下复杂度从 $O(b^d)$ 降到 $O(b^{d/2})$，等效于同样时间多看一倍深度。但前提是"先搜好棋"，所以走法排序（吃子、中心、杀手着法）很关键；顺序差时，α-β 退化成普通 Minimax。</p>
+<h3><span class="sn">4.4</span>停止条件与参数</h3>
+<p>三种常见停止条件：固定代数；达到目标适应度；连续若干代最好适应度不再提升（停滞，stagnation）。最后一种最贴近实际，但要小心「平台期之后还有跃迁」。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>算法</th><th>最优性</th><th>时间复杂度</th><th>适用</th><th>坑</th></tr></thead>
+<thead><tr><th>参数</th><th>作用</th><th>调大 / 调小的后果</th></tr></thead>
 <tbody>
-<tr><td class="id">贪心最佳优先</td><td>否</td><td>取决于 $h$</td><td>快速找一个可行解</td><td>容易被 $h$ 带偏</td></tr>
-<tr><td class="id">Dijkstra</td><td>是</td><td>$O((V+E)\log V)$</td><td>非负权最短路</td><td>无信息，扩展太多</td></tr>
-<tr><td class="id">A*</td><td>是（$h$ 可采纳）</td><td>最坏 $O(b^d)$</td><td>有可靠启发</td><td>$h$ 高估 / 不一致</td></tr>
-<tr><td class="id">Minimax</td><td>是（对手最优）</td><td>$O(b^d)$</td><td>完全信息零和博弈</td><td>深度受限</td></tr>
-<tr><td class="id">α-β 剪枝</td><td>是（同 Minimax）</td><td>最好 $O(b^{d/2})$</td><td>同上</td><td>顺序差则几乎无效</td></tr>
+<tr><td class="id">染色体编码</td><td>解空间的表示</td><td>编码错了，后面全错</td></tr>
+<tr><td class="id">种群大小</td><td>多样性 vs 算力</td><td>大：更全但更慢；小：快但易早熟</td></tr>
+<tr><td class="id">初始化方式</td><td>起点分布</td><td>合法初始化能省大量算力</td></tr>
+<tr><td class="id">后代数量</td><td>每代新解数</td><td>多：探索强；多到挤掉好解则有害</td></tr>
+<tr><td class="id">父母选择</td><td>压力 vs 多样性</td><td>轮盘/排名/锦标赛，见第 5 章</td></tr>
+<tr><td class="id">交叉方式</td><td>基因组合粒度</td><td>单点保守，均匀激进</td></tr>
+<tr><td class="id">变异率</td><td>新基因注入</td><td>高：探索强但破坏好解</td></tr>
+<tr><td class="id">变异方式</td><td>扰动形态</td><td>必须仍产生合法解</td></tr>
+<tr><td class="id">代际选择</td><td>谁活到下一代</td><td>精英 vs 多样性的取舍</td></tr>
+<tr><td class="id">停止条件</td><td>何时收手</td><td>按时间/代数/停滞</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">26 件背包：7 分钟 vs 3 秒</span></div>
+<div class="thm-body">
+<p>原书在同一台「普通个人电脑」上对比：暴力枚举 6000 多万种组合，找到最优解约 <b>7 分钟</b>；参数配置得当的 GA 在 <b>3 秒</b>内找到同样的最优解。注意这是这个特定实例、这套硬件上的结果，不是「GA 永远快 140 倍」的定理。GA 的优势来自「不枚举」，代价是「不保证」。</p>
+</div>
+</div>
+
+<h3><span class="sn">4.5</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">进化三要素</td><td>变异 / 遗传 / 选择</td><td>缺一不可</td></tr>
+<tr><td class="id">背包 8 件</td><td>256 种组合</td><td>最优 $\{1,3,7\}$，价值 14</td></tr>
+<tr><td class="id">背包 26 件</td><td>$2^{26}\approx 6711$ 万</td><td>暴力 7 分钟</td></tr>
+<tr><td class="id">编码</td><td>26 位 0/1</td><td>选/不选</td></tr>
+<tr><td class="id">超重处理</td><td>适应度 0 或修复</td><td>不要只扣一点分</td></tr>
+<tr><td class="id">轮盘概率</td><td>$f_i/\sum f$</td><td>差个体仍有机会</td></tr>
+<tr><td class="id">交叉</td><td>单点 / 两点 / 均匀</td><td>均匀多样性最高</td></tr>
+<tr><td class="id">变异</td><td>位变异 / 全翻转</td><td>全翻转破坏性大</td></tr>
+<tr><td class="id">种群模型</td><td>世代 / 稳态</td><td>稳态保留大部分老个体</td></tr>
+<tr><td class="id">精英</td><td>最优个体直接晋级</td><td>过多会同质化</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个不会报错的错误</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">五个会让 GA 白跑的坑</span></div>
 <div class="thm-body">
-<p>① 启发式"看起来合理"但高估，A* 会安静地返回次优解；② α-β 忘了在 MIN 层更新 β，剪枝不生效，只是变慢；③ 评估函数把"多吃一子"当胜势、忽略位置，出现 horizon effect——在搜索边界上被对手反杀；④ 把对手当成随机走子，实战会被针对。</p>
+<p>① <b>把 GA 当全局最优求解器</b>：它是启发式，随机性意味着可能这次找到、下次找不到。② <b>适应度设计错</b>：只奖励价值不惩罚超重，算法会学会「把所有东西塞进去」。③ <b>变异产生非法解却不处理</b>：顺序编码交换后重复城市，必须用 PMX/OX 等保序算子。④ <b>过早收敛还继续跑</b>：种群多样性已经归零，再跑只是浪费算力，应该增大变异或重启。⑤ <b>用测试集调参数</b>：GA 有很多旋钮，容易把测试集「调」成训练集。</p>
 </div>
 </div>
 </div>
@@ -876,76 +1402,157 @@ def astar(start, goal, neighbors, h):
 
 <section id="ch5" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 5 · Evolutionary Algorithms</div>
-<h2><span class="num">5</span>遗传算法：让一群解自己繁衍</h2>
-<p class="lede">当解空间大到无法枚举、目标函数又没有梯度，进化算法用"繁殖 + 淘汰"代替推导。</p>
+<div class="sec-label">Chapter 5 · Advanced evolutionary approaches</div>
+<h2><span class="num">5</span>高级进化：换选择、换编码、换算子</h2>
+<p class="lede">同一个生命周期，换一种选择策略、换一种编码，就能从「选物品」跨到「排顺序」「装空间」「长程序」。</p>
 
 <div class="chap-intro">
-<p>对应原书第 4–5 章。以一个 8 件物品的背包为主线，走完"编码 → 适应度 → 选择 → 交叉 → 变异 → 新一代"的完整生命周期，再看不同编码与算子如何改变搜索行为。</p>
-<span class="tag">GA / 编码 / 选择</span>
+<p>对应原书第 5 章。先补三种选择策略（排名、锦标赛、精英），再讲三种编码（实数、顺序、树）各自的交叉与变异，最后是遗传编程、进化编程与术语表。核心一句话：<b>编码决定算子，算子决定解是否合法</b>。</p>
+<span class="tag">Selection · Encoding · GP</span>
 </div>
 
-<h3><span class="sn">5.1</span>生命周期：六步循环</h3>
-<p>初始化种群 → 评估适应度 → 选择亲代 → 交叉 → 变异 → 形成新一代，直到满足停止条件（代数、适应度阈值或时间预算）。原书强调：GA 追求的是<b>足够好的解</b>，不是保证最优——对推荐系统够用，对生命支持系统就不够。</p>
-
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">8 件物品、9kg 背包</span></div>
-<div class="thm-body">
-<p>物品（重量 kg / 价值，美元）：珍珠 3/4、金 7/7、王冠 4/5、硬币 1/1、斧 5/4、剑 4/3、戒指 2/5、杯 3/1。共 $2^8=256$ 种组合。最优是第 1、3、7 件：$3+4+2=9$ kg，价值 $4+5+5=14$ 美元。染色体就是 8 位 0/1，<code>10100010</code> 表示拿这三件；适应度 = 不超重时的总价值，超重记 0 或按超出量罚分。</p>
-</div>
-</div>
-
-<h3><span class="sn">5.2</span>选择、交叉、变异：一次带数字的进化</h3>
-<p>轮盘赌按适应度占比分扇区：$p_i=f_i/\sum_j f_j$。适应度为 [10,20,30,40] 的四个个体，被选中概率是 0.1/0.2/0.3/0.4——差的也有机会，只是机会小，这正是"探索"的来源。锦标赛选择（随机抽 $k$ 个取最好）则更抗适应度尺度差异。</p>
-
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">交叉造出超重子代，修复 + 变异救回来</span></div>
-<div class="thm-body">
-<p>P1=<code>1010|0010</code>（第 1、3、7 件，9kg，价值 14，已是最优）；P2=<code>0010|1000</code>（第 3、5 件，9kg，价值 9）。单点交叉在第 4 位后切开，子代 <code>10101000</code> = 第 1、3、5 件：12kg，超重，适应度 0。与其直接淘汰，不如<b>修复</b>：丢掉第 5 件 → <code>10100000</code>（7kg，价值 9）；再对第 7 位变异 → <code>10100010</code>，回到 9kg、价值 14。一次交叉、一次修复、一次变异，把两个父代的优点拼成了最优解。</p>
-</div>
+<div class="mapchips">
+<span class="chip hot">rank selection</span>
+<span class="chip">tournament</span>
+<span class="chip">real-value</span>
+<span class="chip">order / permutation</span>
+<span class="chip">tree</span>
+<span class="chip">genetic programming</span>
 </div>
 
-<pre><code class="language-python">import random
+<h3><span class="sn">5.1</span>三种选择策略：压力与多样性的旋钮</h3>
+<p>轮盘赌的问题在于「适应度差距」会被直接放大：一个适应度 1000 的个体可能独占大半轮盘，种群迅速同质化。三种替代策略各解决一部分问题。</p>
 
-def roulette(pop, fitness, k):
-    total = sum(fitness)
-    picked = []
-    for _ in range(k):
-        r, acc = random.uniform(0, total), 0
-        for ind, f in zip(pop, fitness):
-            acc += f
-            if acc &gt;= r:
-                picked.append(ind)
-                break
-    return picked
+<h4>排名选择：只看名次，不看差距</h4>
+<p>把个体按适应度排序，用<b>名次</b>当扇区大小。16 个个体时，第 1 名权重 16、第 2 名 15……第 16 名 1。原书的马拉松比喻：冠军领先 1 小时还是 1 秒都无所谓，第一名就是第一名。这样能防止「超级个体」过早统治种群。</p>
 
-def crossover(p1, p2, point):          # 单点交叉
-    return p1[:point] + p2[point:]
+<h4>锦标赛选择：小组内卷</h4>
+<p>随机抽 $k$ 个个体，选其中适应度最高的一个；重复若干组。$k$ 越大，选择压力越大、多样性越低；$k$ 越小，越随机。原书用 16 个个体分 4 组、每组 4 人，选出 4 个小组冠军再配对繁殖。</p>
 
-def mutate(chrom, rate):               # 位翻变异
-    return [g if random.random() &gt; rate else 1 - g for g in chrom]</code></pre>
-
-<p><b>编码必须匹配问题</b>，这是比调参更重要的建模决定：二进制适合"选/不选"的子集问题；实数编码适合连续参数（原书的无人机铝塑配比）；顺序编码（排列）适合 TSP 这类路径问题；树编码适合表达式或程序。用二进制表示排列，会产生大量非法个体，交叉一次就废一半。</p>
-
-<p>精英保留（每代直接复制最好的几个）能防止最优解被交叉破坏；但精英太多会压缩多样性，加速早熟。参数上，种群 50–200、交叉率 0.7–0.9、变异率约 $1/L$（$L$ 为染色体长度）是常见起点。成本是 $O(G\cdot N\cdot f)$：$G$ 代、每代 $N$ 个个体、单次适应度计算 $f$；GA 的账主要花在 $f$ 上，而不是"进化"本身。</p>
+<h4>精英选择：给最好的解一张免死金牌</h4>
+<p>最优的若干个个体不参与交叉变异，直接进入下一代。它保证「已找到的最好解」不丢失，但精英比例过高会让种群停止探索。实践中常与轮盘/排名/锦标赛混用：少数精英直通，其余按策略填充。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>组件</th><th>常见选项</th><th>适合</th><th>坑</th></tr></thead>
+<thead><tr><th>策略</th><th>选择压力</th><th>多样性</th><th>适用</th></tr></thead>
 <tbody>
-<tr><td class="id">编码</td><td>二进制 / 实数 / 顺序 / 树</td><td>子集 / 连续 / 排列 / 结构</td><td>编码与算子不匹配</td></tr>
-<tr><td class="id">选择</td><td>轮盘赌 / 锦标赛 / 排序</td><td>比例 / 噪声大 / 压力可控</td><td>早熟或选择压力过小</td></tr>
-<tr><td class="id">交叉</td><td>单点 / 两点 / 均匀 / 顺序</td><td>局部块 / 组合 / 高维 / 排列</td><td>破坏可行性</td></tr>
-<tr><td class="id">变异</td><td>位翻 / 高斯扰动 / 交换</td><td>离散 / 连续 / 排列</td><td>率过高退化成随机搜索</td></tr>
-<tr><td class="id">停止</td><td>代数 / 阈值 / 时间</td><td>预算明确</td><td>没有早停，白烧算力</td></tr>
+<tr><td class="id">轮盘赌</td><td>与适应度成正比</td><td>中</td><td>适应度尺度相近</td></tr>
+<tr><td class="id">排名</td><td>固定、可控</td><td>较高</td><td>适应度差距巨大</td></tr>
+<tr><td class="id">锦标赛</td><td>由 $k$ 控制</td><td>可调</td><td>并行、易实现</td></tr>
+<tr><td class="id">精英</td><td>最强</td><td>低</td><td>保底，不宜单独用</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">5.2</span>实数编码：当基因是数量</h3>
+<p>背包问题变体：每种物品可以带多件，26 个基因不再表示「选/不选」，而是「带几件」。原书表格里每件物品有 Quantity，例如 Axe 19 件、Crown 2 件、Crossbow 1 件。此时二进制编码无能为力，要用<b>实数编码</b>（real-value encoding）：基因直接存数量、坐标、权重等连续或整数数值。</p>
+
+<h4>算术交叉</h4>
+<p>把两个父本当变量做算术运算，结果作为子代。例如逐基因取平均 $c=(a+b)/2$，或加权 $c=\lambda a+(1-\lambda)b$。原书警告：如果父本已经在一个精确的高峰上，平均可能把子代推离峰值，<b>「把已经解出来的答案又解没了」</b>。所以算术交叉适合早期探索，后期应降低使用频率。</p>
+
+<h4>边界变异与算术变异</h4>
+<ul class="clean">
+<li><b>边界变异</b>（boundary mutation）：随机选一个基因，把它设为该位的下界或上界。原书例子把 0 改成 6（该物品最大数量）。用来测试「极端值是否有效」。</li>
+<li><b>算术变异</b>（arithmetic mutation）：随机选一个基因，加或减一个小数。适合精细搜索，步长可随代数衰减。</li>
+</ul>
+
+<pre><code class="language-python">def arithmetic_crossover(a, b, lam=0.5):
+    return [[lam * x + (1 - lam) * y for x, y in zip(a, b)]]
+
+def boundary_mutation(ind, lo, hi):
+    i = random.randrange(len(ind))
+    ind[i] = random.choice([lo[i], hi[i]])
+    return ind
+
+def arithmetic_mutation(ind, step=0.1):
+    i = random.randrange(len(ind))
+    ind[i] += random.uniform(-step, step)
+    return ind</code></pre>
+
+<h3><span class="sn">5.3</span>顺序编码：当基因是次序</h3>
+<p>炼油厂问题：26 件物品都要处理，顺序决定「单位时间产值」是否稳定。染色体是一个<b>排列</b>，例如 <code>[7, 3, 12, 1, ...]</code>，每个物品恰好出现一次。TSP、排程、装配顺序都用这种编码。</p>
+<p>关键限制：普通单点交叉会产生重复或缺失的物品，解直接非法。必须用保序算子：</p>
+<ul class="clean">
+<li><b>PMX</b>（部分映射交叉）：选一段交换，段外冲突的位置按映射关系修正。</li>
+<li><b>OX</b>（顺序交叉）：保留一段，其余位置按另一父本的相对顺序填充。</li>
+<li><b>CX</b>（循环交叉）：沿位置循环替换，保持排列合法。</li>
+</ul>
+<p><b>顺序变异</b>最简单：随机选两个位置交换。它一定保持「每个元素出现一次」，所以永远合法。</p>
+
+<pre><code class="language-python">def order_mutation(ind):
+    i, j = random.sample(range(len(ind)), 2)
+    ind[i], ind[j] = ind[j], ind[i]
+    return ind
+
+def order_crossover(a, b):
+    n = len(a)
+    i, j = sorted(random.sample(range(n), 2))
+    child = [None] * n
+    child[i:j] = a[i:j]                       # 保留父本 A 的一段
+    fill = [x for x in b if x not in child]   # B 中剩下的，按相对顺序
+    k = 0
+    for p in range(n):
+        if child[p] is None:
+            child[p] = fill[k]
+            k += 1
+    return child</code></pre>
+
+<h3><span class="sn">5.4</span>树编码：当解是层级或表达式</h3>
+<p>车厢装包问题：把不同尺寸的包裹装进 $1000\times1000$ 的车厢，目标是最小化空隙。解不是一串数，而是一棵「先横切、再竖切、再横切」的切割树。根节点代表整车，子节点代表横向/纵向分区，叶节点代表具体包裹。</p>
+<p>树编码也是<b>遗传编程</b>（genetic programming, GP）的基础：表达式树 <code>(x + 2) * y</code> 可以直接被交叉、变异，进化出可执行程序或公式。原书提醒：GP 进化出来的程序往往「能用但难读」，像一团乱麻。</p>
+
+<h4>树交叉与换节点变异</h4>
+<p>树交叉：在两棵树各选一个节点，交换以该节点为根的子树。换节点变异：随机选一个节点，换成同类型的合法节点（例如把一个「包裹」换成另一个「包裹」，或把一个「加法」换成「乘法」）。子代必须验证仍满足约束。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>编码</th><th>基因形态</th><th>典型问题</th><th>专用算子</th></tr></thead>
+<tbody>
+<tr><td class="id">二进制</td><td>0/1 串</td><td>选/不选、特征开关</td><td>单点/两点/均匀交叉，位变异</td></tr>
+<tr><td class="id">实数</td><td>数值向量</td><td>数量、坐标、超参数</td><td>算术交叉，边界/算术变异</td></tr>
+<tr><td class="id">顺序</td><td>排列</td><td>TSP、排程、装配</td><td>PMX/OX/CX，交换变异</td></tr>
+<tr><td class="id">树</td><td>层级/表达式</td><td>切割、程序、公式</td><td>子树交换，换节点变异</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">5.5</span>进化算法的几个变种</h3>
+<div class="cards">
+<div class="card"><div class="k">GA</div><h4>遗传算法</h4><p>固定长度的染色体，交叉 + 变异，解是参数或选择方案。</p></div>
+<div class="card"><div class="k">GP</div><h4>遗传编程</h4><p>解是可执行程序/表达式树，适应度 = 程序完成任务的好坏。</p></div>
+<div class="card"><div class="k">EP</div><h4>进化编程</h4><p>程序结构固定，只进化输入参数；可用于调 ANN 的超参数（neuroevolution）。</p></div>
+<div class="card"><div class="k">ES</div><h4>进化策略</h4><p>实数向量 + 高斯变异，常用于连续优化，强调步长自适应。</p></div>
+</div>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">术语表</span><span class="thm-title">原书第 5 章的十个词</span></div>
+<div class="thm-body">
+<p><b>Allele</b> 等位基因：某个基因位上的取值。<b>Chromosome</b> 染色体：一个候选解。<b>Exploitation</b> 利用：围绕好解精细搜索。<b>Exploration</b> 探索：寻找新的解区域。<b>Fitness function</b> 适应度函数：目标函数的一种。<b>Generation</b> 代：一次迭代。<b>Genotype</b> 基因型：解的计算表示。<b>Individual</b> 个体：种群中的一条染色体。<b>Objective function</b> 目标函数：要最大化或最小化的量。<b>Phenotype</b> 表现型：解在现实中的形态。<b>Population</b> 种群：个体的集合。</p>
+</div>
+</div>
+
+<h3><span class="sn">5.6</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">排名选择</td><td>用名次当权重</td><td>抑制超级个体</td></tr>
+<tr><td class="id">锦标赛</td><td>小组取最优</td><td>$k$ 控制压力</td></tr>
+<tr><td class="id">精英</td><td>最优直通下一代</td><td>比例过高会停滞</td></tr>
+<tr><td class="id">实数编码</td><td>基因是数值</td><td>算术交叉/变异</td></tr>
+<tr><td class="id">顺序编码</td><td>基因是排列</td><td>必须用 PMX/OX/CX</td></tr>
+<tr><td class="id">树编码</td><td>基因是层级</td><td>GP 的基础</td></tr>
+<tr><td class="id">算术交叉风险</td><td>平均会推离峰值</td><td>后期少用</td></tr>
+<tr><td class="id">顺序变异</td><td>交换两个位置</td><td>永远合法</td></tr>
+<tr><td class="id">GP vs EP</td><td>进化程序 / 进化参数</td><td>EP 可调 ANN 超参</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">GA 失效的四种典型方式</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个编码层面的坑</span></div>
 <div class="thm-body">
-<p>① 适应度不惩罚约束，种群里充满"高分但超重"的不可行个体，越进化越离谱；② 变异率设成 0.5，GA 变成随机搜索；③ 种群多样性耗尽（早熟），所有个体长得一样——监控适应度方差，必要时重启或提高变异；④ 有精确多项式解的问题（如最短路）硬上 GA，纯属浪费。</p>
+<p>① <b>用二进制编码排顺序</b>：交叉后出现重复城市，解非法。② <b>算术交叉用到底</b>：后期不断平均，把精确解磨平。③ <b>树交叉不校验</b>：换完子树类型不匹配，程序直接崩。④ <b>把「编码」当实现细节</b>：编码决定了邻域结构，邻域结构决定了搜索难度——它是算法设计的第一决策，不是最后一步。</p>
 </div>
 </div>
 </div>
@@ -953,69 +1560,148 @@ def mutate(chrom, rate):               # 位翻变异
 
 <section id="ch6" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 6 · Swarm Intelligence</div>
-<h2><span class="num">6</span>群体智能：蚂蚁与粒子</h2>
-<p class="lede">一只蚂蚁只会跟着信息素走，一群蚂蚁能解 TSP；一个粒子只记得自己到过的好位置，一群粒子能找到全局最优。</p>
+<div class="sec-label">Chapter 6 · Swarm intelligence: Ants</div>
+<h2><span class="num">6</span>蚁群：信息素是一种共享记忆</h2>
+<p class="lede">单只蚂蚁很笨，但一群蚂蚁会把「哪条路更短」写进环境里。算法不存全局地图，只让信息素浓度替群体记忆。</p>
 
 <div class="chap-intro">
-<p>对应原书第 6–7 章。蚁群（ACO）用信息素做"集体记忆"，粒子群（PSO）用 pbest/gbest 做"群体记忆"；两者都没有中央调度，只有局部规则和一份共享信息。</p>
-<span class="tag">ACO / PSO</span>
+<p>对应原书第 6 章。用嘉年华景点（Carnival Problem）讲 TSP：距离矩阵、蚂蚁的三项属性、信息素矩阵、选择概率公式、蒸发与沉积、停止条件与参数。原书还引了真实蚂蚁的「非对称桥」实验：8 分钟后蚁群收敛到短路。</p>
+<span class="tag">Ant Colony Optimization</span>
 </div>
 
-<h3><span class="sn">6.1</span>蚁群：信息素 + 可见度</h3>
-<p>原书用"嘉年华问题"：48 个景点，暴力枚举要跑几十小时。ACO 让每只蚂蚁从随机景点出发，按概率选下一个没去过的景点，走完一圈后按路径质量留下信息素。选择概率正比于</p>
-<p>$$\tau_{ij}^{\alpha}\cdot\eta_{ij}^{\beta},\qquad \eta_{ij}=1/d_{ij}$$</p>
-<p>$\tau$ 是信息素（集体经验），$\eta$ 是可见度（眼前距离）。$\alpha$ 大 = 信任集体，$\beta$ 大 = 信任眼前；原书用 $\alpha=1,\beta=2$，也就是更看重"近不近"。</p>
+<div class="mapchips">
+<span class="chip hot">pheromone</span>
+<span class="chip">visibility</span>
+<span class="chip">alpha / beta</span>
+<span class="chip">evaporation</span>
+<span class="chip">TSP</span>
+<span class="chip">roulette selection</span>
+</div>
+
+<h3><span class="sn">6.1</span>群体智能：个体愚蠢，集体聪明</h3>
+<p>原书给了一组蚂蚁的数字：单只蚂蚁能搬动自身体重 10–50 倍的东西，每分钟能跑自身体长 700 倍的距离；蚂蚁有 10–20 种信息素，用来传递不同意图。单只蚂蚁只会跟随局部气味，但群体能筑巢、找食、搬运、报警。</p>
+<p>真实实验更直观：巢与食物之间放一座「非对称桥」，两条路长短不同。起初蚂蚁随机走，短路上的蚂蚁往返更快，单位时间内留下更多信息素；长路上的气味被时间稀释。约 <b>8 分钟</b>后，绝大多数蚂蚁都走短路。没有一只蚂蚁「算」过距离——是<b>正反馈 + 蒸发</b>共同完成了选择。</p>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>信息素是「会过期的推荐」。走得多的路浓度高，浓度高的路吸引更多蚂蚁，更多蚂蚁又让它更高——正反馈。但如果没有蒸发，一条早期错误的路会永远被推荐；蒸发就是给旧信息设一个 TTL。</p>
+</div>
+
+<h3><span class="sn">6.2</span>问题表示：距离矩阵与蚂蚁</h3>
+<p>6 个景点两两之间都有路，是完全图，边数 $\binom{6}{2}=15$。距离矩阵是对称的，对角线为 0：</p>
+<pre><code class="language-python"># Circus, Balloons, Bumper cars, Carousel, Swings, Ferris wheel
+D = [
+    [0,  8,  7,  4,  6,  4],
+    [8,  0,  5,  7, 11,  5],
+    [7,  5,  0,  9,  6,  7],
+    [4,  7,  9,  0,  5,  6],
+    [6, 11,  6,  5,  0,  3],
+    [4,  5,  7,  6,  3,  0],
+]</code></pre>
+
+<p>原书给出的最优游览顺序是：<b>Swings → Ferris wheel → Circus → Carousel → Balloons → Bumper cars</b>。6 个点还能手算；48 个点的暴力枚举要跑「几十个小时」——这正是 ACO 的用武之地。</p>
+
+<p>蚂蚁只需要三个属性：</p>
+<ul class="clean">
+<li><b>记忆</b>（memory）：已经访问过的景点列表，防止重复访问。</li>
+<li><b>最优适应度</b>（best fitness）：它走过的最短总距离。</li>
+<li><b>动作</b>（action）：选择下一个目的地，并沿途留下信息素。</li>
+</ul>
+<p>信息素也用一个 $n\times n$ 矩阵表示，初始全为 1——所有路「机会均等」，不预设偏好。</p>
+
+<h3><span class="sn">6.3</span>选择下一个景点：信息素 × 可见度</h3>
+<p>蚂蚁从当前点 $i$ 走到未访问点 $j$ 的概率：</p>
+$$P_{ij}=\frac{\tau_{ij}^{\alpha}\,\eta_{ij}^{\beta}}{\sum_{k\in \text{allowed}}\tau_{ik}^{\alpha}\,\eta_{ik}^{\beta}},\qquad \eta_{ij}=\frac{1}{d_{ij}}$$
+<p>$\tau$ 是信息素（群体经验），$\eta$ 是可见度（1/距离，局部贪心），$\alpha$ 放大信息素的影响，$\beta$ 放大距离的影响。原书的比喻：$\alpha$ 是「排队的人这么多，这项目一定好玩」的社会压力；$\beta$ 是「隔壁那个更近，我现在就想去」的即时理性。$\alpha$ 太大 → 盲从；$\beta$ 太大 → 退化成贪婪搜索。</p>
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">三条候选路，概率 76 / 19 / 5</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">从 Circus 出发，$\alpha=1,\beta=2$</span></div>
 <div class="thm-body">
-<p>从 circus 出发，三条候选距离 10、20、40，信息素都初始化为 1。权重分别是 $0.01$、$0.0025$、$0.000625$，和为 $0.013125$，归一化后约 <b>76%、19%、5%</b>。最近的那条大概率被选，但不是必然——剩下 24% 的探索机会，正是蚁群不会一开始就锁死的原因。</p>
+<p>初始信息素全为 1，因此权重只剩 $1/d^2$：</p>
+<table>
+<thead><tr><th>目标</th><th>距离 $d$</th><th>$\eta^2=1/d^2$</th><th>概率</th></tr></thead>
+<tbody>
+<tr><td class="id">Balloons</td><td>8</td><td>0.015625</td><td>0.0828</td></tr>
+<tr><td class="id">Bumper cars</td><td>7</td><td>0.020408</td><td>0.1081</td></tr>
+<tr><td class="id">Carousel</td><td>4</td><td>0.062500</td><td>0.3310</td></tr>
+<tr><td class="id">Swings</td><td>6</td><td>0.027778</td><td>0.1471</td></tr>
+<tr><td class="id">Ferris wheel</td><td>4</td><td>0.062500</td><td>0.3310</td></tr>
+<tr><td class="id"><b>合计</b></td><td>—</td><td>0.188811</td><td>1.0000</td></tr>
+</tbody>
+</table>
+<p>Carousel 与 Ferris wheel 距离都是 4，各占约 33%。蚂蚁用轮盘赌抽一个；抽到谁都不奇怪，这正是「探索」的来源。随着信息素在短路上累积，$\tau$ 项会逐渐压过 $\eta$，概率向历史最优路径集中。</p>
 </div>
 </div>
 
-<p>更新分两步：先蒸发 $\tau\leftarrow\rho\tau$（原书 $\rho=0.5$），再让每只蚂蚁按 $1/L$（$L$ 为路径长度）沉积。没有蒸发，第一条坏路会永久累积信息素，整个群体被错误经验绑架；蒸发相当于给知识加了一个"有效期"。</p>
-
-<pre><code class="language-python">import random
-
-def choose_next(current, unvisited, tau, dist, alpha=1, beta=2):
-    weights = [(tau[current][n] ** alpha) * ((1.0 / dist[current][n]) ** beta)
-               for n in unvisited]
-    total = sum(weights)
-    r, acc = random.random(), 0.0
-    for n, w in zip(unvisited, weights):
-        acc += w / total
-        if r &lt;= acc:
-            return n
-    return unvisited[-1]          # 浮点误差兜底</code></pre>
-
-<h3><span class="sn">6.2</span>粒子群：惯性、认知、社会</h3>
-<p>每个粒子有位置 $x$ 和速度 $v$，记住自己到过的最好位置 pbest，也知道全群最好位置 gbest。每一步：</p>
-<p>$$v\leftarrow w v+c_1 r_1(\text{pbest}-x)+c_2 r_2(\text{gbest}-x),\qquad x\leftarrow x+v$$</p>
-<p>$w$ 是惯性（大 = 保持方向、探索；小 = 快速转向、收敛），$c_1$ 是"怀旧"（个人经验），$c_2$ 是"从众"（群体经验）。原书无人机问题用 $w=0.2$、$c_1=0.35$、$c_2=0.45$，铝塑比收敛到 <b>1:3</b>，适应度为 0；并用已知最优在 $(1,3)$ 的 Booth 函数验证收敛。</p>
+<h3><span class="sn">6.4</span>信息素更新：先蒸发，再沉积</h3>
+<p>所有蚂蚁完成一轮游览后，更新每条边：</p>
+$$\tau_{ij}\leftarrow (1-\rho)\,\tau_{ij}+\sum_{k=1}^{m}\Delta\tau_{ij}^{k}$$
+<p>标准 ACO 中 $\Delta\tau_{ij}^{k}=Q/L_k$（若蚂蚁 $k$ 走过该边），$L_k$ 是它的路径长度，$Q$ 是常数。原书的代码把蒸发写成「乘以保留率」，并对每条边加上每只蚂蚁的 $1/L_k$：</p>
+<pre><code class="language-python">def update_pheromones(self, evaporation_rate):
+    for x in range(N):
+        for y in range(N):
+            self.pheromone[x][y] *= evaporation_rate      # 蒸发（保留率）
+            for ant in self.ant_colony:
+                self.pheromone[x][y] += 1 / ant.get_distance_travelled()</code></pre>
+<p>注意：书里的示例为了简洁，把「所有蚂蚁」的贡献加到了「所有边」；标准实现只给蚂蚁实际走过的边加。工程上应遵循标准版本，否则未走过的边也会被「凭空」加强。</p>
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一维两轮命中 gbest</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一条边的更新</span></div>
 <div class="thm-body">
-<p>$w=0.5$，$c_1=c_2=1$，$r_1=r_2=0.5$，当前 $x=2$、$v=1$，pbest=1，gbest=0。第一轮：$v=0.5\times1+0.5(1-2)+0.5(0-2)=-1$，$x=1$。第二轮：$v=0.5(-1)+0.5(1-1)+0.5(0-1)=-1$，$x=0$，命中 gbest。注意粒子是"飞过去"的，不保证每一步都变好。</p>
+<p>某边当前 $\tau=1$，保留率 $0.5$，两只蚂蚁的路径长度分别为 20 和 30，且都走过这条边。按原书公式：</p>
+<p>$$\tau'=1\times 0.5+\frac{1}{20}+\frac{1}{30}=0.5+0.05+0.0333=0.5833$$</p>
+<p>如果只有长度 30 的蚂蚁走过，则 $\tau'=0.5+0.0333=0.5333$。短路径贡献更大，但蒸发让所有边都缓慢衰减，避免早期错误被锁死。</p>
 </div>
 </div>
+
+<h3><span class="sn">6.5</span>生命周期、停止条件与参数</h3>
+<ol>
+<li>初始化信息素矩阵（全 1）。</li>
+<li>初始化蚁群，每只蚂蚁随机落在不同景点。</li>
+<li>每只蚂蚁按概率选择下一个未访问景点，直到走遍所有点。</li>
+<li>计算每只蚂蚁的总距离。</li>
+<li>蒸发 + 沉积信息素。</li>
+<li>更新全局最优路径。</li>
+<li>达到停止条件则输出，否则回到第 2 步。</li>
+</ol>
+<p>停止条件有两种：固定迭代次数（例如 100 轮，每只蚂蚁走 100 次完整路线）；或最优解连续若干轮不再改善（停滞）。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>算法</th><th>表示</th><th>更新信号</th><th>适合</th><th>坑</th></tr></thead>
+<thead><tr><th>参数</th><th>作用</th><th>典型/原书取值</th><th>调大后果</th></tr></thead>
 <tbody>
-<tr><td class="id">ACO</td><td>图上的路径</td><td>信息素 + 距离</td><td>路径/序列组合</td><td>信息素不蒸发会锁死</td></tr>
-<tr><td class="id">PSO</td><td>连续向量</td><td>pbest/gbest + 惯性</td><td>连续参数优化</td><td>gbest 支配导致早熟</td></tr>
-<tr><td class="id">GA</td><td>染色体</td><td>适应度 + 选择</td><td>离散/混合编码</td><td>交叉破坏可行性</td></tr>
+<tr><td class="id">$\alpha$</td><td>信息素权重</td><td>1（示例）</td><td>盲从，早熟</td></tr>
+<tr><td class="id">$\beta$</td><td>距离权重</td><td>2（示例）</td><td>退化为贪婪</td></tr>
+<tr><td class="id">$\rho$ / 保留率</td><td>蒸发速度</td><td>0.5（示例）</td><td>旧信息消失快，探索强</td></tr>
+<tr><td class="id">蚂蚁数</td><td>并行探索能力</td><td>景点数 × 系数</td><td>更全但更慢</td></tr>
+<tr><td class="id">迭代数</td><td>收敛时间</td><td>按问题定</td><td>更好但更贵</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>复杂度：每轮 $m$ 只蚂蚁、每只蚂蚁最多 $n$ 步、每步在 $O(n)$ 个候选里算概率，单轮 $O(mn^2)$；总时间 $O(\text{iter}\cdot mn^2)$，空间 $O(n^2)$ 存信息素与距离。</p>
+
+<h3><span class="sn">6.6</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">生物事实</td><td>搬 10–50 倍体重，跑 700 倍体长/分</td><td>10–20 种信息素</td></tr>
+<tr><td class="id">桥实验</td><td>约 8 分钟收敛到短路</td><td>正反馈 + 蒸发</td></tr>
+<tr><td class="id">完全图边数</td><td>$n(n-1)/2$</td><td>6 点 15 条</td></tr>
+<tr><td class="id">选择公式</td><td>$\tau^\alpha\eta^\beta$ 归一化</td><td>$\eta=1/d$</td></tr>
+<tr><td class="id">示例概率</td><td>Carousel / Ferris 各 33%</td><td>$\alpha=1,\beta=2$</td></tr>
+<tr><td class="id">更新</td><td>蒸发 + 沉积</td><td>短路径贡献大</td></tr>
+<tr><td class="id">停止</td><td>固定轮数 / 停滞</td><td>停滞阈值要保守</td></tr>
+<tr><td class="id">复杂度</td><td>$O(\text{iter}\cdot mn^2)$</td><td>空间 $O(n^2)$</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">群体算法的四个陷阱</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">五个 ACO 实施坑</span></div>
 <div class="thm-body">
-<p>① 信息素初始化、蒸发率照抄论文，换个问题就失效；② PSO 的 $c_2$ 远大于 $c_1$，全群冲向同一个局部最优，多样性瞬间归零；③ 离散问题硬套 PSO（直接对排列做加减）会产生非法解，应改用离散 PSO 或换算法；④ 群体算法的"结果好"是统计性的，必须多次运行看分布，跑一次就下结论等于自欺。</p>
+<p>① <b>不蒸发</b>：早期错误路径永久占优，蚂蚁全部堵死。② <b>$\alpha$ 过大</b>：信息素正反馈过强，几轮就同质化。③ <b>对称矩阵重复更新</b>：无向图里 $(i,j)$ 和 $(j,i)$ 是同一条边，更新两次等于蒸发/沉积比例翻倍。④ <b>蚂蚁太少</b>：候选路径覆盖不足，等于随机搜索。⑤ <b>把示例代码当标准实现</b>：书里的简化版会给所有边加信息素，生产环境应只更新实际走过的边。</p>
 </div>
 </div>
 </div>
@@ -1023,77 +1709,323 @@ def choose_next(current, unvisited, tau, dist, alpha=1, beta=2):
 
 <section id="ch7" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 7 · Machine Learning</div>
-<h2><span class="num">7</span>机器学习：把经验变成规则</h2>
-<p class="lede">机器学习的产出不是"答案"，而是一个在没见过的数据上仍然成立的规则。</p>
+<div class="sec-label">Chapter 7 · Swarm intelligence: Particles</div>
+<h2><span class="num">7</span>粒子群：三个声音决定下一步</h2>
+<p class="lede">每个粒子只听三件事：我原来的方向、我记忆里最好的位置、全群目前最好的位置。三种力量拉扯，就形成了搜索。</p>
 
 <div class="chap-intro">
-<p>对应原书第 8 章。先走一遍从问题定义到上线监控的完整工作流，再用 12 条钻石数据手算 CART 的基尼指数与信息增益，最后补上评估指标与过拟合的处理。</p>
-<span class="tag">工作流 / CART / 评估</span>
+<p>对应原书第 7 章。先建立「优化 = 在高维地形上找最低点」的直觉，再讲粒子、速度更新三要素（惯性、认知、社会）、Booth 函数的完整演算、参数与收敛陷阱。PSO 擅长连续、高维、目标函数可求值的优化。</p>
+<span class="tag">Particle Swarm Optimization</span>
 </div>
 
-<h3><span class="sn">7.1</span>工作流：七步，任何一步偷懒都会还回来</h3>
-<p>定义问题 → 收集数据 → 清洗与特征 → 划分训练/验证/测试 → 训练 → 评估 → 部署与监控。两个最贵的错误：<b>数据泄漏</b>（在划分前做标准化或填充，测试集信息漏进训练）和<b>分布漂移</b>（训练用的是去年的数据，上线后用户变了）。时间序列必须按时间切，不能随机打乱。</p>
+<div class="mapchips">
+<span class="chip hot">particle</span>
+<span class="chip">velocity</span>
+<span class="chip">inertia</span>
+<span class="chip">cognitive</span>
+<span class="chip">social</span>
+<span class="chip">pbest / gbest</span>
+</div>
 
-<h3><span class="sn">7.2</span>决策树：每一步都在问"怎么分最纯"</h3>
-<p>原书用钻石数据：根据 Carat、Price 判断切工是 Perfect 还是 Okay。CART 的每一步都在所有"特征 + 阈值"里找一个问题，使分出来的子集尽量纯。</p>
+<h3><span class="sn">7.1</span>从鸟群到粒子群</h3>
+<p>Craig Reynolds 在 1987 年写了一个鸟群模拟器，用三条规则解释「没有指挥的编队」：</p>
+<ul class="clean">
+<li><b>对齐</b>（alignment）：朝邻居的平均朝向飞。</li>
+<li><b>聚合</b>（cohesion）：朝邻居的平均位置靠拢。</li>
+<li><b>分离</b>（separation）：避免和邻居撞上。</li>
+</ul>
+<p>鸟群编队还有能量上的好处：前面的大鸟扇翅产生上升气流，后面的鸟省力；领头的累了可以换。PSO 借用了「个体 + 邻居 + 群体」的信息结构，但把它简化成<b>位置 + 速度 + 记忆</b>。</p>
+
+<h3><span class="sn">7.2</span>优化问题：把「找最好」画成地形</h3>
+<p>原书用辣椒举例：小辣椒通常更辣，把「大小」和「辣度」画成散点，再连成曲线，就得到一个一维函数；找最辣的点就是找最小值。加上颜色，变成三维曲面；再加上产地、年龄、施肥量，就是六维——<b>无法可视化，但仍然是函数</b>。</p>
+<p>关键区分：搜索空间是「输入」张成的空间（铝和塑料的比例、辣椒的尺寸/颜色），适应度是「输出」的高度。PSO 在输入空间里移动，在输出空间里比较。</p>
 
 <div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">基尼指数与信息增益</span></div>
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">粒子</span></div>
 <div class="thm-body">
-<p>基尼指数 $\mathrm{Gini}(S)=1-\sum_i p_i^2$，衡量随机抽两条样本、类别不一致的概率。信息增益 = 父节点不纯度 − 两个子节点按样本数加权的平均不纯度。增益越大，这个问题越"值钱"。</p>
+<p>一个粒子由三部分组成：<b>位置</b> $\mathbf{x}\in\mathbb{R}^d$（当前候选解）、<b>速度</b> $\mathbf{v}\in\mathbb{R}^d$（下一步往哪走、走多快）、<b>历史最优</b> $\mathbf{p}$（它自己到达过的最好位置）。整个群还维护一个<b>全局最优</b> $\mathbf{g}$。</p>
 </div>
 </div>
+
+<h3><span class="sn">7.3</span>无人机问题：一个二维例子</h3>
+<p>无人机机身用铝（$x$）、桨叶用塑料（$y$），两者比例影响「升力阻力」和「风中抖动」。原书假设研究者已经拟合出一个适应度函数，并限定 $x,y\in[-10,10]$。</p>
+<p>为了能手算，原书用的是 <b>Booth 函数</b>：</p>
+$$f(x,y)=(x+2y-7)^2+(2x+y-5)^2$$
+<p>它在 $(1,3)$ 取全局最小值 $0$。四个粒子的初始位置与适应度：</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>粒子</th><th>$(x,y)$</th><th>$f(x,y)$</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">1</td><td>$(7,1)$</td><td>104</td><td>当前全局最好（并列）</td></tr>
+<tr><td class="id">2</td><td>$(-1,9)$</td><td>104</td><td>也是 104</td></tr>
+<tr><td class="id">3</td><td>$(-10,1)$</td><td>801</td><td>很差</td></tr>
+<tr><td class="id">4</td><td>$(-2,-5)$</td><td>557</td><td>中等</td></tr>
+</tbody>
+</table>
+</div>
+
+<pre><code class="language-python">import math
+
+def booth(x, y):
+    return (x + 2*y - 7)**2 + (2*x + y - 5)**2
+
+for p in [(7,1), (-1,9), (-10,1), (-2,-5)]:
+    print(p, booth(*p))
+# (7, 1) 104
+# (-1, 9) 104
+# (-10, 1) 801
+# (-2, -5) 557</code></pre>
+
+<h3><span class="sn">7.4</span>速度与位置更新</h3>
+$$v_{t+1}=w\,v_t+c_1 r_1\,(\mathbf{p}-\mathbf{x}_t)+c_2 r_2\,(\mathbf{g}-\mathbf{x}_t)$$
+$$\mathbf{x}_{t+1}=\mathbf{x}_t+v_{t+1}$$
+<p>三项分别对应原书说的三个「声音」：</p>
+<ul class="clean">
+<li><b>惯性</b> $w v_t$：习惯。「保持原方向，转弯很费力。」$w$ 接近 1 → 探索（像重型卡车，转不动）；接近 0 → 利用（像苍蝇，随时变向）。</li>
+<li><b>认知</b> $c_1r_1(p-x)$：记忆。「昨天那个地方不错，回去看看。」$c_1$ 大 → 独立、怀旧，群会散开。</li>
+<li><b>社会</b> $c_2r_2(g-x)$：从众。「大家都往那个山头去了。」$c_2$ 大 → 快速收敛，也可能一头扎进局部最优。</li>
+</ul>
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">12 条样本，一次分裂把 Gini 从 0.486 降到 0.238</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">粒子 4 的一次完整更新</span></div>
 <div class="thm-body">
-<p>12 条里 7 条 Perfect、5 条 Okay：父节点 $\mathrm{Gini}=1-(7/12)^2-(5/12)^2\approx0.486$。问"Price ≥ 3914？"：左边 5 条全是 Perfect（Gini 0），右边 2 Perfect + 5 Okay（$\mathrm{Gini}=1-(2/7)^2-(5/7)^2=20/49\approx0.408$）。加权后 $0.238$，信息增益 $0.248$，在所有候选问题里最大，于是成为根节点。左边已纯，停止；右边继续递归。</p>
+<p>设 $w=0.2$，$c_1=0.35$，$c_2=0.45$，$r_1=r_2=0.5$。粒子 4 在 $(-2,-5)$，它自己的历史最优还是 $(-2,-5)$，全局最优取 $(7,1)$。</p>
+<p>先算 $x$ 方向：</p>
+<p>$$v_x=0.2\cdot 0+0.35\cdot 0.5\cdot 0+0.45\cdot 0.5\cdot 9=2.025$$</p>
+<p>再算 $y$ 方向：</p>
+<p>$$v_y=0.2\cdot 0+0.35\cdot 0.5\cdot 0+0.45\cdot 0.5\cdot 6=1.35$$</p>
+<p>新位置：$(x,y)=(-2+2.025,\;-5+1.35)=(0.025,\;-3.65)$。新适应度：</p>
+<p>$$f(0.025,-3.65)=(-14.275)^2+(-8.6)^2\approx 277.7$$</p>
+<p>从 557 降到 277.7，粒子向全局最优靠近了一大步。注意认知项为 0，因为它的历史最优就是当前位置——第一次迭代时经常如此。</p>
 </div>
 </div>
 
-<pre><code class="language-python">def gini(labels):
-    n = len(labels)
-    return 1 - sum((labels.count(c) / n) ** 2 for c in set(labels))
-
-def best_split(rows, feature, target):
-    best_t, best_gain = None, 0.0
-    parent = gini([r[target] for r in rows])
-    for t in sorted({r[feature] for r in rows}):
-        left  = [r for r in rows if r[feature] &lt;  t]
-        right = [r for r in rows if r[feature] &gt;= t]
-        if not left or not right:
-            continue
-        after = (len(left) * gini([r[target] for r in left]) +
-                 len(right) * gini([r[target] for r in right])) / len(rows)
-        if parent - after &gt; best_gain:
-            best_t, best_gain = t, parent - after
-    return best_t, best_gain</code></pre>
-
-<p>树深不限制，会一直切到每个叶子只剩一条样本：训练集 100%，测试集崩盘。实践用 <code>max_depth</code>、<code>min_samples_leaf</code>、代价复杂度剪枝（<code>ccp_alpha</code>），或换成随机森林——多棵树投票，方差显著下降。</p>
-
-<h3><span class="sn">7.3</span>评估：准确率会骗人</h3>
-<p>99% 的样本是负类时，全预测为负类就有 99% 准确率，但召回率为 0。分类要看混淆矩阵、precision/recall/F1、AUC；回归看 MAE/RMSE/$R^2$；类别不平衡用重采样、类别权重或阈值调整。交叉验证用来估计泛化，<b>测试集只能看一次</b>。</p>
+<h3><span class="sn">7.5</span>生命周期与参数</h3>
+<ol>
+<li>初始化：$N$ 个粒子随机分布，速度设为 0 或很小的随机值。</li>
+<li>计算每个粒子的适应度，更新各自的 $p$ 与全局 $g$。</li>
+<li>按公式更新速度与位置。</li>
+<li>重新计算适应度，更新 $p$、$g$。</li>
+<li>满足停止条件则输出 $g$，否则回到第 3 步。</li>
+</ol>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>算法</th><th>任务</th><th>输出</th><th>擅长</th><th>坑</th></tr></thead>
+<thead><tr><th>参数</th><th>原书建议</th><th>作用</th><th>调大后果</th></tr></thead>
 <tbody>
-<tr><td class="id">线性回归</td><td>回归</td><td>连续值</td><td>线性关系、可解释</td><td>非线性、异常值敏感</td></tr>
-<tr><td class="id">逻辑回归</td><td>分类</td><td>概率</td><td>基线、概率校准好</td><td>只能线性边界</td></tr>
-<tr><td class="id">决策树</td><td>分类/回归</td><td>规则</td><td>可解释、混合特征</td><td>不剪枝必过拟合</td></tr>
-<tr><td class="id">随机森林</td><td>分类/回归</td><td>投票/均值</td><td>表格数据、稳健</td><td>模型大、解释弱</td></tr>
-<tr><td class="id">KNN</td><td>分类/回归</td><td>邻居投票</td><td>小数据、非线性</td><td>维度灾难、推理慢</td></tr>
-<tr><td class="id">SVM</td><td>分类</td><td>间隔</td><td>高维小样本</td><td>核与参数敏感</td></tr>
-<tr><td class="id">K-means</td><td>聚类</td><td>簇标签</td><td>球形簇、快</td><td>要指定 $k$、对尺度敏感</td></tr>
+<tr><td class="id">粒子数</td><td>50–100（4–1000）</td><td>覆盖 vs 算力</td><td>更全但更慢</td></tr>
+<tr><td class="id">初始位置</td><td>均匀随机</td><td>避免扎堆</td><td>—</td></tr>
+<tr><td class="id">初始速度</td><td>小随机值</td><td>第一轮就分散</td><td>过大则飞出边界</td></tr>
+<tr><td class="id">惯性 $w$</td><td>0–1，示例 0.2</td><td>探索 / 利用</td><td>难转向，探索强</td></tr>
+<tr><td class="id">认知 $c_1$</td><td>0–2，示例 0.35</td><td>个体记忆</td><td>群散，收敛慢</td></tr>
+<tr><td class="id">社会 $c_2$</td><td>0–2，示例 0.45</td><td>群体吸引</td><td>早熟，塌成一点</td></tr>
+<tr><td class="id">迭代数</td><td>按问题定</td><td>收敛时间</td><td>更稳但更贵</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>复杂度：每轮 $O(Nd)$（$N$ 粒子、$d$ 维），总时间 $O(\text{iter}\cdot Nd)$，空间 $O(Nd)$。PSO 没有梯度、没有矩阵求逆，所以特别适合目标函数是黑箱、不可导、评估昂贵的场景。</p>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>PSO 不保证收敛到全局最优。它更像「一群人在雾里找最低点」：每个人都记得自己去过的最低处，也看得见全群的最低处，于是往两者之间跳。跳得太猛会越过谷底，跳得太保守会全体挤在一个坑里。</p>
+</div>
+
+<h3><span class="sn">7.6</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">三规则</td><td>对齐 / 聚合 / 分离</td><td>Reynolds 1987</td></tr>
+<tr><td class="id">粒子三属性</td><td>位置 / 速度 / 历史最优</td><td>群再维护全局最优</td></tr>
+<tr><td class="id">Booth 函数</td><td>$(x+2y-7)^2+(2x+y-5)^2$</td><td>最小值 0 在 $(1,3)$</td></tr>
+<tr><td class="id">初始适应度</td><td>104 / 104 / 801 / 557</td><td>四点示例</td></tr>
+<tr><td class="id">速度公式</td><td>$wv+c_1r_1(p-x)+c_2r_2(g-x)$</td><td>三项相加</td></tr>
+<tr><td class="id">位置公式</td><td>$x\leftarrow x+v$</td><td>离散问题需取整/投影</td></tr>
+<tr><td class="id">参数示例</td><td>$w=0.2,c_1=0.35,c_2=0.45$</td><td>社会项略强</td></tr>
+<tr><td class="id">复杂度</td><td>$O(\text{iter}\cdot Nd)$</td><td>无梯度</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个把模型"做假"的习惯</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">五个 PSO 陷阱</span></div>
 <div class="thm-body">
-<p>① 用测试集反复调参，等于把测试集变成训练集；② 只报 accuracy，不看少数类的 recall；③ 树不剪枝，还安慰自己"训练集 100% 很准"；④ 把相关当因果——模型学到"冰淇淋销量高→溺水多"，但两者都受气温驱动。</p>
+<p>① <b>不同量纲直接相加</b>：一个维度是 0–1，另一个是 0–10000，速度会被大量纲维度支配。应先归一化或按维度缩放。② <b>没有边界处理</b>：粒子飞出 $[-10,10]$ 后目标函数可能仍有定义，但解已无意义；要截断、反弹或重置。③ <b>$c_2$ 过大</b>：全群迅速塌到当前最优，早熟。④ <b>把 $g$ 当成保证最优</b>：PSO 是启发式，多跑几次、多起点更可靠。⑤ <b>用 PSO 调 PSO</b>：超参数搜索本身也可以用 PSO，但评估噪声大时容易过拟合验证集。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="sup" class="chapter">
+<div class="wrap">
+<div class="sec-label">Supplement · Beyond the Book</div>
+<h2><span class="num">S</span>模拟退火与约束满足：两种「少走弯路」</h2>
+<p class="lede">原书没有单列这两类算法，但第 1 章的「局部最优」和第 2 章的「搜索」在这里汇合：一个用概率跳出坑，一个用约束提前剪枝。</p>
+
+<div class="chap-intro">
+<p>这是<b>补充章</b>，不冒充原书内容。模拟退火（simulated annealing, SA）是局部搜索的标准扩展；约束满足（constraint satisfaction problem, CSP）是回溯搜索的工程化形式。两者都不需要梯度，适合组合优化与排班、着色、数独这类「解必须满足硬约束」的问题。</p>
+<span class="tag">补充 · SA / CSP</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">simulated annealing</span>
+<span class="chip">Metropolis</span>
+<span class="chip">cooling schedule</span>
+<span class="chip">CSP</span>
+<span class="chip">backtracking</span>
+<span class="chip">AC-3</span>
+</div>
+
+<h3><span class="sn">8.1</span>模拟退火：允许暂时变差</h3>
+<p>爬山法（hill climbing）只接受更好的邻居，于是停在第一个局部最优。退火改一条规则：<b>以一定概率接受更差的邻居</b>，概率随「温度」降低而变小。高温时到处乱跳，低温时几乎只接受改进。它的名字来自冶金：金属先加热再缓慢冷却，原子有时间排到低能晶格，突然冷却则会留下缺陷。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Metropolis 接受准则</span></div>
+<div class="thm-body">
+<p>当前解 $s$，邻居 $s'$，目标是最小化 $E$。令 $\Delta E=E(s')-E(s)$：</p>
+<ul class="clean">
+<li>$\Delta E\le 0$：一定接受。</li>
+<li>$\Delta E&gt;0$：以概率 $p=e^{-\Delta E/T}$ 接受，$T&gt;0$ 是当前温度。</li>
+</ul>
+<p>$T\to\infty$ 时 $p\to 1$（随机游走）；$T\to 0$ 时 $p\to 0$（纯爬山）。温度按冷却表 $T_{k+1}=\alpha T_k$ 下降，$\alpha$ 通常取 $0.8$–$0.99$。</p>
+</div>
+</div>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">变差 3 分，接不接受？</span></div>
+<div class="thm-body">
+<p>若 $\Delta E=3$：</p>
+<ul class="clean">
+<li>$T=10$：$p=e^{-0.3}\approx 0.7408$，七成概率接受——高温期很宽容。</li>
+<li>$T=1$：$p=e^{-3}\approx 0.0498$，只有 5% 概率接受——低温期几乎只走下降方向。</li>
+<li>$T=0.1$：$p=e^{-30}\approx 9.4\times 10^{-14}$，实际上拒绝。</li>
+</ul>
+<p>这就是「温度」的作用：它不是控制步长，而是控制<b>对坏结果的容忍度</b>。</p>
+</div>
+</div>
+
+<pre><code class="language-python">import math, random
+
+def simulated_annealing(init, neighbor, cost, T0=100.0, alpha=0.95,
+                        iters_per_T=100, T_min=1e-3):
+    s = init
+    best, best_cost = s, cost(s)
+    T = T0
+    while T &gt; T_min:
+        for _ in range(iters_per_T):
+            s2 = neighbor(s)
+            dE = cost(s2) - cost(s)
+            if dE &lt;= 0 or random.random() &lt; math.exp(-dE / T):
+                s = s2
+                if cost(s) &lt; best_cost:
+                    best, best_cost = s, cost(s)
+        T *= alpha
+    return best, best_cost</code></pre>
+
+<h4>用在哪：TSP 的 2-opt</h4>
+<p>对一条巡回路线，邻居可以定义为「反转其中一段」（2-opt）。反转后重新计算路径长度，按 Metropolis 准则决定是否保留。高温期会接受明显更长的路线，从而跨出局部最优；低温期只做微调。参数上：$T_0$ 应让初始接受率大约在 0.5–0.9；$\alpha$ 越接近 1，冷却越慢、质量越好、时间越长；每个温度下的迭代次数决定该温度是否「待够」。</p>
+
+<p>复杂度取决于邻居评估：TSP 的 2-opt 单次增量评估 $O(1)$（只改两条边），整轮 $O(n)$；总时间约为「温度级数 × 每级迭代 × 邻居评估成本」。空间只需存当前解与最优解，$O(n)$。</p>
+
+<h4>常见陷阱</h4>
+<ul class="clean">
+<li><b>冷得太快</b>：等价于随机爬山，早熟；表现为曲线很早就平了。</li>
+<li><b>初温太低</b>：一开始就拒绝所有坏解，退化成爬山。</li>
+<li><b>邻居设计太大</b>：每次跳到完全不同的解，退火变成随机重启。</li>
+<li><b>没有记录历史最优</b>：最后可能停在一个比历史最优点更差的当前解。</li>
+<li><b>把接受概率当「一定接受」</b>：$\Delta E$ 很大时 $e^{-\Delta E/T}$ 可能小到浮点下溢，直接置 0 即可。</li>
+</ul>
+
+<h3><span class="sn">8.2</span>约束满足：把「不可能」提前说出口</h3>
+<p>一个 CSP 是三元组 $(X,D,C)$：变量集合 $X$、每个变量的值域 $D$、约束集合 $C$。解是给每个变量取一个值，使所有约束同时成立。地图着色是最小例子：7 个区域、3 种颜色，相邻区域不同色。数独是同一结构：81 个变量、值域 1–9，每行、每列、每宫各一条 AllDifferent 约束。</p>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>普通搜索只在「到达目标」时判对错；CSP 可以在任何中间状态判死。这个额外的信号，就是剪枝的全部来源。约束越早传播，搜索树越小。</p>
+</div>
+
+<h4>回溯 + 前向检查</h4>
+<p>朴素回溯按固定顺序赋值，撞墙才回退。前向检查（forward checking）多做一步：每赋一个值，就把邻居值域里因此不可能的值删掉；某个邻居值域空了，立刻回退，不必等到后面几层才发现。</p>
+
+<pre><code class="language-python">def backtrack(assign, vars_, domains, constraints):
+    if len(assign) == len(vars_):
+        return assign
+    var = select_unassigned(vars_, assign, domains)   # 例如 MRV
+    for value in domains[var]:
+        if all(consistent(var, value, assign, constraints) for _ in [0]):
+            assign[var] = value
+            new_domains = forward_check(domains, var, value, constraints)
+            if new_domains is not None:                # 没有值域被清空
+                result = backtrack(assign, vars_, new_domains, constraints)
+                if result is not None:
+                    return result
+            del assign[var]
+    return None</code></pre>
+
+<h4>弧一致性：AC-3</h4>
+<p>弧 $(X_i,X_j)$ 一致，指 $X_i$ 的每个取值都能在 $X_j$ 的值域里找到至少一个不违反约束的搭档。AC-3 用一个队列反复修正：删掉 $X_i$ 中不满足的值；若 $X_i$ 的值域变了，就把所有指向 $X_i$ 的弧重新入队。它可以在搜索<b>之前</b>就把一些值删掉，也可以在搜索中作为传播器。</p>
+
+<pre><code class="language-python">def ac3(domains, constraints):
+    queue = [(xi, xj) for (xi, xj) in constraints]
+    while queue:
+        xi, xj = queue.pop(0)
+        if revise(domains, xi, xj):          # 删掉了 xi 的某些值
+            if not domains[xi]:
+                return False                 # 值域空 -&gt; 无解
+            for xk in neighbors(xi):
+                if xk != xj:
+                    queue.append((xk, xi))
+    return True
+
+def revise(domains, xi, xj):
+    revised = False
+    for v in list(domains[xi]):
+        if not any(ok(v, w, xi, xj) for w in domains[xj]):
+            domains[xi].remove(v)
+            revised = True
+    return revised</code></pre>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">三色地图：一次零回溯的赋值</span></div>
+<div class="thm-body">
+<p>7 个区域、3 种颜色。按「度数从大到小」排序变量，先给度数最高的区域涂红；前向检查把它的邻居值域从 $\{R,G,B\}$ 缩成 $\{G,B\}$。继续给下一个区域涂绿，再传播……如果某一步某个邻居的值域被清空，立刻回退。变量顺序 + 值顺序 + 前向检查，常常能把「指数级」压成「几乎线性」。</p>
+<p>数独同理：先填候选数最少的格子（MRV），每填一个就更新同行、同列、同宫的候选集。人类玩数独的「唯一候选」直觉，就是弧一致性。</p>
+</div>
+</div>
+
+<p>复杂度：CSP 判定是 NP 完全的，最坏 $O(d^n)$；但 AC-3 本身是多项式时间，$O(e d^3)$（$e$ 为弧数，$d$ 为值域大小）。它不能保证解出问题，只能保证「当前值域没有明显矛盾」。</p>
+
+<h4>常见陷阱</h4>
+<ul class="clean">
+<li><b>只做前向检查，不做变量排序</b>：固定顺序可能先填最难的变量，搜索树爆炸。用 MRV（最少剩余值）优先。</li>
+<li><b>把弧一致性当解</b>：AC-3 后每个值仍可能有多个候选，仍需搜索。</li>
+<li><b>约束写漏</b>：数独漏掉「宫」约束，解出来看着像对的，其实违反规则。</li>
+<li><b>值域复制成本</b>：每次递归复制整个 $D$ 很贵，工程上常用 trail/回溯标记。</li>
+<li><b>过约束与欠约束</b>：约束太紧无解，太松等于没剪枝；先做可满足性分析。</li>
+</ul>
+
+<h3><span class="sn">8.3</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">SA 接受准则</td><td>$\Delta E\le0$ 必收；否则 $e^{-\Delta E/T}$</td><td>Metropolis</td></tr>
+<tr><td class="id">温度作用</td><td>控制对坏解的容忍度</td><td>不是步长</td></tr>
+<tr><td class="id">冷却</td><td>$T\leftarrow\alpha T$</td><td>$\alpha\in[0.8,0.99]$</td></tr>
+<tr><td class="id">例子</td><td>$\Delta E=3$：$T=10\to0.741$；$T=1\to0.050$</td><td>指数衰减</td></tr>
+<tr><td class="id">CSP 三件套</td><td>变量 / 值域 / 约束</td><td>解 = 全赋值</td></tr>
+<tr><td class="id">前向检查</td><td>赋值后删邻居值域</td><td>空值域立即回退</td></tr>
+<tr><td class="id">AC-3</td><td>反复修正弧</td><td>$O(ed^3)$</td></tr>
+<tr><td class="id">数独</td><td>81 变量 / 9 值 / 27 约束</td><td>MRV + 传播</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">补充章的三条边界</span></div>
+<div class="thm-body">
+<p>① <b>SA 不是「一定找到全局最优」</b>：它只是比爬山更不容易困住；理论上要无限慢冷却才保证，实践中是工程折中。② <b>CSP 不是「约束越多越好」</b>：过约束会导致无解，且传播成本上升。③ <b>不要把这两者与书中的 GA/PSO 混为一谈</b>：GA/PSO 维护种群，SA 维护单解，CSP 维护值域；它们解决的是不同结构的问题。</p>
 </div>
 </div>
 </div>
@@ -1101,34 +2033,232 @@ def best_split(rows, feature, target):
 
 <section id="ch8" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 8 · Neural Networks</div>
-<h2><span class="num">8</span>神经网络：加权求和与误差分摊</h2>
-<p class="lede">神经网络不是黑箱：它是一串"加权求和 + 非线性"，再用梯度把误差分摊回每个权重。</p>
+<div class="sec-label">Chapter 8 · Machine learning</div>
+<h2><span class="num">8</span>机器学习：把经验压成一条规则</h2>
+<p class="lede">机器学习不是「让机器自己悟」，而是把「数据 → 模型 → 预测 → 评估」做成一条可重复的流水线，然后在流水线上换算法。</p>
 
 <div class="chap-intro">
-<p>对应原书第 9 章。从一个感知机的手算开始，走通前向传播与反向传播的一次完整更新，再谈激活函数、学习率与网络设计的选择。</p>
-<span class="tag">感知机 / 反向传播</span>
+<p>对应原书第 8 章。用钻石数据集走完整工作流：收集、清洗、训练、测试、改进；再用线性回归（最小二乘）与决策树（Gini / 信息增益）各做一个可手算的例子；最后补上过拟合、混淆矩阵与常见算法地图。</p>
+<span class="tag">Workflow · Regression · Decision Tree</span>
 </div>
 
-<h3><span class="sn">8.1</span>一个神经元：一条可调的线</h3>
-<p>感知机计算 $z=\sum_i w_i x_i+b$，再过激活函数。阶跃函数只能画直线边界；sigmoid $\sigma(z)=1/(1+e^{-z})$ 把 $z$ 压到 $(0,1)$，可导，才能用梯度训练。</p>
+<div class="mapchips">
+<span class="chip hot">supervised</span>
+<span class="chip">regression</span>
+<span class="chip">classification</span>
+<span class="chip">train / test</span>
+<span class="chip">Gini</span>
+<span class="chip">overfitting</span>
+<span class="chip">confusion matrix</span>
+</div>
+
+<h3><span class="sn">9.1</span>公寓找房：人已经在做机器学习</h3>
+<p>原书的开场很生活：市中心一居室 \$5,000/月，两居 \$7,000；带车库的一居 \$6,000；城外一居 \$3,000，两居 \$4,500，带车库 \$3,800。你从六条记录里总结出规律：市中心更贵；多一间房加 \$1,500–2,000；车库加 \$800–1,000。于是看到「市中心、两居、带车库」，你猜 \$8,000。</p>
+<p>这就是监督学习：从带答案的样本里找特征到目标的映射。数据是表格：<b>列是特征</b>（feature），<b>行是样本</b>（example），要预测的那列是<b>标签</b>（label）。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">三大类学习</span></div>
+<div class="thm-body">
+<p><b>监督学习</b>：有标签。输出连续值叫<b>回归</b>（regression），输出离散类别叫<b>分类</b>（classification）。<b>无监督学习</b>：没有标签，找结构，例如聚类、降维、关联规则。<b>强化学习</b>：没有标准答案，只有环境给的奖励/惩罚，学的是「在什么状态下做什么动作」（第 10 章）。</p>
+</div>
+</div>
+
+<h3><span class="sn">9.2</span>工作流：五步，任何一步偷懒都会还回来</h3>
+<p>原书用「炖菜」比喻：买菜（收集）、洗切（准备）、下锅（训练）、端给客人尝（测试）、按反馈调味（改进）。这个流程是<b>迭代</b>的，不是瀑布。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>阶段</th><th>做什么</th><th>常见错误</th></tr></thead>
+<tbody>
+<tr><td class="id">1 收集</td><td>明确问题，找数据，理解业务含义</td><td>先有算法再找问题</td></tr>
+<tr><td class="id">2 准备</td><td>缺失值、异常值、编码、归一化、划分训练/测试</td><td>用全量数据算均值再划分（泄漏）</td></tr>
+<tr><td class="id">3 训练</td><td>选模型，拟合参数</td><td>一上来就用最复杂的模型</td></tr>
+<tr><td class="id">4 测试</td><td>在没见过的数据上评估</td><td>拿训练集报准确率</td></tr>
+<tr><td class="id">5 改进</td><td>补数据、换特征、调参、换模型</td><td>只调参，不看数据</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>缺失值与清洗</h4>
+<p>原书用钻石数据集（10 列特征、5 万多行）演示脏数据：某行 Cut 和 Depth 为空，某行 Carat、Table、Y 为空，还有大小写不一致的 <code>si1</code> / <code>SI1</code>。处理方式有三种：删除含缺失的样本（可靠但可能丢信息）、用均值/中位数填补（简单但忽略特征相关性，且不能用于类别特征）、或用模型预测缺失值。</p>
+<p>类别特征要编码：独热（one-hot）适合无序类别，序数编码适合有顺序的等级（Fair < Good < Very Good < Premium < Ideal）。数值特征要缩放，否则「价格」会淹没「克拉」。</p>
+
+<h3><span class="sn">9.3</span>线性回归：最小二乘的一条线</h3>
+<p>问题：用克拉数 $x$ 预测价格 $y$。模型 $y=b_0+b_1x$。最小二乘选使残差平方和最小的参数：</p>
+$$b_1=\frac{\sum_i (x_i-\bar x)(y_i-\bar y)}{\sum_i (x_i-\bar x)^2},\qquad b_0=\bar y-b_1\bar x$$
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一次前向：0.574</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">10 颗钻石的回归线</span></div>
 <div class="thm-body">
-<p>$x=(1,1)$，$w=(0.5,-0.3)$，$b=0.1$：$z=0.5-0.3+0.1=0.3$，$\sigma(0.3)\approx0.574$。输出可以读作"正类的概率"。<b>偏置</b> $b$ 的作用是把这条线整体平移——没有它，决策边界必须穿过原点。</p>
+<p>原书把克拉数乘以 1000 以便手算。10 个样本的均值：$\bar x=1229$，$\bar y=3431$。平方和 $\sum(x-\bar x)^2=3{,}703{,}690$，交叉积和 $\sum(x-\bar x)(y-\bar y)=11{,}624{,}370$。于是</p>
+<p>$$b_1=\frac{11{,}624{,}370}{3{,}703{,}690}\approx 3.1386,\qquad b_0=3431-3.1386\times1229\approx -426.3$$</p>
+<p>回归线约为 $\hat y=3.14x-426$。含义：克拉数每增加 1（这里已放大 1000 倍），价格约增加 \$3.14；截距是「克拉为 0」时的外推，没有现实意义，只用于定位直线。</p>
 </div>
 </div>
 
-<p>单层感知机连 XOR 都学不会（XOR 不是线性可分）。加一个隐藏层，等价于先把空间弯折再切，问题就变线性可分了——这是"深度"最实在的一层直觉，不是玄学。</p>
+<pre><code class="language-python">def fit_regression_line(xs, ys):
+    n = len(xs)
+    mx, my = sum(xs) / n, sum(ys) / n
+    sxx = sum((x - mx) ** 2 for x in xs)
+    sxy = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
+    b1 = sxy / sxx
+    b0 = my - b1 * mx
+    return b0, b1</code></pre>
 
-<h3><span class="sn">8.2</span>前向与反向：一次 $-0.125$ 的梯度</h3>
-<p>前向：$a^{(1)}=\sigma(W^{(1)}x+b^{(1)})$，$a^{(2)}=\sigma(W^{(2)}a^{(1)}+b^{(2)})$。损失 $L=\frac12(a-y)^2$。反向：链式法则把 $\partial L/\partial a$ 逐层乘回去，得到每个权重的梯度，再 $w\leftarrow w-\eta\,\partial L/\partial w$。</p>
+<p>评估用 $R^2$：</p>
+$$R^2=1-\frac{\sum_i(y_i-\hat y_i)^2}{\sum_i(y_i-\bar y)^2}$$
+<p>$R^2=1$ 表示完美拟合，$0$ 表示和「永远猜均值」一样，负数表示比猜均值还差。它衡量的是「模型解释了多大比例的方差」，不是「预测误差多少美元」——后者要看 MAE/RMSE。</p>
+
+<h3><span class="sn">9.4</span>决策树：每一步都在问「怎么分最纯」</h3>
+<p>分类问题：根据 Carat 与 Price 判断钻石是 Okay（Fair/Good）还是 Perfect（Very Good/Premium/Ideal）。原书把 5 个等级合并成 2 类，得到 10 行数据。决策树的学习就是不断选「最能降低不确定性」的问题。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Gini 指数与信息增益</span></div>
+<div class="thm-body">
+<p>对 $K$ 类分布 $p_1,\dots,p_K$，Gini 不纯度</p>
+<p>$$G=1-\sum_{k=1}^{K}p_k^2$$</p>
+<p>$G=0$ 表示纯（只有一类）；二分类各占一半时 $G=0.5$，最大。按问题把数据分成左右两份后，加权不纯度</p>
+<p>$$G_{\text{split}}=\frac{n_L}{n}G_L+\frac{n_R}{n}G_R$$</p>
+<p>信息增益 $\Delta=G_{\text{before}}-G_{\text{split}}$。CART 每次选 $\Delta$ 最大的问题。</p>
+</div>
+</div>
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">单神经元更新一步</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">Price ≥ 3914 能带来多少信息</span></div>
 <div class="thm-body">
-<p>$x=1$，$w=0$，$b=0$，目标 $y=1$，学习率 $\eta=0.1$。前向 $a=\sigma(0)=0.5$，$L=\frac12(0.5-1)^2=0.125$。$\sigma'(0)=0.25$，所以 $\partial L/\partial w=(0.5-1)\times0.25\times1=-0.125$。更新后 $w=0-0.1\times(-0.125)=0.0125$，下一次输出会更接近 1。梯度是负的，所以权重往正方向走。</p>
+<p>10 行里 Okay 4 个、Perfect 6 个，所以</p>
+<p>$$G_{\text{before}}=1-\left(0.4^2+0.6^2\right)=0.48$$</p>
+<p>按「Price ≥ 3914」切：左边 3 个全是 Perfect，$G_L=0$；右边 7 个里 Okay 4、Perfect 3，</p>
+<p>$$G_R=1-\left(\frac{4}{7}\right)^2-\left(\frac{3}{7}\right)^2=\frac{24}{49}\approx0.4898$$</p>
+<p>加权：$G_{\text{split}}=0.7\times0.4898\approx0.3429$。信息增益</p>
+<p>$$\Delta=0.48-0.3429=0.1371$$</p>
+<p>左边已经是纯节点，停止分裂；右边继续找下一个问题。原书对 2 个特征 × 10 个样本生成 20 个候选问题，逐个算增益，取最大者。</p>
+</div>
+</div>
+
+<p>决策树的优点是可解释（能画出规则）、不需要特征缩放、能处理非线性；缺点是<b>极易过拟合</b>——不加限制时它会把每个训练样本都分对，相当于背答案。控制手段：最大深度、叶节点最小样本数、最小增益阈值、剪枝。</p>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>决策树像玩「21 问」：好问题一次砍掉一半可能性（「它是活的吗？」），坏问题几乎不改变分布（「它是物体吗？」）。Gini/信息增益就是给「问题好不好」打分。</p>
+</div>
+
+<h3><span class="sn">9.5</span>过拟合、欠拟合与评估</h3>
+<p>过拟合：模型太贴合训练数据，遇到新数据就崩。原书的比喻是背练习册答案——练习满分，考试换个数就不会。欠拟合：根本没学到规律，练习和考试都差。判断过拟合不能只看训练分数，要看<b>训练与测试的差距</b>。</p>
+<p>标准做法是 80/20 划分：80% 训练，20% 测试；数据少时用 $k$ 折交叉验证。测试集只能用来看，不能用来调参——否则信息泄漏，测试分数会虚高。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>指标</th><th>公式</th><th>回答的问题</th></tr></thead>
+<tbody>
+<tr><td class="id">准确率 accuracy</td><td>$(TP+TN)/N$</td><td>总体对了多少</td></tr>
+<tr><td class="id">精确率 precision</td><td>$TP/(TP+FP)$</td><td>报正的有多少是真的</td></tr>
+<tr><td class="id">召回率 recall</td><td>$TP/(TP+FN)$</td><td>真的正例抓到了多少</td></tr>
+<tr><td class="id">特异度 specificity</td><td>$TN/(TN+FP)$</td><td>真的负例排除了多少</td></tr>
+<tr><td class="id">$F_1$</td><td>$2PR/(P+R)$</td><td>精确率与召回率的调和</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>原书的钻石分类例子在 10 个测试样本上对了 7 个，准确率 70%。但「70%」本身不说明问题：如果 90% 样本都是 Perfect，一个永远猜 Perfect 的模型也有 90% 准确率，却毫无价值。类别不平衡时，必须看混淆矩阵与召回率。</p>
+
+<h3><span class="sn">9.6</span>算法地图：什么时候换工具</h3>
+<div class="cards">
+<div class="card"><div class="k">Regression</div><h4>线性 / 多项式回归</h4><p>连续值、关系近似线性。可解释，是基线。</p></div>
+<div class="card"><div class="k">Classification</div><h4>逻辑回归 / SVM</h4><p>线性边界，输出概率或间隔；高维稀疏文本常用。</p></div>
+<div class="card"><div class="k">Classification</div><h4>决策树 / 随机森林</h4><p>非线性、可解释；森林用 bagging 降方差。</p></div>
+<div class="card"><div class="k">Instance</div><h4>kNN</h4><p>无训练，预测时找最近 $k$ 个邻居；对尺度敏感。</p></div>
+<div class="card"><div class="k">Unsupervised</div><h4>K-means</h4><p>把样本分成 $k$ 簇；需预设 $k$，对初始化敏感。</p></div>
+<div class="card"><div class="k">Deep</div><h4>神经网络</h4><p>非结构化数据（图像、文本、音频）；需要大量数据与算力。</p></div>
+</div>
+
+<h3><span class="sn">9.7</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">监督 / 无监督</td><td>有标签 / 无标签</td><td>RL 是第三种</td></tr>
+<tr><td class="id">回归 / 分类</td><td>连续值 / 离散标签</td><td>看输出</td></tr>
+<tr><td class="id">工作流</td><td>收集→准备→训练→测试→改进</td><td>迭代，非瀑布</td></tr>
+<tr><td class="id">划分</td><td>80/20</td><td>测试集不能调参</td></tr>
+<tr><td class="id">回归线</td><td>$\hat y=3.14x-426$</td><td>钻石例子</td></tr>
+<tr><td class="id">$R^2$</td><td>$1-SS_{res}/SS_{tot}$</td><td>解释方差比例</td></tr>
+<tr><td class="id">Gini</td><td>$1-\sum p_k^2$</td><td>0 纯，0.5 最乱</td></tr>
+<tr><td class="id">信息增益</td><td>切前 Gini − 切后加权 Gini</td><td>示例 0.1371</td></tr>
+<tr><td class="id">过拟合</td><td>训练好、测试差</td><td>剪枝/正则/更多数据</td></tr>
+<tr><td class="id">不平衡</td><td>准确率会骗人</td><td>看 precision/recall</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">六个 ML 工程坑</span></div>
+<div class="thm-body">
+<p>① <b>数据泄漏</b>：归一化、填补、特征选择在划分之前用全量数据做，测试分数虚高。② <b>只看准确率</b>：类别不平衡时毫无意义。③ <b>拿测试集调参</b>：调多了，测试集就变成训练集。④ <b>把相关性当因果</b>：冰淇淋销量和溺水率一起上升，不代表冰淇淋导致溺水。⑤ <b>忽略时间顺序</b>：时序数据随机划分会把「未来」泄漏进训练。⑥ <b>把聚类当分类</b>：K-means 的簇号没有语义，不能直接当标签。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ch9" class="chapter">
+<div class="wrap">
+<div class="sec-label">Chapter 9 · Artificial neural networks</div>
+<h2><span class="num">9</span>神经网络：加权求和，再把误差分摊回去</h2>
+<p class="lede">一个神经元只是一条可调的线；把很多条线叠起来，再让误差从后往前分配责任，就能拟合复杂的边界。</p>
+
+<div class="chap-intro">
+<p>对应原书第 9 章。从感知机讲到多层网络：前向传播的六步、sigmoid、反向传播的链式法则、学习率、四种激活函数、网络设计参数，最后用矩阵形式把整张网络写成一行公式。</p>
+<span class="tag">Perceptron · Forward · Backprop</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">perceptron</span>
+<span class="chip">sigmoid</span>
+<span class="chip">forward propagation</span>
+<span class="chip">backpropagation</span>
+<span class="chip">chain rule</span>
+<span class="chip">learning rate</span>
+<span class="chip">ReLU</span>
+</div>
+
+<h3><span class="sn">10.1</span>从生物神经元到感知机</h3>
+<p>生物神经元由树突接收信号、胞体与细胞核处理、轴突传出、突触调节强度。人工神经元借用这个结构：<b>输入</b>乘<b>权重</b>（突触强度），求和后加<b>偏置</b>，再过<b>激活函数</b>得到输出。</p>
+$$z=\sum_{i=1}^{n}w_i x_i+b,\qquad \hat y=\sigma(z)$$
+<p>原书的公寓例子：用价格与面积预测「一个月内是否租出」。输入先按最大值缩放（价格上限 \$8,000、面积上限 80 m²），权重是训练出来的，输出是 0–1 的概率。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">感知机的局限</span></div>
+<div class="thm-body">
+<p>单个感知机只能画一条直线（高维是超平面）。它能解决线性可分问题，但解决不了 XOR：四个点 $(0,0),(0,1),(1,0),(1,1)$ 中，两类无法被一条直线分开。多层网络 + 非线性激活才能表达弯曲边界——这是「深度」的意义。</p>
+</div>
+</div>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Sigmoid 与它的导数</span></div>
+<div class="thm-body">
+<p>$$\sigma(z)=\frac{1}{1+e^{-z}},\qquad \sigma'(z)=\sigma(z)\left(1-\sigma(z)\right)$$</p>
+<p>它把 $(-\infty,\infty)$ 压到 $(0,1)$，可以解释为概率。两端饱和时导数趋近 0，这就是<b>梯度消失</b>：权重几乎不再更新。</p>
+</div>
+</div>
+
+<h3><span class="sn">10.2</span>前向传播：六步走完一层</h3>
+<ol>
+<li>输入一个样本 $\mathbf{x}$。</li>
+<li>每个输入乘以到各隐藏节点的权重。</li>
+<li>对每个隐藏节点求和（加偏置）。</li>
+<li>对每个隐藏节点套激活函数。</li>
+<li>把隐藏层输出加权求和到输出节点。</li>
+<li>输出节点再套激活函数，得到预测。</li>
+</ol>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">第一个隐藏节点的一次加权求和</span></div>
+<div class="thm-body">
+<p>原书训练好的车祸网络里，第一个隐藏节点对四个输入的权重是 $[3.35,-5.82,0.85,-4.35]$，输入样本（已缩放）是 $[0.542,0.5,0.5,0.2]$。则</p>
+<p>$$z=0.542\times3.35+0.5\times(-5.82)+0.5\times0.85+0.2\times(-4.35)$$</p>
+<p>$$z=1.8157-2.91+0.425-0.87=-1.5393$$</p>
+<p>$$\sigma(-1.5393)=\frac{1}{1+e^{1.5393}}\approx0.1767$$</p>
+<p>这个隐藏节点被「激活」到约 0.18。其他隐藏节点各算各的，再把结果加权送到输出节点；输出 0.00214 表示碰撞概率约 0.2%。同一网络对另一个样本（速度 1.0、地形 0.1、视野 0.2、经验 0.275）输出 0.99996，即 99.996%——高速、差路、差视野，直觉上也该撞。</p>
 </div>
 </div>
 
@@ -1137,120 +2267,102 @@ def best_split(rows, feature, target):
 def sigmoid(z):
     return 1 / (1 + np.exp(-z))
 
-X  = np.array([[1.0, 1.0]])                  # 1 个样本，2 个特征
-y  = np.array([[1.0]])
-W1 = np.array([[0.5, -0.3], [0.2, 0.8]])     # 2 -&gt; 2
-W2 = np.array([[0.7], [-0.4]])               # 2 -&gt; 1
+# 单隐层网络的前向传播
+H = sigmoid(X @ W_input)      # (n_samples, n_hidden)
+y_hat = sigmoid(H @ W_hidden) # (n_samples, n_output)</code></pre>
 
-h   = sigmoid(X @ W1)                        # 前向：隐藏层
-out = sigmoid(h @ W2)                        # 前向：输出层
-loss = 0.5 * np.mean((out - y) ** 2)
+<h3><span class="sn">10.3</span>反向传播：把误差从终点分回起点</h3>
+<p>原书的接力赛比喻：队伍输了 5 秒，教练从终点往回走——「第 4 棒你慢了 2 秒」「第 3 棒交接失误导致第 4 棒慢」……反向传播就是量化「每个权重对最终误差负多少责任」，然后按责任大小微调。</p>
 
-d_out = (out - y) * out * (1 - out)          # dL/dz2
-d_W2  = h.T @ d_out
-d_h   = (d_out @ W2.T) * h * (1 - h)         # 误差传回隐藏层
-d_W1  = X.T @ d_h</code></pre>
-
-<p>深层网络里，sigmoid 的导数最大只有 0.25，连乘几层就趋近 0（梯度消失）；ReLU（$\max(0,z)$）正区间导数恒为 1，是深网的默认选择。残差连接则给梯度开了一条"高速公路"。</p>
-
-<h3><span class="sn">8.3</span>设计清单：先让网络能训练，再谈结构</h3>
-<p>输入归一化；输出层按任务选（回归用线性，二分类用 sigmoid，多分类用 softmax）；隐藏层用 ReLU；学习率从 $10^{-3}$ 试起，配合 Adam；batch 32–256；盯训练/验证 loss 是否分叉；用 dropout、权重衰减、早停抗过拟合。</p>
-
-<div class="table-wrap">
-<table>
-<thead><tr><th>组件</th><th>选项</th><th>典型值</th><th>坑</th></tr></thead>
-<tbody>
-<tr><td class="id">激活</td><td>ReLU / sigmoid / tanh / GELU</td><td>隐藏层 ReLU</td><td>全 sigmoid 深网梯度消失</td></tr>
-<tr><td class="id">损失</td><td>MSE / 交叉熵</td><td>分类用交叉熵</td><td>回归误用交叉熵</td></tr>
-<tr><td class="id">优化器</td><td>SGD / Adam</td><td>Adam, lr=$10^{-3}$</td><td>lr 过大震荡或 NaN</td></tr>
-<tr><td class="id">正则</td><td>dropout / weight decay / 早停</td><td>0.1–0.5</td><td>推理忘记切 eval 模式</td></tr>
-<tr><td class="id">初始化</td><td>Xavier / He</td><td>按激活函数选</td><td>全零初始化对称失效</td></tr>
-</tbody>
-</table>
-</div>
-
-<div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">训练不起来的四个常见原因</span></div>
-<div class="thm-body">
-<p>① 输入不归一化，学习率再调也难收敛；② 学习率太大，几步之后 loss 变 NaN；③ 用 MSE 配 sigmoid 输出层，梯度被压得很小，学得极慢；④ 以为层数越多越好——没有数据和正则支撑，深网只是更快地过拟合。</p>
-</div>
-</div>
-</div>
-</section>
-
-<section id="ch9" class="chapter">
-<div class="wrap">
-<div class="sec-label">Chapter 9 · Reinforcement Learning</div>
-<h2><span class="num">9</span>强化学习：从奖励里学策略</h2>
-<p class="lede">监督学习告诉你"正确答案是什么"；强化学习只告诉你"刚才那步有多糟"，剩下的要靠自己试。</p>
-
-<div class="chap-intro">
-<p>对应原书第 10 章。先把问题写成 MDP，再用原书的 Q 表算例走一遍更新，最后看 DQN 如何用神经网络替代表格，以及探索与奖励设计为什么最容易出错。</p>
-<span class="tag">MDP / Q 学习 / DQN</span>
-</div>
-
-<h3><span class="sn">9.1</span>把问题写成 MDP</h3>
-<div class="thm def">
-<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">马尔可夫决策过程</span></div>
-<div class="thm-body">
-<p>五元组 $(S,A,P,R,\gamma)$：状态、动作、转移概率、奖励、折扣因子。迷宫 agent 每走一步得 $-1$，到终点 $+10$，撞墙 $-5$；$\gamma=0.9$ 表示十步之后的奖励只值今天的 $0.9^{10}\approx0.35$。目标是最大化累计折扣奖励，而不是眼前这一步。</p>
-</div>
-</div>
-
-<p>两个核心矛盾：<b>探索</b>（试没试过的动作）与<b>利用</b>（走目前看来最好的）；<b>即时奖励</b>与<b>长期回报</b>。$\gamma$ 是后者的旋钮，$\epsilon$ 是前者的旋钮。</p>
-
-<h3><span class="sn">9.2</span>Q-learning：用下一状态的最好估计修正现在</h3>
-<p>Q 表记录"在状态 $s$ 做动作 $a$ 的长期价值"。每走一步，用实际奖励和下一状态的最好估计去修正它：</p>
-<p>$$Q(s,a)\leftarrow Q(s,a)+\alpha\left[r+\gamma\max_{a'}Q(s',a')-Q(s,a)\right]$$</p>
-<p>括号里是 TD 误差：现实（$r+\gamma\max Q$）与预期（$Q(s,a)$）的差。$\alpha$ 是学习率，控制"信新证据多少"。</p>
+<h4>损失与梯度</h4>
+<p>均方误差 $L=\frac{1}{n}\sum(\hat y-y)^2$。对输出层：</p>
+$$\delta_{\text{out}}=(\hat y-y)\odot\sigma'(z_{\text{out}})$$
+<p>对隐藏层，误差按权重反向传播：</p>
+$$\delta_{\text{hid}}=\left(\delta_{\text{out}}W_{\text{hid}}^{\top}\right)\odot\sigma'(z_{\text{hid}})$$
+<p>权重更新：</p>
+$$W\leftarrow W-\eta\,\frac{\partial L}{\partial W},\qquad \frac{\partial L}{\partial W}=a_{\text{prev}}^{\top}\delta$$
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">原书算例：$-67$ 变成 $-53.68$</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一个权重的一次梯度下降</span></div>
 <div class="thm-body">
-<p>$\alpha=0.1$，$\gamma=0.6$，$Q(1,\text{east})=-67$，下一状态最大 Q 值为 112，奖励 $r=-1$。目标 $=-1+0.6\times112=66.2$；TD 误差 $=66.2-(-67)=133.2$；新值 $=-67+0.1\times133.2=-53.68$。一次更新就把"东边很糟"往"其实还行"拉了一大截——这正是 bootstrap 的威力：不必等回合结束。</p>
+<p>单神经元，输入 $x=1$，权重 $w=0.5$，目标 $y=1$，学习率 $\eta=0.1$。</p>
+<p>前向：$z=0.5$，$\hat y=\sigma(0.5)=0.6225$。误差 $\hat y-y=-0.3775$，导数 $\sigma'(0.5)=0.6225\times0.3775=0.2350$。</p>
+<p>梯度 $\partial L/\partial w=(-0.3775)\times0.2350\times1=-0.0887$。更新：$w\leftarrow0.5-0.1\times(-0.0887)=0.5089$。</p>
+<p>权重变大，下一轮 $z$ 变大，$\hat y$ 更接近 1——方向正确。学习率 0.1 只是步长；调大可能一步跨过谷底，调小则收敛很慢。</p>
 </div>
 </div>
 
-<p>$\epsilon$-greedy：以 $\epsilon$ 概率随机走，否则选 Q 最大的动作；$\epsilon$ 通常从 1.0 逐渐降到 0.05。Q 表大小是 $|S|\times|A|$，状态连续或太大时表就存不下。</p>
+<pre><code class="language-python">def sigmoid_derivative(z):
+    s = sigmoid(z)
+    return s * (1 - s)
 
-<pre><code class="language-python">import random
+def backward(X, y, H, y_hat, W_hidden, lr=0.01):
+    d_out = (y_hat - y) * y_hat * (1 - y_hat)     # 输出层 delta
+    dW_hidden = H.T @ d_out
+    d_hidden = (d_out @ W_hidden.T) * H * (1 - H) # 隐藏层 delta
+    dW_input = X.T @ d_hidden
+    W_hidden -= lr * dW_hidden
+    W_input  -= lr * dW_input</code></pre>
 
-def train(env, states, actions, episodes=1000,
-          alpha=0.1, gamma=0.9, eps=0.1):
-    Q = {(s, a): 0.0 for s in states for a in actions}
-    for _ in range(episodes):
-        s = env.reset()
-        while not env.done():
-            if random.random() &lt; eps:
-                a = random.choice(actions)                    # 探索
-            else:
-                a = max(actions, key=lambda x: Q[(s, x)])     # 利用
-            r, s2, done = env.step(a)
-            best_next = max(Q[(s2, x)] for x in actions)
-            Q[(s, a)] += alpha * (r + gamma * best_next - Q[(s, a)])
-            s = s2
-    return Q</code></pre>
+<p>训练循环就是「前向 → 算损失 → 反向 → 更新」重复若干 epoch。原书的示例是 500 个样本、1000 次迭代，每轮都更新权重。现代框架用自动微分做同样的事，但链式法则没有变。</p>
 
-<h3><span class="sn">9.3</span>从 Q 表到 DQN</h3>
-<p>状态一多，表就爆。用神经网络 $Q_\theta(s,a)$ 代替表格：目标值 $y=r+\gamma\max_{a'}\hat Q(s',a')$，损失 $(y-Q_\theta(s,a))^2$。原书算例：$r=1$、$\gamma=0.9$、下一状态最大预测 $2.0$，目标 $=2.8$；当前预测 $2.2$，损失 $(0.6)^2=0.36$，反向传播把预测推向 2.8。</p>
-<p>两个让 DQN 稳定的技巧：<b>经验回放</b>（打散相关样本）和<b>目标网络</b>（固定一段时间的目标，避免"自己追自己"）。没有这两样，价值估计很容易发散。</p>
-
+<h3><span class="sn">10.4</span>激活函数：给网络加非线性</h3>
 <div class="table-wrap">
 <table>
-<thead><tr><th>算法</th><th>策略类型</th><th>动作空间</th><th>样本效率</th><th>坑</th></tr></thead>
+<thead><tr><th>函数</th><th>公式</th><th>输出范围</th><th>优点</th><th>问题</th></tr></thead>
 <tbody>
-<tr><td class="id">Q-learning</td><td>off-policy</td><td>离散</td><td>中</td><td>状态一多表就爆</td></tr>
-<tr><td class="id">SARSA</td><td>on-policy</td><td>离散</td><td>中</td><td>更保守、收敛慢</td></tr>
-<tr><td class="id">DQN</td><td>off-policy</td><td>离散</td><td>低</td><td>需要回放池 + 目标网络</td></tr>
-<tr><td class="id">PPO</td><td>on-policy</td><td>连续/离散</td><td>低</td><td>超参敏感、训练不稳</td></tr>
+<tr><td class="id">Step</td><td>$1$ if $z\ge0$ else $0$</td><td>$\{0,1\}$</td><td>硬分类</td><td>不可导，不能训练隐藏层</td></tr>
+<tr><td class="id">Sigmoid</td><td>$1/(1+e^{-z})$</td><td>$(0,1)$</td><td>概率解释</td><td>梯度消失、输出非零中心</td></tr>
+<tr><td class="id">Tanh</td><td>$(e^z-e^{-z})/(e^z+e^{-z})$</td><td>$(-1,1)$</td><td>零中心、导数更陡</td><td>两端仍饱和</td></tr>
+<tr><td class="id">ReLU</td><td>$\max(0,z)$</td><td>$[0,\infty)$</td><td>计算快、缓解梯度消失</td><td>负区「死亡」</td></tr>
+<tr><td class="id">Leaky ReLU</td><td>$\max(0.01z,z)$</td><td>$(-\infty,\infty)$</td><td>负区仍有梯度</td><td>多一个超参数</td></tr>
+</tbody>
+</table>
+</div>
+<p>经验规则：隐藏层默认 ReLU（或 Leaky ReLU）；二分类输出用 sigmoid；多分类输出用 softmax；回归输出用线性。原书提醒：同一层的节点应使用同一种激活函数，不同层可以不同。</p>
+
+<h3><span class="sn">10.5</span>设计网络：参数、初始化与正则</h3>
+<ul class="clean">
+<li><b>输入/输出</b>：由问题定义。16×16 的手写数字图像是 256 个输入，10 个输出对应 0–9。</li>
+<li><b>隐藏层与节点</b>：越多层能表达越复杂的边界，但更难训练、更易过拟合。通常从 1–2 层开始试。</li>
+<li><b>权重初始化</b>：不能全 0（对称性导致所有节点学一样的东西）。太小会梯度消失，太大会梯度爆炸。Xavier/Glorot 初始化让每层激活的方差大致保持稳定。</li>
+<li><b>偏置</b>：把激活函数左右平移，让线不必穿过原点。</li>
+<li><b>损失函数</b>：回归用 MSE，分类用交叉熵；损失函数定义了「网络在优化什么」。</li>
+<li><b>学习率</b>：步长。太大震荡，太小慢；可用学习率衰减或 Adam 等自适应优化器。</li>
+<li><b>正则</b>：L2、dropout、早停、数据增强，都是为了防止过拟合。</li>
+</ul>
+
+<p>现代实现用<b>张量</b>（tensor）而不是逐节点循环：标量是 0 维、向量是 1 维、矩阵是 2 维，图像 batch 是 4 维（batch × H × W × C）。一层的前向就是一次矩阵乘法，GPU 擅长这个。</p>
+
+<h4>矩阵形式：一行写完整个网络</h4>
+$$H=\sigma\left(XW^{(0)}\right),\qquad \hat y=\sigma\left(HW^{(1)}\right)$$
+<p>代入得</p>
+$$\hat y=\sigma\left(\sigma\left(XW^{(0)}\right)W^{(1)}\right)$$
+<p>这就是「复合函数」：前向是不断把输入包进函数，反向是用链式法则一层层拆开。参数数量约为 $\sum_l n_l n_{l+1}$；前向时间与参数数量同阶，反向大约是其两倍。</p>
+
+<h3><span class="sn">10.6</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">神经元</td><td>$z=\sum w_ix_i+b$，$\hat y=\sigma(z)$</td><td>权重是学出来的</td></tr>
+<tr><td class="id">感知机局限</td><td>只能线性可分</td><td>XOR 反例</td></tr>
+<tr><td class="id">Sigmoid 导数</td><td>$\sigma(1-\sigma)$</td><td>两端饱和</td></tr>
+<tr><td class="id">前向六步</td><td>乘权重→求和→激活→再乘→再和→再激活</td><td>一层层传</td></tr>
+<tr><td class="id">反向</td><td>输出 delta → 隐藏 delta → 权重梯度</td><td>链式法则</td></tr>
+<tr><td class="id">更新</td><td>$W\leftarrow W-\eta\partial L/\partial W$</td><td>$\eta$ 是学习率</td></tr>
+<tr><td class="id">示例梯度</td><td>$-0.0887$，$w:0.5\to0.5089$</td><td>$\eta=0.1$</td></tr>
+<tr><td class="id">激活选择</td><td>隐藏 ReLU，输出 sigmoid/softmax</td><td>回归用线性</td></tr>
+<tr><td class="id">初始化</td><td>Xavier/Glorot</td><td>保持方差稳定</td></tr>
+<tr><td class="id">矩阵形式</td><td>$\hat y=\sigma(\sigma(XW^{(0)})W^{(1)})$</td><td>张量运算</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">奖励设计是最大的坑</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">六个训练坑</span></div>
 <div class="thm-body">
-<p>① 奖励写错，agent 会钻空子（reward hacking）：赛艇游戏里不去终点，绕圈反复吃道具；② $\epsilon$ 不衰减，永远在随机走；③ 连续采样的相关样本直接训练 DQN，价值估计会发散；④ 有标注数据能解决的问题硬上 RL——样本效率差几个数量级，通常不划算。</p>
+<p>① <b>输入不归一化</b>：大量纲特征支配梯度，网络几乎学不动。② <b>权重全 0 初始化</b>：所有隐藏节点对称，等价于一个节点。③ <b>学习率过大</b>：损失震荡甚至发散；过小则几天不收敛。④ <b>sigmoid 堆很深</b>：梯度消失，深层几乎不更新。⑤ <b>用 MSE 做分类</b>：梯度性质差，概率不校准；分类应交叉熵。⑥ <b>训练集当测试集</b>：训练损失一路下降不代表泛化，必须看验证集。</p>
 </div>
 </div>
 </div>
@@ -1258,75 +2370,158 @@ def train(env, states, actions, episodes=1000,
 
 <section id="ch10" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 10 · Large Language Models</div>
-<h2><span class="num">10</span>大语言模型：预测下一个 token</h2>
-<p class="lede">大模型每一步只做一件事：给词表里每个 token 打分，按分布抽一个，接回输入，再来一次。</p>
+<div class="sec-label">Chapter 10 · Reinforcement learning</div>
+<h2><span class="num">10</span>强化学习：用奖励教会一个会试错的智能体</h2>
+<p class="lede">没有标准答案，只有「做完之后好不好」。智能体必须自己探索、承担后果，并学会为了长远奖励忍受短期的不舒服。</p>
 
 <div class="chap-intro">
-<p>对应原书第 11 章。沿着"分词 → 嵌入 → 位置编码 → 自注意力 → 解码"的主线走一遍，再用温度、top-p、RLHF 与 RAG 说明同一条主干如何长出不同的产品能力。</p>
-<span class="tag">分词 / 注意力 / 解码</span>
+<p>对应原书第 10 章。用自动驾驶小车在停车场找主人的例子讲 MDP、奖励设计、Q-table、Q-learning 更新、探索与利用、$\varepsilon$-greedy、折扣因子，以及用神经网络替代 Q-table 的 deep Q-learning。</p>
+<span class="tag">MDP · Q-learning · DQN</span>
 </div>
 
-<h3><span class="sn">10.1</span>从文本到向量</h3>
-<p>分词器把字符串切成子词：<i>unbelievable</i> → <code>un</code>/<code>believ</code>/<code>able</code>，每个 token 映射成整数 ID。词表通常 5 万–20 万；ID 再查嵌入矩阵，变成 $d$ 维向量（原书教学例子 $d=4$，真实模型 4096）。</p>
-<p>词序信息不能丢。"狗咬人"和"人咬狗"的 token 集合相同，所以要给每个位置加位置编码。原书用正弦/余弦：不同频率的正弦波让每个位置有唯一"指纹"，且能外推到训练时没见过的长度；现代模型多用 RoPE。</p>
+<div class="mapchips">
+<span class="chip hot">agent</span>
+<span class="chip">state / action / reward</span>
+<span class="chip">episode</span>
+<span class="chip">discount</span>
+<span class="chip">Q-table</span>
+<span class="chip">epsilon-greedy</span>
+<span class="chip">deep RL</span>
+</div>
 
-<h3><span class="sn">10.2</span>自注意力：每个 token 去看所有 token</h3>
-<p>每个 token 生成 Query、Key、Value 三个向量。用 $Q$ 和所有 $K$ 做点积，得到"我该关注谁"的分数，除以 $\sqrt{d}$ 防止数值过大，softmax 归一化后对 $V$ 加权求和：</p>
-<p>$$\mathrm{Attention}(Q,K,V)=\mathrm{softmax}\!\left(\frac{QK^{\top}}{\sqrt{d}}\right)V$$</p>
+<h3><span class="sn">11.1</span>从训狗到停车场</h3>
+<p>教狗「坐下」：说口令（触发），狗坐下（行为），给零食（奖励）。重复多次，狗把「口令 → 坐下」与奖励绑定。强化学习（RL）就是把这个循环交给算法：<b>智能体</b>（agent）在<b>环境</b>（environment）里执行<b>动作</b>（action），得到<b>奖励</b>（reward）和新的<b>状态</b>（state）。</p>
+<p>和监督学习的区别：RL 没有「正确答案」，只有延迟的、稀疏的分数；和无监督的区别：RL 的反馈来自行动后果，不是数据内部结构。原书强调 RL 最擅长「知道目标，但不知道怎么一步步达到」的问题：机器人、工业流程、策略游戏。</p>
 
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">三个 token 的注意力权重</span></div>
+<h3><span class="sn">11.2</span>MDP：把决策写成五元组</h3>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">马尔可夫决策过程</span></div>
 <div class="thm-body">
-<p>原始分数 $[2,1,0]$：$e^2=7.389$、$e^1=2.718$、$e^0=1$，和为 $11.107$，权重约 <b>0.665 / 0.245 / 0.090</b>。注意力几乎全给了第一个 token——这个权重就是"上下文"的具体形态。多头并行做几组，每个头学一种关系（指代、时态、邻近），再拼接起来。</p>
+<p>$(S,A,P,R,\gamma)$：状态集 $S$、动作集 $A$、转移概率 $P(s'|s,a)$、奖励函数 $R(s,a,s')$、折扣因子 $\gamma\in[0,1]$。策略 $\pi(a|s)$ 给出在每个状态选动作的概率。目标是最大化期望回报</p>
+<p>$$G_t=\sum_{k=0}^{\infty}\gamma^k R_{t+k+1}$$</p>
+<p>「马尔可夫」的意思是：给定当前状态，未来与更早的历史无关。状态设计得是否满足这一点，直接决定 RL 能不能学到东西。</p>
 </div>
 </div>
 
-<p>一个 Transformer 块 = 多头注意力 + 前馈网络 + 残差 + LayerNorm，堆几十层。残差让梯度能直达浅层，LayerNorm 让每层的数值尺度稳定——这两样是"深"能训起来的前提。</p>
+<p>折扣因子 $\gamma$ 是「耐心」：$\gamma=0$ 只看眼前一步；$\gamma=0.9$ 会认真考虑十步之后；$\gamma=1$ 表示未来与现在同等重要（且要求回合有限，否则回报可能发散）。原书用棉花糖实验比喻：0 是「现在就要一颗」，0.9 是「等十分钟拿五颗」。注意：训练时用折扣把远端奖励<b>反向传播</b>到前面每一个状态；执行时仍然只是「选 Q 值最大的动作」，看起来短视，其实 Q 值本身是远视的。</p>
 
-<h3><span class="sn">10.3</span>解码：温度、top-k、top-p</h3>
-<p>模型输出 logits，softmax 后成为概率。temperature 先把 logits 除以 $T$ 再 softmax：$T&lt;1$ 分布更尖（稳定、重复），$T&gt;1$ 更平（多样、容易跑偏）。</p>
-
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">同一组 logits，两种性格</span></div>
-<div class="thm-body">
-<p>logits $[3,1,0]$：$T=1$ 时概率为 0.844/0.114/0.042；$T=2$ 时为 0.628/0.231/0.140。只是一次除法，模型的"敢不敢冒险"就变了。top-k 只保留概率最高的 $k$ 个；top-p（核采样）保留累计概率到 $p$ 的最小集合，能随分布形状自适应；greedy 每次取 argmax，确定但死板。</p>
-</div>
-</div>
-
-<pre><code class="language-python">import math
-
-def softmax(logits, T=1.0):
-    z = [x / T for x in logits]
-    m = max(z)                                  # 防 exp 溢出
-    e = [math.exp(v - m) for v in z]
-    s = sum(e)
-    return [v / s for v in e]
-
-print([round(p, 3) for p in softmax([3, 1, 0], T=1)])   # 0.844 0.114 0.042
-print([round(p, 3) for p in softmax([3, 1, 0], T=2)])   # 0.628 0.231 0.140</code></pre>
-
-<h3><span class="sn">10.4</span>对齐与增强：让"会续写"变成"能干活"</h3>
-<p>预训练只是"续写互联网"。SFT 用指令–回答对教格式；RLHF 先训练奖励模型，再用 PPO 优化；DPO 跳过奖励模型，直接优化偏好。RAG 把检索到的文档拼进 prompt，降低幻觉并支持引用；MoE 用路由只激活部分专家，降低推理成本。</p>
+<h3><span class="sn">11.3</span>停车场问题：奖励设计是第一道坎</h3>
+<p>小车能上下左右移动，不能斜走；目标是找到主人，途中尽量不撞车、绝不撞人。原书给的奖励：到达主人 $+10$；撞车 $-100$；撞人 $-1000$；每走一步空地 $-1$。这套数字编码了一个价值判断：撞人比撞车严重一个数量级，绕路有成本。</p>
+<p>奖励设计错了，算法会「精确地做错事」。原书特别指出：如果空地也给正奖励，小车可能来回横跳刷分，永远不去目标。这就是<b>奖励劫持</b>（reward hacking）的雏形。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>概念</th><th>作用</th><th>典型值</th><th>坑</th></tr></thead>
+<thead><tr><th>事件</th><th>奖励</th><th>设计意图</th></tr></thead>
 <tbody>
-<tr><td class="id">token</td><td>计费与上下文单位</td><td>1 token ≈ 0.75 英文词</td><td>中文按字计，成本更高</td></tr>
-<tr><td class="id">context</td><td>一次能看的长度</td><td>8k–1M</td><td>长上下文 ≠ 记得住中间</td></tr>
-<tr><td class="id">temperature</td><td>随机性</td><td>0–1.5</td><td>调高不能补知识缺失</td></tr>
-<tr><td class="id">top-p</td><td>截断长尾</td><td>0.9–0.95</td><td>和 temperature 同时乱调</td></tr>
-<tr><td class="id">RAG</td><td>外挂知识</td><td>top-k 3–10</td><td>检索错，回答更自信地错</td></tr>
-<tr><td class="id">LoRA</td><td>低成本微调</td><td>rank 8–64</td><td>数据质量比参数量重要</td></tr>
+<tr><td class="id">到达主人</td><td>$+10$</td><td>唯一真正的目标</td></tr>
+<tr><td class="id">撞车</td><td>$-100$</td><td>强烈但不致命的惩罚</td></tr>
+<tr><td class="id">撞人</td><td>$-1000$</td><td>绝对禁止</td></tr>
+<tr><td class="id">走空地</td><td>$-1$</td><td>鼓励最短路径，抑制闲逛</td></tr>
+<tr><td class="id">越界</td><td>禁止 / 负分</td><td>原书简化为不允许</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">11.4</span>Q-learning：用下一状态的最好估计修正现在</h3>
+<p>Q-table 的行是状态、列是动作，单元格 $Q(s,a)$ 是「在状态 $s$ 做动作 $a$ 的长期价值估计」。初始全 0，然后每走一步更新：</p>
+$$Q(s,a)\leftarrow Q(s,a)+\alpha\left[r+\gamma\max_{a'}Q(s',a')-Q(s,a)\right]$$
+<p>括号里是<b>时序差分误差</b>（TD error）：现实（$r+\gamma\max Q(s')$）与预期（$Q(s,a)$）的差。$\alpha$ 是学习率，控制「新信息覆盖旧估计」的比例。</p>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">两次更新，从 0 到 -10 再到 -100</span></div>
+<div class="thm-body">
+<p>设 $\alpha=0.1$，$\gamma=0.6$，Q 表初始全 0。</p>
+<p><b>第一次</b>：状态 1 向东，撞车，$r=-100$，下一状态所有 Q 仍为 0，所以 $\max Q(s')=0$。</p>
+<p>$$Q(1,E)=0+0.1\times(-100+0.6\times0-0)=-10$$</p>
+<p><b>第二次</b>：从状态 2 向南，撞人，$r=-1000$，下一状态最大 Q 仍为 0。</p>
+<p>$$Q(2,S)=0+0.1\times(-1000+0-0)=-100$$</p>
+<p>若这条边再次被走、当前值已不是 0，则按同一公式继续修正。原书后续例子把状态 1 的东向值从 $-10$ 更新到 $-34$，说明「下一状态的最大 Q」已经不再为 0，未来价值开始反向传播。</p>
+</div>
+</div>
+
+<pre><code class="language-python">import numpy as np, random
+
+def train_q(env, n_states, n_actions, episodes=5000,
+            alpha=0.1, gamma=0.6, epsilon=0.1):
+    Q = np.zeros((n_states, n_actions))
+    for _ in range(episodes):
+        s = env.reset()
+        done = False
+        while not done:
+            if random.random() &lt; epsilon:
+                a = random.randrange(n_actions)          # 探索
+            else:
+                a = int(np.argmax(Q[s]))                 # 利用
+            s2, r, done = env.step(a)
+            Q[s, a] += alpha * (r + gamma * np.max(Q[s2]) - Q[s, a])
+            s = s2
+    return Q</code></pre>
+
+<h3><span class="sn">11.5</span>探索与利用、状态设计与收敛</h3>
+<p>$\varepsilon$-greedy：以 $\varepsilon$ 的概率随机动作，其余选 Q 最大。$\varepsilon$ 通常从 1.0 开始衰减到 0.05 左右——先广泛探索，再稳定利用。原书的代码用「随机数大于阈值」来决定是否走 Q 表，本质相同。</p>
+<p>Q-table 的最大问题是<b>不能泛化</b>：表里没有的状态只能随机。原书给了两种状态表示：用整张地图（只适用于当前布局）与用周围 8 格（可迁移到新布局）。后者每格有 4 种可能（空、车、人、目标/越界），共 $4^8=65{,}536$ 个状态——比整图小，但仍很大。</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>概念</th><th>作用</th><th>常见取值</th></tr></thead>
+<tbody>
+<tr><td class="id">$\alpha$ 学习率</td><td>新信息覆盖旧估计的比例</td><td>0.01–0.5</td></tr>
+<tr><td class="id">$\gamma$ 折扣</td><td>未来奖励的现值</td><td>0.9–0.99</td></tr>
+<tr><td class="id">$\varepsilon$ 探索率</td><td>随机动作概率</td><td>1.0 → 0.05 衰减</td></tr>
+<tr><td class="id">episode</td><td>从起点到终止的一次尝试</td><td>数千到数百万</td></tr>
+<tr><td class="id">状态设计</td><td>决定能否泛化</td><td>局部 8 格 / 整图</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>复杂度：表格法每次更新 $O(|A|)$（取 max），每 episode $O(L|A|)$；空间 $O(|S||A|)$。状态一多，表就存不下——这正是 deep RL 的动机。</p>
+
+<h3><span class="sn">11.6</span>Deep Q-Learning：用网络替代表</h3>
+<p>DQN 让神经网络输入状态、输出每个动作的 Q 值。训练样本是四元组 $(s,a,r,s')$，目标值</p>
+$$y=r+\gamma\max_{a'}Q_{\text{target}}(s',a')$$
+<p>损失是 $(\hat Q(s,a)-y)^2$，反向传播更新网络。原书的例子：在 $s$ 选择向东，$r=+1$，下一状态 $s'$ 四个动作的网络预测为 北 1.2、南 0.5、东 2.0、西 0.3，取 $\gamma=0.9$：</p>
+<p>$$y=1+0.9\times2.0=2.8$$</p>
+<p>而网络当前对「向东」的预测是 2.2，损失 $=(2.2-2.8)^2=0.36$。梯度下降把 2.2 往 2.8 推。</p>
+
+<h4>输入编码：标量 vs 独热</h4>
+<ul class="clean">
+<li><b>标量编码</b>：目标 1、空 0、车 $-0.5$、人 $-1$。8 个邻居 → 8 个输入；网络 8→32→16→4。紧凑，但隐含了「有序」假设。</li>
+<li><b>独热编码</b>：每格 4 个 one-hot，8 格 → 32 个输入；网络 32→64→32→4。更大，但不强加顺序关系。</li>
+</ul>
+<p>隐藏层用 ReLU；输出层用线性激活，因为 Q 值可正可负。训练时用经验回放（replay buffer）打散样本相关性、用目标网络（target network）稳定目标值——这两条是 DQN 能收敛的关键工程技巧。</p>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>Q-learning 像查表记账，DQN 像学会「估价」而不是「背价」。表只能记住见过的状态；网络能从相似状态里推断「没见过的状态大概值多少」。代价是网络会忘、会过估计、会被分布外样本骗。</p>
+</div>
+
+<h3><span class="sn">11.7</span>评估、模型-free 与模型-based</h3>
+<p>RL 的评估没有通用公式。原书给了两个可操作指标：单位尝试内的<b>惩罚次数</b>（越少越好），以及<b>每动作平均奖励</b>（累计奖励 / 动作数）。前者关心安全，后者关心效率。</p>
+<p><b>Model-free</b>：不显式建环境模型，靠试错学 Q 或策略（Q-learning、SARSA）。<b>Model-based</b>：先学一个环境模型，再用它做规划（像人脑里的地图）。前者简单、样本效率低；后者样本效率高，但模型误差会传播。</p>
+<p>同族的另外两个名字值得知道：<b>SARSA</b> 用实际采取的下一个动作 $Q(s',a')$ 更新，是 on-policy；<b>策略梯度</b>直接对策略参数求梯度，适合连续动作；<b>Actor-Critic</b> 用一个网络出动作、一个网络估价值，兼顾两者。</p>
+
+<h3><span class="sn">11.8</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">MDP</td><td>$(S,A,P,R,\gamma)$</td><td>马尔可夫性</td></tr>
+<tr><td class="id">回报</td><td>$G_t=\sum\gamma^k r_{t+k}$</td><td>$\gamma$ 是耐心</td></tr>
+<tr><td class="id">Q 更新</td><td>$Q+\alpha[r+\gamma\max Q'-Q]$</td><td>TD 误差</td></tr>
+<tr><td class="id">首次更新</td><td>$r=-100\Rightarrow Q=-10$</td><td>$\alpha=0.1$</td></tr>
+<tr><td class="id">行人</td><td>$r=-1000\Rightarrow Q=-100$</td><td>比撞车重 10 倍</td></tr>
+<tr><td class="id">探索</td><td>$\varepsilon$-greedy</td><td>$\varepsilon$ 逐渐衰减</td></tr>
+<tr><td class="id">状态数</td><td>8 格 × 4 类 = 65,536</td><td>局部表示可迁移</td></tr>
+<tr><td class="id">DQN 目标</td><td>$y=r+\gamma\max Q'$</td><td>例：$1+0.9\times2=2.8$</td></tr>
+<tr><td class="id">DQN 损失</td><td>$(2.2-2.8)^2=0.36$</td><td>MSE</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">把语言能力当成事实能力</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">六个 RL 陷阱</span></div>
 <div class="thm-body">
-<p>① 流畅不等于正确，模型会用同样自信的语气编造引用；② 上下文窗口不是长期记忆，超长对话仍会丢中间信息；③ 让 LLM 直接做多位数算术或精确计数，不如给它代码执行；④ prompt 里的外部文本可能含注入指令，必须当作<b>数据</b>而不是命令。</p>
+<p>① <b>奖励设计反了</b>：给「活着」正奖励，智能体学会原地转圈。② <b>状态不满足马尔可夫性</b>：只给当前位置、不给速度，小车学不会刹车。③ <b>$\gamma$ 太接近 1 且回合无限</b>：回报发散，Q 值爆炸。④ <b>探索不足</b>：$\varepsilon$ 一开始就设为 0，永远困在第一条路径。⑤ <b>Q 表不能泛化</b>：换个停车场布局就失效，需要函数近似。⑥ <b>用训练时的奖励当评估</b>：奖励是代理指标，真实目标（安全、舒适、用户满意）要单独测。</p>
 </div>
 </div>
 </div>
@@ -1334,67 +2529,183 @@ print([round(p, 3) for p in softmax([3, 1, 0], T=2)])   # 0.628 0.231 0.140</cod
 
 <section id="ch11" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 11 · Generative Vision</div>
-<h2><span class="num">11</span>生成图像：学会去噪，就会造图</h2>
-<p class="lede">生成图像的本质，是学一个去噪函数：给它噪声和时间步，它告诉你"这一步的噪声长什么样"。</p>
+<div class="sec-label">Chapter 11 · Large language models</div>
+<h2><span class="num">11</span>大语言模型：把「下一个词」做到极致</h2>
+<p class="lede">LLM 的核心任务朴素得惊人：给定前文，预测下一个 token。规模、数据与注意力机制，把这件事推到了「像在理解语言」的程度。</p>
 
 <div class="chap-intro">
-<p>对应原书第 12 章。先分清分类、检测、分割、生成四类视觉任务，再拆开扩散模型的前向加噪、U-Net 去噪、文本条件与采样控制。</p>
-<span class="tag">扩散 / U-Net / CLIP</span>
+<p>对应原书第 11 章。从二元语法（bigram）的概率表讲到 BPE 分词、词嵌入、位置编码、自注意力的 Q/K/V、softmax、Transformer 超参数、交叉熵训练、温度与解码，最后是 RLHF、MoE 与 RAG。</p>
+<span class="tag">Token · Attention · Transformer</span>
 </div>
 
-<h3><span class="sn">11.1</span>视觉任务的谱系</h3>
-<p><b>分类</b>问"这张图是什么"；<b>检测</b>问"在哪里、有几个"；<b>分割</b>问"每个像素属于什么"；<b>生成</b>是"造一张新的"。CNN 的归纳偏置是局部性与平移等变；ViT 把图切成 patch 当 token，用注意力换掉卷积，在数据足够大时更强。</p>
+<div class="mapchips">
+<span class="chip hot">token</span>
+<span class="chip">BPE</span>
+<span class="chip">embedding</span>
+<span class="chip">self-attention</span>
+<span class="chip">softmax</span>
+<span class="chip">temperature</span>
+<span class="chip">RLHF</span>
+<span class="chip">RAG</span>
+</div>
 
-<h3><span class="sn">11.2</span>前向扩散：一步到位地加噪</h3>
-<p>前向过程对原图逐步加高斯噪声，1000 步后几乎变成纯噪声。关键是"任意时刻可以直接算"，不必真的迭代 1000 次：</p>
-<p>$$x_t=\sqrt{\bar\alpha_t}\,x_0+\sqrt{1-\bar\alpha_t}\,\epsilon,\qquad \alpha_t=1-\beta_t,\quad \bar\alpha_t=\prod_{s\le t}\alpha_s$$</p>
-<p>原书噪声表：$\beta$ 从 0.0001 线性增到 0.02（$T=1000$）。$\bar\alpha_t$ 是"还剩多少原始信号"，$1-\bar\alpha_t$ 是"被噪声占了多少"。</p>
+<h3><span class="sn">12.1</span>语言模型就是一张会进化的概率表</h3>
+<p>手机输入法在你打「Hey, what are」时猜 you / we / the，因为它统计过这些词在后面出现的频率。LLM 是同一件事的三个升级：<b>更多参数</b>（从几千条概率到数十亿/数万亿权重）、<b>更多数据</b>（网页、书、论文、代码，常达 TB 级）、<b>更复杂的架构</b>（Transformer，而不是查表）。</p>
+<p>原书用 5 句《爱丽丝梦游仙境》风格的句子做玩具语料：</p>
+<pre><code class="language-text">Alice was beginning to get very tired.
+Alice was getting very sleepy.
+The White Rabbit was late.
+The White Rabbit was very late.
+Alice and the Rabbit were friends.</code></pre>
+<p>共 29 个 token（这里按词算）。统计二元组：Alice 出现 3 次，后面接 was 2 次、接 and 1 次，所以 $P(\text{was}|\text{Alice})=2/3\approx0.67$，$P(\text{and}|\text{Alice})=1/3\approx0.33$。was 出现 4 次，后面接 beginning / getting / late / very 各 1 次，各自 $0.25$。</p>
+
+<pre><code class="language-python">from collections import Counter, defaultdict
+
+def bigram_probs(sentences):
+    counts = defaultdict(Counter)
+    for s in sentences:
+        words = s.lower().split()
+        for a, b in zip(words, words[1:]):
+            counts[a][b] += 1
+    return {a: {b: c / sum(cs.values()) for b, c in cs.items()}
+            for a, cs in counts.items()}
+
+print(bigram_probs(["Alice was tired", "Alice was sleepy"]))
+# {'alice': {'was': 1.0}, 'was': {'tired': 0.5, 'sleepy': 0.5}}</code></pre>
+
+<p>二元语法的局限很明显：只看前一个词，记不住长距离依赖；词表一大，概率表就稀疏。神经网络用<b>连续向量</b>替代离散计数，才解决了泛化问题。</p>
+
+<h3><span class="sn">12.2</span>分词：从字符到 BPE</h3>
+<p>token 是模型处理的最小单位，不一定是词。<code>unbelievable</code> 可能被切成 <code>un</code> / <code>believ</code> / <code>able</code>，这样「un-」「-able」的规律能跨词复用。原书演示了 BPE（byte pair encoding）的核心循环：</p>
+<ol>
+<li>把每个词拆成字符，词尾加 <code>&lt;/w&gt;</code> 标记。</li>
+<li>统计相邻字符对（bigram）的出现次数。</li>
+<li>把最高频的一对合并成新 token。</li>
+<li>重复，直到达到目标词表大小。</li>
+</ol>
+<p>原书的玩具语料最终得到 34 个唯一 token（含标点与合并片段），词表大小就是 34。真实 LLM 的词表通常是 5 万到 25 万以上。</p>
+
+<pre><code class="language-python">def bpe(corpus, target_vocab):
+    tokens = [list(w) + ['&lt;/w&gt;'] for w in corpus.split()]
+    vocab = set(t for w in tokens for t in w)
+    while len(vocab) &lt; target_vocab:
+        pairs = Counter()
+        for w in tokens:
+            for a, b in zip(w, w[1:]):
+                pairs[(a, b)] += 1
+        if not pairs: break
+        (a, b), _ = pairs.most_common(1)[0]
+        new = a + b
+        vocab.add(new)
+        merged = []
+        for w in tokens:
+            i, out = 0, []
+            while i &lt; len(w):
+                if i + 1 &lt; len(w) and w[i] == a and w[i+1] == b:
+                    out.append(new); i += 2
+                else:
+                    out.append(w[i]); i += 1
+            merged.append(out)
+        tokens = merged
+    return sorted(vocab)</code></pre>
+
+<p>分词之后，每个 token 映射成整数 ID，整段文本变成一个长向量（token stream）。再按<b>上下文窗口</b>（context window）切 batch：玩具模型窗口 32，真实模型 1,024 到 32,000+。原书的代码用步长 1 滑动窗口，让每个位置都能成为训练样本。</p>
+
+<h3><span class="sn">12.3</span>词嵌入与位置编码</h3>
+<p>ID 是任意的：10 和 11 没有数学关系。嵌入矩阵 $E\in\mathbb{R}^{V\times d}$ 把每个 ID 映射成一个 $d$ 维向量，初始随机（原书取 $-0.01$ 到 $0.01$），训练中调整。语义相近的词在向量空间里靠近——「苹果」和「香蕉」在水果区，「苹果」和「洗衣液」在超市两头。</p>
+<p>但自注意力是「同时看所有 token」的，本身不知道顺序。<b>位置编码</b>把位置信息加进嵌入：</p>
+$$PE(p,2i)=\sin\left(\frac{p}{10000^{2i/d}}\right),\qquad PE(p,2i+1)=\cos\left(\frac{p}{10000^{2i/d}}\right)$$
+<p>原书用「里程表」比喻：不同位数的齿轮转速不同，组合起来能唯一表示一个位置。相邻位置的编码相似，越远差异越大；而且给定 $d,p,i$ 可以反推，不依赖序列长度。</p>
+
+<h3><span class="sn">12.4</span>自注意力：每个 token 去看所有 token</h3>
+<p>对每个 token 的嵌入，乘三个可训练矩阵，得到 Query、Key、Value：</p>
+$$Q=XW_Q,\qquad K=XW_K,\qquad V=XW_V$$
+<p>原书的餐厅比喻：Query 是「我的购物清单」，Key 是「食材的口味标签」，Value 是「食材的实际风味」。用 Q 和每个 K 做点积，得到「你和我有多相关」的分数；softmax 归一成权重；再用权重对 V 加权求和，得到融合了上下文的新表示。</p>
+$$\text{Attention}(Q,K,V)=\text{softmax}\left(\frac{QK^{\top}}{\sqrt{d_k}}\right)V$$
+<p>除以 $\sqrt{d_k}$ 是因为维度一大，点积的方差会变大，softmax 会变得过尖（几乎 one-hot），梯度变小。</p>
 
 <div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">$\bar\alpha_t=0.9$ 时的一个像素</span></div>
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">token 0 的一行注意力</span></div>
 <div class="thm-body">
-<p>$x_0=0.5$，$\epsilon=1$：$x_t=0.949\times0.5+0.316\times1=0.790$。信号还在，但已经被噪声推着走。训练时模型看到的就是这种"半真半假"的图像，以及它对应的 $t$ 和真实噪声 $\epsilon$。</p>
+<p>玩具模型 $d=4$。token 0（字符 a）的 Query 与各 Key 点积后，最大分数是 token 31（b）的 21.6150，token 0 自己是 17.8932。缩放（除以 $\sqrt4=2$）后：$10.8075$ 与 $8.9466$。</p>
+<p>softmax 前先减去最大值 10.8075 以保证数值稳定：</p>
+<ul class="clean">
+<li>token 0：$e^{8.9466-10.8075}=e^{-1.8609}\approx0.1555$</li>
+<li>token 31：$e^{10.8075-10.8075}=1.0000$</li>
+<li>所有 token 的指数和约为 2.46</li>
+</ul>
+<p>归一化后：token 0 权重 $0.1555/2.46\approx0.0632$，token 31 权重 $1.0000/2.46\approx0.4064$。也就是说，在生成 token 0 的上下文表示时，token 31 贡献约 40.6% 的信息。对所有 32 个 token 各做一遍，得到 $32\times32$ 的注意力矩阵。</p>
 </div>
 </div>
 
-<h3><span class="sn">11.3</span>训练与采样：U-Net 只学一件事</h3>
-<p>U-Net 接收 $x_t$、时间步 $t$（还有文本条件 $c$），预测被加进去的噪声 $\epsilon$；损失是 $\lVert\epsilon-\epsilon_\theta(x_t,t,c)\rVert^2$。采样时从纯噪声出发，每一步减去预测噪声的一小部分，迭代几十到上千次得到图像。U-Net 的跳跃连接把浅层细节直接送到深层，这是它能精确去噪的关键。</p>
-<p>文本条件经由 CLIP 文本编码器变成向量，通过 cross-attention 注入 U-Net；classifier-free guidance 用"有提示/无提示"两个预测的差放大条件影响：$\hat\epsilon=\epsilon_\text{uncond}+s(\epsilon_\text{cond}-\epsilon_\text{uncond})$。$s$ 越高越贴提示，也越容易过饱和。</p>
-
-<pre><code class="language-python">import numpy as np
-
-T = 1000
-beta = np.linspace(0.0001, 0.02, T)
-alpha = 1 - beta
-alpha_bar = np.cumprod(alpha)          # 累积信号保留率
-
-def add_noise(x0, t, eps):
-    ab = alpha_bar[t]
-    return np.sqrt(ab) * x0 + np.sqrt(1 - ab) * eps
-
-# 训练一步（伪代码）：
-# x_t  = add_noise(x0, t, eps)
-# pred = unet(x_t, t, text_emb)
-# loss = ((eps - pred) ** 2).mean()
-# loss.backward()</code></pre>
+<p><b>多头注意力</b>：把 $d$ 维切成 $h$ 个头，每个头独立做一次注意力，再拼接、过输出矩阵。$h$ 让模型同时关注不同的关系（语法、指代、位置……）。原书的经验公式是 $h=d/64$，取偶数。</p>
+<p>一个 Transformer block 还不止注意力：残差连接（$x+\text{sublayer}(x)$）让梯度能直通底层；LayerNorm 稳定数值；前馈网络（FFN）做逐 token 的非线性变换，通常是 $d\to4d\to d$。原书玩具模型是 2 层、4 维、1 个头、FFN 8/4；真实模型是 12+ 层、768+ 维、12+ 个头、FFN 3072+。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>模型</th><th>训练目标</th><th>采样速度</th><th>优势</th><th>坑</th></tr></thead>
+<thead><tr><th>超参数</th><th>经验规则</th><th>玩具模型</th><th>真实 LLM</th></tr></thead>
 <tbody>
-<tr><td class="id">GAN</td><td>对抗博弈</td><td>一步</td><td>快、锐利</td><td>模式崩溃、难训</td></tr>
-<tr><td class="id">VAE</td><td>重建 + KL</td><td>一步</td><td>有潜空间、稳定</td><td>结果偏模糊</td></tr>
-<tr><td class="id">扩散</td><td>去噪</td><td>几十–上千步</td><td>质量高、多样</td><td>慢、算力贵</td></tr>
-<tr><td class="id">自回归</td><td>下一个 token/patch</td><td>逐块</td><td>统一建模</td><td>慢、误差累积</td></tr>
+<tr><td class="id">词表 $V$</td><td>由语料与分词决定</td><td>34</td><td>5 万–25 万+</td></tr>
+<tr><td class="id">上下文 $T$</td><td>最长提示，取 2 的幂</td><td>32</td><td>1,024–32,000+</td></tr>
+<tr><td class="id">宽度 $d$</td><td>约 $4\sqrt{V}$ 起</td><td>4</td><td>768–20,000+</td></tr>
+<tr><td class="id">深度 $L$</td><td>每 10 万字符 1–2 层</td><td>2</td><td>12–120+</td></tr>
+<tr><td class="id">头数 $h$</td><td>$h=d/64$，取偶</td><td>1</td><td>12–128+</td></tr>
+<tr><td class="id">FFN 宽度</td><td>$4d$</td><td>8 / 4</td><td>3,072–80,000+</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">12.5</span>训练：预测下一个 token，算交叉熵</h3>
+<p>给定 token 序列，模型在每个位置输出词表上的概率分布；目标就是「下一个 token 的 one-hot」。损失用交叉熵：</p>
+$$L=-\frac{1}{N}\sum_{i=1}^{N}\log p_\theta(y_i\mid x_{&lt;i})$$
+<p>反向传播把梯度传回所有参数：嵌入矩阵、Q/K/V 投影、输出投影、FFN。原书给了一个具体更新：某权重 $w=0.5$，梯度 $-0.5$，学习率 $0.01$，则 $w\leftarrow0.5-0.01\times(-0.5)=0.505$。每个参数都被这样「轻推」一下，重复数百万次。</p>
+<p>一个 epoch 是「把整个数据集过一遍」；一个 batch 是「一次处理的一小段」。原书提醒：有些现代 LLM 训练不到一个 epoch——数据量太大，一遍已经足够。</p>
+
+<h3><span class="sn">12.6</span>解码：温度、top-k、top-p</h3>
+<p>训练完，模型给出 logits，softmax 成概率。怎么选下一个 token？</p>
+<ul class="clean">
+<li><b>贪心</b>：永远选概率最大的。稳定但重复、无聊。</li>
+<li><b>温度采样</b>：先把 logits 除以 $T$ 再 softmax。$T&lt;1$ 让分布更尖（保守），$T&gt;1$ 让分布更平（发散）。原书的比喻：低温是「严谨的会计」，高温是「即兴的爵士乐手」。</li>
+<li><b>top-k</b>：只在概率最高的 $k$ 个 token 里采样，砍掉长尾。</li>
+<li><b>top-p（nucleus）</b>：取累计概率达到 $p$ 的最小集合，再在其中采样；比 top-k 更自适应。</li>
+</ul>
+<p>原书重点讲了温度在 RLHF 里的作用：要让人类标注者比较不同回答，先得让模型生成<b>多样</b>的回答，所以采样时用较高温度。</p>
+
+<h3><span class="sn">12.7</span>对齐、MoE 与 RAG</h3>
+<p><b>RLHF</b>（reinforcement learning with human feedback）三步：</p>
+<ol>
+<li>对同一个 prompt 生成多个回答，让人工排序，形成偏好数据。</li>
+<li>训练一个奖励模型，输入 prompt + 回答，输出「人会有多喜欢」的分数。</li>
+<li>用奖励模型的分数作为奖励，微调 LLM 的权重（常用 PPO 类算法），同时加约束防止模型跑偏。</li>
+</ol>
+<p>预训练教会模型「会续写」，RLHF 教会它「有用、无害、听指令」。原书强调：RLHF 不只是风格微调，它也能影响模型解决问题的能力。</p>
+<p><b>MoE</b>（mixture of experts）：把一个大 FFN 拆成许多小专家，每个 token 只路由到 1–2 个专家。总参数可以到万亿级，但每个 token 的计算量只占一小部分。路由器（router）决定「这个 token 该找谁」。</p>
+<p><b>RAG</b>（retrieval-augmented generation）：先在外部的文档库/数据库里检索相关片段，把「问题 + 检索结果」一起塞进上下文，再让模型回答。它解决两个问题：知识冻结在训练时刻、以及幻觉。代价是检索质量决定上限，且上下文窗口会被挤占。</p>
+
+<h3><span class="sn">12.8</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">bigram</td><td>$P(b|a)=count(a,b)/count(a)$</td><td>Alice→was 0.67</td></tr>
+<tr><td class="id">BPE</td><td>合并最高频字符对</td><td>玩具词表 34</td></tr>
+<tr><td class="id">上下文窗口</td><td>一次能看的 token 数</td><td>玩具 32</td></tr>
+<tr><td class="id">位置编码</td><td>sin/cos 不同频率</td><td>补顺序信息</td></tr>
+<tr><td class="id">Q/K/V</td><td>$XW_Q,XW_K,XW_V$</td><td>注意力三件套</td></tr>
+<tr><td class="id">注意力</td><td>$\text{softmax}(QK^\top/\sqrt{d_k})V$</td><td>权重和为 1</td></tr>
+<tr><td class="id">示例权重</td><td>token 0：0.0632；token 31：0.4064</td><td>缩放后 softmax</td></tr>
+<tr><td class="id">损失</td><td>交叉熵</td><td>下一个 token</td></tr>
+<tr><td class="id">温度</td><td>logits / T</td><td>低保守，高发散</td></tr>
+<tr><td class="id">RLHF</td><td>偏好数据→奖励模型→RL 微调</td><td>有用/无害</td></tr>
+<tr><td class="id">RAG</td><td>检索 + 生成</td><td>缓解幻觉与知识过期</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">采样参数与伦理边界</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">六个 LLM 认知坑</span></div>
 <div class="thm-body">
-<p>① 采样步数不是越多越好，DDIM 或蒸馏模型 20–50 步就能出好图；② CFG scale 拉到 15 以上，画面过饱和、细节崩；③ 生成图可被用来伪造证据，涉及版权、肖像与深度伪造合规；④ 把"模型生成"当成"真实拍摄"，是典型的证据链污染。</p>
+<p>① <b>把 token 当词</b>：一个中文词可能被切成多个 token，计费、上下文长度、截断都按 token 算。② <b>以为注意力=理解</b>：注意力只是加权求和，模型仍可能一本正经地胡说。③ <b>温度越高越「聪明」</b>：高温只增加多样性，不增加正确率；事实任务应调低。④ <b>上下文窗口=记忆</b>：超出窗口的内容真的看不见，RAG 也会被无关片段干扰。⑤ <b>RLHF 能消除幻觉</b>：它优化的是「人类偏好」，不是「事实真值」。⑥ <b>用训练损失判断好坏</b>：损失低只说明会模仿训练分布，不代表指令遵循或安全。</p>
 </div>
 </div>
 </div>
@@ -1402,66 +2713,269 @@ def add_noise(x0, t, eps):
 
 <section id="ch12" class="chapter">
 <div class="wrap">
-<div class="sec-label">Chapter 12 · Responsible AI</div>
-<h2><span class="num">12</span>负责任地使用算法</h2>
-<p class="lede">技术上的"能做什么"，和伦理上的"该做什么"，是两张不同的清单；写代码的人得同时看两张。</p>
+<div class="sec-label">Chapter 12 · Generative image models</div>
+<h2><span class="num">12</span>生成图像：学会去噪，就等于学会造图</h2>
+<p class="lede">扩散模型不往空白画布上画东西，它从一团噪声开始，一步步判断「哪些像素不该在这里」，最后剩下的就是图。</p>
 
 <div class="chap-intro">
-<p>对应原书前言与贯穿全书的伦理讨论。四组问题：意图与效果、误用与滥用、数据偏差、隐私与同意；每一组都给出可落地的工程手段，而不只是态度。</p>
-<span class="tag">伦理 / 偏差 / 隐私</span>
+<p>对应原书第 12 章。先建立「去噪即生成」的直觉，再拆六个阶段：数据准备、图像与文本嵌入、前向扩散、U-Net 架构、损失与反向传播、采样生成；最后是控制手段（交叉注意力、LoRA、ControlNet、inpainting）与评估。</p>
+<span class="tag">Diffusion · U-Net · Denoising</span>
 </div>
 
-<h3><span class="sn">12.1</span>意图与效果：目标函数漏掉了谁</h3>
-<p>原书开篇就提醒：意图良善不等于结果良善。推荐系统为了"提升互动"优化点击率，可能放大极端内容；调度算法为了"提升效率"，可能让骑手闯红灯。设计时要问：这个目标函数把谁的代价算成了"外部性"？把副作用写进指标，是最便宜的一步。</p>
-
-<h3><span class="sn">12.2</span>误用与滥用：发布之后就由不得你</h3>
-<p>1915 年的 Magnavox 扩音器本来用来在旧金山放歌剧，后来被用来让广场上的人无处可躲地听演讲。技术一旦发布，使用场景就不由发明者控制。软件的可控性更强，因此更该做：访问控制、速率限制、水印或指纹、滥用检测、使用条款与审计日志。至少要能回答"谁在什么时候用它做了什么"。</p>
-
-<h3><span class="sn">12.3</span>偏差：模型会放大数据里的模式</h3>
-<p>偏差是对某个群体的系统性偏爱或偏见。它藏在数据采集、标注、特征选择、目标函数和评估方式里。算法不会"中立"——它只是忠实地放大训练数据里的统计规律。</p>
-
-<div class="thm ex">
-<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">90% 的总体准确率，掩盖了 22 个百分点的差距</span></div>
-<div class="thm-body">
-<p>1000 条样本，A 组 900 条、B 组 100 条。模型在 A 上准确率 92%，在 B 上 70%，总体是 $(900\times0.92+100\times0.70)/1000=89.8\%$。看板上一片"90%"，但 B 组有 30% 被错判——总体指标把差异平均掉了。必须分组评估，并报告<b>最大组间差距</b>，而不只是一个总分。</p>
-</div>
+<div class="mapchips">
+<span class="chip hot">diffusion</span>
+<span class="chip">noise schedule</span>
+<span class="chip">alpha / beta</span>
+<span class="chip">U-Net</span>
+<span class="chip">skip connection</span>
+<span class="chip">cross-attention</span>
+<span class="chip">FID</span>
 </div>
 
-<pre><code class="language-python">def group_accuracy(y_true, y_pred, group):
-    out = {}
-    for g in set(group):
-        idx = [i for i, x in enumerate(group) if x == g]
-        hits = sum(y_true[i] == y_pred[i] for i in idx)
-        out[g] = round(hits / len(idx), 3)
-    return out
+<h3><span class="sn">13.1</span>雕塑家比喻：通过「去掉」来创造</h3>
+<p>原书用雕塑家开场：他看过成千上万个「沉思的人」，被蒙上眼睛、给一块随机大理石，也能一点点凿掉「不像沉思者」的部分，最后留下人形。扩散模型做的是同一件事：给它一张纯噪声图，它反复预测「哪些噪声是多余的」，逐步凿出一张清晰的图。</p>
+<p>这解释了一个反直觉点：生成不是「从无到有地画」，而是「从所有可能性里筛出符合文本的那一个」。初始噪声里「隐藏着」无数张图，文本提示决定了往哪个方向筛。</p>
 
-# {"A": 0.92, "B": 0.70}
-# overall = (900 * 0.92 + 100 * 0.70) / 1000 = 0.898
-# 上线门槛：max(acc) - min(acc) &lt;= 0.05，而不是 overall &gt;= 0.9</code></pre>
+<h3><span class="sn">13.2</span>训练工作流：六步</h3>
+<ol>
+<li><b>准备图像数据</b>：数十亿「图像 + 描述」对，清洗、统一尺寸。</li>
+<li><b>嵌入</b>：图像转成像素张量，文本转成向量；同时做<b>前向扩散</b>，给干净图加噪，生成训练样本。</li>
+<li><b>设计架构</b>：选 U-Net，它擅长 image-to-image。</li>
+<li><b>去噪</b>：给 U-Net 看噪声图 + 时间步 + 文本，让它预测「加了什么噪声」。</li>
+<li><b>训练</b>：预测噪声与真实噪声算 MSE，反向传播更新权重。</li>
+<li><b>生成</b>：从纯噪声开始，用训练好的 U-Net 逐步减噪。</li>
+</ol>
 
-<p>缓解手段分四层：数据层（补充代表性样本、重采样、重加权）、模型层（公平性约束、对抗去偏）、评估层（demographic parity、equalized odds、分组校准）、流程层（受影响群体参与评审、高风险决策保留人工复核）。只做其中一层，通常只是把偏差挪了个位置。</p>
-
-<h3><span class="sn">12.4</span>隐私、同意与合规</h3>
-<p>数据最小化（只收必要的）、目的限制（不二次挪用）、可删除、明示同意、访问审计。匿名化不等于不可识别：多列准标识符联合起来可以重识别，$k$-匿名、差分隐私是常见的技术缓解。模型也会"记住"训练数据，存在成员推断与训练数据提取攻击；对敏感数据，优先联邦学习或差分隐私，或在输出侧做过滤。</p>
-<p>合规是下限，不是标准。法律往往滞后于技术，灰色地带里要靠价值观判断：用户是否知情、是否有选择、拒绝的后果是否可承受。</p>
+<h3><span class="sn">13.3</span>前向扩散：把图一步步毁掉</h3>
+<p>先定义噪声表：$\beta_t$ 从 $0.0001$ 线性增到 $0.02$（$T=1000$），$\alpha_t=1-\beta_t$，$\bar\alpha_t=\prod_{s=1}^{t}\alpha_s$。任意时刻的噪声图可以直接从原图算：</p>
+$$x_t=\sqrt{\bar\alpha_t}\,x_0+\sqrt{1-\bar\alpha_t}\,\epsilon,\qquad \epsilon\sim\mathcal{N}(0,I)$$
+<p>注意：<b>每个时间步都是对原图加噪</b>，不是在上一步的噪声图上继续加。$\bar\alpha_t$ 是「还剩多少原始信号」，$1-\bar\alpha_t$ 是「被噪声替代的比例」。</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>风险</th><th>表现</th><th>缓解</th><th>验收</th></tr></thead>
+<thead><tr><th>$t$</th><th>$\beta_t$</th><th>$\alpha_t=1-\beta_t$</th><th>$\bar\alpha_t$</th></tr></thead>
 <tbody>
-<tr><td class="id">目标错位</td><td>指标涨、体验降</td><td>补充约束与人工指标</td><td>离线 + 在线对照</td></tr>
-<tr><td class="id">滥用</td><td>批量生成、伪造</td><td>限速、水印、身份校验</td><td>滥用率与响应时长</td></tr>
-<tr><td class="id">偏差</td><td>分组指标差距大</td><td>分层评估、重采样</td><td>最大组间差距阈值</td></tr>
-<tr><td class="id">隐私</td><td>重识别、记忆泄露</td><td>最小化、DP、删除</td><td>渗透测试与审计</td></tr>
-<tr><td class="id">不透明</td><td>无法解释拒绝</td><td>可解释模型、理由码</td><td>申诉渠道可用</td></tr>
+<tr><td class="id">1</td><td>0.00010</td><td>0.99990</td><td>0.99990</td></tr>
+<tr><td class="id">2</td><td>0.00012</td><td>0.99988</td><td>0.99978</td></tr>
+<tr><td class="id">3</td><td>0.00014</td><td>0.99986</td><td>0.99964</td></tr>
+<tr><td class="id">…</td><td>…</td><td>…</td><td>…</td></tr>
+<tr><td class="id">1000</td><td>0.02000</td><td>0.98000</td><td>0.00004</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>$t=1000$ 时只剩万分之四的原始信号，图基本是纯噪声。训练时随机采一个 $t$，就能同时覆盖「几乎干净」到「几乎全噪」的所有难度。</p>
+
+<pre><code class="language-python">import numpy as np
+
+def schedules(T=1000, beta_min=1e-4, beta_max=0.02):
+    beta = np.linspace(beta_min, beta_max, T)
+    alpha = 1.0 - beta
+    alpha_bar = np.cumprod(alpha)
+    return beta, alpha, alpha_bar
+
+def forward_diffuse(x0, t, alpha_bar):
+    eps = np.random.randn(*x0.shape)          # 高斯噪声
+    return np.sqrt(alpha_bar[t]) * x0 + np.sqrt(1 - alpha_bar[t]) * eps, eps</code></pre>
+
+<h3><span class="sn">13.4</span>条件嵌入：时间步与文本</h3>
+<p>U-Net 需要知道「现在有多噪」和「要生成什么」。时间步 $t$ 用正弦位置编码（和第 11 章 Transformer 同一套思路），再过一个 MLP，变成 16 维（真实模型 320 维）向量。文本用预训练编码器（如 CLIP 类）得到通用语义向量，再过一个 MLP 投影成「这个模型能懂的」引导向量——原书玩具模型是 16 维，真实模型 768/1,024 维，再投影到 U-Net 的内部宽度。</p>
+<p>为什么不能直接用文本编码器的输出？因为它是一个「通用语言空间」，而 U-Net 需要的是「与视觉特征对齐的空间」。那层 MLP 就是翻译器，它的权重也参与训练。</p>
+
+<h3><span class="sn">13.5</span>U-Net：编码、解码、跳连</h3>
+<ul class="clean">
+<li><b>编码器</b>（下采样）：逐层缩小图像，提取「这是什么」的高层语义。越往下，分辨率越低、通道越多。</li>
+<li><b>解码器</b>（上采样）：用转置卷积逐步恢复分辨率，重建细节。</li>
+<li><b>跳连</b>（skip connection）：把编码器早期的高分辨率特征直接接到解码器对应层，补回下采样时丢失的「在哪里」。</li>
+<li><b>瓶颈</b>（bridge）：U 形最低点，语义最抽象；时间步与文本嵌入通常在这里注入。</li>
+</ul>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一个 3×3 卷积核在算什么</span></div>
+<div class="thm-body">
+<p>卷积核在图像上滑动，每个位置做点积。原书的简化例子：核的一行是 $[2,7,2]$，对应像素一行是 $[11,2,1]$，则</p>
+<p>$$2\times11+7\times2+2\times1=22+14+2=38$$</p>
+<p>换成 3×3 的「竖线检测器」（左列 1、中列 0、右列 $-1$），在明暗突变处会得到大正数或大负数，在平坦区域接近 0。原书示例在某个位置得到 $-0.7$。这些核的权重不是人写的，是训练出来的。</p>
+</div>
+</div>
+
+<p>真实 U-Net 还会在多个深度插入<b>交叉注意力</b>：图像特征作 Query，文本嵌入作 Key/Value。这样「蜗牛」这个词能影响它所在的局部区域，「梵高风格」能影响笔触纹理。深层（低分辨率）管布局，浅层（高分辨率）管细节。</p>
+
+<h3><span class="sn">13.6</span>损失与训练：只学「预测噪声」</h3>
+<p>因为噪声是我们自己加的，真实噪声 $\epsilon$ 已知。U-Net 输出 $\hat\epsilon_\theta(x_t,t,c)$，损失就是均方误差：</p>
+$$L=\mathbb{E}_{x_0,\epsilon,t}\left\|\epsilon-\hat\epsilon_\theta\left(\sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}\epsilon,\;t,\;c\right)\right\|^2$$
+<p>原书玩具例子算出的损失是 $0.701$。怎么解读：0 是完美；0.01 说明预测已经很准；2.0 说明很差。但<b>绝对值的意义不如趋势</b>——训练正常的标志是损失持续下降并趋于平台，而不是某个具体数字。</p>
+<p>反向传播会更新所有可训练部分：U-Net 的卷积核、时间步 MLP、文本投影 MLP；文本编码器本身通常冻结。原书给的更新例子仍是 $w=0.5$、梯度 $-0.5$、学习率 $0.01$，更新到 $0.505$。</p>
+
+<h3><span class="sn">13.7</span>采样：从纯噪声走回图像</h3>
+<p>推理时从 $x_T\sim\mathcal{N}(0,I)$ 开始，对 $t=T,\dots,1$ 迭代。每一步：U-Net 预测噪声，按噪声表减去一部分，再加一点随机扰动（$t&gt;1$ 时）：</p>
+$$x_{t-1}=\frac{1}{\sqrt{\alpha_t}}\left(x_t-\frac{1-\alpha_t}{\sqrt{1-\bar\alpha_t}}\,\hat\epsilon_\theta(x_t,t,c)\right)+\sigma_t z$$
+<p>$\sigma_t=\sqrt{\beta_t}$，$z\sim\mathcal{N}(0,I)$。原书强调：去噪必须用<b>和训练时同一套</b> $\alpha,\beta$，否则「加噪的配方」和「去噪的配方」对不上，图会花。</p>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">1000 步 vs 50 步</span></div>
+<div class="thm-body">
+<p>原书用同一个提示、同一个初始噪声，分别跑 1000 步和 50 步。1000 步的图清晰、结构完整；50 步的图明显更糙——因为每次只能去掉一点点噪声，步数太少就来不及收敛。真实系统常用 20–50 步的快速采样器（DDIM、DPM-Solver 等），在质量与延迟之间取折中。</p>
+</div>
+</div>
+
+<h3><span class="sn">13.8</span>控制与编辑：让模型听指挥</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>手段</th><th>做什么</th><th>代价/限制</th></tr></thead>
+<tbody>
+<tr><td class="id">交叉注意力</td><td>文本 token 影响图像区域</td><td>文本编码器质量决定上限</td></tr>
+<tr><td class="id">负面提示</td><td>把不想要的概念从分布里推远</td><td>可能误伤相关概念</td></tr>
+<tr><td class="id">LoRA</td><td>冻结主模型，只训练两个低秩矩阵</td><td>文件 10–100 MB，风格容量有限</td></tr>
+<tr><td class="id">ControlNet</td><td>用姿态/边缘/深度图约束结构</td><td>需要额外控制图</td></tr>
+<tr><td class="id">IP-Adapter</td><td>用参考图注入风格/角色</td><td>可能过度复制参考图</td></tr>
+<tr><td class="id">Inpainting</td><td>只重绘蒙版区域</td><td>蒙版边缘可能不自然</td></tr>
+<tr><td class="id">Outpainting</td><td>向外扩展画布</td><td>远处结构容易重复</td></tr>
+<tr><td class="id">高分辨率修复</td><td>先低分辨率定构图，再放大补细节</td><td>两阶段，算力翻倍</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><b>LoRA</b> 的直觉：主模型是一位大师，LoRA 是一张 10–100 MB 的「便利贴」，只写「这个角色/这种画风要往哪偏一点」。推理时把低秩矩阵的输出加到原权重上，就能切换风格，而不必为每个风格存一份完整模型。</p>
+<p><b>Inpainting</b> 的关键工程细节：每一步去噪后，用蒙版把「未遮罩区域」的原始像素贴回去，保证只改该改的地方，同时让周围像素提供上下文。</p>
+
+<h3><span class="sn">13.9</span>评估与美学对齐</h3>
+<p>扩散模型没有「下一个 token 的准确率」，常用的两个信号是：<b>验证损失</b>（在没见过的图像-噪声对上预测噪声的误差）与 <b>FID</b>（生成图分布与真实图分布的统计距离，越低越好）。FID 更接近人眼感知，但计算慢、对样本量敏感。</p>
+<p><b>美学对齐</b>借用了 RLHF 的三段式：同一 prompt 生成多张图 → 人工按美观度排序 → 训练美学评分模型 → 用分数作为奖励微调扩散模型。它优化的是「人觉得好看」，不是「符合事实」；两者可能冲突。</p>
+
+<h3><span class="sn">13.10</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>要点</th><th>结论</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td class="id">核心思想</td><td>从噪声中逐步去噪</td><td>不是从空白画</td></tr>
+<tr><td class="id">噪声表</td><td>$\beta:0.0001\to0.02$，$T=1000$</td><td>$\alpha=1-\beta$</td></tr>
+<tr><td class="id">前向</td><td>$x_t=\sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}\epsilon$</td><td>直接跳到任意 $t$</td></tr>
+<tr><td class="id">$\bar\alpha$</td><td>累乘，$t=1000$ 约 0.00004</td><td>信号几乎没了</td></tr>
+<tr><td class="id">U-Net</td><td>编码 + 解码 + 跳连 + 瓶颈</td><td>跳连补空间细节</td></tr>
+<tr><td class="id">条件</td><td>时间步嵌入 + 文本嵌入</td><td>交叉注意力注入</td></tr>
+<tr><td class="id">损失</td><td>MSE(预测噪声, 真实噪声)</td><td>示例 0.701</td></tr>
+<tr><td class="id">采样</td><td>$x_{t-1}$ 减噪 + 扰动</td><td>1000 步 vs 50 步</td></tr>
+<tr><td class="id">控制</td><td>LoRA / ControlNet / IP-Adapter</td><td>各自解决不同约束</td></tr>
+<tr><td class="id">评估</td><td>验证损失 + FID</td><td>FID 越低越像真实分布</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="thm warn">
-<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">把责任外包给模型</span></div>
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">六个扩散模型坑</span></div>
 <div class="thm-body">
-<p>① 用"模型自己这么说的"当免责声明；② 上线前做一次公平性检查就完事，没有持续监控；③ 以为去掉姓名字段就匿名了；④ 把"合法"当成"合乎伦理"——法律是下限，不是标准。</p>
+<p>① <b>以为每步是在上一步上加噪</b>：训练时是从原图直接跳到任意 $t$，不是逐步累积。② <b>训练/推理噪声表不一致</b>：去噪公式对不上，图会崩。③ <b>步数越多一定越好</b>：超过训练分布后收益递减，且延迟暴涨；快速采样器更实用。④ <b>文本提示越长越准</b>：关键概念要具体，堆形容词反而互相冲突。⑤ <b>只看 FID</b>：FID 低不代表符合提示、文字正确、无偏见。⑥ <b>拿训练图当生成图</b>：过拟合时模型会「背图」，要做去重与记忆化检测。</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="app" class="chapter">
+<div class="wrap">
+<div class="sec-label">Applications &amp; Responsibility</div>
+<h2><span class="num">A</span>应用地图与责任：算法之外的那些决定</h2>
+<p class="lede">同一个算法，放在物流里是省钱，放在招聘里可能是歧视。选型只决定「能不能做」，伦理与工程规范决定「该不该做、做完会不会反噬」。</p>
+
+<div class="chap-intro">
+<p>综合全书 12 章的应用案例，加上前言里的伦理讨论：意图与效果、恶意使用、偏差、法律/隐私/同意、奇点。最后给一份可执行的选型与上线检查表。</p>
+<span class="tag">Use cases · Ethics · Deployment</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">use cases</span>
+<span class="chip">intention vs effect</span>
+<span class="chip">bias</span>
+<span class="chip">privacy</span>
+<span class="chip">consent</span>
+<span class="chip">singularity</span>
+<span class="chip">monitoring</span>
+</div>
+
+<h3><span class="sn">14.1</span>按问题类型看应用</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>问题</th><th>书中的应用</th><th>关键约束</th><th>章节</th></tr></thead>
+<tbody>
+<tr><td class="id">搜索</td><td>网络路由（ARPANET）、网页爬取、社交关系（Oracle of Bacon）</td><td>图规模、内存、实时性</td><td>2</td></tr>
+<tr><td class="id">带权最短路</td><td>GPS 导航、电信路由、游戏寻路</td><td>非负权、动态路况</td><td>2–3</td></tr>
+<tr><td class="id">对抗搜索</td><td>国际象棋、跳棋、四子棋；与 ACO 结合做配送路线</td><td>完全/不完全信息、深度限制</td><td>3</td></tr>
+<tr><td class="id">进化算法</td><td>投资行为预测、ML 特征选择、破译密码、电路/分子设计</td><td>适应度可计算、可接受近似</td><td>4–5</td></tr>
+<tr><td class="id">蚁群</td><td>物流配送、TSP、网络路由</td><td>组合爆炸、信息素调参</td><td>6</td></tr>
+<tr><td class="id">粒子群</td><td>无人机材料配比、ANN 权重/超参、连续参数优化</td><td>高维、黑箱、无梯度</td><td>7</td></tr>
+<tr><td class="id">机器学习</td><td>欺诈检测、推荐、动态定价、健康风险预测</td><td>标签质量、类别不平衡、可解释</td><td>8</td></tr>
+<tr><td class="id">神经网络</td><td>图像识别、NLP、游戏、事故预测</td><td>数据量、算力、过拟合</td><td>9</td></tr>
+<tr><td class="id">强化学习</td><td>机器人、工业流程、策略游戏、自动驾驶</td><td>奖励设计、仿真到现实的迁移</td><td>10</td></tr>
+<tr><td class="id">LLM</td><td>内容生成、信息综合、代码助手、客服</td><td>幻觉、上下文、成本、合规</td><td>11</td></tr>
+<tr><td class="id">扩散模型</td><td>概念设计、广告图、产品可视化、建筑渲染</td><td>版权、偏见、分辨率、可控性</td><td>12</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">14.2</span>意图与效果：你做的和目标发生的</h3>
+<p>原书前言的核心论点是：技术从来不是价值中立的，但工程师可以选择<b>把价值写进约束</b>。一个模型「合法」不等于「合乎伦理」；一个问题「技术上能做」不等于「应该做」。</p>
+<p>最刺眼的例子是 1915 年的 Magnavox 扬声器：发明者用它给旧金山人群播放歌剧，纳粹后来把扬声器布到公共场所，让希特勒的演讲「无处可躲」，从而放大宣传效果。发明者无法预见，但今天的我们有责任做<b>滥用分析</b>（abuse analysis）：谁可能拿它做坏事？成本有多低？有没有可检测的痕迹？</p>
+
+<h3><span class="sn">14.3</span>偏差：模型会放大数据里的模式</h3>
+<p>偏差（bias）是「对某类概念的偏好或排斥」。它来自历史数据、采样方式、标注者的视角，也会被模型放大：训练数据里某群体样本少，模型对该群体的误差就高；用「历史录用结果」训练招聘模型，会把历史歧视固化。</p>
+<p>工程上的缓解不是「删掉敏感字段」这么简单——邮编、学校、消费记录都可能是代理变量。可行做法：</p>
+<ul class="clean">
+<li><b>数据层</b>：分层采样、补充少数群体样本、检查标签是否由偏见产生。</li>
+<li><b>建模层</b>：分组评估（不只看总体准确率）、公平性约束、去偏表示学习。</li>
+<li><b>部署层</b>：人工复核、申诉通道、影响范围限制、定期审计。</li>
+</ul>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>「总体准确率 95%」可能意味着「对多数群体 99%，对少数群体 70%」。平均值会把最需要关注的人藏起来。先分组，再看指标。</p>
+</div>
+
+<h3><span class="sn">14.4</span>法律、隐私与同意</h3>
+<p>原书提醒：隐私不是「我没做错就不怕」，而是「数据一旦被收集，就永久脱离了你的控制」。我们每小时都在用位置、搜索、购买、健康数据交换便利。合规的最低要求是<b>知情同意</b>（informed consent）：用户知道收集什么、用来做什么、保留多久、如何删除。</p>
+<p>工程落地时至少要回答：数据最小化了吗？训练数据能删吗（被遗忘权）？模型会不会记住训练样本（LLM/扩散模型的记忆化）？跨境传输是否合规？日志里有没有 PII？这些问题应在<b>设计阶段</b>回答，而不是上线后被审计倒逼。</p>
+
+<h3><span class="sn">14.5</span>奇点：不确定性的正确用法</h3>
+<p>奇点（singularity）指「人类造出在所有领域都超越自己的智能」的假想时刻。原书的态度是：它是一个<b>思考框架</b>，不是工程路线图。真正可操作的是「能力增长的速度」与「控制机制是否同步增长」。对工程师而言，这意味着：能力越强，越需要评估、红队、权限隔离与关机开关。</p>
+
+<h3><span class="sn">14.6</span>上线前的十问</h3>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">检查表</span><span class="thm-title">从问题到监控</span></div>
+<div class="thm-body">
+<ol>
+<li><b>问题</b>：解长什么样？成功与失败的代价各是什么？</li>
+<li><b>基线</b>：不用 ML 的规则/人工方案能做到多少？</li>
+<li><b>数据</b>：来源合法吗？有标签吗？代表性够吗？会泄漏吗？</li>
+<li><b>指标</b>：离线指标与业务指标一致吗？分组评估了吗？</li>
+<li><b>误差</b>：假阳性与假阴性哪个更贵？阈值怎么定？</li>
+<li><b>可解释</b>：用户/审核员能理解拒绝理由吗？能申诉吗？</li>
+<li><b>鲁棒</b>：分布漂移、对抗样本、异常输入会怎样？</li>
+<li><b>隐私</b>：训练数据能删吗？模型会记住样本吗？</li>
+<li><b>滥用</b>：被恶意使用时，最坏后果是什么？如何检测？</li>
+<li><b>监控</b>：上线后看什么？谁负责？何时回滚？</li>
+</ol>
+</div>
+</div>
+
+<h3><span class="sn">14.7</span>全章速查与常见误区</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>主题</th><th>要点</th><th>行动</th></tr></thead>
+<tbody>
+<tr><td class="id">应用地图</td><td>按问题类型选算法，不按行业</td><td>先框问题，再选工具</td></tr>
+<tr><td class="id">意图 vs 效果</td><td>合法 ≠ 合伦理</td><td>做滥用分析</td></tr>
+<tr><td class="id">偏差</td><td>数据与采样引入，模型放大</td><td>分组评估、补样本、审计</td></tr>
+<tr><td class="id">隐私</td><td>收集即失控</td><td>最小化、可删除、脱敏</td></tr>
+<tr><td class="id">同意</td><td>知情、具体、可撤回</td><td>别把条款当同意</td></tr>
+<tr><td class="id">奇点</td><td>思考框架，非路线图</td><td>能力与控制同步</td></tr>
+<tr><td class="id">上线</td><td>基线、指标、监控、回滚</td><td>十问逐条过</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个「技术正确、产品错误」</span></div>
+<div class="thm-body">
+<p>① <b>只看总体指标</b>：掩盖少数群体的系统性失败。② <b>把合规当伦理</b>：合法的最低线不等于对用户好。③ <b>把可解释当装饰</b>：没有申诉与复核，解释只是公关。④ <b>上线即完工</b>：数据分布会漂移，模型会退化，没有监控的模型等于定时炸弹。</p>
 </div>
 </div>
 </div>
@@ -1469,46 +2983,265 @@ def add_noise(x0, t, eps):
 
 <section id="summary" class="chapter">
 <div class="wrap">
-<div class="sec-label">Wrap-up · Cheat Sheet</div>
-<h2><span class="num">F</span>一页纸：算法选择速查表</h2>
-<p class="lede">选算法时，先问三个问题，再查表；表里的"坑"比"适用"更值得先看。</p>
+<div class="sec-label">Wrap-up · One Page</div>
+<h2><span class="num">F</span>一页纸：算法选择、复杂度与学习路线</h2>
+<p class="lede">把 12 章压成三张表：什么时候用谁、要付多少代价、按什么顺序学。然后合上书，试着不看表回答最后那八个问题。</p>
 
 <div class="chap-intro">
-<p>把全书 12 章压缩成一张决策表。它不替你做决定，但能帮你排除掉一半明显不合适的选项。</p>
-<span class="tag">算法选择</span>
+<p>这不是正文的替代品，而是复习索引。每一行都能在对应章节找到完整推导、伪代码与例子；如果某一行你只能背结论、说不出假设，回到那一节。</p>
+<span class="tag">速查 · 复习</span>
 </div>
 
-<h3><span class="sn">●</span>先问三个问题</h3>
-<div class="cards">
-<div class="card"><div class="k">Q1 · 解的形状</div><h4>路径、组合、标签，还是动作序列？</h4><p>路径 → 搜索；组合/参数 → 优化；带标签 → 监督学习；序列决策 → 强化学习；造新样本 → 生成模型。</p></div>
-<div class="card"><div class="k">Q2 · 信号强度</div><h4>你能拿到什么反馈？</h4><p>能估"还剩多远" → 启发式搜索；只能给整条解打分 → 进化/群智能；有梯度 → 梯度法；只有奖励 → RL。</p></div>
-<div class="card"><div class="k">Q3 · 代价预算</div><h4>毫秒、分钟，还是小时？</h4><p>在线毫秒级 → 查表/轻量模型；离线可等 → 大搜索/大模型；内存受限 → DFS/beam search。</p></div>
-</div>
+<h3><span class="sn">F.1</span>先问三个问题</h3>
+<ol>
+<li><b>解长什么样？</b> 路径（搜索）、点/参数（优化）、数值（回归）、标签（分类）、分组（聚类）、动作序列（RL）。</li>
+<li><b>我怎么判断好坏？</b> 能精确算代价 → 搜索/优化；有标签 → 监督；只有奖励 → RL；什么都没有 → 先做数据探索。</li>
+<li><b>我能接受近似吗？</b> 不能 → 精确算法/约束求解；能 → GA/ACO/PSO/SA。</li>
+</ol>
 
+<h3><span class="sn">F.2</span>算法选择表</h3>
 <div class="table-wrap">
 <table>
-<thead><tr><th>场景</th><th>首选</th><th>复杂度 / 成本</th><th>备选</th><th>一句话坑</th></tr></thead>
+<thead><tr><th>场景</th><th>首选</th><th>备选</th><th>不要用</th></tr></thead>
 <tbody>
-<tr><td>迷宫、无权最短路</td><td>BFS</td><td>$O(V+E)$</td><td>双向 BFS</td><td>带权图上必错</td></tr>
-<tr><td>带权最短路</td><td>Dijkstra</td><td>$O((V+E)\log V)$</td><td>Bellman-Ford</td><td>负边失效</td></tr>
-<tr><td>有启发的最短路</td><td>A*</td><td>最坏 $O(b^d)$</td><td>加权 A*</td><td>$h$ 高估会失最优</td></tr>
-<tr><td>博弈走子</td><td>Minimax + α-β</td><td>最好 $O(b^{d/2})$</td><td>MCTS</td><td>评估函数偏差</td></tr>
-<tr><td>排班、数独</td><td>回溯 + 前向检查</td><td>指数，剪枝后可行</td><td>AC-3、CP-SAT</td><td>软约束当硬约束</td></tr>
-<tr><td>背包、组合优化</td><td>GA / 动态规划</td><td>$O(G\cdot N\cdot f)$</td><td>分支定界</td><td>适应度不罚约束</td></tr>
-<tr><td>多目标路径规划</td><td>ACO</td><td>迭代 × 蚂蚁数</td><td>GA</td><td>信息素不蒸发</td></tr>
-<tr><td>连续参数调优</td><td>PSO</td><td>迭代 × 粒子数</td><td>贝叶斯优化</td><td>gbest 早熟</td></tr>
-<tr><td>表格分类</td><td>随机森林 / GBDT</td><td>$O(N\log N)$ 训练</td><td>逻辑回归</td><td>数据泄漏</td></tr>
-<tr><td>图像分类</td><td>CNN / ViT</td><td>依赖算力与数据</td><td>预训练微调</td><td>分布漂移</td></tr>
-<tr><td>序列决策</td><td>PPO / DQN</td><td>样本极贵</td><td>模仿学习</td><td>奖励设计错误</td></tr>
-<tr><td>文本生成</td><td>LLM + RAG</td><td>推理成本</td><td>微调小模型</td><td>幻觉与注入</td></tr>
-<tr><td>图像生成</td><td>扩散模型</td><td>采样慢</td><td>GAN / 蒸馏</td><td>版权与深伪</td></tr>
+<tr><td class="id">无权最短步数</td><td>BFS</td><td>双向 BFS</td><td>DFS（不保证最短）</td></tr>
+<tr><td class="id">非负权最短路</td><td>Dijkstra / A*</td><td>Bellman-Ford（有负权）</td><td>BFS</td></tr>
+<tr><td class="id">有可靠启发</td><td>A*</td><td>加权 A* / IDA*</td><td>无启发的暴力</td></tr>
+<tr><td class="id">两人零和博弈</td><td>Minimax + Alpha-Beta</td><td>MCTS</td><td>贪心一步</td></tr>
+<tr><td class="id">组合优化、可接受近似</td><td>GA</td><td>SA / ACO</td><td>暴力枚举</td></tr>
+<tr><td class="id">连续高维黑箱</td><td>PSO</td><td>CMA-ES / 贝叶斯优化</td><td>网格搜索</td></tr>
+<tr><td class="id">路径/顺序优化</td><td>ACO</td><td>GA + 顺序编码</td><td>二进制 GA</td></tr>
+<tr><td class="id">硬约束排班/着色</td><td>CSP + 回溯 + AC-3</td><td>SAT/ILP 求解器</td><td>纯随机搜索</td></tr>
+<tr><td class="id">连续值预测</td><td>线性回归（基线）</td><td>树模型 / ANN</td><td>分类指标</td></tr>
+<tr><td class="id">离散标签</td><td>逻辑回归 / 决策树</td><td>随机森林 / SVM / ANN</td><td>回归 + 拍阈值</td></tr>
+<tr><td class="id">无标签分组</td><td>K-means</td><td>层次聚类 / DBSCAN</td><td>报「准确率」</td></tr>
+<tr><td class="id">序列决策</td><td>Q-learning（小状态）</td><td>DQN / 策略梯度</td><td>监督学习硬套</td></tr>
+<tr><td class="id">文本生成/理解</td><td>Transformer LLM</td><td>RAG / 微调</td><td>从零训练（除非有数据）</td></tr>
+<tr><td class="id">文生图</td><td>扩散模型</td><td>GAN</td><td>像素级回归</td></tr>
 </tbody>
 </table>
 </div>
 
-<h3><span class="sn">●</span>学习路线：按原书顺序最省力</h3>
-<p>问题类型 → 搜索 → 启发式与对抗 → 约束 → 进化 → 群体 → 机器学习 → 神经网络 → 强化学习 → LLM → 生成图像 → 负责任 AI。每一章都动手跑一遍书里的 Python 示例（<span class="small">github.com/rishal-hurbans/Grokking-Artificial-Intelligence-Algorithms</span>），比读三遍有用。</p>
-<p>如果只记一句话：<b>算法是工具，问题是老师</b>。先把问题定义清楚、把评估做诚实，再谈模型先不先进。</p>
+<h3><span class="sn">F.3</span>复杂度与代价总表</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>算法</th><th>时间</th><th>空间</th><th>关键参数</th><th>保证</th></tr></thead>
+<tbody>
+<tr><td class="id">BFS</td><td>$O(b^d)$</td><td>$O(b^d)$</td><td>分支因子 $b$、深度 $d$</td><td>无权最优</td></tr>
+<tr><td class="id">DFS</td><td>$O(b^m)$</td><td>$O(bm)$</td><td>最大深度 $m$</td><td>不保证最优</td></tr>
+<tr><td class="id">Dijkstra</td><td>$O((V+E)\log V)$</td><td>$O(V)$</td><td>堆实现</td><td>非负权最优</td></tr>
+<tr><td class="id">Bellman-Ford</td><td>$O(VE)$</td><td>$O(V)$</td><td>—</td><td>负权可，判负环</td></tr>
+<tr><td class="id">A*</td><td>$O(b^d)$ 最坏</td><td>$O(b^d)$</td><td>$h$ 的质量</td><td>$h$ 可采纳时最优</td></tr>
+<tr><td class="id">Minimax</td><td>$O(b^d)$</td><td>$O(bd)$</td><td>深度 $d$</td><td>深度内最优</td></tr>
+<tr><td class="id">Alpha-Beta</td><td>$O(b^{d/2})$ 理想</td><td>$O(bd)$</td><td>动作排序</td><td>同 Minimax</td></tr>
+<tr><td class="id">GA</td><td>$O(G\cdot P\cdot f)$</td><td>$O(P\cdot L)$</td><td>种群、代数、变异率</td><td>无，启发式</td></tr>
+<tr><td class="id">ACO</td><td>$O(\text{iter}\cdot mn^2)$</td><td>$O(n^2)$</td><td>$\alpha,\beta,\rho$</td><td>无，启发式</td></tr>
+<tr><td class="id">PSO</td><td>$O(\text{iter}\cdot Nd)$</td><td>$O(Nd)$</td><td>$w,c_1,c_2$</td><td>无，启发式</td></tr>
+<tr><td class="id">SA</td><td>$O(\text{steps}\cdot c)$</td><td>$O(n)$</td><td>$T_0,\alpha$</td><td>无，概率收敛</td></tr>
+<tr><td class="id">CSP/AC-3</td><td>$O(ed^3)$（传播）</td><td>$O(nd)$</td><td>变量/值顺序</td><td>传播不完备</td></tr>
+<tr><td class="id">决策树</td><td>$O(n\log n\cdot f)$</td><td>$O(\text{nodes})$</td><td>深度、叶大小</td><td>无</td></tr>
+<tr><td class="id">ANN 前向</td><td>$O(\sum n_ln_{l+1})$</td><td>$O(\sum n_ln_{l+1})$</td><td>层数、宽度、$\eta$</td><td>无</td></tr>
+<tr><td class="id">Q-learning</td><td>$O(L|A|)$/episode</td><td>$O(|S||A|)$</td><td>$\alpha,\gamma,\varepsilon$</td><td>表格收敛条件</td></tr>
+<tr><td class="id">Transformer</td><td>$O(T^2d)$/层</td><td>$O(T^2+TD)$</td><td>$T,d,h,L$</td><td>无</td></tr>
+<tr><td class="id">Diffusion</td><td>$O(T\cdot\text{U-Net})$</td><td>$O(HWC)$</td><td>$T$、噪声表</td><td>无</td></tr>
+</tbody>
+</table>
+</div>
+<p class="small">注：GA 的 $G$ 是代数、$P$ 是种群、$f$ 是单次适应度成本；ACO 的 $m$ 是蚂蚁数、$n$ 是节点数；PSO 的 $N$ 是粒子数、$d$ 是维度；Transformer 的 $T$ 是序列长度、$d$ 是宽度、$D$ 是 FFN 宽度。</p>
+
+<h3><span class="sn">F.4</span>学习路线：按依赖顺序，而不是按页码</h3>
+<div class="cards">
+<div class="card"><div class="k">Step 1 · 地基</div><h4>问题分类 + 搜索</h4><p>第 1–3 节。先能把问题说成「状态/动作/目标」，再理解 BFS/DFS/A*/Minimax。这一层是后面所有「找最优」的语法。</p></div>
+<div class="card"><div class="k">Step 2 · 无梯度优化</div><h4>进化 + 群智能</h4><p>第 4–7 节。抓住共同结构：一群候选解、一个适应度、探索与利用的平衡。差异只在编码与更新规则。</p></div>
+<div class="card"><div class="k">Step 3 · 从数据学习</div><h4>ML + ANN</h4><p>机器学习与神经网络两节。先学工作流与评估，再学反向传播。不要跳过数据清洗与基线。</p></div>
+<div class="card"><div class="k">Step 4 · 序列决策</div><h4>RL + Q-learning</h4><p>强化学习一节。把 MDP、回报、TD 误差串起来；再用 DQN 理解「函数近似」。</p></div>
+<div class="card"><div class="k">Step 5 · 生成式</div><h4>LLM + Diffusion</h4><p>LLM 与扩散模型两节。两者共享「预测噪声/下一个 token + 反向传播」，只是输入输出模态不同。</p></div>
+<div class="card"><div class="k">Step 6 · 落地</div><h4>应用 + 责任</h4><p>应用与责任一节。选型、监控、偏差、隐私、滥用分析。</p></div>
+</div>
+
+<h3><span class="sn">F.5</span>原书目录逐项对照</h3>
+<p>下面按原书顺序列出全部章与节（保留英文原文，含前言与附录），用来核对覆盖范围。正文按主题重组，因此节号不完全对应；但每个节的核心概念都在上文有展开。</p>
+<div class="table-wrap"><table><thead><tr><th>原书单元</th><th>页</th></tr></thead><tbody>
+<tr><td class="id" colspan="2"><b>Grokking AI Algorithms Second Edition</b></td></tr>
+<tr><td class="id" colspan="2"><b>brief contents</b></td></tr>
+<tr><td class="id" colspan="2"><b>contents</b></td></tr>
+<tr><td class="id" colspan="2"><b>preface</b></td></tr>
+<tr><td style="padding-left:26px">Our obsession with technology andautomation</td><td class="id">17</td></tr>
+<tr><td style="padding-left:26px">Ethics, legal matters, and responsibility</td><td class="id">20</td></tr>
+<tr><td style="padding-left:26px">Intention and effect: Understanding your vision and goals</td><td class="id">21</td></tr>
+<tr><td style="padding-left:26px">Unintended use: Protecting against malicious use</td><td class="id">22</td></tr>
+<tr><td style="padding-left:26px">Unintended bias: Building solutions for everyone</td><td class="id">22</td></tr>
+<tr><td style="padding-left:26px">The law, privacy, and consent: Knowing the importance ofcore values</td><td class="id">23</td></tr>
+<tr><td style="padding-left:26px">Singularity: Exploring the unknown</td><td class="id">23</td></tr>
+<tr><td class="id" colspan="2"><b>acknowledgments</b></td></tr>
+<tr><td class="id" colspan="2"><b>about this book</b></td></tr>
+<tr><td style="padding-left:26px">Who should read this book</td><td class="id">27</td></tr>
+<tr><td style="padding-left:26px">How this book is organized: A road map</td><td class="id">28</td></tr>
+<tr><td style="padding-left:26px">About the code</td><td class="id">29</td></tr>
+<tr><td style="padding-left:26px">liveBook discussion forum</td><td class="id">30</td></tr>
+<tr><td style="padding-left:26px">Other online resources</td><td class="id">30</td></tr>
+<tr><td class="id" colspan="2"><b>about the author</b></td></tr>
+<tr><td class="id" colspan="2"><b>1 Intuition of AI</b></td></tr>
+<tr><td style="padding-left:26px">What is artificial intelligence?</td><td class="id">34</td></tr>
+<tr><td style="padding-left:26px">The evolution of AI</td><td class="id">40</td></tr>
+<tr><td style="padding-left:26px">Different types of problems</td><td class="id">42</td></tr>
+<tr><td style="padding-left:26px">Intuition of AI concepts</td><td class="id">44</td></tr>
+<tr><td style="padding-left:26px">Some uses for AI algorithms</td><td class="id">48</td></tr>
+<tr><td style="padding-left:26px">Conclusion</td><td class="id">53</td></tr>
+<tr><td class="id" colspan="2"><b>2 Search fundamentals</b></td></tr>
+<tr><td style="padding-left:26px">Cost of computation: The reason for smart algorithms</td><td class="id">58</td></tr>
+<tr><td style="padding-left:26px">Problems that search algorithms can solve</td><td class="id">59</td></tr>
+<tr><td style="padding-left:26px">Representing state: Creating a framework to represent problem spaces and solutions</td><td class="id">63</td></tr>
+<tr><td style="padding-left:26px">Uninformed search: Looking blindly for solutions</td><td class="id">70</td></tr>
+<tr><td style="padding-left:26px">BFS: Looking wide before looking deep</td><td class="id">72</td></tr>
+<tr><td style="padding-left:26px">DFS: Looking deep before looking wide</td><td class="id">81</td></tr>
+<tr><td style="padding-left:26px">Use cases for uninformed search algorithms</td><td class="id">89</td></tr>
+<tr><td style="padding-left:26px">Optional: More about graph categories</td><td class="id">90</td></tr>
+<tr><td style="padding-left:26px">Optional: More ways to represent graphs</td><td class="id">93</td></tr>
+<tr><td class="id" colspan="2"><b>3 Intelligent search</b></td></tr>
+<tr><td style="padding-left:26px">Informed search: Looking for solutions with guidance</td><td class="id">101</td></tr>
+<tr><td style="padding-left:26px">Adversarial search: Looking for solutions in a changing environment</td><td class="id">112</td></tr>
+<tr><td class="id" colspan="2"><b>4 Evolutionary algorithms</b></td></tr>
+<tr><td style="padding-left:26px">Problems that evolutionary algorithms can solve</td><td class="id">135</td></tr>
+<tr><td style="padding-left:26px">Life cycle of genetic algorithms</td><td class="id">139</td></tr>
+<tr><td style="padding-left:26px">Encoding the solution spaces</td><td class="id">142</td></tr>
+<tr><td style="padding-left:26px">Binary encoding: Representing possible solutions with 0s and 1s</td><td class="id">145</td></tr>
+<tr><td style="padding-left:26px">Measuring fitness of individuals in a population</td><td class="id">149</td></tr>
+<tr><td style="padding-left:26px">Selecting parents based on their fitness</td><td class="id">151</td></tr>
+<tr><td style="padding-left:26px">Reproducing individuals from parents</td><td class="id">155</td></tr>
+<tr><td style="padding-left:26px">Populating the next generation</td><td class="id">162</td></tr>
+<tr><td style="padding-left:26px">Configuring the parameters of a genetic algorithm</td><td class="id">166</td></tr>
+<tr><td style="padding-left:26px">Use cases for evolutionary algorithms</td><td class="id">167</td></tr>
+<tr><td class="id" colspan="2"><b>5 Advanced evolutionary approaches</b></td></tr>
+<tr><td style="padding-left:26px">Evolutionary algorithm life cycle</td><td class="id">171</td></tr>
+<tr><td style="padding-left:26px">Alternative selection strategies</td><td class="id">173</td></tr>
+<tr><td style="padding-left:26px">Real-value encoding: Working with real numbers</td><td class="id">177</td></tr>
+<tr><td style="padding-left:26px">Order encoding: Working with sequences</td><td class="id">182</td></tr>
+<tr><td style="padding-left:26px">Tree encoding: Working with hierarchies</td><td class="id">185</td></tr>
+<tr><td style="padding-left:26px">Common types of evolutionary algorithms</td><td class="id">190</td></tr>
+<tr><td style="padding-left:26px">Glossary of evolutionary-algorithm terms</td><td class="id">190</td></tr>
+<tr><td style="padding-left:26px">More use cases for evolutionary algorithms</td><td class="id">191</td></tr>
+<tr><td class="id" colspan="2"><b>6 Swarm intelligence: Ants</b></td></tr>
+<tr><td style="padding-left:26px">What is swarm intelligence?</td><td class="id">193</td></tr>
+<tr><td style="padding-left:26px">Problems that ACO algorithms can solve</td><td class="id">196</td></tr>
+<tr><td style="padding-left:26px">Representing state: What do paths and ants look like?</td><td class="id">201</td></tr>
+<tr><td style="padding-left:26px">The ACO algorithm life cycle</td><td class="id">205</td></tr>
+<tr><td style="padding-left:26px">Use cases for ACO algorithms</td><td class="id">230</td></tr>
+<tr><td class="id" colspan="2"><b>7 Swarm intelligence: Particles</b></td></tr>
+<tr><td style="padding-left:26px">What is particle swarm optimization?</td><td class="id">233</td></tr>
+<tr><td style="padding-left:26px">Optimization problems: A slightly more technical perspective</td><td class="id">236</td></tr>
+<tr><td style="padding-left:26px">Problems that PSO algorithms can solve</td><td class="id">240</td></tr>
+<tr><td style="padding-left:26px">Representing state: What do particles look like?</td><td class="id">242</td></tr>
+<tr><td style="padding-left:26px">PSO algorithm life cycle</td><td class="id">243</td></tr>
+<tr><td style="padding-left:26px">Use cases for PSO algorithms</td><td class="id">266</td></tr>
+<tr><td class="id" colspan="2"><b>8 Machine learning</b></td></tr>
+<tr><td style="padding-left:26px">What is machine learning?</td><td class="id">271</td></tr>
+<tr><td style="padding-left:26px">Problems that machine learning can solve</td><td class="id">274</td></tr>
+<tr><td style="padding-left:26px">Following a machine-learning workflow</td><td class="id">276</td></tr>
+<tr><td style="padding-left:26px">Classification with decision trees</td><td class="id">301</td></tr>
+<tr><td style="padding-left:26px">Other popular machine learning algorithms</td><td class="id">321</td></tr>
+<tr><td style="padding-left:26px">Use cases for machine learning algorithms</td><td class="id">322</td></tr>
+<tr><td class="id" colspan="2"><b>9 Artificial neural networks</b></td></tr>
+<tr><td style="padding-left:26px">What are artificial neural networks?</td><td class="id">325</td></tr>
+<tr><td style="padding-left:26px">The Perceptron: A representation of a neuron</td><td class="id">329</td></tr>
+<tr><td style="padding-left:26px">Defining ANNs</td><td class="id">334</td></tr>
+<tr><td style="padding-left:26px">Forward propagation: Using a trained ANN</td><td class="id">341</td></tr>
+<tr><td style="padding-left:26px">Backpropagation: Training an ANN</td><td class="id">349</td></tr>
+<tr><td style="padding-left:26px">Options for activation functions</td><td class="id">362</td></tr>
+<tr><td style="padding-left:26px">Designing ANNs</td><td class="id">364</td></tr>
+<tr><td style="padding-left:26px">Expressing ANNs mathematically</td><td class="id">368</td></tr>
+<tr><td style="padding-left:26px">ANN types and use cases</td><td class="id">373</td></tr>
+<tr><td class="id" colspan="2"><b>10 Reinforcement learning</b></td></tr>
+<tr><td style="padding-left:26px">What is reinforcement learning?</td><td class="id">379</td></tr>
+<tr><td style="padding-left:26px">The inspiration for reinforcement learning</td><td class="id">381</td></tr>
+<tr><td style="padding-left:26px">Problems that reinforcement learning can solve</td><td class="id">384</td></tr>
+<tr><td style="padding-left:26px">The life cycle of reinforcement learning</td><td class="id">385</td></tr>
+<tr><td style="padding-left:26px">Deep learning approaches to reinforcement learning</td><td class="id">407</td></tr>
+<tr><td style="padding-left:26px">Use cases for reinforcement learning</td><td class="id">415</td></tr>
+<tr><td class="id" colspan="2"><b>11 Large language models</b></td></tr>
+<tr><td style="padding-left:26px">What are LLMs?</td><td class="id">419</td></tr>
+<tr><td style="padding-left:26px">The intuition behind language prediction</td><td class="id">421</td></tr>
+<tr><td style="padding-left:26px">Prepare the training data</td><td class="id">426</td></tr>
+<tr><td style="padding-left:26px">Encoding: From text to numbers</td><td class="id">433</td></tr>
+<tr><td style="padding-left:26px">Encoding: Creating trainable embeddings</td><td class="id">448</td></tr>
+<tr><td style="padding-left:26px">Self-attention: Start training the LLM</td><td class="id">457</td></tr>
+<tr><td style="padding-left:26px">Decoding: Finding meaning through neural networks</td><td class="id">472</td></tr>
+<tr><td style="padding-left:26px">Control the LLM</td><td class="id">486</td></tr>
+<tr><td style="padding-left:26px">Refining LLMs with reinforcement learning</td><td class="id">491</td></tr>
+<tr><td style="padding-left:26px">LLMs and Mixture of Experts</td><td class="id">492</td></tr>
+<tr><td style="padding-left:26px">LLMs and retrieval-augmented generation</td><td class="id">492</td></tr>
+<tr><td style="padding-left:26px">Use cases for LLMs</td><td class="id">493</td></tr>
+<tr><td class="id" colspan="2"><b>12 Generative image models</b></td></tr>
+<tr><td style="padding-left:26px">What are generative image models?</td><td class="id">499</td></tr>
+<tr><td style="padding-left:26px">The intuition behind image generation</td><td class="id">502</td></tr>
+<tr><td style="padding-left:26px">A generative image model training workflow</td><td class="id">504</td></tr>
+<tr><td style="padding-left:26px">Prepare the image training data</td><td class="id">505</td></tr>
+<tr><td style="padding-left:26px">Embedding: From images to numbers</td><td class="id">509</td></tr>
+<tr><td style="padding-left:26px">Design the architecture</td><td class="id">523</td></tr>
+<tr><td style="padding-left:26px">Denoise: From numbers to an image</td><td class="id">534</td></tr>
+<tr><td style="padding-left:26px">Train: Calculate loss and backpropagation</td><td class="id">561</td></tr>
+<tr><td style="padding-left:26px">Generating an image</td><td class="id">565</td></tr>
+<tr><td style="padding-left:26px">Controlling the diffusion model</td><td class="id">572</td></tr>
+<tr><td style="padding-left:26px">Refining aesthetics with human feedback</td><td class="id">578</td></tr>
+<tr><td style="padding-left:26px">Use cases for image generation</td><td class="id">579</td></tr>
+<tr><td class="id" colspan="2"><b>index</b></td></tr>
+</tbody></table></div>
+
+<h3><span class="sn">F.6</span>八个自测问题</h3>
+<div class="quiz">
+<div class="quiz-q"><span class="qmark">Q1</span><span>BFS 在无权图上第一次到达即最短，为什么？如果图带权，这个论证哪里断了？</span></div>
+<div class="quiz-exp show">BFS 按层展开，任何更短路径都会先被访问。带权后「边数少」不等于「代价小」，一条 3 条短边的路可能比 1 条长边便宜。</div>
+<div class="quiz-q"><span class="qmark">Q2</span><span>A* 的 $h$ 高估了会怎样？为什么「一致」比「可采纳」更强？</span></div>
+<div class="quiz-exp show">高估会让算法绕开实际更优的路径。一致性 $h(n)\le c+h(n')$ 蕴含可采纳，并保证图搜索中每个节点只需展开一次。</div>
+<div class="quiz-q"><span class="qmark">Q3</span><span>遗传算法的「选择」和「变异」分别在调节什么？</span></div>
+<div class="quiz-exp show">选择 = 利用（让好解留下），变异 = 探索（注入新基因）。两者比例决定早熟收敛还是随机游走。</div>
+<div class="quiz-q"><span class="qmark">Q4</span><span>ACO 里如果去掉蒸发，会发生什么？</span></div>
+<div class="quiz-exp show">早期错误路径的信息素只增不减，正反馈锁死在次优解，蚂蚁不再探索。</div>
+<div class="quiz-q"><span class="qmark">Q5</span><span>PSO 的 $c_1$ 远大于 $c_2$ 时，群会表现成什么样？</span></div>
+<div class="quiz-exp show">粒子更相信自己的历史最优，群会散开、收敛慢，像一群「怀旧者」。</div>
+<div class="quiz-q"><span class="qmark">Q6</span><span>决策树的 Gini 增益为 0，说明什么？</span></div>
+<div class="quiz-exp show">这个切分没有降低不纯度，左右两边的类别分布和切之前一样，不该选它。</div>
+<div class="quiz-q"><span class="qmark">Q7</span><span>Q-learning 的 $\gamma=0$ 与 $\gamma=0.9$ 分别对应什么行为？</span></div>
+<div class="quiz-exp show">$\gamma=0$ 只看即时奖励，短视；$\gamma=0.9$ 重视未来，愿意为长远回报忍受短期负奖励。</div>
+<div class="quiz-q"><span class="qmark">Q8</span><span>扩散模型训练时，为什么可以「直接跳到任意 $t$」而不必逐步加噪？</span></div>
+<div class="quiz-exp show">因为 $x_t=\sqrt{\bar\alpha_t}x_0+\sqrt{1-\bar\alpha_t}\epsilon$ 是闭式解，$\bar\alpha_t$ 已把前 $t$ 步的衰减累乘进去。</div>
+</div>
+
+<h3><span class="sn">F.7</span>最后三句话</h3>
+<div class="intuition">
+<div class="ih">记住</div>
+<p><b>表示决定难度。</b>同一个问题，换个状态定义、换个编码，难度可能差一个数量级。<br>
+<b>没有免费午餐。</b>每个算法都有假设；假设不成立时，它给出的答案看起来仍然合理，这是最危险的。<br>
+<b>先基线，再先进。</b>规则、均值、线性回归往往能告诉你「问题是否值得用 AI」；跳过基线，通常是在给噪声建模。</p>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">全书最常见的五个错误</span></div>
+<div class="thm-body">
+<p>① <b>不定义状态就写搜索</b>：状态里该带的历史没带，算法会给出「看起来对但不可执行」的路径。② <b>把启发式当保证</b>：$h$ 高估、PSO 收敛、GA 找到的解，都只是「这次不错」，不是定理。③ <b>跳过基线</b>：先上大模型，再发现规则系统更准、更便宜。④ <b>用训练集证明泛化</b>：无论是决策树、Q-table 还是 LLM，训练分数都不算数。⑤ <b>忽略部署后的漂移</b>：数据分布会变，模型会退化，没有监控的模型等于定时炸弹。</p>
+</div>
+</div>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>如果只记一张表</th><th>记这一列</th></tr></thead>
+<tbody>
+<tr><td class="id">搜索</td><td>状态、队列、访问标记、父指针</td></tr>
+<tr><td class="id">A*</td><td>$f=g+h$，$h$ 不高估</td></tr>
+<tr><td class="id">对抗</td><td>MAX/MIN 交替，$\alpha\ge\beta$ 剪枝</td></tr>
+<tr><td class="id">GA</td><td>编码 → 适应度 → 选择 → 交叉/变异 → 更替</td></tr>
+<tr><td class="id">ACO</td><td>$\tau^\alpha\eta^\beta$ 选路，蒸发 + 沉积</td></tr>
+<tr><td class="id">PSO</td><td>$wv+c_1r_1(p-x)+c_2r_2(g-x)$</td></tr>
+<tr><td class="id">ML</td><td>清洗 → 划分 → 训练 → 测试 → 迭代</td></tr>
+<tr><td class="id">ANN</td><td>前向复合，反向链式，$w\leftarrow w-\eta\nabla$</td></tr>
+<tr><td class="id">RL</td><td>$Q\leftarrow Q+\alpha[r+\gamma\max Q'-Q]$</td></tr>
+<tr><td class="id">LLM</td><td>token → 嵌入 → 注意力 → 下一个 token</td></tr>
+<tr><td class="id">Diffusion</td><td>加噪学噪声，反向逐步去噪</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="small" style="margin-top:2em">本页依据 Rishal Hurbans《Grokking AI Algorithms, Second Edition》整理。补充章（模拟退火 / 约束满足）为原书之外的内容，已在章首标注；其余章节的算法、参数、数字与例子均对应原书对应章节。证明与推导给的是思路与关键步骤，不是逐字翻译。</p>
 </div>
 </section>
 
@@ -1519,7 +3252,7 @@ def add_noise(x0, t, eps):
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 Rishal Hurbans 的《Grokking AI Algorithms》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1527,7 +3260,7 @@ def add_noise(x0, t, eps):
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>12 章 · 594 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
@@ -1717,7 +3450,8 @@ window.MathJax = {
       norm: ['{\\left\\|#1\\right\\|}', 1], abs: ['{\\left|#1\\right|}', 1],
       loc: '{\\mathrm{loc}}', dist: '{\\operatorname{dist}}', spt: '{\\operatorname{spt}}',
       osc: '{\\operatorname{osc}}', dH: '{d_H}', pa: '{\\partial}',
-      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}'
+      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}',
+      boldsymbol: ['{\\mathbf{#1}}', 1], bm: ['{\\mathbf{#1}}', 1]
     }
   },
   svg: { fontCache: 'local', scale: 1.02 },
