@@ -432,24 +432,33 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · THEORY</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">Collected Works of A. M. Turing
       <span></span>
     </div>
-    <div class="sb-meta"><b>7</b> 章 · <b>307</b> 页</div>
+    <div class="sb-meta">307 页 · 18 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
-    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>可计算数：把“有限手段”变成数学对象</span></a>
-    <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>图灵机：五条动作与一台通用机器</span></a>
-    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>停机、对角线与被判死的判定问题</span></a>
-    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>序数逻辑与 oracle：当一台机器知道得更多</span></a>
-    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>Enigma：用逻辑闭环和贝叶斯证据破译</span></a>
-    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>形态发生：扩散如何把均匀变成图案</span></a>
-    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>机器智能与模仿游戏</span></a>
-    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
+    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>读法：图灵的四次转向与一卷书的结构</span></a>
+    <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>可计算数：把“有限手段”变成数学对象</span></a>
+    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>通用机、修正与 λ-可定义性</span></a>
+    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>对角线、circle-free 与判定问题的死局</span></a>
+    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>序数逻辑：把不完备性推到“记号”这一层</span></a>
+    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>Oracle 机：把“不可判定”变成一张分层地图</span></a>
+    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>类型论 I：丘奇系统、形式定理与点号括号</span></a>
+    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>类型论 II：让数学家“在证明里看见类型”</span></a>
+    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>Enigma：用逻辑闭环和机械排除破译</span></a>
+    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>证据的重量：Banburismus 与最小代价序贯分析</span></a>
+    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>ACE：把通用机变成一台真的存储程序计算机</span></a>
+    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>编程：从“写指令”到“组织一个可调试的系统”</span></a>
+    <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>形态发生：扩散如何把均匀变成图案</span></a>
+    <a class="nav-link" href="#ch14" data-sec="ch14"><span class="nav-num">14</span> <span>机器智能：无组织机器、儿童机器与“教育”</span></a>
+    <a class="nav-link" href="#ch15" data-sec="ch15"><span class="nav-num">15</span> <span>模仿游戏：把“机器能思考吗”换成可操作的盲测</span></a>
+    <a class="nav-link" href="#ch16" data-sec="ch16"><span class="nav-num">16</span> <span>未竟的物理与身后声名：Hodges、Gandy 与 Newman</span></a>
+    <a class="nav-link" href="#ch17" data-sec="ch17"><span class="nav-num">17</span> <span>全书工具箱：一张纸上的图灵</span></a>
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
@@ -476,679 +485,1463 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="top" class="hero"><div class="wrap">
   <div class="hero-grid">
     <div>
-      <div class="hero-kicker">Collected Works · A. M. Turing</div>
+      <div class="hero-kicker">Collected Works · A. M. Turing · Mathematical Logic</div>
       <h1>图灵全集<span class="en">Machines, Logic, and Patterns</span></h1>
-      <p class="hero-sub">从<b>可计算数</b>到<b>形态发生</b>，图灵一生反复做同一件事：把一个模糊的直觉——“机械地算”“有效地判定”“自然地长出图案”——改写成可以严格讨论的对象，然后追问它的边界。</p>
+      <p class="hero-sub">从<b>可计算数</b>到<b>形态发生</b>，图灵反复做同一件事：把一个模糊的直觉——“机械地算”“有效地判定”“自然地长出图案”——改写成有限规则、有限状态或可观测行为，然后追问它的边界。这本《Mathematical Logic》卷把 1936–1954 年的论文、未刊手稿、密码分析报告与书信放在同一条线上。</p>
       <div class="hero-actions">
         <a class="btn" href="#ch1">从 1936 年的问题开始</a>
-        <a class="btn ghost" href="#summary">直接看工具箱</a>
+        <a class="btn ghost" href="#ch17">直接看全书工具箱</a>
       </div>
       <div class="hero-stats">
-        <div class="hstat"><b>1936</b><span>可计算数</span></div>
-        <div class="hstat"><b>7</b><span>章主线</span></div>
-        <div class="hstat"><b>5</b><span>领域</span></div>
-        <div class="hstat"><b>1</b><span>个论题</span></div>
+        <div class="hstat"><b>18</b><span>个 section</span></div>
+        <div class="hstat"><b>1936–54</b><span>写作跨度</span></div>
+        <div class="hstat"><b>7</b><span>原始章节文件</span></div>
+        <div class="hstat"><b>1</b><span>条方法论主线</span></div>
       </div>
     </div>
     <div class="hero-art">
-      <svg viewBox="0 0 420 440" role="img" aria-label="无限纸带与读写头示意">
+      <svg viewBox="0 0 420 440" role="img" aria-label="无限纸带、读写头与二进制符号">
         <defs>
-          <pattern id="heroGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+          <pattern id="heroGridT" width="24" height="24" patternUnits="userSpaceOnUse">
             <path d="M24 0H0V24" fill="none" stroke="#1c1b18" stroke-opacity=".055"/>
           </pattern>
         </defs>
-        <rect width="420" height="440" fill="url(#heroGrid)"/>
+        <rect width="420" height="440" fill="url(#heroGridT)"/>
         <g stroke="#1c1b18" fill="none" stroke-width="2">
-          <path d="M10 196h18M392 196h18" stroke-dasharray="5 7" opacity=".45"/>
-          <rect x="26" y="196" width="368" height="92" rx="7"/>
-          <path d="M72 196v92M118 196v92M164 196v92M210 196v92M256 196v92M302 196v92M348 196v92" opacity=".55"/>
+          <path d="M8 204h18M394 204h18" stroke-dasharray="5 7" opacity=".45"/>
+          <rect x="24" y="204" width="372" height="92" rx="7"/>
+          <path d="M70 204v92M116 204v92M162 204v92M208 204v92M254 204v92M300 204v92M346 204v92" opacity=".55"/>
+        </g>
+        <g font-family="Georgia,serif" font-size="22" fill="#1c1b18" text-anchor="middle">
+          <text x="47" y="260">0</text><text x="93" y="260">1</text><text x="139" y="260">1</text>
+          <text x="185" y="260">0</text><text x="231" y="260">1</text><text x="277" y="260">0</text>
+          <text x="323" y="260">0</text><text x="369" y="260">1</text>
         </g>
         <g fill="#b23a26">
-          <circle cx="49" cy="242" r="7"/>
-          <circle cx="141" cy="242" r="7"/>
-          <circle cx="233" cy="242" r="7"/>
-          <circle cx="325" cy="242" r="7"/>
-        </g>
-        <g fill="none" stroke="#1c1b18" stroke-width="2">
-          <circle cx="95" cy="242" r="5.5"/>
-          <circle cx="279" cy="242" r="5.5"/>
-          <circle cx="371" cy="242" r="5.5"/>
+          <circle cx="47" cy="242" r="5"/><circle cx="139" cy="242" r="5"/>
+          <circle cx="231" cy="242" r="5"/><circle cx="323" cy="242" r="5"/>
         </g>
         <g stroke="#1c1b18" fill="#faf6ec" stroke-width="2">
           <rect x="150" y="112" width="120" height="58" rx="11"/>
-          <circle cx="172" cy="170" r="9"/>
-          <circle cx="248" cy="170" r="9"/>
+          <circle cx="172" cy="170" r="9"/><circle cx="248" cy="170" r="9"/>
         </g>
-        <path d="M210 170v26" stroke="#b23a26" stroke-width="3"/>
-        <path d="M210 186l-6-9h12z" fill="#b23a26" stroke="none"/>
+        <path d="M210 170v30" stroke="#b23a26" stroke-width="3"/>
+        <path d="M210 190l-6-9h12z" fill="#b23a26" stroke="none"/>
         <g stroke="#1c1b18" stroke-width="2" fill="none" opacity=".6">
           <path d="M176 112l-13-18M244 112l13-18"/>
           <path d="M163 94h-9M257 94h9"/>
         </g>
-        <g stroke="#b23a26" stroke-width="1.6" fill="none" opacity=".55">
-          <path d="M30 318h120M190 318h200"/>
-          <path d="M150 318l-8-5v10zM190 318l8-5v10z" fill="#b23a26" stroke="none"/>
+        <g fill="#11645c" font-family="PingFang SC,sans-serif" font-size="11">
+          <text x="150" y="88">m-configuration</text>
+          <text x="24" y="330">tape · squares · scanned symbol</text>
         </g>
       </svg>
-      <div class="caption">纸带无限长，但任何有限时刻只用有限格；规则有限，运行时间不限。这个“有限描述 + 无限展开”的组合，是图灵全部论证的起点。</div>
+      <div class="caption">纸带可以无限长，但任何有限时刻只用了有限格；规则可以很少，但运行时间不限。这个“有限描述 + 无限展开”的组合，是图灵全部论证的起点。</div>
     </div>
   </div>
-  <div class="hero-bgword">TURING</div>
 </div></section>
 
 <section id="ch1" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 1 · 1936 · On Computable Numbers</div>
-  <h2><span class="num">1</span>可计算数：把“有限手段”变成数学对象</h2>
-  <p class="lede">1936 年，图灵要回答的不是“计算机能做什么”，而是“什么叫做一个机械过程”。只有先把这个词定义清楚，才可能证明某些事情机械过程做不到。</p>
+<div class="sec-label">导论 · Chronology · Preface to this Volume</div>
+<h2><span class="num">1</span>读法：图灵的四次转向与一卷书的结构</h2>
+<p class="lede">这本《Mathematical Logic》不是一部“图灵全集”的缩略本，而是按主题编排的一卷：Part I 可计算性与序数逻辑，Part II 类型论，Part III Enigma、编程与未竟问题。读它最有效的方式，不是按年份背结论，而是看图灵每次如何把“直觉”改写成“对象”，再证明这个对象有边界。</p>
 
-  <div class="chap-intro">
-    <p>《论可计算数及其在判定问题上的应用》同时做了三件事：定义可计算数、构造通用机、证明希尔伯特判定问题无解。它讨论的不是未来电脑，而是“计算”这个概念本身。</p>
-    <span class="tag">1936 · Proc. LMS</span>
-  </div>
+<div class="chap-intro">
+<p>本卷正文约 307 页，核心是 1936 年论可计算数的论文、1938 年序数逻辑、1942–1948 年类型论四篇，以及 Part III 收录的 Enigma 论文、编程手册节选、最小代价序数分析、Hodges 与 Gandy 的文字和 Newman 的皇家学会讣告。Morphogenesis 卷与 Mechanical Intelligence 卷的篇目在“Contents of Other Volumes”中列出，本教程按目录把它们纳入同一张地图。</p>
+<span class="tag">18 sections · 4 parts</span>
+</div>
 
-  <div class="mapchips">
-    <span class="chip hot">可计算数</span>
-    <span class="chip">有限手段</span>
-    <span class="chip">纸带</span>
-    <span class="chip">格局</span>
-    <span class="chip">判定问题</span>
-  </div>
+<div class="mapchips">
+<span class="chip hot">可计算数 (computable numbers)</span>
+<span class="chip">判定问题 (decision problem)</span>
+<span class="chip">序数逻辑 (ordinal logic)</span>
+<span class="chip">类型论 (type theory)</span>
+<span class="chip">密码分析 (cryptanalysis)</span>
+<span class="chip">存储程序 (stored program)</span>
+<span class="chip">形态发生 (morphogenesis)</span>
+</div>
 
-  <h3><span class="sn">1.1</span>原问题：给“算法”一个能用来证明不可能的定义</h3>
-  <p>1928 年，希尔伯特与阿克曼提出<strong>判定问题</strong>：是否存在一个确定的程序，对任意一阶公式，在有限步内判定它是否有效？要证明“不存在”，先得说清楚“程序”是什么。图灵转而观察一个真实的人做算术时的行为，把其中不可再简化的条件抽出来。</p>
+<h3><span class="sn">1.1</span>四个阶段，一条主线</h3>
+<p>图灵的写作可以粗分为四段。第一段是 1935–1939 年的逻辑工作：1936 年的 <em>On Computable Numbers, with an Application to the Entscheidungsproblem</em> 定义“机械计算”，构造通用机，并用对角线证明判定问题不可解；1937 年的 <em>A Correction</em> 修正了形式证明中的错误；同年的 <em>Computability and λ-definability</em> 与 <em>The p-function in λ-K Conversion</em> 把“可计算”与丘奇的 λ-可定义、克莱尼的一般递归联系起来；1938 年的 <em>Systems of Logic based on Ordinals</em> 则尝试用超限迭代克服哥德尔不完备。</p>
+<p>第二段是 1940–1945 年的战时工作。Part III 的 <em>Turing's Treatise on the Enigma</em> 不是一篇后来补写的回忆，而是 1940 年秋在布莱切利园写成的约 140 页打字稿，战后被称作“Prof's Book”。它先讲手工方法，再讲 Bombe 的机械逻辑，最后讲海军 Enigma 的双字母密钥系统。与它相邻的 <em>Minimum Cost Sequential Analysis</em> 把手上的统计实践写成理论：序贯检验、Bayes 因子、证据重量。</p>
+<p>第三段是 1945–1950 年的机器建设。图灵在国家物理实验室（NPL）提出 ACE（Automatic Computing Engine）方案，1947 年 2 月 20 日给伦敦数学会讲 <em>The Automatic Computing Engine</em>，把 1936 年的通用机与真实的存储程序机器接上。1948 年他到曼彻斯特，写《Programmer's Handbook for the Manchester Electronic Computer Mark II》的“Programming Principles”，并在 1949 年 EDSAC 会议上提交 <em>Checking a Large Routine</em>，这是程序验证的早期尝试。</p>
+<p>第四段是 1948–1954 年的“机器能否学习/思考”和“生物如何长出形状”。1948 年的 <em>Intelligent Machinery</em> 报告提出无组织机器与“儿童机器”；1950 年的 <em>Computing Machinery and Intelligence</em> 把“机器能思考吗”换成模仿游戏；1952 年的 <em>The Chemical Basis of Morphogenesis</em> 用反应–扩散方程解释均匀组织如何自发失稳；1953–1954 年他又转向量子力学与广义相对论，留下 Gandy 书信中的“来自未见世界的消息”。</p>
 
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">可计算数</span><span class="thm-id">1936, §1–2</span></div>
-    <div class="thm-body">
-      <p>实数 $\alpha$ 称为<strong>可计算的</strong>，如果存在一台只含有限条规则的机器，从空白纸带出发，能一个接一个地印出 $\alpha$ 的十进制展开的每一位。</p>
-      <p>不要求机器“算完”——实数的展开本来就是无限的；要求每一步都由有限规则唯一决定，而且机器永远不会卡死。图灵原文用十进制，换成二进制不改变实质。</p>
-    </div>
-  </div>
+<h3><span class="sn">1.2</span>本卷的三部分与“其他卷”</h3>
+<p><b>Part I: Computability and Ordinal Logics</b> 以 Solomon Feferman 的 <em>Historical Introduction</em> 开篇。Feferman 把 1936 年论文的论证拆成三段：A. 定义图灵机并论证任何人的计算都能被模仿；B. 构造通用机；C. 用对角线证明存在问题不可判定，再把机器计算形式化到谓词演算，得到判定问题不可解。这个“三段式”是理解全卷的骨架。</p>
+<p><b>Part II: Type Theory</b> 由一篇 <em>General Introduction to Turing's work on Type Theory</em> 领起，下面分 <em>Published Papers</em> 与 <em>Unpublished Papers</em>。已刊的是 1942 年与 Newman 合作的 <em>A Formal Theorem in Church's Theory of Types</em>、1942 年的 <em>The Use of Dots as Brackets in Church's System</em>、1948 年的 <em>Practical Forms of Type Theory</em>；未刊的是 1941 年的 <em>Some Theorems about Church's System</em>、1943–44 年的 <em>Practical Forms of Type Theory II</em>、1944–45 年的 <em>The Reform of Mathematical Notation</em>。</p>
+<p><b>Part III: The Enigma, Mysteries and Loose Ends</b> 由 Hodges 提议设立，收 <em>Turing's Treatise on the Enigma</em>（含 Hodges 序与六段节选）、<em>Turing's Papers on Programming</em>（含 Martin Campbell-Kelly 序与手册节选）、<em>Minimum Cost Sequential Analysis</em>（含 I. J. Good 评论）、Hodges 的 <em>The Nature of Turing and the Physical World</em>、<em>Letter from Robin Gandy to Max Newman, June 1954</em>，以及 Max Newman 的 <em>Royal Society Memoir</em>。</p>
+<p>书末的 <em>Contents of Other Volumes</em> 列出 <em>Mechanical Intelligence</em>（ACE 报告、1947 年讲演、1948 年智能机器报告、1949 年程序验证、1950 年 Mind 论文、1953 年计算机下棋、1954 年《可解与不可解问题》）与 <em>Morphogenesis</em>（1952 年论文、与 Wardlaw 的植物形态发生、叶序三篇、雏菊发育）。<em>Appendix: Matters Arising from Earlier Volumes</em> 补充了 ACE 讲座、1948 年报告的版本问题、1951/1952 年广播等。本教程把这些篇目放在第 11–15 节，不假装它们都印在这 307 页里，而是明确标注“其他卷篇目”。</p>
 
-  <h3><span class="sn">1.2</span>关键一步：把人肉计算机拆成五件事</h3>
-  <p>图灵在 §9 给出的“论证”是：一个按明确规则计算的人，任何时刻只能看到有限个符号，只有有限种心理状态，一次只能做一个局部动作。于是可以假设：</p>
-  <ul class="clean">
-    <li>纸带分成方格，每格只写有限字母表中的一个符号；</li>
-    <li>机器每刻只扫描一格，状态只有有限多个；</li>
-    <li>每步只做一件事：写、擦、左移、右移、改变状态；</li>
-    <li>下一步完全由“当前状态 + 当前符号”决定。</li>
-  </ul>
-  <p>这不是对“计算”的百科全书式描述，而是一个<strong>最小模型</strong>：更复杂的机械计算都可以拆成这些局部动作。</p>
+<h3><span class="sn">1.3</span>年表：从 1912 到 1954</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>年份</th><th>事件</th><th>与本卷的关系</th></tr></thead>
+<tbody>
+<tr><td class="id">1912</td><td>6 月 23 日生于伦敦</td><td>Newman 讣告的传记部分</td></tr>
+<tr><td class="id">1931</td><td>入剑桥国王学院</td><td>数学训练；1935 年因中心极限定理当选 Fellow</td></tr>
+<tr><td class="id">1935</td><td>听 Newman 的逻辑课；在 Grantchester 草地想到“主要想法”</td><td>1936 年论文的起点</td></tr>
+<tr><td class="id">1936</td><td>5 月 28 日收稿，11 月 12 日宣读；去普林斯顿随 Church</td><td><em>On Computable Numbers</em></td></tr>
+<tr><td class="id">1937</td><td>发表修正；两篇 λ 论文</td><td><em>A Correction</em>、<em>Computability and λ-definability</em></td></tr>
+<tr><td class="id">1938</td><td>回剑桥；<em>Systems of Logic based on Ordinals</em> 提交</td><td>序数逻辑</td></tr>
+<tr><td class="id">1939–45</td><td>布莱切利园；Hut 8；Bombe 与 Banburismus</td><td>Part III 的 Enigma 论文</td></tr>
+<tr><td class="id">1945–48</td><td>NPL；ACE 报告；1947 年伦敦数学会讲演</td><td>存储程序机器</td></tr>
+<tr><td class="id">1948</td><td>曼彻斯特大学 Reader；<em>Intelligent Machinery</em></td><td>编程与机器学习</td></tr>
+<tr><td class="id">1949</td><td>EDSAC 会议 <em>Checking a Large Routine</em></td><td>程序验证</td></tr>
+<tr><td class="id">1950</td><td><em>Computing Machinery and Intelligence</em>；Pilot ACE 运行</td><td>模仿游戏</td></tr>
+<tr><td class="id">1951</td><td>当选 FRS；5 月 15 日广播 <em>Can Digital Computers Think?</em></td><td>机器智能的公开辩论</td></tr>
+<tr><td class="id">1952</td><td><em>The Chemical Basis of Morphogenesis</em></td><td>反应–扩散</td></tr>
+<tr><td class="id">1954</td><td>6 月 7 日去世；Gandy 致 Newman 信</td><td>未竟的物理与形态发生工作</td></tr>
+</tbody>
+</table></div>
 
-  <div class="intuition">
-    <div class="ih">直觉</div>
-    <p>纸带无限，但任何有限时刻只用了有限格；规则有限，但运行时间不限。这个“有限描述 + 无限展开”的组合，正是图灵能把“算法”变成数学对象的原因。</p>
-  </div>
+<div class="intuition">
+<div class="ih">读法建议</div>
+<p>第一遍只读每篇的“问题—构造—边界”三件事；第二遍再补形式细节。图灵的论文常常把最关键的论证放在脚注或 §9 这种“事后辩护”里，先抓主线才不会陷进编码表。</p>
+</div>
 
-  <h3><span class="sn">1.3</span>手算例子：一台只印 0 和 1 的机器</h3>
-  <p>两个状态 $q_1,q_2$，字母表只有 $0,1$ 和空白。转移规则：$q_1$ 读到空白写 0、右移、转到 $q_2$；$q_2$ 读到空白写 1、右移、转回 $q_1$。从空白纸带出发，机器印出</p>
-  <p>$$0.01010101\ldots_2=\frac14+\frac1{16}+\frac1{64}+\cdots=\frac{1/4}{1-1/4}=\frac13.$$</p>
-  <p>所以 $1/3$ 是可计算数。注意机器从不停机：它每印一位就右移一格，永远不会“完成”这个无限小数。图灵的定义允许这种持续产生输出的计算；这与“程序必须停机才算给出答案”的直觉不同。</p>
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">注意</span><span class="thm-title">不要把“全集”读成“统一理论”</span><span class="thm-id">版本说明</span></div>
+<div class="thm-body">
+<p>图灵没有写过一个统一的“图灵哲学”。可计算性、序数逻辑、类型论、密码分析、机器智能、形态发生，是他用同一套方法反复处理不同对象。把后期观点倒推回 1936 年，或者把 1950 年的模仿游戏当成“智能的定义”，都会读丢论文原本的限定条件。</p>
+</div>
+</div>
 
-  <h3><span class="sn">1.4</span>为什么今天仍重要</h3>
-  <p>可计算性的定义不依赖具体硬件：纸带可以换成内存，状态可以换成寄存器，得到的“可计算函数”类不变。这种<strong>模型独立性</strong>使“可计算”成为自然的数学概念；后来 Church 的 λ 演算与 Kleene 的递归函数给出等价模型，构成丘奇-图灵论题的经验基础。复杂度理论再往上加时间、空间预算，才得到 P、NP 这些问题。</p>
-
-  <div class="table-wrap cheat">
-    <table>
-      <thead><tr><th>概念</th><th>精确含义</th><th>常见误读</th></tr></thead>
-      <tbody>
-        <tr><td class="id">可计算数</td><td>有限规则机器能无限印出其展开的每一位</td><td>以为必须有限步“算完”</td></tr>
-        <tr><td class="id">可计算序列</td><td>机器按顺序印出的无限 0/1 序列</td><td>与可计算数完全等同</td></tr>
-        <tr><td class="id">判定过程</td><td>每个输入都在有限步内给出是/否</td><td>以为“跑很久总能出结果”也算</td></tr>
-        <tr><td class="id">有效可枚举</td><td>机器按顺序列出集合元素</td><td>与“可判定”混为一谈</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三个容易混淆的边界</span></div>
-    <div class="thm-body">
-      <p><strong>可计算不等于实际可算。</strong>一个数可能原则上有机器能印出，但所需步数超过宇宙寿命；可计算性只问“是否存在有限规则”，不问资源。</p>
-      <p><strong>无限纸带不等于无限内存。</strong>机器在任何有限时刻只用了有限格；纸带的无限性只是保证它不会“写到头”。</p>
-      <p><strong>“可定义”不是“可计算”的同义词。</strong>“可定义”本身需要先指定形式语言；换一个语言，能定义的实数集合就变了。</p>
-    </div>
-  </div>
+<h3><span class="sn">1.4</span>版本与插图说明</h3>
+<p>卷首有 <em>Frontispiece</em>（卷首肖像）、<em>Copyright</em> 页、<em>Acknowledgements</em> 与两篇序：主编 R. O. Gandy 与 C. E. M. Yates 的 <em>Preface</em>，以及 <em>Preface to this Volume</em>。Gandy 在 1995 年去世前已写下部分序言草稿；本卷由 Yates 完成。书中的公式按原始论文重排；Enigma 节的插图在原书中是打字稿与照片的影印，本教程用文字重建其逻辑，不伪造图像细节。</p>
 </div></section>
 
 <section id="ch2" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 2 · 1936 · The Machine</div>
-  <h2><span class="num">2</span>图灵机：五条动作与一台通用机器</h2>
-  <p class="lede">图灵机不是一台具体的机器，而是一个“最小模型”：只要有限状态、有限字母和局部动作，就能表达任何机械计算。更惊人的是，这些机器可以互相描述。</p>
+<div class="sec-label">1936 · On Computable Numbers, with an Application to the Entscheidungsproblem</div>
+<h2><span class="num">2</span>可计算数：把“有限手段”变成数学对象</h2>
+<p class="lede">图灵要回答的不是“计算机能做什么”，而是“什么叫做一个机械过程”。只有先把这个词定义清楚，才可能证明某些事情机械过程做不到。1936 年论文的第一句话就给出承诺：可计算数是“其十进制展开能由有限手段算出的实数”。</p>
+<p class="note">原文开头的 “decimal” 是口语用法；§2 的形式定义改用二进制小数 (binary decimal)。换基底不改变可计算性，但读公式时要记住：图灵机器印出的 0/1 序列默认是二进制位。</p>
 
-  <div class="chap-intro">
-    <p>图灵在 §1–§5 把“计算的人”抽象成机器，在 §6 构造通用机。通用机是“存储程序”最早的严格数学形态：程序不是机器之外的东西，而是可以写在纸带上的数据。</p>
-    <span class="tag">1936 · §1–§6</span>
-  </div>
+<div class="chap-intro">
+<p>论文收稿于 1936 年 5 月 28 日，1936 年 11 月 12 日宣读，1937 年发表于 Proc. London Math. Soc.。图灵在 §1–§5 建立机器、格局、可计算序列与描述数；§6–§7 构造通用机；§8 用对角线证明 circle-free 不可判定；§9 论证“可计算”覆盖所有自然认为可计算的东西；§10 给出大量可计算数；§11 归约到判定问题。</p>
+<span class="tag">§1–§5 · 定义与例子</span>
+</div>
 
-  <div class="mapchips">
-    <span class="chip hot">m-configuration</span>
-    <span class="chip">格局</span>
-    <span class="chip">转移表</span>
-    <span class="chip">通用机</span>
-    <span class="chip">编码</span>
-  </div>
+<div class="mapchips">
+<span class="chip hot">可计算数 (computable numbers)</span>
+<span class="chip">m-configuration</span>
+<span class="chip">格局 (configuration)</span>
+<span class="chip">circle-free</span>
+<span class="chip">描述数 (description number)</span>
+<span class="chip">F-squares / E-squares</span>
+</div>
 
-  <h3><span class="sn">2.1</span>定义：一台机器就是一个偏函数</h3>
-  <p>现代教材通常把图灵机写成七元组；这是等价改写，不是图灵当年的记号。</p>
+<h3><span class="sn">2.1</span>原问题：给“算法”一个能用来证明不可能的定义</h3>
+<p>1928 年，希尔伯特与阿克曼提出 <b>判定问题 (decision problem, Entscheidungsproblem)</b>：是否存在一个确定的程序，对任意一阶公式，在有限步内判定它是否有效？要证明“不存在”，先得说清楚“程序”是什么。图灵没有从形式系统出发，而是观察一个真实的人做算术：他只有有限视野、有限记忆、一次只能改一个格子。把这些人身限制抽象掉，剩下的就是机器。</p>
 
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">图灵机（标准写法）</span><span class="thm-id">等价改写</span></div>
-    <div class="thm-body">
-      <p>$$M=(Q,\Gamma,b,\Sigma,\delta,q_0,q_{\mathrm{halt}}),$$</p>
-      <p>$Q$ 是有限状态集，$\Gamma$ 是有限纸带字母表，$b$ 是空白符，$\Sigma\subseteq\Gamma\setminus\{b\}$ 是输入字母表，$q_0$ 是初始状态，$q_{\mathrm{halt}}$ 是停机状态。转移函数</p>
-      <p>$$\delta:(Q\setminus\{q_{\mathrm{halt}}\})\times\Gamma\rightharpoonup Q\times\Gamma\times\{L,R\}$$</p>
-      <p>是偏函数：给定状态和扫描符号，它给出“写什么、往哪边移、下一状态”；没有定义时停机。</p>
-    </div>
-  </div>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">可计算序列与可计算数</span><span class="thm-id">1936, §2</span></div>
+<div class="thm-body">
+<p>一台<b>计算机器 (computing machine)</b> 只印两类符号：第一类叫<b>数字 (figures)</b>，只含 0 与 1；其余叫第二类符号。从空白纸带出发，机器印出的第一类符号组成的序列，叫它<b>计算的序列 (the sequence computed)</b>。在这个序列前加一个小数点，得到的二进制小数就是它<b>计算的数</b>。</p>
+<p>若机器只印出有限多个 0 或 1，称它<b>circular</b>；否则称它<b>circle-free</b>。一个序列是可计算的，如果存在一台 circle-free 机器计算它；一个实数是可计算的，如果它与某台 circle-free 机器计算的数只差一个整数。</p>
+</div>
+</div>
 
-  <p>“格局”是某一时刻的完整快照：当前状态、纸带内容、读写头位置。一步计算就是一个格局到下一个格局。图灵原文用 $m$-configuration 表示状态，用“扫描符号”和“格局”描述同一件事；术语不同，结构相同。</p>
+<p>这里有两个容易读错的点。第一，图灵用“circle-free”而不是“halts”：机器可以永远运行，只要它无限多次印出 0 或 1。第二，“可计算数”不要求机器把无限展开“算完”；它要求每一步由有限规则唯一决定，而且数字会不断产生。后来教材把“停机”当作中心概念，是为了教学方便；图灵原文的中心是“无限序列是否被不断印出”。</p>
 
-  <pre><code class="language-python">def step(delta, tape, head, q):
-    if (q, tape[head]) not in delta:
-        return None                 # 停机
-    write, move, q2 = delta[(q, tape[head])]
-    tape[head] = write
-    head += 1 if move == "R" else -1
-    return q2</code></pre>
+<h3><span class="sn">2.2</span>机器：五条动作与“格局”</h3>
+<p>图灵原文的机器没有“七元组”的现代写法。它由有限个 <b>m-configuration</b>（可理解为“心态/状态”）、一条分成方格的纸带、一个读写头组成。每一刻，机器只直接知道三件事：当前 m-configuration、扫描格上的符号、以及由前两者决定的下一步。三者合起来叫<b>格局 (configuration)</b>；加上整条纸带内容与读写头位置，叫<b>完全格局 (complete configuration)</b>。</p>
+<p>一步只能做一件局部的事：写一个符号、擦一个符号、左移一格、右移一格，或改变 m-configuration。图灵允许把“写并移动”写成一条缩写指令，但本质上仍是这些原子动作的组合。§9 的论证是：人做计算时，任何时刻只能观察有限个格子，只有有限种“心态”，一次只能改一个格子；因此上述限制不失一般性。</p>
 
-  <h3><span class="sn">2.2</span>通用机：把程序放到纸带上</h3>
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">对照</span><span class="thm-title">现代七元组写法</span><span class="thm-id">等价改写</span></div>
+<div class="thm-body">
+<p>$$M=(Q,\Gamma,b,\Sigma,\delta,q_0,q_{\mathrm{halt}}),$$</p>
+<p>$Q$ 是有限状态集，$\Gamma$ 是有限纸带字母表，$b$ 是空白符，$\Sigma\subseteq\Gamma\setminus\{b\}$ 是输入字母表，$q_0$ 是初始状态，$\delta:(Q\setminus\{q_{\mathrm{halt}}\})\times\Gamma\rightharpoonup Q\times\Gamma\times\{L,R\}$ 是偏函数。没有定义时停机。图灵的 m-configuration 对应 $Q$，扫描符号对应 $\Gamma$，格局对应“状态 + 纸带 + 头位置”。</p>
+</div>
+</div>
 
-  <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">通用图灵机的存在性</span><span class="thm-id">1936, §6</span></div>
-    <div class="thm-body">
-      <p>存在图灵机 $U$，使得对任意机器 $M$ 和输入 $x$，$U$ 在输入 $\langle M\rangle x$ 上模拟 $M$ 在 $x$ 上的计算；$\langle M\rangle$ 是 $M$ 的转移表的有效编码。</p>
-      <p><strong>构造思路：</strong>把 $M$ 的状态、字母表和规则编码成纸带符号。$U$ 先读这段“程序”，把 $M$ 的当前状态和模拟纸带记在自己的纸带上，然后逐步查表、改写、移动。$U$ 只需有限多个状态，因为它模拟的是“查表”这个固定动作。</p>
-    </div>
-  </div>
+<h3><span class="sn">2.3</span>第一个例子：交替印 0 和 1</h3>
+<p>图灵在 §3 给出一个四状态的机器，从空白纸带开始印出 $010101\ldots$。用现代转移表可以写得更短：状态 $q_0$ 读到空白写 0、右移、转到 $q_1$；$q_1$ 读到空白写 1、右移、转回 $q_0$。于是纸带上依次出现</p>
+<p>$$0.01010101\ldots_2=\frac14+\frac1{16}+\frac1{64}+\cdots=\frac{1/4}{1-1/4}=\frac13.$$</p>
+<p>所以 $1/3$ 是可计算数。机器从不停机；它每印一位就右移一格，永远不会“完成”这个无限小数。这个例子同时说明：可计算性允许“持续产生输出”的计算，不能用“程序是否终止”来定义。</p>
 
-  <p>通用机的关键不是“更快”或“更大”，而是<strong>自描述</strong>：机器的描述和输入可以放在同一条纸带上。于是“写程序”变成“写符号串”，解释器和虚拟机在概念上都有了落脚点。</p>
+<h3><span class="sn">2.4</span>F-squares 与 E-squares：纸带上的“草稿纸”</h3>
+<p>图灵在构造复杂机器时采用一个非常实用的约定：纸带分成交替的两类格子。<b>F-squares</b> 只放最终数字（0 或 1），形成连续的序列；<b>E-squares</b> 放辅助符号，可以被擦除、改写。若在 F-square $S$ 上写符号 $\beta$，并在它右边的 E-square 上写 $\alpha$，就说 $S$ 或 $\beta$ 被 $\alpha$ <b>标记 (marked)</b>。这样，机器可以在不污染输出序列的前提下做“笔记”。</p>
+<p>这个设计不是装饰。通用机要在同一条纸带上同时保存“被模拟机器的描述”“被模拟机器的纸带”“模拟器自己的草稿”，没有 F/E 分区几乎无法组织。后来的“程序与数据同带”思想，在这里已经有了物理位置上的雏形。</p>
 
-  <h3><span class="sn">2.3</span>手算例子：翻转纸带上的 0 和 1</h3>
-  <p>机器只有一个状态 $q_1$：读到 0 写 1、右移、留在 $q_1$；读到 1 写 0、右移、留在 $q_1$；读到空白则停机。输入 001：</p>
+<h3><span class="sn">2.5</span>描述数与标准描述</h3>
+<p>为了把机器当作输入，图灵把每台机器的转移表编码成一个有限符号串。标准描述（standard description, S.D.）由若干条指令组成，每条指令用五个部分描述：当前 m-configuration、扫描符号、写入符号、移动方向（L/R/N）、下一 m-configuration。把符号换成数字，就得到<b>描述数 (description number, D.N.)</b>。</p>
+<p>编码方式不唯一，但“可编码”这件事本身是关键：机器成为有限对象，才能被另一台机器读取、比较、模拟。这也让“对角线”成为可能——我们可以把所有机器按描述数排成一列，然后构造一台“在每一行都做出相反回答”的机器。</p>
 
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>步</th><th>读到</th><th>动作</th><th>纸带（箭头为读写头）</th></tr></thead>
-      <tbody>
-        <tr><td>0</td><td>0</td><td>写 1，右移</td><td>→001</td></tr>
-        <tr><td>1</td><td>0</td><td>写 1，右移</td><td>1→01</td></tr>
-        <tr><td>2</td><td>1</td><td>写 0，右移</td><td>11→0</td></tr>
-        <tr><td>3</td><td>空白</td><td>停机</td><td>110→</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>输出是 110。这个例子包含全部要素：有限状态、局部读写、单向移动、由空白触发停机。通用机做的事情，就是把这张表换成“从纸带上读出来的表”，再照做一遍。</p>
+<h3><span class="sn">2.6</span>§9 的辩护：为什么这些限制不丢失计算</h3>
+<p>图灵知道定义看起来太窄，所以 §9 专门辩护。他的论证分三类：(a) 直接诉诸直觉：计算是在纸上写符号，纸的二维性可以避免，符号数有限，心态数有限；(b) 证明等价定义：把“状态”换成“写在纸带上的下一条指令”，得到“状态公式”，仍可被机器逐步写出；(c) 给出大量可计算数的例子：代数数、$\pi$、$e$、Bessel 函数的实零点等。</p>
+<p>他特别讨论了一个反例式的细节：如果允许无限多个符号，就会有“任意接近”的符号而无法可靠区分；如果允许无限多个心态，也会有“任意接近”的心态。把符号或心态换成更长的符号串，可以用时间换空间，不改变可计算性。这个论证不是形式证明，而是“论题”的辩护；后来 Church–Turing Thesis 的名字就来自这里。</p>
 
-  <h3><span class="sn">2.4</span>为什么今天仍重要</h3>
-  <p>存储程序、解释器、虚拟机、编译器，甚至“程序即数据”的安全问题，都可追溯到通用机。它也是不可判定性证明的载体：只有先把机器编码成有限字符串，才能问“机器 $M$ 在输入 $x$ 上会不会停”这类关于所有程序的问题。</p>
-  <div class="table-wrap cheat">
-    <table>
-      <thead><tr><th>概念</th><th>含义</th><th>注意</th></tr></thead>
-      <tbody>
-        <tr><td class="id">状态</td><td>有限个“心理状态”</td><td>不是内存地址</td></tr>
-        <tr><td class="id">格局</td><td>状态 + 纸带 + 读写头位置</td><td>一步计算作用于格局</td></tr>
-        <tr><td class="id">通用机</td><td>读描述 $\langle M\rangle$ 并模拟 $M$</td><td>不是“解决所有问题”</td></tr>
-        <tr><td class="id">编码</td><td>把机器表写成有限符号串</td><td>编码方式不唯一，效果等价</td></tr>
-      </tbody>
-    </table>
-  </div>
+<h3><span class="sn">2.7</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>概念</th><th>精确含义</th><th>常见误读</th></tr></thead>
+<tbody>
+<tr><td class="id">可计算数</td><td>存在 circle-free 机器无限印出其二进制展开的每一位</td><td>以为必须有限步“算完”</td></tr>
+<tr><td class="id">可计算序列</td><td>机器按顺序印出的无限 0/1 序列</td><td>与“可计算数”完全等同（差一个整数）</td></tr>
+<tr><td class="id">circular</td><td>只印有限多个 0/1，之后不再印数字</td><td>等同于“停机”（不一定，可能一直动）</td></tr>
+<tr><td class="id">circle-free</td><td>无限多次印出 0/1</td><td>等同于“每步都印”（不要求）</td></tr>
+<tr><td class="id">m-configuration</td><td>有限个内部状态之一</td><td>现代意义的“内存地址”</td></tr>
+<tr><td class="id">格局</td><td>m-configuration + 扫描符号</td><td>整条纸带的完整快照（那是完全格局）</td></tr>
+<tr><td class="id">描述数</td><td>把标准描述编码成整数</td><td>机器的“源代码”本身（只是编码）</td></tr>
+</tbody>
+</table></div>
 
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">通用机不是“万能机”</span></div>
-    <div class="thm-body">
-      <p><strong>通用机不能解决不可判定问题。</strong>它能模拟任何机器，但不能替被模拟的机器做出它做不到的判定；下一章会证明这一点。</p>
-      <p><strong>“图灵完备”不等于“什么都能做”。</strong>它只表示能模拟任意图灵机；资源、接口、物理限制都不在定义里。</p>
-      <p><strong>纸带无限，但输入有限。</strong>无限纸带只是保证机器不会写到头；任何具体计算都只经过有限个格子。</p>
-    </div>
-  </div>
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三个容易混淆的边界</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>可计算不等于实际可算。</b>一个数可能原则上有机器能印出，但所需步数超过宇宙寿命；可计算性只问“是否存在有限规则”，不问资源。</p>
+<p><b>无限纸带不等于无限内存。</b>机器在任何有限时刻只用了有限格；纸带的无限性只是保证它不会“写到头”。</p>
+<p><b>“可定义”不是“可计算”的同义词。</b>图灵在 §10 明确指出：存在可定义但不可计算的实数，例如“第 $n$ 位是 1 当且仅当 $n$ 是 satisfactory 数”的序列。定义需要先指定形式语言；换一个语言，能定义的实数集合就变了。</p>
+</div>
+</div>
 </div></section>
 
 <section id="ch3" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 3 · 1936–1937 · Undecidability</div>
-  <h2><span class="num">3</span>停机、对角线与被判死的判定问题</h2>
-  <p class="lede">图灵先用对角线证明“没有机器能判定任意机器是否会无限印数”，再把这个问题归约到一阶逻辑的可证性。于是希尔伯特想要的那个“机械判定法”不仅没找到，而且不可能存在。</p>
+<div class="sec-label">1936–1937 · Universal Machine · A Correction · λ-Definability</div>
+<h2><span class="num">3</span>通用机、修正与 λ-可定义性</h2>
+<p class="lede">图灵在 §6 做了一件超出“判定问题”的事：他造了一台能读别的机器之描述的机器。通用机不是“更快的机器”，而是“自描述”的机器——程序成为纸带上的数据。这个构造后来成为存储程序计算机的数学原型，也让 1937 年的修正与 λ-演算的等价性有了共同语言。</p>
 
-  <div class="chap-intro">
-    <p>图灵原文的核心不可判定问题是“机器是否 circle-free（无限印出 0 或 1）”，不是今天常说的“是否停机”。两者可以互相归约，但读原文时要分清：图灵关心的是无限序列，不是程序终止。</p>
-    <span class="tag">1936 · §8–§11</span>
-  </div>
+<div class="chap-intro">
+<p>本节覆盖三段文本：1936 年论文 §6–§7 的通用机；1937 年 <em>A Correction</em> 对形式证明与可计算数定义的修补；1937 年 <em>Computability and λ-definability</em> 与 <em>The p-function in λ-K Conversion</em> 对“可计算 = λ-可定义 = 一般递归”的收尾。三段的共同问题是：机器、公式、函数这三种语言，什么时候说的是同一件事？</p>
+<span class="tag">§6–§7 · Correction · JSL 1937</span>
+</div>
 
-  <div class="mapchips">
-    <span class="chip hot">circle-free</span>
-    <span class="chip">对角线</span>
-    <span class="chip">归约</span>
-    <span class="chip">可证性</span>
-    <span class="chip">Church</span>
-  </div>
+<div class="mapchips">
+<span class="chip hot">通用机 (universal machine)</span>
+<span class="chip">标准描述 (S.D.)</span>
+<span class="chip">模拟 (simulation)</span>
+<span class="chip">λ-K 可定义</span>
+<span class="chip">一般递归 (general recursive)</span>
+<span class="chip">p-function</span>
+</div>
 
-  <h3><span class="sn">3.1</span>原问题：判定问题能否机械地解决</h3>
-  <p>判定问题问的是：是否存在一个算法，对任意一阶公式 $\varphi$，判定 $\varphi$ 是否有效。图灵不直接处理公式，而是先处理机器：如果连“某台机器会不会无限印数”都判不了，判定问题更不可能有解。</p>
+<h3><span class="sn">3.1</span>通用机：把程序放到纸带上</h3>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">通用图灵机的存在性</span><span class="thm-id">1936, §6</span></div>
+<div class="thm-body">
+<p>存在一台图灵机 $U$，使得对任意机器 $M$ 和输入 $x$，$U$ 在输入 $\langle M\rangle x$ 上模拟 $M$ 在 $x$ 上的计算；$\langle M\rangle$ 是 $M$ 的标准描述（S.D.）的有效编码。若 $M$ 计算序列 $\alpha$，则 $U$ 也计算 $\alpha$。</p>
+</div>
+</div>
 
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">circle-free 与停机集</span><span class="thm-id">1936, §8</span></div>
-    <div class="thm-body">
-      <p>一台图灵机是 <strong>circle-free</strong> 的，如果它从空白纸带出发，会无限地印出 0 或 1（不要求每步都印，只要求无限多次印）。图灵的不可判定问题是：给定机器的描述数，判定它是否 circle-free。</p>
-      <p>现代写法是停机集 $H=\{\langle M,x\rangle:M\ \text{halts on}\ x\}$。$H$ 不可判定，且与 circle-free 问题可以互相归约。</p>
-    </div>
-  </div>
+<p>构造思路可以分成四步。第一，把 $M$ 的状态、字母表和每条转移规则按固定语法写成 S.D.，放在 $U$ 的 F-squares 上。第二，$U$ 在自己的 E-squares 上维护“被模拟机器的当前格局”：当前状态、被模拟纸带的内容、读写头位置。第三，$U$ 反复做“查表”：找到当前状态与扫描符号对应的那条指令，改写被模拟纸带，移动被模拟头，更新状态。第四，$U$ 只保留有限个内部状态，因为它模拟的是“查表”这个固定动作，而不是 $M$ 的具体状态数。</p>
+<p>图灵在 §7 真的把 $U$ 的表写了出来，而不是只给存在性论证。表中出现大量 m-function 缩写（如 $f$、$e$、$ce$、$re$、$cpe$），它们只是“找第一个 $\alpha$”“复制标记”“比较两段符号”等常用子程序的宏。把这些宏展开，就得到一张纯机器表。这也是为什么通用机在理论上重要、在阅读上痛苦：它把“解释器”拆成了最笨的逐步操作。</p>
 
-  <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">停机问题不可判定</span><span class="thm-id">1936, §8</span></div>
-    <div class="thm-body">
-      <p>不存在图灵机 $H$，使得对任意机器 $M$ 和输入 $x$，$H$ 都能在有限步内正确判定 $M$ 在 $x$ 上是否停机。</p>
-    </div>
-  </div>
+<div class="intuition">
+<div class="ih">为什么这是“存储程序”</div>
+<p>通用机与专用机的区别不在硬件，而在“程序的存放位置”。专用机的规则写在机器结构里；通用机的规则写在纸带上，和输入数据用同一种字母表。读程序与执行程序使用同一套读写机制，这正是后来 stored program 的核心。图灵 1946 年的 ACE 方案与 1947 年的讲演，反复回到这一点。</p>
+</div>
 
-  <details class="proof">
-    <summary>证明思路：让机器问自己</summary>
-    <div class="proof-body">
-      <p>反设存在这样的 $H$。构造机器 $D$：对输入 $P$，先运行 $H(P,P)$；若 $H$ 说“会停”，$D$ 就死循环；若 $H$ 说“不会停”，$D$ 就立刻停机。</p>
-      <p>问 $D$ 在输入 $D$ 上会不会停：会停则按定义 $H(D,D)$ 必须说“不会停”，矛盾；不会停则 $H(D,D)$ 必须说“会停”，也矛盾。因此 $H$ 不存在。关键是<strong>自指</strong>：把机器的描述当作输入，让它对自己的行为做出相反的回答。</p>
-    </div>
-  </details>
+<h3><span class="sn">3.2</span>1937 年的修正：Bernays 指出的形式错误</h3>
+<p>1936 年论文的 §11 把机器计算形式化到希尔伯特函数演算，构造公式 $\mathrm{Un}(M)$，并声称“若 $\mathrm{Un}(M)$ 可证，则 $M$ 永不印 0”。1937 年的 <em>A Correction</em> 承认：这个证明里有形式错误，是 Paul Bernays 指出的。错误不在于大方向，而在于“格局的前驱”没有被正确表达：原式无法推出 $F^{(n+1)}\to(\neg F(u,u''))$，因此某条关键子句永远用不上。</p>
+<p>修正的办法是引入一个新的二元函数变元 $G(x,y)$，解释为“$x$ 在 $y$ 之前 (x precedes y)”。用 $G$ 重写 $\mathrm{Inst}\{q_iS_jS_kLq_l\}$ 与整个 $\mathrm{Un}(M)$，并把“逻辑和”改成“合取”。修正后，$\mathrm{Un}(M)$ 仍可写成前束形，量词数为 4。图灵还顺手修补了“可计算数”的定义，这一段更值得注意。</p>
 
-  <h3><span class="sn">3.2</span>对角线的一个小表</h3>
-  <p>把机器排成 $M_1,M_2,\ldots$，第 $i$ 行第 $j$ 列写“$M_i$ 在输入 $\langle M_j\rangle$ 上是否停机”。定义 $D$：它在 $\langle M_i\rangle$ 上的行为与 $M_i$ 在 $\langle M_i\rangle$ 上的行为相反。</p>
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">修正</span><span class="thm-title">区间套定义与“可计算”的细微裂缝</span><span class="thm-id">1937, pp. 544–546</span></div>
+<div class="thm-body">
+<p>图灵希望可计算数满足直观要求 (A)：若有一个规则，对每个正整数 $n$ 给出有理数 $a_n,b_n$，满足 $a_n\le a_{n+1}&lt;b_{n+1}\le b_n$ 且 $b_n-a_n&lt;2^{-n}$，则存在可计算数 $\alpha$ 使 $a_n\le\alpha\le b_n$。他证明 (A) 成立，但证明用了排中律。</p>
+<p>更强的 (B) 却是假的：不存在一个规则，能从区间套的构造规则直接算出某个机器的描述数 (D.N.) 来计算 $\alpha$。反例利用“某台机器 $M$ 是否在 $n$ 步内印过 0”构造区间套；若 (B) 成立，就能判定 $M$ 是否印 0，违反 §8。图灵于是修改“可计算数”与“可计算序列”的对应方式，使 (B) 成立，同时不改变可计算数的全体。</p>
+</div>
+</div>
 
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th></th><th>$M_1$</th><th>$M_2$</th><th>$M_3$</th><th>$M_4$</th></tr></thead>
-      <tbody>
-        <tr><td class="id">$M_1$</td><td>停</td><td>不停</td><td>停</td><td>停</td></tr>
-        <tr><td class="id">$M_2$</td><td>不停</td><td>停</td><td>不停</td><td>停</td></tr>
-        <tr><td class="id">$M_3$</td><td>停</td><td>停</td><td>停</td><td>不停</td></tr>
-        <tr><td class="id">$D$</td><td>不停</td><td>不停</td><td>不停</td><td>停</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>$D$ 的第 $i$ 个对角线项与 $M_i$ 的相反，所以 $D$ 不可能等于表中任何一行。可我们明明可以把 $D$ 编成机器、给它编号；矛盾。这个“翻转对角线”的表格，是理解不可判定性证明的万能图景。</p>
+<p>这段修正常被忽略，但它揭示了一个重要区别：<b>存在一个可计算数</b>与<b>有效地从描述找到计算它的机器</b>不是同一件事。前者是经典存在性，后者是构造性要求。图灵用编码技巧把两者重新对齐，代价是实数的表示不再唯一——他认为这不重要，因为描述数本来也不唯一。</p>
 
-  <h3><span class="sn">3.3</span>从停机到判定问题</h3>
-  <p>图灵进一步证明：对每台机器 $M$ 和输入 $x$，可以有效地写出一阶公式 $\varphi_{M,x}$，使得 $\varphi_{M,x}$ 可证当且仅当 $M$ 在 $x$ 上达到某个特定格局（直观上就是“停机”或“印出某位”）。如果判定问题有解，我们就能判定 $\varphi_{M,x}$ 是否可证，从而判定停机——矛盾。</p>
-  <p>Church 几乎同时用 $\lambda$ 演算得到了同样的结论。两条路线独立、模型不同，却指向同一个边界；这比任何单一证明都更能说明“不可判定”不是记号的偶然产物。</p>
+<h3><span class="sn">3.3</span>λ-K 可定义：另一种“有限规则”</h3>
+<p>丘奇的 λ-演算用“替换”而不是“纸带”作为基本动作。一个函数 $f$ 是 λ-可定义的，如果存在一个 λ-项 $F$，使得对每个自然数 $n$，$F(n)$ 经有限次 $\beta$-归约得到 $f(n)$ 的丘奇 numeral。λ-K 可定义是克莱尼引入的放宽版本：抽象 $\lambda x.M$ 中 $x$ 不必在 $M$ 中自由出现。图灵证明的是一条链：</p>
+<p>$$\text{λ-K-definable}\;\Longrightarrow\;\text{computable}\;\Longrightarrow\;\text{general recursive}.$$</p>
+<p>再加上克莱尼 1936 年的结果“一般递归 $\Rightarrow$ λ-可定义”，就得到三种定义的外延相同。这个结果的历史意义不是“又证了一遍”，而是把三个独立传统——图灵的机器、丘奇的函数、哥德尔–克莱尼的递归——焊在一起。丘奇-图灵论题从此不只是一句口号，而是一组可互相翻译的形式系统。</p>
 
-  <h3><span class="sn">3.4</span>为什么今天仍重要</h3>
-  <p>静态分析、病毒检测、程序终止性分析、编译器优化，都会遇到不可判定性。实践中的工具不是“解决了停机问题”，而是<strong>放弃完全性</strong>：只对某一类程序给出答案，或者允许“不知道”。Rice 定理把这一点推广到所有非平凡的语义性质。</p>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">λ-K 可定义（机器友好版）</span><span class="thm-id">1937, §1</span></div>
+<div class="thm-body">
+<p>公式只用五种符号：$\lambda$、$x$、$|$、$[$、$]$。变量是 $x$ 后跟若干个 $|$。若 $M,N$ 是公式，则 $[M][N]$ 是公式；若 $M$ 是公式、$V$ 是变量，则 $\lambda V[M]$ 是公式。立即变换包括：约束变量改名（新变量不在 $M$ 中出现）、以及 $[\lambda V[X]][Y]$ 替换为 $X[V:=Y]$（带通常的捕获限制）。可转换 (convertible) 是这些变换的有限复合。</p>
+<p>自然数用丘奇 numeral 表示：$0=\lambda x.\lambda x'.[x']$，$1=\lambda x.\lambda x'.[[x][x']]$，等等。函数 $f$ 是 λ-K 可定义的，如果存在 $F$，使 $[F][n]$ 可转换为 $f(n)$ 的 numeral。</p>
+</div>
+</div>
 
-  <div class="table-wrap cheat">
-    <table>
-      <thead><tr><th>问题</th><th>编码</th><th>结论</th></tr></thead>
-      <tbody>
-        <tr><td class="id">停机</td><td>$\langle M,x\rangle$</td><td>不可判定</td></tr>
-        <tr><td class="id">circle-free</td><td>描述数 $n$</td><td>不可判定（图灵原文）</td></tr>
-        <tr><td class="id">判定问题</td><td>一阶公式 $\varphi$</td><td>不可判定（由图灵归约）</td></tr>
-        <tr><td class="id">Rice 定理</td><td>程序 + 语义性质</td><td>任何非平凡语义性质都不可判定</td></tr>
-      </tbody>
-    </table>
-  </div>
+<h3><span class="sn">3.4</span>p-function：把“最小满足者”写成 λ-项</h3>
+<p>1937 年的短篇 <em>The p-function in λ-K Conversion</em> 解决一个具体问题：给定一个公式 $T$，使得 $T(n)$ 在 $n$ 是自然数时可转换为某个自然数，要求一个公式 $p$，使 $p(T,r)$ 转换为“不小于 $r$ 且满足 $T(q)=0$ 的最小 $q$”。在一般递归函数论里，这由“最小数算子”完成；在 λ-K 里，图灵用一个自应用的不动点组合子把它写出来。</p>
+<p>关键是构造一个 $\Theta$，使 $\Theta\to\lambda u.u(S(u))$，从而 $M\to\Theta(V)$ 时 $M$ 可转换为 $V(M)$。令</p>
+<p>$$p\to\Theta\bigl(\lambda p t r.\,t(r,\lambda x.p(t,S(r)),r)\bigr),$$</p>
+<p>则 $p(T,r)$ 在 $T(r)=0$ 时返回 $r$，否则递归地检查 $S(r)$。这篇短文只有一页，但它说明“递归定义”不必先有机器；λ-项本身就能表达无界搜索。图灵的比较对象是克莱尼 1934 年的构造，他的版本因为允许 λ-K 的宽松约束而更短。</p>
 
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不可判定不等于“所有实例都难”</span></div>
-    <div class="thm-body">
-      <p><strong>不可判定是关于“所有程序”的命题。</strong>很多具体程序、具体输入可以判定；它说的是不存在一个统一算法覆盖全部情况。</p>
-      <p><strong>“想不出算法”不是证明。</strong>要证明不可判定，必须给出归约或对角线论证；直觉上的困难不算数学证明。</p>
-      <p><strong>图灵原文不是“停机问题”。</strong>他证明的是 circle-free 不可判定；停机问题是后来更便于教学的形式。两者等价，但历史顺序不要倒置。</p>
-    </div>
-  </div>
+<h3><span class="sn">3.5</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>结果</th><th>内容</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td class="id">通用机</td><td>$U$ 读 $\langle M\rangle x$ 模拟 $M(x)$</td><td>程序即数据；解释器原型</td></tr>
+<tr><td class="id">S.D. / D.N.</td><td>机器表编码为符号串/整数</td><td>使“机器”可被枚举、可被对角线</td></tr>
+<tr><td class="id">Correction</td><td>引入 $G(x,y)$ 修正 $\mathrm{Inst}$；修补可计算数定义</td><td>形式证明可修复；区分“存在”与“有效找到”</td></tr>
+<tr><td class="id">λ-K ⇒ computable</td><td>每个 λ-K 可定义函数可由图灵机计算</td><td>函数式模型不超出机器</td></tr>
+<tr><td class="id">computable ⇒ recursive</td><td>每个可计算函数是一般递归的</td><td>机器模型不超出递归</td></tr>
+<tr><td class="id">三者等价</td><td>computable = λ-definable = general recursive</td><td>丘奇-图灵论题的形式支撑</td></tr>
+<tr><td class="id">p-function</td><td>$p(T,r)$ 返回最小 $q\ge r$ 使 $T(q)=0$</td><td>λ-K 中的无界搜索</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">通用机不是“万能机”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>通用机不能解决不可判定问题。</b>它能模拟任何机器，但不能替被模拟的机器做出它做不到的判定；下一节会证明这一点。</p>
+<p><b>“图灵完备”不等于“什么都能做”。</b>它只表示能模拟任意图灵机；资源、接口、物理限制都不在定义里。</p>
+<p><b>修正不是撤回。</b>1937 年的修正修补了形式细节，没有改变“判定问题不可解”的结论；它反而让证明更干净。</p>
+</div>
+</div>
 </div></section>
 
 <section id="ch4" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 4 · 1938–1939 · Ordinals & Oracles</div>
-  <h2><span class="num">4</span>序数逻辑与 oracle：当一台机器知道得更多</h2>
-  <p class="lede">哥德尔说：任何足够强的形式系统都有它说不出的真话。图灵问：如果我们把这句真话加进去，再重复，能不能一路爬到“完备”？答案比“能”或“不能”都更微妙。</p>
+<div class="sec-label">1936–1937 · §8–§11 · The Entscheidungsproblem</div>
+<h2><span class="num">4</span>对角线、circle-free 与判定问题的死局</h2>
+<p class="lede">图灵先证明“没有机器能判定任意机器是否会无限印数字”，再把这个问题归约到一阶逻辑的可证性。于是希尔伯特想要的那个“机械判定法”不仅没找到，而且不可能存在。这个结论与哥德尔不完备定理不同：哥德尔说有些句子既不可证也不可反驳；图灵说没有统一算法判定任意句子是否可证。</p>
 
-  <div class="chap-intro">
-    <p>《基于序数的逻辑系统》一方面用超限迭代追求完备性，另一方面引入 oracle 机，把“不可判定”变成“相对于某个黑箱可判定”。这两条线后来分别长成证明论中的反身原则，以及可计算性理论中的相对可计算与图灵度。</p>
-    <span class="tag">1939 · Proc. LMS</span>
-  </div>
+<div class="chap-intro">
+<p>本节对应 1936 年论文 §8–§11。§8 用对角线证明“satisfactory 数”不可判定；§9 为“可计算”辩护；§10 给出可计算数的大类；§11 构造公式 $\mathrm{Un}(M)$，把“$M$ 是否印 0”归约到“公式是否可证”。读的时候要分清图灵原文的 circle-free 问题与今天教材的停机问题：两者可互相归约，但历史顺序不能倒置。</p>
+<span class="tag">§8–§11 · 不可判定性</span>
+</div>
 
-  <div class="mapchips">
-    <span class="chip hot">不完备</span>
-    <span class="chip">序数记号</span>
-    <span class="chip">扩张</span>
-    <span class="chip">O</span>
-    <span class="chip">oracle</span>
-  </div>
+<div class="mapchips">
+<span class="chip hot">判定问题 (decision problem)</span>
+<span class="chip">对角线 (diagonal)</span>
+<span class="chip">circle-free</span>
+<span class="chip">satisfactory</span>
+<span class="chip">归约 (reduction)</span>
+<span class="chip">可证性 (provability)</span>
+</div>
 
-  <h3><span class="sn">4.1</span>原问题：能不能用“加公理”战胜不完备？</h3>
-  <p>哥德尔 1931 年证明：任何一致、递归可公理化、且能表达基本算术的系统 $L$，都存在一个句子 $G_L$，它既不可证也不可反驳。最自然的补救是把 $G_L$ 当作新公理加进去，得到 $L_1$；再对 $L_1$ 做同样的事，得到 $L_2$；如此下去。图灵把这件事做到超限，用<strong>序数记号系统</strong> $O$ 索引一系列逻辑 $L_a$：后继步加入不可判定句，极限步取并集。</p>
+<h3><span class="sn">4.1</span>对角线论证：为什么不能枚举所有可计算序列</h3>
+<p>实数不可数的经典证明是：假设所有实数排成 $a_1,a_2,\ldots$，令 $\beta$ 的第 $n$ 位为 $1-\varphi_n(n)$，则 $\beta$ 不在表中。把这个论证直接搬到可计算序列上会出错。错误在于假设 $\beta$ 可计算：要计算 $\beta$ 的第 $n$ 位，必须先知道第 $n$ 台机器是否 circle-free，而这正是没有一般算法的东西。</p>
+<p>图灵的处理很漂亮：他不构造 $\beta$，而构造 $\beta'$，其第 $n$ 位是 $\varphi_n(n)$。假设存在一台机器 $D$，能判定任意描述数 $N$ 是否 satisfactory（即 $N$ 是某台 circle-free 机器的 D.N.）。用 $D$ 与通用机 $U$ 组合成机器 $H$：$H$ 逐段测试 $1,2,\ldots$，每当发现第 $N$ 个数 satisfactory，就计算对应序列的第 $R(N)$ 位并印出。于是 $H$ 是 circle-free。</p>
+<p>令 $K$ 是 $H$ 的描述数。问 $H$ 在第 $K$ 段做什么：它必须测试 $K$ 是否 satisfactory。若判“不 satisfactory”，与 $H$ 实际 circle-free 矛盾；若判“satisfactory”，则 $H$ 被要求计算“以 $K$ 为 D.N. 的机器”的第 $R(K)$ 位，也就是它自己刚刚要算的那一位——这一步永远算不出来，$H$ 变成 circular，又矛盾。两个判决都不可能，所以 $D$ 不存在。</p>
 
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">序数逻辑（直观版）</span><span class="thm-id">1939</span></div>
-    <div class="thm-body">
-      <p>$L_{a+1}$ 是 $L_a$ 加上一个在 $L_a$ 中不可判定的句子；对极限记号 $\lambda$，$L_\lambda$ 的公理是 $\bigcup_{b&lt;_\lambda}\mathrm{Th}(L_b)$。$O$ 的元素不是序数本身，而是序数的<strong>记号</strong>；同一个序数可以有多个记号。$O$ 由“序数公式”归纳定义，是语法对象，不是全体序数。</p>
-    </div>
-  </div>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">circle-free 不可判定</span><span class="thm-id">1936, §8</span></div>
+<div class="thm-body">
+<p>不存在图灵机 $D$，使得对任意整数 $N$，$D$ 都能在有限步内判定 $N$ 是否为某台 circle-free 机器的描述数。等价地，集合 $\{N:\varphi_N\text{ 是无限 0/1 序列}\}$ 不是可计算的。</p>
+</div>
+</div>
 
-  <h3><span class="sn">4.2</span>关键结果：完备性被推到“记号”这一层</h3>
-  <p>图灵证明了一个漂亮的<strong>完备性定理</strong>：对每个真的 $\Pi^1_1$ 句子，都存在 $a\in O$，使得 $L_a$ 证明它。直观上，只要你愿意爬得足够高，任何真的“对所有自然数……”陈述都能在某一层被证明。</p>
-  <p>但这不意味着我们得到了可执行的判定过程。$O$ 本身不是递归可枚举的，复杂度达到 $\Pi^1_1$ 完全；你无法机械地判断一个公式是不是序数记号，也无法机械地生成整条超限序列。不完备性没有被取消，只是被推到了“如何描述序数”这一层。</p>
+<h3><span class="sn">4.2</span>对角线小表：翻转对角线</h3>
+<p>把机器排成 $M_1,M_2,\ldots$，第 $i$ 行第 $j$ 列写“$M_i$ 在输入 $\langle M_j\rangle$ 上是否停机”。定义 $D$：它在 $\langle M_i\rangle$ 上的行为与 $M_i$ 在 $\langle M_i\rangle$ 上的行为相反。</p>
+<div class="table-wrap cheat"><table>
+<thead><tr><th></th><th>$M_1$</th><th>$M_2$</th><th>$M_3$</th><th>$M_4$</th></tr></thead>
+<tbody>
+<tr><td class="id">$M_1$</td><td>停</td><td>不停</td><td>停</td><td>停</td></tr>
+<tr><td class="id">$M_2$</td><td>不停</td><td>停</td><td>不停</td><td>停</td></tr>
+<tr><td class="id">$M_3$</td><td>停</td><td>停</td><td>停</td><td>不停</td></tr>
+<tr><td class="id">$D$</td><td>不停</td><td>不停</td><td>不停</td><td>停</td></tr>
+</tbody>
+</table></div>
+<p>$D$ 的第 $i$ 个对角线项与 $M_i$ 的相反，所以 $D$ 不可能等于表中任何一行。可我们明明可以把 $D$ 编成机器、给它编号；矛盾。这个“翻转对角线”的表格，是理解不可判定性证明的万能图景。停机问题是这个图景的现代版本；图灵原文用的是 circle-free，但结构相同。</p>
 
-  <h3><span class="sn">4.3</span>oracle 机：把“不可判定”当作黑箱</h3>
-  <p>同一篇论文还引入了 <strong>o-machine</strong>：一台图灵机，除了普通状态外，还有一个特殊状态 $o$。当机器进入 $o$ 时，它向一个外部 oracle 询问某个数论问题；oracle 在有限时间内给出是/否。图灵明确说，这个 oracle “不可能是一台机器”。这就是<strong>相对可计算</strong>的起点：与其问“$A$ 是否可判定”，不如问“$A$ 相对于 oracle $O$ 是否可判定”。</p>
+<h3><span class="sn">4.3</span>从“印 0”到“可证”：$\mathrm{Un}(M)$ 的构造</h3>
+<p>§11 的目标是：对每台机器 $M$，有效地写出一阶公式 $\mathrm{Un}(M)$，使得 $\mathrm{Un}(M)$ 可证当且仅当 $M$ 永不印 0。若判定问题有解，我们就能判定 $\mathrm{Un}(M)$ 是否可证，从而判定 $M$ 是否印 0，违反 §8。</p>
+<p>公式的语言包含：$R_{S_j}(x,y)$ 表示“在完全格局 $x$ 中，第 $y$ 格上的符号是 $S_j$”；$I(x,y)$ 表示“第 $x$ 个格局中，读写头在第 $y$ 格”；$K_{q_i}(x)$ 表示“第 $x$ 个格局的 m-configuration 是 $q_i$”；$F(x,y)$ 表示“$y=x+1$”。$\mathrm{Un}(M)$ 由三部分合取：初始格局的描述、每一步的转移关系、以及“存在某个格局印出 0”的否定。前束形量词数为 4。</p>
+<p>这里的关键不是公式有多长，而是“机器的一步”可以被有限条原子公式精确描述。图灵在修正中补上的 $G(x,y)$ 就是为了让“前驱格局”可表达。形式化完成后，判定问题若有解，就能判定 $\mathrm{Un}(M)$ 的可证性；于是停机/印 0 问题有解；矛盾。</p>
 
-  <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">相对化的停机问题仍然不可判定</span><span class="thm-id">对角线，逐字复制</span></div>
-    <div class="thm-body">
-      <p>对任何 oracle $O$，集合 $H^O=\{\langle M,x\rangle:M^O\ \text{halts on}\ x\}$ 都不是 $O$-可判定的。</p>
-      <p><strong>证明：</strong>假设有 $O$-机器 $H$ 判定 $H^O$。构造 $D^O$：问 $H$ 关于 $\langle D,D\rangle$ 的答案，然后做相反的事。$D^O(D)$ 停当且仅当它不停，矛盾。oracle 对双方都可用，所以对角线照样成立。</p>
-    </div>
-  </div>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">判定问题不可解</span><span class="thm-id">1936, §11</span></div>
+<div class="thm-body">
+<p>不存在一台图灵机，对任意一阶公式 $\varphi$（希尔伯特函数演算 $K$ 的公式），在有限步内判定 $\varphi$ 是否可证。等价地，一阶谓词演算的有效性/可证性不是可判定的。</p>
+</div>
+</div>
 
-  <p><strong>例：跳跃的层级。</strong>令 $0$ 表示空 oracle，$0'$ 表示普通停机问题，$0''$ 表示“带 $0'$ oracle 的停机问题”，依此类推。每一层都能判定上一层，但上一层不能判定它；这条严格上升的链条就是<strong>图灵跳跃</strong>的直观图景。图灵本人给出了相对可计算的雏形；跳跃、图灵度、算术层级的系统理论主要由 Post、Kleene 等人在 1940–50 年代发展起来。</p>
+<p>图灵特意说明这与哥德尔的结果不同。哥德尔证明：在《数学原理》的形式系统中，存在 $\varphi$ 使 $\varphi$ 与 $\neg\varphi$ 都不可证；由此推出该系统不能在内部证明自身一致性。图灵证明：不存在一般方法判定任意 $\varphi$ 是否可证，等价地，不存在一般方法判定 $K\cup\{\neg\varphi\}$ 是否一致。前者是关于“某些句子”的，后者是关于“所有句子”的算法。</p>
 
-  <h3><span class="sn">4.4</span>为什么今天仍重要</h3>
-  <p>相对可计算把“不可判定”从一堵墙变成一张分层地图：有些问题在更强的 oracle 下可解，有些即使给了 oracle 仍然不可解。复杂度理论中的 oracle 分离、证明论中的反身原则，都能追溯到图灵的超限迭代。</p>
+<h3><span class="sn">4.4</span>Church 的并行结果与“论题”的角色</h3>
+<p>丘奇几乎同时用 λ-演算得到同样的结论。图灵在论文引言里提到丘奇，并在附录中概述“可计算”与“有效可计算”的等价。两条路线独立、模型不同，却指向同一个边界；这比任何单一证明都更能说明“不可判定”不是记号的偶然产物。1937 年的 <em>Computability and λ-definability</em> 把这条等价补成完整证明。</p>
+<p>但要注意：不可判定性证明依赖一个“论题”——有效可计算 = 图灵可计算。图灵在 §9 用直觉、等价定义、大量例子来辩护，而不是证明。论题本身不可证明，因为它把直观概念与形式概念连接起来；能证明的是“在这个形式模型里不可判定”。后来的教材把图灵机当作“算法的定义”，于是论题变成定义的一部分，这是教学上的简化。</p>
 
-  <div class="table-wrap cheat">
-    <table>
-      <thead><tr><th>概念</th><th>含义</th><th>关键事实</th></tr></thead>
-      <tbody>
-        <tr><td class="id">$O$</td><td>序数记号的集合</td><td>不是递归可枚举；$\Pi^1_1$ 完全</td></tr>
-        <tr><td class="id">$L_a$</td><td>第 $a$ 层的逻辑</td><td>后继加不可判定句，极限取并</td></tr>
-        <tr><td class="id">o-machine</td><td>带 oracle 查询的图灵机</td><td>oracle 不是机器</td></tr>
-        <tr><td class="id">$H^O$</td><td>相对 $O$ 的停机集</td><td>对任何 $O$ 都不可 $O$-判定</td></tr>
-      </tbody>
-    </table>
-  </div>
+<h3><span class="sn">4.5</span>现代回声：停机、Rice 定理与静态分析</h3>
+<p>停机集 $H=\{\langle M,x\rangle:M\text{ 在 }x\text{ 上停机}\}$ 不可判定，且与 circle-free 问题可互相归约。Rice 定理进一步说：任何非平凡的语义性质都不可判定。实践中的静态分析工具不是“解决了停机问题”，而是放弃完全性：只对某一类程序给答案，或允许“不知道”。</p>
+<p>这也是图灵论证最容易被误用的地方。不可判定是关于“所有程序”的命题；很多具体程序、具体输入可以判定。说“这个程序有 bug，因为停机问题不可判定”是逻辑跳跃；说“不存在一个工具能对所有程序判定所有语义性质”才是定理的内容。</p>
 
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">oracle 不是 API</span></div>
-    <div class="thm-body">
-      <p><strong>oracle 不是数据库或网络服务。</strong>它是一个数学黑箱：在一步内回答一个不可判定的问题；把它当成工程接口，会误解整个相对可计算理论。</p>
-      <p><strong>序数记号不是序数。</strong>同一个序数可以有多个记号，$O$ 上的序关系是部分序；不能把 $O$ 当成“所有序数的集合”。</p>
-      <p><strong>序数逻辑没有推翻哥德尔。</strong>它证明了更多真句子，但代价是记号系统不可机械生成；完备性被转移，而不是消除。</p>
-    </div>
-  </div>
+<h3><span class="sn">4.6</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>问题</th><th>编码</th><th>结论</th></tr></thead>
+<tbody>
+<tr><td class="id">circle-free</td><td>描述数 $N$</td><td>不可判定（图灵原文）</td></tr>
+<tr><td class="id">停机</td><td>$\langle M,x\rangle$</td><td>不可判定（与 circle-free 等价）</td></tr>
+<tr><td class="id">印 0</td><td>$\langle M\rangle$</td><td>不可判定（§8 的推论）</td></tr>
+<tr><td class="id">判定问题</td><td>一阶公式 $\varphi$</td><td>不可判定（由图灵归约）</td></tr>
+<tr><td class="id">一致性</td><td>$K\cup\{\neg\varphi\}$</td><td>不可判定（与可证性等价）</td></tr>
+<tr><td class="id">Rice 定理</td><td>程序 + 非平凡语义性质</td><td>不可判定（现代推广）</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不可判定不等于“所有实例都难”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>不可判定是关于“所有程序”的命题。</b>很多具体程序、具体输入可以判定；它说的是不存在一个统一算法覆盖全部情况。</p>
+<p><b>“想不出算法”不是证明。</b>要证明不可判定，必须给出归约或对角线论证；直觉上的困难不算数学证明。</p>
+<p><b>图灵原文不是“停机问题”。</b>他证明的是 circle-free 不可判定；停机问题是后来更便于教学的形式。两者等价，但历史顺序不要倒置。</p>
+<p><b>哥德尔不等于图灵。</b>哥德尔给的是“存在不可判定句”；图灵给的是“不存在判定所有句子的算法”。前者是局部不完备，后者是全局不可判定。</p>
+</div>
+</div>
 </div></section>
 
 <section id="ch5" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 5 · 1940–1941 · Enigma & Evidence</div>
-  <h2><span class="num">5</span>Enigma：用逻辑闭环和贝叶斯证据破译</h2>
-  <p class="lede">Enigma 的密钥空间大到无法穷举，但它的机械结构留下了一道裂缝：某些字母永远不会映射到自己。图灵把这道裂缝变成了可执行的搜索，又把“猜得对不对”写成了可以累加的证据。</p>
+<div class="sec-label">1938–1939 · Systems of Logic based on Ordinals</div>
+<h2><span class="num">5</span>序数逻辑：把不完备性推到“记号”这一层</h2>
+<p class="lede">哥德尔说：任何足够强的形式系统都有它说不出的真话。图灵问：如果我们把这句真话加进去，再重复，能不能一路爬到“完备”？答案比“能”或“不能”都更微妙：对真 $\Pi_1$ 句可以，对更强的句子不行；而且“完备”与“不依赖记号”不能兼得。</p>
 
-  <div class="chap-intro">
-    <p>图灵的《Enigma 论文》写于 1940 年，直到 1996 年才公开。它既讲 Bombe 的机械逻辑，也讲 Banburismus 的统计推断；后者使用 Bayes 因子与“证据重量”。</p>
-    <span class="tag">1940 · Bletchley Park</span>
-  </div>
+<div class="chap-intro">
+<p>《基于序数的逻辑系统》1938 年 5 月 31 日收稿、6 月 16 日宣读，1939 年发表于 Proc. London Math. Soc. 45。全文 68 页，§9 是核心：完备性定理与不变性/完备性不相容定理。Feferman 的序言说，这篇论文长期被低估，直到 1960 年代被翻译成一般递归函数论的语言才被充分理解。</p>
+<span class="tag">§1–§12 · 超限迭代</span>
+</div>
 
-  <div class="mapchips">
-    <span class="chip hot">转子</span>
-    <span class="chip">插线板</span>
-    <span class="chip">crib</span>
-    <span class="chip">menu</span>
-    <span class="chip">Bombe</span>
-    <span class="chip">ban</span>
-  </div>
+<div class="mapchips">
+<span class="chip hot">序数逻辑 (ordinal logic)</span>
+<span class="chip">记号系统 O</span>
+<span class="chip">超限迭代 (transfinite iteration)</span>
+<span class="chip">Π₁ 完备性</span>
+<span class="chip">不变性 (invariance)</span>
+<span class="chip">直觉与机巧</span>
+</div>
 
-  <h3><span class="sn">5.1</span>原问题：插线板把穷举变成天文数字</h3>
-  <p>Enigma 的加密路径是：按键 → 插线板替换 → 三个转子 → 反射器 → 转子返回 → 插线板再替换。转子每按一次就转动，同一字母在不同位置的加密结果不同；反射器使加密成为<strong>自逆</strong>的：同一组设置下，$A$ 加密成 $B$，$B$ 就加密成 $A$。由此得到关键性质：<strong>任何字母都不会加密成它自己</strong>。</p>
-  <p>以三转子、五个可选转子为例：转子顺序有 $5\cdot4\cdot3=60$ 种，每个转子 26 个起始位置，共 $60\cdot26^3=1{,}054{,}560$ 种核心设置。插线板再把 10 对字母互换，组合数约为</p>
-  <p>$$\frac{26!}{6!\,10!\,2^{10}}\approx1.5\times10^{14}.$$</p>
-  <p>两者相乘，穷举完全不现实。Bombe 的聪明之处，是<strong>先不管插线板</strong>，只利用“无固定点”和 crib 的闭合约束排除转子位置。</p>
+<h3><span class="sn">5.1</span>原问题：能不能用“加公理”战胜不完备？</h3>
+<p>哥德尔 1931 年证明：任何一致、递归可公理化、且能表达基本算术的系统 $L$，都存在一个句子 $G_L$，它既不可证也不可反驳。最自然的补救是把 $G_L$ 当作新公理加进去，得到 $L_1$；再对 $L_1$ 做同样的事，得到 $L_2$；如此下去。图灵把这件事做到超限：用<b>序数记号系统</b> $O$ 索引一系列逻辑 $L_a$，后继步加入不可判定句，极限步取并集。</p>
+<p>这里的 $O$ 不是“所有序数”，而是丘奇–克莱尼在 1935 年构造的<b>构造性序数记号</b>。每个 $a\in O$ 是一个语法对象，代表一个可数序数 $|a|$；同一个序数可以有多个记号。$O$ 上有部分序 $&lt;_O$，并且“$a\in O$”本身不是可判定的，甚至不是递归可枚举的。</p>
 
-  <h3><span class="sn">5.2</span>crib 与 menu：把猜测变成约束图</h3>
-  <p>所谓 <strong>crib</strong>，是猜出的一段明文。把它与对应密文逐位对齐，就得到一张字母对应表；把对应关系画成图，就是 <strong>menu</strong>。图中的闭环会给出与插线板无关的一致性条件。</p>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">序数逻辑（直观版）</span><span class="thm-id">1938, §8–§9</span></div>
+<div class="thm-body">
+<p>一列逻辑 $\Lambda=(L_a\mid a\in O)$ 称为<b>序数逻辑 (ordinal logic)</b>，如果：</p>
+<ul>
+<li>$L_{a+1}$ 是 $L_a$ 加上一个在 $L_a$ 中不可判定的句子（通常是 $L_a$ 的哥德尔句）；</li>
+<li>对极限记号 $\lambda$，$L_\lambda$ 的公理是 $\bigcup_{b&lt;_O\lambda}\mathrm{Th}(L_b)$；</li>
+<li>每个 $L_a$ 都是有效生成的（effectively generated），且当 $a$ 正确时 $L_a$ 的算术定理都真。</li>
+</ul>
+<p>若 $L_a$ 的定理集只依赖序数 $|a|$，不依赖记号 $a$，称 $\Lambda$ <b>不变 (invariant)</b>。只有不变逻辑才能用“序数大小”衡量定理的深度。</p>
+</div>
+</div>
 
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一段 25 字母的 crib</span><span class="thm-id">Turing, 1940</span></div>
-    <div class="thm-body">
-      <p>图灵论文中的样例（德语“keine Zusätze zum Vorbericht”，意为“对初步报告没有补充”）：</p>
-      <pre><code>密文  D A E D A Q O Z S I Q M M K B I L G M F W H A I V
-明文  K E I N E Z U S A E T Z E Z U M V O R B E R I C H</code></pre>
-      <p>逐位比对：25 个位置没有一位相同。这正好符合 Enigma 的“无固定点”性质。论文中的 menu 还含有一个闭环 $Z\to S\to A\to E\to M\to Z$：在正确转子位置下，插线板是自逆置换，沿环走一圈必须回到起点；错误位置几乎总会破坏这个约束。Bombe 用电路把这种“沿环传播的蕴含”自动化。</p>
-    </div>
-  </div>
+<h3><span class="sn">5.2</span>完备性：真 $\Pi_1$ 句在某一层被证明</h3>
+<p>图灵在 §9 证明了一个漂亮的<b>完备性定理</b>：若 $\Phi[x_0]$ 是一个递归公式，且 $\Phi[0],\Phi[1],\ldots$ 在基础系统 $P$ 中都可证，则存在一个丘奇–克莱尼序数记号 $A$，使得全称句 $(x_0)\Phi[x_0]$ 在 $P_A$ 中可证。换言之，每个真的 $\Pi_1$ 句（形如 $\forall x\,R(x)$，$R$ 原始递归）都能在某个 $L_a$ 中被证明。</p>
+<p>证明的骨架是“反证 + 自指”：假设 $(x_0)\Phi[x_0]$ 在 $P_A$ 中不可证，则可以把“存在反例”编码成一个序数记号 $B$，并证明 $B&lt;B$，从而 $P_B$ 不一致，进而 $P_A$ 不一致；但 $P_A$ 的构造保证它一致。这个论证用到了“序数记号的比较”可以部分地在系统内表达，也用了图灵在 §9 引入的“递归公式”技术。</p>
 
-  <p>为什么闭环能排除错误位置？把插线板看作未知的字母互换，每条密文-明文对应给出一个方程；沿环走一圈，方程复合后插线板相互抵消，只剩转子本身的条件。条件不成立，这个转子位置就不可能；条件成立，才进入下一步去求插线板。</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">$\Lambda_P$ 对真 $\Pi_1$ 句完备</span><span class="thm-id">1938, §9</span></div>
+<div class="thm-body">
+<p>令 $\Lambda_P$ 为“后继步加入 $L_a$ 的哥德尔句”的序数逻辑。对每个真的 $\Pi_1$ 算术句 $\forall x\,R(x)$，存在 $a\in O$ 使 $L_a\vdash\forall x\,R(x)$。</p>
+</div>
+</div>
 
-  <h3><span class="sn">5.3</span>Banburismus：把证据累加成“分贝”</h3>
-  <p>Bombe 解决“给定 crib，找转子位置”；Banburismus 解决更上游的问题：不知道 crib 时，如何从大量密文中找出转子的相对位置。图灵的做法是<strong>序贯贝叶斯推断</strong>：每比较一次字母频率，就更新假设的似然比。定义证据重量为 Bayes 因子的对数：</p>
-  <p>$$\text{weight}=10\log_{10}\frac{P(\text{data}\mid H_1)}{P(\text{data}\mid H_0)}\ \text{decibans}.$$</p>
-  <p>1 ban 等于 10 decibans；100:1 的似然比就是 20 decibans。证据逐项相加，直到超过接受或拒绝阈值：不必等所有数据到齐，够了就停止。若每步期望 0.3 decibans、阈值 20 decibans，粗略需要 $20/0.3\approx67$ 次独立比较；实际过程是一条有涨落的随机游走。</p>
+<p>图灵原本希望把这个结果加强到真 $\Pi_2$ 句（形如 $\forall x\exists y\,R(x,y)$），这类句子包括黎曼猜想（图灵在 §3 给出它的 $\Pi_2$ 形式）。他没做到。Feferman 1962 年证明：$\Lambda_P$ 对 $\Pi_2$ 句不完备。因此“完备性”只覆盖算术层级的第一层，不是“所有真算术句”。</p>
 
-  <p>这套方法后来被图灵写成《最小代价序贯分析》：除了错误概率，还要把测试成本、坏批次的信誉损失、误拒好批次的浪费都算进去，从而得到非直线的接受/拒绝边界。论文未发表，但 I. J. Good 指出，图灵在 1940–41 年就已使用贝叶斯序贯方法，并用于 Banburismus。</p>
+<h3><span class="sn">5.3</span>不完备性：完备与不变不能兼得</h3>
+<p>图灵接着问：有没有既完备又不变的序数逻辑？答案是否定的。若 $\Lambda$ 不变，且对某个序数 $\alpha$ 以下的记号都保持不变，则任何 $L_a$（$|a|&lt;\alpha$）的定理都已经被更小的有限序数层所包含；于是“爬得更高”不会带来真正的新定理。形式化后得到：</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">不变性与完备性不相容</span><span class="thm-id">1938, §9</span></div>
+<div class="thm-body">
+<p>在相当一般的条件下，不存在既不变又完备（即使只对 $\Pi_1$ 句完备）的序数逻辑。更具体地：若 $\Lambda$ 不变到序数 $\alpha$，则对任意表示 $\beta&lt;\alpha$ 的记号 $a$，$L_a$ 的定理集都包含在“有限层”$L_b$（$b$ 表示有限序数）的定理集之并中。因此不变逻辑不能通过爬升序数获得新的算术定理。</p>
+</div>
+</div>
+<p>直观上，不变性要求“同一个序数的不同记号给出同一个逻辑”，这抹平了记号之间的差别；而完备性恰恰需要利用“这个记号比那个记号更高”的信息。两者冲突。$\Lambda_P$ 对真 $\Pi_1$ 句完备，因此由上述定理它<b>不可能</b>是不变的；$\Lambda_H$（超限类型论）不变，因此必然不完备。图灵还提出 $\Lambda_G$（Gentzen 型），把超限归纳与递归原则加到每一层，试图在“可接受性”上做得更好。</p>
 
-  <h3><span class="sn">5.4</span>为什么今天仍重要</h3>
-  <p>Enigma 工作把“计算”从算术扩展到<strong>约束搜索 + 统计推断</strong>：Bombe 是并行约束传播，Banburismus 是序贯贝叶斯模型选择。今天的密码分析、异常检测、A/B 测试、临床序贯试验，都在重复同一套思路：先写似然，再让证据逐项累加，最后在成本与错误率之间选边界。</p>
+<h3><span class="sn">5.4</span>O 的复杂度：完备性被推到了“识别记号”</h3>
+<p>完备性定理看起来像胜利，但图灵自己指出它“没有价值”。原因在于：要知道某个句子在 $L_a$ 中可证，你必须先知道 $a$ 确实是序数记号。而“$a\in O$”不是可判定的；克莱尼 1955 年证明它比任何算术问题都复杂（$\Pi^1_1$ 完全）。于是“判定一个 $\Pi_1$ 句是否真”被转化为“识别一个记号是否表示良序”，后者至少同样难。</p>
+<p>这不是循环论证，而是层次转移：不完备性没有被取消，只是从“证明能力”转移到了“记号的识别”。图灵在 §11 把这层意思讲得很清楚：数学推理是<b>直觉 (intuition)</b> 与<b>机巧 (ingenuity)</b> 的结合；形式逻辑可以减少直觉的使用，但不能完全消除。序数逻辑的价值，是让我们看清“哪一步用了直觉”——通常就是“认出这个公式是序数记号”的那一步。</p>
 
-  <div class="table-wrap cheat">
-    <table>
-      <thead><tr><th>组件</th><th>作用</th><th>数学/逻辑</th></tr></thead>
-      <tbody>
-        <tr><td class="id">无固定点</td><td>排除大量错误假设</td><td>字母不能加密成自身</td></tr>
-        <tr><td class="id">crib / menu</td><td>提供并组织明文约束</td><td>闭环给出独立条件</td></tr>
-        <tr><td class="id">Bombe</td><td>机械测试转子位置</td><td>电路传播蕴含</td></tr>
-        <tr><td class="id">Banburismus</td><td>找转子相对位置</td><td>Bayes 因子、deciban</td></tr>
-        <tr><td class="id">序贯分析</td><td>决定何时停止</td><td>证据随机游走 + 边界</td></tr>
-      </tbody>
-    </table>
-  </div>
+<div class="intuition">
+<div class="ih">“深度”的直觉</div>
+<p>如果同一个序数只有一个记号，我们可以说“证明用了 $\omega^2$，所以比只用 $\omega$ 的证明更深”。但同一个序数可以有无数个记号，有的记号故意写得很复杂。不变性就是为了排除这种“用记号作弊”；代价是失去完备性。图灵后来承认，这个“深度”分类“预设了多于所证明的东西”。</p>
+</div>
 
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不是“图灵一个人 brute force”</span></div>
-    <div class="thm-body">
-      <p><strong>不是靠暴力枚举。</strong>Bombe 的核心是排除，不是把所有密钥试一遍；插线板从来没有被完整穷举。</p>
-      <p><strong>不是图灵一个人的功劳。</strong>波兰数学家 Rejewski、Różycki、Zygalski 早在 1930 年代就破解了早期 Enigma；Bletchley 是一个团队，Welchman 的对角板、Hut 6/Hut 8 的协作都关键。</p>
-      <p><strong>crib 错了就全错；闭环也不直接给出插线板。</strong>它先排除转子位置，插线板要在剩下的少数候选中另行求解。</p>
-    </div>
-  </div>
+<h3><span class="sn">5.5</span>§10 的旁支：构造性连续统假设</h3>
+<p>§10 讨论一个“构造性版”的连续统假设。经典 CH 说 $2^{\aleph_0}=\aleph_1$；图灵把“所有 0/1 序列”换成“所有可计算 0/1 序列”，把 $\aleph_1$ 换成丘奇–克莱尼最小不可构造序数 $\omega_1^{CK}$。他问：是否存在一个可计算的一一对应，把记号 $a\in O$ 与可计算序列对应起来，使得 $|a|=|a'|$ 当且仅当对应序列相同？答案是否定的。</p>
+<p>这个否定结果不是 CH 的解决，而是一个类比：可计算序列的“基数”与构造性序数的“长度”不能这样对齐。图灵自己说，构造性连续统假设有多种表述，他只处理了其中一种。这个旁支后来长成“按序数分层递归函数”的理论，与证明论中的可证递归函数分类平行。</p>
+
+<h3><span class="sn">5.6</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>对象</th><th>含义</th><th>关键事实</th></tr></thead>
+<tbody>
+<tr><td class="id">$O$</td><td>丘奇–克莱尼序数记号</td><td>不是递归可枚举；$\Pi^1_1$ 完全</td></tr>
+<tr><td class="id">$L_a$</td><td>第 $a$ 层的逻辑</td><td>后继加哥德尔句；极限取并</td></tr>
+<tr><td class="id">$\Lambda_P$</td><td>后继步加不可判定句</td><td>对真 $\Pi_1$ 完备；<b>不</b>不变</td></tr>
+<tr><td class="id">$\Lambda_H$</td><td>超限类型论</td><td>不变；不完备</td></tr>
+<tr><td class="id">$\Lambda_G$</td><td>Gentzen 型</td><td>加超限归纳/递归原则</td></tr>
+<tr><td class="id">不变性</td><td>定理集只依赖 $|a|$</td><td>与完备性不相容</td></tr>
+<tr><td class="id">$\Pi_1$ / $\Pi_2$</td><td>$\forall x R$ / $\forall x\exists y R$</td><td>前者可完备；后者不行（Feferman 1962）</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">序数逻辑没有推翻哥德尔</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>它没有给出可执行的判定过程。</b>$O$ 不可递归枚举，识别记号至少和判定算术真句一样难。</p>
+<p><b>“完备”只对 $\Pi_1$。</b>不要把它说成“所有真句子都能证明”；图灵本人希望到 $\Pi_2$，但失败了。</p>
+<p><b>序数记号不是序数。</b>同一个序数可以有多个记号，$O$ 上是部分序；不能把 $O$ 当成“所有序数的集合”。</p>
+<p><b>不变性不是技术细节。</b>没有不变性，“证明深度”就没有意义；有了不变性，完备性就没了。这是论文的核心张力。</p>
+</div>
+</div>
 </div></section>
 
 <section id="ch6" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 6 · 1952 · Morphogenesis</div>
-  <h2><span class="num">6</span>形态发生：扩散如何把均匀变成图案</h2>
-  <p class="lede">1952 年，图灵把“生物为什么有形状”改写成一个化学动力学问题：两种吗啡原在组织中反应、扩散，均匀状态可以自发失稳，长出斑点、条纹和触手。</p>
+<div class="sec-label">1938 · §4 · Oracle Machines and Relative Computability</div>
+<h2><span class="num">6</span>Oracle 机：把“不可判定”变成一张分层地图</h2>
+<p class="lede">同一篇序数逻辑论文里，图灵还埋下了一颗种子：如果给机器一个“外部黑箱”，让它一步回答某个数论问题，会发生什么？答案是：对角线仍然成立，但“可计算”从绝对概念变成相对概念。这就是 o-machine 与相对可计算性的起点。</p>
 
-  <div class="chap-intro">
-    <p>《形态发生的化学基础》是图灵最后一项大工作。他在曼彻斯特计算机上数值求解：两种吗啡原、20 个细胞的环，得到 3 或 4 个瓣的图案；还讨论了二维斑驳、球面原肠形成和叶序。这不是“解释所有生物学”，而是证明一个反直觉的数学机制确实能产生空间结构。</p>
-    <span class="tag">1952 · Phil. Trans. B</span>
-  </div>
+<div class="chap-intro">
+<p>§4 的标题是“A type of problem which is not number-theoretic”。图灵想找一个不是数论问题的判定问题。基数论证可以轻易说明“存在不可数多个问题”，但他要一个具体的、可定义的问题。于是他引入 oracle：一台机器除了普通状态，还有一个特殊状态 $o$；进入 $o$ 时，它向外部询问某个数论命题的真假，并在有限时间内得到是/否。</p>
+<span class="tag">§4 · o-machine</span>
+</div>
 
-  <div class="mapchips">
-    <span class="chip hot">吗啡原</span>
-    <span class="chip">反应-扩散</span>
-    <span class="chip">均匀平衡</span>
-    <span class="chip">扩散失稳</span>
-    <span class="chip">波数</span>
-    <span class="chip">20 细胞环</span>
-  </div>
+<div class="mapchips">
+<span class="chip hot">oracle 机 (o-machine)</span>
+<span class="chip">相对可计算</span>
+<span class="chip">o-circle-free</span>
+<span class="chip">图灵跳跃</span>
+<span class="chip">Post / Kleene</span>
+</div>
 
-  <h3><span class="sn">6.1</span>原问题：受精卵为什么不长成一团均匀的细胞</h3>
-  <p>一个起初几乎均匀的细胞团，会分化出触手、鳃、毛发、指头。基因提供蛋白质，但“哪里的细胞变成什么”需要空间信息。图灵假设存在一类<strong>吗啡原</strong>，其浓度场先形成图案，再指导生长与分化。</p>
+<h3><span class="sn">6.1</span>定义：什么是 o-machine</h3>
+<p>o-machine 的表与普通 a-machine 相同，只是允许出现一个特殊内部状态 $o$。当机器进入 $o$ 时，它把当前要问的“数论问题”写在纸带上；oracle 在一步内给出答案（0 或 1），机器据此继续。oracle 不被要求是机械的；图灵明确说它“不可能是一台机器”。</p>
+<p>于是“$A$ 相对于 $O$ 可判定”的意思是：存在一台 o-machine，带有 oracle $O$，能在有限步内判定 $A$。普通图灵机是 oracle 为空的情形。这个“相对化”把可计算性从“是/否”变成“在什么条件下”。</p>
 
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">反应-扩散系统</span><span class="thm-id">1952, §2</span></div>
-    <div class="thm-body">
-      <p>设 $X_i(\mathbf{x},t)$ 是第 $i$ 种吗啡原的浓度，$f_i$ 是局部反应项，$D_i$ 是扩散系数：</p>
-      <p>$$\frac{\partial X_i}{\partial t}=f_i(X_1,\dots,X_n)+D_i\nabla^2X_i,\qquad i=1,\dots,n.$$</p>
-      <p>在离散细胞模型里，拉普拉斯项换成相邻细胞的差：</p>
-      <p>$$\frac{dX_i^{(j)}}{dt}=f_i(X^{(j)})+D_i\left(X_i^{(j+1)}-2X_i^{(j)}+X_i^{(j-1)}\right).$$</p>
-      <p>图灵原文用 $\mu_i$ 表示扩散系数；现代文献通常写 $D_i$。</p>
-    </div>
-  </div>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">相对化的 circle-free 仍不可判定</span><span class="thm-id">1938, §4</span></div>
+<div class="thm-body">
+<p>对任何 oracle $O$，集合 $\{\langle M\rangle:M^O\text{ 是 o-circle-free}\}$ 都不是 $O$-可判定的。证明是对 1936 年 §8 的对角线论证逐字复制：假设有 o-machine $D$ 能判定，构造 $H$ 逐段测试并印出 $\varphi_n(n)$，令 $K$ 为 $H$ 的描述数，问 $H$ 在第 $K$ 段的行为，得到“停当且仅当不停”。oracle 对双方都可用，所以对角线照样成立。</p>
+</div>
+</div>
 
-  <h3><span class="sn">6.2</span>关键直觉：扩散通常抹平，为什么反而造出图案？</h3>
-  <p>单一物质的扩散只会把浓度差抹平。要有图案，至少需要两种物质，而且它们扩散得<strong>不一样快</strong>：一种是局部自激活的“激活剂”，另一种是抑制激活剂、但扩散得更快的“抑制剂”。激活剂在局部自我增强，抑制剂在周围形成长程压制；两者配合，就能把均匀状态拆成一个个孤立峰。</p>
-  <p>数学上，均匀平衡在<strong>没有扩散</strong>时必须是稳定的；加入扩散后，某个空间波长的扰动反而增长。这叫<strong>扩散驱动失稳</strong>，后来被称为图灵失稳。</p>
+<h3><span class="sn">6.2</span>为什么这不是“作弊”</h3>
+<p>初看 oracle 像作弊：把一个不可判定问题直接当作一步。但相对可计算理论关心的不是“能不能造出 oracle”，而是“如果有了它，哪些问题变得可解”。这就像复杂度理论里的“带 oracle 的图灵机”：oracle 是一个形式装置，用来比较问题的相对难度。</p>
+<p>图灵本人没有继续发展这个想法。Post 1944 年把 o-machine 当作“不可解度的理论”的基础，并正确地归功于图灵：对任何问题，都存在一个更高不可解度的问题。后来 Kleene、Turing 的跳跃算子、算术层级，都是这条线的后代。</p>
 
-  <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">判别法</span><span class="thm-title">两物种图灵条件</span><span class="thm-id">线性化，2×2</span></div>
-    <div class="thm-body">
-      <p>令 $J=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}$ 是平衡点的雅可比矩阵，$D=\operatorname{diag}(D_u,D_v)$。无扩散稳定要求 $a+d&lt;0$、$ad-bc&gt;0$。扩散后，若存在 $q=k^2&gt;0$ 使</p>
-      <p>$$\det(J-qD)=\det J-q(aD_v+dD_u)+q^2D_uD_v&lt;0,$$</p>
-      <p>则出现失稳。临界波数为</p>
-      <p>$$q_c=\frac{aD_v+dD_u}{2D_uD_v},\qquad k_c=\sqrt{q_c},$$</p>
-      <p>且需要 $(aD_v+dD_u)^2&gt;4D_uD_v\det J$。直观上，这要求 $a&gt;0$、$d&lt;0$，并且抑制剂的扩散系数 $D_v$ 比激活剂 $D_u$ 大得足够多。</p>
-    </div>
-  </div>
+<h3><span class="sn">6.3</span>图灵跳跃：一层一层往上爬</h3>
+<p>令 $0$ 表示空 oracle（普通可计算），$0'$ 表示普通停机问题，$0''$ 表示“带 $0'$ oracle 的停机问题”，依此类推。每一层都能判定上一层，但上一层不能判定它；这条严格上升的链条就是<b>图灵跳跃 (Turing jump)</b> 的直观图景。</p>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>层级</th><th>oracle</th><th>能判定</th><th>不能判定</th></tr></thead>
+<tbody>
+<tr><td class="id">$0$</td><td>空</td><td>可计算集</td><td>停机问题</td></tr>
+<tr><td class="id">$0'$</td><td>停机问题</td><td>停机问题</td><td>$0'$ 的停机问题</td></tr>
+<tr><td class="id">$0''$</td><td>$0'$ 的停机问题</td><td>上一层的跳跃</td><td>再上一层</td></tr>
+<tr><td class="id">$0^{(n)}$</td><td>第 $n$ 次跳跃</td><td>算术层级的第 $n$ 层</td><td>更高层</td></tr>
+</tbody>
+</table></div>
+<p>这条链条说明“不可判定”不是一堵墙，而是一张分层地图。有些问题在更强的 oracle 下可解，有些即使给了 oracle 仍不可解。相对化也提醒我们：1936 年的不可判定性定理是“相对于空 oracle”的；把它绝对化，会看不到后来的层级结构。</p>
 
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">算例</span><span class="thm-title">一个可手算的失稳</span><span class="thm-id">构造例子</span></div>
-    <div class="thm-body">
-      <p>取 $J=\begin{pmatrix}1&amp;1\\-4&amp;-3\end{pmatrix}$，$D_u=1$，$D_v=10$。先看无扩散：$\operatorname{tr}J=-2&lt;0$，$\det J=1&gt;0$，稳定。</p>
-      <p>再算 $aD_v+dD_u=10-3=7$，$4D_uD_v\det J=40$，而 $7^2=49&gt;40$，条件满足。临界值 $q_c=7/20=0.35$，$k_c\approx0.592$。</p>
-      <p>在 $q=0.35$ 处，$J-qD=\begin{pmatrix}0.65&amp;1\\-4&amp;-6.5\end{pmatrix}$，行列式为 $-0.225&lt;0$。特征方程 $\lambda^2+5.85\lambda-0.225=0$ 给出一个正根 $\lambda\approx0.038$：扰动缓慢增长。对应波长约 $2\pi/k_c\approx10.6$ 个细胞；在 20 个细胞的环上，最接近的允许模式大约是 2 个瓣。图灵 1952 年的数值实验用了不同参数，在 20 细胞环上得到 3 或 4 个瓣——具体数目由参数和边界条件决定，这正是“模式选择”而非“固定答案”。</p>
-    </div>
-  </div>
+<h3><span class="sn">6.4</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>概念</th><th>含义</th><th>关键事实</th></tr></thead>
+<tbody>
+<tr><td class="id">o-machine</td><td>带 oracle 查询的图灵机</td><td>oracle 不是机器</td></tr>
+<tr><td class="id">相对可判定</td><td>存在带 $O$ 的 o-machine 判定 $A$</td><td>依赖 oracle 的选择</td></tr>
+<tr><td class="id">o-circle-free</td><td>o-machine 无限印 0/1</td><td>对任何 $O$ 都不可 $O$-判定</td></tr>
+<tr><td class="id">跳跃 $0'$</td><td>停机问题的度</td><td>严格高于 $0$</td></tr>
+<tr><td class="id">算术层级</td><td>按量词交替分层</td><td>与跳跃层级对应</td></tr>
+</tbody>
+</table></div>
 
-  <h3><span class="sn">6.3</span>为什么今天仍重要</h3>
-  <p>图灵机制后来在化学系统中得到验证（例如 CIMA 反应中的条纹与斑点），也被用来解释鱼皮条纹、毛发间距、指头形成、叶片排列等发育现象。今天“Turing pattern”已经是反应-扩散模型的通称；合成生物学甚至可以把图灵回路写进细菌，让菌落自己长出图案。</p>
-
-  <div class="table-wrap cheat">
-    <table>
-      <thead><tr><th>概念</th><th>含义</th><th>历史例子</th></tr></thead>
-      <tbody>
-        <tr><td class="id">吗啡原</td><td>携带位置信息的化学物质</td><td>激活剂/抑制剂</td></tr>
-        <tr><td class="id">扩散失稳</td><td>无扩散稳定，有扩散不稳定</td><td>图灵 1952</td></tr>
-        <tr><td class="id">临界波数</td><td>最先增长的空间频率</td><td>决定瓣数/条纹间距</td></tr>
-        <tr><td class="id">20 细胞环</td><td>一维周期离散组织</td><td>3 或 4 个瓣</td></tr>
-        <tr><td class="id">叶序</td><td>叶片绕茎的排列</td><td>Fibonacci 结构</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不是“扩散必然产生图案”</span></div>
-    <div class="thm-body">
-      <p><strong>扩散本身只会抹平。</strong>必须有至少两种物质、不同的扩散系数、适当的反应动力学；两种物质扩散得一样快时，图灵失稳不会发生。</p>
-      <p><strong>线性分析只预测“开始失稳”。</strong>它给出临界波长和增长率，不告诉你最终是斑点、条纹还是更复杂的非线性结构；后者需要非线性分析或数值模拟。</p>
-      <p><strong>20 细胞的结果是数值实验，不是生物定律。</strong>它说明机制可行，不证明某种生物一定用这套参数；参数窗口还可能很窄。</p>
-    </div>
-  </div>
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">oracle 不是 API</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>oracle 不是数据库或网络服务。</b>它是一个数学黑箱：在一步内回答一个不可判定的问题；把它当成工程接口，会误解整个相对可计算理论。</p>
+<p><b>相对化不是“解决”了不可判定。</b>它只是把问题移到更强的假设下；对角线在每一层都成立。</p>
+<p><b>图灵没有建立完整的度理论。</b>他只给出 o-machine 与相对化的雏形；Post、Kleene 等人在 1940–50 年代发展了跳跃、图灵度与算术层级。</p>
+</div>
+</div>
 </div></section>
 
 <section id="ch7" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 7 · 1948–1950 · Machine Intelligence</div>
-  <h2><span class="num">7</span>机器智能与模仿游戏</h2>
-  <p class="lede">在图灵那里，“人工智能”不是一堆手写规则，而是一个可以被教育、被修剪、被搜索的系统。1948 年他提出学习机器；1950 年他把“机器能思考吗”换成了一个可操作的问题。</p>
+<div class="sec-label">Part II · Type Theory · 1942 Published Papers</div>
+<h2><span class="num">7</span>类型论 I：丘奇系统、形式定理与点号括号</h2>
+<p class="lede">图灵在 1940 年代花了大量精力做一件当时很“不时髦”的事：把罗素–丘奇的类型论整理成数学家真的能用的记号。Part II 的两篇 1942 年论文，一篇证明丘奇系统中“无穷公理”在含个体的类型里可导出，一篇把“点号代替括号”的排版约定写成严格的语法理论。</p>
 
-  <div class="chap-intro">
-    <p>《智能机器》报告（1948）讨论无组织机器、训练与搜索；《计算机器与智能》（1950）提出模仿游戏，并逐条回应反对意见。两篇合起来是图灵的双重策略：一边造能学习的机器，一边给智能一个行为主义检验。</p>
-    <span class="tag">1948 / 1950</span>
-  </div>
+<div class="chap-intro">
+<p>Part II 由一篇 <em>General Introduction to Turing's work on Type Theory</em> 开篇。图灵对类型论的兴趣来自丘奇 1937–38 年的课；他在 1940 年给 Newman 的信里说，丘奇的系统“比其他任何系统都清楚，而且不至于笨重到不能用”。本节的兩篇论文，一篇是与 Newman 合作的 <em>A Formal Theorem in Church's Theory of Types</em>，一篇是独著的 <em>The Use of Dots as Brackets in Church's System</em>。</p>
+<span class="tag">Church (C) · 1942 · JSL</span>
+</div>
 
-  <div class="mapchips">
-    <span class="chip hot">无组织机器</span>
-    <span class="chip">NAND</span>
-    <span class="chip">儿童机器</span>
-    <span class="chip">模仿游戏</span>
-    <span class="chip">反对意见</span>
-  </div>
+<div class="mapchips">
+<span class="chip hot">类型论 (type theory)</span>
+<span class="chip">丘奇系统 (C)</span>
+<span class="chip">无穷公理</span>
+<span class="chip">描述算子</span>
+<span class="chip">外延性</span>
+<span class="chip">点号 (dots)</span>
+</div>
 
-  <h3><span class="sn">7.1</span>原问题：智能是编程出来的，还是训练出来的？</h3>
-  <p>最直接的做法是把知识一条条写进程序；但图灵认为，真实智能更像“教育”的结果：给机器一个可塑的结构，让它从经验中调整自己。他设想“儿童机器”——不是直接造一个成年大脑，而是造一个能学习的大脑，再教育它。</p>
+<h3><span class="sn">7.1</span>丘奇的系统：类型、项与公理</h3>
+<p>丘奇的简单类型论有两个基本类型：$o$（命题）与 $\iota$（个体）。若 $\alpha,\beta$ 是类型，$(\alpha\beta)$ 是从 $\beta$ 到 $\alpha$ 的函数类型。项由常元、变元、应用 $A_{\alpha\beta}B_\beta$ 与抽象 $\lambda x_\beta.A_\alpha$ 生成。原始常元是 $N_{oo}$（否定）、$A_{ooo}$（析取）、$\Pi_{o(o\iota)}$（全称量化）；等式与其他逻辑联结词是缩写。</p>
+<p>公理 1–6 覆盖类型化 λ-演算与经典命题逻辑、量化理论；公理 7 与 8 合起来是<b>无穷公理 (axiom of infinity)</b>：存在至少两个不同个体，且后继函数是单射。公理 9 是<b>描述公理 (axioms of descriptions)</b>，引入描述算子 $\iota_\alpha$；公理 10 是<b>外延性 (extensionality)</b>；公理 11 是<b>选择公理 (axiom of choice)</b>。图灵后来反复讨论：哪些公理是“数学实践真的需要”的，哪些只是形式系统的便利。</p>
 
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">无组织机器（B-type）</span><span class="thm-id">1948，现代术语改写</span></div>
-    <div class="thm-body">
-      <p>由大量双输入 <strong>NAND</strong> 单元随机连接而成的网络。每个单元的输出是“两个输入不同时为 1”；通过切断或改变连接，可以把这个随机网络“组织”成具有特定功能的电路。NAND 是函数完备的：仅用 NAND 就能搭出与、或、非，进而搭出任何布尔函数。训练就是<strong>选择并固定</strong>随机网络中已有的有用子电路。</p>
-    </div>
-  </div>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">无穷公理 $\gamma_\alpha$</span><span class="thm-id">Church 1930s; Newman–Turing 1942</span></div>
+<div class="thm-body">
+<p>对类型 $\alpha$，令 $\gamma_\alpha$ 表示“类型 $\alpha$ 有无穷多个元素”的形式陈述（等价地，存在一个从 $\alpha$ 到 $\alpha$ 的单射但非满射）。丘奇证明：若 $\gamma^\iota$ 成立，则对类型 $\iota',\iota'',\ldots$ 也有 $\gamma$。对一般类型 $\alpha$，问题留开。</p>
+</div>
+</div>
 
-  <p>NAND 的完备性可以用一个经典构造说明：$n=\operatorname{NAND}(x,y)$，$a=\operatorname{NAND}(x,n)$，$b=\operatorname{NAND}(y,n)$，则 $x\oplus y=\operatorname{NAND}(a,b)$。四个门就搭出了异或；只要网络足够大、连接足够灵活，功能就可以从“随机连接 + 选择”中涌现。图灵没有反向传播；他的“训练”更接近剪接、奖励与搜索。</p>
+<h3><span class="sn">7.2</span>Newman–Turing 定理：无穷公理沿类型传播</h3>
+<p>1942 年的短文证明：若类型 $\alpha$ 含有 $\iota$，则 $\gamma_\alpha$ 可证。证明只用到公理 1–7、$\gamma^\iota$、公理 9（描述）与公理 10（外延性）。文章把证明分成三个主要步骤：</p>
+<ol>
+<li><b>等价刻画。</b>证明“$\gamma_\alpha$”等价于“没有数属于它自己的后继链 (no number belongs to its own posterity)”。这把“无穷”从基数概念换成算术概念。</li>
+<li><b>一一把映射。</b>若类型 $\tau$ 能一一映射到类型 $\tau_1$ 的一部分，则 $\tau$ 中“属于自己后继链”的数对应到 $\tau_1$ 中同样性质的数。于是 $\gamma_\tau$ 蕴含 $\gamma_{\tau_1}$。</li>
+<li><b>构造映射。</b>对类型对 $(\alpha\beta,\alpha)$ 与 $(\alpha\beta,\beta)$ 实际构造一一映射，从而 $\gamma_{\alpha\beta}$ 可由 $\gamma_\alpha$ 或 $\gamma_\beta$ 推出；再对类型符号的长度归纳，得到所有含 $\iota$ 的类型。</li>
+</ol>
+<p>这个定理的技术价值在于：它把“无穷公理”从一个类型一个类型地假设，变成一次假设 $\gamma^\iota$ 就够。它的方法论价值在于：图灵和 Newman 用“类型之间的可映射性”作为桥梁，这正是后来“虚拟类型”与“嵌套类型”思想的雏形。</p>
 
-  <h3><span class="sn">7.2</span>模仿游戏：把“思考”换成“不可区分”</h3>
-  <p>1950 年，图灵在《心》上发表《计算机器与智能》。他先承认“机器能思考吗”太模糊，然后设计游戏：询问者通过电传打字机与两个对象对话，一个是人，一个是机器；机器若能让询问者经常判断错误，就在某种意义上“通过了”。原文最初是“一男一女，询问者猜性别”，再让机器顶替一方；图灵关心的不是“像不像人”，而是<strong>在信息受限的对话中，身份能否被可靠识别</strong>。</p>
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">$\gamma_\alpha$ 对含 $\iota$ 的类型可证</span><span class="thm-id">Newman–Turing 1942, 末定理</span></div>
+<div class="thm-body">
+<p>若 $\alpha$ 是含 $\iota$ 的类型符号，则在丘奇系统 (C) 加上公理 1–7、$\gamma^\iota$、公理 9 与公理 10 的系统中，$\gamma_\alpha$ 可证。</p>
+</div>
+</div>
 
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">模仿游戏（标准版）</span><span class="thm-id">1950</span></div>
-    <div class="thm-body">
-      <p>询问者 $C$ 与对象 $A$、$B$ 只能通过文字交流。$A$ 是人类，$B$ 是机器（或反过来）；$C$ 要在规定时间内判断哪一个是机器。若 $C$ 的判断准确率接近随机猜测，机器就“通过”了测试。关键条件是<strong>纯文本、限时、可自由提问</strong>；机器的外观、声音、动作都被屏蔽，只剩下语言行为。</p>
-    </div>
-  </div>
+<h3><span class="sn">7.3</span>点号作为括号：一个被低估的语法理论</h3>
+<p>《The Use of Dots as Brackets in Church's System》看起来只是“排版问题”，其实是一篇严格的语法论文。逻辑公式如果全靠括号，会变得难以阅读；罗素与怀特海用点号分组，但 Curry 1937 年指出，这种做法对“迭代构造”的公式不友好。图灵把点号系统扩展成一套可判定的缩写规则，并证明它能还原成唯一的不缩写公式。</p>
+<p>基本想法是：每个点号有一个“力量 (power)”，点号之间按力量线性排序；一个点号的<b>作用域 (scope)</b> 是从它到与它平衡的括号之间的区间。点号可以代表左括号、右括号，或两者的组合；规则规定在什么位置插入哪个方向的括号。图灵给出了“公式是良构的”这一判据，以及从缩略公式恢复完整括号的算法。</p>
 
-  <h3><span class="sn">7.3</span>反对意见与回答</h3>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>反对意见</th><th>图灵的回答（概括）</th></tr></thead>
-      <tbody>
-        <tr><td class="id">神学</td><td>灵魂说无法检验；把机器排除在外是预设结论。</td></tr>
-        <tr><td class="id">数学（哥德尔）</td><td>机器不能绝对无误，但人也会犯错；不能由此推出机器不能思考。</td></tr>
-        <tr><td class="id">意识</td><td>我们只能从行为推断他人有意识；唯我论不能作为论证。</td></tr>
-        <tr><td class="id">Lady Lovelace</td><td>机器只能做被编程的事；但学习机器可以让人惊讶。</td></tr>
-      </tbody>
-    </table>
-  </div>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">点号系统的基本约定</span><span class="thm-id">1942, §1–§2</span></div>
+<div class="thm-body">
+<p>公式分为“不可约公式”“一元算子 $R(A)$”“二元算子 $(A)S(B)$”。缩略公式允许出现点号；点号有力量，力量线性有序。每个点号解释为一个括号或一对括号；解释必须满足：括号正确配对、每个点号的作用域不越过力量更高的点号、并且删除所有点号后得到的公式与原文的括号结构一致。图灵证明：在这组约定下，每个良构的缩略公式有唯一的展开。</p>
+</div>
+</div>
 
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">算例</span><span class="thm-title">三个询问者，多数通过</span><span class="thm-id">模型化计算，非实验数据</span></div>
-    <div class="thm-body">
-      <p>设 3 个询问者独立判断，机器被误判为人的概率为 $p$；多数（至少 2 人）误判则通过。通过概率为</p>
-      <p>$$P=\binom32p^2(1-p)+p^3=3p^2-2p^3.$$</p>
-      <p>当 $p=0.3$ 时 $P=0.216$；$p=0.4$ 时 $P=0.352$；$p=0.5$ 时 $P=0.5$；$p=0.7$ 时 $P=0.784$。这说明“通过率”强烈依赖询问者人数、判定规则和 $p$ 的估计；单独说“通过了图灵测试”几乎没有信息量。</p>
-    </div>
-  </div>
+<p>这篇论文的直接影响不大，但它的思路很“图灵”：把一个看似任意的排版惯例，改写成有限条可检查的规则，然后证明规则足够、唯一、可算法化。这种“把隐性约定显式化”的工作，与他在《 Reform of Mathematical Notation》里对数学记号的批评是同一条线。</p>
 
-  <h3><span class="sn">7.4</span>为什么今天仍重要</h3>
-  <p>大语言模型让模仿游戏重新成为公共话题：模型可以生成流畅、貌似有阅历的回答，但这是否等于理解？图灵测试的真正遗产，也许不是“智能的定义”，而是一种<strong>评估方法论</strong>：把抽象争论变成可重复的盲测，并明确任务、时间、评判者和判定规则。</p>
+<h3><span class="sn">7.4</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>结果</th><th>内容</th><th>意义</th></tr></thead>
+<tbody>
+<tr><td class="id">Church (C)</td><td>类型 $o,\iota,(\alpha\beta)$；公理 1–11</td><td>类型论的标准形式</td></tr>
+<tr><td class="id">$\gamma_\alpha$</td><td>类型 $\alpha$ 有无穷多元素</td><td>无穷公理的类型化</td></tr>
+<tr><td class="id">Newman–Turing</td><td>含 $\iota$ 的类型都可证 $\gamma_\alpha$</td><td>一次假设 $\gamma^\iota$ 足够</td></tr>
+<tr><td class="id">证明三步</td><td>等价刻画 → 一一把映射 → 构造映射</td><td>类型间的可映射性</td></tr>
+<tr><td class="id">点号</td><td>力量、作用域、括号方向</td><td>可判定的缩写系统</td></tr>
+<tr><td class="id">唯一展开</td><td>良构缩略公式对应唯一完整公式</td><td>排版约定可形式化</td></tr>
+</tbody>
+</table></div>
 
-  <div class="table-wrap cheat">
-    <table>
-      <thead><tr><th>概念</th><th>图灵的说法</th><th>今天</th></tr></thead>
-      <tbody>
-        <tr><td class="id">学习机器</td><td>儿童机器、教育、训练</td><td>预训练 / 微调 / 强化学习</td></tr>
-        <tr><td class="id">无组织机器</td><td>随机 NAND 网络 + 剪接</td><td>随机网络、神经架构搜索</td></tr>
-        <tr><td class="id">模仿游戏</td><td>文字对话、判断身份</td><td>人机盲测、聊天机器人评测</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">通过测试不等于有理解</span></div>
-    <div class="thm-body">
-      <p><strong>图灵测试测的是“像不像人”，不是“聪不聪明”。</strong>一个擅长模仿人类语气、回避难题的系统，可能比一个诚实但笨拙的系统更容易通过。</p>
-      <p><strong>短测试不可靠，机器也可以说谎。</strong>几分钟的对话样本太小；游戏允许机器隐藏身份，通过测试可能依赖欺骗，而不是理解。</p>
-      <p><strong>原文不是简单的“人机对话”。</strong>最初是男/女游戏，机器顶替其中一方；焦点是“身份”而不是“能力”。</p>
-    </div>
-  </div>
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">类型论不是“过时的集合论”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>图灵不是要取代集合论。</b>他想给“普通数学家”一套不容易出错的记号；后来集合论成为主流，不代表这些工作没有价值。</p>
+<p><b>$\gamma_\alpha$ 不是“所有类型都无穷”。</b>定理只对含 $\iota$ 的类型成立；纯 $o$ 的类型可能有限，丘奇指出过这一点。</p>
+<p><b>点号不是“随便点的”。</b>它有一套力量与作用域规则；图灵证明的是“这套规则能唯一还原”，不是“点号看起来好看”。</p>
+</div>
+</div>
 </div></section>
 
-<section id="summary" class="chapter"><div class="wrap">
-  <div class="sec-label">Toolbox · 一页纸总结</div>
-  <h2><span class="num">F</span>Turing 工具箱</h2>
-  <p class="lede">只带走一页：每个问题对应一个构造、一个边界、一个误用。关键是把问题改写成可严格追问的形式。</p>
+<section id="ch8" class="chapter"><div class="wrap">
+<div class="sec-label">Part II · 1941–1948 · Practical Forms · Unpublished Papers · Reform</div>
+<h2><span class="num">8</span>类型论 II：让数学家“在证明里看见类型”</h2>
+<p class="lede">图灵对类型论的雄心不是造一个更漂亮的形式系统，而是让普通数学家在写证明时自动避开类型错误。他设计了“嵌套类型”与“隐藏类型”两套系统，证明前者对有限宇宙完备、与丘奇系统等价，又把后者当作通往集合论的桥。未刊手稿里还有一份早期的重要结果：类型化 λ-演算的每个公式都有范式。</p>
 
-  <div class="table-wrap cheat">
-    <table>
-      <thead><tr><th>问题</th><th>核心构造</th><th>关键结论</th><th>边界/误用</th></tr></thead>
-      <tbody>
-        <tr><td class="id">什么叫机械计算？</td><td>纸带 + 有限状态 + 局部动作</td><td>可计算数、通用机</td><td>不限资源；不要求停机</td></tr>
-        <tr><td class="id">有没有通用判定法？</td><td>对角线、自指、归约</td><td>停机/判定问题不可判定</td><td>不是“所有实例都难”</td></tr>
-        <tr><td class="id">换个模型会怎样？</td><td>λ 演算、递归函数、寄存器机</td><td>可计算函数类相同</td><td>论题不可证明</td></tr>
-        <tr><td class="id">能否超越不完备？</td><td>序数逻辑、超限扩张</td><td>真 $\Pi^1_1$ 句在某一层可证</td><td>$O$ 不可递归枚举</td></tr>
-        <tr><td class="id">知道得更多会怎样？</td><td>oracle 机、相对可计算</td><td>相对停机仍不可判定</td><td>oracle 不是 API</td></tr>
-        <tr><td class="id">密码怎么破？</td><td>crib、menu、闭环、Bombe</td><td>用约束排除转子位置</td><td>不是暴力穷举</td></tr>
-        <tr><td class="id">证据怎么累加？</td><td>Bayes 因子、deciban、序贯检验</td><td>证据可加，够了就停</td><td>偷看数据会膨胀错误率</td></tr>
-        <tr><td class="id">图案怎么长出？</td><td>反应-扩散、线性稳定性</td><td>扩散驱动失稳</td><td>线性分析只给起始</td></tr>
-        <tr><td class="id">机器能学习吗？</td><td>随机 NAND 网络、儿童机器</td><td>组织/训练可产生功能</td><td>不是现代反向传播</td></tr>
-        <tr><td class="id">机器能思考吗？</td><td>模仿游戏、行为检验</td><td>把形而上问题变成盲测</td><td>通过 ≠ 理解</td></tr>
-      </tbody>
-    </table>
-  </div>
+<div class="chap-intro">
+<p>本节覆盖 1948 年 <em>Practical Forms of Type Theory</em>、三份未刊手稿 <em>Some Theorems about Church's System</em>（1941）、<em>Practical Forms of Type Theory II</em>（1943–44）、<em>The Reform of Mathematical Notation</em>（1944–45）。这几篇的共同目标是“实用”：类型不该只在元定理里出现，而该像量纲一样，在记号和推理中自然起作用。</p>
+<span class="tag">Nested-type · Concealed-type · Reform</span>
+</div>
 
-  <h3><span class="sn">F.1</span>一条主线：把直觉变成对象，再找它的边界</h3>
-  <p>图灵的每一篇重要工作，都遵循同一个节奏：先把一个模糊的直觉——“机械地算”“有效地判定”“随机地长”“像人一样对话”——改写成有限规则、有限状态或可观测行为；然后在这个精确模型里证明一个<strong>不可能</strong>或<strong>不可避免</strong>的结果；最后指出，这个结果不是终点，而是新的分层：可计算/不可计算、可判定/相对可判定、稳定/失稳、可区分/不可区分。</p>
-  <p>这也是读《全集》最值得学的方法论：不要急着问“图灵说了什么”，先问“他把哪个词定义清楚了？这个定义排除了什么？证明用到了哪条边界？”</p>
+<div class="mapchips">
+<span class="chip hot">嵌套类型 (nested-type)</span>
+<span class="chip">隐藏类型 (concealed-type)</span>
+<span class="chip">有限宇宙</span>
+<span class="chip">Theorem A / B</span>
+<span class="chip">范式 (normal form)</span>
+<span class="chip">记号改革</span>
+</div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">路线</span><span class="thm-title">如果从原著读起</span></div>
-    <div class="thm-body">
-      <p>先读 1936 年论文的 §1–§8（机器、通用机、对角线），再读 §9–§11 的哲学讨论与判定问题归约。1939 年的序数逻辑很难，可以先读导言与 oracle 部分。1940 年的 Enigma 论文、1950 年的《计算机器与智能》、1952 年的形态发生论文，都可以独立阅读；它们展示同一个方法在不同领域的变形。</p>
-    </div>
-  </div>
+<h3><span class="sn">8.1</span>嵌套类型：累积的层级</h3>
+<p>《Practical Forms of Type Theory》开篇说，罗素的类型论“虽然不是最可靠的基础，却最接近大多数数学家的直观”。图灵要把类型“降到背景”，让它在普通论证里只起很小的作用。他描述两套系统：<b>嵌套类型 (nested-type)</b> 与<b>隐藏类型 (concealed-type)</b>。</p>
+<p>嵌套类型的宇宙从有限个个体 $U_1,\ldots,U_N$ 开始。个体是 type 0；个体的函数（以个体为值）连同个体本身构成 type 1；以 type 1 为参数、以 type 1 为值的函数，连同 type 1 的成员，构成 type 2；依此类推。每一层是累积的：type $n$ 包含 type $n-1$ 的所有成员。这样，“函数”与“个体”不必住在完全隔离的层里，类型只标记“这个对象属于哪一级”。</p>
 
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">读法</span><span class="thm-title">四个最常见的时代错置</span></div>
-    <div class="thm-body">
-      <p><strong>把“图灵机”当成现代电脑。</strong>图灵机是数学模型，不是硬件；现代电脑有有限内存、并行、I/O，不能直接等同。</p>
-      <p><strong>把“图灵测试”当成智能定义。</strong>它是一个操作化检验，不是充分必要条件；图灵本人也把它当作“替代问题”，而非“定义”。</p>
-      <p><strong>把“不可判定”当成“无法解决”。</strong>不可判定是说没有统一算法；具体实例、受限子类、近似算法仍然可以很有用。</p>
-      <p><strong>把团队工作写成个人神话。</strong>Enigma 有波兰先驱与 Bletchley 团队；序数逻辑后的图灵度理论有 Post、Kleene。读全集，也要读脚注与导言。</p>
-    </div>
-  </div>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">嵌套类型系统的类型</span><span class="thm-id">1948, §1</span></div>
+<div class="thm-body">
+<p>类型 0：个体 $U_1,\ldots,U_N$。类型 $n+1$：以类型 $n$ 为参数、以类型 $n$ 为值的函数，连同类型 $n$ 的所有成员。记 $D^r x$ 为“$x$ 属于类型 $r$”。公理 A4/A5 保证层级累积：$D^r x\Rightarrow D^{r+1}x$，且 $D^{r+1}x\Rightarrow D^r x$ 不成立（函数可以更高）。</p>
+</div>
+</div>
 
-  <p class="small">覆盖说明：本页以《Mathematical Logic》卷为主线，兼及《Mechanical Intelligence》与《Morphogenesis》卷的主题；公式按原始论文的数学内容重建，构造性算例均已标明，未把示意数据写成历史实验。</p>
+<p>形式系统用 $(\lambda x,r)A$ 表示“类型 $r$ 的抽象”，用 $(x,r)P$ 表示“对类型 $r$ 的 $x$ 全称量化”。规则 I–IX 包括约束变量改名、替换、量词、命题演算、modus ponens、描述、抽象、以及公理 A1–C2。Rule IX 是无穷公理；在有限宇宙中，它被 Rule IXN 取代：$D^0x=(x=U_1\lor\cdots\lor x=U_N)$，且不同个体不等。</p>
+
+<h3><span class="sn">8.2</span>Theorem A：有限宇宙的可靠性与完备性</h3>
+<p>图灵把“有限宇宙”当作检验系统的好场地：如果一套类型规则在有限个个体上既可靠又完备，说明没有漏掉关键公理。他先为每个“表 (table)”$U$ 构造一个项公式 $u^H$，把表的行为编码进系统；然后证明一个元数学引理：</p>
+<p>$$\text{对任意表 }U,V,W,\quad UV=W\iff \mathcal{T}_N\vdash u^Hv^H=w^H,$$</p>
+<p>其中 $\mathcal{T}_N$ 是带 Rule IXN 的嵌套类型系统。由这个引理，可靠性与完备性同时得到：每个真命题都可证，每个可证命题都真。</p>
+
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Theorem A（有限宇宙）</span><span class="thm-id">1948, §2; Practical Forms II §3</span></div>
+<div class="thm-body">
+<p>带 Rule IXN 的嵌套类型系统，对“以 $N$ 个个体为基础、每一类型 $r$ 的元素为 type $r$ 的表”的模型，是可靠且完备的。</p>
+</div>
+</div>
+
+<h3><span class="sn">8.3</span>Theorem B：与丘奇系统等价</h3>
+<p>第二个结果是“等价性”：嵌套类型系统与丘奇系统 (C) 在可证性上互相翻译。图灵在 §3 给出“两个逻辑系统等价”的定义：存在一对翻译，保持可证性、保持否定、并且来回翻译与原公式等价。Theorem B 说这两套系统在这个意义下等价。</p>
+<p>证明是长而乏味的双向翻译。从丘奇系统到嵌套类型，要把每个类型 $\alpha$ 映射到一个足够高的单一类型 $r'$；从嵌套类型到丘奇系统，要把累积层级压进丘奇的函数类型。图灵在《Practical Forms II》里写了 81 页打字稿来补细节，但最终没有发表，因为“证明很长很乏味，不值得发表”。这句话本身很能说明他的取舍：结果重要，形式细节不必占据期刊版面。</p>
+
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Theorem B（等价性）</span><span class="thm-id">1948, §3</span></div>
+<div class="thm-body">
+<p>丘奇系统 (C) 与嵌套类型系统在“保持可证性与否定”的意义下等价：存在双向翻译，使 $P$ 在 (C) 中可证当且仅当其翻译在嵌套系统中可证，且翻译保持 $\neg$ 与逻辑结构。</p>
+</div>
+</div>
+
+<h3><span class="sn">8.4</span>隐藏类型：让类型“只在该出现时出现”</h3>
+<p>隐藏类型系统（concealed-type）是另一种“实用化”：类型不写在每个变量上，而是通过“这个项是否属于某个 noun-class”来隐含。图灵用 $E$ 表示“是个体”的谓词，用 $\mathrm{Sum}$、$\mathrm{Pot}$ 构造集合与幂集；量词 $(x)P$ 与描述 $(1x)P$ 只有在 $P\Rightarrow Ax=T'$ 可证时才是合式公式。这样，类型检查变成“这个公式是否可证”的一部分，而不是额外的语法层级。</p>
+<p>隐藏类型与嵌套类型之间有三个元定理：把 $E$ 替换为 $(\lambda x,0)T'$ 后，合式公式变成可解释的；可证公式的翻译可证；嵌套系统的每个可证公式都能这样得到。换句话说，隐藏类型是嵌套类型的一种“语法糖”，但它的目标是让数学家不必显式写类型。</p>
+
+<h3><span class="sn">8.5</span>未刊手稿：范式、描述与 Zermelo</h3>
+<p>三份手稿的标题分别是 <em>Manuscript I: Consequences of the Peano axioms</em>、<em>Manuscript II: Finite models of Church's and Zermelo's systems</em>、<em>Manuscript III: Some Theorems about Church's system</em>。其中最值得注意的是第三份里的范式证明。图灵按“未归约部分 (unreduced part) 的阶”给所有公式排序：先比最高阶，再比该阶的个数，再比低一阶的个数，最后比长度。这个序是 $\omega^\omega$ 型良序；每次归约最高阶、最右的 redex，都会使公式在序中前移。由于良序没有无限下降链，归约必终止。这可能是最早写出的“类型化 λ-演算每个公式都有范式”的证明之一。</p>
+<p>手稿还讨论：$p_0=q_0\Rightarrow p_0=q_0$ 与其它公理的一致性（用到 type 0 的描述公理）；描述公理在外延性下的独立性；以及丘奇系统与 Zermelo 集合论的连接。图灵在给 Newman 的信里把这些结果编号为 A–F，像一张待办清单；其中“虚拟类型 (virtual types)”的方法没有完整保存下来，只在《Practical Forms II》与导言里留下片段。</p>
+
+<h3><span class="sn">8.6</span>《记号与措辞的改革》：不要把所有数学塞进一个系统</h3>
+<p>《The Reform of Mathematical Notation and Phraseology》是一份未完成打字稿，写于 1944–45 年，缺失第 9–12 页。它的语气比类型论论文更“公共”：数学与逻辑几乎是一回事，但符号逻辑对数学家的帮助很小，原因是缺乏 liaison。图灵不想把数学塞进一个“铁铸的逻辑系统”，而是提出一条条可以单独采纳的小建议。</p>
+<p>他举的例子很具体：应该说“函数 $f$”还是“$z$ 的函数 $f(z)$”？类型下标该写在哪里？约束变量与自由变量如何区分？他主张用“noun-class”（可证明是集合的类）来替代显式类型，用字母的字体与上下标提示变量的范围——这其实是数学家已经在做的事，只是没有形式化。他还强调 Deduction Theorem 与“被假设限制的变量 (variables restricted by hypotheses)”的重要性，认为这是理解数学论证逻辑的关键。</p>
+
+<h3><span class="sn">8.7</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>结果</th><th>内容</th><th>意义</th></tr></thead>
+<tbody>
+<tr><td class="id">嵌套类型</td><td>类型 $n+1$ = 以 type $n$ 为参数/值的函数 + type $n$</td><td>累积层级，接近数学实践</td></tr>
+<tr><td class="id">Rule IXN</td><td>有限宇宙：$D^0x\Leftrightarrow x=U_1\lor\cdots\lor U_N$</td><td>有限模型</td></tr>
+<tr><td class="id">Theorem A</td><td>带 IXN 的系统对有限宇宙可靠且完备</td><td>检验公理是否遗漏</td></tr>
+<tr><td class="id">Theorem B</td><td>与丘奇系统 (C) 等价</td><td>两套系统可互相翻译</td></tr>
+<tr><td class="id">隐藏类型</td><td>用 noun-class 与可证性替代显式类型</td><td>类型检查融入证明</td></tr>
+<tr><td class="id">范式</td><td>类型化 λ-演算每个公式有范式</td><td>用 $\omega^\omega$ 良序证明终止</td></tr>
+<tr><td class="id">Reform</td><td>小建议而非铁铸系统</td><td>记号与措辞影响数学理解</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">“实用”不等于“不严格”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>Theorem A 只对有限宇宙。</b>它不证明无限宇宙的完备性；无限情形需要无穷公理，性质不同。</p>
+<p><b>Theorem B 的“等价”有精确定义。</b>不是“两套系统一模一样”，而是存在保持可证性与否定的双向翻译。</p>
+<p><b>隐藏类型不是“没有类型”。</b>类型以 noun-class 与可证性条件的形式存在，只是不写在每个变量上。</p>
+<p><b>Reform 没有完成。</b>它是一份未完成手稿，很多想法是建议而非定理；不要把它当成图灵的统一数学哲学。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch9" class="chapter"><div class="wrap">
+<div class="sec-label">Part III · 1940 · Turing's Treatise on the Enigma</div>
+<h2><span class="num">9</span>Enigma：用逻辑闭环和机械排除破译</h2>
+<p class="lede">Enigma 的密钥空间大到无法穷举，但它的机械结构留下了一道裂缝：反射器使加密成为自逆的，任何字母都不会加密成它自己。图灵把这道裂缝变成可执行的约束：先猜一小段明文，再沿闭环传播“插线板必须一致”的条件，从而在不认识插线板的情况下排除绝大多数转子位置。</p>
+
+<div class="chap-intro">
+<p>Part III 由 Andrew Hodges 提议设立。开篇的 <em>Turing's Treatise on the Enigma</em> 是 1996 年 4 月美国国家安全局解密的一批材料之一：约 140 页打字稿，带图灵自己的手绘，未署名、未注明日期，但可确定写于 1940 年秋，在布莱切利园被称作“Prof's Book”。Hodges 的序说明：第 1–95 页讲手工分析（包括转子接线），第 96–123 页讲 Bombe，第 129–142 页讲海军 Enigma 的双字母密钥系统。本卷正文以 <em>Excerpts from the "Enigma Paper"</em> 为题收录了六段节选，分别对应 Bombe、逻辑链、serial/simultaneous scanning、对角板与海军双字母系统。</p>
+<span class="tag">Prof's Book · Bombe · crib / menu</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">密码分析 (cryptanalysis)</span>
+<span class="chip">转子 (rotors)</span>
+<span class="chip">插线板 (plugboard)</span>
+<span class="chip">crib / menu</span>
+<span class="chip">Bombe</span>
+<span class="chip">对角板 (diagonal board)</span>
+<span class="chip">双字母密钥</span>
+</div>
+
+<h3><span class="sn">9.1</span>Enigma 的机械结构：自逆与“无固定点”</h3>
+<p>Enigma 的加密路径是：按键 → 插线板替换 → 三个转子 → 反射器 → 转子返回 → 插线板再替换。转子每按一次就转动，同一字母在不同位置的加密结果不同。反射器使整个变换成为<b>自逆 (self-inverse)</b> 的：同一组设置下，$A$ 加密成 $B$，$B$ 就加密成 $A$。由此得到关键性质：<b>任何字母都不会加密成它自己</b>。这条性质与插线板的具体接线无关，是 Bombe 全部逻辑的支点。</p>
+<p>密钥空间为什么大？以三转子、五个可选转子为例：转子顺序有 $5\cdot4\cdot3=60$ 种，每个转子 26 个起始位置，共 $60\cdot26^3=1{,}054{,}560$ 种核心设置。插线板再把 10 对字母互换，组合数约为</p>
+<p>$$\frac{26!}{6!\,10!\,2^{10}}\approx1.5\times10^{14}.$$</p>
+<p>两者相乘约 $1.6\times10^{20}$。即使以每秒百万次测试，也要上百万年。Bombe 的聪明之处是<b>先不管插线板</b>，只用“无固定点”和 crib 的闭合约束排除转子位置；插线板只在最后少数候选上求解。</p>
+
+<h3><span class="sn">9.2</span>crib 与 menu：把猜测变成约束图</h3>
+<p>所谓 <b>crib</b>，是猜出的一段明文。把它与对应密文逐位对齐，就得到一张字母对应表；把对应关系画成图，就是 <b>menu</b>。图中的闭环会给出与插线板无关的一致性条件。</p>
+<p>图灵论文里的样例是一段 25 字母的德语 crib（“keine Zusätze zum Vorbericht”，意为“对初步报告没有补充”）：</p>
+<pre><code>密文  D A E D A Q O Z S I Q M M K B I L G M F W H A I V
+明文  K E I N E Z U S A E T Z E Z U M V O R B E R I C H</code></pre>
+<p>逐位比对，25 个位置没有一位相同。这正好符合 Enigma 的“无固定点”性质。论文中的 menu 还含有一个闭环 $Z\to S\to A\to E\to M\to Z$：在正确转子位置下，插线板是自逆置换，沿环走一圈必须回到起点；错误位置几乎总会破坏这个约束。Bombe 用电路把这种“沿环传播的蕴含”自动化。</p>
+
+<div class="intuition">
+<div class="ih">闭环为什么能排除错误位置</div>
+<p>把插线板看作未知的字母互换，每条密文–明文对应给出一个方程。沿环走一圈，方程复合后插线板相互抵消，只剩转子本身的条件。条件不成立，这个转子位置就不可能；条件成立，才进入下一步去求插线板。Bombe 不是“试遍所有密钥”，而是“用逻辑约束快速排除”。</p>
+</div>
+
+<h3><span class="sn">9.3</span>Bombe：同时扫描与对角板</h3>
+<p>Bombe 是一台机电装置，用一组旋转的鼓 (drums) 模拟 Enigma 的转子，用电路表示字母之间的蕴含关系。它的核心不是“计算”，而是“并联逻辑”：当某个假设导致矛盾时，电路断开；当假设一致时，电流保持。操作员通过观察哪些鼓停止，找出可能的转子位置。</p>
+<p>Turing 的论文描述了两个独立的逻辑原则。第一是<b>同时扫描 (simultaneous scanning)</b>：假设一个插线板假设是错的，则从它推出的所有结论都错；那些在“全错”背景下仍然成立的假设，就突出为可能正确的假设。第二是 Welchman 的<b>对角板 (diagonal board)</b>：利用插线板的自逆性，把“$A$ 接 $B$”与“$B$ 接 $A$”自动短接，从而把大量重复的假设合并。Hodges 特别指出：图灵自己的叙述把“同时扫描”放在“对角板”之前，这与 Good 的某些回忆顺序不同；读史料时要保留这种差异。</p>
+<p>Bombe 的工程实现由 Turing、Welchman 与英国制表机公司的工程师 Harold Keen 在 1939–40 年完成。它不是通用计算机，而是专用约束求解器；但它体现了与图灵机相同的思路：把逻辑关系变成物理连接，让“矛盾”自动断开。</p>
+
+<h3><span class="sn">9.4</span>海军 Enigma 与双字母密钥</h3>
+<p>论文第 129–142 页讲海军 Enigma。海军版本比陆军多一层<b>双字母密钥 (bigram substitution)</b>：指示器不是直接给出转子位置，而是经过一张双字母替换表编码。图灵在 1939 年底猜出了这套系统的基本结构，并在 1940 年继续改进。Hodges 说，这一节是全文唯一明确提到波兰先驱的地方；其余部分图灵没有把方法与 Rejewski、Różycki、Zygalski 的工作对照。</p>
+<p>海军 Enigma 的破译还依赖 <b>Banburismus</b>：在不知道 crib 的情况下，从大量密文中找出转子的相对位置。图灵在论文里只在括号中提了一句，没有展开；Mahon 1945 年的《History of Hut Eight》把它视为 1941 年春之后 Hut 8 成功的关键。这个“论文沉默、档案说话”的落差，是读 Part III 时必须记住的史料问题。</p>
+
+<h3><span class="sn">9.5</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>组件</th><th>作用</th><th>数学/逻辑</th></tr></thead>
+<tbody>
+<tr><td class="id">反射器</td><td>使加密自逆</td><td>无固定点：$E(x)\ne x$</td></tr>
+<tr><td class="id">插线板</td><td>10 对字母互换</td><td>$\frac{26!}{6!10!2^{10}}\approx1.5\times10^{14}$</td></tr>
+<tr><td class="id">crib</td><td>猜测的明文片段</td><td>提供字母对应方程</td></tr>
+<tr><td class="id">menu</td><td>对应关系图</td><td>闭环给出独立条件</td></tr>
+<tr><td class="id">Bombe</td><td>机械测试转子位置</td><td>电路传播蕴含；矛盾断开</td></tr>
+<tr><td class="id">同时扫描</td><td>利用“错误假设的结论全错”</td><td>排除而非枚举</td></tr>
+<tr><td class="id">对角板</td><td>利用插线板自逆</td><td>合并重复假设</td></tr>
+<tr><td class="id">双字母密钥</td><td>海军指示器编码</td><td>bigram substitution</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不是“图灵一个人暴力破解”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>不是靠暴力枚举。</b>Bombe 的核心是排除，不是把所有密钥试一遍；插线板从来没有被完整穷举。</p>
+<p><b>不是图灵一个人的功劳。</b>波兰数学家 Rejewski、Różycki、Zygalski 早在 1930 年代就破解了早期 Enigma；布莱切利园是一个团队，Welchman 的对角板、Hut 6/Hut 8 的协作都关键。</p>
+<p><b>crib 错了就全错；闭环也不直接给出插线板。</b>它先排除转子位置，插线板要在剩下的少数候选中另行求解。</p>
+<p><b>论文不是完整历史。</b>它写于 1940 年，只覆盖当时的陆军与部分海军工作；Banburismus、后期改进、美国合作都不在其中。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch10" class="chapter"><div class="wrap">
+<div class="sec-label">1941–1954 · Minimum Cost Sequential Analysis · Banburismus</div>
+<h2><span class="num">10</span>证据的重量：Banburismus 与最小代价序贯分析</h2>
+<p class="lede">Enigma 的转子位置可以用逻辑排除；但在不知道 crib 的时候，还要先判断两段密文是否来自同一组转子设置。图灵把这件事写成序贯贝叶斯推断：每比较一次字母频率，就给假设加一点“证据重量”，够了就停。这套方法在 1941 年春投入使用，代号 Banburismus。</p>
+
+<div class="chap-intro">
+<p>本节对应 Part III 的 <em>Minimum Cost Sequential Analysis</em>（未刊手稿，6 页打字稿 + 7 页手写 + 3 幅图），以及 I. J. Good 的评论。原书先以 <em>Excerpt from unpublished manuscript</em> 收录手稿首页的摘要，再附 Good 的 <em>Commentary</em>。图灵没有给这篇手稿正式标题页；Good 认为它写于 1941–42 年，是对 Barnard 1946 年“序贯抽样检验”的回应与推广。它的历史意义在于：图灵在 Wald 1943 年的工作之前，就已经在实践里使用了贝叶斯序贯方法。</p>
+<span class="tag">Bayes factor · deciban · 序贯检验</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">序贯分析 (sequential analysis)</span>
+<span class="chip">Bayes 因子</span>
+<span class="chip">deciban</span>
+<span class="chip">接受/拒绝边界</span>
+<span class="chip">先验分布</span>
+<span class="chip">Banburismus</span>
+</div>
+
+<h3><span class="sn">10.1</span>问题：不知道 crib 时，如何找转子位置</h3>
+<p>Bombe 需要一段 guessed plaintext（crib）才能建立 menu。但在海军 Enigma 中，很多电报没有可靠的 crib。Banburismus 的做法是：先不管具体字母，只比较不同密文串的“字母频率特征”，判断它们是否由同一组转子设置加密。若两段密文在相同位置上有异常多的相同字母，它们很可能同源；把这种“同源”关系串起来，就能把当天的转子顺序缩小到少数几种。</p>
+<p>“Banburismus”这个名字来自 Banbury：操作员把密文打印在长长的纸带上，纸带在 Banbury 的工厂印制；把两条纸带对齐、滑动、比较孔位，就是在做“人工卷积”。图灵把这种物理操作转成统计检验：每个对齐位置给出一个似然比，逐项累加。</p>
+
+<h3><span class="sn">10.2</span>证据重量：从概率到 deciban</h3>
+<p>设 $H_1$ 表示“两段密文同源”，$H_0$ 表示“不同源”。每观察一个字母对，就更新一次 Bayes 因子：</p>
+<p>$$\mathrm{BF}=\frac{P(\text{data}\mid H_1)}{P(\text{data}\mid H_0)}.$$</p>
+<p>图灵用“重量 (weight)”表示证据，单位是 <b>deciban</b>：</p>
+<p>$$\text{weight}=10\log_{10}\mathrm{BF}\ \text{decibans}.$$</p>
+<p>1 ban 等于 10 decibans；100:1 的似然比就是 20 decibans。证据逐项相加，直到超过接受或拒绝阈值：不必等所有数据到齐，够了就停止。若每步期望 0.3 decibans、阈值 20 decibans，粗略需要 $20/0.3\approx67$ 次独立比较；实际过程是一条有涨落的随机游走。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">序贯检验的停止规则</span><span class="thm-id">Minimum Cost Sequential Analysis</span></div>
+<div class="thm-body">
+<p>在平面上以“有效品数 $n_E$”与“次品数 $n_V$”为坐标，把平面分成三个区域：接受 (accept)、拒绝 (reject)、继续 (continue)。测试从原点出发，每测一个样品就向 $(n_V,n_E)$ 走一步；一旦进入接受或拒绝区域就停止。两个区域的边界叫接受边界与拒绝边界。经典 Wald 检验用两条平行直线；图灵则把“测试成本、错误接受的信誉损失、错误拒绝的浪费”都折算进目标函数，得到非直线的边界。</p>
+</div>
+</div>
+
+<h3><span class="sn">10.3</span>最小代价：把“错误”标价</h3>
+<p>Barnard 的序贯抽样假设：给定次品率 $p$，要求在两类错误概率不超过给定值的条件下，使平均抽样数最小。图灵换了一组假设：测试本身有成本，接受一个坏批次会损失信誉，拒绝一个好批次会浪费already-produced 的价值。于是“最优”不再是“固定错误率下最少抽样”，而是“总期望成本最小”。</p>
+<p>这使边界不再是直线，而是由成本比与先验分布共同决定的曲线。图灵证明：在相当一般的条件下，最优检验仍然是序贯的，即“继续/停止”的结构不变；变的只是边界的形状。他还指出，结果对先验分布的具体形式不敏感——用现代术语，这是一种<b>稳健性 (robustness)</b> 论断。</p>
+
+<div class="intuition">
+<div class="ih">为什么“证据可加”</div>
+<p>如果每个观察在 $H_1$ 与 $H_0$ 下的条件概率独立，Bayes 因子就是各步因子的乘积；取对数后变成求和。于是“证据”像长度一样可以累加。这个可加性是 deciban 系统的全部秘密，也是它比“p 值”更适合序贯场景的原因：你可以随时停下来看累积证据，而不必事先固定样本量。</p>
+</div>
+
+<h3><span class="sn">10.4</span>Good 的评论：图灵比 Wald 更早，但没发表</h3>
+<p>Good 在评论里纠正了几条历史误传。第一，图灵在 1940–41 年就提出了贝叶斯序贯程序，并把它用于 Banburismus；Wald 的《Sequential Analysis》1947 年才出版，其工作始于 1943 年。第二，Barnard 1946 年的文章主要用似然比，直到结论部分才“不情愿地”提到 Bayes；图灵则直接把先验分布放在正门。第三，图灵的手稿没有发表，部分原因是 1954 年 Barnard 在皇家统计学会宣读相关论文时，图灵已经去世；也可能因为他听说后觉得没有必要再发表。</p>
+<p>Good 还指出，图灵在 Banburismus 中实际使用的是“Bayes 因子”而不是“后验概率”；他关心的是“证据有多重”，而不是“假设为真的概率是多少”。这个区分在今天的统计实践里仍然重要：Bayes 因子可以在没有明确先验的情况下比较假设，后验概率则必须指定先验。</p>
+
+<h3><span class="sn">10.5</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>概念</th><th>定义/公式</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td class="id">Bayes 因子</td><td>$P(D\mid H_1)/P(D\mid H_0)$</td><td>比较两个假设的证据</td></tr>
+<tr><td class="id">deciban</td><td>$10\log_{10}\mathrm{BF}$</td><td>证据的可加单位</td></tr>
+<tr><td class="id">ban</td><td>10 decibans</td><td>100:1 的证据 = 20 decibans</td></tr>
+<tr><td class="id">序贯检验</td><td>接受/拒绝/继续三区域</td><td>够证据就停，节省样本</td></tr>
+<tr><td class="id">最小代价</td><td>测试成本 + 信誉损失 + 浪费</td><td>边界由成本决定</td></tr>
+<tr><td class="id">稳健性</td><td>结果对先验不敏感</td><td>图灵的断言，Good 的转述</td></tr>
+<tr><td class="id">Banburismus</td><td>纸带对齐 + 序贯 Bayes</td><td>找转子相对位置</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">p 值不是 Bayes 因子</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>p 值不是“假设为真的概率”。</b>它是“在 $H_0$ 下观察到至少这么极端数据的概率”；Bayes 因子比较的是两个假设下的似然。图灵用的是后者。</p>
+<p><b>序贯检验不是“偷看数据”。</b>如果边界事先由错误率与成本确定，序贯检验可以控制错误率；真正的问题是事后改变停止规则，而不是序贯本身。</p>
+<p><b>“证据可加”需要独立性假设。</b>字母对之间不独立时，简单相加会高估证据；Banburismus 的实践里用重叠与相关性做了修正。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch11" class="chapter"><div class="wrap">
+<div class="sec-label">1945–1948 · ACE · Mechanical Intelligence, pp. 1–124</div>
+<h2><span class="num">11</span>ACE：把通用机变成一台真的存储程序计算机</h2>
+<p class="lede">1945 年，图灵从布莱切利园转到国家物理实验室（NPL），任务是把“通用机”从纸带上的数学构造变成一台能跑的电子计算机。他的 ACE 方案不是把 1936 年的机器照搬，而是做了一个关键转换：程序与数据都放进同一套存储器，常用操作尽量写成子程序，而不是造专用电路。</p>
+
+<div class="chap-intro">
+<p>本节对应 <em>Mechanical Intelligence</em> 卷的 1945 年 <em>Proposals for Development in the Mathematics Division of an Automatic Computing Engine (ACE)</em>（报告于 1946 年 3 月提交，MI pp. 20–105）与 1947 年 2 月 20 日给伦敦数学会的讲演 <em>The Automatic Computing Engine</em>（MI pp. 106–124）。这两篇不在本卷 307 页正文内，但在 <em>Contents of Other Volumes</em> 与 Gandy 的历史导言里被明确列为图灵机器工作的核心。</p>
+<span class="tag">NPL · stored program · subroutine</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">存储程序 (stored program)</span>
+<span class="chip">ACE</span>
+<span class="chip">延迟线存储器</span>
+<span class="chip">二进制</span>
+<span class="chip">子程序 (subroutine)</span>
+<span class="chip">Pilot ACE</span>
+</div>
+
+<h3><span class="sn">11.1</span>从通用机到工程：哪些东西必须保留</h3>
+<p>1936 年的通用机有三个抽象特征：程序是有限符号串；程序与数据用同一种字母表；执行是“查表 + 改写 + 移动”的循环。ACE 方案把这三条翻译成工程语言：</p>
+<ul>
+<li><b>程序存储。</b>指令与数据放在同一套存储器里，机器按地址取指令、译码、执行。这就是 stored program 的字面含义。</li>
+<li><b>二进制。</b>数与指令都用二进制表示，算术与逻辑电路统一。</li>
+<li><b>延迟线存储。</b>用汞中的声波循环保存比特；这是当时能提供较大容量、可接受速度的方案。它不是“随机访问内存”，需要按时间顺序读写，程序设计必须考虑延迟。</li>
+<li><b>子程序。</b>图灵主张把常用操作写成可复用的指令序列，而不是为每个操作造专用硬件。这在当时是超前的：硬件贵、逻辑门少，软件复用更划算。</li>
+</ul>
+
+<p>Gandy 在历史导言里说，图灵受到冯·诺依曼 1945 年 EDVAC 草案的影响，但他描述的是“一台相当具体的机器”，而且“超前地提出许多操作应由写子程序来实现，而不是造专用单元”。这句话点出了 ACE 的独特之处：它不是“冯·诺依曼机”的简单复制，而是把“通用性”推到软件层。</p>
+
+<h3><span class="sn">11.2</span>1947 年讲演：把 1936 年的论证接上工程</h3>
+<p>1947 年 2 月 20 日，图灵在伦敦数学会讲 <em>The Automatic Computing Engine</em>。讲演的核心不是电路细节，而是“为什么这台机器能做任何计算”：它有一张指令表、一套存储、一个能按表执行的控制器；只要把另一台机器的表编码成指令，它就能模拟那台机器。这正是通用机论证的工程版。</p>
+<p>讲演还讨论了“机器能做什么”的边界：ACE 能算数值、能处理符号、能执行条件分支；但它不是“会思考”。图灵把“通用性”严格限定为“能模拟任何图灵机”，而不是“能解决任何问题”。这个区分在后来的机器智能讨论里反复出现。</p>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">对照</span><span class="thm-title">通用机 vs. ACE</span><span class="thm-id">1936 / 1946</span></div>
+<div class="thm-body">
+<p>通用机的纸带是无限的、串行的、没有地址的；ACE 的存储器是有限的、按地址访问的、有延迟的。通用机的“程序”是一串符号，靠读写头逐格移动；ACE 的“程序”是一组指令，靠程序计数器跳转。两者在可计算性上等价，但在工程上差异巨大：地址、指令格式、存储层级、I/O 都是新问题。</p>
+</div>
+</div>
+
+<h3><span class="sn">11.3</span>Pilot ACE 与 full ACE：一个方案的两种命运</h3>
+<p>图灵的完整 ACE 方案很大，工程上难以一次实现。NPL 先做了一个缩小版 <b>Pilot ACE</b>，1950 年 5 月运行；它成为当时最快的早期计算机之一，后来被英国电气公司改造成 DEUCE 系列。完整的 ACE 直到 1958 年才建成。图灵本人在 1947 年离开 NPL 回剑桥，1948 年转到曼彻斯特，没有看到 full ACE 完成。</p>
+<p>这段历史常被简化为“图灵设计了 ACE，但别人建成了它”。更准确的说法是：图灵定义了架构与编程风格，Pilot ACE 证明了可行性，工程团队完成了实现。图灵后来在曼彻斯特的编程实践（下一节）反而更直接地影响了他对“程序如何组织”的理解。</p>
+
+<h3><span class="sn">11.4</span>为什么 ACE 对读全集重要</h3>
+<p>如果没有 ACE，图灵的后期工作会被分成“纯逻辑”和“战时密码”两块。ACE 把两块接起来：通用机的“程序即数据”变成存储程序；Bombe 的“用电路实现逻辑约束”变成工程直觉；类型论的“记号要适合使用者”变成编程语言与手册的设计问题。图灵不是“从逻辑突然转行做工程”，他一直在问同一个问题：怎样把有限规则组织成可执行的系统。</p>
+
+<h3><span class="sn">11.5</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>设计点</th><th>ACE 的选择</th><th>与 1936 年通用机的关系</th></tr></thead>
+<tbody>
+<tr><td class="id">程序</td><td>与数据同存</td><td>程序是纸带上的符号串</td></tr>
+<tr><td class="id">数制</td><td>二进制</td><td>图灵机字母表可编码为 0/1</td></tr>
+<tr><td class="id">存储</td><td>汞延迟线</td><td>无限纸带的有限工程近似</td></tr>
+<tr><td class="id">操作</td><td>子程序复用</td><td>通用机模拟专用机</td></tr>
+<tr><td class="id">控制</td><td>指令表 + 条件分支</td><td>m-configuration + 转移表</td></tr>
+<tr><td class="id">实现</td><td>Pilot ACE 1950；full ACE 1958</td><td>理论存在性 → 工程实现</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">ACE 不是“第一台计算机”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>它不是第一台电子计算机。</b>ENIAC 1945 年底完成，Colossus 更早；ACE 的独特之处是存储程序架构与子程序思想，不是“最早”。</p>
+<p><b>图灵没有一个人建成 ACE。</b>他提出方案、做讲演、参与设计；Pilot ACE 与 full ACE 是 NPL 团队多年工程工作的结果。</p>
+<p><b>存储程序不等于“程序存在磁盘上”。</b>关键是程序与数据在同一可寻址存储器里，指令可以被当作数据读写；这是通用性的工程条件。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch12" class="chapter"><div class="wrap">
+<div class="sec-label">1948–1951 · Turing's Papers on Programming · Mark II Handbook</div>
+<h2><span class="num">12</span>编程：从“写指令”到“组织一个可调试的系统”</h2>
+<p class="lede">图灵在曼彻斯特的编程工作，技术上不算开创性，却是最早一批“真实机器上的软件工程”记录。他写手册、做子程序库、画块框图、做检查表，还提交了一篇早期程序验证论文。最有趣的反而是他的失败：他设计了一套极其难读的 base-32 记法，逼得曼彻斯特最早发展出自动编码系统。</p>
+
+<div class="chap-intro">
+<p>本节对应 Part III 的 <em>Turing's Papers on Programming</em>：Martin Campbell-Kelly 的序，以及 <em>Programmer's Handbook for the Manchester Electronic Computer Mark II</em> 中“Programming Principles”一节的节选。相关但不在本卷正文的是 1949 年 EDSAC 会议论文 <em>Checking a Large Routine</em>（MI pp. 129–131），它是图灵唯一的程序验证正式发表。</p>
+<span class="tag">Manchester Mark I · handbook · verification</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">编程 (programming)</span>
+<span class="chip">子程序 (subroutine)</span>
+<span class="chip">块框图 (block schematic)</span>
+<span class="chip">检查表 (check sheet)</span>
+<span class="chip">base-32 记法</span>
+<span class="chip">程序验证</span>
+</div>
+
+<h3><span class="sn">12.1</span>背景：从“纸上编程”到真机</h3>
+<p>1946–47 年，图灵与 J. H. Wilkinson 在 NPL 为还不存在的 ACE 做“纸上编程”。1948 年 9 月，他成为曼彻斯特大学计算实验室的助理主任（Reader），任务是让曼彻斯特计算机对更多用户可用。他参与了原型机的使用，是当时最重的用户之一；他的主要编程成果包括梅森素数的素性测试与黎曼 ζ 函数的数值计算。</p>
+<p>1951 年 2 月，Ferranti 制造的工程化机器安装到实验室。它对外销售时叫 Ferranti Mark I，在本地却常被叫作 Manchester Electronic Computer Mark II（后来简称 Mark I）。图灵为它写了约 100 页 foolscap 打字稿的手册；手册大部分是机器指令码的细节，只有“Programming Principles”一节是“纯图灵”，被收进全集。</p>
+
+<h3><span class="sn">12.2</span>编程原则：先计划，再分解，最后写指令</h3>
+<p>图灵在手册开头说：“编程是一门最好通过实践与例子获得的技能，而不是从书上学来的。”随后给出一个颇现代的流程：</p>
+<ol>
+<li><b>做计划 (make a plan)。</b>先决定用哪个数学公式、误差与速度如何权衡、存储如何分配。图灵把“机器时间、存储空间、程序员时间、结果误差”都看作成本，要在它们之间取平衡。他估计约 40% 的问题根本用不完存储，此时空间“几乎免费”；另一些问题则“用一千万位也不够”。</li>
+<li><b>分解问题 (break the problem down)。</b>决定哪些部分做成子程序。子程序不仅让问题更容易思考，还能为以后的问题留下可复用件。图灵用“大跳蚤背小跳蚤”的比喻说明子程序可以嵌套，但最终会落到没有子程序的例程。</li>
+<li><b>先写子程序，再写主程序。</b>因为子程序的细节（比例因子、占用页数、参数约定）会影响主程序；先写主程序容易返工。</li>
+<li><b>画块框图 (block schematic diagram)。</b>用英文或私人记号描述操作，用箭头连接；测试点可以有两条或多条出边。然后逐步替换成真实指令。</li>
+<li><b>做检查表 (check sheet)。</b>在程序还没写完时就开始记录“预期执行结果”，用实际运行对照，定位错误。这就是后来的 trace table / debugging log。</li>
+</ol>
+
+<div class="intuition">
+<div class="ih">“空间–时间权衡”的早期表述</div>
+<p>图灵把存储与速度的取舍说得很直白：如果要快，就多存表、少算；如果要省空间，就多算、少存。今天的 cache、预计算、压缩、懒加载，都是这条曲线的不同点。他没有用“trade-off”这个词，但思想已经在了。</p>
+</div>
+
+<h3><span class="sn">12.3</span>base-32 记法：一个反例式的设计</h3>
+<p>Mark I 的每条指令 20 位，图灵用四个 5 位 Post Office 电传字符表示。于是电传码被当作 base-32 数字系统，字符表是：</p>
+<pre><code>/E@A:SIU t DRJNFCKTZLWHYPQOBG"MXV£</code></pre>
+<p class="note">原书 Fig. 2 的字符表中有一个字符在 OCR 里常被读作 <code>t</code>；不同复制版本在此处略有差异。关键是它是 5 位电传码的 32 个字符，而不是普通字母表。</p>
+<p>更麻烦的是，数字是“反着写”的：符号位在最右端，因为 Mark I 是串行机，数字从右向左显示。零用斜杠 `/` 表示，而 `/` 在程序与数据里出现频率极高；一位早期用户说，这看起来像“透过脏窗玻璃看雨”。图灵的程序纸通常没有注释，用户只能自己 decipher。</p>
+<p>Campbell-Kelly 举了一个例子：在 Cambridge EDSAC 上，“把位置 250 的长数加到累加器”写作 <code>A 250 L</code>；在 Manchester，则要写成类似 <code>GUTC</code> 的东西——操作码 <code>TC</code> 表示加法，地址 250 写成 base-32 反序的 <code>GU</code>。Maurice Wilkes 评价这套记法“bizarre in the extreme”，并说图灵“脑子太快，不觉得有必要迁就别人”。</p>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">反例</span><span class="thm-title">坏记法的“好处”</span><span class="thm-id">Campbell-Kelly 序</span></div>
+<div class="thm-body">
+<p>这套记法难用到什么程度？曼彻斯特大学很快成为最早发展“自动编码系统 (automatic coding)”的地方之一，就是为了让用户不必手写 base-32。其他记法更友好的实验室反而拖了很久才走这一步。图灵的“失败”意外地推动了编译器与汇编器的需求。</p>
+</div>
+</div>
+
+<h3><span class="sn">12.4</span>子程序库与运行制度</h3>
+<p>尽管记法糟糕，图灵建立的编程环境是“business-like and well organised”：子程序有标准测试与文档；机器有系统化的使用制度（谁在什么时间用、如何装载、如何保存）。Campbell-Kelly 认为，这种对实用细节的重视可能来自他在布莱切利园的经验：密码分析要求可重复、可交接、可审计。</p>
+<p>图灵还写了 <em>Local Programming Methods and Conventions</em>（1951 年 7 月曼彻斯特大学计算机就职会议），试图为这套记法辩护。他说“存储行的名字不过是任意标签，用什么码表示关系不大”。只有图灵会真的相信 <code>GU</code> 和 <code>250</code> 是同样好的名字。</p>
+
+<h3><span class="sn">12.5</span>Checking a Large Routine：早期的程序验证</h3>
+<p>1949 年 6 月 24 日，图灵在 EDSAC 就职会议提交 <em>Checking a Large Routine</em>。这篇短文不是“测试”，而是“证明”：给出一段计算阶乘的程序，用归纳断言说明它在每一步保持某个不变式，从而证明输出正确。它被 F. L. Morris 与 C. B. Jones 在 1984 年重新评论，视为“早期程序证明”的里程碑。</p>
+<p>图灵的做法已经包含 Hoare 逻辑的雏形：在程序的特定位置写断言，证明从入口到出口的每条路径都保持断言，最后得到“终止时结果满足规格”。他没有形式化整套规则，但把“程序正确性”从“跑几个例子”提升为“数学证明”。这与他在类型论里对“可证性”的执着是同一种气质。</p>
+
+<h3><span class="sn">12.6</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>主题</th><th>图灵的做法</th><th>现代对应</th></tr></thead>
+<tbody>
+<tr><td class="id">计划</td><td>公式、误差、空间、时间、人力权衡</td><td>性能工程 / 资源预算</td></tr>
+<tr><td class="id">分解</td><td>子程序、有限目标</td><td>模块化 / 自顶向下</td></tr>
+<tr><td class="id">块框图</td><td>英文块 + 箭头 + 测试分支</td><td>流程图 / 控制流图</td></tr>
+<tr><td class="id">检查表</td><td>预期值与实际值对照</td><td>trace table / 单元测试</td></tr>
+<tr><td class="id">子程序库</td><td>标准测试、文档、复用</td><td>库 / 包管理</td></tr>
+<tr><td class="id">base-32</td><td>20 位 = 4 个 5 位电传字符；反序数字</td><td>汇编记法的反例</td></tr>
+<tr><td class="id">验证</td><td>不变式 + 归纳</td><td>Hoare 逻辑 / 契约</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">“图灵的编程贡献不大”不等于“没有价值”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>Campbell-Kelly 的评价是“智力上令人失望”。</b>这是相对于图灵自己的逻辑工作而言；手册里的实践智慧仍然是早期软件工程的一手材料。</p>
+<p><b>基地记法不是“图灵不懂用户”。</b>他太习惯低位机器表示，低估了普通用户的认知成本；这是设计者视角的典型盲点。</p>
+<p><b>程序验证不是“测试”。</b><em>Checking a Large Routine</em> 给的是归纳证明，不是跑几个输入看输出。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch13" class="chapter"><div class="wrap">
+<div class="sec-label">1952–1954 · Morphogenesis · The Chemical Basis of Morphogenesis</div>
+<h2><span class="num">13</span>形态发生：扩散如何把均匀变成图案</h2>
+<p class="lede">1952 年，图灵把“生物为什么有形状”改写成一个化学动力学问题：两种吗啡原在组织中反应、扩散，均匀状态可以自发失稳，长出斑点、条纹和触手。这不是“解释所有生物学”，而是证明一个反直觉的数学机制确实能产生空间结构。</p>
+
+<div class="chap-intro">
+<p>本节对应 <em>Morphogenesis</em> 卷：1952 年 <em>The Chemical Basis of Morphogenesis</em>（Phil. Trans. R. Soc. London B 237, 37–72），与 C. W. Wardlaw 合作的 <em>A Diffusion Reaction Theory of Morphogenesis in Plants</em>，<em>Morphogen Theory of Phyllotaxis</em> 三部分（几何描述、化学理论、球对称解，最后一部分与 B. Richards 合作），以及 <em>Outline of the Development of the Daisy</em>。本卷正文的 Newman 讣告与 Gandy 书信也总结了这些工作。</p>
+<span class="tag">Reaction–diffusion · 20-cell ring · phyllotaxis</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">形态发生 (morphogenesis)</span>
+<span class="chip">吗啡原 (morphogen)</span>
+<span class="chip">反应–扩散</span>
+<span class="chip">扩散驱动失稳</span>
+<span class="chip">临界波数</span>
+<span class="chip">叶序 (phyllotaxis)</span>
+</div>
+
+<h3><span class="sn">13.1</span>原问题：受精卵为什么不长成一团均匀的细胞</h3>
+<p>一个起初几乎均匀的细胞团，会分化出触手、鳃、毛发、指头。基因提供蛋白质，但“哪里的细胞变成什么”需要空间信息。图灵假设存在一类<b>吗啡原 (morphogen)</b>，其浓度场先形成图案，再指导生长与分化。关键问题是：一个原本均匀的系统，为什么会在某些位置自发出现高低起伏？</p>
+<p>直觉上，扩散只会把浓度差抹平：高浓度向低浓度流动，最终变成均匀。图灵的天才之处是指出：如果至少有兩種吗啡原，而且它们扩散得不一样快，反应与扩散的耦合可以让某个空间波长的扰动反而增长。这就是<b>扩散驱动失稳 (diffusion-driven instability)</b>，后来被称为图灵失稳。</p>
+
+<h3><span class="sn">13.2</span>方程：连续组织与离散细胞</h3>
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">反应–扩散系统</span><span class="thm-id">1952, §2</span></div>
+<div class="thm-body">
+<p>设 $X_i(\mathbf{x},t)$ 是第 $i$ 种吗啡原的浓度，$f_i$ 是局部反应项，$D_i$ 是扩散系数：</p>
+<p>$$\frac{\partial X_i}{\partial t}=f_i(X_1,\dots,X_n)+D_i\nabla^2X_i,\qquad i=1,\dots,n.$$</p>
+<p>在离散细胞模型里，拉普拉斯项换成相邻细胞的差：</p>
+<p>$$\frac{dX_i^{(j)}}{dt}=f_i(X^{(j)})+D_i\left(X_i^{(j+1)}-2X_i^{(j)}+X_i^{(j-1)}\right).$$</p>
+<p>图灵原文用 $\mu_i$ 表示扩散系数；现代文献通常写 $D_i$。</p>
+</div>
+</div>
+
+<p>图灵先假设系统有一个均匀平衡 $X_i=\bar X_i$，且没有扩散时它是稳定的。然后把 $X_i=\bar X_i+x_i$ 代入，线性化反应项，得到</p>
+<p>$$\frac{\partial x_i}{\partial t}=\sum_j J_{ij}x_j+D_i\nabla^2x_i,\qquad J_{ij}=\frac{\partial f_i}{\partial X_j}\Big|_{\bar X}.$$</p>
+<p>在无限的连续介质里，扰动可以分解成 Fourier 模式 $x_i\propto e^{\lambda t+i\mathbf{k}\cdot\mathbf{x}}$。代入后得到矩阵 $J-\lVert\mathbf{k}\rVert^2D$ 的特征值问题；若某个 $k$ 使某个特征值的实部为正，模式就增长。</p>
+
+<h3><span class="sn">13.3</span>两物种判据：为什么“抑制剂扩散更快”</h3>
+<p>最简单也最重要的是两物种情形。令</p>
+<p>$$J=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix},\qquad D=\operatorname{diag}(D_u,D_v).$$</p>
+<p>无扩散稳定要求 $\operatorname{tr}J=a+d&lt;0$、$\det J=ad-bc&gt;0$。加入扩散后，若存在 $q=k^2&gt;0$ 使</p>
+<p>$$\det(J-qD)=\det J-q(aD_v+dD_u)+q^2D_uD_v&lt;0,$$</p>
+<p>则出现失稳。临界波数为</p>
+<p>$$q_c=\frac{aD_v+dD_u}{2D_uD_v},\qquad k_c=\sqrt{q_c},$$</p>
+<p>且需要 $(aD_v+dD_u)^2&gt;4D_uD_v\det J$。直观上，这要求 $a&gt;0$、$d&lt;0$（激活剂自增强、抑制剂自衰减），并且抑制剂的扩散系数 $D_v$ 比激活剂 $D_u$ 大得足够多。这就是“短程激活、长程抑制”的数学版本。</p>
+
+<div class="thm theorem">
+<div class="thm-head"><span class="thm-kind">判据</span><span class="thm-title">两物种图灵失稳条件</span><span class="thm-id">1952, §3–§4</span></div>
+<div class="thm-body">
+<p>均匀平衡在无扩散时稳定（$a+d&lt;0$，$ad-bc&gt;0$），且存在 $q&gt;0$ 使 $\det(J-qD)&lt;0$。等价地：$D_v/D_u$ 足够大，且 $a,d$ 异号、$a&gt;0&gt;d$。失稳模式的波长由 $2\pi/k_c$ 给出。</p>
+</div>
+</div>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">算例</span><span class="thm-title">一个可手算的失稳</span><span class="thm-id">构造例子，非历史参数</span></div>
+<div class="thm-body">
+<p>取 $J=\begin{pmatrix}1&amp;1\\-4&amp;-3\end{pmatrix}$，$D_u=1$，$D_v=10$。先看无扩散：$\operatorname{tr}J=-2&lt;0$，$\det J=1&gt;0$，稳定。</p>
+<p>再算 $aD_v+dD_u=10-3=7$，$4D_uD_v\det J=40$，而 $7^2=49&gt;40$，条件满足。临界值 $q_c=7/20=0.35$，$k_c\approx0.592$。</p>
+<p>在 $q=0.35$ 处，$J-qD=\begin{pmatrix}0.65&amp;1\\-4&amp;-6.5\end{pmatrix}$，行列式为 $-0.225&lt;0$。特征方程 $\lambda^2+5.85\lambda-0.225=0$ 给出一个正根 $\lambda\approx0.038$：扰动缓慢增长。对应波长约 $2\pi/k_c\approx10.6$ 个细胞；在 20 个细胞的环上，最接近的允许模式大约是 2 个瓣。图灵 1952 年的数值实验用了不同参数，在 20 细胞环上得到 3 或 4 个瓣——具体数目由参数和边界条件决定，这正是“模式选择”而非“固定答案”。</p>
+</div>
+</div>
+
+<h3><span class="sn">13.4</span>数值实验：20 个细胞的环</h3>
+<p>图灵在曼彻斯特计算机上数值求解离散方程。他考虑一个由 20 个细胞组成的环，两种吗啡原，参数取到失稳区；结果是 3 或 4 个瓣的图案。这个结果对应生物学中的例子：水螅的触手、轮生叶 (whorled leaves) 在环上的分布。图灵还做了二维斑驳 (dappling) 与球面原肠形成 (gastrulation) 的数值实验：球面上的模式可以解释胚胎在特定位置内陷。</p>
+<p>这些数值实验的意义不是“证明某种生物一定用这套参数”，而是“证明这个机制在数学上可行，并且能产生与观察相似的几何”。图灵自己很清楚：线性分析只预测“开始失稳”的波长，最终图案由非线性项与边界条件决定。他在后期手稿里加入二次项，试图处理更大的偏离；这部分工作在他去世时尚未完成。</p>
+
+<h3><span class="sn">13.5</span>叶序与雏菊：几何描述的另一半</h3>
+<p>《Morphogen Theory of Phyllotaxis》分三部分：第一部分是几何与描述，讨论叶片绕茎的排列、Fibonacci 结构、各种分类参数；第二部分是化学理论，试图用吗啡原场解释为什么叶原基出现在特定角度；第三部分与 B. Richards 合作，解球对称情形。图灵证明：如果一个叶序系统是 Fibonacci 型，它若发生变化，只会变成另一个 Fibonacci 型系统。这与观察一致。</p>
+<p>《Outline of the Development of the Daisy》则把雏菊的头状花序当作一个发育序列：小花从中心向外依次形成，角度与间距遵循叶序规律。图灵没有完成这篇；它更像一份“用形态发生理论解释具体植物”的计划书。Gandy 在 1954 年的信里特别提到“圆柱上的形态发生工作不应丢失”，指的就是这些未刊稿。</p>
+
+<h3><span class="sn">13.6</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>概念</th><th>含义</th><th>历史例子</th></tr></thead>
+<tbody>
+<tr><td class="id">吗啡原</td><td>携带位置信息的化学物质</td><td>激活剂 / 抑制剂</td></tr>
+<tr><td class="id">反应–扩散</td><td>局部反应 + 空间扩散</td><td>$\partial_tX=f(X)+D\nabla^2X$</td></tr>
+<tr><td class="id">扩散失稳</td><td>无扩散稳定，有扩散不稳定</td><td>图灵 1952</td></tr>
+<tr><td class="id">临界波数</td><td>最先增长的空间频率</td><td>决定瓣数 / 条纹间距</td></tr>
+<tr><td class="id">20 细胞环</td><td>一维周期离散组织</td><td>3 或 4 个瓣</td></tr>
+<tr><td class="id">二维斑驳</td><td>斑点/条纹图案</td><td>dappling</td></tr>
+<tr><td class="id">球面</td><td>球对称组织</td><td>原肠形成</td></tr>
+<tr><td class="id">叶序</td><td>叶片绕茎排列</td><td>Fibonacci 结构</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不是“扩散必然产生图案”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>扩散本身只会抹平。</b>必须有至少两种物质、不同的扩散系数、适当的反应动力学；两种物质扩散得一样快时，图灵失稳不会发生。</p>
+<p><b>线性分析只预测“开始失稳”。</b>它给出临界波长和增长率，不告诉你最终是斑点、条纹还是更复杂的非线性结构；后者需要非线性分析或数值模拟。</p>
+<p><b>20 细胞的结果是数值实验，不是生物定律。</b>它说明机制可行，不证明某种生物一定用这套参数；参数窗口还可能很窄。</p>
+<p><b>图灵不是“用化学取代基因”。</b>他假设基因提供吗啡原，形态发生解释的是“浓度场如何组织空间”，不是“基因如何被编码”。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch14" class="chapter"><div class="wrap">
+<div class="sec-label">1948–1952 · Intelligent Machinery · A Heretical Theory · Radio</div>
+<h2><span class="num">14</span>机器智能：无组织机器、儿童机器与“教育”</h2>
+<p class="lede">在图灵那里，“人工智能”不是一堆手写规则，而是一个可以被教育、被修剪、被搜索的系统。1948 年的 NPL 报告《Intelligent Machinery》提出无组织机器与儿童机器；1951 年的广播《Can Digital Computers Think?》把同一套想法带到公众面前。它的核心不是“机器已经会思考”，而是“智能可以从随机结构中长出来”。</p>
+
+<div class="chap-intro">
+<p>本节对应 <em>Mechanical Intelligence</em> 卷的 1948 年报告 <em>Intelligent Machinery</em>（MI pp. 107–127）、同名的 <em>Intelligent Machinery, A Heretical Theory</em> 讲演，以及 1951 年 5 月 15 日广播 <em>Can Digital Computers Think?</em> 与 1952 年 1 月 14 日的四人讨论。本卷的 <em>Appendix: Matters Arising from Earlier Volumes</em> 对版本与出处做了说明。</p>
+<span class="tag">Unorganised machines · child machine · search</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">无组织机器 (unorganised machine)</span>
+<span class="chip">NAND 单元</span>
+<span class="chip">儿童机器 (child machine)</span>
+<span class="chip">教育 (education)</span>
+<span class="chip">搜索 (search)</span>
+<span class="chip">奖惩 (reward / punish)</span>
+</div>
+
+<h3><span class="sn">14.1</span>原问题：智能是编程出来的，还是训练出来的？</h3>
+<p>最直接的做法是把知识一条条写进程序；但图灵认为，真实智能更像“教育”的结果：给机器一个可塑的结构，让它从经验中调整自己。他设想<b>儿童机器 (child machine)</b>——不是直接造一个成年大脑，而是造一个能学习的大脑，再教育它。这个类比很重要：它把“智能”从“产品”变成“过程”，把设计问题变成训练问题。</p>
+<p>图灵也承认，儿童的“先天结构”不能太简单。一个完全空白、没有归纳偏置的机器，在有限时间内学不会复杂任务；一个结构过于固定的机器，又无法适应新环境。教育是在“可塑性”与“先天约束”之间找平衡。</p>
+
+<h3><span class="sn">14.2</span>无组织机器：随机连接 + 选择</h3>
+<p>图灵描述了一类由大量简单单元组成的网络。每个单元有两个输入、一个输出；输出为 0 当且仅当两个输入同时为 1，也就是 <b>NAND</b> 门。NAND 是函数完备的：用它可以搭出与、或、非，进而搭出任何布尔函数。图灵把这种随机连接的网络叫<b>无组织机器 (unorganised machine)</b>。</p>
+<p>他区分了两种类型：A 型的连接固定，B 型的连接可以被外部刺激修改。训练不是“调整权重”（图灵没有反向传播），而是<b>干涉 (interference)</b>：切断一些连接、接通另一些连接、或者改变单元的响应；再加上奖励与惩罚，让有用的子电路被保留下来。图灵把这比作“在随机布线的电话交换机里，找到一条能用的路径”。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">无组织机器（现代改写）</span><span class="thm-id">1948, §“Unorganised Machines”</span></div>
+<div class="thm-body">
+<p>由大量双输入 NAND 单元随机连接而成的网络。每个单元的输出是 $\neg(a\land b)$。A 型的连接固定；B 型的连接可由外部干预修改。训练 = 在随机网络中<b>选择并固定</b>有用的子电路，而不是从零设计每一个门。只要网络足够大、连接足够灵活，功能就可以从“随机连接 + 选择”中涌现。</p>
+</div>
+</div>
+
+<p>NAND 的完备性可以用一个经典构造说明：令 $n=\operatorname{NAND}(x,y)$，$a=\operatorname{NAND}(x,n)$，$b=\operatorname{NAND}(y,n)$，则 $x\oplus y=\operatorname{NAND}(a,b)$。四个门就搭出了异或；有了异或与非，就能搭出加法器、寄存器、控制器。图灵没有现代意义上的学习算法，但他的“随机网络 + 选择”已经是进化式/剪枝式学习的雏形。</p>
+
+<h3><span class="sn">14.3</span>智能作为搜索</h3>
+<p>1948 年报告里，图灵反复把“智能”与“搜索”联系起来：下棋、证明定理、设计程序，都可以看作在一棵巨大的可能性树中寻找一条满足目标的路径。 brute force 不可行，因为分支因子太大；智能体现在“选择哪些分支先试”“用什么记号把问题压缩”“什么时候放弃一条路径”。这与他在序数逻辑里说的“机巧 (ingenuity)”是同一种能力：不是规则本身，而是规则的组织。</p>
+<p>他也提到“启发式 (heuristic)”的必要性：没有一种通用搜索能在所有问题上都高效；好的搜索依赖于对问题结构的理解。这个观点在今天的 AI 里仍然是核心：算法、表示、搜索空间，三者共同决定可行性。</p>
+
+<h3><span class="sn">14.4</span>“异端”讲演与广播：把争论公开化</h3>
+<p><em>Intelligent Machinery, A Heretical Theory</em> 是图灵在曼彻斯特的讲演，标题本身就是挑衅：在当时，说“机器可以表现出智能”被视为异端。图灵的策略不是宣称机器已经有意识，而是把问题拆成可讨论的子问题：机器能否学习？能否下棋？能否通过考试？能否在有限时间内搜索到解？</p>
+<p>1951 年 5 月 15 日的广播 <em>Can Digital Computers Think?</em> 面向普通听众。图灵解释了通用机、存储程序、以及“机器可以模拟任何机械过程”的含义；他也承认，机器目前只能做很窄的任务。1952 年 1 月 14 日的四人讨论继续这个话题，参与者包括神经生理学家与哲学家。图灵在这些公开场合的立场，比 1950 年的论文更谨慎：他强调“可编程性”与“学习”，而不是“意识”。</p>
+
+<h3><span class="sn">14.5</span>与 1950 年论文的关系</h3>
+<p>1948 年的报告是“如何造一个能学习的机器”；1950 年的 <em>Computing Machinery and Intelligence</em> 是“如何判断一个机器是否表现出智能”。前者是工程/架构，后者是方法论/检验。两者合起来，才是图灵完整的机器智能纲领：先造一个可教育的系统，再给它一个可操作的测试。下一节会展开 1950 年论文的九条反对意见。</p>
+
+<h3><span class="sn">14.6</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>概念</th><th>图灵的说法</th><th>今天</th></tr></thead>
+<tbody>
+<tr><td class="id">无组织机器</td><td>随机 NAND 网络 + 干涉</td><td>随机网络 / 神经架构搜索</td></tr>
+<tr><td class="id">A 型 / B 型</td><td>固定连接 / 可修改连接</td><td>固定权重 / 可塑网络</td></tr>
+<tr><td class="id">儿童机器</td><td>先造可学习者，再教育</td><td>预训练 + 微调</td></tr>
+<tr><td class="id">教育</td><td>奖惩、示范、练习</td><td>监督 / 强化学习</td></tr>
+<tr><td class="id">智能</td><td>在可能性树中有效搜索</td><td>启发式搜索 / 规划</td></tr>
+<tr><td class="id">异端</td><td>机器可以表现出智能</td><td>AI 公共辩论</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">图灵没有“发明反向传播”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>他的训练是“选择/修剪”，不是梯度下降。</b>把 1948 年的报告说成“早期神经网络训练”会夸大；它更接近随机搜索与进化式修改。</p>
+<p><b>“无组织”不是“没有结构”。</b>NAND 单元、连接方式、输入输出都是结构；随机的是具体接线，不是物理规律。</p>
+<p><b>“儿童机器”不是“一张白纸”。</b>图灵知道先天结构的重要性；教育是在已有结构上塑造，而不是从零写入。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch15" class="chapter"><div class="wrap">
+<div class="sec-label">1950 · Computing Machinery and Intelligence · MIND 59</div>
+<h2><span class="num">15</span>模仿游戏：把“机器能思考吗”换成可操作的盲测</h2>
+<p class="lede">1950 年，图灵在《心》上发表《计算机器与智能》。他先承认“机器能思考吗”太模糊，然后设计了一个游戏：询问者通过电传打字机与两个对象对话，一个是人，一个是机器；机器若能让询问者经常判断错误，就在某种意义上“通过了”。图灵没有定义智能，他把争论改成了一个可以重复的实验。</p>
+
+<div class="chap-intro">
+<p>论文发表于 Mind 59 (1950) 433–460。结构很清晰：先描述模仿游戏，再解释为什么用它替代“机器能思考吗”，然后逐条回应九种反对意见，最后讨论学习机器与“儿童机器”。它不是一篇技术论文，而是一篇论证性散文；但它的论证结构比很多技术论文更严密。</p>
+<span class="tag">Imitation game · 9 objections · child machine</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">模仿游戏 (imitation game)</span>
+<span class="chip">询问者 (interrogator)</span>
+<span class="chip">电传打字机</span>
+<span class="chip">九条反对意见</span>
+<span class="chip">儿童机器</span>
+<span class="chip">学习 (learning)</span>
+</div>
+
+<h3><span class="sn">15.1</span>从“猜性别”到“猜机器”</h3>
+<p>图灵的游戏最初不是“人机对话”。原版是：一男一女分别待在两个房间，询问者通过文字提问，判断哪一个是男性。后来图灵让机器顶替其中一方，问询问者能否分辨。这个改写很关键：它把“机器是否像人”变成“在信息受限的对话中，身份能否被可靠识别”。机器的外观、声音、动作都被屏蔽，只剩下语言行为。</p>
+<p>论文里的标准版是：询问者 $C$ 与对象 $A$、$B$ 只能通过文字交流；$A$ 是人类，$B$ 是机器（或反过来）；$C$ 要在规定时间内判断哪一个是机器。图灵建议五分钟、电传打字机；如果询问者的准确率接近随机猜测，机器就“通过”了。原文没有说“50% 就是通过”，而是说“经常判断错误”。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">模仿游戏（标准版）</span><span class="thm-id">1950, §1</span></div>
+<div class="thm-body">
+<p>询问者 $C$ 与对象 $A,B$ 只能通过文字通道交流。$A$ 是人，$B$ 是机器；$C$ 的任务是判断哪一个对象是机器。若 $C$ 的判断准确率在多次独立试验中接近随机猜测，则机器在该测试中表现出“不可区分”的语言行为。关键条件是：纯文本、限时、可自由提问、对象身份保密。</p>
+</div>
+</div>
+
+<p>为什么用“模仿游戏”而不是“机器能否思考”？图灵的理由是：“机器能思考吗”这个问题太模糊，无法直接回答；而模仿游戏是一个可操作的替代问题。他没有说“通过游戏就等于会思考”，而是说“如果你愿意把‘思考’的行为标准定成这个，那么这个问题就可以讨论”。这是一种方法论上的转向：从形而上学的本质，转向可观察的行为。</p>
+
+<h3><span class="sn">15.2</span>九条反对意见与回答</h3>
+<p>论文最有价值的部分，是图灵逐条列出并回应九种反对意见。这些反对意见今天仍然以各种变形出现；读它们比读“图灵测试”的二手总结更有收获。</p>
+
+<div class="table-wrap cheat"><table>
+<thead><tr><th>#</th><th>反对意见</th><th>图灵的回答（概括）</th></tr></thead>
+<tbody>
+<tr><td class="id">1</td><td><b>神学</b>：思考需要不朽的灵魂，机器没有。</td><td>灵魂说无法检验；把机器排除在外是预设结论。神的全能也不受此限制。</td></tr>
+<tr><td class="id">2</td><td><b>鸵鸟式</b>：机器思考的后果太可怕，不如不信。</td><td>后果不是真假的标准；即使结论不受欢迎，也要面对。</td></tr>
+<tr><td class="id">3</td><td><b>数学</b>：哥德尔定理说明机器有无法克服的局限。</td><td>机器可以不追求“绝对无误”；人也会犯错。不能由“存在不可证句”推出“机器不能思考”。</td></tr>
+<tr><td class="id">4</td><td><b>意识</b>：除非机器有意识，否则不能说它思考。</td><td>我们只能从行为推断他人有意识；唯我论不能作为论证。</td></tr>
+<tr><td class="id">5</td><td><b>各种无能</b>：机器不能享受草莓、不能恋爱、不能犯错。</td><td>这些能力与“思考”没有必然联系；有些可以编程，有些只是人类中心的标准。</td></tr>
+<tr><td class="id">6</td><td><b>Lady Lovelace</b>：机器只能做被编程的事，不会原创。</td><td>学习机器可以让人惊讶；机器可以修改自己的指令，产生设计者未预料的行为。</td></tr>
+<tr><td class="id">7</td><td><b>神经系统的连续性</b>：大脑是连续的，离散机器无法模拟。</td><td>离散状态机可以逼近连续系统；也可以加入随机元素。连续性不是决定性的障碍。</td></tr>
+<tr><td class="id">8</td><td><b>行为的不规范性</b>：人的行为没有固定规则，机器只能按规则运行。</td><td>我们不知道是否存在规则；不能由“尚未发现规则”推出“没有规则”。</td></tr>
+<tr><td class="id">9</td><td><b>超感官知觉</b>：心灵感应等现象可能干扰测试。</td><td>目前没有可靠证据；若真有 ESP，测试设计要排除它。图灵倾向假定没有。</td></tr>
+</tbody>
+</table></div>
+
+<p>第 3 条值得展开。图灵的回应不是“机器能证明所有真理”，而是“机器不必绝对无误”。哥德尔句 $G_L$ 在系统 $L$ 中不可证，但机器可以在元层次“看出”它为真；这并不要求机器在同一个系统内证明它。图灵也承认，人类数学家会犯错、会修正，机器同样可以。把“机器”与“无限完美的形式系统”等同，是反对意见的隐含前提，而不是定理的结论。</p>
+<p>第 6 条同样重要。Lady Lovelace 说分析机“只能做我们知道如何命令它做的事”。图灵的回答是：学习机器可以改变自己的行为，因此“设计者未预料”不等于“超出物理可能”。他设想机器通过奖惩、示范、试错来学习；这与 1948 年报告里的“儿童机器”是同一个纲领。</p>
+
+<h3><span class="sn">15.3</span>学习机器与“儿童机器”</h3>
+<p>论文后半部分讨论如何造一个能通过游戏的机器。图灵认为，直接编程一个成年人的心智太难；更可行的是造一个“儿童机器”，然后教育它。教育包括：奖惩、示范、语言训练、以及“让人来教”。他预言，到 2000 年左右，机器的存储容量会大到足以让它在五分钟的对话中骗过 30% 的询问者。</p>
+<blockquote>“I believe that in about fifty years' time it will be possible to programme computers, with a storage capacity of about $10^9$, to make them play the imitation game so well that an average interrogator will not have more than 70 per cent chance of making the right identification after five minutes of questioning.”</blockquote>
+<p>这段话常被引用为“图灵预测 2000 年机器通过测试”。严格说，他预测的是“平均询问者在五分钟内判断正确的概率不超过 70%”，也就是机器有 30% 的机会骗过；这不是“完全无法区分”，而是一个统计门槛。图灵还加了一句：他相信这只是开始，不是终点。</p>
+
+<h3><span class="sn">15.4</span>“通过”不等于“理解”</h3>
+<p>图灵自己很清楚模仿游戏的局限。它测的是“像不像人”，不是“聪不聪明”；一个擅长模仿人类语气、回避难题的系统，可能比一个诚实但笨拙的系统更容易通过。它也不检验意识、情感、道德判断或长期记忆。图灵把这些称为“其他问题”，没有声称游戏能解决它们。</p>
+<p>今天的评价更复杂：大语言模型可以生成流畅、貌似有阅历的回答，但是否“理解”仍是争论。图灵测试的真正遗产，也许不是“智能的定义”，而是一种<b>评估方法论</b>：把抽象争论变成可重复的盲测，并明确任务、时间、评判者与判定规则。这个方法论比“通过/不通过”的二元结论更有生命力。</p>
+
+<h3><span class="sn">15.5</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>概念</th><th>图灵的说法</th><th>今天</th></tr></thead>
+<tbody>
+<tr><td class="id">模仿游戏</td><td>文字对话、判断身份</td><td>人机盲测 / 聊天机器人评测</td></tr>
+<tr><td class="id">替代问题</td><td>“机器能思考吗” → “能否骗过询问者”</td><td>行为主义评估</td></tr>
+<tr><td class="id">九条反对</td><td>神学、鸵鸟、数学、意识、无能、Lovelace、连续性、不规范、ESP</td><td>争论的经典清单</td></tr>
+<tr><td class="id">儿童机器</td><td>先造可学习者，再教育</td><td>预训练 / 微调</td></tr>
+<tr><td class="id">预测</td><td>2000 年，$10^9$ 存储，30% 骗过率</td><td>常被误读为“完全通过”</td></tr>
+<tr><td class="id">局限</td><td>测“像人”，不测“理解”</td><td>通过 ≠ 理解</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">图灵测试不是“智能定义”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>它是操作化检验，不是充分必要条件。</b>图灵本人把它当作“替代问题”，而不是“定义”。</p>
+<p><b>短测试不可靠，机器也可以“说谎”。</b>几分钟的对话样本太小；游戏允许机器隐藏身份，通过测试可能依赖欺骗，而不是理解。</p>
+<p><b>原文不是简单的“人机对话”。</b>最初是男/女游戏，机器顶替其中一方；焦点是“身份”而不是“能力”。</p>
+<p><b>“通过”没有固定分数线。</b>图灵说的是“经常判断错误”，不是“50% 以上”。具体阈值依赖询问者、时间、题目分布。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch16" class="chapter"><div class="wrap">
+<div class="sec-label">Part III · 1954–1955 · Hodges · Gandy · Royal Society Memoir</div>
+<h2><span class="num">16</span>未竟的物理与身后声名：Hodges、Gandy 与 Newman</h2>
+<p class="lede">1953–54 年，图灵突然从逻辑与计算转向量子力学与广义相对论。他没有留下完整论文，只留下给 Robin Gandy 的明信片、Gandy 致 Max Newman 的信，以及 Newman 的皇家学会讣告。这些材料让我们看到：如果图灵活得更久，他可能会在“计算与物理”的边界上做出另一场大事。</p>
+
+<div class="chap-intro">
+<p>本节对应 Part III 末尾的三篇文字：Andrew Hodges 的 <em>The Nature of Turing and the Physical World</em>（对 Gandy 书信的讨论）、<em>Letter from Robin Gandy to Max Newman, June 1954</em>、以及 Max Newman 的 <em>Royal Society Memoir</em>（1955 年《Biographical Memoirs》第 1 卷，253–263 页）。它们不是图灵本人的论文，而是理解其后期思想与人格的一手/二手材料。</p>
+<span class="tag">1954 · quantum · memoir</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">物理世界 (physical world)</span>
+<span class="chip">量子力学</span>
+<span class="chip">波函数坍缩</span>
+<span class="chip">Gandy 书信</span>
+<span class="chip">皇家学会讣告</span>
+<span class="chip">形态发生</span>
+</div>
+
+<h3><span class="sn">16.1</span>Hodges 的问题：图灵为什么突然关心物理？</h3>
+<p>Hodges 指出，图灵在战后的物理兴趣是“断断续续”的：他关心逻辑离散系统如何嵌入物理连续世界，但很少引用具体物理理论；他做过与计算机可靠性相关的热力学计算，却没有认真处理电子学的量子力学基础。他的底层论题是：“无论大脑做什么，它一定是一个可计算过程。”但这个论题与物理定律的关系，他并没有系统展开。</p>
+<p>唯一的直接联系是 1951 年的广播。图灵在其中简短提到：量子力学的不确定性可能意味着物理系统不能完全由图灵机模拟。Hodges 认为这句话值得认真对待：量子力学的“波函数坍缩”仍然是一个未解的过程；图灵可能正在思考它，而不是简单地把“随机性”等同于“oracle”。Copeland 曾把这句话解释为“图灵在连接随机性与 oracle 机”，Hodges 认为这是过度解读。</p>
+
+<h3><span class="sn">16.2</span>明信片： “来自未见世界的消息”</h3>
+<p>Gandy 的信里抄录了图灵 1954 年寄给他的几张明信片。图灵当时在玩一个“新量子力学”的想法，自称“只是为了好玩”，但希望其中有什么能认真对待。他对 Gandy 说：“量子力学家似乎总要求无限多维；我应付不了那么多——我打算用一百维左右，应该够了，你不觉得吗？”然后给出一个口号：“描述必须是非线性的，预测必须是线性的。”</p>
+<p>明信片上的句子半开玩笑、半认真：</p>
+<blockquote>“The Universe is the interior of the light cone of the creation.”<br>“Science is a differential Equation. Religion is a Boundary Condition.”<br>“Particles are founts.”<br>“Charge = e / π angle of character of a 2π rotation.”<br>“Hyperboloids of wondrous Light / Rolling for aye through Space and Time / Harbour those Waves which somehow might / Play out God's wondrous pantomime.”</blockquote>
+<p>Hodges 逐句解读：“fount”是图灵自己造的词，指用不同字体标记不同对称群的张量指标；“粒子是字体”意味着按对称群分类粒子，这是基本粒子理论的核心思想。“电荷 = e/π × 2π 旋转的特征角”接近规范理论的想法；1954 年正是杨–米尔斯论文发表之年。“光锥内部”指向以光线为基础的广义相对论描述；“奇妙的双曲面”则暗示某种新的波函数传播几何。</p>
+
+<div class="intuition">
+<div class="ih">“科学是微分方程，宗教是边界条件”</div>
+<p>这句话常被当作机智的格言，但它也可以认真读：物理科学一直用微分方程描述定律，但边界条件从何而来？图灵在暗示，宇宙的“初始/边界”问题不是微分方程本身能回答的。Hodges 说，这与 Penrose 后来关于“时空奇点需要新的物理定律”的想法有呼应。</p>
+</div>
+
+<h3><span class="sn">16.3</span>Turing paradox：被观察的锅永远不开</h3>
+<p>Gandy 信里还提到一个“稍微严肃一点”的量子力学贡献：<b>Turing paradox</b>。如果系统从某个可观测量的本征态开始，每秒测量该观测量 $N$ 次，那么即使状态不是定态，经过一秒后系统仍处于原状态的概率，会随 $N\to\infty$ 趋于 1。也就是说，连续观察会“阻止”系统演化。图灵和 Gandy 拿这个悖论去问物理学家，对方说“连续观察不可能”，但标准教科书（如 Dirac）并没有明确排除它。Gandy 认为，这至少暴露了通常表述的量子理论的不完备。</p>
+<p>这个悖论今天被称为“量子芝诺效应 (quantum Zeno effect)”的近亲。图灵没有发表它；它只是书信里的一个想法。但它说明图灵在 1954 年仍在 actively 思考测量问题，而不是只做形态发生的数值计算。</p>
+
+<h3><span class="sn">16.4</span>Gandy 的信：一份“学术遗嘱”</h3>
+<p>1954 年 6 月，Gandy 写信给 Newman，讨论图灵遗稿的整理。信里列了七条：</p>
+<ol>
+<li>图灵认为序数逻辑论文“从未得到应有的注意”（他不承认它难读）。信里特别提到：论文中第一次给出了用超限递归定义数论函数的方案；并说明“一个命题需要哪个序数才能证明”高度依赖序数的形式表示与超限归纳规则的形式。</li>
+<li>图灵重视《Practical Types》里“两个逻辑系统等价”的定义；他原本想让隐藏类型论成为类型论与集合论之间的桥。</li>
+<li>Gandy 要写一本简单类型论的书，图灵的未刊结果会收进去；他认为图灵“类型论 + 无穷公理但无外延性”的一致性证明应该发表。</li>
+<li>图灵算过 Skewes 数的上界，比 Skewes 本人的小，但不愿抢发。</li>
+<li>图灵留下了两人扑克（2-man I card poker）的策略，曾实战测试；Gandy 记得一晚下来自己输了几便士。</li>
+<li>Gandy 希望图灵有一天回到“让机器学习”的实践问题；NPL 的报告应该还在某处。</li>
+<li>1954 年春，图灵在“发明一种新量子力学”，自称“为了好玩”；随后是一串明信片。</li>
+</ol>
+<p>这封信的价值在于它把图灵后期分散的兴趣串起来：序数逻辑、类型论、数论、博弈、机器学习、量子力学。Gandy 不是在做传记神话，而是在为一个突然去世的朋友整理“哪些东西值得保存”。</p>
+
+<h3><span class="sn">16.5</span>Newman 的皇家学会讣告：统一性</h3>
+<p>Newman 的讣告开篇说：图灵的论文标题各异，但“掩盖了其目的的统一性”。中心问题是“机械论解释自然的范围与限制”。他先处理数学逻辑：1936 年论文的三段式、1938 年序数逻辑、类型论四篇、1950 年半群字问题。然后是三篇纯数学论文（李群的有限逼近、群的扩张、ζ 函数计算），接着是计算机（ACE、程序手册、矩阵舍入误差、1950 年 Mind 论文、1953 年下棋），最后是形态发生（反应–扩散、20 细胞环、叶序、雏菊）。</p>
+<p>讣告也给了传记细节：1912 年 6 月 23 日生于伦敦；在 Sherborne 学校对科学着迷、对拉丁文冷淡；1931 年入剑桥国王学院；1935 年因中心极限定理当选 Fellow；1936–38 年在普林斯顿；战时为外交部工作，获 OBE；1945–48 年在 NPL；1948 年到曼彻斯特；1951 年当选 FRS；1954 年 6 月 7 日去世。Newman 还写到他的长跑、他那辆“数到十七圈就能不掉链子”的自行车、以及他喜欢用自制实验解决问题的习惯。</p>
+
+<div class="thm rem">
+<div class="thm-head"><span class="thm-kind">评价</span><span class="thm-title">“他的思想仍在全盛期”</span><span class="thm-id">Newman 1955</span></div>
+<div class="thm-body">
+<p>Newman 认为，图灵在 1954 年仍处于创造力的高峰；形态发生只是“第一幅粗略草图”，未完成的设计是科学界的损失。Hodges 进一步说，图灵在 1954 年对物理问题的接触程度，可能不亚于他在 1935 年对逻辑问题的接触程度；“舞台已经搭好，只等一场大创作”。</p>
+</div>
+</div>
+
+<h3><span class="sn">16.6</span>全章结果速查表</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>材料</th><th>内容</th><th>价值</th></tr></thead>
+<tbody>
+<tr><td class="id">Hodges 论文</td><td>图灵后期物理兴趣的断与续</td><td>把“计算与物理”放在一起看</td></tr>
+<tr><td class="id">明信片</td><td>光锥、边界条件、粒子字体、规范思想</td><td>未竟的物理纲领</td></tr>
+<tr><td class="id">Turing paradox</td><td>连续观察阻止演化</td><td>量子芝诺效应的近亲</td></tr>
+<tr><td class="id">Gandy 信</td><td>序数逻辑、类型论、Skewes 数、扑克、学习机、量子力学</td><td>学术遗嘱</td></tr>
+<tr><td class="id">Newman 讣告</td><td>生平 + 统一性评价</td><td>最早的权威传记</td></tr>
+<tr><td class="id">死亡</td><td>1954 年 6 月 7 日</td><td>形态发生手稿未完成</td></tr>
+</tbody>
+</table></div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不要把明信片当成“完成的理论”</span><span class="thm-id">复习</span></div>
+<div class="thm-body">
+<p><b>它们是草图，不是论文。</b>图灵自己说“为了好玩”；把它们说成“图灵已经预言了量子引力”是过度解释。</p>
+<p><b>“科学是微分方程，宗教是边界条件”不是无神论宣言。</b>它更像一个关于物理定律与初始条件的哲学警句；Hodges 也提醒不要只读成俏皮话。</p>
+<p><b>Newman 的讣告有立场。</b>它是同事与朋友写的，强调统一性，可能弱化了图灵后期转向的断裂；读传记要对照 Hodges 与 Gandy。</p>
+</div>
+</div>
+</div></section>
+
+<section id="ch17" class="chapter"><div class="wrap">
+<div class="sec-label">Summary · Toolbox · Reading Route · Appendix</div>
+<h2><span class="num">17</span>全书工具箱：一张纸上的图灵</h2>
+<p class="lede">如果只带走一页，就带走这张表：每个问题对应一个构造、一个边界、一个误用。图灵的方法不是“给出现成答案”，而是“把问题改写成可严格追问的形式”，然后证明这个形式有不可逾越的边界。</p>
+
+<div class="chap-intro">
+<p>本教程按原书三部分与“其他卷”篇目组织成 17 章（另加封面导读），共 18 个 section。核心论文逐节覆盖；证明给骨架而非逐字重写；密码分析与编程部分按原书的“节选”性质标注，不把二手总结写成原始论文。最后附一张阅读路线与一张“不要误读”的清单。</p>
+<span class="tag">18 sections · 1936–1954</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">定义 → 构造 → 边界</span>
+<span class="chip">可计算 / 不可判定</span>
+<span class="chip">完备 / 不变</span>
+<span class="chip">约束 / 证据</span>
+<span class="chip">图案 / 学习</span>
+</div>
+
+<h3><span class="sn">17.1</span>一条主线：把直觉变成对象，再找它的边界</h3>
+<p>图灵的每一篇重要工作，都遵循同一个节奏：先把一个模糊的直觉——“机械地算”“有效地判定”“随机地长”“像人一样对话”——改写成有限规则、有限状态或可观测行为；然后在这个精确模型里证明一个<b>不可能</b>或<b>不可避免</b>的结果；最后指出，这个结果不是终点，而是新的分层：可计算/不可计算、可判定/相对可判定、完备/不变、稳定/失稳、可区分/不可区分。</p>
+
+<div class="table-wrap cheat"><table>
+<thead><tr><th>问题</th><th>核心构造</th><th>关键结论</th><th>边界 / 误用</th></tr></thead>
+<tbody>
+<tr><td class="id">什么叫机械计算？</td><td>纸带 + 有限状态 + 局部动作</td><td>可计算数、通用机</td><td>不限资源；不要求停机</td></tr>
+<tr><td class="id">有没有通用判定法？</td><td>对角线、自指、归约</td><td>circle-free / 判定问题不可判定</td><td>不是“所有实例都难”</td></tr>
+<tr><td class="id">换个模型会怎样？</td><td>λ 演算、递归函数</td><td>可计算函数类相同</td><td>论题不可证明</td></tr>
+<tr><td class="id">能否超越不完备？</td><td>序数逻辑、超限扩张</td><td>真 $\Pi_1$ 句在某一层可证</td><td>$O$ 不可递归枚举；完备与不变不可兼得</td></tr>
+<tr><td class="id">知道得更多会怎样？</td><td>oracle 机、相对可计算</td><td>相对停机仍不可判定</td><td>oracle 不是 API</td></tr>
+<tr><td class="id">类型如何不出错？</td><td>嵌套类型、隐藏类型</td><td>有限宇宙完备；与丘奇系统等价</td><td>不是“取代集合论”</td></tr>
+<tr><td class="id">密码怎么破？</td><td>crib、menu、闭环、Bombe</td><td>用约束排除转子位置</td><td>不是暴力穷举</td></tr>
+<tr><td class="id">证据怎么累加？</td><td>Bayes 因子、deciban、序贯检验</td><td>证据可加，够了就停</td><td>偷看数据会膨胀错误率</td></tr>
+<tr><td class="id">机器怎么造？</td><td>存储程序、子程序、延迟线</td><td>ACE / Pilot ACE</td><td>不是“第一台计算机”</td></tr>
+<tr><td class="id">程序怎么组织？</td><td>计划、分解、块框图、检查表</td><td>早期软件工程</td><td>坏记法会逼出编译器</td></tr>
+<tr><td class="id">图案怎么长出？</td><td>反应–扩散、线性稳定性</td><td>扩散驱动失稳</td><td>线性分析只给起始</td></tr>
+<tr><td class="id">机器能学习吗？</td><td>随机 NAND 网络、儿童机器</td><td>组织/训练可产生功能</td><td>不是现代反向传播</td></tr>
+<tr><td class="id">机器能思考吗？</td><td>模仿游戏、行为检验</td><td>把形而上问题变成盲测</td><td>通过 ≠ 理解</td></tr>
+</tbody>
+</table></div>
+
+<h3><span class="sn">17.2</span>时间线：六个转折点</h3>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>年份</th><th>转折</th><th>一句话</th></tr></thead>
+<tbody>
+<tr><td class="id">1936</td><td>可计算数</td><td>“机械计算”第一次有了可证明边界的定义。</td></tr>
+<tr><td class="id">1938</td><td>序数逻辑</td><td>不完备性可以被推高，但不能被消除。</td></tr>
+<tr><td class="id">1940</td><td>Enigma / Banburismus</td><td>逻辑约束与统计证据可以工程化。</td></tr>
+<tr><td class="id">1946</td><td>ACE</td><td>通用机变成存储程序机器。</td></tr>
+<tr><td class="id">1952</td><td>形态发生</td><td>均匀系统可以自发产生空间图案。</td></tr>
+<tr><td class="id">1950–54</td><td>模仿游戏 / 物理</td><td>智能与物理的边界成为最后的问题。</td></tr>
+</tbody>
+</table></div>
+
+<h3><span class="sn">17.3</span>阅读路线：三种读法</h3>
+<p><b>路线 A（逻辑主线，约 6 小时）。</b>第 2 节 → 第 3 节 → 第 4 节 → 第 5 节 → 第 6 节。先读 1936 年论文的 §1–§8，再读 §9–§11 的哲学讨论与判定问题归约；1938 年的序数逻辑很难，可以先读 Feferman 序言与 §11“The purpose of ordinal logics”，再回头看 §9 的完备性定理。</p>
+<p><b>路线 B（机器主线，约 4 小时）。</b>第 9 节 → 第 10 节 → 第 11 节 → 第 12 节 → 第 14 节 → 第 15 节。先看 Enigma 的约束逻辑，再看 ACE 的存储程序，最后看“机器能否学习/思考”。这条线回答的是“图灵如何从逻辑走到工程与 AI”。</p>
+<p><b>路线 C（自然哲学主线，约 2 小时）。</b>第 13 节 → 第 16 节 → 第 17 节。形态发生与晚期物理是图灵“机械论解释自然”的最后一站；配合 Newman 讣告与 Gandy 书信读，能看到他的统一性野心与未完成性。</p>
+
+<h3><span class="sn">17.4</span>附录：其他卷的版本说明</h3>
+<p>《Appendix: Matters Arising from Earlier Volumes》列出几条容易被忽略的版本信息。第一，1946 年 12 月与 1947 年 1 月图灵与 J. H. Wilkinson 在军需部做的 ACE 讲座，报告由 T. H. Marshall 整理；图灵只讲了两讲，全文收在 MI pp. 1–86。第二，1948 年《Intelligent Machinery》报告有两个版本：1968 年《Cybernetics: Key Papers》版与 1969 年《Machine Intelligence 5》版；后者有误印，尤其是图表，所以引用时要核对原版。第三，《Intelligent Machinery, A Heretical Theory》是曼彻斯特的讲演，收在 Sara Turing 1959 年的传记里。第四，1951 年 5 月 15 日广播《Can Digital Computers Think?》与 1952 年 1 月 14 日四人讨论，是图灵公开解释机器智能的重要材料。第五，《Digital Computers Applied to Games》中“跳棋”部分由 Christopher Strachey 写，“NIM”由 Audrey Bates 写，不能全部归给图灵。</p>
+<p>这些说明看似琐碎，却直接影响引用：把 1969 年版的图误当作图灵原图，或把合著章节全部归给图灵，都是常见的二手错误。</p>
+
+<h3><span class="sn">17.5</span>最后一张“不要误读”清单</h3>
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">总结</span><span class="thm-title">八个最常见的时代错置</span><span class="thm-id">全书复习</span></div>
+<div class="thm-body">
+<p><b>1. 把图灵机当现代电脑。</b>它是数学模型，不是硬件；现代电脑有有限内存、并行、I/O，不能直接等同。</p>
+<p><b>2. 把“不可判定”当“无法解决”。</b>不可判定是说没有统一算法；具体实例、受限子类、近似算法仍然可以很有用。</p>
+<p><b>3. 把“图灵测试”当智能定义。</b>它是操作化检验，不是充分必要条件。</p>
+<p><b>4. 把序数逻辑当“推翻哥德尔”。</b>它没有给出可执行的判定过程；完备性只对 $\Pi_1$，且与不变性冲突。</p>
+<p><b>5. 把 Bombe 当暴力枚举。</b>它靠“无固定点”和闭环约束排除，不是试遍所有密钥。</p>
+<p><b>6. 把形态发生的线性分析当完整理论。</b>它只预测失稳的起始波长；最终图案需要非线性分析或数值模拟。</p>
+<p><b>7. 把 ACE 当“第一台计算机”。</b>它的重要性在存储程序与子程序思想，不在“最早”。</p>
+<p><b>8. 把团队工作写成个人神话。</b>Enigma 有波兰先驱与布莱切利团队；类型论有 Newman、Church、Kleene；计算有 Eckert、Mauchly、von Neumann 等。读全集，也要读脚注与导言。</p>
+</div>
+</div>
+
+<h3><span class="sn">17.6</span>覆盖说明</h3>
+<p>本教程覆盖本卷 TOC 中的 Part I、Part II、Part III 与书末材料；<em>Mechanical Intelligence</em> 与 <em>Morphogenesis</em> 的篇目按“Contents of Other Volumes”纳入第 11–15 节，并明确标注“其他卷”。公式按原始论文的数学内容重建；密码分析中的 crib、转子数与插线板组合数取自图灵论文的样例；形态发生中的数值算例标注为“构造例子”，不冒充 1952 年的历史参数。卷首的 <em>Frontispiece</em>、<em>Copyright</em>、<em>Acknowledgements</em> 属于版本信息，未逐页复述；<em>Bibliography</em> 与 <em>Index</em> 作为检索工具保留在原书。</p>
+
+<div class="intuition">
+<div class="ih">最后一句话</div>
+<p>图灵留下的不是一套教条，而是一种提问方式：先问“你把哪个词定义清楚了”，再问“这个定义排除了什么”，最后问“证明用到了哪条边界”。这三问，适用于可计算性，也适用于今天的 AI、密码学与计算生物学。</p>
+</div>
 </div></section>
 
 </main>
@@ -1158,7 +1951,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 A. M. Turing (ed. collected works) 的《Collected Works of A. M. Turing》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1166,7 +1959,7 @@ figcaption b{color:var(--ink2);font-weight:600}
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>7 章 · 307 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">

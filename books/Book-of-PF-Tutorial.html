@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Book of PF · 交互教程</title>
-<meta name="description" content="《The Book of PF》中文单页教程：">
+<meta name="description" content="《The Book of PF》中文单页教程：A No-Nonsense Guide to the OpenBSD Firewall">
 <style>
 /* ============ 基础 ============ */
 :root{
@@ -432,28 +432,48 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · SYSTEMS</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">The Book of PF
-      <span></span>
+      <span>A No-Nonsense Guide to the OpenBSD Firewall</span>
     </div>
-    <div class="sb-meta"><b>10</b> 章 · <b>266</b> 页</div>
+    <div class="sb-meta">266 页 · 20 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
-    <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
-    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>先让一台机器只说必要的话</span></a>
-    <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>规则不是集合，而是一段程序</span></a>
-    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>把会变的东西放进表，把不动的逻辑留在规则里</span></a>
-    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>改写地址，但不改写信任</span></a>
-    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>没有日志的防火墙，只是一台会丢包的机器</span></a>
-    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>带宽不够时，先决定谁该等</span></a>
-    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>让备用防火墙在主人沉默时接管</span></a>
-    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>隧道不是绕过防火墙，而是换一层头</span></a>
-    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>让暴力破解和垃圾邮件付出时间成本</span></a>
-    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>Wi-Fi 只是另一个接口和另一个子网</span></a>
-    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>先证明包到了哪一层，再改规则</span></a>
-    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>一页纸：把规则集写成可运营的系统</span></a>
+    <div class="nav-part">开始</div>
+    <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读 · 一条判决链</span></a>
+    <a class="nav-link" href="#intro" data-sec="intro"><span class="nav-num">01</span> <span>先描述网络，再谈加固</span></a>
+
+    <div class="nav-part">第一部分 · 单机与网关</div>
+    <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">02</span> <span>可预测的网络</span></a>
+    <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">03</span> <span>第一份规则集</span></a>
+    <a class="nav-link" href="#ch3a" data-sec="ch3a"><span class="nav-num">04</span> <span>网关：两次判决</span></a>
+    <a class="nav-link" href="#ch3b" data-sec="ch3b"><span class="nav-num">05</span> <span>表与排障路径</span></a>
+
+    <div class="nav-part">第二部分 · 无线与更大的网络</div>
+    <a class="nav-link" href="#ch4a" data-sec="ch4a"><span class="nav-num">06</span> <span>Wi-Fi 只是接口</span></a>
+    <a class="nav-link" href="#ch4b" data-sec="ch4b"><span class="nav-num">07</span> <span>authpf 认证网关</span></a>
+    <a class="nav-link" href="#ch5a" data-sec="ch5a"><span class="nav-num">08</span> <span>DMZ 与 relayd</span></a>
+    <a class="nav-link" href="#ch5b" data-sec="ch5b"><span class="nav-num">09</span> <span>NAT、重定向与标签</span></a>
+    <a class="nav-link" href="#ch5c" data-sec="ch5c"><span class="nav-num">10</span> <span>桥接与锚点</span></a>
+
+    <div class="nav-part">第三部分 · 主动防御</div>
+    <a class="nav-link" href="#ch6a" data-sec="ch6a"><span class="nav-num">11</span> <span>自适应防火墙</span></a>
+    <a class="nav-link" href="#ch6b" data-sec="ch6b"><span class="nav-num">12</span> <span>spamd 与灰名单</span></a>
+
+    <div class="nav-part">第四部分 · 带宽与冗余</div>
+    <a class="nav-link" href="#ch7a" data-sec="ch7a"><span class="nav-num">13</span> <span>优先级与队列</span></a>
+    <a class="nav-link" href="#ch7b" data-sec="ch7b"><span class="nav-num">14</span> <span>ALTQ 旧世界</span></a>
+    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">15</span> <span>CARP 与 pfsync</span></a>
+
+    <div class="nav-part">第五部分 · 观测与收束</div>
+    <a class="nav-link" href="#ch9a" data-sec="ch9a"><span class="nav-num">16</span> <span>日志与标签</span></a>
+    <a class="nav-link" href="#ch9b" data-sec="ch9b"><span class="nav-num">17</span> <span>监控工具与排障</span></a>
+    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">18</span> <span>调优与清洗</span></a>
+    <a class="nav-link" href="#appendix" data-sec="appendix"><span class="nav-num">19</span> <span>资料与硬件</span></a>
+    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">20</span> <span>一页纸速查</span></a>
+
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
@@ -481,50 +501,130 @@ figcaption b{color:var(--ink2);font-weight:600}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="hero-kicker">The Book of PF · 4th Edition</div>
-        <h1>包过滤的常识<span class="en">A No-Nonsense Guide to the OpenBSD Firewall</span></h1>
-        <p class="hero-sub">从一条 <b>block all</b> 开始，把 OpenBSD PF 写成你能解释、能测试、能回滚的边界策略。这里不讲“祖传规则集”，只讲每个关键字在数据包上到底做了什么。</p>
+        <div class="hero-kicker">The Book of PF · 4th Edition · Complete Mode</div>
+        <h1>把边界写成<br>一段可读的程序<span class="en">A No-Nonsense Guide to the OpenBSD Firewall</span></h1>
+        <p class="hero-sub">这不是命令手册的摘抄，而是一条完整的推理链：<b>包从哪里来、在哪个接口被判决、状态如何复用、地址怎样被改写、拥塞时谁先走、主机倒下后谁接班</b>。十章内容逐节展开，每个配置都能落到 <code>pf.conf</code> 与 <code>pfctl</code> 上。</p>
         <div class="hero-actions">
-          <a class="btn" href="#ch1">从最小规则集开始</a>
-          <a class="btn ghost" href="#ch12">直接查最终速查表</a>
+          <a class="btn" href="#ch1">从第一章开始 →</a>
+          <a class="btn ghost" href="#summary">直接看总速查</a>
         </div>
         <div class="hero-stats">
-          <div class="hstat"><b>10</b><span>原书章</span></div>
-          <div class="hstat"><b>11</b><span>实战主题</span></div>
-          <div class="hstat"><b>28</b><span>可复制配置</span></div>
-          <div class="hstat"><b>1</b><span>页速查</span></div>
+          <div class="hstat"><b>10</b><span>原书章节</span></div>
+          <div class="hstat"><b>20</b><span>讲解单元</span></div>
+          <div class="hstat"><b>100+</b><span>配置与命令</span></div>
+          <div class="hstat"><b>0</b><span>外部依赖</span></div>
         </div>
       </div>
       <div class="hero-art">
-        <svg viewBox="0 0 420 440" role="img" aria-label="PF 网关的包处理路径：外网进入 PF，查询状态表，再按规则集决定放行或阻断，最后到达内网">
-          <g fill="none" stroke="currentColor" stroke-width="1.6" opacity=".8">
-            <rect x="36" y="34" width="348" height="64" rx="10"/>
-            <rect x="36" y="176" width="348" height="92" rx="12"/>
-            <rect x="36" y="346" width="348" height="64" rx="10"/>
-            <path d="M210 98v70" marker-end="url(#arrow)"/>
-            <path d="M210 268v70" marker-end="url(#arrow)"/>
-            <path d="M120 222h180" stroke-dasharray="4 5"/>
-            <path d="M96 222l24-14v28z" fill="currentColor" stroke="none"/>
-          </g>
+        <svg viewBox="0 0 460 480" role="img" aria-label="PF 判决路径示意：包进入接口，先查状态表，再顺序匹配规则，最后按动作放行或阻断">
           <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M0 0L10 5L0 10z" fill="currentColor"/>
+            <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 z" fill="#1c1b18"/>
             </marker>
           </defs>
-          <g font-family="ui-sans-serif, system-ui, sans-serif" fill="currentColor">
-            <text x="210" y="60" text-anchor="middle" font-size="13" opacity=".55">INTERNET</text>
-            <text x="210" y="82" text-anchor="middle" font-size="17" font-weight="700">em0 · 203.0.113.10</text>
-            <text x="210" y="203" text-anchor="middle" font-size="12" opacity=".55">PACKET FILTER</text>
-            <text x="210" y="228" text-anchor="middle" font-size="20" font-weight="700">pf(4)</text>
-            <text x="210" y="251" text-anchor="middle" font-size="12" opacity=".7">state table → rules → verdict</text>
-            <text x="210" y="371" text-anchor="middle" font-size="13" opacity=".55">LAN</text>
-            <text x="210" y="394" text-anchor="middle" font-size="17" font-weight="700">em1 · 192.168.1.1</text>
-            <text x="54" y="160" font-size="11" opacity=".55">匹配既有状态？</text>
-            <text x="54" y="298" font-size="11" opacity=".55">无状态：自上而下求值</text>
-            <text x="54" y="128" font-size="11" opacity=".55">新建连接</text>
+          <g font-family="ui-sans-serif, system-ui, sans-serif" fill="#1c1b18">
+            <text x="34" y="44" font-size="11" letter-spacing="2" opacity=".55">PACKET PATH</text>
+            <rect x="34" y="62" width="392" height="58" rx="10" fill="none" stroke="#1c1b18" stroke-opacity=".45"/>
+            <text x="52" y="86" font-size="12" opacity=".6">interface</text>
+            <text x="52" y="107" font-size="15" font-weight="700">em0 · in</text>
+            <text x="330" y="96" font-size="11" opacity=".55">src → dst</text>
+            <line x1="230" y1="120" x2="230" y2="150" stroke="#1c1b18" stroke-opacity=".6" marker-end="url(#ar)"/>
+
+            <rect x="34" y="152" width="392" height="66" rx="10" fill="#dcebe7" stroke="#11645c" stroke-opacity=".45"/>
+            <text x="52" y="176" font-size="12" fill="#11645c" letter-spacing="1">STATE TABLE</text>
+            <text x="52" y="199" font-size="14">已有连接？直接放行，不再遍历规则</text>
+            <text x="366" y="176" font-size="11" fill="#11645c">O(1)</text>
+            <line x1="230" y1="218" x2="230" y2="248" stroke="#1c1b18" stroke-opacity=".6" marker-end="url(#ar)"/>
+            <text x="244" y="240" font-size="11" opacity=".6">no match / new</text>
+
+            <rect x="34" y="250" width="392" height="132" rx="10" fill="none" stroke="#1c1b18" stroke-opacity=".45"/>
+            <text x="52" y="274" font-size="12" opacity=".6" letter-spacing="1">RULESET · top to bottom</text>
+            <rect x="52" y="286" width="356" height="22" rx="4" fill="#f3ded7"/>
+            <text x="62" y="302" font-size="12" fill="#b23a26">block all</text>
+            <rect x="52" y="314" width="356" height="22" rx="4" fill="none" stroke="#1c1b18" stroke-opacity=".25"/>
+            <text x="62" y="330" font-size="12">pass in quick proto tcp to port ssh</text>
+            <rect x="52" y="342" width="356" height="22" rx="4" fill="none" stroke="#1c1b18" stroke-opacity=".25"/>
+            <text x="62" y="358" font-size="12">pass out proto tcp to port { www https }</text>
+            <text x="52" y="376" font-size="11" opacity=".55">last match wins · quick stops evaluation</text>
+            <line x1="230" y1="382" x2="230" y2="412" stroke="#1c1b18" stroke-opacity=".6" marker-end="url(#ar)"/>
+
+            <rect x="34" y="414" width="188" height="44" rx="9" fill="#e8e2f0" stroke="#5a4a78" stroke-opacity=".35"/>
+            <text x="128" y="441" font-size="13" text-anchor="middle" fill="#5a4a78">pass → 建状态</text>
+            <rect x="238" y="414" width="188" height="44" rx="9" fill="#f4e9cc" stroke="#9a6f13" stroke-opacity=".35"/>
+            <text x="332" y="441" font-size="13" text-anchor="middle" fill="#9a6f13">block → 丢弃 / 回 RST</text>
           </g>
         </svg>
-        <div class="caption">默认有状态：回程包查状态表，不重走规则；只有新连接才触发完整规则求值。</div>
+        <div class="caption">PF 的判决只有一次：状态命中就短路；否则自上而下匹配，<code>quick</code> 立即终止，最后一条匹配者胜。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="intro" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Introduction · 本书的立场</div>
+    <h2><span class="num">00</span>先学会描述网络，再谈加固</h2>
+    <p class="lede">《The Book of PF》反复强调一件事：防火墙（firewall）的难点不在语法，而在你能否用几句话准确描述“谁需要访问谁、经过哪条路径、失败时怎么办”。</p>
+    <div class="chap-intro">
+      <p>原书 Introduction 的两节 <b>This Is Not a HOWTO</b> 与 <b>What This Book Covers</b> 定下了基调：它给的是可推理的模型与可维护的配置，而不是一串复制粘贴的命令。教程沿用这个立场——每个知识点都回答“为什么这样写”和“写错会怎样”。</p>
+      <span class="tag">完整模式 · 逐节覆盖</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">packet filtering</span><span class="chip">stateful</span><span class="chip">readable ruleset</span><span class="chip">OpenBSD / FreeBSD</span><span class="chip">可运维</span>
+    </div>
+
+    <p>包过滤（packet filtering）是在网络层对每个包做去留决定。PF 是 OpenBSD 的包过滤器，也被移植到 FreeBSD、NetBSD、macOS 等系统。它的设计目标可以概括为四条：规则可读、默认有状态、语法接近自然语言、把 NAT、队列、日志、冗余放进同一份配置。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>术语（首次出现）</th><th>一句话</th></tr></thead>
+        <tbody>
+          <tr><td>包过滤 (packet filtering)</td><td>按规则决定每个包的去留</td></tr>
+          <tr><td>防火墙 (firewall)</td><td>执行边界策略的系统</td></tr>
+          <tr><td>规则集 (ruleset)</td><td>一整份按顺序求值的 <code>pf.conf</code></td></tr>
+          <tr><td>宏 (macro)</td><td>可复用的名字，展开为接口/地址/端口</td></tr>
+          <tr><td>表 (table)</td><td>运行时可增删的地址集合</td></tr>
+          <tr><td>锚点 (anchor)</td><td>主规则集里的可替换子规则集</td></tr>
+          <tr><td>网络地址转换 (NAT)</td><td>改写源地址，主要用于地址复用</td></tr>
+          <tr><td>重定向 (redirection)</td><td>改写目的地址/端口，把连接交给内部主机</td></tr>
+          <tr><td>负载均衡 (load balancing)</td><td>把连接分给多个后端</td></tr>
+          <tr><td>流量整形 (traffic shaping)</td><td>拥塞时按政策选择丢谁的包</td></tr>
+          <tr><td>高可用 (CARP)</td><td>用虚拟 IP 做主备接管</td></tr>
+          <tr><td>状态同步 (pfsync)</td><td>把状态表复制给备用节点</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">阅读契约</span><span class="thm-title">本书覆盖什么，不覆盖什么</span></div>
+      <div class="thm-body">
+        <p>覆盖：单机与网关规则、表与宏、锚点、NAT 与重定向、负载均衡、无线与 authpf、spamd 与灰名单、优先级与队列（含 ALTQ 遗留语法）、CARP 与 pfsync、日志与监控、全局调优与排障。不覆盖：应用层代理的完整配置、OpenBSD 内核编译、以及具体硬件的驱动调试——这些只在影响 PF 行为时提及。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">0.1</span>三条贯穿全书的判断</h3>
+    <p><b>第一，方向比端口更容易写错。</b><code>in</code>/<code>out</code> 是相对本机接口而言；<code>on</code> 把规则钉在某个接口。网关转发一个包会经过“入”和“出”两次检查，少写一边就会出现“半通”。</p>
+    <p><b>第二，状态是默认行为，不是可选优化。</b>PF 只让连接的首包走规则，回程包查状态表。因此“只写一个方向”通常够用；但改完规则后旧状态仍在，必须用 <code>pfctl -ss</code> 确认，必要时 <code>pfctl -F states</code>。</p>
+    <p><b>第三，所有“动态”都要有边界。</b>表会增长、锚点会被用户登录填充、队列会积压、状态会耗尽内存。每一处动态机制都要配一个上限和一个观察手段。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>概念</th><th>一句话定义</th><th>第一次出现的章节</th></tr></thead>
+        <tbody>
+          <tr><td>规则集 (ruleset)</td><td>一整份 <code>pf.conf</code>，按顺序求值</td><td>第 1 章</td></tr>
+          <tr><td>宏 (macro)</td><td>第 2 章</td></tr>
+          <tr><td>表 (table)</td><td>第 3 章</td></tr>
+          <tr><td>锚点 (anchor)</td><td>第 5 章</td></tr>
+          <tr><td>NAT</td><td>改写源地址，主要为了地址复用</td><td>第 3 章</td></tr>
+          <tr><td>重定向 (redirection)</td><td>第 5 章</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">先记住</span><span class="thm-title">不要把“能上网”当成配置正确</span></div>
+      <div class="thm-body">
+        <p>浏览器能打开网页，只能证明 80/443 的某条路径通了。DNS、ICMP、分片、回程、IPv6、失败切换都可能仍然是坏的。后文每章都给一组“反向测试”：故意访问一个不该通的端口、故意发一个不该被转发的源地址，确认它真的被拒绝。</p>
       </div>
     </div>
   </div>
@@ -532,767 +632,1933 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <section id="ch1" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 1–2 · Building the Network / PF Configuration Basics</div>
-    <h2><span class="num">01</span>先让一台机器只说必要的话</h2>
-    <p class="lede">PF 不是“再加一层防护”，而是把“谁可以和谁说话”变成一份可审查、可复现的文本。第一个规则集的目标不是强大，而是让你能准确预测每个包的去向。</p>
+    <div class="sec-label">Chapter 1 · Building the Network You Need</div>
+    <h2><span class="num">01</span>你需要的是可预测的网络，不是最复杂的网络</h2>
+    <p class="lede">原书开篇不谈语法，先谈目标：高性能、低维护、可证明的安全。包过滤（packet filtering）只是实现这三个目标的一种手段，位置放错，再漂亮的规则也救不了拓扑。</p>
     <div class="chap-intro">
-      <p>本章从单机开始：启用 PF、写最小规则、用 pfctl 加载并验证。单机模型是所有网关、NAT、队列配置的最小公倍数——如果一台机器上的方向判断错了，放到双网卡上只会错得更贵。</p>
-      <span class="tag">单机 · 基线</span>
+      <p>这一章建立全书的世界观：网络为什么需要边界、PF 为什么在 2001 年出现、从 Linux 或商业防火墙迁移过来的人最容易带错哪些直觉。它没有配置，但决定了后面十章的解释框架。</p>
+      <span class="tag">世界观 · 历史 · 迁移</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">default deny</span><span class="chip">stateful</span><span class="chip">pfctl -nf</span><span class="chip">in / out</span><span class="chip">keep state</span><span class="chip">最小暴露面</span>
+      <span class="chip hot">boundary</span><span class="chip">high performance</span><span class="chip">low maintenance</span><span class="chip">secure</span><span class="chip">PF 2001</span><span class="chip">last match wins</span>
     </div>
+    <p class="note"><b>原书小节</b> · Your Network: High Performance, Low Maintenance, and Secure · Where the Packet Filter Fits In · The Rise of PF · If You Came from Elsewhere · Pointers for Linux Users · Frequently Answered Questions About PF · A Little Encouragement: A PF Haiku</p>
+
+    <h3><span class="sn">1.1</span>三个目标其实是同一个目标</h3>
+    <p>“高性能”不是指防火墙能跑满 10G，而是指它不成为故障源：规则数量可控、状态表不爆、排障路径清晰。“低维护”不是配置越少越好，而是每次变更都能被审查、被回滚、被解释。“安全”不是默认拒绝四个字，而是你能列出每一条放行的业务理由。</p>
+    <p>三者冲突时，原书的选择很明确：<b>可读性优先于技巧</b>。一条用宏写清楚的三行规则，胜过一次“省两条规则”的地址聚合。因为半年后改规则的人，需要的是能读懂的文本。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">防火墙不负责“内网可信”</span></div>
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">边界在哪里</span></div>
       <div class="thm-body">
-        <p>单机规则集面对的威胁是：互联网上的批量扫描、针对 SSH 的凭据猜测、以及本机无意中监听的服务。它不负责阻止同网段的 ARP 欺骗、物理接入或已经拿到本地权限的攻击者。把 PF 当成“边界上的策略执行点”，而不是主机加固的全部。</p>
+        <p>包过滤器工作在“信任级别发生变化”的位置：主机与网络之间、内网与外网之间、办公网与生产网之间、物理机与虚拟机之间。它不替代主机加固、身份认证和应用层校验；它只回答“这个包有没有资格继续走”。</p>
       </div>
     </div>
 
-    <h3><span class="sn">1.1</span>最小可用规则集</h3>
-    <p>先只允许两件事：本机主动发起的出站连接，以及别人来连本机 SSH。其余全部拒绝。规则里的 <span class="kw">set skip on lo</span> 让回环流量完全绕过过滤，这是几乎所有 OpenBSD 默认配置的第一行。</p>
-    <pre><code class="language-bash"># /etc/pf.conf —— 单机最小基线
-set skip on lo
-block all
-pass out proto tcp to port { ssh, http, https, domain }
-pass out proto udp to port domain
-pass in proto tcp to port ssh
-</code></pre>
-    <p>加载前的第一道检查是 <span class="kw">pfctl -nf</span>：只解析、不碰正在运行的规则集。确认无误后再用 <span class="kw">-ef</span> 一次性启用并加载，避免“先清空再加载”造成的中断窗口。</p>
-    <pre><code class="language-bash">$ doas pfctl -e                 # 若未启用则启用
-$ doas pfctl -nf /etc/pf.conf   # 语法与展开检查
-$ doas pfctl -ef /etc/pf.conf   # 启用并加载
-$ doas pfctl -sr                # 查看实际加载的规则
-</code></pre>
-
-    <div class="intuition">
-      <div class="ih">预期行为</div>
-      <p><b>出站：</b>本机发起的 TCP 连接命中 <code>pass out</code>，PF 建立状态表项；回程包命中状态，不再逐条匹配规则。<b>入站：</b>只有目标端口 22 的新连接能通过，其他端口直接被 <code>block all</code> 拒绝。<b>未匹配：</b>如果没有 <code>block all</code>，PF 的默认动作是放行——这就是“忘了写默认拒绝”最危险的地方。</p>
-    </div>
-
-    <p>PF 自 OpenBSD 4.1 起默认 <code>keep state</code>，且只让初始 SYN 建状态（<code>flags S/SA</code>）。这意味着你不需要为回程流量写反向规则；反过来，任何“只放一个方向”的规则，只要方向写对，连接就能往返。</p>
+    <h3><span class="sn">1.2</span>PF 为什么会出现</h3>
+    <p>2001 年以前，BSD 世界主要用 IPFilter（ipf）。许可证纠纷让 OpenBSD 决定自己写一个包过滤器：Daniel Hartmeier 在 2001 年完成初版，随 OpenBSD 3.0（2001 年 12 月）发布。设计上刻意做了三个不同于 ipf 的选择：</p>
+    <p><b>规则语法面向人类。</b><code>pass in on egress proto tcp to port ssh</code> 几乎可以逐词读成英文，减少“语法正确但语义相反”的事故。<b>默认有状态。</b>放行一个方向即可，回程由状态表处理。<b>一套配置管全部。</b>过滤、NAT、重定向、队列、日志、冗余都在 <code>pf.conf</code> 里，按段落组织。</p>
+    <p>随后 PF 被移植到 FreeBSD（4.5 起）、NetBSD、macOS 等。移植带来的差异主要不在过滤语义，而在“外围”：OpenBSD 用 <code>doas</code>、接口名如 <code>em0</code>，FreeBSD 用 <code>sudo</code>、<code>pf.ko</code> 与 <code>rc.conf</code>，NAT 语法也保留了两套写法。</p>
 
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>目标</th><th>规则/命令</th><th>要点</th></tr></thead>
+        <thead><tr><th>时间</th><th>事件</th><th>对写规则的影响</th></tr></thead>
         <tbody>
-          <tr><td>默认拒绝</td><td><code>block all</code></td><td>放在允许规则之前；PF 是“最后匹配者胜”，不是“任一匹配即胜”</td></tr>
-          <tr><td>本机出站</td><td><code>pass out proto tcp to port {...}</code></td><td>不写 <code>from</code> 即任意源，通常就是本机</td></tr>
-          <tr><td>允许入站 SSH</td><td><code>pass in proto tcp to port ssh</code></td><td>生产环境应再加 <code>from</code> 限制来源</td></tr>
-          <tr><td>回环不过滤</td><td><code>set skip on lo</code></td><td>也可写 <code>set skip on { lo, $int_if }</code></td></tr>
-          <tr><td>只检查不加载</td><td><code>pfctl -nf /etc/pf.conf</code></td><td>语法错误会在这里暴露，不中断现网</td></tr>
-          <tr><td>查看状态</td><td><code>pfctl -ss</code></td><td>确认连接是否真的建了状态</td></tr>
+          <tr><td>2001</td><td>PF 随 OpenBSD 3.0 发布</td><td>默认有状态、最后匹配者胜</td></tr>
+          <tr><td>4.6</td><td>OpenBSD 默认启用 PF；引入 <code>match</code></td><td>新配置用 <code>match ... nat-to</code></td></tr>
+          <tr><td>5.0</td><td>常开优先级 <code>set prio</code></td><td>不建队列也能做简单分级</td></tr>
+          <tr><td>5.5 / 5.6</td><td>新队列系统；ALTQ 移除</td><td>OpenBSD 用 <code>queue</code>，FreeBSD 仍可用 ALTQ</td></tr>
+          <tr><td>6.2</td><td>FQ-CoDel flows</td><td><code>queue ... flows 1024</code></td></tr>
         </tbody>
       </table>
     </div>
 
-    <p>测试不要只看“网页能开”。用 <code>host</code> 验证 DNS、用 <code>ssh</code> 验证入站、再从另一台机器扫一个未放行端口，确认它被拒绝而不是超时或误放行。</p>
-    <pre><code class="language-bash">$ host nostarch.com
-$ ssh -o ConnectTimeout=3 user@203.0.113.10
-$ doas pfctl -ss | grep -E 'ssh|domain'
-$ doas pfctl -si | grep -E 'Status|State Table'
-</code></pre>
+    <h3><span class="sn">1.3</span>从别处迁来的人最容易带错的四个直觉</h3>
+    <p><b>直觉一：默认拒绝要自己写。</b>在 PF 里如果没有任何规则匹配，默认动作是 <code>pass</code>。所以 <code>block all</code> 必须显式写，而且要放在允许规则之前——但 PF 是“最后匹配者胜”，不是“先匹配者胜”。这两句话看起来矛盾，实际含义是：所有匹配的规则都会被记住，最后一条决定动作；<code>quick</code> 才会让匹配立即终止。</p>
+    <p><b>直觉二：NAT 等于安全。</b>NAT 的初衷是节省 IPv4 地址，不是隔离。外部仍然可以通过重定向访问内部服务；内网主机也可能被恶意网页当作跳板。真正的隔离来自规则，不来自地址段。</p>
+    <p><b>直觉三：规则写 <code>to</code> 就能到。</b><code>to</code> 只匹配目的地址，不负责路由，也不保证包能离开本机。网关必须同时考虑入方向和出方向。</p>
+    <p><b>直觉四：Linux 的 <code>iptables</code> 习惯可以照搬。</b>表链结构、<code>RELATED/ESTABLISHED</code>、SNAT/DNAT 的概念可以映射，但语法与求值顺序不同。最稳妥的迁移方法是先用 PF 的模型重画一遍流量图，再写规则。</p>
+
+    <div class="cards">
+      <div class="card"><div class="k">Linux → PF</div><h4>iptables 的 ESTABLISHED</h4><p>PF 默认 <code>keep state</code>，不需要单独写回程规则；<code>pfctl -ss</code> 就是状态表视图。</p></div>
+      <div class="card"><div class="k">Linux → PF</div><h4>SNAT / DNAT</h4><p>对应 <code>nat-to</code> 与 <code>rdr-to</code>；OpenBSD 推荐把它们写进 <code>match</code>/<code>pass</code> 规则。</p></div>
+      <div class="card"><div class="k">Linux → PF</div><h4>ipset</h4><p>对应 <code>table</code>；<code>pfctl -t name -T add ...</code> 可热更新。</p></div>
+      <div class="card"><div class="k">Linux → PF</div><h4>tc / htb</h4><p>对应 <code>queue</code> 与 <code>set prio</code>；只能在出方向整形。</p></div>
+    </div>
+
+    <h3><span class="sn">1.4</span>常见问题：为什么不用别的</h3>
+    <p>原书用一节回答“Frequently Answered Questions About PF”。核心答案可以压缩成三句：PF 的性能足够且可预测；它的配置是声明式的、可整体审阅的；它把 NAT、队列、冗余、日志做成同一套语法，减少了多工具拼接带来的语义缝隙。</p>
+    <p>至于“为什么不用硬件防火墙”：硬件设备擅长吞吐与集中管理，但你对它的规则求值顺序、状态表行为、故障切换细节的可控程度通常更低。PF 的价值在于“每一层都能看见”。</p>
+
+    <div class="intuition">
+      <div class="ih">一句话记住这一章</div>
+      <p>先画流量图，再谈规则；先定义失败时的行为，再谈性能。PF 的语法只是把这张图翻译成文本的工具。</p>
+    </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">四个把基线写穿的习惯</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个开局就踩的坑</span></div>
       <div class="thm-body">
-        <p><b>1. 把 <code>block all</code> 写在最后。</b>PF 采用最后匹配规则生效，放在末尾的 <code>block all</code> 会覆盖前面所有 <code>pass</code>，而不是兜底。<b>2. 以为 <code>to</code> 会负责路由。</b><code>to</code> 只匹配目的地址，不保证包能到达；网关场景必须同时处理 <code>in</code> 与 <code>out</code>。<b>3. 用 <code>pfctl -d</code> 排障后忘了恢复。</b>它会让 PF 完全停用、全部放行，是最危险的“临时措施”。<b>4. 规则写了但没重载。</b>编辑 <code>/etc/pf.conf</code> 不会自动生效，必须 <code>pfctl -f</code>。</p>
+        <p><b>1. 把 PF 当“安装即安全”。</b>OpenBSD 默认规则集只是最小基线，不覆盖你的业务。<b>2. 只看单机不看路径。</b>网关、交换机、VLAN 都会改变包的可见性。<b>3. 把 NAT 当隔离。</b>地址不可路由不等于不可达。<b>4. 忽略 IPv6。</b>很多“只配了 IPv4”的网络，IPv6 其实已经自动启用并绕过了你以 IPv4 为中心的规则。</p>
       </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>问题</th><th>回答</th></tr></thead>
+        <tbody>
+          <tr><td>PF 与 ipf 最大区别</td><td>语法可读、默认有状态、配置一体化</td></tr>
+          <tr><td>默认动作</td><td><code>pass</code>；要拒绝必须显式 <code>block</code></td></tr>
+          <tr><td>匹配顺序</td><td>自上而下，最后匹配者胜；<code>quick</code> 立即终止</td></tr>
+          <tr><td>NAT 的目的</td><td>地址复用，不是安全边界</td></tr>
+          <tr><td>最该先做的事</td><td>画一张带接口名与地址段的流量图</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
 <section id="ch2" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 3 · Into the Real World / Rule Evaluation</div>
-    <h2><span class="num">02</span>规则不是集合，而是一段程序</h2>
-    <p class="lede">PF 从上到下执行规则，最后一条匹配的规则决定命运；<code>quick</code> 让匹配立即终止。理解这一点，就能解释 90% 的“明明写了放行却被阻断”。</p>
+    <div class="sec-label">Chapter 2 · PF Configuration Basics</div>
+    <h2><span class="num">02</span>第一份规则集：让一台机器只说必要的话</h2>
+    <p class="lede">启用 PF、写最小规则、用 <code>pfctl -nf</code> 预检、再加载并观察状态。单机模型是所有网关配置的最小公倍数——这里的方向判断错了，放到双网卡上只会错得更贵。</p>
     <div class="chap-intro">
-      <p>网关把视角从“我与外网”变成“我在多个网络之间裁决”。方向 <code>in</code>/<code>out</code> 是相对本机接口而言，不是相对客户端；<code>on</code> 则把规则钉在具体接口上。两者组合错一个，规则就会看着对、实际不生效。</p>
-      <span class="tag">求值顺序 · 方向</span>
+      <p>本章覆盖原书第 2 章的全部小节：在 OpenBSD 与 FreeBSD 上启用 PF、单机最小规则、用列表（list）与宏（macro）提升可读性、更严格的基线、重载与错误检查、规则查看、系统信息显示。配置都在 <code>/etc/pf.conf</code>，工具只有文本编辑器和 <code>pfctl</code>。</p>
+      <span class="tag">单机 · 基线 · pfctl</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">last match wins</span><span class="chip">quick</span><span class="chip">state first</span><span class="chip">in / out / on</span><span class="chip">网关双规则</span><span class="chip">pfctl -vvsr</span>
+      <span class="chip hot">pfctl -nf</span><span class="chip">block all</span><span class="chip">keep state</span><span class="chip">macro</span><span class="chip">list</span><span class="chip">默认放行陷阱</span>
     </div>
+    <p class="note"><b>原书小节</b> · The First Step: Enabling PF · Setting Up PF on OpenBSD · Setting Up PF on FreeBSD · A Simple PF Ruleset: A Single, Stand-Alone Machine · Writing a Minimal Ruleset · Testing the Ruleset · Slightly Stricter: Using Lists and Macros for Readability · A Stricter Baseline Ruleset · Reloading the Ruleset and Looking for Errors · Checking Your Rules · Testing the Changed Ruleset · Displaying Information About Your System · Looking Ahead</p>
+
+    <h3><span class="sn">2.1</span>启用 PF：两个系统的差异</h3>
+    <p>OpenBSD 自 4.6 起默认启用 PF，并带一份最小配置。开机时内核消息之后会出现 <code>pf enabled</code>。重复执行启用命令不会报错，只会提示 <code>pfctl: pf already enabled</code>。若需在 <code>/etc/rc.conf.local</code> 中显式声明，可写 <code>pf=YES</code>，但现代版本通常不必。</p>
+    <pre><code class="language-bash"># OpenBSD：确认状态（已启用时返回 already enabled）
+$ doas pfctl -e
+
+# 查看内核是否加载了 pf
+$ doas pfctl -si | head</code></pre>
+    <p>FreeBSD 的 PF 是内核模块（或编译进内核）。需要加载 <code>pf.ko</code>，并在 <code>/etc/rc.conf</code> 中打开开关；若要记录日志，还要启用 <code>pflog</code>。作为网关时别忘了 <code>gateway_enable="YES"</code>。</p>
+    <pre><code class="language-bash"># FreeBSD：立即加载并启用
+$ sudo kldload pf
+$ sudo sysrc pf_enable="YES"
+$ sudo sysrc pflog_enable="YES"
+$ sudo sysrc gateway_enable="YES"      # 仅网关需要
+$ sudo service pf start
+$ sudo service pflog start
+
+# 指定规则文件（默认 /etc/pf.conf）
+$ sudo sysrc pf_rules="/etc/pf.conf"</code></pre>
+    <p>两台系统上，<code>pfctl</code> 都需要更高权限。原书统一用 <code>doas</code>（OpenBSD）或 <code>sudo</code>（FreeBSD）；两者在本书涉及的命令里可以互换。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">顺序错误会制造“合法后门”</span></div>
+      <div class="thm-head"><span class="thm-kind">必须先知道</span><span class="thm-title">pfctl -d 会关掉全部过滤</span></div>
       <div class="thm-body">
-        <p>攻击者不需要攻破 PF，只要利用一条过宽的 <code>pass</code> 或过早的 <code>quick</code>，就能让后面的限制形同虚设。更大的风险来自运维习惯：远程改规则时先清空再加载，或为排障临时 <code>pfctl -d</code>，都会在几分钟内把边界打开。规则集的敌人往往不是漏洞，而是“临时一下”。</p>
+        <p><code>pfctl -d</code> 禁用 PF，之后所有流量放行。它适合在控制台抢救，不适合远程排障。相反，<code>pfctl -e</code> 只是启用，不加载规则；启用与加载可以合并为 <code>pfctl -ef /etc/pf.conf</code>。</p>
       </div>
     </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">PF 的一次判决</span></div>
-      <div class="thm-body">
-        <p>对每个包，PF 先查状态表：若属于已有连接，直接按状态放行，不再遍历规则。若无状态，则按加载顺序逐条比较选择器（接口、方向、协议、源/目的地址、端口、标记等），记录最后一条匹配的规则；遇到 <code>quick</code> 立即执行并停止。全部不匹配时执行默认动作 <code>pass</code>。</p>
-      </div>
-    </div>
-
-    <figure>
-      <svg viewBox="0 0 720 220" role="img" aria-label="PF 判决流程：先查状态表，未命中则从规则顶部向下匹配，quick 立即终止，否则最后匹配者生效">
-        <g font-family="ui-sans-serif, system-ui, sans-serif" fill="currentColor">
-          <rect x="18" y="78" width="120" height="56" rx="9" fill="none" stroke="currentColor" opacity=".5"/>
-          <text x="78" y="102" text-anchor="middle" font-size="12" opacity=".6">PACKET</text>
-          <text x="78" y="121" text-anchor="middle" font-size="12" font-weight="700">进入接口</text>
-          <rect x="186" y="70" width="140" height="72" rx="9" fill="none" stroke="currentColor" opacity=".5"/>
-          <text x="256" y="98" text-anchor="middle" font-size="12" font-weight="700">查状态表</text>
-          <text x="256" y="118" text-anchor="middle" font-size="11" opacity=".65">已有连接？</text>
-          <rect x="374" y="70" width="150" height="72" rx="9" fill="none" stroke="currentColor" opacity=".5"/>
-          <text x="449" y="98" text-anchor="middle" font-size="12" font-weight="700">自上而下匹配</text>
-          <text x="449" y="118" text-anchor="middle" font-size="11" opacity=".65">记录最后匹配项</text>
-          <rect x="572" y="70" width="128" height="72" rx="9" fill="none" stroke="currentColor" opacity=".5"/>
-          <text x="636" y="98" text-anchor="middle" font-size="12" font-weight="700">执行动作</text>
-          <text x="636" y="118" text-anchor="middle" font-size="11" opacity=".65">pass / block</text>
-          <g stroke="currentColor" fill="none" opacity=".55">
-            <path d="M138 106h44" marker-end="url(#a2)"/>
-            <path d="M326 106h44" marker-end="url(#a2)"/>
-            <path d="M524 106h44" marker-end="url(#a2)"/>
-            <path d="M256 142v34h380v-34" marker-end="url(#a2)" stroke-dasharray="4 5"/>
-          </g>
-          <text x="446" y="192" text-anchor="middle" font-size="11" opacity=".6">命中状态：直接放行，跳过规则集</text>
-          <text x="449" y="46" text-anchor="middle" font-size="11" opacity=".6">遇到 quick 立即停止</text>
-        </g>
-        <defs><marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
-      </svg>
-      <figcaption>图 2-1 · PF 的判决顺序。状态表优先，其次才是规则集。</figcaption>
-    </figure>
-
-    <h3><span class="sn">2.1</span>网关为什么需要两条规则</h3>
-    <p>一个包从内网去往互联网，会经过网关两次：第一次从内网接口“进入”，第二次从外网接口“出去”。只写 <code>pass in on $int_if</code>，包在出接口处仍会被默认拒绝；只写 <code>pass out on $ext_if</code>，包在入接口处就已经被丢掉。</p>
-    <pre><code class="language-bash"># /etc/pf.conf —— 最小网关
-ext_if = "em0"
-int_if = "em1"
-localnet = $int_if:network
-
+    <h3><span class="sn">2.2</span>最小规则集：默认拒绝 + 三条放行</h3>
+    <p>单机规则集只做两件事：允许本机主动出站，允许别人连本机 SSH。回环不过滤。其余全部拒绝。注意 <code>block all</code> 放在最前只是习惯，真正起作用的是“最后匹配者胜”——后面没有更宽的 <code>pass</code> 时它才兜底。</p>
+    <pre><code class="language-bash"># /etc/pf.conf —— 单机最小基线
 set skip on lo
-match out on $ext_if inet from $localnet nat-to ($ext_if)
 
 block all
-pass in  on $int_if from $localnet to any
-pass out on $ext_if from $localnet to any
-pass in  on $ext_if proto tcp to ($ext_if) port ssh
-</code></pre>
-    <p>注意 <code>match ... nat-to</code> 只做地址改写，不负责放行；真正让包通过的是后面的 <code>pass out</code>。<code>($ext_if)</code> 的括号表示“取接口当前地址”，适合动态拨号或 DHCP 的外网口。</p>
+pass out proto tcp to port { ssh, http, https }
+pass out proto udp to port domain
+pass in proto tcp to port ssh</code></pre>
+    <p>PF 自 OpenBSD 4.1 起默认 <code>keep state</code>，并且只让初始 SYN 建立状态（等价于 <code>flags S/SA</code>）。因此不需要为回程写反向规则；只要出站方向写对，应答会自动命中状态表。</p>
 
     <div class="intuition">
       <div class="ih">逐包推演</div>
-      <p>内网主机 <code>192.168.1.5:52413</code> 访问 <code>93.184.216.34:443</code>：包从 <code>em1</code> 进入，命中 <code>pass in on $int_if</code>；从 <code>em0</code> 出去时命中 NAT 与 <code>pass out</code>，源地址被改写为 <code>203.0.113.10</code>。回程包目的地址是 <code>203.0.113.10:52413</code>，先命中状态表，PF 反向改写并放行，不需要为回程写规则。</p>
+      <p><b>本机访问 443：</b>出站包命中 <code>pass out</code>，建立状态；回程包查状态表直接放行，不再匹配 <code>block all</code>。<b>外部连 22：</b>入站新连接命中 <code>pass in</code>。<b>外部连 80：</b>没有入站放行，落到 <code>block all</code>，包被丢弃（默认 <code>drop</code>，不返回 RST）。</p>
     </div>
 
-    <p>排查时不要只读 <code>pf.conf</code>，要读“展开后的规则”。宏会展开、列表会拆成多条、<code>block all</code> 也会占一个规则号。<code>-vvsr</code> 会显示每条规则的编号、评估次数与包计数，规则号还能和日志里的编号对上。</p>
-    <pre><code class="language-bash">$ doas pfctl -vvsr
-$ doas pfctl -ss | head -20
-$ doas tcpdump -ni em1 'host 192.168.1.5 and port 443'
-$ doas pfctl -sr | nl -ba | sed -n '1,15p'
-</code></pre>
-
-    <div class="table-wrap cheat">
-      <table>
-        <thead><tr><th>关键字</th><th>语义</th><th>易错点</th></tr></thead>
-        <tbody>
-          <tr><td><code>in</code> / <code>out</code></td><td>相对本机接口的进入/离开</td><td>不是“客户端到服务器”的方向</td></tr>
-          <tr><td><code>on $if</code></td><td>只匹配该接口</td><td>省略表示所有接口，范围过大</td></tr>
-          <tr><td><code>quick</code></td><td>匹配即终止求值</td><td>放在宽泛规则上会遮蔽后面的精细规则</td></tr>
-          <tr><td><code>from</code> / <code>to</code></td><td>只匹配地址，不改路由</td><td>不能替代 <code>route-to</code> 或多网卡放行</td></tr>
-          <tr><td><code>keep state</code></td><td>为连接建状态</td><td><code>no state</code> 需自行处理回程</td></tr>
-          <tr><td>默认动作</td><td>无匹配则 <code>pass</code></td><td>必须显式写 <code>block all</code></td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">规则顺序与状态的三个陷阱</span></div>
-      <div class="thm-body">
-        <p><b>1. <code>quick</code> 写太早。</b>一条 <code>pass quick proto tcp to port 22</code> 会让后面的限制规则全部失效。<b>2. 改完规则不断旧状态。</b>旧连接仍按旧状态放行；需要 <code>pfctl -F states</code> 或按源/目的清除。<b>3. 把“端口不通”全归咎于 PF。</b>先确认 <code>net.inet.ip.forwarding=1</code>、路由表和上游 ACL，再看规则计数是否增长。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="ch3" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 3–5 · Tables, Macros, Anchors</div>
-    <h2><span class="num">03</span>把会变的东西放进表，把不动的逻辑留在规则里</h2>
-    <p class="lede">宏在加载时展开，表在运行时增删，锚点则让别的程序往你的规则集里“插一段”。三者都是间接层，但生命周期完全不同。</p>
-    <div class="chap-intro">
-      <p>规则集一旦上线，变化最多的往往不是“允许哪个端口”，而是“哪些地址”。把地址塞进表，你可以用 <code>pfctl -t</code> 热更新，不必重载整份配置；把重复出现的接口、网段、端口写成宏，则让规则在某台机器上仍然读得懂。</p>
-      <span class="tag">间接层 · 热更新</span>
-    </div>
-    <div class="mapchips">
-      <span class="chip hot">table persist</span><span class="chip">macro</span><span class="chip">list</span><span class="chip">anchor</span><span class="chip">ftp-proxy</span><span class="chip">authpf</span><span class="chip">pfctl -T</span>
-    </div>
-
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">间接层也会被污染</span></div>
-      <div class="thm-body">
-        <p>表的内容若来自外部黑名单、日志分析脚本或第三方 API，就继承了这些来源的信任问题：误报会把正常客户关在门外，伪造数据则能让你主动封禁关键地址。锚点更直接——任何能写锚点的程序，都等于获得了修改防火墙策略的能力。间接层的便利，必须配上“谁可以写、写了什么、如何回滚”的约束。</p>
-      </div>
-    </div>
-
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">三种“名字”的区别</span></div>
-      <div class="thm-body">
-        <p><b>宏</b>是文本替换：<code>ext_if = "em0"</code> 在 <code>pfctl</code> 解析时展开，运行中无法改。<b>列表</b>是同一规则里的多个值：<code>{ 22, 80, 443 }</code>，加载时会拆成多条规则。<b>表</b>是内核里的地址集合：<code>table &lt;clients&gt; { ... }</code>，可以在不重载规则的情况下增删成员，并且能被规则、NAT、重定向共同引用。</p>
-      </div>
-    </div>
-
-    <h3><span class="sn">3.1</span>表的声明与维护</h3>
-    <p><code>persist</code> 很关键：没有它，重载规则集时表会被清空；有它，表在重载后仍然保留。配合 <code>file</code> 可以从磁盘读取初始成员，配合 <code>counters</code> 可以统计每个地址的命中包数与字节数，用来发现“谁在打你”。</p>
-    <pre><code class="language-bash"># /etc/pf.conf —— 表与锚点
-int_if = "em1"
-
-table &lt;bruteforce&gt; persist counters
-table &lt;clients&gt; persist { 192.168.1.0/24, !192.168.1.5 }
-# 大规模名单可改为：table &lt;clients&gt; persist file "/etc/clients"
-
-anchor "ftp-proxy/*"
-anchor "authpf/*"
-
-block all
-pass in on $int_if from &lt;clients&gt; to any
-pass in log on egress proto tcp to port ssh \
-     keep state (max-src-conn 10, max-src-conn-rate 3/60, \
-     overload &lt;bruteforce&gt; flush global)
-block quick from &lt;bruteforce&gt;
-</code></pre>
-    <p>表成员可以带 <code>!</code> 表示排除，但排除项必须放在表内，且匹配逻辑是“在集合中且不在排除集中”。表也可以直接写 CIDR，不必逐台主机列。</p>
-    <pre><code class="language-bash">$ doas pfctl -t clients -T show
-$ doas pfctl -t clients -T test 192.168.1.7
-$ doas pfctl -t clients -T add 192.168.1.20
-$ doas pfctl -t clients -T delete 192.168.1.20
-$ doas pfctl -t bruteforce -T expire 86400
-</code></pre>
-
-    <div class="intuition">
-      <div class="ih">预期行为</div>
-      <p>执行 <code>-T add</code> 后，新地址立即被下一条 <code>pass</code> 接受，无需 <code>pfctl -f</code>；执行 <code>-T delete</code> 后立即失效。但如果你修改的是宏定义（例如 <code>localnet = ...</code>），必须重载规则集才生效——宏不是运行时对象。把“经常变的地址”误写成宏，是运维里最常见的无效热更新。</p>
-    </div>
-
-    <h3><span class="sn">3.2</span>锚点：让别人替你写规则</h3>
-    <p>锚点是主规则集里的一个插入点，子规则集由外部程序动态维护。典型的三个使用者是 <code>ftp-proxy</code>（为 FTP 数据连接开洞）、<code>authpf</code>（用户通过 SSH 认证后临时放行其流量）和 <code>relayd</code>（负载均衡器插入重定向规则）。</p>
-    <p>锚点处的求值不是“调用子程序后返回”：子规则集里的规则就在该位置参与主规则集的顺序；子规则里的 <code>quick</code> 会直接终止整个判决。因此不要把锚点放在过宽泛的 <code>pass</code> 之后，否则子规则永远轮不到。</p>
-    <pre><code class="language-bash">$ doas pfctl -sA                 # 列出所有锚点
-$ doas pfctl -a ftp-proxy -sr    # 查看某个锚点内的规则
-$ doas pfctl -a authpf/ops -sr
-$ doas pfctl -a ftp-proxy -f /etc/ftp-proxy.conf
-</code></pre>
-
-    <div class="table-wrap cheat">
-      <table>
-        <thead><tr><th>对象</th><th>何时生效</th><th>典型命令</th></tr></thead>
-        <tbody>
-          <tr><td>宏 <code>$var</code></td><td>加载时展开</td><td><code>pfctl -nf</code> 查看展开结果</td></tr>
-          <tr><td>列表 <code>{...}</code></td><td>加载时拆成多条规则</td><td><code>pfctl -sr</code> 看实际条数</td></tr>
-          <tr><td>表 <code>&lt;name&gt;</code></td><td>运行时热更新</td><td><code>pfctl -t name -T show/add/delete</code></td></tr>
-          <tr><td>锚点 <code>anchor</code></td><td>外部程序运行时插入</td><td><code>pfctl -a name -sr</code></td></tr>
-          <tr><td><code>persist</code></td><td>重载后保留成员</td><td>没有它，<code>-f</code> 会清空表</td></tr>
-          <tr><td><code>counters</code></td><td>按成员统计流量</td><td><code>pfctl -t name -T show -v</code></td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">表不是“自动防火墙”</span></div>
-      <div class="thm-body">
-        <p><b>1. 只声明表，不写引用规则。</b>表本身不产生任何过滤动作。<b>2. 忘了 <code>persist</code>。</b>每次重载都把暴力破解名单清空，攻击者立刻复活。<b>3. 表无上限增长。</b>用 <code>-T expire</code> 定期清理，或让 <code>overload</code> 表配合过期策略。<b>4. 锚点路径写错。</b><code>"ftp-proxy/*"</code> 与 <code>"ftp-proxy"</code> 不是一回事；用 <code>pfctl -sA</code> 确认它真的存在。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="ch4" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 5 · Bigger or Trickier Networks / NAT and Redirection</div>
-    <h2><span class="num">04</span>改写地址，但不改写信任</h2>
-    <p class="lede">NAT 让私网主机共用公网地址出站；重定向让外部连接落到内网服务器。两者都只是地址翻译，放行与否仍由过滤规则决定。</p>
-    <div class="chap-intro">
-      <p>只有一个公网地址时，Web 与邮件服务器通常藏在私网里。出站方向做源地址改写（NAT），入站方向做目的地址改写（rdr）。最常见的故障不是语法错，而是“只写了翻译、忘了写放行”，或者服务器回程绕过了网关。</p>
-      <span class="tag">NAT · rdr · 单公网 IP</span>
-    </div>
-    <div class="mapchips">
-      <span class="chip hot">nat-to</span><span class="chip">rdr-to</span><span class="chip">binat-to</span><span class="chip">match vs pass</span><span class="chip">tag RDR</span><span class="chip">回程路由</span>
-    </div>
-
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">三种翻译</span></div>
-      <div class="thm-body">
-        <p><b>NAT（源地址改写）</b>：<code>match out on $ext_if from $localnet nat-to ($ext_if)</code>，把内网源地址换成公网口地址，适合“多对一”。<b>rdr（目的地址改写）</b>：<code>match in on $ext_if ... rdr-to $webserver</code>，把发往公网地址的连接转给内网主机，适合“一对多端口映射”。<b>binat</b> 是一对一双向映射，公网地址与私网地址绑定，出站入站都改写。</p>
-      </div>
-    </div>
-
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">地址隐藏不等于访问控制</span></div>
-      <div class="thm-body">
-        <p>NAT 让外部无法直接看到内网拓扑，但它不是安全边界：任何被 <code>rdr-to</code> 暴露的端口，外部都能直接访问。真正的风险是“为了图省事把整台服务器 rdr 出去”、把管理端口（SSH、数据库、监控）一起映射，以及内网服务器默认网关不指向防火墙导致的半开连接。</p>
-      </div>
-    </div>
-
-    <h3><span class="sn">4.1</span>单公网地址的完整骨架</h3>
-    <pre><code class="language-bash"># /etc/pf.conf —— NAT + 端口映射
+    <h3><span class="sn">2.3</span>列表与宏：把“会变的东西”命名</h3>
+    <p>宏（macro）是简单的文本替换：定义一次，多处引用。列表（list）是花括号里的多个值，展开成多条规则。两者都不改变语义，只改变可维护性。宏名以 <code>$</code> 引用；接口名、地址、端口都可以放进宏。</p>
+    <pre><code class="language-bash"># 宏定义放在文件顶部，规则里只出现逻辑名
 ext_if = "em0"
 int_if = "em1"
 localnet = $int_if:network
-webserver = "192.168.2.7"
-mailserver = "192.168.2.5"
-webports = "{ http, https }"
-mailports = "{ smtp, submission, pop3, imap, imaps, pop3s }"
+
+tcp_services = "{ ssh, smtp, domain, www, https }"
+udp_services = "{ domain, ntp }"
+icmp_types = "{ echoreq, unreach }"
 
 set skip on lo
-match out on $ext_if inet from $localnet nat-to ($ext_if)
+block all
+pass out proto tcp to port $tcp_services
+pass out proto udp to port $udp_services
+pass in proto tcp to port ssh</code></pre>
+    <p><code>$int_if:network</code> 是 PF 的接口修饰符，展开为该接口所在网段。它比手写 <code>192.168.1.0/24</code> 更抗变更：换网段时只改接口配置，规则不动。但要注意，接口没有地址时它展开为空，规则会意外变成“任意源”。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>写法</th><th>含义</th><th>常见错误</th></tr></thead>
+        <tbody>
+          <tr><td><code>ext_if = "em0"</code></td><td>定义宏</td><td>引用时忘了 <code>$</code></td></tr>
+          <tr><td><code>$ext_if</code></td><td>展开为 <code>em0</code></td><td>在字符串里写 <code>"$ext_if"</code> 导致不展开</td></tr>
+          <tr><td><code>{ ssh, www }</code></td><td>端口列表</td><td>逗号后缺空格虽可解析，但难读</td></tr>
+          <tr><td><code>$int_if:network</code></td><td>接口所在网段</td><td>接口未配置地址时为空</td></tr>
+          <tr><td><code>self</code></td><td>本机所有地址</td><td>误以为包含 NAT 后的外部地址</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3><span class="sn">2.4</span>更严格的基线</h3>
+    <p>“更严格”不是把端口砍到最少，而是把出站也收窄到业务真正需要的集合。原书用一个 <code>client_out</code> 宏列出常用客户端端口，再用一条规则统一放行。这样新增服务时只需改宏，不必到处找规则。</p>
+    <pre><code class="language-bash">client_out = "{ ftp-data, ftp, ssh, domain, pop3, auth, nntp, \
+                http, https, 446, cvspserver, 2628, 5999, 8000, 8080 }"
+
+set skip on lo
+block all
+pass proto tcp from $localnet to port $client_out
+pass in proto tcp to port ssh
+pass out proto udp to port domain</code></pre>
+    <p>这份基线仍然允许内网访问很多端口，但它把“允许什么”集中在一个可审阅的宏里。真正的收紧应结合业务：例如只允许 <code>http/https</code> 出站，邮件客户端只允许 <code>smtp/submission/imaps</code>，并给每条规则加注释说明用途。</p>
+
+    <h3><span class="sn">2.5</span>加载、检查与回滚</h3>
+    <p>加载前必须先做语法检查：<code>-n</code> 表示只解析不加载。确认后再用 <code>-f</code> 加载；若 PF 尚未启用，用 <code>-ef</code> 一次完成。加载失败时，PF 会保留上一份可用规则集——这是重要的安全属性，但也会让你误以为“新规则已生效”。</p>
+    <pre><code class="language-bash">$ doas pfctl -nf /etc/pf.conf    # 只检查语法与展开，不动现网
+$ doas pfctl -f  /etc/pf.conf    # 加载（PF 已启用）
+$ doas pfctl -ef /etc/pf.conf    # 启用并加载
+$ doas pfctl -sr                 # 查看已加载规则（含规则号）
+$ doas pfctl -vvsr               # 详细：展开后的地址、端口、状态选项
+$ doas pfctl -si                 # 运行统计：状态数、计数、限制
+$ doas pfctl -ss                 # 当前状态表
+$ doas pfctl -sd                 # 查看队列/调度器
+$ doas pfctl -sn                 # 查看 NAT/重定向规则
+$ doas pfctl -st                 # 查看表
+$ doas pfctl -sa                 # 以上全部（信息量很大）</code></pre>
+    <p>如果 <code>-nf</code> 报错，错误信息会带行号。常见原因：宏未定义、花括号不配对、接口名拼错、在 <code>match</code> 规则里漏了动作（<code>nat-to</code>/<code>rdr-to</code>）、把注释写在续行符之后。</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">操作风险</span><span class="thm-title">远程改规则的三条自保</span></div>
+      <div class="thm-body">
+        <p><b>1. 先备份：</b><code>cp /etc/pf.conf /etc/pf.conf.bak</code>，并确认备份在本地磁盘而不是待会儿要断开的会话里。<b>2. 定时回滚：</b>用 <code>at</code> 或 <code>sleep &amp;&amp; pfctl -f</code> 安排 5 分钟后恢复旧规则，确认新规则可用后再取消。<b>3. 留带外通道：</b>控制台、IPMI、串口或第二个管理网段。不要把“能 SSH 回去”当作唯一退路。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">2.6</span>测试与显示系统信息</h3>
+    <p>测试要覆盖四个方向：本机出站、外部入站、被拒绝的入站、回程状态。不要只看“网页能打开”。<code>pfctl -ss</code> 应能看到对应状态；<code>pfctl -si</code> 的计数器应随流量增长；被拒绝的端口应表现为超时（默认 <code>drop</code>）而不是 RST。</p>
+    <pre><code class="language-bash">$ host nostarch.com                       # DNS 出站
+$ ssh -o ConnectTimeout=3 user@203.0.113.10
+$ doas pfctl -ss | grep -E 'ssh|domain'
+$ doas pfctl -si | grep -E 'Status|State Table|current'
+$ doas pfctl -s memory                    # 状态/表/队列的内存占用
+$ doas pfctl -s rules                     # 与 -sr 类似
+$ doas pfctl -s all                       # 全量快照，排障时存档</code></pre>
+    <p>“显示系统信息”还包括确认接口与地址：<code>ifconfig</code>、<code>netstat -rn</code>、<code>route -n show</code>。很多“规则不生效”其实是接口没有地址、默认路由指错，或者包从另一个接口出去了。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>目标</th><th>命令</th><th>要点</th></tr></thead>
+        <tbody>
+          <tr><td>只检查不加载</td><td><code>pfctl -nf /etc/pf.conf</code></td><td>语法错误在这里暴露</td></tr>
+          <tr><td>启用并加载</td><td><code>pfctl -ef /etc/pf.conf</code></td><td>一次完成，避免空窗</td></tr>
+          <tr><td>查看规则号</td><td><code>pfctl -sr</code></td><td>日志里的规则号对应这里</td></tr>
+          <tr><td>查看展开细节</td><td><code>pfctl -vvsr</code></td><td>确认宏与列表展开成什么</td></tr>
+          <tr><td>查看状态</td><td><code>pfctl -ss</code></td><td>验证连接是否真的建了状态</td></tr>
+          <tr><td>清空状态</td><td><code>pfctl -F states</code></td><td>改规则后行为仍旧时使用</td></tr>
+          <tr><td>查看表</td><td><code>pfctl -t name -T show</code></td><td><code>name</code> 不含尖括号</td></tr>
+          <tr><td>临时停用</td><td><code>pfctl -d</code></td><td>全部放行，仅在控制台使用</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3><span class="sn">2.7</span>一个可直接用的单机模板</h3>
+    <pre><code class="language-bash"># /etc/pf.conf —— 单机模板（OpenBSD / FreeBSD 通用）
+ext_if = "em0"
+tcp_in  = "{ ssh }"
+tcp_out = "{ http, https, ssh, domain, smtp, submission, imaps }"
+udp_out = "{ domain, ntp }"
+icmp_types = "{ echoreq, unreach }"
+
+set skip on lo
+set block-policy drop
 
 block all
-pass from { self, $localnet }
-
-# 入站：翻译与放行写在同一条 pass 规则里
-pass in on $ext_if inet proto tcp to ($ext_if) port $webports \
-     rdr-to $webserver
-pass in log on $ext_if inet proto tcp to ($ext_if) port $mailports \
-     rdr-to $mailserver
-</code></pre>
-    <p><code>pass ... rdr-to</code> 是 OpenBSD 4.7 之后推荐的紧凑写法：包在入站时就被改写并放行，后续规则看到的是内网地址。<code>match ... rdr-to</code> 加单独 <code>pass</code> 的旧式写法仍然可用，但更容易漏掉放行。若使用旧式写法，<code>pass</code> 的目标要写翻译后的 <code>$webserver</code>。</p>
-
-    <div class="intuition">
-      <div class="ih">预期行为</div>
-      <p>外部主机连接 <code>203.0.113.10:443</code>：入站规则命中，目的地址改写为 <code>192.168.2.7:443</code> 并建立状态；服务器回包源地址是 <code>192.168.2.7</code>，经网关状态表反向改写回 <code>203.0.113.10:443</code>。内网客户端访问同一公网地址时不会自动“绕回来”，需要额外的 hairpin NAT 规则，否则会失败。</p>
-    </div>
-
-    <p>验证要同时看两侧接口：外网侧确认 SYN 到达并被改写，内网侧确认服务器收到连接；再看状态表里的双向地址。</p>
-    <pre><code class="language-bash">$ doas tcpdump -ni em0 'tcp port 443'
-$ doas tcpdump -ni em1 'host 192.168.2.7 and tcp port 443'
-$ doas pfctl -ss | grep 192.168.2.7
-$ nc -vz 203.0.113.10 443
-$ doas pfctl -si | grep -A3 'State Table'
-</code></pre>
-
-    <div class="table-wrap cheat">
-      <table>
-        <thead><tr><th>写法</th><th>作用</th><th>注意</th></tr></thead>
-        <tbody>
-          <tr><td><code>match out ... nat-to ($ext_if)</code></td><td>出站源地址改写</td><td>只翻译，不代过滤；必须有 <code>pass</code></td></tr>
-          <tr><td><code>pass in ... rdr-to $host</code></td><td>入站目的改写并放行</td><td>最不容易漏放行</td></tr>
-          <tr><td><code>match in ... rdr-to $host</code></td><td>只改写</td><td>后面还需针对 <code>$host</code> 的 <code>pass</code></td></tr>
-          <tr><td><code>binat-to</code></td><td>一对一双向映射</td><td>适合需要固定公网地址的服务器</td></tr>
-          <tr><td><code>tag RDR</code></td><td>给重定向流量打标</td><td>后续可用 <code>pass tagged RDR</code> 放行</td></tr>
-          <tr><td><code>static-port</code></td><td>保持源端口不变</td><td>某些游戏/语音协议需要</td></tr>
-        </tbody>
-      </table>
-    </div>
+pass out proto tcp to port $tcp_out
+pass out proto udp to port $udp_out
+pass in  proto tcp to port $tcp_in
+pass inet proto icmp icmp-type $icmp_types
+pass inet6 proto icmp6 icmp6-type { echoreq, unreach }</code></pre>
+    <p><code>set block-policy drop</code> 让被拒绝的包静默丢弃，扫描器更难判断端口是否存在；若你更希望客户端快速失败，可改为 <code>return</code>（回 RST/ICMP）。这是第 10 章会展开的全局选项，这里先建立一个直觉：<b>拒绝的方式也是策略的一部分</b>。</p>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">NAT 排障先看路由，再看规则</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">单机基线的五个坑</span></div>
       <div class="thm-body">
-        <p><b>1. 服务器默认网关不是防火墙。</b>回包从别的路径出去，状态表永远等不到回程，表现为“外部连不上、服务器日志却有请求”。<b>2. 只写 <code>match rdr-to</code>。</b>没有对应的 <code>pass</code>，包在过滤阶段照样被 <code>block all</code> 丢掉。<b>3. 内网访问公网地址（hairpin）。</b>需要额外的 <code>match in on $int_if ... rdr-to</code>，并确认交换机允许同接口进出。<b>4. 把 FTP 当普通 TCP。</b>FTP 主动/被动模式需要 <code>ftp-proxy</code> 锚点，单纯开 21 端口不够。</p>
+        <p><b>1. 忘了 <code>block all</code>。</b>没有匹配时 PF 默认放行，规则集等于没写。<b>2. 把 <code>block all</code> 写在最后并以为它会兜底。</b>它确实会兜底，但也会覆盖前面所有 <code>pass</code>，除非前面用了 <code>quick</code>。<b>3. 只放行 TCP。</b>DNS 主要走 UDP；只写 TCP 53 会出现“解析偶尔成功”。<b>4. 改完规则不清理状态。</b>旧连接仍按旧状态放行，测试结果会骗你。<b>5. 在远程会话里直接 <code>pfctl -f</code> 而没有回滚计划。</b>一条写错的方向就能把你关在门外。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ch5" class="chapter">
+<section id="ch3a" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 9 · Logging, Monitoring and Statistics</div>
-    <h2><span class="num">05</span>没有日志的防火墙，只是一台会丢包的机器</h2>
-    <p class="lede">PF 把命中的包复制到 <code>pflog0</code>，pflogd 以二进制写入磁盘，tcpdump 负责把它翻译成人话。日志里最重要的是规则号——它直接指回 <code>pf.conf</code> 的哪一行。</p>
+    <div class="sec-label">Chapter 3 · Into the Real World / The Gateway</div>
+    <h2><span class="num">03</span>网关：一个包要过两次判决</h2>
+    <p class="lede">把视角从“我与外网”换成“我在两个网络之间裁决”。<code>in</code>/<code>out</code> 是相对本机接口而言，<code>on</code> 把规则钉在具体接口；<code>to</code> 只匹配目的地址，不负责把包送过去。</p>
     <div class="chap-intro">
-      <p>“为什么这个连接不通”应该由日志回答，而不是靠猜。记录什么、记多少、记到哪个接口，决定了你能否在事故中还原时间线；也决定了磁盘会不会被日志撑爆。</p>
-      <span class="tag">可观测性 · 取证</span>
+      <p>本章覆盖第 3 章的前半：简单网关、<code>in</code>/<code>out</code>/<code>on</code> 的坑、NAT 与 IPv6 的区别、定义本地网络、策略执行点、测试规则集。所有后续章节的网关配置都是这里的变体。</p>
+      <span class="tag">网关 · 方向 · NAT vs IPv6</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">pflog0</span><span class="chip">pflogd</span><span class="chip">log (all)</span><span class="chip">rule number</span><span class="chip">tcpdump -r</span><span class="chip">pflog1</span>
+      <span class="chip hot">in / out / on</span><span class="chip">egress</span><span class="chip">nat-to</span><span class="chip">self</span><span class="chip">默认路由</span><span class="chip">IPv6</span>
     </div>
+    <p class="note"><b>原书小节</b> · A Simple Gateway · Keep It Simple: Avoid the Pitfalls of in, out, and on · Understanding Network Address Translation vs. IPv6 · Setting Up a Gateway · Defining Your Local Network · A Point of Policy Enforcement · Testing Your Ruleset</p>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">日志既是证据，也是负担</span></div>
-      <div class="thm-body">
-        <p>日志会记录源/目的地址、端口、时间与规则号，足以还原谁在何时访问了什么，因此它本身就是敏感数据，磁盘与访问权限都要受控。反过来，攻击者可以用高频垃圾流量制造海量日志，拖慢磁盘甚至掩盖真正的入侵痕迹。记录范围应服务于排障与审计目标，而不是“能记就全记”。</p>
-      </div>
-    </div>
+    <h3><span class="sn">3.1</span>方向：为什么一条规则不够</h3>
+    <p>一个从内网发往互联网的包，在网关上经历两段路径：从 <code>$int_if</code> 进入（in），从 <code>$ext_if</code> 离开（out）。PF 在两段都会做检查。只写 <code>pass in on $int_if</code>，包能进网关，但不一定能从外网接口出去；只写 <code>pass out on $ext_if</code>，包可能根本进不来。</p>
+    <pre><code class="language-bash"># 过于具体、容易漏掉一边的写法
+pass in  proto tcp on $int_if from $localnet to any port $ports
+pass out proto tcp on $ext_if from $localnet to any port $ports
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">机制</span><span class="thm-title">从规则到可读日志</span></div>
-      <div class="thm-body">
-        <p>带 <code>log</code> 的规则命中时，PF 把包头复制到 <code>pflog0</code> 伪接口；<code>pflogd</code> 从该接口抓包并写入 <code>/var/log/pflog</code>。文件是 libpcap 格式，可用 <code>tcpdump -r</code> 离线读取，也可用 <code>tcpdump -i pflog0</code> 实时查看。日志行包含规则编号、接口、方向、动作和五元组。</p>
-      </div>
-    </div>
-
-    <pre><code class="language-bash"># /etc/pf.conf —— 有选择的日志
-ext_if = "em0"
-set loginterface $ext_if
-
-block log all
-pass in log on $ext_if proto tcp to port ssh
-pass in log (all) on $ext_if proto tcp to port $webports
-pass out log on $ext_if from $localnet
-</code></pre>
-    <p><code>log</code> 对 <code>pass</code> 规则默认只记录建立状态的那一个包；<code>log (all)</code> 记录该连接的所有包，适合抓完整会话，但量级会大得多。对 <code>block</code> 规则而言没有状态，每个匹配的包都会被记录。要给不同业务分流，可以创建多个 pflog 接口：</p>
-    <pre><code class="language-bash">$ doas ifconfig pflog1 create
-# pf.conf:
-# pass in log (to pflog1) on $ext_if proto tcp to port smtp
-$ doas tcpdump -lnettti pflog1
-</code></pre>
+# 更简单的写法：不绑接口、不写方向，让 PF 对两段都匹配
+pass proto tcp from $localnet to port $ports keep state</code></pre>
+    <p>原书的建议很直接：<b>简单网络里，能不加 <code>in</code>/<code>out</code>/<code>on</code> 就不加</b>。规则越具体，越容易只覆盖半条路径；而可读的规则更容易被审查。只有在需要区分“同一个地址从哪个接口进来”时，才用接口限定。</p>
 
     <div class="intuition">
-      <div class="ih">读一条日志</div>
-      <p><code>rule 12/0(match): block in on em0: 198.51.100.7.44321 &gt; 203.0.113.10.23</code> 表示：第 12 条规则命中，方向为入，接口 <code>em0</code>，源 <code>198.51.100.7:44321</code> 访问本机 23 端口被阻断。拿着 12 去 <code>pfctl -sr</code> 数行，就能定位到具体规则；如果编号对不上，说明日志来自旧规则集。</p>
+      <div class="ih">方向速记</div>
+      <p><code>in</code> = 包进入本机；<code>out</code> = 包离开本机；<code>on</code> = 这块网卡。对网关来说，内网客户端的请求是 <code>in on $int_if</code>，转发到外网是 <code>out on $ext_if</code>；回程则反过来。不要用“客户端方向”去理解，要用“网卡视角”。</p>
     </div>
 
-    <p>实时排障时，<code>-ttt</code> 显示相对时间戳，<code>-n</code> 禁止反解，<code>-e</code> 打印链路层头，<code>-l</code> 行缓冲便于管道过滤。历史日志则加 <code>-r</code>。</p>
-    <pre><code class="language-bash">$ doas tcpdump -n -ttt -r /var/log/pflog
-$ doas tcpdump -lnettti pflog0 port domain
-$ doas tcpdump -n -r /var/log/pflog 'tcp port 22 and not host 192.168.1.5'
-$ doas pfctl -s log                 # 查看日志接口设置
-$ doas pfctl -si | grep -i log
-</code></pre>
+    <h3><span class="sn">3.2</span>NAT 不是安全，IPv6 不是“以后再说”</h3>
+    <p>网络地址转换（NAT）的初衷是解决 IPv4 地址耗尽：让一个公网地址承载一群内网主机。它顺带带来一个副作用——外部不能主动连进来，除非你显式做重定向。但这不是安全保证：外部仍可通过你开放的服务进入，内网主机也可能主动外连。</p>
+    <p>IPv6 恢复端到端地址，理论上不需要 NAT。于是“内网不可见”的副作用消失，所有主机都拥有可路由地址。结论不是“IPv6 不需要防火墙”，而是“IPv6 更需要防火墙”：你必须显式放行入站，否则默认拒绝会挡住包括 ICMPv6 在内的必要协议，而 ICMPv6 承担了邻居发现、路径 MTU 等基础功能。</p>
 
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>写法</th><th>记录范围</th><th>使用场景</th></tr></thead>
+        <thead><tr><th>维度</th><th>IPv4 + NAT</th><th>IPv6</th></tr></thead>
         <tbody>
-          <tr><td><code>log</code></td><td>建状态的包</td><td>常规审计，量可控</td></tr>
-          <tr><td><code>log (all)</code></td><td>连接内每个包</td><td>抓完整会话、分析重传</td></tr>
-          <tr><td><code>log (to pflog1)</code></td><td>指定接口</td><td>按业务/租户分流</td></tr>
-          <tr><td><code>block log all</code></td><td>所有被阻断的包</td><td>排查“为什么不通”的起点</td></tr>
-          <tr><td><code>set loginterface</code></td><td>统计口径</td><td>让 <code>pfctl -si</code> 的计数有意义</td></tr>
-          <tr><td><code>tcpdump -r</code></td><td>离线读取</td><td>事故复盘、交给取证</td></tr>
+          <tr><td>地址</td><td>内网私有段，出口改写</td><td>全局可路由，端到端</td></tr>
+          <tr><td>入站</td><td>默认不可达，需 rdr</td><td>默认可达，需显式 block</td></tr>
+          <tr><td>ICMP</td><td>可选择性放行</td><td>必须放行 nd/ra/PTB 等</td></tr>
+          <tr><td>规则</td><td><code>inet</code></td><td><code>inet6</code></td></tr>
+          <tr><td>NAT</td><td>常见</td><td>通常不需要；NPTv6 仅特殊场景</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">日志的三个反效果</span></div>
+    <h3><span class="sn">3.3</span>最小网关规则集</h3>
+    <p>OpenBSD 的写法用 <code>match ... nat-to</code>：<code>match</code> 只做动作，不决定放行；放行由后面的 <code>pass</code> 决定。NAT 只匹配 <code>inet</code>（IPv4），因此 IPv6 流量不会被误改写。<code>($ext_if)</code> 的括号表示“接口地址可能是动态的”，地址变化时自动跟随。</p>
+    <pre><code class="language-bash"># /etc/pf.conf —— OpenBSD 最小网关
+ext_if = "bge0"          # 外网接口；PPPoE 用 tun0 或 pppoe0
+int_if = "bge1"          # 内网接口
+localnet = $int_if:network
+
+match out on $ext_if inet from $localnet nat-to ($ext_if)
+block all
+pass from { self, $localnet }</code></pre>
+    <p>FreeBSD 仍支持传统 <code>nat on ... -&gt;</code> 语法。语义相同，但少了 <code>match</code> 的“只做动作”分层：</p>
+    <pre><code class="language-bash"># FreeBSD 等价写法
+ext_if = "bge0"
+int_if = "bge1"
+localnet = $int_if:network
+
+nat on $ext_if inet from $localnet to any -&gt; ($ext_if)
+block all
+pass from { self, $localnet } to any keep state</code></pre>
+    <p>这三条规则的含义：① 阻止所有来自外部的新连接；② 内网 IPv4 流量出外网时改写源地址；③ 放行来自本机（<code>self</code>）和内网的流量。注意 <code>self</code> 是保留字，代表本机所有接口地址，不需要定义宏。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">关键区别</span><span class="thm-title">match 与 pass 的分工</span></div>
       <div class="thm-body">
-        <p><b>1. 全量 <code>log (all)</code>。</b>高 pps 链路上会迅速写满磁盘并抬高 CPU；先按规则和接口收窄。<b>2. 只记录 <code>pass</code> 不记录 <code>block</code>。</b>“不通”的问题通常藏在被丢弃的包里。<b>3. 用日志判断实时状态。</b>日志有缓冲，状态表才是当前事实；两者要交叉验证。<b>4. 忘了 pflogd。</b>没有运行 pflogd 时，<code>pflog0</code> 上的包不会被持久化，重启后什么都不剩。</p>
+        <p><code>match</code> 规则只应用动作（NAT、重定向、队列、标记），不决定包的去留；包继续向下匹配，最终由某条 <code>pass</code>/<code>block</code> 决定。<code>pass ... nat-to</code> 则把“翻译”和“放行”合并，少写一条规则，但也更难复用。团队协作时，分离通常更清晰；追求最小规则数时，合并更紧凑。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">3.4</span>定义本地网络与策略执行点</h3>
+    <p><code>$int_if:network</code> 依赖接口地址。若内网有多个 VLAN 或网段，显式列出来更安全：</p>
+    <pre><code class="language-bash">localnet = "{ 192.168.1.0/24, 192.168.2.0/24, 10.10.0.0/16 }"
+# 或者用表，便于运行时增删
+table &lt;localnets&gt; persist { 192.168.1.0/24, 192.168.2.0/24 }
+pass from &lt;localnets&gt; to any</code></pre>
+    <p>“策略执行点”指的是你决定把规则放在哪一层：主机自身、网关、还是上游路由器。放在网关上，能统一管理且对客户端透明；放在主机上，能防止同网段横向移动。两者不是二选一：关键主机应自带一层最小规则，网关再做边界策略。</p>
+
+    <h3><span class="sn">3.5</span>测试：从四个方向验证</h3>
+    <pre><code class="language-bash"># 在网关上
+$ doas pfctl -nf /etc/pf.conf
+$ doas pfctl -f  /etc/pf.conf
+$ doas pfctl -ss | head
+$ doas pfctl -si | grep -E 'current|State Table'
+
+# 在内网客户端
+$ ping -c 3 203.0.113.10          # ICMP 是否放行
+$ host example.com                # DNS（UDP 53）
+$ curl -I https://example.com     # TCP 443
+$ nc -vz 203.0.113.10 25          # 未放行端口应超时/拒绝
+
+# 在外部主机（验证入站默认拒绝）
+$ nc -vz &lt;公网地址&gt; 22
+$ nmap -Pn -p 1-100 &lt;公网地址&gt;</code></pre>
+    <p><code>pfctl -ss</code> 中出现 <code>ESTABLISHED</code> 只说明状态建立了，不代表应用层可用。DNS 失败常见于只放行 TCP 53；网页卡住常见于 MTU/MSS 问题（下一节展开）；能 ping 通但 SSH 不通，常见于只放行了 ICMP 而没放入站 22。</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">网关配置的五个高频错误</span></div>
+      <div class="thm-body">
+        <p><b>1. 只写 <code>pass in</code> 不写 <code>pass out</code>。</b>包进了网关却出不去。<b>2. 把 <code>to</code> 当路由。</b><code>to 192.168.1.0/24</code> 只匹配目的地址，不保证下一跳。<b>3. 忘记 <code>inet</code> 限定。</b>NAT 规则误匹配 IPv6，导致地址改写失败或行为怪异。<b>4. 用 NAT 当隔离。</b>内网主机仍可主动外连，横向流量也不受 NAT 保护。<b>5. 只测出站。</b>没有从外部验证入站默认拒绝，等于没测边界。</p>
+      </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>任务</th><th>OpenBSD 写法</th><th>FreeBSD 写法</th></tr></thead>
+        <tbody>
+          <tr><td>出站 NAT</td><td><code>match out on $ext_if inet from $localnet nat-to ($ext_if)</code></td><td><code>nat on $ext_if inet from $localnet to any -&gt; ($ext_if)</code></td></tr>
+          <tr><td>放行内网</td><td><code>pass from { self, $localnet }</code></td><td><code>pass from { self, $localnet } to any keep state</code></td></tr>
+          <tr><td>默认拒绝</td><td><code>block all</code></td><td><code>block all</code></td></tr>
+          <tr><td>本机地址</td><td><code>self</code></td><td><code>self</code></td></tr>
+          <tr><td>出口接口组</td><td><code>egress</code>（不带 <code>$</code>）</td><td>需在 <code>rc.conf</code> 建组</td></tr>
+          <tr><td>地址动态</td><td><code>($ext_if)</code></td><td><code>($ext_if)</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="ch3b" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 3 · Tables and Troubleshooting</div>
+    <h2><span class="num">04</span>把会变的东西放进表，把排障路径预先留好</h2>
+    <p class="lede">固定规则解决“谁可以”，表（table）解决“谁现在可以”。而 ping、traceroute、路径 MTU、FTP 这些“看起来该通”的协议，恰恰最容易被一条过严的规则悄悄掐死。</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 3 章后半：用表管理动态客户端、让 dhcpd 自动维护访问表、把网络调成可排障状态（ICMP、traceroute、PMTU）、以及处理 FTP 这个“数据连接反向发起”的老问题。</p>
+      <span class="tag">table · ICMP · MTU · FTP</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">table persist</span><span class="chip">pfctl -T</span><span class="chip">icmp-type</span><span class="chip">traceroute</span><span class="chip">max-mss</span><span class="chip">ftp-proxy</span>
+    </div>
+    <p class="note"><b>原书小节</b> · Tables Make Your Life Easier · Let dhcpd(8) Direct Access · Making Your Network Troubleshooting-Friendly · Do We Let It All Through? · The Easy Way Out: The Buck Stops Here · Let ping Through · Helping traceroute · Path MTU Discovery · That Sad Old FTP Thing · If We Must: ftp-proxy with Divert or Redirect · Variations on the ftp-proxy Setup</p>
+
+    <h3><span class="sn">4.1</span>表：运行时可变，规则文本不变</h3>
+    <p>表是地址集合，可以带名字、持久化、带计数器。<code>persist</code> 让表在规则重载后仍然存在；没有它，<code>pfctl -f</code> 会清空动态添加的地址。表可以写在规则里，也可以从文件加载。</p>
+    <pre><code class="language-bash">table &lt;clients&gt; persist { 192.168.2.0/24, !192.168.2.5 }
+table &lt;leased&gt; persist counters
+table &lt;badhosts&gt; persist file "/etc/pf.badhosts"
+
+pass inet proto tcp from &lt;clients&gt; to any port $client_out
+block quick from &lt;badhosts&gt;</code></pre>
+    <p><code>!</code> 表示排除；<code>counters</code> 让每条规则/表项累计字节与包数，便于观察。运行时维护表：</p>
+    <pre><code class="language-bash">$ doas pfctl -t clients -T show
+$ doas pfctl -t clients -T add 192.168.2.77
+$ doas pfctl -t clients -T delete 192.168.2.77
+$ doas pfctl -t clients -T test 192.168.2.77
+$ doas pfctl -t clients -T replace -f /etc/clients
+$ doas pfctl -t clients -T flush
+$ doas pfctl -t clients -T expire 86400   # 清理超过一天未更新的表项</code></pre>
+    <p>注意命令里的表名不带尖括号。表项的增删立即生效，不需要重载规则集；这正是它比“改 <code>pf.conf</code> 再 reload”更适合动态环境的原因。</p>
+
+    <h3><span class="sn">4.2</span>让 dhcpd 维护访问表</h3>
+    <p>动态地址环境里，手写客户端 IP 很快就会过期。OpenBSD 的 <code>dhcpd</code> 有一个更省事的机制：启动参数 <code>-L</code>/<code>-A</code>/<code>-C</code> 直接指定三张表，dhcpd 会把“当前租约”“过期未续租”“地址被重新分配”的地址自动写进去。你不需要写钩子脚本，只要保证表名一致、表带 <code>persist</code>。</p>
+    <pre><code class="language-bash"># /etc/rc.conf.local
+dhcpd_flags="-L leased_ip_table -A abandoned_ip_table -C changed_ip_table bge1"
+
+# /etc/pf.conf
+ext_if = "bge0"
+int_if = "bge1"
+table &lt;abandoned_ip_table&gt; persist counters
+table &lt;changed_ip_table&gt;   persist counters
+table &lt;leased_ip_table&gt;    persist counters
+
+match out on egress inet nat-to ($ext_if)
+block
+pass quick proto udp to port $udp_services
+pass quick proto tcp to port domain
+pass proto tcp from &lt;leased_ip_table&gt; to port $client_out
+pass proto tcp to self port ssh</code></pre>
+    <p><code>-L</code> 对应当前租约，<code>-A</code> 对应“租约到期仍未续租”的地址，<code>-C</code> 对应“同一地址被分配给新 MAC”的情况。最后一参数是 dhcpd 监听的接口。表名必须与 <code>pf.conf</code> 完全一致；<code>persist</code> 保证重载规则时租约数据不丢。</p>
+    <p>这套机制的关键是<b>单一事实来源</b>：地址能不能出网，不由手写名单决定，而由 DHCP 的实际租约决定。客户端换网段、租约过期、地址被回收，表会自动跟随，减少“幽灵放行”。</p>
+
+    <h3><span class="sn">4.3</span>ping、traceroute 与路径 MTU</h3>
+    <p>“全放行”能解决所有排障问题，但它也让边界失去意义。正确做法是只放行必要的 ICMP 类型，并限制来源。ICMP 不只是 ping：它还承载“不可达”“超时”“需要分片”等控制信息，过度封锁会导致连接卡死而不是快速失败。</p>
+    <pre><code class="language-bash">icmp_types = "{ echoreq, unreach, timex, paramprob }"
+icmp6_types = "{ echoreq, unreach, timex, paramprob, routeradv, routersol }"
+
+pass inet  proto icmp  icmp-type  $icmp_types
+pass inet6 proto icmp6 icmp6-type $icmp6_types
+
+# 更收敛：只允许内网 ping 网关，外网只允许 unreach/timex
+pass inet proto icmp from $localnet icmp-type echoreq
+pass inet proto icmp icmp-type { unreach, timex }</code></pre>
+    <p><b>traceroute</b> 依赖 TTL 递减后返回的 ICMP time exceeded。Unix 版默认发 UDP 高端口，Windows 版发 ICMP echo。只放行 <code>echoreq</code> 时，Windows 的 <code>tracert</code> 可能能用，而 Unix 的 <code>traceroute</code> 不行。若你看到“第一跳后全是星号”，先检查 <code>timex</code> 是否被丢。</p>
+    <p><b>路径 MTU 发现（PMTU）</b>依赖 ICMP <code>needfrag</code>（IPv4）或 <code>packet-too-big</code>（IPv6）。如果这些消息被防火墙丢弃，大包会静默卡住：SSH 能登录但 <code>scp</code> 卡死，网页首屏能开但图片加载失败。两个修法：放行对应 ICMP 类型；或在网关上做 MSS 钳制。</p>
+    <pre><code class="language-bash"># 方式一：放行 PMTU 相关 ICMP
+pass inet proto icmp icmp-type { unreach, needfrag, timex }
+
+# 方式二：对经过的 TCP 连接钳制 MSS（常见于 PPPoE）
+match in all scrub (no-df max-mss 1440)
+# 或（旧语法）
+scrub in all max-mss 1440</code></pre>
+    <p><code>max-mss 1440</code> 适用于 1492 字节的 PPPoE 链路：减去 20 字节 IP 头与 20 字节 TCP 头，得到 1452；再留一点余量取 1440。设得太小会降低吞吐，太大则不解决问题。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>现象</th><th>可能原因</th><th>检查</th></tr></thead>
+        <tbody>
+          <tr><td>ping 不通</td><td>ICMP echo 被 block</td><td><code>pfctl -sr</code> 查是否有 <code>icmp-type</code></td></tr>
+          <tr><td>traceroute 全是星号</td><td><code>timex</code> 被丢</td><td>放行 <code>timex</code>，或换 TCP traceroute</td></tr>
+          <tr><td>SSH 能连，scp 卡住</td><td>PMTU 黑洞</td><td>放行 <code>needfrag</code> / <code>packet-too-big</code></td></tr>
+          <tr><td>网页首屏正常，图片失败</td><td>MSS 过大</td><td><code>scrub ... max-mss 1440</code></td></tr>
+          <tr><td>DNS 时好时坏</td><td>只放行 TCP 53</td><td>补 UDP 53</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3><span class="sn">4.4</span>FTP：数据连接为什么反着来</h3>
+    <p>主动模式（active）下，客户端告诉服务器“来连我的某个端口”，服务器从 20 端口反向发起连接；被动模式（passive）下，服务器返回一个高端口，客户端去连。前者会被客户端的防火墙挡住，后者会被服务器的防火墙挡住。更深层的问题是：FTP 把地址和端口写在应用层载荷里，NAT 改写 IP 头后载荷里的地址就错了。</p>
+    <p>解决办法是应用层网关 <code>ftp-proxy</code>：它监听 8021，拦截 FTP 控制连接，解析 PORT/PASV 命令，动态打开数据通道。OpenBSD 用 <code>divert-to</code>，FreeBSD 用 <code>rdr-to</code>。</p>
+    <pre><code class="language-bash"># OpenBSD：ftpd 代理 + divert
+$ doas rcctl enable ftpproxy
+$ doas rcctl start ftpproxy
+
+# pf.conf
+anchor "ftp-proxy/*"
+pass in quick inet proto tcp to port ftp divert-to 127.0.0.1 port 8021
+pass out inet proto tcp from $proxy to any port ftp</code></pre>
+    <pre><code class="language-bash"># FreeBSD：rdr 方式
+anchor "ftp-proxy/*"
+rdr pass on $int_if inet proto tcp from any to any port ftp -&gt; 127.0.0.1 port 8021
+pass out inet proto tcp from $proxy to any port ftp</code></pre>
+    <p><code>anchor "ftp-proxy/*"</code> 是必须的：代理会在这棵锚点下动态插入放行数据连接的子规则。没有它，控制连接能建，<code>LIST</code>/<code>RETR</code> 会卡住。锚点（anchor）在第 5 章会详细展开，这里先记住它是“运行时可替换的子规则集”。</p>
+
+    <div class="intuition">
+      <div class="ih">先问“谁发起”</div>
+      <p>FTP 排障不要先看端口，先看数据连接由谁发起：主动模式是服务器发起，被动模式是客户端发起。谁发起，谁那边的防火墙就需要放行入站。代理的作用是把“不可预测的高端口”收敛成“代理可管理的动态规则”。</p>
+    </div>
+
+    <h3><span class="sn">4.5</span>让网络“可排障”而不是“全放行”</h3>
+      <p>原书用一个很实用的原则：给排障流量留一条<b>有边界的</b>通道，而不是临时 <code>pass all</code>。例如只允许内网到网关的 ping、只允许管理员网段做 traceroute、只对特定目标放行 ICMP unreach。排障结束后，这些规则仍然有存在理由，不需要“记得改回去”。</p>
+    <pre><code class="language-bash"># 管理网段可以 ping 与 traceroute 网关
+pass inet proto icmp from 192.168.1.0/24 to self icmp-type { echoreq, timex }
+# 所有主机都可以收到“不可达/需分片”，否则故障表现为超时
+pass inet proto icmp icmp-type { unreach, needfrag }
+# 只允许内网发起 traceroute 的 UDP 高端口（如确有必要）
+pass out inet proto udp from $localnet to port 33434:33626</code></pre>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">表与排障的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 表忘了 <code>persist</code>。</b>重载规则后动态表项全没，客户端“突然失效”。<b>2. 用表名带尖括号去执行 <code>pfctl -t</code>。</b>命令里应写 <code>-t clients</code>，不是 <code>-t &lt;clients&gt;</code>。<b>3. 封掉全部 ICMP。</b>PMTU 黑洞会让大流量随机卡死，且很难定位。<b>4. 只放行 TCP 53。</b>DNS 主要走 UDP，表现为“有时能解析”。<b>5. 为 FTP 临时 <code>pass all</code>。</b>应使用 <code>ftp-proxy</code> 加锚点，且只放行必要方向。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ch6" class="chapter">
+<section id="ch4a" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 4 · Wireless Networks / The Access Point</div>
+    <h2><span class="num">05</span>Wi-Fi 只是另一个接口和另一个子网</h2>
+    <p class="lede">无线不改变 PF 的模型：它仍是“包从某个接口进来”。真正不同的是链路层——关联、加密、桥接，以及“谁能拿到这个子网的入口”。</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 4 章前半：802.11 基础、Wi-Fi 作为接口/子网、MAC 过滤/WEP/WPA、硬件选择、OpenBSD 与 FreeBSD 的接入点配置、接入点规则集、三接口以上的接入点、以及 IPSec/VPN 的处理位置。</p>
+      <span class="tag">802.11 · hostap · WPA · bridge</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">hostap</span><span class="chip">WPA2-PSK</span><span class="chip">bridge0</span><span class="chip">MAC 过滤不可靠</span><span class="chip">2.4 / 5 GHz</span><span class="chip">AP 规则集</span>
+    </div>
+    <p class="note"><b>原书小节</b> · A Little IEEE 802.11 Background · Wi-Fi Is Just Another Interface or Subnet · Basic Wireless Network Security Features · MAC Address Filtering · WEP · WPA · The Right Hardware for the Task · Setting Up a Simple Wireless Network on OpenBSD · Setting Up a Simple Wireless Network on FreeBSD · The Access Point’s PF Ruleset · Access Points with Three or More Interfaces · Handling IPSec, VPN Solutions</p>
+
+    <h3><span class="sn">5.1</span>802.11 的三件事：频段、信道、模式</h3>
+    <p>802.11 是链路层标准族。2.4 GHz 穿透好但拥挤，5 GHz 干净但覆盖短；信道在 2.4 GHz 上只有 1/6/11 互不重叠。模式决定接口角色：<code>hostap</code> 是接入点，<code>sta</code> 是客户端，<code>monitor</code> 只收不发。PF 只在包进入 IP 层之后才看见它们，因此无线配置正确与否，先由 <code>ifconfig</code> 和关联日志决定。</p>
+    <p>“Wi-Fi 只是另一个接口”这句话的实践含义：你可以把无线接口当成 <code>em1</code> 一样写规则；但它通常需要桥接到有线接口，桥接会改变 PF 看到包的位置（第 5 章详述）。</p>
+
+    <h3><span class="sn">5.2</span>安全特性：MAC 过滤、WEP、WPA</h3>
+    <p><b>MAC 地址过滤</b>只能在驱动/接入点层挡住“不知道地址”的普通用户；MAC 可伪造，且管理成本随设备数线性增长。它适合做“减少误关联”，不适合做安全边界。<b>WEP</b> 已被证明可在几分钟内破解，不应使用。<b>WPA/WPA2-PSK</b> 是家庭与小办公室的合理起点；企业环境应使用 WPA-Enterprise（802.1X）或额外的 VPN/认证层。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>机制</th><th>挡住谁</th><th>实际强度</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr><td>隐藏 SSID</td><td>普通扫描</td><td>很弱，探测即可发现</td><td>不作为安全措施</td></tr>
+          <tr><td>MAC 过滤</td><td>偶然连接</td><td>弱，可伪造</td><td>仅减少误连</td></tr>
+          <tr><td>WEP</td><td>几乎挡不住</td><td>已破解</td><td>禁用</td></tr>
+          <tr><td>WPA2-PSK</td><td>无密钥者</td><td>中等，依赖口令强度</td><td>家用/小办公可用</td></tr>
+          <tr><td>WPA-Enterprise</td><td>无凭据设备</td><td>较强，需 RADIUS</td><td>企业首选</td></tr>
+          <tr><td>VPN / authpf</td><td>未认证用户</td><td>强，叠加在链路上</td><td>开放网络 + 认证网关</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3><span class="sn">5.3</span>OpenBSD 接入点配置</h3>
+    <p>以 <code>athn0</code> 为例：设置为 hostap 模式、指定 SSID 与 WPA 口令，然后启用接口。配置文件应写进 <code>/etc/hostname.athn0</code>，保证重启后生效。</p>
+    <pre><code class="language-bash"># /etc/hostname.athn0
+media autoselect mode 11g mediaopt hostap
+nwid "example-wifi"
+wpakey "correct horse battery staple"
+inet 192.168.12.1 255.255.255.0
+
+# 立即应用
+$ doas ifconfig athn0 media autoselect mode 11g mediaopt hostap
+$ doas ifconfig athn0 nwid "example-wifi" wpakey "correct horse battery staple"
+$ doas ifconfig athn0 inet 192.168.12.1/24 up
+$ doas ifconfig athn0</code></pre>
+    <p>若要把它接入现有有线网络，通常用桥：无线与有线在同一广播域，客户端从上游 DHCP 拿地址，网关在路由器上。桥接模式下 PF 的规则应写在 <code>bridge0</code> 上，并确认 <code>pfil_bridge</code> 已开启。</p>
+    <pre><code class="language-bash">$ doas ifconfig bridge0 create
+$ doas ifconfig bridge0 add athn0 add em0 up
+$ doas sysctl net.link.bridge.pfil_bridge=1
+$ doas sysctl net.link.bridge.pfil_member=0
+
+# pf.conf 只针对桥接口过滤一次
+pass in on bridge0 from 192.168.12.0/24 to any
+pass out on bridge0 from any to 192.168.12.0/24</code></pre>
+
+    <h3><span class="sn">5.4</span>FreeBSD 接入点配置</h3>
+    <p>FreeBSD 使用 <code>wlan</code> 克隆接口：先创建 <code>wlan0</code>，再把它设为 hostap。加密用 <code>wpa_supplicant</code> 或 <code>hostapd</code>；小网络可以直接在 <code>rc.conf</code> 里配置 WPA-PSK。</p>
+    <pre><code class="language-bash"># /etc/rc.conf
+wlans_ath0="wlan0"
+create_args_wlan0="wlanmode hostap"
+ifconfig_wlan0="inet 192.168.12.1 netmask 255.255.255.0 ssid example-wifi mode 11g channel 6"
+hostapd_enable="YES"
+
+# /etc/wpa_supplicant.conf（若用 wpa_supplicant 做 PSK）
+network={
+    ssid="example-wifi"
+    psk="correct horse battery staple"
+    mode=2
+}
+
+$ sudo service netif restart
+$ sudo service hostapd start</code></pre>
+    <p>FreeBSD 的接口命名与驱动支持随版本变化较大；先确认 <code>ifconfig -m</code> 与驱动手册页支持 hostap，再买硬件。原书专门用一节讲“The Right Hardware for the Task”，核心建议是：选主芯片有开源驱动、支持 AP 模式、且天线可更换的网卡。</p>
+
+    <h3><span class="sn">5.5</span>接入点规则集：把无线当独立子网</h3>
+    <p>最清晰的模型是给无线单独一个子网，网关在 PF 上做路由与过滤。这样无线客户端与有线客户端之间的横向流量默认被阻断，访客网络也容易隔离。</p>
+    <pre><code class="language-bash">wifi_if = "athn0"
+wifi_net = "192.168.12.0/24"
+ext_if = "em0"
+
+set skip on lo
+block all
+
+# 无线客户端出外网：NAT + 放行
+match out on $ext_if inet from $wifi_net nat-to ($ext_if)
+pass in on $wifi_if from $wifi_net to any
+pass out on $ext_if from $wifi_net to any
+
+# 允许无线访问网关的 DNS/DHCP
+pass in on $wifi_if proto { udp tcp } to ($wifi_if) port { domain, bootps }
+pass in on $wifi_if proto udp to port bootpc
+
+# 明确阻断无线到有线的横向访问（若默认 block 已覆盖，可省略）
+block in on $wifi_if from $wifi_net to 192.168.1.0/24</code></pre>
+    <p>“三接口以上”的接入点（有线、无线、DMZ/访客）应把每个接口当成独立策略域：先定义每个域的“可访问目的地”，再写规则。不要让无线接口“顺带”继承有线的信任级别。</p>
+
+    <h3><span class="sn">5.6</span>IPSec / VPN 放在哪一层</h3>
+    <p>IPSec 隧道接口通常是 <code>enc0</code>。PF 看到的是“解密前的包”和“解密后的包”两个阶段；规则要明确你过滤的是外层隧道还是内层明文。常见做法：外网接口放行 IKE（UDP 500/4500）与 ESP，<code>enc0</code> 上再按内层地址过滤。不要在 <code>enc0</code> 上重复做 NAT，否则会破坏隧道语义。</p>
+    <pre><code class="language-bash">pass in on $ext_if proto udp to port { isakmp, ipsec-nat-t }
+pass in on $ext_if proto esp
+pass in on enc0 from 10.99.0.0/24 to 192.168.1.0/24
+pass out on enc0 from 192.168.1.0/24 to 10.99.0.0/24</code></pre>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">无线配置的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 把 MAC 过滤当安全边界。</b>地址可伪造，且换设备就要改配置。<b>2. 用 WEP“兼容旧设备”。</b>等于没有加密。<b>3. 桥接后在成员接口上写规则。</b>桥模式下包只在 <code>bridge0</code> 上被过滤一次，成员接口规则可能不生效。<b>4. 无线与有线同网段同信任。</b>访客设备可以直接访问内网主机。<b>5. 只配 SSID 不配密钥管理。</b>开放网络必须叠加认证网关（authpf/VPN）或至少强制门户。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch4b" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 4 · Wireless Clients and authpf</div>
+    <h2><span class="num">06</span>先认证，再拿规则：authpf 把登录变成防火墙状态</h2>
+    <p class="lede">开放 Wi-Fi 不等于开放内网。authpf 让用户通过 SSH 登录后，临时把“这个 IP 可以做什么”写进一个专属锚点；会话结束，规则与状态一起消失。</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 4 章后半：客户端如何加入无线网络（OpenBSD 与 FreeBSD）、authpf 的基本认证网关、按用户定制规则、以及“链路全开但实际封闭”的强制门户模式。</p>
+      <span class="tag">client · authpf · captive portal</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">authpf</span><span class="chip">$user_ip&lt;/span&gt;&lt;span class="chip"&gt;anchor&lt;/span&gt;&lt;span class="chip"&gt;per-user rules&lt;/span&gt;&lt;span class="chip"&gt;登录即放行&lt;/span&gt;&lt;span class="chip"&gt;登出即回收&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p class="note"&gt;&lt;b&gt;原书小节&lt;/b&gt; · The Client Side · OpenBSD Setup · FreeBSD Setup · Guarding Your Wireless Network with authpf · A Basic Authenticating Gateway · Wide Open but Actually Shut · With Wireless in Hand, We Move On&lt;/p&gt;
+
+    &lt;h3&gt;&lt;span class="sn"&gt;6.1&lt;/span&gt;客户端：加入网络只是第一步&lt;/h3&gt;
+    &lt;p&gt;OpenBSD 客户端把网络写进 <code>/etc/hostname.athn0</code> 或 <code>/etc/hostname.iwn0</code>：指定 <code>nwid</code>、<code>wpakey</code>，然后 DHCP。FreeBSD 用 <code>wlan0</code> 克隆接口加 <code>wpa_supplicant</code>。两端都不需要为“客户端”写特殊 PF 规则——出站默认放行即可；真正的策略在网关。</p>
+    <pre><code class="language-bash"># OpenBSD 客户端
+$ doas ifconfig athn0 nwid "example-wifi" wpakey "passphrase"
+$ doas dhcpleasectl athn0        # 或 ifconfig athn0 inet autoconf
+$ doas ifconfig athn0
+
+# FreeBSD 客户端
+$ sudo sysrc wlans_ath0="wlan0"
+$ sudo sysrc ifconfig_wlan0="WPA SYNCDHCP"
+$ sudo service netif restart
+$ sudo wpa_cli status</code></pre>
+    <p>客户端最常见的“连上了但没网”不是 PF 问题，而是：DHCP 没拿到地址、默认路由缺失、DNS 没配、或者上游网关的 NAT 没有覆盖这个网段。先用 <code>ifconfig</code>、<code>netstat -rn</code>、<code>dig</code> 三段定位，再怀疑防火墙。</p>
+
+    <h3><span class="sn">6.2</span>authpf 的工作方式</h3>
+    <p>authpf 是一个“登录 shell”。你把用户的 shell 设为 <code>/usr/sbin/authpf</code>，用户通过 SSH 登录后不获得交互式 shell，而是触发三件事：把用户源 IP 加入 <code>&lt;authpf_users&gt;</code> 表；加载 <code>/etc/authpf/authpf.rules</code>（或用户专属规则）到 <code>anchor "authpf/用户名"</code>；会话断开时清空该锚点与状态。</p>
+    <p>因此它特别适合无线/访客网络：链路层可以开放（甚至不加密），但在 IP 层，未认证用户的包只能到达认证页与 DHCP/DNS。</p>
+
+    <h3><span class="sn">6.3</span>基本认证网关的完整配置</h3>
+    <pre><code class="language-bash"># 1) 创建空的 authpf.conf（必须存在）
+$ doas touch /etc/authpf/authpf.conf
+
+# 2) 创建 authpf 用户：shell 指向 authpf，加入 authpf 组
+$ doas useradd -m -g authpf -s /usr/sbin/authpf alice
+$ doas passwd alice
+
+# 3) pf.conf
+ext_if = "re0"
+int_if = "athn0"
+localnet = $int_if:network
+
+table &lt;authpf_users&gt; persist
+anchor "authpf/*"
+
+match out on $ext_if inet from $localnet nat-to ($ext_if)
+block all
+
+# 认证前只放行：到网关的 SSH、DHCP、DNS
+pass quick on $int_if inet proto { tcp, udp } to $int_if port { ssh, bootps, bootpc, domain }
+
+# 认证后的通用放行（也可放进 authpf.rules）
+pass quick proto { tcp, udp } from &lt;authpf_users&gt; to port { domain, ntp }
+pass proto tcp from &lt;authpf_users&gt; to port $client_out</code></pre>
+    <p>FreeBSD 需要额外的翻译锚点，否则 authpf 动态插入的 NAT/rdr 规则没有挂载点：</p>
+    <pre><code class="language-bash">nat-anchor "authpf/*"
+rdr-anchor "authpf/*"
+binat-anchor "authpf/*"
+anchor "authpf/*"</code></pre>
+
+    <h3><span class="sn">6.4</span>按用户定制：$user_ip 与目录规则&lt;/h3&gt;
+    &lt;p&gt;<code>/etc/authpf/authpf.rules</code> 是所有人的默认规则；<code>/etc/authpf/users/用户名/authpf.rules</code> 覆盖个人。规则里可直接使用内置宏 <code>$user_ip</code>，它展开为本次登录的源地址。</p>
+    <pre><code class="language-bash"># /etc/authpf/authpf.rules —— 普通用户
+client_out = "{ ssh, domain, pop3, auth, nntp, http, https }"
+udp_services = "{ domain, ntp }"
+
+pass quick proto { tcp, udp } from $user_ip to port $udp_services
+pass proto tcp from $user_ip to port $client_out
+
+# /etc/authpf/users/alice/authpf.rules —— 只上网 + 一个内部服务
+client_out = "{ domain, http, https }"
+pass inet from $user_ip to 192.168.103.84 port 9000
+pass quick inet proto { tcp, udp } from $user_ip to port $client_out
+
+# /etc/authpf/users/bob/authpf.rules —— 用操作系统指纹放宽
+pass from $user_ip os = "OpenBSD" to any</code></pre>
+    <p><code>os = "OpenBSD"</code> 是 PF 的操作系统指纹匹配，依赖 p0f 风格的被动识别。它能挡住“随手改配置”的人，但不是强认证：指纹可被伪造。把它当作“减少误配”的辅助，而不是安全边界。</p>
+
+    <h3><span class="sn">6.5</span>“链路全开、实际封闭”：强制门户</h3>
+    <p>机场/咖啡店的模式可以完全用 PF 实现：任何人能关联 Wi-Fi、拿到 DHCP、解析 DNS；但所有 HTTP 请求被重定向到认证页，直到用户 SSH 登录 authpf。关键是一条“取反表”的重定向规则。</p>
+    <pre><code class="language-bash">ext_if = "re0"
+int_if = "athn0"
+auth_web = "192.168.27.20"
+dhcp_services = "{ bootps, bootpc }"
+
+table &lt;authpf_users&gt; persist
+
+# 未认证用户的 80 端口全部送到认证页
+pass in quick on $int_if proto tcp from ! &lt;authpf_users&gt; to port http rdr-to $auth_web
+
+match out on $ext_if from $int_if:network nat-to ($ext_if)
+anchor "authpf/*"
+block all
+
+pass quick on $int_if inet proto { tcp, udp } to $int_if port $dhcp_services
+pass quick inet proto { tcp, udp } from $int_if:network to port domain
+pass quick on $int_if inet proto { tcp, udp } to $int_if port ssh</code></pre>
+    <p>认证页本身要能访问，否则用户看不到说明；认证页所在主机通常放在 DMZ，并在规则里显式放行。用户认证成功后，<code>&lt;authpf_users&gt;</code> 表加入其地址，重定向规则不再匹配，后续规则接管。</p>
+
+    <h3><span class="sn">6.6</span>观察与回收会话</h3>
+    <pre><code class="language-bash">$ doas pfctl -t authpf_users -T show
+$ doas pfctl -a authpf -sr              # 查看所有 authpf 子规则
+$ doas pfctl -a authpf/alice -sr        # 只看某个用户
+$ doas pfctl -a authpf/alice -Fs        # 清该用户状态（规则随会话退出）
+$ who                                   # 查看当前登录会话
+$ doas pkill -KILL -U alice             # 强制断开某用户（会触发清理）</code></pre>
+    <p>authpf 的清理依赖进程正常退出；如果 SSH 会话被网络中断，TCP 超时后 sshd 才会回收。对高安全场景，应缩短 <code>ClientAliveInterval</code>，并定期检查 <code>pfctl -a authpf -sr</code> 是否残留。</p>
+
+    <div class="intuition">
+      <div class="ih">为什么这比“Wi-Fi 密码”更强</div>
+      <p>Wi-Fi 密码是共享的、长期不变的、无法区分人；authpf 是逐个用户的、短时的、可审计的。密码泄露只影响链路接入，不影响 IP 层权限；而 authpf 的权限随会话存在，登出即回收。</p>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">authpf 的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 忘了创建空的 <code>/etc/authpf/authpf.conf</code>。</b>authpf 直接不工作。<b>2. 只写 <code>anchor "authpf/*"</code> 而没有 <code>&lt;authpf_users&gt;</code> 表。</b>通用规则无法按“已认证地址”匹配。<b>3. FreeBSD 漏了 nat/rdr/binat 锚点。</b>动态翻译规则无挂载点。<b>4. 认证前不放行 DNS/DHCP。</b>用户连认证页都打不开。<b>5. 把 <code>os = "OpenBSD"</code> 当强认证。</b>指纹可伪造，只能减少误配。</p>
+      </div>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>任务</th><th>命令/配置</th></tr></thead>
+        <tbody>
+          <tr><td>创建 authpf 用户</td><td><code>useradd -g authpf -s /usr/sbin/authpf alice</code></td></tr>
+          <tr><td>用户专属规则</td><td><code>/etc/authpf/users/alice/authpf.rules</code></td></tr>
+          <tr><td>规则挂载点</td><td><code>anchor "authpf/*"</code></td></tr>
+          <tr><td>已认证地址表</td><td><code>table &lt;authpf_users&gt; persist</code></td></tr>
+          <tr><td>未认证重定向</td><td><code>pass in quick ... from ! &lt;authpf_users&gt; ... rdr-to $auth_web</code></td></tr>
+          <tr><td>查看会话规则</td><td><code>pfctl -a authpf -sr</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="ch5a" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 5 · Bigger Networks / DMZ and relayd</div>
+    <h2><span class="num">07</span>DMZ：把“可被访问”与“可信”分开</h2>
+    <p class="lede">当 Web 与邮件服务器必须被外部访问时，最危险的做法是把它们放在内网再开一个洞。DMZ 的价值不是多一个网段，而是让“被攻破的代价”有边界。</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 5 章前半：使用可路由 IPv4 地址的 DMZ、用地址池做负载均衡（load balancing）、以及用 relayd 做带健康检查的转发。规则要在三个接口上分别成立：外网、内网、DMZ。</p>
+      <span class="tag">DMZ · 可路由地址 · relayd</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">DMZ</span><span class="chip">three interfaces</span><span class="chip">webpool</span><span class="chip">round-robin</span><span class="chip">relayd</span><span class="chip">health check</span>
+    </div>
+    <p class="note"><b>原书小节</b> · A Web Server and Mail Server on the Inside: Routable iPv4 Addresses · A Degree of Separation: Introducing the DMZ · Sharing the Load: Redirecting to a Pool of Addresses · Getting Load Balancing Right with relayd</p>
+
+    <h3><span class="sn">7.1</span>三接口模型</h3>
+    <p>典型 DMZ 网关有三块网卡：<code>$ext_if</code> 连互联网，<code>$int_if</code> 连内网，<code>$dmz_if</code> 连服务器区。策略可以写成三句话：外部只能访问 DMZ 的公开服务；内网可以访问 DMZ 与本机；DMZ 不能主动进入内网，只能回包和发有限的出站（如邮件、更新）。</p>
+    <pre><code class="language-bash">ext_if = "em0"
+int_if = "em1"
+dmz_if = "em2"
+
+localnet = $int_if:network
+dmznet   = $dmz_if:network
+
+webserver  = "192.0.2.80"
+mailserver = "192.0.2.25"
+webports   = "{ http, https }"
+
+block all
+
+# 外部 → DMZ 的公开服务
+pass in  on $ext_if proto tcp to $webserver port $webports
+pass out on $dmz_if proto tcp to $webserver port $webports
+
+pass in  log on $ext_if proto tcp to $mailserver port smtp
+pass out log on $dmz_if proto tcp to $mailserver port smtp
+
+# 内网 → DMZ
+pass in  on $int_if proto tcp from $localnet to $webserver port $webports
+pass out on $dmz_if proto tcp from $localnet to $webserver port $webports
+
+# DMZ → 外部（仅邮件与必要更新）
+pass in  on $dmz_if proto tcp from $mailserver to port smtp
+pass out on $ext_if proto tcp from $mailserver to port smtp</code></pre>
+    <p>注意每条“跨网段”的放行都成对出现：入接口一条、出接口一条。这不是冗余，而是 PF 的路径模型。用可路由地址时不需要 NAT，服务器看到的是真实客户端地址，日志与访问控制都更清晰。</p>
+
+    <h3><span class="sn">7.2</span>为什么 DMZ 能降低损失</h3>
+    <p>Web 服务器是最容易被攻破的组件：框架漏洞、上传目录、弱口令。如果它在内网，攻击者拿下后可以横向扫描数据库、文件服务器、域控。DMZ 把它的“可达范围”限制在：外部、自己的网段、以及被显式允许的出站。它仍然可能被攻破，但攻破后的下一步变难了。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">设计原则</span><span class="thm-title">DMZ 不是“第二个内网”</span></div>
+      <div class="thm-body">
+        <p>DMZ 主机之间也不应默认互信。Web 服务器不需要访问邮件服务器的 25 端口，邮件服务器也不需要访问 Web 的数据库端口。把 DMZ 内部再分段，或者至少用 <code>block in on $dmz_if</code> 阻断横向流量，只放行明确的依赖。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">7.3</span>地址池与负载均衡</h3>
+    <p>当一台 Web 服务器不够用时，最直接的办法是把多个地址放进表（table），让 PF 把新连接轮流分配给它们。这就是包过滤层的负载均衡（load balancing）：无健康检查、无会话保持，胜在简单。</p>
+    <pre><code class="language-bash">table &lt;webpool&gt; persist { 192.0.2.214, 192.0.2.215, 192.0.2.216, 192.0.2.217 }
+
+# OpenBSD：match 做重定向，pass 决定放行
+match in on $ext_if proto tcp to $webserver port $webports \
+    rdr-to &lt;webpool&gt; round-robin
+pass in on $ext_if proto tcp to $webserver port $webports
+
+# FreeBSD：rdr 语法
+rdr on $ext_if proto tcp to $webserver port $webports -&gt; &lt;webpool&gt; round-robin
+pass in on $ext_if proto tcp to $webserver port $webports</code></pre>
+    <p>调度算法常见有三种：<code>round-robin</code> 轮流、<code>random</code> 随机、<code>source-hash</code> 按源地址哈希（同一客户端固定到同一后端）。没有 <code>sticky-address</code> 时，同一客户端的多个连接可能落到不同后端，登录会话会随机失效。</p>
+    <pre><code class="language-bash"># 会话保持：同一源地址固定到同一后端
+match in on $ext_if proto tcp to $webserver port $webports \
+    rdr-to &lt;webpool&gt; source-hash
+# 或使用 sticky-address（会消耗状态资源）
+match in on $ext_if proto tcp to $webserver port $webports \
+    rdr-to &lt;webpool&gt; round-robin sticky-address</code></pre>
+
+    <h3><span class="sn">7.4</span>relayd：把健康检查交给专门的进程</h3>
+    <p>PF 的地址池不知道后端是否活着。一台服务器宕机，连接仍会被分给它，用户看到 502/超时。relayd 是 OpenBSD 的七层负载均衡/中继，能定期探测后端、自动摘除故障节点，并支持 TLS 终止、HTTP 头改写等。</p>
+    <pre><code class="language-bash"># /etc/relayd.conf
+table &lt;webpool&gt; { 192.0.2.214, 192.0.2.215, 192.0.2.216, 192.0.2.217 }
+table &lt;sorry&gt; { 192.0.2.250 }
+
+http protocol webproto {
+    match header set "X-Forwarded-For" value "$REMOTE_ADDR"
+    match header set "X-Forwarded-By" value "$SERVER_ADDR:$SERVER_PORT"
+    pass
+}
+
+relay www {
+    listen on 192.0.2.80 port 80
+    protocol webproto
+    forward to &lt;webpool&gt; check http "/" code 200
+    forward to &lt;sorry&gt; check tcp
+}</code></pre>
+    <p>PF 只需要把 80 端口放行给 relayd 所在主机，并把 relayd 的锚点打开：</p>
+    <pre><code class="language-bash">anchor "relayd/*"
+pass in on $ext_if proto tcp to $webserver port $webports
+pass out on $dmz_if proto tcp from $webserver to &lt;webpool&gt; port $webports</code></pre>
+    <p>relayd 的检查间隔、超时、退避策略都在 <code>relayd.conf</code> 里；它比 PF 表更“懂应用”，但也多了一个需要监控的进程。选择标准：只要分流、能接受手动摘除，用 PF 表；要求自动故障转移与会话粘滞，用 relayd。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>需求</th><th>PF 表 + rdr</th><th>relayd</th></tr></thead>
+        <tbody>
+          <tr><td>多后端分流</td><td>是</td><td>是</td></tr>
+          <tr><td>健康检查</td><td>否</td><td>是（HTTP/TCP/脚本）</td></tr>
+          <tr><td>会话保持</td><td><code>source-hash</code>/<code>sticky-address</code></td><td>表 + 粘滞选项</td></tr>
+          <tr><td>TLS 终止</td><td>否</td><td>是</td></tr>
+          <tr><td>额外进程</td><td>无</td><td>有，需要监控</td></tr>
+          <tr><td>适用规模</td><td>小、静态</td><td>中大型、动态</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">DMZ 与负载均衡的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 只写外网入站规则。</b>包进了网关却到不了 DMZ，必须补 <code>pass out on $dmz_if</code>。<b>2. DMZ 与内网同网段。</b>一台 Web 被攻破就能直接扫内网。<b>3. 用 <code>round-robin</code> 却要求登录保持。</b>同一用户会被分到不同后端，会话随机失效。<b>4. 忘记 <code>sticky-address</code> 的状态开销。</b>大流量下状态表会膨胀。<b>5. relayd 后端故障但 PF 仍在放行。</b>需要监控 relayd 本身，而不是只看 PF 计数器。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch5b" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 5 · NAT, Redirection, Interface Groups, Tags</div>
+    <h2><span class="num">08</span>地址改写之后，规则还认得这个包吗</h2>
+    <p class="lede">NAT 改源地址、重定向（redirection）改目的地址。改写发生在规则求值的特定阶段，因此“在哪个接口写规则、用原始地址还是改写后地址”决定了规则是否命中。</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 5 章中段：NAT 版 DMZ、用重定向做负载均衡、回到单 NAT 网络、按接口组（interface group）写规则、以及用标签（tag）把一次判决传递给后续规则。</p>
+      <span class="tag">NAT · rdr · tags · egress</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">nat-to</span><span class="chip">rdr-to</span><span class="chip">tag / tagged</span><span class="chip">egress</span><span class="chip">状态与翻译顺序</span>
+    </div>
+    <p class="note"><b>原书小节</b> · A Web Server and Mail Server on the Inside—the NAT Version · DMZ with NAT · Redirection for Load Balancing · Back to the Single NATed Network · Filtering on Interface Groups · The Power of Tags</p>
+
+    <h3><span class="sn">8.1</span>NAT 版 DMZ：省地址，不省规则</h3>
+    <p>没有可路由地址时，DMZ 也可以用私有段加 NAT。外部访问通过目的地址重定向进入，DMZ 出站通过源地址 NAT 出去。规则数量不会减少，只是地址从“真实”变成“映射”。</p>
+    <pre><code class="language-bash">ext_if = "em0"
+dmz_if = "em2"
+dmznet = $dmz_if:network
+webserver = "192.168.50.80"
+mailserver = "192.168.50.25"
+
+# DMZ 出站：源地址改写为公网接口
+match out on $ext_if inet from $dmznet nat-to ($ext_if)
+
+# 外部入站：目的地址改写为 DMZ 私有地址
+pass in on $ext_if inet proto tcp to ($ext_if) port $webports \
+    rdr-to $webserver
+pass in log on $ext_if inet proto tcp to ($ext_if) port smtp \
+    rdr-to $mailserver
+
+block all
+pass from $dmznet to any</code></pre>
+    <p>这里 <code>to ($ext_if)</code> 匹配“到达公网接口地址”的连接；<code>rdr-to</code> 把它改写成内网地址并同时放行。若拆成 <code>match ... rdr-to</code> + <code>pass</code>，要确认 <code>pass</code> 匹配的是改写前还是改写后的地址——不同 PF 版本与规则顺序下容易出错，合写最稳。</p>
+
+    <h3><span class="sn">8.2</span>重定向做负载均衡：NAT 场景</h3>
+    <p>把外部到达公网地址的 80/443 分给一个私有地址池，是中小型站点的常见做法。PF 支持 <code>round-robin</code>、<code>random</code>、<code>source-hash</code> 与 <code>sticky-address</code>。</p>
+    <pre><code class="language-bash">table &lt;webpool&gt; persist { 192.168.50.7, 192.168.50.8, 192.168.50.9, 192.168.50.10 }
+
+match in on $ext_if inet proto tcp to ($ext_if) port $webports \
+    rdr-to &lt;webpool&gt; round-robin
+pass in on $ext_if inet proto tcp to ($ext_if) port $webports
+
+# 内网访问同一服务：直接送到池，不经过外部地址
+pass in on $int_if inet proto tcp from $localnet to &lt;webpool&gt; port $webports
+pass out on $dmz_if inet proto tcp from $localnet to &lt;webpool&gt; port $webports</code></pre>
+    <p>“外网访问公网地址、内网访问同一公网地址”会出现发夹（hairpin）问题：内网客户端的包到达网关后被重定向回 DMZ，但回程可能绕过网关。解决办法是让内网 DNS 直接解析到池地址，或显式配置发夹 NAT 规则。</p>
+
+    <h3><span class="sn">8.3</span>回到单 NAT 网络：所有服务在一个子网</h3>
+    <p>小办公室常把所有服务器与客户端放在同一个私有网段，只靠端口转发暴露服务。这种结构简单，但横向风险高：一台被攻破的笔记本可以直接访问数据库。若必须这样做，至少用标签或接口组把“来自外部但被重定向”的流量与“内网自发”的流量区分开。</p>
+    <pre><code class="language-bash">ext_if = "em0"
+localnet = "192.168.1.0/24"
+webserver = "192.168.1.80"
+mailserver = "192.168.1.25"
+
+match out on $ext_if inet from $localnet nat-to ($ext_if)
+pass in on $ext_if inet proto tcp to ($ext_if) port $webports rdr-to $webserver
+pass in on $ext_if inet proto tcp to ($ext_if) port smtp rdr-to $mailserver
+block all
+pass from $localnet to any</code></pre>
+    <p>这段配置的隐患是最后一条 <code>pass from $localnet to any</code>：内网任何主机都能访问任何外部端口，也能互相访问。它适合“先跑起来”，不适合长期运行。下一步应把出站端口收窄，并加 <code>block in on $int_if from $localnet to $localnet</code>（按需例外）。</p>
+
+    <h3><span class="sn">8.4</span>接口组：用角色而不是名字写规则</h3>
+    <p>接口名会随硬件变化（<code>em0</code> 变 <code>igb0</code>），但“出口”这个角色不变。OpenBSD 提供 <code>egress</code> 组，自动包含有默认路由的接口；也可以自定义组。<code>egress</code> 是组名，不是宏，所以不加 <code>$</code>。</p>
+    <pre><code class="language-bash"># 使用内置 egress 组
+match out on egress inet from $localnet nat-to (egress)
+pass out on egress inet from $localnet to any
+
+# 自定义组（OpenBSD / FreeBSD 均可）
+$ doas ifconfig em0 group uplink
+$ doas ifconfig em1 group lan
+
+# 持久化：OpenBSD /etc/hostname.em0 追加 "group uplink"
+# FreeBSD /etc/rc.conf: ifconfig_em0="... group uplink"
+
+pass out on uplink inet from $localnet to any</code></pre>
+    <p>组的好处是规则与物理接口解耦；坏处是“组里到底有谁”不写在规则里，排障时要 <code>ifconfig -g uplink</code> 确认。对多 WAN 或热插拔场景，这个抽象非常值。</p>
+
+    <h3><span class="sn">8.5</span>标签：让一次判决影响后续规则</h3>
+    <p>标签（tag）是附加在包/状态上的字符串。你可以在入站规则上打标签，再在出站规则上用 <code>tagged</code> 匹配，从而避免在每条规则里重复相同的地址条件。标签会随状态保留，回程包也带着它。</p>
+    <pre><code class="language-bash"># 外部入站被重定向的流量打上 RDR 标签
+pass in on $ext_if inet proto tcp to ($ext_if) port $webports \
+    rdr-to $webserver tag RDR
+
+# 内网到 DMZ 的转发只看标签，不再重复地址判断
+pass out on $dmz_if inet tagged RDR
+
+# 也可以用标签做“用户/接口来源”的分类
+pass in on $int_if from $localnet tag LAN
+pass out on $ext_if inet tagged LAN</code></pre>
+    <p>标签最常见的用途是配合重定向：NAT/rdr 改写了地址，后续规则若还按原始地址匹配就会落空；标签记录的是“这个包属于哪类流量”，不受地址改写影响。</p>
+
+    <div class="intuition">
+      <div class="ih">改写顺序的直觉</div>
+      <p>入站：先匹配 <code>rdr</code> 规则（目的地址被改写），再走过滤；出站：先过滤，再应用 <code>nat</code>。所以“用改写前地址写的 pass 规则”在入站可能不命中。记不住顺序时，用 <code>pfctl -vvsr</code> 看展开结果，或直接用 <code>pass ... rdr-to</code> 合写。</p>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>需求</th><th>写法</th><th>注意</th></tr></thead>
+        <tbody>
+          <tr><td>DMZ 出站 NAT</td><td><code>match out on $ext_if inet from $dmznet nat-to ($ext_if)</code></td><td>只匹配 IPv4</td></tr>
+          <tr><td>入站端口映射</td><td><code>pass in on $ext_if ... to ($ext_if) port 80 rdr-to $webserver</code></td><td>翻译与放行合一</td></tr>
+          <tr><td>地址池分流</td><td><code>rdr-to &lt;webpool&gt; round-robin</code></td><td>无健康检查</td></tr>
+          <tr><td>会话保持</td><td><code>source-hash</code> 或 <code>sticky-address</code></td><td>后者耗状态</td></tr>
+          <tr><td>按角色匹配</td><td><code>on egress</code></td><td>组名不加 <code>$</code></td></tr>
+          <tr><td>传递分类</td><td><code>tag RDR</code> / <code>tagged RDR</code></td><td>标签随状态保留</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">NAT 与标签的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 以为 NAT 规则会放行。</b><code>match ... nat-to</code> 只改写，必须另写 <code>pass</code>。<b>2. 在错误接口上写 <code>rdr</code>。</b>入站重定向应写在外网接口，回程由状态处理。<b>3. 内网访问公网地址出现发夹。</b>让内网 DNS 直接指向池地址，或补发夹规则。<b>4. 用接口名而不是组。</b>换网卡后规则全部失配。<b>5. 标签名拼写不一致。</b><code>tag RDR</code> 与 <code>tagged Rdr</code> 是两个标签，大小写敏感。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch5c" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 5 · Bridges, Anchors, Nonroutable Addresses</div>
+    <h2><span class="num">09</span>锚点：让规则集在运行时长出子树</h2>
+    <p class="lede">当网络变大，规则会从“一条条写”变成“按接口、按用户、按代理动态生成”。锚点（anchor）是 PF 提供的唯一干净接口：主规则集决定“在哪里插入”，子树决定“插入什么”。</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 5 章后半：桥接防火墙、处理“从外部进来的私有地址”、建立全局规则、用锚点重构规则集、以及网络复杂度上升后的组织方式。</p>
+      <span class="tag">bridge · anchor · RFC1918 · 结构化</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">anchor</span><span class="chip">bridge0</span><span class="chip">pfil_bridge</span><span class="chip">antispoof</span><span class="chip">私有地址入站</span><span class="chip">规则复用</span>
+    </div>
+    <p class="note"><b>原书小节</b> · The Bridging Firewall · Basic Bridge Setup on OpenBSD · Basic Bridge Setup on FreeBSD · The Bridge Ruleset · Handling Nonroutable iPv4 Addresses from Elsewhere · Establishing Global Rules · Restructuring Your Ruleset with Anchors · How Complicated Is Your Network?—Revisited</p>
+
+    <h3><span class="sn">9.1</span>桥接防火墙：不改路由，也能过滤</h3>
+    <p>桥接模式下，主机像一台交换机，把两个网段放在同一广播域；但它仍然能让 PF 看到并过滤流量。适合“不想改现有路由/地址”的插入式部署。关键是过滤发生在 <code>bridge0</code> 上，而不是成员接口上。</p>
+    <pre><code class="language-bash"># OpenBSD
+$ doas ifconfig bridge0 create
+$ doas ifconfig bridge0 add em0 add em1 up
+$ doas sysctl net.link.bridge.pfil_bridge=1     # 在桥上过滤
+$ doas sysctl net.link.bridge.pfil_member=0     # 成员接口不重复过滤
+
+# 持久化
+# /etc/hostname.bridge0:
+#   add em0
+#   add em1
+#   up
+# /etc/sysctl.conf:
+#   net.link.bridge.pfil_bridge=1
+#   net.link.bridge.pfil_member=0
+
+# pf.conf
+pass in on bridge0 from 192.168.1.0/24 to any
+pass out on bridge0 from any to 192.168.1.0/24</code></pre>
+    <p>FreeBSD 的桥接配置类似，但 sysctl 名称与接口创建方式略有差异：<code>ifconfig bridge0 create</code>、<code>ifconfig bridge0 addm em0 addm em1 up</code>，并在 <code>rc.conf</code> 中持久化。<code>pfil_bridge</code> 与 <code>pfil_member</code> 的取舍决定“过滤一次还是两次”；两次过滤会增加开销，也容易让规则重复。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">桥接的代价</span><span class="thm-title">广播域变大</span></div>
+      <div class="thm-body">
+        <p>桥接把两个网段合并成一个广播域：ARP、DHCP、mDNS 都会跨过去。它适合“临时插入”或“同一逻辑网络”，不适合把生产网与访客网桥在一起。需要隔离时，用路由模式或 VLAN，而不是桥。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">9.2</span>外部进来的私有地址：不要静默丢弃</h3>
+    <p>RFC1918 地址（10/8、172.16/12、192.168/16）不应出现在公网接口上。它们要么是配置错误，要么是伪造源地址的扫描。默认应阻断，但要在日志里留下证据；同时用 <code>antispoof</code> 自动识别“源地址看起来属于本机接口网段、却从别的接口进来”的包。</p>
+    <pre><code class="language-bash"># 明确阻断从外网进来的私有地址与环回/链路本地
+block in quick on $ext_if from { 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, \
+                                 127.0.0.0/8, 169.254.0.0/16 } to any
+# 自动防伪造
+antispoof for $ext_if
+antispoof for $int_if</code></pre>
+    <p><code>antispoof</code> 会展开成一组规则：如果包的源地址属于 <code>$ext_if</code> 的网段，却不从 <code>$ext_if</code> 进来，就阻断。它比手写地址列表更抗变更，但仍需配合日志与 <code>block-policy</code>。</p>
+
+    <h3><span class="sn">9.3</span>用锚点重构：把“变化”隔离出去</h3>
+    <p>锚点是一个命名子规则集，主规则集在某个位置“调用”它。锚点内容可以在运行时替换，而不影响主规则集的其他部分。典型用途：<code>ftp-proxy/*</code>、<code>relayd/*</code>、<code>authpf/*</code>、以及你自己按接口/租户划分的子树。</p>
+    <pre><code class="language-bash"># 主规则集：在过滤规则之间插入两个锚点
+anchor "ftp-proxy/*"
+anchor "custom/webhooks"
+
+block all
+pass in on $ext_if proto tcp to port $webports
+anchor "custom/partners"
+pass from $localnet to any</code></pre>
+    <p>锚点的求值位置很重要：它像一条“跳到子树再回来”的指令。放在 <code>block all</code> 之前，子树里的 <code>pass</code> 可以覆盖后面的拒绝；放在之后，则只能处理已经通过前面规则的包。把锚点当作“规则集里的函数调用”，而不是“附加文件”。</p>
+    <pre><code class="language-bash"># 运行时管理子树
+$ doas pfctl -a custom/partners -f /etc/pf.partners
+$ doas pfctl -a custom/partners -sr
+$ doas pfctl -a custom/partners -Fs
+$ doas pfctl -a custom/partners -Fr
+
+# 也可以从主配置加载
+anchor "custom/partners"
+load anchor "custom/partners" from "/etc/pf.partners"</code></pre>
+
+    <h3><span class="sn">9.4</span>全局规则：所有接口都成立的部分</h3>
+    <p>把“与接口无关”的策略抽出来，放在主规则集前部：阻断伪造地址、放行必要的 ICMP、允许已建立状态、记录异常。这样每个接口的规则只需要描述“这个接口额外允许什么”，不必重复公共部分。</p>
+    <pre><code class="language-bash"># 全局：基础协议（新连接仍由各接口规则显式放行）
+pass inet proto icmp icmp-type { unreach, timex, needfrag }
+pass inet6 proto icmp6 icmp6-type { unreach, timex, paramprob, neighbrsol }
+
+# 全局：防伪造
+antispoof quick for { lo, $int_if, $ext_if }
+
+# 之后才是按接口的业务规则
+pass in on $ext_if proto tcp to $webserver port $webports</code></pre>
+    <p>注意“全局放行已建立状态”这条规则会覆盖很多细节：它让所有回程包通过，但也意味着新连接仍必须由前面的规则放行。若你把它写成 <code>pass from any to any</code> 而不带 <code>flags S/SA</code>，就等于全放行。</p>
+
+    <h3><span class="sn">9.5</span>复杂度：规则数量为什么会长成平方</h3>
+    <p>每增加一个接口/网段，就要考虑它与已有每个网段的关系：允许、拒绝、还是只允许回程。N 个区域的理论关系是 N×(N-1)。控制复杂度的手段不是“写得更快”，而是：按区域分组、用表和锚点表达“同类”、把默认拒绝作为唯一兜底、以及给每条规则写一句业务理由。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>结构</th><th>适合表达</th><th>不适合</th></tr></thead>
+        <tbody>
+          <tr><td>宏</td><td>接口名、端口集合</td><td>运行时变化的地址</td></tr>
+          <tr><td>表</td><td>大量地址、动态增删</td><td>复杂条件组合</td></tr>
+          <tr><td>锚点</td><td>动态子树、按用户/代理生成</td><td>静态的少量规则</td></tr>
+          <tr><td>标签</td><td>跨接口传递分类</td><td>替代明确的地址策略</td></tr>
+          <tr><td>接口组</td><td>按角色匹配多网卡</td><td>需要精确到单口的规则</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">桥接与锚点的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 桥接后在成员接口写规则。</b>包只在 <code>bridge0</code> 上被过滤一次。<b>2. 同时开 <code>pfil_bridge</code> 与 <code>pfil_member</code>。</b>同一包被过滤两次，规则与计数器都会翻倍。<b>3. 锚点放在 <code>block all</code> 之后却期待它放行。</b>包已经被拒绝，子树不会被执行。<b>4. 用 <code>anchor</code> 却不 <code>load anchor</code>。</b>空锚点什么也不做。<b>5. 只阻断私有地址而不记录。</b>你会失去“谁在伪造源地址”的线索。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch6a" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 6 · Turning the Tables / Adaptive Defense</div>
+    <h2><span class="num">10</span>让暴力破解付出时间成本</h2>
+    <p class="lede">静态规则只能回答“谁可以”。自适应防火墙（adaptive firewall）多回答一句：“谁刚刚做错了事，接下来一段时间不许再来。”</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 6 章前半：SSH 暴力破解的检测与封禁、自适应防火墙、OpenBSD 7.9 的 state/source limiter、用 <code>pfctl</code> 维护表、蜜罐与黑名单共享、blacklistd、endlessh，以及把攻击者丢进低带宽队列。</p>
+      <span class="tag">overload · table · limiter · honeypot</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">max-src-conn-rate</span><span class="chip">overload</span><span class="chip">flush global</span><span class="chip">pfctl -T</span><span class="chip">blacklistd</span><span class="chip">tarpit</span>
+    </div>
+    <p class="note"><b>原书小节</b> · Turning Away the Brutes · Responding to SSH Brute-Force Attacks · Setting Up an Adaptive Firewall · State and Source Limiters in OpenBSD 7.9 and Newer · Tidying Your Tables with pfctl · Stepping Up–Sharing Data, Acting as a Honeypot · Sharing Miscreant Data with Others · Creating a Honeypot: A Website Example · Managing Blacklists on FreeBSD with blacklistd · Diverting Miscreants to Minimal-Bandwidth Queues · Trapping Miscreants with endlessh</p>
+
+    <h3><span class="sn">10.1</span>暴力破解的形态与代价</h3>
+    <p>SSH 爆破通常不是“一个连接试很多密码”，而是“大量源地址、每个试几个”。它在日志里表现为大量 <code>Failed password</code>，在状态表里表现为大量短连接。单纯延长 <code>LoginGraceTime</code> 只能拖慢单个连接，挡不住分布式尝试。PF 的切入点是按源地址计数：单位时间内新建连接过多，就把源地址丢进一张“坏地址表”。</p>
+    <pre><code class="language-bash">table &lt;bruteforce&gt; persist counters
+block quick from &lt;bruteforce&gt;
+
+pass in on egress proto tcp to $mailservers port $mailports \
+    keep state (max-src-conn 15, max-src-conn-rate 5/3, \
+                overload &lt;bruteforce&gt; flush global)
+pass in on egress proto tcp to port ssh \
+    keep state (max-src-conn 3, max-src-conn-rate 3/60, \
+                overload &lt;bruteforce&gt; flush global)</code></pre>
+    <p>参数含义：<code>max-src-conn 15</code> 是同一源地址同时存在的连接上限；<code>max-src-conn-rate 5/3</code> 是“3 秒内最多 5 个新连接”；<code>overload &lt;bruteforce&gt;</code> 是超限后把源地址加入表；<code>flush global</code> 是同时清掉该源地址已有的全部状态，立刻断开。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">机制</span><span class="thm-title">overload 不是“限速”，是“拉黑”</span></div>
+      <div class="thm-body">
+        <p>超过阈值后，PF 不会让连接变慢，而是把源地址写进表，之后由 <code>block quick from &lt;bruteforce&gt;</code> 直接拒绝。表项默认不会自动过期，除非你显式清理或用 <code>-T expire</code>。这意味着误封会一直持续，必须配合观察与过期策略。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">10.2</span>OpenBSD 7.9 的 state / source limiter</h3>
+    <p>7.9 引入了可命名的 limiter，可以把“限制”从单条规则里抽出来，应用到一组规则或一组来源。两者都有名字与 1–255 的 ID。source limiter 按网段聚合，state limiter 限制某类规则创建的状态总数。</p>
+    <pre><code class="language-bash">mailservers = 192.0.2.25
+vwweb = 192.0.2.80
+
+source limiter "mailclients" id 25 entries 2500 limit 1500 rate 150/15 \
+    inet mask 16 inet6 mask 56
+state limiter "weakweb" id 80 limit 500 rate 10/20
+
+block
+pass in on egress proto tcp to $mailservers port $mailports \
+    source limiter "mailclients"
+pass in on egress proto tcp to $vwweb port $webports \
+    state limiter "weakweb"</code></pre>
+    <p>这解决了一个老问题：宏展开成多条规则后，每条规则各自计数，攻击者可以“每条规则试一点”绕过阈值。limiter 对整组规则统一计数。IPv6 场景尤其重要，因为单台主机可能轮换多个源地址。</p>
+
+    <h3><span class="sn">10.3</span>用 pfctl 维护表</h3>
+    <pre><code class="language-bash">$ doas pfctl -t bruteforce -T show
+$ doas pfctl -t bruteforce -T add 203.0.113.66
+$ doas pfctl -t bruteforce -T delete 203.0.113.66
+$ doas pfctl -t bruteforce -T test 203.0.113.66
+$ doas pfctl -t bruteforce -T flush
+$ doas pfctl -t bruteforce -T expire 86400     # 清理 24 小时未更新的项
+$ doas pfctl -t bruteforce -T replace -f /etc/bruteforce.list</code></pre>
+    <p>表项可以带计数器，配合 <code>pfctl -t bruteforce -T show -v</code> 看命中次数。定期把“长期未再出现”的地址清掉，避免表无限增长；把“反复出现”的地址升级到更长期的封禁列表。</p>
+
+    <h3><span class="sn">10.4</span>蜜罐与共享黑名单</h3>
+    <p>与其等攻击者敲门，不如主动布置“看起来有价值”的目标：一个假登录页、一个假 SSH、一个只记录不服务的 Web 路径。任何访问它的地址几乎不可能是正常用户。把这些地址写入表，再共享给合作方，就是蜜罐（honeypot）与黑名单共享。</p>
+    <pre><code class="language-bash">table &lt;web_brutes&gt; persist counters
+block quick from &lt;web_brutes&gt;
+
+# 正常站点：超过阈值就进表
+pass in on $ext_if proto tcp to $webserver port $webports \
+    keep state (max-src-conn-rate 20/60, overload &lt;web_brutes&gt; flush global)
+
+# 蜜罐路径：任何访问都进表（由 Web 服务器写日志，脚本导入）
+# /etc/pf.webhooks 由 cron 从日志生成
+$ doas pfctl -t web_brutes -T replace -f /etc/pf.webhooks</code></pre>
+    <p>更强的做法是把攻击者重定向到一个“抱歉页”或极慢的队列，而不是直接丢弃：你能观察他们，他们也在浪费时间。第 7 章会把“丢进 512 Kbit 队列”的写法补齐。</p>
+
+    <h3><span class="sn">10.5</span>blacklistd 与 endlessh</h3>
+    <p>FreeBSD 的 <code>blacklistd</code> 从 sshd、ftpd 等服务的失败日志里学习，自动把地址写入 PF 表；它比手写 <code>overload</code> 更贴近“服务层失败”，也更适合多服务统一封禁。配置在 <code>/etc/blacklistd.conf</code>，PF 侧只需要一张表与一条 block。</p>
+    <pre><code class="language-bash"># /etc/blacklistd.conf（示例）
+# adr/mask:port  type  proto  owner  name  nfail  disable
+ssh             stream  *      *      *     3      24h
+ftp             stream  *      *      *     3      24h
+
+# PF 侧
+table &lt;blacklist&gt; persist
+block quick from &lt;blacklist&gt;
+
+$ sudo service blacklistd enable
+$ sudo service blacklistd start
+$ sudo blacklistctl dump -a</code></pre>
+    <p><code>endlessh</code> 是另一种思路：监听 22 端口，缓慢发送无意义的 banner，让扫描器/爆破工具长时间挂起。它不替代 SSH，而是把“假 SSH”放在另一个地址或端口上，真实 SSH 只对白名单开放。这样攻击者的并发资源被消耗，你的日志也更干净。</p>
+
+    <h3><span class="sn">10.6</span>把攻击者丢进慢队列</h3>
+    <pre><code class="language-bash">queue smallpipe parent main bandwidth 512K
+
+pass inet proto tcp from &lt;bruteforce&gt; to port $tcp_services \
+    queue smallpipe
+pass inet proto tcp from &lt;bruteforce&gt; to port ssh \
+    queue smallpipe set prio 0</code></pre>
+    <p>直接 block 会让攻击者立刻换地址；把它放进 512 Kbit、最低优先级的队列，能拖慢其尝试速度，同时保留观察窗口。代价是队列与状态仍占用资源，所以要有上限（<code>qlimit</code>）与过期策略。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>目标</th><th>写法</th><th>注意</th></tr></thead>
+        <tbody>
+          <tr><td>建坏地址表</td><td><code>table &lt;bruteforce&gt; persist</code></td><td>不加 <code>persist</code> 会在重载后清空</td></tr>
+          <tr><td>封禁</td><td><code>block quick from &lt;bruteforce&gt;</code></td><td>放在放行规则之前更易读</td></tr>
+          <tr><td>触发条件</td><td><code>keep state (max-src-conn-rate 5/3, overload &lt;bruteforce&gt;)</code></td><td>阈值按 NAT 用户数评估</td></tr>
+          <tr><td>断开已有连接</td><td><code>flush global</code></td><td>会清掉该源所有状态</td></tr>
+          <tr><td>清理表</td><td><code>pfctl -t bruteforce -T expire 86400</code></td><td>避免无限增长</td></tr>
+          <tr><td>按组限流</td><td><code>source limiter "name" ...</code></td><td>OpenBSD 7.9+</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">自适应防御的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 阈值照抄别人的。</b>NAT 后面有 200 个用户时，<code>max-src-conn 15</code> 会误封整个办公室。<b>2. 表没有过期策略。</b>几个月后表里有几万条，查询变慢且误封难查。<b>3. 只 block 不 log。</b>你无法区分“攻击”与“配置错误的客户端”。<b>4. 把 <code>overload</code> 放在 <code>pass</code> 规则上却忘了 <code>keep state</code>。</b>没有状态就没有计数。<b>5. 用蜜罐表直接封整个 /24。</b>云厂商与 CDN 的地址段会误伤大量正常用户。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch6b" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 6 · spamd and Greylisting</div>
+    <h2><span class="num">11</span>spamd：用“等一会儿”过滤垃圾邮件</h2>
+    <p class="lede">灰名单（greylisting）赌的是垃圾邮件发送者不愿重试，而正常邮件服务器会重试。spamd 把这个赌注做成一个 SMTP 塔，让可疑连接在 25 端口上慢慢等。</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 6 章后半：spamd 的黑名单/灰名单两种模式、灰名单的工作原理、spamlogd 维护白名单、greytrapping、spamdb 管理、乱序 MX 检测、nospamd 例外、以及脚本化维护。</p>
+      <span class="tag">spamd · greylisting · spamdb · SMTP</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">greylisting</span><span class="chip">8025</span><span class="chip">spamdb</span><span class="chip">spamlogd</span><span class="chip">greytrap</span><span class="chip">nospamd</span>
+    </div>
+    <p class="note"><b>原书小节</b> · Giving Spammers a Hard Time with spamd · Analyzing Network-Level Behavior and Blacklisting · Greylisting: My Admin Told Me Not to Talk to Strangers · Tracking Your Real Mail Connections with spamlogd · Greytrapping · Managing Lists with spamdb · Detecting Out-of-Order MX Use · Handling Sites That Don’t Play Well with Greylisting · Scripted Maintenance for Your nospamd · Spam-Fighting Tips</p>
+
+    <h3><span class="sn">11.1</span>两种模式：黑名单与灰名单</h3>
+    <p><b>黑名单模式</b>（<code>spamd -b</code>）只处理已知坏地址：从 <code>spamd.conf</code> 抓取列表，填进 <code>&lt;spamd&gt;</code> 表，命中者被重定向到 spamd 的 8025 端口，收到一个“假 SMTP”响应后被拖住。<b>灰名单模式</b>（默认，OpenBSD 4.1+）对所有首次接触的发送方先返回临时失败，要求对方隔一段时间重试；重试成功才放行并加入白名单。</p>
+    <p>灰名单有效的依据是 RFC 5321 的发送策略：正常 MTA 必须排队并重试，重试间隔通常至少 30 分钟，放弃时间通常 4–5 天。垃圾邮件发送者追求“一次性投递”，不愿为每个收件人保留队列，于是被过滤掉。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">灰名单的三元组</span></div>
+      <div class="thm-body">
+        <p>spamd 记录（发送方 IP、发送方地址、收件人地址）三元组。首次见到：返回 4xx 临时失败并记录时间；在 <code>passtime</code> 之前重试：继续拒绝；在 <code>passtime</code> 之后、<code>greyexp</code> 之前重试：接受并写入白名单；超过 <code>greyexp</code> 未重试：记录过期，下次重新开始。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">11.2</span>灰名单模式的规则集</h3>
+    <pre><code class="language-bash">table &lt;spamd-white&gt; persist
+table &lt;nospamd&gt; persist file "/etc/mail/nospamd"
+
+# 所有 SMTP 先交给本机 spamd（8025）
+pass in log on egress proto tcp to port smtp \
+    rdr-to 127.0.0.1 port spamd
+
+# 已通过灰名单的发送方直接放行
+pass in log on egress proto tcp from &lt;spamd-white&gt; to port smtp
+
+# 例外站点：不经过 spamd
+pass in log on egress proto tcp from &lt;nospamd&gt; to port smtp
+
+# 出站邮件
+pass out log on egress proto tcp to port smtp</code></pre>
+    <p>FreeBSD 的等价写法把 <code>rdr-to</code> 换成 <code>rdr pass ... -&gt; 127.0.0.1 port spamd</code>。注意 <code>spamd</code> 在 <code>/etc/services</code> 里对应 8025；<code>rdr-to ... port spamd</code> 依赖这个服务名。</p>
+    <pre><code class="language-bash"># FreeBSD
+table &lt;spamd-white&gt; persist
+table &lt;nospamd&gt; persist file "/etc/mail/nospamd"
+rdr pass in log on egress proto tcp to port smtp \
+    -&gt; 127.0.0.1 port spamd
+pass in log on egress proto tcp from &lt;nospamd&gt; to port smtp
+pass in log on egress proto tcp from &lt;spamd-white&gt; to port smtp
+pass out log on egress proto tcp to port smtp</code></pre>
+
+    <h3><span class="sn">11.3</span>启动参数与时间参数</h3>
+    <pre><code class="language-bash"># OpenBSD /etc/rc.conf.local
+spamd_flags="-v -G 2:4:864"
+
+# FreeBSD /etc/rc.conf
+obspamd_enable="YES"
+obspamd_flags="-v -G 2:4:864"</code></pre>
+    <p><code>-G passtime:greyexp:whiteexp</code> 的单位分别是分钟、小时、小时。默认 <code>25:4:864</code>：25 分钟后重试才放行，灰名单记录保留 4 小时，白名单保留 864 小时（约 36 天）。示例把 <code>passtime</code> 降到 2 分钟，适合测试；生产环境不建议太短，否则垃圾邮件发送者也能“等两分钟再试”。</p>
+
+    <h3><span class="sn">11.4</span>spamlogd：白名单的自动维护者</h3>
+    <p>灰名单放行后，spamd 需要知道“这个连接确实成功投递了”，否则白名单不会建立。spamlogd 读取 PF 日志里的 SMTP 流量，观察成功的出站/入站连接，把对应地址加入白名单。它需要独立的 <code>pflog1</code>，避免与普通日志混在一起。</p>
+    <pre><code class="language-bash"># pf.conf：把 SMTP 日志送到 pflog1
+pass in log (to pflog1) on egress proto tcp to port smtp
+pass out log (to pflog1) on egress proto tcp from port smtp
+
+# 启用接口与守护进程
+$ doas ifconfig pflog1 up
+$ doas rcctl enable spamlogd
+$ doas rcctl set spamlogd flags "-l pflog1"
+$ doas rcctl start spamlogd</code></pre>
+    <p>如果没有启动 spamlogd，灰名单可能“只进不出”：邮件被反复延迟，白名单不增长。排障时先看 <code>pfctl -t spamd-white -T show</code> 是否有条目，再看 <code>tcpdump -n -i pflog1</code> 是否有 SMTP 日志。</p>
+
+    <h3><span class="sn">11.5</span>greytrapping：给垃圾邮件发送者挖坑</h3>
+    <p>在域名里布置一个“永远不该有人投递”的地址，把它加入 trap 列表。正常发件人不会写到它；垃圾邮件发送者从旧数据库/字典里拿到它，一投递就暴露。spamd 会把来源加入 <code>spamd-greytrap</code>，后续直接拖住。</p>
+    <pre><code class="language-bash">$ sudo spamdb -T -a "trap-8f3a@example.com"
+$ sudo spamdb -T -a "bounce-9c1d@example.com"
+$ sudo spamdb                 # 查看当前数据库
+$ sudo spamdb -a -t 192.0.2.66  # 手动把地址加入 greytrap 黑名单
+$ sudo spamdb -a 198.51.100.7   # 手动加入白名单
+$ sudo spamdb -d 198.51.100.7   # 删除白名单条目</code></pre>
+    <p>注意 trap 地址必须是“永远无效”的，且不要误用真实用户的地址。原书特别警告：把有用地址变成 trap，会在某天收到真实邮件时非常尴尬。</p>
+
+    <h3><span class="sn">11.6</span>乱序 MX 与 nospamd 例外</h3>
+    <p>正常邮件应该先尝试优先级最高的 MX。若某主机跳过主 MX 直接联系备份 MX，很可能是垃圾邮件发送者在试探。spamd 的 <code>-M 备份MX地址</code> 可以把这种行为直接加入 greytrap。</p>
+    <pre><code class="language-bash"># 主 MX 192.0.2.25，备份 192.0.2.26
+spamd_flags="-v -M 192.0.2.26"</code></pre>
+    <p>灰名单的代价是“首次投递延迟”。有些大站点有多个出站 SMTP，重试时可能换 IP；有些老系统根本不重试。用 <code>&lt;nospamd&gt;</code> 表给这些站点开白名单：</p>
+    <pre><code class="language-bash">table &lt;nospamd&gt; persist file "/etc/mail/nospamd"
+pass in log on egress proto tcp from &lt;nospamd&gt; to port smtp
+
+# FreeBSD 还需要阻止重定向先于放行生效
+no rdr proto tcp from &lt;nospamd&gt; to $mailservers port smtp</code></pre>
+    <p>维护 <code>nospamd</code> 的方式可以是手工编辑后 <code>pfctl -t nospamd -T replace -f /etc/mail/nospamd</code>，也可以从 SPF 记录、客户名单或工单系统生成。关键是把它当成“有审计的例外清单”，而不是随手追加。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>任务</th><th>命令/配置</th><th>要点</th></tr></thead>
+        <tbody>
+          <tr><td>重定向 SMTP</td><td><code>rdr-to 127.0.0.1 port spamd</code></td><td>spamd 监听 8025</td></tr>
+          <tr><td>白名单表</td><td><code>table &lt;spamd-white&gt; persist</code></td><td>由 spamd 维护</td></tr>
+          <tr><td>例外表</td><td><code>table &lt;nospamd&gt; persist file "..."</code></td><td>手工/脚本维护</td></tr>
+          <tr><td>时间参数</td><td><code>-G 25:4:864</code></td><td>分:小时:小时</td></tr>
+          <tr><td>添加 trap</td><td><code>spamdb -T -a addr</code></td><td>地址必须永久无效</td></tr>
+          <tr><td>查看数据库</td><td><code>spamdb</code></td><td>无参数即列出</td></tr>
+          <tr><td>乱序 MX</td><td><code>spamd -M 备份MX</code></td><td>先联系备份即入 trap</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">spamd 的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 重定向了 SMTP 却没有 <code>&lt;spamd-white&gt;</code> 放行规则。</b>所有邮件都被拖住，永远不进白名单。<b>2. 忘了启动 spamlogd。</b>白名单不增长，灰名单变成“永久拒绝”。<b>3. <code>passtime</code> 设得太短。</b>垃圾邮件发送者也能通过。生产环境建议 25 分钟量级。<b>4. trap 地址用了真实别名。</b>会误伤正常邮件。<b>5. 把 spamd 当反病毒。</b>它只做连接层拖延，不扫描内容。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch7a" class="chapter">
   <div class="wrap">
     <div class="sec-label">Chapter 7 · Traffic Shaping with Queues and Priorities</div>
-    <h2><span class="num">06</span>带宽不够时，先决定谁该等</h2>
-    <p class="lede"><code>prio</code> 只调“先后”，<code>queue</code> 才分配“多少”。前者在拥塞时让 ACK 和交互流量插队，后者用 HFSC 给每类流量一个有保障的份额。</p>
+    <h2><span class="num">12</span>带宽不够时，先决定谁该等</h2>
+    <p class="lede">流量整形（traffic shaping）不是“让网络变快”，而是“在容量有限时，按政策选择丢谁的包”。四个事实先记住：整形靠丢包、只在容量受限处有意义、只能控制出方向、不丢包就没有真正整形。</p>
     <div class="chap-intro">
-      <p>队列只对出方向有意义：你无法控制上游运营商怎么排队，只能控制包离开本机接口的顺序与速率。所有整形都应放在真正拥塞的那条链路——通常是外网口，而不是内网交换机。</p>
-      <span class="tag">HFSC · 优先级</span>
+      <p>本章覆盖第 7 章前半：常开优先级（prio）、队列与带宽分配、HFSC 的 min/max/burst、把队列接到规则上、从 ALTQ 迁移、以及 FQ-CoDel flows。OpenBSD 5.5+ 使用新队列系统；FreeBSD 仍可用 ALTQ 与 dummynet。</p>
+      <span class="tag">prio · queue · HFSC · FQ-CoDel</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">prio 0–7</span><span class="chip">set queue</span><span class="chip">HFSC</span><span class="chip">bandwidth / min / max</span><span class="chip">qlimit</span><span class="chip">ACK 加速</span>
+      <span class="chip hot">set prio</span><span class="chip">queue</span><span class="chip">HFSC</span><span class="chip">min / max</span><span class="chip">qlimit</span><span class="chip">flows</span>
     </div>
+    <p class="note"><b>原书小节</b> · Always-on Priority and Queues for Traffic Shaping · Shaping by Setting Traffic Priorities · Introducing Queues for Bandwidth Allocation · Using Queues to Handle Unwanted Traffic · Transitioning from ALTQ to Priorities and Queues · FQ-CoDel Flows for Fair Bandwidth Sharing</p>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">拥塞可以被主动制造</span></div>
-      <div class="thm-body">
-        <p>整形策略面对的不只是“带宽不够”，还有恶意占满：攻击者用大量并发连接把默认队列打满，让正常业务排队；或伪装成高优先级业务（如把流量塞进 DNS/VoIP 端口）骗取调度。队列不是准入控制，真正决定“谁能进来”的仍是过滤规则与状态限制。整形只负责在已放行的流量之间分配稀缺资源。</p>
-      </div>
-    </div>
+    <h3><span class="sn">12.1</span>优先级：不建队列也能做的第一层整形</h3>
+    <p>OpenBSD 5.0 起，每条 <code>pass</code>/<code>match</code> 规则都可以设置 0–7 的优先级，0 最低、7 最高，默认 3。它不是“保证带宽”，而是“拥塞时谁先被服务”。Carp 等管理协议默认 6；未分类流量默认 3。</p>
+    <pre><code class="language-bash"># SSH 交互优先
+pass proto tcp to port ssh set prio 7
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">优先级与队列</span></div>
-      <div class="thm-body">
-        <p><b>优先级</b>范围 0–7，数字越大越优先；未显式分类的流量默认 3，CARP 等管理协议默认 6。<b>队列</b>是接口上的带宽容器，可嵌套成树；<code>bandwidth</code> 是拥塞时的目标速率，<code>min</code>/<code>max</code> 是硬性下限/上限，<code>burst</code> 允许短时超额，<code>qlimit</code> 是等待队列长度。HFSC 只允许把流量分配到叶子队列（没有子队列的节点）。</p>
-      </div>
-    </div>
+# Web 与 DNS/NTP 分层
+pass proto tcp to port { www https } set prio 7
+pass proto { udp tcp } to port { domain ntp } set prio 6
+
+# 用 match 把“分类”和“放行”分开
+match proto tcp to port { www https } set prio 7
+match proto { udp tcp } to port { domain ntp } set prio 6
+
+# VoIP
+voip_ports = "{ 2027 4569 5036 5060 10000:20000 }"
+match proto udp to port $voip_ports set prio 7</code></pre>
+    <p>默认值不是随便定的：管理协议（CARP、SSH 等）拿到较高优先级，能保证你在拥塞时仍可登录与切换。把所有业务都设成 7 等于没有优先级，只是把默认队列整体抬高。</p>
+
+    <h3><span class="sn">12.2</span>双优先级技巧：让 ACK 先走</h3>
+    <p>TCP 的吞吐依赖 ACK 及时返回。默认 FIFO 下，ACK 会排在大数据包后面；链路拥塞时，发送方误以为丢包而重传，有效带宽被吃掉。给规则写两个优先级：第一个给普通数据，第二个给 ACK 与低延迟 ToS 的包。</p>
+    <pre><code class="language-bash">match out on egress set prio (5, 6)</code></pre>
+    <p>这条规则不区分业务，却常能显著改善双向传输的体验：ACK 走 6，普通数据走 5。它适合放在规则集前部作为“全局微调”，再叠加按业务的分类。</p>
 
     <div class="intuition">
-      <div class="ih">为什么两个优先级能加速 TCP</div>
-      <p>TCP 每发一批数据都等 ACK。ACK 包很小，但在 FIFO 里会和大量数据包一起排队；拥塞时 ACK 迟到会触发重传，实际吞吐反而下降。给同一类流量写 <code>set prio (5, 6)</code>：普通数据用 5，ACK 用 6。ACK 先走，发送端更快滑动窗口，整条连接都变快——这是“不增加带宽也能提速”的少数合法手段。</p>
+      <div class="ih">为什么优先级能“提速”</div>
+      <p>总带宽没变，但排队时间变了。ACK 早到 → 发送窗口推进更快 → 丢包误判减少 → 重传减少。你优化的是“带宽利用率”，不是物理链路。</p>
     </div>
 
-    <h3><span class="sn">6.1</span>一个可用的整形骨架</h3>
-    <pre><code class="language-bash"># /etc/pf.conf —— 20M 外网链路上的队列
-ext_if = "em0"
+    <h3><span class="sn">12.3</span>队列：把带宽切成有名字的份额</h3>
+    <p>队列定义在接口上，按树状组织：根队列拥有总带宽，子队列按 <code>bandwidth</code> 分配；<code>default</code> 子队列接收未分类流量。队列只对出方向生效；若要控制入方向，只能在 upstream 设备上做，或用 <code>altq</code>/<code>dnpipe</code> 的入队技巧（本质仍是出方向整形）。</p>
+    <pre><code class="language-bash">queue main on $ext_if bandwidth 20M
+      queue defq parent main bandwidth 3600K default
+      queue ftp  parent main bandwidth 2000K
+      queue udp  parent main bandwidth 6000K
+      queue web  parent main bandwidth 4000K
+      queue ssh  parent main bandwidth 4000K
+        queue ssh_interactive parent ssh bandwidth 800K
+        queue ssh_bulk        parent ssh bandwidth 3200K
+      queue icmp parent main bandwidth 400K</code></pre>
+    <p>这里的数字是“承诺份额”，不是硬上限。总带宽 20M，子队列相加接近 20M；当某个队列空闲时，其他队列可以使用剩余容量（取决于调度算法）。<code>defq</code> 是默认队列，任何匹配了 <code>pass</code> 但没有显式 <code>queue</code> 的流量都落进去。</p>
 
-queue rootq on $ext_if bandwidth 20M
-    queue qdef parent rootq bandwidth 9M default
-    queue qweb parent rootq bandwidth 8M min 4M max 18M
-    queue qpri parent rootq bandwidth 600K
-    queue qdns parent rootq bandwidth 200K burst 600K for 3000ms
+    <h3><span class="sn">12.4</span>把流量接到队列上</h3>
+    <pre><code class="language-bash">set skip on { lo, $int_if }
 
-match out on $ext_if proto tcp to port { www, https } \
-      set queue (qweb, qpri) set prio (5, 6)
-match out on $ext_if proto { tcp, udp } to port domain \
-      set queue (qdns, qpri) set prio (6, 7)
+pass log quick on $ext_if proto tcp to port ssh \
+    queue (ssh_bulk, ssh_interactive) set prio (5,7)
+pass in quick on $ext_if proto tcp to port ftp queue ftp
+pass in quick on $ext_if proto tcp to port www queue web
+pass out on $ext_if proto udp queue udp
+pass out on $ext_if proto icmp queue icmp
+pass out on $ext_if proto tcp from $localnet to port $client_out</code></pre>
+    <p><code>queue (a, b)</code> 的第二个队列用于 ACK/低延迟包；<code>set prio (5,7)</code> 与之配套。最后一条 catch-all 没有 <code>queue</code>，因此落进 <code>defq</code>。若改用 <code>match</code> 做队列分配，则不需要 catch-all：未匹配的放行流量自动进默认队列。</p>
+    <pre><code class="language-bash">match log quick on $ext_if proto tcp to port ssh \
+    queue (ssh_bulk, ssh_interactive) set prio (5,7)
+match in quick on $ext_if proto tcp to port ftp queue ftp
+match in quick on $ext_if proto tcp to port www queue web
+match out on $ext_if proto udp queue udp
+match out on $ext_if proto icmp queue icmp</code></pre>
+
+    <h3><span class="sn">12.5</span>HFSC：最小值、最大值与突发</h3>
+    <p>固定份额太死。HFSC（Hierarchical Fair Service Curve）允许给每个队列设 <code>min</code>（保证下限）、<code>max</code>（硬上限）、<code>bandwidth</code>（拥塞时的分配）与 <code>burst</code>（短时突发）。这让“保证关键业务、又不浪费空闲带宽”成为可能。</p>
+    <pre><code class="language-bash">queue rootq on $ext_if bandwidth 20M
+      queue main parent rootq bandwidth 20479K min 1M max 20479K qlimit 100
+           queue qdef  parent main bandwidth 9600K min 6000K max 18M default
+           queue qweb  parent main bandwidth 9600K min 6000K max 18M
+           queue qpri  parent main bandwidth 700K  min 100K max 1200K
+           queue qdns  parent main bandwidth 200K  min 12K burst 600K for 3000ms
+      queue spamd parent rootq bandwidth 1K min 0K max 1K qlimit 300</code></pre>
+    <p><code>qlimit</code> 是队列可积压的包数，默认 50。调大能减少突发丢包，但会增加延迟；调小则更早丢包、延迟更低。对 DNS 这类“短请求、要快”的流量，小 <code>qlimit</code> 加短 <code>burst</code> 通常比大缓冲更合适。<code>burst 600K for 3000ms</code> 表示前 3 秒可突发到 600K，之后回落到 <code>bandwidth</code>/<code>min</code>。</p>
+
+    <h3><span class="sn">12.6</span>队列分配与优先级一起用</h3>
+    <pre><code class="language-bash">match out on $ext_if proto tcp to port { www https } \
+    set queue (qweb, qpri) set prio (5,6)
+match out on $ext_if proto { tcp udp } to port domain \
+    set queue (qdns, qpri) set prio (6,7)
 match out on $ext_if proto icmp \
-      set queue (qdns, qpri) set prio (6, 7)
-</code></pre>
-    <p><code>qdef</code> 标了 <code>default</code>：任何没有被 <code>set queue</code> 指定的放行流量都会落到这里，所以不必为“其他流量”再写一条兜底规则。DNS 队列很小，但给了 <code>burst</code>：解析通常在连接初期突发完成，短时超额比长期占用更合理。</p>
+    set queue (qdns, qpri) set prio (6,7)
 
-    <div class="intuition">
-      <div class="ih">预期行为</div>
-      <p>链路空闲时，队列几乎不起作用，流量按接口速率通过。链路打满时：<code>qweb</code> 至少拿到 4M、最多 18M；交互 SSH 的 ACK 在 <code>qpri</code> 中以优先级 6 先出队；DNS 查询即使在小队列里也不会被大文件传输饿死。超过 <code>qlimit</code> 的包会被丢弃，这是整形而非“保证不丢”。</p>
-    </div>
+# 给 spamd 最低优先级、最小队列
+pass in log on egress proto tcp to port smtp \
+    rdr-to 127.0.0.1 port spamd set queue spamd set prio 0</code></pre>
+    <p>注意 <code>set queue</code> 与 <code>queue</code> 的区别：前者用于 <code>match</code> 规则（只做动作），后者用于 <code>pass</code> 规则。混用会报语法错误或行为不符预期。</p>
 
-    <pre><code class="language-bash">$ doas pfctl -sq                 # 查看队列定义与统计
-$ doas systat queues             # 实时观察各队列 BW/PKTS/DROP
-$ doas pfctl -vvsr | grep -E 'queue|prio'
-$ doas pfctl -nf /etc/pf.conf    # 先确认队列树没有引用错误
-</code></pre>
+    <h3><span class="sn">12.7</span>从 ALTQ 迁移与 FQ-CoDel</h3>
+    <p>ALTQ 的 <code>altq on ... priq/hfsc/cbq</code> 在 OpenBSD 5.6 后已移除；FreeBSD 仍支持。迁移时把“接口 + 调度器 + 子队列”改写为“根队列 + 子队列 + <code>bandwidth</code>/<code>min</code>/<code>max</code>”，把 <code>queue (a, b)</code> 的语义保留。ALTQ 的 <code>priority</code> 关键字对应新系统的 <code>set prio</code>，但优先级是全局 0–7，不再是每队列一个数字。</p>
+    <pre><code class="language-bash"># FQ-CoDel：按流公平分享，抗 bufferbloat
+queue outq on bge0 flows 1024 qlimit 1024 default
+
+# 若实际带宽小于接口标称，用 HFSC 包住并给出真实带宽
+queue outq on bge0 bandwidth 18M max 18M flows 1024 qlimit 1024 default</code></pre>
+    <p><code>flows</code> 应设为“预期的并发活跃连接数”。太小会让多连接应用互相挤占；太大则每个流分到的份额过小、调度开销上升。FQ-CoDel 适合“不想手工分类，只想让每个流公平”的出口；对需要保证关键业务带宽的场景，仍应使用 HFSC 的 <code>min</code>。</p>
 
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>参数</th><th>含义</th><th>实践建议</th></tr></thead>
+        <thead><tr><th>目标</th><th>写法</th><th>要点</th></tr></thead>
         <tbody>
-          <tr><td><code>bandwidth</code></td><td>拥塞时的目标速率</td><td>略低于运营商实测上行</td></tr>
-          <tr><td><code>min</code> / <code>max</code></td><td>保障下限 / 硬上限</td><td>给关键业务保底，给批量限幅</td></tr>
-          <tr><td><code>burst ... for</code></td><td>短时超额及持续时间</td><td>适合 DNS、连接建立阶段</td></tr>
-          <tr><td><code>qlimit</code></td><td>等待队列长度</td><td>调大减丢包但增延迟</td></tr>
-          <tr><td><code>default</code></td><td>未分类流量的归宿</td><td>每层树只设一个</td></tr>
-          <tr><td><code>set prio (a,b)</code></td><td>数据 / ACK 两个优先级</td><td>ACK 比数据高一级</td></tr>
+          <tr><td>设优先级</td><td><code>set prio 7</code></td><td>0–7，默认 3</td></tr>
+          <tr><td>ACK 加速</td><td><code>set prio (5,6)</code></td><td>第二个给 ACK/低延迟</td></tr>
+          <tr><td>根队列</td><td><code>queue main on $ext_if bandwidth 20M</code></td><td>只影响出方向</td></tr>
+          <tr><td>默认队列</td><td><code>... default</code></td><td>未分类流量落这里</td></tr>
+          <tr><td>保证下限</td><td><code>min 6M</code></td><td>拥塞时的保底</td></tr>
+          <tr><td>硬上限</td><td><code>max 18M</code></td><td>防止某类吃满</td></tr>
+          <tr><td>短时突发</td><td><code>burst 600K for 3000ms</code></td><td>之后回落</td></tr>
+          <tr><td>按流公平</td><td><code>flows 1024</code></td><td>FQ-CoDel</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">整形失败通常不是算法问题</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">整形的五个坑</span></div>
       <div class="thm-body">
-        <p><b>1. 在错误的接口上整形。</b>只控制出方向；想限制下载，要在内网口对发往客户端的方向整形，或在上游做。<b>2. 子队列带宽之和超过父队列。</b>HFSC 会让实际分配变得不可预测。<b>3. 把流量分配到非叶子队列。</b>有子队列的节点不能直接挂流量。<b>4. 以为 <code>prio</code> 会给带宽。</b>它只影响调度顺序；没有队列时，高优先级也可能被物理链路限制。<b>5. 忘了 ACK 方向。</b>双向饱和时，上行 ACK 被堵同样会拖慢下行。</p>
+        <p><b>1. 想在入方向整形。</b>PF 的队列只控制出方向；入方向只能在 upstream 或中间设备做。<b>2. 把所有流量都设成 prio 7。</b>等于没有优先级。<b>3. 队列带宽加起来超过物理带宽。</b>拥塞时份额失真，<code>max</code> 也挡不住。<b>4. 只写队列不接规则。</b>流量仍走默认队列，整形看不出效果。<b>5. 把 <code>qlimit</code> 调得很大求“不丢包”。</b>结果是延迟暴涨，交互业务更难受。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ch7" class="chapter">
+<section id="ch7b" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 8 · Redundancy and Resource Availability / CARP and pfsync</div>
-    <h2><span class="num">07</span>让备用防火墙在主人沉默时接管</h2>
-    <p class="lede">CARP 提供漂移的虚拟 IP 和主备选举，pfsync 把状态表复制到对端。两者合起来，才让“切换”不等于“所有连接重置”。</p>
+    <div class="sec-label">Chapter 7 · ALTQ and Legacy Queues</div>
+    <h2><span class="num">13</span>ALTQ：旧世界的调度器，仍值得读懂</h2>
+    <p class="lede">OpenBSD 已经移除 ALTQ，但 FreeBSD 仍在用，且大量旧文档、旧配置以它为模板。理解 PRIQ/HFSC/CBQ 的差异，能让你在迁移时知道“原来那条规则想表达什么”。</p>
     <div class="chap-intro">
-      <p>单台防火墙是单点故障。CARP 让两台机器共享一组虚拟地址，pfsync 让备用机知道当前有哪些连接。切换时间由通告间隔决定，切换后的体验则由状态同步质量决定。</p>
-      <span class="tag">高可用 · 状态同步</span>
+      <p>本章覆盖第 7 章后半：ALTQ 的基本概念、队列调度器（priq/hfsc/cbq）、ALTQ 配置、优先级队列、用 match 分配队列、CBQ 带宽分配、HFSC 整形器、DMZ 队列、以及用 ALTQ 处理不受欢迎的流量。最后给出全章结论。</p>
+      <span class="tag">ALTQ · PRIQ · HFSC · CBQ</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">CARP</span><span class="chip">vhid</span><span class="chip">advskew</span><span class="chip">preempt</span><span class="chip">pfsync</span><span class="chip">demotion</span>
+      <span class="chip hot">altq on</span><span class="chip">priq</span><span class="chip">hfsc</span><span class="chip">cbq</span><span class="chip">priority</span><span class="chip">FreeBSD only</span>
     </div>
+    <p class="note"><b>原书小节</b> · Directing Traffic with ALTQ · Basic ALTQ Concepts · Queue Schedulers, aka Queue Disciplines · ALTQ Set Up · Priority-Based Queues · Using ALTQ Priority Queues to Improve Performance · Using a match Rule for Queue Assignment · Using Class-Based Bandwidth Allocation for Small Networks · A Basic HFSC Traffic Shaper · Queuing for Servers in a DMZ · Using ALTQ to Handle Unwanted Traffic · Conclusion: Traffic Shaping for Fun and Perhaps Even Profit</p>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">虚拟地址与状态复制</span></div>
-      <div class="thm-body">
-        <p><b>CARP</b> 让多台主机共享一个虚拟 IP，通过组播通告竞选 MASTER；<code>vhid</code> 标识虚拟主机组，<code>advbase</code> 是通告基础间隔，<code>advskew</code> 是“谦让值”，越大越不优先。<b>pfsync</b> 是专用虚拟接口，把 PF 状态表项增量复制到对端；<code>syncpeer</code> 指定对端地址，<code>syncdev</code> 指定承载接口。</p>
-      </div>
-    </div>
-
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">HA 链路本身也是攻击面</span></div>
-      <div class="thm-body">
-        <p>CARP 通告没有认证时，同广播域内任何人都能伪造更高优先级的通告，抢走虚拟 IP。pfsync 默认明文传输完整状态信息，泄露内网连接元数据。生产环境应给 CARP 配置共享密钥，把 pfsync 放在独立网段、VLAN 或 IPsec 隧道里，并限制谁能向该网段发包。</p>
-      </div>
-    </div>
-
-    <h3><span class="sn">7.1</span>两台机器的差异只有 advskew</h3>
-    <pre><code class="language-bash"># 主防火墙（初始 MASTER）
-$ doas ifconfig carp0 203.0.113.10 vhid 10 pass 'correct horse battery staple'
-$ doas ifconfig carp1 192.168.1.1  vhid 20 pass 'correct horse battery staple'
-$ doas sysctl net.inet.carp.preempt=1
-$ doas ifconfig pfsync0 syncdev em2 up
-$ doas ifconfig pfsync0 syncpeer 10.0.12.2
-
-# 备防火墙：同样的 vhid/密码，加 advskew 100
-$ doas ifconfig carp0 203.0.113.10 vhid 10 advskew 100 pass 'correct horse battery staple'
-$ doas ifconfig carp1 192.168.1.1  vhid 20 advskew 100 pass 'correct horse battery staple'
-$ doas sysctl net.inet.carp.preempt=1
-$ doas ifconfig pfsync0 syncdev em2 up
-$ doas ifconfig pfsync0 syncpeer 10.0.12.1
-</code></pre>
-    <p><code>preempt=1</code> 必须两端一致：它让同一台机器上的所有 CARP 接口一起切换，避免“外网口已切、内网口没切”的半主状态。切换时还要让 PF 放行 CARP 与 pfsync 本身：</p>
-    <pre><code class="language-bash"># pf.conf 片段
-sync_if = "em2"
-pass on $sync_if proto pfsync
-pass inet proto carp
-</code></pre>
-
-    <div class="intuition">
-      <div class="ih">预期行为</div>
-      <p>正常情况下，主防火墙的 <code>ifconfig carp0</code> 显示 <code>carp: MASTER</code>，备用机显示 <code>BACKUP</code>。主防火墙停止通告后，备用机在 <code>advbase + advskew/256</code> 秒内接管虚拟 IP。若 pfsync 正常，已建立的 SSH/TCP 连接大多能继续，因为备用机已有状态；若状态未同步，连接会因无状态而被丢弃或重置。</p>
-    </div>
-
-    <pre><code class="language-bash">$ doas ifconfig carp0
-$ doas ifconfig carp0 | grep carp:
-$ sysctl net.inet.carp
-$ doas ifconfig pfsync0
-$ doas tcpdump -ni em2 proto pfsync
-$ doas pfctl -ss | wc -l       # 两台机器上对比状态数
-</code></pre>
+    <h3><span class="sn">13.1</span>ALTQ 的三种调度器</h3>
+    <p><b>PRIQ</b>（priority queue）只按优先级服务：高优先级队列不空，低优先级就等着。简单、可预测，但低优先级可能被饿死。<b>CBQ</b>（class-based queueing）按“类”分配带宽比例，适合“给每个部门/服务固定份额”。<b>HFSC</b>（hierarchical fair service curve）同时支持保证下限、硬上限与延迟，是三者中最灵活、也最难调的。</p>
 
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>参数/状态</th><th>作用</th><th>注意</th></tr></thead>
+        <thead><tr><th>调度器</th><th>核心保证</th><th>适合</th><th>风险</th></tr></thead>
         <tbody>
-          <tr><td><code>vhid</code></td><td>虚拟主机组 ID（8 位）</td><td>同一广播域必须唯一，冲突极难排查</td></tr>
-          <tr><td><code>advbase</code> / <code>advskew</code></td><td>通告间隔 / 谦让值</td><td>备用机 advskew 更大</td></tr>
-          <tr><td><code>preempt</code></td><td>整机接口联动切换</td><td>两端必须相同</td></tr>
-          <tr><td><code>demotion</code></td><td>就绪度计数</td><td>越低越优先接管</td></tr>
-          <tr><td><code>syncpeer</code></td><td>pfsync 对端</td><td>建议点对点专用链路</td></tr>
-          <tr><td><code>syncdev</code></td><td>承载同步的接口</td><td>不要与业务流量混跑</td></tr>
+          <tr><td>priq</td><td>严格优先级</td><td>少量关键业务 + 其余</td><td>低优先级饿死</td></tr>
+          <tr><td>cbq</td><td>按类带宽比例</td><td>固定份额分配</td><td>空闲带宽利用不充分</td></tr>
+          <tr><td>hfsc</td><td>min/max/延迟</td><td>复杂出口、DMZ</td><td>参数难调，易过度设计</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">“切过去了但网断了”</span></div>
+    <h3><span class="sn">13.2</span>PRIQ：两条队列解决 80% 问题</h3>
+    <pre><code class="language-bash"># FreeBSD 语法
+altq on $ext_if priq bandwidth 100Kb queue { q_pri, q_def }
+queue q_pri priority 7
+queue q_def priority 1 default
+
+pass out on $ext_if proto tcp from $ext_if queue (q_def, q_pri)
+pass in  on $ext_if proto tcp to   $ext_if queue (q_def, q_pri)</code></pre>
+    <p><code>queue (q_def, q_pri)</code> 的第二个队列用于 ACK/低延迟包，作用与新系统的双优先级技巧相同。PRIQ 的优点是“你几乎不用算带宽”：只要高优先级队列不被打满，交互流量就能一直插队。</p>
+
+    <h3><span class="sn">13.3</span>用 match 分配队列</h3>
+    <p>ALTQ 也支持把“过滤”和“队列分配”分开。用 <code>match</code> 分配队列后，<code>pass</code> 规则只负责放行，配置更清晰，也更容易在多个接口复用。</p>
+    <pre><code class="language-bash">altq on $ext_if priq bandwidth 20M queue { q_pri, q_web, q_def }
+queue q_pri priority 7
+queue q_web priority 4
+queue q_def priority 1 default
+
+match out on $ext_if proto tcp to port { www https } queue q_web
+match out on $ext_if proto tcp to port ssh queue q_pri
+pass out on $ext_if from $localnet to any</code></pre>
+
+    <h3><span class="sn">13.4</span>CBQ：给小网络分固定份额</h3>
+    <pre><code class="language-bash">altq on $ext_if cbq bandwidth 2Mb queue { std, bulk }
+queue std  bandwidth 1200Kb cbq(default)
+queue bulk bandwidth 600Kb cbq(borrow)
+
+pass out on $ext_if proto tcp to port { http https } queue std
+pass out on $ext_if proto tcp to port { ftp ssh } queue bulk</code></pre>
+    <p><code>cbq(default)</code> 标记默认类，<code>cbq(borrow)</code> 允许空闲时借用其他类的带宽。CBQ 的直觉是“预算制”：每个类有基础额度，忙时按额度，闲时可以借。它适合“部门/租户”模型，不适合“单个应用要低延迟”的模型。</p>
+
+    <h3><span class="sn">13.5</span>HFSC：DMZ 与多服务出口</h3>
+    <pre><code class="language-bash">altq on $ext_if hfsc bandwidth 20Mb queue { ext_web, ext_mail, ext_def }
+queue ext_web  bandwidth 8Mb  qlimit 50
+queue ext_mail bandwidth 4Mb  qlimit 50
+queue ext_def  bandwidth 8Mb  qlimit 50 default
+
+pass in on $ext_if proto tcp to $webserver port $webports queue ext_web
+pass in log on $ext_if proto tcp to $mailserver port smtp queue ext_mail
+pass out on $ext_if from $mailserver to port smtp queue ext_mail
+pass out on $ext_if from $localnet to any queue ext_def</code></pre>
+    <p>DMZ 场景的关键是“入站请求的响应走哪个队列”。请求从 <code>$ext_if</code> 进入，响应从 <code>$ext_if</code> 出去；整形发生在出方向，因此要给“出站响应”分配队列，而不是只给入站请求分配。上例中 web 的响应由第一条规则的 <code>queue ext_web</code> 覆盖（PF 的状态会记住队列），邮件则显式给出站方向。</p>
+
+    <h3><span class="sn">13.6</span>用 ALTQ 处理不受欢迎的流量</h3>
+    <pre><code class="language-bash">altq on $ext_if priq bandwidth 20M queue { q_pri, q_def, q_punish }
+queue q_pri    priority 7
+queue q_def    priority 3 default
+queue q_punish priority 0 bandwidth 1Kb qlimit 300
+
+pass in quick on $ext_if proto tcp from &lt;bruteforce&gt; to any queue q_punish
+pass in quick on $ext_if proto tcp to port ssh queue q_pri</code></pre>
+    <p>把攻击者放进 1 Kbit、最低优先级的队列，比直接阻断更“耗时”：对方仍能连上，但每个交互都要等。代价是被惩罚的连接仍占状态与队列槽位，必须用 <code>qlimit</code> 封顶，并配合表过期。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">迁移要点</span><span class="thm-title">ALTQ → 新队列系统的映射</span></div>
       <div class="thm-body">
-        <p><b>1. vhid 冲突。</b>同网段两台无关设备用了同一个 vhid，会出现随机抢占和 MAC 抖动。<b>2. 只同步状态，不同步 NAT 表。</b>pfsync 会带 NAT 状态，但前提是两端的 NAT 规则一致；规则版本不一致时，状态会指向错误地址。<b>3. pfsync 走公网。</b>状态信息明文可读，应加 IPsec 或独立链路。<b>4. 备用机没有 <code>preempt</code>。</b>主设备恢复后不会自动抢回，或者只切一半接口。<b>5. 没有演练。</b>CARP 切换必须实际拔线/关机测试，不能只看 <code>ifconfig</code> 状态。</p>
+        <p><code>altq on $if priq bandwidth X queue {a,b}</code> → <code>queue root on $if bandwidth X</code> + 子队列；<code>queue a priority 7</code> → 在规则上 <code>set prio 7</code>（优先级是全局的，不再属于队列）；<code>cbq(default)</code> → 子队列 <code>default</code>；<code>bandwidth</code>/<code>cbq(borrow)</code> → <code>bandwidth</code>/<code>min</code>/<code>max</code>。迁移后务必用 <code>pfctl -sd</code> 与真实流量验证，而不是只看语法通过。</p>
       </div>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">ALTQ 的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 在 OpenBSD 5.6+ 上照抄 ALTQ 配置。</b>语法已移除，<code>pfctl -nf</code> 会直接报错。<b>2. 网卡不支持 ALTQ。</b>FreeBSD 上并非所有驱动都支持，需查手册。<b>3. priq 低优先级队列被饿死。</b>高优先级流量持续占满时，低优先级永远轮不到。<b>4. 只给入站请求分配队列。</b>响应走另一个方向，整形不生效。<b>5. 队列带宽总和超过物理带宽。</b>调度器按比例缩放，实际份额与预期不符。</p>
+      </div>
+    </div>
+
+    <div class="intuition">
+      <div class="ih">全章结论</div>
+      <p>先测量，再分类；先保证关键业务的“下限”，再谈“上限”；先用手工优先级解决 80% 的拥塞，再用 HFSC/FQ-CoDel 处理剩余的长尾。整形不是越复杂越好，而是“你能解释每个队列为什么存在”。</p>
     </div>
   </div>
 </section>
 
 <section id="ch8" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 4–5 · VPN and Encapsulation</div>
-    <h2><span class="num">08</span>隧道不是绕过防火墙，而是换一层头</h2>
-    <p class="lede">VPN 的流量仍然经过 PF，只是从“外层加密包”变成“内层明文包”。你必须在正确的层上过滤，否则要么放行过多，要么把隧道本身挡死。</p>
+    <div class="sec-label">Chapter 8 · Redundancy and Resource Availability</div>
+    <h2><span class="num">14</span>让备用防火墙在主人沉默时接管</h2>
+    <p class="lede">高可用（CARP）解决“机器倒下”，状态同步（pfsync）解决“接管后连接还在”。只做前者，切换会断所有连接；只做后者，没有 VIP 流量根本过不来。</p>
     <div class="chap-intro">
-      <p>无论是 SSH 端口转发、IPsec 还是别的封装，PF 只认它看到的包头。外层看 UDP 500/4500 与 ESP，内层在 <code>enc0</code> 上才可见。把两层搞混，是 VPN 防火墙规则最常见的错误。</p>
-      <span class="tag">IPsec · enc0 · 分层过滤</span>
+      <p>本章覆盖第 8 章全部：冗余网关的项目规格、CARP 接口与参数、pfsync 状态同步、冗余规则集、以及用 CARP 做负载均衡。配置分布在 <code>ifconfig</code>、<code>sysctl</code>、<code>hostname.*</code> 与 <code>pf.conf</code> 四处。</p>
+      <span class="tag">CARP · pfsync · failover</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">IKE 500/4500</span><span class="chip">ESP (proto 50)</span><span class="chip">enc0</span><span class="chip">if-bound</span><span class="chip">NAT-T</span><span class="chip">MTU</span>
+      <span class="chip hot">vhid</span><span class="chip">advskew</span><span class="chip">preempt</span><span class="chip">pfsync0</span><span class="chip">no-sync</span><span class="chip">carpnodes</span>
     </div>
+    <p class="note"><b>原书小节</b> · Redundancy and Failover: CARP and pfsync · The Project Specification: A Redundant Pair of Gateways · CARP Setup · Synchronized States: Adding pfsync · The Ruleset · CARP for Load Balancing · Robustness and Resilience Covered, We Move on to Observing and Measuring</p>
+
+    <h3><span class="sn">14.1</span>项目规格：先定义“接管”意味着什么</h3>
+    <p>一对网关，共享一个虚拟 IP（VIP）。正常时 master 持有 VIP 并处理流量，backup 只发 CARP 通告；master 沉默超过阈值，backup 接管 VIP。要让“接管”对用户透明，还需要：两台机器的规则集一致、状态表同步、ARP 能更新、以及 NAT/队列在上游/下游的行为一致。</p>
+    <p>原书用两个网段举例：外网 <code>192.0.2.0/24</code>，内网 <code>192.168.12.0/24</code>。master 的物理地址是 <code>.17</code>，backup 是 <code>.18</code>，VIP 是 <code>.19</code>。这个“物理地址 + VIP”分离是所有冗余配置的基础。</p>
+
+    <h3><span class="sn">14.2</span>CARP 接口：vhid 是广播域内唯一的 8 位 ID</h3>
+    <pre><code class="language-bash"># OpenBSD：master
+$ doas ifconfig carp0 192.0.2.19 vhid 1
+$ doas ifconfig carp1 192.168.1.1 vhid 2
+
+# OpenBSD：backup（多一个 advskew，表示“更不优先”）
+$ doas ifconfig carp0 192.0.2.19 vhid 1 advskew 100
+$ doas ifconfig carp1 192.168.1.1 vhid 2 advskew 100
+
+# 建议显式绑定物理接口，避免“自动选错”
+$ doas ifconfig carp0 192.0.2.19 vhid 1 carpdev em0</code></pre>
+    <p><code>vhid</code> 必须在同一广播域内唯一；冲突会导致两台机器都以为自己该做主，或者反复切换。原书特别警告：vhid 冲突的症状很难排查，甚至可能影响使用类似机制的 VRRP 设备。</p>
+    <p><code>advbase</code>（默认 1 秒）与 <code>advskew</code>（默认 0）决定通告间隔：<code>advbase + advskew/256</code> 秒。master 每秒通告；backup 的 <code>advskew 100</code> 让它等待约 1.39 秒。数值越小越优先；相同 <code>advskew</code> 时，当前 master 保持。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">三种做法</span><span class="thm-title">按封装层选过滤点</span></div>
+      <div class="thm-head"><span class="thm-kind">接管顺序</span><span class="thm-title">demotion counter 与 preempt</span></div>
       <div class="thm-body">
-        <p><b>SSH 隧道：</b>对 PF 而言就是普通 TCP 22 流量，现有放行规则即可，无需额外开洞，但也无法按内层应用做细粒度控制。<b>IPsec：</b>需要放行 IKE（UDP 500，NAT-T 用 UDP 4500）与 ESP（IP 协议号 50）；加密后的内层包在 <code>enc0</code> 上解密后可见。<b>其他封装：</b>按外层协议/端口放行，再在隧道接口上做内层策略。</p>
+        <p>每台主机为接口组通告一个 demotion counter：0 表示完全就绪，值越大越“降级”。启动过程中该值通常较高，系统稳定后降为 0。所有条件相同时，demotion 最低者胜出。<code>net.inet.carp.preempt=1</code> 允许“更好的主机”抢回 master；设为 0 则当前 master 一直保持，直到它消失。</p>
       </div>
     </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">隧道只保护传输段</span></div>
-      <div class="thm-body">
-        <p>VPN 防的是路径上的嗅探与中间人，不防端点上已被攻陷的主机，也不自动提供最小权限。把“能连 VPN”等同于“能访问整个内网”，是远程接入最常见的过度授权。隧道外的 IKE 仍可能被扫描、被降级协商；隧道内的横向移动则需要靠分段与内层规则限制。</p>
-      </div>
-    </div>
+    <pre><code class="language-bash"># 两台都设置
+$ doas sysctl net.inet.carp.allow=1
+$ doas sysctl net.inet.carp.preempt=1
+$ doas sysctl net.inet.carp.log=2
 
-    <pre><code class="language-bash"># /etc/pf.conf —— 放行 IPsec 外层与内层
-ext_if = "em0"
-vpn_peer = "198.51.100.20"
-vpn_net = "10.10.0.0/24"
+# 持久化到 /etc/sysctl.conf
+net.inet.carp.allow=1
+net.inet.carp.preempt=1
+net.inet.carp.log=2
 
-# 1) 密钥交换与 NAT 穿越
-pass in on $ext_if proto udp from $vpn_peer to ($ext_if) port { isakmp, 4500 }
-# 2) ESP 不是 TCP/UDP，必须按协议放行
-pass in on $ext_if proto esp from $vpn_peer to ($ext_if)
-# 3) 解密后的内层流量：只允许到指定网段
-pass in on enc0 proto ipencap from $vpn_net to 192.168.1.0/24 \
-     keep state (if-bound)
-</code></pre>
-    <p><code>if-bound</code> 很关键：状态绑定到具体接口，一旦隧道接口消失，状态不会“漂浮”到物理接口上继续放行明文。它防的是隧道断开后的策略泄漏，而不是性能优化。</p>
+# 查看状态：carp: MASTER / BACKUP
+$ ifconfig carp0
+$ ifconfig carp0 | grep carp:</code></pre>
+    <p>生产环境还应配置共享口令与单播 peer，避免有人在同网段伪造 CARP 通告抢走 VIP：</p>
+    <pre><code class="language-bash"># master
+$ doas ifconfig carp0 pass "correct horse battery staple" \
+    192.0.2.19 vhid 1 carppeer 192.0.2.18
 
-    <div class="intuition">
-      <div class="ih">预期行为</div>
-      <p>客户端先与网关完成 IKE 协商（UDP 500，若在 NAT 后则转 4500），随后 ESP 包在两端之间传输。网关解密后，内层包出现在 <code>enc0</code>，命中第三条规则后才能进入内网。若只放行 ESP 而不放行 <code>enc0</code>，隧道会显示“已建立”但业务不通；若只放行 <code>enc0</code> 而不放行 ESP，协商阶段就失败。</p>
-    </div>
+# backup
+$ doas ifconfig carp0 pass "correct horse battery staple" \
+    192.0.2.19 vhid 1 carppeer 192.0.2.17</code></pre>
+    <p>口令必须在一组内一致；<code>carppeer</code> 让通告以单播发往对端，而不是组播。持久化写到 <code>/etc/hostname.carp0</code> 与 <code>/etc/hostname.carp1</code>。</p>
 
-    <pre><code class="language-bash">$ doas tcpdump -ni em0 'udp port 500 or udp port 4500 or proto 50'
-$ doas tcpdump -ni enc0
-$ doas ikectl show sa
-$ doas ifconfig enc0
-$ doas pfctl -ss | grep enc0
-</code></pre>
+    <h3><span class="sn">14.3</span>FreeBSD 的 CARP 写法</h3>
+    <pre><code class="language-bash"># master：在物理接口上加 alias，并指定 vhid
+$ sudo ifconfig em0 alias 192.0.2.19/24 vhid 1
+$ sudo ifconfig em1 alias 192.168.1.1/24 vhid 2
+
+# backup
+$ sudo ifconfig em0 alias 192.0.2.19/24 vhid 1 advskew 100
+$ sudo ifconfig em1 alias 192.168.1.1/24 vhid 2 advskew 100
+
+# 共享口令
+$ sudo ifconfig em0 pass "correct horse battery staple" \
+    alias 192.0.2.19/24 vhid 1</code></pre>
+    <p>FreeBSD 需要加载 <code>carp.ko</code>，并在 <code>/boot/loader.conf</code> 写 <code>carp_load="YES"</code>；<code>ifconfig</code> 输出里 <code>carp: MASTER vhid 1 advbase 1 advskew 1</code> 是正常状态。别名配置持久化在 <code>/etc/rc.conf</code> 的 <code>ifconfig_em0_alias0=</code> 中。</p>
+
+    <h3><span class="sn">14.4</span>pfsync：让状态表跟着 VIP 走</h3>
+    <p>没有 pfsync 时，切换后所有已建立的 TCP 连接都会断：新 master 没有状态，回程包被当作非法。pfsync 把状态表更新同步给对端，使接管后连接继续。同步最好走独立网段或交叉线，避免与业务争带宽，也避免被业务故障波及。</p>
+    <pre><code class="language-bash"># 两台都执行：指定同步设备
+$ doas ifconfig pfsync0 syncdev em2
+
+# 更安全：只与指定 peer 同步
+$ doas ifconfig pfsync0 syncpeer 10.0.12.16 syncdev em2
+
+# 或用 IPsec 隧道保护同步流量
+$ doas ifconfig pfsync0 syncpeer 10.0.12.16 syncdev enc0
+
+$ ifconfig pfsync0
+# pfsync: syncdev: em2 syncpeer: 10.0.12.16 maxupd: 128 defer: off</code></pre>
+    <p>pfsync 协议本身没有认证，默认走组播。若同步网段不可信，必须用 <code>syncpeer</code> 限定对端，或用 IPsec 加密。原书建议：能上独立物理网络/VLAN 就上，丢包会导致切换后状态不一致。</p>
+
+    <h3><span class="sn">14.5</span>冗余规则集：放行 CARP 与 pfsync</h3>
+    <pre><code class="language-bash">carpdevs = "{ em0, em1 }"
+syncdev  = "em2"
+
+# 放行 CARP 与 pfsync
+pass on $carpdevs proto carp
+pass on $syncdev  proto pfsync
+
+# 更省性能：同步接口完全跳过过滤
+set skip on $syncdev
+
+# 主机自身的 SSH 不需要同步状态
+pass in on $int_if from $ssh_allowed to self keep state (no-sync)</code></pre>
+    <p><code>set skip on $syncdev</code> 比“过滤再放行”更轻，因为包根本不进入规则求值。代价是你失去了对同步流量的可见性——如果同步网段不可信，还是应该显式过滤。</p>
+    <p><code>no-sync</code> 用于“只对当前主机有意义”的连接：管理 SSH、本机监控、只在本机运行的服务。同步这些状态没有意义，切换后反而可能让新 master 误以为连接还存在。</p>
+
+    <h3><span class="sn">14.6</span>用 CARP 做负载均衡</h3>
+    <p>CARP 也能做“主动-主动”：多个节点用不同的 <code>carpnodes</code> 权重分担 VIP。每个节点对同一个 VIP 声明不同的优先级，流量按节点分配。配置依赖 <code>balancing ip</code> 与 <code>carpnodes</code>。</p>
+    <pre><code class="language-bash"># 节点 A：/etc/hostname.carp0
+pass "correct horse battery staple" 192.0.2.19 balancing ip carpnodes 5:100,6:0
+# 节点 A：/etc/hostname.carp1
+pass "correct horse battery staple" 192.168.12.1 balancing ip carpnodes 3:100,4:0
+
+# 节点 B：/etc/hostname.carp0
+pass "correct horse battery staple" 192.0.2.19 balancing ip carpnodes 5:0,6:100
+# 节点 B：/etc/hostname.carp1
+pass "correct horse battery staple" 192.168.12.1 balancing ip carpnodes 3:0,4:100</code></pre>
+    <p>这类配置对 vhid、口令、节点数非常敏感；改错一个权重就可能导致流量全压到一台。上线前用 <code>ifconfig carp0</code> 与真实流量验证分担比例，并准备回滚到“主备”模式。</p>
 
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>层</th><th>匹配写法</th><th>用途</th></tr></thead>
+        <thead><tr><th>任务</th><th>命令/配置</th><th>要点</th></tr></thead>
         <tbody>
-          <tr><td>IKE</td><td><code>proto udp port { isakmp, 4500 }</code></td><td>协商与 NAT-T</td></tr>
-          <tr><td>ESP</td><td><code>proto esp</code></td><td>加密载荷，无端口概念</td></tr>
-          <tr><td>内层</td><td><code>on enc0 proto ipencap</code></td><td>解密后的真实源/目的</td></tr>
-          <tr><td>状态绑定</td><td><code>keep state (if-bound)</code></td><td>隧道消失即失效</td></tr>
-          <tr><td>SSH 隧道</td><td>普通 <code>proto tcp to port ssh</code></td><td>无需特殊规则</td></tr>
-          <tr><td>pfsync over IPsec</td><td><code>syncdev enc0</code></td><td>同步流量走加密隧道</td></tr>
+          <tr><td>创建 VIP</td><td><code>ifconfig carp0 192.0.2.19 vhid 1</code></td><td>vhid 广播域内唯一</td></tr>
+          <tr><td>备份优先级</td><td><code>advskew 100</code></td><td>越小越优先</td></tr>
+          <tr><td>允许抢回</td><td><code>net.inet.carp.preempt=1</code></td><td>两台一致</td></tr>
+          <tr><td>共享口令</td><td><code>pass "..."</code></td><td>同组必须一致</td></tr>
+          <tr><td>单播通告</td><td><code>carppeer 192.0.2.18</code></td><td>避免组播被干扰</td></tr>
+          <tr><td>状态同步</td><td><code>ifconfig pfsync0 syncdev em2</code></td><td>独立网段更佳</td></tr>
+          <tr><td>放行 CARP</td><td><code>pass on $carpdevs proto carp</code></td><td>否则切换不通</td></tr>
+          <tr><td>不同步本机状态</td><td><code>keep state (no-sync)</code></td><td>管理连接适用</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">VPN 能握手但业务不通</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">冗余的五个坑</span></div>
       <div class="thm-body">
-        <p><b>1. 试图给 ESP 做端口转发。</b>ESP 是 IP 协议 50，没有端口；NAT 设备需要 NAT-T 把它包进 UDP 4500。<b>2. 只在外层放行。</b>外层只保证隧道建立，内层仍会被 <code>block all</code> 拦截。<b>3. 忘记 MSS/MTU。</b>封装后包变大，PMTU 黑洞表现为“能 ping、不能传大文件”；可在隧道接口上钳制 MSS。<b>4. 把 <code>enc0</code> 规则写成 <code>pass</code> 全部。</b>隧道另一端一旦被攻陷，攻击者就获得了整个内网的入口。</p>
+        <p><b>1. vhid 冲突。</b>同广播域内两个组用同一个 ID，会导致反复主备切换。<b>2. 只配 CARP 不配 pfsync。</b>切换后所有连接断，用户感知为“网络重启”。<b>3. 两台规则集不一致。</b>切换后行为突变，最难排查。<b>4. 没有 <code>pass ... proto carp</code>。</b>PF 把 CARP 通告当普通流量丢掉，backup 永远收不到。<b>5. 把 <code>preempt=1</code> 当默认必开。</b>频繁抖动时会导致 VIP 来回迁移，反而更不稳定。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ch9" class="chapter">
+<section id="ch9a" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 6 · Turning the Tables for Proactive Defense</div>
-    <h2><span class="num">09</span>让暴力破解和垃圾邮件付出时间成本</h2>
-    <p class="lede">PF 的 <code>overload</code> 把屡次越界的主机丢进表；spamd 则让已经上榜的 SMTP 发送者陷入“每读一个字等一秒”的泥潭。前者是自适应封禁，后者是主动拖延。</p>
+    <div class="sec-label">Chapter 9 · Logging, Monitoring and Statistics / The Basics</div>
+    <h2><span class="num">15</span>日志不是附属品，是规则集的一部分</h2>
+    <p class="lede">没有日志的防火墙只能告诉你“不通”，不能告诉你“在哪一条规则上不通”。PF 的日志从 <code>pflog0</code> 出来，经 <code>tcpdump</code> 可读，经 <code>pflow</code> 可汇总，经标签可对账。</p>
     <div class="chap-intro">
-      <p>被动拒绝只是把门关上，攻击者可以换门再试。主动防御的目标是提高每次尝试的成本：SSH 暴力破解触发连接数限制后整机封禁；垃圾邮件发送者被降速到几乎无法完成会话。</p>
-      <span class="tag">自适应 · spamd</span>
+      <p>本章覆盖第 9 章前半：PF 日志基础、<code>log (matches)</code> 与 <code>log (all)</code>、多个 pflog 接口、syslog 本地/远程、用 label 统计每条规则、以及日志与统计工具（systat、pftop、pfstat、pflow、SNMP）的入口。</p>
+      <span class="tag">pflog · label · syslog · 统计</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">overload</span><span class="chip">max-src-conn-rate</span><span class="chip">flush global</span><span class="chip">spamd</span><span class="chip">greylisting</span><span class="chip">tarpit</span><span class="chip">spamdb</span>
+      <span class="chip hot">pflog0</span><span class="chip">log (all)</span><span class="chip">label</span><span class="chip">tcpdump</span><span class="chip">systat</span><span class="chip">pflow</span>
     </div>
+    <p class="note"><b>原书小节</b> · PF Logs: The Basics · Logging the Packet’s Path Through Your Ruleset: log (matches) · Logging All Packets: log (all) · Logging to Several pflog Interfaces · Logging to syslog, Local or Remote · Tracking Statistics for Each Rule with Labels · Additional Tools for PF Logs and Statistics · Keeping an Eye on Things with systat · Keeping an Eye on Things with pftop · Graphing Your Traffic with pfstat · Collecting NetFlow Data with pflow(4) · SNMP Tools and PF-Related SNMP MIBs · Log Data as the Basis for Effective Debugging</p>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">两种不同的“坏流量”</span></div>
-      <div class="thm-body">
-        <p><b>高频暴力破解：</b>单一来源在短时间内建立大量 SSH 连接，速度快、特征明显，适合用速率限制与 <code>overload</code> 自动封禁。<b>垃圾邮件：</b>发送者遵守 SMTP 协议但内容无价值，且常换 IP；适合用黑名单、灰名单和降速拖延。<b>低频分布式猜测：</b>每台主机只试几次，速率限制抓不到，需要靠密钥登录、失败次数策略和更长周期的观测。</p>
-      </div>
-    </div>
+    <h3><span class="sn">15.1</span>日志从哪来，到哪去</h3>
+    <p>带 <code>log</code> 的规则会把包头（以及可选的载荷前若干字节）写入 <code>pflog0</code>。这是一个伪网络接口，可以用 <code>tcpdump</code> 实时读取，也可以由 <code>pflogd</code> 落盘到 <code>/var/log/pflog</code>。日志里包含：规则号、动作（pass/block/match）、接口、方向、地址、端口、 flags、以及被 <code>log (all)</code> 捕获的更多细节。</p>
+    <pre><code class="language-bash"># 实时查看
+$ doas tcpdump -n -e -ttt -i pflog0
 
-    <h3><span class="sn">9.1</span>自适应封禁：把攻击者写进表</h3>
-    <pre><code class="language-bash"># /etc/pf.conf —— SSH 速率限制与封禁表
-ext_if = "em0"
-table &lt;bruteforce&gt; persist
+# 读取已落盘的日志
+$ doas tcpdump -n -e -ttt -r /var/log/pflog
 
-block quick from &lt;bruteforce&gt;
+# 只看被阻断的包
+$ doas tcpdump -n -e -i pflog0 action block
 
-pass in quick on $ext_if proto tcp to ($ext_if) port ssh \
-     keep state (max-src-conn 10, max-src-conn-rate 3/60, \
-     overload &lt;bruteforce&gt; flush global)
-</code></pre>
-    <p><code>max-src-conn 10</code> 限制单个源地址的并发连接数；<code>max-src-conn-rate 3/60</code> 表示 60 秒内最多新建 3 条；触发后把源地址加入 <code>&lt;bruteforce&gt;</code>，<code>flush global</code> 立即清掉该源的所有既有状态。封禁规则必须放在放行规则之前，否则 <code>quick</code> 也救不了顺序。</p>
+# 只看某个地址
+$ doas tcpdump -n -e -i pflog0 host 203.0.113.66</code></pre>
 
-    <div class="intuition">
-      <div class="ih">预期行为</div>
-      <p>正常管理员一次开两三条 SSH，完全不受影响。脚本在 60 秒内尝试第 4 条连接时，PF 把来源加入封禁表，并切断它已建立的连接；后续所有包命中 <code>block quick</code>，在客户端表现为连接超时。封禁是双向的：该源访问本机任何端口都不通，直到你手动删除或让它过期。</p>
-    </div>
+    <h3><span class="sn">15.2</span>log (matches)：记录“包经过了哪些规则”</h3>
+    <p>默认 <code>log</code> 只记录最终判决（pass 或 block）。<code>log (matches)</code> 会在包匹配到每一条规则时都记录一次，包括那些没有决定去留的 <code>match</code> 规则。它适合回答“这个包为什么走了这条路径”，但日志量会显著增加。</p>
+    <pre><code class="language-bash">match in log (matches) on $int_if from $testhost tag localnet
+pass in log (matches) on $int_if from $testhost to any
+block log (matches) all</code></pre>
+    <p>原书的调试方法：给一个测试主机打标签，观察它在规则集中的完整路径；确认后再删掉 <code>log (matches)</code>，只保留关键规则的最终日志。</p>
 
-    <h3><span class="sn">9.2</span>spamd：把 SMTP 会话变成慢动作</h3>
-    <p>黑名单模式下，只有表 <code>&lt;spamd&gt;</code> 中的地址会被重定向到本机 8025 端口，spamd 用极慢的 SMTP 应答拖住对方。灰名单模式（OpenBSD 4.1 起默认）则把所有 SMTP 先引到 spamd，首次见到的“发件人/收件人/客户端 IP”三元组被临时拒绝，正常邮件服务器会重试，群发器通常不会。</p>
-    <pre><code class="language-bash"># 黑名单模式：只处理已知恶意来源
-table &lt;spamd&gt; persist
-pass in on $ext_if inet proto tcp from &lt;spamd&gt; to ($ext_if) port smtp \
-     rdr-to 127.0.0.1 port 8025
+    <h3><span class="sn">15.3</span>log (all)：记录每一个包</h3>
+    <p><code>log (all)</code> 不只记录状态的首包，而是记录该连接上的每个包。它适合短时抓取（例如“为什么大文件传输卡住”），不适合长期开启：日志量与磁盘 I/O 都会迅速上升。</p>
+    <pre><code class="language-bash">block log (all)
+pass log (all) quick proto tcp to port ssh keep state
+pass log (all) inet proto udp to port $udp_services</code></pre>
 
-# 灰名单模式：所有 SMTP 先经过 spamd
-pass in on $ext_if inet proto tcp to ($ext_if) port smtp \
-     rdr-to 127.0.0.1 port 8025
-</code></pre>
-    <p>spamd 只监听回环上的 8025，真正的邮件服务器仍监听 25；重定向发生在 PF 层，外部看不到内部端口变化。黑名单来源在 <code>/etc/mail/spamd.conf</code> 中配置，灰名单数据库由 <code>spamdb</code> 维护。</p>
+    <h3><span class="sn">15.4</span>多个 pflog 接口与远程 syslog</h3>
+    <p>把不同类别的日志分流到不同 <code>pflog</code> 接口，能让分析更简单：例如 <code>pflog1</code> 只收 SMTP（给 spamlogd），<code>pflog2</code> 只收被阻断的入站。创建接口、启用、再在规则里指定 <code>log (to pflog1)</code>。</p>
+    <pre><code class="language-bash">$ doas ifconfig pflog1 up
+$ doas ifconfig pflog2 up
 
-    <pre><code class="language-bash">$ doas pfctl -t bruteforce -T show
-$ doas pfctl -t spamd -T show
-$ doas spamdb | head -20
-$ doas spamdb -a -t 203.0.113.99      # 加入 greytrap 列表
-$ doas tcpdump -ni em0 'tcp port smtp'
-$ tail -f /var/log/maillog | grep spamd
-$ doas pfctl -ss | grep 8025
-</code></pre>
+pass in log (to pflog1) on egress proto tcp to port smtp
+block in log (to pflog2) on $ext_if all
+
+# pflogd 抓取指定接口
+$ doas pflogd -i pflog1 -f /var/log/pflog1</code></pre>
+    <p>长期归档应发往远程 syslog，避免本机被攻击后日志一起消失。<code>pflogd</code> 通过 syslog 输出，<code>/etc/syslog.conf</code> 里把 <code>local0</code> 指向远程主机；也可以直接用 <code>tcpdump -w</code> 写 pcap 并由日志系统收集。</p>
+    <pre><code class="language-bash"># /etc/syslog.conf
+local0.*    @loghost.example.com
+
+# 只接收本机 pflogd 的日志
+# pflogd 默认 facility 为 local0，可用 -s 调整</code></pre>
+
+    <h3><span class="sn">15.5</span>label：给每条规则一个可对账的名字</h3>
+    <p>规则号会随规则顺序变化，<code>label</code> 不会。给关键规则加标签后，可以用 <code>pfctl -sl</code> 查看每条标签的包数/字节数，也可以从日志里按标签聚合。</p>
+    <pre><code class="language-bash">pass inet proto tcp from any to 192.0.2.225 port smtp \
+    flags S/SA keep state label "mail-in"
+pass inet proto tcp from 192.0.2.225 to any port smtp \
+    flags S/SA keep state label "mail-out"
+block in log label "ext-block" all
+
+$ doas pfctl -sl
+$ doas pfctl -vsl          # 带计数器
+$ doas tcpdump -n -e -i pflog0 -l | grep mail-in</code></pre>
+    <p>标签的命名建议用“方向-业务”格式（<code>mail-in</code>、<code>web-out</code>、<code>guest-block</code>），避免用规则号或临时描述。标签是统计维度，不是安全边界；不要指望用标签替代地址匹配。</p>
 
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>机制</th><th>触发条件</th><th>效果</th></tr></thead>
+        <thead><tr><th>需求</th><th>写法</th><th>代价</th></tr></thead>
         <tbody>
-          <tr><td><code>max-src-conn</code></td><td>单源并发连接超限</td><td>拒绝新建，已有可保留</td></tr>
-          <tr><td><code>max-src-conn-rate</code></td><td>单位时间新建过快</td><td>触发 <code>overload</code></td></tr>
-          <tr><td><code>flush global</code></td><td>触发限制时</td><td>清空该源全部状态</td></tr>
-          <tr><td><code>overload &lt;t&gt;</code></td><td>达到限制</td><td>把源地址加入表</td></tr>
-          <tr><td>spamd 黑名单</td><td>源在 <code>&lt;spamd&gt;</code> 表</td><td>重定向到 8025 并拖慢</td></tr>
-          <tr><td>spamd 灰名单</td><td>首次出现的三元组</td><td>临时拒绝，等待重试</td></tr>
+          <tr><td>记录最终判决</td><td><code>log</code></td><td>低</td></tr>
+          <tr><td>记录经过的每条规则</td><td><code>log (matches)</code></td><td>中高</td></tr>
+          <tr><td>记录每个包</td><td><code>log (all)</code></td><td>高</td></tr>
+          <tr><td>分流到指定接口</td><td><code>log (to pflog1)</code></td><td>需先 <code>ifconfig pflog1 up</code></td></tr>
+          <tr><td>按规则统计</td><td><code>label "name"</code></td><td>需 <code>pfctl -sl</code> 查看</td></tr>
+          <tr><td>远程归档</td><td><code>syslog local0.* @host</code></td><td>需网络与磁盘规划</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">主动防御也会误伤自己人</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">日志的五个坑</span></div>
       <div class="thm-body">
-        <p><b>1. 阈值太紧。</b>NAT 后的整个办公室共享一个源地址，10 条并发很容易被误封；阈值要按最大 NAT 用户数评估。<b>2. 表只进不出。</b>动态地址换手后，新用户会继承旧封禁；用 <code>-T expire</code> 或定时清理。<b>3. spamd 只支持 IPv4。</b>纯 IPv6 邮件路径不会被它保护。<b>4. 灰名单会延迟首封邮件。</b>这是设计目标，不是故障；对时效性邮件要留白名单。<b>5. 以为能挡住低频分布式猜测。</b>每 IP 只试几次的攻击不会触发速率限制，需要密钥认证与账号策略兜底。</p>
+        <p><b>1. 全量 <code>log (all)</code> 长期开着。</b>磁盘很快写满，反而丢掉关键日志。<b>2. 只记录 block 不记录 pass。</b>你无法区分“没放行”和“放行了但应用失败”。<b>3. 日志只存本机。</b>主机被入侵后，攻击者第一件事就是清日志。<b>4. 用规则号做统计。</b>改一次规则顺序，历史数据全部错位；用 <code>label</code>。<b>5. 忘了 <code>pflog0</code> 需要 <code>pflogd</code> 才能落盘。</b>只 <code>tcpdump</code> 看实时流，重启后没有历史。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ch9b" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">Chapter 9 · Tools and Debugging from Logs</div>
+    <h2><span class="num">16</span>先证明包到了哪一层，再改规则</h2>
+    <p class="lede">排障不是“猜一条规则改一改”，而是按链路、路由、状态、规则、应用的顺序逐层排除。日志与计数器是这条链上的证据，不是事后装饰。</p>
+    <div class="chap-intro">
+      <p>本章覆盖第 9 章后半：<code>systat</code>、<code>pftop</code>、<code>pfstat</code>、<code>pflow</code>（NetFlow）、SNMP 与 PF MIB，以及“用日志数据做有效调试”的完整方法。</p>
+      <span class="tag">systat · pftop · pfstat · pflow</span>
+    </div>
+    <div class="mapchips">
+      <span class="chip hot">systat states</span><span class="chip">pftop</span><span class="chip">pfstat</span><span class="chip">NetFlow</span><span class="chip">SNMP MIB</span><span class="chip">分层排障</span>
+    </div>
+    <p class="note"><b>原书小节</b> · Additional Tools for PF Logs and Statistics · Keeping an Eye on Things with systat · Keeping an Eye on Things with pftop · Graphing Your Traffic with pfstat · Collecting NetFlow Data with pflow(4) · SNMP Tools and PF-Related SNMP MIBs · Log Data as the Basis for Effective Debugging</p>
+
+    <h3><span class="sn">16.1</span>systat：不用装东西的实时视图</h3>
+    <pre><code class="language-bash">$ doas systat states      # 状态表，类似 top
+$ doas systat queues      # 队列与积压
+$ doas systat rules       # 每条规则的计数
+$ doas systat pf          # PF 总体统计
+$ doas systat ifstat      # 接口吞吐</code></pre>
+    <p><code>systat states</code> 是排障第一站：看状态是否建立、源/目的地址是否符合预期、是否有大量 <code>SYN_SENT</code>。如果状态存在但应用失败，问题多半不在 PF；如果没有状态，才回到规则与路由。</p>
+
+    <h3><span class="sn">16.2</span>pftop：可交互的状态浏览器</h3>
+    <p><code>pftop</code> 不在 OpenBSD 基础系统里（需 ports/packages），但它的交互视图非常好用：可按接口、规则、状态过滤，查看字节数、存活时间、队列。适合“盯着一个异常连接看它怎么变化”。</p>
+    <pre><code class="language-bash">$ doas pftop
+$ doas pftop -v
+# 常用按键：s 排序、f 过滤、q 退出、? 帮助</code></pre>
+    <p>与 <code>systat states</code> 的区别：<code>pftop</code> 更偏向“连接级”观察，<code>systat</code> 更偏向“系统级”汇总。两者都不替代日志：它们只显示当前快照，不保留历史。</p>
+
+    <h3><span class="sn">16.3</span>pfstat：把计数器画成图</h3>
+    <p><code>pfstat</code> 定期读取 PF 计数器，写入 RRD 或文本，再生成 PNG 图。它适合回答“带宽/状态数在过去一周怎么变”，而不是“现在为什么不通”。</p>
+    <pre><code class="language-bash"># /etc/pfstat.conf
+collect 1 = states, rules, queues
+
+# 采集（cron 每分钟）
+$ doas pfstat -q -c /etc/pfstat.conf
+
+# 生成图表
+$ doas pfstat -g /var/www/htdocs/pfstats/</code></pre>
+    <p>采集频率要与保留周期匹配：每分钟一次、保留一年，数据量不大；每秒一次则会迅速膨胀。图表的价值在于发现趋势（状态数持续上升、某队列长期积压），而不是替代实时排障。</p>
+
+    <h3><span class="sn">16.4</span>pflow：把流量摘要发给收集器</h3>
+    <p><code>pflow(4)</code> 把 PF 的状态/流量导出为 NetFlow v5/v9 或 IPFIX，交给 nfdump、pmacct 等收集器。它不记录每个包，只记录“流”的摘要，适合长期容量规划与跨设备关联。</p>
+    <pre><code class="language-bash"># 配置 pflow 接口
+$ doas ifconfig pflow0 flowsrc 192.0.2.1 flowdst 192.0.2.100:2055
+$ doas ifconfig pflow0 up
+
+# 让 PF 把状态变化发给 pflow
+set state-defaults pflow
+# 或对特定规则
+pass in log on $ext_if proto tcp to port $webports set state-defaults pflow
+
+$ doas pfctl -s pflow       # 查看 pflow 状态（视版本）</code></pre>
+    <p>注意 <code>pflow</code> 与 <code>pflog</code> 的分工：前者是“流摘要”，后者是“包级证据”。排障用 <code>pflog</code>，容量规划与报表用 <code>pflow</code>。</p>
+
+    <h3><span class="sn">16.5</span>SNMP 与 PF MIB</h3>
+    <p>需要把 PF 指标接入现有监控（Zabbix、Prometheus、Observium）时，可以用 SNMP。OpenBSD 的 <code>snmpd</code> 与 PF 相关 MIB 能提供状态数、表项数、计数器等；FreeBSD 也可通过 <code>net-snmp</code> 的扩展读取 <code>pfctl</code> 输出。关键不是“能读到数”，而是“读到的是语义正确的数”：状态数、表项数、队列丢包要分别建图。</p>
+    <pre><code class="language-bash"># 示例：用 snmpwalk 查看（OID 随 MIB/版本变化）
+$ snmpwalk -v2c -c public 192.0.2.1 OPENBSD-PF-MIB::pf
+$ snmpget  -v2c -c public 192.0.2.1 OPENBSD-PF-MIB::pfStateCount.0</code></pre>
+
+    <h3><span class="sn">16.6</span>用日志做有效调试：一条可复用的路径</h3>
+    <p>假设“外部访问 Web 失败”。不要先改规则，按下面顺序取证：</p>
+    <p><b>① 链路与接口：</b><code>ifconfig</code> 看接口是否 up、地址是否正确；<code>netstat -rn</code> 看默认路由；<code>arp -an</code> 看下一跳。<b>② 包是否到达：</b><code>tcpdump -n -e -i $ext_if port 80</code>。如果连 SYN 都看不到，问题在上游/DNS/线路。<b>③ PF 是否放行：</b><code>tcpdump -n -e -i pflog0</code> 看规则号与动作；<code>pfctl -sr</code> 对照规则号；<code>pfctl -ss</code> 看状态。<b>④ 翻译是否正确：</b><code>pfctl -sn</code> 看 rdr/NAT；<code>tcpdump</code> 在 DMZ 接口看目的地址是否被改写。<b>⑤ 应用是否响应：</b>在服务器上抓包/看日志；区分“包到了但应用没回”和“包没到”。</p>
+    <pre><code class="language-bash">$ doas tcpdump -n -e -i $ext_if port 80
+$ doas tcpdump -n -e -i pflog0
+$ doas tcpdump -n -e -i $dmz_if port 80
+$ doas pfctl -sr | grep -n 'port = http'
+$ doas pfctl -ss | grep ':80'
+$ doas pfctl -sn</code></pre>
+
+    <div class="intuition">
+      <div class="ih">规则号是桥梁</div>
+      <p>日志里的每一条记录都带规则号。用 <code>pfctl -sr</code> 找到同号规则，再问三个问题：方向对吗？接口对吗？地址是改写前还是改写后？80% 的“规则写了但不生效”在这三步内就能定位。</p>
+    </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>症状</th><th>先看</th><th>常见结论</th></tr></thead>
+        <tbody>
+          <tr><td>完全没有状态</td><td><code>tcpdump</code> 入接口</td><td>包没到 / 路由错 / 上游阻断</td></tr>
+          <tr><td>有状态但应用失败</td><td>服务器日志</td><td>PF 已放行，问题在应用</td></tr>
+          <tr><td>状态只有单向</td><td><code>pfctl -ss</code></td><td>回程被丢 / 非对称路由</td></tr>
+          <tr><td>被 block</td><td>pflog 规则号</td><td>方向/接口/地址写错</td></tr>
+          <tr><td>重定向后不通</td><td><code>pfctl -sn</code> + DMZ 抓包</td><td>rdr 目标错 / 回程绕过网关</td></tr>
+          <tr><td>大包卡住</td><td>ICMP needfrag</td><td>PMTU 黑洞 / MSS 过大</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">监控与排障的五个坑</span></div>
+      <div class="thm-body">
+        <p><b>1. 只看 <code>systat</code> 不看日志。</b>实时快照会漏掉瞬时故障。<b>2. 用 <code>pfstat</code> 当排障工具。</b>它面向趋势，不面向单连接。<b>3. NetFlow 采样率不理解。</b>把采样后的数字当真实流量，容量规划会偏小。<b>4. 监控只盯 PF，不盯接口与路由。</b>PF 正常但链路抖动，症状一样。<b>5. 抓包包含敏感数据。</b><code>tcpdump -w</code> 的 pcap 可能含明文凭据，要限制访问与保留期。</p>
       </div>
     </div>
   </div>
@@ -1300,242 +2566,234 @@ $ doas pfctl -ss | grep 8025
 
 <section id="ch10" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 4 · Wireless Networks Made Easy</div>
-    <h2><span class="num">10</span>Wi-Fi 只是另一个接口和另一个子网</h2>
-    <p class="lede">无线并不需要一套独立的防火墙逻辑：把无线接口当成 <code>$air_if</code>，给它一个子网和一组放行规则即可。真正不同的是链路层的暴露面与接入认证。</p>
+    <div class="sec-label">Chapter 10 · Getting Your Setup Just Right</div>
+    <h2><span class="num">17</span>调优的边界：哪些该动，哪些别碰</h2>
+    <p class="lede">全局选项能改变 PF 的默认行为，但大多数“性能优化”只是在没有测量之前换了一个未知。先把策略写对，再考虑状态限制、超时与 reassembly。</p>
     <div class="chap-intro">
-      <p>OpenBSD 可以直接把支持的网卡切成 <code>hostap</code> 模式当接入点用，再由 PF 做 NAT 与隔离。加密（WPA2）保护空中段，PF 保护网络层；两者不能互相替代。</p>
-      <span class="tag">hostap · WPA2 · authpf</span>
+      <p>本章覆盖第 10 章全部：block policy、skip interfaces、state policy、state defaults、syncookies、limits、debug、ruleset optimization、timeouts、optimization、fragment reassembly、scrub 与 antispoof、测试、调试、以及“了解你的网络并保持控制”。</p>
+      <span class="tag">set 选项 · scrub · antispoof · 调试</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">hostap</span><span class="chip">wpakey</span><span class="chip">nwid / chan</span><span class="chip">$air_if:network&lt;/span&gt;&lt;span class="chip"&gt;authpf&lt;/span&gt;&lt;span class="chip"&gt;客户端隔离&lt;/span&gt;
-    &lt;/div&gt;
-
-    &lt;div class="thm def"&gt;
-      &lt;div class="thm-head"&gt;&lt;span class="thm-kind"&gt;背景&lt;/span&gt;&lt;span class="thm-title"&gt;基础设施模式与安全选项&lt;/span&gt;&lt;/div&gt;
-      &lt;div class="thm-body"&gt;
-        &lt;p&gt;802.11 的 infrastructure 模式由一个接入点（AP）承载 SSID，客户端关联后像接在交换机上一样收发以太网帧。WPA2-PSK 用预共享密钥做链路层加密与认证；WEP 早已可被秒破，只能算“防误连”。企业环境用 802.1X/EAP 做每用户认证，OpenBSD 侧通常交给 <code>hostapd</code>。</p>
-      </div>
+      <span class="chip hot">set block-policy</span><span class="chip">set limit</span><span class="chip">set timeout</span><span class="chip">scrub</span><span class="chip">antispoof</span><span class="chip">pfctl -vv</span>
     </div>
+    <p class="note"><b>原书小节</b> · Things You Can Tweak and What You Probably Should Leave Alone · Block Policy · Skip Interfaces · State Policy · State Defaults · syncookies · Limits · Debug · Ruleset Optimization · Timeouts · Optimization · Fragment Reassembly · Cleaning Up Your Traffic · Packet Normalization with scrub · Protection Against Spoofing with antispoof · Testing Your Setup · Debugging Your Ruleset · Know Your Network and Stay in Control</p>
+
+    <h3><span class="sn">17.1</span>set 选项：改变默认行为，不是加速开关</h3>
+    <pre><code class="language-bash"># 被拒绝时回 RST/ICMP，而不是静默丢弃
+set block-policy return
+
+# 回环与内网接口完全跳过过滤
+set skip on { lo, $int_if }
+
+# 状态绑定到接口（多路径/非对称路由时谨慎）
+set state-policy if-bound
+
+# 新状态默认带 pflow 导出、不同步、或限制
+set state-defaults pflow
+set state-defaults no-sync
+set state-defaults max 1500, max-src-conn 100, source-track rule
+
+# SYN cookies：半开连接过多时启用
+set syncookies adaptive (start 25%, end 12%)
+
+# 资源上限
+set limit { states 25000, src-nodes 25000, table-entries 300000 }</code></pre>
+    <p><code>block-policy</code> 的取值：<code>drop</code>（默认，静默丢）、<code>return</code>（回 RST 或 ICMP unreachable）。<code>return</code> 让客户端快速失败，但也暴露“这里有个防火墙”；<code>drop</code> 更难探测，但会让客户端等到超时。两者没有绝对优劣，取决于业务对失败速度的要求。</p>
 
     <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">空中段没有物理边界</span></div>
+      <div class="thm-head"><span class="thm-kind">调优原则</span><span class="thm-title">先测量，再改默认值</span></div>
       <div class="thm-body">
-        <p>信号会溢出到楼外，攻击者可以被动嗅探、伪造 AP（evil twin）、向客户端发送去认证帧。WPA2 能阻止 passive sniffing 与未授权关联，但不防内部用户横向扫描，也不防已泄露的 PSK。PF 的责任是：限制无线客户端能访问的内网资源、隔离客户端之间、并对访客做认证后再放行。</p>
+        <p>PF 的默认值（状态超时、表大小、队列长度）是按通用场景设定的。只有在监控证明“状态数接近上限”“某类连接过早超时”“分片被丢弃导致故障”时，才调整对应项。盲目调大 <code>set limit</code> 会把内存压力变成 OOM，而不是解决问题。</p>
       </div>
     </div>
 
-    <pre><code class="language-bash"># 把无线网卡切成 2.4GHz 接入点
-$ doas ifconfig ral0 up mediaopt hostap mode 11g chan 1 \
-       nwid unwiredbsd wpakey 'a-long-passphrase'
-$ ifconfig ral0
-# 期望看到 media: IEEE802.11 ... mode 11g hostap
-#          ieee80211: nwid unwiredbsd wpakey ...
-</code></pre>
-    <p>持久化配置写在 <code>/etc/hostname.ral0</code>，只保留必要参数：<code>up</code>、<code>nwid</code>、<code>wpakey</code> 通常足够；<code>mode</code> 与 <code>chan</code> 可按需固定。<code>wpakey</code> 既可写引号包裹的口令，也可写 <code>0x</code> 开头的十六进制 PSK。</p>
+    <h3><span class="sn">17.2</span>状态策略与默认值</h3>
+    <p><code>set state-policy</code> 控制状态与接口的绑定：<code>floating</code>（默认，状态不绑接口，允许路由变化）与 <code>if-bound</code>（状态绑定创建它的接口）。多 WAN、策略路由、非对称路由场景要特别小心：<code>floating</code> 更灵活，但也可能让回程从错误接口出去；<code>if-bound</code> 更严格，但路由切换时会断连接。</p>
+    <pre><code class="language-bash"># 每条规则覆盖全局策略
+pass out on egress inet proto tcp to any port $allowed modulate state (if-bound)
+pass out on egress inet proto tcp to any port $allowed keep state (max-src-conn 50)</code></pre>
+    <p><code>set state-defaults</code> 给所有新状态加默认选项，避免每条规则重复。常见组合：<code>pflow</code>（导出流）、<code>no-sync</code>（不同步）、<code>max</code>/<code>max-src-conn</code>（限制）。注意这些默认值会被规则内显式选项覆盖。</p>
 
-    <pre><code class="language-bash"># pf.conf 片段：无线子网
-ext_if = "em0"
-air_if = "ral0"
-air_net = $air_if:network
+    <h3><span class="sn">17.3</span>syncookies、limits 与 debug</h3>
+    <p><code>syncookies</code> 在 SYN 半开连接耗尽状态表时，用无状态 cookie 回应 SYN-ACK，避免合法用户被拒绝。OpenBSD 的 <code>adaptive</code> 模式按状态表占用比例自动启用：<code>start 25%</code> 表示达到 25% 时开始，<code>end 12%</code> 表示降到 12% 以下停止。</p>
+    <pre><code class="language-bash">set syncookies adaptive (start 25%, end 12%)
+set limit states 25000
+set limit table-entries 300000
+set limit { states 25000, src-nodes 25000, table-entries 300000 }
 
-match out on $ext_if inet from $air_net nat-to ($ext_if)
+# 调试：只建议短时开启
+set debug urgent
+set debug misc
+set debug loud</code></pre>
+    <p><code>set debug</code> 会让内核输出更多 PF 内部信息，适合在实验室复现问题；生产环境长期开启会拖慢系统并刷爆日志。<code>set limit</code> 调大前，先用 <code>pfctl -si</code> 看当前峰值与硬限制。</p>
 
-pass in on $air_if inet proto udp to port bootps
-pass in on $air_if inet proto { tcp, udp } to port domain
-pass in on $air_if inet from $air_net to any
+    <h3><span class="sn">17.4</span>scrub 与 antispoof：清理与防伪造</h3>
+    <p><code>scrub</code> 做包规范化：重组分片、去除无效标志、钳制 MSS、清除 DF 位。它能修复“某些应用发怪包”的问题，也会改变包的原始形态，排障时要意识到这一点。</p>
+    <pre><code class="language-bash"># 重组 TCP 分片并规范化
+match in all scrub (reassemble tcp)
 
-# 访客认证：SSH 登录后由 authpf 动态插入规则
-anchor "authpf/*"
-pass in on $air_if proto tcp to port ssh
-</code></pre>
+# PPPoE 场景：清 DF 并钳制 MSS
+match in all scrub (no-df max-mss 1440)
 
-    <div class="intuition">
-      <div class="ih">预期行为</div>
-      <p>客户端完成 WPA2 关联后取得 DHCP 地址，DNS 与出站流量命中无线接口规则，经 NAT 访问互联网。未认证的访客只能到 SSH 端口；把账号 shell 设为 <code>/usr/sbin/authpf</code> 后，登录成功会触发 authpf 在锚点中插入该源地址的临时放行规则，注销即撤销。客户端之间是否互通，取决于你是否放行 <code>$air_net</code> 内部流量——默认应隔离。</p>
-    </div>
+# 旧语法（仍被部分配置使用）
+scrub in all
+scrub in all no-df max-mss 1440</code></pre>
+    <p><code>antispoof</code> 自动生成“源地址属于本接口网段、却从别的接口进来”的阻断规则。它对多接口网关几乎是必配项，能挡住一类简单的源地址伪造。</p>
+    <pre><code class="language-bash">antispoof for $ext_if
+antispoof for $int_if
+antispoof quick for { lo, $int_if, $ext_if }</code></pre>
 
-    <pre><code class="language-bash">$ ifconfig ral0
-$ ifconfig ral0 scan
-$ doas tcpdump -ni ral0 'udp port 67 or udp port 53'
-$ doas pfctl -a authpf -sr
-$ doas pfctl -ss | grep 192.168.50
-$ doas pfctl -sA
-</code></pre>
+    <h3><span class="sn">17.5</span>测试与调试：把“应该”变成“已验证”</h3>
+    <p>测试分三层：<b>语法层</b>（<code>pfctl -nf</code>）、<b>行为层</b>（从四个方向发起真实连接，检查状态与日志）、<b>故障层</b>（拔线、停服务、切换、重载，观察是否按预期降级）。只做第一层，等于只证明了“能加载”。</p>
+    <pre><code class="language-bash">$ doas pfctl -nf /etc/pf.conf
+$ doas pfctl -f  /etc/pf.conf
+$ doas pfctl -vvsi | head -40
+$ doas pfctl -vvsr | head -40
+$ doas pfctl -ss | wc -l
+$ doas tcpdump -n -e -i pflog0
+
+# 规则命中计数
+$ doas pfctl -vsr | grep -E 'pass|block' | head</code></pre>
+    <p>调试规则集时，先给可疑流量加 <code>log</code> 或 <code>label</code>，再用 <code>tcpdump</code> 对照规则号。不要一次改五条规则：每次只改一个变量，记录“改前/改后”的观察结果，否则你无法知道是哪一条起了作用。</p>
+
+    <h3><span class="sn">17.6</span>了解你的网络，保持控制</h3>
+    <p>最后一节不是技术，而是运维：知道每条规则的业务理由、知道谁在改配置、知道出故障时先看什么、知道如何回滚。规则集会腐化：临时放行会变成永久、注释会过期、表会无限增长。定期审计（每季度或每次重大变更）比任何“最佳实践”都重要。</p>
 
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>参数/对象</th><th>含义</th><th>注意</th></tr></thead>
+        <thead><tr><th>选项</th><th>作用</th><th>建议</th></tr></thead>
         <tbody>
-          <tr><td><code>mediaopt hostap</code></td><td>网卡进入 AP 模式</td><td>并非所有驱动都支持</td></tr>
-          <tr><td><code>mode 11g</code></td><td>802.11g 2.4GHz</td><td>也可用 11a/11n 等，取决于硬件</td></tr>
-          <tr><td><code>chan 1</code></td><td>固定信道</td><td>相邻 AP 要错开</td></tr>
-          <tr><td><code>nwid</code></td><td>SSID</td><td>不是安全边界</td></tr>
-          <tr><td><code>wpakey</code></td><td>WPA2 预共享密钥</td><td>口令或 <code>0x</code> 十六进制</td></tr>
-          <tr><td><code>authpf</code></td><td>登录后动态放行</td><td>账号 shell 必须是 authpf</td></tr>
+          <tr><td><code>set block-policy return</code></td><td>拒绝时回 RST/ICMP</td><td>要快速失败时用</td></tr>
+          <tr><td><code>set skip on lo</code></td><td>回环不过滤</td><td>几乎必配</td></tr>
+          <tr><td><code>set state-policy if-bound</code></td><td>状态绑接口</td><td>多路径慎用</td></tr>
+          <tr><td><code>set syncookies adaptive</code></td><td>抗 SYN 洪水</td><td>按状态占用触发</td></tr>
+          <tr><td><code>set limit states</code></td><td>状态上限</td><td>按内存与峰值设</td></tr>
+          <tr><td><code>set debug</code></td><td>内核调试输出</td><td>仅短时开启</td></tr>
+          <tr><td><code>scrub ... max-mss</code></td><td>修 PMTU</td><td>PPPoE 常用 1440</td></tr>
+          <tr><td><code>antispoof for $if</code></td><td>防源地址伪造</td><td>多接口必配</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">无线配置的五个“看起来正常”</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">调优的五个坑</span></div>
       <div class="thm-body">
-        <p><b>1. 用 WEP 当加密。</b>它只防误连，不防攻击者。<b>2. 开了 hostap 却忘了 NAT 或转发。</b>客户端能关联、拿不到地址或上不了网。<b>3. 放行了 <code>$air_net</code> 内部互通。</b>访客可以扫内网主机；应显式阻断客户端之间的流量。<b>4. authpf 用户 shell 写错。</b>普通 shell 登录不会触发锚点规则，用户以为“认证了但没网”。<b>5. 把 WPA2 当成端到端加密。</b>它只保护客户端到 AP 的空中段，出了 AP 仍是明文，敏感业务仍需 TLS/VPN。</p>
+        <p><b>1. 把 <code>set limit</code> 调得远超内存。</b>状态表膨胀会拖垮系统，而不是提升吞吐。<b>2. 生产环境开 <code>set debug loud</code>。</b>日志洪水会掩盖真正的错误。<b>3. 用 <code>scrub</code> 掩盖 MTU 问题。</b>应先修 ICMP 放行，再考虑钳制。<b>4. 对 <code>antispoof</code> 覆盖的接口又手写一遍。</b>规则重复，计数器翻倍。<b>5. 改完不演练回滚。</b>真正故障时，备份文件找不到或不会用。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ch11" class="chapter">
+<section id="appendix" class="chapter">
   <div class="wrap">
-    <div class="sec-label">Chapter 10 · Getting Your Setup Just Right / Debugging</div>
-    <h2><span class="num">11</span>先证明包到了哪一层，再改规则</h2>
-    <p class="lede">排障不是“把 PF 关掉试试”。按接口、路由、转发、过滤、状态、应用六层逐段验证，才能把“网络不通”缩小成一条具体规则或一个具体状态。</p>
+    <div class="sec-label">Appendix A &amp; B · Resources and Hardware</div>
+    <h2><span class="num">A</span>资料、社区与硬件：把书用下去</h2>
+    <p class="lede">PF 的知识一半在手册页，一半在邮件列表与真实配置里。附录不是“扩展阅读”，而是你遇到书上没写的情况时的查询路径。</p>
     <div class="chap-intro">
-      <p>PF 只是路径上的一站。包可能根本没到网卡、可能到了但没开转发、可能被 antispoof 丢弃、也可能被旧状态表挡住。每一层都有独立的证据，别用猜测跨层。</p>
-      <span class="tag">分层排障 · 证据</span>
+      <p>附录 A 给出网络与 BSD 资源、开发者博客、示例配置、书籍、spamd/灰名单资料与本书相关站点；附录 B 讲硬件支持：怎么选网卡、开发者面临什么问题、普通用户如何帮忙。</p>
+      <span class="tag">resources · hardware · community</span>
     </div>
     <div class="mapchips">
-      <span class="chip hot">pfctl -vvsr</span><span class="chip">pfctl -ss</span><span class="chip">tcpdump 两侧</span><span class="chip">antispoof</span><span class="chip">scrub</span><span class="chip">转发 sysctl</span>
+      <span class="chip hot">man pf.conf</span><span class="chip">openbsd-misc</span><span class="chip">nycbug</span><span class="chip">硬件兼容</span><span class="chip">捐赠</span>
     </div>
+    <p class="note"><b>原书小节</b> · General Networking and BSD Resources on the Internet · Developer Blogs, Sample Configurations, and Related Musings · BSD and Networking Books · spamd and Greylisting-Related Resources · Book-Related Web Resources · Buy OpenBSD and FreeBSD Swag, Donate! · Getting the Right Hardware · Issues Facing Hardware Support Developers · How to Help the Hardware Support Efforts</p>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">威胁模型</span><span class="thm-title">排障动作本身会扩大攻击面</span></div>
-      <div class="thm-body">
-        <p>最常见的“临时处理”是停掉 PF 或加一条 <code>pass all</code>，而事故往往就发生在这几分钟里。把调试规则留在生产、把 <code>tcpdump</code> 抓到的明文包随手放在 <code>/tmp</code>、把日志权限放开，都会让排障变成新的泄露源。排障也要遵守最小权限与可回滚：用 <code>-nf</code> 验证、用锚点灰度、用完即删。</p>
-      </div>
-    </div>
+    <h3><span class="sn">A.1</span>优先级最高的五个查询入口</h3>
+    <p><b>① 手册页。</b><code>man pf.conf</code> 是语法与语义的最终依据；<code>man pfctl</code> 是运维命令；<code>man relayd.conf</code>、<code>man spamd</code>、<code>man spamdb</code>、<code>man carp</code>、<code>man pfsync</code> 分别对应专门组件。PF 的语法随版本变化，查手册时先确认版本。<b>② 官方 FAQ 与邮件列表归档。</b>OpenBSD 的 <code>openbsd-misc</code>、<code>openbsd-pf</code> 归档里有大量“看似奇怪但已解释”的行为。<b>③ 示例配置。</b>OpenBSD 的 <code>/etc/pf.conf</code>、<code>/usr/share/examples/</code>、以及开发者博客里的可运行配置。<b>④ 书籍。</b>除本书外，网络基础（TCP/IP、路由、DNS）与 BSD 系统管理书是必要背景。<b>⑤ 你自己的日志。</b>最贴近你网络的事实来源。</p>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">方法</span><span class="thm-title">六层证据链</span></div>
-      <div class="thm-body">
-        <p><b>链路：</b><code>ifconfig</code> 是否 UP、是否有地址。<b>路由：</b><code>netstat -rn</code> 是否有默认路由与回程路由。<b>转发：</b><code>sysctl net.inet.ip.forwarding</code> 是否为 1。<b>过滤：</b><code>pfctl -vvsr</code> 的包计数是否增长。<b>状态：</b><code>pfctl -ss</code> 是否有对应连接。<b>应用：</b>服务是否监听、证书/认证是否失败。任何一层没有证据，就不要改上一层的配置。</p>
-      </div>
-    </div>
+    <h3><span class="sn">A.2</span>开发者博客与社区</h3>
+    <p>PF 的许多行为细节先出现在开发者博客与邮件列表，再进入手册。关注 OpenBSD 的 <code>cvs</code> 日志、<code>undeadly.org</code>、以及 Henning Brauer、Daniel Hartmeier 等开发者的文章，能提前知道“下个版本会变什么”。但要注意：博客不是规范，最终以手册页与源码为准。</p>
 
-    <h3><span class="sn">11.1</span>一套可复用的诊断顺序</h3>
-    <pre><code class="language-bash"># 0) 先确认规则本身能解析，不打断现网
-$ doas pfctl -nf /etc/pf.conf
-
-# 1) 规则是否加载、哪条在命中
-$ doas pfctl -sr | nl -ba | sed -n '1,40p'
-$ doas pfctl -vvsr | grep -E 'rule|pkts|bytes'
-
-# 2) 状态表里有没有这条连接
-$ doas pfctl -ss | grep -E '192.168.1.5|203.0.113.10'
-
-# 3) 接口、地址、路由、转发
-$ ifconfig em0 em1
-$ netstat -rn | head
-$ sysctl net.inet.ip.forwarding net.inet6.ip6.forwarding
-
-# 4) 两侧同时抓包，确认包在哪一段消失
-$ doas tcpdump -ni em1 'host 192.168.1.5 and port 443'
-$ doas tcpdump -ni em0 'host 192.168.1.5 and port 443'
-</code></pre>
-
-    <div class="intuition">
-      <div class="ih">读证据</div>
-      <p>内网侧有 SYN、外网侧没有：问题在转发或出站规则，不在上游。<b>外网侧有 SYN、没有 SYN-ACK：</b>上游/目标侧问题，或源地址未正确 NAT。<b>两侧都有 SYN，回程 SYN-ACK 只在外网侧出现：</b>回程被过滤或路由错误。<b>规则计数为 0：</b>包根本没匹配到你以为的那条规则，先检查方向、接口和地址。<b>状态表有旧条目：</b>规则改了但状态没清，先 <code>pfctl -F states</code> 再测。</p>
-    </div>
-
-    <h3><span class="sn">11.2</span>antispoof 与 scrub：两个常被忽略的“隐形规则”</h3>
-    <p><code>antispoof for $ext_if</code> 会自动生成一组规则，丢弃“源地址声称来自内网、却从外网接口进入”的包。它防的是源地址伪造，但配置错接口时会误伤合法的非对称流量。<code>scrub</code> 负责规范化（分片重组、MSS 钳制、去除异常标志），对 PMTU 黑洞和某些 IDS 规避手法有效；它不负责安全策略，只是让后续匹配更可预测。</p>
-    <pre><code class="language-bash"># pf.conf 片段
-ext_if = "em0"
-int_if = "em1"
-set skip on lo
-scrub in on $ext_if all fragment reassemble max-mss 1440
-antispoof for $ext_if inet
-antispoof for $int_if inet
-block all
-</code></pre>
-    <p>注意 <code>antispoof</code> 展开后是 <code>block</code> 规则，位置同样参与“最后匹配者胜”。把它放在宽泛的 <code>pass</code> 之后，可能被后面的放行覆盖。</p>
+    <h3><span class="sn">A.3</span>硬件：为什么“能跑”不等于“适合”</h3>
+    <p>PF 本身对硬件不挑，但网卡驱动决定你能不能用 ALTQ、硬件校验和、VLAN、TSO、多队列。原书附录 B 的核心建议：选主流通用驱动支持的网卡（如 Intel <code>em</code>/<code>igb</code>、Broadcom <code>bge</code>），避免需要闭源固件的“游戏网卡”；无线网卡要确认支持 hostap 模式。</p>
 
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>症状</th><th>先查</th><th>常见原因</th></tr></thead>
+        <thead><tr><th>需求</th><th>看什么</th><th>常见坑</th></tr></thead>
         <tbody>
-          <tr><td>规则不生效</td><td><code>pfctl -vvsr</code> 计数</td><td>方向/接口写错、被后面的规则覆盖</td></tr>
-          <tr><td>能 ping 不能传大包</td><td>MSS、PMTU、<code>scrub</code></td><td>ICMP 被全阻、封装后 MTU 变小</td></tr>
-          <tr><td>外网通、内网服务器不通</td><td>服务器默认网关</td><td>回程绕过防火墙</td></tr>
-          <tr><td>NAT 后访问公网 IP 失败</td><td>hairpin 规则</td><td>内网访问未做反向重定向</td></tr>
-          <tr><td>改规则后仍旧行为</td><td><code>pfctl -ss</code></td><td>旧状态仍在生效</td></tr>
-          <tr><td>日志有 block 但找不到规则</td><td>规则号 + <code>pfctl -sr</code></td><td>日志来自旧规则集或锚点</td></tr>
+          <tr><td>多网口网关</td><td>驱动是否在 base</td><td>新芯片只有 Linux 驱动</td></tr>
+          <tr><td>ALTQ（FreeBSD）</td><td>驱动是否支持 ALTQ</td><td>支持 PF 不等于支持 ALTQ</td></tr>
+          <tr><td>无线 AP</td><td>hostap 模式</td><td>只能做 STA</td></tr>
+          <tr><td>高吞吐</td><td>多队列、校验和卸载</td><td>单队列成为瓶颈</td></tr>
+          <tr><td>冗余</td><td>CARP 与交换机配合</td><td>交换机端口安全挡组播</td></tr>
         </tbody>
       </table>
     </div>
 
+    <h3><span class="sn">A.4</span>如何帮忙</h3>
+    <p>普通用户能做的比想象中多：提交完整的 <code>dmesg</code>、<code>pcidump</code>、<code>ifconfig</code> 与复现步骤；测试新驱动并回报；写清楚“什么配置、什么流量、什么现象”；捐赠硬件给开发者；以及把可复用的配置整理成文档。原书特别强调：<b>好的 bug 报告本身就是贡献</b>。</p>
+
     <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见坑</span><span class="thm-title">排障时最容易制造的二次故障</span></div>
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">资料使用的三个坑</span></div>
       <div class="thm-body">
-        <p><b>1. 直接 <code>pfctl -d</code>。</b>PF 全停、全部放行，可能把内网服务暴露到公网；应改用 <code>pfctl -nf</code> 与临时锚点做灰度。<b>2. 在错误的主机上抓包。</b>NAT 之后源地址已变，过滤条件要用改写后的地址。<b>3. 相信 tcpdump 的校验和。</b>网卡校验和卸载会让出站包显示 “bad checksum”，这不代表包坏了。<b>4. 只用 ICMP 判断连通。</b>很多策略只放 TCP，ping 不通不代表业务不通。<b>5. 忘记 IPv6。</b>只写 <code>inet</code> 的规则不会影响 <code>inet6</code>，双栈环境要分别验证。</p>
+        <p><b>1. 照抄旧版本的配置。</b>PF 语法在 4.6/5.0/5.5 有重大变化，先确认版本。<b>2. 把博客当规范。</b>博客解释“为什么”，手册定义“是什么”。<b>3. 买“支持 PF”的网卡却不确认驱动。</b>PF 是软件，能不能跑看驱动。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="ch12" class="chapter">
+<section id="summary" class="chapter">
   <div class="wrap">
     <div class="sec-label">Summary · One Page of PF</div>
-    <h2><span class="num">12</span>一页纸：把规则集写成可运营的系统</h2>
-    <p class="lede">好的规则集不是“最严”，而是“每个允许都有理由、每个拒绝都能解释、每次变更都能回滚”。下面六条原则和一张速查表，足以支撑绝大多数边界场景。</p>
+    <h2><span class="num">F</span>一页纸：把规则集写成可运营的系统</h2>
+    <p class="lede">好的规则集不是“最严”，而是“每个允许都有理由、每个拒绝都能解释、每次变更都能回滚”。下面按“建模 → 写规则 → 观测 → 故障”四步收束全书。</p>
     <div class="chap-intro">
-      <p>回看全书：单机基线给出方向感，网关引入双接口与 NAT，表与锚点解决变化，队列解决拥塞，CARP 解决单点，日志与分层排障解决“为什么”。把这些串起来，才是一套能交接的防火墙。</p>
-      <span class="tag">收束 · 检查清单</span>
+      <p>回看全书：单机基线给出方向感；网关引入双接口与 NAT；表与锚点解决变化；队列解决拥塞；CARP/pfsync 解决单点；日志与分层排障解决“为什么”。把这些串起来，才是一套能交接的防火墙。</p>
+      <span class="tag">收束 · 检查清单 · 学习路线</span>
     </div>
     <div class="mapchips">
       <span class="chip hot">default deny</span><span class="chip">最小放行</span><span class="chip">状态优先</span><span class="chip">可观测</span><span class="chip">可回滚</span><span class="chip">定期演练</span>
     </div>
 
-    <div class="cards">
-      <div class="card"><div class="k">原则 01</div><h4>默认拒绝，显式放行</h4><p><code>block all</code> 放在最前，允许规则逐条追加。不要依赖 PF 的默认放行，也不要写“最后兜底 block”。</p></div>
-      <div class="card"><div class="k">原则 02</div><h4>方向先于端口</h4><p>先问“从哪个接口进、从哪个接口出”，再问端口。网关场景必须同时处理 <code>in</code> 与 <code>out</code>。</p></div>
-      <div class="card"><div class="k">原则 03</div><h4>让状态替你工作</h4><p>只放行新连接方向，回程交给状态表。改规则后清理旧状态，避免“配置已改、行为没变”。</p></div>
-      <div class="card"><div class="k">原则 04</div><h4>可观测才算完成</h4><p>关键拒绝要 <code>log</code>，关键链路要有计数。没有规则号和包计数的规则集，无法排障。</p></div>
-      <div class="card"><div class="k">原则 05</div><h4>变更必须可回滚</h4><p>先 <code>pfctl -nf</code>，再保留上一版 <code>pf.conf</code>；远程操作时准备带外通道，避免把自己关在门外。</p></div>
-      <div class="card"><div class="k">原则 06</div><h4>把假设写进注释</h4><p>“这条规则是为了让旧打印机出网”比“pass 9100”有价值。半年后的你会感谢现在的注释。</p></div>
-    </div>
-
-    <h3 id="cheat"><span class="sn">A</span>最终速查表：一条规则由哪些部分组成</h3>
+    <h3 id="cheat-sheet"><span class="sn">S</span>总速查：从建模到排障</h3>
     <div class="table-wrap cheat">
       <table>
-        <thead><tr><th>任务</th><th>写法</th><th>要点</th></tr></thead>
+        <thead><tr><th>阶段</th><th>要做的事</th><th>关键命令/写法</th></tr></thead>
         <tbody>
-          <tr><td>默认拒绝</td><td><code>block all</code></td><td>放在允许规则之前</td></tr>
-          <tr><td>放行新连接</td><td><code>pass in on $ext_if proto tcp to port $webports</code></td><td>方向 + 接口 + 协议 + 目的</td></tr>
-          <tr><td>立即终止求值</td><td><code>pass quick proto tcp to port ssh</code></td><td>只给确定要覆盖后续规则的场景</td></tr>
-          <tr><td>限制来源</td><td><code>pass in from $localnet to any</code></td><td><code>to</code> 不负责路由</td></tr>
-          <tr><td>记录日志</td><td><code>pass in log (all) on $ext_if ...</code></td><td>先收窄范围，避免写满磁盘</td></tr>
-          <tr><td>出站 NAT</td><td><code>match out on $ext_if inet from $localnet nat-to ($ext_if)</code></td><td>还需一条 <code>pass</code></td></tr>
-          <tr><td>入站端口映射</td><td><code>pass in on $ext_if ... rdr-to $webserver</code></td><td>翻译与放行合一，最不易漏</td></tr>
-          <tr><td>地址集合</td><td><code>table &lt;clients&gt; persist { 192.168.1.0/24 }</code></td><td><code>pfctl -t clients -T add ...</code> 热更新</td></tr>
-          <tr><td>动态子规则</td><td><code>anchor "authpf/*"</code></td><td>锚点处参与主规则顺序</td></tr>
-          <tr><td>限速封禁</td><td><code>keep state (max-src-conn-rate 3/60, overload &lt;bruteforce&gt; flush global)</code></td><td>阈值要按 NAT 用户数评估</td></tr>
-          <tr><td>优先级</td><td><code>set prio (5, 6)</code></td><td>前者数据，后者 ACK</td></tr>
-          <tr><td>带宽队列</td><td><code>queue qweb parent rootq bandwidth 8M min 4M</code></td><td>只能分配给叶子队列</td></tr>
-          <tr><td>防源地址伪造</td><td><code>antispoof for $ext_if inet</code></td><td>展开为 block 规则，注意顺序</td></tr>
-          <tr><td>跳过回环</td><td><code>set skip on lo</code></td><td>不要把 <code>$int_if</code> 一并跳过除非确有需要</td></tr>
-          <tr><td>只检查不加载</td><td><code>pfctl -nf /etc/pf.conf</code></td><td>每次变更的第一条命令</td></tr>
-          <tr><td>查看状态</td><td><code>pfctl -ss</code> / <code>pfctl -vvsr</code></td><td>状态与计数交叉验证</td></tr>
+          <tr><td>建模</td><td>画接口、网段、信任级别、失败模式</td><td><code>ifconfig</code>、<code>netstat -rn</code></td></tr>
+          <tr><td>基线</td><td>默认拒绝 + 最小放行</td><td><code>block all</code>、<code>pass out ...</code></td></tr>
+          <tr><td>命名</td><td>接口/端口用宏，动态地址用表</td><td><code>ext_if = "em0"</code>、<code>table &lt;t&gt; persist</code></td></tr>
+          <tr><td>翻译</td><td>出站 NAT、入站 rdr</td><td><code>match out ... nat-to ($ext_if)</code>、<code>pass in ... rdr-to</code></td></tr>
+          <tr><td>组织</td><td>动态子树用锚点，跨接口分类用标签</td><td><code>anchor "authpf/*"</code>、<code>tag</code>/<code>tagged</code></td></tr>
+          <tr><td>防御</td><td>限速封禁、灰名单、蜜罐</td><td><code>overload &lt;bruteforce&gt;</code>、<code>spamd</code></td></tr>
+          <tr><td>整形</td><td>优先级 + 队列，只控出方向</td><td><code>set prio</code>、<code>queue ... bandwidth</code></td></tr>
+          <tr><td>冗余</td><td>CARP + pfsync + 规则放行</td><td><code>ifconfig carp0 ... vhid</code>、<code>syncdev</code></td></tr>
+          <tr><td>观测</td><td>日志、标签、计数器、流量图</td><td><code>log</code>、<code>label</code>、<code>systat</code></td></tr>
+          <tr><td>排障</td><td>链路 → 路由 → 状态 → 规则 → 应用</td><td><code>tcpdump</code>、<code>pfctl -ss</code>、<code>pfctl -sr</code></td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3><span class="sn">B</span>上线前最后一遍</h3>
-    <ul class="clean">
-      <li><b>语法：</b><code>pfctl -nf</code> 无输出；重载后 <code>pfctl -sr</code> 的条数与预期一致。</li>
-      <li><b>路径：</b>从外部、从内网、从本机三个位置各测一次；IPv4 与 IPv6 分开测。</li>
-      <li><b>回程：</b>NAT/rdr 服务器的默认网关指向防火墙；非对称路由已排除。</li>
-      <li><b>可观测：</b>关键 block 有日志，日志能对上规则号；磁盘不会被 <code>log (all)</code> 写爆。</li>
-      <li><b>高可用：</b>CARP 实际切换过一次；pfsync 状态数在两端接近；vhid 无冲突。</li>
-      <li><b>逃生：</b>带外管理可用；上一版配置已备份；知道如何用 <code>pfctl -f</code> 回滚而不是 <code>-d</code>。</li>
-    </ul>
+    <h3><span class="sn">S.1</span>六条原则</h3>
+    <div class="cards">
+      <div class="card"><div class="k">原则 01</div><h4>默认拒绝，显式放行</h4><p><code>block all</code> 放在允许规则之前；不要依赖 PF 的默认 <code>pass</code>。<code>quick</code> 只给确定要覆盖后续规则的场景。</p></div>
+      <div class="card"><div class="k">原则 02</div><h4>方向先于端口</h4><p>先问“从哪个接口进、从哪个接口出”，再问端口。网关必须同时处理 <code>in</code> 与 <code>out</code>。</p></div>
+      <div class="card"><div class="k">原则 03</div><h4>让状态替你工作</h4><p>只放行新连接方向，回程交给状态表。改规则后清理旧状态，避免“配置已改、行为没变”。</p></div>
+      <div class="card"><div class="k">原则 04</div><h4>可观测才算完成</h4><p>关键拒绝要 <code>log</code>，关键链路要有计数与 <code>label</code>。没有规则号与包计数的规则集无法排障。</p></div>
+      <div class="card"><div class="k">原则 05</div><h4>变更必须可回滚</h4><p>先 <code>pfctl -nf</code>，保留上一版；远程操作准备带外通道与定时回滚。</p></div>
+      <div class="card"><div class="k">原则 06</div><h4>把假设写进注释</h4><p>“这条规则是为了让旧打印机出网”比“pass 9100”有价值。半年后的你会感谢现在的注释。</p></div>
+    </div>
 
-    <div class="thm rem">
-      <div class="thm-head"><span class="thm-kind">最后一句</span><span class="thm-title">规则集是代码，不是护身符</span></div>
+    <h3><span class="sn">S.2</span>故障时的 60 秒检查单</h3>
+    <p><b>1.</b> <code>ifconfig</code>：接口 up？地址对？<b>2.</b> <code>netstat -rn</code>：默认路由在？<b>3.</b> <code>tcpdump -n -e -i pflog0</code>：有没有记录？动作是 pass 还是 block？<b>4.</b> 规则号对照 <code>pfctl -sr</code>：方向/接口/地址匹配吗？<b>5.</b> <code>pfctl -ss</code>：状态建立了吗？是单向还是双向？<b>6.</b> <code>pfctl -sn</code>：NAT/rdr 是否符合预期？<b>7.</b> 在服务器侧抓包：包到了吗？应用回了吗？</p>
+
+    <h3><span class="sn">S.3</span>学习路线：下一步读什么</h3>
+    <p><b>第一轮（能跑）：</b>第 2 章单机基线 + 第 3 章网关 + 第 10 章 <code>pfctl -nf</code>/日志。目标：一台网关稳定运行，知道每条规则为什么存在。<b>第二轮（能扩）：</b>第 5 章 DMZ/锚点/标签 + 第 6 章自适应防御 + 第 9 章日志工具。目标：多网段、可观测、可审计。<b>第三轮（能扛）：</b>第 7 章队列 + 第 8 章 CARP/pfsync + 第 4 章 authpf。目标：拥塞与故障时行为可预测。<b>长期：</b>读 <code>man pf.conf</code>、跟踪 OpenBSD 版本变化、定期审计规则集。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">交付标准</span><span class="thm-title">什么叫“这套防火墙写完了”</span></div>
       <div class="thm-body">
-        <p>PF 能做的，是把你的网络意图精确地执行到每一个包上；它不能替你想清楚意图。先画清楚网段、服务与信任边界，再写规则；先能解释每条规则为什么存在，再谈优化。能测试、能观测、能回滚的规则集，比“看起来很严格”的规则集安全得多。</p>
+        <p>① 每个接口的默认动作明确；② 每条 <code>pass</code> 有业务理由与注释；③ 关键拒绝有日志与标签；④ NAT/rdr 有对应的回程验证；⑤ 队列有上限与监控；⑥ 冗余做过一次真实切换；⑦ 有一份“故障时先看什么”的检查单；⑧ 有可回滚的上一版配置。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">S.4</span>自测：十个问题</h3>
+    <p><b>1.</b> 为什么 <code>block all</code> 放在最后会覆盖前面的 <code>pass</code>？<b>2.</b> <code>in</code>/<code>out</code> 是相对谁而言？<b>3.</b> NAT 与 rdr 分别改写哪个地址？<b>4.</b> 锚点放在 <code>block all</code> 之后还能放行吗？<b>5.</b> 表为什么需要 <code>persist</code>？<b>6.</b> <code>overload</code> 与 <code>max-src-conn-rate</code> 的关系？<b>7.</b> 为什么整形只能控出方向？<b>8.</b> CARP 的 <code>advskew</code> 越大越优先还是越不优先？<b>9.</b> <code>log (matches)</code> 与 <code>log (all)</code> 的区别？<b>10.</b> 状态存在但应用失败，下一步看什么？</p>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">最后提醒</span><span class="thm-title">不要把“完整模式”当成“逐字翻译”</span></div>
+      <div class="thm-body">
+        <p>本教程覆盖原书十章与两个附录的章节结构、核心配置、命令、参数与失败模式；证明与推导以“思路 + 可操作步骤”呈现，而不是逐字复述。真正上手时，以你系统上的 <code>man pf.conf</code> 与 <code>pfctl -nf</code> 为准——版本差异永远比教程更新得快。</p>
       </div>
     </div>
   </div>
@@ -1548,7 +2806,7 @@ block all
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 A No-Nonsense Guide to the OpenBSD Firewall 的《The Book of PF》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1556,7 +2814,7 @@ block all
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>10 章 · 266 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
