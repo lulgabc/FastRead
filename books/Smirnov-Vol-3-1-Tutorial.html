@@ -432,32 +432,39 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · MATH</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">A Course of Higher Mathematics, Vol. 3-1
       <span>Linear Algebra</span>
     </div>
-    <div class="sb-meta"><b>7</b> 章 · <b>336</b> 页</div>
+    <div class="sb-meta">336 页 · 19 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
     <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>行列式：把“解方程”压缩成一个数</span></a>
     <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>线性方程组：秩决定一切</span></a>
-    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>矩阵代数：线性映射的坐标账本</span></a>
-    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>向量空间与内积：给线性代数装上长度</span></a>
+    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>线性空间与内积：从数组到公理</span></a>
+    <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>矩阵代数：线性算子的坐标账本</span></a>
     <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>线性变换与张量：换基之后谁不变</span></a>
-    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>特征值与若尔当标准形：不能对角化时怎么办</span></a>
-    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>二次型：配方、惯性定律与正定性</span></a>
-    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>Hermite 矩阵、酉矩阵与投影</span></a>
-    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>矩阵函数：把 $e^{A}$、$\sqrt{A}$ 算出来</span></a>
-    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>应用：小振动、常微分方程组与隐函数</span></a>
+    <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>特征值与特征向量：寻找不变方向</span></a>
+    <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>若尔当标准形：特征向量不够时怎么办</span></a>
+    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>双线性型与二次型：配方、惯性定律、分类</span></a>
+    <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>欧几里得空间：长度、夹角与正交化</span></a>
+    <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>正定性与特征值的极值性质</span></a>
+    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>Hermite 矩阵、酉矩阵与谱定理</span></a>
+    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>投影矩阵与矩阵函数</span></a>
+    <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>无限维空间：从有限和到 Fourier 级数</span></a>
+    <a class="nav-link" href="#ch14" data-sec="ch14"><span class="nav-num">14</span> <span>应用：小振动、微分方程组与隐函数</span></a>
+    <a class="nav-link" href="#ch15" data-sec="ch15"><span class="nav-num">15</span> <span>群与线性变换群：对称性的代数</span></a>
+    <a class="nav-link" href="#ch16" data-sec="ch16"><span class="nav-num">16</span> <span>线性表示：把抽象群变成矩阵</span></a>
+    <a class="nav-link" href="#ch17" data-sec="ch17"><span class="nav-num">17</span> <span>连续群：结构常数与无穷小变换</span></a>
     <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
   <button class="tool-btn menu-btn" id="menuBtn" aria-label="打开目录">☰</button>
-  <div class="brand-mini">A Course of Higher Mathematics, Vol.…</div>
+  <div class="brand-mini">A Course of Higher Mathematics, Vol. 3-1</div>
   <div class="crumb" id="crumb">导读</div>
   <div class="tools">
     <div class="search-wrap">
@@ -477,1040 +484,2173 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <main class="main" id="main">
 <section id="top" class="hero">
-  <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-kicker">A Course of Higher Mathematics · Vol. III / Part 1</div>
-        <h1>线性代数<span class="en">Linear Algebra</span></h1>
-        <p class="hero-sub">从行列式与线性方程组出发，经过矩阵、向量空间、线性变换、二次型与若尔当标准形，直到矩阵函数与振动、微分方程中的应用。这是斯米尔诺夫《高等数学教程》第三卷第一部分的<b>学习版主线</b>：定理给陈述与直觉，例子给到手算，公式表负责查漏。</p>
-        <div class="hero-actions">
-          <a class="btn" href="#ch1">从行列式开始 →</a>
-          <a class="btn ghost" href="#summary">直接看公式表</a>
-        </div>
-        <div class="hero-stats">
-          <div class="hstat"><b>10</b><span>章主线</span></div>
-          <div class="hstat"><b>40+</b><span>定义与定理</span></div>
-          <div class="hstat"><b>10</b><span>手算例子</span></div>
-          <div class="hstat"><b>1</b><span>页公式表</span></div>
-        </div>
+<div class="wrap">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-kicker">A Course of Higher Mathematics · Vol. III / Part 1</div>
+      <h1>线性代数<span class="en">Linear Algebra</span></h1>
+      <p class="hero-sub">从行列式与线性方程组出发，经过矩阵、秩、线性空间、线性算子、特征值与若尔当标准形，再到双线性型、二次型、欧几里得空间，最后进入张量、群表示与无限维空间。这是斯米尔诺夫《高等数学教程》第三卷第一部分的学习版主线：<b>定理给完整陈述与证明思路，例子给到手算，章末给速查表与误区</b>。</p>
+      <div class="hero-actions">
+        <a class="btn" href="#ch1">从行列式开始 →</a>
+        <a class="btn ghost" href="#summary">公式表与学习路线</a>
       </div>
-      <div class="hero-art">
-        <svg viewBox="0 0 420 440" role="img" aria-label="线性变换把单位正方形映成平行四边形">
-          <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M0,0 L10,5 L0,10 z" fill="#b23a26"/>
-            </marker>
-            <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M0,0 L10,5 L0,10 z" fill="#11645c"/>
-            </marker>
-          </defs>
-          <g stroke="#d8cdb9" stroke-width="1">
-            <path d="M40 360 H380 M80 400 V40"/>
-            <path d="M80 120 H380 M80 200 H380 M80 280 H380 M160 400 V40 M240 400 V40 M320 400 V40" opacity=".55"/>
-          </g>
-          <path d="M80 360 L200 360 L200 240 L80 240 Z" fill="#e8e2f0" stroke="#5a4a78" stroke-width="2"/>
-          <path d="M80 360 L260 300 L320 180 L140 240 Z" fill="#f3ded7" stroke="#b23a26" stroke-width="2.4" opacity=".92"/>
-          <line x1="80" y1="360" x2="260" y2="300" stroke="#11645c" stroke-width="3" marker-end="url(#arrow2)"/>
-          <line x1="80" y1="360" x2="140" y2="240" stroke="#11645c" stroke-width="3" marker-end="url(#arrow2)"/>
-          <line x1="80" y1="360" x2="200" y2="240" stroke="#b23a26" stroke-width="2.6" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
-          <circle cx="80" cy="360" r="3.5" fill="#1c1b18"/>
-          <g font-family="Georgia, serif" font-size="17" fill="#1c1b18">
-            <text x="205" y="252">Ae₂</text>
-            <text x="263" y="296">Ae₁</text>
-            <text x="150" y="225">Ax</text>
-            <text x="44" y="376">O</text>
-            <text x="340" y="382">x₁</text>
-            <text x="92" y="52">x₂</text>
-          </g>
-          <g font-family="Georgia, serif" font-size="14" fill="#726a5c">
-            <text x="60" y="418">单位正方形 → 平行四边形：det A 就是面积伸缩比</text>
-          </g>
-        </svg>
-        <div class="caption">线性映射由它在基向量上的作用决定；行列式度量它把体积放大了多少倍。</div>
+      <div class="hero-stats">
+        <div class="hstat"><b>18</b><span>章主线</span></div>
+        <div class="hstat"><b>60+</b><span>定义与定理</span></div>
+        <div class="hstat"><b>24</b><span>手算例子</span></div>
+        <div class="hstat"><b>7</b><span>原书部分</span></div>
       </div>
     </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 360 380" role="img" aria-label="线性映射把单位正方形变成平行四边形">
+        <defs>
+          <marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 z" fill="#b23a26"/>
+          </marker>
+        </defs>
+        <g stroke="#c4b7a0" stroke-width="1" opacity=".55">
+          <path d="M40 300 L320 300 M70 330 L350 330 M40 300 L70 330 M320 300 L350 330 M40 300 L40 20 M70 330 L70 50"/>
+          <path d="M40 240 L320 240 M40 180 L320 180 M40 120 L320 120 M40 60 L320 60" stroke-dasharray="3 5"/>
+          <path d="M100 300 L100 20 M160 300 L160 20 M220 300 L220 20 M280 300 L280 20" stroke-dasharray="3 5"/>
+        </g>
+        <path d="M70 330 L150 330 L150 250 L70 250 Z" fill="#dcebe7" stroke="#11645c" stroke-width="2"/>
+        <path d="M70 330 L210 300 L290 220 L150 250 Z" fill="#f3ded7" fill-opacity=".75" stroke="#b23a26" stroke-width="2.2"/>
+        <line x1="70" y1="330" x2="210" y2="300" stroke="#b23a26" stroke-width="2.4" marker-end="url(#ar)"/>
+        <line x1="70" y1="330" x2="150" y2="250" stroke="#b23a26" stroke-width="2.4" marker-end="url(#ar)"/>
+        <text x="150" y="352" font-family="Georgia,serif" font-size="15" fill="#726a5c">e₁</text>
+        <text x="212" y="315" font-family="Georgia,serif" font-size="15" fill="#b23a26">Ae₁</text>
+        <text x="118" y="240" font-family="Georgia,serif" font-size="15" fill="#b23a26">Ae₂</text>
+        <text x="250" y="270" font-family="Georgia,serif" font-size="15" fill="#b23a26">Ax</text>
+        <text x="60" y="24" font-family="Georgia,serif" font-size="13" fill="#726a5c">x₂</text>
+        <text x="322" y="318" font-family="Georgia,serif" font-size="13" fill="#726a5c">x₁</text>
+      </svg>
+      <div class="caption">单位正方形 → 平行四边形：$|\det A|$ 就是面积伸缩比，符号记录定向是否翻转。</div>
+    </div>
   </div>
+
+  <div class="cards" style="margin-top:34px">
+    <div class="card">
+      <div class="k">怎么读</div>
+      <h4>三条主线，一条判据链</h4>
+      <p>计算线：行列式 → 消元 → 逆矩阵；结构线：线性空间 → 基与维数 → 线性算子 → 相似；谱线：特征值 → 若尔当形 → 二次型/Hermite → 矩阵函数。所有判据最终都回到“秩”与“特征值”。</p>
+    </div>
+    <div class="card">
+      <div class="k">符号约定</div>
+      <h4>与原书一致</h4>
+      <p>$A=(a_{ik})$ 的第一个下标是行、第二个是列；$A^{\mathsf T}$ 为转置，$A^{*}=\overline{A^{\mathsf T}}$ 为共轭转置；$\operatorname{rank}A$ 为秩，$\operatorname{tr}A$ 为迹；二次型矩阵取对称，交叉项系数减半。</p>
+    </div>
+    <div class="card">
+      <div class="k">覆盖范围</div>
+      <h4>原书七部分全覆盖</h4>
+      <p>第一章行列式与方程组、第二章线性变换与二次型、第三章群与线性表示，以及无限维空间一节。小节编号按原书 §1–§6 与条目 1–90 标注，便于回查。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch1" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 1</div>
-    <h2><span class="num">1</span>行列式：把“解方程”压缩成一个数</h2>
-    <p class="lede">行列式是线性代数的第一个不变量：它判断方阵是否可逆，度量线性变换对体积的伸缩，并给出解线性方程组的显式公式。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 1 · §1.1–§1.7</div>
+  <h2><span class="num">1</span>行列式：把“解方程”压缩成一个数</h2>
+  <p class="lede">行列式（determinant）是线性代数的第一个不变量：它判断方阵是否可逆，度量线性变换对体积的伸缩，并给出解线性方程组的显式公式。</p>
 
-    <div class="chap-intro">
-      <p>本章从排列与逆序数出发定义 $n$ 阶行列式，建立它最重要的运算性质，再用一个三阶例子演示“消元法比硬展开快”。读完后应能区分“行列式的性质”与“矩阵的性质”，并知道为什么 $\det(AB)=\det A\det B$ 是整套理论的支点。</p>
-      <span class="tag">Determinants</span>
-    </div>
+  <div class="chap-intro">
+    <p>本章按原书 §1 的顺序走：先由二元、三元一次方程组的求解公式引出二阶、三阶行列式，再给出 $n$ 阶行列式的排列定义；随后建立“换行变号、倍加不变、按行展开、乘积定理”四条主干性质；最后处理矩形阵列与 Vandermonde 行列式。读完后应能区分“行列式的性质”与“矩阵的性质”，并知道为什么 $\det(AB)=\det A\det B$ 是整套理论的支点。</p>
+    <span class="tag">Determinants</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">排列与符号</span>
-      <span class="chip">余子式展开</span>
-      <span class="chip">初等变换</span>
-      <span class="chip">乘积定理</span>
-      <span class="chip">Vandermonde</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">排列与逆序数</span>
+    <span class="chip">余子式展开</span>
+    <span class="chip">初等变换</span>
+    <span class="chip">乘积定理</span>
+    <span class="chip">Vandermonde</span>
+    <span class="chip">矩形阵列</span>
+  </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">$n$ 阶行列式</span></div>
-      <div class="thm-body">
-        <p>设 $A=(a_{ij})$ 是 $n$ 阶方阵。把 $1,\dots,n$ 的每个排列 $\sigma$ 对应一个符号 $\operatorname{sgn}\sigma=(-1)^{N(\sigma)}$，其中 $N(\sigma)$ 是逆序数，则</p>
-        $$\det A=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\,a_{1\sigma(1)}a_{2\sigma(2)}\cdots a_{n\sigma(n)}.$$
-        <p>每一项从每一行、每一列各取一个元素；偶排列取正号，奇排列取负号。二阶时就是 $a_{11}a_{22}-a_{12}a_{21}$。</p>
-      </div>
-    </div>
+  <h3><span class="sn">§1.1–1.2</span>从解方程到排列定义</h3>
+  <p>二元方程组 $a_{11}x_1+a_{12}x_2=b_1,\ a_{21}x_1+a_{22}x_2=b_2$ 的解可写成</p>
+  <p>$$x_1=\frac{b_1a_{22}-a_{12}b_2}{a_{11}a_{22}-a_{12}a_{21}},\qquad
+  x_2=\frac{a_{11}b_2-b_1a_{21}}{a_{11}a_{22}-a_{12}a_{21}}.$$</p>
+  <p>分母 $a_{11}a_{22}-a_{12}a_{21}$ 只依赖系数，记作二阶行列式。三元情形通分后，分母是六项的代数和，正负号由“把列下标排成 $1,2,3$ 需要多少次对换”决定。这就引出排列的逆序数（inversion）：在一个排列 $\sigma=\sigma(1)\sigma(2)\cdots\sigma(n)$ 中，若 $i&lt;j$ 而 $\sigma(i)&gt;\sigma(j)$，称 $(\sigma(i),\sigma(j))$ 构成一个逆序；逆序总数记为 $N(\sigma)$，符号 $\operatorname{sgn}\sigma=(-1)^{N(\sigma)}$。对换任意两个元素会改变逆序数的奇偶性，因此“奇排列/偶排列”是良定义的。</p>
 
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">行列式的四条主干性质</span></div>
-      <div class="thm-body">
-        <p>（1）对每一行线性：某行乘以 $c$，行列式乘以 $c$；两行相加，行列式可按该行拆开。（2）交换两行，行列式变号；因此两行相同或成比例时行列式为零。（3）把一行的倍数加到另一行，行列式不变。（4）$\det A^{\mathsf T}=\det A$，且</p>
-        $$\det(AB)=\det A\cdot\det B.$$
-        <p>由（1）（2）可知：$A$ 可逆当且仅当 $\det A\ne 0$。按第 $i$ 行展开的 Laplace 公式为 $\det A=\sum_{j=1}^n(-1)^{i+j}a_{ij}M_{ij}$，其中 $M_{ij}$ 是删去第 $i$ 行、第 $j$ 列后的余子式。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">先消元，再展开</span></div>
-      <div class="thm-body">
-        <p>计算</p>
-        $$D=\begin{vmatrix}2&amp;1&amp;3\\0&amp;4&amp;-1\\5&amp;2&amp;0\end{vmatrix}.$$
-        <p>用第一行消去第三行的首元：$R_3\leftarrow R_3-\tfrac52R_1$，得</p>
-        $$D=\begin{vmatrix}2&amp;1&amp;3\\0&amp;4&amp;-1\\0&amp;-\tfrac12&amp;-\tfrac{15}{2}\end{vmatrix}
-        =2\begin{vmatrix}4&amp;-1\\-\tfrac12&amp;-\tfrac{15}{2}\end{vmatrix}
-        =2\left(-30-\tfrac12\right)=-61.$$
-        <p>若直接按第一行展开，会得到 $2(0+2)-1(0+5)+3(0-20)=4-5-60=-61$，结果一致。消元法的优势在阶数变大时显现：计算量约为 $n^3/3$，而按定义展开是 $n!$ 项。</p>
-      </div>
-    </div>
-
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>行列式不是“把数填进方阵后算出的某个量”，而是线性变换的<strong>有向体积伸缩因子</strong>。单位正方形被 $A$ 映成平行四边形，其面积就是 $|\det A|$；在三维中对应平行六面体体积。符号则记录定向是否翻转。</p>
-    </div>
-
-    <p>两个常用推论值得记住。其一是分块三角矩阵：若 $M=\begin{pmatrix}A&amp;B\\0&amp;D\end{pmatrix}$，则 $\det M=\det A\det D$，因为消去 $B$ 不影响对角块的行列式。其二是伴随矩阵满足 $A\operatorname{adj}A=(\det A)I$，即使 $A$ 奇异也成立；这把“求逆”与“解方程”连接起来，也是 Cramer 法则的矩阵版本。几何上，$|\det A|$ 等于 $A$ 的列向量张成的平行多面体体积，行列式为零就表示这些列向量被压进了一个低维子空间。Vandermonde 行列式 $\det(x_i^{j-1})=\prod_{i&lt;j}(x_j-x_i)$ 是另一个高频公式：它说明“节点互异”等价于对应的插值矩阵可逆，因此 $n$ 个互异点可以唯一确定一个次数不超过 $n-1$ 的多项式。</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>对象</th><th>公式 / 判据</th><th>用途</th></tr></thead>
-        <tbody>
-          <tr><td>二阶</td><td>$a_{11}a_{22}-a_{12}a_{21}$</td><td>手算、叉积</td></tr>
-          <tr><td>三角阵</td><td>$\det A=\prod_i a_{ii}$</td><td>消元后立刻读出</td></tr>
-          <tr><td>数乘</td><td>$\det(cA)=c^n\det A$</td><td>不要漏掉 $n$ 次方</td></tr>
-          <tr><td>乘积</td><td>$\det(AB)=\det A\det B$</td><td>可逆性、相似不变量</td></tr>
-          <tr><td>Vandermonde</td><td>$\prod_{i&lt;j}(x_j-x_i)$</td><td>节点互异判据</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三个最容易出错的地方</span></div>
-      <div class="thm-body">
-        <p>① $\det(A+B)\ne\det A+\det B$，行列式对“整个矩阵”不是线性的，只对单行线性。② 交换两行要变号，但“把一行加到另一行”不变号，二者不能混。③ 代数余子式带符号 $(-1)^{i+j}$，只写余子式会漏号；用展开法求逆时尤其明显。</p>
-      </div>
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">$n$ 阶行列式</span><span class="thm-id">§1.1</span></div>
+    <div class="thm-body">
+      <p>设 $A=(a_{ik})$ 是 $n$ 阶方阵。定义</p>
+      <p>$$\det A=\begin{vmatrix}a_{11}&amp;\cdots&amp;a_{1n}\\ \vdots&amp;&amp;\vdots\\ a_{n1}&amp;\cdots&amp;a_{nn}\end{vmatrix}
+      =\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\,a_{1\sigma(1)}a_{2\sigma(2)}\cdots a_{n\sigma(n)}.$$</p>
+      <p>求和跑遍全部 $n!$ 个排列；每一项从每一行、每一列各取一个元素。偶排列取正号，奇排列取负号。$n=2$ 时即 $a_{11}a_{22}-a_{12}a_{21}$；$n=3$ 时有六项，正是对角线法则的三正三负。</p>
     </div>
   </div>
+
+  <details class="proof"><summary>证明思路：为什么 $n!$ 项刚好覆盖所有“每行每列各一个”的取法</summary>
+  <div class="proof-body"><p>每一项由列下标映射 $\sigma$ 确定：第 $i$ 行取第 $\sigma(i)$ 列。要求每列恰好取一次，等价于 $\sigma$ 是双射，即一个排列。反之每个排列给出唯一取法，故共有 $n!$ 项且不重不漏。符号的定义保证“交换两列等价于乘 $-1$”，这正是下一节行列式变号性质的组合根源。</p></div>
+  </details>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">行列式的六条基本性质</span><span class="thm-id">§1.3</span></div>
+    <div class="thm-body">
+      <p>（1）某一行乘以数 $c$，行列式乘以 $c$；两行之和的行列式可按该行拆成两个行列式之和。（2）交换两行，行列式变号。（3）有两行相同（或成比例）时行列式为零。（4）把一行的 $c$ 倍加到另一行，行列式不变。（5）$\det A^{\mathsf T}=\det A$，因此“行”的性质对“列”同样成立。（6）若 $A,B$ 同为 $n$ 阶，则</p>
+      <p>$$\det(AB)=\det A\cdot\det B.$$</p>
+      <p>由（1）（2）立刻得到：$A$ 可逆当且仅当 $\det A\ne0$。按第 $i$ 行展开的 Laplace 公式为</p>
+      <p>$$\det A=\sum_{k=1}^{n}(-1)^{i+k}a_{ik}M_{ik},$$</p>
+      <p>其中 $M_{ik}$ 是删去第 $i$ 行、第 $k$ 列后的 $n-1$ 阶余子式（minor）；带符号的 $A_{ik}=(-1)^{i+k}M_{ik}$ 称为代数余子式（cofactor）。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明骨架：从“多重线性 + 交错”唯一确定行列式</summary>
+  <div class="proof-body">
+    <p>把行列式看成 $n$ 个行向量的函数 $D(a_1,\dots,a_n)$。由定义可直接验证它对该函数的每个变量线性（固定其余行），且交换两行变号。这两条称为“多重线性”与“交错性”。</p>
+    <p>关键引理：满足这两条、且在单位矩阵处取值为 $1$ 的函数是唯一的。做法是把每个 $a_i$ 按标准基展开，利用多重线性拆成 $n^n$ 项；交错性杀掉所有“有重复指标”的项，只剩 $n!$ 个排列项；每项的系数又由交换次数决定为 $\operatorname{sgn}\sigma$。于是任何满足公理的函数都等于排列和。</p>
+    <p>由唯一性，乘积定理可这样证：固定 $B$，令 $f(A)=\det(AB)$。当 $B$ 可逆时，$f$ 仍是 $A$ 的多重线性交错函数，且 $f(I)=\det B$，故 $f(A)=\det A\det B$；当 $B$ 奇异时，用行列式对元素的连续性（或摄动 $B+\varepsilon I$）取极限。这也说明“行列式对单行线性、对整个矩阵不线性”。</p>
+  </div>
+  </details>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>行列式不是“把数填进方阵后算出的某个量”，而是线性变换的有向体积伸缩因子。单位正方形被 $A$ 映成平行四边形，其面积就是 $|\det A|$；三维中对应平行六面体体积。符号记录定向是否翻转：$\det A&lt;0$ 表示镜面翻转。$\det A=0$ 表示整个空间被压进一个低维子空间，体积归零，映射不可逆。</p>
+  </div>
+
+  <h3><span class="sn">§1.4–1.5</span>例：先消元，再展开</h3>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">四阶行列式的一次手算</span><span class="thm-id">§1.5</span></div>
+    <div class="thm-body">
+      <p>计算</p>
+      <p>$$D=\begin{vmatrix}2&amp;1&amp;3&amp;1\\0&amp;4&amp;-1&amp;2\\5&amp;2&amp;0&amp;1\\1&amp;0&amp;2&amp;3\end{vmatrix}.$$</p>
+      <p>用第一行消去第三、四行的首元：$R_3\leftarrow R_3-\tfrac52R_1$，$R_4\leftarrow R_4-\tfrac12R_1$，得</p>
+      <p>$$D=\begin{vmatrix}2&amp;1&amp;3&amp;1\\0&amp;4&amp;-1&amp;2\\0&amp;-\tfrac12&amp;-\tfrac{15}{2}&amp;-\tfrac32\\0&amp;-\tfrac12&amp;\tfrac12&amp;\tfrac52\end{vmatrix}.$$</p>
+      <p>按第一列展开，提出因子 $2$，再用第三行消第四行：</p>
+      <p>$$D=2\begin{vmatrix}4&amp;-1&amp;2\\-\tfrac12&amp;-\tfrac{15}{2}&amp;-\tfrac32\\-\tfrac12&amp;\tfrac12&amp;\tfrac52\end{vmatrix}
+      =2\begin{vmatrix}4&amp;-1&amp;2\\-\tfrac12&amp;-\tfrac{15}{2}&amp;-\tfrac32\\0&amp;8&amp;4\end{vmatrix}.$$</p>
+      <p>按第三行展开。记 $\Delta$ 为上面的三阶行列式，则 $\Delta=(-1)^{3+2}\cdot8\begin{vmatrix}4&amp;2\\-\tfrac12&amp;-\tfrac32\end{vmatrix}+(-1)^{3+3}\cdot4\begin{vmatrix}4&amp;-1\\-\tfrac12&amp;-\tfrac{15}{2}\end{vmatrix}$。第一个行列式为 $-6+1=-5$，第二个为 $-30-\tfrac12=-\tfrac{61}{2}$，故 $\Delta=-8(-5)+4(-\tfrac{61}{2})=40-122=-82$，$D=2\Delta=-164$。若直接按定义展开需 $4!=24$ 项；消元法的乘法量约为 $n^3/3$，这是“先化简再展开”的实际价值。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§1.6–1.7</span>乘积定理与矩形阵列</h3>
+  <p>乘积定理有三种常用变形。其一是分块三角：若 $M=\begin{pmatrix}A&amp;B\\0&amp;D\end{pmatrix}$，则 $\det M=\det A\det D$，因为用块消元把 $B$ 消掉不影响对角块。其二是伴随矩阵恒等式</p>
+  <p>$$A\operatorname{adj}A=(\det A)I,\qquad (\operatorname{adj}A)_{ik}=(-1)^{i+k}M_{ki},$$</p>
+  <p>它对奇异矩阵也成立；两边取行列式得 $\det(\operatorname{adj}A)=(\det A)^{n-1}$。其三是 Binet–Cauchy 公式：若 $A$ 为 $m\times n$、$B$ 为 $n\times m$，则</p>
+  <p>$$\det(AB)=\sum_{1\le i_1&lt;\cdots&lt;i_m\le n}\det A_{i_1\cdots i_m}\det B^{i_1\cdots i_m},$$</p>
+  <p>即把 $A$ 的 $m$ 列与 $B$ 对应的 $m$ 行配对求和。$m=1$ 时退化为点积；$m=n$ 时退化为普通乘积定理。原书 §1.7 的“矩形阵列”正是这套记号的来源：$m\times n$ 阵列的 $m$ 阶子式（minor）在乘法下按上述方式组合。</p>
+  <p>Vandermonde 行列式是另一个高频公式：</p>
+  <p>$$\det\begin{pmatrix}1&amp;x_1&amp;\cdots&amp;x_1^{n-1}\\ \vdots&amp;&amp;&amp;\vdots\\ 1&amp;x_n&amp;\cdots&amp;x_n^{n-1}\end{pmatrix}
+  =\prod_{1\le i&lt;j\le n}(x_j-x_i).$$</p>
+  <p>它说明“节点互异”等价于插值矩阵可逆，因此 $n$ 个互异点唯一确定一个次数不超过 $n-1$ 的多项式——这是数值插值与求积公式的存在性基础。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>对象</th><th>公式 / 判据</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>二阶</td><td>$a_{11}a_{22}-a_{12}a_{21}$</td><td>手算、叉积、二阶稳定性</td></tr>
+        <tr><td>三角阵</td><td>$\det A=\prod_i a_{ii}$</td><td>消元后立刻读出</td></tr>
+        <tr><td>数乘</td><td>$\det(cA)=c^n\det A$</td><td>不要漏掉 $n$ 次方</td></tr>
+        <tr><td>乘积</td><td>$\det(AB)=\det A\det B$</td><td>可逆性、相似不变量</td></tr>
+        <tr><td>转置</td><td>$\det A^{\mathsf T}=\det A$</td><td>行性质可搬到列</td></tr>
+        <tr><td>逆</td><td>$\det(A^{-1})=1/\det A$</td><td>求逆后的校验</td></tr>
+        <tr><td>伴随</td><td>$\det(\operatorname{adj}A)=(\det A)^{n-1}$</td><td>奇异矩阵也成立</td></tr>
+        <tr><td>Vandermonde</td><td>$\prod_{i&lt;j}(x_j-x_i)$</td><td>节点互异判据</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三个最容易出错的地方</span></div>
+    <div class="thm-body">
+      <p>① $\det(A+B)\ne\det A+\det B$。行列式只对“单独一行”线性；对整块矩阵相加没有分配律。② 交换两行要变号，但“把一行的倍数加到另一行”不变号；两者不能混。③ 代数余子式带符号 $(-1)^{i+j}$，转置伴随矩阵时下标还要交换：$(\operatorname{adj}A)_{ik}=A_{ki}$ 的余子式，而不是 $A_{ik}$ 的。④ 行列式为零只说明不可逆，不代表“没有解”，方程组可能无解也可能无穷多解，必须比较秩。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch2" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 2</div>
-    <h2><span class="num">2</span>线性方程组：秩决定一切</h2>
-    <p class="lede">克莱姆法则给出唯一解的显式公式，但真正回答“有没有解、有多少解”的是系数矩阵与增广矩阵的秩。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 2 · §2.8–§2.11</div>
+  <h2><span class="num">2</span>线性方程组：秩决定一切</h2>
+  <p class="lede">克莱姆法则（Cramer’s rule）给出唯一解的显式公式，但真正回答“有没有解、有多少解”的是系数矩阵与增广矩阵的秩（rank）。</p>
 
-    <div class="chap-intro">
-      <p>本章把方程组写成 $Ax=b$，用秩统一处理方阵与非方阵、齐次与非齐次。核心结论只有一条：<strong>相容当且仅当 $\operatorname{rank}A=\operatorname{rank}(A\mid b)$</strong>；自由度等于 $n-\operatorname{rank}A$。齐次解空间与伴随方程组的关系，则是下一章“正交补”思想的伏笔。</p>
-      <span class="tag">Linear Systems</span>
-    </div>
+  <div class="chap-intro">
+    <p>本章把方程组写成 $Ax=b$，用秩统一处理方阵与非方阵、齐次（homogeneous）与非齐次（non-homogeneous）。核心结论只有一条：相容当且仅当 $\operatorname{rank}A=\operatorname{rank}(A\mid b)$；自由度等于 $n-\operatorname{rank}A$。原书 §2.8–2.11 还给出齐次解空间（null space）与线性形式（linear form）的语言，这是下一章“线性空间”的入口。</p>
+    <span class="tag">Linear Systems</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">Cramer 法则</span>
-      <span class="chip">Kronecker–Capelli</span>
-      <span class="chip">基础解系</span>
-      <span class="chip">通解结构</span>
-      <span class="chip">伴随方程组</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">Cramer 法则</span>
+    <span class="chip">Kronecker–Capelli</span>
+    <span class="chip">基础解系</span>
+    <span class="chip">通解结构</span>
+    <span class="chip">线性形式</span>
+    <span class="chip">伴随方程组</span>
+  </div>
 
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Cramer 法则</span></div>
-      <div class="thm-body">
-        <p>若 $n$ 元 $n$ 次方程组 $Ax=b$ 的系数行列式 $D=\det A\ne0$，则它有唯一解</p>
-        $$x_k=\frac{D_k}{D},\qquad k=1,\dots,n,$$
-        <p>其中 $D_k$ 是把 $A$ 的第 $k$ 列换成 $b$ 后得到的行列式。矩阵形式为 $x=A^{-1}b$，而 $A^{-1}=\dfrac{1}{D}\operatorname{adj}A$。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">相容性与通解结构</span></div>
-      <div class="thm-body">
-        <p>设 $A$ 为 $m\times n$ 矩阵，$r=\operatorname{rank}A$。则 $Ax=b$ 有解当且仅当 $\operatorname{rank}(A\mid b)=r$；此时解集是</p>
-        $$x=x_0+\ker A,\qquad \dim\ker A=n-r,$$
-        <p>即“一个特解 + 齐次通解”。若 $b=0$，解空间就是 $A$ 的零空间；当 $m=n$ 时，非零解存在当且仅当 $\det A=0$。因此 $n$ 个未知数、$n$ 个方程时，“唯一解”“无解”“无穷多解”三分法的判据分别是 $D\ne0$、$D=0$ 且增广秩更大、$D=0$ 且增广秩仍为 $r$。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">秩为 2 的三元方程组</span></div>
-      <div class="thm-body">
-        <p>解</p>
-        $$\begin{cases}x_1+2x_2+x_3=4,\\ 2x_1+4x_2+3x_3=9,\\ 3x_1+6x_2+4x_3=13.\end{cases}$$
-        <p>第二式减两倍第一式得 $x_3=1$；第三式减三倍第一式也得 $x_3=1$，所以第三式是前两式的线性组合，$\operatorname{rank}A=\operatorname{rank}(A\mid b)=2$。令 $x_2=t$，则 $x_1=3-2t$，通解为</p>
-        $$x=\begin{pmatrix}3\\0\\1\end{pmatrix}+t\begin{pmatrix}-2\\1\\0\end{pmatrix},\qquad t\in\mathbb R.$$
-        <p>几何上这是一条直线：两个独立方程交出一条仿射直线，方向向量 $(-2,1,0)$ 正是齐次方程 $x_1+2x_2=0,\ x_3=0$ 的基础解系。</p>
-      </div>
-    </div>
-
-    <div class="thm rem">
-      <div class="thm-head"><span class="thm-kind">注</span><span class="thm-title">伴随方程组与可解性</span></div>
-      <div class="thm-body">
-        <p>设 $A$ 奇异且 $\operatorname{rank}A=r$。把 $A$ 的列向量记为 $a^{(1)},\dots,a^{(n)}$。方程 $Ax=b$ 有解，等价于 $b$ 属于这些列向量张成的子空间；也等价于 $b$ 与齐次伴随方程组 $A^{*}y=0$ 的每个解 $y$ 都正交：$(b,y)=0$。这条“正交补”判据在无穷维情形会变成 Fredholm 二择一定理。</p>
-      </div>
-    </div>
-
-    <p>实际计算时不必先算行列式。高斯消元把增广矩阵化成行阶梯形：主元所在列对应基本变量，其余列对应自由变量；若出现形如 $(0,\dots,0\mid c)$ 且 $c\ne0$ 的行，就立即判定无解。消元过程中只做“交换两行、某行乘非零数、把一行倍数加到另一行”，这些操作不改变解集，也不改变秩。对 $n$ 阶方阵，若行阶梯形有 $n$ 个主元，则行列式等于主元乘积乘以交换次数带来的符号；若主元不足 $n$ 个，则行列式为零。</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>情形</th><th>判据</th><th>解的结构</th></tr></thead>
-        <tbody>
-          <tr><td>方阵、$D\ne0$</td><td>$\operatorname{rank}A=n$</td><td>唯一解 $x=A^{-1}b$</td></tr>
-          <tr><td>一般相容</td><td>$\operatorname{rank}A=\operatorname{rank}(A\mid b)=r$</td><td>$x_0+$ 零空间，$n-r$ 个参数</td></tr>
-          <tr><td>不相容</td><td>$\operatorname{rank}(A\mid b)&gt;r$</td><td>无解</td></tr>
-          <tr><td>齐次 $Ax=0$</td><td>总有零解；非零解需 $r&lt;n$</td><td>$\dim\ker A=n-r$</td></tr>
-          <tr><td>方阵齐次</td><td>非零解 $\iff\det A=0$</td><td>基础解系含 $n-r$ 个向量</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">“行列式为零”不等于“无解”</span></div>
-      <div class="thm-body">
-        <p>① $D=0$ 只说明系数矩阵不满秩，可能无解，也可能无穷多解，必须比较增广矩阵的秩。② 自由变量不是“随便挑”，要先确定主元列，再把非主元列对应的未知量设为参数。③ 通解中的特解不唯一，但“特解 + 齐次通解”的结构唯一。④ 数值计算中不要用 Cramer 法则解大型方程组，行列式展开的舍入误差与复杂度都不可接受，应使用带主元的高斯消元或 QR 分解。</p>
-      </div>
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Cramer 法则</span><span class="thm-id">§2.8</span></div>
+    <div class="thm-body">
+      <p>若 $n$ 个未知数、$n$ 个方程的方程组 $Ax=b$ 的系数行列式 $D=\det A\ne0$，则它有唯一解</p>
+      <p>$$x_k=\frac{D_k}{D},\qquad k=1,\dots,n,$$</p>
+      <p>其中 $D_k$ 是把 $A$ 的第 $k$ 列换成 $b$ 后得到的行列式。矩阵形式为 $x=A^{-1}b$，而 $A^{-1}=\dfrac{1}{D}\operatorname{adj}A$。</p>
     </div>
   </div>
+
+  <details class="proof"><summary>证明思路：把解“代回”行列式</summary>
+  <div class="proof-body"><p>设 $x$ 是解。把 $D_k$ 按第 $k$ 列展开：$D_k=\sum_i b_i A_{ik}$，而 $b_i=\sum_j a_{ij}x_j$，于是 $D_k=\sum_j x_j\sum_i a_{ij}A_{ik}$。内层和当 $j=k$ 时等于 $D$（按第 $k$ 列展开），当 $j\ne k$ 时等于“把第 $k$ 列换成第 $j$ 列”的行列式，有两列相同故为零。因此 $D_k=x_kD$。唯一性由 $D\ne0$ 时 $A$ 可逆得到。</p></div>
+  </details>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">相容性判据与通解结构</span><span class="thm-id">§2.9–2.10</span></div>
+    <div class="thm-body">
+      <p>设 $A$ 为 $m\times n$ 矩阵，$r=\operatorname{rank}A$。则 $Ax=b$ 有解当且仅当</p>
+      <p>$$\operatorname{rank}(A\mid b)=\operatorname{rank}A=r;$$</p>
+      <p>此时解集是仿射子空间</p>
+      <p>$$x=x_0+\ker A,\qquad \dim\ker A=n-r,$$</p>
+      <p>即“一个特解 + 齐次通解”。齐次方程 $Ax=0$ 的解空间维数为 $n-r$，任取一组基 $\eta_1,\dots,\eta_{n-r}$ 称为基础解系（fundamental system of solutions），通解为 $x=c_1\eta_1+\cdots+c_{n-r}\eta_{n-r}$。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：消元不改变解集，也不改变秩</summary>
+  <div class="proof-body">
+    <p>对增广矩阵做三类初等行变换：交换两行、某行乘非零数、把一行的倍数加到另一行。前两类显然不改变解集；第三类中，新方程是旧方程的线性组合，而旧方程也可由新方程反解回来，故解集不变。同时这三类变换对应左乘可逆矩阵，不改变行空间的维数，因此秩不变。</p>
+    <p>化成行阶梯形后，主元列对应基本变量，其余列对应自由变量。若出现 $(0,\dots,0\mid c)$ 且 $c\ne0$ 的行，则无解；否则自由变量每取一组值就唯一确定基本变量，故解空间的维数恰为自由变量个数 $n-r$。特解取自由变量全为零即可。</p>
+  </div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">秩为 2 的三元方程组</span><span class="thm-id">§2.9</span></div>
+    <div class="thm-body">
+      <p>解</p>
+      <p>$$\begin{cases}x_1+2x_2+x_3=4,\\ 2x_1+4x_2+3x_3=9,\\ 3x_1+6x_2+4x_3=13.\end{cases}$$</p>
+      <p>第二式减两倍第一式得 $x_3=1$；第三式减三倍第一式也得 $x_3=1$，所以第三式是前两式的线性组合，$\operatorname{rank}A=\operatorname{rank}(A\mid b)=2$。令 $x_2=t$，则 $x_1=3-2t$，通解为</p>
+      <p>$$x=\begin{pmatrix}3\\0\\1\end{pmatrix}+t\begin{pmatrix}-2\\1\\0\end{pmatrix},\qquad t\in\mathbb R.$$</p>
+      <p>几何上这是一条直线：两个独立方程交出一条仿射直线，方向向量 $(-2,1,0)$ 正是齐次方程 $x_1+2x_2=0,\ x_3=0$ 的基础解系。若把右端第三个数改成 $14$，则第三式减三倍第一式得 $x_3=2$，与第二式矛盾，增广秩变为 $3$，方程组无解。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§2.11</span>线性形式与对偶观点</h3>
+  <p>一个线性形式（linear form）是 $n$ 个变量的齐次一次函数 $f(x)=c_1x_1+\cdots+c_nx_n$。把它看成行向量 $c^{\mathsf T}$，则 $f(x)=c^{\mathsf T}x$。方程组 $Ax=b$ 的第 $i$ 个方程就是线性形式 $a_i^{\mathsf T}x=b_i$，其中 $a_i^{\mathsf T}$ 是 $A$ 的第 $i$ 行。于是“解方程组”可以读成：<b>找一点 $x$，使给定的 $m$ 个线性形式同时取指定值</b>。</p>
+  <p>这个观点把行与列的角色分开。行空间（row space）的维数是秩 $r$，它决定约束的独立个数；零空间（null space）的维数是 $n-r$，它决定解的自由度。两者维数之和为 $n$，这就是“秩–零化度”定理（rank–nullity）。原书用线性形式的线性相关性来叙述同一件事：$m$ 个方程中只有 $r$ 个独立，其余都是它们的线性组合，右端也必须满足同样的组合关系，否则不相容。</p>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">注</span><span class="thm-title">伴随方程组与正交补判据</span><span class="thm-id">§2.10, §2.15</span></div>
+    <div class="thm-body">
+      <p>设 $A$ 奇异且 $\operatorname{rank}A=r$。方程 $Ax=b$ 有解，等价于 $b$ 属于 $A$ 的列空间；也等价于 $b$ 与齐次伴随方程组 $A^{*}y=0$ 的每个解 $y$ 都正交：$(b,y)=0$。理由：列空间是 $\ker A^{*}$ 的正交补。这条判据在无穷维情形会变成 Fredholm 二择一定理，在数值上则对应“最小二乘残差与零空间正交”。</p>
+    </div>
+  </div>
+
+  <p>实际计算时不必先算行列式。高斯消元把增广矩阵化成行阶梯形：主元所在列对应基本变量，其余列对应自由变量；若出现形如 $(0,\dots,0\mid c)$ 且 $c\ne0$ 的行，就立即判定无解。消元过程中只做“交换两行、某行乘非零数、把一行倍数加到另一行”，这些操作不改变解集，也不改变秩。对 $n$ 阶方阵，若行阶梯形有 $n$ 个主元，则行列式等于主元乘积乘以交换次数带来的符号；若主元不足 $n$ 个，则行列式为零。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>情形</th><th>判据</th><th>解的结构</th></tr></thead>
+      <tbody>
+        <tr><td>方阵、$D\ne0$</td><td>$\operatorname{rank}A=n$</td><td>唯一解 $x=A^{-1}b$，$x_k=D_k/D$</td></tr>
+        <tr><td>一般相容</td><td>$\operatorname{rank}A=\operatorname{rank}(A\mid b)=r$</td><td>$x_0+$ 零空间，$n-r$ 个参数</td></tr>
+        <tr><td>不相容</td><td>$\operatorname{rank}(A\mid b)&gt;r$</td><td>无解</td></tr>
+        <tr><td>齐次 $Ax=0$</td><td>总有零解；非零解需 $r&lt;n$</td><td>$\dim\ker A=n-r$</td></tr>
+        <tr><td>方阵齐次</td><td>非零解 $\iff\det A=0$</td><td>基础解系含 $n-r$ 个向量</td></tr>
+        <tr><td>超定 $m&gt;n$</td><td>通常无解；相容需 $b\perp\ker A^{*}$</td><td>最小二乘解唯一当 $A$ 列满秩</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">“行列式为零”不等于“无解”</span></div>
+    <div class="thm-body">
+      <p>① $D=0$ 只说明系数矩阵不满秩，可能无解，也可能无穷多解，必须比较增广矩阵的秩。② 自由变量不是“随便挑”，要先确定主元列，再把非主元列对应的未知量设为参数。③ 通解中的特解不唯一，但“特解 + 齐次通解”的结构唯一。④ 数值计算中不要用 Cramer 法则解大型方程组：$n$ 阶行列式的展开复杂度是 $O(n!)$，消元是 $O(n^3)$，且后者舍入误差可控。⑤ 消元时若用了行交换，回代时变量的顺序没有变，变的是方程的顺序，不要跟着重排 $x$。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch3" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 3</div>
-    <h2><span class="num">3</span>矩阵代数：线性映射的坐标账本</h2>
-    <p class="lede">矩阵把线性映射的加法、复合与求逆变成一套可计算的符号规则；但这套规则不交换，许多标量恒等式不能照搬。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 3 · §2.12–§2.16</div>
+  <h2><span class="num">3</span>线性空间与内积：从数组到公理</h2>
+  <p class="lede">线性空间（linear space）只保留“加法”与“数乘”两种运算；内积（scalar product）再额外提供长度、夹角与正交。</p>
 
-    <div class="chap-intro">
-      <p>本章整理矩阵的加法、数乘、乘法、转置、共轭转置与求逆，重点放在乘法维度匹配、分块运算和秩的不等式。矩阵不是“数的方阵”，而是线性映射在选定基下的表示；一旦换基，矩阵就按相似或合同的方式变化。</p>
-      <span class="tag">Matrix Calculus</span>
-    </div>
+  <div class="chap-intro">
+    <p>原书从“$n$ 维向量空间”的具体模型出发：向量是 $n$ 元数组，加法与数乘逐分量进行。随后抽象出八条公理，证明基与维数的存在性，再引入内积、长度、夹角与 Gram 行列式。这条路线的好处是：几何直觉始终可用，而定理的适用范围已经覆盖函数空间与解空间。</p>
+    <span class="tag">Vector Spaces</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">$AB$ 的列组合</span>
-      <span class="chip">转置反序</span>
-      <span class="chip">逆与伴随</span>
-      <span class="chip">分块乘法</span>
-      <span class="chip">秩不等式</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">八条公理</span>
+    <span class="chip">线性无关</span>
+    <span class="chip">基与维数</span>
+    <span class="chip">内积</span>
+    <span class="chip">Gram 行列式</span>
+    <span class="chip">Hadamard 不等式</span>
+  </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">矩阵运算</span></div>
-      <div class="thm-body">
-        <p>设 $A=(a_{ij})\in\mathbb C^{m\times n}$，$B=(b_{jk})\in\mathbb C^{n\times p}$。乘积 $C=AB\in\mathbb C^{m\times p}$ 的元素为</p>
-        $$c_{ik}=\sum_{j=1}^{n}a_{ij}b_{jk}.$$
-        <p>也可读作“$C$ 的第 $k$ 列是 $A$ 各列以 $B$ 的第 $k$ 列为权重的线性组合”。转置满足 $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$；共轭转置满足 $(AB)^{*}=B^{*}A^{*}$。若 $A$ 可逆，则</p>
-        $$(AB)^{-1}=B^{-1}A^{-1},\qquad (A^{-1})^{\mathsf T}=(A^{\mathsf T})^{-1}.$$
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">可逆判据与秩</span></div>
-      <div class="thm-body">
-        <p>对 $n$ 阶方阵 $A$，以下等价：$A$ 可逆；$\det A\ne0$；$\operatorname{rank}A=n$；$Ax=0$ 只有零解；$A$ 的列（或行）线性无关。逆矩阵由伴随矩阵给出：</p>
-        $$A^{-1}=\frac{1}{\det A}\operatorname{adj}A,\qquad (\operatorname{adj}A)_{ij}=(-1)^{i+j}M_{ji}.$$
-        <p>对一般矩阵乘积，有 Sylvester 秩不等式</p>
-        $$\operatorname{rank}A+\operatorname{rank}B-n\le\operatorname{rank}(AB)\le\min\{\operatorname{rank}A,\operatorname{rank}B\}.$$
-        <p>右端说明乘法不会增加秩；左端说明“损失”受中间维数限制。若 $A$ 可逆，则 $\operatorname{rank}(AB)=\operatorname{rank}B$，因为可逆矩阵对应可逆的线性映射。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">二阶逆矩阵与验算</span></div>
-      <div class="thm-body">
-        <p>设 $A=\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}$，$\det A=4-6=-2$。交换对角元、改变副对角元符号，得</p>
-        $$A^{-1}=-\frac12\begin{pmatrix}4&amp;-2\\-3&amp;1\end{pmatrix}
-        =\begin{pmatrix}-2&amp;1\\ \tfrac32&amp;-\tfrac12\end{pmatrix}.$$
-        <p>验算：$AA^{-1}=\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}\begin{pmatrix}-2&amp;1\\1.5&amp;-0.5\end{pmatrix}=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}$。注意 $\det(A^{-1})=1/\det A=-\tfrac12$，与“逆的行列式取倒数”一致。</p>
-      </div>
-    </div>
-
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>把 $A$ 按列分块为 $[a_1,\dots,a_n]$，则 $Ax=x_1a_1+\cdots+x_na_n$：矩阵乘向量就是列向量的线性组合。把 $B$ 按列分块，$AB=[Ab_1,\dots,Ab_p]$：右乘矩阵等于对每一列分别做 $A$ 的变换。分块乘法只要内外维度匹配，就可以像普通数一样搬运。</p>
-    </div>
-
-    <p>分块运算在工程中几乎无处不在：把状态向量按子系统分组，矩阵就自然变成块矩阵。若 $A$ 与 $D$ 都可逆，则分块上三角矩阵的逆为</p>
-    $$\begin{pmatrix}A&amp;B\\0&amp;D\end{pmatrix}^{-1}
-    =\begin{pmatrix}A^{-1}&amp;-A^{-1}BD^{-1}\\0&amp;D^{-1}\end{pmatrix},$$
-    <p>这可以直接乘开验证。它说明“回代”在矩阵层面的含义：先解 $D$ 部分，再把结果代回 $A$ 部分。类似的块公式在卡尔曼滤波、递归最小二乘与求解偏微分方程的区域分解中反复出现。迹也有一个不依赖基的解释：$\operatorname{tr}A$ 是线性映射 $T$ 的“散度”，即单位体积在 $T$ 下的瞬时相对膨胀率；在连续时间系统 $\dot x=Ax$ 中，$\operatorname{tr}A$ 正是相体积变化率，而 $\det e^{At}=e^{t\operatorname{tr}A}$ 把这一局部事实积分为全局的体积比。</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>运算</th><th>规则</th><th>易错点</th></tr></thead>
-        <tbody>
-          <tr><td>加法</td><td>同型逐元素相加</td><td>不同型不能加</td></tr>
-          <tr><td>乘法</td><td>$(m\times n)(n\times p)=(m\times p)$</td><td>内维必须相等</td></tr>
-          <tr><td>转置</td><td>$(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$</td><td>顺序反转</td></tr>
-          <tr><td>逆</td><td>$(AB)^{-1}=B^{-1}A^{-1}$</td><td>要求两者都可逆</td></tr>
-          <tr><td>迹</td><td>$\operatorname{tr}(AB)=\operatorname{tr}(BA)$</td><td>只对同阶方阵循环成立</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不要把标量代数照搬过来</span></div>
-      <div class="thm-body">
-        <p>① $AB\ne BA$，因此 $(A+B)^2=A^2+AB+BA+B^2$，不能合并成 $A^2+2AB+B^2$。② 消去律失效：$AB=AC$ 且 $A\ne0$ 推不出 $B=C$，除非 $A$ 可逆。③ $(A+B)^{-1}\ne A^{-1}+B^{-1}$。④ $\operatorname{rank}(A+B)$ 可以大于 $\operatorname{rank}A+\operatorname{rank}B$ 之外的直觉值，也可因抵消而变小，不能简单相加。</p>
-      </div>
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">线性空间与维数</span><span class="thm-id">§2.12</span></div>
+    <div class="thm-body">
+      <p>集合 $V$ 配备加法 $+:V\times V\to V$ 与数乘 $\cdot:\mathbb K\times V\to V$（$\mathbb K=\mathbb R$ 或 $\mathbb C$），若满足：加法交换、结合、有零元、有负元；数乘与域乘法相容、$1x=x$；以及两条分配律，则称 $V$ 为线性空间。若存在有限个向量 $e_1,\dots,e_n$，使任意 $x\in V$ 都能唯一写成</p>
+      <p>$$x=\sum_{k=1}^{n}x_k e_k,$$</p>
+      <p>则称 $\{e_1,\dots,e_n\}$ 是一组基（basis），$n$ 为维数（dimension），$x_k$ 为坐标。只含零向量的空间维数记为 $0$。</p>
     </div>
   </div>
+
+  <p>“唯一表示”是基的关键。若表示不唯一，两组系数相减就得到非平凡的零组合，说明向量组线性相关。反过来，若每个向量都能表示且表示唯一，则这组向量既张成空间又线性无关。于是有等价的定义：<b>基 = 极大线性无关组 = 极小张成组</b>。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">基的存在性与维数不变</span><span class="thm-id">§2.12</span></div>
+    <div class="thm-body">
+      <p>（1）有限维线性空间中，任意线性无关组都可扩充为一组基；任意张成组都可缩减为一组基。（2）同一空间的两组基含相同个数的向量，因此维数良定义。（3）若 $\dim V=n$，则任意 $n+1$ 个向量线性相关；任意 $n$ 个线性无关向量构成基。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：替换引理</summary>
+  <div class="proof-body"><p>核心是 Steinitz 替换引理：若 $u_1,\dots,u_m$ 线性无关，而 $v_1,\dots,v_s$ 张成 $V$，则 $m\le s$，并且可以逐个用 $u_i$ 替换某些 $v_j$ 而不失去张成性。证明用反证：若 $m&gt;s$，把每个 $u_i$ 用 $v_j$ 表示，得到一个 $s$ 个未知数、$m$ 个方程的齐次方程组，未知数多于方程，必有非零解，于是 $\sum c_i u_i=0$，与线性无关矛盾。</p>
+    <p>由替换引理，两组基互相张成，故向量个数互相不超过，只能相等。扩充与缩减则通过不断加入“不能被现有组表示”的向量、或删去“能被其余向量表示”的向量完成，过程在有限步停止。</p></div>
+  </details>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">内积、范数与正交</span><span class="thm-id">§2.13</span></div>
+    <div class="thm-body">
+      <p>实空间上的内积是一个二元函数 $(x,y)$，满足对称性 $(x,y)=(y,x)$、对第一个变量线性、正定性 $(x,x)&gt;0$（$x\ne0$）。复空间上则要求 Hermite 对称 $(x,y)=\overline{(y,x)}$，并对第一个变量线性；等价地，对第二个变量共轭线性。由此定义范数（norm）</p>
+      <p>$$\|x\|=\sqrt{(x,x)},$$</p>
+      <p>并称 $(x,y)=0$ 为 $x$ 与 $y$ 正交（orthogonal）。在标准实内积下，$\cos\theta=\dfrac{(x,y)}{\|x\|\|y\|}$ 定义夹角。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Cauchy–Buniakowski–Schwarz 不等式</span><span class="thm-id">§2.13, §4.29</span></div>
+    <div class="thm-body">
+      <p>对任意 $x,y$，</p>
+      <p>$$|(x,y)|\le\|x\|\,\|y\|,$$</p>
+      <p>等号当且仅当 $x,y$ 线性相关。由此得三角不等式 $\|x+y\|\le\|x\|+\|y\|$，以及距离 $d(x,y)=\|x-y\|$ 满足三角不等式。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：判别式非负</summary>
+  <div class="proof-body"><p>若 $y=0$ 显然。否则对任意实数 $t$，$0\le\|x+ty\|^2=\|x\|^2+2t\operatorname{Re}(x,y)+t^2\|y\|^2$。这是 $t$ 的二次式，恒非负，判别式 $\le0$，即 $(\operatorname{Re}(x,y))^2\le\|x\|^2\|y\|^2$。复情形再乘一个单位相位，把 $(x,y)$ 旋成非负实数。等号成立时二次式有实根 $t_0$，使 $x+t_0y=0$，故线性相关。</p></div>
+  </details>
+
+  <h3><span class="sn">§2.14–2.15</span>几何解释与超平面</h3>
+  <p>在 $n$ 维实空间中，一个非零线性形式 $f(x)=(a,x)$ 的零集 $\{x:(a,x)=0\}$ 是一个过原点的超平面（hyperplane），维数为 $n-1$；方程 $(a,x)=c$ 的解集则是与它平行的仿射超平面。于是“线性方程组”就是“若干超平面的交”：两个独立方程交出一条 $n-2$ 维平面，$r$ 个独立方程交出 $n-r$ 维平面。这正是 §2.9 的几何版本。</p>
+  <p>Gram–Schmidt 正交化（orthogonalization）把任意线性无关组变成标准正交组：令 $v_1=a_1$，然后</p>
+  <p>$$v_k=a_k-\sum_{j=1}^{k-1}\frac{(a_k,v_j)}{(v_j,v_j)}v_j,\qquad u_k=\frac{v_k}{\|v_k\|}.$$</p>
+  <p>归纳可证每个 $v_k$ 与前面的 $v_j$ 正交且非零，因此 $\{u_k\}$ 是标准正交基（orthonormal basis）。在标准正交基下，坐标就是内积：$x=\sum_k(x,u_k)u_k$，这就是 Fourier 展开的有限维原型。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Gram 行列式与 Hadamard 不等式</span><span class="thm-id">§2.16</span></div>
+    <div class="thm-body">
+      <p>对向量组 $a_1,\dots,a_m$，Gram 矩阵 $G=((a_i,a_j))$ 的行列式满足 $\det G\ge0$，且 $\det G=0$ 当且仅当 $a_1,\dots,a_m$ 线性相关。几何上 $\sqrt{\det G}$ 等于这组向量张成的平行多面体体积。</p>
+      <p>若 $A=(a_{ik})$ 为 $n$ 阶实矩阵，$a_i$ 为其行向量，则 Hadamard 不等式为</p>
+      <p>$$(\det A)^2\le\prod_{i=1}^{n}\|a_i\|^2,$$</p>
+      <p>等号当且仅当各行两两正交（或某行为零）。列版本同理。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：把 Gram 矩阵写成 $A A^{\mathsf T}$</summary>
+  <div class="proof-body"><p>设 $A$ 的行向量为 $a_i$，则 $G=AA^{\mathsf T}$，故 $\det G=(\det A)^2$。对 $G$ 做 Gram–Schmidt（等价于对 $A$ 做 QR 分解 $A=QR$，$Q$ 正交、$R$ 上三角），得 $G=R^{\mathsf T}R$，于是 $\det G=\prod_i r_{ii}^2$。而 $r_{ii}\le\|a_i\|$，因为 $r_{ii}$ 是 $a_i$ 去掉前面投影后的长度，不超过原长度。相乘即得 Hadamard。等号要求每次投影都为零，即行向量两两正交。</p></div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">判断三个向量是否线性相关</span><span class="thm-id">§2.16</span></div>
+    <div class="thm-body">
+      <p>取 $a_1=(1,1,0)$，$a_2=(1,0,1)$，$a_3=(0,1,1)$。Gram 矩阵为</p>
+      <p>$$G=\begin{pmatrix}2&amp;1&amp;1\\1&amp;2&amp;1\\1&amp;1&amp;2\end{pmatrix},\qquad \det G=2(4-1)-1(2-1)+1(1-2)=4.$$</p>
+      <p>$\det G=4&gt;0$，故三向量线性无关；$\sqrt{\det G}=2$ 就是它们张成的平行六面体体积。若把 $a_3$ 换成 $a_1+a_2=(2,1,1)$，则 $\det G=0$，三向量共面。</p>
+    </div>
+  </div>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>概念</th><th>公式 / 判据</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>线性无关</td><td>$\sum c_k a_k=0\Rightarrow c_k=0$</td><td>基的判定</td></tr>
+        <tr><td>维数</td><td>基中向量个数；任意基相同</td><td>自由度计数</td></tr>
+        <tr><td>坐标</td><td>$x=\sum x_k e_k$，$x_k=(x,e_k)$（标准正交基）</td><td>换基计算</td></tr>
+        <tr><td>内积</td><td>$(x,y)=\sum x_k\overline{y_k}$</td><td>长度、夹角</td></tr>
+        <tr><td>范数</td><td>$\|x\|=\sqrt{(x,x)}$</td><td>距离、收敛</td></tr>
+        <tr><td>Cauchy</td><td>$|(x,y)|\le\|x\|\|y\|$</td><td>估计、证明三角不等式</td></tr>
+        <tr><td>Gram</td><td>$\det G\ge0$，$=0\iff$ 相关</td><td>体积、相关性</td></tr>
+        <tr><td>Hadamard</td><td>$(\det A)^2\le\prod\|a_i\|^2$</td><td>行列式上界</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">公理、共轭与“正交”</span></div>
+    <div class="thm-body">
+      <p>① 复内积对第二个变量共轭线性，交换变量会取共轭；写成普通双线性会丢掉共轭，导致 $(x,x)$ 可能是复数。② $(x,x)=0$ 只在 $x=0$ 时成立，这是正定性的要求；半正定内积会产生“非零的零长度向量”。③ “正交”不等于“线性无关”：零向量与所有向量正交，但零向量不能进入基；非零的正交组才一定线性无关。④ 维数不是向量个数，而是基的势；$\mathbb R^3$ 中任意四个向量相关，但三个向量未必无关。⑤ Gram–Schmidt 的结果依赖输入顺序，标准正交基不唯一。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch4" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 4</div>
-    <h2><span class="num">4</span>向量空间与内积：给线性代数装上长度</h2>
-    <p class="lede">向量空间只关心加法与数乘，内积额外提供长度、夹角与正交；Gram–Schmidt 把任意基变成标准正交基。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 4 · §4.26</div>
+  <h2><span class="num">4</span>矩阵代数：线性算子的坐标账本</h2>
+  <p class="lede">矩阵（matrix）把线性映射的加法、复合与求逆变成一套可计算的符号规则；但这套规则不交换，许多标量恒等式不能照搬。</p>
 
-    <div class="chap-intro">
-      <p>本章从线性无关、基与维数讲到复内积空间，建立 Cauchy–Buniakowski–Schwarz 不等式、三角不等式与 Gram 行列式，并给出一套可手算的 Gram–Schmidt 正交化。这里的“正交”不是几何装饰，而是最小二乘、Fourier 展开与酉对角化的共同语言。</p>
-      <span class="tag">Vector Spaces</span>
-    </div>
+  <div class="chap-intro">
+    <p>原书 §4.26 从“线性变换的系数表”抽象出矩阵，定义加法、数乘、乘法、转置与逆，并证明秩在初等变换下的不变性。这里把秩（rank）单独讲透：它既是“最大非零子式的阶”，也是“列空间的维数”，还是“线性映射像的维数”。三种定义在有限维等价，分别适合手算、几何与证明。</p>
+    <span class="tag">Matrix Calculus</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">基与维数</span>
-      <span class="chip">内积</span>
-      <span class="chip">Cauchy 不等式</span>
-      <span class="chip">Gram 行列式</span>
-      <span class="chip">Gram–Schmidt</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">乘法 = 复合</span>
+    <span class="chip">转置反序</span>
+    <span class="chip">逆与伴随</span>
+    <span class="chip">初等变换</span>
+    <span class="chip">秩的三定义</span>
+    <span class="chip">Sylvester 不等式</span>
+  </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">线性空间、基与内积</span></div>
-      <div class="thm-body">
-        <p>集合 $V$ 若对加法与数乘封闭并满足八条线性公理，就称为线性空间。若 $V$ 中任意向量都能唯一写成 $x=\sum_{k=1}^n x_k e_k$，则 $\{e_1,\dots,e_n\}$ 是一组基，$n$ 为维数。复向量空间上的内积取</p>
-        $$(x,y)=\sum_{k=1}^{n}x_k\overline{y_k},$$
-        <p>它对第一个变量线性、对第二个变量共轭线性，且 $(x,y)=\overline{(y,x)}$。由此定义范数 $\|x\|=\sqrt{(x,x)}$，并称 $(x,y)=0$ 为 $x\perp y$。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Cauchy–Schwarz 与 Gram 判据</span></div>
-      <div class="thm-body">
-        <p>对任意 $x,y\in V$，</p>
-        $$|(x,y)|\le\|x\|\,\|y\|,\qquad \|x+y\|\le\|x\|+\|y\|.$$
-        <p>第一式取等号当且仅当 $x,y$ 线性相关。对向量组 $a_1,\dots,a_m$，Gram 矩阵 $G=((a_i,a_j))$ 的行列式满足</p>
-        $$\det G\ge0,$$
-        <p>且 $\det G=0$ 当且仅当 $a_1,\dots,a_m$ 线性相关。因此 Gram 行列式是“体积平方”，也是判断线性相关的数值工具。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">在 $\mathbb R^3$ 中正交化</span></div>
-      <div class="thm-body">
-        <p>取 $a_1=(1,1,0)$，$a_2=(1,0,1)$，$a_3=(0,1,1)$。先归一化：$u_1=\frac{1}{\sqrt2}(1,1,0)$。再减去在 $u_1$ 上的投影：</p>
-        $$v_2=a_2-(a_2,u_1)u_1=(1,0,1)-\tfrac12(1,1,0)=\tfrac12(1,-1,2),$$
-        $$u_2=\frac{1}{\sqrt6}(1,-1,2).$$
-        <p>继续对 $a_3$ 投影：</p>
-        $$v_3=a_3-(a_3,u_1)u_1-(a_3,u_2)u_2
-        =(0,1,1)-\tfrac12(1,1,0)-\tfrac16(1,-1,2)
-        =\tfrac23(-1,1,1),$$
-        $$u_3=\frac{1}{\sqrt3}(-1,1,1).$$
-        <p>三个向量两两正交且长度为 1，构成 $\mathbb R^3$ 的一组标准正交基。原矩阵的行列式绝对值等于这三个向量张成的平行六面体体积，可用 $\det G$ 的平方根核对。</p>
-      </div>
-    </div>
-
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>Gram–Schmidt 的本质是“逐个剔除已有方向上的影子”。每得到一个新的单位向量，就把后续向量在它上面的投影减掉；剩下的部分必然与之前所有方向正交。数值上这个算法对舍入误差敏感，实际计算常用修正 Gram–Schmidt 或 Householder 变换，但数学思想完全相同。</p>
-    </div>
-
-    <p>内积还给出正交补的概念：对子空间 $M\subset V$，$M^{\perp}=\{x:(x,y)=0,\ \forall y\in M\}$ 仍是子空间，且 $\dim M+\dim M^{\perp}=n$。因此任意 $x$ 可唯一分解为 $x=x_M+x_{\perp}$，其中 $x_M\in M$、$x_{\perp}\in M^{\perp}$。若 $u_1,\dots,u_m$ 是 $M$ 的标准正交基，则投影为</p>
-    $$x_M=\sum_{k=1}^{m}(x,u_k)u_k.$$
-    <p>这正是 Gram–Schmidt 与 Fourier 展开的共同公式。最小二乘问题 $\min_y\|x-Ay\|$ 的解，就是让 $Ay$ 等于 $x$ 在 $A$ 的列空间上的正交投影；正规方程 $A^{*}Ay=A^{*}x$ 由此而来。</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>概念</th><th>公式 / 判据</th><th>用途</th></tr></thead>
-        <tbody>
-          <tr><td>线性无关</td><td>$\sum c_k a_k=0\Rightarrow c_k=0$</td><td>基的判定</td></tr>
-          <tr><td>内积</td><td>$(x,y)=\sum x_k\overline{y_k}$</td><td>长度、夹角</td></tr>
-          <tr><td>范数</td><td>$\|x\|=\sqrt{(x,x)}$</td><td>距离、收敛</td></tr>
-          <tr><td>Cauchy</td><td>$|(x,y)|\le\|x\|\|y\|$</td><td>估计、证明三角不等式</td></tr>
-          <tr><td>Gram</td><td>$\det G\ge0$，$=0\iff$ 相关</td><td>体积、相关性</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">内积的共轭位置与“正交”的含义</span></div>
-      <div class="thm-body">
-        <p>① 复内积对第二个变量共轭线性，交换变量会取共轭；写成双线性会丢掉共轭。② $(x,x)=0$ 只在 $x=0$ 时成立，这是正定性的要求；半正定内积会产生“非零的零长度向量”。③ Gram–Schmidt 得到的向量依赖于输入顺序，标准正交基不唯一。④ “正交”不等于“线性无关”的充分条件在含零向量时失效：零向量与所有向量正交，但零向量不能进入基。</p>
-      </div>
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">矩阵运算</span><span class="thm-id">§4.26</span></div>
+    <div class="thm-body">
+      <p>设 $A=(a_{ij})\in\mathbb C^{m\times n}$，$B=(b_{jk})\in\mathbb C^{n\times p}$。乘积 $C=AB\in\mathbb C^{m\times p}$ 的元素为</p>
+      <p>$$c_{ik}=\sum_{j=1}^{n}a_{ij}b_{jk}.$$</p>
+      <p>也可读作“$C$ 的第 $k$ 列是 $A$ 各列以 $B$ 的第 $k$ 列为权重的线性组合”。转置满足 $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$；共轭转置满足 $(AB)^{*}=B^{*}A^{*}$。若 $A,B$ 可逆，则</p>
+      <p>$$(AB)^{-1}=B^{-1}A^{-1},\qquad (A^{-1})^{\mathsf T}=(A^{\mathsf T})^{-1}.$$</p>
     </div>
   </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">可逆判据</span><span class="thm-id">§4.26</span></div>
+    <div class="thm-body">
+      <p>对 $n$ 阶方阵 $A$，以下命题等价：$A$ 可逆；$\det A\ne0$；$\operatorname{rank}A=n$；$Ax=0$ 只有零解；$A$ 的列（或行）线性无关；$A$ 的行阶梯形有 $n$ 个主元。逆矩阵由伴随矩阵给出：</p>
+      <p>$$A^{-1}=\frac{1}{\det A}\operatorname{adj}A,\qquad (\operatorname{adj}A)_{ij}=(-1)^{i+j}M_{ji}.$$</p>
+      <p>其中 $M_{ji}$ 是删去第 $j$ 行、第 $i$ 列后的余子式。注意下标是“转置”的：伴随矩阵的第 $i$ 行第 $j$ 列元素，来自原矩阵第 $j$ 行第 $i$ 列的余子式。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">二阶逆矩阵与验算</span><span class="thm-id">§4.26</span></div>
+    <div class="thm-body">
+      <p>设 $A=\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}$，$\det A=4-6=-2$。交换对角元、改变副对角元符号，得</p>
+      <p>$$A^{-1}=-\frac12\begin{pmatrix}4&amp;-2\\-3&amp;1\end{pmatrix}
+      =\begin{pmatrix}-2&amp;1\\ \tfrac32&amp;-\tfrac12\end{pmatrix}.$$</p>
+      <p>验算：$AA^{-1}=\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}\begin{pmatrix}-2&amp;1\\1.5&amp;-0.5\end{pmatrix}=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}$。并且 $\det(A^{-1})=1/\det A=-\tfrac12$，与“逆的行列式取倒数”一致。三阶以上用伴随矩阵求逆的计算量是 $O(n^4)$，实际应使用带主元的高斯–若尔当消元，复杂度 $O(n^3)$。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§4.26</span>秩：三种等价定义</h3>
+  <p><b>定义一（子式）</b>：矩阵中非零子式的最高阶数称为秩，记 $\operatorname{rank}A$。若所有 $r+1$ 阶子式为零而存在一个 $r$ 阶子式非零，则秩为 $r$。<b>定义二（列空间）</b>：秩等于列向量张成子空间的维数。<b>定义三（映射）</b>：把 $A$ 看成线性映射 $\mathbb C^n\to\mathbb C^m$，秩等于像的维数 $\dim\operatorname{Im}A$，而零化度 $\dim\ker A=n-r$。</p>
+  <p>三者等价的关键是“行秩等于列秩”。证明可用消元：初等行变换不改变行空间，也不改变列向量之间的线性关系（因为左乘可逆矩阵只是换了一组基），所以行阶梯形的主元个数同时等于行秩与列秩。原书则用子式论证：若有一个 $r$ 阶子式非零，则对应的 $r$ 行与 $r$ 列线性无关；若所有 $r+1$ 阶子式为零，则任意 $r+1$ 行都线性相关，故行秩不超过 $r$。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">初等变换与等价标准形</span><span class="thm-id">§4.26</span></div>
+    <div class="thm-body">
+      <p>三类初等行变换（交换两行、某行乘非零数、把一行倍数加到另一行）都不改变秩；列变换同理。任何 $m\times n$ 矩阵 $A$ 经初等变换可化为</p>
+      <p>$$\begin{pmatrix}I_r&amp;0\\0&amp;0\end{pmatrix},\qquad r=\operatorname{rank}A,$$</p>
+      <p>称为等价标准形（normal form）。等价地，存在可逆矩阵 $P,Q$ 使 $PAQ=\begin{pmatrix}I_r&amp;0\\0&amp;0\end{pmatrix}$。两个同型矩阵等价当且仅当秩相同。</p>
+    </div>
+  </div>
+
+  <p>这条定理把“分类”变成了“数主元”。它也是解方程组的理论依据：$PAQ$ 中的 $P$ 对应行变换（不改变解集），$Q$ 对应未知量的可逆替换（把解的参数化显式化）。在数值线性代数中，$P,Q$ 被具体化为 LU 分解、QR 分解与奇异值分解，秩则由奇异值或主元阈值估计。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">秩的不等式</span><span class="thm-id">§4.26</span></div>
+    <div class="thm-body">
+      <p>对 $m\times n$ 矩阵 $A$ 与 $n\times p$ 矩阵 $B$，</p>
+      <p>$$\operatorname{rank}A+\operatorname{rank}B-n\le\operatorname{rank}(AB)\le\min\{\operatorname{rank}A,\operatorname{rank}B\}.$$</p>
+      <p>右端说明乘法不会增加秩；左端称为 Sylvester 秩不等式，说明“损失”受中间维数 $n$ 限制。若 $A$ 或 $B$ 可逆，则 $\operatorname{rank}(AB)=\operatorname{rank}B$ 或 $\operatorname{rank}A$。此外 $\operatorname{rank}(A+B)\le\operatorname{rank}A+\operatorname{rank}B$，且 $\operatorname{rank}A=\operatorname{rank}A^{\mathsf T}=\operatorname{rank}(A^{*})$。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：用映射的像与核</summary>
+  <div class="proof-body"><p>把 $B$ 看成 $\mathbb C^p\to\mathbb C^n$，$A$ 看成 $\mathbb C^n\to\mathbb C^m$。限制在 $\operatorname{Im}B$ 上，$A$ 的核是 $\operatorname{Im}B\cap\ker A$，由维数公式</p>
+  <p>$$\operatorname{rank}(AB)=\dim A(\operatorname{Im}B)=\operatorname{rank}B-\dim(\operatorname{Im}B\cap\ker A).$$</p>
+  <p>而 $\dim(\operatorname{Im}B\cap\ker A)\le\dim\ker A=n-\operatorname{rank}A$，代入即得下界。上界由 $\operatorname{Im}(AB)\subset\operatorname{Im}A$ 与 $\dim\operatorname{Im}(AB)\le\dim\operatorname{Im}B$ 得到。</p></div>
+  </details>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>把 $A$ 按列分块为 $[a_1,\dots,a_n]$，则 $Ax=x_1a_1+\cdots+x_na_n$：矩阵乘向量就是列向量的线性组合。把 $B$ 按列分块，$AB=[Ab_1,\dots,Ab_p]$：右乘矩阵等于对每一列分别做 $A$ 的变换。分块乘法只要内外维度匹配，就可以像普通数一样搬运。</p>
+  </div>
+
+  <p>分块运算在工程中几乎无处不在：把状态向量按子系统分组，矩阵就自然变成块矩阵。若 $A$ 与 $D$ 都可逆，则分块上三角矩阵的逆为</p>
+  <p>$$\begin{pmatrix}A&amp;B\\0&amp;D\end{pmatrix}^{-1}
+  =\begin{pmatrix}A^{-1}&amp;-A^{-1}BD^{-1}\\0&amp;D^{-1}\end{pmatrix},$$</p>
+  <p>直接乘开即可验证。它说明“回代”在矩阵层面的含义：先解 $D$ 部分，再把结果代回 $A$ 部分。类似的块公式在卡尔曼滤波、递归最小二乘与偏微分方程的区域分解中反复出现。迹（trace）也有一个不依赖基的解释：$\operatorname{tr}A$ 是线性映射的“散度”，即单位体积在 $A$ 下的瞬时相对膨胀率；在连续时间系统 $\dot x=Ax$ 中，$\operatorname{tr}A$ 正是相体积变化率，而 $\det e^{At}=e^{t\operatorname{tr}A}$ 把这一局部事实积分为全局体积比。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>运算</th><th>规则</th><th>易错点</th></tr></thead>
+      <tbody>
+        <tr><td>加法</td><td>同型逐元素相加</td><td>不同型不能加</td></tr>
+        <tr><td>乘法</td><td>$(m\times n)(n\times p)=(m\times p)$</td><td>内维必须相等</td></tr>
+        <tr><td>转置</td><td>$(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$</td><td>顺序反转</td></tr>
+        <tr><td>逆</td><td>$(AB)^{-1}=B^{-1}A^{-1}$</td><td>要求两者都可逆</td></tr>
+        <tr><td>迹</td><td>$\operatorname{tr}(AB)=\operatorname{tr}(BA)$</td><td>只对同阶方阵循环成立</td></tr>
+        <tr><td>秩</td><td>$\operatorname{rank}(AB)\le\min(\operatorname{rank}A,\operatorname{rank}B)$</td><td>下界含中间维数</td></tr>
+        <tr><td>行列式</td><td>$\det(AB)=\det A\det B$</td><td>$\det(A+B)$ 无公式</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不要把标量代数照搬过来</span></div>
+    <div class="thm-body">
+      <p>① $AB\ne BA$，因此 $(A+B)^2=A^2+AB+BA+B^2$，不能合并成 $A^2+2AB+B^2$。② 消去律失效：$AB=AC$ 且 $A\ne0$ 推不出 $B=C$，除非 $A$ 可逆。③ $(A+B)^{-1}\ne A^{-1}+B^{-1}$。④ $\operatorname{rank}(A+B)$ 可能小于 $\operatorname{rank}A+\operatorname{rank}B$（抵消），也可能大于两者中的任一个，不能简单相加。⑤ 只有方阵才有行列式与迹；长方形矩阵只能谈秩与奇异值。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch5" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 5</div>
-    <h2><span class="num">5</span>线性变换与张量：换基之后谁不变</h2>
-    <p class="lede">同一个线性变换在不同基下写成不同矩阵；相似变换描述“换坐标”，张量则把这种坐标变换规律推广到多重线性对象。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 5 · §3.20–§3.25</div>
+  <h2><span class="num">5</span>线性变换与张量：换基之后谁不变</h2>
+  <p class="lede">同一个线性变换（linear transformation）在不同基下写成不同矩阵；相似变换描述“换坐标”，张量（tensor）则把这种坐标变换规律推广到多重线性对象。</p>
 
-    <div class="chap-intro">
-      <p>本章先定义线性变换及其矩阵，再推导换基公式 $A'=C^{-1}AC$，说明迹、行列式、特征多项式为何是相似不变量。随后引入正交变换与 Euler 角，最后用指标记号介绍协变、逆变向量与张量的变换律。重点是区分“被动换坐标”和“主动变换向量”。</p>
-      <span class="tag">Linear Maps &amp; Tensors</span>
-    </div>
+  <div class="chap-intro">
+    <p>原书 §3 先从三维空间的坐标变换讲起：平移、旋转、反射如何改变点的坐标；再把“点变换”与“坐标变换”分开，得到一般的线性变换 $y_i=\sum_k a_{ik}x_k$。随后引入协变（covariant）与逆变（contravariant）向量、仿射正交张量，最后推广到 $n$ 维复空间。重点是区分“被动换坐标”和“主动变换向量”。</p>
+    <span class="tag">Linear Maps &amp; Tensors</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">线性映射</span>
-      <span class="chip">相似变换</span>
-      <span class="chip">正交矩阵</span>
-      <span class="chip">Euler 角</span>
-      <span class="chip">协变 / 逆变</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">坐标变换</span>
+    <span class="chip">线性算子</span>
+    <span class="chip">相似 $C^{-1}AC$</span>
+    <span class="chip">协变 / 逆变</span>
+    <span class="chip">应力与应变</span>
+    <span class="chip">复空间</span>
+  </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">线性变换与表示矩阵</span></div>
-      <div class="thm-body">
-        <p>映射 $T:V\to W$ 若满足 $T(\alpha x+\beta y)=\alpha T(x)+\beta T(y)$，就称为线性的。取 $V$ 的基 $e_1,\dots,e_n$ 与 $W$ 的基 $f_1,\dots,f_m$，把 $T(e_j)=\sum_i a_{ij}f_i$ 的系数排成矩阵 $A=(a_{ij})$，则</p>
-        $$T(x)=Ax$$
-        <p>这里 $x$ 是坐标列向量。矩阵 $A$ 是 $T$ 在指定基下的“账本”，换基后账本会变，但映射本身不变。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">换基公式与不变量</span></div>
-      <div class="thm-body">
-        <p>设新基由 $e'_j=\sum_i c_{ij}e_i$ 给出，坐标变换为 $x=Cx'$。同一个线性变换在新基下的矩阵为</p>
-        $$A'=C^{-1}AC.$$
-        <p>称 $A$ 与 $A'$ 相似。相似矩阵有相同的行列式、迹与特征多项式：</p>
-        $$\det A'=\det A,\qquad \operatorname{tr}A'=\operatorname{tr}A,\qquad \det(A'-\lambda I)=\det(A-\lambda I).$$
-        <p>若 $C$ 为正交矩阵（$C^{\mathsf T}C=I$），则 $A'=C^{\mathsf T}AC$，此时称为正交相似；正交矩阵的行列式为 $\pm1$，$+1$ 对应旋转，$-1$ 对应旋转再反射。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">把对角矩阵换到斜基下</span></div>
-      <div class="thm-body">
-        <p>设 $A=\operatorname{diag}(2,1)$，新基 $e'_1=(1,1)$，$e'_2=(1,-1)$，即 $C=\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$，$C^{-1}=\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$。计算</p>
-        $$A'=C^{-1}AC=\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}
-        \begin{pmatrix}2&amp;2\\1&amp;-1\end{pmatrix}
-        =\begin{pmatrix}\tfrac32&amp;\tfrac12\\[2pt]\tfrac12&amp;\tfrac32\end{pmatrix}.$$
-        <p>验证不变量：$\operatorname{tr}A'=3=\operatorname{tr}A$，$\det A'=\tfrac94-\tfrac14=2=\det A$。新矩阵不再对角，但特征值仍是 $2,1$；这说明“对角”是基的性质，不是变换的内禀性质。</p>
-      </div>
-    </div>
-
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">张量的变换律</span></div>
-      <div class="thm-body">
-        <p>在坐标变换 $x'^i=\sum_k \frac{\partial x'^i}{\partial x^k}x^k$ 下，若一组量按</p>
-        $$T'^{i_1\cdots i_p}_{j_1\cdots j_q}
-        =\sum \frac{\partial x'^{i_1}}{\partial x^{k_1}}\cdots
-        \frac{\partial x^{l_1}}{\partial x'^{j_1}}\cdots
-        T^{k_1\cdots k_p}_{l_1\cdots l_q}$$
-        <p>变换，就称为 $(p,q)$ 型张量。上指标称逆变，下指标称协变；对一对上下指标求和称为缩并，缩并后阶数降低 2。度规张量 $g_{ij}=(e_i,e_j)$ 把逆变分量与协变分量互相转换：$x_i=\sum_j g_{ij}x^j$。在标准正交基中 $g_{ij}=\delta_{ij}$，协变与逆变的分量数值相同，这也是初学时容易忽略指标位置的原因。连续介质力学中的应力张量 $\sigma^{ij}$、应变张量 $\varepsilon_{ij}$ 就是典型的二阶张量：它们的分量随坐标系按上述规律变化，但“主应力”与“主方向”是坐标无关的几何对象，对应张量作为线性算子的特征值与特征向量。</p>
-      </div>
-    </div>
-
-    <p>三维正交变换是理解张量指标的好例子。若 $C=(c_{ij})$ 为正交矩阵，则 $C^{\mathsf T}C=I$ 给出六个约束，九个元素只剩三个独立参数。取 Euler 角 $(\alpha,\beta,\gamma)$，$0\le\alpha,\gamma&lt;2\pi$、$0\le\beta\le\pi$，任何旋转都可分解为绕 $x_3$ 转 $\alpha$、绕新的 $x_2$ 轴转 $\beta$、再绕新的 $x_3$ 轴转 $\gamma$。当 $\beta=0$ 时分解不唯一，这就是“万向节死锁”的数学根源。旋转矩阵的行列式为 $+1$；若为 $-1$，还必须再叠加一次空间反射。</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>对象</th><th>变换方式</th><th>不变量示例</th></tr></thead>
-        <tbody>
-          <tr><td>线性变换矩阵</td><td>$A'=C^{-1}AC$</td><td>$\det A$、$\operatorname{tr}A$、特征值</td></tr>
-          <tr><td>二次型矩阵</td><td>$A'=C^{\mathsf T}AC$</td><td>秩、惯性指数</td></tr>
-          <tr><td>逆变向量</td><td>$v'^i=\sum_k \partial x'^i/\partial x^k\,v^k$</td><td>速度、位移</td></tr>
-          <tr><td>协变向量</td><td>$v'_i=\sum_k \partial x^k/\partial x'^i\,v_k$</td><td>梯度、动量</td></tr>
-          <tr><td>正交矩阵</td><td>$C^{\mathsf T}C=I$</td><td>长度、夹角、内积</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">相似、合同、坐标变换的方向</span></div>
-      <div class="thm-body">
-        <p>① 相似 $C^{-1}AC$ 与合同 $C^{\mathsf T}AC$ 是两件事：前者保持特征值，后者保持二次型的秩与惯性，不要混用。② 换基公式中 $C$ 的列是新基在旧基下的坐标；若把 $C$ 写成行，公式会变成 $CAC^{-1}$。③ 张量的指标位置有物理含义，$T^i{}_j$ 与 $T_i{}^j$ 一般不同；只有在欧氏标准正交基下才可以暂时忽略上下指标。④ 正交矩阵行列式为 $-1$ 仍是正交变换，只是包含一次反射，不能一律称为“旋转”。</p>
-      </div>
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">线性变换及其矩阵</span><span class="thm-id">§3.21</span></div>
+    <div class="thm-body">
+      <p>映射 $T:V\to W$ 若满足 $T(\alpha x+\beta y)=\alpha T(x)+\beta T(y)$，就称为线性的。取 $V$ 的基 $e_1,\dots,e_n$ 与 $W$ 的基 $f_1,\dots,f_m$，把</p>
+      <p>$$T(e_j)=\sum_{i=1}^{m}a_{ij}f_i$$</p>
+      <p>的系数排成矩阵 $A=(a_{ij})$，则 $T(x)$ 的坐标列向量为 $y=Ax$。矩阵 $A$ 是 $T$ 在指定基下的“账本”；换基后账本会变，但映射本身不变。当 $V=W$ 时称 $T$ 为线性算子（linear operator）。</p>
     </div>
   </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">换基公式与相似不变量</span><span class="thm-id">§3.21</span></div>
+    <div class="thm-body">
+      <p>设新基由 $e'_j=\sum_i c_{ij}e_i$ 给出，坐标变换为 $x=Cx'$。同一个线性变换在新基下的矩阵为</p>
+      <p>$$A'=C^{-1}AC.$$</p>
+      <p>称 $A$ 与 $A'$ 相似（similar）。相似矩阵有相同的行列式、迹与特征多项式：</p>
+      <p>$$\det A'=\det A,\qquad \operatorname{tr}A'=\operatorname{tr}A,\qquad \det(A'-\lambda I)=\det(A-\lambda I).$$</p>
+      <p>若 $C$ 为正交矩阵（$C^{\mathsf T}C=I$），则 $A'=C^{\mathsf T}AC$，此时称为正交相似；正交矩阵的行列式为 $\pm1$，$+1$ 对应旋转，$-1$ 对应旋转再反射。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：同一向量两种坐标表示</summary>
+  <div class="proof-body"><p>设 $y=Ax$ 与 $y'=A'x'$，且 $x=Cx'$、$y=Cy'$。则 $Cy'=ACx'$，左乘 $C^{-1}$ 得 $y'=C^{-1}ACx'$，由 $x'$ 任意得 $A'=C^{-1}AC$。行列式与迹的相似不变性直接由乘积定理与迹的循环性得到：$\det(C^{-1}AC)=\det C^{-1}\det A\det C=\det A$，$\operatorname{tr}(C^{-1}AC)=\operatorname{tr}(ACC^{-1})=\operatorname{tr}A$。特征多项式同理，因为 $A'-\lambda I=C^{-1}(A-\lambda I)C$。</p></div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">把对角矩阵换到斜基下</span><span class="thm-id">§3.21</span></div>
+    <div class="thm-body">
+      <p>设 $A=\operatorname{diag}(2,1)$，新基 $e'_1=(1,1)$，$e'_2=(1,-1)$，即 $C=\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$，$C^{-1}=\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}$。计算</p>
+      <p>$$A'=C^{-1}AC=\frac12\begin{pmatrix}1&amp;1\\1&amp;-1\end{pmatrix}
+      \begin{pmatrix}2&amp;2\\1&amp;-1\end{pmatrix}
+      =\begin{pmatrix}\tfrac32&amp;\tfrac12\\[2pt]\tfrac12&amp;\tfrac32\end{pmatrix}.$$</p>
+      <p>验证不变量：$\operatorname{tr}A'=3=\operatorname{tr}A$，$\det A'=\tfrac94-\tfrac14=2=\det A$。新矩阵不再对角，但特征值仍是 $2,1$；这说明“对角”是基的性质，不是变换的内禀性质。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§3.22–3.23</span>协变、逆变与张量</h3>
+  <p>换坐标时，向量的分量有两种相反的变换规律。设坐标变换为 $x'^i=\sum_k \frac{\partial x'^i}{\partial x^k}x^k$。若一组量按</p>
+  <p>$$v'^i=\sum_k\frac{\partial x'^i}{\partial x^k}v^k$$</p>
+  <p>变换，称为逆变向量（contravariant vector），典型例子是位移、速度、切向量；若按</p>
+  <p>$$v'_i=\sum_k\frac{\partial x^k}{\partial x'^i}v_k$$</p>
+  <p>变换，称为协变向量（covariant vector），典型例子是梯度、动量。两者在标准正交基中数值相同，但在斜坐标或曲线坐标中必须区分：前者的指标在上，后者的指标在下。</p>
+  <p>把这一规律推广到多个指标，就得到张量：若一组量按</p>
+  <p>$$T'^{i_1\cdots i_p}_{j_1\cdots j_q}
+  =\sum \frac{\partial x'^{i_1}}{\partial x^{k_1}}\cdots
+  \frac{\partial x^{l_1}}{\partial x'^{j_1}}\cdots
+  T^{k_1\cdots k_p}_{l_1\cdots l_q}$$</p>
+  <p>变换，就称为 $(p,q)$ 型张量。上指标称逆变，下指标称协变；对一对上下指标求和称为缩并（contraction），缩并后阶数降低 2。度规张量 $g_{ij}=(e_i,e_j)$ 把逆变分量与协变分量互相转换：$x_i=\sum_j g_{ij}x^j$。在标准正交基中 $g_{ij}=\delta_{ij}$，这也是初学时容易忽略指标位置的原因。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">应力张量与主应力</span><span class="thm-id">§3.24</span></div>
+    <div class="thm-body">
+      <p>连续介质中一点的应力状态由二阶张量 $\sigma^{ij}$ 描述：$\sigma^{ij}$ 是法向为 $e_i$ 的面上沿 $e_j$ 方向的应力分量。它按二阶逆变张量的规律随坐标旋转变化。但“主应力”与“主方向”是坐标无关的几何对象：它们正是矩阵 $(\sigma^{ij})$ 的特征值与特征向量。若取主方向为坐标轴，应力张量变成对角形，对角元就是三个主应力；不变量 $\operatorname{tr}\sigma$（体积应力）与 $\det\sigma$ 在任何旋转下都不变。</p>
+      <p>应变张量 $\varepsilon_{ij}=\frac12(\partial_i u_j+\partial_j u_i)$ 是二阶协变张量；弹性力学中的广义 Hooke 定律把应力与应变用四阶张量 $c^{ijkl}$ 联系起来。这里的指标位置不是装饰：上下指标 contracted 才得到不变量，例如 $\sigma^{ij}\varepsilon_{ij}$ 是应变能密度。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§3.24–3.25</span>正交张量与复空间</h3>
+  <p>三维正交变换是理解张量指标的好例子。若 $C=(c_{ij})$ 为正交矩阵，则 $C^{\mathsf T}C=I$ 给出六个独立约束，九个元素只剩三个独立参数。取 Euler 角 $(\alpha,\beta,\gamma)$，$0\le\alpha,\gamma&lt;2\pi$、$0\le\beta\le\pi$，任何旋转都可分解为绕 $x_3$ 转 $\alpha$、绕新的 $x_2$ 轴转 $\beta$、再绕新的 $x_3$ 轴转 $\gamma$。当 $\beta=0$ 时分解不唯一，这就是“万向节死锁”（gimbal lock）的数学根源。旋转矩阵的行列式为 $+1$；若为 $-1$，还必须再叠加一次空间反射。</p>
+  <p>把实数换成复数，就得到 $n$ 维复空间 $\mathbb C^n$。此时“转置”要换成共轭转置，“正交”要换成酉（unitary），“对称”要换成 Hermite。原书 §3.25 先把线性变换、矩阵乘法与逆在复情形重述一遍，指出所有代数恒等式（结合律、分配律、乘积定理）只用到域运算，因此对 $\mathbb C$ 逐字成立；差别出现在“长度”与“夹角”上：复内积 $(x,y)=\sum x_k\overline{y_k}$ 不再对称，而是 Hermite 对称，这会在第 11 章系统展开。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>对象</th><th>变换方式</th><th>不变量</th><th>示例</th></tr></thead>
+      <tbody>
+        <tr><td>线性变换矩阵</td><td>$A'=C^{-1}AC$</td><td>$\det A$、$\operatorname{tr}A$、特征值</td><td>同一算子的不同坐标</td></tr>
+        <tr><td>二次型矩阵</td><td>$A'=C^{\mathsf T}AC$</td><td>秩、惯性指数</td><td>能量、距离平方</td></tr>
+        <tr><td>逆变向量</td><td>$v'^i=\sum_k \partial x'^i/\partial x^k\,v^k$</td><td>向量本身</td><td>速度、位移</td></tr>
+        <tr><td>协变向量</td><td>$v'_i=\sum_k \partial x^k/\partial x'^i\,v_k$</td><td>向量本身</td><td>梯度、动量</td></tr>
+        <tr><td>正交矩阵</td><td>$C^{\mathsf T}C=I$</td><td>长度、夹角、内积</td><td>旋转、反射</td></tr>
+        <tr><td>酉矩阵</td><td>$U^{*}U=I$</td><td>复内积、范数</td><td>复空间的旋转</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">相似、合同、坐标变换的方向</span></div>
+    <div class="thm-body">
+      <p>① 相似 $C^{-1}AC$ 与合同 $C^{\mathsf T}AC$ 是两件事：前者保持特征值，后者保持二次型的秩与惯性，不要混用。② 换基公式中 $C$ 的列是新基在旧基下的坐标；若把 $C$ 写成行，公式会变成 $CAC^{-1}$。③ 张量的指标位置有物理含义，$T^i{}_j$ 与 $T_i{}^j$ 一般不同；只有在欧氏标准正交基下才可以暂时忽略上下指标。④ 正交矩阵行列式为 $-1$ 仍是正交变换，只是包含一次反射，不能一律称为“旋转”。⑤ “坐标变换”与“点变换”方向相反：点变换 $x\mapsto Ax$ 的矩阵是 $A$，而坐标基变换 $e'=eC$ 下同一算子的矩阵是 $C^{-1}AC$。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch6" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 6</div>
-    <h2><span class="num">6</span>特征值与若尔当标准形：不能对角化时怎么办</h2>
-    <p class="lede">特征值刻画线性变换在某个方向上的纯伸缩；当特征向量不够用时，若尔当块用“伸缩 + 平移”补上缺口。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 6 · §4.27</div>
+  <h2><span class="num">6</span>特征值与特征向量：寻找不变方向</h2>
+  <p class="lede">特征值（eigenvalue）刻画线性算子在某个方向上的纯伸缩；特征向量（eigenvector）就是那个不被转向、只被拉伸或压缩的方向。</p>
 
-    <div class="chap-intro">
-      <p>本章从特征方程 $\det(A-\lambda I)=0$ 出发，说明特征多项式、迹与行列式的关系，给出“$n$ 个互异特征值必可对角化”的充分条件，再进入重根情形：用几何重数与代数重数的差距判断可对角化性，用初等因子写出若尔当标准形。若尔当形是矩阵函数的计算基础，也是线性微分方程出现 $t^k e^{\lambda t}$ 项的根源。</p>
-      <span class="tag">Eigenvalues &amp; Jordan Form</span>
-    </div>
+  <div class="chap-intro">
+    <p>本章从特征方程 $\det(A-\lambda I)=0$ 出发，说明特征多项式、迹与行列式的关系，证明“不同特征值的特征向量线性无关”，给出可对角化的充要条件。原书把特征值称为“特征根”（characteristic root），并强调：对角化不是总能做到，重根时还要看特征向量够不够——这直接通向下一章的若尔当标准形。</p>
+    <span class="tag">Eigenvalues</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">特征方程</span>
-      <span class="chip">迹与行列式</span>
-      <span class="chip">几何重数</span>
-      <span class="chip">初等因子</span>
-      <span class="chip">若尔当块</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">特征方程</span>
+    <span class="chip">$\operatorname{tr}=\sum\lambda_i$</span>
+    <span class="chip">$\det=\prod\lambda_i$</span>
+    <span class="chip">代数重数</span>
+    <span class="chip">几何重数</span>
+    <span class="chip">可对角化判据</span>
+  </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">特征值与特征向量</span></div>
-      <div class="thm-body">
-        <p>对 $n$ 阶方阵 $A$，若存在非零向量 $v$ 与数 $\lambda$ 使</p>
-        $$Av=\lambda v,$$
-        <p>则称 $\lambda$ 为特征值，$v$ 为对应的特征向量。特征值是特征方程</p>
-        $$\chi_A(\lambda)=\det(A-\lambda I)=0$$
-        <p>的根；$\chi_A$ 是 $n$ 次多项式，首项为 $(-1)^n\lambda^n$，且</p>
-        $$\operatorname{tr}A=\sum_{i=1}^n\lambda_i,\qquad \det A=\prod_{i=1}^n\lambda_i.$$
-        <p>$\lambda$ 的代数重数是它在特征多项式中的重数，几何重数是 $\dim\ker(A-\lambda I)$。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">可对角化的判据</span></div>
-      <div class="thm-body">
-        <p>（1）属于不同特征值的特征向量线性无关；若 $A$ 有 $n$ 个互异特征值，则 $A$ 可对角化。（2）一般地，$A$ 可对角化当且仅当每个特征值的几何重数等于代数重数，即</p>
-        $$\sum_{\lambda}\dim\ker(A-\lambda I)=n.$$
-        <p>等价地，$A$ 的最小多项式没有重根。可对角化时存在可逆矩阵 $V$，使 $A=V\operatorname{diag}(\lambda_1,\dots,\lambda_n)V^{-1}$，$V$ 的列就是特征向量。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">若尔当标准形</span></div>
-      <div class="thm-body">
-        <p>设 $A$ 的特征值 $\lambda$ 对应初等因子 $(\lambda-\mu)^{e_1},\dots,(\lambda-\mu)^{e_s}$，其中 $e_1+\cdots+e_s$ 等于代数重数。则存在可逆矩阵 $U$，使</p>
-        $$U^{-1}AU=\operatorname{diag}\bigl(J_{e_1}(\mu),\dots,J_{e_s}(\mu),\dots\bigr),$$
-        <p>其中 $e$ 阶若尔当块取（本书约定，1 在次对角线）</p>
-        $$J_e(\mu)=\begin{pmatrix}
-        \mu&amp;0&amp;\cdots&amp;0\\
-        1&amp;\mu&amp;\cdots&amp;0\\
-        \vdots&amp;\ddots&amp;\ddots&amp;\vdots\\
-        0&amp;\cdots&amp;1&amp;\mu
-        \end{pmatrix}.$$
-        <p>若所有 $e_i=1$，若尔当形退化为对角形。若尔当形在相差块排列的意义下唯一；有些教材把 1 放在超对角线，两者只差一个编号反转，不改变理论。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">一个不可对角化的二阶矩阵</span></div>
-      <div class="thm-body">
-        <p>取 $A=\begin{pmatrix}2&amp;1\\0&amp;2\end{pmatrix}$。特征多项式为 $(2-\lambda)^2$，$\lambda=2$ 的代数重数是 2。求特征向量：</p>
-        $$(A-2I)v=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix}=0
-        \quad\Longrightarrow\quad v_2=0.$$
-        <p>特征空间是一维的，几何重数 $1&lt;2$，所以 $A$ 不可对角化。它本身已经是一个若尔当块 $J_2(2)$。若强行“对角化”，只能得到 $\operatorname{diag}(2,2)=2I$，但 $A\ne2I$，二者不相似。这个例子说明：<strong>特征值相同不代表矩阵相同，重根时还要看特征向量够不够</strong>。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">重根但可对角化</span></div>
-      <div class="thm-body">
-        <p>取实对称矩阵</p>
-        $$A=\begin{pmatrix}2&amp;1&amp;0\\1&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}.$$
-        <p>其特征多项式为 $\bigl((2-\lambda)^2-1\bigr)(3-\lambda)=(3-\lambda)^2(1-\lambda)$，特征值为 $3,3,1$。对 $\lambda=3$，$\ker(A-3I)$ 由 $(1,1,0)$ 与 $(0,0,1)$ 张成，几何重数为 2，正好等于代数重数；对 $\lambda=1$，特征向量为 $(1,-1,0)$。三个特征向量两两正交，可正交对角化。这个例子与上一个形成对照：<strong>同样是重根，对称矩阵的重根一定够用，非对称矩阵则未必</strong>。</p>
-      </div>
-    </div>
-
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>若尔当块 $J_e(\mu)=\mu I+N$，其中 $N$ 是把基向量依次向右移动的幂零矩阵，$N^e=0$。于是 $J_e(\mu)^k=(\mu I+N)^k$ 会展开出二项式系数，出现 $t^{k-1}\mu^{k-1}$ 一类的多项式因子。这就是为什么重根对应的解可能含 $t e^{\lambda t}$，而不是只有纯指数。</p>
-    </div>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>判据</th><th>条件</th><th>结论</th></tr></thead>
-        <tbody>
-          <tr><td>互异特征值</td><td>$\lambda_1,\dots,\lambda_n$ 两两不同</td><td>必可对角化</td></tr>
-          <tr><td>一般可对角化</td><td>各几何重数之和 $=n$</td><td>$A=V\Lambda V^{-1}$</td></tr>
-          <tr><td>不可对角化</td><td>某 $\dim\ker(A-\lambda I)&lt;$ 代数重数</td><td>出现非平凡若尔当块</td></tr>
-          <tr><td>最小多项式</td><td>无重根</td><td>可对角化</td></tr>
-          <tr><td>三角矩阵</td><td>—</td><td>特征值就是对角元</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">重根、零特征值与数值病态</span></div>
-      <div class="thm-body">
-        <p>① 有重特征值不等于不可对角化：单位矩阵 $I$ 的特征值全为 1，却已经是对角形。② $\lambda=0$ 是特征值当且仅当 $\det A=0$，此时 $A$ 不可逆；不要把它当成“没有特征值”。③ 特征向量必须非零，零向量对任何 $\lambda$ 都满足方程，不能算。④ 数值上“近重根”会让特征向量几乎平行，求逆与对角化都可能病态；理论上可对角化不代表计算稳定。</p>
-      </div>
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">特征值与特征向量</span><span class="thm-id">§4.27</span></div>
+    <div class="thm-body">
+      <p>对 $n$ 阶方阵 $A$，若存在非零向量 $v$ 与数 $\lambda$ 使</p>
+      <p>$$Av=\lambda v,$$</p>
+      <p>则称 $\lambda$ 为 $A$ 的特征值，$v$ 为对应的特征向量。特征值是特征方程</p>
+      <p>$$\chi_A(\lambda)=\det(A-\lambda I)=0$$</p>
+      <p>的根；$\chi_A$ 是 $n$ 次多项式，首项为 $(-1)^n\lambda^n$，常数项为 $\det A$。$\lambda$ 的代数重数（algebraic multiplicity）是它在特征多项式中的重数，几何重数（geometric multiplicity）是 $\dim\ker(A-\lambda I)$。</p>
     </div>
   </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Vieta 公式与谱的不变量</span><span class="thm-id">§4.27</span></div>
+    <div class="thm-body">
+      <p>设 $\lambda_1,\dots,\lambda_n$ 为 $A$ 的全部特征值（按代数重数计），则</p>
+      <p>$$\operatorname{tr}A=\sum_{i=1}^{n}\lambda_i,\qquad \det A=\prod_{i=1}^{n}\lambda_i.$$</p>
+      <p>更一般地，若改用 $\det(\lambda I-A)$，则其 $\lambda^{n-k}$ 项系数为 $(-1)^k$ 乘以全部 $k$ 阶主子式之和。特别地，$\lambda=0$ 是特征值当且仅当 $\det A=0$，即 $A$ 奇异。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：展开 $\det(A-\lambda I)$ 并比较系数</summary>
+  <div class="proof-body"><p>在 $\det(A-\lambda I)$ 的排列展开中，要得到 $\lambda^{n-1}$，必须从对角元中取 $n-1$ 个 $-\lambda$、从非对角元取一个 $a_{ii}$，且非对角选取会减少对角因子个数，故 $\lambda^{n-1}$ 的系数为 $-\sum_i a_{ii}=-\operatorname{tr}A$。常数项令 $\lambda=0$ 得 $\det A$。把多项式写成 $(-1)^n\prod(\lambda-\lambda_i)$ 并比较 $\lambda^{n-1}$ 与常数项，即得两条公式。主子式版本来自对 $\det(A-\lambda I)$ 按行展开的归纳。</p></div>
+  </details>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">可对角化的判据</span><span class="thm-id">§4.27, §4.33</span></div>
+    <div class="thm-body">
+      <p>（1）属于不同特征值的特征向量线性无关；若 $A$ 有 $n$ 个互异特征值，则 $A$ 可对角化。（2）一般地，$A$ 可对角化当且仅当每个特征值的几何重数等于代数重数，即</p>
+      <p>$$\sum_{\lambda}\dim\ker(A-\lambda I)=n.$$</p>
+      <p>等价地，$A$ 的最小多项式没有重根。可对角化时存在可逆矩阵 $V$，使</p>
+      <p>$$A=V\operatorname{diag}(\lambda_1,\dots,\lambda_n)V^{-1},$$</p>
+      <p>$V$ 的列就是特征向量。几何重数永远不超过代数重数：$1\le\dim\ker(A-\lambda I)\le m_\lambda$。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：不同特征值线性无关 + 重数比较</summary>
+  <div class="proof-body"><p>先证不同特征值的特征向量无关。设 $\sum_{i=1}^{k}c_iv_i=0$ 是最短的非平凡关系。两边作用 $A$ 得 $\sum c_i\lambda_iv_i=0$；减去 $\lambda_k$ 倍原式，得 $\sum_{i&lt;k}c_i(\lambda_i-\lambda_k)v_i=0$。由最短性，所有 $c_i(\lambda_i-\lambda_k)=0$，而 $\lambda_i\ne\lambda_k$，故 $c_i=0$（$i&lt;k$），代回得 $c_kv_k=0$，矛盾。</p>
+    <p>再证重数不等式。设 $\lambda_0$ 的几何重数为 $g$，取特征子空间的一组基 $v_1,\dots,v_g$ 并扩充为全空间基。在此基下 $A$ 的矩阵为分块上三角 $\begin{pmatrix}\lambda_0I_g&amp;*\\0&amp;B\end{pmatrix}$，故特征多项式含因子 $(\lambda-\lambda_0)^g$，即 $g\le m_{\lambda_0}$。可对角化意味着全空间能写成特征子空间的直和，维数相加为 $n$，故每个 $g=m$；反之若每个 $g=m$，把这些特征子空间的基拼起来得到 $n$ 个线性无关特征向量，即构成可对角化基。</p></div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">三阶矩阵的谱与对角化</span><span class="thm-id">§4.27</span></div>
+    <div class="thm-body">
+      <p>取</p>
+      <p>$$A=\begin{pmatrix}2&amp;1&amp;0\\1&amp;2&amp;0\\0&amp;0&amp;3\end{pmatrix}.$$</p>
+      <p>按第三行展开特征多项式：</p>
+      <p>$$\chi_A(\lambda)=(3-\lambda)\bigl((2-\lambda)^2-1\bigr)=(3-\lambda)^2(1-\lambda).$$</p>
+      <p>特征值为 $3,3,1$。对 $\lambda=3$，$(A-3I)v=0$ 给出 $-v_1+v_2=0$，故特征子空间由 $(1,1,0)$ 与 $(0,0,1)$ 张成，几何重数 $2$，等于代数重数。对 $\lambda=1$，$v_1+v_2=0$，特征向量 $(1,-1,0)$。三个特征向量两两正交，$A$ 可正交对角化：</p>
+      <p>$$Q=\begin{pmatrix}\tfrac1{\sqrt2}&amp;0&amp;\tfrac1{\sqrt2}\\[2pt]\tfrac1{\sqrt2}&amp;0&amp;-\tfrac1{\sqrt2}\\[2pt]0&amp;1&amp;0\end{pmatrix},\qquad
+      Q^{\mathsf T}AQ=\operatorname{diag}(3,3,1).$$</p>
+      <p>验证不变量：$\operatorname{tr}A=7=3+3+1$，$\det A=9=3\cdot3\cdot1$。注意 $\lambda=3$ 是重根却仍可对角化，因为它是实对称矩阵；重根本身不是障碍。</p>
+    </div>
+  </div>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>把 $A$ 想成一个持续作用的线性过程：大多数方向会被“转向”，只有特征方向保持直线。特征值就是该方向上的伸缩倍数：$|\lambda|&gt;1$ 拉伸，$|\lambda|&lt;1$ 压缩，$\lambda&lt;0$ 反向，$\lambda=0$ 把该方向压扁。若把 $A$ 迭代 $k$ 次，$A^kv=\lambda^kv$，所以长期行为由模最大的特征值支配——这就是幂法、PageRank 与稳定性分析的共同原理。</p>
+  </div>
+
+  <p>特征值还有一个不依赖坐标的刻画：$\lambda$ 是 $A$ 的特征值，当且仅当 $A-\lambda I$ 不可逆，当且仅当存在非零 $v$ 使 $(A-\lambda I)v=0$。因此特征值是“使算子失去单射性的那些参数”。在微分方程 $\dot x=Ax$ 中，这些参数决定解的指数增长/衰减/振荡；在二次型 $x^{\mathsf T}Ax$ 中，它们决定曲面的主轴长度。第 14 章会把这两条应用线索接上。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>对象</th><th>公式 / 判据</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td>特征方程</td><td>$\det(A-\lambda I)=0$</td><td>$n$ 次，复根计重数</td></tr>
+        <tr><td>迹</td><td>$\operatorname{tr}A=\sum\lambda_i$</td><td>相似不变量</td></tr>
+        <tr><td>行列式</td><td>$\det A=\prod\lambda_i$</td><td>可逆 $\iff$ 无零特征值</td></tr>
+        <tr><td>不同特征值</td><td>特征向量线性无关</td><td>$n$ 个互异 $\Rightarrow$ 可对角化</td></tr>
+        <tr><td>可对角化</td><td>各几何重数 $=$ 代数重数</td><td>等价于最小多项式无重根</td></tr>
+        <tr><td>三角矩阵</td><td>特征值 $=$ 对角元</td><td>不必展开</td></tr>
+        <tr><td>幂</td><td>$A^kv=\lambda^kv$</td><td>幂法、稳定性</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">重根、零特征值与数值病态</span></div>
+    <div class="thm-body">
+      <p>① 有重特征值不等于不可对角化：单位矩阵 $I$ 的特征值全为 1，却已经是对角形。② $\lambda=0$ 是特征值当且仅当 $\det A=0$，此时 $A$ 不可逆；不要把它当成“没有特征值”。③ 特征向量必须非零，零向量对任何 $\lambda$ 都满足方程，不能算。④ 特征值在相似变换下不变，但在合同变换下一般会变；不要用特征值判断两个二次型是否合同。⑤ 数值上“近重根”会让特征向量几乎平行，求逆与对角化都可能病态；理论上可对角化不代表计算稳定。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch7" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 7</div>
-    <h2><span class="num">7</span>二次型：配方、惯性定律与正定性</h2>
-    <p class="lede">二次型是“带方向的抛物线”；正交变换把它转成主轴方向，惯性定律告诉我们正负平方项的个数无法被任何实变换改变。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 7 · §4.33</div>
+  <h2><span class="num">7</span>若尔当标准形：特征向量不够时怎么办</h2>
+  <p class="lede">若尔当标准形（Jordan form）把不可对角化的矩阵写成“对角块 + 次对角线上的 1”；它用广义特征向量补上特征向量的缺口。</p>
 
-    <div class="chap-intro">
-      <p>本章把二次型写成 $q(x)=x^{\mathsf T}Ax$（$A$ 对称），讨论合同变换 $A\mapsto C^{\mathsf T}AC$、正交对角化、惯性指数与分类。正定性有两条实用判据：特征值全正，或顺序主子式全正（Sylvester 判据）。最后给出 Jacobi 公式与两个二次型同时对角化，为下一章小振动做准备。</p>
-      <span class="tag">Quadratic Forms</span>
-    </div>
+  <div class="chap-intro">
+    <p>上一章说明：可对角化要求几何重数等于代数重数。当这个条件失败时，矩阵仍可化为几乎对角的形式——每个特征值对应若干个若尔当块，块的大小由初等因子（elementary divisor）决定。原书 §4.33 处理“特征方程有重根”的情形，用初等因子与不变因子给出标准形，并证明它在块排列意义下唯一。</p>
+    <span class="tag">Jordan Form</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">对称矩阵</span>
-      <span class="chip">合同变换</span>
-      <span class="chip">惯性定律</span>
-      <span class="chip">Sylvester 判据</span>
-      <span class="chip">Jacobi 公式</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">广义特征向量</span>
+    <span class="chip">初等因子</span>
+    <span class="chip">若尔当块</span>
+    <span class="chip">最小多项式</span>
+    <span class="chip">唯一性</span>
+    <span class="chip">$t^ke^{\lambda t}$</span>
+  </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">二次型及其矩阵</span></div>
-      <div class="thm-body">
-        <p>实二次型是</p>
-        $$q(x_1,\dots,x_n)=\sum_{i,k=1}^{n}a_{ik}x_ix_k,\qquad a_{ik}=a_{ki}.$$
-        <p>取 $A=(a_{ik})$，则 $q(x)=x^{\mathsf T}Ax$。在变量替换 $x=Cy$ 下，</p>
-        $$q=y^{\mathsf T}(C^{\mathsf T}AC)y,$$
-        <p>新矩阵为 $A'=C^{\mathsf T}AC$，称 $A$ 与 $A'$ 合同。合同不保持特征值，但保持对称性与秩。若 $C$ 正交，则同时有 $C^{\mathsf T}=C^{-1}$，合同退化为正交相似，特征值不变。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">主轴定理与惯性定律</span></div>
-      <div class="thm-body">
-        <p>实对称矩阵 $A$ 可正交对角化：存在正交矩阵 $Q$，使</p>
-        $$Q^{\mathsf T}AQ=\operatorname{diag}(\lambda_1,\dots,\lambda_n).$$
-        <p>于是 $q=\sum_k\lambda_k y_k^2$，$\lambda_k$ 为特征值，$Q$ 的列为对应的单位特征向量。更一般地，任何实合同变换都能把 $q$ 化成</p>
-        $$q=z_1^2+\cdots+z_p^2-z_{p+1}^2-\cdots-z_{p+r}^2,$$
-        <p>其中 $r=\operatorname{rank}A$。正整数 $p$ 与负整数 $q=r-p$ 由 $A$ 唯一确定，分别称为正、负惯性指数；$(p,q)$ 称为符号差（signature）。这就是<strong>惯性定律</strong>：无论怎么配方，正负平方项的个数不变。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">正定性与 Jacobi 公式</span></div>
-      <div class="thm-body">
-        <p>对实对称 $A$，以下等价：$q(x)&gt;0$ 对所有 $x\ne0$ 成立；$A$ 的所有特征值为正；$A$ 的所有顺序主子式 $\Delta_k&gt;0$（$k=1,\dots,n$）。若只要求 $q\ge0$，则称半正定，此时特征值非负、所有主子式非负。</p>
-        <p>若 $\Delta_k\ne0$，用不选主元的配方法可得 Jacobi 公式：</p>
-        $$q=\frac{\Delta_1}{\Delta_0}y_1^2+\frac{\Delta_2}{\Delta_1}y_2^2+\cdots+\frac{\Delta_n}{\Delta_{n-1}}y_n^2,\qquad \Delta_0=1.$$
-        <p>它把“配方”变成了行列式比值，适合手工计算与理论推导；但某个 $\Delta_k=0$ 时不能直接套用，需要先做变量重排或改用特征值判据。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">含交叉项的三元二次型</span></div>
-      <div class="thm-body">
-        <p>化 $q=2x_1x_2+2x_1x_3-2x_2x_3$ 为标准形。先令 $x_1=y_1+y_2$，$x_2=y_1-y_2$，$x_3=y_3$，则</p>
-        $$q=2(y_1^2-y_2^2)+2(y_1+y_2)y_3-2(y_1-y_2)y_3
-        =2y_1^2-2y_2^2+4y_2y_3.$$
-        <p>再配方：$-2y_2^2+4y_2y_3=-2(y_2-y_3)^2+2y_3^2$。令 $z_1=y_1$，$z_2=y_3$，$z_3=y_2-y_3$，得</p>
-        $$q=2z_1^2+2z_2^2-2z_3^2.$$
-        <p>符号差为 $(2,1)$，二次型不定：在 $z_3$ 方向取负值，在 $z_1$ 方向取正值。对应矩阵</p>
-        $$A=\begin{pmatrix}0&amp;1&amp;1\\1&amp;0&amp;-1\\1&amp;-1&amp;0\end{pmatrix}$$
-        <p>的特征值为 $1,1,-2$，与配方结果一致；$\Delta_1=0$，所以本例不能直接用 Jacobi 公式。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">两个二次型同时对角化</span></div>
-      <div class="thm-body">
-        <p>设 $\varphi_1=x^{\mathsf T}Ax$ 正定，$\varphi_2=x^{\mathsf T}Bx$ 对称。则存在实可逆矩阵 $C$，使</p>
-        $$C^{\mathsf T}AC=I,\qquad C^{\mathsf T}BC=\operatorname{diag}(\mu_1,\dots,\mu_n).$$
-        <p>$\mu_k$ 是广义特征值问题 $\det(B-\mu A)=0$ 的根。做法是先用 $\varphi_1$ 把 $A$ 化为单位矩阵（例如 Cholesky 分解 $A=R^{\mathsf T}R$，令 $y=Rx$），再对 $R^{-\mathsf T}BR^{-1}$ 做正交对角化。这个方法把“两个耦合的二次型”同时变成平方和，正是下一章小振动解耦的代数基础。注意 $\mu_k$ 的符号与大小依赖 $A$ 的选择：若把 $\varphi_1$ 换成另一个正定形式，广义特征值会改变；但 $\varphi_2$ 相对 $\varphi_1$ 的正负惯性指数（即 $\mu_k$ 的正负个数）仍由两形式的相对位置决定，这一点在能量判据中比具体数值更重要。</p>
-      </div>
-    </div>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>类型</th><th>特征值 / 惯性指数</th><th>判据</th></tr></thead>
-        <tbody>
-          <tr><td>正定</td><td>全部 $\lambda_k&gt;0$，$(p,q)=(n,0)$</td><td>顺序主子式全正</td></tr>
-          <tr><td>负定</td><td>全部 $\lambda_k&lt;0$，$(0,n)$</td><td>$(-1)^k\Delta_k&gt;0$</td></tr>
-          <tr><td>半正定</td><td>$\lambda_k\ge0$，$q=r&lt;n$</td><td>所有主子式 $\ge0$</td></tr>
-          <tr><td>不定</td><td>正负特征值都有</td><td>$p&gt;0$ 且 $q&gt;0$</td></tr>
-          <tr><td>秩</td><td>$r=p+q$</td><td>非零平方项个数</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">顺序主子式、合同与“配方”</span></div>
-      <div class="thm-body">
-        <p>① Sylvester 判据用的是左上角顺序主子式，不是任意主子式；半正定才需要检查所有主子式。② 合同变换不保持特征值，只保持惯性指数；不要用相似不变量去判断合同分类。③ 配方不唯一，但正负项个数唯一；把 $q$ 化成 $2z_1^2-2z_3^2$ 与化成 $z_1^2-z_3^2$ 是同一符号差。④ 交叉项系数在矩阵中要除以 2：$2bxy$ 对应矩阵元素 $b$，写成 $2b$ 会让特征值整体错位。</p>
-      </div>
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">若尔当块与广义特征向量</span><span class="thm-id">§4.33</span></div>
+    <div class="thm-body">
+      <p>$e$ 阶若尔当块（Jordan block）定义为</p>
+      <p>$$J_e(\mu)=\begin{pmatrix}
+      \mu&amp;1&amp;0&amp;\cdots&amp;0\\
+      0&amp;\mu&amp;1&amp;\cdots&amp;0\\
+      \vdots&amp;&amp;\ddots&amp;\ddots&amp;\vdots\\
+      0&amp;\cdots&amp;0&amp;\mu&amp;1\\
+      0&amp;\cdots&amp;0&amp;0&amp;\mu
+      \end{pmatrix}=\mu I+N,\qquad N^e=0.$$</p>
+      <p>这里 $N$ 是把 $e_1\mapsto e_2\mapsto\cdots\mapsto e_e\mapsto0$ 的幂零矩阵（nilpotent）。若 $(A-\mu I)^kv\ne0$ 而 $(A-\mu I)^{k+1}v=0$，称 $v$ 为 $k+1$ 阶广义特征向量（generalized eigenvector）。</p>
     </div>
   </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">若尔当标准形存在唯一</span><span class="thm-id">§4.33</span></div>
+    <div class="thm-body">
+      <p>设复矩阵 $A$ 的特征多项式为 $\prod_{j}(\lambda-\mu_j)^{m_j}$。则存在可逆矩阵 $U$，使</p>
+      <p>$$U^{-1}AU=\operatorname{diag}\bigl(J_{e_{11}}(\mu_1),\dots,J_{e_{1s_1}}(\mu_1),\ \dots\bigr),$$</p>
+      <p>其中同一特征值 $\mu_j$ 的块大小 $e_{j1}\ge e_{j2}\ge\cdots$ 满足 $\sum_k e_{jk}=m_j$。这些块在相差排列的意义下唯一；块大小的序列由 $A$ 的初等因子 $(\lambda-\mu_j)^{e_{jk}}$ 决定。若所有块都是一阶，若尔当形退化为对角形。</p>
+      <p>等价说法：若 $d_k=\dim\ker(A-\mu I)^k$，则大小为 $\ge k$ 的块数等于 $d_k-d_{k-1}$，因此块结构由秩序列完全确定。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明骨架：幂零部分 + 循环分解</summary>
+  <div class="proof-body">
+    <p>第一步，把 $A$ 化为上三角。对 $n$ 归纳：取一个特征向量 $v$，扩充为基，矩阵成为 $\begin{pmatrix}\mu&amp;*\\0&amp;B\end{pmatrix}$，对 $B$ 归纳即可。于是 $A=D+N$，$D$ 对角、$N$ 严格上三角且幂零，但一般 $D,N$ 不交换。</p>
+    <p>第二步，对每个特征值 $\mu$ 考察幂零算子 $T=A-\mu I$ 在广义特征子空间 $V_\mu=\ker(A-\mu I)^m$ 上的作用。取 $V_\mu$ 的一组“循环基”：从最高层选 $v$，令 $v,Tv,\dots,T^{e-1}v$ 构成一个循环块；对商空间重复。由于 $T$ 幂零，过程在有限步终止，得到 $V_\mu$ 的直和分解，每一块在基 $T^{e-1}v,\dots,v$ 下正是 $J_e(\mu)$。</p>
+    <p>第三步，唯一性。块大小 $\ge k$ 的个数等于 $\dim\ker T^k-\dim\ker T^{k-1}$，这是相似不变量，故块结构唯一。最小多项式是各块 $(\lambda-\mu)^e$ 的最小公倍式，其根的重数就是最大块的大小。</p>
+  </div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">一个不可对角化的二阶矩阵</span><span class="thm-id">§4.33</span></div>
+    <div class="thm-body">
+      <p>取 $A=\begin{pmatrix}2&amp;1\\0&amp;2\end{pmatrix}$。特征多项式为 $(2-\lambda)^2$，$\lambda=2$ 的代数重数是 2。求特征向量：</p>
+      <p>$$(A-2I)v=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}\begin{pmatrix}v_1\\v_2\end{pmatrix}=0
+      \quad\Longrightarrow\quad v_2=0.$$</p>
+      <p>特征空间是一维的，几何重数 $1&lt;2$，所以 $A$ 不可对角化。它本身已经是一个若尔当块 $J_2(2)$。若强行“对角化”，只能得到 $\operatorname{diag}(2,2)=2I$，但 $A\ne2I$，二者不相似。这个例子说明：特征值相同不代表矩阵相同，重根时还要看特征向量够不够。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">三阶矩阵的若尔当形与过渡矩阵</span><span class="thm-id">§4.33</span></div>
+    <div class="thm-body">
+      <p>取</p>
+      <p>$$A=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;1\\0&amp;0&amp;2\end{pmatrix}=2I+N,\qquad N=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;1\\0&amp;0&amp;0\end{pmatrix}.$$</p>
+      <p>$N^2\ne0$、$N^3=0$，故 $A$ 本身就是一个 $3$ 阶若尔当块 $J_3(2)$。取 $v=e_1$，则 $v,(A-2I)v,(A-2I)^2v$ 正好是标准基 $e_1,e_2,e_3$；在这组基下矩阵仍是 $J_3(2)$。若改成 $A'=\operatorname{diag}(J_2(2),2)$，即</p>
+      <p>$$A'=\begin{pmatrix}2&amp;1&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;2\end{pmatrix},$$</p>
+      <p>它与 $A$ 有相同的特征多项式 $(2-\lambda)^3$，却不相似：$A$ 的 $\dim\ker(A-2I)=1$，$A'$ 的是 $2$。这个例子说明“特征多项式相同”远不足以分类，必须看块结构。</p>
+    </div>
+  </div>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>若尔当块 $J_e(\mu)=\mu I+N$，其中 $N$ 是把基向量依次向右移动的幂零矩阵，$N^e=0$。于是 $J_e(\mu)^k=(\mu I+N)^k$ 会展开出二项式系数，出现 $\binom{k}{j}\mu^{k-j}N^j$ 这样的多项式因子。这就是为什么重根对应的解可能含 $t e^{\lambda t}$，而不是只有纯指数。几何上，$N$ 把“缺少的特征方向”串成一条链：每一层只比上一层多一个多项式因子。</p>
+  </div>
+
+  <p>若尔当形与最小多项式（minimal polynomial）的关系值得单独记住。最小多项式 $m_A$ 是使 $m_A(A)=0$ 的次数最低的首一多项式；它整除特征多项式，且与特征多项式有相同的根（不计重数）。$A$ 可对角化当且仅当 $m_A$ 无重根；$m_A$ 中每个根的重数等于该特征值最大若尔当块的阶数。因此在数值计算中，若最小多项式的次数远小于 $n$，就说明矩阵有大量重复的块结构，可以用 Krylov 子空间方法大幅降维。</p>
+  <p>若尔当形在理论上完美，在数值上却“不可连续依赖”：特征值的微小扰动可能把一个 $2\times2$ 块拆成两个几乎相同的实特征值，过渡矩阵的条件数爆炸。因此实际计算稳定性时，人们改用 Schur 形（酉相似到上三角）或奇异值分解；若尔当形主要用于证明与求显式解。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>判据</th><th>条件</th><th>结论</th></tr></thead>
+      <tbody>
+        <tr><td>互异特征值</td><td>$\lambda_1,\dots,\lambda_n$ 两两不同</td><td>必可对角化</td></tr>
+        <tr><td>一般可对角化</td><td>各几何重数之和 $=n$</td><td>$A=V\Lambda V^{-1}$</td></tr>
+        <tr><td>不可对角化</td><td>某 $\dim\ker(A-\lambda I)&lt;$ 代数重数</td><td>出现非平凡若尔当块</td></tr>
+        <tr><td>最小多项式</td><td>$m_A$ 无重根</td><td>可对角化</td></tr>
+        <tr><td>块大小</td><td>$\dim\ker(A-\mu I)^k$ 的增量</td><td>大小 $\ge k$ 的块数</td></tr>
+        <tr><td>三角矩阵</td><td>—</td><td>特征值就是对角元</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">块方向、特征多项式与“唯一”</span></div>
+    <div class="thm-body">
+      <p>① 若尔当块的 1 可以放在次对角线（本书约定）或超对角线，两种写法只差基的编号反转，不改变理论；抄公式时要先看约定。② 特征多项式相同不代表相似，还要看块大小；$J_3(2)$ 与 $\operatorname{diag}(J_2(2),2)$ 就是反例。③ 若尔当形唯一到“块的排列”，不唯一到过渡矩阵 $U$；$U$ 的列可以乘任意非零数。④ 实矩阵的特征值可能是复的，此时若坚持实数域，只能得到实若尔当形（含 $2\times2$ 旋转块），不能强行写成实对角。⑤ “最小多项式无重根”是可对角化的判据，不是“特征多项式无重根”；后者只是充分条件。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch8" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 8</div>
-    <h2><span class="num">8</span>Hermite 矩阵、酉矩阵与投影</h2>
-    <p class="lede">在复空间里，Hermite 矩阵扮演实对称矩阵的角色：特征值全实、特征向量正交、可酉对角化；酉矩阵则是复空间的“旋转”。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 8 · §4.32, §4.35–§4.37</div>
+  <h2><span class="num">8</span>双线性型与二次型：配方、惯性定律、分类</h2>
+  <p class="lede">双线性型（bilinear form）是两个向量分量的“双一次”函数；令两个变量相同，就得到二次型（quadratic form）。二次型的核心问题是：用可逆线性替换能把它化成多简单的平方和。</p>
 
-    <div class="chap-intro">
-      <p>本章把上一章的实对称理论推广到复矩阵。核心是谱定理：Hermite 矩阵 $A^{*}=A$ 可写为 $A=U\Lambda U^{*}$，$U$ 酉、$\Lambda$ 实对角。酉矩阵满足 $U^{*}U=I$，特征值都在单位圆上。投影矩阵 $P^2=P=P^{*}$ 把空间正交地劈成“保留”与“压扁”两部分；一组正交投影的求和给出单位分解。</p>
-      <span class="tag">Hermitian &amp; Unitary</span>
-    </div>
+  <div class="chap-intro">
+    <p>原书 §4.32 先把二次型写成 $q(x)=\sum a_{ik}x_ix_k$，用配方法化成平方和；§4.35 给出实二次型与复二次型的分类；§4.36 给出 Jacobi 公式（用顺序主子式直接读出系数）；§4.37 证明两个二次型可同时化为平方和。这里先把双线性型的一般理论讲清楚，再进入二次型——因为“对称化”是理解矩阵为何取对称的关键。</p>
+    <span class="tag">Bilinear &amp; Quadratic Forms</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">共轭转置</span>
-      <span class="chip">谱定理</span>
-      <span class="chip">酉矩阵</span>
-      <span class="chip">正交投影</span>
-      <span class="chip">同时对角化</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">双线性型</span>
+    <span class="chip">对称化</span>
+    <span class="chip">合同变换</span>
+    <span class="chip">惯性定律</span>
+    <span class="chip">Jacobi 公式</span>
+    <span class="chip">同时对角化</span>
+  </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Hermite、酉与正规矩阵</span></div>
-      <div class="thm-body">
-        <p>设 $A\in\mathbb C^{n\times n}$，$A^{*}=\overline{A^{\mathsf T}}$。若 $A^{*}=A$，称 $A$ 为 Hermite 矩阵；若 $A^{*}A=I$，称 $A$ 为酉矩阵；若 $A^{*}A=AA^{*}$，称 $A$ 为正规矩阵。实情形分别退化为对称、正交与正规矩阵。Hermite 矩阵的二次型 $x^{*}Ax$ 恒为实数，因为</p>
-        $$(x^{*}Ax)^{*}=x^{*}A^{*}x=x^{*}Ax.$$
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">谱定理与酉对角化</span></div>
-      <div class="thm-body">
-        <p>（1）Hermite 矩阵的特征值全为实数；属于不同特征值的特征向量互相正交。（2）$A$ 是 Hermite 矩阵当且仅当存在酉矩阵 $U$ 与实对角矩阵 $\Lambda$，使</p>
-        $$A=U\Lambda U^{*}.$$
-        <p>（3）$U$ 是酉矩阵当且仅当它保持内积：$(Ux,Uy)=(x,y)$；其特征值的模全为 1，且可酉对角化。（4）更一般地，$A$ 可酉对角化当且仅当 $A$ 正规。</p>
-      </div>
-    </div>
-
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">正交投影与单位分解</span></div>
-      <div class="thm-body">
-        <p>若 $P^2=P$ 且 $P^{*}=P$，称 $P$ 为正交投影。它把任意 $x$ 分解为</p>
-        $$x=Px+(I-P)x,\qquad Px\perp(I-P)x.$$
-        <p>若 $P_1,\dots,P_m$ 两两正交（$P_iP_j=0$，$i\ne j$）且 $\sum_iP_i=I$，则称它们构成单位分解。Hermite 矩阵的谱分解可写成</p>
-        $$A=\sum_{k=1}^{m}\lambda_kP_k,$$
-        <p>其中 $P_k$ 是到特征值 $\lambda_k$ 的特征子空间上的正交投影，$\sum_kP_k=I$。这比“列向量拼成 $U$”更本质：它把矩阵写成“若干方向的纯伸缩之和”。最简单的投影是秩一投影 $P=uu^{*}$，其中 $\|u\|=1$：$Px=(u,x)u$ 把任意向量压到 $u$ 张成的一维直线上，$\operatorname{tr}P=1$，特征值为 $1,0,\dots,0$。若 $u_1,\dots,u_n$ 是标准正交基，则 $\sum_i u_iu_i^{*}=I$ 就是最细的单位分解。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">一个 $2\times2$ Hermite 矩阵</span></div>
-      <div class="thm-body">
-        <p>取 $A=\begin{pmatrix}1&amp;i\\-i&amp;1\end{pmatrix}$。验证 $A^{*}=A$。特征多项式为</p>
-        $$\det(A-\lambda I)=(1-\lambda)^2-i(-i)=(1-\lambda)^2-1=\lambda(\lambda-2),$$
-        <p>所以特征值为 $0,2$。对应单位特征向量可取</p>
-        $$u_0=\frac{1}{\sqrt2}\begin{pmatrix}1\\ i\end{pmatrix},\qquad
-        u_2=\frac{1}{\sqrt2}\begin{pmatrix}1\\ -i\end{pmatrix}.$$
-        <p>在复内积下 $(u_0,u_2)=\frac12(1\cdot1+i\cdot i)=0$，确实正交。谱分解为 $A=0\cdot P_0+2P_2$，其中 $P_0=u_0u_0^{*}$，$P_2=u_2u_2^{*}$，且 $P_0+P_2=I$。这也说明 $A$ 半正定，但不是正定：存在非零向量 $u_0$ 使 $u_0^{*}Au_0=0$。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">交换的 Hermite 矩阵可同时对角化</span></div>
-      <div class="thm-body">
-        <p>若 $A,B$ 都是 Hermite 矩阵且 $AB=BA$，则存在同一个酉矩阵 $U$，使 $U^{*}AU$ 与 $U^{*}BU$ 同时为实对角矩阵。证明思路是：先按 $A$ 的特征子空间分解，交换性保证每个特征子空间在 $B$ 下不变，再在每个子空间内对 $B$ 单独对角化。量子力学中“可交换的观测量的共同本征态”就是这条定理的物理表述；反过来，若两个 Hermite 矩阵不能同时对角化，它们一定不可交换。</p>
-      </div>
-    </div>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>矩阵类</th><th>定义</th><th>谱性质</th></tr></thead>
-        <tbody>
-          <tr><td>Hermite</td><td>$A^{*}=A$</td><td>特征值实，正交特征向量，酉对角化</td></tr>
-          <tr><td>酉</td><td>$U^{*}U=I$</td><td>$|\lambda|=1$，保持内积与范数</td></tr>
-          <tr><td>正规</td><td>$A^{*}A=AA^{*}$</td><td>可酉对角化</td></tr>
-          <tr><td>投影</td><td>$P^2=P=P^{*}$</td><td>特征值 $0$ 或 $1$</td></tr>
-          <tr><td>正交投影和</td><td>$P_iP_j=0$，$\sum P_i=I$</td><td>谱分解的骨架</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">复对称不是 Hermite</span></div>
-      <div class="thm-body">
-        <p>① 复矩阵“转置对称”$A^{\mathsf T}=A$ 不保证特征值实；必须用共轭转置 $A^{*}=A$。② 酉矩阵的特征值模为 1，但特征值不必是 $\pm1$；实正交矩阵才有 $\lambda=\pm1$ 或共轭复对。③ 投影 $P$ 与“幂等矩阵”不同：幂等只要求 $P^2=P$，斜投影可能不正交；加上 $P^{*}=P$ 才是正交投影。④ 两个 Hermite 矩阵一般不能同时对角化，除非它们交换；交换性是同时对角化的关键条件。</p>
-      </div>
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">双线性型与其矩阵</span><span class="thm-id">§4.32</span></div>
+    <div class="thm-body">
+      <p>设 $V$ 是 $n$ 维线性空间。二元函数 $B(x,y)$ 若对每个变量分别线性，称为双线性型：</p>
+      <p>$$B(\alpha x_1+\beta x_2,y)=\alpha B(x_1,y)+\beta B(x_2,y),\qquad
+      B(x,\alpha y_1+\beta y_2)=\alpha B(x,y_1)+\beta B(x,y_2).$$</p>
+      <p>取基 $e_1,\dots,e_n$，令 $b_{ik}=B(e_i,e_k)$，则</p>
+      <p>$$B(x,y)=\sum_{i,k=1}^{n}b_{ik}x_iy_k=x^{\mathsf T}By.$$</p>
+      <p>称 $B=(b_{ik})$ 为该基下的矩阵。换基 $x=Cx'$、$y=Cy'$ 后，矩阵变为 $B'=C^{\mathsf T}BC$。若 $B^{\mathsf T}=B$，称双线性型对称；若 $B^{\mathsf T}=-B$，称反对称（anti-symmetric）。</p>
     </div>
   </div>
+
+  <p>任何双线性型都可唯一拆成对称部分与反对称部分：</p>
+  <p>$$B(x,y)=\frac{B(x,y)+B(y,x)}{2}+\frac{B(x,y)-B(y,x)}{2}.$$</p>
+  <p>在实情形，对称部分对应二次型，反对称部分对应“辛结构”（symplectic form）；在特征不等于 2 的域上这个分解总是成立。二次型只“看见”对称部分，因为 $x^{\mathsf T}Bx$ 中 $b_{ik}$ 与 $b_{ki}$ 的贡献合并为 $(b_{ik}+b_{ki})x_ix_k$。因此讨论二次型时总把矩阵取成对称：$a_{ik}=a_{ki}$，交叉项 $2b x_ix_k$ 对应矩阵元素 $b$。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">二次型与合同</span><span class="thm-id">§4.32</span></div>
+    <div class="thm-body">
+      <p>实二次型是</p>
+      <p>$$q(x_1,\dots,x_n)=\sum_{i,k=1}^{n}a_{ik}x_ix_k,\qquad a_{ik}=a_{ki}.$$</p>
+      <p>取对称矩阵 $A=(a_{ik})$，则 $q(x)=x^{\mathsf T}Ax$。在可逆变量替换 $x=Cy$ 下，</p>
+      <p>$$q=y^{\mathsf T}(C^{\mathsf T}AC)y,$$</p>
+      <p>新矩阵为 $A'=C^{\mathsf T}AC$，称 $A$ 与 $A'$ 合同（congruent）。合同保持对称性与秩，但不保持特征值。若 $C$ 正交，则 $C^{\mathsf T}=C^{-1}$，合同退化为正交相似，特征值不变。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">配方法（Lagrange 消元）</span><span class="thm-id">§4.32</span></div>
+    <div class="thm-body">
+      <p>任何实二次型都可用可逆线性替换化为平方和</p>
+      <p>$$q=\lambda_1y_1^2+\cdots+\lambda_ny_n^2,$$</p>
+      <p>其中非零系数的个数等于 $\operatorname{rank}A$。做法分两种情形：若某个 $a_{ii}\ne0$，把含 $x_i$ 的项集中配方，消去 $x_i$ 与其他变量的交叉项；若所有 $a_{ii}=0$ 但某个 $a_{ik}\ne0$，先令 $x_i=y_i+y_k,\ x_k=y_i-y_k$，制造出平方项再配方。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：归纳与“制造平方项”</summary>
+  <div class="proof-body"><p>对变量个数 $n$ 归纳。若 $a_{11}\ne0$，把 $q$ 写成</p>
+  <p>$$q=a_{11}\Bigl(x_1+\sum_{k&gt;1}\frac{a_{1k}}{a_{11}}x_k\Bigr)^2+\text{（不含 }x_1\text{ 的二次型）},$$</p>
+  <p>令 $y_1=x_1+\sum_{k&gt;1}\frac{a_{1k}}{a_{11}}x_k$，$y_k=x_k$（$k&gt;1$），这是可逆替换，剩下的部分只含 $y_2,\dots,y_n$，用归纳假设。若 $a_{11}=0$ 但 $a_{12}\ne0$，令 $x_1=y_1+y_2,\ x_2=y_1-y_2$，则 $2a_{12}x_1x_2=2a_{12}(y_1^2-y_2^2)$ 出现非零平方项，回到第一种情形。每次消去一个变量，有限步终止。</p></div>
+  </details>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">惯性定律与规范形</span><span class="thm-id">§4.35</span></div>
+    <div class="thm-body">
+      <p>实二次型经任何可逆线性替换化为平方和后，正平方项的个数 $p$ 与负平方项的个数 $q$ 都不变；$p+q=r=\operatorname{rank}A$。称 $p$ 为正惯性指数，$q$ 为负惯性指数，$(p,q)$ 为符号差（signature）。因此每个实二次型都合同于唯一规范形</p>
+      <p>$$z_1^2+\cdots+z_p^2-z_{p+1}^2-\cdots-z_{p+r}^2.$$</p>
+      <p>复二次型只有秩是合同不变量，规范形为 $z_1^2+\cdots+z_r^2$。实二次型的合同分类由 $(p,q)$ 完全决定；若再区分“半正定/不定”，就是看 $p,q$ 是否为零。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：用正定性证明 $p$ 不变</summary>
+  <div class="proof-body"><p>设 $q$ 在两组替换下分别有 $p$ 个正项与 $p'$ 个正项，且 $p'&lt;p$。考虑两个子空间：$M$ 由第一组中前 $p$ 个坐标张成（$q&gt;0$ 除原点），$N$ 由第二组中后 $n-p'$ 个坐标张成（$q\le0$）。维数 $\dim M=p$，$\dim N=n-p'&gt;n-p$，故 $\dim(M\cap N)\ge p+(n-p')-n=p-p'&gt;0$，存在非零 $x\in M\cap N$。但 $x\in M\Rightarrow q(x)&gt;0$，$x\in N\Rightarrow q(x)\le0$，矛盾。故 $p=p'$。秩等于非零项个数，显然不变。</p></div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">含交叉项的三元二次型</span><span class="thm-id">§4.32</span></div>
+    <div class="thm-body">
+      <p>化 $q=2x_1x_2+2x_1x_3-2x_2x_3$ 为标准形。先令 $x_1=y_1+y_2$，$x_2=y_1-y_2$，$x_3=y_3$，则</p>
+      <p>$$q=2(y_1^2-y_2^2)+2(y_1+y_2)y_3-2(y_1-y_2)y_3
+      =2y_1^2-2y_2^2+4y_2y_3.$$</p>
+      <p>再配方：$-2y_2^2+4y_2y_3=-2(y_2-y_3)^2+2y_3^2$。令 $z_1=y_1$，$z_2=y_3$，$z_3=y_2-y_3$，得</p>
+      <p>$$q=2z_1^2+2z_2^2-2z_3^2.$$</p>
+      <p>符号差为 $(2,1)$，二次型不定：在 $z_3$ 方向取负值，在 $z_1$ 方向取正值。对应矩阵</p>
+      <p>$$A=\begin{pmatrix}0&amp;1&amp;1\\1&amp;0&amp;-1\\1&amp;-1&amp;0\end{pmatrix}$$</p>
+      <p>的特征值为 $1,1,-2$，与配方结果一致；$\Delta_1=0$，所以本例不能直接用 Jacobi 公式。注意 $q$ 的规范形可写成 $z_1^2+z_2^2-z_3^2$，与 $2z_1^2+2z_2^2-2z_3^2$ 合同，只是尺度不同。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§4.36</span>Jacobi 公式：用主子式直接配方</h3>
+  <p>若对称矩阵 $A$ 的顺序主子式 $\Delta_k=\det(a_{ij})_{1\le i,j\le k}$ 全不为零，则不选主元的配方法给出</p>
+  <p>$$q=\frac{\Delta_1}{\Delta_0}y_1^2+\frac{\Delta_2}{\Delta_1}y_2^2+\cdots+\frac{\Delta_n}{\Delta_{n-1}}y_n^2,\qquad \Delta_0=1.$$</p>
+  <p>它把“配方”变成了行列式比值，适合手工计算与理论推导。系数 $\Delta_k/\Delta_{k-1}$ 的符号序列正好给出惯性指数：相邻两个比值变号处，就是正负项的分界。若某个 $\Delta_k=0$，不能直接套用，需要先做变量重排或改用特征值判据。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Jacobi 公式的一次计算</span><span class="thm-id">§4.36</span></div>
+    <div class="thm-body">
+      <p>取 $q=2x_1^2+2x_1x_2+3x_2^2$。矩阵 $A=\begin{pmatrix}2&amp;1\\1&amp;3\end{pmatrix}$，$\Delta_1=2$，$\Delta_2=6-1=5$。于是</p>
+      <p>$$q=2y_1^2+\frac52y_2^2.$$</p>
+      <p>验证：令 $y_1=x_1+\tfrac12x_2$，$y_2=x_2$，则 $2y_1^2+\tfrac52y_2^2=2x_1^2+2x_1x_2+\tfrac12x_2^2+\tfrac52x_2^2=2x_1^2+2x_1x_2+3x_2^2$。两个系数都为正，故正定；这与 $\Delta_1,\Delta_2&gt;0$ 的 Sylvester 判据一致。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">两个二次型同时化为平方和</span><span class="thm-id">§4.37</span></div>
+    <div class="thm-body">
+      <p>设 $\varphi_1=x^{\mathsf T}Ax$ 正定，$\varphi_2=x^{\mathsf T}Bx$ 对称。则存在实可逆矩阵 $C$，使</p>
+      <p>$$C^{\mathsf T}AC=I,\qquad C^{\mathsf T}BC=\operatorname{diag}(\mu_1,\dots,\mu_n).$$</p>
+      <p>$\mu_k$ 是广义特征值问题 $\det(B-\mu A)=0$ 的根。做法是先用 $\varphi_1$ 把 $A$ 化为单位矩阵（例如 Cholesky 分解 $A=R^{\mathsf T}R$，令 $y=Rx$），再对 $R^{-\mathsf T}BR^{-1}$ 做正交对角化。</p>
+    </div>
+  </div>
+
+  <p>这个方法把“两个耦合的二次型”同时变成平方和，正是下一章小振动解耦的代数基础。注意 $\mu_k$ 的符号与大小依赖 $A$ 的选择：若把 $\varphi_1$ 换成另一个正定形式，广义特征值会改变；但 $\varphi_2$ 相对 $\varphi_1$ 的正负惯性指数（即 $\mu_k$ 的正负个数）仍由两形式的相对位置决定，这一点在能量判据中比具体数值更重要。若 $A$ 不正定，同时对角化仍可能，但会出现 $\mu_k=\infty$ 或需要处理退化情形。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>类型</th><th>特征值 / 惯性指数</th><th>判据</th></tr></thead>
+      <tbody>
+        <tr><td>正定</td><td>全部 $\lambda_k&gt;0$，$(p,q)=(n,0)$</td><td>顺序主子式全正</td></tr>
+        <tr><td>负定</td><td>全部 $\lambda_k&lt;0$，$(0,n)$</td><td>$(-1)^k\Delta_k&gt;0$</td></tr>
+        <tr><td>半正定</td><td>$\lambda_k\ge0$，$q=r&lt;n$</td><td>所有主子式 $\ge0$</td></tr>
+        <tr><td>不定</td><td>正负特征值都有</td><td>$p&gt;0$ 且 $q&gt;0$</td></tr>
+        <tr><td>秩</td><td>$r=p+q$</td><td>非零平方项个数</td></tr>
+        <tr><td>合同分类</td><td>实：$(p,q)$；复：$r$</td><td>不计具体系数</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">顺序主子式、合同与“配方”</span></div>
+    <div class="thm-body">
+      <p>① Sylvester 判据用的是左上角顺序主子式，不是任意主子式；半正定才需要检查所有主子式。② 合同变换不保持特征值，只保持惯性指数；不要用相似不变量去判断合同分类。③ 配方不唯一，但正负项个数唯一；把 $q$ 化成 $2z_1^2-2z_3^2$ 与化成 $z_1^2-z_3^2$ 是同一符号差。④ 交叉项系数在矩阵中要除以 2：$2bxy$ 对应矩阵元素 $b$，写成 $2b$ 会让特征值整体错位。⑤ 双线性型不一定对称；只有对称部分贡献二次型，反对称部分在 $x=y$ 时自动消失。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch9" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 9</div>
-    <h2><span class="num">9</span>矩阵函数：把 $e^{A}$、$\sqrt{A}$ 算出来</h2>
-    <p class="lede">矩阵函数不是“逐元素取函数”，而是先对角化（或写成若尔当块），再对特征值取函数；它让线性微分方程的解写成 $e^{At}x_0$。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 9 · §4.28–§4.31</div>
+  <h2><span class="num">9</span>欧几里得空间：长度、夹角与正交化</h2>
+  <p class="lede">欧几里得空间（Euclidean space）是把内积公理化的实线性空间；有了内积，才有长度、夹角、正交投影与最小二乘。</p>
 
-    <div class="chap-intro">
-      <p>本章定义矩阵多项式与有理函数，证明相似变换下的谱映射公式 $f(U^{-1}AU)=U^{-1}f(A)U$。对可对角化矩阵，$f(A)$ 就是在特征值上取 $f$；对若尔当块，还要用 $f$ 在特征值处的导数。最后以矩阵指数为例，说明它如何把“常系数线性系统”变成“矩阵乘法”。</p>
-      <span class="tag">Functions of Matrices</span>
-    </div>
+  <div class="chap-intro">
+    <p>原书 §4.28 讨论酉变换与正交变换，§4.29 证明 Buniakowski（Cauchy–Schwarz）不等式，§4.30 系统整理内积与范数的性质，§4.31 给出正交化算法。这里的逻辑顺序是：先有内积，才有范数；先有范数，才有正交；先有正交，才有正交基与 QR 分解。掌握这条链，就不会把“正交矩阵”“正交补”“正交投影”混为一谈。</p>
+    <span class="tag">Euclidean Space</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">谱映射</span>
-      <span class="chip">多项式与有理函数</span>
-      <span class="chip">若尔当块</span>
-      <span class="chip">矩阵指数</span>
-      <span class="chip">预解式</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">内积公理</span>
+    <span class="chip">范数</span>
+    <span class="chip">Buniakowski</span>
+    <span class="chip">正交基</span>
+    <span class="chip">Gram–Schmidt</span>
+    <span class="chip">QR 分解</span>
+  </div>
 
-    <div class="thm def">
-      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">矩阵多项式与有理函数</span></div>
-      <div class="thm-body">
-        <p>对矩阵 $A$ 与多项式 $f(z)=c_0+c_1z+\cdots+c_mz^m$，定义</p>
-        $$f(A)=c_0I+c_1A+\cdots+c_mA^m.$$
-        <p>若 $g(A)$ 可逆，则有理函数 $f(A)/g(A)$ 定义为 $f(A)g(A)^{-1}$。由于 $f(A)$ 与 $g(A)$ 都是 $A$ 的多项式，它们彼此交换，所以左右顺序不影响结果。若 $A=U^{-1}BU$，则</p>
-        $$f(A)=U^{-1}f(B)U,$$
-        <p>因为 $(U^{-1}BU)^k=U^{-1}B^kU$。这条“谱映射”性质是全部计算的起点。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">对角形与若尔当形上的公式</span></div>
-      <div class="thm-body">
-        <p>若 $A=V\operatorname{diag}(\lambda_1,\dots,\lambda_n)V^{-1}$，则</p>
-        $$f(A)=V\operatorname{diag}\bigl(f(\lambda_1),\dots,f(\lambda_n)\bigr)V^{-1}.$$
-        <p>对若尔当块 $J_e(\mu)=\mu I+N$（$N^e=0$），只要 $f$ 在 $\mu$ 的邻域内足够光滑，就有</p>
-        $$f(J_e(\mu))=\begin{pmatrix}
-        f(\mu)&amp;0&amp;\cdots&amp;0\\
-        f'(\mu)&amp;f(\mu)&amp;\cdots&amp;0\\
-        \frac{f''(\mu)}{2!}&amp;f'(\mu)&amp;\ddots&amp;\vdots\\
-        \vdots&amp;\vdots&amp;\ddots&amp;f(\mu)
-        \end{pmatrix}.$$
-        <p>也就是说，重根情形需要“函数值 + 导数值”，这正是 Hermite 插值多项式在矩阵上的体现。</p>
-      </div>
-    </div>
-
-    <p>当 $A$ 不可对角化但特征值个数较少时，可以用最小多项式 $m_A$ 做插值：若 $m_A$ 的根为 $\mu_1,\dots,\mu_s$，重数为 $e_j$，则存在次数小于 $\deg m_A$ 的多项式 $p$，使 $p^{(k)}(\mu_j)=f^{(k)}(\mu_j)$（$k&lt;e_j$），并且 $f(A)=p(A)$。这把矩阵函数归结为有限个导数值的 Hermite 插值，避免了求若尔当基的麻烦。另一个常用对象是预解式</p>
-    $$R(z)=(zI-A)^{-1},$$
-    <p>它的极点是特征值，留数给出谱投影；在 $z=\infty$ 附近的 Laurent 展开则给出 $A^k$ 的迹与行列式的生成函数。控制论中的传递函数、量子散射的 Green 函数，都是预解式在不同表象下的名字。</p>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">旋转矩阵的指数</span></div>
-      <div class="thm-body">
-        <p>取 $A=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$。直接计算得 $A^2=-I$，于是对 $t\in\mathbb R$，</p>
-        $$e^{At}=\sum_{k=0}^{\infty}\frac{(At)^k}{k!}
-        =\left(1-\frac{t^2}{2!}+\cdots\right)I
-        +\left(t-\frac{t^3}{3!}+\cdots\right)A
-        =\cos t\,I+\sin t\,A.$$
-        <p>因此</p>
-        $$e^{At}=\begin{pmatrix}\cos t&amp;\sin t\\-\sin t&amp;\cos t\end{pmatrix},$$
-        <p>正是顺时针旋转 $t$ 的矩阵。这也解释了 $e^{At}$ 为什么永远可逆：$\det e^{At}=e^{t\operatorname{tr}A}=1$，且 $(e^{At})^{-1}=e^{-At}$。</p>
-      </div>
-    </div>
-
-    <div class="intuition">
-      <div class="ih">直觉</div>
-      <p>矩阵指数把“无穷小生成元”$A$ 变成“有限时间演化”$e^{At}$：$A$ 描述瞬时速度场，$e^{At}$ 描述经过时间 $t$ 后的位置。若 $A$ 的特征值是纯虚数，演化就是旋转或振荡；若有负实部，演化衰减；若有正实部，演化增长。这个图像是稳定性理论的几何版本。</p>
-    </div>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>函数</th><th>可对角化时</th><th>若尔当块 $J_e(\mu)$</th></tr></thead>
-        <tbody>
-          <tr><td>$A^k$</td><td>$\lambda_i^k$</td><td>二项式展开，含 $t$ 的多项式项</td></tr>
-          <tr><td>$e^{At}$</td><td>$e^{\lambda_i t}$</td><td>$e^{\mu t}$ 乘 $t^k/k!$ 的 Toeplitz 块</td></tr>
-          <tr><td>$\sin A,\cos A$</td><td>$\sin\lambda_i,\cos\lambda_i$</td><td>用 $e^{iA}$ 的实虚部</td></tr>
-          <tr><td>$A^{-1}$</td><td>$1/\lambda_i$（$\lambda_i\ne0$）</td><td>$(J_e(\mu))^{-1}$，$\mu\ne0$</td></tr>
-          <tr><td>$\sqrt{A}$</td><td>$\sqrt{\lambda_i}$（选支）</td><td>需 $\mu\ne0$ 且选连续分支</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">矩阵函数不是逐元素函数</span></div>
-      <div class="thm-body">
-        <p>① $e^{A}$ 不是把每个元素取指数；例如 $A=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$ 时 $e^{A}=I+A$，而不是逐元素 $e$。② $e^{A+B}=e^{A}e^{B}$ 只在 $AB=BA$ 时成立；一般要用 Baker–Campbell–Hausdorff 公式。③ $f(A)$ 与 $A$ 一定交换，但 $f(A)$ 与另一个矩阵 $B$ 不一定交换。④ 若尔当块上求 $f$ 需要导数，只代入特征值会漏掉多项式因子；这也是“重根不能只算 $e^{\lambda t}$”的原因。</p>
-      </div>
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">欧几里得空间</span><span class="thm-id">§4.30</span></div>
+    <div class="thm-body">
+      <p>实线性空间 $V$ 若配备内积 $(x,y)$，满足对称性、对第一变量线性、正定性，则称为欧几里得空间。由内积定义范数 $\|x\|=\sqrt{(x,x)}$ 与距离 $d(x,y)=\|x-y\|$。若 $(x,y)=0$，称 $x$ 与 $y$ 正交。一组两两正交且长度为 1 的向量称为标准正交组；若它还是基，则称为标准正交基（orthonormal basis）。</p>
+      <p>复情形把对称性换成 Hermite 对称，得到酉空间（unitary space）；本章的实结果都可逐字推广，只需把转置换成共轭转置。</p>
     </div>
   </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Buniakowski 不等式与范数性质</span><span class="thm-id">§4.29–4.30</span></div>
+    <div class="thm-body">
+      <p>对任意 $x,y\in V$，</p>
+      <p>$$|(x,y)|\le\|x\|\,\|y\|,$$</p>
+      <p>等号当且仅当 $x,y$ 线性相关。由此得到三角不等式 $\|x+y\|\le\|x\|+\|y\|$，以及平行四边形恒等式</p>
+      <p>$$\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2.$$</p>
+      <p>范数还满足齐次性 $\|cx\|=|c|\|x\|$ 与非负性，且 $\|x\|=0\iff x=0$。在标准内积下，$\cos\theta=\dfrac{(x,y)}{\|x\|\|y\|}$ 给出夹角，$|(x,y)|\le\|x\|\|y\|$ 保证余弦落在 $[-1,1]$。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：判别式与展开</summary>
+  <div class="proof-body"><p>Cauchy–Schwarz 的证明见第 3 章：对 $t\in\mathbb R$ 展开 $\|x+ty\|^2\ge0$，判别式非正。三角不等式由</p>
+  <p>$$\|x+y\|^2=\|x\|^2+2(x,y)+\|y\|^2\le\|x\|^2+2\|x\|\|y\|+\|y\|^2=(\|x\|+\|y\|)^2.$$</p>
+  <p>平行四边形恒等式只需把两个平方展开相加，交叉项相消。它反过来刻画“范数来自内积”：满足平行四边形恒等式的范数可以用极化恒等式</p>
+  <p>$$(x,y)=\frac14\bigl(\|x+y\|^2-\|x-y\|^2\bigr)$$</p>
+  <p>恢复内积（实情形）。这就是为什么 $\ell^p$ 范数只在 $p=2$ 时来自内积。</p></div>
+  </details>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">正交基与 Fourier 系数</span><span class="thm-id">§4.31</span></div>
+    <div class="thm-body">
+      <p>若 $u_1,\dots,u_n$ 是标准正交基，则任意 $x$ 有展开</p>
+      <p>$$x=\sum_{k=1}^{n}(x,u_k)u_k,\qquad \|x\|^2=\sum_{k=1}^{n}|(x,u_k)|^2.$$</p>
+      <p>系数 $(x,u_k)$ 称为 Fourier 系数。对任意正交组（不必完备），有 Bessel 不等式 $\sum_k|(x,u_k)|^2\le\|x\|^2$，等号当且仅当该组张成整个空间（或 $x$ 在张成空间内）。</p>
+    </div>
+  </div>
+
+  <p>正交基的最大好处是“求坐标变成做内积”。在一般基下，坐标要解线性方程组 $x=Cy$，即 $y=C^{-1}x$；在标准正交基下 $C$ 是正交矩阵，$C^{-1}=C^{\mathsf T}$，坐标直接由内积读出。这也是 Fourier 展开、球谐函数与小波分析的共同起点：选一组正交函数，系数就是内积。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">在 $\mathbb R^3$ 中正交化</span><span class="thm-id">§4.31</span></div>
+    <div class="thm-body">
+      <p>取 $a_1=(1,1,0)$，$a_2=(1,0,1)$，$a_3=(0,1,1)$。先归一化：$u_1=\frac{1}{\sqrt2}(1,1,0)$。再减去在 $u_1$ 上的投影：</p>
+      <p>$$v_2=a_2-(a_2,u_1)u_1=(1,0,1)-\tfrac12(1,1,0)=\tfrac12(1,-1,2),$$</p>
+      <p>$$u_2=\frac{1}{\sqrt6}(1,-1,2).$$</p>
+      <p>继续对 $a_3$ 投影：</p>
+      <p>$$v_3=a_3-(a_3,u_1)u_1-(a_3,u_2)u_2
+      =(0,1,1)-\tfrac12(1,1,0)-\tfrac16(1,-1,2)
+      =\tfrac23(-1,1,1),$$</p>
+      <p>$$u_3=\frac{1}{\sqrt3}(-1,1,1).$$</p>
+      <p>三个向量两两正交且长度为 1，构成 $\mathbb R^3$ 的一组标准正交基。原矩阵的行列式绝对值等于这三个向量张成的平行六面体体积，可用 $\sqrt{\det G}$ 核对：$G$ 的对角元为 $2$，非对角元为 $1$，$\det G=4$，体积为 $2$。</p>
+    </div>
+  </div>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>Gram–Schmidt 的本质是“逐个剔除已有方向上的影子”。每得到一个新的单位向量，就把后续向量在它上面的投影减掉；剩下的部分必然与之前所有方向正交。数值上这个算法对舍入误差敏感，实际计算常用修正 Gram–Schmidt 或 Householder 变换，但数学思想完全相同。矩阵语言：$A=QR$，$Q$ 的列是标准正交基，$R$ 是上三角，对角元就是每次“剩余长度”。</p>
+  </div>
+
+  <h3><span class="sn">§4.28</span>正交矩阵与正交变换</h3>
+  <p>实方阵 $Q$ 若满足 $Q^{\mathsf T}Q=I$，称为正交矩阵（orthogonal matrix）。等价条件：$Q$ 的列（行）构成标准正交基；$Q$ 保持内积，$(Qx,Qy)=(x,y)$；$Q$ 保持长度；$Q^{-1}=Q^{\mathsf T}$。由此 $\det Q=\pm1$：$+1$ 对应旋转（rotation），$-1$ 对应旋转加一次反射。二维旋转矩阵</p>
+  <p>$$R(\theta)=\begin{pmatrix}\cos\theta&amp;-\sin\theta\\ \sin\theta&amp;\cos\theta\end{pmatrix}$$</p>
+  <p>的特征值为 $e^{\pm i\theta}$，模为 1；三维中绕单位轴 $n$ 转 $\theta$ 的矩阵（Rodrigues 公式）为</p>
+  <p>$$R=I\cos\theta+(1-\cos\theta)nn^{\mathsf T}+[n]_{\times}\sin\theta,$$</p>
+  <p>其中 $[n]_{\times}$ 是叉乘矩阵。所有旋转构成群 $SO(3)$，这正是第 15 章群论与第 17 章连续群的入口。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>概念</th><th>公式 / 判据</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>内积</td><td>$(x,y)=\sum x_k y_k$（实）</td><td>长度、夹角</td></tr>
+        <tr><td>范数</td><td>$\|x\|=\sqrt{(x,x)}$</td><td>距离、收敛</td></tr>
+        <tr><td>Cauchy</td><td>$|(x,y)|\le\|x\|\|y\|$</td><td>角度定义、估计</td></tr>
+        <tr><td>正交</td><td>$(x,y)=0$</td><td>正交基、投影</td></tr>
+        <tr><td>标准正交基</td><td>$(u_i,u_j)=\delta_{ij}$</td><td>坐标 $=$ 内积</td></tr>
+        <tr><td>正交矩阵</td><td>$Q^{\mathsf T}Q=I$，$\det Q=\pm1$</td><td>保长变换</td></tr>
+        <tr><td>QR</td><td>$A=QR$，$R$ 上三角</td><td>最小二乘、特征值算法</td></tr>
+        <tr><td>Bessel</td><td>$\sum|(x,u_k)|^2\le\|x\|^2$</td><td>正交展开</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">正交、标准正交与“保长”</span></div>
+    <div class="thm-body">
+      <p>① “正交组”只要求两两内积为零，不要求单位长度；“标准正交组”才要求长度为 1。② 正交矩阵的行列式可以是 $-1$，此时它包含反射，不是旋转；$SO(n)$ 才要求 $\det=1$。③ 保长变换一定保内积（实情形），但保持距离的映射若不含平移才是线性的；一般等距映射是“正交变换 + 平移”。④ Gram–Schmidt 在向量近似相关时会除以很小的数，数值不稳定；应使用重新正交化或 Householder。⑤ 复空间不能用 $x^{\mathsf T}y$ 当内积，必须用 $x^{*}y$，否则 $(x,x)$ 可能为零或复数。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="ch10" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Chapter 10</div>
-    <h2><span class="num">10</span>应用：小振动、常微分方程组与隐函数</h2>
-    <p class="lede">线性代数在物理与工程中的第一次大显身手，是把耦合振动解耦成若干独立振子，并把常系数微分方程组变成矩阵指数。</p>
+<div class="wrap">
+  <div class="sec-label">Chapter 10 · §4.35, §4.39</div>
+  <h2><span class="num">10</span>正定性与特征值的极值性质</h2>
+  <p class="lede">正定二次型是“开口向上的碗”；它的特征值不仅是主轴长度，还是 Rayleigh 商在球面上的最大、最小值。</p>
 
-    <div class="chap-intro">
-      <p>本章给出三条应用线索。其一是保守系统的小振动：动能与势能都是二次型，广义特征值问题 $(B-\omega^2A)a=0$ 给出固有频率与振型。其二是常系数线性系统 $\dot x=Ax$：解由 $e^{At}$ 给出，若尔当块产生 $t^ke^{\lambda t}$ 项。其三是隐函数定理：偏导矩阵（Jacobian）非零时，方程组可局部解出未知函数。三条线索的共同点是“先看矩阵的谱，再看定性行为”。</p>
-      <span class="tag">Applications</span>
-    </div>
+  <div class="chap-intro">
+    <p>本章把二次型的分类落到可计算的判据上：Sylvester 顺序主子式判据、特征值判据、Cholesky 分解。随后证明 §4.39 的极值定理：对称矩阵的最大、最小特征值等于 Rayleigh 商在单位球面上的最大值、最小值，中间特征值由“与低维子空间正交”的约束刻画（Courant–Fischer）。这套语言在数值线性代数、振动分析与最优化中反复出现。</p>
+    <span class="tag">Definiteness &amp; Extremal Eigenvalues</span>
+  </div>
 
-    <div class="mapchips">
-      <span class="chip hot">小振动</span>
-      <span class="chip">广义特征值</span>
-      <span class="chip">$e^{At}$</span>
-      <span class="chip">稳定性</span>
-      <span class="chip">Jacobi 矩阵</span>
-    </div>
+  <div class="mapchips">
+    <span class="chip hot">Sylvester 判据</span>
+    <span class="chip">Cholesky</span>
+    <span class="chip">Rayleigh 商</span>
+    <span class="chip">Courant–Fischer</span>
+    <span class="chip">椭球主轴</span>
+    <span class="chip">条件数</span>
+  </div>
 
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">小振动的解耦</span></div>
-      <div class="thm-body">
-        <p>设系统有 $n$ 个自由度，平衡位置取 $q=0$。动能与势能在平衡点附近近似为</p>
-        $$T=\frac12\dot q^{\mathsf T}A\dot q,\qquad U=\frac12q^{\mathsf T}Bq,$$
-        <p>其中 $A=A^{\mathsf T}$ 正定（质量矩阵），$B=B^{\mathsf T}$ 正定（刚度矩阵）。Lagrange 方程给出</p>
-        $$A\ddot q+Bq=0.$$
-        <p>令 $q=a\cos(\omega t+\varphi)$，得到广义特征值问题</p>
-        $$(B-\omega^2A)a=0,\qquad \det(B-\omega^2A)=0.$$
-        <p>因为 $A$ 正定，可令 $u=A^{1/2}a$，问题化为对称矩阵 $A^{-1/2}BA^{-1/2}$ 的普通特征值问题；因此 $\omega_k^2$ 全为实数且非负。取 $C$ 使 $C^{\mathsf T}AC=I$、$C^{\mathsf T}BC=\operatorname{diag}(\omega_1^2,\dots,\omega_n^2)$，则在新坐标下系统分裂为 $n$ 个独立振子。</p>
-      </div>
-    </div>
-
-    <div class="thm theorem">
-      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">常系数线性系统</span></div>
-      <div class="thm-body">
-        <p>初值问题 $\dot x=Ax$，$x(0)=x_0$ 的解为</p>
-        $$x(t)=e^{At}x_0.$$
-        <p>若 $A$ 可对角化，$A=V\Lambda V^{-1}$，则 $x(t)=V\operatorname{diag}(e^{\lambda_1t},\dots,e^{\lambda_nt})V^{-1}x_0$。若 $A$ 有若尔当块 $J_e(\mu)$，解中会出现 $t^ke^{\mu t}$（$k=0,\dots,e-1$）。因此：</p>
-        <p>（1）所有 $\operatorname{Re}\lambda_i&lt;0$ 时，零解渐近稳定；（2）存在 $\operatorname{Re}\lambda_i&gt;0$ 时，不稳定；（3）实部为零的特征值若对应非平凡若尔当块，则出现多项式增长，仍然不稳定。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">二阶系统的通解</span></div>
-      <div class="thm-body">
-        <p>解 $\dot x=\begin{pmatrix}0&amp;1\\-2&amp;-3\end{pmatrix}x$。特征多项式为</p>
-        $$\det\begin{pmatrix}-\lambda&amp;1\\-2&amp;-3-\lambda\end{pmatrix}
-        =\lambda^2+3\lambda+2=(\lambda+1)(\lambda+2),$$
-        <p>特征值 $-1,-2$。对应特征向量：$\lambda=-1$ 时 $v_1=(1,-1)$；$\lambda=-2$ 时 $v_2=(1,-2)$。因此</p>
-        $$x(t)=c_1e^{-t}\begin{pmatrix}1\\-1\end{pmatrix}
-        +c_2e^{-2t}\begin{pmatrix}1\\-2\end{pmatrix}.$$
-        <p>两个特征值都为负，零解渐近稳定；$e^{-2t}$ 项衰减更快，长时间行为由慢模态 $e^{-t}(1,-1)$ 主导。这一“慢模态主导”现象在化学反应、电路与结构振动中都很常见。</p>
-      </div>
-    </div>
-
-    <div class="thm ex">
-      <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">两个耦合振子</span></div>
-      <div class="thm-body">
-        <p>取两个单位质量，势能 $U=\frac12(3q_1^2-2q_1q_2+3q_2^2)$，即 $B=\begin{pmatrix}3&amp;-1\\-1&amp;3\end{pmatrix}$，$A=I$。运动方程为</p>
-        $$\ddot q_1=-3q_1+q_2,\qquad \ddot q_2=q_1-3q_2.$$
-        <p>广义特征值问题就是 $\det(B-\omega^2I)=0$：$(3-\omega^2)^2-1=0$，得 $\omega_1^2=2$、$\omega_2^2=4$。对应振型为 $a_1=(1,1)$（同相，弹簧只拉伸不压缩）与 $a_2=(1,-1)$（反相，中间弹簧剧烈变形）。令 $q=c_1a_1+c_2a_2$，方程解耦为</p>
-        $$\ddot c_1+2c_1=0,\qquad \ddot c_2+4c_2=0,$$
-        <p>所以 $c_1=\alpha\cos(\sqrt2\,t+\varphi_1)$，$c_2=\beta\cos(2t+\varphi_2)$。四个常数由初始位移与速度确定。这个例子说明：<strong>固有频率是广义特征值，振型是广义特征向量；解耦的坐标不是原来的 $q_1,q_2$，而是沿振型的组合</strong>。</p>
-      </div>
-    </div>
-
-    <div class="thm rem">
-      <div class="thm-head"><span class="thm-kind">注</span><span class="thm-title">隐函数定理中的行列式</span></div>
-      <div class="thm-body">
-        <p>对方程组 $F(x,y)=0$，$F:\mathbb R^n\times\mathbb R^m\to\mathbb R^m$，若在点 $(x_0,y_0)$ 处 $F(x_0,y_0)=0$ 且 Jacobi 矩阵</p>
-        $$J=\det\left(\frac{\partial F_i}{\partial y_j}\right)_{i,j=1}^{m}\ne0,$$
-        <p>则在 $x_0$ 的某邻域内存在唯一连续可微的 $y=\varphi(x)$ 使 $F(x,\varphi(x))=0$。这里 $J\ne0$ 的作用与 Cramer 法则完全一致：它保证线性化方程对 $\Delta y$ 可解，从而可以用压缩映射把局部解“迭代”出来。</p>
-      </div>
-    </div>
-
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>应用</th><th>矩阵对象</th><th>判据 / 公式</th></tr></thead>
-        <tbody>
-          <tr><td>小振动</td><td>$A$（质量）、$B$（刚度）</td><td>$\det(B-\omega^2A)=0$，$\omega_k^2\ge0$</td></tr>
-          <tr><td>振型</td><td>广义特征向量 $a_k$</td><td>$a_k^{\mathsf T}Aa_l=0$（$k\ne l$）</td></tr>
-          <tr><td>线性 ODE</td><td>$A$</td><td>$x(t)=e^{At}x_0$</td></tr>
-          <tr><td>稳定性</td><td>特征值实部</td><td>全负稳定；有正不稳定</td></tr>
-          <tr><td>隐函数</td><td>Jacobi 矩阵</td><td>$J\ne0$ 局部可解</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">广义特征值不是普通特征值</span></div>
-      <div class="thm-body">
-        <p>① 小振动方程的解是 $\det(B-\omega^2A)=0$，不是 $\det(B-\omega^2I)=0$；除非 $A=I$，两者不同。② $A$ 必须正定，才能保证 $\omega^2$ 为实数、振型按 $A$ 正交；若 $A$ 奇异，系统含约束或无限大质量，需要另行处理。③ 稳定性只看特征值实部的符号，不能只看行列式：$\det A&gt;0$ 仍可能不稳定（例如二阶矩阵有正实部复根时行列式为正）。④ 若尔当块导致的 $t^ke^{\lambda t}$ 增长在实部为零时也会发生，不能因为“特征值在虚轴上”就判定稳定。</p>
-      </div>
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">正定的等价判据</span><span class="thm-id">§4.35</span></div>
+    <div class="thm-body">
+      <p>对实对称矩阵 $A$，以下命题等价：</p>
+      <p>（1）$q(x)=x^{\mathsf T}Ax&gt;0$ 对所有 $x\ne0$ 成立；（2）$A$ 的所有特征值为正；（3）$A$ 的所有顺序主子式 $\Delta_k&gt;0$（$k=1,\dots,n$）；（4）存在可逆矩阵 $R$ 使 $A=R^{\mathsf T}R$（Cholesky 分解可取 $R$ 为上三角）；（5）$A$ 的所有主子式为正（与顺序主子式等价，但需要检查更多子式）。</p>
+      <p>若只要求 $q\ge0$，称半正定（positive semidefinite），此时特征值非负、所有主子式非负，且存在（不必可逆的）$R$ 使 $A=R^{\mathsf T}R$。</p>
     </div>
   </div>
+
+  <details class="proof"><summary>证明思路：合同到对角 + 顺序主子式</summary>
+  <div class="proof-body"><p>（2）$\Rightarrow$（1）：正交对角化 $A=Q\Lambda Q^{\mathsf T}$，令 $y=Q^{\mathsf T}x$，则 $q=\sum\lambda_ky_k^2&gt;0$（$y\ne0$）。</p>
+    <p>（1）$\Rightarrow$（3）：若 $q$ 正定，则它在任意子空间上的限制也正定，特别是前 $k$ 个坐标张成的子空间，其矩阵为左上角 $k$ 阶块 $A_k$。$A_k$ 正定故 $\det A_k&gt;0$。</p>
+    <p>（3）$\Rightarrow$（4）：对 $A$ 做不带行交换的 LU 分解（Gauss 消元），$\Delta_k\ne0$ 保证主元 $d_k=\Delta_k/\Delta_{k-1}&gt;0$。于是 $A=LDL^{\mathsf T}$，$D=\operatorname{diag}(d_k)$ 正对角。令 $R=D^{1/2}L^{\mathsf T}$，得 $A=R^{\mathsf T}R$。</p>
+    <p>（4）$\Rightarrow$（2）：$x^{\mathsf T}Ax=\|Rx\|^2&gt;0$（$x\ne0$，$R$ 可逆），故正定；特征值由 $Av=\lambda v$ 两边左乘 $v^{\mathsf T}$ 得 $\lambda\|v\|^2=v^{\mathsf T}Av&gt;0$。</p></div>
+  </details>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Rayleigh 商与极值刻画</span><span class="thm-id">§4.39</span></div>
+    <div class="thm-body">
+      <p>设 $A$ 实对称，特征值排序为 $\lambda_1\le\lambda_2\le\cdots\le\lambda_n$。定义 Rayleigh 商</p>
+      <p>$$R(x)=\frac{x^{\mathsf T}Ax}{x^{\mathsf T}x},\qquad x\ne0.$$</p>
+      <p>则</p>
+      <p>$$\lambda_1=\min_{x\ne0}R(x),\qquad \lambda_n=\max_{x\ne0}R(x),$$</p>
+      <p>且极值在对应的特征向量处取到。更一般地，</p>
+      <p>$$\lambda_k=\min_{\dim M=k}\ \max_{x\in M,\,x\ne0}R(x)
+      =\max_{\dim M=n-k+1}\ \min_{x\in M,\,x\ne0}R(x),$$</p>
+      <p>其中 $M$ 取遍相应维数的子空间。这就是 Courant–Fischer 极小极大原理。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：正交基展开 + 维数相交</summary>
+  <div class="proof-body"><p>取标准正交特征基 $u_1,\dots,u_n$，$Au_i=\lambda_iu_i$。写 $x=\sum c_iu_i$，则 $R(x)=\sum\lambda_i|c_i|^2/\sum|c_i|^2$，是 $\lambda_i$ 的加权平均，故 $\lambda_1\le R(x)\le\lambda_n$，等号在对应特征向量处。</p>
+    <p>中间特征值：对任意 $k$ 维子空间 $M$，考虑 $M\cap\operatorname{span}(u_k,\dots,u_n)$，维数至少 $k+(n-k+1)-n=1$，取其中非零 $x$，则 $R(x)\ge\lambda_k$，故 $\max_M$ 的那一侧 $\ge\lambda_k$；取 $M=\operatorname{span}(u_1,\dots,u_k)$ 则 $R(x)\le\lambda_k$，等号在 $u_k$。两个方向合起来即得。</p></div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">椭球主轴与条件数</span><span class="thm-id">§4.39</span></div>
+    <div class="thm-body">
+      <p>二次型 $q(x)=x^{\mathsf T}Ax=1$（$A$ 正定）表示一个椭球。正交对角化 $A=Q\Lambda Q^{\mathsf T}$ 后，令 $y=Q^{\mathsf T}x$，方程变为 $\sum\lambda_ky_k^2=1$，即半轴长度为 $1/\sqrt{\lambda_k}$，方向为 $Q$ 的列。例如</p>
+      <p>$$A=\begin{pmatrix}5&amp;4\\4&amp;5\end{pmatrix},\qquad \lambda_1=1,\ \lambda_2=9,$$</p>
+      <p>对应特征向量 $(1,-1)/\sqrt2$ 与 $(1,1)/\sqrt2$。椭球半轴为 $1$ 与 $1/3$，长轴沿 $(1,-1)$。条件数 $\kappa=\lambda_n/\lambda_1=9$ 度量“扁”的程度：$\kappa$ 越大，用迭代法解 $Ax=b$ 越慢，因为误差在短轴方向被放大 $1/\lambda_1$ 倍。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§4.35</span>惯性指数与几何分类</h3>
+  <p>在三维中，二次曲面 $x^{\mathsf T}Ax+2b^{\mathsf T}x+c=0$ 的类型由 $A$ 的惯性指数与秩决定。$A$ 正定（$p=3$）时为椭球；$p=2,q=1$ 时为单叶双曲面或双叶双曲面（取决于常数项符号）；$p=1,q=2$ 时也为双曲面；$r=2$ 时为抛物面或柱面；$r=1$ 时为平行平面。判断时先配方消去一次项（平移中心），再看二次部分的符号差。这套分类不依赖坐标旋转，因为惯性指数是合同不变量。</p>
+  <p>惯性指数还有“主元符号”的算法：对 $A$ 做对称消元（LDL 分解），对角元 $d_1,\dots,d_n$ 中正数个数就是 $p$，负数个数就是 $q$，零的个数是 $n-r$。这比算特征值快得多，也不需要解高次方程。Sylvester 判据实际上是它的特例：所有 $d_k&gt;0$ 等价于所有 $\Delta_k&gt;0$。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>判据</th><th>条件</th><th>计算量 / 备注</th></tr></thead>
+      <tbody>
+        <tr><td>特征值</td><td>全部 $\lambda_k&gt;0$</td><td>最稳，但需解特征方程</td></tr>
+        <tr><td>Sylvester</td><td>$\Delta_1,\dots,\Delta_n&gt;0$</td><td>$O(n^3)$，手算友好</td></tr>
+        <tr><td>LDL 主元</td><td>所有 $d_k&gt;0$</td><td>对称消元，$O(n^3/3)$</td></tr>
+        <tr><td>Cholesky</td><td>$A=R^{\mathsf T}R$ 存在</td><td>数值正定检验</td></tr>
+        <tr><td>Rayleigh</td><td>$\lambda_{\min}=R_{\min}$，$\lambda_{\max}=R_{\max}$</td><td>估计、迭代</td></tr>
+        <tr><td>条件数</td><td>$\kappa=\lambda_{\max}/\lambda_{\min}$</td><td>误差放大上界</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">正定判据的边界条件</span></div>
+    <div class="thm-body">
+      <p>① Sylvester 判据要求全部顺序主子式为正；只检查 $\det A&gt;0$ 不够（例如 $\operatorname{diag}(-1,-1)$ 的行列式为正但负定）。② 半正定不能只查顺序主子式，必须查所有主子式；$\begin{pmatrix}0&amp;0\\0&amp;-1\end{pmatrix}$ 的顺序主子式为 $0,-1$，会漏判。③ $A$ 正定不等于 $A$ 的元素全为正；正定看的是二次型，不是逐元素符号。④ Rayleigh 商的极值在单位球面上取到，若约束不是 $x^{\mathsf T}x=1$ 而是 $x^{\mathsf T}Bx=1$，就变成广义特征值问题。⑤ 条件数大不代表矩阵奇异；有限精度下它只说明“接近奇异”，求解误差上界与 $\kappa$ 成正比。</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="ch11" class="chapter">
+<div class="wrap">
+  <div class="sec-label">Chapter 11 · §5.40–§5.42</div>
+  <h2><span class="num">11</span>Hermite 矩阵、酉矩阵与谱定理</h2>
+  <p class="lede">在复空间里，Hermite 矩阵扮演实对称矩阵的角色：特征值全实、特征向量正交、可酉对角化；酉矩阵则是复空间的“旋转”。</p>
+
+  <div class="chap-intro">
+    <p>原书 §5.40 定义 Hermite 矩阵与 Hermite 型，证明特征值实、不同特征值的特征向量正交；§5.41 证明交换的 Hermite 矩阵可同时对角化；§5.42 把酉矩阵化为对角形。这条理论是量子力学的数学骨架：可观测量是 Hermite 算子，状态是单位向量，演化是酉算子。</p>
+    <span class="tag">Hermitian &amp; Unitary</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">共轭转置</span>
+    <span class="chip">谱定理</span>
+    <span class="chip">酉矩阵</span>
+    <span class="chip">正规矩阵</span>
+    <span class="chip">同时对角化</span>
+    <span class="chip">Rayleigh 商</span>
+  </div>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Hermite、酉与正规矩阵</span><span class="thm-id">§5.40</span></div>
+    <div class="thm-body">
+      <p>设 $A\in\mathbb C^{n\times n}$，$A^{*}=\overline{A^{\mathsf T}}$。若 $A^{*}=A$，称 $A$ 为 Hermite 矩阵（Hermitian matrix）；若 $A^{*}A=I$，称 $A$ 为酉矩阵（unitary matrix）；若 $A^{*}A=AA^{*}$，称 $A$ 为正规矩阵（normal matrix）。实情形分别退化为对称、正交与正规矩阵。</p>
+      <p>Hermite 型是 $H(x,y)=x^{*}Ay$，当 $A^{*}=A$ 时 $H(x,x)=x^{*}Ax$ 恒为实数，因为</p>
+      <p>$$\overline{x^{*}Ax}=(x^{*}Ax)^{*}=x^{*}A^{*}x=x^{*}Ax.$$</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">谱定理</span><span class="thm-id">§5.40–5.42</span></div>
+    <div class="thm-body">
+      <p>（1）Hermite 矩阵的特征值全为实数；属于不同特征值的特征向量互相正交。（2）$A$ 是 Hermite 矩阵当且仅当存在酉矩阵 $U$ 与实对角矩阵 $\Lambda$，使</p>
+      <p>$$A=U\Lambda U^{*}.$$</p>
+      <p>（3）$U$ 是酉矩阵当且仅当它保持内积：$(Ux,Uy)=(x,y)$；其特征值的模全为 1，且可酉对角化。（4）更一般地，$A$ 可酉对角化当且仅当 $A$ 正规。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：特征值实 + 正交 + 归纳</summary>
+  <div class="proof-body">
+    <p>设 $Av=\lambda v$，$v\ne0$。两边左乘 $v^{*}$：$v^{*}Av=\lambda v^{*}v$。左边是标量的共轭转置：$(v^{*}Av)^{*}=v^{*}A^{*}v=v^{*}Av$，故为实数；右边 $\lambda\|v\|^2$ 中 $\|v\|^2&gt;0$，故 $\lambda$ 实。</p>
+    <p>若 $Av=\lambda v$、$Aw=\mu w$，$\lambda\ne\mu$，则 $\lambda(v,w)=(Av,w)=(v,Aw)=\mu(v,w)$（用了 $A^{*}=A$ 与 $\lambda,\mu$ 实），故 $(\lambda-\mu)(v,w)=0$，得 $(v,w)=0$。</p>
+    <p>存在性用归纳：取单位特征向量 $u_1$，把它的正交补 $u_1^{\perp}$ 作为不变子空间（因为 $x\perp u_1\Rightarrow(Ax,u_1)=(x,Au_1)=\lambda(x,u_1)=0$），在 $u_1^{\perp}$ 上重复。有限步得到 $n$ 个单位正交特征向量，拼成 $U$。</p>
+    <p>（4）正规情形：若 $A$ 可酉对角化，则 $A=U\Lambda U^{*}$，直接验证 $A^{*}A=AA^{*}$。反之，对正规矩阵用 Schur 形 $A=UTU^{*}$，$T$ 上三角；正规性迫使 $T$ 对角（比较 $T^{*}T=TT^{*}$ 的非对角元），故可对角化。</p>
+  </div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">一个 $2\times2$ Hermite 矩阵</span><span class="thm-id">§5.40</span></div>
+    <div class="thm-body">
+      <p>取 $A=\begin{pmatrix}1&amp;i\\-i&amp;1\end{pmatrix}$。验证 $A^{*}=A$。特征多项式为</p>
+      <p>$$\det(A-\lambda I)=(1-\lambda)^2-i(-i)=(1-\lambda)^2-1=\lambda(\lambda-2),$$</p>
+      <p>所以特征值为 $0,2$。对应单位特征向量可取</p>
+      <p>$$u_0=\frac{1}{\sqrt2}\begin{pmatrix}1\\ i\end{pmatrix},\qquad
+      u_2=\frac{1}{\sqrt2}\begin{pmatrix}1\\ -i\end{pmatrix}.$$</p>
+      <p>在复内积下 $(u_0,u_2)=\frac12(1\cdot1+i\cdot i)=0$，确实正交。谱分解为 $A=0\cdot P_0+2P_2$，其中 $P_0=u_0u_0^{*}$，$P_2=u_2u_2^{*}$，且 $P_0+P_2=I$。这也说明 $A$ 半正定，但不是正定：存在非零向量 $u_0$ 使 $u_0^{*}Au_0=0$。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">交换的 Hermite 矩阵可同时对角化</span><span class="thm-id">§5.41</span></div>
+    <div class="thm-body">
+      <p>若 $A,B$ 都是 Hermite 矩阵且 $AB=BA$，则存在同一个酉矩阵 $U$，使 $U^{*}AU$ 与 $U^{*}BU$ 同时为实对角矩阵。证明思路是：先按 $A$ 的特征子空间分解，交换性保证每个特征子空间在 $B$ 下不变，再在每个子空间内对 $B$ 单独对角化。</p>
+    </div>
+  </div>
+
+  <p>量子力学中“可交换的观测量的共同本征态”就是这条定理的物理表述；反过来，若两个 Hermite 矩阵不能同时对角化，它们一定不可交换。注意“交换”是充分条件，不是必要条件：两个矩阵可以有共同特征向量而不交换，但不可能有<b>完整</b>的共同特征基而不交换。</p>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>Hermite 矩阵是“实对称”在复空间的正确推广。复对称 $A^{\mathsf T}=A$ 不够：例如 $\begin{pmatrix}1&amp;i\\i&amp;1\end{pmatrix}$ 是对称的，特征值为 $1\pm i$，不是实数。共轭转置同时交换了“取共轭”和“转置”，才保证二次型 $x^{*}Ax$ 是实值，从而特征值为实。酉矩阵则是“复旋转”：它保持复内积，特征值落在单位圆上，对应相位旋转。</p>
+  </div>
+
+  <h3><span class="sn">§5.42</span>酉矩阵的谱与行列式</h3>
+  <p>酉矩阵 $U$ 的特征值形如 $e^{i\theta_k}$，且存在酉矩阵 $V$ 使 $U=V\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_n})V^{*}$。因此 $|\det U|=1$，$\det U=e^{i\sum\theta_k}$。在 $n=2$ 时，任何 $SU(2)$ 矩阵可写成</p>
+  <p>$$U=\begin{pmatrix}\alpha&amp;\beta\\-\overline{\beta}&amp;\overline{\alpha}\end{pmatrix},\qquad |\alpha|^2+|\beta|^2=1,$$</p>
+  <p>它对应三维空间中的一个旋转（相差一个整体相位 $\pm1$）。这就是 $SU(2)\to SO(3)$ 的二重覆盖，第 15 章会用它解释“旋量”（spinor）为什么转 $2\pi$ 才回到原状态。</p>
+  <p>正规矩阵的谱定理还可以写成投影形式：$A=\sum_k\lambda_kP_k$，$P_k$ 是到特征子空间的正交投影，满足 $P_kP_l=\delta_{kl}P_k$、$\sum_kP_k=I$。这把“矩阵”分解成“若干正交方向上的纯伸缩之和”，是下一章投影矩阵与矩阵函数的接口。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>矩阵类</th><th>定义</th><th>谱性质</th></tr></thead>
+      <tbody>
+        <tr><td>Hermite</td><td>$A^{*}=A$</td><td>特征值实，正交特征向量，酉对角化</td></tr>
+        <tr><td>酉</td><td>$U^{*}U=I$</td><td>$|\lambda|=1$，保持内积与范数</td></tr>
+        <tr><td>正规</td><td>$A^{*}A=AA^{*}$</td><td>可酉对角化</td></tr>
+        <tr><td>投影</td><td>$P^2=P=P^{*}$</td><td>特征值 $0$ 或 $1$</td></tr>
+        <tr><td>正交投影和</td><td>$P_iP_j=0$，$\sum P_i=I$</td><td>谱分解的骨架</td></tr>
+        <tr><td>正定 Hermite</td><td>$x^{*}Ax&gt;0$（$x\ne0$）</td><td>特征值全正</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">复对称不是 Hermite</span></div>
+    <div class="thm-body">
+      <p>① 复矩阵“转置对称”$A^{\mathsf T}=A$ 不保证特征值实；必须用共轭转置 $A^{*}=A$。② 酉矩阵的特征值模为 1，但特征值不必是 $\pm1$；实正交矩阵才有 $\lambda=\pm1$ 或共轭复对。③ 投影 $P$ 与“幂等矩阵”不同：幂等只要求 $P^2=P$，斜投影可能不正交；加上 $P^{*}=P$ 才是正交投影。④ 两个 Hermite 矩阵一般不能同时对角化，除非它们交换；交换性是同时对角化的关键条件。⑤ Hermite 矩阵的对角元必为实数，但非对角元可以复；不要因为“矩阵是 Hermite”就以为所有元素都实。</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="ch12" class="chapter">
+<div class="wrap">
+  <div class="sec-label">Chapter 12 · §5.43–§5.44</div>
+  <h2><span class="num">12</span>投影矩阵与矩阵函数</h2>
+  <p class="lede">投影矩阵 $P$ 把空间劈成“保留”与“压扁”两部分；矩阵函数 $f(A)$ 则把“对特征值取函数”推广到整个矩阵，让 $e^{A}$、$\sqrt{A}$ 可以被计算。</p>
+
+  <div class="chap-intro">
+    <p>原书 §5.43 用投影矩阵（projection matrix）给出谱分解的几何解释：$P^2=P$ 表示“投影两次等于投影一次”，$P^{*}=P$ 表示投影方向与保留子空间正交。§5.44 定义矩阵多项式与有理函数，证明谱映射 $f(U^{-1}AU)=U^{-1}f(A)U$，并处理若尔当块上的导数项。这条理论把线性代数与算子演算、微分方程连接起来。</p>
+    <span class="tag">Projections &amp; Functions of Matrices</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">$P^2=P$</span>
+    <span class="chip">正交投影</span>
+    <span class="chip">谱分解</span>
+    <span class="chip">谱映射</span>
+    <span class="chip">若尔当导数</span>
+    <span class="chip">预解式</span>
+  </div>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">投影与正交投影</span><span class="thm-id">§5.43</span></div>
+    <div class="thm-body">
+      <p>若 $P^2=P$，称 $P$ 为投影矩阵（幂等矩阵）。它把任意 $x$ 分解为</p>
+      <p>$$x=Px+(I-P)x,\qquad Px\in\operatorname{Im}P,\quad (I-P)x\in\ker P.$$</p>
+      <p>若还满足 $P^{*}=P$，称 $P$ 为正交投影。此时 $\operatorname{Im}P\perp\ker P$，且 $P$ 在 $\operatorname{Im}P$ 上是恒等、在 $\ker P$ 上是零。若 $P_1,\dots,P_m$ 两两正交（$P_iP_j=0$，$i\ne j$）且 $\sum_iP_i=I$，则称它们构成单位分解（resolution of the identity）。</p>
+    </div>
+  </div>
+
+  <p>最简单的投影是秩一投影 $P=uu^{*}$，其中 $\|u\|=1$：$Px=(u,x)u$ 把任意向量压到 $u$ 张成的一维直线上，$\operatorname{tr}P=1$，特征值为 $1,0,\dots,0$。若 $u_1,\dots,u_n$ 是标准正交基，则 $\sum_i u_iu_i^{*}=I$ 就是最细的单位分解。一般正交投影可写成 $P=UU^{*}$，$U$ 的列是保留子空间的标准正交基；$\operatorname{tr}P=\dim\operatorname{Im}P$ 就是保留子空间的维数。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">谱分解的投影形式</span><span class="thm-id">§5.43</span></div>
+    <div class="thm-body">
+      <p>设 $A$ 为 Hermite 矩阵，互异特征值为 $\mu_1,\dots,\mu_s$。则存在两两正交的投影 $P_1,\dots,P_s$，使</p>
+      <p>$$A=\sum_{k=1}^{s}\mu_kP_k,\qquad \sum_{k=1}^{s}P_k=I,\qquad P_iP_j=\delta_{ij}P_i.$$</p>
+      <p>其中 $P_k$ 是到特征子空间 $\ker(A-\mu_kI)$ 的正交投影。这个分解比“列向量拼成 $U$”更本质：它把矩阵写成“若干方向的纯伸缩之和”，并且 $f(A)=\sum_kf(\mu_k)P_k$ 对任何定义在谱上的函数成立。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">用投影算 $A^3+2A$</span><span class="thm-id">§5.43</span></div>
+    <div class="thm-body">
+      <p>仍取 $A=\begin{pmatrix}1&amp;i\\-i&amp;1\end{pmatrix}$，特征值 $0,2$，投影 $P_0,P_2$ 如上一章。对 $f(z)=z^3+2z$，</p>
+      <p>$$f(A)=f(0)P_0+f(2)P_2=0\cdot P_0+12P_2=12P_2.$$</p>
+      <p>而 $P_2=\frac12\begin{pmatrix}1&amp;i\\-i&amp;1\end{pmatrix}$，故 $f(A)=\begin{pmatrix}6&amp;6i\\-6i&amp;6\end{pmatrix}$。直接算 $A^3+2A$ 也能得到同样结果，但投影法只需知道特征值与投影，适合高次幂与函数。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">矩阵函数的谱映射</span><span class="thm-id">§5.44</span></div>
+    <div class="thm-body">
+      <p>对矩阵 $A$ 与多项式 $f(z)=c_0+c_1z+\cdots+c_mz^m$，定义 $f(A)=c_0I+c_1A+\cdots+c_mA^m$。若 $g(A)$ 可逆，有理函数定义为 $f(A)g(A)^{-1}$。若 $A=U^{-1}BU$，则</p>
+      <p>$$f(A)=U^{-1}f(B)U.$$</p>
+      <p>若 $A=V\operatorname{diag}(\lambda_1,\dots,\lambda_n)V^{-1}$，则</p>
+      <p>$$f(A)=V\operatorname{diag}\bigl(f(\lambda_1),\dots,f(\lambda_n)\bigr)V^{-1}.$$</p>
+      <p>对若尔当块 $J_e(\mu)=\mu I+N$（$N^e=0$），只要 $f$ 在 $\mu$ 的邻域内足够光滑，就有</p>
+      <p>$$f(J_e(\mu))=\begin{pmatrix}
+      f(\mu)&amp;f'(\mu)&amp;\frac{f''(\mu)}{2!}&amp;\cdots\\
+      0&amp;f(\mu)&amp;f'(\mu)&amp;\cdots\\
+      \vdots&amp;&amp;\ddots&amp;\ddots\\
+      0&amp;\cdots&amp;0&amp;f(\mu)
+      \end{pmatrix}.$$</p>
+      <p>也就是说，重根情形需要“函数值 + 导数值”，这正是 Hermite 插值多项式在矩阵上的体现。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：若尔当块的 Taylor 展开</summary>
+  <div class="proof-body"><p>对多项式 $f$，把 $f(\mu+N)$ 在 $\mu$ 处 Taylor 展开：$f(\mu+N)=\sum_{k\ge0}\frac{f^{(k)}(\mu)}{k!}N^k$。由于 $N^e=0$，求和只到 $k=e-1$，而 $N^k$ 正好是把第 $i$ 行移到第 $i+k$ 行的矩阵，于是得到上三角的 Toeplitz 块，对角线上是 $f(\mu)$，第一条超对角线是 $f'(\mu)$，依此类推。</p>
+    <p>一般函数 $f$ 若在谱上足够光滑，可用 Hermite 插值多项式 $p$ 匹配 $f$ 在各自特征值处的函数值与直到 $e_j-1$ 阶导数，则 $f(A)=p(A)$。因此“矩阵函数”只依赖 $f$ 在谱上的 Jet，而不依赖 $f$ 在谱外的取值。</p></div>
+  </details>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>矩阵函数不是“逐元素取函数”。$e^{A}$ 描述的是“以 $A$ 为生成元的连续演化”：$A$ 是瞬时速度场，$e^{At}$ 是经过时间 $t$ 后的位置。若 $A$ 的特征值是纯虚数，演化就是旋转或振荡；若有负实部，演化衰减；若有正实部，演化增长。这个图像是稳定性理论的几何版本。</p>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">旋转矩阵的指数</span><span class="thm-id">§5.44</span></div>
+    <div class="thm-body">
+      <p>取 $A=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}$。直接计算得 $A^2=-I$，于是对 $t\in\mathbb R$，</p>
+      <p>$$e^{At}=\sum_{k=0}^{\infty}\frac{(At)^k}{k!}
+      =\left(1-\frac{t^2}{2!}+\cdots\right)I
+      +\left(t-\frac{t^3}{3!}+\cdots\right)A
+      =\cos t\,I+\sin t\,A.$$</p>
+      <p>因此</p>
+      <p>$$e^{At}=\begin{pmatrix}\cos t&amp;\sin t\\-\sin t&amp;\cos t\end{pmatrix},$$</p>
+      <p>正是顺时针旋转 $t$ 的矩阵。这也解释了 $e^{At}$ 为什么永远可逆：$\det e^{At}=e^{t\operatorname{tr}A}=1$，且 $(e^{At})^{-1}=e^{-At}$。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§5.44</span>预解式与最小多项式插值</h3>
+  <p>当 $A$ 不可对角化但特征值个数较少时，可以用最小多项式 $m_A$ 做插值：若 $m_A$ 的根为 $\mu_1,\dots,\mu_s$，重数为 $e_j$，则存在次数小于 $\deg m_A$ 的多项式 $p$，使 $p^{(k)}(\mu_j)=f^{(k)}(\mu_j)$（$k&lt;e_j$），并且 $f(A)=p(A)$。这把矩阵函数归结为有限个导数值的 Hermite 插值，避免了求若尔当基的麻烦。</p>
+  <p>另一个常用对象是预解式（resolvent）</p>
+  <p>$$R(z)=(zI-A)^{-1},$$</p>
+  <p>它的极点是特征值，留数给出谱投影；在 $z=\infty$ 附近的 Laurent 展开则给出 $A^k$ 的迹与行列式的生成函数。控制论中的传递函数、量子散射的 Green 函数，都是预解式在不同表象下的名字。数值上，$R(z)$ 的条件数与 $1/\operatorname{dist}(z,\sigma(A))$ 同阶，靠近谱时求解会变坏——这与“特征值对扰动敏感”是同一件事。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>函数</th><th>可对角化时</th><th>若尔当块 $J_e(\mu)$</th></tr></thead>
+      <tbody>
+        <tr><td>$A^k$</td><td>$\lambda_i^k$</td><td>二项式展开，含多项式项</td></tr>
+        <tr><td>$e^{At}$</td><td>$e^{\lambda_it}$</td><td>$e^{\mu t}$ 乘 $t^k/k!$ 的 Toeplitz 块</td></tr>
+        <tr><td>$\sin A,\cos A$</td><td>$\sin\lambda_i,\cos\lambda_i$</td><td>用 $e^{iA}$ 的实虚部</td></tr>
+        <tr><td>$A^{-1}$</td><td>$1/\lambda_i$（$\lambda_i\ne0$）</td><td>$(J_e(\mu))^{-1}$，$\mu\ne0$</td></tr>
+        <tr><td>$\sqrt{A}$</td><td>$\sqrt{\lambda_i}$（选支）</td><td>需 $\mu\ne0$ 且选连续分支</td></tr>
+        <tr><td>$\log A$</td><td>$\log\lambda_i$（选支）</td><td>需 $\mu$ 不在负实轴</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">矩阵函数不是逐元素函数</span></div>
+    <div class="thm-body">
+      <p>① $e^{A}$ 不是把每个元素取指数；例如 $A=\begin{pmatrix}0&amp;1\\0&amp;0\end{pmatrix}$ 时 $e^{A}=I+A$，而不是逐元素 $e$。② $e^{A+B}=e^{A}e^{B}$ 只在 $AB=BA$ 时成立；一般要用 Baker–Campbell–Hausdorff 公式。③ $f(A)$ 与 $A$ 一定交换，但 $f(A)$ 与另一个矩阵 $B$ 不一定交换。④ 若尔当块上求 $f$ 需要导数，只代入特征值会漏掉多项式因子；这也是“重根不能只算 $e^{\lambda t}$”的原因。⑤ 投影 $P$ 的谱分解总成立（幂等矩阵必可对角化，特征值只有 0/1），但过渡矩阵不一定正交；只有正交投影才能用正交基对角化。</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="ch13" class="chapter">
+<div class="wrap">
+  <div class="sec-label">Chapter 13 · §6.45–§6.51</div>
+  <h2><span class="num">13</span>无限维空间：从有限和到 Fourier 级数</h2>
+  <p class="lede">把“向量”从 $n$ 元数组换成函数，把“求和”换成积分，有限维的线性代数就变成 Hilbert 空间理论；正交展开变成 Fourier 级数。</p>
+
+  <div class="chap-intro">
+    <p>原书 §6 是全书的“出口”：前五章的有限维结论在无限维中哪些还成立、哪些需要附加收敛条件。§6.45 定义向量序列的收敛，§6.46 讨论完全正交系，§6.47 把线性变换推广到无穷矩阵，§6.48 引入函数空间，§6.49 说明函数空间与 Hilbert 空间的关系，§6.50–6.51 讨论线性泛函算子。这里只保留与线性代数主线直接相关的部分：内积、正交展开、有界算子与核。</p>
+    <span class="tag">Infinite-dimensional Space</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">范数收敛</span>
+    <span class="chip">完全正交系</span>
+    <span class="chip">Bessel / Parseval</span>
+    <span class="chip">无穷矩阵</span>
+    <span class="chip">$L^2$ 空间</span>
+    <span class="chip">有界算子</span>
+  </div>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">收敛、完备与 Hilbert 空间</span><span class="thm-id">§6.45, §6.48</span></div>
+    <div class="thm-body">
+      <p>赋范空间中，$x_n\to x$ 指 $\|x_n-x\|\to0$。若每个 Cauchy 列都收敛，称空间完备（complete）。完备的内积空间称为 Hilbert 空间；不要求完备的内积空间称为准 Hilbert 空间（pre-Hilbert space）。</p>
+      <p>函数空间 $L^2[a,b]$ 由满足 $\int_a^b|f|^2&lt;\infty$ 的可测函数组成，内积为</p>
+      <p>$$(f,g)=\int_a^b f(x)\overline{g(x)}\,dx.$$</p>
+      <p>它是完备的，因此是 Hilbert 空间。三角多项式、Legendre 多项式、Hermite 函数都是它的正交系。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">Bessel 不等式与 Parseval 等式</span><span class="thm-id">§6.46</span></div>
+    <div class="thm-body">
+      <p>设 $\{u_k\}$ 是标准正交系，$c_k=(x,u_k)$。则</p>
+      <p>$$\sum_{k=1}^{\infty}|c_k|^2\le\|x\|^2\qquad\text{（Bessel）}.$$</p>
+      <p>若 $\{u_k\}$ 完全（即只有零向量与所有 $u_k$ 正交），则等号成立：</p>
+      <p>$$\|x\|^2=\sum_{k=1}^{\infty}|c_k|^2\qquad\text{（Parseval）},$$</p>
+      <p>且 $x=\sum_k c_ku_k$（按范数收敛）。完全性等价于“正交补为零”，也等价于“部分和逼近 $x$”。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：有限部分和 + 单调收敛</summary>
+  <div class="proof-body"><p>对前 $N$ 项，令 $s_N=\sum_{k=1}^Nc_ku_k$。直接展开 $\|x-s_N\|^2=\|x\|^2-\sum_{k=1}^N|c_k|^2\ge0$，即得有限版 Bessel。令 $N\to\infty$，左边非负，故级数收敛且不超过 $\|x\|^2$。</p>
+    <p>若正交系完全，则 $x-\sum c_ku_k$ 与所有 $u_k$ 正交（因为系数就是内积），由完全性它只能是零，故部分和按范数收敛到 $x$，Bessel 取等号。反过来，若 Parseval 对一切 $x$ 成立，则任何与所有 $u_k$ 正交的 $x$ 有 $\|x\|^2=0$，故 $x=0$，完全性成立。</p></div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">Fourier 级数是正交展开</span><span class="thm-id">§6.46–6.48</span></div>
+    <div class="thm-body">
+      <p>在 $L^2[-\pi,\pi]$ 中，$\{1,\cos nx,\sin nx\}$ 是正交系（适当归一化）。对 $f(x)=x$，Fourier 系数为</p>
+      <p>$$b_n=\frac1\pi\int_{-\pi}^{\pi}x\sin nx\,dx=\frac{2(-1)^{n+1}}{n},\qquad a_n=0.$$</p>
+      <p>于是 $x\sim\sum_{n\ge1}\frac{2(-1)^{n+1}}{n}\sin nx$。Parseval 给出</p>
+      <p>$$\frac{1}{\pi}\int_{-\pi}^{\pi}x^2\,dx=\frac{2\pi^2}{3}=\sum_{n\ge1}\frac{4}{n^2},$$</p>
+      <p>即 $\sum_{n\ge1}\frac1{n^2}=\frac{\pi^2}{6}$。这个古典结果说明：正交展开不只是“逼近”，它把能量（范数平方）精确地分配到各频率上。有限维的“坐标 = 内积”在这里变成“Fourier 系数 = 内积”，公式完全同形。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§6.47, §6.50–6.51</span>无穷矩阵与线性算子</h3>
+  <p>把向量写成无穷列 $x=(x_1,x_2,\dots)$，线性变换就写成无穷矩阵 $A=(a_{ij})$，$(Ax)_i=\sum_j a_{ij}x_j$。与有限维不同，求和可能不收敛，因此必须对矩阵加条件。最常用的是 Hilbert–Schmidt 条件 $\sum_{i,j}|a_{ij}|^2&lt;\infty$：此时 $A$ 把 $\ell^2$ 映到 $\ell^2$，且</p>
+  <p>$$\|A\|_{HS}^2=\sum_{i,j}|a_{ij}|^2=\operatorname{tr}(A^{*}A).$$</p>
+  <p>另一类是“有界算子”：存在常数 $C$ 使 $\|Ax\|\le C\|x\|$，最小的 $C$ 称为算子范数 $\|A\|$。有限维中所有线性算子都有界，无限维则不然：微分算子 $D=\frac{d}{dx}$ 在 $L^2$ 上无界（因为高频函数的导数可以任意大），这也是为什么微分方程理论需要 Sobolev 空间。</p>
+  <p>线性泛函算子（linear functional operator）指把函数映成函数的算子，典型形式是积分算子</p>
+  <p>$$(Kf)(x)=\int_a^bK(x,y)f(y)\,dy,$$</p>
+  <p>其中 $K$ 称为核（kernel）。若 $K$ 平方可积，$K$ 是 Hilbert–Schmidt 算子，可展开为 $\sum_k\sigma_ku_k(x)v_k(y)$，这正是奇异值分解在函数空间的版本；若 $K$ 对称，则展开为特征函数的正交级数，回到第 11 章的谱定理。积分方程 $f-\lambda Kf=g$ 的可解性由 Fredholm 二择一定理刻画，其判据与第 2 章的“伴随方程组正交”完全同源。</p>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>有限维到无限维，最大的变化不是“维数变大”，而是“收敛成为额外条件”。在 $\mathbb R^n$ 中，部分和自动收敛；在函数空间中，必须证明级数按范数收敛。Bessel/Parseval 就是“能量账本”：不管空间多大，投影到正交方向上的能量总和不能超过原能量；完全性保证没有能量漏掉。这个账本在信号处理里就是“时域能量 = 频域能量”。</p>
+  </div>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>概念</th><th>有限维</th><th>无限维</th></tr></thead>
+      <tbody>
+        <tr><td>基</td><td>有限个向量</td><td>可能需要可数/不可数正交系</td></tr>
+        <tr><td>展开</td><td>$x=\sum_{k=1}^n(x,u_k)u_k$</td><td>$x=\sum_{k=1}^\infty c_ku_k$（按范数）</td></tr>
+        <tr><td>能量</td><td>$\|x\|^2=\sum|c_k|^2$</td><td>Parseval 等式</td></tr>
+        <tr><td>算子</td><td>都有界，矩阵表示</td><td>可能无界，需定义域</td></tr>
+        <tr><td>谱</td><td>特征值有限个</td><td>可能连续谱</td></tr>
+        <tr><td>积分算子</td><td>—</td><td>核 $K(x,y)$，Hilbert–Schmidt</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">无限维不是“有限维加个无穷”</span></div>
+    <div class="thm-body">
+      <p>① 无限维空间中“线性无关”不等于“构成基”：还需要每个向量都能按范数展开，即完全性。② 正交系完全 $\iff$ 正交补为零 $\iff$ Parseval 成立，这三个条件在 Hilbert 空间等价，在准 Hilbert 空间不一定。③ 有界性不是自动的：微分算子无界，交换极限与求导需要额外条件。④ 无穷矩阵的乘法不能随意交换求和顺序；绝对收敛是安全条件。⑤ 特征值不一定存在：位移算子 $(Sx)_n=x_{n+1}$ 没有特征值，只有连续谱；有限维“特征值总有 $n$ 个”的结论失效。</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="ch14" class="chapter">
+<div class="wrap">
+  <div class="sec-label">Chapter 14 · §2.17–§2.19, §4.38</div>
+  <h2><span class="num">14</span>应用：小振动、微分方程组与隐函数</h2>
+  <p class="lede">线性代数在物理与工程中的第一次大显身手，是把耦合振动解耦成若干独立振子，并把常系数微分方程组变成矩阵指数。</p>
+
+  <div class="chap-intro">
+    <p>本章给出四条应用线索。其一是保守系统的小振动（small vibrations）：动能与势能都是二次型，广义特征值问题 $(B-\omega^2A)a=0$ 给出固有频率与振型。其二是常系数线性系统 $\dot x=Ax$：解由 $e^{At}$ 给出，若尔当块产生 $t^ke^{\lambda t}$ 项。其三是隐函数定理：偏导矩阵（Jacobian）非零时，方程组可局部解出未知函数。其四是函数行列式（Wronskian）：它判断一组解是否线性无关。</p>
+    <span class="tag">Applications</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">小振动</span>
+    <span class="chip">广义特征值</span>
+    <span class="chip">$e^{At}$</span>
+    <span class="chip">稳定性</span>
+    <span class="chip">Jacobi 矩阵</span>
+    <span class="chip">Wronskian</span>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">小振动的解耦</span><span class="thm-id">§4.38</span></div>
+    <div class="thm-body">
+      <p>设系统有 $n$ 个自由度，平衡位置取 $q=0$。动能与势能在平衡点附近近似为</p>
+      <p>$$T=\frac12\dot q^{\mathsf T}A\dot q,\qquad U=\frac12q^{\mathsf T}Bq,$$</p>
+      <p>其中 $A=A^{\mathsf T}$ 正定（质量矩阵），$B=B^{\mathsf T}$ 正定（刚度矩阵）。Lagrange 方程给出</p>
+      <p>$$A\ddot q+Bq=0.$$</p>
+      <p>令 $q=a\cos(\omega t+\varphi)$，得到广义特征值问题</p>
+      <p>$$(B-\omega^2A)a=0,\qquad \det(B-\omega^2A)=0.$$</p>
+      <p>因为 $A$ 正定，可令 $u=A^{1/2}a$，问题化为对称矩阵 $A^{-1/2}BA^{-1/2}$ 的普通特征值问题；因此 $\omega_k^2$ 全为实数且非负。取 $C$ 使 $C^{\mathsf T}AC=I$、$C^{\mathsf T}BC=\operatorname{diag}(\omega_1^2,\dots,\omega_n^2)$，则在新坐标下系统分裂为 $n$ 个独立振子。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">两个耦合振子</span><span class="thm-id">§4.38</span></div>
+    <div class="thm-body">
+      <p>取两个单位质量，势能 $U=\frac12(3q_1^2-2q_1q_2+3q_2^2)$，即 $B=\begin{pmatrix}3&amp;-1\\-1&amp;3\end{pmatrix}$，$A=I$。运动方程为</p>
+      <p>$$\ddot q_1=-3q_1+q_2,\qquad \ddot q_2=q_1-3q_2.$$</p>
+      <p>广义特征值问题就是 $\det(B-\omega^2I)=0$：$(3-\omega^2)^2-1=0$，得 $\omega_1^2=2$、$\omega_2^2=4$。对应振型为 $a_1=(1,1)$（同相，中间弹簧只整体平移、不伸缩）与 $a_2=(1,-1)$（反相，中间弹簧剧烈变形）。令 $q=c_1a_1+c_2a_2$，方程解耦为</p>
+      <p>$$\ddot c_1+2c_1=0,\qquad \ddot c_2+4c_2=0,$$</p>
+      <p>所以 $c_1=\alpha\cos(\sqrt2\,t+\varphi_1)$，$c_2=\beta\cos(2t+\varphi_2)$。四个常数由初始位移与速度确定。这个例子说明：固有频率是广义特征值，振型是广义特征向量；解耦的坐标不是原来的 $q_1,q_2$，而是沿振型的组合。振型之间按质量矩阵正交：$a_1^{\mathsf T}Aa_2=0$。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">常系数线性系统</span><span class="thm-id">§2.17</span></div>
+    <div class="thm-body">
+      <p>初值问题 $\dot x=Ax$，$x(0)=x_0$ 的解为 $x(t)=e^{At}x_0$。若 $A$ 可对角化，$A=V\Lambda V^{-1}$，则</p>
+      <p>$$x(t)=V\operatorname{diag}(e^{\lambda_1t},\dots,e^{\lambda_nt})V^{-1}x_0.$$</p>
+      <p>若 $A$ 有若尔当块 $J_e(\mu)$，解中会出现 $t^ke^{\mu t}$（$k=0,\dots,e-1$）。因此：</p>
+      <p>（1）所有 $\operatorname{Re}\lambda_i&lt;0$ 时，零解渐近稳定；（2）存在 $\operatorname{Re}\lambda_i&gt;0$ 时，不稳定；（3）实部为零的特征值若对应非平凡若尔当块，则出现多项式增长，仍然不稳定。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">二阶系统的通解与稳定性</span><span class="thm-id">§2.17</span></div>
+    <div class="thm-body">
+      <p>解 $\dot x=\begin{pmatrix}0&amp;1\\-2&amp;-3\end{pmatrix}x$。特征多项式为</p>
+      <p>$$\det\begin{pmatrix}-\lambda&amp;1\\-2&amp;-3-\lambda\end{pmatrix}
+      =\lambda^2+3\lambda+2=(\lambda+1)(\lambda+2),$$</p>
+      <p>特征值 $-1,-2$。对应特征向量：$\lambda=-1$ 时 $v_1=(1,-1)$；$\lambda=-2$ 时 $v_2=(1,-2)$。因此</p>
+      <p>$$x(t)=c_1e^{-t}\begin{pmatrix}1\\-1\end{pmatrix}
+      +c_2e^{-2t}\begin{pmatrix}1\\-2\end{pmatrix}.$$</p>
+      <p>两个特征值都为负，零解渐近稳定；$e^{-2t}$ 项衰减更快，长时间行为由慢模态 $e^{-t}(1,-1)$ 主导。这一“慢模态主导”现象在化学反应、电路与结构振动中都很常见。若把矩阵改成 $\begin{pmatrix}0&amp;1\\2&amp;1\end{pmatrix}$，特征值为 $2,-1$，出现正实部，零解不稳定。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">隐函数定理的线性代数形式</span><span class="thm-id">§2.19</span></div>
+    <div class="thm-body">
+      <p>对方程组 $F(x,y)=0$，$F:\mathbb R^n\times\mathbb R^m\to\mathbb R^m$，若在点 $(x_0,y_0)$ 处 $F(x_0,y_0)=0$ 且 Jacobi 矩阵</p>
+      <p>$$J=\det\left(\frac{\partial F_i}{\partial y_j}\right)_{i,j=1}^{m}\ne0,$$</p>
+      <p>则在 $x_0$ 的某邻域内存在唯一连续可微的 $y=\varphi(x)$ 使 $F(x,\varphi(x))=0$，且</p>
+      <p>$$\varphi'(x_0)=-\left(\frac{\partial F}{\partial y}\right)^{-1}\frac{\partial F}{\partial x}\Big|_{(x_0,y_0)}.$$</p>
+      <p>这里 $J\ne0$ 的作用与 Cramer 法则完全一致：它保证线性化方程对 $\Delta y$ 可解，从而可以用压缩映射把局部解“迭代”出来。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：线性化 + 压缩映射</summary>
+  <div class="proof-body"><p>把 $F(x_0+\Delta x,y_0+\Delta y)=0$ 写成</p>
+  <p>$$F_y\Delta y=-F_x\Delta x+o(\|\Delta x\|+\|\Delta y\|).$$</p>
+  <p>$F_y$ 可逆时，$\Delta y=-F_y^{-1}F_x\Delta x+o(\cdot)$，给出导数公式。存在性用 Banach 不动点定理：把方程改写为 $\Delta y=\Phi(\Delta x,\Delta y)$，其中 $\Phi$ 的 Lipschitz 常数小于 1（由 $F_y$ 可逆与连续性保证），于是在小邻域内有唯一不动点。$J\ne0$ 正是“$F_y$ 可逆”的行列式判据。</p></div>
+  </details>
+
+  <h3><span class="sn">§2.18</span>函数行列式与 Wronskian</h3>
+  <p>设 $y_1(x),\dots,y_n(x)$ 是 $n$ 个函数，函数行列式（functional determinant）定义为</p>
+  <p>$$W(x)=\det\begin{pmatrix}
+  y_1&amp;y_2&amp;\cdots&amp;y_n\\
+  y_1'&amp;y_2'&amp;\cdots&amp;y_n'\\
+  \vdots&amp;\vdots&amp;&amp;\vdots\\
+  y_1^{(n-1)}&amp;y_2^{(n-1)}&amp;\cdots&amp;y_n^{(n-1)}
+  \end{pmatrix}.$$</p>
+  <p>若 $y_i$ 是 $n$ 阶线性微分方程 $y^{(n)}+p_1y^{(n-1)}+\cdots+p_ny=0$ 的解，则它们线性无关当且仅当 $W(x)\ne0$ 在某点成立；而且这时 $W$ 处处不为零，并满足 Liouville 公式 $W(x)=W(x_0)\exp(-\int_{x_0}^x p_1(t)\,dt)$。这与“行列式判断向量组线性无关”是同一件事，只是把向量换成了“函数及其直到 $n-1$ 阶导数”组成的列。</p>
+  <p>在多元情形，函数行列式就是 Jacobian。变量替换公式</p>
+  <p>$$\int_{\Omega}f(x)\,dx=\int_{\varphi^{-1}(\Omega)}f(\varphi(u))\,|\det D\varphi(u)|\,du$$</p>
+  <p>中的 $|\det D\varphi|$ 正是“局部体积伸缩因子”，与第 1 章“行列式是体积比”完全一致。隐函数定理、反函数定理、曲面积分中的面积元，都是这条几何事实的不同写法。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>应用</th><th>矩阵对象</th><th>判据 / 公式</th></tr></thead>
+      <tbody>
+        <tr><td>小振动</td><td>$A$（质量）、$B$（刚度）</td><td>$\det(B-\omega^2A)=0$，$\omega_k^2\ge0$</td></tr>
+        <tr><td>振型</td><td>广义特征向量 $a_k$</td><td>$a_k^{\mathsf T}Aa_l=0$（$k\ne l$）</td></tr>
+        <tr><td>线性 ODE</td><td>$A$</td><td>$x(t)=e^{At}x_0$</td></tr>
+        <tr><td>稳定性</td><td>特征值</td><td>实部全负稳定；有正不稳定</td></tr>
+        <tr><td>隐函数</td><td>Jacobi 矩阵</td><td>$J\ne0$ 局部可解</td></tr>
+        <tr><td>Wronskian</td><td>解与导数</td><td>$W\ne0\iff$ 线性无关</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">广义特征值不是普通特征值</span></div>
+    <div class="thm-body">
+      <p>① 小振动方程的解是 $\det(B-\omega^2A)=0$，不是 $\det(B-\omega^2I)=0$；除非 $A=I$，两者不同。② $A$ 必须正定，才能保证 $\omega^2$ 为实数、振型按 $A$ 正交；若 $A$ 奇异，系统含约束或无限大质量，需要另行处理。③ 稳定性只看特征值实部的符号，不能只看行列式：$\det A&gt;0$ 仍可能不稳定（例如二阶矩阵有正实部复根时行列式为正）。④ 若尔当块导致的 $t^ke^{\lambda t}$ 增长在实部为零时也会发生，不能因为“特征值在虚轴上”就判定稳定。⑤ Wronskian 恒为零不一定线性相关（对一般函数），只有“都是同一线性方程的解”时才等价。</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="ch15" class="chapter">
+<div class="wrap">
+  <div class="sec-label">Chapter 15 · §3.52–§3.64</div>
+  <h2><span class="num">15</span>群与线性变换群：对称性的代数</h2>
+  <p class="lede">群（group）把一个系统的全部对称操作收进一个集合，使“先做一个、再做一个”变成乘法；线性变换群则是矩阵乘法下的群。</p>
+
+  <div class="chap-intro">
+    <p>原书第三章从具体的线性变换群出发：三维旋转、正多面体对称、Lorentz 变换、置换群；然后抽象出群公理、子群（subgroup）、陪集（coset）、正规子群（normal subgroup）、同构（isomorphism）与同态（homomorphism）；最后用球极投影（stereographic projection）把 $SU(2)$ 与三维旋转群联系起来。这条路线的好处是：每个抽象概念都有几何载体。</p>
+    <span class="tag">Groups</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">群公理</span>
+    <span class="chip">置换群</span>
+    <span class="chip">陪集与正规子群</span>
+    <span class="chip">同态</span>
+    <span class="chip">Lorentz 群</span>
+    <span class="chip">$SU(2)\to SO(3)$</span>
+  </div>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">群与线性变换群</span><span class="thm-id">§3.52, §3.56</span></div>
+    <div class="thm-body">
+      <p>集合 $G$ 配备乘法 $G\times G\to G$，若满足结合律、存在单位元 $e$、每个元素有逆元，则称为群。若乘法还交换，称为 Abel 群（交换群）。</p>
+      <p>$n$ 维空间上所有可逆线性变换在复合下构成一般线性群 $GL(n,\mathbb K)$；行列式为 1 的子群记 $SL(n,\mathbb K)$；保持内积的变换构成正交群 $O(n)$ 或酉群 $U(n)$，其中行列式为 1 的子群记 $SO(n)$、$SU(n)$。这些都是线性变换群（group of linear transformations）。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">正多面体的旋转群</span><span class="thm-id">§3.53</span></div>
+    <div class="thm-body">
+      <p>正四面体有 4 个顶点、6 条棱、4 个面。它的旋转对称群记 $T$，阶为 12。计数：恒等 1 个；绕 4 个“顶点—对面中心”轴各转 $120^\circ,240^\circ$，共 $4\times2=8$ 个；绕 3 个对棱中点轴各转 $180^\circ$，共 3 个；总计 $1+8+3=12$。它与交错群 $A_4$ 同构。</p>
+      <p>正八面体/立方体的旋转群 $O$ 阶为 24，同构于 $S_4$；正十二面体/二十面体的旋转群 $I$ 阶为 60，同构于 $A_5$。这三个群加上循环群与二面体群，构成三维空间全部有限旋转群。它们的元素都是 $3\times3$ 正交矩阵，因此“正多面体的对称”就是“$SO(3)$ 的有限子群”。</p>
+    </div>
+  </div>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">子群、陪集与正规子群</span><span class="thm-id">§3.57–3.58</span></div>
+    <div class="thm-body">
+      <p>若 $H\subset G$ 在继承的乘法下也是群，称 $H$ 为子群。对 $g\in G$，集合 $gH=\{gh:h\in H\}$ 称为左陪集，$Hg$ 为右陪集。所有左陪集构成 $G$ 的一个划分，个数记为指数 $[G:H]$，且 $|G|=|H|\,[G:H]$（有限群）。</p>
+      <p>若对任意 $g\in G$ 有 $gH=Hg$（等价于 $gHg^{-1}=H$），称 $H$ 为正规子群。此时陪集集合 $G/H$ 在乘法 $(g_1H)(g_2H)=(g_1g_2)H$ 下构成商群（quotient group）。</p>
+    </div>
+  </div>
+
+  <p>正规性为什么重要？因为“先做 $g$、再做 $h$、再做 $g^{-1}$”是把 $h$ 换一个坐标系看；若结果仍在 $H$ 内，说明 $H$ 在整个群的作用下稳定，商群才有良定义的乘法。在矩阵群里，$SO(n)$ 是 $O(n)$ 的正规子群（指数 2），因为行列式同态 $\det:O(n)\to\{\pm1\}$ 的核是 $SO(n)$；而 $O(n)$ 在 $GL(n)$ 中不是正规子群，因为用一般可逆矩阵共轭一个正交矩阵，得到的通常不再是正交矩阵。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">同态基本定理</span><span class="thm-id">§3.60</span></div>
+    <div class="thm-body">
+      <p>设 $\varphi:G\to G'$ 是同态，即 $\varphi(ab)=\varphi(a)\varphi(b)$。则核 $\ker\varphi=\{g:\varphi(g)=e'\}$ 是 $G$ 的正规子群，像 $\operatorname{Im}\varphi$ 是 $G'$ 的子群，且</p>
+      <p>$$G/\ker\varphi\cong\operatorname{Im}\varphi.$$</p>
+      <p>若 $\varphi$ 还是双射，称为同构，记 $G\cong G'$；同构保持阶、交换性、子群结构等一切群论性质。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：把陪集映到像</summary>
+  <div class="proof-body"><p>先证核正规：若 $k\in\ker\varphi$，则 $\varphi(gkg^{-1})=\varphi(g)e'\varphi(g)^{-1}=e'$，故 $gkg^{-1}\in\ker\varphi$。再定义 $\bar\varphi:G/\ker\varphi\to\operatorname{Im}\varphi$，$\bar\varphi(gK)=\varphi(g)$。良定义：若 $g_1K=g_2K$，则 $g_2^{-1}g_1\in K$，故 $\varphi(g_1)=\varphi(g_2)$。它显然是同态、满射；核为 $K$，故为单射。于是是同构。</p></div>
+  </details>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">置换群与符号同态</span><span class="thm-id">§3.55</span></div>
+    <div class="thm-body">
+      <p>$n$ 个元素的全部置换构成对称群 $S_n$，阶为 $n!$。每个置换可唯一分解为不相交轮换的乘积；若分解成 $k$ 个轮换（含 1-轮换），符号为 $(-1)^{n-k}$。符号映射 $\operatorname{sgn}:S_n\to\{\pm1\}$ 是同态，核为交错群 $A_n$，阶为 $n!/2$。这正是第 1 章“排列的逆序数”在群论中的重述：行列式定义中的符号，就是一个群同态。</p>
+      <p>例如 $(123)(45)$ 在 $S_5$ 中分解为两个轮换，$n-k=5-2=3$，符号为 $-1$，是奇置换。任何置换都可写成对换的乘积，且对换个数的奇偶性不变——这就是“符号良定义”的群论证明。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§3.54, §3.62–3.64</span>Lorentz 群与球极投影</h3>
+  <p>狭义相对论中，保持 Minkowski 内积 $x_0^2-x_1^2-x_2^2-x_3^2$ 的线性变换构成 Lorentz 群 $O(1,3)$。它的矩阵 $L$ 满足 $L^{\mathsf T}\eta L=\eta$，$\eta=\operatorname{diag}(1,-1,-1,-1)$。其中保持时间方向的子群记 $O^{+}(1,3)$，行列式为 1 的记 $SO^{+}(1,3)$，称为 proper orthochronous Lorentz 群。它与 $SL(2,\mathbb C)$ 有二重覆盖关系，正如 $SU(2)$ 二重覆盖 $SO(3)$。</p>
+  <p>球极投影把单位球面（除去北极）映到平面：从北极 $N$ 出发的射线与平面交于 $P'$，就把 $P$ 映到 $P'$。它是共形的（保角），把球面上的圆映成平面上的圆或直线。用复坐标写，$SU(2)$ 在球面上的作用共轭到平面上的 Möbius 变换</p>
+  <p>$$z\mapsto\frac{\alpha z+\beta}{-\overline{\beta}z+\overline{\alpha}},\qquad |\alpha|^2+|\beta|^2=1.$$</p>
+  <p>这些变换把扩充复平面映到自身，构成 $PSL(2,\mathbb C)$ 的子群。球极投影因此是把“三维旋转”翻译成“复平面上的分式线性变换”的桥梁，也是下一章表示论与第 17 章连续群的技术入口。</p>
+  <p>一般线性群 $GL(n,\mathbb C)$ 与 Lorentz 群的结构差异，可以用“紧性”概括：$U(n)$、$SO(n)$ 是紧群（参数有界闭），$GL(n,\mathbb C)$、$Lorentz$ 群非紧（参数可趋于无穷）。紧群的表示论有完整的正交性与特征标理论（下一章），非紧群则出现连续谱与无穷维表示。这是原书从 §3 过渡到 §82 的主线。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>群</th><th>定义</th><th>维数 / 阶</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td>$GL(n,\mathbb K)$</td><td>可逆 $n\times n$ 矩阵</td><td>$n^2$（实）、$2n^2$（复）</td><td>一般线性群</td></tr>
+        <tr><td>$SL(n,\mathbb K)$</td><td>$\det=1$</td><td>$n^2-1$（实）、$2n^2-2$（复）</td><td>特殊线性群</td></tr>
+        <tr><td>$O(n)$</td><td>$Q^{\mathsf T}Q=I$</td><td>$n(n-1)/2$</td><td>正交群，紧</td></tr>
+        <tr><td>$SO(n)$</td><td>$O(n)$ 且 $\det=1$</td><td>$n(n-1)/2$</td><td>旋转群</td></tr>
+        <tr><td>$U(n)$</td><td>$U^{*}U=I$</td><td>$n^2$</td><td>酉群，紧</td></tr>
+        <tr><td>$SU(n)$</td><td>$U(n)$ 且 $\det=1$</td><td>$n^2-1$</td><td>$SU(2)\cong$ 单位四元数</td></tr>
+        <tr><td>$S_n$</td><td>$n$ 个元素的置换</td><td>$n!$</td><td>$A_n$ 指数 2</td></tr>
+        <tr><td>$O(1,3)$</td><td>保 Minkowski 内积</td><td>6</td><td>Lorentz 群，非紧</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">群、子群与“正规”</span></div>
+    <div class="thm-body">
+      <p>① 群的乘法不一定交换；矩阵群是最常见的非交换例子，$AB\ne BA$ 是常态。② 子群要求对乘法与逆都封闭，并且含单位元；仅“对乘法封闭”的半群不够。③ 正规子群不是“看起来正规”的子群，而是满足 $gHg^{-1}=H$ 的子群；$SO(n)\triangleleft O(n)$，但 $O(n)$ 不在 $GL(n)$ 中正规。④ 同构要求双射同态；同态只要求保持乘法，可以丢失信息，核衡量丢失的部分。⑤ “阶”有两个含义：群的阶是元素个数，元素的阶是使 $g^k=e$ 的最小正整数；不要混用。</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="ch16" class="chapter">
+<div class="wrap">
+  <div class="sec-label">Chapter 16 · §3.65–§3.81</div>
+  <h2><span class="num">16</span>线性表示：把抽象群变成矩阵</h2>
+  <p class="lede">群表示（representation）是一个同态 $D:G\to GL(n,\mathbb C)$：它让每个群元素对应一个矩阵，使“群乘法”变成“矩阵乘法”。</p>
+
+  <div class="chap-intro">
+    <p>原书 §3.65 定义表示与等价表示，§3.66 证明基本定理（可约表示的完全可约性），§3.67 处理 Abel 群的一维表示，§3.68–3.71 构造 $SU(2)$ 与旋转群的表示并证明旋转群的单性，§3.72–3.75 讨论直积与表示的张量积分解，§3.76–3.81 建立正交性与特征标理论。核心工具是 Schur 引理与“酉化”：紧群的任何有限维表示都等价于酉表示，因此完全可约。</p>
+    <span class="tag">Representations</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">同态 $D(g)$</span>
+    <span class="chip">等价表示</span>
+    <span class="chip">不可约</span>
+    <span class="chip">Schur 引理</span>
+    <span class="chip">特征标</span>
+    <span class="chip">张量积分解</span>
+  </div>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">表示、等价与可约</span><span class="thm-id">§3.65</span></div>
+    <div class="thm-body">
+      <p>群 $G$ 在 $n$ 维复空间上的线性表示是一个同态 $D:G\to GL(n,\mathbb C)$，即 $D(g_1g_2)=D(g_1)D(g_2)$、$D(e)=I$、$D(g^{-1})=D(g)^{-1}$。</p>
+      <p>两个表示 $D,D'$ 若存在同一个可逆矩阵 $S$ 使 $D'(g)=S^{-1}D(g)S$ 对所有 $g$ 成立，称等价（equivalent）。若存在非平凡子空间 $V_1$ 在所有 $D(g)$ 下不变，称表示可约（reducible）；若不存在，称不可约（irreducible）。若全空间能写成不变子空间的直和，称完全可约（completely reducible）。</p>
+    </div>
+  </div>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">酉化与完全可约性</span><span class="thm-id">§3.66</span></div>
+    <div class="thm-body">
+      <p>设 $G$ 是有限群或紧群。则任何有限维表示都等价于酉表示（每个 $D(g)$ 都是酉矩阵），从而完全可约：</p>
+      <p>$$D\cong D_1\oplus\cdots\oplus D_s,$$</p>
+      <p>其中每个 $D_i$ 不可约。做法是对任意内积取群平均</p>
+      <p>$$\langle x,y\rangle=\int_G(D(g)x,D(g)y)\,dg,$$</p>
+      <p>（有限群用 $\frac1{|G|}\sum_g$），这个新内积在群作用下不变，于是 $D(g)$ 关于它是酉的；再对不变子空间取正交补，正交补也不变，归纳即得直和分解。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：平均法 + 正交补</summary>
+  <div class="proof-body"><p>平均内积的不变性：$\langle D(h)x,D(h)y\rangle=\int_G(D(g)D(h)x,D(g)D(h)y)\,dg=\int_G(D(gh)x,D(gh)y)\,dg$。由 Haar 测度（或有限群求和）的左不变性，令 $g'=gh$，积分不变，故等于 $\langle x,y\rangle$。</p>
+    <p>若 $V_1$ 不变，则 $V_1^{\perp}$ 也不变：对 $x\in V_1^{\perp}$、$y\in V_1$，$\langle D(g)x,y\rangle=\langle x,D(g^{-1})y\rangle=0$，因为 $D(g^{-1})y\in V_1$。于是 $V=V_1\oplus V_1^{\perp}$，对维数归纳得到不可约分解。这里“紧”保证了平均可积；非紧群没有这种平均，表示未必完全可约。</p></div>
+  </details>
+
+  <div class="thm lem">
+    <div class="thm-head"><span class="thm-kind">引理</span><span class="thm-title">Schur 引理</span><span class="thm-id">§3.66</span></div>
+    <div class="thm-body">
+      <p>设 $D_1,D_2$ 是不可约表示，$A$ 满足 $AD_1(g)=D_2(g)A$ 对所有 $g$ 成立。则：</p>
+      <p>（1）若 $D_1,D_2$ 不等价，则 $A=0$；（2）若 $D_1=D_2$，则 $A=\lambda I$（$\lambda\in\mathbb C$）。（3）因此不可约表示的自同态代数是一维的；若表示酉，则 $A$ 是标量。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：核与像都是不变子空间</summary>
+  <div class="proof-body"><p>$\ker A$ 在 $D_1$ 下不变：$x\in\ker A\Rightarrow A D_1(g)x=D_2(g)Ax=0$。$\operatorname{Im}A$ 在 $D_2$ 下不变。由不可约性，$\ker A$ 只能是 $0$ 或全空间，$\operatorname{Im}A$ 也只能是 $0$ 或全空间。若 $A\ne0$，则 $A$ 可逆，给出等价，矛盾；故不等价时 $A=0$。若 $D_1=D_2$，$A$ 有特征值 $\lambda$，则 $A-\lambda I$ 仍是 intertwiner 且不可逆，由（1）只能为零，故 $A=\lambda I$。</p></div>
+  </details>
+
+  <p>Schur 引理是表示论的“秩–零化度”：它把“与所有群作用交换”的线性映射限制到极小。由此可推出正交关系。设 $D$ 是不可约酉表示，维数 $d$，矩阵元素 $D_{ij}(g)$，则</p>
+  <p>$$\int_G D_{ij}(g)\overline{D_{kl}(g)}\,dg=\frac1d\delta_{ik}\delta_{jl}.$$</p>
+  <p>也就是说，不同矩阵元素在 $L^2(G)$ 中正交，同一元素的内积为 $1/d$。这条“正交性”（orthogonality）是特征标理论的基础，也是 Fourier 分析在紧群上的推广。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">特征标</span><span class="thm-id">§3.77</span></div>
+    <div class="thm-body">
+      <p>表示 $D$ 的特征标（character）定义为 $\chi_D(g)=\operatorname{tr}D(g)$。它是类函数：共轭元素的特征标相同，$\chi(hgh^{-1})=\chi(g)$。等价表示有相同特征标；不可约特征标满足正交关系</p>
+      <p>$$\frac1{|G|}\sum_{g\in G}\chi_i(g)\overline{\chi_j(g)}=\delta_{ij}.$$</p>
+      <p>任意表示分解为不可约表示的重数 $m_i$，由 $m_i=\frac1{|G|}\sum_g\chi(g)\overline{\chi_i(g)}$ 给出；$\sum_i m_i^2$ 等于表示在群代数上分解的块数。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">$S_3$ 的三个不可约表示</span><span class="thm-id">§3.79</span></div>
+    <div class="thm-body">
+      <p>$S_3$ 有 6 个元素、3 个共轭类：$\{e\}$、三个对换、两个三轮换。因此恰有 3 个不可约表示，维数 $d_i$ 满足 $\sum d_i^2=6$，只能是 $1,1,2$。</p>
+      <p>（1）平凡表示 $D(g)=1$，特征标 $(1,1,1)$。（2）符号表示 $D(g)=\operatorname{sgn}(g)$，特征标 $(1,-1,1)$。（3）标准二维表示：让 $S_3$ 置换平面上的三个向量 $e_1,e_2,e_3$（满足 $e_1+e_2+e_3=0$），特征标为 $(2,0,-1)$。验证正交：$\langle\chi_1,\chi_2\rangle=\frac16(1\cdot1+3\cdot1\cdot(-1)+2\cdot1\cdot1)=0$，$\langle\chi_3,\chi_3\rangle=\frac16(4+0+2)=1$。</p>
+      <p>正则表示（regular representation）分解为 $\bigoplus_i d_iD_i$，维数 $6=1+1+2\cdot2$，与 $\sum d_i^2=|G|$ 一致。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">§3.68–3.75, §3.80–3.81</span>旋转群与 $SU(2)$ 的表示</h3>
+  <p>$SU(2)$ 的不可约表示由最高权 $j=0,\frac12,1,\frac32,\dots$ 标记，维数 $2j+1$。构造方法是取两个复变量 $z_1,z_2$ 的齐次多项式空间：次数 $2j$ 的多项式张成 $2j+1$ 维空间，$SU(2)$ 通过</p>
+  <p>$$z\mapsto Uz,\qquad U\in SU(2)$$</p>
+  <p>作用在多项式上，$f(z)\mapsto f(U^{-1}z)$。这个表示不可约，记 $D_j$。$j=0$ 是平凡表示，$j=\frac12$ 是基本表示（旋量），$j=1$ 是三维向量表示，对应 $SO(3)$ 的旋转。</p>
+  <p>张量积分解（Clebsch–Gordan 系列）为</p>
+  <p>$$D_{j_1}\otimes D_{j_2}\cong D_{|j_1-j_2|}\oplus D_{|j_1-j_2|+1}\oplus\cdots\oplus D_{j_1+j_2}.$$</p>
+  <p>例如 $D_{1/2}\otimes D_{1/2}=D_0\oplus D_1$，这就是“两个自旋 1/2 合成自旋 0 或 1”。在旋转群情形，每个 $D_j$ 都是 $SO(3)$ 的表示（$j$ 为整数时），而 $j$ 为半整数时只是 $SU(2)$ 的表示，转 $2\pi$ 会变成 $-1$，这就是旋量的双值性。</p>
+  <p>Laplace 方程与球谐函数是这条理论的解析版本：$SO(3)$ 作用在 $\mathbb R^3$ 上，保持 $\Delta$，因此解空间按 $D_j$ 分解，球谐函数 $Y_{jm}$ 就是 $D_j$ 的基。原书 §3.71 用这一点证明旋转群的单性（simplicity）：$SO(3)$ 没有非平凡正规子群，除了 $\{\pm I\}$ 导致的二重覆盖。</p>
+  <p>最后，直积群 $G_1\times G_2$ 的不可约表示是 $D_i\otimes D_j'$，特征标为乘积 $\chi_i(g_1)\chi_j(g_2)$。这条“张量积 = 直积群的表示”把多粒子系统的角动量合成、晶体的点群分类与量子纠缠的分解统一在同一套记号下。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>概念</th><th>定义 / 公式</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>表示</td><td>$D:G\to GL(n,\mathbb C)$ 同态</td><td>把群变成矩阵</td></tr>
+        <tr><td>等价</td><td>$D'=S^{-1}DS$</td><td>同一表示的不同基</td></tr>
+        <tr><td>不可约</td><td>无真不变子空间</td><td>表示的基本块</td></tr>
+        <tr><td>完全可约</td><td>$D=\oplus D_i$</td><td>紧群/有限群成立</td></tr>
+        <tr><td>Schur</td><td>intertwiner 为 0 或标量</td><td>正交性、唯一性</td></tr>
+        <tr><td>特征标</td><td>$\chi=\operatorname{tr}D$</td><td>类函数、正交</td></tr>
+        <tr><td>正则表示</td><td>$\oplus d_iD_i$</td><td>$\sum d_i^2=|G|$</td></tr>
+        <tr><td>张量积</td><td>$D_{j_1}\otimes D_{j_2}=\oplus D_j$</td><td>角动量合成</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">表示论的四条边界</span></div>
+    <div class="thm-body">
+      <p>① 可约不等于完全可约：非紧群或模表示可能出现“不能拆开的嵌套”，需要 Ext 群描述。② 特征标相同不代表表示等价（在非半单情形），但在有限群/紧群的完全可约范畴内，特征标完全决定表示。③ 半整数 $j$ 不是 $SO(3)$ 的表示，而是 $SU(2)$ 的表示；说“旋转 $2\pi$ 回到原状”对旋量不成立。④ 张量积的分解系数（Clebsch–Gordan）依赖基的选取，但重数由最高权决定，不要把手算的系数当成唯一。⑤ “维数平方和等于群阶”只对有限群的正则表示成立，不能套到无限群。</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="ch17" class="chapter">
+<div class="wrap">
+  <div class="sec-label">Chapter 17 · §3.82–§3.90</div>
+  <h2><span class="num">17</span>连续群：结构常数与无穷小变换</h2>
+  <p class="lede">连续群（continuous group）的元素由连续参数标记；在单位元附近展开，群乘法变成 Lie 代数（Lie algebra）的换位子，结构常数（structural constants）刻画它的局部形状。</p>
+
+  <div class="chap-intro">
+    <p>原书 §3.82 定义连续群与结构常数，§3.83 引入无穷小变换（infinitesimal transformation），§3.84–3.86 用这套工具研究旋转群与 Lorentz 群的表示，§3.87 给出辅助公式，§3.88 讨论“给定结构常数能否构造群”，§3.89–3.90 定义群上的积分并证明正交关系。这是把“有限群的表示论”推广到“Lie 群的表示论”的关键一步。</p>
+    <span class="tag">Continuous Groups</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">连续参数</span>
+    <span class="chip">结构常数</span>
+    <span class="chip">无穷小生成元</span>
+    <span class="chip">换位子</span>
+    <span class="chip">Haar 积分</span>
+    <span class="chip">正交关系</span>
+  </div>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">连续群与结构常数</span><span class="thm-id">§3.82</span></div>
+    <div class="thm-body">
+      <p>设群 $G$ 的元素由 $r$ 个实参数 $a_1,\dots,a_r$ 标记，$g(a)$ 对参数连续可微，且群乘法由参数的光滑函数给出：$g(a)g(b)=g(f(a,b))$。称 $G$ 为 $r$ 维连续群（Lie 群）。取单位元 $e=g(0)$，在单位元附近展开</p>
+      <p>$$g(a)=e+\sum_{k=1}^{r}a_kX_k+O(|a|^2),$$</p>
+      <p>其中 $X_k=\left.\frac{\partial g}{\partial a_k}\right|_{a=0}$ 称为无穷小生成元。它们张成 Lie 代数 $\mathfrak g$，满足换位关系</p>
+      <p>$$[X_i,X_j]=\sum_{k=1}^{r}c_{ij}^{k}X_k.$$</p>
+      <p>常数 $c_{ij}^{k}$ 称为结构常数，满足反对称 $c_{ij}^k=-c_{ji}^k$ 与 Jacobi 恒等式。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">$SO(3)$ 的结构常数</span><span class="thm-id">§3.84</span></div>
+    <div class="thm-body">
+      <p>三维旋转群 $SO(3)$ 有三个参数（Euler 角），三个无穷小生成元是</p>
+      <p>$$J_1=\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;-1\\0&amp;1&amp;0\end{pmatrix},\quad
+      J_2=\begin{pmatrix}0&amp;0&amp;1\\0&amp;0&amp;0\\-1&amp;0&amp;0\end{pmatrix},\quad
+      J_3=\begin{pmatrix}0&amp;-1&amp;0\\1&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}.$$</p>
+      <p>直接计算得</p>
+      <p>$$[J_1,J_2]=J_3,\qquad [J_2,J_3]=J_1,\qquad [J_3,J_1]=J_2,$$</p>
+      <p>即 $c_{ij}^k=\varepsilon_{ijk}$（Levi-Civita 符号）。这三个矩阵是“绕坐标轴转无穷小角度”的生成元；有限旋转由指数映射 $R(n,\theta)=e^{\theta(n_1J_1+n_2J_2+n_3J_3)}$ 给出，正是第 9 章的 Rodrigues 公式。</p>
+    </div>
+  </div>
+
+  <details class="proof"><summary>证明思路：对参数求导</summary>
+  <div class="proof-body"><p>把 $g(a)g(b)g(a)^{-1}g(b)^{-1}$ 在 $a=b=0$ 处展开到二阶。一阶项相消，二阶项正是 $[X_i,X_j]$ 的系数；它必须仍在切空间内（因为左边是群元素），故可写成 $\sum c_{ij}^kX_k$。反对称来自交换 $a,b$ 会取逆；Jacobi 恒等式来自“三重换位子的结合律”或对 $g(a)g(b)g(c)$ 的三阶展开。结构常数因此是群乘法的二阶局部不变量。</p></div>
+  </details>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">无穷小变换与表示</span><span class="thm-id">§3.83, §3.85</span></div>
+    <div class="thm-body">
+      <p>设 $D(g)$ 是 $G$ 的表示。在单位元附近 $D(g(a))=I+\sum a_k\,\mathrm dD(X_k)+O(|a|^2)$，其中 $\mathrm dD$ 是 Lie 代数同态：</p>
+      <p>$$\mathrm dD([X_i,X_j])=[\mathrm dD(X_i),\mathrm dD(X_j)].$$</p>
+      <p>反之，单连通 Lie 群的每个 Lie 代数同态都唯一提升为群表示。因此“找群表示”可以降级为“找矩阵 $X_k$ 使它们满足同样的换位关系”。</p>
+    </div>
+  </div>
+
+  <p>这条定理把表示论变成了线性代数：对 $SO(3)$，只需找三个矩阵 $J_1,J_2,J_3$ 满足 $[J_i,J_j]=\varepsilon_{ijk}J_k$。取</p>
+  <p>$$J_3=\operatorname{diag}(m,-m),\qquad J_\pm=J_1\pm iJ_2,$$</p>
+  <p>则 $[J_3,J_\pm]=\pm J_\pm$、$[J_+,J_-]=2J_3$。在 $2j+1$ 维空间中，$J_3$ 的特征值为 $-j,-j+1,\dots,j$，$J_\pm$ 是升降算符。这正是量子力学中的角动量代数；$j$ 只能取非负整数或半整数，半整数对应 $SU(2)$ 的旋量表示。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">群上的积分与正交关系</span><span class="thm-id">§3.89–3.90</span></div>
+    <div class="thm-body">
+      <p>紧 Lie 群上存在唯一的双不变 Haar 测度 $dg$（归一化 $\int_Gdg=1$）。不可约酉表示 $D^i$ 的矩阵元素满足</p>
+      <p>$$\int_G D^i_{ab}(g)\overline{D^j_{cd}(g)}\,dg=\frac1{d_i}\delta_{ij}\delta_{ac}\delta_{bd},$$</p>
+      <p>特征标满足 $\int_G\chi_i(g)\overline{\chi_j(g)}\,dg=\delta_{ij}$。因此 $L^2(G)$ 有正交基由矩阵元素组成（Peter–Weyl 定理），任意 $f\in L^2(G)$ 可展开为</p>
+      <p>$$f(g)=\sum_i d_i\sum_{a,b}c^i_{ab}D^i_{ab}(g),$$</p>
+      <p>这就是紧群上的 Fourier 展开；$G=S^1$ 时退化为普通 Fourier 级数，$G=SU(2)$ 时退化为球谐函数的非交换版本。</p>
+    </div>
+  </div>
+
+  <p>原书 §3.88 还讨论反问题：给定结构常数 $c_{ij}^k$，何时存在一个 Lie 群以它们为结构常数？局部条件是 Jacobi 恒等式；整体存在性需要单连通性，由 Lie 第三定理保证。这条定理说明“Lie 代数局部决定 Lie 群”，但整体可能差一个离散中心，例如 $SU(2)$ 与 $SO(3)$ 有相同的 Lie 代数，却相差 $\mathbb Z_2$。</p>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>连续群像一台可微调的机器：每个旋钮对应一个生成元。结构常数告诉你“先拧 A 再拧 B”与“先拧 B 再拧 A”差多少，这个差在无穷小层面就是换位子。有限群没有“无穷小”，所以只能用特征标与共轭类；Lie 群多了微分结构，于是可以用线性代数研究换位子。Haar 积分则是“在群上求平均”，它把有限群的 $\frac1{|G|}\sum_g$ 推广到连续情形，使正交性、特征标、Fourier 展开全部保留。</p>
+  </div>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>对象</th><th>定义 / 公式</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td>连续群</td><td>$g(a)$，$r$ 个参数</td><td>Lie 群</td></tr>
+        <tr><td>生成元</td><td>$X_k=\partial_{a_k}g|_{0}$</td><td>切空间基</td></tr>
+        <tr><td>结构常数</td><td>$[X_i,X_j]=\sum c_{ij}^kX_k$</td><td>反对称 + Jacobi</td></tr>
+        <tr><td>$SO(3)$</td><td>$[J_i,J_j]=\varepsilon_{ijk}J_k$</td><td>$J_k$ 为反对称矩阵</td></tr>
+        <tr><td>指数映射</td><td>$g=\exp(\sum a_kX_k)$</td><td>局部同胚</td></tr>
+        <tr><td>Haar 测度</td><td>双不变，$\int_Gdg=1$</td><td>紧群存在唯一</td></tr>
+        <tr><td>正交关系</td><td>$\int D^i_{ab}\overline{D^j_{cd}}=\frac1{d_i}\delta_{ij}\delta_{ac}\delta_{bd}$</td><td>Peter–Weyl</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">局部与整体、结构与表示</span></div>
+    <div class="thm-body">
+      <p>① Lie 代数只决定局部结构；$SU(2)$ 与 $SO(3)$ 局部同构但整体不同，差一个 $\mathbb Z_2$。② 结构常数依赖生成元的选取，换一组基会做线性变换；不变量是换位子的维数与秩等。③ 无穷小变换不是群元素，而是切向量；$e^{tX}$ 才是群元素，且只在 $t$ 足够小时与群元素一一对应。④ 非紧群没有归一化 Haar 测度（总测度无穷），正交性需要重新表述为“矩阵元素在 $L^2$ 中不一定平方可积”。⑤ 半单 Lie 代数的表示由最高权分类，但“最高权”是相对于一个 Cartan 子代数与正根系而言的，换基会改变标签。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="summary" class="chapter">
-  <div class="wrap">
-    <div class="sec-label">Formula Sheet</div>
-    <h2><span class="num">F</span>一页纸公式表：从行列式到矩阵函数</h2>
-    <p class="lede">把整本线性代数压成几张表：算之前先问“对象是什么、允许什么变换、哪个量不变”，大多数错误在动笔前就能避免。</p>
+<div class="wrap">
+  <div class="sec-label">Appendix · Formula Sheet &amp; Glossary</div>
+  <h2><span class="num">F</span>一页纸公式表、术语表与学习路线</h2>
+  <p class="lede">把整本书压成几张表：算之前先问“对象是什么、允许什么变换、哪个量不变”，大多数错误在动笔前就能避免。</p>
 
-    <div class="chap-intro">
-      <p>下面按“计算—结构—谱—应用”四层组织。第一层是行列式、逆与方程组；第二层是基、秩、相似与合同；第三层是特征值、若尔当形、二次型与 Hermite 理论；第四层是矩阵函数、振动与微分方程。建议先遮住右列，用左列自测，再回到对应章节补细节。</p>
-      <span class="tag">Quick Reference</span>
-    </div>
+  <div class="chap-intro">
+    <p>下面按“计算—结构—谱—应用”四层组织。第一层是行列式、逆与方程组；第二层是基、秩、相似与合同；第三层是特征值、若尔当形、二次型与 Hermite 理论；第四层是矩阵函数、振动、微分方程与群表示。建议先遮住右列，用左列自测，再回到对应章节补细节。最后的术语表按英文字母顺序排列，括号内是首次出现的中文译名。</p>
+    <span class="tag">Quick Reference</span>
+  </div>
 
-    <h3><span class="sn">A</span>行列式、逆与线性方程组</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>对象</th><th>公式 / 判据</th><th>备注</th></tr></thead>
-        <tbody>
-          <tr><td>行列式定义</td><td>$\det A=\sum_{\sigma}\operatorname{sgn}(\sigma)\prod_i a_{i\sigma(i)}$</td><td>$n!$ 项，偶正奇负</td></tr>
-          <tr><td>乘积</td><td>$\det(AB)=\det A\det B$</td><td>相似不变量</td></tr>
-          <tr><td>逆</td><td>$A^{-1}=\operatorname{adj}A/\det A$</td><td>$\det A\ne0$</td></tr>
-          <tr><td>Cramer</td><td>$x_k=D_k/D$</td><td>仅方阵且 $D\ne0$</td></tr>
-          <tr><td>相容性</td><td>$\operatorname{rank}A=\operatorname{rank}(A\mid b)$</td><td>通解维数 $n-r$</td></tr>
-          <tr><td>齐次非零解</td><td>$r&lt;n$；方阵时 $\det A=0$</td><td>基础解系 $n-r$ 个</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <h3><span class="sn">A</span>行列式、逆与线性方程组</h3>
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>对象</th><th>公式 / 判据</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td>行列式</td><td>$\det A=\sum_\sigma\operatorname{sgn}(\sigma)\prod_i a_{i\sigma(i)}$</td><td>$n!$ 项，偶正奇负</td></tr>
+        <tr><td>性质</td><td>换行变号；倍加不变；$\det A^{\mathsf T}=\det A$</td><td>对单行线性</td></tr>
+        <tr><td>展开</td><td>$\det A=\sum_k(-1)^{i+k}a_{ik}M_{ik}$</td><td>沿任意行/列</td></tr>
+        <tr><td>乘积</td><td>$\det(AB)=\det A\det B$</td><td>可逆性判据</td></tr>
+        <tr><td>逆</td><td>$A^{-1}=\operatorname{adj}A/\det A$</td><td>$A\operatorname{adj}A=(\det A)I$</td></tr>
+        <tr><td>Cramer</td><td>$x_k=D_k/D$</td><td>$D\ne0$ 时唯一解</td></tr>
+        <tr><td>相容</td><td>$\operatorname{rank}A=\operatorname{rank}(A\mid b)$</td><td>否则无解</td></tr>
+        <tr><td>通解</td><td>$x=x_0+\ker A$，$\dim\ker A=n-r$</td><td>特解 + 基础解系</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-    <h3><span class="sn">B</span>矩阵、基与秩</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>概念</th><th>公式</th><th>易错点</th></tr></thead>
-        <tbody>
-          <tr><td>转置 / 共轭转置</td><td>$(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$，$(AB)^{*}=B^{*}A^{*}$</td><td>顺序反转</td></tr>
-          <tr><td>逆的乘积</td><td>$(AB)^{-1}=B^{-1}A^{-1}$</td><td>要求都可逆</td></tr>
-          <tr><td>秩不等式</td><td>$\operatorname{rank}A+\operatorname{rank}B-n\le\operatorname{rank}(AB)\le\min$</td><td>乘法不增秩</td></tr>
-          <tr><td>换基</td><td>$A'=C^{-1}AC$</td><td>相似</td></tr>
-          <tr><td>二次型换变量</td><td>$A'=C^{\mathsf T}AC$</td><td>合同</td></tr>
-          <tr><td>内积与范数</td><td>$(x,y)=\sum x_k\overline{y_k}$，$\|x\|^2=(x,x)$</td><td>复共轭位置</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <h3><span class="sn">B</span>矩阵、秩与线性空间</h3>
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>概念</th><th>公式 / 判据</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td>乘法</td><td>$c_{ik}=\sum_j a_{ij}b_{jk}$</td><td>内维相等</td></tr>
+        <tr><td>转置</td><td>$(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$</td><td>反序</td></tr>
+        <tr><td>秩</td><td>最大非零子式阶 $=$ 列空间维数 $=$ 像维数</td><td>行秩 $=$ 列秩</td></tr>
+        <tr><td>Sylvester</td><td>$\operatorname{rank}A+\operatorname{rank}B-n\le\operatorname{rank}(AB)$</td><td>下界</td></tr>
+        <tr><td>基</td><td>极大线性无关组</td><td>维数良定义</td></tr>
+        <tr><td>相似</td><td>$A'=C^{-1}AC$</td><td>保特征值、迹、行列式</td></tr>
+        <tr><td>合同</td><td>$A'=C^{\mathsf T}AC$</td><td>保秩、惯性指数</td></tr>
+        <tr><td>正交化</td><td>$v_k=a_k-\sum_j\frac{(a_k,v_j)}{(v_j,v_j)}v_j$</td><td>QR 分解</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-    <h3><span class="sn">C</span>谱：特征值、若尔当形与二次型</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>主题</th><th>核心公式</th><th>结论</th></tr></thead>
-        <tbody>
-          <tr><td>特征方程</td><td>$\det(A-\lambda I)=0$</td><td>$\sum\lambda_i=\operatorname{tr}A$，$\prod\lambda_i=\det A$</td></tr>
-          <tr><td>可对角化</td><td>各几何重数之和 $=n$</td><td>等价于最小多项式无重根</td></tr>
-          <tr><td>若尔当形</td><td>$U^{-1}AU=\operatorname{diag}(J_{e_i}(\lambda_i))$</td><td>初等因子定块大小</td></tr>
-          <tr><td>正交对角化</td><td>$Q^{\mathsf T}AQ=\operatorname{diag}(\lambda_i)$</td><td>$A$ 实对称</td></tr>
-          <tr><td>惯性定律</td><td>$q\sim z_1^2+\cdots+z_p^2-z_{p+1}^2-\cdots-z_{p+r}^2$</td><td>$(p,q)$ 唯一</td></tr>
-          <tr><td>正定判据</td><td>$\Delta_k&gt;0$ 或 $\lambda_k&gt;0$</td><td>顺序主子式</td></tr>
-          <tr><td>Jacobi 公式</td><td>$q=\sum_k(\Delta_k/\Delta_{k-1})y_k^2$</td><td>要求 $\Delta_k\ne0$</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <h3><span class="sn">C</span>谱、二次型与 Hermite 理论</h3>
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>对象</th><th>公式 / 判据</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td>特征方程</td><td>$\det(A-\lambda I)=0$</td><td>$n$ 个复根计重数</td></tr>
+        <tr><td>不变量</td><td>$\operatorname{tr}A=\sum\lambda_i$，$\det A=\prod\lambda_i$</td><td>相似不变量</td></tr>
+        <tr><td>可对角化</td><td>几何重数 $=$ 代数重数</td><td>最小多项式无重根</td></tr>
+        <tr><td>若尔当</td><td>$U^{-1}AU=\operatorname{diag}(J_{e}(\mu))$</td><td>块大小由初等因子定</td></tr>
+        <tr><td>二次型</td><td>$q=x^{\mathsf T}Ax$，$A^{\mathsf T}=A$</td><td>交叉项系数减半</td></tr>
+        <tr><td>惯性</td><td>$q\sim z_1^2+\cdots+z_p^2-z_{p+1}^2-\cdots$</td><td>$(p,q)$ 唯一</td></tr>
+        <tr><td>正定</td><td>$\Delta_k&gt;0$ 全部 $k$</td><td>或特征值全正</td></tr>
+        <tr><td>Hermite</td><td>$A^{*}=A$</td><td>特征值实，可酉对角化</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-    <h3><span class="sn">D</span>Hermite 理论、矩阵函数与应用</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>对象</th><th>公式 / 判据</th><th>用途</th></tr></thead>
-        <tbody>
-          <tr><td>Hermite</td><td>$A^{*}=A$，$A=U\Lambda U^{*}$</td><td>特征值实、正交特征向量</td></tr>
-          <tr><td>酉矩阵</td><td>$U^{*}U=I$，$|\lambda|=1$</td><td>保内积</td></tr>
-          <tr><td>投影</td><td>$P^2=P=P^{*}$，$A=\sum\lambda_kP_k$</td><td>谱分解</td></tr>
-          <tr><td>矩阵函数</td><td>$f(A)=V\operatorname{diag}(f(\lambda_i))V^{-1}$</td><td>可对角化时</td></tr>
-          <tr><td>若尔当块</td><td>$f(J_e(\mu))$ 含 $f^{(k)}(\mu)/k!$</td><td>重根要导数</td></tr>
-          <tr><td>矩阵指数</td><td>$\dot x=Ax\Rightarrow x=e^{At}x_0$</td><td>线性系统</td></tr>
-          <tr><td>小振动</td><td>$\det(B-\omega^2A)=0$</td><td>固有频率与振型</td></tr>
-          <tr><td>稳定性</td><td>$\max\operatorname{Re}\lambda_i&lt;0$</td><td>渐近稳定</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <h3><span class="sn">D</span>矩阵函数、应用与群</h3>
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>对象</th><th>公式 / 判据</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td>谱映射</td><td>$f(U^{-1}AU)=U^{-1}f(A)U$</td><td>矩阵函数</td></tr>
+        <tr><td>若尔当块</td><td>$f(J_e(\mu))$ 含 $f^{(k)}(\mu)$</td><td>导数项</td></tr>
+        <tr><td>矩阵指数</td><td>$\det e^{A}=e^{\operatorname{tr}A}$</td><td>恒可逆</td></tr>
+        <tr><td>线性 ODE</td><td>$x(t)=e^{At}x_0$</td><td>稳定性看实部</td></tr>
+        <tr><td>小振动</td><td>$\det(B-\omega^2A)=0$</td><td>$\omega^2\ge0$</td></tr>
+        <tr><td>隐函数</td><td>$J=\det(\partial F/\partial y)\ne0$</td><td>局部可解</td></tr>
+        <tr><td>群同态</td><td>$G/\ker\varphi\cong\operatorname{Im}\varphi$</td><td>正规子群</td></tr>
+        <tr><td>表示</td><td>$D:G\to GL(n,\mathbb C)$</td><td>特征标 $\operatorname{tr}D$</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-    <div class="intuition">
-      <div class="ih">最后一条主线</div>
-      <p>行列式回答“可不可逆”，秩回答“有多少解”，特征值回答“长期行为是什么”，二次型回答“能量是否为正”，若尔当形回答“不能对角化时缺了什么”，矩阵函数回答“如何把谱变成演化”。把这六个问题串起来，线性代数就不再是一堆计算，而是一套描述线性世界的语言。</p>
-    </div>
-
-    <div class="thm rem">
-      <div class="thm-head"><span class="thm-kind">学习路线</span><span class="thm-title">三遍读法</span></div>
-      <div class="thm-body">
-        <p>第一遍只抓“对象—不变量—标准形”：行列式与秩、相似与合同、特征值与惯性指数。第二遍补计算：高斯消元、Gram–Schmidt、配方法、若尔当块与矩阵指数各做两个手算例子。第三遍回到应用：用小振动理解广义特征值，用 $\dot x=Ax$ 理解稳定性，用最小二乘理解正交投影。每一遍都先合上书复述主线，再查表补细节；能独立复述“为什么”比记住“是什么”更重要。</p>
-      </div>
-    </div>
-
-    <div class="thm warn">
-      <div class="thm-head"><span class="thm-kind">总复习提醒</span><span class="thm-title">动笔前先确认三件事</span></div>
-      <div class="thm-body">
-        <p>① 对象是方阵还是一般矩阵？方阵才有行列式与特征值，一般矩阵只有秩与奇异值。② 变换是相似还是合同？相似保持谱，合同保持惯性；用错变换会得到错误的“不变量”。③ 数域是实还是复？实对称与 Hermite、正交与酉、二次型与 Hermite 型，结论形式相似但共轭与转置的细节不同。</p>
-      </div>
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">学习路线</span><span class="thm-title">四周通关建议</span></div>
+    <div class="thm-body">
+      <p><b>第一周（计算）</b>：§1 行列式 + §2 方程组。目标是能不看公式手算 $4\times4$ 行列式、用消元求通解、用 Cramer 法则解 $3\times3$。每天 3 题，重点练“先消元再展开”。</p>
+      <p><b>第二周（结构）</b>：§3 线性空间 + §4 矩阵 + §5 线性变换。目标是能证明“基的个数不变”、能算换基矩阵、能判断两个矩阵是否相似。把“秩–零化度”“行秩=列秩”各写一遍证明。</p>
+      <p><b>第三周（谱）</b>：§6–§8 特征值、若尔当、二次型。目标是给定 $3\times3$ 矩阵能写出若尔当形、给定二次型能配方并读出符号差、能用 Sylvester 判据判断正定。</p>
+      <p><b>第四周（应用与推广）</b>：§9–§13 欧氏空间、Hermite、矩阵函数、无限维；§14–§17 应用、群、表示、连续群。目标是能解小振动、能写 $e^{At}$、能说出 $SU(2)\to SO(3)$ 的二重覆盖。</p>
     </div>
   </div>
+
+  <h3><span class="sn">E</span>英汉术语表</h3>
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>English</th><th>中文</th><th>出现</th></tr></thead>
+      <tbody>
+        <tr><td>determinant</td><td>行列式</td><td>§1</td></tr>
+        <tr><td>permutation / transposition</td><td>排列 / 对换</td><td>§1</td></tr>
+        <tr><td>inversion</td><td>逆序</td><td>§1</td></tr>
+        <tr><td>minor / cofactor</td><td>余子式 / 代数余子式</td><td>§1</td></tr>
+        <tr><td>Laplace expansion</td><td>Laplace 展开</td><td>§1</td></tr>
+        <tr><td>Vandermonde determinant</td><td>Vandermonde 行列式</td><td>§1</td></tr>
+        <tr><td>linear system</td><td>线性方程组</td><td>§2</td></tr>
+        <tr><td>Cramer’s rule</td><td>克莱姆法则</td><td>§2</td></tr>
+        <tr><td>homogeneous / non-homogeneous</td><td>齐次 / 非齐次</td><td>§2</td></tr>
+        <tr><td>coefficient matrix</td><td>系数矩阵</td><td>§2</td></tr>
+        <tr><td>augmented matrix</td><td>增广矩阵</td><td>§2</td></tr>
+        <tr><td>fundamental system of solutions</td><td>基础解系</td><td>§2</td></tr>
+        <tr><td>linear form</td><td>线性形式</td><td>§2</td></tr>
+        <tr><td>linear space</td><td>线性空间</td><td>§2</td></tr>
+        <tr><td>basis / dimension</td><td>基 / 维数</td><td>§2</td></tr>
+        <tr><td>linearly independent</td><td>线性无关</td><td>§2</td></tr>
+        <tr><td>scalar product / inner product</td><td>内积</td><td>§2</td></tr>
+        <tr><td>norm</td><td>范数</td><td>§4</td></tr>
+        <tr><td>Gram determinant</td><td>Gram 行列式</td><td>§2</td></tr>
+        <tr><td>Hadamard’s inequality</td><td>Hadamard 不等式</td><td>§2</td></tr>
+        <tr><td>matrix</td><td>矩阵</td><td>§4</td></tr>
+        <tr><td>rank</td><td>秩</td><td>§4</td></tr>
+        <tr><td>null space / kernel</td><td>零空间 / 核</td><td>§4</td></tr>
+        <tr><td>trace</td><td>迹</td><td>§4</td></tr>
+        <tr><td>transpose</td><td>转置</td><td>§4</td></tr>
+        <tr><td>inverse / adjugate</td><td>逆 / 伴随</td><td>§4</td></tr>
+        <tr><td>block matrix</td><td>分块矩阵</td><td>§4</td></tr>
+        <tr><td>elementary transformation</td><td>初等变换</td><td>§4</td></tr>
+        <tr><td>normal form</td><td>标准形</td><td>§4</td></tr>
+        <tr><td>linear transformation</td><td>线性变换</td><td>§3</td></tr>
+        <tr><td>linear operator</td><td>线性算子</td><td>§3</td></tr>
+        <tr><td>similarity</td><td>相似</td><td>§3</td></tr>
+        <tr><td>covariant / contravariant</td><td>协变 / 逆变</td><td>§3</td></tr>
+        <tr><td>affine vector</td><td>仿射向量</td><td>§3</td></tr>
+        <tr><td>tensor</td><td>张量</td><td>§3</td></tr>
+        <tr><td>stress / strain</td><td>应力 / 应变</td><td>§3</td></tr>
+        <tr><td>deformation</td><td>形变</td><td>§3</td></tr>
+        <tr><td>gradient</td><td>梯度</td><td>§3</td></tr>
+        <tr><td>orthogonal matrix</td><td>正交矩阵</td><td>§4</td></tr>
+        <tr><td>unitary matrix</td><td>酉矩阵</td><td>§5</td></tr>
+        <tr><td>eigenvalue / eigenvector</td><td>特征值 / 特征向量</td><td>§4</td></tr>
+        <tr><td>characteristic polynomial</td><td>特征多项式</td><td>§4</td></tr>
+        <tr><td>secular equation</td><td>特征方程（久期方程）</td><td>§4</td></tr>
+        <tr><td>algebraic / geometric multiplicity</td><td>代数 / 几何重数</td><td>§4</td></tr>
+        <tr><td>diagonalizable</td><td>可对角化</td><td>§4</td></tr>
+        <tr><td>Jordan form</td><td>若尔当标准形</td><td>§4</td></tr>
+        <tr><td>elementary divisor</td><td>初等因子</td><td>§4</td></tr>
+        <tr><td>minimal polynomial</td><td>最小多项式</td><td>§4</td></tr>
+        <tr><td>nilpotent</td><td>幂零</td><td>§4</td></tr>
+        <tr><td>bilinear form</td><td>双线性型</td><td>§4</td></tr>
+        <tr><td>quadratic form</td><td>二次型</td><td>§4</td></tr>
+        <tr><td>congruence</td><td>合同</td><td>§4</td></tr>
+        <tr><td>index of inertia</td><td>惯性指数</td><td>§4</td></tr>
+        <tr><td>signature</td><td>符号差</td><td>§4</td></tr>
+        <tr><td>discriminant</td><td>判别式</td><td>§4</td></tr>
+        <tr><td>positive definite</td><td>正定</td><td>§4</td></tr>
+        <tr><td>Jacobi’s formula</td><td>Jacobi 公式</td><td>§4</td></tr>
+        <tr><td>simultaneous reduction</td><td>同时化简</td><td>§4</td></tr>
+        <tr><td>Rayleigh quotient</td><td>Rayleigh 商</td><td>§4</td></tr>
+        <tr><td>Euclidean space</td><td>欧几里得空间</td><td>§4</td></tr>
+        <tr><td>orthogonalization</td><td>正交化</td><td>§4</td></tr>
+        <tr><td>orthonormal basis</td><td>标准正交基</td><td>§4</td></tr>
+        <tr><td>projection</td><td>投影</td><td>§5</td></tr>
+        <tr><td>resolution of identity</td><td>单位分解</td><td>§5</td></tr>
+        <tr><td>Hermitian matrix</td><td>Hermite 矩阵</td><td>§5</td></tr>
+        <tr><td>normal matrix</td><td>正规矩阵</td><td>§5</td></tr>
+        <tr><td>spectral theorem</td><td>谱定理</td><td>§5</td></tr>
+        <tr><td>resolvent</td><td>预解式</td><td>§5</td></tr>
+        <tr><td>matrix exponential</td><td>矩阵指数</td><td>§5</td></tr>
+        <tr><td>Fourier series</td><td>Fourier 级数</td><td>§6</td></tr>
+        <tr><td>convergence</td><td>收敛</td><td>§6</td></tr>
+        <tr><td>complete orthogonal system</td><td>完全正交系</td><td>§6</td></tr>
+        <tr><td>bounded operator</td><td>有界算子</td><td>§6</td></tr>
+        <tr><td>Hilbert space</td><td>Hilbert 空间</td><td>§6</td></tr>
+        <tr><td>functional space</td><td>函数空间</td><td>§6</td></tr>
+        <tr><td>kernel / integral operator</td><td>核 / 积分算子</td><td>§6</td></tr>
+        <tr><td>Fredholm alternative</td><td>Fredholm 二择一</td><td>§2, §6</td></tr>
+        <tr><td>small vibrations</td><td>小振动</td><td>§4</td></tr>
+        <tr><td>implicit function</td><td>隐函数</td><td>§2</td></tr>
+        <tr><td>Wronskian</td><td>Wronski 行列式</td><td>§2</td></tr>
+        <tr><td>group</td><td>群</td><td>§3</td></tr>
+        <tr><td>subgroup</td><td>子群</td><td>§3</td></tr>
+        <tr><td>coset</td><td>陪集</td><td>§3</td></tr>
+        <tr><td>normal subgroup</td><td>正规子群</td><td>§3</td></tr>
+        <tr><td>quotient group</td><td>商群</td><td>§3</td></tr>
+        <tr><td>isomorphic / homomorphic</td><td>同构 / 同态</td><td>§3</td></tr>
+        <tr><td>permutation group</td><td>置换群</td><td>§3</td></tr>
+        <tr><td>cyclic group</td><td>循环群</td><td>§3</td></tr>
+        <tr><td>Lorentz group</td><td>Lorentz 群</td><td>§3</td></tr>
+        <tr><td>stereographic projection</td><td>球极投影</td><td>§3</td></tr>
+        <tr><td>tetrahedron</td><td>四面体</td><td>§3</td></tr>
+        <tr><td>representation</td><td>表示</td><td>§3</td></tr>
+        <tr><td>irreducible / reducible</td><td>不可约 / 可约</td><td>§3</td></tr>
+        <tr><td>character</td><td>特征标</td><td>§3</td></tr>
+        <tr><td>regular representation</td><td>正则表示</td><td>§3</td></tr>
+        <tr><td>direct product</td><td>直积</td><td>§3</td></tr>
+        <tr><td>Clebsch–Gordan</td><td>角动量耦合系数</td><td>§3</td></tr>
+        <tr><td>continuous group</td><td>连续群</td><td>§3</td></tr>
+        <tr><td>structural constants</td><td>结构常数</td><td>§3</td></tr>
+        <tr><td>infinitesimal transformation</td><td>无穷小变换</td><td>§3</td></tr>
+        <tr><td>commutator / bracket</td><td>换位子</td><td>§3</td></tr>
+        <tr><td>compact group</td><td>紧群</td><td>§3</td></tr>
+        <tr><td>integration over group</td><td>群上积分</td><td>§3</td></tr>
+        <tr><td>Haar measure</td><td>Haar 测度</td><td>§3</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3><span class="sn">F</span>补充术语（按主题）</h3>
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>English</th><th>中文</th><th>English</th><th>中文</th></tr></thead>
+      <tbody>
+        <tr><td>abstract group</td><td>抽象群</td><td>alternating group</td><td>交错群</td></tr>
+        <tr><td>axis</td><td>轴</td><td>characters</td><td>特征标（复数）</td></tr>
+        <tr><td>conjugacy classes</td><td>共轭类</td><td>classification</td><td>分类</td></tr>
+        <tr><td>closed</td><td>闭的</td><td>closure</td><td>闭包</td></tr>
+        <tr><td>cofactor</td><td>代数余子式</td><td>combination</td><td>线性组合</td></tr>
+        <tr><td>commute</td><td>交换</td><td>component</td><td>分量</td></tr>
+        <tr><td>composition</td><td>复合</td><td>coordinate</td><td>坐标</td></tr>
+        <tr><td>coordinates</td><td>坐标（复数）</td><td>corollary</td><td>推论</td></tr>
+        <tr><td>correspondence</td><td>对应</td><td>cosets</td><td>陪集（复数）</td></tr>
+        <tr><td>cycle</td><td>轮换</td><td>derivative</td><td>导数</td></tr>
+        <tr><td>derivatives</td><td>导数（复数）</td><td>differential</td><td>微分</td></tr>
+        <tr><td>dimensional</td><td>维的</td><td>domain</td><td>定义域</td></tr>
+        <tr><td>greatest</td><td>最大的</td><td>half</td><td>一半（半整数）</td></tr>
+        <tr><td>infinite</td><td>无限的</td><td>initial</td><td>初始的</td></tr>
+        <tr><td>integer</td><td>整数</td><td>invariant</td><td>不变量</td></tr>
+        <tr><td>length</td><td>长度</td><td>limit</td><td>极限</td></tr>
+        <tr><td>maximum</td><td>最大值</td><td>minimum</td><td>最小值</td></tr>
+        <tr><td>minors</td><td>子式（复数）</td><td>negative</td><td>负的</td></tr>
+        <tr><td>neighbourhood</td><td>邻域</td><td>normalized</td><td>归一化的</td></tr>
+        <tr><td>operation</td><td>运算</td><td>operators</td><td>算子（复数）</td></tr>
+        <tr><td>orientation</td><td>定向</td><td>parameters</td><td>参数</td></tr>
+        <tr><td>permutations</td><td>排列（复数）</td><td>perpendicular</td><td>垂直的</td></tr>
+        <tr><td>polynomials</td><td>多项式（复数）</td><td>rational</td><td>有理的</td></tr>
+        <tr><td>rotations</td><td>旋转（复数）</td><td>sequence</td><td>序列</td></tr>
+        <tr><td>sphere</td><td>球面</td><td>structure</td><td>结构</td></tr>
+        <tr><td>subgroups</td><td>子群（复数）</td><td>subspace</td><td>子空间</td></tr>
+        <tr><td>subspaces</td><td>子空间（复数）</td><td>surface</td><td>曲面</td></tr>
+        <tr><td>unit</td><td>单位；单位向量</td><td>vertex</td><td>顶点</td></tr>
+        <tr><td>vertices</td><td>顶点（复数）</td><td>squares</td><td>平方</td></tr>
+        <tr><td>solution</td><td>解</td><td>solve</td><td>求解</td></tr>
+        <tr><td>test</td><td>检验</td><td>interval</td><td>区间</td></tr>
+        <tr><td>fractions</td><td>分数</td><td>moduli</td><td>模</td></tr>
+        <tr><td>one-to-one</td><td>一一对应</td><td>evaluate</td><td>求值</td></tr>
+        <tr><td>expand</td><td>展开</td><td>leading</td><td>首项的</td></tr>
+        <tr><td>unknowns</td><td>未知量</td><td>increasing</td><td>递增的</td></tr>
+        <tr><td>area</td><td>面积</td><td>magnitude</td><td>大小；模</td></tr>
+        <tr><td>existence</td><td>存在性</td><td>uniqueness</td><td>唯一性</td></tr>
+        <tr><td>convergence</td><td>收敛</td><td>completeness</td><td>完备性</td></tr>
+        <tr><td>orthogonality</td><td>正交性</td><td>irreducibility</td><td>不可约性</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">总复习</span><span class="thm-title">十个最容易混的判断</span></div>
+    <div class="thm-body">
+      <p>① 行列式为零 $\ne$ 无解；要看增广秩。② 相似保特征值，合同保惯性；两者不能互换。③ 可对角化 $\ne$ 特征值互异；重根也可能可对角化。④ 特征多项式相同 $\ne$ 相似；要看若尔当块。⑤ 正定 $\ne$ 元素全正；要看二次型或主子式。⑥ 正交矩阵行列式可为 $-1$；$SO(n)$ 才是旋转。⑦ $e^{A+B}\ne e^{A}e^{B}$，除非 $AB=BA$。⑧ 复对称 $\ne$ Hermite；必须共轭转置。⑨ 小振动用 $\det(B-\omega^2A)=0$，不是 $\det(B-\omega^2I)=0$。⑩ 半整数 $j$ 是 $SU(2)$ 表示，不是 $SO(3)$ 表示。</p>
+    </div>
+  </div>
+</div>
 </section>
 
 </main>
@@ -1520,7 +2660,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 Vladimir I. Smirnov 的《A Course of Higher Mathematics, Vol. 3-1》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1528,7 +2668,7 @@ figcaption b{color:var(--ink2);font-weight:600}
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>7 章 · 336 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
@@ -1718,7 +2858,8 @@ window.MathJax = {
       norm: ['{\\left\\|#1\\right\\|}', 1], abs: ['{\\left|#1\\right|}', 1],
       loc: '{\\mathrm{loc}}', dist: '{\\operatorname{dist}}', spt: '{\\operatorname{spt}}',
       osc: '{\\operatorname{osc}}', dH: '{d_H}', pa: '{\\partial}',
-      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}'
+      la: '{\\lambda}', Lamb: '{\\Lambda}', weak: '{\\rightharpoonup}',
+      boldsymbol: ['{\\mathbf{#1}}', 1], bm: ['{\\mathbf{#1}}', 1]
     }
   },
   svg: { fontCache: 'local', scale: 1.02 },

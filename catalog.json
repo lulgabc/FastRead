@@ -324,24 +324,6 @@
     "batch": "Books3"
   },
   {
-    "file": "Computable-Structure-Theory-Tutorial.html",
-    "title": "Computable Structure Theory",
-    "subtitle": "Computability, definability and algebraic structures",
-    "author": "Rod Downey",
-    "pages": 553,
-    "category": "理论 · 计算 · 逻辑",
-    "batch": "Books3"
-  },
-  {
-    "file": "Handbook-of-Satisfiability-Tutorial.html",
-    "title": "Handbook of Satisfiability",
-    "subtitle": "Theory, algorithms and applications of SAT",
-    "author": "Armin Biere, Marijn Heule & Hans van Maaren",
-    "pages": 1486,
-    "category": "理论 · 计算 · 逻辑",
-    "batch": "Books3"
-  },
-  {
     "file": "Absolute-FreeBSD-Tutorial.html",
     "title": "Absolute FreeBSD",
     "subtitle": "The Complete Guide to FreeBSD",
@@ -405,15 +387,6 @@
     "batch": "Books"
   },
   {
-    "file": "Human-Action-Tutorial.html",
-    "title": "Human Action",
-    "subtitle": "A Treatise on Economics",
-    "author": "Ludwig von Mises",
-    "pages": 930,
-    "category": "经济 · 金融",
-    "batch": "Books3"
-  },
-  {
     "file": "Chicago-Price-Theory-Tutorial.html",
     "title": "Chicago Price Theory",
     "subtitle": "",
@@ -421,6 +394,15 @@
     "pages": 457,
     "category": "经济学",
     "batch": "Books2"
+  },
+  {
+    "file": "Human-Action-Tutorial.html",
+    "title": "Human Action",
+    "subtitle": "A Treatise on Economics",
+    "author": "Ludwig von Mises",
+    "pages": 930,
+    "category": "经济学",
+    "batch": "Books3"
   },
   {
     "file": "Border-Seeing-Thinking-Tutorial.html",
@@ -450,6 +432,15 @@
     "batch": "Books2"
   },
   {
+    "file": "Computable-Structure-Theory-Tutorial.html",
+    "title": "Computable Structure Theory",
+    "subtitle": "Computability, definability and algebraic structures",
+    "author": "Rod Downey",
+    "pages": 553,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books3"
+  },
+  {
     "file": "Decision-Procedures-Tutorial.html",
     "title": "Decision Procedures",
     "subtitle": "An Algorithmic Point of View",
@@ -475,6 +466,15 @@
     "pages": 160,
     "category": "逻辑 · 形式方法 · 理论计算机",
     "batch": "Books"
+  },
+  {
+    "file": "Handbook-of-Satisfiability-Tutorial.html",
+    "title": "Handbook of Satisfiability",
+    "subtitle": "Theory, algorithms and applications of SAT",
+    "author": "Armin Biere, Marijn Heule & Hans van Maaren",
+    "pages": 1486,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books3"
   },
   {
     "file": "Logic-for-Programmers-Tutorial.html",

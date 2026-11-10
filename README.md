@@ -44,9 +44,11 @@
 | 教程 | 作者 | 页数 | 打开 |
 |---|---|---:|---|
 | Collected Works of A. M. Turing | A. M. Turing | 307 | [HTML](books/Turing-Collected-Works-Tutorial.html) |
+| Computable Structure Theory：Computability, definability and algebraic structures | Rod Downey | 553 | [HTML](books/Computable-Structure-Theory-Tutorial.html) |
 | Decision Procedures：An Algorithmic Point of View | Daniel Kroening & Ofer Strichman | 369 | [HTML](books/Decision-Procedures-Tutorial.html) |
 | Formal Methods: An Appetizer | Flemming Nielson & Hanne Riis Nielson | 171 | [HTML](books/Formal-Methods-Appetizer-Tutorial.html) |
 | Formal Reasoning About Programs：Verifying Software with Proof Assistants | Adam Chlipala | 160 | [HTML](books/Formal-Reasoning-About-Programs-Tutorial.html) |
+| Handbook of Satisfiability：Theory, algorithms and applications of SAT | Armin Biere, Marijn Heule & Hans van Maaren | 1486 | [HTML](books/Handbook-of-Satisfiability-Tutorial.html) |
 | Logic for Programmers：Practical Logic for Working Developers | Hillel Wayne | 150 | [HTML](books/Logic-for-Programmers-Tutorial.html) |
 | Logic in Computer Science：Modelling and Reasoning about Systems | Michael Huth & Mark Ryan | 556 | [HTML](books/Logic-in-Computer-Science-Tutorial.html) |
 | Principles of Model Checking | Christel Baier & Joost-Pieter Katoen | 994 | [HTML](books/Model-Checking-Tutorial.html) |
@@ -101,6 +103,7 @@
 | 教程 | 作者 | 页数 | 打开 |
 |---|---|---:|---|
 | Chicago Price Theory | Sonia Jaffe, Robert Minton, Casey Mulligan & Kevin Murphy | 457 | [HTML](books/Chicago-Price-Theory-Tutorial.html) |
+| Human Action：A Treatise on Economics | Ludwig von Mises | 930 | [HTML](books/Human-Action-Tutorial.html) |
 
 ## 使用说明
 
