@@ -111,6 +111,14 @@ lines += [
     "| `references/qa-checklist.md` | 浏览器、手机、file:// 离线检查 |",
     "| `references/design-system.md` | 版式、定理盒与交互约定 |",
     "",
+    "## 新增一本书",
+    "",
+    "完整流程（agent 一句话版 + 手动版）见 **[docs/ADDING-BOOKS.md](docs/ADDING-BOOKS.md)**。",
+    "",
+    "最短版本：把 PDF 放进 `~/Downloads/FastRead-inbox/`，对 agent 说：",
+    "",
+    "> 用 `pdf-book-to-web-tutorial` 把 inbox 里的 PDF 做成教程，更新 catalog/README/index，QA 后提交并 push。",
+    "",
     "## 维护",
     "",
     "新增教程：把 HTML 放进 `books/`，在 `catalog.json` 增加一条记录，然后运行：",
@@ -183,7 +191,7 @@ html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <div class="tools"><input id="q" type="search" placeholder="搜索书名、作者、主题…" aria-label="搜索"><span class="hint" id="hint">输入关键词过滤</span></div>
 <div id="empty" class="empty">没有匹配的教程。</div>
 {"".join(parts)}
-<footer><span>FastRead · 私人阅读库</span><span><a href="README.md">README</a> · <a href="skill/pdf-book-to-web-tutorial/SKILL.md">Skill</a> · 每个 HTML 自包含</span></footer>
+<footer><span>FastRead · 私人阅读库</span><span><a href="README.md">README</a> · <a href="docs/ADDING-BOOKS.md">新增书籍</a> · <a href="skill/pdf-book-to-web-tutorial/SKILL.md">Skill</a></span></footer>
 </div>
 <script>
 const q=document.getElementById('q'), hint=document.getElementById('hint'), empty=document.getElementById('empty');

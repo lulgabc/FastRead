@@ -164,6 +164,14 @@ python3 skill/pdf-book-to-web-tutorial/scripts/build_tutorial.py \
 | `references/qa-checklist.md` | 浏览器、手机、file:// 离线检查 |
 | `references/design-system.md` | 版式、定理盒与交互约定 |
 
+## 新增一本书
+
+完整流程（agent 一句话版 + 手动版）见 **[docs/ADDING-BOOKS.md](docs/ADDING-BOOKS.md)**。
+
+最短版本：把 PDF 放进 `~/Downloads/FastRead-inbox/`，对 agent 说：
+
+> 用 `pdf-book-to-web-tutorial` 把 inbox 里的 PDF 做成教程，更新 catalog/README/index，QA 后提交并 push。
+
 ## 维护
 
 新增教程：把 HTML 放进 `books/`，在 `catalog.json` 增加一条记录，然后运行：
