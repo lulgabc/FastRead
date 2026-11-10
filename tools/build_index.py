@@ -111,14 +111,6 @@ lines += [
     "| `references/qa-checklist.md` | 浏览器、手机、file:// 离线检查 |",
     "| `references/design-system.md` | 版式、定理盒与交互约定 |",
     "",
-    "## 新增一本书",
-    "",
-    "完整流程（agent 一句话版 + 手动版）见 **[docs/ADDING-BOOKS.md](docs/ADDING-BOOKS.md)**。",
-    "",
-    "最短版本：把 PDF 放进 `~/Downloads/FastRead-inbox/`，对 agent 说：",
-    "",
-    "> 用 `pdf-book-to-web-tutorial` 把 inbox 里的 PDF 做成教程，更新 catalog/README/index，QA 后提交并 push。",
-    "",
     "## 维护",
     "",
     "新增教程：把 HTML 放进 `books/`，在 `catalog.json` 增加一条记录，然后运行：",
@@ -129,6 +121,141 @@ lines += [
     "",
     "会重新生成 `README.md` 与 `index.html`。",
 ]
+
+ADD_BOOK = r"""
+## 新增一本书
+
+### 最省事：让 agent 跑
+
+1. 把新 PDF 放到仓库外：
+
+```bash
+mkdir -p ~/Downloads/FastRead-inbox
+# 把 PDF 放进 FastRead-inbox
+```
+
+2. 在 OpenCode 里说：
+
+> 用 `pdf-book-to-web-tutorial` 把 `~/Downloads/FastRead-inbox/` 下的 PDF 做成单页教程。  
+> 每本输出到 `~/Downloads/FastRead/books/<英文短名>-Tutorial.html`，  
+> 更新 `catalog.json`、`README.md`、`index.html`，  
+> 跑 QA，最后提交并 push。
+
+Agent 会依次完成：提取 → 章节蓝图 → 写 sections → 构建单文件 → QA → 更新索引 → Git 提交。
+
+### 手动流程
+
+#### 1. 提取
+
+```bash
+cd ~/Downloads/FastRead
+python3 skill/pdf-book-to-web-tutorial/scripts/extract_book.py \
+  ~/Downloads/FastRead-inbox/新书.pdf \
+  work/新书
+```
+
+查看 `work/新书/meta.json`：页数、章节数、`numbered_results_total`。若 `low_text_pages` 很多，先 OCR。
+
+#### 2. 写 sections
+
+在 `work/新书/src/sections/` 下写：
+
+```text
+00-hero.html
+01-ch1.html
+02-ch2.html
+...
+99-summary.html
+```
+
+使用 skill 的类：`chapter`、`lede`、`chap-intro`、`thm def/theorem/lem/ex/rem/warn`、`intuition`、`table-wrap cheat`、`cards`。
+
+参考：
+
+- `skill/pdf-book-to-web-tutorial/SKILL.md`
+- `skill/pdf-book-to-web-tutorial/references/pipeline.md`
+- `skill/pdf-book-to-web-tutorial/references/design-system.md`
+
+#### 3. 构建
+
+```bash
+python3 skill/pdf-book-to-web-tutorial/scripts/build_tutorial.py \
+  --sections work/新书/src/sections \
+  --out books/New-Book-Tutorial.html \
+  --title "新书 · 交互教程" \
+  --book-title "新书" \
+  --book-subtitle "副标题" \
+  --short-title "新书" \
+  --stats "<b>12</b> 章 · <b>500</b> 页"
+```
+
+默认内联 MathJax，产物约 2.2 MB，可离线打开。正式交付不要加 `--dev`。
+
+#### 4. QA
+
+```bash
+python3 tools/qa_tutorial.py books/New-Book-Tutorial.html --render
+```
+
+应满足：`merror = 0`、无 raw `$$`、无重复 ID、无断链、无未替换占位符、控制台 0 错误。手机 390px 检查见 skill 的 `references/qa-checklist.md`。
+
+#### 5. 更新索引
+
+在 `catalog.json` 增加一条：
+
+```json
+{
+  "file": "New-Book-Tutorial.html",
+  "title": "New Book",
+  "subtitle": "A Subtitle",
+  "author": "Author Name",
+  "pages": 500,
+  "category": "数学 · 分析与代数",
+  "batch": "Books3"
+}
+```
+
+现有九类：
+
+- 数学 · 分析与代数
+- 优化 · 金融 · 概率
+- 逻辑 · 形式方法 · 理论计算机
+- 机器学习 · 语言模型
+- 系统 · 数据 · 网络
+- 安全 · 二进制 · 逆向
+- 数值计算 · 工程
+- 认知科学 · 哲学
+- 经济学
+
+然后重建索引：
+
+```bash
+python3 tools/build_index.py
+```
+
+会重新生成 `README.md` 与 `index.html`。
+
+#### 6. 提交
+
+```bash
+git add books/New-Book-Tutorial.html catalog.json README.md index.html
+git commit -m "Add New Book tutorial"
+git push
+```
+
+### 命名约定
+
+- 文件名：`Title-Words-Tutorial.html`，ASCII、连字符、无空格。
+- 一本书一个 HTML；配套 `work/` 不提交。
+- 不要提交 PDF；`.gitignore` 已忽略 `*.pdf`、`inbox/`、`work/`。
+
+### 详细版
+
+更细的说明、常见坑和 QA 清单见 **[docs/ADDING-BOOKS.md](docs/ADDING-BOOKS.md)**。
+"""
+idx = lines.index("## 维护")
+lines[idx:idx] = ADD_BOOK.strip("\n").split("\n") + [""]
+
 (ROOT / "README.md").write_text("\n".join(lines), encoding="utf-8")
 
 # ---------- index.html ----------
