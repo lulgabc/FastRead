@@ -1,6 +1,6 @@
 ---
 name: pdf-book-to-web-tutorial
-description: Build a single self-contained interactive HTML tutorial from a long technical PDF/book (mathematics, physics, CS, engineering), in Chinese by default. Use when the user asks to "把这本书/PDF做成网页教程", "做成一个单页教程", "summarize this book as an interactive site", or wants a 500+ page book turned into a searchable, illustrated guide covering all numbered results, examples and proofs, with MathJax, dark mode and offline support.
+description: Build a single self-contained interactive HTML tutorial from a long technical PDF or EPUB book (mathematics, physics, CS, engineering), in Chinese by default. Use when the user asks to "把这本书/PDF做成网页教程", "做成一个单页教程", "turn this book into an interactive site", or wants a 500+ page book turned into a searchable, illustrated guide that preserves all chapters, sections and details, with MathJax, dark mode, offline support and a final coverage audit.
 ---
 
 # PDF/书籍 → 单页交互教程
@@ -9,8 +9,9 @@ description: Build a single self-contained interactive HTML tutorial from a long
 
 本 skill 附带一套已验证的流水线与可直接复用的 UI：
 
-- `scripts/extract_book.py`：PDF → 带页码的全文 + 按章拆分 + 结果清单
+- `scripts/extract_book.py`：PDF 或 EPUB → 带页码/文档标记的全文 + 按章拆分 + 结果清单
 - `scripts/build_tutorial.py`：`shell + sections` → 单文件（内联 CSS/JS/MathJax）
+- `scripts/check_coverage.py`：最终覆盖率检测（TOC、章节、术语、长度比），可生成缺口报告
 - `scripts/escape_math.py`：修复 `$...$` 里的 `<`/`>`/`&`（最容易毁掉整页的坑）
 - `assets/shell.html`、`theme.css`、`app.js`：生产级页面骨架
 - `references/pipeline.md`：分阶段细节、子代理提示词、内容配比
@@ -19,19 +20,33 @@ description: Build a single self-contained interactive HTML tutorial from a long
 
 ---
 
-## 0. 先定“覆盖契约”
+## 0. 先定“覆盖契约”：默认是完整模式，不是摘要
 
-不要承诺“所有证明都展开”——599 页的书不可能。用三层覆盖：
+**长度不是约束，覆盖才是约束。** 一本 500 页的书做成 30k–80k 汉字是正常的；不要为了“好读”删掉章节、小节、公式、代码、参数或反例。
+
+必须保留：
+
+- 目录里的每一个 chapter 与 section（包括 “Bonus Material”“Appendix”“Problems” 中的关键结论）
+- 所有 Definition / Theorem / Lemma / Proposition / Example / Remark 的**陈述**；证明可压缩为思路，但不能删掉假设、结论、常数的含义
+- 所有算法步骤、命令、配置、代码示例的关键行，以及输入/输出/复杂度
+- 关键数字、参数、阈值、公式、图注、表格、反例、失败模式
+- 原书的术语与符号；首次出现给中文解释
+
+允许：合并重复叙述、改写语言、去掉页眉页脚/纯排版、把长证明压成“证明骨架”。
+
+禁止：“本章只讲重点”“其余从略”“类似地”“不再赘述”。
+
+建议分层，但 T1 不是“速查表替代正文”：
 
 | 层级 | 内容 | 呈现 |
 |---|---|---|
-| T0 核心 | 每条主线 5–10 个定理 | 完整陈述 + 直觉 + 证明思路（可折叠） |
-| T1 全量 | 所有 Definition/Theorem/Lemma/Example | 每章末尾“全章结果速查表”逐条一行 |
-| T2 例子 | 书中 Example、反例、应用 | 独立盒子 + 计算；反例进“反例博物馆” |
+| T0 | 每条主线的核心定理/算法 | 完整陈述 + 直觉 + 证明/推导思路 |
+| T1 | 每个 section 的定义、结论、参数、例子 | 正文逐节覆盖；章末速查表只做复习 |
+| T2 | 所有 Example、反例、应用、代码 | 独立盒子 + 计算/运行结果 |
 
-再补：证明技术工具箱、定理依赖图、术语表、20 道自测、一页纸总结。这样既不会写成 800 页，也不会漏知识点。
+最后必须跑 `check_coverage.py`：TOC 覆盖、章节术语召回、全局术语召回三项都过线才算完成。检测报告是工作清单，不是装饰。
 
-**不要中途问用户**。缺信息就按“教材化、可读优先”自行决定，最后说明取舍。
+**不要中途问用户**。缺信息就按“完整、可读、可核查”自行决定，最后说明取舍。
 
 ---
 
@@ -40,6 +55,7 @@ description: Build a single self-contained interactive HTML tutorial from a long
 ```bash
 python3 -m pip install --user pymupdf
 python3 <skill>/scripts/extract_book.py "/path/book.pdf" work/
+python3 <skill>/scripts/extract_book.py "/path/book.epub" work/
 ```
 
 看 `work/meta.json`：
@@ -51,6 +67,8 @@ python3 <skill>/scripts/extract_book.py "/path/book.pdf" work/
   brew install ocrmypdf tesseract
   ocrmypdf --deskew --clean book.pdf book-ocr.pdf
   ```
+
+EPUB 会按 OPF spine 与 NCX/nav 拆分；若公式是图片，`meta.json` 的 `images` 会提醒你回看 XHTML。
 
 然后读：目录、Preface、Notation、每章第一页、Notes。**先读目录再读正文**，否则容易把全书读成流水账。
 
@@ -72,15 +90,18 @@ python3 <skill>/scripts/extract_book.py "/path/book.pdf" work/
 
 ## 3. 并行章节笔记（关键加速）
 
-把章节文本分给 6–8 个子代理，每个 1–2 章。提示词必须包含：
+把章节文本分给多个子代理。完整模式下建议 **一个代理只负责一章**（长书可一章拆 2–3 个代理），不要一个代理吞 1–2 章后只写 8k 字。
 
-- 读 `work/chapters/N.txt`
-- **覆盖每一个编号结果**，保留原编号
-- PDF 公式乱码，按数学知识重建，但**不得编造定理内容**
+提示词必须包含：
+
+- 读 `work/chapters/N.txt`（EPUB 同样）
+- **逐节覆盖**：每个 section、每个编号结果、每个 Example、每个算法/命令/代码块
+- PDF/EPUB 公式乱码或图片，按数学知识重建，但**不得编造定理内容**
 - 每条：精确 LaTeX 陈述 + 1–3 句中文直觉 + 证明思路（有教学价值时）
-- 例子要给计算；反例要写“打破了什么”
+- 例子要给计算/运行结果；反例要写“打破了什么”
 - 结尾写“本章脉络”“常见误区”
-- 目标 5000–10000 汉字，输出 `notes/chNN.md`
+- **不设字数上限**；一章通常 3k–8k 汉字，长章可 10k+
+- 输出 `notes/chNN.md`
 
 完整模板见 `references/pipeline.md`。子代理跑的时候，你可以同时写 UI/骨架，不要等。
 
@@ -93,10 +114,11 @@ python3 <skill>/scripts/extract_book.py "/path/book.pdf" work/
 1. `lede`：这一章解决什么问题，一句话。
 2. 章节卡：本章覆盖范围 + 标签。
 3. `mapchips`：5–8 个关键词。
-4. 3–6 个 T0 深潜：定义 → 定理 → 直觉盒 → 证明思路折叠。
-5. 1–2 个可手算例子 / 反例。
-6. “全章结果速查表”：**每个编号一行**。
-7. “常见误区”盒：3–5 条。
+4. 按原书 section 顺序逐节展开，不要跳过“小”节；每节给定义/定理/算法/例子。
+5. 每个编号结果至少有一个独立盒子或明确段落；长证明给折叠的证明骨架。
+6. 代码/命令/参数表按原书出现顺序保留；不要只给“代表性例子”。
+7. “全章结果速查表”：**每个编号一行**，作为复习索引，不替代正文。
+8. “常见误区”盒：3–5 条。
 
 写作规则：
 
@@ -147,6 +169,16 @@ python3 <skill>/scripts/build_tutorial.py \
 
 见 `references/qa-checklist.md`。最低门槛：
 
+```bash
+python3 <skill>/scripts/check_coverage.py \
+  --work work/<book> --html dist/<book>-Tutorial.html \
+  --report coverage-<book>.md
+```
+
+要求：TOC 覆盖 ≥ 75%、章节召回 ≥ 70%、术语召回 ≥ 30%（`--strict` 为 85/90/60）。不过线就补，不要只改报告。
+
+
+
 ```js
 ({
   merr: document.querySelectorAll('merror').length,        // 0
@@ -169,12 +201,13 @@ python3 <skill>/scripts/build_tutorial.py \
 
 ## 7. 事实核查（不要省）
 
-启动 2 个审计子代理：一个查第 1–8 章，一个查 9–15 章。让它们**只列具体错误**：
+先跑覆盖率检测并补齐缺口；再启动 2 个审计子代理（前半/后半），让它们**只列具体遗漏和错误**：
 
 - 编号是否存在、内容是否对得上
 - 公式/指数/常数/假设（\(C^3\) vs \(C^2\)、\(p>n\) vs \(p<n\)、\(n=2\) 例外）
 - 是否把“未解决”说成“失败”，把“凸包”说成“原函数”
-- 是否漏掉重要编号结果
+- 是否漏掉 TOC 中的 section、编号结果、参数、代码/命令、图注
+- 覆盖率报告里列为 missing 的条目是否真的补上
 
 收到清单后逐条修，再跑一次 QA。数学书里最常见的错不是大方向，而是**指数、积分条件、边界假设、归属**。
 
@@ -192,6 +225,8 @@ python3 <skill>/scripts/build_tutorial.py \
 8. **缓存。** 开发时浏览器会缓存旧 HTML/JS；每次用 `?v=N` 或 hard reload，否则“改了没生效”会浪费半小时。
 9. **PDF 公式是乱码，不是真理。** 所有公式按数学重建后，用原书定理编号回查；不要相信 `pdftotext` 的上下标。
 10. **不要用 `Definition 11.5` 指代公式 (11.5)。** 书里 `(11.5)` 是显示公式，`Theorem 11.5` 才是定理；编号前先看它是 Definition/Theorem 还是公式号。
+11. **EPUB 的公式可能是图片。** `meta.json` 的 `images` 只是提醒；关键公式要回看 XHTML/原书，不能只读提取文本。
+12. **覆盖率检测不是语义理解。** 它抓“整节没写、术语没出现”，抓不到“写了一段但意思错了”；所以必须再做人工/子代理审计。
 
 ---
 
@@ -209,4 +244,4 @@ ls -lh dist/Tutorial.html
 - 核对：MathJax 错误 0、断链 0、控制台 0
 - 保留 `src/` 与构建脚本，方便下次改
 
-不要把“学习版”说成“原书全文翻译”；准确说明：**核心定理详细讲，全部编号结果可查，证明给思路而非逐字重写**。
+不要把“完整模式”说成“逐字翻译”；准确说明：**章节/小节/编号结果/例子/代码全部覆盖，证明给思路而非逐字重写，长度服从内容**。交付时附上 `coverage-report.md` 和检测结论。

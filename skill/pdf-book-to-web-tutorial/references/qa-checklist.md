@@ -175,7 +175,26 @@ Pick 10 random theorem boxes and compare against `work/chapters`:
 
 Run the two audit subagents from `references/pipeline.md` before delivery.
 
-## 10. Final smoke test
+## 10. Coverage gate (must)
+
+```bash
+python3 scripts/check_coverage.py \
+  --work work/<book> --html dist/<book>-Tutorial.html \
+  --report coverage-<book>.md
+```
+
+Read the report, not just the exit code:
+
+- **Missing TOC entries**: every chapter/section must appear. Add them, don't rename the report.
+- **Weak chapters**: open the source chapter and compare its section list with the tutorial. A low term recall usually means whole subsections are missing.
+- **Top terms not found**: technical terms may be translated; check whether the concept is present under a Chinese name before adding the English term.
+- **Length ratio**: reported only. A very low ratio is a warning, not an automatic failure; a long tutorial can still omit details.
+
+Default gates: 75% TOC / 70% chapter / 30% terms. `--strict` = 85/90/60. `--warn-only` is for exploration, not delivery.
+
+Then do a semantic audit: the script cannot detect a section that is present but wrong. Ask an audit agent to compare each chapter's TOC and key claims.
+
+## 11. Final smoke test
 
 - open at top: hero visible, sidebar active “导读”, 0%
 - click last chapter: scrolls, active link correct, progress ~90%+

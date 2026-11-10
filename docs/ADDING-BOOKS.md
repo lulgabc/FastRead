@@ -2,15 +2,17 @@
 
 FastRead 只保存生成的 HTML 教程，不保存 PDF。新书转换分两条路：让 agent 跑，或手动跑。
 
+转换默认是**完整模式**：章节、小节、编号结果、例子、代码、参数都要保留；**不设字数上限**，长度服从内容。
+
 ---
 
 ## 0. 准备
 
-把新 PDF 放在仓库外的暂存目录，例如：
+把新 PDF 或 EPUB 放在仓库外的暂存目录，例如：
 
 ```bash
 mkdir -p ~/Downloads/FastRead-inbox
-# 把新书 PDF 放进去
+# 把新书 PDF/EPUB 放进去
 ```
 
 不要放进 `FastRead/`，避免 PDF 进入 Git。仓库的 `.gitignore` 已忽略 `*.pdf`、`inbox/` 和 `work/`。
@@ -23,27 +25,30 @@ mkdir -p ~/Downloads/FastRead-inbox
 
 > 用 `pdf-book-to-web-tutorial` 把 `~/Downloads/FastRead-inbox/` 下的所有 PDF 做成单页教程。
 > 每本输出到 `~/Downloads/FastRead/books/<英文短名>-Tutorial.html`；
+> 完整覆盖原书章节/小节/例子/代码，不设字数上限；
 > 更新 `catalog.json`、`README.md`、`index.html`；
-> 做 QA（无 MathJax 错误、无断链、无重复 ID）；
+> 跑 `check_coverage.py` 和 `qa_tutorial.py`；
 > 最后提交 Git 并 push。
 
 如果要控制得更细，加一句：
 
 > 先给我书目、页数、分类和输出文件名，确认后再写。
 
-Agent 会按 skill 的流水线执行：提取 → 蓝图 → 章节笔记 → 写 sections → 构建 → QA → 更新索引 → 提交。
+Agent 会按 skill 的流水线执行：提取 → 蓝图 → 章节笔记 → 写 sections → 构建 → 覆盖率检测 → QA → 更新索引 → 提交。
 
 ---
 
 ## 2. 手动流程（完全可控）
 
-### 2.1 提取
+### 2.1 提取（PDF/EPUB）
 
 ```bash
 cd ~/Downloads/FastRead
 python3 skill/pdf-book-to-web-tutorial/scripts/extract_book.py \
   ~/Downloads/FastRead-inbox/某本书.pdf \
   work/某本书
+
+# EPUB 用同样的命令，只把 .pdf 换成 .epub
 ```
 
 查看：
@@ -52,7 +57,7 @@ python3 skill/pdf-book-to-web-tutorial/scripts/extract_book.py \
 cat work/某本书/meta.json
 ```
 
-确认页数、章节数、`numbered_results_total`；若 `low_text_pages` 很多，先 OCR。
+确认页数/文档数、章节数、`numbered_results_total`；PDF 若 `low_text_pages` 很多，先 OCR。EPUB 若 `images` 很多，公式/图可能是图片，需要回看原书。
 
 ### 2.2 写 sections
 
@@ -90,7 +95,17 @@ python3 skill/pdf-book-to-web-tutorial/scripts/build_tutorial.py \
 
 默认内联 MathJax，产物约 2.2 MB，可离线打开。不要加 `--dev` 交付。
 
-### 2.4 QA
+### 2.4 覆盖率检测（必须）
+
+```bash
+python3 skill/pdf-book-to-web-tutorial/scripts/check_coverage.py \
+  --work work/某本书 --html books/Some-Book-Tutorial.html \
+  --report work/某本书/coverage-report.md
+```
+
+默认门槛：TOC 覆盖 ≥ 75%、章节术语召回 ≥ 70%、全局术语召回 ≥ 30%。报告里的 missing TOC entries / weak chapters 是工作清单：补内容后重跑，不要改报告。
+
+### 2.5 QA
 
 ```bash
 python3 tools/qa_tutorial.py books/Some-Book-Tutorial.html --render
@@ -106,7 +121,7 @@ python3 tools/qa_tutorial.py books/Some-Book-Tutorial.html --render
 - 控制台 0 错误
 - 手机 390px 无横向溢出（详细检查见 skill 的 `references/qa-checklist.md`）
 
-### 2.5 更新索引
+### 2.6 更新索引
 
 在 `catalog.json` 末尾加一条：
 
@@ -142,7 +157,7 @@ python3 tools/build_index.py
 
 会重建 `README.md` 和 `index.html`。
 
-### 2.6 提交
+### 2.7 提交
 
 ```bash
 git add books/Some-Book-Tutorial.html catalog.json README.md index.html

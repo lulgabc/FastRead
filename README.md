@@ -6,6 +6,7 @@
 - 每个教程是一个独立 HTML 文件，MathJax 已内联，**断网可读**
 - 每本含：主线讲解、关键定义/定理/算法、例子、速查表、常见坑
 - 数学/理论书含定理盒与公式；系统/编程书含命令、代码与故障案例
+- 新转换默认**完整模式**：章节/小节/例子/代码全保留，不设字数上限，并用 `check_coverage.py` 验收
 
 打开 [`index.html`](index.html) 浏览卡片式索引，或直接打开 `books/` 下的文件。
 
@@ -108,7 +109,7 @@
 
 ## 生成技能：pdf-book-to-web-tutorial
 
-把“技术 PDF → 中文单页教程”的完整流水线保存在：
+把“技术 PDF / EPUB → 中文单页教程”的完整流水线保存在：
 
 `skill/pdf-book-to-web-tutorial/`
 
@@ -153,9 +154,10 @@ python3 skill/pdf-book-to-web-tutorial/scripts/build_tutorial.py \
 | 路径 | 作用 |
 |---|---|
 | `SKILL.md` | 完整工作流与十个常见坑 |
-| `scripts/extract_book.py` | PDF → `full.txt`、`chapters/`、`meta.json` |
+| `scripts/extract_book.py` | PDF/EPUB → `full.txt`、`chapters/`、`meta.json` |
 | `scripts/build_tutorial.py` | sections + shell → 单文件 HTML（内联 CSS/JS/MathJax） |
 | `scripts/escape_math.py` | 修复公式里的 `<`、`>`、`&`，并保护代码块 |
+| `scripts/check_coverage.py` | 最终覆盖率检测（TOC/章节/术语/长度比） |
 | `assets/shell.html` | 侧栏、顶栏、搜索、进度、暗色模式骨架 |
 | `assets/theme.css` | 定理盒、速查表、代码块、响应式、打印样式 |
 | `assets/app.js` | 目录高亮、搜索、主题、字号、证明折叠 |
@@ -179,10 +181,13 @@ mkdir -p ~/Downloads/FastRead-inbox
 
 > 用 `pdf-book-to-web-tutorial` 把 `~/Downloads/FastRead-inbox/` 下的 PDF 做成单页教程。  
 > 每本输出到 `~/Downloads/FastRead/books/<英文短名>-Tutorial.html`，  
+> 完整覆盖原书章节/小节/例子/代码，不设字数上限；  
 > 更新 `catalog.json`、`README.md`、`index.html`，  
-> 跑 QA，最后提交并 push。
+> 跑覆盖率检测和 QA，最后提交并 push。
 
-Agent 会依次完成：提取 → 章节蓝图 → 写 sections → 构建单文件 → QA → 更新索引 → Git 提交。
+Agent 会依次完成：提取 → 章节蓝图 → 写 sections → 构建单文件 → **覆盖率检测** → QA → 更新索引 → Git 提交。
+
+默认是**完整模式**：章节、小节、编号结果、例子、代码、参数都要保留；不设字数上限，长度服从内容。
 
 ### 手动流程
 
@@ -232,7 +237,17 @@ python3 skill/pdf-book-to-web-tutorial/scripts/build_tutorial.py \
 
 默认内联 MathJax，产物约 2.2 MB，可离线打开。正式交付不要加 `--dev`。
 
-#### 4. QA
+#### 4. 覆盖率检测（必须）
+
+```bash
+python3 skill/pdf-book-to-web-tutorial/scripts/check_coverage.py \
+  --work work/新书 --html books/New-Book-Tutorial.html \
+  --report work/新书/coverage-report.md
+```
+
+门槛：TOC ≥75%、章节召回 ≥70%、术语召回 ≥30%。报告里的 missing 条目要补内容后重跑，不要改报告。
+
+#### 5. QA
 
 ```bash
 python3 tools/qa_tutorial.py books/New-Book-Tutorial.html --render
@@ -240,7 +255,7 @@ python3 tools/qa_tutorial.py books/New-Book-Tutorial.html --render
 
 应满足：`merror = 0`、无 raw `$$`、无重复 ID、无断链、无未替换占位符、控制台 0 错误。手机 390px 检查见 skill 的 `references/qa-checklist.md`。
 
-#### 5. 更新索引
+#### 6. 更新索引
 
 在 `catalog.json` 增加一条：
 
@@ -276,7 +291,7 @@ python3 tools/build_index.py
 
 会重新生成 `README.md` 与 `index.html`。
 
-#### 6. 提交
+#### 7. 提交
 
 ```bash
 git add books/New-Book-Tutorial.html catalog.json README.md index.html

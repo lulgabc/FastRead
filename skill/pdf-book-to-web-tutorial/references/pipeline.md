@@ -6,9 +6,10 @@ Default deliverable:
 
 - one `dist/<Book>-Tutorial.html`
 - Chinese exposition
-- covers every numbered result, but only core results get full proof ideas
-- ~20–30k Chinese characters for a 500–700 page book; more if the user asks for a “textbook replacement”
-- 20–26 sections, 2–4 hours of reading
+- covers every chapter, section, numbered result, example, algorithm/command and code block
+- statements are complete; proofs are proof ideas/skeletons unless the user asks for full proofs
+- ~30–80k Chinese characters for a 500–700 page book; **length follows content, never a cap**
+- 20–40 sections, several hours of reading
 
 Decision rules:
 
@@ -21,11 +22,14 @@ Decision rules:
 ```bash
 python3 -m pip install --user pymupdf
 python3 scripts/extract_book.py "book.pdf" work/
+python3 scripts/extract_book.py "book.epub" work/
 ```
 
 Check `work/meta.json`:
 
-- `low_text_pages`: if > 5% of pages, OCR first.
+- `low_text_pages`: if > 5% of pages, OCR first (PDF only).
+- `documents`: EPUB XHTML document count; `pages` is an estimate from characters.
+- `images`: EPUB/PDF images seen; formulas that are images need manual inspection.
 - `numbered_results_total`: use this number in the page stats (and say “编号结果”, not “定理”).
 - `chapters`: if chapter detection failed (no TOC), fall back to 50-page chunks and split manually by headings.
 
@@ -53,21 +57,24 @@ Write a short `plan.md` before writing HTML:
   4. linearized: Harnack → boundary → Green → divergence form
 - Sections: 00 intro, 01 notation, 02 applications, ch2..ch15, A toolbox, B counterexamples, C map, D exercises, E glossary, F summary
 - Nav groups: 开始 / Part I / Part II / Part III / 复盘
-- Depth: each chapter 3-6 T0 boxes + cheat table + pitfalls
+- Depth: every section covered; each chapter has multiple T0 boxes + per-section detail + cheat table + pitfalls
+- Coverage target: no section omitted; length follows content, not the other way around
 ```
 
-Depth budget per chapter:
+Depth budget per chapter (complete mode):
 
-| Chapter type | T0 boxes | Cheat table | Examples |
-|---|---:|---|---|
-| Preliminaries | 4–6 | all items | 2–4 |
-| Core theory | 5–7 | all items | 2–3 |
-| Applications | 2–4 | all items | 1–2 |
-| Advanced/tools | 3–5 | all items | 1–2 |
+| Chapter type | Coverage | T0 boxes | Examples |
+|---|---|---|---|
+| Preliminaries | every section | 6–12 | all worked examples |
+| Core theory | every section + numbered result | 8–15 | all examples/counterexamples |
+| Applications | every section | 4–10 | all cases/commands |
+| Advanced/tools | every section | 5–12 | all code/config examples |
+
+Cheat tables are review indexes, not a substitute for prose.
 
 ## Phase 3 — Parallel notes
 
-Split chapters into 6–8 jobs. One job = 1–2 chapters, 5k–10k Chinese characters.
+'Split chapters into jobs. Complete mode: **one job = one chapter** (split a very long chapter into 2–3 jobs). A chapter note usually runs 3k–10k Chinese characters; long chapters can exceed that. Do not cap length.
 
 Prompt template:
 
@@ -87,7 +94,9 @@ Write detailed Markdown notes to "/.../notes/ch<N>.md":
 - Include all examples and counterexamples with concrete computations.
 - Add a short "本章脉络" summary and a "常见误区" list.
 - Use LaTeX with $...$ and $$...$$.
-- Target <5000-10000> Chinese characters. Do not just list titles.
+- Do not omit sections, examples, parameters, code blocks, or figures.
+- Do not cap length. Typical chapter: 3k–10k Chinese characters; long chapters 10k+.
+Return only a one-line confirmation.
 Return only a one-line confirmation.
 ```
 
@@ -207,7 +216,28 @@ python3 -m http.server 8765
 
 Use a cache-busting query (`?v=13`) during iteration.
 
-## Phase 6 — QA
+## Phase 6 — Coverage gate
+
+Build first, then run the detector from the extracted source:
+
+```bash
+python3 scripts/check_coverage.py \
+  --work work/<book> --html dist/<book>-Tutorial.html \
+  --report coverage-<book>.md
+```
+
+It reports:
+
+- TOC entries that never appear in the tutorial
+- per-chapter salient-term recall
+- global technical-term recall
+- source/tutorial length ratio (reported, never gated)
+
+Default gates: TOC ≥75%, chapter recall ≥70%, term recall ≥30%. `--strict` uses 85/90/60. If it fails, do **not** edit the report; add the missing sections/details and rerun.
+
+Then run a semantic audit: even if the numbers pass, read the missing/weak list and ask an agent to compare each chapter's TOC/section list against the tutorial. The detector catches omissions, not wrong paraphrases.
+
+## Phase 7 — QA
 
 Run `references/qa-checklist.md`. Fix in this order:
 
@@ -217,7 +247,7 @@ Run `references/qa-checklist.md`. Fix in this order:
 4. dark mode contrast
 5. content errors
 
-## Phase 7 — Fact-check
+## Phase 8 — Fact-check
 
 Two audit prompts:
 
@@ -239,7 +269,7 @@ location, what is wrong, correct statement with source theorem number.
 
 Apply every concrete correction, then rebuild and rerun QA.
 
-## Phase 8 — Delivery
+## Phase 9 — Delivery
 
 - state the single-file path and size
 - state what is covered and what is not (“all numbered results indexed; core theorems get proof ideas”)
