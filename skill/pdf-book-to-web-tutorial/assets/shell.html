@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sb-head">
+    <div class="sb-kicker">{{KICKER}}</div>
+    <div class="sb-title">{{BOOK_TITLE}}
+      <span>{{BOOK_SUBTITLE}}</span>
+    </div>
+    <div class="sb-meta">{{STATS}}</div>
+  </div>
+  <nav class="sb-nav" id="sbNav" aria-label="目录">
+{{NAV}}
+  </nav>
+  <div class="sb-foot"><span><span class="dot"></span>{{FOOT_NOTE}}</span><span id="pctSide">0%</span></div>
+</aside>
+
+<header class="topbar">
+  <button class="tool-btn menu-btn" id="menuBtn" aria-label="打开目录">☰</button>
+  <div class="brand-mini">{{SHORT_TITLE}}</div>
+  <div class="crumb" id="crumb">{{CRUMB}}</div>
+  <div class="tools">
+    <div class="search-wrap">
+      <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input class="search-input" id="searchInput" type="search" placeholder="搜索概念 / 定理…" aria-label="搜索">
+    </div>
+    <button class="tool-btn" id="proofBtn" title="展开/收起所有证明">证明</button>
+    <button class="tool-btn" id="fontMinus" title="缩小字号">A−</button>
+    <button class="tool-btn" id="fontPlus" title="放大字号">A+</button>
+    <button class="tool-btn" id="themeBtn" title="切换夜间模式">◐</button>
+  </div>
+</header>
+<div class="search-panel" id="searchPanel">
+  <div class="search-hint" id="searchHint">输入关键词，搜索全书概念、定理与例子</div>
+  <div id="searchResults"></div>
+</div>
+
+<main class="main" id="main">
+{{CONTENT}}
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h5>关于本页</h5>
+        <p>{{FOOTER_ABOUT}}</p>
+      </div>
+      <div>
+        <h5>怎么用</h5>
+        <p>左侧目录跳章 · 顶栏搜索概念 · “证明”按钮展开全部 · 每章末尾有速查表。</p>
+      </div>
+      <div>
+        <h5>覆盖范围</h5>
+        <p>{{FOOTER_COVERAGE}}</p>
+      </div>
+    </div>
+    <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
+      <span>{{TITLE}}</span><span>Built for reading, not for skimming.</span>
+    </p>
+  </div>
+</footer>
+
+<div class="fabs"><button class="fab" id="topBtn" title="回到顶部" aria-label="回到顶部">↑</button></div>
+<div class="ring" id="ring" aria-hidden="true">
+  <svg width="34" height="34" viewBox="0 0 34 34"><circle class="bg" cx="17" cy="17" r="14"/><circle class="fg" id="ringFg" cx="17" cy="17" r="14" stroke-dasharray="87.96" stroke-dashoffset="87.96"/></svg>
+  <span id="pct">0%</span>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+{{APP_JS}}
+</script>
+{{MATHJAX}}
+</body>
+</html>

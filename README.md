@@ -106,6 +106,64 @@
 - 原书 PDF 不在此仓库中；这里只保存学习版教程。
 - `books/Index-Books1.html`、`books/Index-Books2.html` 是两批生成时的原始索引。
 
+## 生成技能：pdf-book-to-web-tutorial
+
+把“技术 PDF → 中文单页教程”的完整流水线保存在：
+
+`skill/pdf-book-to-web-tutorial/`
+
+它包含：从 PDF 提取与分章、并行章节笔记提示词、单文件 HTML 构建、数学公式转义、页面骨架、主题 CSS、交互 JS，以及**内联 MathJax**（因此生成物可离线打开）。
+
+### 安装到 OpenCode
+
+```bash
+# 方案 A：复制（简单）
+mkdir -p ~/.config/opencode/skills
+cp -R skill/pdf-book-to-web-tutorial ~/.config/opencode/skills/
+
+# 方案 B：软链接（推荐；仓库更新后自动生效）
+ln -sfn "$PWD/skill/pdf-book-to-web-tutorial" ~/.config/opencode/skills/pdf-book-to-web-tutorial
+```
+
+### 怎么触发
+
+在对话里直接说：
+
+> 用 `pdf-book-to-web-tutorial` 把这本书做成单页教程
+
+或在 OpenCode 中加载该 skill。它会按“提取 → 蓝图 → 并行笔记 → 写作 → 构建 → QA → 事实核查”的顺序执行。
+
+### 手动使用
+
+```bash
+# 1) 提取 PDF：带页码全文 + 按章拆分 + 编号结果统计
+python3 skill/pdf-book-to-web-tutorial/scripts/extract_book.py book.pdf work/
+
+# 2) 在 src/sections/ 写 HTML 片段后，组装单文件
+python3 skill/pdf-book-to-web-tutorial/scripts/build_tutorial.py \
+  --sections src/sections --out dist/Book-Tutorial.html \
+  --title "书名 · 交互教程" --book-title "书名" \
+  --book-subtitle "副标题" --short-title "书名"
+```
+
+`--dev` 会改用 CDN 加载 MathJax，构建更快，但产物不自包含；正式交付不要加。
+
+### 技能目录
+
+| 路径 | 作用 |
+|---|---|
+| `SKILL.md` | 完整工作流与十个常见坑 |
+| `scripts/extract_book.py` | PDF → `full.txt`、`chapters/`、`meta.json` |
+| `scripts/build_tutorial.py` | sections + shell → 单文件 HTML（内联 CSS/JS/MathJax） |
+| `scripts/escape_math.py` | 修复公式里的 `<`、`>`、`&`，并保护代码块 |
+| `assets/shell.html` | 侧栏、顶栏、搜索、进度、暗色模式骨架 |
+| `assets/theme.css` | 定理盒、速查表、代码块、响应式、打印样式 |
+| `assets/app.js` | 目录高亮、搜索、主题、字号、证明折叠 |
+| `assets/mathjax-tex-svg.js` | 内联 MathJax，保证离线可用 |
+| `references/pipeline.md` | 分阶段细节与子代理提示词 |
+| `references/qa-checklist.md` | 浏览器、手机、file:// 离线检查 |
+| `references/design-system.md` | 版式、定理盒与交互约定 |
+
 ## 维护
 
 新增教程：把 HTML 放进 `books/`，在 `catalog.json` 增加一条记录，然后运行：
