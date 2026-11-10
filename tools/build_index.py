@@ -139,7 +139,7 @@ mkdir -p ~/Downloads/FastRead-inbox
 2. 在 OpenCode 里说：
 
 > 用 `pdf-book-to-web-tutorial` 把 `~/Downloads/FastRead-inbox/` 下的 PDF 做成单页教程。  
-> 每本输出到 `~/Downloads/FastRead/books/<英文短名>-Tutorial.html`，  
+> 每本输出到 `~/Documents/Default Project/FastRead/books/<英文短名>-Tutorial.html`，  
 > 完整覆盖原书章节/小节/例子/代码，不设字数上限；  
 > 更新 `catalog.json`、`README.md`、`index.html`，  
 > 跑覆盖率检测和 QA，最后提交并 push。
@@ -153,7 +153,7 @@ Agent 会依次完成：提取 → 章节蓝图 → 写 sections → 构建单�
 #### 1. 提取
 
 ```bash
-cd ~/Downloads/FastRead
+cd "$HOME/Documents/Default Project/FastRead"
 python3 skill/pdf-book-to-web-tutorial/scripts/extract_book.py \
   ~/Downloads/FastRead-inbox/新书.pdf \
   work/新书
