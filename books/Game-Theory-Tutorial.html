@@ -436,7 +436,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="sb-title">An Introductory Course on Mathematical Game Theory and Applications
       <span></span>
     </div>
-    <div class="sb-meta">432 页 · 20 个 section</div>
+    <div class="sb-meta">432 页 · 24 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
@@ -454,11 +454,15 @@ figcaption b{color:var(--ink2);font-weight:600}
     <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>拍卖与机制设计：规则本身就是策略</span></a>
     <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>多阶段不完全信息：信念如何随历史更新</span></a>
     <a class="nav-link" href="#ch14" data-sec="ch14"><span class="nav-num">14</span> <span>合作博弈：从“选策略”到“分收益”</span></a>
-    <a class="nav-link" href="#ch15" data-sec="ch15"><span class="nav-num">15</span> <span>核心：没有联盟想拆台</span></a>
+    <a class="nav-link" href="#ch15" data-sec="ch15"><span class="nav-num">15</span> <span>核心及相关概念：没有联盟想拆台</span></a>
     <a class="nav-link" href="#ch16" data-sec="ch16"><span class="nav-num">16</span> <span>沙普利值：按边际贡献分</span></a>
     <a class="nav-link" href="#ch17" data-sec="ch17"><span class="nav-num">17</span> <span>核仁、核心中心与凸博弈</span></a>
     <a class="nav-link" href="#ch18" data-sec="ch18"><span class="nav-num">18</span> <span>沟通图、先验联盟与实现理论</span></a>
     <a class="nav-link" href="#ch19" data-sec="ch19"><span class="nav-num">19</span> <span>机场、破产、投票与生产：把成本分公平</span></a>
+    <a class="nav-link" href="#ch20" data-sec="ch20"><span class="nav-num">20</span> <span>网络、库存、项目与排队：运筹中的合作</span></a>
+    <a class="nav-link" href="#ch22" data-sec="ch22"><span class="nav-num">22</span> <span>习题与解答（exercises）：每章一道硬题</span></a>
+    <a class="nav-link" href="#ch23" data-sec="ch23"><span class="nav-num">23</span> <span>符号表与索引（notations, indexes）</span></a>
+    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
   <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
@@ -492,7 +496,7 @@ figcaption b{color:var(--ink2);font-weight:600}
       <p class="hero-sub">当你的最优选择取决于别人怎么选，问题就不再是“优化”，而是<b>博弈</b>（game）。这本教程沿着原书六章的骨架，把策略式博弈、纳什均衡、混合策略、扩展式博弈、子博弈完美、贝叶斯博弈、重复博弈与合作博弈串成一条可手算的线；只需要微积分与线性代数的基础。</p>
       <div class="hero-actions">
         <a class="btn" href="#ch1">从决策论开始 →</a>
-        <a class="btn ghost" href="#ch19">学习路线与速查</a>
+        <a class="btn ghost" href="#summary">学习路线与速查</a>
       </div>
       <div class="hero-stats">
         <div class="hstat"><b>6</b><span>原书章节</span></div>
@@ -597,8 +601,9 @@ figcaption b{color:var(--ink2);font-weight:600}
     <span class="chip">二元关系</span><span class="chip">弱偏好</span><span class="chip">序数效用</span><span class="chip hot">期望效用</span><span class="chip">风险厌恶</span><span class="chip">Allais 悖论</span>
   </div>
 
-  <h3><span class="sn">1.1</span>偏好是一组公理，不是一张分数表</h3>
-  <p>给定备选集合 $A$，$A\times A$ 的每个子集 $R$ 都叫 $A$ 上的一个二元关系（binary relation）。决策论关心的是偏好关系 $\succeq$：$a\succeq b$ 读作“$a$ 至少不差于 $b$”。两个标准要求是<b>完备性</b>（completeness：任意 $a,b$，$a\succeq b$ 或 $b\succeq a$）与<b>传递性</b>（transitivity：$a\succeq b$、$b\succeq c$ 推出 $a\succeq c$）。完备且传递的二元关系称为 $A$ 上的弱偏好（weak preference）。</p>
+  <h3><span class="sn">1.1</span>预备知识与偏好公理（preliminaries）</h3>
+  <p>给定备选集合（set of alternatives）$A$，$A\times A$ 的每个子集 $R$ 都叫 $A$ 上的一个二元关系（binary relation）。决策论关心的是偏好关系 $\succeq$：$a\succeq b$ 读作“$a$ 至少不差于 $b$”。两个标准要求是<b>完备性</b>（completeness：任意 $a,b$，$a\succeq b$ 或 $b\succeq a$）与<b>传递性</b>（transitivity：$a\succeq b$、$b\succeq c$ 推出 $a\succeq c$）。完备且传递的二元关系称为 $A$ 上的弱偏好（weak preference）。</p>
+  <p>本节先把记号铺好：$\mathbb{R}^N$ 表示以玩家集 $N$ 为坐标的实向量空间；$2^N$ 是 $N$ 的全部子集；$\Delta A$ 是 $A$ 上的概率分布集。若 $A$ 是<b>可数的</b>（countable），效用表示只需完备与传递；若 $A$ 不可数，则需要一个可数的序稠密子集（countable order-dense subset）来“代表”每个备选——这就是 Debreu 表示定理的技术核心。证明中反复出现“用有理数点逼近实数点”的构造，因此“可数”“稠密”“表示（representing）”三个词会一起出现。</p>
 
   <div class="thm def">
     <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">决策问题</span><span class="thm-id">Def. 1.1.1</span></div>
@@ -1280,6 +1285,7 @@ figcaption b{color:var(--ink2);font-weight:600}
   <p>这是一组线性不等式，加上 $\sum_a p(a)=1$。最大化任意线性目标（如社会福利）就是一个 LP。原书 2.11 节正是用这个构造证明存在性与凸性。</p>
 
   <h3><span class="sn">7.2</span>理性的认知基础</h3>
+  <p>这一小节讨论策略式博弈中不同解概念的认识论基础（epistemic foundations of the different solution concepts for strategic games）：不是问“玩家应该选什么”，而是问“需要什么样的知识与理性假设，才能推出某个解概念”。</p>
   <p>把“玩家 $i$ 在 $\omega$ 处理性”定义为：$a_i(\omega)$ 是对信念 $\rho_i(\cdot\mid P_i(\omega))$ 的最优反应（Definition 2.12.1–2.12.2）。Aumann 的定理（Theorem 2.12.1）说：若每个玩家在每个状态都理性，且先验是共同的，则 $(I,a(\cdot))$ 是一个相关均衡。证明只用条件期望的线性性，是“理性 + 共同先验 ⇒ 相关均衡”的干净推导。</p>
   <p>若进一步要求“理性”是共同知识，能得到什么？Theorem 2.12.4 给出答案：每个状态上的策略都必须是<b>可理性化</b>（rationalizable）的；反之，每个可理性化组合都能由某个具有共同知识理性的信息模型实现。可理性化是 IEDS 的极限：反复删除“从不对任何信念最优”的策略，剩下的就是 $\Lambda^\infty$。</p>
   <p>这条线也划出了纳什均衡的边界：共同知识理性只保证可理性化，不保证纳什均衡。要让纳什均衡成为必然，需要更强的“相互知道对方会选某个均衡”的知识结构。原书 Remark 2.12.5–2.12.6 讨论了这个缺口，并引用 Rubinstein 的例子说明轻微削弱共同知识就会破坏结论。</p>
@@ -1678,8 +1684,8 @@ figcaption b{color:var(--ink2);font-weight:600}
     </div>
   </div>
 
-  <h3><span class="sn">11.1</span>连锁店悖论再解释</h3>
-  <p>原书 4.3 节把 3.7 节的连锁店博弈改成不完全信息版本：在位者有两种类型，“强硬型”打价格战能获得额外效用，“软弱型”打价格战则成本很高；进入者不知道类型，只知道强硬型的先验概率 $q$。在有限期 $T$ 中，用序贯均衡可以证明：只要 $q$ 足够大，强硬型会在前若干期持续打价格战，建立声誉；进入者观察到价格战后，用贝叶斯规则把后验概率调高，从而选择不进入。</p>
+  <h3><span class="sn">11.1</span>连锁店悖论再解释（the chain store paradox in perspective）</h3>
+  <p>原书 4.3 节把 3.7 节的连锁店博弈（chain store game）改成不完全信息版本：在位者有两种类型，“强硬型”打价格战能获得额外效用，“软弱型”打价格战则成本很高；进入者不知道类型，只知道强硬型的先验概率 $q$。在这个视角下（in perspective），完全信息下的“悖论”并不是逻辑矛盾，而是模型遗漏了类型不确定性。</p>
 
   <div class="thm theorem">
     <div class="thm-head"><span class="thm-kind">命题</span><span class="thm-title">声誉均衡</span><span class="thm-id">Prop. 4.3.2</span></div>
@@ -1894,8 +1900,8 @@ figcaption b{color:var(--ink2);font-weight:600}
     </div>
   </div>
 
-  <h3><span class="sn">13.2</span>Harsanyi 的类型空间</h3>
-  <p>原书 4.7 节回到方法论：一个玩家的“类型”不只是收益参数，还可以编码他对对手类型、对手信念、对手信念的信念……的无穷层级。Harsanyi 的类型空间（type space）正是用来装这个层级的：每个类型 $\theta_i$ 附带一个在 $\Theta_{-i}$ 上的信念，且类型空间对“信念的信念”封闭。</p>
+  <h3><span class="sn">13.2</span>Harsanyi 的类型空间（Harsanyi's approach）</h3>
+  <p>原书 4.7 节回到方法论：Harsanyi 方法（Harsanyi's approach）的核心，是把一个玩家的“类型”理解为不只是收益参数，还可以编码他对对手类型、对手信念、对手信念的信念……的无穷层级。类型空间（type space）正是用来装这个层级的：每个类型 $\theta_i$ 附带一个在 $\Theta_{-i}$ 上的信念，且类型空间对“信念的信念”封闭。</p>
   <p>在有限类型情形，这套构造退化为本章开头的五元组；在无限类型情形，需要测度论与拓扑工具。原书 Remark 4.7.2 强调：玩家本人不需要知道“类型空间”的复杂构造，他们只需要知道自己的类型与对对手的信念；类型空间是建模者的工具，不是玩家的认知负担。</p>
   <p>Harsanyi 框架的代价是“共同先验”假设：所有玩家对类型分布有相同先验。若先验本身是私有的，模型会变成“先验的类型空间”，层级再升一层。这也是后来“稳健机制设计”“模糊厌恶”等方向的起点。</p>
 
@@ -2049,8 +2055,8 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <section id="ch15" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 5 · The Core</div>
-  <h2><span class="num">15</span>核心：没有联盟想拆台</h2>
-  <p class="lede">一个分配要稳定，必须让每个联盟都觉得“留在整体里不比单干差”。核心（core）就是所有满足这条联盟理性（coalitional rationality）的分配。</p>
+  <h2><span class="num">15</span>核心及相关概念：没有联盟想拆台</h2>
+  <p class="lede">一个分配要稳定，必须让每个联盟都觉得“留在整体里不比单干差”。核心（core）就是所有满足这条联盟理性（coalitional rationality）的分配；它与支配、平衡博弈等概念一起，构成“核心及相关概念”（the core and related concepts）这一组稳定性判据。</p>
 
   <div class="chap-intro">
     <p>本章对应原书 5.5。先定义分配（imputation）与核心，再给出核心与“不可支配”的等价关系；然后用平衡博弈（balanced game）的 Bondareva–Shapley 定理判断核心是否为空，最后用简单博弈与四个例子把判据落地。</p>
@@ -2250,7 +2256,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     </div>
   </div>
 
-  <p>Banzhaf 值满足 NPP、SYM、ADD，但一般<b>不满足效率</b>：所有玩家之和等于 $\frac1{2^{n-1}}\bar m(v)$，其中 $\bar m(v)$ 是“总边际贡献”的平均。原书 Theorem 5.8.1 证明它是唯一满足 NPP、SYM、ADD 且总和为该值的规则。归一化 Banzhaf 值（normalized Banzhaf index）再除以总和，使其成为分配。</p>
+  <p>Banzhaf 值满足 NPP、SYM、ADD，但一般<b>不满足效率</b>：所有玩家之和等于 $\frac1{2^{n-1}}\bar m(v)$，其中 $\bar m(v)=\sum_{i\in N}\sum_{S\subseteq N\setminus\{i\}}[v(S\cup\{i\})-v(S)]$ 是所有玩家、所有联盟的边际贡献总和。原书 Theorem 5.8.1 证明它是唯一满足 NPP、SYM、ADD 且总和为该值的规则。归一化 Banzhaf 值（normalized Banzhaf index）再除以总和，使其成为分配。</p>
   <p>例：分百万的 Banzhaf 值为 $(1/2,1/2,1/2)$，总和 $1.5&gt;1$，不效率；手套为 $(1/2,1/4,1/4)$，总和 1，效率但不在核心；访问教授为 $(875,875,375)$，总和 2125>2000。</p>
 
   <div class="thm def">
@@ -2479,7 +2485,7 @@ figcaption b{color:var(--ink2);font-weight:600}
   </div>
 
   <p>Owen 值的构造是“两层随机排队”：先随机排列各个 union，再在每个 union 内部随机排列玩家。玩家 $i$ 的边际贡献是：在他所属 union 内部，他加入时的增量；而这个增量又取决于该 union 在跨 union 排序中的位置。等价地，</p>
-  <p>$$\Phi_i^O(v,P)=\sum_{R\subseteq M}\sum_{T\subseteq P_k\setminus\{i\}}\frac{|R|!\,(m-|R|-1)!}{m!}\cdot\frac{|T|!\,(|P_k|-|T|-1)!}{|P_k|!}\Big[v\big(\cup_{r\in R}P_r\cup T\cup\{i\}\big)-v\big(\cup_{r\in R}P_r\cup T\big)\Big],$$</p>
+  <p>$$\Phi_i^O(v,P)=\sum_{R\subseteq M\setminus\{k\}}\sum_{T\subseteq P_k\setminus\{i\}}\frac{|R|!\,(m-|R|-1)!}{m!}\cdot\frac{|T|!\,(|P_k|-|T|-1)!}{|P_k|!}\Big[v\big(\cup_{r\in R}P_r\cup T\cup\{i\}\big)-v\big(\cup_{r\in R}P_r\cup T\big)\Big],$$</p>
   <p>其中 $m=|P|$，$P_k$ 是 $i$ 所在的 union。公式看起来吓人，但结构清楚：外层按 union 排序，内层按 union 内玩家排序。</p>
 
   <div class="thm theorem">
@@ -2563,6 +2569,9 @@ figcaption b{color:var(--ink2);font-weight:600}
   <div class="mapchips">
     <span class="chip">成本分摊</span><span class="chip hot">机场博弈</span><span class="chip">破产规则</span><span class="chip">权力指数</span><span class="chip">Shapley 解释</span><span class="chip">线性生产</span>
   </div>
+
+  <h3><span class="sn">19.0</span>预备（preliminaries）：从运作问题到特征函数</h3>
+  <p>应用章的统一套路是：先识别“谁在合作、合作能产生什么”，把每个联盟 $S$ 的最优结果写成 $v(S)$ 或 $c(S)$，再选择一个分配规则。收益型问题用 $v(S)$（越大越好），成本型问题用 $c(S)$（越小越好）；成本博弈可通过 $v(S)=\sum_{i\in S}c(\{i\})-c(S)$ 转成节省额。分配规则（allocation rule）必须满足效率（EFF）：收益型 $\sum_i x_i=v(N)$，成本型 $\sum_i x_i=c(N)$；通常还要求个体理性 $x_i\le c(\{i\})$（成本）或 $x_i\ge v(\{i\})$（收益）。</p>
 
   <h3><span class="sn">19.1</span>机场问题：跑道长度是“最大值”</h3>
   <p>机场问题（airport problem）里，每个航空公司 $i$ 有一种机型，需要长度 $c_{l_i}$ 的跑道；若一个联盟 $S$ 共同使用一条跑道，跑道长度必须满足联盟中最大的机型：</p>
@@ -2687,6 +2696,457 @@ figcaption b{color:var(--ink2);font-weight:600}
       </ul>
     </div>
   </div>
+</div></section>
+
+<section id="ch20" class="chapter"><div class="wrap">
+  <div class="sec-label">Chapter 6 · Applications II</div>
+  <h2><span class="num">20</span>网络、库存、项目与排队：运筹中的合作</h2>
+  <p class="lede">最大流、库存、项目工期、二手房交易、修路、排队、排序——这些运筹学问题一旦允许合作，都会长成一个 TU 博弈。本章把第 5 章的解概念逐一套上去。</p>
+
+  <div class="chap-intro">
+    <p>本章对应原书 6.7–6.13。每一节的结构相同：先描述运作问题，再定义特征函数，然后给出核心/Shapley/核仁的计算或公理化，最后用一个小例子校验。</p>
+    <span class="tag">Ch 6.7–6.13</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip">最大流</span><span class="chip">库存</span><span class="chip hot">项目工期</span><span class="chip"> Assignment</span><span class="chip">最小生成树</span><span class="chip">排队</span><span class="chip">排序</span>
+  </div>
+
+  <h3><span class="sn">20.1</span>最大流博弈：每条边属于一个人</h3>
+  <p>给定有向网络 $(X,E,\mathrm{cap})$，源点 $x_o$、汇点 $x_a$，每条边 $e$ 属于某个玩家 $o(e)\in N$。联盟 $S$ 只能使用自己拥有的边，其收益是子网络上的最大流：</p>
+  <p>$$v(S)=\max\ \text{flow}(S).$$</p>
+  <p>由最大流–最小割定理，$v(S)$ 等于 $S$ 的子网络的最小割容量。原书证明：每个非负可加博弈都是最大流博弈；两个最大流博弈的逐点最小仍是最大流博弈；因此完全平衡博弈恰好就是最大流博弈（Theorem 6.7.3）。</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">最大流博弈的刻画</span><span class="thm-id">Thm. 6.7.3 · Cor. 6.7.4</span></div>
+    <div class="thm-body">
+      <p>(i) 非负 TU 博弈 $v$ 完全平衡 $\iff$ $v$ 是最大流博弈。</p>
+      <p>(ii) 非负 TU 博弈是线性生产博弈 $\iff$ 它是最大流博弈。</p>
+    </div>
+  </div>
+
+  <p>核心分配可以由最小割构造：取一个最小割 $(\hat X,X\setminus\hat X)$，令 $x_i$ 为玩家 $i$ 在该割中拥有的边的容量之和。则 $\sum_i x_i$ 等于割容量 $v(N)$，且对每个 $S$，$x(S)$ 不超过 $S$ 的最小割，故 $x\in C(v)$。这是“按瓶颈资源付费”的离散版本。</p>
+
+  <h3><span class="sn">20.2</span>库存博弈：一起订货省固定成本</h3>
+  <p>若干企业订购同一种商品，固定订货成本 $a$ 相同，各自的年需求与持有成本不同。单独订货时，企业 $i$ 的最优订货量给出年成本 $c(i)$；联合订货可以共享固定成本，但需要协调订货周期。库存博弈（inventory game）的特征函数 $c(S)$ 是联盟 $S$ 的最小年总成本。</p>
+  <p>原书给出 <b>SOC 规则</b>（share of the cost）：按“单独成本平方”比例分摊联盟成本，</p>
+  <p>$$\phi_i(S,c)=\frac{c(i)^2}{\sum_{j\in S}c(j)^2}\,c(S).$$</p>
+  <p>Proposition 6.8.1 证明 SOC 规则给出的分配属于核心；Theorem 6.8.3 证明它是唯一满足 EFF 与 ICM（对联盟操纵免疫）的规则。ICM 要求：无论玩家如何拆分或合并，原联盟成员的总份额不变——这是一条很强的抗策略操纵性质。</p>
+
+  <h3><span class="sn">20.3</span>项目规划：延迟谁负责</h3>
+  <p>项目由活动集 $N$、优先关系 $\prec$、预计工期 $x^e$ 组成。实际工期 $x$ 可能偏离预计，导致项目总工期 $d(N,\prec,x)$ 超过截止期，产生延迟成本 $C$。把每个活动看作一个玩家，定义项目博弈（project game）$v(S)$ 为“只有 $S$ 中的活动可能延迟时，项目节省的延迟成本”。</p>
+  <p>原书证明 Shapley 值满足<b>平衡贡献</b>（balanced contributions）：</p>
+  <p>$$\Phi_i^S(v)-\Phi_i^S(v^{-j})=\Phi_j^S(v)-\Phi_j^S(v^{-i}),$$</p>
+  <p>即 $i$ 对 $j$ 的边际影响等于 $j$ 对 $i$ 的边际影响（Theorem 6.9.1）；并且 Shapley 规则是唯一满足该性质的规则（Theorem 6.9.2）。这条性质在工程上很直观：责任应当对称地归因于相互影响的活动。</p>
+
+  <h3><span class="sn">20.4</span>分配博弈：二手房与匹配市场</h3>
+  <p>两侧市场（two-sided market）：卖方 $N_1$ 各有一件不可分割商品，买方 $N_2$ 各最多买一件。卖方 $i$ 的保留价 $c_i$，买方 $j$ 对商品 $i$ 的估值 $h_{ij}$，交易增益 $a_{ij}=\max\{h_{ij}-c_i,0\}$。联盟 $S$ 的收益是最大权匹配：</p>
+  <p>$$w(S)=\max\Big\{\sum_{(i,j)\in\mu}a_{ij}:\mu\text{ 是 }S\text{ 上的匹配}\Big\}.$$</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">分配博弈的核心</span><span class="thm-id">Thm. 6.10.1 · Cor. 6.10.2</span></div>
+    <div class="thm-body">
+      <p>(i) $(u,v)$ 属于分配博弈的核心，当且仅当它是分配问题 $D_a(N)$ 的最优对偶解。</p>
+      <p>(ii) 每个分配博弈都是完全平衡的。</p>
+    </div>
+  </div>
+
+  <p>核心的互补松弛条件很漂亮：若 $(i,j)$ 在最优匹配中，则 $u_i+v_j=a_{ij}$；若不在，则 $u_i+v_j\ge a_{ij}$；未匹配的玩家份额为 0。原书 Example 6.10.2 的四人对局中，核心分配为 $(7,2,0,3)$，而 Shapley 值为 $(4.5,1.5,1.5,4.5)$，且 $4.5+4.5&lt;10=w(1,2')$，故 Shapley 值不在核心。这再次说明“边际贡献”与“稳定”可以冲突。</p>
+
+  <h3><span class="sn">20.5</span>最小生成树：Bird 规则与民间规则</h3>
+  <p>最小成本生成树问题（minimum cost spanning tree problem, MCST）：节点 $N_0=\{0\}\cup N$，$0$ 是水源/电源，边 $(i:j)$ 有连接成本 $c_{ij}$。联盟 $S$ 需要把 $S\cup\{0\}$ 连通，其特征函数 $c^p(S)$ 是最小生成树的成本。</p>
+  <p><b>Prim 算法</b>：从 $\{0\}$ 出发，每次选连接“已连集合”与“未连集合”的最便宜边，直到所有节点连通。它给出最小树 $\tau$。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">Bird 规则</span><span class="thm-id">§6.11</span></div>
+    <div class="thm-body">
+      <p>给定 Prim 树 $\tau$，每个玩家 $i$ 支付“把他连进树的那条边的成本”：若 $i$ 通过边 $(j:i)$ 首次接入，则 $\mathrm{BD}_i=c_{ji}$。这就是 Bird 规则（Bird's rule）。</p>
+    </div>
+  </div>
+
+  <p>例：$N=\{1,2,3,4\}$，树边 $(0:1)$ 成本 2、$(1:4)$ 成本 2、$(0:3)$ 成本 3、$(3:2)$ 成本 2。则 $\mathrm{BD}=(2,2,3,2)$，总和 9，等于最小树成本。原书证明私人 MCST 博弈完全平衡（Theorem 6.11.1），Bird 分配属于核心。</p>
+  <p>Bird 规则依赖树的选择；不同最小树可能给出不同分配。为消除依赖，定义<b>不可约形式</b>（irreducible form）$C^\tau$：保留树边成本，非树边成本改为“沿树路径的最大边成本”。原书 Theorem 6.11.7 证明：不可约形式的 Shapley 值等于其 Bird 规则（对任意最小树），这个值叫<b>民间规则</b>（folk rule），是 MCST 问题最常用的解。</p>
+
+  <h3><span class="sn">20.6</span>排队问题上的合作（cooperation on queueing problems）</h3>
+  <p>M/M/1 排队系统：到达率 $\lambda$，服务率 $\mu$，期望逗留时间 $1/(\mu-\lambda)$。若每个服务器 $i$ 承诺逗留时间不超过 $t_i$，则所需服务率为 $\mu_i=\lambda_i+1/t_i$。联盟 $S$ 共享一个服务器时，所需服务率为</p>
+  <p>$$\mu_S=\lambda_S+\max_{i\in S}\frac{1}{t_i}.$$</p>
+  <p>成本博弈 $c(S)=\mu_S$ 因此是“可加部分 $\lambda_S$ + 机场博弈部分 $\max_i(1/t_i)$”。原书 Proposition 6.12.1 证明 $c(S)\le\sum_{i\in S}c(i)$，即合作总能省钱；并指出它是可加博弈与机场博弈之和，因而核心非空、Shapley 值可用机场公式计算。</p>
+  <p>另外两种设定：以“队列等待时间上限” $t^q_i$ 约束，或允许优先级/抢占。成本函数会变成 $\bar c(S)=\lambda_S+\max_i(-\ln\alpha_i/\bar t_i)$ 等形式，但“可加 + 机场”的结构保持不变，这是排队博弈可解的关键。</p>
+
+  <h3><span class="sn">20.7</span>排序博弈：换位置省钱</h3>
+  <p>排序问题（sequencing problem）：$n$ 个客户在一台机器前排队，初始顺序 $\pi_0$，服务时间 $p_i&gt;0$，线性等待成本 $c_i(t)=\alpha_i t$。总成本 $C(\pi)=\sum_i\alpha_i(\text{完成时间})$。联盟 $S$ 可以交换彼此的位置（不改变 $S$ 外客户的相对顺序），其收益是节省的成本：</p>
+  <p>$$v(S)=C(\pi_0)-\min_{\pi\in\Pi_S}C(\pi).$$</p>
+
+  <div class="thm theorem">
+    <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">排序博弈是凸的</span><span class="thm-id">Thm. 6.13.1–6.13.2</span></div>
+    <div class="thm-body">
+      <p>(i) 每个排序博弈都是凸博弈，因此核心非空、Shapley 值在核心内。</p>
+      <p>(ii) Shapley 值有闭式表达：</p>
+      <p>$$\Phi_i^S(v)=\sum_{k\in N}\ \sum_{j:\pi_0(k)\le\pi_0(i)\le\pi_0(j)}\frac{g_{kj}}{\pi_0(j)-\pi_0(k)+1},$$</p>
+      <p>其中 $g_{kj}$ 是把 $k$ 与 $j$ 交换位置带来的成本节约（只在两者相邻时计算）。</p>
+    </div>
+  </div>
+
+  <p>最优顺序由 Smith 规则给出：按 $p_i/\alpha_i$ 从小到大排列。直观：服务时间短、等待成本高的人先做。Example 6.13.1 用 $p=(2,4,6,10)$、$\alpha=(1,1,2,8)$ 演示了从初始顺序到最优顺序的换位过程，每一步的增益相加就是总节省。</p>
+
+  <div class="table-wrap cheat"><table>
+    <caption>第 6.7–6.13 节结果速查</caption>
+    <thead><tr><th>问题</th><th>特征函数</th><th>关键结果</th></tr></thead>
+    <tbody>
+      <tr><td class="id">最大流</td><td>$v(S)$：$S$ 拥有的边上的最大流</td><td>完全平衡 $\iff$ 最大流博弈</td></tr>
+      <tr><td class="id">库存</td><td>$c(S)$：联合订货最小年成本</td><td>SOC 规则；EFF + ICM 唯一</td></tr>
+      <tr><td class="id">项目</td><td>$v(S)$：仅 $S$ 可延迟时节省的成本</td><td>Shapley 满足平衡贡献</td></tr>
+      <tr><td class="id">分配</td><td>$w(S)$：最大权匹配</td><td>核心 = 对偶最优；完全平衡</td></tr>
+      <tr><td class="id">MST</td><td>$c^p(S)$：连接 $S\cup\{0\}$ 的最小成本</td><td>Bird 在核心；民间规则 = 不可约 Shapley</td></tr>
+      <tr><td class="id">排队</td><td>$c(S)=\lambda_S+\max_i(1/t_i)$</td><td>可加 + 机场；核心非空</td></tr>
+      <tr><td class="id">排序</td><td>$v(S)=C(\pi_0)-\min_{\Pi_S}C$</td><td>凸；Shapley 闭式</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">模型选错，解再漂亮也没用</span></div>
+    <div class="thm-body">
+      <ul>
+        <li><strong>最大流博弈的“拥有”要写清楚。</strong>公共边（owner 0）不属于任何玩家，不能计入任何 $S$ 的能力。</li>
+        <li><strong>库存的 SOC 规则不是按需求量分。</strong>它按“单独成本平方”比例分，目的是抗拆分操纵。</li>
+        <li><strong>项目延迟责任不是按活动时长分。</strong>Shapley 规则按“关键路径上的边际影响”分。</li>
+        <li><strong>分配博弈的 Shapley 值可能不在核心。</strong>稳定性要用对偶解，不是边际贡献。</li>
+        <li><strong>Bird 规则依赖最小树。</strong>不同树给出不同分配；需要“民间规则”消除依赖。</li>
+        <li><strong>排队合作的前提是服务器可共享。</strong>若服务率不能相加/共享，成本函数会变。</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="ch22" class="chapter"><div class="wrap">
+  <div class="sec-label">Appendix · Exercises</div>
+  <h2><span class="num">22</span>习题与解答（exercises）：每章一道硬题</h2>
+  <p class="lede">原书每章末尾都有一组习题（exercises）。这里不重复全部题面，而是从每章挑两道最能检验理解的题，给出完整计算或证明骨架；做完它们，基本能确认自己不是“看懂了”，而是“会用了”。</p>
+
+  <div class="chap-intro">
+    <p>题目按章排列，覆盖：效用表示与风险溢价、混合均衡、子博弈完美与重复博弈、拍卖收益、Shapley 值与核心、机场/破产/MST 分摊。每道题都标出对应的原书结果编号，方便回查。</p>
+    <span class="tag">Ch 1–6 · selected exercises</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip">风险溢价</span><span class="chip">混合均衡</span><span class="chip">逆向归纳</span><span class="chip">触发策略</span><span class="chip">拍卖收益</span><span class="chip">Shapley</span><span class="chip">成本分摊</span>
+  </div>
+
+  <h3><span class="sn">22.1</span>第 1 章：字典序与风险溢价</h3>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">字典序为何不可表示</span><span class="thm-id">Ex. 1.2.2</span></div>
+    <div class="thm-body">
+      <p>在 $\mathbb{R}^2$ 上定义 $x\succeq_L y$：$x_1&gt;y_1$，或 $x_1=y_1$ 且 $x_2\ge y_2$。证明不存在 $u:\mathbb{R}^2\to\mathbb{R}$ 表示 $\succeq_L$。</p>
+      <p><b>证明思路：</b>对每个 $a\in\mathbb{R}$，取 $x^a=(a,0)$ 与 $y^a=(a,1)$。由定义 $y^a\succ_L x^a$。若 $u$ 表示该偏好，则 $u(y^a)&gt;u(x^a)$。再取 $a&lt;b$，则 $x^b\succ_L y^a$（第一坐标更大），故 $u(x^b)&gt;u(y^a)$。于是对每个实数 $a$，区间 $(u(x^a),u(y^a))$ 非空且两两不交；实数轴上不可数多个互不相交的非空开区间不可能存在（每个区间含一个有理数，而有理数可数）。矛盾。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">对数效用的风险溢价</span><span class="thm-id">§1.4</span></div>
+    <div class="thm-body">
+      <p>设 $u(x)=\ln x$。面对“确定得到 250”与“各以 $1/2$ 得到 100 或 400”的彩票，求确定性等价与风险溢价。</p>
+      <p><b>解：</b>彩票期望效用为 $\tfrac12\ln100+\tfrac12\ln400=\ln\sqrt{100\cdot400}=\ln200$。故确定性等价 $CE=200$，风险溢价 $\pi=250-200=50$。绝对风险厌恶系数 $A(x)=-u''(x)/u'(x)=1/x$，在 $x=200$ 附近 $\pi\approx\tfrac12A(200)\cdot150^2=56.25$，与精确值 50 同量级；近似偏高是因为效用三阶项不可忽略。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">22.2</span>第 2 章：混合均衡与零和值</h3>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">鹰鸽博弈的全部均衡</span><span class="thm-id">Ex. 2.5.1</span></div>
+    <div class="thm-body">
+      <p>收益矩阵（行玩家，列玩家）：$(C,C)=(3,3)$、$(C,D)=(1,4)$、$(D,C)=(4,1)$、$(D,D)=(0,0)$。求所有纳什均衡。</p>
+      <p><b>解：</b>纯均衡：$(D,C)$ 与 $(C,D)$。混合均衡：设行玩家以 $x$ 选 $C$，列玩家在 $C$ 的收益为 $3x+1(1-x)=1+2x$，在 $D$ 为 $4x$；令相等得 $x=1/2$。设列玩家以 $y$ 选 $C$，行玩家在 $C$ 的收益为 $1+2y$，在 $D$ 为 $4y$；令相等得 $y=1/2$。故混合均衡为双方各以 $1/2$ 随机化，期望收益 $(2,2)$。三个均衡中，两个纯均衡的收益和更高，混合均衡是“互相试探”的产物。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">2×2 矩阵博弈的值</span><span class="thm-id">Thm. 2.6.2</span></div>
+    <div class="thm-body">
+      <p>$A=\begin{pmatrix}4&amp;1\\ 0&amp;3\end{pmatrix}$，求值 $V$ 与双方最优策略。</p>
+      <p><b>解：</b>$\Delta=4-1-0+3=6$，$V=(12-0)/6=2$。行玩家 $x^*=((3-0)/6,(4-1)/6)=(1/2,1/2)$；列玩家 $y^*=((3-1)/6,(4-0)/6)=(1/3,2/3)$。验证：行玩家 $(1/2,1/2)$ 对两列收益为 $(2,2)$；列玩家 $(1/3,2/3)$ 使行玩家两行收益为 $4/3+2/3=2$ 与 $0+2=2$。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">22.3</span>第 3 章：SPE 与重复合作</h3>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">进入博弈的 SPE</span><span class="thm-id">Ex. 3.3.5</span></div>
+    <div class="thm-body">
+      <p>进入者先选 $E$ 或 $N$；若 $E$，在位者选 $F$（打价格战）或 $A$（容忍）。收益：$(E,A)=(1,1)$、$(E,F)=(-1,-1)$、$(N,\cdot)=(0,2)$。求 SPE 与全部纯 NE。</p>
+      <p><b>解：</b>逆向归纳：若进入发生，在位者比较 $A$ 的 1 与 $F$ 的 $-1$，选 $A$。预见到 $A$，进入者比较 $E$ 的 1 与 $N$ 的 0，选 $E$。故 SPE 为 $(E,A)$，收益 $(1,1)$。纯 NE 还有 $(N,F)$：给定进入者选 $N$，在位者的 $F$ 不在路径上，无法被检验；给定在位者“选 $F$”，进入者选 $N$ 最优。这个空威胁正是 SPE 要排除的。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">冷酷触发的临界折现因子</span><span class="thm-id">§3.7</span></div>
+    <div class="thm-body">
+      <p>阶段博弈：双方合作各得 4；单方背叛得 6，对方得 0；双方背叛各得 2。求冷酷触发维持合作的 $\delta$ 下界。</p>
+      <p><b>解：</b>合作收益 $4/(1-\delta)$；背叛一期得 6，此后永久惩罚得 2，故偏离收益 $6+2\delta/(1-\delta)$。条件：</p>
+      <p>$$\frac{4}{1-\delta}\ge 6+\frac{2\delta}{1-\delta}\iff 4\ge 6(1-\delta)+2\delta=6-4\delta\iff\delta\ge\frac12.$$</p>
+      <p>与囚徒困境的 $(3,5,1)$ 版本相比，这里背叛诱惑更大、惩罚更轻，但临界值仍是 $1/2$；一般公式是 $\delta\ge(T-R)/(T-P)$，其中 $T$ 是背叛收益、$R$ 是合作收益、$P$ 是惩罚收益。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">22.4</span>第 4 章：拍卖收益</h3>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">三个竞标者的期望收益</span><span class="thm-id">Ex. 4.4.1</span></div>
+    <div class="thm-body">
+      <p>三个风险中性竞标者，估值独立服从 $U[0,1]$。比较一级与二级价格拍卖的对称 BNE 与卖家期望收益。</p>
+      <p><b>解：</b>二级价格：真实报价 $b(\theta)=\theta$，卖家支付第二高估值，期望为 $\mathbb{E}[\theta_{(2)}]=(n-1)/(n+1)=2/4=1/2$。一级价格：$b(\theta)=\frac{n-1}{n}\theta=\frac23\theta$；最高估值期望 $\mathbb{E}[\theta_{(1)}]=n/(n+1)=3/4$，卖家期望收益 $\frac23\cdot\frac34=1/2$。两者相等，正是收益等价。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">进入博弈的 BNE</span><span class="thm-id">Ex. 4.2.1</span></div>
+    <div class="thm-body">
+      <p>企业 1 的类型 $L$ 概率 $p$，类型 $S$ 概率 $1-p$。收益（企业 1，企业 2）为：类型 $L$ 时 $I,E=(0,-1)$、$I,NE=(2,0)$、$NI,E=(2,1)$、$NI,NE=(3,0)$；类型 $S$ 时 $I,E=(3,-1)$、$I,NE=(5,0)$、$NI,E=(2,1)$、$NI,NE=(3,0)$。求 BNE。</p>
+      <p><b>解：</b>类型 $L$ 比较 $I$ 的 $(0,2)$ 与 $NI$ 的 $(2,3)$，无论企业 2 怎么选都偏好 $NI$；类型 $S$ 比较 $I$ 的 $(3,5)$ 与 $NI$ 的 $(2,3)$，都偏好 $I$。企业 2 选 $E$ 的期望 $p(-1)+(1-p)(1)=1-2p$，选 $NE$ 为 0。故 $p&lt;1/2$ 时选 $E$，$p&gt;1/2$ 时选 $NE$。BNE 为 $(NI\mid L,\ I\mid S;\ E\text{ 若 }p&lt;1/2,\ NE\text{ 若 }p&gt;1/2)$。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">22.5</span>第 5 章：Shapley 与核心</h3>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">分百万的 Shapley 值与空核心</span><span class="thm-id">Ex. 5.6.1</span></div>
+    <div class="thm-body">
+      <p>$N=\{1,2,3\}$，$v(S)=1$ 当 $|S|\ge2$，否则 $0$。求 Shapley 值并证明核心为空。</p>
+      <p><b>解：</b>由对称性，三人份额相等；由效率，总和为 $v(N)=1$，故 $\Phi^S=(1/3,1/3,1/3)$。核心：任意两人联盟要求 $x_i+x_j\ge1$，三式相加得 $2\sum_i x_i\ge3$，即 $\sum_i x_i\ge1.5$，与效率 $\sum_i x_i=1$ 矛盾。故 $C(v)=\varnothing$。这说明 Shapley 值对空核心的博弈仍可给出分配。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">手套博弈的核心</span><span class="thm-id">Ex. 5.5.3</span></div>
+    <div class="thm-body">
+      <p>玩家 1 有左手套，玩家 2、3 各有右手套；$v(12)=v(13)=v(N)=1$，其余为 0。求核心。</p>
+      <p><b>解：</b>核心要求 $x_1+x_2\ge1$、$x_1+x_3\ge1$、$x_2+x_3\ge0$、$x_1+x_2+x_3=1$、$x_i\ge0$。由前两式与总和得 $x_3\le0$、$x_2\le0$，故 $x_2=x_3=0$、$x_1=1$。核心为 $\{(1,0,0)\}$。玩家 1 的稀缺性使他拿走全部剩余。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">22.6</span>第 6 章：机场、破产与 MST</h3>
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">两等级机场的成本分摊</span><span class="thm-id">Thm. 6.2.1</span></div>
+    <div class="thm-body">
+      <p>$N=\{1,2\}$，玩家 1 需要 $c_1=10$ 的跑道，玩家 2 需要 $c_2=20$。求 Shapley 成本分摊。</p>
+      <p><b>解：</b>第 1 层成本 10 由两人均摊，各 5；第 2 层增量 $20-10=10$ 只由玩家 2 承担。故 $(\Phi_1,\Phi_2)=(5,15)$，总和 20。注意这是成本博弈，核心要求 $x(S)\le c(S)$（成本不超过单干），故 $x_1\le10$、$x_2\le20$、$x_1+x_2=20$；$(5,15)$ 满足。成本博弈的“联盟理性”方向与收益型相反，这是最容易写错的地方。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">破产规则的数值</span><span class="thm-id">Ex. 6.3.3</span></div>
+    <div class="thm-body">
+      <p>$E=100$，债权 $d=(100,200,300)$。求比例、随机到达、Talmud 三种分配。</p>
+      <p><b>解：</b>比例：$(100/600,200/600,300/600)\times100=(16.67,33.33,50)$。随机到达：每个债权人成为“第一个到达”的概率相同，第一个拿走全部 100，故期望为 $(33.33,33.33,33.33)$。Talmud：$E=100$ 小于半数总债权 300，按 constrained equal awards，三人各得 $100/3=33.33$。三者在 $E$ 很小时趋同，在 $E$ 接近总债权时趋近于按债权比例。</p>
+    </div>
+  </div>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">习题</span><span class="thm-title">MST 的 Bird 分配</span><span class="thm-id">Ex. 6.11.2</span></div>
+    <div class="thm-body">
+      <p>节点 $\{0,1,2,3\}$，边成本：$(0:1)=4$、$(0:2)=6$、$(1:2)=3$、$(0:3)=5$、$(1:3)=5$、$(2:3)=4$。用 Prim 算法求最小树并给出 Bird 分配。</p>
+      <p><b>解：</b>从 0 出发，选最便宜的 $(0:1)=4$；已连集合 $\{0,1\}$，候选边 $(0:2)=6$、$(1:2)=3$、$(0:3)=5$、$(1:3)=5$，选 $(1:2)=3$；已连 $\{0,1,2\}$，候选 $(0:3)=5$、$(1:3)=5$、$(2:3)=4$，选 $(2:3)=4$。树成本 $4+3+4=11$。Bird：玩家 1 付 4，玩家 2 付 3，玩家 3 付 4，总和 11。该分配属于核心。</p>
+    </div>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">做题提醒</span><span class="thm-title">先判断“收益型还是成本型”</span></div>
+    <div class="thm-body">
+      <ul>
+        <li><strong>成本博弈的核心不等式方向相反：</strong>$x(S)\le c(S)$，不是 $\ge$。</li>
+        <li><strong>混合均衡先枚举支撑，</strong>不要一上来套 2×2 公式。</li>
+        <li><strong>逆向归纳从最深的子博弈开始，</strong>信息集跨界时不能切。</li>
+        <li><strong>拍卖题先确认估值分布与竞标人数，</strong>再决定用 $b(\theta)=\mathbb{E}[Z\mid Z&lt;\theta]$ 还是均匀分布特例。</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="ch23" class="chapter"><div class="wrap">
+  <div class="sec-label">Appendix · Notation &amp; Indexes</div>
+  <h2><span class="num">23</span>符号表与索引（notations, indexes）</h2>
+  <p class="lede">原书末尾有三类索引：符号表（notations）、作者索引（index of authors）、解概念索引（index of solution concepts）与主题索引（subject index）。它们不是装饰，而是回查工具：读到一个陌生符号或定理名，先在这里定位，再回到对应章节。</p>
+
+  <div class="chap-intro">
+    <p>本节把四类索引压缩成四张表：符号与含义、作者与贡献、解概念与首次出现、主题与章节。所有条目都指向本教程的 section，方便跳转复习。</p>
+    <span class="tag">Back matter</span>
+  </div>
+
+  <h3><span class="sn">23.1</span>符号表（notations）</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>符号</th><th>含义</th><th>出现</th></tr></thead>
+    <tbody>
+      <tr><td class="id">$N$, $n$</td><td>玩家集与其基数</td><td>Ch 1–2</td></tr>
+      <tr><td class="id">$A_i$, $A$, $a_{-i}$</td><td>策略集、策略组合集、除去 $i$ 的组合</td><td>Def. 2.1.1</td></tr>
+      <tr><td class="id">$u_i$, $u$</td><td>收益函数与收益向量</td><td>Def. 2.1.1</td></tr>
+      <tr><td class="id">$S_i=\Delta A_i$</td><td>混合策略单纯形</td><td>Def. 2.4.1</td></tr>
+      <tr><td class="id">$BR_i(a_{-i})$</td><td>最优反应集</td><td>Def. 2.2.2</td></tr>
+      <tr><td class="id">$O_1(A)$, $O_2(A)$</td><td>矩阵博弈的最优策略集</td><td>§2.6–2.7</td></tr>
+      <tr><td class="id">$\Omega$, $P_i$, $\rho_i$</td><td>状态集、信息划分、先验</td><td>Def. 2.10.1</td></tr>
+      <tr><td class="id">$\Theta_i$, $\theta_i$</td><td>类型空间与类型</td><td>Def. 4.2.1</td></tr>
+      <tr><td class="id">$\Gamma=(X,E,P,W,C,p,U)$</td><td>扩展式博弈七元组</td><td>Def. 3.1.1</td></tr>
+      <tr><td class="id">$(b,\mu)$</td><td>评估：行为策略 + 信念</td><td>Def. 3.5.1</td></tr>
+      <tr><td class="id">$v(S)$, $c(S)$</td><td>联盟价值（收益型/成本型）</td><td>Def. 5.4.1</td></tr>
+      <tr><td class="id">$I(v)$, $C(v)$</td><td>分配集、核心</td><td>Def. 5.5.1–5.5.2</td></tr>
+      <tr><td class="id">$\Phi^S$, $\Phi^B$, $\Phi^M$, $\Phi^O$</td><td>Shapley、Banzhaf、Myerson、Owen 值</td><td>Ch 5</td></tr>
+      <tr><td class="id">$e(S,x)$, $\theta(x)$, $\eta(v)$</td><td>超额、超额向量、核仁</td><td>Def. 5.10.1</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3><span class="sn">23.2</span>作者索引（index of authors）</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>作者</th><th>与本教程相关的贡献</th><th>章节</th></tr></thead>
+    <tbody>
+      <tr><td class="id">Cournot (1838)</td><td>寡头产量竞争模型</td><td>§2.1–2.2</td></tr>
+      <tr><td class="id">Nash (1950, 1951)</td><td>纳什均衡、Nash 议价解</td><td>Ch 2–3, §5.3</td></tr>
+      <tr><td class="id">Kuhn (1953)</td><td>完美回忆下混合/行为策略等价</td><td>§3.2</td></tr>
+      <tr><td class="id">Shapley (1953, 1954)</td><td>Shapley 值、Shapley–Shubik 指数</td><td>§5.6, §6.4</td></tr>
+      <tr><td class="id">Gillies (1953)</td><td>核心</td><td>§5.5</td></tr>
+      <tr><td class="id">Debreu (1954)</td><td>效用表示定理</td><td>§1.2</td></tr>
+      <tr><td class="id">Selten (1965, 1975)</td><td>子博弈完美、颤抖手完美</td><td>§3.4, §2.9</td></tr>
+      <tr><td class="id">Harsanyi (1967–68)</td><td>类型空间、不完全信息建模</td><td>§4.2, §4.7</td></tr>
+      <tr><td class="id">Banzhaf (1965)</td><td>Banzhaf 权力指数</td><td>§5.8, §6.4</td></tr>
+      <tr><td class="id">Kalai–Smorodinsky (1975)</td><td>KS 议价解</td><td>§5.3</td></tr>
+      <tr><td class="id">Myerson (1977, 1980)</td><td>沟通图上的 Myerson 值、显示原理</td><td>§5.13, §4.5</td></tr>
+      <tr><td class="id">Owen (1972, 1975)</td><td>Owen 值、线性生产博弈</td><td>§5.14, §6.6</td></tr>
+      <tr><td class="id">Kreps–Wilson (1982)</td><td>序贯均衡、连锁店声誉</td><td>§3.5, §4.3</td></tr>
+      <tr><td class="id">Rubinstein (1982)</td><td>交替出价议价</td><td>§5.15</td></tr>
+      <tr><td class="id">Bird (1976)</td><td>最小生成树的 Bird 规则</td><td>§6.11</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3><span class="sn">23.3</span>解概念索引（index of solution concepts）</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>解概念</th><th>一句话定义</th><th>首次出现</th></tr></thead>
+    <tbody>
+      <tr><td class="id">占优 / IEDS</td><td>无论对手怎么选都更好；反复剔除</td><td>§2.2</td></tr>
+      <tr><td class="id">纳什均衡</td><td>给定对手策略，无人想单独偏离</td><td>Def. 2.2.1</td></tr>
+      <tr><td class="id">混合均衡</td><td>混合扩展中的纳什均衡</td><td>Def. 2.4.1</td></tr>
+      <tr><td class="id">相关均衡</td><td>听从公共信号建议是最优反应</td><td>Def. 2.11.2</td></tr>
+      <tr><td class="id">完美均衡</td><td>扰动均衡的极限</td><td>Def. 2.9.3</td></tr>
+      <tr><td class="id">正当均衡</td><td>越差的策略概率越小一个数量级</td><td>§2.9</td></tr>
+      <tr><td class="id">子博弈完美</td><td>每个子博弈上都是纳什均衡</td><td>Def. 3.4.3</td></tr>
+      <tr><td class="id">序贯均衡</td><td>序贯理性 + 一致信念</td><td>Def. 3.5.7</td></tr>
+      <tr><td class="id">贝叶斯纳什均衡</td><td>按类型最大化期望收益</td><td>Def. 4.2.2</td></tr>
+      <tr><td class="id">完美贝叶斯均衡</td><td>序贯理性 + 合理信念</td><td>Def. 4.6.2</td></tr>
+      <tr><td class="id">核心</td><td>没有任何联盟能改进的分配</td><td>Def. 5.5.2</td></tr>
+      <tr><td class="id">Shapley 值</td><td>随机排列下边际贡献的期望</td><td>Def. 5.6.3</td></tr>
+      <tr><td class="id">Banzhaf 值</td><td>等概率联盟下的平均边际贡献</td><td>Def. 5.8.1</td></tr>
+      <tr><td class="id">核仁</td><td>字典序最小化超额向量</td><td>Def. 5.10.1</td></tr>
+      <tr><td class="id">核心中心</td><td>核心的几何重心</td><td>Def. 5.11.1</td></tr>
+      <tr><td class="id">Myerson / Owen 值</td><td>带沟通图/先验联盟的 Shapley 化</td><td>§5.13–5.14</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3><span class="sn">23.4</span>主题索引（subject index）</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>主题</th><th>关键结果</th><th>章节</th></tr></thead>
+    <tbody>
+      <tr><td class="id">期望效用与风险</td><td>Thm. 1.3.3；Allais 悖论</td><td>Ch 1</td></tr>
+      <tr><td class="id">零和与 minimax</td><td>Thm. 2.6.2；Prop. 2.3.1</td><td>§2.3, §2.6</td></tr>
+      <tr><td class="id">线性规划对偶</td><td>Thm. 2.8.8</td><td>§2.8</td></tr>
+      <tr><td class="id">知识、相关均衡</td><td>Thm. 2.11.1；Thm. 2.12.1</td><td>§2.10–2.12</td></tr>
+      <tr><td class="id">逆向归纳、蜈蚣</td><td>Thm. 3.4.2；Ex. 3.4.3</td><td>§3.4</td></tr>
+      <tr><td class="id">声誉与重复博弈</td><td>Thm. 3.7.2–3.7.5</td><td>§3.7</td></tr>
+      <tr><td class="id">拍卖与收益等价</td><td>Prop. 4.4.2；Ex. 4.4.1</td><td>§4.4</td></tr>
+      <tr><td class="id">机制设计与显示原理</td><td>Thm. 4.5.1</td><td>§4.5</td></tr>
+      <tr><td class="id">议价</td><td>Thm. 5.3.3；Thm. 5.15.4</td><td>§5.3, §5.15</td></tr>
+      <tr><td class="id">成本分摊</td><td>Thm. 6.2.1；§6.11–6.12</td><td>Ch 6</td></tr>
+      <tr><td class="id">权力指数</td><td>Thm. 6.4.1–6.4.7</td><td>§6.4</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="thm note">
+    <div class="thm-head"><span class="thm-kind">使用建议</span><span class="thm-title">索引怎么用</span></div>
+    <div class="thm-body">
+      <p>复习时先看“解概念索引”确认定义，再看“主题索引”找对应定理，最后回到正文的证明骨架。写论文或做题时，用“符号表”统一记号，避免 $S$ 同时表示策略集与联盟——这是最常见的记号冲突。</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="summary" class="chapter"><div class="wrap">
+  <div class="sec-label">Wrap-up · Study Route</div>
+  <h2><span class="num">21</span>一页纸的博弈论：概念地图与学习路线</h2>
+  <p class="lede">把六个章节压缩成一张依赖图：先有偏好与效用，才有收益矩阵；先有混合策略，才有 minimax 与相关均衡；先有子博弈，才有可信威胁；先有类型，才有拍卖与机制设计；最后，合作博弈把“策略”换成“联盟”。</p>
+
+  <div class="chap-intro">
+    <p>这一节不引入新定理，只做三件事：给一张概念依赖图、给一条 6 周学习路线、给一份“看到题目先问什么”的检查清单。所有编号仍指回原书，方便回查。</p>
+    <span class="tag">Review</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip">依赖图</span><span class="chip">6 周路线</span><span class="chip hot">解题清单</span><span class="chip">符号表</span><span class="chip">常见陷阱</span>
+  </div>
+
+  <h3><span class="sn">21.1</span>概念依赖图</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>层</th><th>核心对象</th><th>关键结果</th><th>下一层需要它做什么</th></tr></thead>
+    <tbody>
+      <tr><td class="id">0</td><td>偏好、效用、vNM</td><td>Thm. 1.2.3；Thm. 1.3.3</td><td>定义收益 $u_i$ 与期望收益</td></tr>
+      <tr><td class="id">1</td><td>策略式博弈、占优</td><td>Def. 2.1.1；IEDS</td><td>写出收益矩阵</td></tr>
+      <tr><td class="id">2</td><td>纳什均衡、混合策略</td><td>Thm. 2.2.3；Thm. 2.4.1</td><td>解同时行动博弈</td></tr>
+      <tr><td class="id">3</td><td>零和、矩阵博弈、LP</td><td>Thm. 2.6.2；Thm. 2.8.8</td><td>计算值、最优策略</td></tr>
+      <tr><td class="id">4</td><td>精炼、相关均衡、知识</td><td>Thm. 2.9.3；Thm. 2.11.1；Thm. 2.12.1</td><td>筛选均衡、建模信号</td></tr>
+      <tr><td class="id">5</td><td>扩展式、SPE、序贯</td><td>Thm. 3.2.1；Thm. 3.4.2；Thm. 3.5.2</td><td>动态博弈、可信威胁</td></tr>
+      <tr><td class="id">6</td><td>重复博弈、民间定理</td><td>Thm. 3.7.2–3.7.5</td><td>长期合作、声誉</td></tr>
+      <tr><td class="id">7</td><td>贝叶斯博弈、拍卖、机制</td><td>Def. 4.2.2；Thm. 4.4.2；Thm. 4.5.1</td><td>不完全信息、规则设计</td></tr>
+      <tr><td class="id">8</td><td>NTU/TU、议价、核心</td><td>Thm. 5.3.3；Thm. 5.5.3</td><td>联盟、分配</td></tr>
+      <tr><td class="id">9</td><td>Shapley、核仁、凸博弈</td><td>Thm. 5.6.1；Thm. 5.10.2；Thm. 5.12.1</td><td>选一个公平分配</td></tr>
+      <tr><td class="id">10</td><td>网络、实现、应用</td><td>Thm. 5.13.1；Thm. 5.15.4；第 6 章</td><td>落地到运筹问题</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3><span class="sn">21.2</span>六周路线</h3>
+  <ol>
+    <li><b>第 1 周：决策论 + 策略式博弈。</b>读第 1 章与 2.1–2.3，手算囚徒困境、Cournot、匹配 pennies；把“占优/重复剔除/零和”三张表背下来。</li>
+    <li><b>第 2 周：纳什均衡 + 混合策略。</b>读 2.4–2.5，练 2×2 公式与支撑枚举；做 5 道“求所有均衡”的题，包括边界解。</li>
+    <li><b>第 3 周：矩阵博弈 + 精炼 + 相关均衡。</b>读 2.6–2.12，用 LP 解一个 3×3 矩阵博弈；用颤抖手筛一个弱均衡；写一个相关均衡的 LP。</li>
+    <li><b>第 4 周：扩展式 + SPE + 重复。</b>读第 3 章，画树、做逆向归纳；算冷酷触发的临界 $\delta$；复述四个民间定理的条件。</li>
+    <li><b>第 5 周：贝叶斯 + 拍卖 + 机制。</b>读第 4 章，解一级/二级拍卖；默写显示原理的证明；区分 PBE 与序贯均衡。</li>
+    <li><b>第 6 周：合作博弈 + 应用。</b>读第 5–6 章，算核心、Shapley、核仁各两题；把机场/破产/MST 各做一个小例子。</li>
+  </ol>
+
+  <h3><span class="sn">21.3</span>解题检查清单</h3>
+  <div class="thm note">
+    <div class="thm-head"><span class="thm-kind">清单</span><span class="thm-title">看到题目先问六个问题</span></div>
+    <div class="thm-body">
+      <ol>
+        <li><b>是同时行动还是序贯？</b>同时 → 矩阵/BNE；序贯 → 树/SPE/PBE。</li>
+        <li><b>信息是完全还是不完全？</b>不完全 → 先写类型、先验、后验。</li>
+        <li><b>是零和还是非零和？</b>零和 → 值、minimax、LP；非零和 → 纳什/相关均衡。</li>
+        <li><b>玩家能否签有约束力的协议？</b>能 → 合作博弈、核心/Shapley；不能 → 非合作。</li>
+        <li><b>要不要唯一预测？</b>要 → 精炼（完美/正当/序贯）；不要 → 保留均衡集。</li>
+        <li><b>分配要不要稳定？</b>要 → 核心/核仁；要“按贡献” → Shapley；要“几何中心” → core-center。</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3><span class="sn">21.4</span>符号表</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>符号</th><th>含义</th><th>首次出现</th></tr></thead>
+    <tbody>
+      <tr><td class="id">$N=\{1,\dots,n\}$</td><td>玩家集</td><td>第 1 章</td></tr>
+      <tr><td class="id">$A_i,\ A$</td><td>策略集、策略组合集</td><td>Def. 2.1.1</td></tr>
+      <tr><td class="id">$u_i,\ u$</td><td>收益函数</td><td>Def. 2.1.1</td></tr>
+      <tr><td class="id">$S_i=\Delta A_i$</td><td>混合策略单纯形</td><td>Def. 2.4.1</td></tr>
+      <tr><td class="id">$BR_i$</td><td>最优反应对应</td><td>Def. 2.2.2</td></tr>
+      <tr><td class="id">$\Theta_i,\ \theta_i$</td><td>类型空间、类型</td><td>Def. 4.2.1</td></tr>
+      <tr><td class="id">$v(S)$</td><td>联盟 $S$ 的价值</td><td>Def. 5.4.1</td></tr>
+      <tr><td class="id">$C(v)$</td><td>核心</td><td>Def. 5.5.2</td></tr>
+      <tr><td class="id">$\Phi^S,\ \Phi^B$</td><td>Shapley 值、Banzhaf 值</td><td>Def. 5.6.3、5.8.1</td></tr>
+      <tr><td class="id">$\eta(v)$</td><td>核仁</td><td>Def. 5.10.1</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">最后提醒</span><span class="thm-title">五个最容易混的点</span></div>
+    <div class="thm-body">
+      <ul>
+        <li><strong>纳什均衡 vs 子博弈完美：</strong>前者允许空威胁，后者在每个子博弈上都要求均衡。</li>
+        <li><strong>混合策略 vs 行为策略：</strong>完美回忆下等价（Kuhn），否则不等价。</li>
+        <li><strong>序贯均衡 vs PBE：</strong>序贯要求一致（完全混合逼近），PBE 只要求合理（B(i)–B(iv)）。</li>
+        <li><strong>核心 vs Shapley：</strong>核心是稳定性集合，Shapley 是边际贡献点；两者一般不相交。</li>
+        <li><strong>Banzhaf vs Shapley：</strong>Banzhaf 不效率，Shapley 效率；简单博弈里两者都衡量关键性，但权重不同。</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="margin-top:2em;color:var(--muted)">读到这里，你已经走完原书六章的主干：从一个人的效用，到多个人的均衡；从同时行动，到序贯与重复；从完全信息，到类型与机制；从非合作，到联盟与分配。剩下的工作不是再背定理，而是拿一个具体问题，判断它落在哪一层，然后选对工具。</p>
 </div></section>
 
 </main>

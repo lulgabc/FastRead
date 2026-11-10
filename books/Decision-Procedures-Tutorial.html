@@ -436,7 +436,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="sb-title">Decision Procedures
       <span>An Algorithmic Point of View</span>
     </div>
-    <div class="sb-meta">369 页 · 16 个 section</div>
+    <div class="sb-meta">369 页 · 19 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
@@ -456,6 +456,9 @@ figcaption b{color:var(--ink2);font-weight:600}
     <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>量词 I：前束范式与量词消去</span></a>
     <a class="nav-link" href="#ch9b" data-sec="ch9b"><span class="nav-num">•</span> <span>+量词 II：搜索、EPR 与一般量化</span></a>
     <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>理论组合：Nelson–Oppen 的握手</span></a>
+    <a class="nav-link" href="#ch11" data-sec="ch11"><span class="nav-num">11</span> <span>命题编码：把理论一次性压成 SAT</span></a>
+    <a class="nav-link" href="#ch12" data-sec="ch12"><span class="nav-num">12</span> <span>Applications in Software Engineering and Computational Biology</span></a>
+    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
   <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
@@ -490,7 +493,7 @@ figcaption b{color:var(--ink2);font-weight:600}
         <p class="hero-sub">逻辑公式不是只能“看出来”对不对。把问题限制在<b>可判定片段</b>里：SAT 求解器负责布尔结构，理论求解器负责算术、数组、指针与位向量，二者合起来就是 <b>SMT</b>。本书讲的是这套机器如何运转，以及它何时会停下来。</p>
         <div class="hero-actions">
           <a class="btn" href="#ch1">从判定问题开始 →</a>
-          <a class="btn ghost" href="#ch10">直接看求解器选型</a>
+          <a class="btn ghost" href="#summary">直接看求解器选型</a>
         </div>
         <div class="hero-stats">
           <div class="hstat"><b>12</b><span>章主线</span></div>
@@ -744,6 +747,28 @@ figcaption b{color:var(--ink2);font-weight:600}
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">1.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>1.1 Two Approaches to Formal Reasoning</td><td><b>演绎</b>（deduction）从公理与推理规则生成结论，能处理无限域、证明短，但要人选规则；<b>枚举</b>（enumeration）在有限域上遍历赋值，简单可靠但代价 $2^n$。1.1.3 指出两者可以合流：搜索树是枚举，冲突子句是演绎。</td></tr>
+          <tr><td>1.2 Basic Definitions</td><td>赋值 $\alpha$、可满足、矛盾、有效、可靠、完备、判定过程、可判定理论（Definition 1.2–1.8）。</td></tr>
+          <tr><td>1.3 Normal Forms and Some of Their Properties</td><td>NNF 线性时间可得并具单调性（Theorem 1.14）；DNF 可指数膨胀（线性公式可有 $2^n$ 个项，Example 1.18）；CNF 的等可满足转换用 Tseitin 编码，规模线性（Example 1.21），并可用单向蕴含与子句包含优化。</td></tr>
+          <tr><td>1.4 The Theoretical Point of View</td><td>签名、结构、T-可满足、T-有效；理论由公理给出（等式的三条公理），片段由语法限制给出。</td></tr>
+          <tr><td>1.4.1 The Problem We Solve</td><td>本书只解无量词片段的可满足性；基公式加存在量词与原问题等价，但前者要求模型给出自由变量赋值。</td></tr>
+          <tr><td>1.4.2 Our Presentation of Theories</td><td>不逐条列公理，而是显式给出论域、把符号固定为通常解释（$+$ 就是加法）；语法也各章自足。好处是算法视角清晰，代价是“换解释就换算法”。</td></tr>
+          <tr><td>1.5 Expressiveness vs. Decidability</td><td>表达力偏序 $B\prec A$；2-CNF 严格弱于命题逻辑，却从 NP 完全降到线性可解。表达力—难度曲线不是全序。</td></tr>
+          <tr><td>1.6 Boolean Structure in Decision Problems</td><td>验证条件常带析取；DNF 展开不可行。SSA 编码让公式大小与程序文本线性相关，而路径数仍指数（Example 1.25）。</td></tr>
+          <tr><td>1.7 Logic as a Modeling Language</td><td>逻辑是建模语言；与数学规划、CSP 在约束语言、技术、目标三方面分工不同。</td></tr>
+          <tr><td>1.8 Problems</td><td>习题：改进 Tseitin 编码、表达力与复杂度的关系、证明 NNF 单调性、验证单向 Tseitin 的正确性并比较子句数。</td></tr>
+          <tr><td>1.9 Glossary</td><td>符号表：$\alpha\models\varphi$、$\models\varphi$、$T$、$\mathrm{pos}(\alpha,\varphi)$、$B\prec A$ 及首次出现页码。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -1075,6 +1100,34 @@ atom    : Boolean-identifier | true | false</code></pre>
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">2.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>2.1 Propositional Logic</td><td>语法只有 $\land,\neg$ 与原子；SAT 是 NP 完全，可承载任意 NP 问题。</td></tr>
+          <tr><td>2.1.1 Motivation</td><td>两个建模例：电台频率分配等价于 $k$-着色（变量 $x_{ij}$，约束“至少一个/至多一个/相邻不同”）；两段 <code>if-then-else</code> 代码的等价性化为命题有效性（式 2.5）。</td></tr>
+          <tr><td>2.2 SAT Solvers</td><td>只解 CNF；任意公式线性时间转 CNF，故不失一般性。</td></tr>
+          <tr><td>2.2.1 The Progress of SAT Solving</td><td>1960 年代 DPLL（纯文字、单位子句、分支）→ 1990 年代 GRASP/SATO 的冲突分析与学习 → 2001 年 Chaff 的 VSIDS 与 watched literals → 之后的重启与子句数据库管理。</td></tr>
+          <tr><td>2.2.2 The CDCL Framework</td><td>决策层、第 0 层、子句四状态（Definition 2.3）、单位子句规则、前因子句；Algorithm 2.2.1 主循环。</td></tr>
+          <tr><td>2.2.3 BCP and the Implication Graph</td><td>蕴含图（Definition 2.6）：节点是文字+决策层，边是前因子句；冲突图加 $\kappa$。图不唯一，依赖传播顺序。</td></tr>
+          <tr><td>2.2.4 Conflict Clauses and Resolution</td><td>UIP / first UIP（Definition 2.9–2.10）、二元归结（Definition 2.11）、Algorithm 2.2.2；first UIP 回跳最低。</td></tr>
+          <tr><td>2.2.5 Decision Heuristics</td><td>Jeroslow–Wang $J(l)=\sum_{\omega\ni l}2^{-|\omega|}$、DLIS、VSIDS（冲突时加分+衰减）、相位保存、重启。</td></tr>
+          <tr><td>2.2.6 The Resolution Graph and the Unsatisfiable Core</td><td>归结图叶子是原子句、根是空子句，可独立检查；反向可达的叶子构成不可满足核心。</td></tr>
+          <tr><td>2.2.7 Incremental Satis ability</td><td>（原书标题的 ﬁ 连字在 PDF 提取中断成空格，检索时写作 <i>Incremental Satis ability</i>。）复用学习子句与启发式权重；<b>假设</b>（assumptions）是特殊决策，学习子句与之无关；删子句用 <b>子句选择器</b>。</td></tr>
+          <tr><td>2.2.8 From SAT to the Constraint Satisfaction Problem</td><td>CSP 可多项式归约到 SAT（域用 $\lceil\log n\rceil$ 位）；传播器对应 BCP，可靠但不必完备。</td></tr>
+          <tr><td>2.3 Problems</td><td>2.3.1 热身（判 sat/unsat/valid）、2.3.2 命题逻辑（NAND/NOR 完备性）、2.3.3 建模、2.3.4 复杂度（学习子句的空间）、2.3.5 CDCL、2.3.6 相关问题（CSP 编码等）。</td></tr>
+          <tr><td>2.3.1 Warm-up Exercises</td><td>七个公式判 sat/unsat/valid；座位安排；两段条件表达式等价；手跑 VSIDS + 冲突分析。</td></tr>
+          <tr><td>2.3.4 Complexity</td><td>CDCL 的空间复杂度：不学习、学习、学习但子句长度受限三种情形。</td></tr>
+          <tr><td>2.3.6 Related Problems</td><td>CSP→SAT、受限 CNF 的多项式判定（Horn、2-CNF）等。</td></tr>
+          <tr><td>2.4 Bibliographic Notes</td><td>DPLL、GRASP、Chaff、MiniSAT、Glucose 的源流；归结下界与鸽巢问题。</td></tr>
+          <tr><td>2.5 Glossary</td><td>决策层、前因子句、UIP、冲突子句、VSIDS 等术语的首次出现页码。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -1438,6 +1491,29 @@ return clause-asserting-level(cl);   // cl 中第二高的决策层</code></pre>
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">3.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>3.1 Introduction</td><td>合取片段可多项式判定（等式图 DFS）；一般布尔结构用分情况，但项数指数且不学习。</td></tr>
+          <tr><td>3.2 An Overview of DPLL(T)</td><td>命题骨架 $e(\varphi)$、编码器 $e(a)$、$\hat{\mathrm{Th}}(\alpha)$、阻塞子句；$\varphi=x=y\land((y=z\land\neg(x=z))\lor x=z)$ 走一遍。</td></tr>
+          <tr><td>3.3 Formalization</td><td>Lazy-Basic（Algorithm 3.3.1）与三条要求：$t$  T-有效、原子受限、$e(t)$ 阻塞 $\alpha$；前两条可弱化。Lazy-CDCL（Algorithm 3.3.2）把 <code>Deduction</code> 嵌进 CDCL。</td></tr>
+          <tr><td>3.4 Theory Propagation and the DPLL(T) Framework</td><td>部分赋值上的理论检查既排矛盾又传蕴含；Algorithm 3.4.1 内层 <code>repeat</code> 传播到不动点。</td></tr>
+          <tr><td>3.4.1 Propagating Theory Implications</td><td>若 $e(x_1\ge10)$ 与 $e(x_1\lt0)$ 都真，理论立刻矛盾；提前传播 $t=\neg(x_1\ge10)\lor\neg(x_1\lt0)$ 可完全避免冲突。传播非正确性必需，仅效率。</td></tr>
+          <tr><td>3.4.2 Performance, Performance...</td><td>部分赋值阶段可用近似判定器（整数算术只解实数松弛）；穷尽传播在算术上反而更慢，只抓便宜蕴含。</td></tr>
+          <tr><td>3.4.3 Returning Implied Assignments Instead of Clauses</td><td>不足 0.5% 的传播子句会被再次使用；改为直接返回赋值，冲突分析时向理论求解器索要解释（explanation）。</td></tr>
+          <tr><td>3.4.4 Generating Strong Lemmas</td><td>取证明前提集 $S$，用 $\bigvee_{l\in S}\neg l$ 作阻塞子句；$S$ 即不可满足核心，可从证明 DAG 反向可达得到。</td></tr>
+          <tr><td>3.4.5 Immediate Propagation</td><td>每个编码器赋值后即调理论；若传播穷尽，则永远不会返回阻塞子句。</td></tr>
+          <tr><td>3.5 Problems</td><td>增量 SAT 与 Lazy-CDCL 的差别、只送正文字的变体是否正确、穷尽传播的实现、即时传播伪代码。</td></tr>
+          <tr><td>3.6 Bibliographic Notes</td><td>DPLL(T) 的抽象形式（Tinelli）、解释与强引理（Nieuwenhuis–Oliveras–Tinelli）、各 SMT 求解器的实现差异。</td></tr>
+          <tr><td>3.7 Glossary</td><td>$\mathit{DP}_T$、$e(a)$、$\mathrm{at}(\varphi)$、$\mathrm{Th}(\alpha)$、$\hat{\mathrm{Th}}(\alpha)$、$t$、$B_i$ 的符号表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -1623,6 +1699,32 @@ term    : identifier | function-symbol( list of terms )</code></pre>
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">4.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>4.1 Introduction</td><td>相等逻辑语法（Definition 4.1）；可满足性 NP 完全；与命题逻辑可互相建模，但等式建模更自然、算法能利用高层结构。</td></tr>
+          <tr><td>4.1.1 Complexity and Expressiveness</td><td>NP 完全的两个理论可建模同一批问题；研究相等逻辑是为了建模便利与效率。</td></tr>
+          <tr><td>4.1.2 Boolean Variables</td><td>布尔变量可编码成 $b=\mathrm{true}$，但更高效的是在算法里直接支持两类原子。</td></tr>
+          <tr><td>4.1.3 Removing the Constants: a Simplification</td><td>Theorem 4.2 + Algorithm 4.1.1：常量换新变量，并对每对常量加 $C_{c_i}\ne C_{c_j}$；多项式时间、等可满足。</td></tr>
+          <tr><td>4.2 Uninterpreted Functions</td><td>EUF 语法（Definition 4.3）；同余公理模式 $\bigwedge x_i=y_i\Rightarrow F(\bar x)=F(\bar y)$；UF 抽象掉具体语义，只保留函数性。</td></tr>
+          <tr><td>4.2.1 How Uninterpreted Functions Are Used</td><td>两种用法：性质验证（结论不依赖函数语义）与等价性证明（两边函数一一对应）。抽象层次越高越好解，但能证的事实越少。</td></tr>
+          <tr><td>4.2.2 An Example: Proving Equivalence of Programs</td><td>循环乘法 vs 直写：SSA 展开后用 $G$ 替换 $*$，证 $\varphi_a^{\mathrm{UF}}\land\varphi_b^{\mathrm{UF}}\Rightarrow out_2^a=out_0^b$；链表输入需把字段读也抽象成 <code>list_n</code>、<code>list_data</code>。</td></tr>
+          <tr><td>4.3 Deciding a Conjunction of Equalities and Uninterpreted Functions with Congruence Closure</td><td>Shostak 的同余闭包（Algorithm 4.3.1）：先合并等式类、再做同余合并，最后检查不等谓词；并查集实现 $O(n\log n)$。对析取仍靠分情况或 DPLL(T)。</td></tr>
+          <tr><td>4.4 Functional Consistency Is Not Enough</td><td>交换律等代数性质丢失；补约束得到“部分解释函数”；抽象精化循环（Algorithm 4.4.1）与重写系统。</td></tr>
+          <tr><td>4.5 Two Examples of the Use of Uninterpreted Functions</td><td>两个工业场景：硬件流水线重定时、编译器翻译验证；共同点是“两边结构相似、只需同参同果”。</td></tr>
+          <tr><td>4.5.1 Proving Equivalence of Circuits</td><td>把每级组合逻辑抽象成 $C,D,F,G,H,K$，把门从第二级搬到第三级并加多路选择器，证 $L_5=L_5'$。</td></tr>
+          <tr><td>4.5.2 Verifying a Compilation Process with Translation Validation</td><td>$z=(x_1+y_1)(x_2+y_2)$ 拆成三条三地址码；$+\to F$、$\cdot\to G$ 后证单向蕴涵。源写 $2*x$、目标写 $x+x$ 时纯 UF 证不出。</td></tr>
+          <tr><td>4.6 Problems</td><td>去常量的正确性、优化版去常量、图算法判合取、等价类实现、多元 UF 的同余闭包、带写操作的链表例子。</td></tr>
+          <tr><td>4.7 Bibliographic Notes</td><td>三个时代：早期判定过程、1970 年代同余闭包（Downey–Sethi–Tarjan、Nelson–Oppen、Shostak）、小模型归约、当代 DPLL(T)。</td></tr>
+          <tr><td>4.8 Glossary</td><td>$\varphi_E$、$C_c$、$\varphi^{\mathrm{UF}}$ 等符号表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -1715,6 +1817,18 @@ z  = u1 * u2;</code></pre>
         </ul>
       </div>
     </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>4.5 Two Examples of the Use of Uninterpreted Functions</td><td>选择 UF 而非具体函数的判据：证明只需“同参同果”，不需要代数定律。两例分别是电路重定时与编译翻译验证。</td></tr>
+          <tr><td>4.5.1 Proving Equivalence of Circuits</td><td>流水线各级用 UF 表示；变换后 $L_1'=F(in)$、$L_2'=C(L_1')$、$L_3'=C(L_1')?G(L_1'):H(L_1')$、$L_5'=L_2'?K(L_3'):D(L_3')$；证 $L_5=L_5'$。</td></tr>
+          <tr><td>4.5.2 Verifying a Compilation Process with Translation Validation</td><td>验证条件 $u_1=x_1+y_1\land u_2=x_2+y_2\land z=u_1\cdot u_2\Rightarrow z=(x_1+y_1)(x_2+y_2)$；抽象后同余闭包对齐 $u_i$ 与 $F(x_i,y_i)$。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -1905,6 +2019,42 @@ term    : identifier | constant | constant identifier</code></pre>
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">5.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>5.1 Introduction</td><td>语法（Definition 5.1）；实数多项式可解、整数 NP 完全；编译器把 load 提出循环的判据 $i\ge1\land i\le10\land j+i=j$。</td></tr>
+          <tr><td>5.1.1 Solvers for Linear Arithmetic</td><td>LP 与 ILP 的分界；Simplex（实数）、Branch and Bound（整数）、Fourier–Motzkin（实数消元）、Omega（整数消元）。</td></tr>
+          <tr><td>5.2 The Simplex Algorithm</td><td>一般形 $Ax=0\land l_i\le x_i\le u_i$；目标函数在判定问题里不需要；最坏指数但实际高效。</td></tr>
+          <tr><td>5.2.1 A Normal Form</td><td>附加变量 $s_i$、等式 $L'-s_i=0$、界 $s_i\triangleright b$；tableau 是去掉对角块后的矩阵。</td></tr>
+          <tr><td>5.2.2 Basics of the Simplex Algorithm</td><td>基本/非基本变量、两个不变式、合适变量、步长 $\theta$、pivot 两步（解出+消去）。</td></tr>
+          <tr><td>5.2.3 Simplex with Upper and Lower Bounds</td><td>主循环 Algorithm 5.2.1；越界基本变量 → 找合适非基本变量 → pivot；Bland 规则保证不循环；Example 5.7 两次 pivot 到 $(1,1)$。</td></tr>
+          <tr><td>5.2.4 Incremental Problems</td><td>删界即停用约束；pivot 保解集，可从当前 tableau 继续；加界后恢复 In-2 再从第 5 步跑。</td></tr>
+          <tr><td>5.3 The Branch and Bound Method</td><td>松弛（Definition 5.8）、<code>LPfeasible</code>、Algorithm 5.3.1；基本版不完备（$1\le3x-3y\le2$），需小模型界 $((M+N)N\theta)^N$。</td></tr>
+          <tr><td>5.3.1 Cutting Planes</td><td>Gomory 割的两个条件（基本变量分数、非基本变量都在界上）与一般配方；branch-and-cut。</td></tr>
+          <tr><td>5.4 Fourier–Motzkin Variable Elimination</td><td>先消等式（解出代入），再消不等式（上下界两两合并）；无界变量直接删；投影精确但约束数爆炸。</td></tr>
+          <tr><td>5.4.1 Equality Constraints</td><td>$x_n=b_i/a_{i,n}-\sum_{j\lt n}(a_{i,j}/a_{i,n})x_j$，代入其余约束后删除该等式。</td></tr>
+          <tr><td>5.4.2 Variable Elimination</td><td>上下界配对 $\beta_l\le\beta_u$；Example 5.11 消 $x_1$、删无界 $x_2$，最后 $1\le0$。</td></tr>
+          <tr><td>5.4.3 Complexity</td><td>每步 $m\to m^2/4$，共 $m^{2^n}/4^n$；只适合小系统，主用途是存在量词消去。</td></tr>
+          <tr><td>5.5 The Omega Test</td><td>整数版消元；规范化（除以 gcd、向下取整）、对称取模、三层影子。</td></tr>
+          <tr><td>5.5.1 Problem Description</td><td>等式/不等式、整系数、规范化；$3x+3y=2$ 不可满足，$8x+6y\le0\to4x+3y\le0$。</td></tr>
+          <tr><td>5.5.2 Equality Constraints</td><td>有 $\pm1$ 系数直接解；否则 $m=a_n+1$、$a\mathop{\mathrm{dmod}}b=a-b\lfloor a/b+1/2\rfloor$，系数严格降到 $\le\frac56|a_i|$。</td></tr>
+          <tr><td>5.5.3 Inequality Constraints</td><td>real shadow（FM 投影，过近似）、dark shadow（欠近似，判据 $b\gamma-c\beta\ge(c-1)(b-1)$）、gray shadow（枚举窄带）。Algorithm 5.5.1。</td></tr>
+          <tr><td>5.6 Preprocessing</td><td>冗余约束删除、界收紧、整系数化、严格不等式减 1、0–1 系统专用规则。</td></tr>
+          <tr><td>5.6.1 Preprocessing of Linear Systems</td><td>若 $\sum_{a_j\gt0}a_ju_j+\sum_{a_j\lt0}a_jl_j\le b$ 则约束冗余；$a_0\gt0$ 时用其它变量界算 $x_0$ 新上界。</td></tr>
+          <tr><td>5.6.2 Preprocessing of Integer Linear Systems</td><td>乘最小公倍数、$\sum a_ix_i\lt b\mapsto\sum a_ix_i\le b-1$；0–1 系统可加 $x_1\le x_2$ 等派生约束。</td></tr>
+          <tr><td>5.7 Diﬀerence Logic</td><td>原子 $x-y\le c$；$x-y=c$ 拆两条、单变量用零变量 $x_0$；建图判负环，$O(nm)$。</td></tr>
+          <tr><td>5.8 Problems</td><td>5.8.1 热身、5.8.2 Simplex、5.8.3 整数系统、5.8.4 Omega、5.8.5 差分逻辑。</td></tr>
+          <tr><td>5.8.1 Warm-up Exercises</td><td>判线性系统的几何形状、把约束转一般形、手跑一次 pivot。</td></tr>
+          <tr><td>5.9 Bibliographic Notes</td><td>Dantzig 1947、Khachiyan 1979 椭球法、Bland 防循环、Dutertre–de Moura 的 Simplex 变体、Omega 测试与 Presburger。</td></tr>
+          <tr><td>5.10 Glossary</td><td>$l_i,u_i$、$m,n$、$A$、$\mathbf{x}$、$B,N$、$\alpha$、$\theta$、$\beta_i$、$\mathop{\mathrm{dmod}}$ 的符号表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -2054,6 +2204,17 @@ procedure Feasibility-Branch-and-Bound(S)
         </ul>
       </div>
     </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>5.3 The Branch and Bound Method</td><td>松弛去掉整数性；<code>LPfeasible</code> 返回模型；解非整数时选变量 $v$、按 $v\le\lfloor r\rfloor$ / $v\ge\lceil r\rceil$ 二分。</td></tr>
+          <tr><td>5.3.1 Cutting Planes</td><td>割只删非整数解；Gomory 割要求基本变量取分数、所有非基本变量在界上；Example 5.9 与式 (5.22)–(5.38) 的推导。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -2288,6 +2449,24 @@ op      : ≤ | &lt;</code></pre>
         </ul>
       </div>
     </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>5.4 Fourier–Motzkin Variable Elimination</td><td>消等式 → 消不等式；投影即“少一维”；无界变量可删；严格不等式合并后仍严格。</td></tr>
+          <tr><td>5.4.3 Complexity</td><td>约束数每步最坏 $m^2/4$，总计 $m^{2^n}/4^n$；只适合小规模或量词消去。</td></tr>
+          <tr><td>5.5 The Omega Test</td><td>整数消元；规范化、对称取模降系数、real/dark/gray shadow 三层判定；递归子问题可用哈希缓存。</td></tr>
+          <tr><td>5.5.3 Inequality Constraints</td><td>先查 real shadow；无整数则 UNSAT；再查 dark shadow，有整数则 SAT；两者不等时枚举 gray shadow 的窄带。</td></tr>
+          <tr><td>5.6 Preprocessing</td><td>线性系统的冗余删除与界收紧；整数系统的整系数化、严格不等式减 1、0–1 规则。</td></tr>
+          <tr><td>5.6.1 Preprocessing of Linear Systems</td><td>冗余判据 (5.94)；$a_0\gt0$ 时 $x_0\le(b-\sum_{a_j\gt0}a_jl_j-\sum_{a_j\lt0}a_ju_j)/a_0$。</td></tr>
+          <tr><td>5.7 Diﬀerence Logic</td><td>原子 $x-y\le c$（Definition 5.16）；改写规则；建边 $y\to x$ 权 $c$，负环即不可满足；Bellman–Ford $O(nm)$。</td></tr>
+          <tr><td>5.7.1 Introduction</td><td>零变量 $x_0$ 处理单变量约束；作业车间调度：同作业前后约束是差分，机器上的先后是析取，落到 DPLL(T)。</td></tr>
+          <tr><td>5.7.2 A Decision Procedure for Diﬀerence Logic</td><td>超级源 + $n$ 轮松弛；第 $n$ 轮仍可松弛 ⇔ 负环；最短距离即一组解。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -2508,6 +2687,35 @@ op      : + | − | · | / | &lt;&lt; | &gt;&gt; | &amp; | | | ⊕ | ◦</code><
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">6.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>6 Bit Vectors</td><td>位向量（bit-vector）是定宽模 $2^l$ 的机器算术；判定方法是扁平化（flattening / bit-blasting）到 SAT。</td></tr>
+          <tr><td>6.1 Bit-Vector Arithmetic</td><td>动机：溢出破坏代数恒等式（$200+100=44$）、位级技巧（DIMACS 符号编码）。</td></tr>
+          <tr><td>6.1.1 Syntax</td><td>文法含 $\sim$、<code>ext</code>、$c?a:b$、<code>&lt;&lt;</code>、<code>&gt;&gt;</code>、<code>&amp;</code>、<code>|</code>、$\oplus$、$\circ$；原子是项比较与 <code>term[const]</code>。</td></tr>
+          <tr><td>6.1.2 Notation</td><td>位向量 $a=\langle a_{l-1},\dots,a_0\rangle$；宽度 $l$；切片 $a[i:j]$；连接 $\circ$。</td></tr>
+          <tr><td>6.1.3 Semantics</td><td>$\langle a\rangle_U=\sum a_i2^i$，$\langle a\rangle_S=\langle a\rangle_U-2^la_{l-1}$；$+$ 是模 $2^l$ 加法；有/无符号共用位级电路。</td></tr>
+          <tr><td>6.2 Deciding Bit-Vector Arithmetic with Flattening</td><td>Algorithm 6.2.1：骨架 + 每位一个布尔变量 + 每个算子一组约束。</td></tr>
+          <tr><td>6.2.1 Converting the Skeleton</td><td>常量、按位或的约束形式；$e$ 同时表示原子编码、骨架、项编码。</td></tr>
+          <tr><td>6.2.2 Arithmetic Operators</td><td>全加器（Definition 6.6–6.8）、行波进位、减法取反加 1、比较看借位/符号异或、桶形移位 $O(n\log n)$、乘法移位加法、除法两约束。</td></tr>
+          <tr><td>6.3 Incremental Bit Flattening</td><td>乘法编码巨大（32 位约 1.1 万变量）；先加便宜算子，UNSAT 可提前返回；SAT 时检查省略约束。</td></tr>
+          <tr><td>6.3.1 Some Operators Are Hard</td><td>$a\cdot b=c\land b\cdot a\ne c\land x\lt y\land x\gt y$ 明明不可满足，却因决策启发式先拆乘法器而卡住。</td></tr>
+          <tr><td>6.3.2 Abstraction with Uninterpreted Functions</td><td>用 $G(a_1,b_1)$ 替换难算子，保留同参同果；等价性检查里尤其有效。</td></tr>
+          <tr><td>6.4 Fixed-Point Arithmetic</td><td>整数部分 + 小数部分，$\langle M.F\rangle=\langle M\circ F\rangle_S/2^f$；乘后右移、除前左移，舍入须显式建模。</td></tr>
+          <tr><td>6.4.1 Semantics</td><td>Definition 6.9 与二进制表示例；定点是“忘掉小数点的整数”。</td></tr>
+          <tr><td>6.4.2 Flattening</td><td>定点扁平化复用整数电路；对齐小数位后加减比较，乘除调整移位。</td></tr>
+          <tr><td>6.5 Problems</td><td>6.5.1 语义、6.5.2 位级编码、6.5.3 用线性算术求解器。</td></tr>
+          <tr><td>6.5.1 Semantics</td><td>判断位向量等式在哪些宽度/解释下成立；构造溢出反例。</td></tr>
+          <tr><td>6.6 Bibliographic Notes</td><td>bit-blasting、Boolector、STP、乘法器的 SAT 难度、定点算术工具。</td></tr>
+          <tr><td>6.7 Glossary</td><td>$\langle\cdot\rangle_U$、$\langle\cdot\rangle_S$、$l$、$\circ$、$\mathrm{ext}$ 等符号表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -2768,6 +2976,31 @@ term   : integer-constant | integer-constant · index-identifier | term + term</
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">7.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>7.1 Introduction</td><td>数组是 $T_I\to T_E$ 的映射；读 $a[i]$、写 $a\{i\leftarrow e\}$；循环清零例 (7.1)。</td></tr>
+          <tr><td>7.1.1 Syntax</td><td>数组项、元素项、数组相等；下标含量词时数组相等可定义。</td></tr>
+          <tr><td>7.1.2 Semantics</td><td>三条公理：下标同余 (7.2)、read-over-write (7.3)、外延性 (7.4)。</td></tr>
+          <tr><td>7.2 Eliminating the Array Terms</td><td>下标算子换成 UF；更新用写规则（新数组 + 两条约束）；全量归约可能掉进不可判定。</td></tr>
+          <tr><td>7.3 A Reduction Algorithm for a Fragment of the Array Theory</td><td>array property 片段（Definition 7.4）：下标守卫 + 值约束。</td></tr>
+          <tr><td>7.3.1 Array Properties</td><td>外延性是 array property（守卫 true）；$\forall j\ne i.a'[j]=a[j]$ 可改写成 $j\le i-1\lor i+1\le j$ 的守卫形式。</td></tr>
+          <tr><td>7.3.2 The Reduction Algorithm</td><td>Algorithm 7.3.1：写规则 → 存在量词换新变量 → 全称按 $I(\varphi)$ 实例化 → 读换 UF；Example 7.6 三步分情况证不可满足。</td></tr>
+          <tr><td>7.4 A Lazy Encoding Procedure</td><td>预处理只加 $a\{i\leftarrow e\}[i]=e$；其余公理按需实例化。</td></tr>
+          <tr><td>7.4.1 Incremental Encoding with DPLL(T)</td><td>DPLL(T) 骨架回顾；数组文字合取交给理论求解器，返回 true 或阻塞公式。</td></tr>
+          <tr><td>7.4.2 Lazy Instantiation of the Read-Over-Write Axiom</td><td>弱等价图（数组相等无边、更新边标号）；Algorithm 7.4.1 找“标号都不与 $i$ 同类”的路径，生成 $(i=j\land\mathrm{Cond}_i(p))\Rightarrow a[i]=b[j]$。</td></tr>
+          <tr><td>7.4.3 Lazy Instantiation of the Extensionality Rule</td><td>Algorithm 7.4.2：对路径标号集 $S$ 逐个检查“第一次/最后一次更新处元素相等”，生成 $\bigwedge_{i\in S}\mathrm{Cond}^u_i(p)\Rightarrow a=b$。</td></tr>
+          <tr><td>7.5 Problems</td><td>手读写后读证明、双计数器机器归约不可判定、把 array property 归约写完整。</td></tr>
+          <tr><td>7.6 Bibliographic Notes</td><td>数组理论的判定片段、惰性编码（Bozzano 等）、与分离逻辑的关系。</td></tr>
+          <tr><td>7.7 Glossary</td><td>$T_I,T_E,T_A$、$a[i]$、$a\{i\leftarrow e\}$、$I(\varphi)$、$\approx$、$\mathrm{Cond}_i(p)$ 的符号表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -3020,6 +3253,39 @@ op      : + | −</code></pre>
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">8.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>8.1 Introduction</td><td>指针与动态内存；空指针、越界、悬垂、二次释放；别名分析与 points-to 集合。</td></tr>
+          <tr><td>8.1.1 Pointers and Their Applications</td><td>指针把地址当值；C 里数组名等价于首地址，指针算术按所指类型大小缩放。</td></tr>
+          <tr><td>8.1.2 Dynamic Memory Allocation</td><td>堆对象的生命周期与别名；分配/释放改变 $L,M$。</td></tr>
+          <tr><td>8.1.3 Analysis of Programs with Pointers</td><td>may-analysis：维护 points-to 集合并迭代到饱和；不在集合里的变量不会被该赋值修改。</td></tr>
+          <tr><td>8.2 A Simple Pointer Logic</td><td>语法（Definition 8.4）与两张映射 $L,M$；禁止整数与指针直接互转。</td></tr>
+          <tr><td>8.2.1 Syntax</td><td>指针项：标识符、$p+i$、$\&amp;x$、$\&amp;*p$、$*p$、NULL；项：整数、$*p$、算术、$a[i]$。</td></tr>
+          <tr><td>8.2.2 Semantics</td><td>$\mathrm{J}x\mathrm{K}=M[L[x]]$、$\mathrm{J}\&amp;x\mathrm{K}=L[x]$、$\mathrm{J}{*}p\mathrm{K}=M[\mathrm{J}p\mathrm{K}]$；公式是 $(M,L)$ 上的谓词。</td></tr>
+          <tr><td>8.2.3 Axiomatization of the Memory Model</td><td>A1 地址非 0、A2 对象大小 $\ge1$、A3 对象不重叠；字节序/对齐需额外公理。</td></tr>
+          <tr><td>8.2.4 Adding Structure Types</td><td>$s.f=*((\&amp;s)+o(f))$、$p\text{-&gt;}f=(*p).f$、$p\mapsto a,b,c$ 简写。</td></tr>
+          <tr><td>8.3 Modeling Heap-Allocated Data Structures</td><td>用递归简写描述链表与树；分离性需要额外谓词。</td></tr>
+          <tr><td>8.3.1 Lists</td><td>$\mathrm{list\text{-}elem}(p,i)$、$\mathrm{list}(p,l)$、$\mathrm{my\text{-}list}$、$\mathrm{overlap}$、$\mathrm{list\text{-}disjoint}$（大小 $O(l^2)$）。</td></tr>
+          <tr><td>8.3.2 Trees</td><td>局部有序 (8.22) 不够；用传递闭包 $\mathrm{tree\text{-}reach}^*$ 约束整棵子树 (8.26)，但闭包会导致不可判定。</td></tr>
+          <tr><td>8.4 A Decision Procedure</td><td>语义翻译落到“数组 + 线性算术”，再用第 7 章判定；量词会破坏可判定性。</td></tr>
+          <tr><td>8.4.1 Applying the Semantic Translation</td><td>Example 8.9：$p=\&amp;x\land x=1\Rightarrow*p=1$ 有效；$p\mapsto x\Rightarrow p=\&amp;x$ 有反例 $L[p]=1,L[x]=2,M[1]=3,M[2]=M[3]=10$。</td></tr>
+          <tr><td>8.4.2 Pure Variables</td><td>纯变量（Definition 8.10）用 $\Upsilon_x$ 替换 $M[L[x]]$；Theorem 8.11 等可满足。</td></tr>
+          <tr><td>8.4.3 Partitioning the Memory</td><td>按语法相关 $\approx$ 分区，各用自己的 $M_i$；Theorem 8.14 等可满足，但不能对 $L$ 加约束。</td></tr>
+          <tr><td>8.5 Rule-Based Decision Procedures</td><td>表达力换可判定性：定义片段 + 可靠证明规则；完备的系统很少。</td></tr>
+          <tr><td>8.5.1 A Reachability Predicate for Linked Structures</td><td>$\mathrm{follow}_f^n$、$p\xrightarrow[f]{x}q$（可达且避开 $x$）、Example 8.15 的查找程序。</td></tr>
+          <tr><td>8.5.2 Deciding Reachability Predicate Formulas</td><td>规则式消解：传递性、避开点单调性、路径拼接；可靠性归约到 $\mathrm{follow}$ 定义。</td></tr>
+          <tr><td>8.6 Problems</td><td>8.6.1 指针公式、8.6.2 reachability 谓词。</td></tr>
+          <tr><td>8.7 Bibliographic Notes</td><td>分离逻辑、Nelson 的 reachability 演算、别名分析工具。</td></tr>
+          <tr><td>8.8 Glossary</td><td>$L$、$M$、$\sigma$、$\Upsilon$、$\approx$、$p\xrightarrow[f]{x}q$ 的符号表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -3253,6 +3519,34 @@ return φ';</code></pre>
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">9.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>9 Quantified Formulas</td><td>量词公式（quantified formulas）的判定：有消元、搜索、归约三条路；一般一阶不可判定。</td></tr>
+          <tr><td>9.1 Introduction</td><td>$\forall x.\varphi\iff\neg\exists x.\neg\varphi$；辖域与重命名；只讨论句子（Definition 9.1–9.2）。</td></tr>
+          <tr><td>9.1.1 Example: Quantiﬁed Boolean Formulas</td><td>QBF 语法与 PSPACE 完全性；象棋必胜策略的编码（$x_{\{m,n,i\}}$、$I_0$、$T_i^w,T_i^b$、$G_k$），以及“黑可走非法着法”“逼和”两个建模陷阱。（PDF 文本层把 ﬁ 连字断成空格，检索时写作 <i>Quanti ed</i>。）</td></tr>
+          <tr><td>9.1.2 Example: Quantiﬁed Disjunctive Linear Arithmetic</td><td>QDLA 语法；Presburger 算术与 Fischer–Rabin 下界 $2^{2^{cn}}$；例 (9.12)。</td></tr>
+          <tr><td>9.2 Quantifier Elimination</td><td>PNF、投影、消去主循环；全称用 $\neg\exists\neg$ 转成存在。</td></tr>
+          <tr><td>9.2.1 Prenex Normal Form</td><td>Definition 9.4、Lemma 9.5、Algorithm 9.2.1 四步；Example 9.6 的重命名与外提。</td></tr>
+          <tr><td>9.2.2 Quantiﬁer Elimination Algorithms</td><td>只需会消存在量词；投影（Definition 9.7）必须保等价且不含被消变量；Algorithm 9.2.2。</td></tr>
+          <tr><td>9.2.3 Quantiﬁer Elimination for Quantiﬁed Boolean Formulas</td><td>归结投影（含 $x$ 与 $\neg x$ 的子句两两归结）、forall reduction（先删重言子句再删全称）、Shannon 展开 $\exists x.\varphi=\varphi|_{x=0}\lor\varphi|_{x=1}$；去重把双指数降到单指数。</td></tr>
+          <tr><td>9.2.4 Quantiﬁer Elimination for Quantiﬁed Disjunctive Linear Arithmetic</td><td>Fourier–Motzkin 投影；Example 9.10 两次消元得 $x\le-4$，故不有效。</td></tr>
+          <tr><td>9.3 Search-Based Algorithms for Quantiﬁed Boolean Formulas</td><td>QBF 搜索树（Definition 9.11–9.12）：全称节点 $\land$、存在节点 $\lor$；Algorithm 9.3.1 与早期剪枝。</td></tr>
+          <tr><td>9.4 Effiectively Propositional Logic</td><td>EPR：$\exists^*\forall^*$、无函数；四步（去存在、接地 $n^m$、按参数元组编码、SAT）；集合论建模。</td></tr>
+          <tr><td>9.5 General Quantiﬁcation</td><td>唯一不可判定的小节；Skolem 化（Definition 9.15）、实例化、触发器、E-matching、E-graph。</td></tr>
+          <tr><td>9.6 Problems</td><td>9.6.1 热身、9.6.2 QBF、9.6.3 EPR、9.6.4 General Quantiﬁcation。</td></tr>
+          <tr><td>9.6.1 Warm-up Exercises</td><td>判量词公式有效性、写 PNF、手跑一次消元。</td></tr>
+          <tr><td>9.6.4 General Quantiﬁcation</td><td>Skolem 化练习、触发器选择、E-matching 手算。</td></tr>
+          <tr><td>9.7 Bibliographic Notes</td><td>QBF 求解器（学习与回跳）、Presburger 判定、EPR、Simplify/Z3 的实例化启发式。</td></tr>
+          <tr><td>9.8 Glossary</td><td>PNF、投影、QBF、EPR、触发器、E-graph 等术语表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -3464,6 +3758,20 @@ function QBF(Q, v̂, level)
         </ul>
       </div>
     </div>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>9.3 Search-Based Algorithms for Quantiﬁed Boolean Formulas</td><td>全称/存在节点、树的有效性递归、Algorithm 9.3.1；现代求解器加非时序回跳与学习。</td></tr>
+          <tr><td>9.4 Effiectively Propositional Logic</td><td>EPR 四步归约；接地规模 $n^m$；集合论例 (9.53) 可满足。</td></tr>
+          <tr><td>9.5 General Quantiﬁcation</td><td>Skolem 范式、实例化、E-graph、触发器/多触发器、E-matching（Algorithm 9.5.1）；可靠但不完备。</td></tr>
+          <tr><td>9.6 Problems</td><td>9.6.2 QBF（搜索与消元对比）、9.6.3 EPR（接地规模）、9.6.4 一般量化。</td></tr>
+          <tr><td>9.6.4 General Quantiﬁcation</td><td>给公式选触发器；解释为什么某些替换永远匹配不上。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
@@ -3691,6 +3999,830 @@ function QBF(Q, v̂, level)
         </ul>
       </div>
     </div>
+
+    <h3><span class="sn">10.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>10 Deciding a Combination of Theories</td><td>判定理论组合（deciding a combination of theories）：每个理论各有判定器，通过共享变量与等式传播拼成组合判定器。</td></tr>
+          <tr><td>10.1 Introduction</td><td>三个混合例子：算术+UF、位向量+UF、数组+算术；Nelson–Oppen 让各判定器通信。</td></tr>
+          <tr><td>10.2 Preliminaries</td><td>签名、$\Sigma$-理论、T-可满足、T-有效；组合 $T_1\oplus T_2$（Definition 10.1–10.2）；凸理论（Definition 10.3）与三个例子（Example 10.4）。</td></tr>
+          <tr><td>10.3 The Nelson–Oppen Combination Procedure</td><td>四条限制（Definition 10.5）：带等式无量词、各自可判定、签名不交、无限域。</td></tr>
+          <tr><td>10.3.1 Combining Convex Theories</td><td>提纯（外来子表达式 → 辅助变量 + 等式）；Algorithm 10.3.1：判定 → 等式传播 → 再判定；Example 10.7 四轮握手、Example 10.8 嵌套函数。</td></tr>
+          <tr><td>10.3.2 Combining Nonconvex Theories</td><td>整数算术非凸：$1\le x\le2\land p(x)\land\neg p(1)\land\neg p(2)$ 两个纯公式各自可满足；Algorithm 10.3.2 增加“等式析取”分裂。</td></tr>
+          <tr><td>10.3.3 Proof of Correctness of the Nelson–Oppen Procedure</td><td>Lemma 10.11（每轮保持可满足）、Lemma 10.12（终止时等式被所有理论共同蕴涵）、Theorem 10.10；arrangement 抽象视角。</td></tr>
+          <tr><td>10.4 Problems</td><td>整数上混合算术与 UF 的不可满足例；只传播非局部变量的等式；把正确性证明推广到 10.3.2。</td></tr>
+          <tr><td>10.5 Bibliographic Notes</td><td>组合不可判定性、Shostak 方法的缺陷与修正、延迟理论组合（delayed theory combination）、模型构造。</td></tr>
+          <tr><td>10.6 Glossary</td><td>$\Sigma$、$T\models\varphi$、$T_1\oplus T_2$、$F_i$、$\Delta$ 的符号表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<section id="ch11" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">CHAPTER 11 · 11.1–11.7</div>
+    <h2><span class="num">11</span>命题编码：把理论一次性压成 SAT</h2>
+
+    <p class="lede">DPLL(T) 是“懒”的：SAT 与理论求解器来回对话。这一章走另一条路——<b>急</b>（eager）：一次性把 EUF 公式归约成等价的命题公式，然后只跑一次 SAT。代价是公式可能二次膨胀，收益是没有接口开销、可以直接用最强的 SAT 引擎。</p>
+
+    <div class="chap-intro">
+      <p>11.1 懒 vs 急；11.2 Ackermann 归约与 Bryant 归约；11.3 等式图（等式路径、不等路径、矛盾环）；11.4 公式化简；11.5 基于图的命题归约（稀疏法、弦化）；11.6 小域实例化与域分配算法；11.7 两种归约的适用边界。</p>
+      <span class="tag">EAGER ENCODING</span>
+    </div>
+
+    <div class="mapchips">
+      <span class="chip hot">Ackermann reduction</span>
+      <span class="chip">Bryant reduction</span>
+      <span class="chip">equality graph</span>
+      <span class="chip">contradictory cycle</span>
+      <span class="chip">transitivity constraint</span>
+      <span class="chip">chordal graph</span>
+      <span class="chip">domain allocation</span>
+      <span class="chip">small model</span>
+    </div>
+
+    <h3><span class="sn">11.1–11.2</span>两种把 UF 消掉的归约</h3>
+
+    <p>不必枚举未解释函数的所有解释。所有函数共享的唯一性质是<b>函数一致性</b>：同参同果。把它写成约束，就能把 EUF 降到等式逻辑。</p>
+
+    <div class="thm">
+      <div class="thm-head"><span class="thm-kind">算法</span><span class="thm-title">Algorithm 11.2.1：Ackermann's-Reduction</span><span class="thm-id">§11.2.1</span></div>
+      <div class="thm-body">
+        <p>输入含 $m$ 个 $F$ 实例的 EUF 公式 $\varphi^{\mathrm{UF}}$：</p>
+        <ol>
+          <li>从子表达式向外给实例编号 $F_i$，记参数 $\mathrm{arg}(F_i)$。</li>
+          <li>$\mathit{flat}_E:=T(\varphi^{\mathrm{UF}})$：把每个 $F_i$ 换新变量 $f_i$；嵌套时只保留最外层实例对应的变量。</li>
+          <li>函数一致性约束</li>
+        </ol>
+        <p>$$\mathrm{FC}_E:=\bigwedge_{i=1}^{m-1}\bigwedge_{j=i+1}^{m}\bigl(T(\mathrm{arg}(F_i))=T(\mathrm{arg}(F_j))\Rightarrow f_i=f_j\bigr).$$</p>
+        <ol start="4">
+          <li>返回 $\varphi_E:=\mathrm{FC}_E\Rightarrow\mathit{flat}_E$。</li>
+        </ol>
+        <p>验证有效性时判 $\mathrm{FC}_E\land\neg\mathit{flat}_E$ 不可满足；验证<b>可满足性</b>时判 $\mathrm{FC}_E\land\mathit{flat}_E$ 可满足——注意这两者不对称，原因是要先对 $\varphi^{\mathrm{UF}}$ 取反。</p>
+      </div>
+    </div>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">三个实例，三条一致性（Example 11.1）</span><span class="thm-id">§11.2.1</span></div>
+      <div class="thm-body">
+        <p>$$(x_1\ne x_2)\lor(F(x_1)=F(x_2))\lor(F(x_1)\ne F(x_3)).$$</p>
+        <p>$$\mathit{flat}_E:=(x_1\ne x_2)\lor(f_1=f_2)\lor(f_1\ne f_3),$$</p>
+        <p>$$\mathrm{FC}_E:=(x_1=x_2\Rightarrow f_1=f_2)\land(x_1=x_3\Rightarrow f_1=f_3)\land(x_2=x_3\Rightarrow f_2=f_3).$$</p>
+        <p>原公式有效当且仅当 $\mathrm{FC}_E\Rightarrow\mathit{flat}_E$ 有效。</p>
+      </div>
+    </div>
+
+    <p>多元函数只需把“参数相等”改成“逐位相等”。嵌套函数按“由内向外”编号，因为内层实例可能被外层当作参数。</p>
+
+    <div class="thm">
+      <div class="thm-head"><span class="thm-kind">算法</span><span class="thm-title">Algorithm 11.2.2：Bryant's-Reduction</span><span class="thm-id">§11.2.2</span></div>
+      <div class="thm-body">
+        <p>目标相同，但用<b>嵌套 case 表达式</b>代替两两一致性：</p>
+        <p>$$F_i^\star:=\begin{cases}T^\star(\mathrm{arg}(F_1^\star))=T^\star(\mathrm{arg}(F_i^\star)) &amp; : f_1\\ \cdots &amp; \\ T^\star(\mathrm{arg}(F_{i-1}^\star))=T^\star(\mathrm{arg}(F_i^\star)) &amp; : f_{i-1}\\ \mathrm{true} &amp; : f_i\end{cases}$$</p>
+        <p>$$\mathrm{FC}_E:=\bigwedge_{i=1}^{m}F_i^\star,\qquad \varphi_E:=\mathrm{FC}_E\Rightarrow\mathit{flat}_E.$$</p>
+        <p>若所有参数都是变量 $x_i$，第 $i$ 个 case 可展开成</p>
+        <p>$$\bigvee_{j=1}^{i}\Bigl(F_i^\star=f_j\land(x_j=x_i)\land\bigwedge_{k=1}^{j-1}(x_k\ne x_i)\Bigr).$$</p>
+      </div>
+    </div>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">case 展开成等式逻辑（Example 11.4）</span><span class="thm-id">§11.2.2</span></div>
+      <div class="thm-body">
+        <p>$$F_3^\star=\begin{cases}x_1=x_3 &amp; : f_1\\ x_2=x_3 &amp; : f_2\\ \mathrm{true} &amp; : f_3\end{cases}$$</p>
+        <p>等价于</p>
+        <p>$$(F_3^\star=f_1\land x_1=x_3)\lor(F_3^\star=f_2\land x_2=x_3\land x_1\ne x_3)\lor(F_3^\star=f_3\land x_1\ne x_3\land x_2\ne x_3).$$</p>
+        <p>直观：$F_3$ 取“第一个参数等于 $x_3$ 的实例”的值；若都不等，就是自己的新值 $f_3$。</p>
+      </div>
+    </div>
+
+    <p>两者的差别不只是写法。Ackermann 的约束是“任意两实例”的二次条；Bryant 让每个实例只与自己之前的实例比较，条数仍二次，但结构更适合 SAT（case 展开成树，传播路径短）。更关键的是：<b>Bryant 归约要求给实例一个固定顺序</b>，而 Ackermann 不要求。这个顺序会在 §11.7 影响能配哪种判定器。</p>
+
+    <h3><span class="sn">11.3</span>等式图：把公式看成图</h3>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">等式图（Definition 11.9）</span><span class="thm-id">§11.3</span></div>
+      <div class="thm-body">
+        <p>对 NNF 的等式公式 $\varphi_E$，<b>等式图</b> $G_E(\varphi_E)=(V,E_=,E_\ne)$ 是无向图：节点是变量，$E_=$ 边对应等式文字，$E_\ne$ 边对应不等文字。画图时等式用虚线、不等用实线。</p>
+        <p>它是对公式的<b>抽象</b>：丢掉了布尔联结词，只保留文字集合。$x_1=x_2\land x_1\ne x_2$ 与 $x_1=x_2\lor x_1\ne x_2$ 有同一张图，前者不可满足、后者可满足。</p>
+      </div>
+    </div>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">等式路径 / 不等路径 / 矛盾环（Definition 11.10–11.12）</span><span class="thm-id">§11.3</span></div>
+      <div class="thm-body">
+        <p><b>等式路径</b>：全由 $E_=$ 边组成；$x=^*y$ 表示存在这样的路径。<b>不等路径</b>：由 $E_=$ 边加<b>恰好一条</b> $E_\ne$ 边组成；$x\ne^*y$ 表示存在这样的路径。</p>
+        <p><b>矛盾环</b>（contradictory cycle）：恰好含一条不等边的环。对环上任意 $x,y$，同时有 $x=^*y$ 与 $x\ne^*y$。</p>
+        <p>矛盾环重要，是因为它对应的文字合取不可满足：</p>
+        <p>$$x_1=x_2\land\cdots\land x_{k-1}=x_k\land x_k\ne x_1.$$</p>
+        <p>在没有常量的前提下，这是唯一会导致矛盾的拓扑。所有判定器都直接或间接地找它。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">11.4</span>先化简，再判定</h3>
+
+    <p>纯文字（同一变量的所有出现同号）若不在任何简单矛盾环上，它对可满足性没有贡献，可以整体替换成 true。</p>
+
+    <div class="thm">
+      <div class="thm-head"><span class="thm-kind">算法</span><span class="thm-title">Algorithm 11.4.1：Simplify-Equality-Formula</span><span class="thm-id">§11.4</span></div>
+      <div class="thm-body">
+        <ol>
+          <li>$\varphi_E':=\varphi_E$。</li>
+          <li>建等式图 $G_E(\varphi_E')$。</li>
+          <li>把每个“边不在任何简单矛盾环上”的纯文字替换为 true。</li>
+          <li>按 true/false 化简布尔结构（$\mathrm{true}\lor\varphi\mapsto\mathrm{true}$，$\mathrm{false}\land\varphi\mapsto\mathrm{false}$）。</li>
+          <li>若第 3、4 步有改写，回到第 2 步。</li>
+          <li>返回 $\varphi_E'$。</li>
+        </ol>
+        <p>每轮至少删掉一条边，终止；结果与原文等可满足且不更长。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">11.5</span>稀疏法：只约束弦无关环</h3>
+
+    <p>把每个等式原子换成一个布尔变量，得到命题骨架 $e(\varphi_E)$。但骨架丢了传递性：$x_1=x_2\land x_2=x_3\land x_1\ne x_3$ 的骨架可满足。需要加<b>传递性约束</b> $B_{\text{trans}}$。</p>
+
+    <p>在<b>非极性等式图</b>（只保留原子、不看正负）上，每个环对应一组约束：不能“其余边全真而某一边假”。三节点环需要三条：</p>
+
+    <p>$$(e_{1,2}\land e_{2,3}\Rightarrow e_{1,3})\land(e_{1,2}\land e_{1,3}\Rightarrow e_{2,3})\land(e_{2,3}\land e_{1,3}\Rightarrow e_{1,2}).$$</p>
+
+    <p>但无向图的环可能指数多。Bryant–Velev 的关键定理把范围缩到<b>弦无关的简单环</b>（chord-free cycle）：</p>
+
+    <div class="thm theorem">
+      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">只需弦无关环（Theorem 11.17）</span><span class="thm-id">§11.5</span></div>
+      <div class="thm-body">
+        <p>为保持 $e(\varphi_E)\land B_{\text{trans}}$ 与 $\varphi_E$ 等可满足，只需对非极性等式图中的简单弦无关环加传递性约束。</p>
+      </div>
+    </div>
+
+    <details class="proof">
+      <summary>证明思路</summary>
+      <div class="proof-body">
+        <p>设环 $C$ 有弦 $(x_3,x_8)$，且赋值让除 $(x_3,x_4)$ 外所有边为真。若弦为真，则子环 $(x_3,x_4,x_8)$ 违反传递性；若弦为假，则子环 $(x_3,x_7,x_8)$ 违反传递性。两种情况都被更小的弦无关环捕获，故对大环的约束是冗余的。</p>
+      </div>
+    </details>
+
+    <p>弦无关环的数目仍可能指数。再走一步：把图<b>弦化</b>（chordal）。做法是逐个删点，把该点的邻居两两连边；原图加这些边就是弦图。弦图里唯一的弦无关环是三角形，于是约束数不超过 $O(n^3)$。</p>
+
+    <p>新加的弦对应新的等式原子。它们不在原公式里，但可以安全引入：弦化是等可满足变换，新原子只是“补全传递性”的辅助。这就是 <b>sparse method</b>（稀疏法）的核心。</p>
+
+    <h3><span class="sn">11.6</span>小域实例化：直接给变量分配值</h3>
+
+    <p>另一条急编码思路更朴素：等式逻辑只关心“哪些变量相等”，那就给每个变量分配一个小整数域里的值，把 $x_i=x_j$ 编码成“值相等”。只要域足够大，就不丢解。</p>
+
+    <div class="thm theorem">
+      <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">三个界（Theorem 11.23–11.25）</span><span class="thm-id">§11.6.1</span></div>
+      <div class="thm-body">
+        <p>设 $\Phi_n$ 是 $n$ 个变量、无常量的等式公式全体。</p>
+        <p><b>11.23（folk）：</b>统一域 $\{1,\dots,n\}$ 对所有变量都足够。每条公式的状态空间是 $n^n$。</p>
+        <p><b>11.24：</b>$D=\{x_i\mapsto\{1,\dots,i\}\}$ 足够。状态空间 $n!$。</p>
+        <p><b>11.25：</b>若还有常量 $c_1 \lt \cdots \lt c_k$，则</p>
+        <p>$$D=\{x_i\mapsto\{c_1,\dots,c_k,c_k+1,\dots,c_k+i\}\}$$</p>
+        <p>足够。状态空间 $(k+n)!/k!$。</p>
+      </div>
+    </div>
+
+    <details class="proof">
+      <summary>证明思路（11.23 / 11.24）</summary>
+      <div class="proof-body">
+        <p>任何满足赋值都把变量分成等价类；公式只含等式与不等式，所以<b>只看分类</b>，不看具体值。$n$ 个变量最多 $n$ 个类，$\{1..n\}$ 能实现全部分类。</p>
+        <p>11.24 更紧：每个类用“类中最小下标”作为值。类 $C$ 的最小下标 $i$ 必在 $C$ 中其它变量的域 $\{1..i\}$ 里（因为其它下标都大于 $i$），所以这个赋值可行；不同类得到不同值，等式/不等式关系与原赋值一致。</p>
+      </div>
+    </details>
+
+    <p>这已经比 §11.5 的 $n(n-1)/2$ 位编码好：$n\lceil\log n\rceil$ 位 vs $n^2/2$ 位。差距来自“问法”不同：图编码问“每个变量等于哪个子集”，域分配问“每个变量等于哪个值”。前者每位一个子集元素，后者只需 $\log n$ 位。</p>
+
+    <h4>按等式图分配：Algorithm 11.6.1</h4>
+
+    <p>上界只用变量个数，太粗。利用等式图结构可以大幅缩小。</p>
+
+    <div class="thm def">
+      <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">混合顶点与一致子集（§11.6.3）</span><span class="thm-id">§11.6.3</span></div>
+      <div class="thm-body">
+        <p>顶点若同时邻接 $E_=$ 与 $E_\ne$ 边，叫<b>混合顶点</b>（mixed vertex）。文字集合 $e$ 是<b>一致的</b>，若不含两种模式：等链 $x_1=\cdots=x_r$ 加 $x_1\ne x_r$；或常量链 $c_1=x_2=\cdots=c_r$ 且 $c_1\ne c_r$。在等式图上，前者是矛盾环，后者是两常量间的等式路径。</p>
+        <p>域分配 $D$ 对 $\Phi(E(\varphi_E))$ 足够，当且仅当每个一致子集都能在 $D$ 内被满足。</p>
+      </div>
+    </div>
+
+    <div class="thm">
+      <div class="thm-head"><span class="thm-kind">算法</span><span class="thm-title">Algorithm 11.6.1：Domain-Allocation-for-Equalities</span><span class="thm-id">§11.6.3</span></div>
+      <div class="thm-body">
+        <p><b>I. 去常量与预处理</b></p>
+        <ol>
+          <li>对每个常量顶点 $c_i$：把 $c_i$ 加入所有“从 $c_i$ 出发、不经其它常量”的等式路径终点的域；删除 $c_i$ 及其边。</li>
+          <li>删除不在任何矛盾环上的 $E_\ne$ 边。</li>
+          <li>对每个孤立顶点 $x_i$：加一个新值 $u_i$ 到 $D(x_i)$，删除它。</li>
+        </ol>
+        <p><b>II. 值分配</b></p>
+        <ol start="4">
+          <li>当还有混合顶点：选一个混合顶点 $x_i$，加新值 $u_i$；把 $u_i$ 加入所有与 $x_i$ 有等式路径的顶点；删除 $x_i$ 及其边。</li>
+          <li>对每个剩余的 $E_=$ 连通分量 $C_=$，给其中每个顶点加同一个新值 $u_{C_=}$。</li>
+        </ol>
+        <p>返回 $D$。</p>
+      </div>
+    </div>
+
+    <p>算法多项式：外层循环不超过顶点数，每步可用 DFS 实现。书中的例子（式 11.50）用统一域 $\{1..n\}$ 是 $11^{11}$、用 $n!$ 是 $11!\approx4\times10^7$，而域分配得到的状态空间只有 <b>48</b>。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">48 是怎么来的（Example 11.26 / 图 11.7）</span><span class="thm-id">§11.6.3</span></div>
+      <div class="thm-body">
+        <p>11 个变量 $x_1,x_2,y_1,y_2,u_1,f_1,f_2,u_2,g_2,z,g_1$。删掉不在矛盾环上的两条不等边后，四个孤立点各得一个特征值 $0,1,2,3$（$x_1,x_2,y_1,y_2$）。</p>
+        <p>混合顶点依次分配：$f_1\to4$（并分给 $f_2,u_2$ 所在的等式连通块）、$f_2\to5$、$g_2\to6$。剩余等式分量给公共值：$z,g_1\to9$，$u_1\to7$，另一个分量 $\to8$。</p>
+        <p>最终各变量的域大小相乘：$1\cdot1\cdot1\cdot1\cdot(2)\cdot(3)\cdot(3)\cdot(2)\cdot(2)\cdot(1)\cdot(1)=48$。</p>
+      </div>
+    </div>
+
+    <p>可靠性证明的思路（§11.6.4）：给定一致子集 $e$，按两条规则赋值。R1：若 $x_i$ 经 $E_=$ 路径连到某个“个体分配”顶点 $x_j$，取这些 $x_j$ 中最小的特征值。R2：否则取它所属等式分量的公共值。可以证明赋值落在各自的 $D$ 集内（Theorem 11.28），且满足 $e$ 中所有文字。</p>
+
+    <h3><span class="sn">11.7</span>Ackermann vs Bryant：什么时候有差别</h3>
+
+    <p>两种归约都把 EUF 变成等式逻辑，规模都二次。差别在于结果公式的<b>形状</b>：</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>维度</th><th>Ackermann</th><th>Bryant</th></tr></thead>
+        <tbody>
+          <tr><td>约束形式</td><td>所有实例两两：$\mathrm{arg}_i=\mathrm{arg}_j\Rightarrow f_i=f_j$</td><td>每个实例只与之前的比，case 嵌套</td></tr>
+          <tr><td>实例顺序</td><td>不需要</td><td>需要固定顺序</td></tr>
+          <tr><td>适合的判定器</td><td>任意等式逻辑判定器</td><td>需要“能处理 case 展开”的判定器（如稀疏法）</td></tr>
+          <tr><td>冗余约束</td><td>多（可用等价性检查剪掉大量）</td><td>相对少，但 case 分支多</td></tr>
+          <tr><td>典型搭配</td><td>DPLL(T) + 同余闭包</td><td>整体命题编码 + SAT</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>书里指出：在比较两个系统（例如两个电路）时，常常能在多项式时间内识别出大量“永远不会同时相等”的参数对，从而删掉对应的 Ackermann 约束。这个优化在实践中很重要，因为二次条数会变成瓶颈。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>构件</th><th>作用</th><th>规模 / 复杂度</th></tr></thead>
+        <tbody>
+          <tr><td>Ackermann</td><td>两两函数一致性</td><td>$O(m^2)$ 条</td></tr>
+          <tr><td>Bryant</td><td>case 嵌套一致性</td><td>$O(m^2)$ 条，需顺序</td></tr>
+          <tr><td>等式图</td><td>节点变量、虚/实边</td><td>$O(n+m)$</td></tr>
+          <tr><td>矛盾环</td><td>恰一条不等边的环</td><td>判定合取不可满足</td></tr>
+          <tr><td>化简</td><td>非矛盾环上的纯文字 → true</td><td>多项式，迭代到不动点</td></tr>
+          <tr><td>稀疏法</td><td>只约束弦无关环</td><td>弦化后 $O(n^3)$</td></tr>
+          <tr><td>统一域</td><td>$\{1..n\}$</td><td>$n^n$ 状态</td></tr>
+          <tr><td>阶梯域</td><td>$\{1..i\}$</td><td>$n!$ 状态</td></tr>
+          <tr><td>域分配</td><td>按等式图给特征值</td><td>多项式；例中 48</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">命题编码的五个坑</span><span class="thm-id">§11.2–11.7</span></div>
+      <div class="thm-body">
+        <ul class="clean">
+          <li><b>把 $F_i^\star$ 当成真变量。</b>它只是宏/占位符，最后必须展开成等式逻辑公式。</li>
+          <li><b>可满足性与有效性用同一套归约。</b>Ackermann 对有效性给 $\mathrm{FC}\Rightarrow\mathit{flat}$，对可满足性给 $\mathrm{FC}\land\mathit{flat}$；弄反会得到相反答案。</li>
+          <li><b>对所有环加传递性。</b>只需弦无关环；否则约束数可能指数。</li>
+          <li><b>弦化后忘了新原子的语义。</b>新加的弦必须作为等式原子参与编码，不能只当图论边。</li>
+          <li><b>以为域越小越对。</b>域必须“足够”：每个一致文字子集都要能在域内实现；缩过头会丢掉可满足的解。</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3><span class="sn">11.x</span>本章原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>11.1 Lazy vs. Eager Encodings</td><td>懒：SAT 与理论求解器交替；急：一次性归约到命题逻辑，只跑一次 SAT。急编码要为每个理论定制。</td></tr>
+          <tr><td>11.2 From Uninterpreted Functions to Equality Logic</td><td>Ackermann 与 Bryant 两种归约，规模都二次；Ackermann 直观但限制判定器，Bryant 需固定实例顺序。</td></tr>
+          <tr><td>11.2.1 Ackermann's Reduction</td><td>编号、$\mathit{flat}_E$、两两一致性 $\mathrm{FC}_E$、$\varphi_E=\mathrm{FC}_E\Rightarrow\mathit{flat}_E$；可满足性与有效性归约不同。</td></tr>
+          <tr><td>11.2.2 Bryant's Reduction</td><td>嵌套 case $F_i^\star$ 与展开式 (11.14)；Example 11.4 的三分支。</td></tr>
+          <tr><td>11.3 The Equality Graph</td><td>等式图（Definition 11.9）、等式路径 $=^*$、不等路径 $\ne^*$、矛盾环（Definition 11.12）；无常量时矛盾环是唯一矛盾拓扑。</td></tr>
+          <tr><td>11.4 Simplifications of the Formula</td><td>Algorithm 11.4.1：非矛盾环上的纯文字替换成 true，迭代到不动点；等可满足且不增长。</td></tr>
+          <tr><td>11.5 A Graph-Based Reduction to Propositional Logic</td><td>稀疏法：骨架 + 传递性约束；只需弦无关环（Theorem 11.17）；弦化后约束数 $O(n^3)$。</td></tr>
+          <tr><td>11.6 Equalities and Small-Domain Instantiations</td><td>小域实例化（small-domain instantiation）：给变量分配小整数域，把等式变成值相等；域分配比图编码省位数。</td></tr>
+          <tr><td>11.6.1 Some Simple Bounds</td><td>Theorem 11.23 统一域 $\{1..n\}$（$n^n$）；11.24 阶梯域（$n!$）；11.25 带常量 $k$（$(k+n)!/k!$）。</td></tr>
+          <tr><td>11.6.2 Graph-Based Domain Allocation</td><td>只看“一致文字子集”是否可实现；矛盾环与常量等式路径是一致性的两个破坏模式。</td></tr>
+          <tr><td>11.6.3 The Domain Allocation Algorithm</td><td>Algorithm 11.6.1：去常量、删非矛盾环不等边、孤立点/混合点分配特征值、剩余 $E_=$ 分量给公共值；例中状态空间 48。</td></tr>
+          <tr><td>11.6.4 A Proof of Soundness</td><td>R1/R2 赋值规则；Theorem 11.28 赋值落在域内；再由一致性推出满足所有文字。</td></tr>
+          <tr><td>11.6.5 Summary</td><td>域分配是多项式时间、可把状态空间从 $n^n$ 降到远小于 $n!$。</td></tr>
+          <tr><td>11.7 Ackermann's vs. Bryant's Reduction: Where Does It Matter?</td><td>差别在公式形状与可用判定器：Ackermann 配同余闭包/DPLL(T)，Bryant 配整体命题编码；比较两系统时可剪掉大量一致性约束。</td></tr>
+          <tr><td>11.8 Problems</td><td>11.8.1 归约练习、11.8.2 域分配练习。</td></tr>
+          <tr><td>11.8.1 Reductions</td><td>把给定 EUF 公式做两种归约并比较规模；判断可满足性与有效性时归约式的差别。</td></tr>
+          <tr><td>11.9 Bibliographic Notes</td><td>Ackermann 1954、Bryant–Velev 稀疏法、域分配与小模型性质、等式逻辑的判定历史。</td></tr>
+          <tr><td>11.10 Glossary</td><td>$\mathit{flat}_E$、$\mathrm{FC}_E$、$E_=$、$E_\ne$、$=^*$、$\ne^*$、$\mathrm{char}$ 的符号表。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<section id="ch12" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">CHAPTER 12 · 12.1–12.6</div>
+    <h2><span class="num">12</span>Applications in Software Engineering and Computational Biology</h2>
+
+    <p class="lede">前面十一章造机器，这一章开机器。软件工程侧：有界程序分析（把一条路径或所有短路径变成公式）、无界程序分析（用非确定赋值做过近似，再用循环不变式精化）。计算生物学侧：DNA 电路的反应网络、基因调控网络，都能编码成位向量/整数算术，再用同一套求解器问“会不会到达某个状态”。</p>
+
+    <div class="chap-intro">
+      <p>12.1 引言；12.2 有界程序分析（路径可行性、SSA、路径约束、断言检查、所有路径）；12.3 无界分析（非确定赋值过近似、过粗的反例、循环不变式的归纳法、用不变式精化）；12.4 生物学（DNA 计算与 CRN、基因调控网络与布尔网络）；12.5 习题；12.6 文献注记。</p>
+      <span class="tag">APPLICATIONS</span>
+    </div>
+
+    <div class="mapchips">
+      <span class="chip hot">bounded program analysis</span>
+      <span class="chip">SSA</span>
+      <span class="chip">path constraint</span>
+      <span class="chip">verification condition</span>
+      <span class="chip">loop invariant</span>
+      <span class="chip">overapproximation</span>
+      <span class="chip">chemical reaction network</span>
+      <span class="chip">gene regulatory network</span>
+    </div>
+
+    <h3><span class="sn">12.2</span>有界程序分析</h3>
+
+    <p>有界模型检查（bounded model checking, BMC）先假设循环与递归只展开 $k$ 层，于是程序变成一条无环的直线代码。它<b>欠近似</b>程序行为：找到的 bug 一定是真的，没找到不代表没有。</p>
+
+    <h3><span class="sn">12.2.1</span>Checking Feasibility of a Single Path</h3>
+
+    <p>给定一条具体路径（由分支方向决定），把它变成公式分三步：展开循环、SSA 重命名、合取所有赋值与分支条件。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">一条路径的 SSA 与路径约束（表 12.1–12.2，式 12.1）</span><span class="thm-id">§12.2.1</span></div>
+      <div class="thm-body">
+        <p>路径上的语句（行号、种类、指令）：</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Line</th><th>Kind</th><th>Instruction or condition</th></tr></thead>
+            <tbody>
+              <tr><td>3</td><td>Assignment</td><td><code>i = 0;</code></td></tr>
+              <tr><td>7</td><td>Assignment</td><td><code>next = data[i];</code></td></tr>
+              <tr><td>8</td><td>Branch</td><td><code>i &lt; next &amp;&amp; next &lt; N</code></td></tr>
+              <tr><td>9</td><td>Assignment</td><td><code>i = i + 1;</code></td></tr>
+              <tr><td>10</td><td>Branch</td><td><code>i &lt; next</code></td></tr>
+              <tr><td>11</td><td>Branch</td><td><code>data[i] != cookie</code></td></tr>
+              <tr><td>14</td><td>Function call</td><td><code>Process(data[i]);</code></td></tr>
+              <tr><td>10</td><td>Assignment</td><td><code>i = i + 1;</code></td></tr>
+              <tr><td>10</td><td>Branch</td><td><code>!(i &lt; next)</code></td></tr>
+              <tr><td>7</td><td>Assignment</td><td><code>next = data[i];</code></td></tr>
+              <tr><td>8</td><td>Branch</td><td><code>!(i &lt; next &amp;&amp; next &lt; N)</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>SSA 化：每次赋值给变量一个新下标（时间戳），右侧引用最近一次版本。得到 <code>i1 = 0; next1 = data0[i1]; i2 = i1+1; ... i3 = i2+1; next2 = data0[i3];</code>。</p>
+        <p>路径约束把赋值写成等式、分支写成合取：</p>
+        <p>$$\begin{aligned}\mathit{ssa}\iff{}&amp; i_1=0\land next_1=data_0[i_1]\land(i_1 \lt next_1\land next_1 \lt N_0)\\ &amp;{}\land i_2=i_1+1\land i_2 \lt next_1\land data_0[i_2]\ne cookie_0\\ &amp;{}\land i_3=i_2+1\land\neg(i_3 \lt next_1)\land next_2=data_0[i_3]\\ &amp;{}\land\neg(i_3 \lt next_2\land next_2 \lt N_0).\end{aligned}$$</p>
+        <p>满足它的每个 <code>data0, cookie0</code> 取值，都对应这条路径的一次真实执行。</p>
+      </div>
+    </div>
+
+    <p><b>断言检查</b>：把断言取反加入路径约束，判可满足。可满足即存在反例。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">数组越界：$N_0=0$ 就够了（§12.2.1）</span><span class="thm-id">§12.2.1</span></div>
+      <div class="thm-body">
+        <p>检查第 7 行的下标是否在界内：</p>
+        <p>$$i_1=0\land\neg(0\le i_1\land i_1 \lt N_0).$$</p>
+        <p>取 $\{i_1\mapsto0,\;N_0\mapsto0\}$ 即可满足——数组长度为 0 时，访问 <code>data[0]</code> 越界。这就是一个真实缺陷。C 程序里 $i_1$ 与 $N_0$ 都是位向量，所以这个公式属于第 6 章。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">12.2.2</span>Checking Feasibility of All Paths in a Bounded Program</h3>
+
+    <p>要覆盖所有路径，就把循环展开到界 $k$，并把每个 <code>if</code> 用条件表达式建模，让 SAT 自己选方向，而不是逐条路径枚举。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">分支汇合处用条件项（§12.2.2）</span><span class="thm-id">§12.2.2</span></div>
+      <div class="thm-body">
+        <p><code>if (γ2) i1 else i0</code> 之后，$i$ 的值写成</p>
+        <p>$$i_2=\gamma_2\,?\,i_1\,:\,i_0.$$</p>
+        <p>$\gamma_2$ 本身是布尔变量，等于 <code>data0[i1] == cookie0</code>。整段展开后得到一组形如</p>
+        <pre><code class="language-text">γ1 = (i0 &lt; next0);
+γ2 = (data0[i1] == cookie0);
+i1 = i0 + 1;
+i2 = γ2 ? i1 : i0;
+i3 = i2 + 1;
+γ3 = (i3 &lt; next0);
+...
+i8 = γ1 ? i7 : i0;</code></pre>
+        <p>的 SSA 约束。路径数仍是 $2^k$，但公式大小只随展开深度线性增长——这正是 §1.6 的要点。</p>
+      </div>
+    </div>
+
+    <p>有界分析的能力边界很清楚：它证明的是“前 $k$ 步没有反例”。要证无界性质，必须换方法。</p>
+
+    <h3><span class="sn">12.3</span>Unbounded Program Analysis</h3>
+
+    <p>无界验证一般不可判定，所以这里没有“判定过程”，只有可能不终止、可能放弃的过程。</p>
+
+    <h3><span class="sn">12.3.1</span>Overapproximation with Nondeterministic Assignments</h3>
+
+    <p>把带循环的程序变成无循环程序，三步：</p>
+
+    <ol>
+      <li>对每个循环、每个被循环修改的变量，在循环入口加一条“赋非确定值” <code>x = *</code>；</li>
+      <li>循环之后加 <code>assume(¬C)</code>，把不满足出口条件的路径直接掐断；</li>
+      <li>把 <code>while(C)</code> 换成 <code>if(C)</code>。</li>
+    </ol>
+
+    <p>得到的程序<b>过近似</b>（overapproximate）原程序：原程序的每条执行都对应新程序的一条执行，反之不然。因此若断言在新程序里成立，在原程序里也成立。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">循环结束后 $i=j$ 吗（Program 12.3.1）</span><span class="thm-id">§12.3.1</span></div>
+      <div class="thm-body">
+        <pre><code class="language-c">int i=0, j=0;
+while(data[i] != '\n') { i++; j=i; }
+assert(i == j);</code></pre>
+        <p>变换后循环体只执行“一次抽象迭代”：<code>i=*; j=*; ...</code>，出口处 <code>assume(data[i]=='\n')</code>。SSA 约束为</p>
+        <p>$$i_1=0\land j_1=0\land\gamma_1=(data_0[i_1]\ne\text{'\textbackslash n'})\land i_3=i_2+1\land j_3=i_3\land i_4=\gamma_1?i_3:i_1\land j_4=\gamma_1?j_3:j_1\land data_0[i_4]=\text{'\textbackslash n'}\land i_4\ne j_4.$$</p>
+        <p>不可满足，所以断言成立——对任意循环次数都成立。原因是不变式 $i=j$ 在每轮都被重新建立，与历史无关。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">12.3.2</span>The Overapproximation Can Be Too Coarse</h3>
+
+    <p>Windows 设备驱动片段：加锁、取请求、释放请求、解锁、计数，循环条件 <code>old_count != count</code>，循环外再 <code>unlock()</code>。锁规范是一个三状态机：unlocked —lock→ locked —unlock→ unlocked，重复加锁/解锁进入 error。</p>
+
+    <p>把状态机插桩成变量 <code>state_of_lock</code> 与断言后，做过近似变换：循环入口把 <code>state_of_lock</code> 赋成 <code>*</code>。于是存在一条“虚假”执行：进入循环时 <code>state_of_lock = locked</code>，第一条断言 <code>assert(state_of_lock == unlocked)</code> 失败。</p>
+
+    <p>这是<b>假警报</b>（false alarm）：真实程序进入循环时一定是 unlocked（刚初始化），抽象把这条信息丢了。过近似“太粗”，需要精化。</p>
+
+    <h3><span class="sn">12.3.3</span>Loop Invariants</h3>
+
+    <p><b>循环不变式</b>（loop invariant）是在循环体开头、无论迭代多少次都成立的谓词。例：</p>
+
+    <pre><code class="language-c">int i=0;
+while(i != 10) { ...; i++; }</code></pre>
+
+    <p>$0\le i \lt 10$ 是它的不变式。证明靠归纳，程序模板：</p>
+
+    <pre><code class="language-c">A;
+while(C) { assert(I); B; }</code></pre>
+
+    <p>两个待检程序（都无循环）：</p>
+
+    <pre><code class="language-c">// base case
+A;
+assert(C ==&gt; I);
+
+// step case
+assume(C &amp;&amp; I);
+B;
+assert(C ==&gt; I);</code></pre>
+
+    <p>基例证明“首次进入时 $I$ 成立”；步例在“入口满足 $C\land I$”的假设下执行一次循环体，证明出口仍满足 $I$（注意出口断言用 $C\Rightarrow I$，因为可能正好退出循环）。两者都通过，$I$ 就是不变式。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">验证 $i\ge0\land i \lt 10$（§12.3.3）</span><span class="thm-id">§12.3.3</span></div>
+      <div class="thm-body">
+        <p>基例：<code>i=0; assert(i != 10 ⇒ i&gt;=0 &amp;&amp; i&lt;10);</code> 平凡通过。</p>
+        <p>步例：<code>assume(i != 10 &amp;&amp; i&gt;=0 &amp;&amp; i&lt;10); i++; assert(i != 10 ⇒ i&gt;=0 &amp;&amp; i&lt;10);</code>。取反后与前提一起不可满足，故通过。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">12.3.4</span>Refining the Abstraction with Loop Invariants</h3>
+
+    <p>把不变式加进过近似，只需三步（对每个循环 $\ell$，不变式 $I_\ell$）：</p>
+
+    <ol start="4">
+      <li>在非确定赋值<b>之前</b>加 <code>assert(Iℓ)</code>——基例；</li>
+      <li>在非确定赋值<b>之后</b>加 <code>assume(Iℓ)</code>——归纳假设；</li>
+      <li>在循环体末尾加 <code>assert(C ⇒ Iℓ)</code>——步例。</li>
+    </ol>
+
+    <p>三者与属性检查放在同一个无循环程序里，一次调用求解器即可。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">用 <code>state_of_lock == unlocked</code> 救回驱动证明（Program 12.3.5）</span><span class="thm-id">§12.3.4</span></div>
+      <div class="thm-body">
+        <p>候选不变式 $I:=\texttt{state\_of\_lock}==\texttt{unlocked}$。断言分布：</p>
+        <ul class="clean">
+          <li>第 3 行：基例；</li>
+          <li>第 10 行：归纳假设；</li>
+          <li>第 12、18、29 行：属性；</li>
+          <li>第 25 行：步例 <code>old_count != count ⇒ state_of_lock == unlocked</code>。</li>
+        </ul>
+        <p>分支分析：若 <code>request != NULL</code>，执行 then 分支后状态是 unlocked，第 25 行成立；且 <code>count = old_count+1</code>，第 27 行的 assume 使第 29 行不被执行。若 <code>request == NULL</code>，跳过 then 分支，<code>old_count == count</code> 且状态仍是 locked，第 25 行前提假、第 29 行成立。</p>
+        <p>所有断言通过，属性得证。</p>
+      </div>
+    </div>
+
+    <p>难点在“猜不变式”。常量 true 也是不变式，但太弱，无法排除虚假状态。寻找足够强的不变式是活跃研究领域；实用启发式包括：取程序文本里出现的谓词、用程序变量与常见关系算子组合生成候选，再逐个用上述流程验证。一般不存在“总能找到最强不变式”的算法。</p>
+
+    <h3><span class="sn">12.4</span>SMT-Based Methods in Biology</h3>
+
+    <p>生物学建模分两类：<b>工程生物电路</b>（设计 DNA 计算）与<b>理解天然系统</b>（从实验数据反推调控网络）。两者都能写成转移系统，于是“会不会到达某状态”变成可达性或不变式问题。</p>
+
+    <h3><span class="sn">12.4.1</span>DNA Computing</h3>
+
+    <p><b>化学反应网络</b>（chemical reaction network, CRN）是二元组 $(S,R)$：物种集合与反应集合；每个反应 $r=(R_r,P_r)$ 是一对多重集，描述反应物与产物的化学计量数。</p>
+
+    <p>行为定义成转移系统 $T=(Q,T)$：$Q$ 是物种多重集，$q(s)$ 是状态 $q$ 下物种 $s$ 的分子数；</p>
+
+    <p>$$T(q,q')\leftrightarrow\bigvee_{r\in R}\Bigl(\mathrm{on}(r,q)\land\bigwedge_{s\in S}q'(s)=q(s)-R_r(s)+P_r(s)\Bigr),$$</p>
+
+    <p>$\mathrm{on}(r,q)$ 表示 $q$ 中每种反应物都足够，反应 $r$ 可触发。这直接是整数线性算术：分子数可能无界，所以用整数而不是位向量；很多模型能证明上界，于是可退回位向量编码而不失精度。</p>
+
+    <div class="thm ex">
+      <div class="thm-head"><span class="thm-kind">例子</span><span class="thm-title">DNA 链置换实现的 AND 门（图 12.2）</span><span class="thm-id">§12.4.1</span></div>
+      <div class="thm-body">
+        <p>七个物种：$aux,A,B,auxA,auxB,auxAB,C$。六条反应，前两对可逆：</p>
+        <p>$$aux+A\leftrightarrow auxA,\qquad aux+B\leftrightarrow auxB,$$</p>
+        <p>$$auxA+B\to auxAB+C,\qquad auxB+A\to auxAB+C.$$</p>
+        <p>初始状态 $(aux,A,B)=(1,1,1)$，其余为 0。若 $A,B$ 都存在，最终到达 sink 状态 $(0,0,0,0,0,1,1)$，即 $q(C)=1$。要证的性质是</p>
+        <p>$$\bigl(q_0(A)=1\land q_0(B)=1\bigr)\Rightarrow \mathbf{F}\mathbf{G}\bigl(q(C)=1\bigr),$$</p>
+        <p>即“最终总会到达一个此后 $C$ 恒为 1 的状态”。转移关系加上 idling（无反应可触发时自环），就能用有界/无界模型检查。规模化靠找<b>守恒不变式</b>：基本链的总数不变，只是粘合或分离。</p>
+      </div>
+    </div>
+
+    <h3><span class="sn">12.4.2</span>Uncovering Gene Regulatory Networks</h3>
+
+    <p><b>基因调控网络</b>（gene regulatory network, GRN）可以看成细胞的“程序”：基因之间互相激活/抑制，决定细胞行为。布尔网络把每个基因看成开/关：状态 $q\in\mathbb{B}^{|G|}$，$q(g)=1$ 表示基因 $g$ 开启。</p>
+
+    <p>每个基因有更新函数 $f_g$，同步语义下</p>
+
+    <p>$$T(q,q')\leftrightarrow\bigwedge_{g\in G}q'(g)=f_g(q).$$</p>
+
+    <p>图 12.3 的三基因例子：$A'=\neg A$，$B'=A\land B$，$C'=A\lor B$。从任意初始状态，系统不收敛到单点，而是在 $001$ 与 $100$ 之间振荡（位序 $A,B,C$）。</p>
+
+    <p>典型问题：从给定初值出发，行为是否最终稳定？所有<b>吸引子</b>（attractor：一旦进入就永久停留的状态集合）是什么？这类性质用位向量 + 未解释函数（UFBV）编码，交给 SMT。</p>
+
+    <p>更有意思的是<b>合成</b>：实验只能测到部分稳态表达与扰动效果，要反推“哪些 GRN 能解释这些数据”。把更新函数的结构（哪些边存在、是激活还是抑制）设成未知布尔变量，把实验观测写成约束，问可满足性；每个模型就是一个候选网络。模型可能不唯一，而“所有模型都一致的预测”比单一模型更可靠，所以还要枚举/计数模型。</p>
+
+    <h3><span class="sn">12.5</span>Problems（习题）</h3>
+
+    <p><b>12.5.1 Warm-up Exercises：</b>把 §12.3.3 的不变式检查推广到 <code>do-while</code> 与 <code>for</code> 两种循环，注意 C 语义下 <code>continue</code> 与自增的先后。</p>
+
+    <p><b>12.5.2 Bounded Symbolic Simulation：</b>给一段含 <code>Next()</code> 调用与三遍循环展开的程序，写 SSA 与公式，再加 <code>y &gt; x</code> 断言并取反；另要求给出“数组下标是变量”的 SSA 形式，以及“解引用指针”的 SSA 构造（后者书中未展开，属于开放练习）。</p>
+
+    <p><b>12.5.3 Overapproximating Programs：</b>对给定程序做过近似变换，判断断言是否仍可证；若失败，给出虚假反例并猜一个不变式精化。</p>
+
+    <h3><span class="sn">12.6</span>Bibliographic Notes（文献注记）</h3>
+
+    <p>有界模型检查的经典工具是 CBMC（C Bounded Model Checker），它把 C 程序展开成 SSA 并调用 SAT/SMT；终止性分析与不变式生成是另一条主线（插值、抽象解释、IC3/PDR）。生物学侧的工作把 CRN 与布尔网络编码成 SMT，再用可达性/不变式技术分析；DNA 链置换的反应设计见文献 [234,235,69]，GRN 合成见 [216,107,290]。</p>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>本教程对应内容</th></tr></thead>
+        <tbody>
+          <tr><td>12.1 Introduction</td><td>两类应用：软件验证与生物建模；共同点是把系统写成转移系统/约束。</td></tr>
+          <tr><td>12.2 Bounded Program Analysis</td><td>固定展开深度，欠近似；找到的 bug 必真，未找到不代表无。</td></tr>
+          <tr><td>12.2.1 Checking Feasibility of a Single Path</td><td>展开 → SSA → 合取赋值与分支条件 → 路径约束；断言取反判可满足。</td></tr>
+          <tr><td>12.2.2 Checking Feasibility of All Paths in a Bounded Program</td><td>用条件项 $c?a:b$ 汇合分支，一次编码所有路径。</td></tr>
+          <tr><td>12.3 Unbounded Program Analysis</td><td>一般不可判定；用过近似 + 不变式精化。</td></tr>
+          <tr><td>12.3.1 Overapproximation with Nondeterministic Assignments</td><td>循环变量赋 <code>*</code>、加 <code>assume(¬C)</code>、<code>while</code> 改 <code>if</code>。</td></tr>
+          <tr><td>12.3.2 The Overapproximation Can Be Too Coarse</td><td>驱动加锁例子：入口状态被抽象成任意值，产生假警报。</td></tr>
+          <tr><td>12.3.3 Loop Invariants</td><td>基例 + 步例两个无循环程序；$I$ 在入口与出口都保持。</td></tr>
+          <tr><td>12.3.4 Refining the Abstraction with Loop Invariants</td><td>assert(I) / assume(I) / assert(C⇒I) 三步嵌入同一程序。</td></tr>
+          <tr><td>12.4 SMT-Based Methods in Biology</td><td>CRN 与 GRN 都编码成转移系统，用整数/位向量 + UF 求解。</td></tr>
+          <tr><td>12.4.1 DNA Computing</td><td>反应 $A+B\to C$ 的化学计量方程；AND 门例；性质 $\mathbf{F}\mathbf{G}(q(C)=1)$。</td></tr>
+          <tr><td>12.4.2 Uncovering Gene Regulatory Networks</td><td>布尔网络 $q'(g)=f_g(q)$；吸引子；用实验约束反推网络。</td></tr>
+          <tr><td>12.5 Problems</td><td>12.5.1 循环不变式模板；12.5.2 有界符号模拟；12.5.3 过近似。</td></tr>
+          <tr><td>12.6 Bibliographic Notes</td><td>CBMC、插值、IC3/PDR；CRN/GRN 的 SMT 编码文献。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">应用层的五个坑</span><span class="thm-id">§12.2–12.4</span></div>
+      <div class="thm-body">
+        <ul class="clean">
+          <li><b>把有界分析的无 bug 当成证明。</b>它只覆盖前 $k$ 步；$k$ 之后仍可能出错。</li>
+          <li><b>忘记 <code>assume(¬C)</code>。</b>没有它，过近似会包含“循环条件为真却退出循环”的路径，产生大量假反例。</li>
+          <li><b>把不变式的步例写成 <code>assert(I)</code>。</b>退出循环那一轮不要求 $I$ 成立（循环条件已假），所以要用 <code>C⇒I</code>。</li>
+          <li><b>把 CRN 的分子数当位向量。</b>分子数可能无界；要先证明上界，或直接用整数算术。</li>
+          <li><b>把布尔网络的同步语义当唯一选择。</b>异步语义（每步只更新一个基因）会给出不同动力学与不同吸引子。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="summary" class="chapter">
+  <div class="wrap">
+    <div class="sec-label">APPENDIX A–B · SUMMARY</div>
+    <h2><span class="num">F</span>工具链、文献与一张选型表</h2>
+
+    <p class="lede">理论讲完，最后要能落地：用 SMT-LIB 把问题喂给求解器，知道标准里每个逻辑名对应本书哪一章，知道一个教学用的 C++ 库长什么样，以及面对一个新问题时该选哪个判定过程。</p>
+
+    <div class="chap-intro">
+      <p>附录 A：SMT-LIB 标准与文件接口（命题、算术、位向量、数组、EUF 五组例子）；附录 B：一个用于开发判定过程的 C++ 库（图/树、解析、CNF 与 SAT、懒判定模板）；文献注记与工具/算法索引；最后是全书选型表与学习路线。</p>
+      <span class="tag">SMT-LIB · TOOLING · SUMMARY</span>
+    </div>
+
+    <div class="mapchips">
+      <span class="chip hot">SMT-LIB</span>
+      <span class="chip">set-logic</span>
+      <span class="chip">check-sat</span>
+      <span class="chip">get-model</span>
+      <span class="chip">QF_UFLIA</span>
+      <span class="chip">C++ library</span>
+      <span class="chip">lazy decision procedure</span>
+    </div>
+
+    <h3><span class="sn">A.1</span>The Satisfiability-Modulo-Theory Library and Standard (SMT-LIB)</h3>
+
+    <p>SMT-LIB 是一个库加一个标准：库提供大量基准公式（benchmarks），标准规定公式的文本语法、逻辑名（logic）、以及求解器与前端之间的交互协议。它的价值在于<b>可交换</b>：同一个文件可以喂给 Z3、CVC5、Boolector、MathSAT，结果应当一致。</p>
+
+    <p>一个文件由若干命令组成，每条形如 <code>(command arg...)</code>。核心命令：</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>命令</th><th>作用</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><td><code>(set-logic QF_LIA)</code></td><td>声明逻辑片段</td><td>决定可用排序与理论</td></tr>
+          <tr><td><code>(set-info :status sat)</code></td><td>标注预期结果</td><td>基准库用，求解器可忽略</td></tr>
+          <tr><td><code>(declare-sort U 0)</code></td><td>声明未解释排序</td><td>EUF 用</td></tr>
+          <tr><td><code>(declare-fun f (U) U)</code></td><td>声明函数</td><td>常量写成 <code>()</code> 参数</td></tr>
+          <tr><td><code>(assert φ)</code></td><td>加入约束</td><td>可多次，语义是合取</td></tr>
+          <tr><td><code>(check-sat)</code></td><td>判定</td><td>返回 <code>sat</code>/<code>unsat</code>/<code>unknown</code></td></tr>
+          <tr><td><code>(get-model)</code></td><td>取模型</td><td>仅 sat 时有效</td></tr>
+          <tr><td><code>(get-unsat-core)</code></td><td>取不可满足核心</td><td>需先 <code>(set-option :produce-unsat-cores true)</code></td></tr>
+          <tr><td><code>(push 1)</code> / <code>(pop 1)</code></td><td>增量作用域</td><td>对应 §2.2.7 的增量求解</td></tr>
+          <tr><td><code>(exit)</code></td><td>结束</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>逻辑名把“排序 + 理论 + 是否含量词”编码在一起。常用组合：<code>QF_UF</code>（等式 + 未解释函数）、<code>QF_LIA</code>/<code>QF_LRA</code>（整数/实数线性算术）、<code>QF_BV</code>（位向量）、<code>QF_AX</code>（数组，下标/元素为任意排序）、<code>QF_AUFLIA</code>（数组 + UF + 整数算术）、<code>UFBV</code>（位向量 + UF，第 12 章用）。前缀 <code>QF_</code> 表示无量词；去掉它就是含量词版本（第 9 章）。</p>
+
+    <h3><span class="sn">A.2</span>The SMT-LIB File Interface</h3>
+
+    <h3><span class="sn">A.2.1</span>Propositional Logic</h3>
+
+    <pre><code class="language-lisp">(set-logic QF_UF)
+(declare-fun a () Bool)
+(declare-fun b () Bool)
+(assert (and (or a b) (not a)))
+(check-sat)
+(get-model)
+(exit)</code></pre>
+
+    <p>返回 <code>sat</code>，模型为 <code>(define-fun b () Bool true)</code> 之类。<code>QF_UF</code> 虽名为 UF，纯布尔公式是它的子集；也可以用 <code>QF_UF</code> 之外的 <code>QF_UF</code> 变体，或直接用 <code>QF_UF</code> 处理命题骨架。</p>
+
+    <h3><span class="sn">A.2.2</span>Arithmetic</h3>
+
+    <pre><code class="language-lisp">(set-logic QF_LIA)
+(declare-fun x () Int)
+(declare-fun y () Int)
+(assert (and (&gt;= x 0) (&lt;= x 10) (= (+ x y) 7) (&gt; y x)))
+(check-sat)
+(get-model)
+(exit)</code></pre>
+
+    <p>整数与实数用不同排序 <code>Int</code> / <code>Real</code>；混合时自动插入 <code>to_real</code>。注意 <code>(- x y)</code> 是二元减法，<code>(- x)</code> 是一元取负。</p>
+
+    <h3><span class="sn">A.2.3</span>Bit-Vector Arithmetic</h3>
+
+    <pre><code class="language-lisp">(set-logic QF_BV)
+(declare-fun x () (_ BitVec 32))
+(assert (and (bvult x #x0000000a)
+             (= (bvmul x x) #x00000010)))
+(check-sat)
+(exit)</code></pre>
+
+    <p>排序写作 <code>(_ BitVec 32)</code>；常量用 <code>#x...</code>（十六进制）或 <code>#b...</code>（二进制）。运算必须带 <code>bv</code> 前缀：<code>bvadd</code>、<code>bvsub</code>、<code>bvmul</code>、<code>bvudiv</code>、<code>bvsdiv</code>、<code>bvult</code>（无符号小于）、<code>bvslt</code>（有符号小于）。这正好对应 §6.2 的“无符号看借位、有符号异或符号位”。</p>
+
+    <h3><span class="sn">A.2.4</span>Arrays</h3>
+
+    <pre><code class="language-lisp">(set-logic QF_AX)
+(declare-fun a () (Array Int Int))
+(declare-fun i () Int)
+(assert (and (= (select a i) 3)
+             (= (select (store a i 5) i) 5)
+             (not (= (select (store a i 5) i) 3))))
+(check-sat)
+(exit)</code></pre>
+
+    <p><code>select</code> 是读，<code>store</code> 是写。第二条断言就是 read-over-write 的第一半；若要证“写入别的下标不影响原值”，需要第二条公理的实例（§7.4 的懒编码会自动加）。<code>QF_AX</code> 不指定下标/元素理论；<code>QF_AUFLIA</code> 才是数组 + UF + 整数算术。</p>
+
+    <h3><span class="sn">A.2.5</span>Equalities and Uninterpreted Functions</h3>
+
+    <pre><code class="language-lisp">(set-logic QF_UF)
+(declare-sort U 0)
+(declare-fun f (U) U)
+(declare-const a U)
+(declare-const b U)
+(assert (and (= a b) (not (= (f a) (f b)))))
+(check-sat)
+(exit)</code></pre>
+
+    <p>返回 <code>unsat</code>：这正是同余公理。把 <code>f</code> 换成二元函数、再加 <code>(assert (not (= (f a b) (f b a))))</code>，则变成“交换律不成立”的可满足式——提醒我们 UF 不含交换律（§4.4）。</p>
+
+    <h3><span class="sn">B.1–B.5</span>A C++ Library for Developing Decision Procedures</h3>
+
+    <p>附录 B 描述一个教学库的骨架，目标不是性能，而是让读者能把前面算法拼起来。五个部件：</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="k">B.2</div>
+        <h4>Graphs and Trees</h4>
+        <p>邻接表图与有序树。图用于等式图、蕴含图、弱等价图；树用于语法树与解析。节点带 payload（模板参数），便于把“文字”“子句”“项”挂在节点上。</p>
+      </div>
+      <div class="card">
+        <div class="k">B.3</div>
+        <h4>Parsing</h4>
+        <p>一阶逻辑文法、问题文件格式、标识符表（把字符串 Intern 成整数 ID）、语法树构造。标识符表让“同名变量”比较变成整数比较，是后面所有算法的前提。</p>
+      </div>
+      <div class="card">
+        <div class="k">B.4</div>
+        <h4>CNF and SAT</h4>
+        <p>把语法树做 Tseitin 编码生成 CNF；<code>SatSolver</code> 是接口，背后可以是 CDCL 或外部求解器。CNF 生成器要处理极性、子句去重与子句包含消去。</p>
+      </div>
+      <div class="card">
+        <div class="k">B.5</div>
+        <h4>A Template for a Lazy Decision Procedure</h4>
+        <p>把 §3.3 的 Lazy-Basic 写成模板方法：<code>check()</code> 循环“SAT → 提纯赋值 → 理论检查 → 加引理”，子类只需实现 <code>deduction()</code> 与编码函数。</p>
+      </div>
+    </div>
+
+    <p>库的设计选择值得注意：<b>接口用 ID 而不是字符串</b>，避免哈希开销；<b>图算法与逻辑分离</b>，同余闭包、超图、最短路共用一套图结构；<b>SAT 求解器可替换</b>，方便对比“自己写的 DPLL”与“工业 CDCL”。这也是本书“算法点视图”的工程版本：数据结构选对了，算法就短。</p>
+
+    <h3><span class="sn">References / Tools index / Algorithms index</span></h3>
+
+    <p><b>References（参考文献）</b>：原书 bibliography 覆盖从 1960 年代 DPLL 到 2010 年代 SMT 的线路。几篇关键文献：Robinson 的归结原理（1965）；Nelson 与 Oppen 的组合方法（1979，<i>ACM Transactions on Programming Languages and Systems</i>）；Shostak 的同余闭包（1978，<i>Journal of the ACM</i>）；Bryant 与 Velev 的稀疏法（2000，<i>International Conference on Computer-Aided Verification</i>，CAV，Springer <b>LNCS</b> 卷 1855）；de Moura 与 Bjørner 的 Z3（2008，TACAS，LNCS 卷 4963）；Dutertre 与 de Moura 的 Simplex 变体（2006，CAV，LNCS 卷 4144）；Nieuwenhuis、Oliveras、Tinelli 的 DPLL(T) 抽象框架（2006，<i>Journal of the ACM</i>）。会议论文通常收在 Springer 的 LNCS 系列（volume 编号即丛书卷号），期刊论文给出 volume/issue 与 pages；引用时两者格式不同，但都要求可定位到具体一页。书目里还混有 IEEE 与 ACM 的期刊、workshop 与 symposium 的 proceedings（其 editor/editors 与出版 press 信息有时被省略），以及 computer-aided verification 方向的会议论文；读文献时先看 venue 与 volume，再决定要不要追。工具与算法索引则按名字反查章节：<code>Analyze-Conflict</code> → §2.2.4，<code>Congruence-Closure</code> → §4.3，<code>General-Simplex</code> → §5.2，<code>Omega-Test</code> → §5.5，<code>DPLL(T)</code> → §3.4，<code>Nelson–Oppen</code> → §10.3。</p>
+
+    <p><b>Tools index（工具索引）</b>：CBMC（C 有界模型检查）、Z3/CVC5（SMT）、MiniSAT/Glucose（SAT）、Boolector（位向量）、Simplify（早期 SMT，触发器机制）。<b>Algorithms index（算法索引）</b>：CDCL、BCP、冲突分析、VSIDS、同余闭包、一般单纯形、分支定界、Gomory 割、Fourier–Motzkin、Omega 测试、DPLL(T)、Nelson–Oppen、Ackermann/Bryant 归约、域分配、E-matching。索引不是装饰：它是“遇到问题先查表”的入口。</p>
+
+    <h3><span class="sn">99</span>一页纸：该用哪个判定过程</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>问题长什么样</th><th>选什么</th><th>关键算法</th><th>复杂度 / 注意</th></tr></thead>
+        <tbody>
+          <tr><td>纯布尔 CNF</td><td>CDCL SAT</td><td>BCP + 冲突分析 + 学习</td><td>NP 完全；鸽巢是硬实例</td></tr>
+          <tr><td>$\land$ 个等式 / 不等式</td><td>同余闭包</td><td>并查集 + 同余合并</td><td>$O(n\log n)$；只此而已</td></tr>
+          <tr><td>等式 + 未解释函数</td><td>EUF</td><td>同余闭包 / Ackermann / Bryant</td><td>NP 完全；UF 丢交换律</td></tr>
+          <tr><td>实数线性算术（合取）</td><td>一般单纯形</td><td>tableau + pivot</td><td>最坏指数，实际很快</td></tr>
+          <tr><td>整数线性算术（合取）</td><td>分支定界 + 割</td><td>LP 松弛 + Gomory</td><td>NP 完全；基本 B&B 不完备</td></tr>
+          <tr><td>差分约束 $x-y\le c$</td><td>最短路</td><td>Bellman–Ford 判负环</td><td>$O(nm)$，多项式</td></tr>
+          <tr><td>位向量</td><td>扁平化 + SAT</td><td>全加器 / 桶形移位 / 增量展开</td><td>乘法是瓶颈</td></tr>
+          <tr><td>数组（无量化）</td><td>懒编码 或 array property 归约</td><td>弱等价图 + 按需公理</td><td>一般数组理论不可判定</td></tr>
+          <tr><td>指针 / 堆</td><td>语义翻译 + 数组逻辑</td><td>$L,M$ 翻译 + 纯变量 + 分区</td><td>闭包会不可判定</td></tr>
+          <tr><td>混合理论</td><td>DPLL(T) + Nelson–Oppen</td><td>提纯 + 等式传播 (+分裂)</td><td>签名不交、无限域</td></tr>
+          <tr><td>量词（QBF）</td><td>搜索 / 消元</td><td>与或树 / 归结 / 展开</td><td>PSPACE 完全</td></tr>
+          <tr><td>量词（线性算术）</td><td>量词消去</td><td>Fourier–Motzkin / Omega</td><td>双重指数</td></tr>
+          <tr><td>EPR（$\exists^*\forall^*$、无函数）</td><td>接地 + SAT</td><td>$n^m$ 实例 + 命题编码</td><td>NEXPTIME</td></tr>
+          <tr><td>一般一阶</td><td>实例化 + E-matching</td><td>触发器、E-graph</td><td>不可判定；不完备</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>学习路线（建议 6 周）</h4>
+
+    <ol>
+      <li><b>第 1 周：</b>第 1–2 章。手写一个 DPLL，输入 DIMACS，输出模型/UNSAT；再用 MiniSAT 对比。</li>
+      <li><b>第 2 周：</b>第 3–4 章。实现同余闭包 + Lazy-Basic；用等式图跑随机测试。</li>
+      <li><b>第 3 周：</b>第 5 章。实现一般单纯形（tableau + Bland），再加分支定界。</li>
+      <li><b>第 4 周：</b>第 6–7 章。写位向量扁平化（先只支持加减比较），再实现数组的弱等价图。</li>
+      <li><b>第 5 周：</b>第 8–9 章。指针语义翻译；QBF 的与或树搜索。</li>
+      <li><b>第 6 周：</b>第 10–12 章。Nelson–Oppen 提纯与传播；最后用 SMT-LIB 跑一个真实验证条件。</li>
+    </ol>
+
+    <div class="thm warn">
+      <div class="thm-head"><span class="thm-kind">最后提醒</span><span class="thm-title">三条贯穿全书的经验</span><span class="thm-id">Summary</span></div>
+      <div class="thm-body">
+        <ul class="clean">
+          <li><b>布尔结构交给 SAT，理论关系交给判定器。</b>不要在语法上展开 DNF；让学习机制去剪枝。</li>
+          <li><b>“可判定”不等于“能算”。</b>Presburger、数组、指针都有可判定片段，但复杂度可能双重指数；工程上要靠片段选择与抽象。</li>
+          <li><b>所有优化都必须保可靠。</b>学习子句要由归结推出，引理要 T-有效，割要由整数性推出，抽象要过近似。快而不能证，等于没证。</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3><span class="sn">A–B</span>附录原书小节对照</h3>
+
+    <div class="table-wrap cheat">
+      <table>
+        <thead><tr><th>原书小节</th><th>内容与关键结果</th></tr></thead>
+        <tbody>
+          <tr><td>A SMT-LIB: a Brief Tutorial</td><td>一份 SMT-LIB 快速教程：库（benchmarks）与标准（语法、逻辑名、交互协议）两部分；目标是让同一个文件在 Z3、CVC5、Boolector 上给出一致结果。</td></tr>
+          <tr><td>A.1 The Satisfiability-Modulo-Theory Library and Standard (SMT-LIB)</td><td>库 + 标准；逻辑名把排序、理论、量词三者编码在一起，例如 <code>QF_UFLIA</code> 表示无量词、UF 与整数线性算术的组合。</td></tr>
+          <tr><td>A.2 The SMT-LIB File Interface</td><td>命令式接口：<code>set-logic</code>、<code>declare-fun</code>、<code>assert</code>、<code>check-sat</code>、<code>get-model</code>、<code>push/pop</code>、<code>exit</code>。</td></tr>
+          <tr><td>A.2.1 Propositional Logic</td><td>布尔排序 <code>Bool</code> 与 <code>and/or/not</code>；纯布尔公式可放在 <code>QF_UF</code> 下。</td></tr>
+          <tr><td>A.2.2 Arithmetic</td><td><code>Int</code>/<code>Real</code> 排序；<code>+ - *</code> 与 <code>&lt;= &lt; =</code>；整数与实数混合时插入 <code>to_real</code>。</td></tr>
+          <tr><td>A.2.3 Bit-Vector Arithmetic</td><td>排序 <code>(_ BitVec 32)</code>；常量 <code>#x...</code>/<code>#b...</code>；运算带 <code>bv</code> 前缀（<code>bvadd</code>、<code>bvult</code>…）。</td></tr>
+          <tr><td>A.2.4 Arrays</td><td><code>(Array Int Int)</code>；<code>select</code> 读、<code>store</code> 写；<code>QF_AX</code> 与 <code>QF_AUFLIA</code> 的区别。</td></tr>
+          <tr><td>A.2.5 Equalities and Uninterpreted Functions</td><td><code>declare-sort</code> + <code>declare-fun</code>；<code>a=b ∧ f(a)≠f(b)</code> 返回 unsat，就是同余公理。</td></tr>
+          <tr><td>B A C++ Library for Developing Decision Procedures</td><td>教学库：目标不是性能，而是把前文算法拼起来；接口用整数 ID、图与逻辑分离、SAT 后端可替换。</td></tr>
+          <tr><td>B.1 Introduction</td><td>库的整体分层：数据结构 → 解析 → CNF/SAT → 懒判定模板。</td></tr>
+          <tr><td>B.2 Graphs and Trees</td><td>邻接表图与有序树，节点带 payload；用于等式图、蕴含图、弱等价图、语法树。</td></tr>
+          <tr><td>B.2.1 Adding "Payload"</td><td>模板参数把“文字/子句/项”挂到节点上，避免为每种图重写遍历。</td></tr>
+          <tr><td>B.3 Parsing</td><td>把文本变成语法树；标识符 Intern 成整数，后续比较变成整数比较。</td></tr>
+          <tr><td>B.3.1 A Grammar for First-Order Logic</td><td>一阶逻辑文法：项、原子、公式、量词；优先级与结合性在递归下降里编码。</td></tr>
+          <tr><td>B.3.2 The Problem File Format</td><td>问题文件格式：声明、断言、查询三段；便于批量跑基准。</td></tr>
+          <tr><td>B.3.3 A Class for Storing Identifiers</td><td>标识符表（原书标题的 ﬁ 连字在提取中断开，检索时写作 <i>Identi ers</i>）：字符串到 ID 的双向映射，支持常量化与作用域。</td></tr>
+          <tr><td>B.4 CNF and SAT</td><td>语法树 → Tseitin → CNF；<code>SatSolver</code> 是接口，背后可是自写 DPLL 或外部 CDCL。</td></tr>
+          <tr><td>B.4.1 Generating CNF</td><td>按门生成三条子句；处理极性、去重、子句包含消去。</td></tr>
+          <tr><td>B.4.2 Converting the Propositional Skeleton</td><td>把理论原子替换成布尔变量，得到骨架，再交给 CNF 生成器。</td></tr>
+          <tr><td>B.5 A Template for a Lazy Decision Procedure</td><td>把 Lazy-Basic 写成模板方法：<code>check()</code> 循环 SAT → 提纯 → 理论检查 → 加引理；子类实现 <code>deduction()</code>。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </section>
 
