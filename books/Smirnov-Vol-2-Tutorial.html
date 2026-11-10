@@ -2032,9 +2032,9 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">抛物线的渐屈线</span><span class="thm-id">§10.4</span></div>
     <div class="thm-body">
       <p>对 $y=x^2$，$y'=2x$、$y''=2$，代入公式：</p>
-      <p>$$X=x-\frac{2x(1+4x^2)}{2}=x-2x-4x^3=-x-4x^3,$$</p>
+      <p>$$X=x-\frac{2x(1+4x^2)}{2}=x-x(1+4x^2)=-4x^3,$$</p>
       <p>$$Y=x^2+\frac{1+4x^2}{2}=\frac12+3x^2.$$</p>
-      <p>消去 $x$ 得 $Y=\frac12+3x^2$、$X=-x(1+4x^2)$，这是一条半立方抛物线（Neil 抛物线）。它是抛物线法线族的包络：每条法线都与渐屈线相切。</p>
+      <p>消去 $x$：由 $x=(-X/4)^{1/3}$ 得 $Y=\frac12+3(-X/4)^{2/3}$，这是一条半立方抛物线（Neil 抛物线），尖点在 $(0,\frac12)$。它是抛物线法线族的包络：每条法线都与渐屈线相切。</p>
     </div>
   </div>
 
@@ -2135,7 +2135,7 @@ figcaption b{color:var(--ink2);font-weight:600}
   <div class="thm ex">
     <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">球面、平面、圆柱与鞍面</span><span class="thm-id">§11.2</span></div>
     <div class="thm-body">
-      <p>(1) 半径 $R$ 的球面：$\kappa_1=\kappa_2=1/R$，所以 $K=1/R^2$、$H=1/R$（法向取外法向）。</p>
+      <p>(1) 半径 $R$ 的球面：若取内法向，$\kappa_1=\kappa_2=1/R$，所以 $K=1/R^2$、$H=1/R$；若取外法向，两个主曲率同时变号，$H$ 变号，但 $K$ 仍为 $1/R^2$。</p>
       <p>(2) 平面：$\kappa_1=\kappa_2=0$，$K=H=0$。</p>
       <p>(3) 半径 $R$ 的圆柱：一个主曲率 $1/R$，另一个 $0$，所以 $K=0$、$H=1/(2R)$。圆柱可展成平面，$K=0$ 正是“可展”的度量标志。</p>
       <p>(4) 鞍面 $z=xy$ 在原点：$L=0$、$M=1$、$N=0$、$E=G=1$、$F=0$，所以 $K=-1$、$H=0$。一个主曲率为正、一个为负，原点是双曲点。</p>
@@ -2444,7 +2444,7 @@ figcaption b{color:var(--ink2);font-weight:600}
   <p>改善收敛的常用办法有两种。其一是“减去跳跃”：若 $f$ 在 $x_0$ 有跳跃 $h=f(x_0+)-f(x_0-)$，先减去 $\frac{h}{\pi}$ 倍的方波（或阶梯函数），使新函数连续，再展开；新级数的系数衰减更快。其二是 <b>Fejér 平均</b>：不直接用 $S_n$，而用算术平均</p>
   <p>$$\sigma_n=\frac{S_0+S_1+\cdots+S_n}{n+1}.$$</p>
   <p>Fejér 核为</p>
-  <p>$$K_n(t)=\frac{1}{n+1}\left(\frac{\sin\frac{(n+1)t}{2}}{\sin\frac t2}\right)^2\ge0,\qquad \frac1\pi\int_{-\pi}^{\pi}K_n(t)\,dt=1.$$</p>
+  <p>$$K_n(t)=\frac{1}{n+1}\left(\frac{\sin\frac{(n+1)t}{2}}{\sin\frac t2}\right)^2\ge0,\qquad \frac1{2\pi}\int_{-\pi}^{\pi}K_n(t)\,dt=1.$$</p>
   <p>它非负、积分为 1，所以对连续函数 $f$，$\sigma_n(f)\to f$ 一致收敛（Fejér 定理）。代价是“平滑”了跳跃：$\sigma_n$ 在跳跃点附近不再有过冲，但也把尖角磨圆。这是“用正核换一致收敛”的典型权衡。</p>
 
   <div class="thm ex">
@@ -3054,7 +3054,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">上半平面与球的镜像</span><span class="thm-id">§18.3</span></div>
     <div class="thm-body">
       <p>(1) 上半平面 $y&gt;0$：源在 $(0,a)$，镜像在 $(0,-a)$，</p>
-      <p>$$G=\frac{1}{2\pi}\ln\frac{\sqrt{x^2+(y+a)^2}}{\sqrt{x^2+(y-a)^2}}.$$</p>
+      <p>$$G=\frac{1}{2\pi}\ln\frac{\sqrt{x^2+(y-a)^2}}{\sqrt{x^2+(y+a)^2}}.$$</p>
       <p>在 $y=0$ 上 $G=0$，满足边界条件；$y=a$ 处有对数奇性。</p>
       <p>(2) 球外 $r&gt;R$：源在 $r_0$，镜像在 $r^*=R^2/r_0$ 沿同一方向，强度按 $R/r_0$ 缩放，</p>
       <p>$$G=\frac{1}{4\pi}\left(\frac{1}{|\mathbf r-\mathbf r_0|}-\frac{R/r_0}{|\mathbf r-\mathbf r^*|}\right).$$</p>

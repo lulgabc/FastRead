@@ -436,7 +436,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="sb-title">Formal Methods: An Appetizer
       <span></span>
     </div>
-    <div class="sb-meta">171 页 · 17 个 section</div>
+    <div class="sb-meta">171 页 · 20 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
@@ -456,6 +456,9 @@ figcaption b{color:var(--ink2);font-weight:600}
     <a class="nav-link" href="#ch6b" data-sec="ch6b"><span class="nav-num">•</span> <span>3CTL 的形式语义与模型检验算法</span></a>
     <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>1声明与块：内存长出了栈</span></a>
     <a class="nav-link" href="#ch7b" data-sec="ch7b"><span class="nav-num">•</span> <span>3过程调用：record、check 与两种作用域</span></a>
+    <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>并发：bug 藏在交错里</span></a>
+    <a class="nav-link" href="#app" data-sec="app"><span class="nav-num">A</span> <span>A从玩具语言到 C、F# 与学习环境</span></a>
+    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
   <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
@@ -487,10 +490,10 @@ figcaption b{color:var(--ink2);font-weight:600}
 <div>
 <div class="hero-kicker">Springer · 2019 · 171 页</div>
 <h1>形式化方法<span class="en">Formal Methods: An Appetizer</span></h1>
-<p class="hero-sub">把程序变成<b>数学对象</b>：先给一门小语言精确的语义，再把「程序对不对」翻译成「公式成不成立」，最后让机器自动去算、去搜、去证明。Nielson 夫妇用八个章节、149 条编号结果，把操作语义、程序验证、抽象解释、语言级安全、模型检验、过程与并发串成一条完整流水线。</p>
+<p class="hero-sub">把程序变成<b>数学对象</b>：形式化方法（formal methods）先给一门小语言精确的语义，再把「程序对不对」翻译成「公式成不成立」，最后让机器自动去算、去搜、去证明。Nielson 夫妇用八个章节、149 条编号结果，把操作语义、程序验证、抽象解释、语言级安全、模型检验、过程与并发串成一条完整流水线。</p>
 <div class="hero-actions">
 <a class="btn" href="#ch1">从程序图开始</a>
-<a class="btn ghost" href="#ch7b">一页纸总览</a>
+<a class="btn ghost" href="#summary">一页纸总览</a>
 </div>
 <div class="hero-stats">
 <div class="hstat"><b>8</b><span>Chapters</span></div>
@@ -556,7 +559,14 @@ figcaption b{color:var(--ink2);font-weight:600}
 <span class="chip">synchronous communication</span>
 </div>
 
-<h3><span class="sn">0.1</span>八个章节的依赖关系</h3>
+<h3><span class="sn">0.1</span>Prologue：为什么是「安全 + 安全」</h3>
+<p>原书的序章把动机说得很直白：社会越来越依赖 IT 系统，也越来越容易受到网络攻击与编程错误的影响。<b>safe and secure by design</b> 的口号意味着：理想情况下，系统在构造时就应尽量免疫这些漏洞；对已有系统，则尽可能「 retrofit 」地补上安全与保障。形式化方法提供的正是描述与分析软件组件的手段——它不一定让系统变快，但能让「系统到底会不会做某件事」变成可论证的命题。</p>
+
+<p>序章还给出一张方法对比表，这张表值得先记住：<b>程序验证</b>（program verification）能表达的行为最丰富，但过程无法完全自动化；<b>程序分析</b>（program analysis）完全自动，但精度较低；<b>模型检验</b>（model checking）支持更一般的时序性质、也完全自动，但性能通常不如程序分析。三者不是替代关系，而是「精度—自动化—规模」三角上的三个点。第 5 章的语言级安全则是把「安全策略」写成一种特殊性质，再用验证或分析去检查。</p>
+
+<p>序章最后解释书名里的「appetizer」：它不追求覆盖所有形式化方法，而是用程序图这个统一的图形表示，把「语义 → 验证 → 分析 → 安全 → 模型检验」串成一条可以走完的路径。读者先学会「把程序画成图、给图配语义」，后面每一章都只是在这张图上加不同的东西：谓词、抽象域、流关系、时序公式、栈帧、进程向量。</p>
+
+<h3><span class="sn">0.1b</span>八个章节的依赖关系</h3>
 <p>这不是一本可以随便跳读的文集，章与章之间有明确的输入输出。第 1 章定义「程序图 + 语义」这个二元组；第 2 章把 Guarded Commands 编译成程序图，于是后面所有理论都有了一门具体语言；第 3 章只加谓词，不改语义；第 4 章把谓词换成抽象域，把「证明」换成「算最小不动点」；第 5 章把「允许的流」当成正确性谓词的特例；第 6 章干脆把配置本身当状态，换一种逻辑（CTL）来描述；第 7、8 章扩展语义载体（栈帧、进程向量），但程序图的观点不变。</p>
 
 <div class="table-wrap cheat">
@@ -2133,7 +2143,7 @@ while W ≠ {} do
 <div class="wrap">
 <div class="sec-label">Chapter 5 · Language-Based Security</div>
 <h2><span class="num">5</span>信息流：秘密会不会从程序里漏出去</h2>
-<p class="lede">访问控制管「谁能读这个文件」；语言级安全（language-based security）管「读了秘密之后，程序会不会把它写进公开变量」。前者是门锁，后者是水管——信息一旦流进去，就会从别处流出来。</p>
+<p class="lede">访问控制管「谁能读这个文件」；语言级安全（language-based security）管「读了秘密之后，程序会不会把它写进公开变量」。前者是门锁，后者是水管——信息流（information flow）一旦流进去，就会从别处流出来。</p>
 
 <div class="chap-intro">
 <p>本章先区分机密性（confidentiality）与完整性（integrity），把两者统一成「某类数据不允许流向另一类数据」，用自反传递的流关系 $\to$ 表示允许的流。然后给程序图加上「隐式依赖集合 $X$」，定义引用监视器语义（reference-monitor semantics）$\mathcal{S}_1$：一旦赋值违反流关系就停机。最后证明 $\mathcal{S}_1$ 比普通语义 $\mathcal{S}_0$ 更严格——它只会少走，不会多走。</p>
@@ -3156,6 +3166,546 @@ od</code></pre>
 </ul>
 </div>
 </div>
+</div>
+</section>
+
+<section id="ch8" class="chapter">
+<div class="wrap">
+<div class="sec-label">Chapter 8 · Concurrency</div>
+<h2><span class="num">8</span>并发：bug 藏在交错里</h2>
+<p class="lede">串行程序只有一条迹；$n$ 个进程的并发程序有指数多条。验证并发，本质上是把「所有交错」当成一个整体来谈——程序图从一张变成 $n$ 张，配置从节点变成一个向量。</p>
+
+<div class="chap-intro">
+<p>本章按原书四节推进：8.1 共享变量（shared variables），配置是 $\langle\vec{q};\sigma\rangle$，一步只动一个进程；8.2 异步通信（asynchronous communication），加入通道缓冲 $\kappa$，输出入队、输入出队；8.3 同步通信（synchronous communication），取消缓冲，输出与输入合成一个联合动作 $c!a?x$；8.4 Bonus 广播与收集（broadcast and gather），一个发送对多个接收、多个发送对一个接收，用 $c!!^k a$ 与 $c??^k A x$ 表示「至少 $k$ 个参与者」。</p>
+<span class="tag">Shared memory · Channel · Interleaving</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">concurrency</span>
+<span class="chip">interleaving</span>
+<span class="chip">critical section</span>
+<span class="chip">Bakery Algorithm</span>
+<span class="chip">asynchronous communication</span>
+<span class="chip">synchronous communication</span>
+<span class="chip">broadcast</span>
+<span class="chip">gather</span>
+</div>
+
+<p class="note"><b>原书小节：</b>8.1 Shared Variables · 8.2 Asynchronous Communication · 8.3 Synchronous Communication · 8.4 Broadcast and Gather (Bonus Material)</p>
+
+<h3><span class="sn">8.1</span>共享变量：一次只让一个进程动</h3>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">Definition</span><span class="thm-title">并发语法</span><span class="thm-id">8.1</span></div>
+<div class="thm-body">
+<p>$$P::=\mathsf{par}\ C_1\ []\cdots[]\ C_n\ \mathsf{rap}$$</p>
+<p>每个 $C_i$ 是一个进程，共享同一份内存；$n$ 必须为正整数。</p>
+</div>
+</div>
+
+<p>构造图时，为每个 $C_i$ 单独造一张图，节点集两两不交：</p>
+
+<p>$$\mathsf{edges}(q^1_\triangleright\cdots q^n_\triangleright\rightsquigarrow q^1_\bullet\cdots q^n_\bullet)[[\mathsf{par}\ C_1\ []\cdots[]\ C_n\ \mathsf{rap}]]=\bigcup_i\mathsf{edges}(q^i_\triangleright\rightsquigarrow q^i_\bullet)[[C_i]].$$</p>
+
+<p>配置是 $\langle\vec{q};\sigma\rangle$，$\vec{q}\in Q^n$。执行步只改一个分量：</p>
+
+<p>$$\frac{(q^i_\circ,\alpha,q^i_\bullet)\in E_i\qquad\mathcal{S}[[\alpha]]\sigma=\sigma'}{\langle q^1\cdots q^i_\circ\cdots q^n;\sigma\rangle\xrightarrow{\alpha}\langle q^1\cdots q^i_\bullet\cdots q^n;\sigma'\rangle}.$$</p>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">Example</span><span class="thm-title">Bakery Algorithm</span><span class="thm-id">8.2 / 8.7</span></div>
+<div class="thm-body">
+<p>两个进程争用临界区，共享 $x_1,x_2$：</p>
+<pre><code class="language-text">par
+  do true -&gt; x1 := x2 + 1;
+     if x2 = 0 || x1 &lt; x2 -&gt; critical section1 fi;
+     x1 := 0
+  od
+[] do true -&gt; x2 := x1 + 1;
+     if x1 = 0 || x2 &lt; x1 -&gt; critical section2 fi;
+     x2 := 0
+  od
+rap</code></pre>
+<p>初始 $\sigma_{00}$（$x_1=0,x_2=0$）。第一条执行：$\langle q^1_\triangleright q^2_\triangleright;\sigma_{00}\rangle\to\langle q^1_\triangleright q^2_1;\sigma_{00}\rangle\to\langle q^1_1q^2_1;\sigma_{00}\rangle$，第一进程写 $x_1:=x_2+1=1$，第二进程写 $x_2:=x_1+1=2$。到 $\langle q^1_2q^2_2;\sigma_{12}\rangle$ 时第二进程的测试 $x_1=0\lor x_2&lt;x_1$ 为假（$1\ne0$ 且 $2\not&lt;1$），它卡住；第一进程的测试为真，进入临界区。等第一进程把 $x_1$ 置 0 后，第二进程才可能通过。这就是「面包店取号」：号小者优先，号相同则看进程编号。</p>
+</div>
+</div>
+
+<p>并发带来的第一个问题：<b>交错</b>（interleaving）。两个进程各自顺序执行，但步与步之间可以任意穿插。$n$ 个进程、每个 $k$ 步，交错数约为 $\binom{nk}{k,\dots,k}$，指数级。验证不能枚举，只能找不变式或做偏序归约。</p>
+
+<p>Exercise 8.10 给出另一种建模：构造<b>乘积程序图</b>（product program graph），节点是 $Q_1\times\cdots\times Q_n$，边是「一个分量动、其余不动」。两种建模产生相同的执行序列，但乘积图的节点数是乘积，而分离建模的节点数是和。这解释了为什么工具内部通常用分离建模，只在需要时展开乘积。</p>
+
+<h3><span class="sn">8.2</span>异步通信：通道就是队列</h3>
+<p>语法加两条原子动作：$c!a$（输出）与 $c?x$（输入）。它们既可以作命令，也可以作守卫，于是能写「从两个通道中择一接收」：</p>
+
+<p>$$C::=c!a\mid c?x\mid\cdots,\qquad CG::=c!a\to C\mid c?x\to C\mid b\to C\mid CG_1\ []\ CG_2.$$</p>
+
+<p>异步语义给每个通道一个队列 $\kappa:\mathrm{Chan}\to\mathbb{Z}^*$。输出把值<b>追加到队尾</b>，输入从<b>队头</b>取出：</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">Definition</span><span class="thm-title">异步语义</span><span class="thm-id">8.20</span></div>
+<div class="thm-body">
+<p>语义域 $\mathrm{Mem}\times\mathrm{Buf}$，$\mathrm{Buf}=\mathrm{Chan}\to\mathbb{Z}^*$。设 $\kappa(c)=\vec{z}$：</p>
+<p>$$\mathcal{S}_B[[c!a]](\sigma,\kappa)=\begin{cases}(\sigma,\kappa[c\mapsto\vec{z}::z'])&amp;z'=\mathcal{A}[[a]]\sigma\\\text{undefined}&amp;\text{否则}\end{cases}$$</p>
+<p>$$\mathcal{S}_B[[c?x]](\sigma,\kappa)=\begin{cases}(\sigma[x\mapsto z'],\kappa[c\mapsto\vec{z}])&amp;\kappa(c)=z'::\vec{z}\land x\in\mathsf{dom}(\sigma)\\\text{undefined}&amp;\text{否则}\end{cases}$$</p>
+<p>其余动作（skip、赋值、测试、数组赋值）只改内存、不改缓冲。</p>
+</div>
+</div>
+
+<p>配置变成三元组 $\langle\vec{q};\sigma,\kappa\rangle$。输出永不阻塞（除非缓冲有界），输入在队列为空时未定义。这与同步通信形成鲜明对比。</p>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">Example</span><span class="thm-title">多路复用/解复用</span><span class="thm-id">8.13 / 8.22</span></div>
+<div class="thm-body">
+<p>进程 1 从 $\mathsf{in1}$ 或 $\mathsf{in2}$ 择一读入 $x$，把 $2x$（偶数）或 $2x+1$（奇数）写到 $\mathsf{ch}$；进程 2 从 $\mathsf{ch}$ 读 $y$，按奇偶把解码值送到 $\mathsf{out1}$ 或 $\mathsf{out2}$。初始缓冲</p>
+<p>$$\kappa_0=[\mathsf{in1}\mapsto1\,2\,3,\ \mathsf{in2}\mapsto2\,4\,6,\ \mathsf{ch}\mapsto\epsilon,\ \mathsf{out1}\mapsto\epsilon,\ \mathsf{out2}\mapsto\epsilon].$$</p>
+<p>进程 1 连跑三轮后，$\mathsf{in1}$ 剩 3、$\mathsf{in2}$ 剩 4 6、$\mathsf{ch}$ 变 2 5 4；进程 2 再跑一轮，读 2、写 $\mathsf{out1}$ 得 1，$\mathsf{ch}$ 变 5 4。整个过程没有任何「双方同时就绪」的要求——只要队列非空，输入就能进行。</p>
+</div>
+</div>
+
+<p>Exercise 8.24 问：若缓冲有上界 $k$，满了怎么办？三种选择：输出阻塞（语义未定义）、丢弃、覆盖。不同的选择对应不同的通信协议，必须写进语义，不能含糊。</p>
+
+<h3><span class="sn">8.3</span>同步通信：一次联合动作</h3>
+<p>同步语义取消缓冲。输出方与输入方必须<b>同时就绪</b>，合成一个联合动作 $c!a?x$，在一个执行步里完成「求值 $a$、写入 $x$」。配置退回二元组 $\langle\vec{q};\sigma\rangle$。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">Definition</span><span class="thm-title">同步执行步</span><span class="thm-id">8.27</span></div>
+<div class="thm-body">
+<p><b>个体步：</b>若 $(q^i_\circ,\alpha,q^i_\bullet)\in E_i$ 且 $\alpha$ 是 skip、赋值、测试或数组赋值，$\sigma'=\mathcal{S}[[\alpha]]\sigma$，则</p>
+<p>$$\langle\cdots q^i_\circ\cdots;\sigma\rangle\xrightarrow{\alpha}\langle\cdots q^i_\bullet\cdots;\sigma'\rangle.$$</p>
+<p><b>同步步：</b>若 $(q^i_\circ,c!a,q^i_\bullet)\in E_i$、$(q^j_\circ,c?x,q^j_\bullet)\in E_j$（$i\ne j$）且 $z=\mathcal{A}[[a]]\sigma$，则</p>
+<p>$$\langle\cdots q^i_\circ\cdots q^j_\circ\cdots;\sigma\rangle\xrightarrow{c!a?x}\langle\cdots q^i_\bullet\cdots q^j_\bullet\cdots;\sigma[x\mapsto z]\rangle.$$</p>
+<p>联合动作只出现在执行序列里，不出现在程序图中。</p>
+</div>
+</div>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">Example</span><span class="thm-title">生产者—复用器—解复用器—消费者</span><span class="thm-id">8.25 / 8.28</span></div>
+<div class="thm-body">
+<p>六个进程：两个生产者、复用器、解复用器、两个消费者。设 $u_1=7$，则</p>
+<p>$$\langle q^{p1}_\triangleright q^{p2}_\triangleright q^1_\triangleright q^2_\triangleright q^{c1}_\triangleright q^{c2}_\triangleright;\sigma\rangle\xrightarrow{\mathsf{in1}!u_1?x}\langle\cdots;\sigma[x\mapsto7]\rangle$$</p>
+<p>$$\xrightarrow{\mathsf{ch}!(2*x)?y}\langle\cdots;\sigma[x\mapsto7][y\mapsto14]\rangle\xrightarrow{u_1:=u_1+1}\langle\cdots;\sigma[u_1\mapsto8]\rangle$$</p>
+<p>$$\xrightarrow{(y\ \mathsf{rem}\ 2)=0}\langle\cdots q^2_1\cdots;\sigma\rangle\xrightarrow{\mathsf{out1}!(y\ \mathsf{div}\ 2)?z_1}\langle\cdots;\sigma[z_1\mapsto7]\rangle.$$</p>
+<p>注意第三步是生产者自己的个体步，第四步是解复用器的测试，第五步才是解复用器与消费者的同步步。同步不等于「所有进程一起动」，只约束通信的两方。</p>
+</div>
+</div>
+
+<p>Exercise 8.31 要求比较「同步」与「缓冲长度为 1 的异步」：两者在什么意义上等价？答案是：同步的联合步可以模拟成「输出入队 + 输入出队」两步，但中间状态多了一个「已发送未接收」的缓冲；若要求外部观察不到这个中间状态，两者行为一致。这是「原子性」与「可观察性」的经典区别。</p>
+
+<h3><span class="sn">8.4</span>Bonus：广播与收集</h3>
+<p>广播 $c!!^k a$：一个进程发送，所有能对该通道做 $c?x$ 的进程同时接收；要求至少 $k$ 个接收者，否则动作卡住。收集 $c??^k A x$：一个进程接收，所有能对该通道做 $c!a$ 的进程同时发送；要求至少 $k$ 个发送者。收到的值放进数组 $A$，$x$ 记录实际收到的个数（若数组太短则截断，$x$ 为数组长度）。</p>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">Definition</span><span class="thm-title">广播步</span><span class="thm-id">8.36</span></div>
+<div class="thm-body">
+<p>设 $(q^i_\circ,c!!^k a,q^i_\bullet)\in E_i$，$z=\mathcal{A}[[a]]\sigma$，参与者集合</p>
+<p>$$\{j_1,\dots,j_h\}=\{j\ne i\mid\exists x,q:(q^j_\circ,c?x,q)\in E_j\},\qquad h\ge k.$$</p>
+<p>对每个 $j_l$，$(q^{j_l}_\circ,c?x_{j_l},q^{j_l}_\bullet)\in E_{j_l}$，其余进程不动，则</p>
+<p>$$\langle\vec{q}_\circ;\sigma\rangle\xrightarrow{c!!^k a?x_{j_1}\cdots x_{j_h}}\langle\vec{q}_\bullet;\sigma[x_{j_1}\mapsto z]\cdots[x_{j_h}\mapsto z]\rangle.$$</p>
+</div>
+</div>
+
+<div class="thm def">
+<div class="thm-head"><span class="thm-kind">Definition</span><span class="thm-title">收集步</span><span class="thm-id">8.40</span></div>
+<div class="thm-body">
+<p>设 $(q^i_\circ,c??^k A x,q^i_\bullet)\in E_i$，发送者集合</p>
+<p>$$\{j_1,\dots,j_h\}=\{j\ne i\mid\exists a,q:(q^j_\circ,c!a,q)\in E_j\},\qquad h\ge k,$$</p>
+<p>对每个 $j_l$，$(q^{j_l}_\circ,c!a_{j_l},q^{j_l}_\bullet)\in E_{j_l}$、$z_{j_l}=\mathcal{A}[[a_{j_l}]]\sigma$。令 $h'=\min(h,\mathsf{length}(A))$，则</p>
+<p>$$\langle\vec{q}_\circ;\sigma\rangle\xrightarrow{c!a_{j_1}\cdots a_{j_h}??^k A x}\langle\vec{q}_\bullet;\sigma[A[0]\mapsto z_{j_1}]\cdots[A[h'-1]\mapsto z_{j_h'}][x\mapsto h']\rangle.$$</p>
+<p>参与者的顺序是任意的，因此数组里的值顺序不确定；$x$ 记录实际写入的个数。</p>
+</div>
+</div>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">Example</span><span class="thm-title">16 个传感器与控制器</span><span class="thm-id">8.33 / 8.37 / 8.41</span></div>
+<div class="thm-body">
+<p>控制器广播 <code>req!!10 temp</code>，要求至少 10 个传感器响应；随后收集 <code>rep??10 A x</code>，把至少 10 个温度值放进 $A$，求平均。若当前恰有 10 个传感器在 $q^i_\triangleright$，广播成功，这 10 个的 $t_i$ 都得到 $\sigma(\mathsf{temp})$；其余 6 个在更新状态，不参与。随后 10 个都在 $q^i_1$，收集成功，$A$ 的前 10 项被写入，$x=10$。</p>
+<p>若只有 8 个传感器就绪，$h=8&lt;10$，广播卡住；若有 12 个就绪，$h=12\ge10$，12 个都接收，但控制器只收集前 10 个（或按数组长度截断），$x=10$。这正是「至少 $k$ 个」而非「恰好 $k$ 个」的语义差别。</p>
+</div>
+</div>
+
+<p>Teaser 8.39 与 8.43 要求把「至少」改成「恰好」：不能简单把 $h\ge k$ 改成 $h=k$，因为参与者集合是由「当前谁就绪」决定的，你可能需要主动阻止多余参与者，或者把动作拆成「选择子集 + 通信」两步。这是广播/收集语义设计里最容易被忽略的细节。</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>模型</th><th>配置</th><th>通信单位</th><th>阻塞条件</th></tr></thead>
+<tbody>
+<tr><td>共享变量</td><td>$\langle\vec{q};\sigma\rangle$</td><td>单进程一步</td><td>该进程动作未定义</td></tr>
+<tr><td>异步通信</td><td>$\langle\vec{q};\sigma,\kappa\rangle$</td><td>输出入队 / 输入出队</td><td>输入时队列空</td></tr>
+<tr><td>同步通信</td><td>$\langle\vec{q};\sigma\rangle$</td><td>联合步 $c!a?x$</td><td>找不到配对</td></tr>
+<tr><td>广播 $c!!^k a$</td><td>$\langle\vec{q};\sigma\rangle$</td><td>一对多</td><td>接收者少于 $k$</td></tr>
+<tr><td>收集 $c??^k A x$</td><td>$\langle\vec{q};\sigma\rangle$</td><td>多对一</td><td>发送者少于 $k$</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">Pitfalls</span><span class="thm-title">本章常见误区</span></div>
+<div class="thm-body">
+<ul>
+<li><b>以为一步可以动多个进程。</b>共享变量与异步模型都是一步一个进程；同步模型才允许两方联合。</li>
+<li><b>把异步输出当阻塞。</b>无界缓冲下输出总能成功；有界时才可能阻塞。</li>
+<li><b>把同步联合步写进程序图。</b>联合动作只存在于执行序列，图里只有 $c!a$ 与 $c?x$。</li>
+<li><b>把广播当「所有进程必须接收」。</b>语义是「所有<b>能</b>接收的都接收」，且至少 $k$ 个。</li>
+<li><b>以为收集的数组顺序确定。</b>参与者集合是无序的，$A$ 的内容顺序不确定。</li>
+<li><b>忽略临界区的公平性。</b>Bakery 只保证互斥，不保证无饥饿；需要额外假设。</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="app" class="chapter">
+<div class="wrap">
+<div class="sec-label">Appendices A–D</div>
+<h2><span class="num">A</span>从玩具语言到 C、F# 与学习环境</h2>
+<p class="lede">正文用 Guarded Commands 是为了把规则讲干净；附录则回答「这套东西怎么落到真实语言、真实实现、真实工具上」。MicroC 是 C 的骨架，F# 实现把定义变成代码，FormalMethods.dk 把代码变成可以点的实验台。</p>
+
+<div class="chap-intro">
+<p>附录 A 给 MicroC 的语法与五个任务：造图、生成证明义务、符号分析、安全分析、带声明与函数的语义。附录 B 把前五章拆成编程项目：parser → AST → PG → iterate，再分别实现 extract、analyse、secure。附录 C 用 F# 给出核心类型：$(\mathrm{'q},\mathrm{'a})\ \mathrm{PG}$、$(\mathrm{'a},\mathrm{'m})\ \mathrm{SEM}$、transition、iterate、AnaSpec、solve。附录 D 介绍 FormalMethods.dk/fm4fun 的五个界面：欢迎页、逐步执行、验证条件、符号分析、安全分析。</p>
+<span class="tag">MicroC · F# · Learning environment</span>
+</div>
+
+<div class="mapchips">
+<span class="chip hot">MicroC</span>
+<span class="chip">for / do-while</span>
+<span class="chip">break / continue</span>
+<span class="chip">try-catch</span>
+<span class="chip">AST</span>
+<span class="chip">parse / generate / iterate</span>
+<span class="chip">F#</span>
+<span class="chip">fm4fun</span>
+</div>
+
+<p class="note"><b>原书小节：</b>A The MicroC Language · B Programming Projects · C Realisation in F# (C.1–C.4) · D A Learning Environment (D.1–D.5)</p>
+
+<h3><span class="sn">A</span>MicroC：C 的骨架</h3>
+<p>MicroC 的程序就是一个语句。语句、算术表达式、布尔表达式互相递归：</p>
+
+<p>$$S::=x:=a;\mid A[a_1]:=a_2;\mid S_1S_2\mid\mathsf{if}(b)\ S_0\mid\mathsf{if}(b)\ S_1\ \mathsf{else}\ S_2\mid\mathsf{while}(b)\ S_0$$</p>
+
+<p>$$a::=n\mid x\mid A[a_0]\mid a_1+a_2\mid a_1-a_2\mid a_1*a_2\mid a_1/a_2$$</p>
+
+<p>$$b::=\mathsf{true}\mid a_1=a_2\mid a_1&gt;a_2\mid a_1\ge a_2\mid b_1\land b_2\mid\neg b_0$$</p>
+
+<p>与 Guarded Commands 的关键区别：C 风格的花括号与分号、<code>if/else</code> 而非守卫、<code>while</code> 而非 <code>do…od</code>、除法是偏运算（除零未定义）。原书还给出扩展：</p>
+
+<p>$$S::=\cdots\mid\mathsf{do}\ S_0\ \mathsf{while}(b)\mid\mathsf{for}(S_1\ b;S_2)\ S_0\mid\mathsf{break};\mid\mathsf{continue};\mid\mathsf{skip};\mid\mathsf{try}\{S_0\}\ H\mid\mathsf{throw}\ s;$$</p>
+
+<p>$$H::=\mathsf{catch}(s)\{S\}\mid\mathsf{catch}(s)\{S\}\ H$$</p>
+
+<p><code>break</code> 终止最内层循环，<code>continue</code> 跳过本轮剩余部分并重新求值条件，<code>for(S1 b; S2) S0</code> 依次执行初始化、条件、体、增量。异常采用 C++ 风格：<code>try{S0} catch(s1){S1} …</code>，抛出的异常由<b>语法上最内层</b>的匹配处理器捕获。</p>
+
+<div class="thm ex">
+<div class="thm-head"><span class="thm-kind">Example</span><span class="thm-title">MicroC 的阶乘与 Fibonacci</span><span class="thm-id">A.1 / A.2</span></div>
+<div class="thm-body">
+<pre><code class="language-c">y := 1;
+while (x &gt; 0) {
+  y := x * y;
+  x := x - 1;
+}</code></pre>
+<pre><code class="language-c">z := 1; y := 0; t := 0;
+for (i := 0; i &lt; x; i := i + 1; ) {
+  t := z;
+  z := y;
+  y := t + z;
+}</code></pre>
+<p>第二段在 $y$ 中算第 $x$ 个 Fibonacci 数（从 $1,1,2,3,5,\dots$ 起，非正项取 0）。注意 <code>for</code> 的增量为空时，循环变量在体内更新。</p>
+</div>
+</div>
+
+<p>附录 A 的五个任务，正好对应正文五章：</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>任务</th><th>内容</th><th>对应章节</th></tr></thead>
+<tbody>
+<tr><td>A.1</td><td>为 MicroC 构造程序图，逐步加入 for/do-while/break/continue/异常</td><td>第 2 章</td></tr>
+<tr><td>A.2</td><td>生成证明义务</td><td>第 3 章</td></tr>
+<tr><td>A.3</td><td>检测符号分析</td><td>第 4 章</td></tr>
+<tr><td>A.4</td><td>安全分析</td><td>第 5 章</td></tr>
+<tr><td>A.5</td><td>带声明与函数的语义（内存模型、动作、程序图）</td><td>第 7 章</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>A.5 的函数扩展值得单独看。语法为</p>
+
+<p>$$D::=\mathsf{int}\ x;\mid\mathsf{int}\ A[n];\mid\epsilon\mid D_1D_2\mid\mathsf{int}\ f(\mathsf{int}\ y)\{DS\};,\qquad S::=\cdots\mid\{DS\}\mid\mathsf{return}\ a;\mid x:=f(a);$$</p>
+
+<p>函数只能在顶层声明，彼此可递归；必须有一个 <code>main</code>，运行时以实参 0 调用。函数体是一个块 $\{DS\}$，可声明局部变量与数组。<code>return a</code> 决定返回值，<code>x:=f(a)</code> 把返回值写入 $x$。这与第 7 章的过程调用结构相同，只是「输出参数」变成了「返回值」。</p>
+
+<h3><span class="sn">B</span>编程项目：把定义变成代码</h3>
+<p>附录 B 把前五章拆成一条流水线：</p>
+
+<p>$$\text{string}\xrightarrow{\mathsf{parse}}\mathrm{AST}\xrightarrow{\mathsf{generate}}\mathrm{PG}\xrightarrow{\mathsf{iterate}}\mathrm{Config}.$$</p>
+
+<p>三个核心函数的类型是：</p>
+
+<p>$$\mathsf{parse}:\mathrm{string}\to\mathrm{AST}\ \mathsf{option},\qquad \mathsf{generate}:\mathrm{AST}\to\mathrm{PG},\qquad \mathsf{iterate}:\mathrm{PG}\to\mathrm{SEM}\to\mathrm{Config}\to\mathrm{int}\to\mathrm{Config}.$$</p>
+
+<p>$\mathsf{option}$ 处理非法输入；$\mathsf{iterate}$ 的整数参数是步数上界，返回的可能是终止配置、卡住配置，或走满步数后的配置。非确定语义还需要一个随机选择策略。</p>
+
+<p>验证部分的接口是</p>
+
+<p>$$\mathsf{extract}:\mathrm{PG}\to\mathrm{PredAssign}\to\mathrm{ProofObl},$$</p>
+
+<p>它复用 Figure 3.3 的短路径片段算法。实现上有两个设计选择：谓词赋值是「从带标注程序自动生成」还是「用户直接给、只检查覆盖」；证明义务是「最短路径片段」还是「带一阶逻辑公式的结构化对象」。</p>
+
+<p>分析部分的接口是</p>
+
+<p>$$\mathsf{analyse}:\mathrm{AnaSpec}\to\mathrm{PG}\to\mathsf{Set}(\mathrm{AbsMem})\to\mathrm{AnaAssign},$$</p>
+
+<p>第一个参数让同一份迭代代码适配不同分析：传入 $\mathsf{signSpec}$ 就是符号分析，传入 $\mathsf{parSpec}$ 就是奇偶分析。这正是第 4 章「分析规范」的工程版本。</p>
+
+<p>安全部分的接口是</p>
+
+<p>$$\mathsf{secure}:\mathrm{AST}\to\mathrm{Flow}\to\mathrm{Secure},\qquad \mathsf{allow}:\mathrm{SecLattice}\times\mathrm{SecClass}\to\mathrm{Flow}.$$</p>
+
+<p>$\mathsf{allow}$ 从格与分类算出允许流集合，$\mathsf{secure}$ 检查程序实际产生的流是否为其子集。返回类型 $\mathrm{Secure}$ 可以只是 bool，也可以携带「违规的流」列表，便于诊断。</p>
+
+<h3><span class="sn">C</span>F# 实现：类型即定义</h3>
+<p>Appendix C 用 F# 把定义逐条翻译成类型。程序图：</p>
+
+<pre><code class="language-fsharp">type ('q,'a) PG = 'q list * ('q * 'a * 'q) list * 'q * 'q
+
+type ('a,'m) SEM = 'a -&gt; 'm -&gt; 'm Option
+
+transition: ('q,'a) PG -&gt; ('a,'m) SEM -&gt; ('q * 'm)
+            -&gt; ('q * 'm) list
+
+iterate: ('q,'a) PG -&gt; ('a,'m) SEM -&gt; ('q * 'm) -&gt; int
+         -&gt; ('q * 'm)</code></pre>
+
+<p>动作与内存：</p>
+
+<pre><code class="language-fsharp">type AExp = Num of int | Var of Ident | Arr of Ident * AExp
+          | Add of AExp * AExp | Sub of AExp * AExp
+          | Mul of AExp * AExp | Div of AExp * AExp
+
+type BExp = True | Eq of AExp * AExp | Gt of AExp * AExp
+          | Gte of AExp * AExp | And of BExp * BExp | Neg of BExp
+
+type Action = VAsgn of Ident * AExp | AAsgn of Ident * AExp * AExp
+            | Skip | Test of BExp
+
+type Mem = (Ident * int) list * (Ident * int list) list</code></pre>
+
+<p>这里用关联列表（association list）表示有限映射，数组用「名字 + 整数列表」。F# 的 <code>int</code> 是 32 位，行为接近第 1 章的有符号字节；若要贴近数学整数，应改用 <code>bigint</code>。这是一个「语义域选择影响正确性」的现成例子。</p>
+
+<p>Guarded Commands 的 AST 与图生成：</p>
+
+<pre><code class="language-fsharp">type AST = Assign of Ident * AExp | AAssign of Ident * AExp * AExp
+         | SkipGC | Seq of AST * AST | If of GAST | Do of GAST
+and GAST = Cond of BExp * AST | Choice of GAST * GAST
+
+parse: string -&gt; AST Option
+edges: AST -&gt; Node -&gt; Node -&gt; (Node * Action * Node) list
+generate: AST -&gt; PG&lt;Node,Action&gt;</code></pre>
+
+<p>验证部分的类型：</p>
+
+<pre><code class="language-fsharp">type Array = AName of Ident | LName of Ident
+type Exp = PNum of int | PVar of Ident | LVar of Ident
+         | PArr of Array * Exp | ... | PFun of Name * Array list * Exp list
+type Pred = PTrue | ... | PPred of Name * Array list * Exp list
+type PRG = Pred * AST * Pred
+type PredAssign = (Node * Pred) list
+
+paths: PG&lt;Node,Action&gt; * PredAssign -&gt; (Node * Action list * Node) list
+extract: PG&lt;Node,Action&gt; * PredAssign -&gt; (Pred * Action list * Pred) list</code></pre>
+
+<p>分析部分的类型：</p>
+
+<pre><code class="language-fsharp">type ('a,'m) AnaSpec = 'a -&gt; 'm Set -&gt; 'm Set
+type ('q,'m) AnaAssign = ('q * 'm Set) list
+
+solve: AnaSpec&lt;'a,'m&gt; -&gt; PG&lt;'q,'a&gt; -&gt; Set&lt;'m&gt; -&gt; AnaAssign&lt;'q,'m&gt;
+analyse = solve
+
+type Sign = Nsign | Zsign | Psign
+type SignMem = (Ident * Sign) list * (Ident * Sign Set) list
+signSpec: AnaSpec&lt;Action, SignMem&gt;</code></pre>
+
+<p>安全部分的类型：</p>
+
+<pre><code class="language-fsharp">type Flow = (Ident * Ident) Set
+fvA: AExp -&gt; Ident Set
+fvB: BExp -&gt; Ident Set
+make_flow: Ident Set -&gt; Ident Set -&gt; Flow
+sec: AST -&gt; Ident Set -&gt; Flow
+secG: GAST -&gt; BExp * Ident Set -&gt; Flow * BExp
+secure: AST -&gt; Flow -&gt; Secure
+
+type SecLattice = (SecLevel * SecLevel) list
+type SecClass = (Ident * SecLevel) list
+allow: SecLattice * SecClass -&gt; Flow</code></pre>
+
+<p><code>SecLattice</code> 用「边列表」表示偏序，<code>make_pO</code> 负责检查自反、传递、反对称并构造偏序的传递闭包。若输入不是偏序（例如有环），返回 <code>None</code>。这把第 5 章的数学定义变成了可执行的验证器。</p>
+
+<p>C.4 节还给出一个实现细节：<code>sec</code> 不接收「允许流」作为参数，而是<b>收集</b>程序实际产生的流；最后由 <code>secure</code> 检查实际流是否包含于允许流。这与 Definition 5.12 的「边检查边返回 bool」形状不同，但等价：收集所有原子流再取并，与逐条检查合取，结果相同。</p>
+
+<h3><span class="sn">D</span>学习环境：把语义点出来</h3>
+<p>FormalMethods.dk/fm4fun 支持前五章，五个界面正好对应五个层次：</p>
+
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>界面</th><th>操作</th><th>对应章节</th></tr></thead>
+<tbody>
+<tr><td>D.1 Welcome</td><td>写程序、选示例、看程序图、切换非确定/确定语义</td><td>第 1–2 章</td></tr>
+<tr><td>D.2 Step-Wise Execution</td><td>给初值、逐步执行、显示/重选非确定分支、展开计算树</td><td>第 1–2 章</td></tr>
+<tr><td>D.3 Verification Conditions</td><td>Get Covering Nodes、填写谓词、Show Obligations</td><td>第 3 章</td></tr>
+<tr><td>D.4 Detection of Signs</td><td>逐行输入初始抽象内存、Show Sign Analysis</td><td>第 4 章</td></tr>
+<tr><td>D.5 Security Analysis</td><td>选确定语义、填安全格与分类、Show Security Analysis</td><td>第 5 章</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>D.1 的左侧上方是程序编辑框，下方是程序图；可以下载程序/图、上传程序、查看语法、重画、在独立窗口拖拽。D.2 的关键交互是「非确定选择点」上的分支图标：点它可以让系统重选，也可以一次展开所有配置到指定深度。这正是把 $\mathsf{Path}(\varsigma)$ 变成可视化的计算树。</p>
+
+<p>D.3 的 <b>Get Covering Nodes</b> 用第 3.5 节的逆后序找覆盖点；<b>Show Obligations</b> 用 Figure 3.3 的短路径片段生成证明义务。D.4 要求每行一个抽象内存，空行用加号补；<b>Show Sign Analysis</b> 跑工作列表算法，显示最小解。D.5 强制选择确定语义——这是第 5.5 节非干扰定理的前提，工具用界面约束提醒你。</p>
+
+<div class="intuition">
+<div class="ih">直觉</div>
+<p>这五个界面是正文的「可执行摘要」：你在 D.2 看到的是 $\Longrightarrow$，在 D.3 看到的是 $\mathsf{spf}(P)$，在 D.4 看到的是 $A(q)$ 的最小解，在 D.5 看到的是 $\mathsf{sec}$ 的布尔结果。若某一步在工具里和你手算不一致，通常不是工具错了，而是你漏了某个 $\mathsf{fv}$、某个 $\mathsf{done}$，或把 $\land$ 与 $\&amp;\&amp;$ 弄混了。</p>
+</div>
+
+<div class="thm warn">
+<div class="thm-head"><span class="thm-kind">Pitfalls</span><span class="thm-title">附录常见误区</span></div>
+<div class="thm-body">
+<ul>
+<li><b>把 MicroC 当 C。</b>它的 <code>int</code> 行为、求值顺序、未定义行为都被简化；不能直接套 C 标准。</li>
+<li><b>F# 的 <code>int</code> 当数学整数。</b>32 位溢出会让「证明」在运行时失效；需要 <code>bigint</code>。</li>
+<li><b>把 <code>extract</code> 当「证明检查器」。</b>它只生成义务，不判断义务是否成立。</li>
+<li><b>安全分析不选确定语义。</b>非确定程序会让非干扰定理失效。</li>
+<li><b>在工具里填错初始抽象内存。</b>$A(q_\triangleright)$ 错了，后面所有结论都不可靠。</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="summary" class="chapter">
+<div class="wrap">
+<div class="sec-label">Summary · One Page</div>
+<h2><span class="num">F</span>一页纸：从「会不会错」到「选哪种方法」</h2>
+<p class="lede">这本书的主线只有一句：先给程序一个精确的语义，再把你想说的话写成对语义的约束，最后找一个能自动或半自动检查这个约束的方法。八章只是这句话的八种展开。</p>
+
+<div class="chap-intro">
+<p>下面把全书压成四张表：语义骨架、三种「正确性」、方法选择、学习路线。它们不是正文的替代，而是复习时的索引——每个条目都应该能让你回想起一条定义、一个证明或一个反例。</p>
+<span class="tag">Review · Method selection · Learning path</span>
+</div>
+
+<h3><span class="sn">F.1</span>语义骨架：四层抽象</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>层</th><th>对象</th><th>核心定义</th><th>扩展点</th></tr></thead>
+<tbody>
+<tr><td>控制</td><td>程序图 $\mathrm{PG}=(Q,q_\triangleright q_\bullet,\mathrm{Act},E)$</td><td>Def 1.2；$q_\bullet$ 无出边</td><td>2.7/2.8 自动生成；2.5 非局部跳转</td></tr>
+<tr><td>状态</td><td>配置 $\langle q;\sigma\rangle$ 或 $\langle\vec{q};\sigma,\kappa\rangle$</td><td>Def 1.10/1.11</td><td>帧栈 7.13；进程向量 8.5/8.21</td></tr>
+<tr><td>动作</td><td>$\mathcal{S}[[\alpha]]:\mathrm{Mem}\rightharpoonup\mathrm{Mem}$</td><td>Def 1.6/2.17</td><td>监视器 5.8；过程动作 7.28</td></tr>
+<tr><td>性质</td><td>谓词 $P$、抽象赋值 $A$、CTL 公式 $\Phi$</td><td>3.8 / 4.6 / 6.11</td><td>非干扰 5.26；安全格 5.4</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">F.2</span>三种「正确性」不要混</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>名称</th><th>断言形式</th><th>保证</th><th>不保证</th></tr></thead>
+<tbody>
+<tr><td>部分正确性</td><td>入口真 + 终止 ⇒ 出口真</td><td>结果符合规范</td><td>会终止</td></tr>
+<tr><td>语义正确（分析）</td><td>$\eta(\sigma)\in A(q)$ 沿执行传播</td><td>所有可达内存被过近似</td><td>精确；也不保证不报假警</td></tr>
+<tr><td>非干扰</td><td>$\uparrow x$ 上一致 ⇒ 终值 $x$ 一致</td><td>观察 $x$ 得不到其他变量信息</td><td>时间/终止/非确定信道</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">F.3</span>方法选择：先问四个问题</h3>
+<ol>
+<li><b>你有规范吗？</b>没有规范就没有「正确」，只有「行为」。先把规范写成谓词或 CTL 公式。</li>
+<li><b>能接受人工不变式吗？</b>能，就用第 3 章：精确、可解释，但需要人给 $P$ 与证明义务。</li>
+<li><b>要全自动吗？</b>要，就用第 4 章：牺牲精度换自动化；先选抽象域（符号、奇偶、区间），再验证可靠性。</li>
+<li><b>关心「所有路径」还是「存在路径」？</b>关心时序性质且状态有限，就用第 6 章：CTL 模型检验，能出反例；状态爆炸时考虑符号化或抽象。</li>
+</ol>
+
+<p>如果问题是「秘密会不会泄漏」，在第 2–5 章之间加一层：先用流关系或安全格描述策略，再用 $\mathsf{sec}$ 静态检查；需要理论保证时，证非干扰。如果问题是「过程/并发怎么建模」，先确认作用域（动态/静态）与通信模型（共享/异步/同步/广播），再套对应的语义——不要拿串行语义去解释并发程序。</p>
+
+<h3><span class="sn">F.4</span>十二条必须能默写的结果</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>编号</th><th>一句话</th></tr></thead>
+<tbody>
+<tr><td>1.22</td><td>同源出边定义域不交 ⇒ 确定系统</td></tr>
+<tr><td>1.25</td><td>每个节点每个内存都有可用出边 ⇒ 进化系统</td></tr>
+<tr><td>2.12</td><td><code>edges</code> 生成的边集确实是程序图，$q_\bullet$ 不是源</td></tr>
+<tr><td>2.28</td><td>$\mathsf{done}[[GC]]$ 是所有守卫的合取取反</td></tr>
+<tr><td>3.11</td><td>正确谓词赋值沿执行传播</td></tr>
+<tr><td>3.28</td><td>正确部分赋值 + 覆盖 ⇒ 部分正确</td></tr>
+<tr><td>3.43</td><td>回边 iff $\mathsf{rP}[q]\ge\mathsf{rP}[q']$</td></tr>
+<tr><td>3.45</td><td>回边目标 + 首尾 覆盖程序图</td></tr>
+<tr><td>4.31</td><td>语义可靠 + 计算有效 ⇒ 语义正确</td></tr>
+<tr><td>5.18</td><td>$\mathsf{sec}$ 通过 ⇒ 监视器不停机</td></tr>
+<tr><td>5.26</td><td>非干扰：$\uparrow x$ 一致 ⇒ 终值一致</td></tr>
+<tr><td>6.5</td><td>CTL 模型检验 $\mathcal{O}(|\mathrm{TS}|\cdot|\Phi|)$，状态数 $n^m$</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">F.5</span>学习路线：三遍读法</h3>
+<p><b>第一遍（建立骨架，1–2 天）：</b>第 1 章 + 第 2 章 2.1–2.3。目标是能对任何一段 Guarded Commands 手画出程序图，并写出一次执行序列。检验：阶乘、gcd、Fibonacci 三个程序各画一张图。</p>
+
+<p><b>第二遍（掌握两种证明，3–5 天）：</b>第 3 章 + 第 4 章。目标是能给定程序写部分谓词赋值、算短路径片段、列证明义务；能给定抽象域写出 $\widehat{\mathcal{A}},\widehat{\mathcal{B}},\widehat{\mathcal{S}}$ 并跑工作列表。检验：为插入排序写 $\mathsf{almost}$ 不变式；为符号分析手算三轮回合。</p>
+
+<p><b>第三遍（扩展到真实系统，5–7 天）：</b>第 5–8 章。目标是能判断一段程序是否有显式/隐式流、能否通过 $\mathsf{sec}$、对应的安全格是什么；能把程序图摊成迁移系统并写 CTL；能解释过程调用的 record/check 与两种作用域；能写出异步/同步/广播/收集的一步执行。检验：Bakery 算法的互斥性用 CTL 怎么写？为什么 $\mathsf{AG}(\neg(c_1\land c_2))$ 不够，还需要公平性假设？</p>
+
+<div class="intuition">
+<div class="ih">最后一句</div>
+<p>形式化方法不是「用数学替代编程」，而是「把编程里本来就存在的假设写清楚」。程序图让控制流显式，语义让「一步」显式，谓词让规范显式，抽象域让近似显式，流关系让信任边界显式，CTL 让「所有路径」显式。每一个「显式」都对应一个可以检查、可以反驳、可以自动化的对象——这就是这本书作为「开胃菜」真正想给你的东西。</p>
+</div>
+
+<h3><span class="sn">F.6</span>Epilogue：往哪里继续读</h3>
+<p>原书尾声按主题给了进阶书目，这一段对自学很关键。程序验证方向：Nipkow 与 Klein 的 <i>Concrete Semantics</i>（Springer, 2014）用 Isabelle 做半自动验证；Chlipala 的 <i>Certified Programming with Dependent Types</i>（MIT Press, 2013）用 Coq 做依赖类型编程。程序分析方向：Nielson、Nielson、Hankin 的 <i>Principles of Program Analysis</i>（Springer, 2005）系统覆盖数据流分析、基于约束的分析、抽象解释、类型与效应系统。模型检验方向：Baier 与 Katoen 的 <i>Principles of Model Checking</i>（MIT Press, 2008）覆盖迁移系统、CTL、LTL、符号数据结构、偏序归约、时间与概率系统。语义方向：同一作者的 <i>Semantics with Applications: An Appetizer</i> 采用更结构化的操作语义/指称语义路线，可与本书的程序图路线互补。</p>
+<p>尾声还给出三个「工具清单」入口：证明助手列表、静态分析工具列表、模型检验工具列表。它们不是装饰——形式化方法的学习曲线很大一部分在「找到一个能跑的例子」，工具列表能帮你从定义走到实验。</p>
+
+<h3><span class="sn">F.7</span>Symbols：符号表怎么读出声</h3>
+<div class="table-wrap cheat">
+<table>
+<thead><tr><th>符号</th><th>读法</th><th>含义</th></tr></thead>
+<tbody>
+<tr><td>$\mathcal{A},\mathcal{B},\mathcal{S}$</td><td>curly A / curly B / curly S</td><td>算术、布尔、语句语义函数</td></tr>
+<tr><td>$\widehat{\mathcal{A}},\widehat{\mathcal{B}},\widehat{\mathcal{S}}$</td><td>curly A hat / …</td><td>对应的分析函数</td></tr>
+<tr><td>$q_\triangleright,q_\bullet$</td><td>q triangle / q bullet</td><td>初始节点 / 终止节点</td></tr>
+<tr><td>$q_\circ,q_\bullet$</td><td>q circle / q bullet</td><td>边的源 / 目标（注意与上一条的 $q_\bullet$ 重名，靠上下文区分）</td></tr>
+<tr><td>$\Phi,\Psi$</td><td>Phi / Psi</td><td>CTL 状态公式 / 路径公式</td></tr>
+<tr><td>$\alpha,\eta,\gamma,\phi,\pi,\sigma,\varsigma,\omega$</td><td>alpha / eta / gamma / phi / pi / sigma / varsigma / omega</td><td>动作、提取函数、处理器环境、谓词、路径/置换、内存、状态、动作序列</td></tr>
+<tr><td>$[[\cdot]]$</td><td>semantic brackets</td><td>语义括号</td></tr>
+<tr><td>$\longrightarrow,\longrightarrow^*$</td><td>long arrow / goes to</td><td>迁移关系及其自反传递闭包</td></tr>
+<tr><td>$\Longrightarrow,\Longrightarrow^*$</td><td>double long arrow</td><td>执行关系及其自反传递闭包</td></tr>
+<tr><td>$\Rightarrow$</td><td>implies</td><td>逻辑蕴含</td></tr>
+<tr><td>$[\mapsto],\mapsto$</td><td>update / maps to</td><td>内存更新 / 映射</td></tr>
+<tr><td>$\to,\rightsquigarrow,\hookrightarrow,\rightrightarrows$</td><td>arrow / leads to / partially maps to / flows to</td><td>流关系、图路径、部分映射、集合流</td></tr>
+<tr><td>$\land,\lor,\neg,\&amp;\&amp;,||,\hat{}$</td><td>and / or / not / short-circuit and / short-circuit or / exponentiation</td><td>逻辑与算术运算</td></tr>
+<tr><td>$[],:=,?,!$</td><td>or / becomes / input / output</td><td>选择、赋值、输入、输出</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3><span class="sn">F.8</span>自测：十个问题</h3>
+<ol>
+<li>为什么程序图要求 $q_\bullet$ 没有出边？去掉会破坏哪个证明？</li>
+<li>$\mathcal{S}[[b]]\sigma$ 在测试失败时返回什么？为什么不是 false？</li>
+<li>$\land$ 与 $\&amp;\&amp;$ 的定义域差在哪里？各举一个程序例子。</li>
+<li>edges<sub>d</sub> 如何把非确定系统变确定？它改了语义还是只改图？</li>
+<li>部分谓词赋值的「覆盖」为什么要单独要求每个环有点？</li>
+<li>逆后序编号为什么能判定回边？举一个自环的例子。</li>
+<li>语义可靠性与计算有效性各负责哪一段？为什么两者一夹就得到正确性？</li>
+<li>引用监视器与安全分析的优缺点各是什么？为什么安全分析可能误报？</li>
+<li>非干扰定理的证明在哪一步用到确定性？去掉会怎样？</li>
+<li>同步通信与「缓冲长度为 1 的异步」差别在哪？广播的「至少 $k$ 个」为何难改成「恰好 $k$ 个」？</li>
+</ol>
+
+<p class="small">如果这十个问题都能在不翻书的情况下答出「定义 + 一个例子 + 一个反例」，这本书就从「开胃菜」变成了你的工具箱。</p>
+
+<p class="small">原书最后的 <b>Blank Page</b> 是排版留白，没有内容；索引（Index）与符号表（Symbols）已在正文与本节覆盖，不再单独列出页码。</p>
 </div>
 </section>
 

@@ -432,28 +432,32 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <aside class="sidebar" id="sidebar">
   <div class="sb-head">
-    <div class="sb-kicker">PDF → WEB · THEORY</div>
+    <div class="sb-kicker">A FIELD GUIDE</div>
     <div class="sb-title">The Brain Abstracted
       <span></span>
     </div>
-    <div class="sb-meta"><b>8</b> 章 · <b>377</b> 页</div>
+    <div class="sb-meta">377 页 · 17 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
     <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>最复杂的东西，如何变得可理解</span></a>
+    <a class="nav-link" href="#ch1b" data-sec="ch1b"><span class="nav-num">•</span> <span>4把东西做简单：三种技术</span></a>
+    <a class="nav-link" href="#ch1c" data-sec="ch1c"><span class="nav-num">•</span> <span>5简单性与真理：两种辩护，一种谦卑</span></a>
     <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>立足点：用手思考的科学</span></a>
+    <a class="nav-link" href="#ch2b" data-sec="ch2b"><span class="nav-num">•</span> <span>2从立足点出发：类比、机制与理解 Proceeding with the Account</span></a>
     <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>反射论：简单性的诱惑与代价</span></a>
     <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>你的大脑像一台计算机——像，但不是</span></a>
-    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>理想模式：简单细胞是实验室的产物</span></a>
+    <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>理想模式：“简单细胞”是实验室的产物</span></a>
     <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>为什么还要说“神经表征”？</span></a>
     <a class="nav-link" href="#ch7" data-sec="ch7"><span class="nav-num">7</span> <span>赫拉克利特式的大脑</span></a>
     <a class="nav-link" href="#ch8" data-sec="ch8"><span class="nav-num">8</span> <span>预测、理解与科学的限度</span></a>
     <a class="nav-link" href="#ch9" data-sec="ch9"><span class="nav-num">9</span> <span>具体性错置：模型不是大脑</span></a>
     <a class="nav-link" href="#ch10" data-sec="ch10"><span class="nav-num">10</span> <span>笛卡尔式理想化：把心灵切成模块</span></a>
-    <a class="nav-link" href="#synthesis" data-sec="synthesis"><span class="nav-num">•</span> <span>三条论证链：从抽象到限度</span></a>
+    <a class="nav-link" href="#synthesis" data-sec="synthesis"><span class="nav-num">•</span> <span>把全书串起来：三条链与一张地图</span></a>
+    <a class="nav-link" href="#objections" data-sec="objections"><span class="nav-num">•</span> <span>八种反驳，以及作者会怎么答</span></a>
     <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
-  <div class="sb-foot"><span><span class="dot"></span>章节与术语按原书整理</span><span id="pctSide">0%</span></div>
+  <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
 
 <header class="topbar">
@@ -482,8 +486,8 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="hero-grid">
       <div>
         <div class="hero-kicker">MIT Press · 2024 · 神经科学哲学</div>
-        <h1>大脑被抽象<span class="en">The Brain Abstracted</span></h1>
-        <p class="hero-sub">神经科学面对的是已知宇宙中最复杂的对象之一。它之所以能产生理论，不是因为它终于发现了大脑的<b>简单本质</b>，而是因为它学会了一件事：<b>把大脑变成可以被理解的样子</b>。这本书讲的，就是这种“制造简单”的历史、技术与哲学代价。</p>
+        <h1>被抽象的大脑<span class="en">The Brain Abstracted</span></h1>
+        <p class="hero-sub">神经科学面对的是已知宇宙中最复杂的东西之一。它能产生理论，不是因为它终于发现了大脑的<b>简单本质</b>，而是因为它学会了一件更朴素的事：<b>把大脑做成可以被理解的样子</b>。这本书讲的，就是这种“制造简单”的技术、历史与哲学代价。</p>
         <div class="hero-actions">
           <a class="btn" href="#ch1">从第一章开始</a>
           <a class="btn ghost" href="#summary">先看概念地图</a>
@@ -496,45 +500,52 @@ figcaption b{color:var(--ink2);font-weight:600}
         </div>
       </div>
       <div class="hero-art">
-        <svg viewBox="0 0 520 560" role="img" aria-label="从复杂的脑到理想模式的三步示意图">
+        <svg viewBox="0 0 520 560" role="img" aria-label="从复杂的脑到理想模式的带通滤波示意图">
           <rect x="16" y="16" width="488" height="528" rx="16" fill="#faf6ec"/>
-          <text x="42" y="52" font-family="sans-serif" font-size="13" fill="#726a5c" letter-spacing="2">ABSTRACTION / 抽象</text>
+          <text x="42" y="50" font-family="sans-serif" font-size="12" fill="#726a5c" letter-spacing="3">ABSTRACTION / 抽象</text>
 
-          <text x="42" y="88" font-family="sans-serif" font-size="16" fill="#1c1b18" font-weight="600">1　野外的脑</text>
-          <text x="42" y="108" font-family="sans-serif" font-size="12" fill="#726a5c">每个神经元都不同，每次活动都不完全重复</text>
-          <path d="M42 145 C70 120, 92 172, 120 142 S168 118, 196 150 S244 176, 272 138 S320 120, 348 152 S396 174, 424 136 S458 124, 478 148" fill="none" stroke="#b23a26" stroke-width="2"/>
-          <path d="M42 162 C74 186, 98 132, 126 164 S174 190, 202 156 S250 130, 278 166 S326 188, 354 154 S402 132, 430 168 S462 184, 478 160" fill="none" stroke="#11645c" stroke-width="2"/>
-          <path d="M42 179 C66 158, 96 196, 124 174 S172 148, 200 182 S248 198, 276 170 S324 148, 352 184 S400 200, 428 168 S460 150, 478 176" fill="none" stroke="#9a6f13" stroke-width="2"/>
-          <path d="M42 194 C78 210, 102 176, 130 198 S178 214, 206 186 S254 170, 282 200 S330 216, 358 188 S406 172, 434 202 S464 212, 478 190" fill="none" stroke="#2c567d" stroke-width="1.5" opacity="0.75"/>
+          <text x="42" y="86" font-family="sans-serif" font-size="16" fill="#1c1b18" font-weight="600">1　野外的脑</text>
+          <text x="42" y="106" font-family="sans-serif" font-size="12" fill="#726a5c">每个神经元都不同，每次活动都不完全重复</text>
 
-          <path d="M260 214 L260 232" stroke="#726a5c" stroke-width="1.5"/>
-          <path d="M255 228 L260 236 L265 228 Z" fill="#726a5c"/>
+          <path d="M42 140 C66 116, 90 168, 116 138 S162 112, 188 146 S236 170, 262 134 S308 114, 334 148 S382 170, 408 132 S446 120, 478 144" fill="none" stroke="#b23a26" stroke-width="2"/>
+          <path d="M42 156 C72 180, 96 128, 122 160 S168 186, 194 152 S242 126, 268 162 S314 184, 340 150 S388 128, 414 164 S450 180, 478 156" fill="none" stroke="#11645c" stroke-width="1.8"/>
+          <path d="M42 172 C64 152, 92 190, 118 168 S164 144, 190 178 S238 194, 264 166 S310 144, 336 180 S384 196, 410 164 S446 146, 478 172" fill="none" stroke="#9a6f13" stroke-width="1.6"/>
+          <path d="M42 188 C76 204, 100 170, 126 192 S172 208, 198 180 S246 164, 272 196 S318 212, 344 184 S392 168, 418 198 S452 208, 478 186" fill="none" stroke="#2c567d" stroke-width="1.4" opacity="0.7"/>
 
-          <text x="42" y="258" font-family="sans-serif" font-size="16" fill="#1c1b18" font-weight="600">2　实验与建模</text>
-          <text x="42" y="278" font-family="sans-serif" font-size="12" fill="#726a5c">控制条件、选择刺激、放大某些规律，忽略其余</text>
-          <path d="M46 304 L170 304 L170 340 L46 340" fill="none" stroke="#d8cdb9" stroke-width="1.5"/>
-          <path d="M46 316 L170 316" stroke="#b23a26" stroke-width="1.5"/>
-          <path d="M46 328 L170 328" stroke="#11645c" stroke-width="1.5"/>
-          <path d="M170 298 L300 310 L300 346 L170 346 Z" fill="#ece4d4" stroke="#c4b7a0" stroke-width="1.5"/>
-          <path d="M190 322 C210 306, 230 338, 250 322 S280 306, 292 322" fill="none" stroke="#b23a26" stroke-width="2"/>
-          <path d="M304 316 C330 316, 340 304, 366 304 S410 304, 436 304" fill="none" stroke="#b23a26" stroke-width="2"/>
-          <path d="M304 328 C332 328, 342 340, 368 340 S412 340, 438 340" fill="none" stroke="#11645c" stroke-width="2"/>
-          <path d="M304 340 C334 340, 344 328, 370 328 S414 328, 440 328" fill="none" stroke="#9a6f13" stroke-width="1.5" opacity="0.8"/>
-          <text x="190" y="372" font-family="sans-serif" font-size="11" fill="#726a5c">保留可处理的差异</text>
-          <text x="330" y="372" font-family="sans-serif" font-size="11" fill="#726a5c">删去不适配的细节</text>
+          <path d="M260 208 L260 230" stroke="#726a5c" stroke-width="1.5"/>
+          <path d="M255 225 L260 233 L265 225 Z" fill="#726a5c"/>
 
-          <path d="M260 384 L260 402" stroke="#726a5c" stroke-width="1.5"/>
-          <path d="M255 398 L260 406 L265 398 Z" fill="#726a5c"/>
+          <text x="42" y="254" font-family="sans-serif" font-size="16" fill="#1c1b18" font-weight="600">2　滤波：只让一段通过</text>
+          <text x="42" y="274" font-family="sans-serif" font-size="12" fill="#726a5c">概念、实验条件、统计与模型，都是带通滤波器</text>
 
-          <text x="42" y="428" font-family="sans-serif" font-size="16" fill="#1c1b18" font-weight="600">3　理想模式</text>
-          <text x="42" y="448" font-family="sans-serif" font-size="12" fill="#726a5c">一个比原系统更规则、更对称、更可计算的模型</text>
-          <path d="M46 486 C76 486, 78 458, 108 458 S140 486, 170 486 S202 458, 232 458 S264 486, 294 486 S326 458, 356 458 S388 486, 418 486 S450 458, 478 458" fill="none" stroke="#11645c" stroke-width="2.5"/>
-          <path d="M46 502 L478 502" stroke="#d8cdb9" stroke-width="1"/>
-          <path d="M46 470 L46 502" stroke="#d8cdb9" stroke-width="1"/>
-          <text x="360" y="524" font-family="sans-serif" font-size="11" fill="#726a5c">可理解，但不等于全部</text>
+          <path d="M46 300 L118 300 L138 300" stroke="#c4b7a0" stroke-width="1.2"/>
+          <path d="M46 336 L118 336 L138 336" stroke="#c4b7a0" stroke-width="1.2"/>
+          <path d="M46 300 L46 336 M118 300 L118 336" stroke="#c4b7a0" stroke-width="1.2"/>
+          <path d="M118 318 C180 280, 220 356, 280 318 S380 280, 470 318" fill="none" stroke="#b23a26" stroke-width="2"/>
+          <path d="M118 300 L118 336" stroke="#1c1b18" stroke-width="2"/>
+          <text x="128" y="356" font-family="sans-serif" font-size="11" fill="#726a5c">通带：被保留下来的规律</text>
+
+          <path d="M260 372 L260 394" stroke="#726a5c" stroke-width="1.5"/>
+          <path d="M255 389 L260 397 L265 389 Z" fill="#726a5c"/>
+
+          <text x="42" y="418" font-family="sans-serif" font-size="16" fill="#1c1b18" font-weight="600">3　理想模式</text>
+          <text x="42" y="438" font-family="sans-serif" font-size="12" fill="#726a5c">一个比原系统更规则、更对称、更可计算的模型</text>
+          <path d="M46 476 C76 476, 78 448, 108 448 S140 476, 170 476 S202 448, 232 448 S264 476, 294 476 S326 448, 356 448 S388 476, 418 476 S450 448, 478 448" fill="none" stroke="#11645c" stroke-width="2.5"/>
+          <path d="M46 492 L478 492" stroke="#d8cdb9" stroke-width="1"/>
+          <path d="M46 460 L46 492" stroke="#d8cdb9" stroke-width="1"/>
+          <text x="352" y="514" font-family="sans-serif" font-size="11" fill="#726a5c">可理解，但不等于全部</text>
         </svg>
         <div class="caption">从“野外的脑”到“实验室的脑”，再到“模型中的脑”：每一步都在筛选、放大和删除。</div>
       </div>
+    </div>
+
+    <div class="chap-intro" style="margin-top:26px">
+      <p><strong>读法。</strong>这不是一本“反对科学”的书，也不是一本神经科学导论。它问的是一个哲学问题：当一门科学面对一个复杂到无法整体把握的对象时，它究竟通过哪些<strong>简化</strong>（simplification）手段，把对象变成可表征、可计算、可操纵的模型（model）？这些手段各自付出了什么代价？全书十章可以压成一条链：<em>复杂性 → 简化 → 理想模式 → 理解与控制 → 限度</em>。</p>
+      <span class="tag">完整模式 · 10 章</span>
+    </div>
+
+    <div class="mapchips">
+      <span class="chip hot">抽象 (abstraction)</span><span class="chip">简化 (simplification)</span><span class="chip">数学化 (mathematization)</span><span class="chip">还原 (reduction)</span><span class="chip">类比 (analogy)</span><span class="chip">理想模式</span><span class="chip">触觉实在论 (haptic realism)</span><span class="chip">形式唯心论 (formal idealism)</span><span class="chip">有学问的无知</span>
     </div>
   </div>
 </section>
@@ -542,65 +553,283 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch1" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 1 · Introduction</div>
   <h2><span class="num">1</span>最复杂的东西，如何变得可理解</h2>
-  <p class="lede">如果每个大脑、每个神经元都不完全相同，神经科学凭什么写出普遍理论？本书的反转是：大脑的“简单”不是被发现的，而是被制造出来的。</p>
+  <p class="lede">如果每个大脑、每个神经元、每一刻的状态都不完全相同，神经科学凭什么写出普遍理论？Chirimuuta 的反转是：大脑的“简单”不是被发现的，而是被制造出来的。</p>
 
   <div class="chap-intro">
-    <p>Chirimuuta 把神经科学史读成一部“简化技术史”：<strong>数学化</strong>把对象投影为数量关系，<strong>还原</strong>在实验室里制造更简单的系统，<strong>类比</strong>用熟悉的机器安置陌生的脑。三者共同生产出“理想模式”。</p>
-    <span class="tag">全书总论</span>
+    <p>本章给出全书的总论：神经科学史可以读成一部“简化技术史”。<strong>简化</strong>（simplification）不是科学的偶然瑕疵，而是它得以开始的条件。作者用三个概念搭起骨架：思维本身是<strong>带通滤波器</strong>；复杂系统有六种难以消化的特征；科学通过<strong>数学化</strong>（mathematization）、<strong>还原</strong>（reduction）与<strong>类比</strong>（analogy）生产“理想模式”。</p>
+    <span class="tag">全书总论 · §1.1–1.3</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">抽象</span><span class="chip">理想化</span><span class="chip">带通滤波</span><span class="chip">还原</span><span class="chip">类比</span><span class="chip">理想模式</span><span class="chip">有学问的无知</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">抽象不是“抽掉杂质”，而是有目的地删减</span></div>
-    <div class="thm-body">
-      <p><strong>抽象</strong>省略目标系统中存在的细节；<strong>理想化</strong>则采用明知虚假的表征。两者界限并不干净：省略细节本身就会产生虚假表征。任何数学化都是一次简化，因为计数要求把对象当作可互换的单位。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">带通滤波：从草坪到 V1</span></div>
-    <div class="thm-body">
-      <p>你看见草坪，说出“雏菊”和“草”。这两个词已经滤掉每株植物的独特形状与位置。对运动场管理员，草的品种却至关重要。<strong>什么算“相关细节”，永远取决于“对谁、为什么”。</strong></p>
-      <p>早期视觉研究把 V1 建模为一组空间频率通道，每个神经元像线性滤波器。Chirimuuta 读博时试图用这套模型预测人看自然照片的反应，结果并不理想（Tolhurst et al. 2010）。让她困惑的是：如此粗暴的简化，为什么居然一度可行？</p>
-    </div>
+    <span class="chip hot">最复杂的东西</span><span class="chip">带通滤波</span><span class="chip">简单/复杂</span><span class="chip">有效复杂性</span><span class="chip">组织深度</span><span class="chip">抽象 (abstraction)</span><span class="chip">理想模式</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">核心命题</span><span class="thm-title">简单性是被生产出来的</span></div>
+    <div class="thm-head"><span class="thm-kind">全书论点</span><span class="thm-title">神经科学的主导观念，最好被理解为“简化大脑的尝试”</span></div>
     <div class="thm-body">
-      <p>神经科学的进步，主要不是逐渐揭开脑内的简单本质，而是不断发明让大脑显得简单的技术、实验与表征方式。“理想模式”既非纯虚构，也非独立于研究活动的自然种类；它是实验条件、测量与建模选择共同稳定下来的规则性。说模型“抓住了本质”之前，先问它<em>在哪一套简化条件下</em>抓住。</p>
+      <p>这不是说神经科学“只是”在编故事。它说的是：从反射论、计算机模型、简单细胞、神经表征，到运动皮层的群体动力学，每一套成功理论的核心，都是一次<strong>有目的的选择性删减</strong>。理论之所以可理解，正因为它比对象简单；理论之所以有风险，也正因为它比对象简单。</p>
+      <p>因此，评价神经科学的关键问题不是“它是否终于描述了物自体”，而是：<em>它删掉了什么？为什么可以删？删掉的东西在什么任务上会反咬一口？</em></p>
     </div>
   </div>
 
-  <div class="table-wrap cheat">
+  <h3><span class="sn">1.1</span>最复杂的东西 <span class="en">The Most Complicated Thing</span></h3>
+
+  <p>作者一上来先“用细节淹没你”：人脑约有 850 亿个可兴奋细胞（神经元），还有数量相当的胶质细胞；皮层只占脑内神经元的约 19%，却估计每半球可分为 180 个解剖与功能上不同的区域；视网膜本身就有 100–150 种神经元；单个突触的蛋白质组有 2,000–3,000 种；小脑占脑重 10%，却容纳 80% 的神经元。线虫 <em>C. elegans</em> 只有 302 个神经元，人类至今仍不能从这 302 个细胞完整推出它每一种运动。</p>
+
+  <p>这些数字的功能不是炫学，而是建立一个尺度感：<strong>复杂性不是“暂时没研究清楚”，而是对象的存在方式</strong>。作者紧接着给出全书最像“反宣言”的一句话：科学家的任务，与其说是发现简单性，不如说是<em>让事情看起来不那么复杂</em>；毕竟，这个宇宙（universe）中最复杂的东西之一，就在我们颅内。欧洲“人类大脑计划”（Human Brain Project）最受诟病之处，正是它试图在一个超级计算机里做“高保真”的哺乳动物皮层模拟，却没有足够努力地去简化，没有在海量数据中划出“相关/无关”的分界。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">抽象与理想化不是同义词</span></div>
+    <div class="thm-body">
+      <p><strong>抽象</strong>（abstraction）是省略目标系统中实际存在的细节；<strong>理想化</strong>（idealization）是明知虚假地表征目标。两者的反义词不同：抽象的反面是“具体”，理想的反面是“实在”。一个模型可以既抽象又理想化，也可以只抽象不公然作假。但在实践上，省略细节本身就会制造虚假，所以这条界线并不干净。</p>
+      <p>关键结论：<em>任何数学化都是一次简化</em>。计数要求把对象当作可互换的单位；测量要求把性质投影为数量。哪怕模型复杂到荒唐，它仍然已经抽掉了目标的定性特征与个体性。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">1.2</span>思想是带通滤波器 <span class="en">Thought Is a Bandpass Filter</span></h3>
+
+  <p>你看见草坪，说出“雏菊”和“草”。这四个普通名词已经抹掉了每一株植物的差异：“花”把白的、黄的、米色的以及别处所有种类归在一起；“草坪”忽略了草的品种，也忽略了所有非禾本科植物。凑近看，个体性与独特性无处不在；可在快速一瞥里，它们呈现为一块足够均匀的地毯图案。对做花环、晒太阳这些目的，差异可以忽略；对体育场草皮管理员，草的品种与生长期却性命攸关。</p>
+
+  <p>作者把这叫<strong>带通滤波</strong>（bandpass filter）：概念让某一频段、某一尺度的规律通过，把其余频率挡在外面。更准确地说，日常分类常常是<em>低通滤波</em>：模糊掉细粒度的个体差异，让同类对象“看起来一样”。而对一个拥有无限（infinite）记忆的心灵，每一片草叶都可以有自己的名字，不必与同伴共用一个范畴。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">从草坪到 V1：滤波器既是隐喻，也是实验装置</span></div>
+    <div class="thm-body">
+      <p>作者读博时的课题，正是检验“V1 是空间频率分析器”的假说：把单个神经元建模为线性滤波器，看它能否预测人看普通黑白照片时的反应。实验范式来自 1960 年代：给被试闪现经过带通滤波的图像，让他们判断哪一张对比度略高；理论则声称，从视网膜经丘脑到初级视皮层（V1）存在一组“空间频率（spatial frequency）通道”，各自对特定宽度与朝向的条纹敏感。</p>
+      <p>这与 Helmholtz 的听觉理论同构：耳蜗的毛细胞各自对有限频段敏感，把复杂声波分解成频率成分。问题在于，作者发现这类极度简化的神经元模型，预测结果只是“mixed”（Tolhurst et al. 2010）。可真正让她困惑的是：这样的模型<em>居然有希望</em>概括整个视觉系统。第五章会解释这种希望与它的代价。</p>
+    </div>
+  </div>
+
+  <p>最耐人寻味的一点是：通道理论赋予视觉神经元的任务，恰恰是<strong> discursive thought（推论性思维）</strong>的任务——选择性地让某种规律通过，把它归入一个概念，并有意忽略其余。看草坪并把所有白黄形态叫“雏菊”，就是给场景加一个低通滤波器。神经科学对大脑的简化，与此同构：没有两个大脑、两个神经元真的相同，但为了建立可预测、可解释的理论，个体性必须被模糊掉，统一的分类必须被强加。</p>
+
+  <p>作者最后承认，这本书本身也是一次滤波。她选择把“简化”放在前景，把无数其他解释框架放在背景。这不是全知视角，而是一次有意的取舍。借 Kurt Goldstein 的视觉隐喻：前景被照亮，背景仍然存在，只是未被注意。</p>
+
+  <h3><span class="sn">1.3</span>简单与复杂 <span class="en">Simple and Complex</span></h3>
+
+  <p>“简单”与“复杂”没有公认定义，复杂系统科学也没能给出跨算法、细胞、经济体的统一度量。作者不打算发明一个定义，而是列出六种让大脑难以被科学把握的特征。</p>
+
+  <div class="table-wrap">
     <table>
-      <thead><tr><th>策略/产物</th><th>做什么</th><th>典型代价</th><th>本书例子</th></tr></thead>
+      <thead><tr><th>特征</th><th>内容</th><th>对科学的麻烦</th></tr></thead>
       <tbody>
-        <tr><td class="id">数学化</td><td>投影为数量、方程、可计算关系</td><td>抹平质的差异与个体性</td><td>V1 线性滤波、Marr 的计算层次</td></tr>
-        <tr><td class="id">还原</td><td>制造更简单的实验制备</td><td>实验室现象未必存在于野外</td><td>麻醉动物、固定刺激、简单细胞</td></tr>
-        <tr><td class="id">类比</td><td>用熟悉的机器安置陌生系统</td><td>相似性被选择性看见</td><td>反射弧、电话交换机、计算机</td></tr>
-        <tr><td class="id">理想模式</td><td>把规则性固定为现象</td><td>误当自然种类</td><td>简单细胞、运动皮层调谐曲线</td></tr>
+        <tr><td class="id">1 数量</td><td>约 850 亿神经元、同等数量胶质细胞，脊髓与肠神经系统还有数亿</td><td>无法逐一列举，只能抽样与分类</td></tr>
+        <tr><td class="id">2 异质性</td><td>神经元形状、类型、连接、分子组成高度多样；视网膜就有上百种</td><td>“标准细胞”是统计构造，不是自然种类</td></tr>
+        <tr><td class="id">3 时间异质性</td><td>脑组织不断重建自身；每次状态都不会完全重复</td><td>试次间的变异只能被平均成“噪声”</td></tr>
+        <tr><td class="id">4 交互密度</td><td>每个皮层神经元约有一万条突触连接，还有神经调质、胶质信号</td><td>部分的行为强烈依赖语境</td></tr>
+        <tr><td class="id">5 语境依赖</td><td>同一组件在不同整体中的行为不同</td><td>还原论假设“部分在内外语境中大致相同”失效</td></tr>
+        <tr><td class="id">6 组织深度</td><td>部分是机器，子部分还是机器，层层嵌套；莱布尼茨的“神圣机器”</td><td>没有唯一清晰的层级，低层/高层无法干净分开</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>这六点里，第三与第五点最伤科学。科学要求<strong>固定靶</strong>；而脑是一个赫拉克利特式的对象，永远不在同一状态停留两次。第四与第六点则拆掉了“底层一定有简单元件”的安慰：复杂系统科学常假设，高层行为对低层细节不敏感，因此可以大胆抽象。作者提醒，这在物理系统里也许成立——粒子同质、可交换、记忆短——但活的系统不是这样。皮层连接的高度嵌套，使得“层级”本身没有唯一解。</p>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>把脑想成一锅正在自我重写的汤：食材不断被替换，火候随环境变化，锅里的每一勺都略有不同。你可以为某些目的把它做成高汤块（模型），但别把高汤块当成那锅汤。</p>
+  </div>
+
+  <p>作者借用 Gell-Mann 的“有效复杂性”：复杂系统位于秩序与随机之间。生命世界正是如此：到处有 pattern 与 regularity，凑近看又总有看似随机的变异——而它也可能是某种尚未辨认的规律的一部分。分类让我们可利用生物，可“不可处理的个体性”始终剩余。简化所做的，是<em>放大规律、折扣无序与个体性</em>；科学由此前进，把一个复杂系统装扮成更简单、更规则的系统。</p>
+
+  <p>这里引出 Cassirer 的一句话：科学理论建立在“实在”与“非实在”要素的奇特交织上；以描述实在为任务的知识，反而先要转身离开实在，用数与量的符号替代它。Chirimuuta 接受前半句，却修正后半句：科学的目标不是“描述实在本身”，而是<strong>为了操纵与控制对象而描述</strong>。这一点会在第八章展开。</p>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反对意见</span><span class="thm-title">“复杂性只是无知的别名；数据够了自然就简单了”</span></div>
+    <div class="thm-body">
+      <p>这是最常见的反驳，也是人类大脑计划式的乐观。作者的回应有三层。第一，脑的异质性是<em>构成性</em>的：不是分辨率不够，而是对象本身在每一次实现中都不同。第二，即便拉普拉斯妖能写下全部微观状态，一个有限认知者也无法把它变成可理解的理论；理解要求压缩，而压缩必然选择。第三，科学史上反复出现“技术越进步， Pandora 盒子越大”的现象（phenomenon）：新的记录手段揭示出更多非线性与隐藏变量，而不是更少。</p>
+      <p>但这不意味着“越多细节越好”。作者反对的不是简化，而是<em>忘记自己在简化</em>。</p>
+    </div>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三个容易读错的地方</span></div>
+    <div class="thm-body">
+      <p><strong>一、把“简化”当贬义。</strong>没有简化就没有理论；作者批评的是把简化产物误认为对象本身。</p>
+      <p><strong>二、把“复杂”当“混沌”。</strong>脑不是随机噪声，而是秩序与变异并存；正因有规律，科学才可能。</p>
+      <p><strong>三、把“带通滤波”当纯比喻。</strong>它同时是认知机制、实验技术和数学操作：概念分类、刺激控制、傅里叶分析做的是同一类事。</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="ch1b" class="chapter"><div class="wrap">
+  <div class="sec-label">Chapter 1 · §1.4</div>
+  <h2><span class="num">1.4</span>把东西做简单：三种技术</h2>
+  <p class="lede">科学家不是站在复杂世界外面等它变简单。他们通过三种手艺主动生产简单性：把对象写成数学、把对象做小做隔离、把对象比作一台更熟悉的机器。</p>
+
+  <div class="chap-intro">
+    <p>这一节是全书分析工具箱。三种策略互相强化：机器类比让世界显得可数学化，也可被拆成可替换零件；实验室的还原制造出干净现象，又为模型提供数据。理解它们各自的“收益”与“代价”，后面每一章都用得上。</p>
+    <span class="tag">方法论核心 · §1.4</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">数学化</span><span class="chip">还原</span><span class="chip">类比</span><span class="chip">抽象/理想化</span><span class="chip">实验室</span><span class="chip">Marr 三层次</span><span class="chip">机器世界观</span>
+  </div>
+
+  <h3><span class="sn">1.4</span>把东西做简单 <span class="en">Making Things Simple</span></h3>
+
+  <p>作者把现代科学追求简单性的主导方式分成三条。第一条是<strong>数学化</strong>（mathematization）：构造数学模型，把对象投影到数量关系上。第二条是<strong>还原</strong>（reduction）：在物质层面制造简化制备，把系统拆小、隔离、控制，再假设从部分得到的知识可以拼回整体。第三条是<strong>类比</strong>（analogy）：把陌生、复杂的神经系统比作熟悉、简单的技术人造物。三者不是并列选项，而是一套互相支撑的生态。</p>
+
+  <h3><span class="sn">1.4.1</span>数学化 <span class="en">Mathematization</span></h3>
+
+  <p>数学化总是抽象，通常还是理想化，因而是<em>有目的的扭曲</em>。作者用反义词来区分：抽象的反面是具体，理想的反面是实在。任何把具体事物写成数学的举动，哪怕模型细节多到没有省略任何力，也已经离开了具体——因为它只保留可量化的侧面。</p>
+
+  <p>她引用 Bergson 的羊群例子：我们可以说这群羊有五十只，尽管每只羊都不同，牧羊人一眼就能认出它们；之所以能数，是因为我们同意忽略个体差异，只计共同点。数字概念本身就预设了“彼此完全相同的单位”。所以<strong>计数已经是一次简化</strong>，不是中性的描述。</p>
+
+  <p>“理想化”还带有另一层古老含义：理想形式比现实更优越、更完满。现实的球不可能是完美球体，但几何球体像是现实球“想要成为”的形状。理想形式总是更规则、更对称、更简单。作者把“理想模式”（ideal pattern）扩展到两类情形：一类是模型中的数学形式，另一类是实验制造出来的现象——实验室里的现象也比野外的发生更规则、更可重复。</p>
+
+  <h3><span class="sn">1.4.2</span>还原 <span class="en">Reducing</span></h3>
+
+  <p>“科学家通过制造简单的东西来把东西变简单。”实验室是一个微宇宙：屏蔽掉不受控变量，让产生现象的过程处于可测量、可操纵的紧密控制之下。Cartwright 的经典论点正在于此：物理定律所陈述的理想形式，只有在实验室里才真正“适用”。神经科学家把这类设置叫“reduced experiments”（简化实验）。</p>
+
+  <p>在认知神经科学里，还原常通过<strong>刺激选择</strong>完成：给脑一个更简单、更易读的输入，诱发出更简单、更易读的反应。曾有一种希望——如今被 Hasson、Nastase、Goldstein（2020）等人质疑——认为从这些简单刺激与反应出发，可以外推到自然条件下的脑活动。反对外推的理由来自脑的适应性：神经元反应很容易顺应刺激的统计特征；你不断给它简单刺激，它就长出一个简单的反应模式（Gao & Ganguli 2015）。错误在于，把这个被刺激塑造出来的模式，当成预测真实世界反应的可靠基础。</p>
+
+  <p>实验物理学家比神经科学家幸运的地方在于：他的对象不会因为被观察而重塑自身。脑却极端地“可塑、语境敏感”。这也是为什么还原在神经科学里既必要又危险。</p>
+
+  <p>还原还有生物学标准含义：把器官的一部分从整体中分离出来，做只有在隔离条件下才可行的精细检查与干预，然后希望用这些“积木”拼出整体行为。这个希望依赖一个假设：<em>部分在孤立状态与在整体中的行为大致相同</em>。第三章的反射论，正是这条路线的一次失败案例——不是因为它不努力，而是因为假设不成立。</p>
+
+  <h3><span class="sn">1.4.3</span>类比 <span class="en">Analogy</span></h3>
+
+  <p>类比也是“通过制造来简化”，只不过这次借用的东西来自神经科学之外：技术、人造物、文化物件。最醒目的例子是<strong>计算机类比</strong>（第四章），以及由它衍生出的“神经表征”设定（第六章）。类比之所以能简化，是因为技术物虽然复杂，却总比脑简单；它们是一枚透镜、一个滤波器，让科学家透过它看脑内纷繁的过程。</p>
+
+  <p>更关键的是：人造物是<em>按功能设计</em>的。把一张功能蓝图强加给生物系统（生物系统并没有一份明确设计图），就允许科学家突出某些交互、忽略另一些，从而抽掉大量“与当前功能无关”的细节。Marr 对视觉系统“计算层次/算法与表征层次/实现层次”的划分，是这一操作的经典。类比不只发生在生物学：力学最初是机器理论，后来才被用于天体与落体；Hessen 的论点正是，技术为科学提供可 theorize 的系统，理论再被用来解释非人造物。</p>
+
+  <p>这类方法依赖一个更深的前提：自然在运作上是<strong>齐一的</strong>——在一种情境成立的推理，在另一种情境也成立。牛顿说“自然极其简单，并与自身相符；适用于较大运动的推理，也适用于较小运动”。笛卡尔则更进一步：人造物与自然物之间没有本质差异，因而可以把生命体当机器。这个前提把“机器”从一种类比提升为一种<em>世界观</em>（Weltanschauung）。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">机器本体论：为什么机器特别适合被数学化、还原与类比</span></div>
+    <div class="thm-body">
+      <p>机器是按统一规格制造的：每个零件都是某个类的可互换成员，不是独一无二的个体。因此数学化的“均质化凝视”不会丢失什么；机器零件也可以被独立于整体地刻画，因为它们在成为零件之前就已经独立存在。还原式解释只是把组装过程倒过来。</p>
+      <p>活体组件则不同：它们的同一性部分是关系性的，依赖于在整体中的位置与历史。把脑当机器，等于先假定它的组件像齿轮一样可替换、可分离。这个假定带来巨大的操作便利，也埋下后面几章反复出现的麻烦。</p>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>策略</th><th>做什么</th><th>典型手段</th><th>主要收益</th><th>主要代价</th></tr></thead>
+      <tbody>
+        <tr><td class="id">数学化</td><td>把对象投影为数量关系</td><td>方程、线性滤波、概率模型、降维</td><td>精确、可计算、可预测</td><td>抹掉定性特征与个体性；理想形式未必实在</td></tr>
+        <tr><td class="id">还原</td><td>制造更简单的物质系统</td><td>麻醉、离体切片、损毁、控制刺激</td><td>可干预、可测量、可重复</td><td>语境依赖失效；实验室现象可能是人工制品</td></tr>
+        <tr><td class="id">类比</td><td>借熟悉系统安置陌生系统</td><td>计算机、自动机、液压模型、Marr 层次</td><td>提供功能蓝图与研究方向</td><td>差异被系统性地忽略；字面化会误导</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">预测这么准，难道没碰到真实结构吗？</span></div>
+    <div class="thm-head"><span class="thm-kind">反对意见</span><span class="thm-title">“数学不是简化，而是增加精确性”</span></div>
     <div class="thm-body">
-      <p>科学实在论者会说：成熟科学的成功不是奇迹；最合理的解释是理论近似为真。</p>
-      <p>Chirimuuta 不否认世界对模型有约束，但否认“约束”足以推出“结构独立于建模活动而存在”。她的立场是<strong>触觉实在论</strong>加<strong>形式观念论</strong>：知识必须有世界这一端，但知识的形式来自认知者这一端。成功说明模型可操作，不说明它复制了物自体。</p>
+      <p>这是物理学家最自然的反应。作者不否认数学增加精确性，但精确性与完整性是两回事：你可以把少数变量测到小数点后十位，同时完全忽略绝大多数定性差异。数学化用一个可操作的坐标系替换了对象，精确性属于坐标系内的描述，而不是对象本身。</p>
+      <p>更深一层：数学描述越精确，往往越依赖理想化假设（无摩擦、无限总体、线性叠加）。精确与真实在这里不是同义词，而是可以拉开距离的两个维度。</p>
     </div>
   </div>
 
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">三个过度反应</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">不要把三种策略当成互斥标签</span></div>
     <div class="thm-body">
-      <p><strong>一、把“抽象”当“错误”。</strong>抽象是知识得以可能的条件，问题只在于忘记自己抽象了什么。</p>
-      <p><strong>二、把“模型”当“本体”。</strong>模型中的变量、层级与边界是研究操作的产物，不自动等同于世界的关节。</p>
-      <p><strong>三、把“简单”当“已理解”。</strong>模型容易读懂，可能只是删掉了真正困难的部分。</p>
+      <p><strong>一、</strong>以为“还原”只指哲学上的还原论。作者指的是具体的实验操作与本体论假设的组合，二者可以分开评价。</p>
+      <p><strong>二、</strong>以为类比只是修辞。类比在科学中承担推理功能：它决定你去找什么、忽略什么、把什么算作实现。</p>
+      <p><strong>三、</strong>以为数学化越少就越“尊重生命”。不数学化也会简化，只是改用叙事、分类或隐喻；问题从来不是要不要简化，而是<em>用哪种简化、为哪个目的</em>。</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="ch1c" class="chapter"><div class="wrap">
+  <div class="sec-label">Chapter 1 · §1.5–1.6</div>
+  <h2><span class="num">1.5</span>简单性与真理：两种辩护，一种谦卑</h2>
+  <p class="lede">为什么科学家追求简单？一种回答是宇宙本来就简单，所以简单理论更可能真；另一种回答是我们太有限，不简化就根本想不动。Chirimuuta 站在后者一边。</p>
+
+  <div class="chap-intro">
+    <p>这一节把“简单性”从方法论提升为价值论：它考察奥卡姆剃刀背后的本体论承诺、以“统一/目的”为范式的有机论简单性，以及面对超复杂对象时应有的认知姿态——<strong>有学问的无知</strong>（docta ignorantia）。最后给出全书路线图。</p>
+    <span class="tag">价值论 · 章末总览</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">简单与真理</span><span class="chip">奥卡姆剃刀 (Ockham's razor)</span><span class="chip">荒漠景观</span><span class="chip">统一与目的</span><span class="chip">有机论</span><span class="chip">有学问的无知</span><span class="chip">解释而非改造</span>
+  </div>
+
+  <h3><span class="sn">1.5</span>简单性与真理 <span class="en">On Simplicity and Truth</span></h3>
+
+  <p>作者给出两个互相竞争的回答。第一个是<strong>形而上学—认识论</strong>回答：宇宙在根本上是简单的，所以更简单的理论更可能真。第二个是<strong>心理学</strong>回答：人的智能有限，我们是有限存在者，所以必须寻找、甚至制造简单性，否则无法思考与行动。伽利略与杜恒相隔数百年，正好代表两端。</p>
+
+  <p>伽利略说宇宙是一本“用数学语言写成的书”，这等于给数学实体某种本体论优先性。杜恒则说：科学家选择某个公式，只因为它比别的更简单；“我们心灵的软弱”迫使我们重视这类考虑——曾经有一段时间，物理学家以为造物主的智慧也沾染了同样的软弱。作者明确站在杜恒这边：以我们目前所知，世界、尤其是生命世界极其复杂，这种复杂性抵抗了各种把它削成简单秩序的努力。若关于自然的真理存在，它们很可能是“不简单的”（Mitchell 2009b）。</p>
+
+  <p>但伽利略的回答从未被取代。爱因斯坦（Einstein）谈“宇宙（universe）原则将美丽（beauty）而简单”的深层信仰；马赫把科学追求 compact laws 解释为“思维经济”，因为人一生能观察、记住、消化的经验事实有限。计算神经科学家中有一种偏见：把简单模型当作揭示基本真理的工具。面对“模型忽略了大量神经生物学”的尴尬，常见辩护是它抓住了“本质”。Grace Lindsay 的说法很典型：“所有模型都错，因为所有模型都忽略细节……所有模型都以简单性优先于绝对精确。所有模型都像诗一样错：它们抓住本质，而非完美的字面真理。”</p>
+
+  <p>作者对这类“诗性辩护”保持警惕：它从“简单模型让我们想得更清楚”悄悄滑向“模型的虚假揭示了真理”，中间那一步没有论证。她并不否认模型能带来理解；她否认的是，从理解直接推出<em>形而上学</em>结论：世界本身简单。</p>
+
+  <h3><span class="sn">1.5.1</span>奥卡姆与荒漠景观 <span class="en">Ockham and Desert Landscapes</span></h3>
+
+  <p><strong>奥卡姆剃刀</strong>（Ockham's razor）通常被表述为“如无必要，勿增实体”。作者提醒一个历史细节：奥卡姆本人并没有写下这条格言，类似的观念在亚里士多德那里已有；真正激进的是近现代人把“必要”的门槛压得极低。奥卡姆把形而上学范畴还原为少量更基本的范畴，为早期现代 corpuscularian（微粒论）物质观铺路；支持机械论—微粒论框架的两个核心论证，正是它<em>更简约</em>、<em>更可理解</em>。</p>
+
+  <p>但“更可理解”与“更真”之间没有自明的等号。Pasnau 说得很直白：即便我们追求可理解性，也没有保证世界会配合；从我们的 vantage point 看，世界本身有时就是悖论的。量子物理相对于经典物理就显得“悖论”，可物理学家仍不愿完全放弃简单性、统一性这些原则——否则物理学作为一门科学就解体了。</p>
+
+  <p>简单性通往真理的一条历史路径是<strong>自然神学</strong>（natural theology）。simplicity 的词源是“一重性”（one-foldness），与一神论有地下通道。马勒布朗士认为，被造世界若不由简单、普遍的法则治理，就不足以荣耀上帝；莱布尼茨把简单性变成挑选可能世界的标准：最完美的世界是“假设最简单、现象最丰富”的世界。这样一来，研究者就有了保证：更简单的定律更可能为真，因为更可能被造物主选中。霍金说找到大统一理论就是“知道上帝的心意”，即便是修辞，也抹掉了有限心灵与无限智能之间的鸿沟。</p>
+
+  <p>这条神学（theology）路径今天以世俗形式存活在<strong>物理主义</strong>本体论里：实体种类越少，世界越简单，越可能被完整理论化，因而越可控。作者说，Quine 对“荒漠景观”（desert landscapes）的美学偏好、Jackson 对非物理主义本体论的讥讽（要么还原，要么消除），背后都藏着一种“权力意志”（will to power）：把本体论削成少数基本项，剩下的都算“集邮”或“贫民窟”。可是，如果当代形而上学家不愿再把神学请回论证，简约原则的<em>辩护</em>就悬空了。指向其他科学向物理的还原，历史细节一摊开就松散；指向技术成就，则依赖一个错误假设——技术是“纯粹发现真理”的下游产物（第八章会拆）。简单描述确实更利于技术控制，但这不是因为它抓住了本质，而是因为它只保留了与当前控制任务相关的一小撮细节。</p>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>“荒漠景观”是一种审美：地图越空白，越显得世界干净。可地图的空白可能不是世界的贫瘠，而是制图者把村庄、河流和人都擦掉了。</p>
+  </div>
+
+  <h3><span class="sn">1.5.2</span>统一与目的 <span class="en">Unity and Purpose</span></h3>
+
+  <p>物理学式的简单性追求“本体论极简”，它假定把自然翻译成数学抽象不会损失任何重要的东西。作者提醒，这只是<strong>一种</strong>简单性概念。被它宣布为“已被取代”的有机论世界观里，还藏着另一种简单性：<strong>统一</strong>（unity）与<strong>目的</strong>（purpose）。</p>
+
+  <p>“统一”的词根同样是“一”。解释可以通过把现象归摄到自然律下实现，也可以通过主张多样现象属于同一个完整实体——原型是生物有机体——来实现。Peterman 论证说，各种被贬为“万物有灵”的灵魂设定，其实是在追求解释的统一：它们主张部分与过程之间存在内在关联（“同情”与“反感”），并把这种关联扩展到行星运动与季节。整个世界是一个巨大的动物——这是斯多亚与柏拉图主义的说法，也是剑桥柏拉图主义者 Cudworth 的说法。</p>
+
+  <p>这种图景有几个特征。第一，整体在本体论上优先于部分，因此强烈反还原。第二，强调部分之间的和谐互动；这种和谐不是几何同一，而是<em>包含差异的统一</em>——就像和声必须由不同音高构成。第三，它与美学相连：Shaftesbury 说美就是“设计上的统一”，各部分“共同趋向一个中心”。歌德说，在人心与宇宙中都没有上下，所有部分对共同中心有同等权利；Goldstein 在《有机体》里引用这句话，作为有机论生物学的纲领。</p>
+
+  <p>它的神学也不同：不是立法的上帝，而是“我们在祂里面生活、行动、存在”的上帝，是 anima mundi（世界灵魂（world soul））。作者的兴趣不在护教，而在指出：<strong>生物学面对的现象——在个体性、异质性中显出有目的秩序——特别适合“统一”式的简单性</strong>。所以现代生物学史不是机械论一路凯歌，而是机械论与活力论/有机论之间的摆动（Canguilhem 语）。歌德、Johannes Müller 这些“不体面”的活力论者，仍在神经科学前史中。Müller 因活力论被后人批评，可他的学生 Helmholtz、du Bois-Reymond 正是要把生命世界的“ sui generis 原则”全部废除的人。</p>
+
+  <p>到了当代神经科学，目的论并没有消失，而是被改装进机器里。控制论的开场白，就是用<strong>反馈机制</strong>解释目的性：同一个目的论结构可以实现在身体里，也可以实现在机器里（Rosenblueth, Wiener, Bigelow 1943）。更常见的版本是计算机类比：你无法只靠检查单个微处理器理解计算机在干什么，必须参考设计与软件；于是“功能/目的”被允许进入解释，但被安放在一个机械论、物理主义的世界观里。作者的评价很精确：<em>有机论的“异质部分服务共同目的”被保留下来，但被改写成机器式的功能统一</em>。</p>
+
+  <h3><span class="sn">1.5.3</span>有学问的无知 <span class="en">Docta Ignorantia</span></h3>
+
+  <p>对本书的目的，可以把脑当作<strong>无限复杂</strong>。850 亿个不尽相同的神经元、数万亿不断变化的突触——承认它无限复杂，比希望它近似简单更现实。脑远比任何“简单到人类科学家能理解”的模型复杂。15 世纪的库萨的尼古拉（Nicholas of Cusa）用 <strong>docta ignorantia</strong>（有学问的无知/知晓自己的无知）来描述我们对远远超出有限心灵之事（对他而言是上帝）应取的态度。它的要点不是闭嘴，而是：通过训练自己的无知，获得关于<em>什么能知、什么不能知</em>的清晰意识，从而看清知识的边界。库萨也把这套否定神学姿态用于对自然界的经验知识。</p>
+
+  <p>作者建议我们对“神圣机器”（divine machine）式的超复杂对象取同样姿态。神经科学像一切科学一样依赖简化，所以必须对模型、理论与类比能否 encompass 对象的全部保持怀疑。脑可能像一颗退行数光年的恒星，离我们的理解极其遥远；模型捕捉到的，只是夜里的一点微光，是巨大光源中极小的一滴。我们所看到的简单、规则、可理解，应被认作<strong>人类把无限装进有限杯子的努力产物</strong>。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">有学问的无知不是放弃，而是校准</span></div>
+    <div class="thm-body">
+      <p>它包含三个动作：（1）承认对象超出模型；（2）识别模型在哪些维度上必然失真；（3）仍然使用模型，因为局部预测与控制是真实的成就。它反对两种傲慢：一种说“模型就是对象”，一种说“既然不完整，干脆别做”。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">1.6</span>全书总览 <span class="en">Overview</span></h3>
+
+  <p>有人会把“有学问的无知”听成绝望的劝退：既然脑不可穷尽，不如关掉实验室。作者说这是误解。她不给神经科学家开政策建议，而是给哲学家和有兴趣的读者一套<strong>公平解释神经科学</strong>的工具。如果脑的复杂性构成一道障碍，使“一个统一而普遍的理论”永远无法解释脑如何产生认知，那么这个限制应当和那些雄心勃勃的统一纲领一样广为人知。</p>
+
+  <p>她并不说神经科学一切目标都注定失败；她说的是：必须把局部成功放回“它们通过一套简化技巧而达成”的背景中理解。这能抵消一种天真读法——把实验结果当成“大脑本来就是这么运作的”，并直接套到日常认知上。</p>
+
+  <p>她也承认心理事实：神经科学家本人可能需要更投入统一纲领、更乐观，才能忍受复杂性。可对于那些生计不依赖“脑终将被解决”信念的人，可以更无偏见地评估宏大挑战。全书的态度因此是：<strong>不是改变神经科学，而是解释神经科学</strong>。</p>
+
+  <p>章末留下两条警告。Cajal 想提醒年轻人警惕“简化与统一 seductively 的不可抗拒吸引力”；William James 说，理论化的心灵总倾向于过度简化材料，这是一切绝对主义与片面教条主义的根源。作者把这两句话放在全书入口，不是装饰，而是阅读契约：接下来的每一章，都要在“必要的简化”与“简化的诱惑”之间走钢丝。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>节点</th><th>核心主张</th><th>关键例子/人物</th><th>后文用途</th></tr></thead>
+      <tbody>
+        <tr><td class="id">1.1</td><td>脑的复杂性是构成性的；科学任务是制造可理解性</td><td>850 亿神经元、HBP、C. elegans 302</td><td>全书问题起点</td></tr>
+        <tr><td class="id">1.2</td><td>概念即滤波；神经科学简化与认知抽象同构</td><td>草坪/雏菊、V1 空间频率通道、Gabor</td><td>“理想模式”的认知原型</td></tr>
+        <tr><td class="id">1.3</td><td>复杂性六特征；秩序与随机之间</td><td>数量、异质性、时间变化、交互、语境、组织深度</td><td>第三、五、七章的诊断标准</td></tr>
+        <tr><td class="id">1.4</td><td>三条简化技术：数学化、还原、类比</td><td>Bergson 数羊、Cartwright 实验室、Marr 三层次</td><td>第二编案例的分析框架</td></tr>
+        <tr><td class="id">1.5</td><td>简单性有两种辩护；神学—物理主义路线可疑</td><td>伽利略/杜恒、马赫、Quine 荒漠</td><td>批判“简单即真”</td></tr>
+        <tr><td class="id">1.5.1</td><td>奥卡姆剃刀不等于真理保证</td><td>Ockham、Pasnau、莱布尼茨</td><td>回应“模型虽假但简约”</td></tr>
+        <tr><td class="id">1.5.2</td><td>统一/目的是另一种简单性，被机器化改造</td><td>世界灵魂（world soul）、歌德、Goldstein、控制论</td><td>第三、十章</td></tr>
+        <tr><td class="id">1.5.3</td><td>对超复杂对象取“有学问的无知”</td><td>库萨、星光比喻</td><td>第八、九、十章</td></tr>
+        <tr><td class="id">1.6</td><td>目标是解释神经科学，不是改造它</td><td>Cajal、James</td><td>全书方法论立场</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">本章最容易读错的四句话</span></div>
+    <div class="thm-body">
+      <p><strong>一、“简单性是坏事”。</strong>错。作者反复说简化是科学可能性的条件；她反对的是把简化结果本体化。</p>
+      <p><strong>二、“奥卡姆剃刀被证明为真”。</strong>错。它是一条方法论/审美原则，其神学辩护在世俗科学中已经失效，剩下的只是实用理由。</p>
+      <p><strong>三、“统一与目的只是过时的迷信”。</strong>错。它们以反馈、功能、设计规格的形式活在当代神经科学里，只是被装进了机器框架。</p>
+      <p><strong>四、“有学问的无知=不可知论”。</strong>错。它承认局部知识为真，只是拒绝把局部模型当成整体对象。</p>
     </div>
   </div>
 </div></section>
@@ -608,65 +837,184 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch2" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 2 · Footholds</div>
   <h2><span class="num">2</span>立足点：用手思考的科学</h2>
-  <p class="lede">如果知识不是对世界的被动照相，它还能凭什么被称为“知识”？答案是：凭我们能够伸手进去、扰动它、再让它以某种方式回应。</p>
+  <p class="lede">如果知识不是对世界的被动照相，它还能凭什么被称为知识？Chirimuuta 的答案是：凭我们能够伸手进去、扰动它，再让它以某种方式回应。</p>
 
   <div class="chap-intro">
-    <p>这一章是全书的地基。作者提出<strong>触觉实在论</strong>：科学知识来自与对象的互动，而非抽离一切的“上帝视角”。它同时是最低限度的实在论和康德式的<strong>形式观念论</strong>。</p>
-    <span class="tag">认识论框架</span>
+    <p>这一章是全书的认识论地基。作者提出<strong>触觉实在论</strong>（haptic realism）：科学知识来自与对象的互动，而非抽离一切的“上帝视角”。它同时是最低限度的实在论与康德式的<strong>形式唯心论</strong>（formal idealism）。由此推出<strong>透视主义</strong>（perspectivism）：对超复杂对象，可以有多个都正当、但彼此不可完全翻译的研究传统。</p>
+    <span class="tag">认识论框架 · §2.1</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">触觉实在论</span><span class="chip">形式观念论</span><span class="chip">康德</span><span class="chip">质料/形式</span><span class="chip">透视主义</span><span class="chip">理解</span><span class="chip">控制</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">触觉实在论：知识是“手感”，不是“复刻”</span></div>
-    <div class="thm-body">
-      <p>标准科学实在论主张：世界有确定的、独立于心灵的结构；最好的理论近似为真地描述它。触觉实在论保留世界这一端，但拒绝“描述物自体”的要求。知识像触摸一个瓜：你拍它、转它、估它的熟度。你得到的是<em>它如何回应你</em>，而不是它脱离一切关系的“本来面目”。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">手既是感觉器官，也是改变世界的第一工具</span></div>
-    <div class="thm-body">
-      <p>Chirimuuta 借用 Hans Jonas 的现象学分析：看一个物体，你可以在不动它的情况下获得信息；摸一个物体，你立刻改变了你与它之间的处境。手同时是认识器官和行动器官，“manipulation”的词根就是手。</p>
-      <p>实验室是这种结构的放大版。科学家用麻醉、电极、刺激与统计去“拨弄”系统。知识增长的场景更像修表匠的工作台。</p>
-    </div>
+    <span class="chip hot">触觉实在论 (haptic realism)</span><span class="chip">形式唯心论 (formal idealism)</span><span class="chip">康德</span><span class="chip">形式/质料</span><span class="chip">知觉恒常性</span><span class="chip">透视主义</span><span class="chip">先验 (a priori)</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">形式由认知者贡献</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">我们认识的是事物与我们的关系，不是物自体</span></div>
     <div class="thm-body">
-      <p>亚里士多德是“形式实在论者”：形式存在于事物之中，独立于是否有人认识它。康德把形式搬到认知者这一边：形式不是知识的对象，而是知识得以可能的条件。科学模型中的秩序、分类与层级，因此既有世界的贡献，也有科学家的“图式化”贡献。</p>
-      <p>这是一种<strong>关系性</strong>的实在论：我们认识的是事物在与人类认知者、仪器、目的发生关系时呈现出的性质。</p>
+      <p>标准科学实在论想要两样东西：世界有独立于心灵的结构；最好的理论近似为真地描述这个结构。触觉实在论保留第一样，拒绝第二样的强读法。知识确实有世界这一端的约束，但知识的内容里永远混着认知者的贡献：目的、身体、仪器、历史、概念图式。这些贡献不能被“净化”掉。</p>
+      <p>这不是说世界由心灵制造。它说的是：<em>要经验地认识某物，只能通过它如何影响你、或与你发生关系</em>；要求认识“完全不与认知者发生关系”的物自体，是一个自相矛盾的知识概念，最终通向怀疑论。</p>
     </div>
   </div>
 
-  <div class="table-wrap cheat">
+  <h3><span class="sn">2.1</span>触觉实在论/形式唯心论 <span class="en">Haptic Realism/Formal Idealism</span></h3>
+
+  <p>标题下引了一句很重的话：语言可以是字面的、科学可以是确定的，但这只在一个亚里士多德式的世界里成立；在别的世界里，事物不会“以它们自己的种类”向我们说话，除非我们先召唤、激发它们。康德已经表明：我们必须用范畴去贡献，才能让世界成为可经验的世界。</p>
+
+  <p>作者从<strong>触觉</strong>开始，而不是从视觉开始。看一个物体，你可以在不动它的情况下获得信息；摸一个物体，接触本身已经改变了你与它的处境。要探索世界，你必须移动、伸手、抓握，在对象上留下痕迹；触觉也多半与有意的行动相连：你拍一拍瓜，转一转它，估它熟不熟、该从哪个角度切、要用多大力。Hans Jonas 说，这正是触觉现象学最区别于视觉之处：在触觉里，“信息性的理论功能”与“实践性的行为”没有视觉里那种清晰分离。</p>
+
+  <p>手既是首要的触觉器官，也是我们改变世界的第一工具；“manipulation”（操纵）的词根就是拉丁语的“手”。作者建议用同样的结构理解科学实践：科学家不是被动照相机，而是修表匠、实验者、干预者。他们通过笨拙的、以人为中心的接触认识对象，<em>而不是不顾这些接触</em>。这就是“触觉实在论”。</p>
+
+  <p>它为什么仍叫“实在论”？因为它承认知识有一个超出科学家及其共同体之外的基础。这是实在论的最低承诺。但它拒绝标准实在论的另一个承诺：在最好的情况下，我们能与一个完全独立于人类与心灵的“存在层”建立认识关系。作者说，这个版本同时可以读作一种<strong>先验唯心论</strong>（transcendental idealism）：事物存在于人类心灵之外，但我们不能认识它们“如其所是、不相对于人类认知者”的样子。</p>
+
+  <p>换句话说：<strong>认知者带来的东西是不可消除的</strong>。目标、怪癖、身体限制、仪器约束，不能被一道“ purification（净化）”程序从知识里洗掉。科学不是绝对知识，不是与人类境况无关的知识，不是对“无论有没有心灵都存在”的自然的表征。想要经验地认识物自体，等于想要一种不可能的知识，最后只会落入怀疑论。作者说，这正是先验唯心论的要害。</p>
+
+  <h3><span class="sn">2.1.1</span>康德的形式质料论 <span class="en">Kant's Hylomorphism</span></h3>
+
+  <p>康德把自己的先验唯心论称为“<strong>形式唯心论</strong>”（formal idealism），以区别于贝克莱那种“存在即被感知/一切皆感觉或精神”的唯心论。作者借这个说法，把她的框架牢牢接在第一章的复杂性与简化问题上。</p>
+
+  <p>“形式”在这里与“质料”配对，来自亚里士多德的 hylomorphism（形式质料论）。亚里士多德是<strong>形式实在论者</strong>：形式在世界里，不天生相对于认识者。每个自然实体（例如公园里的一棵松树）都是形式与质料的复合。形式不是与质料分离的零件，而是把质料组织成维持自身之有机体的原则。Grene 说，“存在必须控制生成”；自然界的运动与变化总朝向作为固定点的形式。正因有形式，自然对亚里士多德才是深层可理解的：人可以认识事物的本质。经院格言：<em>forma dat esse rei</em>——事物的存在/本质在其形式中。一个具有形式的实体是自立的、有边界的、可独立认识的。</p>
+
+  <p>康德保留了形式/质料的配对，却把形式挪到<strong>认知能力</strong>这一边：形式是心灵对感觉材料进行规定、划界、组织的结果。“形式”不是知识的对象，而是知识得以可能的条件。于是有了形式实在论与形式唯心论的基本分歧：前者认为自然已经按种类与本质切好，等待被发现；后者认为规定性来自认知者的图式化活动。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">知觉恒常性：从流动的感觉到稳定的对象</span></div>
+    <div class="thm-body">
+      <p>感官近端刺激——视网膜或毛细胞对光与声的反应——是一片不确定的、异质的、不断变化的涌动。稳定的对象并不是在转导那一刻就被给予的。你强迫自己用“画家的眼睛”看世界，会注意到光、影、色调的无穷变化。</p>
+      <p>感官经验之所以能成为知识，是因为这股感觉流可以被<strong>赋形</strong>：把其中的相似与规律归类为“同一个对象的再次出现”。视觉系统具有明度恒常性与颜色恒常性，正好完成这种塑造：把不确定的近端刺激变成确定的、稳定的、分离的对象，再把它们当作你 raw sensation 的远端原因。</p>
+    </div>
+  </div>
+
+  <p>科学知识与此有平行，也有关键差异。看到桌上被斑驳光影照着的书，常识假定：有一本稳定的书，作为不稳定感觉的远端原因，在恒常知觉中被恢复。作者要我们考虑的科学图景则是：<em>不要</em>把科学研究得到的规则、持存 pattern 直接当成“本来就在自然里、等待被恢复”的东西。稳定与规则，可能是科学思维（个体与集体）对需要进一步规定的观察数据所做的工作。就像知觉中，认知的规定活动是“经验到一个稳定世界”的条件；在科学中，形式唯心论要求我们拒绝把稳定的知识对象等同于“预先存在的 pattern 的恢复”。</p>
+
+  <p>为什么这个更激进的立场反而更合适？因为第一章已经表明：复杂系统在看似随机的变化中呈现不断变动的规律；生命世界没有现象精确重复，没有有机体保持完全相同。脑是极端例子。科学分类可以比作给微妙变化的花纹加一个<strong>低通滤波器</strong>：突出某些重复，掩盖差异与不规则，从而在现象中造出种类与似律行为。</p>
+
+  <p>在亚里士多德的形式实在论里，固定形式的秩序是自然中等待被认识的特征。但 Grene 提醒：那不是亚里士多德的世界——那个世界的存在者是固定的。<em>我们的</em>世界是异质的、流动的、复杂的。当代科学实在论以它自己的方式仍承诺“形式实在论”：假定自然种类结构、 “joint-cutting” 的存在类型，藏在个体性之流下面。作者说：如果我们从“自然极其复杂”出发，更好的结论是：科学表征中的高度规则与简单，是<strong>规范化与简化</strong>的结果，而不是对隐藏在无序外观下的秩序的发现。形式实在论预设了自然中预存的简单性；没有这个预设，形式唯心论就是该走的路。</p>
+
+  <p>作者随后加了几个重要限定。第一，科学的赋形不只是“滤波”——让一些细节通过、挡掉其余；它是对数据中<em>仅仅初具雏形</em>（determinable）的 pattern 进行主动塑造，而这些 pattern 本来可以用多种方式成形。走哪条路，受研究目标塑造；实践活动影响概念的生产与数据的解释，从而带来独特的视角。第二，她不是说所有规则性都是认知者的“强加”（imposition）。“强加”是对触觉实在论的误读；关键词是<strong>互动</strong>。在循环互动中，无法把认知者的贡献与对象的贡献干净分离。她也不是说世界没有认知者就完全无形——一个绝对无形的世界将没有系统、没有实体、没有彼此划界，也就没有科学。梅洛-庞蒂说过：如果一切都真的依赖一切，有机体与自然里就不会有规律，也不会有科学。</p>
+
+  <h3><span class="sn">2.1.2</span>透视主义 <span class="en">Perspectivism</span></h3>
+
+  <p>Mary Hesse 借助 Gottfried Martin，把康德视为“自然科学只能通过模型与松散类比呈现世界”这一观点的源头。康德式态度是：理论是思考世界的可能模型，未必、有时不可能、且永远无法被知道是字面描述；这给科学家留下自由，在“虚空/充实”之类的理论之间选择<em>方便</em>的那个。</p>
+
+  <p>这里出现一个关键连接：拒绝“理论是目标的字面真描述”，就会倾向于承认同一对象可以有<strong>一组</strong>合适的理论。作者把这种立场定义为<strong>透视多元论</strong>（perspectival pluralism）：在同一科学中，可以有多个研究传统与建模路径，全都瞄准同一系统，却建立在彼此不相容的简化假设上，产生彼此“认不出来”的描述。视角之间的差异由历史、文化条件塑造，也由 formalism 的便利性等实用因素塑造。</p>
+
+  <p>透视主义在当代科学哲学中很流行，共同点是：科学知识位于历史时代与社会语境中，不是“从无处观看的视角”（view from nowhere）。这与复杂性—简化的论证互相加强：只有无限心灵，或一个简单到能被有限心灵集体穷尽的世界，才可能有上帝视角。第一个假设显然不成立；第二个在物理系统上也许一度可信，但随着对象变成复杂生命体，希望就褪色了。简化无处不在，正是科学是<em>有限、 situated 存在者</em>之活动与产物的永久印记。上帝大概不需要抽象与理想化。</p>
+
+  <p>作者特别对比 Massimi 的“透视实在论”。Massimi 接受有一个人类与心灵独立的世界，真理是与之符合，存在“视角独立的事实”，并且科学语言应被字面解释。作者不同意最后两点。她的论证是：一旦我们看清“塑造”指的是在观察数据所提示的众多范畴与规律中<strong>确定</strong>出某些，而数据本身暧昧、多义，只有经过修剪与按摩才显出可辨 pattern，那么拒绝实在论形而上学就不是什么“莫名其妙的建构主义”。它只是质疑“可认识对象的现成实在”（ready-made reality）。</p>
+
+  <div class="table-wrap">
     <table>
-      <thead><tr><th>立场</th><th>世界这一端</th><th>认知者这一端</th><th>对科学成功的解释</th></tr></thead>
+      <thead><tr><th>立场</th><th>世界</th><th>知识</th><th>真理</th><th>对科学成功的解释</th></tr></thead>
       <tbody>
-        <tr><td class="id">科学实在论</td><td>有确定、独立的结构</td><td>理论应尽可能镜映它</td><td>成功因为近似为真</td></tr>
-        <tr><td class="id">触觉实在论</td><td>存在并抵抗操作</td><td>形式、目的、仪器不可消除</td><td>成功因为在实践中可操作</td></tr>
-        <tr><td class="id">强社会建构论</td><td>几乎不提供约束</td><td>一切由社会协商决定</td><td>成功因为共同体接受</td></tr>
+        <tr><td class="id">形式实在论</td><td>已按本质/结构切好</td><td>恢复预存形式</td><td>符合独立结构</td><td>理论近似为真</td></tr>
+        <tr><td class="id">形式唯心论</td><td>存在，但极其复杂、流动</td><td>互动中赋形</td><td>关系性、视角内的正确性</td><td>可理解、可操作、可修正</td></tr>
+        <tr><td class="id">贝克莱式唯心论</td><td>由心灵/感觉构成</td><td>心灵内内容</td><td>观念间一致</td><td>（作者明确不取）</td></tr>
+        <tr><td class="id">强建构论</td><td>几乎不约束</td><td>社会协商</td><td>共同体共识</td><td>（作者明确不取）</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">这不就是相对主义吗？</span></div>
+    <div class="thm-head"><span class="thm-kind">反对意见</span><span class="thm-title">“这还是相对主义：每个视角都同样好”</span></div>
     <div class="thm-body">
-      <p>最常见的误解是：一旦说形式来自认知者，就好像任何形式都同样好。Chirimuuta 明确反对。触觉实在论保留两个约束：世界会让某些操作失败；科学实践有可检验的成功标准。</p>
-      <p>她也否认所有视角同样深刻。透视主义不等于“怎么都行”，而是说：对超复杂对象，没有哪一个视角能同时穷尽所有相关性。视角之间可以比较、互补，也可以不可通约——但不可通约不等于不可评价。</p>
+      <p>作者明确否认。第一，世界会抵抗：某些操作会失败，某些预测会持续出错。第二，视角可以比较：它们对现象的敏感度、预测力、可操作性、能打开的研究方向不同。第三，视角可以<em>被淘汰</em>：当它不够敏感于它试图规范化的现象时，就会失去生命力（第七章会展开）。</p>
+      <p>透视主义否定的只是“唯一正解已经写在世界里、等着被抄写”，不是“没有好坏之分”。</p>
+    </div>
+  </div>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反对意见</span><span class="thm-title">“康德被你说得太轻了：先验形式是必然的，科学概念是经验的”</span></div>
+    <div class="thm-body">
+      <p>作者承认自己是在“挪用”而非做康德文本学。她需要的是结构，不是注释：认知者的形式贡献不可消除；形式不是对象，而是对象被给予的条件。她把康德的<em>先验</em>（a priori）结构，弱化为科学实践层面可变的“图式化”活动。这个弱化会失去康德式的严格必然性，但换来对科学史与多元视角的敏感。</p>
+      <p>是否仍配叫“先验”？她的用法更接近“使知识成为可能的功能性条件”，而不是“永恒不变的心灵范畴”。</p>
     </div>
   </div>
 
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">把“建构”听成“编造”</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个必须避开的读法</span></div>
     <div class="thm-body">
-      <p><strong>一、把康德当贝克莱。</strong>形式观念论不是说世界由心灵产生，而是说我们只能认识显现给我们的形式。</p>
-      <p><strong>二、把“视角”当“偏见”。</strong>视角是知识得以组织起来的条件；没有视角，只有无限的杂多。</p>
-      <p><strong>三、把“理解”当“控制”。</strong>能操纵一个系统，不等于已经理解它。</p>
+      <p><strong>一、把触觉实在论当“手感玄学”。</strong>它是关于知识来源与限制的论点：知识是互动产物，不是神秘直觉。</p>
+      <p><strong>二、把形式唯心论当“世界由心制造”。</strong>形式是经验的条件，不是世界的创造者。</p>
+      <p><strong>三、把“视角”当“偏见”。</strong>视角是组织知识的必要条件；没有视角只有杂多。</p>
+      <p><strong>四、把“没有上帝视角”当“所有说法一样真”。</strong>世界仍然会让某些说法失败。</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="ch2b" class="chapter"><div class="wrap">
+  <div class="sec-label">Chapter 2 · §2.2</div>
+  <h2><span class="num">2.2</span>从立足点出发：类比、机制与理解 <span class="en">Proceeding with the Account</span></h2>
+  <p class="lede">如果知识是互动，那么科学中的“类比”就不只是装饰：它决定你如何切分系统、把什么当机制、把什么算作解释。最终，理解与控制是同一活动的两张脸。</p>
+
+  <div class="chap-intro">
+    <p>本节把认识论落到方法：先重做类比理论（正面/负面类比），再说明机制只是众多视角之一，最后把科学目标从“真理”改写为“理解 + 控制”。这为第三编的历史案例提供了评价标准。</p>
+    <span class="tag">方法论 · §2.2</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">正面/负面类比</span><span class="chip">Hesse</span><span class="chip">机制</span><span class="chip">视角</span><span class="chip">理解</span><span class="chip">控制</span><span class="chip">verum factum</span>
+  </div>
+
+  <h3><span class="sn">2.2.1</span>如此看待的类比 <span class="en">Analogies So Considered</span></h3>
+
+  <p>科学类比把自然中不可理解的东西“驯化”：抓住它与科学家更熟悉、更好理解之物（Hesse 1955）的相似。类比推理就是根据与一个已被较好刻画的系统的相似，对陌生系统下结论。最朴素的理解是：相似性是对象之间预先存在的事实；两个对象的属性集合像韦恩图一样部分重叠，重叠越大，可推出的结论越多。</p>
+
+  <p>Hesse 早期确实假定模型与目标之间存在“结构同一”（identity of structure）。她区分<strong>正面类比</strong>（positive analogy：相似、共享结构的方面）与<strong>负面类比</strong>（negative analogy：不相似、失配的方面）。她举“电子龟”为例：这类控制论机器人与动物在生物、化学方面有明显负面类比，但在某些行为方面有“数量未知的正面类比”。</p>
+
+  <p>这套说法预设了形式实在论，甚至是结构实在论：物理系统真的具有那些在成熟数学理论中被表征的结构。Chirimuuta 的起点正相反。她不假定有用的科学类比依赖于模型与目标之间预存的结构同构（homomorphism）。理由是：目标中的结构本身是被主动确定、并在某种程度上被建构出来的。所谓“与类比模型共享的结构”，是从系统里按摩出来的<strong>理想模式</strong>；脑与计算模型共享的，是一个理想化的神经活动版本。因此，模型的预测与解释成功，不足以推出“脑在字面上执行模型所说的计算”。</p>
+
+  <p>她与 Hesse 后期工作一致。Hesse 赞同伽达默尔对形式实在论的拒绝：没有终极秩序能向有限心灵显现；一切人类知识都有根本的不精确性；科学语言应单义、字面、最大精确的理想是错的。Hesse 认为一切语言（包括科学语言）都扎根于比喻而非字面，永远无法完全摆脱隐喻与类比；但这不妨碍它传达知识、成为理性论证的媒介。它反对的是<strong>字面解释</strong>：把科学模型当成对世界的提纯描述，仿佛事实与修辞可以干净分开。</p>
+
+  <p>这条论证最终回到形而上学与神学。莱布尼茨是典型：他承诺科学语言应尽可能字面、单义，最好通过数学这样的人工语言实现；这个承诺背后是一个世界观——宇宙之所以对人类理性透明，是因为它被如此创造。Hesse 说，莱布尼茨“相信合理性、即对人心而言的细节可理解性，是事物本质的一部分”。Chirimuuta 不需要这个神学保证；她只需要：<em>既然对象复杂到超出任何有限表征，表征就必然是选择性的、类比性的</em>。</p>
+
+  <h3><span class="sn">2.2.2</span>神经科学中的机制与视角 <span class="en">Mechanisms and Perspectives in Neuroscience</span></h3>
+
+  <p>现代科学史上居中心地位的类比，是世界及其居民像<strong>机器</strong>。钟表宇宙给出宇宙论图景；把有机体呈现为自动机，则在生物学史上有自己的生命。Falkenburg 指出，机械类比与解剖方法同行：依赖对目标系统做结构与功能分解，因而与第一章的还原策略亲缘。另一个前现代的中心类比是<strong>世界像有机体</strong>；把生命体当类比源去理解非生命物质系统，如今已过时（盖亚假说也许是例外）。</p>
+
+  <p>Hesse 认为，17 世纪另一种简单性概念的兴起——毕达哥拉斯主义与原子论的复兴——使世界有机体类比衰落。那种简单性把无生命物质的属性限制为纯几何与机械性质。但世界有机体图景与反机械论生物学（有机论、整体论、活力论）之间有连续性；后者强调解剖方法不足：把有机系统真的拆成碎片、脱离身体与生态语境检查零件，会丢失关键东西。</p>
+
+  <p>在康德那里，自然被构成得让牛顿力学成为“正确”的物理学：一个由时空定位对象组成的因果 nexus。机械论世界观出现在康德哲学中，但对康德而言，它不是绝对实在。Cassirer 指出，康德给予机械论解释的优越地位，与 20 世纪物理学的发展并不一致。后来的科学哲学把康德“多元化”了：机制只是众多科学视角之一，没有排他解释权，也不应把解释项本体化。</p>
+
+  <p>这正是作者此前的立场：机制论、计算论、动力系统论是建模神经过程的三种不同视角。它与“新机制论”在神经科学哲学中的一元野心相反——后者声称其他解释框架都可被纳入机制解释。作者不否认机制研究的重要性；她否认的是“机制是唯一真实的解释层次”。</p>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>同一座城市，可以画交通图、地铁图、地质图、房价图。每张图都“真”，但没有一张是城市的全部；你也不会问“哪张图才是城市本身”。机制、计算、动力学，就是这样的图。</p>
+  </div>
+
+  <h3><span class="sn">2.2.3</span>解释、理解与控制 <span class="en">Explanation, Understanding, and Control</span></h3>
+
+  <p>以往的科学哲学（包括作者自己的早期工作）多集中在“解释”上：什么算好解释？解释是否必须诉诸原因？抽象、理想化的模型还能解释吗？本书把目标稍微挪向<strong>科学理解</strong>与神经科学的<strong>工具性目标</strong>——获得控制脑运作的能力。作者认为这是研究的两大核心目标，而且它们不是两个东西，而是同一活动的两张脸。</p>
+
+  <p>她跟随 Potochnik（2017）与 Elgin（2017），把<strong>理解</strong>而非真理当作科学的首要认识目标。Potochnik 的论证从观察开始：理想化在科学表征中普遍且不受约束。科学家明知表征与经验发现冲突，却大多不去“去理想化”，把模型改得更复杂、更符合观察。这说明：忠于观察事实的真理，不可能是科学的首要目标；理想化表征被保留，是因为它们通过更大的简单性<em>帮助理解</em>。这是“理解优先于真理”的迹象。</p>
+
+  <p>“解释”与“理解”有什么区别？在科学哲学里，解释常被当成完全客观的东西，不涉及人类心理。Hempel 的覆盖律模型是典型：理论若能用定律预测现象，就算解释。Craver 捍卫“本体论解释”：世界中的事态本身就是解释，独立于任何人是否引用它。另一些哲学家（如 Bechtel）把解释限制在认识论意义。正因为“解释”歧义，作者更愿意用“理解”：理解总是与人类研究者保持不可消除的关系。把理解当作科学目标，就清楚表明：这个目标不超越人类立场与议程。</p>
+
+  <p>科学不是一场朝向绝对真理（物自体之真）的集体行军，甚至也不是朝向“与最多观察一致”的经验真理。它是朝向<strong>对生产与使用知识的人而言说得通、用得上的知识</strong>；这些人生活在群体与社会中，带着包括操纵与控制在内的集体目标。第八章会展开：科学理解指向控制，而不是为自然本身而沉思自然。这也解释了为什么神经科学中充满“不真实”的简化：一个玩具模型若能澄清少量可控的依赖关系，就足以服务许多实践目的，被排除的细节被假定为与任务无关。</p>
+
+  <p>这里的哲学根据是维柯（Vico）的 <strong>verum factum</strong>：对人类而言可理解的东西，是他们<em>制造</em>出来的东西。神经科学的理解，通过建造代理系统（proxy systems）达成：不仅是计算模型，还有在物质上被简化了的神经系统。它们简单到足以被理解，从而被操纵。作者最后加了一个伦理提醒：理解与控制不是无条件的好。神经科学的工具性成就目前还算有限，但在其他领域，改造自然的力量早已超出对人类及其他生命有益的范围。她的工作是指出：<em>对工具性的追求与对知识的胃口在神经科学中如何互相加强</em>；不看清这一点，就无法正确解释神经科学在告诉我们什么。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>概念</th><th>定义/主张</th><th>关键对比</th><th>在书中的作用</th></tr></thead>
+      <tbody>
+        <tr><td class="id">触觉实在论</td><td>知识来自互动；认知者贡献不可消除</td><td>vs 标准实在论、强建构论</td><td>全书认识论地基</td></tr>
+        <tr><td class="id">形式唯心论</td><td>形式是经验的条件，不是物自体的结构</td><td>vs 亚里士多德形式实在论、贝克莱</td><td>解释科学范畴的建构性</td></tr>
+        <tr><td class="id">透视多元论</td><td>多个不相容简化假设下的传统都瞄准同一系统</td><td>vs Massimi 的透视实在论</td><td>第七、十章</td></tr>
+        <tr><td class="id">正面/负面类比</td><td>相似方面与失配方面；不假定预存同构</td><td>vs Hesse 早期结构同一</td><td>第四、六章</td></tr>
+        <tr><td class="id">机制作为视角</td><td>机制解释只是多种建模方式之一</td><td>vs 新机制论一元论</td><td>第四、十章</td></tr>
+        <tr><td class="id">理解优先</td><td>科学首要目标是理解，不是字面真理</td><td>vs Hempel/Craver 的客观解释</td><td>第五、八、九章</td></tr>
+        <tr><td class="id">verum factum</td><td>可理解的是被制造出来的</td><td>vs 沉思式知识理想</td><td>第八章核心</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于类比与理解的三个误解</span></div>
+    <div class="thm-body">
+      <p><strong>一、“类比只是启发，不进入结论”。</strong>类比决定问题如何被切分、什么算实现、什么算噪声；它已经进入结论的内容。</p>
+      <p><strong>二、“理解是主观的，所以不科学”。</strong>理解有主体相关性，不等于任意；它受现象、实验、预测成功与共同体批评约束。</p>
+      <p><strong>三、“控制越多，理解越深”。</strong>能操纵一个变量，可能只说明你找到了一个有效把手，不说明你理解机制。作者在第八章会把这个区分推到极限。</p>
     </div>
   </div>
 </div></section>
@@ -674,66 +1022,129 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch3" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 3 · The Reflex Theory</div>
   <h2><span class="num">3</span>反射论：简单性的诱惑与代价</h2>
-  <p class="lede">一个曾统治生理学与心理学的框架，为什么几十年内从“基础”变成“反面教材”？它的问题不是不够精致，而是把实验室里做出来的东西，当成了神经系统的原子。</p>
+  <p class="lede">如果行为可以分解为基本反射，就像物质分解为原子，那么神经科学就找到了自己的元素周期表。这个纲领曾经主导半个世纪，最后却连“简单反射真的存在吗”都答不上来。</p>
 
   <div class="chap-intro">
-    <p>19 世纪末到 20 世纪初，“反射”被寄予厚望：只要把行为分解为刺激—反应的基本单元，就能像力学分解运动一样重建整个神经系统。Loeb、Pavlov、Sherrington 都在这条路上工作。</p>
-    <span class="tag">历史案例 · 反例</span>
+    <p>这是全书第一个“简化失败”案例，也是最重要的反面教材。反射论用<strong>分解</strong>制造简单：把神经系统拆成反射弧，把行为拆成反射反应，并假定这些单元在不同语境中保持恒定。批评者从稳定性、特设假设、还原论、外推、生态效度与“抽象是否还有用”六个方向拆解它。作者的评价很克制：它作为<em>工具主义</em>纲领并非全无道理，但连工具性目标也完成得不好。</p>
+    <span class="tag">案例一 · 简化出错</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">反射弧</span><span class="chip">刺激—反应</span><span class="chip">Loeb</span><span class="chip">Pavlov</span><span class="chip">Sherrington</span><span class="chip">Dewey</span><span class="chip">Merleau-Ponty</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">反射论：把行为分解为“原子”</span></div>
-    <div class="thm-body">
-      <p>反射论的核心不是某个实验，而是一种分解策略：把神经系统或行为切成若干<strong>反射弧</strong>或<strong>反射反应</strong>，并假设这些单元的性质在条件变化时保持稳定。把它们相加，就应能解释整个有机体。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">从巴甫洛夫的狗到谢灵顿的“方便虚构”</span></div>
-    <div class="thm-body">
-      <p>Pavlov 用无条件与条件反射的组合解释行为，甚至不额外设定“更高级”的心理结构。Sherrington 研究反射如何协调成整体运动，却清楚知道：完整神经系统里，没有哪一部分能不受其他部分影响而独立反应。</p>
-      <p>但他仍为简单反射辩护：它是一个“方便的虚构”，拆出可单独考察的成分有助于分析。</p>
-    </div>
+    <span class="chip hot">反射弧</span><span class="chip">Loeb</span><span class="chip">Pavlov</span><span class="chip">Sherrington</span><span class="chip">Goldstein</span><span class="chip">生态效度</span><span class="chip">工具主义</span><span class="chip">能动性 (agency)</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">实验室里的反射，不是自然界的原子</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">反射论的失败不是“数据不够”，而是简化假设本身错了</span></div>
     <div class="thm-body">
-      <p>Dewey 在 1896 年批评反射心理学：把刺激与反应、感觉与运动清楚分开，是人为且误导性的抽象。真实有机体里，感觉与运动相互构成；所谓“刺激”只有在与一个正在进行的行动循环相关时，才成为刺激。</p>
-      <p>Merleau-Ponty 更尖锐：反射并不是“抽象”，它是一个<em>具体发生的事件</em>，只不过是在特定实验条件下被制造出来的特殊案例。</p>
+      <p>反射论把“反射”当作神经系统与行为的<strong>原子</strong>：稳定、基本、可在不同整体中保持同一。这个假定让还原、数学化与外推都显得顺理成章。可是实验显示：所谓简单反射的阈值、形态与存在与否，强烈依赖姿态、注意、刺激语境与整体状态。原子并不原子。</p>
+      <p>作者并不把失败归因于“他们太简化”。所有科学都简化。失败的原因是：<em>他们把为实验室干预而制造出来的分离，当成了自然本身已经存在的关节</em>。</p>
     </div>
   </div>
 
-  <div class="table-wrap cheat">
+  <h3><span class="sn">3.1</span>神经系统的原子与行为的元素 <span class="en">Atoms of the Nervous System and Elements of Behavior</span></h3>
+
+  <p>反射概念横跨“神经激活模式”与“不随意行为反应”两层，属于生理学心理学的混合遗产。Fearing 说，在 19 世纪到 20 世纪前 25 年，反射动作概念对这些学科的重要性，也许可比牛顿假说对物理学。与牛顿力学不同，反射力学今天已不再被行为科学家与神经科学家使用：它不在教科书里，几十年不是理论神经科学的训练内容。正因为它彻底失败，才值得作为“简化走错路”的案例研究。</p>
+
+  <p>反射论者用<strong>分解</strong>制造简单：把神经系统或动物行为分成假定的基本部分——反射弧或反射反应。这些反射是隐喻意义上的“原子/元素”：它们的属性被设定为不随周围条件变化，也不随动物整体运动模式变化。Loeb 把直觉说得极简：“为了科学进步，从较简单成分推出较复杂现象，比反过来更好。”这句话背后是对自然根本简单的信念，但它最多只有实用地位。</p>
+
+  <p>Loeb 与 Pavlov 是两位代表。Loeb 主要研究无脊椎动物生理，Pavlov 以狗的学习实验闻名。两人都设想：反射概念可以成为脑、神经系统与行为之完整统一解释的基础。两人都试图把生物学与心理学建模在物理科学上，把力学的分析方法用于动物：把神经系统与运动分解为组件，再希望这些组件的总和能解释整体。</p>
+
+  <p>Loeb 在《脑的比较生理学》开篇写：“对复杂现象的理解，依赖于把它们分析为简单基本成分。”他举眼睑在异物逼近时闭合、瞳孔对光收缩两例，给出反射定义：感觉神经末梢的变化产生神经冲动，传到中枢，再传到运动神经，终止于肌纤维并引起收缩；从受刺激部位到中枢、再回到外周肌肉的这条通路，就是反射。Pavlov 的定义几乎同构，并强调刺激与反应之间联系的“必然性”，认为这使反射成为“真正的科学概念”，是“永续平衡机制中的元素单位”。</p>
+
+  <p>Pavlov 的独特贡献是区分<strong>无条件反射</strong>与<strong>条件反射</strong>。前者与生俱来，切除皮层后仍存在；后者通过任意刺激（如某一频率节拍器的滴答）与先天引发反应的刺激（食物）建立联结而习得，其神经基础被认为在皮层。Pavlov 不设定任何额外的“高级”心理结构来控制反射行为：一切 actions 都由这两类反射决定。这种激进结论确实有追随者：Hull 与 Baernstein 说，条件反射“不仅是普通习惯，而且是整个心理生活的基本机制”，并提议造一台反射机器来检验这套 generalized theory of mind。</p>
+
+  <p>Sherrington 没有走得那么远，但他给了反射“单位机制”的经典表述：把神经系统视为整合功能时，反射弧是单位机制；反射是神经整合的单位反应，因为每个反射都是整合反应，而没有短于反射的神经动作算一个完整整合动作。他的看法是：这些基本活动单位在进化与发育中被组合起来，产生更复杂的行为；跑、走、跳是反射串联的结果。</p>
+
+  <p>Goldstein 把这种方法叫<strong>原子论</strong>。它不只是“把整体分成部分”，还包含一种还原论本体论：反射是基本组件，聚合起来构成整个神经系统；有机体是“一束可分离的机制，结构恒定，并以恒定方式回应环境事件（刺激）”。语境依赖的可能性——部分在整体中行为不同——没有被考虑。</p>
+
+  <h3><span class="sn">3.2</span>对反射论的批评 <span class="en">The Criticisms of Reflexology</span></h3>
+
+  <p>作者把批评整理为六条，并明确说这不是穷尽列表。她刻意不把 Thomas Graham Brown 算进去，因为他并不反对“分解为基本单元”的简化假设，只是提出另一种单元（“半中心”）。六条如下：</p>
+
+  <div class="table-wrap">
     <table>
-      <thead><tr><th>反射论的承诺</th><th>反例或困难</th><th>后果</th></tr></thead>
+      <thead><tr><th>#</th><th>批评</th><th>核心证据/论证</th><th>被打破的假设</th></tr></thead>
       <tbody>
-        <tr><td>可分解为稳定的反射单元</td><td>完整系统中没有部分能独立反应</td><td>“基本单位”只是实验制备</td></tr>
-        <tr><td>刺激与反应可清楚分开</td><td>感觉与运动在行动循环中相互构成</td><td>图式漏掉主动性</td></tr>
-        <tr><td>实验室反射可外推到野外</td><td>电刺激、固定动物等条件自然界不存在</td><td>解释不了自然行为</td></tr>
-        <tr><td>至少便于控制行为</td><td>行为工程与治疗成效有限</td><td>工具主义辩护也站不稳</td></tr>
+        <tr><td class="id">1</td><td>简单反射与条件反射缺乏稳定性</td><td>膝跳反射受姿态与注意影响；抓挠反射感受野阈值逐日变化；Pavlov 的狗在重复实验后进入催眠性木僵</td><td>反射是恒定原子</td></tr>
+        <tr><td class="id">2</td><td>理论充满特设假设</td><td>刺激未引发反应，就 posited “抑制”；抑制机制缺乏独立证据；正常/变异反射的界线失去依据</td><td>理论可被证伪</td></tr>
+        <tr><td class="id">3</td><td>还原论方法可疑</td><td>Goldstein：所谓可变过程若计入全部因果条件，并不比“恒定”过程更不恒定；复杂未必由简单推出</td><td>部分可独立于整体被理解</td></tr>
+        <tr><td class="id">4</td><td>从外周与脊髓向脑外推</td><td>Hough：我们只看到“进路”与“出路”，皮层里发生什么并不知道；把皮层当“第 n 次方复杂的反射”是信仰</td><td>外周生理学可代表中枢</td></tr>
+        <tr><td class="id">5</td><td>生态效度缺失</td><td>手术改变动物；实验室隔离；电刺激在自然环境中不存在；条件化是人为配对</td><td>实验室现象可外推到野外</td></tr>
+        <tr><td class="id">6</td><td>“简单反射”连作为抽象都缺乏用处</td><td>Dewey：刺激/反应、感觉/运动的清晰区分是人为抽象，掩盖了二者的相互依赖；Sherrington 也只敢说它是“方便虚构”</td><td>刺激与反应可独立定义</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">“就算字面为假，它作为工具仍然有用”</span></div>
-    <div class="thm-body">
-      <p>这是标准的工具主义辩护：模型不必为真，只要能预测、能控制，就有价值。Sherrington 本人也承认简单反射是虚构，却认为它有助于分析复杂反射。</p>
-      <p>Chirimuuta 的回应是：第一，<strong>“方便”需要被证明</strong>，而反射论在行为控制与临床干预上的成绩不足以兑现承诺；第二，即使虚构在局部有用，也不能悄悄升级为本体论承诺。Sherrington 的谨慎是诚实的；后来者的麻烦，是把“仿佛”读成了“就是”。</p>
-    </div>
+  <p>Goldstein 的攻击最系统。他指出：实验报告的“简单反射”并不显示理论所要求的稳定性与恒常性。Sherrington 自己报告，狗抓挠反射的感受野——皮肤上能引发抓挠的区域——阈值逐日变化。Pavlov 的条件反射更不稳定；Merleau-Ponty 追随 Buytendijk 与 Plessner 说，它太不稳定，无法承担理论任务。最戏剧性的例子是 Pavlov 报告的两只狗：经过反复条件化实验后，它们陷入催眠性木僵，对条件刺激与无条件刺激都不再给出预期反应。</p>
+
+  <p>这就引出“特设性”指控：当刺激不能引发预期反射，就假定一个“抑制”过程在阻止反应；可抑制机制没有独立证据。Goldstein 说，随着解释正常反射变异的假设不断增殖，理论就失去了区分“正常反射”与“变异”的资格。这个丧失之所以没被注意，是因为研究者自动把某类人工实验产生的反应归类为“正常”。</p>
+
+  <p>更根本的是还原论：Goldstein 认为，把可变反应还原为恒定反应，再把恒定反应当基本、可变反应当修饰，是一种“非常自然的、想处理恒定因素的愿望”。可所谓可变过程，若把全部因果条件算进去，并不比恒定过程更不恒定；关于简单与复杂、复杂能否由简单推出，真相也许相反。换句话说：<em>“简单”不是自然给出的起点，而是实验者通过控制条件制造出来的结果</em>。</p>
+
+  <p>第四条批评针对外推：反射论从脊髓与外周推断脑内未知结构。Hough 在 AAAS 演讲中说，我们追踪“进路”与“出路”，看到传入与传出纤维在皮层连接，但皮层里发生什么？它客观上是否只是“典型反射提高到 n 次方复杂度”？也许吧，但谁真正确信？值得注意的是，这种把皮层生理学当作“更复杂反射”的建模，是<strong>作为信仰</strong>被报告的。当时脑的神经解剖与生理远不如颈以下清楚；在无知中，反射论者做了简约假设：脑里不会有什么根本不同。后来的研究显示，这里的简约是误导。</p>
+
+  <p>第五条是生态效度。批评者甚至把反射论的中心现象视为<strong>实验人工制品</strong>。Goldstein 说，反射不过是“实验制造出的损伤的表达”，尤其因为腿部反射反应与动物在通常地面上行走的正常运动流之间差异明显。许多生理学家从不处理完整动物，因此没注意到这种不相似。Pavlov 虽然在未损伤神经系统的动物上做条件化，仍面临“人工设置限制推断”的批评：精确、重复的刺激配对，在人类控制之外的生活中不会发生；它解释不了野外的学习，只能说明人类训练动物的过程。Jennings 对 Loeb 的向光/向电反应也有类似批评：电刺激在生物环境中根本不存在，怎么能成为普通运动的解释基础？Buytendijk 与 Plessner 甚至说，Pavlov 的条件化研究只能说明神经症的发生。</p>
+
+  <p>第六条最哲学：Dewey 认为，反射心理学的基础假设——刺激与反应、感觉与运动之间的清晰区分——是人为且误导的抽象，掩盖了感觉与运动相互依赖的具体事实。Sherrington 承认简单反射是抽象，但辩称它至少是“方便虚构”。作者的态度是：如果这个虚构既不稳定、又不能外推、还不能解释整体行为，那么“方便”也要打折扣。</p>
+
+  <h3><span class="sn">3.3</span>仲裁 <span class="en">Arbitration</span></h3>
+
+  <h3><span class="sn">3.3.1</span>对反射论的实在论与工具主义立场 <span class="en">Realist and Instrumentalist Stances toward the Reflex Theory</span></h3>
+
+  <p>作者的关键 move 是：上述批评并非对所有版本的反射论都致命。要区分<strong>实在论</strong>版本与<strong>工具主义</strong>版本。</p>
+
+  <p>Pavlov 是双重还原论者：方法上还原，本体上也还原。他相信有机体只是物理化学机制的集合，反射是神经系统 relevant 的那个机制。因此，实验未能支持稳定、基本反射的存在，直接打击了他的理论。</p>
+
+  <p>但在美国，行为主义者提出了一种明确的工具主义版本。Skinner 受马赫与 Bridgman 影响，主张操作主义科学哲学：问“简单反射是否真的存在”“某个实验是否充分揭示了它”既无必要也误导。他说：如果“反射”指一个独立于观察、观察只能逼近的假设实体，这些问题就是学院式的，不必纠缠；如果把反射定义为一组观察到的相关，或对观察相关的统计处理，这些问题就是无意义的，因为它们忽略了定义所隐含的分析过程。反射离开操作定义就没有科学意义。</p>
+
+  <p>于是，第一条批评——简单稳定的反射不存在，因此神经系统不是由它们复合而成——只能打击本体论版本，打不到 Skinner 的操作主义版本。Skinner 在评论 Goldstein 的《有机体》时正是这么说的：Goldstein 没有考虑一种可能——不相信反射是“东西”，仍可坚持“把反应与刺激及其他变量相关起来”的预测价值；“反射是否存在”这个大概无意义、肯定不重要的问题，承担了攻击的全部重量。</p>
+
+  <p>这就带来一个转变：从“自然本身简单”转向“我们制造简单现象”。反射论的工具主义版本不再声称简单反射是自然结构的一部分（那会滑向形而上学），只说它服务某些实践目的。这与马赫、Bridgman 一致：科学任务是给充分发展的人提供尽可能好的定向手段；科学的“思维经济”不是揭示自然秩序，而是因为简单性有用。Bridgman 说，科学家对自然根本简单的信念，最多只有实用地位；方法还原论因易用而有吸引力，但它的重要性会被不成比例地放大。</p>
+
+  <p>于是，方法还原论、生态效度、甚至“简单反射不存在”的指控，对工具主义版本都不致命——只要简化服务于一个准工程计划：产生特定反应与行为。反射论者作为技术专家，不再把自己看作追求自然真理的无私研究者，而是试图命令自然过程的人。美国行为主义者热情拥抱第二种职业描述。Watson 的行为主义宣言开篇就说，心理学的“理论目标是预测与控制行为”。Loeb 的生物学模型直接影响了学生 Watson：Watson 的核心创新，是把行为控制放在心理学科学的基础；通过主张“控制即知识”，他打破了纯心理学与行为技术之间的壁垒。行为主义是 Loeb 式科学的典范，组织在“把生命现象置于我们控制之下”的欲望周围。</p>
+
+  <h3><span class="sn">3.3.2</span>分歧的视角 <span class="en">Divergent Perspectives</span></h3>
+
+  <p>但作者不满足于“实在论 vs 工具主义”的二分。她认为，更能解释分歧的是双方对<strong>能动性</strong>（agency）的不同态度——既包括科学家的能动性，也包括被研究有机体的能动性。</p>
+
+  <p>在反射论、尤其 Skinner 的行为主义发展中，我们只需从外部知道刺激与反应、原因与结果之间的关系；动物是一个黑箱。内在倾向、驱力、素质，要么是更彻底研究外部原因的素材，要么是新的控制形式的跳板（如操作条件化）。这幅图景<strong>抹掉了被研究者的能动性</strong>：人或动物被环境被动塑造，并受研究者能动性的支配。</p>
+
+  <p>对 Goldstein 而言，有机体的内在倾向、以及不由研究者因果干预产生的行为，才是研究核心。他给有机体真正的能动性：可以把它理解为自发的、自我决定的活动。外部刺激的效果，必须相对于整个有机体及其当时试图达成的东西来解释。例如，条件反射只有在帮助儿童“实现其人格”时，才算真正的习惯。这里有一种循环因果：有机体内部、有机体与环境之间，而不是刺激—反应的线性图景。</p>
+
+  <p>作者提醒，不要因为“有机体的本性”“潜能/实现”听起来形而上学，就把 Goldstein 当成纯沉思的自然哲学。他的神经科医生实践包含治疗干预；只是他不认为治疗成功可以靠零敲碎打的还原方法，而必须考虑病人的人格、缺陷与能力的整体。健康与疾病，按是否允许或阻碍病人的自我实现来定义，而不是纯客观的生理术语。</p>
+
+  <p>所以，真正的分歧不是“实在论/工具主义”或“纯科学/应用科学”，而是：<em>是否承认被研究系统有自己的能动性，以及这种能动性是否必须进入解释</em>。行为主义把动物变成刺激的通道；Goldstein 把动物变成会朝向目标重新组织自身行为的主体。两种视角产生不同的“相关性”标准，也产生不同的实验设计。</p>
+
+  <h3><span class="sn">3.4</span>反射论的后世 <span class="en">The Afterlife of the Reflex Theory</span></h3>
+
+  <p>反射论没有完全消失。作者说，从反射学到控制论，再到认知科学与计算神经科学，存在一种“精神气质”的连续性：都试图在机器中复制认知，都倾向于把生物学建模在物理科学的方法上，都认为在非生命装置中复制神经系统的操作没有原则障碍。区别在于：Loeb、Sherrington、Pavlov 的反射论主要是经验的，不是数学的；它直接理论化神经系统，而不是通过一个与神经系统类似的物理模型作中介。</p>
+
+  <p>控制论是连接环节。它带着反射论的印记，又产生了今天支配计算神经科学的神经网络建模概念。Ashby 的《为大脑设计》开篇就说：迄今发明的机器与脑的差异，只是因为发明没有采用某个对脑的适应性至关重要的操作原则；书的目的是表明，用这个原则，机器的行为可以变得任意自适应，甚至可解释人的适应性。书中还引用了 Pavlov 的先天/习得反射区分。Grey Walter 的“乌龟”机器人 <em>Machina speculatrix</em> 更是直接：用光趋性驱动，神经系统由“两个感觉反射”构成，却给人目的性探索的印象。Walter 不把它当单纯模仿，而当成在实例化自然中的“原则”（如内部稳定性）。</p>
+
+  <p>再往后是 McCulloch 与 Pitts 的形式神经元：把细胞表示为对输入求和、给出全或无输出的简单装置。这些模型神经元被刻意做得尽可能贫乏，类似无摩擦表面与质点。它们证明：在一定假设下，小群连接模型神经元可以像逻辑门一样工作，从而支持“脑在字面上是计算机”的主张。McCulloch 后来写道：人造机器不是脑，但脑是一种非常未被理解的计算机。</p>
+
+  <p>作者用这个“后世”说明：反射论的失败并不是因为“还原/分解”本身荒谬；而是因为它在<strong>错误的关节</strong>上分解，并把实验室制造出来的单元当成自然单元。控制论与计算主义继承了它的雄心，却换了一套单元（反馈回路、逻辑门、计算）。它们是否重复同样的错误，是第四、五、六章的问题。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>节点</th><th>核心内容</th><th>关键人物/证据</th><th>教训</th></tr></thead>
+      <tbody>
+        <tr><td class="id">3.1</td><td>反射作为神经系统/行为的原子</td><td>Loeb、Pavlov、Sherrington、Hull & Baernstein</td><td>分解策略依赖“单元恒定”假设</td></tr>
+        <tr><td class="id">3.2</td><td>六条批评：不稳定、特设、还原论、外推、生态效度、抽象无用</td><td>Goldstein、Dewey、Hough、Jennings、Merleau-Ponty</td><td>实验室分离 ≠ 自然关节</td></tr>
+        <tr><td class="id">3.3.1</td><td>实在论版本被击倒，工具主义版本可幸存</td><td>Skinner 的操作主义、Mach/Bridgman、Watson</td><td>“有用”可以独立于“真”</td></tr>
+        <tr><td class="id">3.3.2</td><td>分歧实为对能动性的态度</td><td>Goldstein vs Skinner</td><td>解释框架决定什么算相关</td></tr>
+        <tr><td class="id">3.4</td><td>反射论的后世：控制论→计算主义</td><td>Ashby、Walter、McCulloch-Pitts</td><td>换单元不等于换错误</td></tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">从这段历史读出的三个错误教训</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于反射论的四个误判</span></div>
     <div class="thm-body">
-      <p><strong>一、“简单 = 基本”。</strong>在实验里容易被分离，不代表在系统中是基本单元。</p>
-      <p><strong>二、“能触发 = 能解释”。</strong>用电极触发一个动作，不等于说明它在自然行为中的功能。</p>
-      <p><strong>三、“理论失败，所以简化都不可靠”。</strong>简化是必要的；问题是要对条件保持敏感。</p>
+      <p><strong>一、“反射论只是旧时代的蠢理论”。</strong>它曾是高度成功的研究纲领，且其控制论后裔仍在。失败的是特定简化假设，不是“分解”本身。</p>
+      <p><strong>二、“Goldstein 证明了还原论永远错”。</strong>他证明的是：在这个对象上，部分的行为不近似于其在整体中的行为；这是局部结论，不是普遍反还原论。</p>
+      <p><strong>三、“Skinner 的工具主义因此赢了”。</strong>工具主义躲过了本体论批评，却仍要面对“工具是否好用”的检验；作者说反射论连行为工程的目标也完成得不好。</p>
+      <p><strong>四、“生态效度=必须到野外做实验”。</strong>它指的是实验现象能否代表未受干预的系统；可以在实验室里设计更有生态效度的范式，也可以把野外现象带回实验室。</p>
     </div>
   </div>
 </div></section>
@@ -741,135 +1152,277 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch4" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 4 · Your Brain Is Like a Computer</div>
   <h2><span class="num">4</span>你的大脑像一台计算机——像，但不是</h2>
-  <p class="lede">计算主义之所以强大，不是因为它证明了大脑真的在运行程序，而是因为它提供了一种极高效的看脑方式。问题出在从“像”滑到“是”的那一步。</p>
+  <p class="lede">计算机类比是当代神经科学最成功的简化装置。它让科学家知道该找什么、该忽略什么。问题出在从“像”滑到“就是”：一旦把模型的结构当成脑内预存的结构，类比就变成了形而上学。</p>
 
   <div class="chap-intro">
-    <p>从控制论到认知科学，计算机一直是神经科学最成功的类比来源。Chirimuuta 不否认计算模型的生产力；她要拆解它的<strong>解释结构</strong>：模型与大脑之间被看见的相似性，是被选择、放大、按摩出来的。</p>
-    <span class="tag">计算主义 · 类比</span>
+    <p>本章处理<strong>数学化 + 类比</strong>的结合：用计算机这个较简单、按功能设计的人造物，为脑建立可计算的模型。作者区分<strong>字面解释</strong>（脑真的在执行模型所说的计算）与<strong>类比解释</strong>（脑在某些方面像模型，相似性依赖于研究目的与实验技术）。她主张后者，并说明前者是形式实在论的残余。</p>
+    <span class="tag">案例二 · 计算机类比</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">计算主义</span><span class="chip">控制论</span><span class="chip">Marr 三层次</span><span class="chip">Laplacian of Gaussian</span><span class="chip">字面解读</span><span class="chip">类比解读</span><span class="chip">多重可实现性</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">大脑“是”计算机，还是“像”计算机？</span></div>
-    <div class="thm-body">
-      <p><strong>字面解读：</strong>大脑确实在执行计算；模型描述的函数就是大脑实现的函数；因为计算可多重实现，同样的计算也能在硅基机器上实现。</p>
-      <p><strong>类比解读：</strong>模型是简化的类比物。它帮我们组织数据、生成假设、预测响应，但不承诺大脑与计算机共享同一个本体论结构。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">Marr 的高斯-拉普拉斯模型：被忽略的不对称</span></div>
-    <div class="thm-body">
-      <p>Marr 与 Ullman 用高斯-拉普拉斯算子解释猫的视网膜神经节细胞与外膝体神经元的边缘检测。模型与神经元在“对亮暗边缘都有响应”上相似，于是推论：这些神经元在计算 $\nabla^2 G$。</p>
-      <p>但原始数据里有一个模型没捕捉到的规律：<strong>神经元对亮边缘与暗边缘的响应并不对称</strong>，对刺激进入与离开感受野的响应也不对称；模型给出的正负峰却对称。</p>
-    </div>
+    <span class="chip hot">控制论</span><span class="chip">McCulloch–Pitts</span><span class="chip">功能前景化</span><span class="chip">机制 vs 功能</span><span class="chip">字面解释</span><span class="chip">类比解释</span><span class="chip">形式实在论</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">相似性不是被发现的，是被组织的</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">计算模型的成功，不证明脑在字面上是计算机</span></div>
     <div class="thm-body">
-      <p>类比推理是：源域与目标域共享若干已知相似性，因此推断它们还共享某个未知性质。Chirimuuta 的补充是：在神经科学里，<strong>哪些相似性算数、哪些差异可以忽略，本身就是建模者的判断</strong>。</p>
-      <p>因此，计算模型的生产力不能直接证明计算主义。一个模型可以极具预测力，同时它的本体论承诺是错的。字面解读把“在某个任务上可这样描述”升级成了“本质上就是这样”。</p>
+      <p>计算模型之所以有用，正因为它把“功能”放在前景，把神经生物学细节放进背景。它允许科学家把单个神经元抽象成输入—输出装置，把皮层活动抽象成信息处理。这个抽象带来巨大的研究效率，但它同时<em>定义了</em>什么算相关、什么算代谢支持。</p>
+      <p>因此，从模型预测成功推出“脑实现了同样的计算”，是一个额外的、未经证实的形而上学步骤。作者不否认计算研究是当前最好的游戏；她否认的是“唯一游戏”的本体论结论。</p>
     </div>
   </div>
 
+  <h3><span class="sn">4.1</span>从控制论到计算大脑 <span class="en">From Cybernetics to the Computational Brain</span></h3>
+
+  <p>第三章的结论之一是：从早期反射生理学到今天的计算神经科学，存在传统连续性。这个传统把物理科学的方法用于生物对象，并认为在非生命装置中复制神经系统的操作没有原则障碍。但反射论主要是经验的，不是数学的；它直接理论化神经系统，而不是通过物理模型作中介。</p>
+
+  <p>最早认真走向数学化的一步，不是通过人工装置类比。Rashevsky 是乌克兰裔美国物理学家，在芝加哥创立生物物理实验室；他用高度理想化、生物上不太可信的模型处理神经兴奋、条件反射等目标，理由是物理学几百年来就是这样管理复杂现象的。他说：数学方法的关键，是从非常复杂的一组现象中抽象出本质特征，从而简化问题；更复杂的特征随后按重要性与复杂性逐步作为第二、第三、更高阶近似处理。抽象会让我们“失去与实在的接触”，但只要记住这一点就无害；生物现象的复杂性反而是使用数学方法的理由，不是反对理由。可他也持续遭到更懂生物学的同事批评：模型太不真实，与经验观察脱节，缺乏预测力。</p>
+
+  <p>Rashevsky 走的是“直接数学化”路线。另一条是<strong>间接路线</strong>：先造一个在某些方面功能等价于神经系统的物理装置，再用装置的数学描述作为原神经目标的第一次近似。控制论让这条路线占据中心。Zuckerman 说得直白：关于心—脑关系的全部知识，不太可能从对活有机体的“直接攻击”中获得；幸运的是，电子学的发展允许我们用类比来代表至少一部分问题——机器可以被制造，并已经存在，它们表现出某些心理过程的属性。</p>
+
+  <p>Ashby 与 Wiener 分别是英国与美国控制论的代表。Wiener 明确把“发明出来的物件”（material models）当作简化方法：用被假定更简单的系统，代表复杂系统，并让它具有原系统中被选来研究的某些属性。但 Wiener 的总体语调抹平了活有机体与自调节人造物之间的操作原则差异——他的书名就是《控制论：或动物与机器中的控制与通信》。Ashby 的《为大脑设计》也以“机器可以像我们希望的任意自适应”为目标，并引用 Pavlov 的先天/习得反射区分。Grey Walter 的“乌龟”机器人用光趋性与避障，给人目的性探索的印象；他不把它当单纯模仿，而当成在实例化自然中的“原则”（如内部稳定性）。</p>
+
+  <p>与今天的神经建模更直接相关的是 McCulloch 与 Pitts（1943）。他们把细胞表示为对输入求和、给出全或无（数字）输出的简单装置。这些模型神经元被刻意做得尽可能贫乏，类似无摩擦表面与质点。他们证明：在一定假设下，小群连接模型神经元可以像逻辑门一样工作，从而支持“脑在字面上是计算机”的主张。McCulloch 后来写：“人造机器不是脑，但脑是一种非常未被理解的计算机。”这句话同时包含了字面解释的野心与它的谦卑版本。</p>
+
+  <p>作者总结：这些人工物质模型宣称具有生理相关性，靠的是一个强假设——尽管二者差异明显，但在某个抽象层次上，它们共享某种本质共性，比如 Walter 的“原则”，或今天说的“计算结构”。这个假设需要审查；它也正是<strong>字面解释</strong>的基础。</p>
+
+  <h3><span class="sn">4.2</span>简化与计算大脑 <span class="en">Simplification and the Computational Brain</span></h3>
+
+  <p>计算机类比为什么能简化？因为它把系统分成两部分：与信息处理有关的功能结构，以及可被归入背景的“支持系统”。经典神经元图景——树突收集输入、计算一个函数、沿轴突输出一串脉冲——是这种区分最流行的用法。它比 McCulloch–Pitts 形式宽泛得多，但正是后者传播了“单个神经元是输入—输出处理单元”的观念，让建模者有了借口，抽掉大部分细胞生物学。</p>
+
+  <p>Papert 把这种“解放效果”说得很清楚：在局部层面，它消除了理解神经系统整合行为时对单个细胞详细生物学的全部考虑；办法是假定一个假设性的神经元物种，完全由“输出是受限输入集合的逻辑函数”来定义。这个简单图景的效用，很大程度上解释了“神经元学说”为何在反面证据面前仍能持续：神经元是神经系统的功能单位，其专属工作是接收、处理、发送信息。</p>
+
+  <h3><span class="sn">4.2.1</span>把功能放到前景 <span class="en">Putting Function in the Foreground</span></h3>
+
+  <p>这条策略从具体神经系统出发，把所有被归类为“非功能背景支持”的特征抽掉。另一种操作是：先指定一个认知任务（例如检测照片中的边缘），再考虑完成它需要什么计算，然后造一个人工系统（计算模型）来执行任务，最后把模型当模板/地图，在脑中寻找负责该任务的激活与连接模式。</p>
+
+  <p>Lettvin 为这种方法辩护：即便理想情况下能记录任何元件，记录本身也不显然可解释；在当前科学中，我们比在其他科学中更必须“知道要找什么才能认出它”。这需要一种 prior art，一种对过程设计的理解；AI、PDP、整个建造智能模型的投资，正由此进入。批评者抱怨这些“魔像”不像我们的朋友 Tom、Dick、Harry；但一个能工作的魔像不仅优于完全无知，还展示了如何设计与我们难以用神经活动解释的过程相类似的过程，并提示该找什么。</p>
+
+  <p>作者补了一个当代转折：今天“知道要找什么”的问题更尖锐，因为观察工具的增加揭示了更多复杂性。Frégnac 说，每克服一个技术壁垒，就打开一个 Pandora 盒子，揭示隐藏变量、机制与非线性，增加新的复杂性层次；达到微观分辨率后，先进技术揭示了一个多样性与随机性的新世界，而这是早期用 spike rate 或介观成像看不到的。作者的点是：如果人工系统不共享微观细节也能复制某些功能，那就有了一个“把 Pandora 盒子关着”的借口。这个借口有用，但它同时把“被关在盒子里的东西是否与认知有关”变成悬而未决的问题。</p>
+
+  <h3><span class="sn">4.2.2</span>机制与功能 <span class="en">Mechanism and Function</span></h3>
+
+  <p>计算建模与机制研究互相支持。机制研究寻找规则、有界的因果交互簇，以解释生理与认知现象。但作者问：即便接受“本体论机制解释”，科学家如何学会区分相关与不相关因素？生物系统、尤其神经系统，是一个密集互联的因果网，有多个结构层次、跨尺度的效应模式。Craver 与 Kaplan 诉诸“相互可操纵性”标准；可一旦用于实践，就很难看出如何只分离出与某现象相关的因果因素，而不把背景条件也算进去。</p>
+
+  <p>另一个说法是：神经机制的边界不是简单地在脑中“在那里”，等着被少量因果实验发现。把脑切成机制、并与背景条件分开，有许多都正当的方式；计算视角只是其中一种，恰好提示了一组特别富有成果的划分。物理学家的视角与工程师的视角，可以作为机制与计算进路的类比：把脑结构当物理系统，它是一个因果 nexus，功能概念对它是异质的；而工程视角天然带有设计与功能概念，把脑当逆向工程对象。计算进路先问“这个系统是干什么的”，再问“如何实现”。面对复杂生物系统，纯物理 stance 会很快在纠缠的因果细节中迷路。</p>
+
+  <p>作者并不说计算是唯一可能的理论，也不说它可以脱离机制事实。理想情况下，两种视角互相约束、互补。</p>
+
+  <h3><span class="sn">4.3</span>脑—计算机关系的两种解释 <span class="en">Two Interpretations of the Brain-Computer Relationship</span></h3>
+
+  <p>用机器阐明生命功能，至少可追溯到 18 世纪的自动机制造者。开放问题是：要理解这种研究模式为何有效，是否必须把人工模型<strong>字面地</strong>解释为复制、并因而揭示活系统中同一过程/功能？还是可以把机器—有机体关系当作<strong>类比</strong>：有机体在某些方面像机器，同时承认大量差异（disanalogies）限制了比较的适用范围？</p>
+
+  <p>作者认为，字面解释在神经科学家中是多数派（只要把计算机定义得足够宽：编码输入、操作表征、按算法转换为输出）。抱怨“脑不是计算机”的神经科学家，通常只是说脑不是数字、串行机器，同时仍主张脑是另一种计算机。许多人认为，电子与神经组织在信息处理上的差异不构成障碍，计算复制终将解释认知，并在机器中再现这些能力。</p>
+
+  <p>字面解释是<strong>形式实在论</strong>的一个实例：它假定计算模型中表征的结构独立于科学家的实验与理论工作而存在于神经系统；而且这个计算结构对脑拥有其认知能力是本质性的。形式实在论本身不蕴含多重可实现性，但因为这里是“计算”，多重可实现性随之而来：同一个计算原则上可由多种物质实现，包括机械/电子计算机与生物组织。抽象数学形式被实现在多种物质基底中，这种图景在计算史上很有吸引力。</p>
+
+  <p>形式唯心论者则说：计算模型中表征的数学形式，不是对脑内数学结构或信息处理的直截发现，而是通过艰苦的实验、建模与类比推理建构出来的。让脑作为“处理信息的器官”而变得可理解的那些数学结构，在某种程度上是被科学家<strong>强加</strong>到神经系统上的，不应被当作系统内在数学形式的发现。既然按假设，神经计算模型不是对脑内在计算能力的发现，而是像其他科学模型一样抽象、理想化，那么<strong>类比解释</strong>就比字面解释更合适。</p>
+
+  <p>作者预先澄清：她不是把类比定义为脑与模型之间的同构/同态。若那样定义，类比关系就等于“同一计算结构被实例化在神经系统中”，字面解释与类比解释之间就没有缝隙了。她的意思是：说模型应被类比地解释，是说目标在某些方面像模型，而这些方面可能依赖于科学家的兴趣与技术。关键点是：脑中“与计算模型相关地相似”的结构，不被假定为内在的、独立于人的事实；它是一个<strong>理想模式</strong>，其特征既由被研究的脑决定，也由研究者的活动决定。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">Marr 的边缘检测：类比推理如何被误读为字面真理</span></div>
+    <div class="thm-body">
+      <p>Marr 与 Ullman 的框架是经典。猫的早期视觉系统（视网膜神经节细胞、LGN）对边缘的响应模式，被类比为高斯的拉普拉斯算子（Laplacian of Gaussian）的计算。类比推理的结构是：两个系统在“行为”上相似（都能检测边缘），在激活模式上相似；于是推断神经活动“像”这个计算。差异（物质实现）被判断为与当前研究目的无关。</p>
+      <p>Marr 本人走得更远，说 ∇²G 函数“就是”X 细胞所携带的东西。作者认为这是形式实在论，而不是她支持的较弱解释。类比解释只主张：在这个研究目的下，忽略实现差异是合理的；它不主张脑在字面上执行该函数。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">4.4</span>评估 <span class="en">Assessment</span></h3>
+
+  <h3><span class="sn">4.4.1</span>为什么不作字面解释？ <span class="en">Why Not Interpret Literally?</span></h3>
+
+  <p>作者给出几层理由。第一，计算模型是抽象：它省略了脑作为活组织的无数细节。第二，字面解释需要一种“计算实现”理论，说明物理系统如何实现计算；这类理论本身争议巨大。第三，字面解释倾向于把差异（代谢、身体、情绪、胶质、神经调质）当成无关背景；可这些差异可能正是认知能力的条件。第四，字面解释容易滑向“计算本质主义”：脑的生物功能就是计算功能，因此必然多重可实现。作者拒绝这个推论。</p>
+
+  <p>她也不认为字面解释与类比解释“实际上没差别”。差别在于：字面解释承诺模型结构是脑内独立事实；类比解释只承诺在特定研究目的下，模型与目标共享一个理想模式。前者让你从预测成功直接推出本体论结论；后者不让你这么推。</p>
+
+  <h3><span class="sn">4.4.2</span>超越类比 <span class="en">Beyond the Analogy</span></h3>
+
+  <p>作者引 Canguilhem 的观察：在生物学（而非物理学）中，研究者倾向于过度解释类比模型；物理学使用定量类比模型时，不会诱使研究者把类比源的 ontology 投射到目标上，生物学则常缺少这种谨慎。差异在于：用无机系统类比有机目标，带有“把有机还原为无机”的承诺，所以字面解释特别诱人。控制论模型尤其如此，尤其当模型的行为（如机器人）模仿自然行为时。</p>
+
+  <p>结论：形式实在论承诺我们可以设计定量、形式、清晰的模型，忠实镜映神经系统支持认知的过程；这诱使人们字面解释神经计算模型，并倾向于压低脑与硅计算机的差异，把代谢支持留在理论神经科学之外。作者不保证“把有机智能当作 sui generis”一定能解开生物认知之谜；但她确定：用注意类比与失配的进路取代形式实在论，至少能帮我们避开过度字面解释所指出的错误方向。</p>
+
   <div class="table-wrap cheat">
     <table>
-      <thead><tr><th>维度</th><th>字面解读</th><th>类比解读</th></tr></thead>
+      <thead><tr><th>节点</th><th>核心内容</th><th>关键人物/例子</th><th>结论</th></tr></thead>
       <tbody>
-        <tr><td class="id">模型地位</td><td>描述大脑真实执行的计算</td><td>组织数据、生成假设的工具</td></tr>
-        <tr><td class="id">相似性</td><td>反映共享的计算结构</td><td>被选择、放大、任务相关</td></tr>
-        <tr><td class="id">差异</td><td>实现细节，原则上可忽略</td><td>可能是理论线索，需保留</td></tr>
-        <tr><td class="id">AI 推论</td><td>原则上可复制认知</td><td>只能复制被建模的功能片段</td></tr>
+        <tr><td class="id">4.1</td><td>从直接数学化到控制论间接路线</td><td>Rashevsky、Zuckerman、Ashby、Walter、McCulloch–Pitts</td><td>模型共享“原则/计算结构”是强假设</td></tr>
+        <tr><td class="id">4.2</td><td>计算类比把功能前景化，允许抽掉细胞生物学</td><td>Papert、Lettvin、Frégnac</td><td>研究效率来自选择性忽略</td></tr>
+        <tr><td class="id">4.2.2</td><td>机制边界不是自然现成；计算视角提示划分</td><td>Craver & Kaplan、工程 vs 物理 stance</td><td>机制与功能互补而非唯一</td></tr>
+        <tr><td class="id">4.3</td><td>字面解释=形式实在论；类比解释=形式唯心论</td><td>Marr & Ullman、∇²G、多重可实现性</td><td>类比不预设同构</td></tr>
+        <tr><td class="id">4.4</td><td>字面解释缺实现理论、低估差异</td><td>Canguilhem、代谢/身体差异</td><td>预测成功≠本体论结论</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">字面解读难道不更简洁、更有生产力吗？</span></div>
-    <div class="thm-body">
-      <p>支持者会说：既然计算语言已经能成功预测、干预、构建系统，为什么还要保留更弱的“类比”说法？字面解读让跨学科合作更顺畅，也让 AI 的工程目标更清晰。</p>
-      <p>Chirimuuta 的回应是：<strong>生产力不是本体论的证明</strong>。地心说也能预测行星位置，燃素说也曾组织实验。实用成功最多说明框架抓住了可操作的结构；要决定是否字面为真，必须独立考察大脑与计算机的<em>差异</em>。</p>
-    </div>
-  </div>
-
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">计算模型的三个越界</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">四个容易滑过去的步骤</span></div>
     <div class="thm-body">
-      <p><strong>一、把“能拟合”当“已实现”。</strong>同一数据集可被无数模型拟合；拟合优度不唯一确定实现方式。</p>
-      <p><strong>二、把“忽略差异”当“差异不存在”。</strong>被忽略的细节可能在另一个问题上决定一切。</p>
-      <p><strong>三、把 Marr 的三层次当本体论分层。</strong>计算、算法、实现是分析框架，不是脑内的三个抽屉。</p>
+      <p><strong>一、“脑不是数字计算机，所以计算主义错了”。</strong>作者不这么论证。她针对的是字面解释，不是“计算模型无用”。</p>
+      <p><strong>二、“类比解释=只是隐喻，没有认知价值”。</strong>错。类比可以产生真正的理解与预测，只是不承诺本体论同一。</p>
+      <p><strong>三、“多重可实现性已被证明”。</strong>作者认为这是功能主义的形而上学承诺，不是经验发现；脑的可塑性不等于“基质无关”。</p>
+      <p><strong>四、“机制解释更真实，计算解释只是工具”。</strong>两者都是视角；机制边界同样依赖划分与目的。</p>
     </div>
   </div>
 </div></section>
 
 <section id="ch5" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 5 · Ideal Patterns and “Simple” Cells</div>
-  <h2><span class="num">5</span>理想模式：简单细胞是实验室的产物</h2>
-  <p class="lede">“简单细胞”听起来像大脑里一种客观存在的零件。Chirimuuta 要说的是：它更像一件在麻醉、固定刺激与线性分析共同作用下被精心做出来的现象。</p>
+  <h2><span class="num">5</span>理想模式：“简单细胞”是实验室的产物</h2>
+  <p class="lede">简单细胞不是从脑中直接读出来的自然种类。它是麻醉、电极、刺激选择、试次平均与分类阈值共同塑造出来的<strong>现象</strong>（phenomenon）。可正因为它被造得如此规则，它才成了可计算模型与深度网络的技术源头。</p>
 
   <div class="chap-intro">
-    <p>这是全书最具体的科学案例，也是“理想模式”概念的主场。Hubel 与 Wiesel 在猫和猴子 V1 中发现对朝向敏感的神经元，后续研究把它们刻画为线性滤波器。Chirimuuta 不否认这些发现的重要性；她追问的是：<strong>从一只野外的猫，到一个可解释的线性模型，中间经过了哪些简化？</strong></p>
-    <span class="tag">视觉神经科学 · 实验哲学</span>
+    <p>本章把第三章（实验分解）与第四章（计算建模）接起来，提出全书最重要的概念：<strong>理想模式</strong>（ideal pattern）。它既不是纯自然规律，也不是纯主观虚构，而是科学家在物质系统上加工出来、再用数据处理增强的规则性。作者用 V1 简单细胞的故事展示“实验→数据→现象→模型”的流水线，再追踪它的理论后果（Barlow 神经元学说）与技术后果（DCNN），最后说明“大数据、生态转向”并没有消除人工性，只是换了位置。</p>
+    <span class="tag">案例三 · 理想模式</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">简单细胞</span><span class="chip">感受野</span><span class="chip">Hubel &amp; Wiesel</span><span class="chip">线性-非线性模型</span><span class="chip">实验到模型流水线</span><span class="chip">生态转向</span><span class="chip">人工模型生物</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">理想模式：比自然现象更规则的现象</span></div>
-    <div class="thm-body">
-      <p>理想模式不是单纯公式，也不是原始数据。它是实验条件、测量仪器、数据处理与理论解释共同稳定下来的<strong>可重复规律</strong>，比野外的脑活动更规则、更对称、更少噪声。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">从 ON/OFF 感受野到“简单细胞”</span></div>
-    <div class="thm-body">
-      <p>Hubel 与 Wiesel（1962, 1968）发现，V1 神经元的感受野不是同心圆，而是拉长的、彼此拮抗的 ON/OFF 条带。对刺激位置敏感、可在感受野内线性求和的，被称为<strong>简单细胞</strong>；对位置不那么敏感的，被称为<strong>复杂细胞</strong>。</p>
-      <p>Movshon、Thompson 与 Tolhurst（1978）把简单细胞刻画为线性空间求和加输出非线性：加总 ON 区光量，减去 OFF 区光量，再给一个非负放电率。这个“线性-非线性”模型极简洁，也极好懂。</p>
-    </div>
+    <span class="chip hot">简单细胞</span><span class="chip">感受野</span><span class="chip">实验→模型流水线</span><span class="chip">理想模式</span><span class="chip">Barlow</span><span class="chip">DCNN</span><span class="chip">大数据转向</span><span class="chip">人工性</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">流水线：模型之前，实验已经简化过一次</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">“简单细胞”是被制造的现象，但制造不等于无效</span></div>
     <div class="thm-body">
-      <p>Chirimuuta 把过程画成五段：<strong>野外的脑活动 → 实验室中的脑活动 → 数据集 → 理想模式 → 解释性模型</strong>。麻醉去掉了行为与注意的波动；电极、刺激、采样与统计又在筛选；到第四步，规律才被固定。</p>
-      <p>因此，简单细胞模型之所以可解释，不只是数学漂亮，而是因为<em>实验已经替模型简化过一次</em>。实验者用简单刺激“迫使”系统表现得线性。</p>
+      <p>Hubel 与 Wiesel 观察到的 V1 细胞确实存在；但“简单细胞”这个具有线性空间求和、ON/OFF 分明、相位敏感等特征的类别，是在特定实验条件下被<em>塑形</em>出来的。麻醉压掉行为调制，人工刺激压掉复杂图像的上下文，单电极记录压掉群体互动，试次平均压掉变异，F1/F0 比值把连续分布切成两类。</p>
+      <p>这个现象不是“自然中原本就有的稳定类型”，而是理想模式。可它仍然能提供<strong>非事实性理解</strong>（nonfactive understanding）：它不告诉您 V1 的全部真相，却让您能设计实验、造出 DCNN、并在特定任务上成功。</p>
     </div>
   </div>
 
-  <div class="table-wrap cheat">
+  <h3><span class="sn">5.1</span>简单细胞的创造 <span class="en">The Creation of the Simple Cell</span></h3>
+
+  <p>实验室的本质特征不只是墙和屋顶，而是<strong>屏蔽</strong>：挡住天气、电磁辐射，也挡住脑内其他地方产生的干扰。Cartwright 说，物理现象在实验室里被成功展示与解释，不保证它在别处也能发生。简单细胞现象也依赖屏蔽，只不过挡的不是雨与辐射，而是皮层依据环境复杂性自我塑造所产生的干扰。</p>
+
+  <p>先补背景。<strong>感受野</strong>（receptive field, RF）描述一个视觉神经元对视野中何种光模式、在何处起反应。术语由 Sherrington 在反射论语境中引入：抓挠反射的感受野是狗背上能触发后腿抓挠的皮肤区域。后来用于视神经纤维与蛙视网膜神经节细胞。V1 接收丘脑外侧膝状体（LGN）的输入，LGN 又接收视网膜神经节细胞（RGC）的输入。</p>
+
+  <p>Hubel 与 Wiesel（1962 猫，1968 猴）发现：RGC 与 LGN 细胞有圆形感受野——中心“ON”区被光照射会兴奋，外围同心“OFF”区会抑制；而 V1 细胞的感受野是<strong>拉长</strong>的，由平行的 ON/OFF 条带组成。这提示：某些 V1 神经元通过接收一排空间对齐的 LGN 圆形感受野输入，获得拉长响应特征。这类细胞被称为<strong>简单细胞</strong>：ON/OFF 子区在空间上分离且拮抗，子区内有求和（ON 区光点越多，反应越大），且对任意刺激的反应可由 ON/OFF 布局预测。<strong>复杂细胞</strong>则至少缺少其中一个特征：对条带在感受野内的精确位置不敏感，提示它们接收一排简单细胞的输入。</p>
+
+  <p>这就构成一个前馈、分层的图景：每一层的反应由下一层输入决定。后来的定量研究（Movshon, Thompson, Tolhurst 1978）表明，简单细胞的多个特征其实是<strong>空间求和的本质线性</strong>的表现：它把 ON 区的光总量相加，减去 OFF 区的光总量，发放率是这一计算的连续反映。线性系统有很讨喜的性质：可还原分析。知道系统对简单刺激（光点、小白条、正弦光栅、Gabor patch）的部分反应，就能拼出整体行为。于是“必须研究完整系统/复杂环境”的压力被缓解了——至少故事是这样讲的。</p>
+
+  <div class="thm def">
+    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">线性—非线性（LN）模型</span></div>
+    <div class="thm-body">
+      <p>简单细胞常被写成 LN 模型：先用一个线性滤波器对刺激做加权求和（ON 区正权重、OFF 区负权重），再经过一个非线性（通常是整流，把负值变成零发放），得到预测反应。它是“简单细胞”这一理想模式的数学骨架。</p>
+      <p>注意：LN 模型不是对细胞全部生物学的描述。它是对<em>在特定刺激条件下</em>的输入—输出关系的压缩。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">5.1.1</span>从实验到模型的流水线 <span class="en">The Experiment-to-Model Pipeline</span></h3>
+
+  <p>Masland 与 Martin 说，实验生理学家太清楚了：感觉系统只有在实验者<strong>强迫</strong>它线性时才是线性的。这句话对实验者也许是常识，但需要展开。“强迫线性”意味着选择实验条件，诱发出比否则更简单的行为。两条关键简化策略是：限制行为、约束刺激。</p>
+
+  <p>Hubel 与 Wiesel、Movshon 等人的实验在<strong>麻醉动物</strong>上进行。行为——调节视觉皮层反应的一个因素——被消除；不会因行为与注意转移产生试次间变异，数据更规则。Hubel 与 Wiesel 引用 Hubel（1959）在清醒、松绑猫上的研究，说麻醉与清醒之间没有定性差异，只有整体活动抑制。但麻醉确实抑制自发活动，这是后来者也担心的问题。刺激约束更重要：简单人工刺激（光点、光条）之所以引出更简单（更线性）的反应，是因为皮层有可塑性；神经元反应会适应所处刺激制度的统计特征。刺激越复杂（自然图像），反应越复杂。更关键的是：用朝向光条这类只让一群特定宽度/朝向选择细胞达到峰值反应的刺激，会抑制对其他模式选择神经元的调制效应——而复杂图像会同时激活它们。</p>
+
+  <p>作者强调，她不认为 Hubel、Wiesel 有意识地把“让神经活动更简单”当作目的。只是遵循“良好控制实验”的理想，就会走到这些选择：消除未观察、未控制的因素；麻醉与人工刺激是让实验更好控制的两种方式。但因为脑的适应性，这些做法会产生比否则更规则、更线性的反应。</p>
+
+  <p>她把整个过程画成<strong>实验→模型流水线</strong>（experiment-to-model pipeline），五个阶段：</p>
+
+  <div class="table-wrap">
     <table>
-      <thead><tr><th>流水线阶段</th><th>做了什么简化</th><th>被删掉的东西</th></tr></thead>
+      <thead><tr><th>阶段</th><th>内容</th><th>简化操作</th><th>后果</th></tr></thead>
       <tbody>
-        <tr><td class="id">1 野外的脑</td><td>无</td><td>—</td></tr>
-        <tr><td class="id">2 实验室的脑</td><td>麻醉、固定、受控刺激</td><td>行为、注意、自然场景统计</td></tr>
-        <tr><td class="id">3 数据集</td><td>选择电极、时间窗、试次</td><td>未记录的网络活动、慢变量</td></tr>
-        <tr><td class="id">4 理想模式</td><td>平均、拟合、分类</td><td>试次变异、个体差异</td></tr>
-        <tr><td class="id">5 解释模型</td><td>线性化、参数化</td><td>非线性、适应、上下文依赖</td></tr>
+        <tr><td class="id">1</td><td>野外的脑活动</td><td>—</td><td>行为、注意、上下文全开，极难解释</td></tr>
+        <tr><td class="id">2</td><td>实验室的脑活动</td><td>麻醉、固定、控制刺激</td><td>活动更规则、更可重复</td></tr>
+        <tr><td class="id">3</td><td>数据集</td><td>单电极记录、选细胞、试次平均</td><td>抽掉群体互动与异质性</td></tr>
+        <tr><td class="id">4</td><td>理想模式/现象</td><td>F1/F0 分类、曲线拟合</td><td>把连续分布切成“简单/复杂”</td></tr>
+        <tr><td class="id">5</td><td>解释模型</td><td>编码模型、计算解释</td><td>可预测、可进一步实验</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">实验室难道不是把隐藏的机制揭示出来吗？</span></div>
-    <div class="thm-body">
-      <p>一种有力反驳是：麻醉与简化不是“制造假象”，而是去掉干扰，让原本存在的机制显现。就像给发动机装测试台，你并没有发明它的原理，只是让它可测。</p>
-      <p>Chirimuuta 并不否认。她的要求更弱也更难满足：如果简单细胞真是普遍机制，主张它时必须说明<strong>它在什么条件下成立、在什么条件下失效</strong>。实验室证据支持“受控条件下 V1 可被描述为线性滤波器”，但不能自动支持“V1 的本质就是线性滤波器”。</p>
-    </div>
+  <p>测量阶段也有简化。当时可用的是细胞外单细胞记录；一次只看视觉系统的一小部分。单细胞记录不允许观察该神经元与脑其他部分的互动，迫使生理学家把记录到的活动要么当作刺激驱动，要么当作噪声。还有<strong>选细胞</strong>：一篇文章最多报告几百个神经元，而 V1 有上千万；实验者移动电极，寻找那些能产生大而清晰视觉反应的细胞，采样绝非随机。Masland 与 Martin 说，生理学家倾向记录那些能归类为“标准类型”（简单/复杂）的细胞；结果是，数据集抽掉了原始皮层群体中反应剖面与感受野类型的异质性。</p>
+
+  <p>处理阶段同样关键。对任一神经元的反应，按试次平均；用特定指标做细胞分类。<strong>F1/F0 比值</strong>是重要工具：当正弦光栅漂过感受野，有些细胞反应强烈受明暗条交替调制（相位敏感），有些则在整个刺激窗口内较稳定（相位不敏感）。F1/F0 是反应的一次谐波（F1）与平均发放率（F0）之比，被广泛用来把细胞分为线性/非线性，进而分为简单/复杂。它实际上<strong>锐化了类别边界</strong>，把原本模糊连续的反应属性分布，切成两个离散群体。</p>
+
+  <p>到第 4 阶段，“简单细胞”才出现。实验前当然已经有 V1 细胞；但定义简单细胞的那个特定剖面，并不先于“固定实验条件—测量—处理数据”而存在。理想模式就是感受野图中所表征的东西；它本身是对实验诱发反应的一个概括表征。第 5 阶段给它一个计算解释：假设它在脑的经济中执行某个信息处理任务，用数学描述它从别处接收输入、计算输出、被下游读取。这个解释模型又反过来塑造前几个阶段——理论预期影响你如何找细胞、如何分类、如何定义现象。这个循环会迭代很多次。</p>
+
+  <h3><span class="sn">5.1.2</span>作为理想模式的科学现象 <span class="en">Scientific Phenomena as Ideal Patterns</span></h3>
+
+  <p>自 Bogen 与 Woodward（1988）以来，常说“现象而非原始数据”是解释模型的目标。现象是通过平均、曲线拟合等过程造出的简化 pattern，可被理论解释；原始数据则杂乱。他们的例子是铅的熔点：温度计读数有方差，来自实验室未控制因素；取平均，那个值就是铅的熔点——待解释的现象。按他们的说法，这类现象是自然中独立于实验控制与统计处理的规则性，只是被噪声掩盖。</p>
+
+  <p>作者不同意把这个模型套到神经现象上。她的主张是：神经现象不是“真实 pattern”（在野外与实验室一样存在的规则性），而是<strong>理想模式</strong>，是上述简化程序产生的规范化产物。对比 Potochnik（2017）：她提出“真实因果 pattern”是科学模型的表征目标；这些 pattern 的实在性不依赖于是否有能动者能辨别它们。按 Potochnik，观察到的现象是真实因果 pattern 与“噪声”（可能是研究者当前不感兴趣的其他因果 pattern）的混合；理想化模型的工作是把麦子从糠里筛出来，让感兴趣的真实 pattern 更显著、可理解、可用。</p>
+
+  <p>Chirimuuta 的“理想模式”更接近 Dennett 的“半实在论”意图，但用“理想”标记它区别于通常“真实=就在自然中、独立于科学家”的用法。理想模式不是“完美规则性 + 噪声/干扰规则性”的叠加；它是科学家在物质系统上工作、使行为规则化，再通过数据处理增强这种规则性的产物。这契合触觉实在论：知识是科学家与对象互动的产物。</p>
+
+  <p>为什么不能照搬铅熔点？因为在复杂生物系统中，<strong>信号与噪声没有清晰分界</strong>。有无数过程在起作用，有些比另一些更让科学家感兴趣；信号/噪声的划分由理论预期与实用考虑驱动。电生理中，部分试次间变异确实来自仪器噪声；但很多来自系统的内生变异，如行为与注意上下文，甚至麻醉动物也有。关键点：这些变异从脑的角度看并不都是“噪声”。铅的熔化可以直觉地设想为一个与背景分离的自然现象；神经生理中“什么是现象”——哪个过程从无关背景中凸显——永远是研究者的辨别。神经现象是从无数大多未被描绘的事件中，用实验实践与数据分析打磨、雕刻出来的，不应假定它独立于这些方法而存在。</p>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>铅的熔点是“自然在那里、我们只是读得吵”；简单细胞更像是“我们搭了一个舞台、打了灯、让演员只演一个动作”，然后说“看，这就是它的本性”。舞台是真的，演员是真的，但“只演一个动作”是布景的结果。</p>
+  </div>
+
+  <h3><span class="sn">5.1.3</span>理论与技术的后续 <span class="en">Theoretical and Technological Sequalae</span></h3>
+
+  <p>从 1970 年代起，V1 的“标准模型”形成：简单细胞作为前馈层级中的本质线性滤波器，是核心。LN 编码模型加上复杂细胞的能量模型（Adelson & Bergen 1985）主导领域。作者选 Barlow（1972）的《Single Units and Sensation: A Neuron Doctrine for Perceptual Psychology?》作为代表，说明实验与建模如何汇入视觉知觉的神经基础理论。</p>
+
+  <p>Barlow 的文章是方法还原论的宣言：坚持“孤立部分的知识足以理解整体”。核心提议是：单个神经元是视觉系统的基本操作单位，不是更小结构，也不是更大群体。视觉神经元的基本功能是检测特定特征；这个“特征检测器”概念建立在简化线性模型上。前馈层级每一层对某类触发特征反应，特征复杂度向上增加：前皮层细胞对光点，简单细胞对空间定位的条带，颞叶靠近顶端的神经元对手等复杂物体。 grandmother cell 可能在 IT（下颞叶皮层）出现。整个视觉系统的操作，可由“每个神经元对什么反应”推知。Barlow 认为细胞除偏好刺激外基本沉默，不表现多功能性，所以不怕“单神经元视角不足”的反还原论担忧。单单位电生理方法因此被辩护。</p>
+
+  <p>但 Masland 与 Martin 说，要理解皮层神经元属性，需要“一片激进的奥卡姆剃刀”：理论必须假定同质的标准前皮层 RGC 与 LGN 细胞群，而猫等动物中非标准细胞其实是多数；线性与清晰细胞类别的假设，也与更精细的解剖生理发现不符。更严厉的批评来自 Olshausen 与 Field（2006）：所谓 V1 标准模型虽自称全面，却只解释该区神经元行为的<strong>15%</strong>。他们列出五条批评：采样偏差、刺激偏差、理论偏差、相互依赖/上下文效应、生态偏离。比如：前馈 LGN 输入只负责 V1 输入层第 4 层神经元行为的 35%，其余 65% 必须来自皮层内连接，包括其他模态输入。</p>
+
+  <p>有趣的是，这个“错误”理论产生了巨大的技术后裔。Fukushima（1980）的 neocognitron 受 Hubel–Wiesel 与 Barlow 启发，是深层卷积网络（DCNN）的祖先。DCNN 在文本、物体、人脸识别等机器视觉任务上取得突出成功；其人工节点执行旧理论归给 V1 神经元的计算。面对 Olshausen–Field 的攻击，有人以 DCNN 的成功为“前馈层级”假设辩护，尽管它严格来说是假的（真实视觉系统有大量反馈连接）。</p>
+
+  <p>作者由此提出<strong>非事实性理解</strong>：一种不依赖获得目标系统全部真理的理解。理论/模型更像漫画：夸张某些特征到失真的程度，完全忽略另一些；它提供理解，因为在对象压倒性的复杂性与研究者有限的认知能力之间取得妥协。简化模型不会告诉你 V1 的全部故事，但对某些任务“足够真”（Elgin 2017）；de Regt（2017）强调理解使人能做某些事。把 V1 漫画成“线性简单细胞前馈到平移不变的复杂细胞”，让人们造出了人工视觉系统。这个成就是真的，但不能被夸大：人工与有机视觉系统的差异仍然巨大。</p>
+
+  <p>与反射论相比，V1 经典理论的记录更混合：同样高度简化，甚至 simplistic，却有 DCNN 这个重要副产品；同样未能通过生态效度检验，而对自然刺激预测失败，正是研究者转向后经典方法的主因。</p>
+
+  <h3><span class="sn">5.2</span>超越经典进路 <span class="en">Beyond the Classical Approach</span></h3>
+
+  <p>虽然许多人不为 Olshausen–Field 的全盘攻击所动，“标准 V1 模型必须用自然刺激检验”的情绪，在世纪之交已很普遍。一系列实验记录灵长类及其他哺乳动物 V1（有时是清醒的），把神经元对自然图像的反应与人工刺激条件比较。这打开了非线性与上下文效应的 Pandora 盒子。</p>
+
+  <p>为什么“预测野外活动”会被广泛接受为编码模型的黄金标准？作者对比：经典力学不能预测一张纸片从高楼飘落的轨迹，并不被认为证伪了力学定律，只说明其适用范围有限（Cartwright 1999）。也许因为编码模型确实产生预测，而预测被发现有偏差；也许因为神经科学的终极目标是转化医学——理论必须在野外可用，才能成为无控制条件下治疗干预的基础。</p>
+
+  <h3><span class="sn">5.2.1</span>大数据、生态学转向 <span class="en">The Big Data, Ethological Turn</span></h3>
+
+  <p>经典 V1 实验有三种简化：限制行为、约束刺激、单单位记录。“大数据、生态学转向”在这三方面都大幅偏离。作者分三块讲。</p>
+
+  <p><strong>记录规模。</strong>1960–2010 年，同时记录的神经元数量指数增长。Hubel–Wiesel 最初用单电极；1970 年代多电极到几十个；2010 年 Utah array（100 电极）使百级记录常见；Steinmetz 等（2018）的 Neuropixels 约 1,000 个记录点；Sahasrabuddhe 等（2021）的 Argo 阵列超过 65,000 通道。双光子钙成像从 2003 年百级神经元，发展到 Stringer 等（2019）约 10,000 个。Allen 研究所 de Vries 等（2020）用双光子钙成像观察 243 只小鼠六个视觉区共 59,610 个神经元，文章有 72 位作者；其流水线标准化，明确引用 Olshausen–Field 关于偏差的论证，认为非选择性调查数万神经元可减少偏差。</p>
+
+  <p>这些方法的发展，部分来自技术自身的动量与资助。理论上更重要的是：大规模记录者常反对 Barlow 的单神经元编码，主张<strong>群体编码</strong>。Alivisatos 等（2012）说，神经元集合可能在多神经元层面运作，单细胞记录看不见，就像只看一个像素无法看高清电视。Fusi 等（2016）说，在非线性“混合选择性”群体编码中，任一神经元的反应都依赖上下文，离开同伴无法解释；这与“集合而非单个神经元是功能单位”的更新版神经元学说一致。Saxena 与 Cunningham（2019）谈“神经群体学说”的兴起。</p>
+
+  <p>但作者提醒一个反讽：群体转向常诉诸<strong>涌现</strong>，而彻底涌现论不会停在“一个群体”：若整体大于部分之和，为什么停在若干神经元？整个神经系统、整个有机体及其行为，可能才是功能单位；那样心理学又会回到认知科学的前台。Alivisatos 等人用动力系统吸引子解释涌现，却没有因此反思“观察神经元以理解心灵”的实践，反而用它证明要记录更多神经元。</p>
+
+  <p><strong>行为。</strong>经典实验用麻醉消除行为调制。后来出现清醒行为灵长类（头部固定、眼动追踪、行为奖励）。现在常见“生态范式”：动物自由移动，做出刺激自然引出的行为。Parker 等（2020）批评旧框架的定位论与还原论，认为前馈层级“过度简化”，忽略自上而下反馈与上下文调制。自由行为揭示 V1 神经元的<strong>多任务</strong>：小鼠视觉皮层有运动相关调制；Fiser 等（2016）、Saleem 等（2018）报告部分 V1 神经元像海马位置细胞，对刺激在轨道上的位置敏感。作者提醒：这些多在小鼠；啮齿类皮层区间互联可能强于灵长类，现象未必同样显著。</p>
+
+  <p>与大规模记录结合，研究者用<strong>维度</strong>衡量神经活动复杂性。N=240 个神经元的数据有 240 维；但神经元反应相关，可用 PCA 等降维。常见发现：约 100 个神经元的群体数据，维度降到约 10，低一个数量级，说明记录到的脑活动远比预期简单。Gao 等（2017）提出<strong>神经元任务复杂性</strong>（NTC）理论：低维不是因为这些脑区内在简单，而是因为收集数据时任务简单；简单任务的行为参数少，给神经网络动力学的维度设了上界。反过来，更丰富的行为任务应提高 NTC。作者说，这与第五章的教训一致：经典 V1 实验设计让皮层反应比否则更简单。</p>
+
+  <p><strong>刺激。</strong>经典感受野只用视野内能引起兴奋反应的区域定义，配合小范围简单刺激。但自 Blakemore & Tobin（1972）、Maffei & Fiorentini（1976）以来，已知经典 RF 之外的对比刺激会调制反应，多数是抑制。经典理论还假定神经元反应属性固定（除发育关键期可塑）；但求和野范围依赖对比度，刺激历史（自然图像 vs 人工）会微妙改变反应剖面，需要不同模型拟合。</p>
+
+  <p>由于简单 LN 模型失败，研究转向更复杂的数学工具；ANN 模型成为预测自然刺激下视觉神经元反应的最先进手段。代价是模型更<strong>不可解释</strong>：它们不提供关于计算的透明理论，人工节点的选择性“不可捉摸”（inscrutable）。更自然的刺激范式——让动物自由探索、用头戴相机记录它看到什么——又依赖高度复杂的技术。作者说，与经典生理学的“人工性”决裂，只有通过更精密的技术发明才可能。</p>
+
+  <h3><span class="sn">5.2.2</span>新旧人工性 <span class="en">Artifice, Old and New</span></h3>
+
+  <p>转向“更自然”并没有消除人工性，只是把它移位。神经生态学范式看似唤起未受束缚的自然，实际依赖近乎科幻的技术：自由运动时追踪刺激需要相机与传感器；广泛采样需要大规模群体记录；分析感觉—运动需要对行为视频做机器学习分类；数据更复杂，需要现代机器学习全部统计火力。Frégnac 担心，神经科学方法的工业化造成一种文化：研究者被压力驱使去用“小鼠最先进技术”，不管是否合适；“一厢情愿的思维取代了实验背后的概念驱动，仿佛用最花哨的工具、利用数字的力量就能带来顿悟”。</p>
+
+  <p>作者的核心判断是：最新发展<strong>位移而非解决</strong>了人工性与脑复杂性的问题。ANN 仍是比脑简单的系统；它是“灰箱”而非“黑箱”，因为连接矩阵已知，但内部计算仍不透明。Haesemeyer 等说，ANN 的操作原则可能更容易剖析，因为是人造的、活动状态可查询；Musall 等承认 ANN 与脑有“深刻的概念差异”。因此，把 ANN 当代理脑时，最好把它看作“人工 Krogh  organism”：它有用，是因为某些特征让它对特定研究特别可及，而不是因为它理想地相似于目标。</p>
+
+  <h3><span class="sn">5.3</span>结论：我没做出来的，我就不理解 <span class="en">Conclusion: What I Have Not Made, I Do Not Understand</span></h3>
+
+  <p>Feynman 的遗言“What I cannot create, I do not understand”（我不能创造的东西，我就不理解）常被神经科学与 AI 交叉领域当作口号。作者说，本章的教训是：这句口号<strong>误表征</strong>了计算神经科学实际发生的事。更诚实的说法是：“What I have not made, I do not understand”（我没做出来的东西，我就不理解）。</p>
+
+  <p>从过去与现在的实践看，科学家对脑的理解，依赖于他们与研究对象之间有一个<strong>人工替身</strong>：一个被简化的细胞，或一个人工模型生物。而且，技术成功与“理解脑在其原生复杂性中的运作”没有内在联系。导致 DCNN 的视觉皮层模型，是对知觉过程高度抽象、理想化的版本；尽管包含错误假设，它使今天的机器视觉成为可能。这不是说 ANN 模型完全可理解——它们显然不是；这一点会在第八章讨论。</p>
+
+  <div class="table-wrap cheat">
+    <table>
+      <thead><tr><th>节点</th><th>核心内容</th><th>关键证据/人物</th><th>结论</th></tr></thead>
+      <tbody>
+        <tr><td class="id">5.1</td><td>简单/复杂细胞与 LN 模型</td><td>Hubel & Wiesel、Movshon 等</td><td>线性是实验条件诱导的</td></tr>
+        <tr><td class="id">5.1.1</td><td>五阶段流水线</td><td>麻醉、人工刺激、单电极、F1/F0</td><td>现象在流水线末端出现</td></tr>
+        <tr><td class="id">5.1.2</td><td>理想模式 vs 真实 pattern</td><td>Bogen & Woodward、Potochnik、Dennett</td><td>构成性依赖科学家</td></tr>
+        <tr><td class="id">5.1.3</td><td>Barlow 神经元学说、15% 批评、DCNN</td><td>Barlow 1972、Olshausen & Field、Fukushima</td><td>非事实性理解可产生技术</td></tr>
+        <tr><td class="id">5.2</td><td>自然刺激暴露非线性</td><td>David 等、Olshausen & Field</td><td>生态效度成为标准</td></tr>
+        <tr><td class="id">5.2.1</td><td>大规模记录、群体学说、NTC</td><td>Neuropixels、Alivisatos、Gao & Ganguli</td><td>低维可能来自任务简单</td></tr>
+        <tr><td class="id">5.2.2</td><td>新人工性</td><td>Frégnac、ANN 灰箱</td><td>自然主义转向依赖更多技术</td></tr>
+        <tr><td class="id">5.3</td><td>“我没做出来的，我就不理解”</td><td>Feynman、DCNN</td><td>理解依赖人工中介</td></tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于“简单细胞”的三件事</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">五个必须拆开的等式</span></div>
     <div class="thm-body">
-      <p><strong>一、把它当成自然种类。</strong>“简单/复杂”是实验操作与模型拟合下的分类，不是大脑自己贴好的标签。</p>
-      <p><strong>二、忽略刺激的作用。</strong>条带与光栅测出的线性，不等于自然图像下的线性；适应与上下文会改变响应。</p>
-      <p><strong>三、以为大数据自动消除人为性。</strong>生态转向用摄像机、群体记录与机器学习替代旧式控制，但人工性只换了位置：ANN 成了新的“人工模型生物”。</p>
+      <p><strong>一、“简单细胞=自然种类”。</strong>它是实验、测量、分类共同造出的理想模式。</p>
+      <p><strong>二、“理想模式=虚构”。</strong>它有物质基础、有预测力；只是其规则性部分来自科学家的加工。</p>
+      <p><strong>三、“模型预测准=模型字面真”。</strong>DCNN 准确，不等于它复制了 V1 的计算。</p>
+      <p><strong>四、“大数据=无偏差”。</strong>非选择性采样减少某些偏差，却引入新的技术、任务与生态偏差。</p>
+      <p><strong>五、“能造出来=已理解”。</strong>造出 DCNN 不等于理解生物视觉；作者把口号改成“没做出来的，我就不理解”，强调人工中介是理解的条件，也是限制。</p>
     </div>
   </div>
 </div></section>
@@ -877,67 +1430,147 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch6" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 6 · Why “Neural Representations”?</div>
   <h2><span class="num">6</span>为什么还要说“神经表征”？</h2>
-  <p class="lede">“这个神经元表征了边缘”“这群细胞表征了气味”——这类说法在神经科学里无处不在，却在哲学上麻烦重重。Chirimuuta 不想废除它，也不想为它辩护到底；她想解释它为什么好用。</p>
+  <p class="lede">神经元不“指向”远方的事物；它只对近处的离子与突触输入起反应。可认知神经科学天天说某群细胞“表征”面孔、位置、动作。这个说法到底在做什么工作？</p>
 
   <div class="chap-intro">
-    <p>表征争论通常在两极之间摆动：一边说神经活动真的带有内容，另一边说“表征”只是误导性的隐喻。Chirimuuta 走第三条路：把“神经表征”理解为一种<strong>黑箱化的类比</strong>。它允许研究者暂时不追问脑内的因果链，直接研究神经活动与远端对象的关系。</p>
-    <span class="tag">表征 · 内容 · 黑箱</span>
+    <p>本章给出一个“慈善解读”：<strong>表征</strong>（representation）话语不是对脑内符号的字面断言，而是一种简化策略。它让研究者可以<strong>黑箱化</strong>从远端对象到神经活动之间的复杂因果链，专注于“脑活动与颅外世界”的关系。作者用“潮汐表征”思想实验说明：仅仅“远端”不够，还需要<strong>稳健性</strong>（robustness）；用干预主义因果解释说明：仅仅“可干预”也不够，还需要<strong>解释上的根本性</strong>。最后她坚持形而上学中立：不先把“内容”的自然化理论搞定，也能理解这套实践。</p>
+    <span class="tag">案例四 · 表征话语</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">神经表征</span><span class="chip">内容</span><span class="chip">意向性</span><span class="chip">近端/远端</span><span class="chip">黑箱化</span><span class="chip">脑机接口</span><span class="chip">潮汐表征</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">表征的两个条件：内容与规范性</span></div>
-    <div class="thm-body">
-      <p>在哲学上，一个状态要算“表征”，通常需要比因果协变更强的条件：它要有确定的<strong>内容</strong>（关于什么），并且能<strong>正确或错误</strong>地表征（规范性）。神经活动与某个刺激相关，只说明协变；协变不等于关于。</p>
-      <p>Chirimuuta 关注一种更宽松的“接收器概念”：只要内部状态可靠地响应、被引起或依律依赖于某个外部条件，研究者就可能称之为表征。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">脑机接口的扰动，与“潮汐表征”的荒谬</span></div>
-    <div class="thm-body">
-      <p>在脑机接口实验中，研究者扰动运动皮层活动与光标运动之间的映射，使受试者一开始无法准确指向目标。运动皮层通过可塑性重新调整，恢复控制精度。</p>
-      <p>反过来，说“潮汐表征月亮的位置”就很怪。潮汐与月亮当然有稳定关系，但修一堵墙就能改变局部潮位。潮汐关系缺乏<strong>对远端目标的鲁棒性</strong>。</p>
-    </div>
+    <span class="chip hot">表征 (representation)</span><span class="chip">近端/远端</span><span class="chip">稳健性</span><span class="chip">潮汐表征</span><span class="chip">干预主义</span><span class="chip">受体概念</span><span class="chip">形而上学中立</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">表征话说的功能：把中介因果链暂时括起来</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">“表征”是一种允许我们跳过中介因果细节的简化</span></div>
     <div class="thm-body">
-      <p>说某个神经元“表征边缘”，等于允许研究者暂时不回答：光信号如何经过视网膜、丘脑、皮层层层转换？哪些中间变量参与？这些问题重要，但在研究“神经活动与外部对象的关系”时，可以被暂时黑箱化。</p>
-      <p>这就是表征话语的<strong>简化功能</strong>：把复杂因果链压缩成“状态—对象”的二元关系。压缩带来可操作性，也带来风险：忘记中介，就会把“相关”误当“关于”。</p>
+      <p>认知神经科学的 explanandum（待解释项）通常是<em>远端</em>的：动物对环境中某个对象、位置或动作的成功应对。若坚持只讲近端因果——光子如何打到视网膜、离子如何流过膜——解释会淹没在机制细节里，而且无法说明为什么偏偏是“那个对象”相关。</p>
+      <p>表征话语引入一个类比：神经活动像地图、代码、画像一样“关于”某物。这个“关于”不依赖于中介链是否被描述，因此允许科学家把中介黑箱化。它不是本体论承诺，而是一张<strong>研究策略的许可证</strong>。</p>
     </div>
   </div>
 
+  <h3><span class="sn">6.1</span>神经表征的困境 <span class="en">The Quandary of Neural Representations</span></h3>
+
+  <p>“神经表征”是认知神经科学的日常行话。灵长类视觉系统的细胞被说成表征边缘（Marr 1982）、纹理（Freeman 等 2013）、面孔（Tong 等 2000）；初级运动皮层的群体活动被说成表征 intended movements（Georgopoulos, Schwartz, Kettner 1986）；海马某些细胞被说成表征环境中的位置（O'Keefe & Conway 1978）。哲学讨论集中在：这些所谓的神经表征是否满足“表征”的必要条件，比如语义确定性（semantic determinacy）与规范性（normativity）。换句话说：它们<strong>真的</strong>是表征吗？</p>
+
+  <p>正面回答的人（Shea 2018；Colombo 2014）说：解释与预测的成功，证明“神经表征”这个词有解释价值，因此有神经表征。反面有两个担忧。第一，这些所谓表征也许只满足更弱的、因果但非意向性的条件；有些外部因素与神经元反应的关系甚至达不到因果标准，只是共变。第二，一旦承诺神经表征存在，就需要一个自然主义的意向内容理论，而目前没有公认版本。</p>
+
+  <p>负面回答也有麻烦。否定是修正主义的：它指责一种常见的科学表达方式；否认神经表征的人还必须解释，为什么这套实践会持续。神经科学共同体内部也有争议：有捍卫意向描述的，也有斥责的（Brette 2019；Kriegeskorte & Diedrichsen 2019）。</p>
+
+  <p>作者接上第四章：说神经系统在进行计算，应被当作一种粗略类比，而不是字面描述。表征设定与计算理论相关：动物的心智能力，被说成是在神经组织中实现的、对表征进行的一系列计算。她要论证：设定神经表征的模型，以及相关的“神经代码”等意向概念，调用的是与人造表征物（地图、脚本、图画、编码系统）的类比；同时也调用神经活动与整个动物智能行为之间的类比——后者对远端目标的稳健敏感，超过对近端扰动的敏感。两种类比源的共同点是：<strong>意向关系对中介因素漠不关心</strong>。一个东西是不是另一个东西的符号，可以不管二者之间的因果链；一个行为是否朝向某个目标，也可以不管中间怎样实现。</p>
+
+  <p>她的三个目标是：第一，<strong>慈善</strong>——不修正，接受表征话语“as it is”，甚至为困难案例辩护，说明为什么在“表征不饥饿”的认知任务中也能保留它。她聚焦感觉神经科学中的“受体概念”（receptor notion）：只要内部状态可靠地回应、被引起、或以某种法则性方式依赖于外部条件，就设定表征（Ramsey 2007）。第二，说明设定表征的<strong>认识收益</strong>。第三，对表征、意向性、内容、因果的形而上学保持<strong>中立</strong>。中立不是逃避，而是慈善的条件：如果一套科学实践的有效性，取决于哲学家先解决“内容的自然化”这种悬而未决的问题，那它太脆弱了。</p>
+
+  <h3><span class="sn">6.2</span>神经表征与简化 <span class="en">Neural Representations and Simplification</span></h3>
+
+  <h3><span class="sn">6.2.1</span>近端性作为研究策略 <span class="en">Proximality as a Research Strategy</span></h3>
+
+  <p>科学中有一条久经考验的方法策略：寻找<strong>局部因果解释</strong>。它与笛卡尔、莱布尼茨的机械论哲学相关：自然可理解，因为可观察现象可归因于微小部分的推拉，且这些部分在相互作用时彼此接触；推拉是有效因果的典型。反过来，它拒绝超距作用。作者把这叫<strong>近端性原则</strong>（proximality principle）：解释应沿着从对象到神经活动的因果链，一步步靠近。</p>
+
+  <p>近端策略有显而易见的好处：它把解释锚定在可干预、可测量的局部过程上；它避免神秘主义；它让不同实验室的工作可以拼接。但它也有代价：当研究对象是“脑活动与颅外世界的关系”时，近端链会无限细分。光从物体到眼睛，经过角膜、晶状体、视网膜、LGN、V1……每一层都有机制；突触、离子通道、蛋白质、基因表达……你可以一直往下挖。要完整描述“看到一张脸”的近端因果链，是一项不可能完成的任务。</p>
+
+  <p>更麻烦的是：脑与脑之间差异巨大，同一个体一生中也在变；因果解释越细，越难 generalize。作者说，近端原则的问题不只是“细节太多”，而是它<strong>没有理由 privileging 远端对象</strong>：在无数中介结构与事件中，为什么偏偏把“脑活动—远端对象”的关系当作解释核心？近端框架本身不回答。</p>
+
+  <h3><span class="sn">6.2.2</span>认知神经科学研究策略对远端性的需要 <span class="en">The Need for Distality in the Research Strategy of Cognitive Neuroscience</span></h3>
+
+  <p>当研究目标是“脑活动如何支持智能、适应行为”——说明知觉、运动系统如何导致复杂环境中的适当行动——研究就必须聚焦神经反应与<strong>远端</strong>知觉刺激或运动动作的关系。这个关系如何被中介（光/声波从对象到眼/耳、传出神经生理、神经肌肉接头等），是次要的；相对于“脑活动与颅外状态”的非近端关系，这些细节对认知神经科学家没有解释相关性。</p>
+
+  <p>近端原则不适用，因为它不给“脑—远端对象”关系以特权。若研究者试图从远端刺激挖一条解释隧道到神经反应，把沿途所有微观互动都写进去，她很快会被机制细节活埋。另一个问题是：脑的个体差异大、一生变化大，因果解释越细，普遍性越差。</p>
+
+  <p>因此需要一个框架：放弃近端性，拥抱<strong>远端性</strong>，把中介因果过程黑箱化，并把这种简化当作优点而非缺陷。人造表征物的类比在这里派上用场：在文字、图画、数字中，符号与所指的意向关系可以延伸到无限远的时空；它甚至不应被当作因果 relation。比如“百慕大三角的独角兽”与它的意向对象（一个不在时空中存在的对象）之间的关系，不可能是因果的。既然意向关系表面上不受因果束缚，那么在引用意向内容的解释中，就可以绕过神经反应与远端项之间的中介链。</p>
+
+  <p>这捕捉到神经生理学家有时报告的一个属性：感觉神经元的反应似乎“伸向”世界中的特征，不管中间介质细节。Barlow 说：视网膜的属性使一个神经节细胞可以“比喻地说，伸出手去确定眼睛前方正发生某件特定的事。光是它做到这一点的手段，但携带信息的是光的详细 pattern；当时的整体照度几乎被完全忽略。” 作者提醒：Barlow 的单神经元编码理论受到严厉批评，但“远端关系重要”这一点，同样适用于群体编码理论——只是把“单个细胞”换成“一组细胞”。</p>
+
+  <p>为什么不用“人的心理表征”作类比源？因为类比要有效，类比源必须相对好理解；心理表征虽然对我们最亲近，其运作却不透明，可能只是心理学/认知科学的假设性设定。公共表征物更清晰：我们能说清载体是什么、发送者与消费者是谁、内容（通常）是什么；这些在心理表征上都很有争议。Hesse 说，类比的作用是“让新而陌生的东西，用熟悉的东西来思考和描述”。拿两个都模糊的东西互比，帮助不大。作者也指出，公开可观察的行为，比“心理表征”更熟悉、更少假设性。</p>
+
+  <p>与她的提议一致，认知与理论神经科学中充满从人工表征系统借来的术语：代码、解码、读/写、地图，甚至图画。虽然也有从人格层面认知表现借来的隐喻（如视网膜神经元“感知”），但这些类比没有得到同样的理论地位。</p>
+
+  <div class="thm ex">
+    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">两种解释形式：近端 vs 远端</span></div>
+    <div class="thm-body">
+      <p>面对 FFA（梭状回面孔区）细胞对某张脸的强烈反应，近端解释会追踪从光子到视网膜、LGN、V1、IT 的完整因果链；远端解释则说：“这个细胞回应这张脸，因为它属于一个专门表征面孔、以支持面孔识别的皮层区域。”细胞的反应精细调谐于面孔刺激，就像肖像的功能是表征一张脸，因而对脸部特征敏感。</p>
+      <p>关键点：感觉神经元的标准化刻画——感受野——本身就是非近端方法。视觉神经元的感受野被概念化为位于动物体外的视野中；躯体感觉神经元的感受野位于身体某处。但“刺激引起发放率升高”却由刺激与感受野的匹配来解释。这说明远端描述已经嵌入日常实验实践。</p>
+    </div>
+  </div>
+
+  <p>学科分工反映了这种多元：细胞神经生物学通常提供近端因果解释；认知神经科学更愿意用神经活动与远端对象/事件的关系来解释。原因不只是 explanandum 被远端定义，还因为远端对象提供了一组极有效的<strong>控制把手</strong>。对许多神经系统，控制的精度与效力并不与“靠近目标”成正比。你可以通过调制一个人 Twitter 信息流的内容，精确控制其脑状态；这比用光遗传学或 DREADDs 直接干预神经更容易。作者说，她可以坐在远离你的时空里，用书页上的文字调制你视觉皮层中对比敏感细胞的活动；这比最先进的神经技术还好的控制。目前不可能通过直接神经刺激让复杂图像或信念出现在某人脑中，但书里的字句，如果成功，会让你拥有一组特定信念。</p>
+
+  <p>这个事实——影响不随距离衰减——违反了我们对因果机械系统的直觉：因果相关性/冲击应随接近而增强。在那种直觉成立的情境，近端原则够用；神经系统不按这个直觉运作，所以需要另一种框架。</p>
+
+  <p>作者强调，这不是说神经科学家不研究近端原因。科学学科围绕实验干预技术生长；细胞神经生物学家依赖高科技、侵入性方法干预神经活动。认知神经科学用来调制神经活动的控制把手，特点是<strong>远端、低技术、极有效</strong>。从 Hubel–Wiesel 到现在，生理学家都知道：调制视觉皮层神经元最有效的方式，是找到它最偏好的刺激。所谓“表征目标”，同时也是最明显的控制点。</p>
+
+  <p>最后，她强调自己的解释类别不限于“离线推理”任务（表征不饥饿任务）。许多表征话语关于对当前在场对象的反应；“替身”论证无法回答这些情况下的消除主义者。但若看到设定表征提供了一种便利简化，就能理解它为何即使对在线知觉与运动控制也有认识价值。</p>
+
+  <h3><span class="sn">6.2.3</span>潮汐表征？ <span class="en">Tidal Representations?</span></h3>
+
+  <p>读者会立刻想到一个反驳：物理学与进化生物学也有偏离近端原则的解释。物理学家处理月球与潮汐的关系，也跳过近端因果链；那么，她是否也应允许“潮汐活动表征月球位置”？显然不行。她的论证还缺一块。</p>
+
+  <p>她补上的特征是<strong>稳健性</strong>（robustness）：神经活动与对象之间的远端关系，能在近端连接变化时保持。她用脑机接口（BCI）实验说明：研究者扰动运动皮层活动与光标运动角度之间的映射，使受试者不能再准确指向目标（Jarosiewicz 等 2008）。运动皮层会可塑地调整自身活动，恢复运动准确性。用意向概念解释很自然：皮层“表征”被调整，以恢复神经活动与运动之间的映射。这种可塑性与映射稳健性，正适合用“意向性”的词源意义来理解——运动皮层朝向它的意向对象，甚至在扰动后重新定向。</p>
+
+  <p>相比之下，物理系统中的非近端关系不唤起目的性/目标导向感。潮汐与月球的关系不稳健：如果海滩上建一堵墙挡住潮水，海水不会“调整自身活动”去克服障碍、达到同样潮高；你调整月球位置比建墙更能改变潮汐。若潮汐—月球关系真具有这种稳健性，也许才配用表征语言。这个场景听起来如此怪异，正说明意向概念在这里不适用。</p>
+
+  <div class="intuition">
+    <div class="ih">直觉</div>
+    <p>地图丢了可以重画，路线堵了可以绕行，只要“到达那个地方”这个目标还在。潮汐不会因为你在海边修墙就“想办法”淹到原来的高度。表征的“关于性”像这种可绕行的目标；潮汐没有目标。</p>
+  </div>
+
+  <h3><span class="sn">6.2.4</span>干预主义原因，而非意向概念？ <span class="en">Interventionist Causes, Not Intentional Notions?</span></h3>
+
+  <p>第二个反驳更技术：干预主义是当前解释科学因果推理最流行的框架。它似乎已经打破了近端原则：断言 X 与 Y 有因果关系，只要求对 X 的干预（满足某些技术标准）伴随 Y 的变化（Woodward 2003）。这与更老的因果 process theory（Salmon 1984）不同；后者要求连续的“标记”传递，因而保留近端直觉。按 Woodward，远端影响只要满足干预条件，就可以是原因。因此，认知神经科学家不需要意向关系来黑箱化中介因果；她只需引用干预主义标准。意向概念是多余的。</p>
+
+  <p>作者承认这个反驳有力，但指出它漏掉了“<strong>根本性</strong>”（fundamentality）。在说明一个神经元表征什么时，科学家是在断言：对这个神经元在脑的经济中存在与运作而言，什么是最本质的。这与 Marr 的计算层次描述类似：计算描述声称告诉你关于认知/神经系统最重要的东西，而实现的因果细节在探究顺序与解释重要性上都是次要的。更多因果细节总可以补上，但在认知神经科学的解释规范内，计算/意向解释并不因为没有这些细节而缺乏深度。</p>
+
+  <p>Woodward 似乎否认“神经激活与颅外对象之间的远端因果解释”可以算根本的。作者不否认干预主义可以描述这些关系；她否认的是：它能替代“表征”话语所承载的<strong>解释优先级</strong>。说“V1 表征边缘”不只是说“V1 活动与边缘有可干预的因果关系”；它还在说：把 V1 当作边缘表征系统，是理解它如何组织视觉行为的最佳框架。这个“最佳框架”判断，超出单纯因果陈述。</p>
+
+  <h3><span class="sn">6.2.5</span>小结 <span class="en">Summing Up</span></h3>
+
+  <p>至此，表征话语的简化结构清楚了：它用一个“关于”关系，替代一条极长、极细、极难 generalize 的因果链；它允许科学家把中介黑箱化，把注意力放在远端对象的控制与行为相关性上。它比“公共表征物”类比更 perspicuous，因为载体、发送者、消费者、内容至少原则上可指明。它也比“心理表征”类比更可用，因为后者太不透明。</p>
+
+  <p>但作者没有说“因此神经表征真的存在”。她说：这套话语在方法论上有收益，且不必先解决形而上学。她的立场是<strong>形而上学中立</strong>：不承诺自然化内容理论，也不承诺 eliminativism；只承诺这套实践在特定研究目标下是合理的简化。</p>
+
+  <h3><span class="sn">6.3</span>比较 <span class="en">Comparisons</span></h3>
+
+  <h3><span class="sn">6.3.1</span>各种实在论 <span class="en">Realisms</span></h3>
+
+  <p>实在论版本通常要求：神经表征具有确定的语义内容；内容由某种自然化关系（因果、信息、 teleosemantics、结构映射等）决定；表征可以错，因而有规范性问题。作者不否认这些理论各有洞见；她担心的是，把科学实践的有效性押在某一套内容理论上。她的“受体概念”慈善解读甚至覆盖最弱的案例：只要内部状态可靠回应外部条件，就可以在方法论上说它“表征”该条件，而不必承诺它满足全部语义条件。</p>
+
+  <p>这与第四章的形式实在论/形式唯心论之分平行：字面实在论把模型结构当作脑内独立事实；她的立场是，表征关系也是理想模式的一部分，依赖于研究者的划分与目的。</p>
+
+  <h3><span class="sn">6.3.2</span>各种反实在论 <span class="en">Antirealisms</span></h3>
+
+  <p>反实在论（eliminativism、instrumentalism、deflationism）指出：表征话语缺乏足够的自然化基础；或者它只是预测工具。作者对反实在论有同情，但不接受其“修正主义”结论。她认为，反实在论者常低估了表征话语的<strong>组织性收益</strong>：它不仅预测，还告诉你该找什么、该把哪些机制算作实现、该怎样划分系统。即便“内容”没有形而上学根基，这套组织功能仍然真实。</p>
+
+  <p>她的中立立场因此既不同于 Shea 式的实在论，也不同于 Ramsey 式的“受体概念不可救”的诊断。她说：我们可以保留表征话语，同时不解决“内容自然化”的问题；这不是逃避，而是把哲学任务放在正确的位置——先理解实践，再问形而上学。</p>
+
+  <h3><span class="sn">6.4</span>蕴含 <span class="en">Implications</span></h3>
+
+  <p>如果表征是简化，那么“神经表征”的发现就不是对脑内符号系统的直接发现。它是对脑—世界关系的一种<strong>视角性组织</strong>。这有几个后果。第一，表征的“确定性”不必是脑内事实；它可以是研究框架的产物。第二，表征的“错误”问题不必用脑内规范事实解释；它可以在行为/任务层面被理解。第三，跨学科翻译会更困难：细胞神经生物学的近端解释与认知神经科学的远端解释，不是同一个故事的粗细版本，而是两种视角。第四，对 AI 的启示：如果一个系统只是在统计上拟合远端关系，而没有身体的、目标的、可错的结构，那么说它“表征”某物，可能只是借来的说法。</p>
+
+  <p>作者最后把矛头指向“表征”话语的自然主义野心：许多哲学家想让神经表征成为自然种类，从而让认知科学在本体论上安全。她的诊断是，这种野心本身是形式实在论的残余；它想把一个方法论上的简化，变成世界本身的结构。</p>
+
   <div class="table-wrap cheat">
     <table>
-      <thead><tr><th>立场</th><th>核心主张</th><th>主要困难</th></tr></thead>
+      <thead><tr><th>节点</th><th>核心内容</th><th>关键例子/人物</th><th>结论</th></tr></thead>
       <tbody>
-        <tr><td class="id">表征实在论</td><td>神经活动真的带有内容，可由自然化理论说明</td><td>缺乏公认的内容自然化理论</td></tr>
-        <tr><td class="id">工具论/薄概念</td><td>“表征”只是有用的说法，不承诺内容</td><td>难解释为何有些相关算表征</td></tr>
-        <tr><td class="id">取消论</td><td>应废除表征话语，改用因果/动力学描述</td><td>难说明科学实践为何持续使用它</td></tr>
-        <tr><td class="id">黑箱化解读</td><td>暂时括起中介，服务于远端关系研究</td><td>需防止把简化误当本体</td></tr>
+        <tr><td class="id">6.1</td><td>表征话语的困境：真表征还是弱因果</td><td>Shea、Colombo、Ramsey、Brette</td><td>需要慈善解读</td></tr>
+        <tr><td class="id">6.2</td><td>表征作为简化：黑箱化中介</td><td>地图/代码/画像类比</td><td>方法论收益，非本体论承诺</td></tr>
+        <tr><td class="id">6.2.1</td><td>近端性原则及其代价</td><td>笛卡尔/莱布尼茨、机制细节</td><td>无法 privileging 远端</td></tr>
+        <tr><td class="id">6.2.2</td><td>远端性策略：控制把手</td><td>Barlow、FFA、Twitter/光遗传学对比</td><td>影响不随距离衰减</td></tr>
+        <tr><td class="id">6.2.3</td><td>潮汐反驳与稳健性</td><td>BCI 扰动、月球—潮汐</td><td>稳健性区分意向与因果</td></tr>
+        <tr><td class="id">6.2.4</td><td>干预主义反驳与根本性</td><td>Woodward、Marr</td><td>因果≠解释优先级</td></tr>
+        <tr><td class="id">6.3</td><td>实在论/反实在论比较</td><td>内容自然化、eliminativism</td><td>形而上学中立</td></tr>
+        <tr><td class="id">6.4</td><td>蕴含：表征是视角性组织</td><td>近端/远端学科分工</td><td>反形式实在论</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">“你们这是在给一个坏隐喻找借口”</span></div>
-    <div class="thm-body">
-      <p>取消论者会说：神经科学完全可以用“因果协变”“信息”“动力学模式”来描述，为什么要保留一个有意向性包袱的词？</p>
-      <p>Chirimuuta 的回答是：她并不主张“表征”是世界的终极家具，也不主张所有神经活动都有内容。她主张一种<strong>非修正主义的善意解读</strong>：既然科学家已经在用，就说明它承担了某种功能。</p>
-    </div>
-  </div>
-
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">表征话语的三个陷阱</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于表征的四个混淆</span></div>
     <div class="thm-body">
-      <p><strong>一、把相关当表征。</strong>一个神经元对红色敏感，不代表它在“表征红色”；可能只是锥体细胞的生理偏好。</p>
-      <p><strong>二、把“表征”当解释。</strong>说“它表征边缘”并没有说明它如何计算边缘。</p>
-      <p><strong>三、忘掉中介。</strong>表征话语的价值来自暂时括起中介；永久遗忘中介，就会把远端关系误当本体结构。</p>
+      <p><strong>一、“作者否认神经表征存在”。</strong>她既不肯定也不否认；她主张这套话语是方法论简化，不必先解决形而上学。</p>
+      <p><strong>二、“远端解释=不科学”。</strong>远端解释受行为、干预与预测约束；它只是不同于近端机制解释。</p>
+      <p><strong>三、“稳健性=因果性”。</strong>稳健性是额外特征；潮汐有因果但不必有稳健的目标导向。</p>
+      <p><strong>四、“中立=没有立场”。</strong>中立是刻意的方法论选择：不让科学实践的有效性依赖未决的内容理论。</p>
     </div>
   </div>
 </div></section>
@@ -945,138 +1578,252 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch7" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 7 · The Heraclitean Brain</div>
   <h2><span class="num">7</span>赫拉克利特式的大脑</h2>
-  <p class="lede">人不能两次踏进同一条河流，也不能两次记录到同一个神经元。大脑每时每刻都在重建自己；那么，建立在其上的“稳定表征”还剩下什么？</p>
+  <p class="lede">你不能两次记录同一个神经元。脑在不断重建自身，连“同一个细胞”的分子组成都在变。可科学需要固定靶。运动皮层的研究，正好展示了科学家如何用两种不同的“稳定性假设”去抓住一条流动的河。</p>
 
   <div class="chap-intro">
-    <p>这一章把时间性推到前台。神经元的调谐、突触权重、甚至“这个细胞代表什么”都会随天数漂移。Chirimuuta 用运动皮层的长期争论说明：不同的稳定化策略会生产出不同的“事实”。她把科学视角理解为<strong>简化的组织方式</strong>，并给出一个康德式结论：我们无法得到关于运动皮层的“无视角真理”。</p>
-    <span class="tag">可塑性 · 视角主义</span>
+    <p>本章处理第一章列出的第三种复杂性：<strong>时间异质性</strong>。对象永远不在同一状态重复，科学却必须把它固定住。作者用运动皮层（M1）的争论说明：旧视角把稳定性放在<strong>单个神经元</strong>的调谐曲线里；新视角把稳定性放在<strong>群体活动模式</strong>里（降维、动力系统、神经流形）。两者都是简化，都生产理想模式。最后她把“视角”定义为“关于如何实现有效简化的下注”，并回答相对主义质疑。</p>
+    <span class="tag">案例五 · 时间性与视角</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">表征漂移</span><span class="chip">赫拉克利特</span><span class="chip">运动皮层</span><span class="chip">群体编码</span><span class="chip">动力学系统</span><span class="chip">视角主义</span><span class="chip">冻结帧</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">赫拉克利特式对象：稳定只是过程的暂时相</span></div>
-    <div class="thm-body">
-      <p>把大脑当作“物”，你会寻找固定结构；把大脑当作“过程”，你会看到它在维持自身的同时不断更换材料。</p>
-      <p>Chirimuuta 借用 Dupré 与 Godfrey-Smith 的生物学过程哲学：生命体不是先有固定本质再变化；<strong>自我维持的活动本身就是它的存在方式</strong>。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">嗅觉皮层的 32 天：同一个细胞，不同的气味</span></div>
-    <div class="thm-body">
-      <p>Schoonover 等（2021）在 32 天里记录小鼠嗅觉皮层的单个神经元，反复呈现 4 或 8 种气味。同一天内反应稳定；但隔 8 天再测，许多细胞的最优气味已经改变。若把“对气味 A 强烈响应”解释为“表征 A”，那么表征本身在漂移。</p>
-      <p>类似现象也出现在视觉皮层、后顶叶与海马位置细胞中。行为可以稳定，而单细胞层面的“意义”却在移动。</p>
-    </div>
+    <span class="chip hot">赫拉克利特</span><span class="chip">过程本体</span><span class="chip">运动皮层</span><span class="chip">群体向量</span><span class="chip">降维</span><span class="chip">神经流形</span><span class="chip">视角即下注</span><span class="chip">数学抽象</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">运动皮层的两种视角，两种简化</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">脑是过程，不是物件；稳定性是科学加进去的</span></div>
     <div class="thm-body">
-      <p><strong>神经元稳定视角：</strong>把单个神经元当作编码单位，寻找它与运动参数之间的稳定调谐。它生产的理想模式是“调谐曲线”。</p>
-      <p><strong>群体模式视角：</strong>承认单细胞调谐会漂移，但认为群体活动的几何结构、轨迹或动力学模式更稳定。它生产的理想模式是“状态空间中的轨迹”。</p>
-      <p>两者不是简单的一对一错。它们各自选择不同的稳定层、时间尺度与数学工具，因此看到不同的“运动皮层”。<strong>视角不是滤镜，而是主动组织对象的方式</strong>；每个视角都生产自己的现象，也遮蔽其他现象。</p>
+      <p>脑要维持自身、协调行为，只能通过不断变化。它更像一个过程（process），而不是一个静态 thing——一个赫拉克利特式对象。神经元像其他细胞一样在代谢中重建自己；每一次活动都带着历史。精确科学却需要固定靶，于是科学家用麻醉、平均、调谐曲线、降维、动力系统等等“固定剂”，把流动定格。</p>
+      <p>关键不是“定格是错的”，而是：<em>定格的方式决定了你看到哪种稳定性</em>。单神经元视角看到调谐曲线；群体视角看到低维流形。两者都可能有用，但都不是“脑本身唯一的样子”。</p>
     </div>
   </div>
 
+  <h3><span class="sn">7.1</span>不断变化的大脑 <span class="en">The Ever-Changing Brain</span></h3>
+
+  <p>第一章已经说，脑的组织在时间中不断重构，像忒修斯之船。神经元尤其敏感、可塑；对经验的反应性与可变性，是脑支持变化环境中适当行为的关键。脑被时间雕刻，这是学习、因而智能的基础；但同样的变化倾向，也使脑成为极难的科学对象：它永远不会在同一状态出现两次。实验神经科学需要多次呈现相同刺激、收集神经反应数据；反应显示试次间变异（variance），通常被平均掉、归类为噪声。</p>
+
+  <p>本章开头给出更激进的图景：脑是一个只有通过不断变化才能维持自身、编排行为的器官。它更像过程而非静态物——赫拉克利特式对象。Dupré（2012）主张所有生物都应如此描述：过程而非实体。脑的可变性（changeability）是“由活组织构成”的直接后果。Marder 与 Goaillard 说：每个神经元都在不断用细胞的分子与生化机器重建自身。Godfrey-Smith（2016a）进一步说，生物细胞的赫拉克利特本性，对理解认知有重要含义：神经组织的本质可塑性，是脑与计算机的重要差异；这种可变性在进化中被 leveraged 为学习与应对不稳定世界的手段，也限制了脑—计算机的功能等价。</p>
+
+  <p>变化不只是“活着就会变”，很多变化是对外部环境的适应。活细胞（包括单细胞生物）的特征是：过去的事件会改变未来的活动；这些可塑性与表观遗传学相关——有机体一生中的事件调制基因读取。Bateson 与 Gluckman 说，许多可塑性的核心是表观遗传过程；行为可塑性之下是神经可塑性，再之下是涉及表观遗传机制的分子可塑性。作者不纠缠“单细胞是否有记忆”的语义，只指出：人类与动物心理学意义上的记忆，至少与这些基本适应能力连续、依赖。</p>
+
+  <p>结论很尖锐：<strong>精确科学需要固定靶</strong>。把永远变化的脑当作固定靶，像把果冻钉在墙上。但科学家有制造固定剂的办法：第五章描述了让神经反应比否则更少变异的实验方法；建模可以把东西进一步结晶。接下来用运动皮层展示这些策略。</p>
+
+  <h3><span class="sn">7.2</span>运动皮层的诸视角 <span class="en">Perspectives on the Motor Cortex</span></h3>
+
+  <p>运动皮层在神经生理学史上地位显赫：它是最早能通过电刺激在脑表面引发行为效应（肌肉抽动、可辨认运动的片段）的区域之一；也是最早用神经表征与皮层地图来理论化的区域之一。可尽管研究得早、理论现代，它仍是最具争议的脑区之一：关于其功能角色，最基本的问题都持续争论。</p>
+
+  <p>肌肉控制、因而运动，也许是神经系统进化的最初驱动力。身体在自身运动、重构的环境中运动，所以运动控制必须灵活、适应。脑向肌肉系统的信号不能是一组固定命令；它必须包含环境的赫拉克利特特征，并与对身体及运动效果的感知高度整合。然而，以运动皮层工作为目标的数学建模，却被迫抽掉这个脑—身系统的内在动态。作者考察两个传统：一个较老，一个较新；两者都在单神经元或群体层面设定稳定的表征/命令模式。即使新方法用动力系统论（DST）的工具，看似在表征动态，仍应被理解为“在变化外观下寻找稳定性、因而简单性”的尝试。</p>
+
+  <p>Cunningham 与 Yu 把两种视角的简化策略说得很清楚：系统神经科学数十年来试图在单神经元层面找简单性——构造简单参数化调谐（tuning）曲线与反应场，只分析记录神经元的一个 select subset，跨神经元与试次做群体平均；最近则开始拥抱单神经元异质性，借助降维（dimensionality reduction）在群体层面寻找简单性。</p>
+
+  <h3><span class="sn">7.2.1</span>神经元稳定性视角 <span class="en">The Neuron Stability Perspective</span></h3>
+
+  <p>第一个视角类似视觉系统的固定滤波器模型。核心假设：单个神经元表征/编码与特定身体部位运动相关的某个参数——可能是单块肌肉收缩、肌肉激活序列，或更高阶参数如手臂运动速度。神经生理实验寻找神经激活与精确运动参数的相关；但实践中不同参数（方向、速度）往往彼此相关。于是这个进路的主要困难是：记录对多种假说都给出部分证据，导致版本增殖而无共识。</p>
+
+  <p>在这个传统里，试次间变异被归类为噪声，而不是待建模、待解释的方差。部分因为假定神经元调谐属性固定，变异不编码任何东西；部分因为试次间变异超出实验者兴趣与能力。但跨神经元的反应模式多样性、单神经元运动参数编码在实验条件间的 不稳定性，一直是这个进路的 bugbear。单个神经元的反应，并不像“编码特定运动参数”假说要求的那样稳定、同质。</p>
+
+  <p>要区分单神经元编码与群体编码两个版本。Evarts（1968）记录头部固定猴子执行自愿手部运动（果汁奖励）时运动皮层锥体束神经元的活动；他把单神经元反应解释为编码腕部肌肉施加的力，而不是手在空间中的位移。Georgopoulos 等（1986）的<strong>群体向量模型</strong>是群体版本的 influential 代表：每个神经元对某身体部位有一个偏好运动方向，可通过观察手臂在一系列角度运动时的发放率发现；实际运动由一群神经元发放率的组合决定。群体向量是每个神经元偏好方向的加权和，权重是发放强度。其调谐常被写成余弦函数：</p>
+
+  <p>$$ f(\theta) = b + k\cos(\theta - \theta_{\mathrm{pref}}) $$</p>
+
+  <p>其中 $f$ 是发放率，$\theta$ 是运动方向，$\theta_{\mathrm{pref}}$ 是偏好方向，$b$ 是基线，$k$ 是调制深度。这个模型有实际应用：脑机接口（BCI）从约 100 个 M1 神经元记录，用解码算法导出控制机械臂或屏幕光标的信号。可从“方向可由数据解码”推出“模型假设为真”吗？不能。解码算法的某些假设已被证明不符合 M1 生理；而且在 BCI 实验中，脑会适应模型引入的偏差（Koyama 等 2010；Chirimuuta 2013）。这本身是一个重要教训：<em>可解码性不等于编码假设的真实性</em>。</p>
+
+  <p>单神经元与群体编码版本共享的核心假设是：单个神经元活动本身对正在或即将进行的运动“说了些有意义的话”；它单独地表征运动的某个属性——身体部位、角度、力或速度。新视角放弃这个假设：单神经元激活本身没有内在意义；控制信号与运动表征只在群体中找到。</p>
+
+  <h3><span class="sn">7.2.2</span>群体模式视角 <span class="en">The Population Pattern Perspective</span></h3>
+
+  <p>转向群体模式，像第五章 V1 的大数据转向一样，由大规模记录方法与统计技术推动。旧视角的经验支持是单神经元对运动参数的调谐曲线；新视角依赖神经群体数据，处理后显示低维结构。若在一次试次（如伸手）中观察 100 个神经元，数据有 100 维；但神经元激活相关，PCA/因子分析通常能把数据拟合进约 10 维空间。</p>
+
+  <p>再引入 DST。DST 源于 Poincaré 对天体力学的研究，后来广泛用于描述复杂/混沌系统的演化；生物学中著名的是 Lotka–Volterra 捕食者—猎物周期模型。尽管 DST 是关于变化系统的理论（把系统演化描绘为状态空间中的轨迹），其分析在某种意义上正是<strong>把变化还原为静止</strong>：轨迹被归因于系统某些固定参数与一组不变的法律。Walsh 把这叫“对象理论”：理论域是一组对象，目标是描述/解释其动力学；我们设定对象可能配置的状态空间，寻找支配轨迹的原则；支配动力学的原则不在域内，不随系统演化。就像行星轨道，运动皮层的动力学被表示为神经群体活动在低维状态空间中的轨迹；只要描述系统演化的方程被视为固定，这种分析就把不安的运动变成一张快照、一个形式主义，一次性包含运动。</p>
+
+  <p>有些 DST 表述坚持反表征，与试图取消心理表征的动力认知理论一致。此时，神经元与身体运动之间的因果关系取代了表征（意向）关系。所有派别都同意运动皮层活动是运动的上游原因；反表征派不给群体活动附加“表征 intended movement 某方面”的 gloss，而把皮层与肌肉当作耦合振荡系统，问皮层如何编排振荡序列，最终引起 intended 肌肉收缩序列。一个基本直觉是：不同频率与相位的皮层群体振荡，类似傅里叶基的正弦波集合，可生成任意不规则波形；运动皮层的发放模式构成一组基，适当部署就能执行各种身体运动。</p>
+
+  <p>但 DST 与表征设定并非天然不相容。新视角中也有强烈的表征主义版本。Barack 与 Krakauer（2021）把新视角称为“Hopfieldian”，与旧“Sherringtonian”单神经元视角相对；他们认为解释运动规划的人群轨迹是“full-blooded 意义上的表征”：不只是外部运动参数与神经激活的相关，还具有准确性条件，并参与离线运动规划。按他们的计算定义，状态空间中轨迹的演化就是表征的变换，也就是计算。另一版本来自 Lee Miller 实验室，核心概念是<strong>神经流形</strong>（neural manifold）：M1 活动即使跨多种运动任务，也住在一个低维子空间里；其基向量叫<strong>神经模式</strong>（neural modes），是“被认为源自网络连接的神经协方差模式”。关键是：这些模式被当作运动皮层的“基本计算单位”；不是单个神经元的活动，而是模式的激活，提供神经动力学与功能的基本积木。</p>
+
+  <p>作者在这里下了本章最重要的一刀：<strong>神经模式也是一种理想模式</strong>。它的存在，既依赖脑活动，也依赖研究者选择的分析方法。更耐人寻味的是，研究者在讨论神经模式时，常把自己简化程序的产物，等同于脑自身所做的假设性简化。Gallego 等说：这些研究提示，神经流形所体现的约束，通过提供少量可独立控制的信号来简化运动生成；这个断言，尽管他们同时承认，科学家使用降维是因为人无法可视化 100 多维空间，需要低维表征来获得直觉。作者说：这是把“我们需要简化”偷偷写成“脑在简化”。</p>
+
+  <p>“神经模式是科学家努力的产物，还是自然内在简单的指示（或两者）”这个问题，关联到心理学中关于<strong>潜变量</strong>（latent variables）（latent variables）解释的古老争论。Gould 警告不要把潜变量 reify：对相关矩阵算出的第一主成分是数学抽象，不是有物理实在的“东西”；因子分析者常犯 reification 的诱惑，给所有强主成分赋予物理意义。降维会丢失原始数据中的信息。通常这是值得的代价，因为简化格式更可解释；但被简化掉的东西不应被假定为不重要。</p>
+
+  <p>Lindsay 用一个日常类比：人格测试把人格光谱降成“大五”（宜人性、神经质、外向性、尽责性、开放性）。这些因子来自更细特质（如聪明与机敏）的相关，把常一起出现的特质塌缩成“智力”。问题在于：粗粒度 schema 无法表示那些细特质相关模式偏离常规的人——聪明但不机敏，或反之。Lindsay 却说，降维的信息损失不显著，日常人格词汇是“过度表征”；同理，神经科学家可以认为降维后的神经活动表征抓住了全部本质信息。作者反驳：就像我们认识的人，机敏不同于聪明，不等于同一个“智力”因子；这些差异对我们重要。我们更细致的词汇不是过度表征，只是日常交往中我们在乎个体性。心理学家面对群体人格，可能对个体细节无动于衷，觉得忽略异常案例更方便。同样，降维后边缘的细节，可能对神经科学家完全不重要，但这不意味着它们在绝对意义上无关；它们可能以微妙方式影响脑的运作。</p>
+
+  <h3><span class="sn">7.3</span>视角作为简化模式 <span class="en">Perspectives as Modes of Simplification</span></h3>
+
+  <p>作者一直用“视角”这个词，现在给出定义。当代透视主义各版本共享一点：承认人的 vantage point，而不是上帝视角；只有从这个位置，自然知识才对我们可能。她的独特之处是：坚持<strong>简化</strong>是知识得以可能的 process。视角，作为研究传统，应被理解为实验与建模实践、理论与概念框架的<strong>连贯集合</strong>，共同把对象呈现为适当简化、因而可知的形式。</p>
+
+  <p>在本章案例中，旧视角围绕“单神经元稳定、可解释地编码运动参数”的假设；新视角——仍在建设中——围绕群体活动模式的类似假设。第三章反射论的视角，由“简单反射是神经系统稳定基本单位”定义；第四章计算进路本身提供简化视野：脉冲模式被设定为唯一与认知功能相关的事件，并与脑内其他电化学活动的复杂背景隔离。</p>
+
+  <p>作者强调，视角不只是被动过滤不相关细节，也<strong>主动强加</strong>简化假设到目标系统上。主动的一面，是建构主义知识观常提到的；若从“世界复杂性 vs 科学表征所需简单性”的距离出发，它就更清楚。Giere 说：不要想世界已打包成共享确定属性的对象集合，而要想它是无限复杂的，呈现许多连续变化的质量；你可以从不同视角构造地图。这能结合建构主义与实在论的有价值部分：科学表征是社会建构的，但某些社会建构可以被发现为提供了关于世界某些方面的好图景。</p>
+
+  <p>什么是“好图景”？触觉实在论的答案是：放弃符合论与图像精确性理想；地图的适合性，既由所表征领域的约束决定，也由最终用户的要求决定。科学表征是“人类制图者”与“他们要导航的地域”互动的结果；双方都留下不可消除的印记。所以科学永远无法升到制造者的人类性之上，永远无法获得上帝视角。</p>
+
+  <p>她把视角定义为<strong>关于如何最好地实现有效简化的下注</strong>（bets）。本章关注的复杂性是变化性——脑的时间异质性，神经系统从不在同一状态两次。相应的简单性概念是<strong>稳定性</strong>。神经科学家通过不同的理想化假设，简化运动皮层：哪些神经元/群体属性保持固定。</p>
+
+  <p>这引出透视主义的经典问题：视角之间是竞争还是互补？能否最终被一个视角 subsumes？透视主义是不是相对主义？真理是什么？作者不全面回答，但指出赫拉克利特式复杂性指向一些有趣答案。</p>
+
+  <p>对“视角收敛”的期待，属于更接近传统科学实在论的透视主义。传统实在论者常批评透视主义不够独特：不同视角不过是对一个 underlying reality 的部分看法，原则上可统一，像盲人摸象。一个补救是：认为心灵独立实体的基本属性是<strong>倾向性的</strong>（dispositional），在不同探测方式下以不同方式显现；于是不同视角显现同一个对象的倾向属性，原则上可收敛，真理就是与这些倾向属性的充分符合。但 Chakravartty（2017）现在认为：设定一组 underlying dispositional properties、并承诺原则上可统一，是纯形而上学，无法被经验确认或否证。作者补充：这个 move 否认了本章的要点——脑像其他生命系统一样，本质上是可变化的。设定一个稳定倾向属性的 substratum，是对“根本实在必须不变才能存在、才能被认识”这一古老思想的让步。</p>
+
+  <p>尼采在此意外地 relevant。对他而言，从柏拉图以来主导的真理概念，瞄准一个心灵独立、不变、凌驾于现象之流以上的实在；这种“求真意志”是禁欲理想的核心，本质上否定生命。Poellner 说，这个禁欲理想所否定/贬低的“他者”，是“生命——也就是在日常经验中面对我们的、不断变化的感性个体领域”。作者说：若我们把神经与生命系统呈现的变化性当作基本，而不是存在的 degraded 模式，不是与真正存在相区分的单纯生成，那么我们也必须放弃“永恒真理”的古老理想——即最好的科学不断逼近的东西。</p>
+
+  <p>她不给替代性的“透视真理”正面理论，只指出要 unsettle 的主立场：实在已经被切分成确定结构、本质、形式，可以被认识者被动地完整把握。在其全部复杂性中，世界溢出所有对有限认知者而言可理解的概念形式。认知活动，就是给这个“可能形成的过剩”带来确定性。正因如此，多元论不可避免：在现象之流中确定 pattern，必有不止一种方式。但绝对真理被排除，不等于接受“任何确定系统都一样好”的相对主义。本章已经显示：科学视角可能失去生命力、被取代，当它不够敏感于它试图规范化的现象时。</p>
+
+  <h3><span class="sn">7.4</span>数学抽象的两种哲学视角 <span class="en">Two Philosophical Perspectives on Mathematical Abstraction</span></h3>
+
+  <p>作者回到第二章的形式唯心论/形式实在论之分，把它用于数学抽象的地位。有趣的是，“抽象”在当代哲学中有两个意思：一个<strong>高蹈</strong>，一个<strong>日常</strong>。高蹈意义上，抽象是一个抽象实体，不在时空中定位，可能住在柏拉图的天国。日常意义上（科学哲学更常用），抽象是简化的同义词，与理想化配对，是尘世科学家使用的建模策略。这两种“抽象”对应两种“数学的不可理喻的有效性”解释。</p>
+
+  <p>高蹈解释：自然底层的实在就是数学性的；数学之所以有效，因为世界本身是数学结构。日常解释：数学之所以有效，因为它是压缩、组织、操作复杂信息的强大工具；它有效不是因为镜像了世界的数学本质，而是因为它把世界投影到可处理的维度。作者显然倾向前者之外的后者：数学抽象是简化，不是对柏拉图天国的窥视。形式实在论把数学形式当作独立于建模活动的发现；形式唯心论把数学形式当作科学家在互动中建构、确定的理想模式。</p>
+
+  <p>这不是说数学是任意的。数学有它自己的约束：一致性、可证明性、可计算性、与数据的适配。但这些约束不足以决定“哪一个数学结构是世界的真实结构”。对超复杂对象，多个数学结构都可以捕捉不同侧面；选择取决于研究目的、尺度、可操作性。</p>
+
   <div class="table-wrap cheat">
     <table>
-      <thead><tr><th>维度</th><th>神经元稳定视角</th><th>群体模式视角</th></tr></thead>
+      <thead><tr><th>节点</th><th>核心内容</th><th>关键人物/证据</th><th>结论</th></tr></thead>
       <tbody>
-        <tr><td class="id">基本单位</td><td>单个神经元的调谐</td><td>群体状态/轨迹</td></tr>
-        <tr><td class="id">稳定层</td><td>细胞—参数关系</td><td>群体几何/动力学</td></tr>
-        <tr><td class="id">数学工具</td><td>回归、调谐曲线</td><td>降维、动力系统</td></tr>
-        <tr><td class="id">对漂移的处理</td><td>视为噪声或需校正</td><td>视为系统再标定的表现</td></tr>
-        <tr><td class="id">主要风险</td><td>把暂时调谐当固定编码</td><td>把群体模式当唯一真实层</td></tr>
+        <tr><td class="id">7.1</td><td>脑是过程；变化性是构成性的</td><td>赫拉克利特、Dupré、Marder、Godfrey-Smith</td><td>精确科学需要固定剂</td></tr>
+        <tr><td class="id">7.2</td><td>运动皮层争议：两种稳定性假设</td><td>Evarts、Georgopoulos、Gallego</td><td>视角决定看到哪种稳定</td></tr>
+        <tr><td class="id">7.2.1</td><td>神经元稳定性：余弦调谐、群体向量、BCI</td><td>Georgopoulos 1986、Koyama 2010</td><td>可解码≠编码假设真</td></tr>
+        <tr><td class="id">7.2.2</td><td>群体模式：PCA、DST、神经流形/模式</td><td>Gallego、Barack & Krakauer、Gould</td><td>神经模式是理想模式</td></tr>
+        <tr><td class="id">7.3</td><td>视角=有效简化的下注</td><td>Giere、Nietzsche、Chakravartty</td><td>多元论≠相对主义</td></tr>
+        <tr><td class="id">7.4</td><td>数学抽象：柏拉图式 vs 康德式</td><td>“不可理喻的有效性”</td><td>数学形式是建构的理想模式</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">漂移也许只是噪声，群体稳定性才是答案</span></div>
-    <div class="thm-body">
-      <p>一种反驳是：单细胞漂移可能来自测量误差、电极移动、动物状态变化；只要群体层面稳定，行为就能稳定，神经科学仍然可以找到“真正的编码层”。</p>
-      <p>Chirimuuta 不否认群体层面可能更稳定。她否认的是“因此群体层就是无视角的真理”。群体模式同样依赖降维方法、时间窗与模型假设。</p>
-    </div>
-  </div>
-
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">把“漂移”读成“虚无”</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于变化、降维与视角的四个误读</span></div>
     <div class="thm-body">
-      <p><strong>一、把漂移当随机噪声。</strong>漂移可能有功能意义：它让系统在不改变行为的情况下持续再标定。</p>
-      <p><strong>二、把某个层次当“真正的基础”。</strong>单细胞、群体、动力学、行为各有稳定结构，没有哪个层次自动拥有本体论优先权。</p>
-      <p><strong>三、把“没有无视角真理”当“没有真理”。</strong>视角主义限制的是知识的普遍形式，不是知识的可能性。</p>
+      <p><strong>一、“脑是过程，所以不能有稳定理论”。</strong>可以有；稳定理论捕捉的是特定尺度、特定任务下的稳定 pattern，不是永恒本质。</p>
+      <p><strong>二、“降维=发现脑的低维本质”。</strong>降维既压缩也丢失；低维可能是任务简单、方法限制或真实约束，不能直接本体化。</p>
+      <p><strong>三、“两个视角必有一个错”。</strong>它们可能针对不同现象、不同任务；也可能一个最终取代另一个。作者不预设收敛。</p>
+      <p><strong>四、“透视主义=怎么说都行”。</strong>视角会失败、被淘汰；世界与现象提供约束。</p>
     </div>
   </div>
 </div></section>
 
 <section id="ch8" class="chapter"><div class="wrap">
-  <div class="sec-label">Chapter 8 · Prediction, Comprehension, and the Limits of Science</div>
+  <div class="sec-label">Part III · Chapter 8 · Prediction, Comprehension, and the Limits of Science</div>
   <h2><span class="num">8</span>预测、理解与科学的限度</h2>
-  <p class="lede">如果一台机器能预测大脑的每一个反应，我们是否就理解了它？Chirimuuta 的回答是：不一定。而且，对大脑这样的系统，预测与理解可能无法同时最大化。</p>
+  <p class="lede">如果最准确的模型是一团无法解释的权重，而最可理解的模型又预测不准，那么“预测”与“理解”就可能离婚。神经科学正站在这个十字路口。</p>
 
   <div class="chap-intro">
-    <p>这一章把“理解”放回科学的目标清单。作者借用维柯的<strong>verum factum</strong>——“可理解的正是被制造出来的”——解释神经科学为何依赖模型系统：我们理解的是自己造出来的 proxy，而不是物自体。机器学习把预测推得更远，却让模型更像黑箱；这不是偶然的技术瓶颈，而是复杂性施加的结构性限制。</p>
-    <span class="tag">科学限度 · 机器学习</span>
+    <p>本章从“科学—工程”的边界入手，用维柯的 <strong>verum ipsum factum</strong>（真即所做）说明：神经科学的理解，依赖于制造可理解的代理系统。然后考察机器学习带来的三种可能：预测与理解离婚、理解被<strong>重定向</strong>到设计原则、理解被<strong>重新定义</strong>为预测/压缩。最后用 Bergson 的“固定之网”指出：无论哪种，人工中介仍是理解的条件，也是限度。</p>
+    <span class="tag">第三编 · 限度与机器</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">verum factum</span><span class="chip">预测</span><span class="chip">理解</span><span class="chip">深度网络</span><span class="chip">可解释性</span><span class="chip">黑箱</span><span class="chip">科学 vs 工程</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">理解：让一个系统对研究者变得可把握</span></div>
-    <div class="thm-body">
-      <p>“理解”不是单一的量。它至少包含：能跟随因果链、能在不运行模型时做定性预测、能把行为与可陈述的机制联系起来、知道它在什么条件下失败。理解总是<strong>相对于一个认知者与一个目的</strong>的。</p>
-      <p>预测则是另一回事：给定输入，产出足够准确的输出。两者经常同行，但没有必然绑定。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">线性-非线性模型 vs 深度卷积网络</span></div>
-    <div class="thm-body">
-      <p>经典的 V1 线性-非线性模型参数少、结构清楚，对人工刺激的响应预测得不错，也能给出可陈述的计算解释。但当刺激变成自然图像与电影时，它的预测就明显吃力。</p>
-      <p>深度卷积网络相反：它能更好地预测自然图像下的反应，甚至能预测一些此前未被注意的群体现象；但数百万参数与分布式表征让研究者很难说出“它究竟学到了什么”。</p>
-    </div>
+    <span class="chip hot">Ignorabimus</span><span class="chip">verum factum</span><span class="chip">预测/理解权衡</span><span class="chip">深度学习</span><span class="chip">可解释性</span><span class="chip">自动化科学</span><span class="chip">固定之网</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">verum factum：我们理解的是自己造出来的东西</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">制造是理解的条件；机器的可理解性也有上限</span></div>
     <div class="thm-body">
-      <p>Vico 的原意是：几何与人类制造的社会世界比神圣创造的自然世界更可理解，因为前者是人造的。Chirimuuta 把它转用到神经科学：研究者理解的是<strong>模型系统</strong>——被麻醉的动物、被简化的制备、被训练的网络——而不是野外的脑。</p>
-      <p>这解释了一个看似矛盾的现象：神经科学最成功的解释，往往发生在最人工的条件下。因为只有被制造出来的系统，才足够简单到可以被人类心智把握。代价是：我们把握的是 proxy，不是原物。</p>
+      <p>维柯的公式不是“真理是制造出来的”这么粗暴，而是：对人类而言，可理解的东西，是<em>被制造</em>的东西。几何证明可理解，因为我们重走了构造步骤；自然可理解，因为我们能造出实验系统与模型。神经科学正是如此：它通过实验制备、计算模型、类器官等代理系统，把脑变成可理解的对象。</p>
+      <p>但代理系统一旦复杂到深度学习模型这种程度，制造者也不再能完全看懂它。Von Neumann 预言：人造自动机的建造者，终将像我们面对复杂自然现象一样，面对自己的造物感到无助。这正是当代计算神经科学的处境。</p>
     </div>
   </div>
 
+  <h3><span class="sn">8.1</span>论限度 <span class="en">On Limits</span></h3>
+
+  <p>神经科学是一门“边疆科学”。这个帝国式隐喻里埋着一个想法：脑是一片未发现的地域，正一点点被科学暴露的力量征服。作者要质疑的不是“还有多少未知”，而是“限度”（barrier）这个概念本身。Du Bois-Reymond 在 <em>Ignorabimusstreit</em> 中说过：科学在人所能及的范围内是主人，他分解、重建，没人能说他的知识与力量止于何处；但越过这些界限，他现在不能、也永远不能前进。作者说，限度问题不该被当成“乐观/悲观”“拥护/唱衰”的站队测试；它应该促使我们审查“科学”这个概念——因为划界就是定义。</p>
+
+  <p>她认为，比“科学与伪科学”的划界更有用的，是<strong>科学与工程</strong>的边界。触发这个 inquiry 的，是机器学习这种工程对神经科学领地的侵入：ANNs（人工神经网络）的工程正在与神经科学统一；机器学习在一些传统科学方法未能解决的挑战上成功，使许多研究者重新思考学科的目标与范围。</p>
+
+  <h3><span class="sn">8.2</span>真即所做 <span class="en">Verum Esse Ipsum Factum</span></h3>
+
+  <p>本书把简化放在对神经科学的解释中心。这不只发生在模型与科学表征领域，也发生在实验的物质领域：我们在难以穿透的神经复杂性森林中，清理出更简单的模型系统。简化、制造更简单的东西，是一个本质上有建设性也有破坏性的过程。它不应被误读为“发现了一直藏在那里的简单性”。脑内藏着一种潜在简单性、等着被发现，这个想法也许像黄金国或所罗门王矿藏一样虚构。</p>
+
+  <p>简化的收益，有些是实用的，有些是认识的。更简单的系统当然更容易操纵与理解；作者同意 Potochnik：理解——感到自然过程被弄得可理解了——是科学的首要认识目标。通过考察第二编案例中的物质简化与表征简化，可以看到：这些策略通过<strong>制造对科学家而言可理解的东西</strong>，让事物变得可理解。</p>
+
+  <p>第五章的结论——“我没做出来的，我就不理解”——若只从一个小小归纳基础推出，似乎太强。现在要把它接到科学史与科学哲学中强调科学与技术相互依赖的工作上。<strong>verum factum</strong> 来自维柯，他主题化了做、生产与知的联系，反对后来 Dewey 所说的“旁观者”知识论。Dupuy 说，控制论给了“verum et factum convertuntur”（真与做可互换）最终表达。</p>
+
+  <p>维柯自己的应用是几何：几何对象可理解，因为我们构造它们。更广泛地，现代科学从一开始就与技艺、机器、实验装置纠缠。作者引 Peter Dear 的刻画：科学是“discursive hybrid”（话语混合体），一方面要理解自然，一方面要工具化自然。这不是说每个科学家都自觉在做工程；而是说，科学的对象、概念、仪器与目标，从起点就被工具性塑造。</p>
+
+  <p>Grossmann–Hessen 论题进一步说：技术为科学提供可理论化的系统，理论再被用于解释非人造物。力学始于机器理论，后被用于天体与落体。神经科学里，信息论二战后作为信号工程的统计框架被发明，然后被 Attneave（1954）、Barlow（1961）拿来理论化视觉系统反应。Movshon 说，Barlow 对信息论的热情超过心理学/神经科学此前发展的任何东西；他认为 Shannon（1951）是“心理学与神经病学史上最伟大的论文之一”，尽管 Shannon 是数学倾向的电气工程师，没受过心理学或神经科学训练。预测处理模型也先在电视工程语境中出现。今天，ANN 正在塑造神经科学家对“生物神经网络”的构想。</p>
+
+  <p>笛卡尔的《原理》已有把自然科学研究当<strong>逆向工程</strong>的构想。这个策略在理论神经科学中常见：要求否认自然物与人造物之间有根本/本质差异。正因为此，计算模型的字面解释在科学共同体中占主导：研究者默认，神经系统在某个抽象层次上，与表征它的计算模型同一。即便“所有模型都错，但有些有用”（Box）常挂嘴边，字面解释仍是默认。</p>
+
+  <p>作者说，历史视角支持她的类比解释，而不是字面解释。因为一旦承认模型是<strong>为简化而设计的 artifact</strong>，就没有理由认为它的结构是自然中预存的。</p>
+
+  <h3><span class="sn">8.2.1</span>如此看待神经科学 <span class="en">Neuroscience So Considered</span></h3>
+
+  <p>Rosenblueth 与 Wiener 说：科学探究的意图与结果，是获得对宇宙某部分的<strong>理解与控制</strong>。作者用这句话检查神经科学的自我叙述。一个高规格例子是 BRAIN Initiative 的 rationale：长期回报是更全面地理解脑如何产生复杂思想与行为，从而指导诊断、治疗、治愈神经与精神疾病。注意这里 adherence to <strong>cascade conception</strong>（瀑布模型）：基础研究追求理解，随后指导应用研究追求干预。</p>
+
+  <p>作者说，这个 conception 低估了“所谓纯粹/基础研究”在对象建构与概念化上已经与工具性内在相连，即便没有明确应用目标。替代图景是：科学建立在模型系统上——抽象数学模型或具体模型——呈现两张脸。因为简单，模型提供理解；也因为简单，模型服务工具目的，帮助预测与操纵。模型不是自然内在简单的表征（数学模型）或 exemplar（具体模型，如脑类器官）；模型之所以简单，是因为它是被设计来让事物比实际更简单的 artifact。</p>
+
+  <p>Grossmann–Hessen 论题还解释了：为什么 20 世纪中期神经科学发展中，新技术发明先于理论化（theorization）。若没有电子计算机及其数学工具的先在发明，计算主义不可能成为理解神经生理现象的主导框架。信息论、预测处理、ANN 都是例子。作者还指出，笛卡尔式逆向工程策略要求否认自然/人工的本质差异；这让我们理解，为什么计算模型的字面解释在科学共同体中如此主导——尽管 Box 的格言常被挂在嘴边。</p>
+
+  <h3><span class="sn">8.3</span>重新谈判理解与控制的关系 <span class="en">Renegotiating the Relationship of Understanding and Control</span></h3>
+
+  <p>作者先加一个 caveat：她不是说人造系统都完全可理解。即便制造者也有知识限制；Barlow 说，最了解机器的人是设计者，但没有复杂机器的设计者会声称每个细节都完全理解。她的观点是：神经科学家的理解，建立在有至少部分可理解的人工系统上；这些基于模型的实践，与几百年来理解/控制自然相互交织的科学传统一致。但没有保证模型系统总是足够可理解，能支撑这种联合。</p>
+
+  <p>当模型复杂到科学家真的看不懂它如何工作，会发生什么？Von Neumann 在 Hixon 研讨会上被神经生理学家（包括 McCulloch）批评，说他没有强调自然自动机与人工自动机的差异；他回答：这个区别会随时间变弱。很快，自动机的建造者会像我们面对复杂自然现象一样，面对自己的造物感到无助。作者说，这大概就是当代计算神经科学的处境：最先进的模型是数百万参数（parameters）的深层 ANN；它们比旧模型难懂得多；预测成功伴随着对既有理论的挑战。Saxe、Nelli、Summerfield 说，最坏情况下，深度学习框架似乎给神经科学一个存在性挑战：它似乎要扫掉关于特定计算如何支撑行为的既有知识，把理论神经科学的目标与当代 AI 研究合并。</p>
+
+  <p>有些评论者（如 Wired 的 Chris Anderson）说，机器学习在科学中的兴起预示“理论的终结”——清晰假设与模型在人尺度数据上检验的科学方法过时了。作者要考察：当神经科学离开“建立足够简单、 creator 大体能理解的模型”这一传统 modus operandi，会发生什么。她给出三个可能 scenario：第一，我们目睹与既有神经科学的彻底断裂；第二，没有重大断裂，只是可处理的理论问题集合变了；第三，机器学习科学是既有科学史某些倾向的<strong>强化</strong>。</p>
+
+  <h3><span class="sn">8.3.1</span>预测与理解的离婚 <span class="en">Divorce of Prediction and Understanding</span></h3>
+
+  <p>按 Dear 的 conception，科学范围限于“模型简单到可理解”的领域。理解是科学两张脸之一；没有它，实践就退化为纯工具性（技术）。科学被划定为一种活动：产生理解的工作与产生工具控制的工作合作、混合。工具成功的一大成分是准确（accurate）预测。所以可以把预测当作关键工具目标，与理解并列。如果两个目标不能和谐满足——如果产生理解的实践妨碍工具控制，反之亦然——那么技术与自然哲学这两类活动，其联合本是科学的定义，就不得不分道扬镳。</p>
+
+  <p>作者说，这大概就是神经科学今天的处境。机器学习进入神经科学，让人看清一个<strong>权衡</strong>：系统越复杂（如脑），预测最准确的模型越复杂，越不能提供理解；理论上最有启发性的模型越简单，预测越差。第五章已出现这个权衡：经典 LN 模型对人工刺激预测尚可，对自然刺激失败，但高度透明，能提供计算解释；DCNN 对自然图像/电影预测准确，却远不可解释（less interpretable），可能永远无法带来对细胞反应剖面的更深理解。</p>
+
+  <p>这个权衡不限于神经科学。统计学与心理学也目睹机器学习的威力：在巨大数据上做归纳，不强制线性假设，而旧模型的可处理性与可解释性正来自这些假设。作者引 Breiman、Shmueli、Yarkoni & Westfall。她特别提到 Butts 的总结：深度模型下，“一个神经元对什么选择性、这种选择性如何产生，基本不可捉摸”。</p>
+
+  <h3><span class="sn">8.3.2</span>理解被重定向 <span class="en">Understanding Redirected</span></h3>
+
+  <p>对 ANN 的期待很高：视觉、空间导航、语言。但最先进模型不以旧模型的方式提供对目标系统的理解。这主要因为 ANN 的复杂性——许多层与连接权重——以及它用来拟合数据的数学函数不是由建模者手写/选择，而是通过多轮训练调整虚拟连接权重得到，隐含在训练网络的权重里。</p>
+
+  <p>作者不认为这意味着神经科学必须放弃理解。她给出“理解被重定向”的例子：研究者完全使用 ANN，但不放弃理解目标；只是把理解转向他们认为更可行的挑战，而不是传统上“勾画认知背后的计算并给出理论 rationale（如高效编码）”。在这些案例中，科学家没有放弃寻找脑中简单、因而可理解的原则；旧的理论驱动规范与实践复现了。这说明：深度学习时代的建模，仍在继续古老的“追求简单性”事业。</p>
+
+  <p>在这种进路中，人工代理（ANN）仍被用来理解脑。但不再寻找“人工与生物网络共享的计算的显式表征”；认识的靶子是<strong>原则、设计规格或约束</strong>——它们被认为决定两类系统的运作。这些原则足够简单、可理解，即便 ANN 与 BNN 内部的处理细节不可理解。Hasson 等（2020）在负面论证之后，正面主张研究者应把努力转向发现人工与有机网络共享的“设计规格”，关注网络架构、学习规则、目标函数。</p>
+
+  <p>第一个详细例子是 Lillicrap 与 Kording（2019）。他们回应一个根深蒂固的想法：脑中的简单性，将通过 Marr 的计算层次描述发现——既抽掉神经生物实现的 messy details，也抽掉算法/表征格式的 knotty strata。计算层次会用优雅的数学公式描述“把感觉输入转换为智能、知觉引导行为”的函数；通过建造实现这些计算、显示 lifelike 知觉能力的人工系统来验证。经典视觉研究是 exemplar；最近被重述为寻找 canonical neural computations。</p>
+
+  <p>机器学习之所以拆了这条路，不是因为 AlexNet/ResNet “解决了视觉”，而是因为它们大幅超越简单、理论驱动模型的预测精度，使“视觉系统原则上可由少数几个几参数模型表征”的想法显得天真。Lillicrap 与 Kording 问“理解一个神经网络意味着什么”，答案对有机/人工网络同样适用。他们说：“compactness 是我们所谓有意义理解的必要条件。”也就是说，把一个网络表征得简单——拥有它的“compact description”——是它可理解性的必要条件。一个训练到人类水平物体分类的 ANN，其学到的函数嵌在数百万参数里；除非完整描述能压缩成更简约的描述，否则无法理解它如何分类图像。他们没有规定要多 compact，但说参数数量必须减少好几个数量级；压缩到约 100,000 个自由参数仍不可理解。可一个参数少到可解释的 ANN，不太可能在真实数据上高性能。</p>
+
+  <p>他们强调：虽然无法得到 ANN 计算的 compact description，但网络的学习规则完全可知，架构已知；建造 ResNet 这类高性能网络的程序不到 100 行代码。由此对神经科学的教训是：对 ANN 与 BNN，简单性都在学习规则与架构原则中；这些是可行理解目标，而不是 hopelessly complicated、分布式的信息处理模式。系统神经科学应放弃“建立可解释模型解释认知表现”的长期野心，转而理论化解剖与可塑性规则。</p>
+
+  <p>作者详细讨论他们放弃旧议程的理由。他们指出，相信计算层次解释可行，靠的是一个来自统计物理的类比：统计物理能从无数粒子系统中找到 compact、midlevel 描述，既可解释又利于预测控制。但 Lillicrap 与 Kording 说这个类比很快破裂：气体中所有原子相同、可交换、记忆短；脑中每个细胞可能独特，记忆可追溯到动物出生。因此，这种 compact mid-level 计算模型不可能有他们想要的光滑性。作者补了一句关键质疑：在脑中，学习与执行不像机器那样分为离散阶段；Lillicrap–Kording 把“学习规则透明”当作理解支点，恰恰忽略了这种差异。人工网络的学习程序是工程师写的、显式编码的；生物网络的学习是存在方式，不是流程图上的一个阶段。</p>
+
+  <h3><span class="sn">8.3.3</span>理解被重新定义 <span class="en">Understanding Redefined</span></h3>
+
+  <p>第三个 scenario：机器学习科学不是断裂，而是既有倾向的强化；它把“理解”重新定义为别的东西。作者用马赫作代表。马赫拒绝物理理论术语（力、原子）的本体论承诺，把它们当概念工具；这导致一种图景：只有工具性属于科学，自然哲学没有位置。若机器学习让科学逐渐削弱“通常定义的理解”，这个发展就是进步的——至少在马赫意义上。</p>
+
+  <p>马赫有时把科学定义得适合机器学习自动化：“科学本身可以被看作一个极小化问题：以尽可能少的思维消耗，尽可能完整地呈现事实。”世界只由“要素”组成，可类比为数据点；科学的目标是尽可能紧凑地表征它们，以便预测新数据。马赫时代，最好的手段是数字表征与定量理论；更一般地，任务是发现最好的数据处理方法——最有效地表征数据，以预测控制。机器学习自动生产分类器/预测器，正是做这个。把数据处理从人脑卸载到机器，效率更高。马赫甚至展望机械计算机：数学运算是“心灵的完全卸载”，计算的苦工可交给机器。</p>
+
+  <p>作者说，这里有一个悖论：随着进步，科学变得越来越<strong>无思</strong>（thoughtless）。思考自然、试图理解它，是科学形而上学遗产的沉重负担。机器的承诺不是替我们思考，而是加速“从常规科学中消除思考”的过程。可 ANN 的“无思”也暴露在对抗样本中：它们会把猫误分类，说明它们真的不知道猫是什么。对许多人而言，这使 ANN 不能作为自主科学 agent 可靠使用。</p>
+
+  <p>作者结论：这种 AI 是经验主义科学哲学原则的纯粹体现。若我们觉得它不够——若我们不满足于“优化预测与控制、同时重新定义或移除理解”——我们也就承诺了对这些经验主义原则的批评。三个 scenario 各有可取之处：第一个揭示科学限度（脑的复杂性）；第二个显示工具性与理解的关系可以演化，神经科学可以照常继续；第三个揭示自动化科学与经验主义理想的深层联系。但第二个的“重定向”方案非常 programmatic，能否成功未知；第一个所描述的限度，可能比研究者希望的更彻底。</p>
+
+  <h3><span class="sn">8.4</span>机器的固定之网 <span class="en">The Fixed Net of the Machine</span></h3>
+
+  <p>本章以 Bergson 的一段话收束：我们的理智循自然倾向，一方面靠 solid perceptions，一方面靠 stable conceptions；它从不动出发，只把运动表达为不动的函数；它占据 ready-made concepts，试图用这些概念像网一样捕捉流逝的实在。这不是为了获得内在、形而上学的知识，而只是为了利用实在；每个概念（每个感觉）都是我们的活动向实在提出的实践问题，实在像做生意一样回答 Yes 或 No。可这样做，恰恰让“实在的本质”溜走了。</p>
+
+  <p>作者说，本章开头考察技术在科学中的领导作用：制造装置作为模型系统，提供对力量与过程的理解，并假定这些力量/过程同样作用于人造物与自然物。然后考察当机器带上“非人造物的不可理解性”时，神经科学会怎样。深度学习模型的复杂性揭示了科学理解的限度；神经科学家希望把理解重定向到新问题。还有一种希望：机器可以替我们做归纳，我们只需看预测结果。但作者认为，这种希望忽略了：<strong>学习与执行在生物中不可分</strong>。动物的学习形态，由神经组织的可塑性决定，而可塑性来自它由活细胞构成；学习形态还由学习者作为有机体、有自身生命轨迹、需要与动机塑造。这种支持无控制条件下灵活行为的学习方式，能否被非生命机器捕获，十分可疑——即便机器学习能在各种预设任务上匹配动物学习。</p>
+
+  <p>人工网络中的学习比训练后的分类程序更容易理解，这是事实；但若因此假定生物系统中的适应也如此透明，就错了。在生物中，适应不是工程师流程图上的离散阶段，而是一种存在方式。</p>
+
   <div class="table-wrap cheat">
     <table>
-      <thead><tr><th>维度</th><th>经典线性-非线性模型</th><th>深度卷积网络</th></tr></thead>
+      <thead><tr><th>节点</th><th>核心内容</th><th>关键人物/证据</th><th>结论</th></tr></thead>
       <tbody>
-        <tr><td class="id">参数规模</td><td>少，可逐项解释</td><td>数百万，分布式</td></tr>
-        <tr><td class="id">人工刺激预测</td><td>较好</td><td>好</td></tr>
-        <tr><td class="id">自然场景预测</td><td>有限</td><td>显著更好</td></tr>
-        <tr><td class="id">可理解性</td><td>高</td><td>低</td></tr>
-        <tr><td class="id">主要贡献</td><td>机制假设、定性洞察</td><td>预测精度、工程能力</td></tr>
+        <tr><td class="id">8.1</td><td>限度问题应审查“科学”概念；科学/工程边界</td><td>Du Bois-Reymond、Ignorabimus</td><td>限度是定义问题</td></tr>
+        <tr><td class="id">8.2</td><td>verum factum：可理解的是被制造的</td><td>Vico、Dear、Grossmann–Hessen</td><td>理解依赖人工中介</td></tr>
+        <tr><td class="id">8.2.1</td><td>瀑布模型批判；模型两张脸</td><td>BRAIN Initiative、类器官</td><td>理解与控制不可分</td></tr>
+        <tr><td class="id">8.3</td><td>预测/理解权衡；三种 scenario</td><td>Von Neumann、Saxe 等</td><td>离婚/重定向/重新定义</td></tr>
+        <tr><td class="id">8.3.1</td><td>复杂模型预测准但不可理解</td><td>LN vs DCNN、Butts</td><td>权衡真实存在</td></tr>
+        <tr><td class="id">8.3.2</td><td>理解重定向到设计规格/学习规则</td><td>Hasson、Lillicrap & Kording</td><td>compactness 是理解条件</td></tr>
+        <tr><td class="id">8.3.3</td><td>理解重新定义为预测/压缩</td><td>Mach、自动化科学、对抗样本</td><td>经验主义纯粹体现</td></tr>
+        <tr><td class="id">8.4</td><td>固定之网；生物学习不可离散化</td><td>Bergson、Von Neumann</td><td>人工中介仍是限度</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">“理解”本来就可以被重新定义</span></div>
-    <div class="thm-body">
-      <p>一种回应是：不应把“理解”锁死在旧式的、可陈述的机制上。若模型能稳定预测、支持干预、迁移到新任务，为什么不算理解？也有人主张，只要能探测网络内部表征，黑箱就不那么黑。</p>
-      <p>Chirimuuta 不否认“理解”可以有多种形式。她担心的是<strong>把定义调整到刚好让现有工具合格</strong>。如果每当模型变得不可解释，我们就把“理解”改写成“预测加干预”，这个词就失去了独立的批判功能。</p>
-    </div>
-  </div>
-
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于预测与理解的三个混淆</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于预测、理解与自动化的五个误判</span></div>
     <div class="thm-body">
-      <p><strong>一、把预测精度当理解。</strong>高准确率可能来自对数据分布的记忆，而非对机制的认识。</p>
-      <p><strong>二、把可解释性当万能药。</strong>显著性图、特征可视化能提供线索，但不等于机制；它们本身也需要解释。</p>
-      <p><strong>三、把“AI 能模拟”当“AI 能理解”。</strong>模拟输入—输出关系，与理解它为何如此，是两件事。</p>
+      <p><strong>一、“预测准就是理解”。</strong>作者区分二者；预测是工具目标，理解是另一张脸，二者可能冲突。</p>
+      <p><strong>二、“模型越复杂越科学”。</strong>复杂性可能换来预测，却牺牲可理解性；科学的价值不只在预测。</p>
+      <p><strong>三、“学习规则透明=整个系统透明”。</strong>在 ANN 中学习程序显式；在生物中学习是存在方式，不能这样分离。</p>
+      <p><strong>四、“自动化=科学终结”。</strong>作者给出三种 scenario，不预言单一结局；她只指出限度与倾向。</p>
+      <p><strong>五、“verum factum=能造就能懂”。</strong>制造是理解的条件，不是充分条件；造出 DCNN 不等于理解视觉。</p>
     </div>
   </div>
 </div></section>
@@ -1084,67 +1831,131 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch9" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 9 · Revisiting the Fallacy of Misplaced Concreteness</div>
   <h2><span class="num">9</span>具体性错置：模型不是大脑</h2>
-  <p class="lede">当我说“大脑在计算”时，我是在描述一个模型，还是在陈述一个事实？怀特海把后一种做法称为“具体性错置”：把抽象当成了具体，把地图当成了领土。</p>
+  <p class="lede">把地图当成领土，是哲学的老错误。Whitehead 给它取名“具体性错置”。当神经科学把计算模型当成脑内真实结构，这个错误就不再是实验室里的方便假设，而会生成一整套关于机器意识、通用智能与理解的幻象。</p>
 
   <div class="chap-intro">
-    <p>这一章把前面的方法论结论推向哲学后果。如果计算模型必然抽象掉大量生物细节，它就不能自动回答“意识是什么”“机器能否有意识”。Chirimuuta 批评“意识同构”论证：从功能等价推出体验等价，是未经授权的跳跃。</p>
-    <span class="tag">意识 · AI · 生物自然主义</span>
+    <p>本章把第四、五、六章的“模型—对象”区分推到哲学后果。作者逐一拆解：为什么计算模型会制造<strong>解释鸿沟</strong>（explanatory gap）；为什么“把 ANN 放大”不会自动产生意识；为什么 Schneider 与 Chalmers 的“精确同构”论证犯了具体性错置；以及为什么对抗样本暴露了机器“缺少理解”。结论是生物自然主义，但不是要回到朴素整体论，而是提醒哲学不要照搬科学的简化。</p>
+    <span class="tag">第三编 · 意识与理解</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">具体性错置</span><span class="chip">解释鸿沟</span><span class="chip">现象意识</span><span class="chip">意识同构</span><span class="chip">功能主义</span><span class="chip">生物自然主义</span><span class="chip">缩放论证</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">把模型的性质归给被建模的对象</span></div>
-    <div class="thm-body">
-      <p>Whitehead 的“具体性错置”指：把科学抽象出来的实体、关系或属性，当成具体现实本身。模型中的变量是可分离的，系统中的过程是纠缠的。</p>
-      <p>在神经科学里，最常见的版本是：模型把某功能描述为计算，于是我们说“大脑在计算”；模型把某区域描述为模块，于是我们说“大脑有这个模块”。日常科学可以容忍，哲学若照单全收，就会把方法论简化升级为形而上学。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">蒸汽机车会梦见赛马吗？</span></div>
-    <div class="thm-body">
-      <p>Chirimuuta 用一个极好的类比：蒸汽机车在某些任务上远超马——拉重物、跑长途——但没有人会因此认为机车正在“走向完整的生物运动能力”。</p>
-      <p>同样，AlphaGo 在围棋上超越人类，ChatGPT 能生成句子，只说明它们在被设计的任务上与人类功能重叠。把它们放大，不自动产生“通用智能”，就像把机车放大，不自动产生会跳栏的马。</p>
-    </div>
+    <span class="chip hot">具体性错置</span><span class="chip">解释鸿沟</span><span class="chip">AGI</span><span class="chip">精确同构</span><span class="chip">生物自然主义</span><span class="chip">对抗样本</span><span class="chip">理解</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">从功能等价到意识，缺了一座桥</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">计算模型抽象掉的，可能正是意识与理解所需的东西</span></div>
     <div class="thm-body">
-      <p>“意识同构”论证大致是：如果一个人造系统在功能组织上与人类同构，那么它就应该拥有同样的意识体验。这个论证依赖功能主义：心理状态由功能关系决定，与基质无关。</p>
-      <p>Chirimuuta 的反驳是：计算模型之所以有用，正因为它抽象掉了基质的细节；而意识很可能恰恰依赖那些被抽象掉的细节——活细胞的代谢、身体的调节、与环境的耦合。</p>
+      <p>计算解释之所以有力，是因为它允许我们忽略大量生物细节。这个抽象在解释“物体识别”时也许够用；但在解释“为什么识别伴随视觉现象意识”时，它把待解释的东西直接删掉了。于是出现解释鸿沟：模型能分类，却没有“看见”的体验。</p>
+      <p>字面解释把这个鸿沟当成待填的理论缺口；类比解释则预测它会出现：因为模型与脑的失配（disanalogy）正好包括意识。作者说，鸿沟不是神秘，而是简化的账单。</p>
     </div>
   </div>
 
+  <h3><span class="sn">9.1</span>重访字面解释 <span class="en">Revisiting the Literal Interpretation</span></h3>
+
+  <p>前几章把神经科学呈现为一门依赖特定对象处理方式的学科：把事物投影到更高的简单性平面。伴随而来的，是对简化产物的解释保持警惕。说皮层在字面上计算模型所述函数，等于把两类根本不同的东西等同起来。作者用一个比喻：把一加仑水倒进蛋杯，然后说服自己溢出的部分与这一加仑的构成无关。字面解释在理论神经科学、技术专家与自然主义倾向的哲学家中占主导。第八章已说明，这个 quasi-consensus 可以理解：几百年来，用人工制品作自然过程的 exemplar，倾向于抹掉技术产物与非人造物的区分。</p>
+
+  <p>本章讲字面解释对哲学的负面后果。<strong>具体性错置</strong>（fallacy of misplaced concreteness）是把科学抽象当成具体实在，把模型当目标，把地图当领土（Whitehead 1925/1967）。字面解释犯了这个错，但在常规科学内部，这个错误是可容忍的：假定研究对象就像 streamlined 模型，能带来效率；代价是未知的未知、以及关上了可能发现的门。不过，科学的多元性会抵消代价：另一个研究者用不同模型，可能打开新门。</p>
+
+  <p>自然主义心灵哲学家则不同。他们向科学询问研究对象的本性——记忆、视觉、理解、意识是什么？他们关心的不是“模型如何”，而是“我们脑中的认知过程如何”；他们常把模型当成透明、不变形的媒介。如果在这里发生具体性错置——把出于实践必然性强加的模型抽象，当成关于脑如何的发现——那么 inquiry 的逻辑就有不可修复的缺陷。</p>
+
+  <p>作者说，流行的机器智能哲学观点，正是字面解释带来的具体性错置的产物。当前 AI 主导范式建造 loosely “brain inspired” 的模型，目标是在预定义任务（物体识别、语言生成、游戏）上工程化人类like 认知表现。许多专家系统（训练来在单一任务上卓越的 ANN）达到超人类能力。AlphaGo 4–1 击败世界冠军，AlphaGo Zero 更强；同时 ANN 也展示出一系列 surprising failures，似乎源于它们的“专家性”——缺乏通用智能与常识。问题是：当前硅基机器学习技术，放大到足够网络规模，会不会带来人类like 通用智能？</p>
+
+  <p>作者认为 AGI 期待高但根据不足。ANN 未能获得通用智能相关能力（sentience、把所学应用到全新情境），若考虑第四章的类比解释，这并不奇怪。计算模型不应被解释为脑实际执行的计算的近似真表征。脑不是字面意义上的进化计算机；模型的价值在于提供一个框架，从神经系统的复杂性中做 drastic abstraction。计算框架为一种否则不合理的分离辩护：把脑内据说执行信息处理的实体/过程，与其余被归为代谢支持的系统分开。</p>
+
+  <p>ANN 的理论祖先是 McCulloch–Pitts 的输入—输出神经元、Rosenblatt 的感知机、Hebb 的细胞集合。高层抽象上，ANN 节点有点像真实神经元，神经可塑性部分有点像连接权重调整。字面解释主张：抽象出的共性——计算结构与规则——同时实现在脑与人工硬件中。作者拒绝推出“这些结构独立于建模者把脑表征为计算系统而存在于脑中”。她主张：真正被表征、被实例化在神经计算模型中的，是从神经系统通过实验、数据处理、抽象、理想化按摩出来的<strong>理想模式</strong>。</p>
+
+  <p>换句话说，类比解释拒绝把模型描绘的抽象结构当成具体系统真实、内在的特征。于是注意力转向脑与计算机的<strong>失配</strong>；计算模型不再透明，而是一枚有些扭曲的透镜，通过它把神经数据系统化、变得可理解。一个显然的可能性随之出现：正是动物及其神经系统<strong>不与计算机共享</strong>的那些特征，负责通用智能能力——按目前迹象，这些能力无法在机器中复制。本章聚焦两个特征：现象意识与理解。</p>
+
+  <h3><span class="sn">9.2</span>定位解释鸿沟 <span class="en">Locating an Explanatory Gap</span></h3>
+
+  <p>作者先给例子：翻相册，看到认识的人，能叫出名字；与此同时，你有对那张脸的视觉体验——颜色、构型、质地出现在意识中。她把这叫<strong>视觉现象意识</strong>（visual phenomenal consciousness），即“看见是什么样子”的 what-it-is-like。所有感觉模态都伴随现象意识；这不是说我们对自己能辨别的一切都有意识，也不是说无意识状态（如深睡）没有感觉。</p>
+
+  <p>现在有大量知觉系统的计算模型，解释人与其他动物的检测、辨别能力；但它们对伴随知觉的现象意识<strong>沉默</strong>。也有机器能做出与人类等价的视觉分类，正确给脸贴名字，却没有伴随辨别而来的觉知。本节讲这种沉默与差异的意义。</p>
+
+  <p>计算主义心智理论主张：认知过程（知觉、运动控制、情感）本质上是计算过程；有心智，就是有一个实现计算的脑，这些计算被自然选择打磨以支持智能行为。这是自然化心灵的流行方式：正如人造计算机是一团物质、被组织起来执行逻辑与算术，脑也通过把物质部分组织成计算系统来支持认知。动物智能因此不比任何精巧机器更神秘。意识被假定为某些特定计算的结果；若找到这些计算，原则上可在机器中实现，产生与动物相同形式的觉知。</p>
+
+  <p>计算主义心智理论配合字面解释：脑在字面执行计算，这些计算解释认知能力。神经科学的任务，就是通过模型尽可能近似地呈现这些计算。这样的发现不仅给计算解释，也给机器复制认知的可能。作者在第四章对比了字面解释与她偏好的类比解释。这里重申：神经计算模型像所有科学模型一样是抽象，其价值在于压制具体系统中与当前科学任务无关的细节。于是，脑在实验条件下、以某种方式分析数据后，产生像模型中依赖关系一样的活动 pattern（理想模式）；因此可以说脑有点像计算机，但不能说它是进化出来的计算机。</p>
+
+  <p>抽象是省略目标细节的过程。偶尔，被省略的细节对另一个任务、另一个现象的解释至关重要。作者说，意识正是这样的细节。第四章把计算模型的广泛采用，解释为计算框架许可了一种强大的抽象：抽掉脑与计算机不共享的神经生物学特殊性。这使得神经科学家在给认知过程提供计算解释时，可以忽略无数解剖、生化、生理细节。视觉知觉的计算模型，是这种意义上的抽象：它有意忽视神经系统因由活组织构成而产生的复杂性。计算进路承诺在“非 sentient 机器（数字计算机）的视觉处理”与“sentient 动物的视觉处理”之间建立对应。因此，解释框架必须抽象掉动物有、计算机没有的意识。</p>
+
+  <p>这导致计算进路的<strong>解释鸿沟</strong>：在字面解释下令人困惑，在类比解释下完全可预测。类比解释的好处是能诊断鸿沟为何出现。论证如下：第一，计算模型是强大抽象，允许忽略大量生物细节。第二，按类比解释，我们预期脑与计算系统之间有多少类比，就有多少失配。第三，脑是 sentient 动物的器官，而计算系统没有意识。第四，字面解释却把计算当作脑认知能力的本质，忽略失配，把不共享的特征当成与认知解释无关。于是，模型解释了分类，却没有解释伴随分类的觉知；鸿沟出现。</p>
+
+  <p>作者用 DCNN 的核心物体识别说明：DCNN 可以达到人类等价表现，却没有视觉意识。这不是说 DCNN 是坏模型；它说明模型的成功范围被任务定义。字面解释把“在这个任务上成功”扩大成“抓住了认知本质”，于是鸿沟显得神秘。</p>
+
+  <h3><span class="sn">9.3</span>放大与多任务：通向机器意识？ <span class="en">Scaling Up and Multitasking toward Machine Consciousness?</span></h3>
+
+  <p>作者正在论证：即便原则上，无机计算机器也不可能意识。这个论证要到 9.4 才完成。9.1–9.2 的观察还不足以证明这一点，因为“机器能否意识”是关于哪类东西有 sentience 的本体论问题，而解释鸿沟是认识论问题。相信机器意识可行的人可以轻易绕过：即便不能获得意识的计算解释，脑（或其拥有者）仍可能因为脑是巨大、密集连接的神经网络计算机而意识；把 ANN 放大，终有一天可能造出意识机器。</p>
+
+  <p>作者说，对字面解释的批评，同样适用于这个“放大”想法。我们不应期待当前这种专家系统 ANN 长成更人类like 的 AGI、具有 sentience。关键问题：ANN 与有机系统之间，只在 ANN 学会的<strong>狭窄指定任务</strong>上有适用相似性。类比的范围有内置限制，字面解释却忽略它。字面解释还卷入一个观点：ANN 触到了有机认知的某种本质——一种最初在脑中实现的 computation；这种计算的共实例化，是动物等价任务表现的基础。于是，训练好的 ANN 虽专家化狭窄，却像把脚趾伸过了“有心智 vs 无心智”的门槛，处于通向 AGI 的早期阶段；每次专家 AI 的巨跳，也是迈向 AGI 的一小步。</p>
+
+  <p>作者用一个精彩类比拆解：回到 19 世纪，蒸汽机车刚展示出在平轨上拖重载的优越力量与速度，胜过最好的 shire 马。维多利亚技术乐观主义者可能推测：几代蒸汽技术后，会有能跳栏、做盛装舞步的机车。这会被嘲笑，因为蒸汽技术的成功不标志它开始捕获生物运动的本质。拖重载是生物运动的一种极简化形式，恰好有巨大经济意义；没有理由说机车在通向完整生物功能，因为它只是造来完成马所做的一个任务，且表现超出动物——它的超生物表现正来自不自然的专门化。</p>
+
+  <p>正如 shire 马在某些方面像机车（就拖重载这一任务可做功能比较，因此工程师造了“马力”一词），AlphaGo 在“下围棋”这一点上像 Lee Sedol，ChatGPT 在“生成句子”上像人。马—机车类比在拖重载之外的运动能力上破裂；作者说，ANN—脑类比也应在机器被设计复制的任务之外破裂。因此，ChatGPT 不应被视为含有人类like 智能的胚芽；认为放大版 AlphaGo/ChatGPT 会变成 HAL 9000，就像维多利亚技术乐观主义者期待跨栏蒸汽机一样荒谬。</p>
+
+  <p>她还指出，计算机的发明语境与蒸汽机、机器制造相似。历史学家表明，计算机像机车一样，是为一项特定工作发明的：过去依赖动物劳动，而这里的“动物”是人，劳动是认知而非肌肉。Turing 对计算机构想的说明很清楚：它要执行所有且仅由人类计算员——一个做算术的文书劳动者——所做的认知工作。“电子计算机旨在执行任何确定的 rule of thumb 过程，这些过程可由一个按纪律工作但不智能的人类操作员完成。”我们不应忽略：被发明模仿的行为，在这里被归类为“不智能”。</p>
+
+  <h3><span class="sn">9.4</span>反对意识同构体 <span class="en">Against Conscious Isomorphs</span></h3>
+
+  <p>“技术乐观主义”（technooptimism）是 Susan Schneider 给“有意识的计算机系统即将到来”这一观点的名字。它对立于<strong>生物自然主义</strong>：即便最先进的 AI 也不会有内在体验。作者要捍卫生物自然主义，说明 Schneider 与 Chalmers 的反驳都犯了具体性错置：他们没意识到，脑的基质无关计算模型只能是贫乏的抽象。</p>
+
+  <p>Schneider 的对立立场叫“关于意识的計算主义”（CAC）：意识可被计算解释；系统的计算细节固定它有哪种意识体验、是否有体验。她引入“精确同构体”（precise isomorph）：一个模仿 sentient 动物脑的“精确功能组织”的系统。CAC 说，这个同构体会意识。关键概念是脑的“精确功能组织”：一张“你脑不同组件之间因果交互的抽象模式”，可用图表示。Schneider 说，原则上每个神经元都可被硅基替代神经元替换；结果是精确同构体，功能组织完美复制，新生物拥有原版所有心理特征，包括意识。论证的关键一步是：在把有机神经元换成人工神经元的过程中，很难相信意识会逐渐消失或突然关闭，因为人工神经元被 stipulate 为保留旧功能；因此最可能的是意识保持稳定，支持 CAC：系统的计算组织决定意识，独立于物质构成。</p>
+
+  <p>这个论证源自 Chalmers（1996），并在 2014 年重申。Chalmers 承认“功能同构体可能”是一个实质主张；作者要挑战的正是这个主张。同构体论证依赖一个假设：脑组件（神经元）的输入—输出功能，可由完全不同的基质（电子 vs 活组织）复制。这个假设之所以显得可信，是因为人们熟悉简单的神经计算模型（如感受野模型），有时它们被呈现为囊括了神经元的全部输入/输出行为。字面解释助长这个想法：神经元在功能上“不过如此”，没剩下什么与认知相关的东西，缺的只是不重要的实现细节、黏糊糊的材质。但这是建模者的方便虚构：在科学研究内部无害，出口到哲学辩论就需要更严格审查。若没有假设脑内存在一条明确分界——一边是认知活动，一边是纯代谢支持——就没有理由认为，一个省略了神经元实际运作细节的模型，有机会复制它在认知系统中的作用。</p>
+
+  <p>作者承认 Schneider 与 Chalmers 可以 stipulate：同构体的人工神经元是理想精确模型，复制真实神经元所有输入—输出行为，直到膜电压的微小波动、离子通透性的细微变化。现在她要挑战的假设是：对这种神经元输入—输出行为的完美复制，达到维持有机认知所需的精度，除了“另一个神经元”之外，还能是什么？就像 Borges《论科学的精确性》里，唯一足够完美的帝国地图必须与帝国同 scale；神经元的完美输入—输出等价物，必须更像一个 duplicate，而不是一个 model。尽管神经科学家不认为所有微小生化变化都决定整神经元反应（O'Leary 等 2013 发现膜组成变化下神经元性能可维持），但功能等价仍需要远远超出 Schneider/Chalmers 的电子替代 scenario。</p>
+
+  <p>关键点：以我们对神经元运作的了解，没有理由认为功能等价可由与生物组织如此不同的材料基质（电子计算机）实现。认为可能，只是字面解释的诱惑：它暗示神经元的材料细节、神经系统的具身语境只是认知的背景，可与认知分离。于是认知被说成 substrate-independent。技术乐观主义的“意识上传”幻想，正来自这个想法：你的意识心灵可在非生命机器中重建，与你的脑和身体没有材料相似性；机器从未活过，所以不像你的身体，永远不必死。这是永生的幻想；但如果神经元功能如作者所主张，彻底依赖其由活材料构成，这就是彻底不可能。</p>
+
+  <p>哲学反驳会说：你没说清“可能性”是什么意思。Schneider 明确她的论证是逻辑/概念可能性；作者的批评基于实际神经元如何工作，最多证明无机机器意识的<strong>nomological impossibility</strong>（法则学不可能）——与我们所发现的自然运作不相容。作者说，法则学不可能就够了。她要主张的是：<em>在这个世界</em>（不是所有自然律不同的可能世界），无机机器不会变得有意识。生物自然主义是关于我们所知世界的 claim：意识是、且永远只是某些活有机体的特征。Schneider/Chalmers 的论证也许仍支持机器意识的概念可能性，但对渴望硅基永生的读者没多大用；再狂热的 technophile 也不会投资一个通往邻近可能世界的太空计划。</p>
+
+  <h3><span class="sn">9.5</span>缺失的理解 <span class="en">Missing Understanding</span></h3>
+
+  <p>本节以 Adorno 的话开头：“只有那些不被动接受既成给定的人，才在思考。”作者问：什么是思想，以至于机器必然缺少它？她找到 Horkheimer 1937 年的《对形而上学的最新攻击》。那是针对逻辑经验主义的论战；逻辑经验主义对科学知识/理解的看法，正如第八章所说，体现在今天大数据+机器学习的自动化科学纲领中。逻辑经验主义者与自动化科学的推动者，都乐于把科学理解重新定义为“基于已获得数据做出准确预测的能力”。作者要把这个 move 的批评留到本章，因为背景是更一般的“机械化意识与通用智能”主张。</p>
+
+  <p>她先回顾自动化科学的分析：机器（如深 ANN）与人类科学家的区别是，机器除了被喂入的数据之外，没有额外的<strong>本体论设定</strong>（ontological posits）；它找统计规律，用于预测、生成样本、分类。马赫被引入，因为在他的科学理想中，具有本质属性的实际事物本体论是残余、不合时宜的。按马赫（至少按聚焦“最小化思维努力”的漫画），科学任务是经济地表征数据，以准确预测新数据，最终工具控制；没有“数据背后/之外”的事物。这样一来，ANN 这个统计 powerhouse，就是完美的科学 agent。</p>
+
+  <p>但这种“紧贴数据”的心态，在视觉 ANN 的<strong>对抗攻击</strong>面前露出破绽。对抗攻击：给训练来分类日常物体的 DCNN 看一张照片，加上很小扰动（或贴几张特别设计的贴纸），人类 perceiver 不会改变分类，DCNN 却剧烈改变。最初假设是网络受到系统噪声影响，对抗误分类与成功分类所依赖的数据结构无关；后来工作 surprise 地显示，导致对抗误分类的特征，也是成功分类所依赖的特征。Ilyas 等总结：“对抗脆弱性是模型对数据中泛化良好的特征之敏感性的直接结果。”</p>
+
+  <p>直观理解：一张普通物体照片，叠加上非常低对比度的纹理（“对抗噪声” pattern），这个纹理是另一类物体的诊断特征。人类 perceiver 在纹理与形状线索冲突时，压倒性地按形状识别；DCNN 的识别则由纹理决定。纹理是日常物体图像数据集中“泛化良好的特征”：监督学习把名称标签与训练数据中物体的纹理关联，网络就能可靠地用纹理—名称关联分类新图像。纹理偏差解释了部分对抗脆弱性，也说明 Ilyas 等的 general point：对抗脆弱性源于 DCNN 学到了对分类有诊断性、但人类不会依赖的图像特征。</p>
+
+  <p>Gilmer 与 Hendrycks 评论说，对抗脆弱性是由于 ANN “latch onto superficial statistics in the data”（抓住数据中的表面统计）。作者说，这句话很说明问题。从人类视角，我们把数据经验为与“事物”相关：对象有核心属性与表面属性、本质与非本质特征。毛茸茸的纹理不该成为“猫”的分类诊断，因为猫可以掉毛却仍是猫；戴眼镜不该决定一个人的身份，因为人可以摘戴眼镜，这不改变他是谁。我们的思维受这种约束，不管我们经历过什么统计规律。作者一生积累猫的数据，从未看过剃毛猫的照片；可若看到，她仍会把它与那些毛茸茸的图像归为一类，尽管统计上差异巨大。但除非有某种非正式的<strong>本体论</strong>——关于事物、过程、本质 vs 偶然属性的理论——否则无法区分“表面统计”与“深层统计”。从 ANN 的超经验主义视角（缺乏我们这种非正式本质主义本体论），这个区分无法做出：数据就是全部；数据上的统计可以更稳定/更可投射（因而更有用于预测分类），但不能更表面/更深层。</p>
+
+  <p>人类忍不住认为：DCNN 抓住的、对对抗攻击不稳健的数据特征（即便在多数情况下预测有用），揭示了关于“猫/蝴蝶实际是什么”的无知。这暗示：数据之外的本体论——某种关于存在物及其本质/偶然属性的非正式概念——是理解的一部分。机器缺少的，正是这种“知道什么算本质、什么算表面”的能力。它不是更多的数据能补上的，因为它是组织数据的框架。</p>
+
+  <h3><span class="sn">9.6</span>结论 <span class="en">Conclusions</span></h3>
+
+  <p>像马赫一样，Whitehead 也欣赏数学“卸下心灵负担”的能力。他把“无思”的扩展描述为文明进步的标志，似乎相当满意：“我们应当养成思考自己在做什么的习惯”是一个深刻错误的 truism；正相反，文明进步靠扩展我们能不加思考执行的重要操作的数量。Whitehead 也说，具体性错置是哲学毁灭的根源：数学心灵的长处是处理抽象，从抽象引出清晰 demonstrative 推理，只要你想的就是那些抽象，就完全令人满意。科学抽象的巨大成功——一方面给出具有简单时空定位的物质，另一方面给出感知、受苦、推理但不干涉的心灵——把“接受这些抽象为最具体的事实呈现”的任务强加给哲学；现代哲学因此被毁。</p>
+
+  <p>作者说她不知道 Whitehead 是否把这两点连起来。具体性错置的发生，不仅因为数学科学的抽象渗入哲学，也因为人们通过教育/文化，满足于只处理复杂事物的“可操作版本”（如形式模型所描绘），并且不习惯要求自己比定量、最终自动化的技术所能做的更深入地思考。这里 relevant 的思考深度，与演绎/归纳严格性正交；它来自愿意被细节拖住、关心情境的内在真理——如 Horkheimer 的故事所示——即便这个过程低效、不产生精确可用的结果；它要求伦理投入。</p>
+
+  <p>本章论证：若看穿具体性错置，不满足于计算神经科学提供的量化、可操作的 mind/brain 描绘，我们就能理解有机认知为何能如此不同于其机器模仿。计算不是生物智能的本质。于是正面问题留下：该怎么说心灵？生物自然主义关于意识与理解的立场，与具身认知（embodied cognition）契合，如 Evan Thompson 说“心灵像生命，生命像心灵”。本章其实是 20 世纪早期一场“以批判抽象为理据、主张具身/嵌入认知”的论证的现代重演。</p>
+
+  <p>但作者不做一件事：她不提出“具身、嵌入、非计算主义神经科学”的纲领。她相信具身认知更接近心灵/脑运作的真理：全身无数过程与脑运作、因而认知深度互联；身体又与环境 circumstances 纠缠。可这些互联多到无法放进一个可处理模型或可操作理论。具身/生态进路作为科学纲领会失败，因为它们犯了具体性错置的<strong>反向错误</strong>：它们不欣赏科学表征的任务就是简化，而不是尽可能把事物的真理原样纳入。</p>
+
+  <p>计算进路把整个神经系统模块化，设定脑内子系统可脱离身体、彼此隔离地理解，用高度抽象数学模型。这提供清晰与精确，带来计算主义相对具身范式的声望与成功。但不能忘记：抽象是对真理的偏离——认知必定非常不同于简化模型所呈现的样子。下一章考察心—身关系的哲学问题，带着一个想法：脑/心与身体之间的概念分离，本身就是一种理想化。</p>
+
   <div class="table-wrap cheat">
     <table>
-      <thead><tr><th>问题</th><th>功能主义回答</th><th>生物自然主义回答</th></tr></thead>
+      <thead><tr><th>节点</th><th>核心内容</th><th>关键人物/证据</th><th>结论</th></tr></thead>
       <tbody>
-        <tr><td class="id">意识依赖什么？</td><td>功能组织，可与基质分离</td><td>活着的神经系统的物质构成</td></tr>
-        <tr><td class="id">硅基意识</td><td>原则上可能</td><td>目前缺乏理由，不能从模拟推出</td></tr>
-        <tr><td class="id">AI 缩放</td><td>规模可能带来质变</td><td>专门化机器的放大不自动产生通用性</td></tr>
-        <tr><td class="id">模型角色</td><td>可揭示意识的本质结构</td><td>必然抽象掉可能关键的生物细节</td></tr>
+        <tr><td class="id">9.1</td><td>具体性错置；字面解释的哲学代价</td><td>Whitehead、AlphaGo</td><td>模型≠对象</td></tr>
+        <tr><td class="id">9.2</td><td>解释鸿沟：分类 vs 视觉现象意识</td><td>DCNN、what-it-is-like</td><td>鸿沟是简化的账单</td></tr>
+        <tr><td class="id">9.3</td><td>放大不会自动产生 AGI/意识</td><td>蒸汽机车、Turing 的人类计算员</td><td>专家系统相似性范围狭窄</td></tr>
+        <tr><td class="id">9.4</td><td>反对精确同构体</td><td>Schneider、Chalmers、Borges 地图</td><td>法则学不可能足够</td></tr>
+        <tr><td class="id">9.5</td><td>缺失理解：对抗样本与本体论</td><td>Ilyas、Gilmer & Hendrycks、剃毛猫</td><td>本质/表面之分需要本体论</td></tr>
+        <tr><td class="id">9.6</td><td>具身认知，但不做反向错置</td><td>Thompson、Whitehead、Horkheimer</td><td>哲学不照搬科学简化</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">功能主义：基质不重要，组织才重要</span></div>
-    <div class="thm-body">
-      <p>功能主义者会说：如果疼痛的功能角色可以在硅基系统里实现，为什么它不能感到疼痛？凭什么假定只有碳基细胞才能产生意识？</p>
-      <p>Chirimuuta 的回应不是“硅基绝不可能”，而是“目前没有理由相信”。她的论证是认识论的：我们只有一个物种样本，且不知道意识与哪些物质细节相关；在这种情况下，从功能模拟直接推出意识，是把未知当已知。</p>
-    </div>
-  </div>
-
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于 AI 与意识的三个跳跃</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">五个容易过度或不足的结论</span></div>
     <div class="thm-body">
-      <p><strong>一、从“像”跳到“是”。</strong>功能相似不等于体验相同；模型中的“意识”变量不等于现象意识。</p>
-      <p><strong>二、从“更大”跳到“更深”。</strong>参数规模增长不等于智能类型改变；专门化系统的放大仍然是专门化。</p>
-      <p><strong>三、从“科学没说不行”跳到“科学说行”。</strong>缺乏反证不等于有正证。</p>
+      <p><strong>一、“作者证明机器永远不可能有意识”。</strong>她证明的是法则学不可能（在这个世界），不是逻辑不可能；她明确区分。</p>
+      <p><strong>二、“解释鸿沟证明二元论”。</strong>不。鸿沟是计算抽象漏掉意识的结果，不是灵魂存在的证据。</p>
+      <p><strong>三、“对抗样本说明 ANN 一无是处”。</strong>它们仍有预测力；问题在于“预测力=理解”的等式。</p>
+      <p><strong>四、“具身认知因此是正确答案”。</strong>作者同情，但认为它作为科学纲领会犯反向的具体性错置。</p>
+      <p><strong>五、“生物自然主义=Seale 的全部主张”。</strong>作者只用它指“意识依赖实际神经材料”，对 Searle 的正面理论保持距离。</p>
     </div>
   </div>
 </div></section>
@@ -1152,275 +1963,448 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch10" class="chapter"><div class="wrap">
   <div class="sec-label">Chapter 10 · Cartesian Idealization</div>
   <h2><span class="num">10</span>笛卡尔式理想化：把心灵切成模块</h2>
-  <p class="lede">科学要研究一个系统，首先得把它切成可以下手的部分。问题不在于切，而在于切完之后，忘了刀痕是自己留下的。</p>
+  <p class="lede">二元论没有随笛卡尔死去。它换上了功能主义、计算主义、脑机接口的外衣，继续假定心灵是一个可以脱离身体、独立描述的模块。作者说，这个假定不是纯哲学错误，而是科学简化在哲学中的回响。</p>
 
   <div class="chap-intro">
-    <p>全书最后一章把批判指向一个更深的前提：<strong>近可分解性</strong>。Simon 认为，复杂系统之所以可理解，是因为它们由弱耦合的子系统组成；Chirimuuta 补充说，这种“近可分解”不仅是世界的结构，也是实验方法主动制造出来的效果。当心灵、大脑、身体与环境被当作近乎独立的模块，科学获得了抓手，哲学却继承了二元论与怀疑论的债务。</p>
-    <span class="tag">西蒙 · 模块化 · 哲学自主</span>
+    <p>本章是全书收束。作者把“心灵与身体是可分离组件”这一图景，追溯到 Simon 的<strong>近可分解性</strong>（near-decomposability）与“笛卡尔式理想化”：为了把复杂系统变成可研究的小块，科学倾向于把界面当成窄带、把组件当成半独立。这个简化在科学内部有效，却在哲学中生成二元论与怀疑论。最后她主张：哲学不必背负科学的简化；它可以做“抽象的批评者”。</p>
+    <span class="tag">第三编 · 心身问题</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">近可分解性</span><span class="chip">层级</span><span class="chip">Herbert Simon</span><span class="chip">硬件/软件</span><span class="chip">二元论</span><span class="chip">怀疑论</span><span class="chip">哲学自主</span>
-  </div>
-
-  <div class="thm def">
-    <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">近可分解：内部强、外部弱</span></div>
-    <div class="thm-body">
-      <p>一个系统是“近可分解的”，如果它可以被分成若干子系统，子系统内部的相互作用远强于子系统之间。用矩阵表示，交互矩阵近似分块对角：</p>
-      <p>$$A=\begin{pmatrix}A_{11} &amp; \epsilon A_{12}\\ \epsilon A_{21} &amp; A_{22}\end{pmatrix},\qquad \epsilon \ll 1.$$</p>
-      <p>当 $\epsilon$ 很小时，先研究 $A_{11}$ 与 $A_{22}$，再把耦合当作微扰，就能以很小代价理解整体。Chirimuuta 补上的半句是：这也是实验方法主动压低 $\epsilon$ 的结果。</p>
-    </div>
-  </div>
-
-  <div class="thm ex">
-    <div class="thm-head"><span class="thm-kind">案例</span><span class="thm-title">数字计算机：硬件与软件的“自然”分离</span></div>
-    <div class="thm-body">
-      <p>Simon 把数字计算机当作功能描述的典范：它的行为几乎只暴露组织性质，而不暴露硬件的具体材料。</p>
-      <p>Chirimuuta 的反转很关键：计算机之所以能这样，是因为它<strong>被设计成</strong>硬件与软件可分离。这不是自然界普遍的事实，而是工程成就。把一个进化出来的器官比作一台被设计来分离层次的机器，本身就是一个很强的理想化假设。</p>
-    </div>
+    <span class="chip hot">笛卡尔式理想化</span><span class="chip">近可分解性</span><span class="chip">功能主义</span><span class="chip">窄带界面</span><span class="chip">怀疑论</span><span class="chip">析取论</span><span class="chip">抽象的批评者</span>
   </div>
 
   <div class="thm theorem">
-    <div class="thm-head"><span class="thm-kind">论证</span><span class="thm-title">把“可分离”当成“已分离”</span></div>
+    <div class="thm-head"><span class="thm-kind">本章论点</span><span class="thm-title">二元论与怀疑论共享一个理想化：心灵是自足的</span></div>
     <div class="thm-body">
-      <p>“笛卡尔式理想化”指一种操作：把心灵、大脑、身体、环境当作近似独立的系统，只通过有限的、可指定的通道交互。它让认知科学可以把“认知”从身体与世界中拎出来，单独建模。</p>
-      <p>它非常有效，但也制造了两个哲学后果：<strong>二元论</strong>与<strong>怀疑论</strong>。结论不是“因此不要分解”，而是：分解是必要的科学策略，但不能直接翻译成形而上学命题。</p>
+      <p>把心灵当作与身体、世界只有窄带接口的独立组件，是科学简化的一种形式。它让研究者可以把心灵/脑从身体与环境中隔离出来，单独描述其内部组织。这个操作在认知科学中极其有效，但它产生两个哲学副产品：心—身如何耦合的二元论难题，以及心灵如何接触世界的怀疑论难题。</p>
+      <p>作者不认为只要指出“脑身界面是宽带的”就能解决；她认为科学<em>仍然会</em>施加这种理想化，因为宽带的、深度纠缠的系统无法被做成可处理模型。哲学的任务，是识别并拒绝把这种理想化当成形而上学事实。</p>
     </div>
   </div>
 
+  <h3><span class="sn">10.1</span>不朽，不可战胜 <span class="en">Immortal, Invincible</span></h3>
+
+  <p>“二元论是被压抑者，总会回来。”无论哲学家怎么否认，那个想法总复发：心灵与物质根本不同，是两个相互排斥的极。它的不可压制性暗示，它在一个更大的观念网络中扮演角色，尚未被解释。即便没有基督教的不朽灵魂、没有科学上体面的非 material substance，二元论仍以某种形式持续——比如第九章遇到的“不可腐蚀、可上传的计算结构”。当代计算认知的信徒，和笛卡尔本人一样相信：心灵原则上可以脱离活身体，独立存在。</p>
+
+  <p>Haugeland 的《心灵：具身与嵌入》把麻烦归因于“心灵作为可隔离子系统”的概念：它只通过有限的、预先指定的通道与身体、环境互动。他建议的 remedy 是承认“心灵具身与嵌入的亲密性”，让 supposedly 对立的极交融、彼此构成。作者同意，但说要理解这个假定为何如此顽固，需要更多努力。她的论证是：这种理想化是<strong>不可或缺</strong>的简化方式，把环境—身体—心灵的 conglomerate 简化成自足模块，使之成为可管理的科研对象。所以，即便心与身互相构成，科学视角仍会挣扎着这样看。与第九章一致：哲学不必、也不应背负科学的简化假设；但要去除这些抽象，先要认出它们。</p>
+
+  <p>接下来，她把 Herbert Simon 当作 20 世纪的代表性“笛卡尔式”思想家，展示把人当作层级化、可分解系统，如何同时许可二元论（10.4）与激进怀疑论（10.5）。沿途给出“拒绝这一传统后，心灵概念应如何”的建议。本章、也是全书的结论是：主张一种<strong>独立于神经科学</strong>展开的心灵哲学，同时对“真正敏感于心灵在自然中整体位置的科学纲领”持悲观态度。</p>
+
+  <h3><span class="sn">10.2</span>充实生物自然主义 <span class="en">Fleshing Out Biological Naturalism</span></h3>
+
+  <p>第九章捍卫了“生物自然主义”：脑的物质性对意识不可或缺；Chalmers 与 Schneider 关于“原则上可把人类意识迁移到无机硅机”的论证不成立。她的理由是第四章的老论点：计算是动物认知的有用模型，正因为它抽掉了阻碍科学理解的生物复杂性，而这些复杂性很可能使意识与通用智能的其他特征成为可能。她用的“生物自然主义”是一个特定主张：意识依赖神经系统的实际材料与活动。它本身不是心—身关系理论；但结合全书的简化论，可推出一些关于如何设想心—身的含义。</p>
+
+  <p>在 Chalmers/Schneider 的“意识同构体”论证背后，是<strong>功能主义</strong>（functionalism）。功能主义通常被当作物理主义/唯物主义：普通物质就是全部。但它保留了二元论直觉：无论心灵是什么，它可以被概念化、被研究，独立于对脑与身体内在本性的研究；心灵原则上可与拥有它的物质身体分离。正面教义大致是：一个实体有心灵/特定心理状态，靠的是其内部组件、感觉受体、运动效应器之间的<strong>功能关系</strong>、组织模式。就像计算机之所以是计算机，不是因为材料（塑料乐高、硅、铁齿轮都行），而是因为部件——不管什么材料——处于正确关系中，使物理系统的状态转换能实例化计算步骤；一个有认知的存在有心灵，是因为其物质 arrangement 的结构，而不是材料本身的特殊性。</p>
+
+  <p>这个结构是一个可从任何具体系统分离的抽象，因此可<strong>多重实现</strong>（multiply realized）：可体现在各种材料系统中。具体材料对心理活动不重要；心理活动被比作软件的运行。要 appreciate 的是：数字计算机正是被工程化得让组织属性从许多硬件规格中“自由漂浮”。Simon 在《人工科学》里说得很清楚：没有哪个人造物像数字计算机这样适合功能描述；它真正是 protean（千变万化），因为运行时几乎唯一可检测的属性就是组织属性；速度可能让你推断一点物理组件，但除此之外，关于运行计算机的有趣陈述，几乎都与硬件具体本性无关。</p>
+
+  <p>关键点：数字计算机在装置中独一无二，因为它的操作（它被造来完成的任务）最好在脱离具体硬件的层次理解；这是因为它被设计成这个目的。实现材料细节，与“作为算法执行者”的大部分问题无关。鉴于这种软/硬件分离背后的目的性，认为一个身体器官——脑——也如此，就有点疯狂。脑不是为“让功能自由漂浮”而设计的；它由活组织构成，其材料细节参与功能。功能主义把“计算机被设计成基质无关”这个特例，推广成“心灵本质上是基质无关”的普遍论题。作者说，这是<strong>笛卡尔式理想化</strong>的典型：把为了工程可操作性而制造的分离，当成本体论事实。</p>
+
+  <h3><span class="sn">10.3</span>近可分解性假设 <span class="en">The Assumption of Near-Decomposability</span></h3>
+
+  <p>Simon 的“近可分解性”是本章的技术核心。一个复杂系统若由<strong>组件</strong>构成：组件内部交互远多于组件之间交互（高一个数量级），则组件半独立。从更大系统看，每个组件是黑箱：它的位置由功能（输入/输出）定义，内部运作不重要。于是研究者只需刻画每个组件的功能，推迟内部机制；而且有“盒中盒”层级：组件有子组件，子机制也可黑箱化。Simon 说：任何复杂系统中的若干组件执行特定子功能，贡献整体功能；正如整个系统的“内部环境”可由功能描述、而不详细指定机制，每个子系统的“内部环境”也可由其子系统的功能描述，而不详细指定子机制。</p>
+
+  <p>这与计算机的关联很重要：计算机比任何东西都更符合“只有功能、不含机制/实现细节与行为相关”的理想。但作者说，认为脑可能像计算机这一点，显得 outlandish。</p>
+
+  <p>Simon 在《复杂性的建筑》中给了一个进化论证：为什么我们仍可期待自然界有近可分解系统？用制表匠类比：如果每次电话铃响、工作中断，已装好的零件就散成一堆，手工制表几乎不可能；更好的制造过程是先分别制造稳定的子组件，再拼成更复杂系统。既然进化也要求稳定子组件，就应该期待自然界有层级化复杂系统，由稳定、半独立的组件与子组件构成。</p>
+
+  <p>作者的反驳很精确：即便承认进化必须由更简单但仍稳定、可活的单元“组装”更复杂有机体（如单细胞到多细胞的重大演化转变），也不意味着稳定子组件必须具有 Simon 定义中“组件”的那些特征。尤其：<em>子组件之外不一定低强度交互</em>；子组件也不一定能脱离材料细节被功能刻画。这些 putative 属性，对人类制表匠很有价值：他不希望组件与语境有多种交互方式，也不希望它对细粒度材料条件太敏感，因为那会增加它不可预见地偏离设计的风险。但进化不是制表匠；活系统的“组件”可以高度依赖语境与材料。</p>
+
+  <p>作者把这叫<strong>笛卡尔式理想化</strong>：假定自然物与人造物之间没有本质差异，因而可以把有机体当机器、把心灵当软件。Simon 的“几乎独立组件”是这种理想化的一个 species。笛卡尔式二元论是著名版本：心理实体（res cogitans）与物理实体（res extensa）根本不同。作者说，若把笛卡尔的本体论承诺括起来，会发现更顽固的二元论观念来自<strong>孤立的理想化</strong>：把认知当成“自足、确定、本质上不涉及其他实体”的东西（Haugeland 语）。把心灵当概念上独立于脑、脑独立于身体，就是把一个人当近可分解系统。</p>
+
+  <h3><span class="sn">10.4</span>二元论 <span class="en">Dualism</span></h3>
+
+  <p>把心与身当近可分解系统的两个组件，关键假设是二者交互相对少：界面是<strong>窄带</strong>的（Haugeland 语）。于是心灵可用其丰富的内部组织（组件内交互）加上少量与外部组件的输入/输出交互来刻画。笛卡尔式的松果体耦合，暗示一个窄带界面；当代“缸中之脑”图景也如此：脑（代替心灵）通过相对少量的神经纤维与世界相连，于是具身脑典型的输入/输出通信可被人工重建。因此，把人当近可分解系统，为“心灵（或脑）是可分离组件”提供了基础；这是表达二元论承诺的一种方式。</p>
+
+  <p>作者补充自己的贡献：科学要让复杂系统可理解，就会施加简化假设，<strong>从而产生一种压力</strong>，把人及其他生物当成近可分解系统、把心灵当成自足，即便它们不是。Haugeland 把这当作经验发现：一旦神经解剖证据显示脑—身界面极其“宽带”，整体论图景就会胜出。作者说，即便这些事实众所周知，压力仍在：科学家仍会理想化掉它们，保留清晰可分离系统的图景。神经系统与免疫、内分泌、消化、肌肉、骨骼系统的互联，丰富到无法被任何一个追求最低清晰度与精确性的建模视角 encompass。因此，某种二元论倾向会持续存在。</p>
+
+  <p>选 Simon 作代表很方便：在他写作中，二元论、功能主义与抽象技术的联系以罕见的方式同时出现。他有一段典型的话：“我讨论了心灵的组织，却什么都没说脑的结构。”这种“心灵的去身体化”的主要理由，是他刚讨论的论题：计算机硬件与脑“硬件”的差异，并不妨碍计算机模拟广泛的人类思维，因为计算机与脑在思考时都是<strong>自适应系统</strong>，寻求把自己塑造成任务环境的形状。这里的简化是：假定计算机与脑都是自适应系统，其行为可由外部强加的约束解释。这允许把材料构成与身体过程排除，减少变量，也正当化了用较简单的计算机作脑模型。</p>
+
+  <p>一个反对：与功能主义最接近的遗产不是二元论，而是<strong>hylomorphism</strong>（形式质料论）。把亚里士多德的形式质料论当作功能主义先驱，是许多导论的 opening，也由 Putnam 推动，但在亚里士多德学者中有争议。作者承认，把心灵当形式/组织，是功能主义与形式质料论共享的；但这不减损关键点：在功能主义中，身体的<strong>内在特征</strong>对“心灵是什么”不重要，重要的只是身体组成部分的功能角色。对功能主义者，任何由复制这些功能角色的组件构成的系统都可以有心智；因此原则上，心灵可无身体，心理生活与“活着”没有内在关系。</p>
+
+  <p>Burnyeat 说得更狠：功能主义的全部要点，是让心理生活摆脱对任何特定材料设置的依赖。但把亚里士多德的形式—质料区分当作支持这种独立性，是错误：hylomorphism 主张形式与质料的<strong>相互依赖</strong>。生命与知觉不是像形状偶然加在青铜上那样，偶然加在动物身体上；亚里士多德在《论灵魂》II.i 明确说，只有实际活着的身体才潜在活着；死动物只是名义上的动物。这种 homonymy 原则不是语言规定，而是一个物理论题：构成我们的肉、骨、器官，本质上是活的、本质上能感知。作者还指出，Burnyeat 认为亚里士多德用人工物类比（青铜雕像）说明 hylomorphism，会误导人以为形式与质料在生物中只是偶然相关；这个类比不应被读进《论灵魂》。</p>
+
+  <p>Nussbaum 与 Putnam 回应 Burnyeat，坚持质料—形式关系的偶然性，主张生物中的“可塑性”——结构与功能的多对一——支持这种断言。但作者说，把可塑性、退化、趋同进化等同于功能主义那种更激进的“多重可实现性”，是错误。可塑性是同一材料/结构在多种条件下实现功能；多重可实现性是同一功能可由完全不同的材料实现。前者不蕴含后者。</p>
+
+  <p>作者最后指出两种笛卡尔式理想化的深层联系：断言人工物可以成为器官/有机体的完美模型（没有明显误导性失配），就是承诺脑可以在本质上像机器一样运作；而把心灵当可分离组件，就是承诺功能可在材料之外被描述。两者互相支撑。</p>
+
+  <h3><span class="sn">10.5</span>怀疑论 <span class="en">Skepticism</span></h3>
+
+  <p>二元论背后的思维习惯是：世界由彼此不内在相关的项目组成，原则上可隔离。这些分离实体通过因果相连，但不是通过更深的构成关系。心灵与身体分离、身体与世界分离，只是更普遍图景的两个实例。可心灵与其余一切的分离，会生成一组独特的哲学问题。二元论制造“心—身如何如此紧密同步”的谜；怀疑论更清楚地显示：假定可隔离性会制造问题，而移除这个假定可以解决它。</p>
+
+  <p>笛卡尔式怀疑论困境：一个绝对孤立的心灵，被恶魔（或“缸中之脑”里的疯狂神经科学家）操纵，误以为自己在感知外部世界。一旦心灵在概念上与其余存在切断，它原则上只能对自己的内容有确定知识——知道自己正在经验一个感知，但不知道心灵之外是否有任何东西是这感知的对象。</p>
+
+  <p>作者引 McDowell《心灵与世界》开篇：有一种“模糊感到的威胁”：我们陷入的思维方式，让心灵与其余实在脱节，不只是“难以认识它”。知识归属问题只是这种焦虑的一种形状，不是最根本的。McDowell 的<strong>析取论</strong>（disjunctivism）是对这种焦虑的回应；它本质上否认可隔离性假设：在好的案例中，知觉提供关于周围世界的知识，那些事物不只是引起、而且<strong>构成</strong>我的心理状态。作者说，McDowell 的论证与本章中心点汇合；但析取论遭到 Burge 的谴责，说它与知觉科学不相容。作者要论证：不相容不是 Burge 以为的那样，而且哲学确实有理由脱离科学的概念框架进行探究。</p>
+
+  <h3><span class="sn">10.5.1</span>析取论 <span class="en">Disjunctivism</span></h3>
+
+  <p>析取论是知觉哲学理论：当你有真实的知觉状态（如看见一只紫色气球飘过窗外），它有一个在主观上无法区分的幻觉/错觉对应物；尽管二者主观上不可辨别，它们的<strong>认识意义不同</strong>。析取论通常被呈现为解决错觉/幻觉对朴素实在论的威胁：朴素实在论认为真实知觉涉及与外部对象的 acquaintance 关系。因此，人们常不明显看出：至少 McDowell 版本，本质上是对笛卡尔怀疑论的回应。</p>
+
+  <p>McDowell 把错误归给“自足的主观领域”观念：其中事物如其所是，独立于外部实在。在这种看法里，心灵似乎接触不到外部世界。他用多种说法描述反对的图景：“内在领域自治”“我们否认内外相互渗透”“一个布局独立于外部实在的领域”。随着心灵被孤立，“知觉能让我们接触周围事物”就变得可疑，激进怀疑论场景作为连贯可能性升起。大多数后笛卡尔认识论接受知觉知识的可错性，却忽略 root issue。</p>
+
+  <p>McDowell 同意本书：笛卡尔框架在心灵哲学中最根本的问题，是设定心灵的<strong>自足</strong>，不是心理实体的本体论；他也认为功能主义即使唯物主义，仍继承了这个 fault。他还指出，科学因果解释的要求，是笛卡尔式分离的最初动力：一门关于有机体如何与环境相关的科学，似乎理应寻找“内在本性可独立于环境描述”的有机体状态；这样才能用环境影响解释状态出现，用状态因果影响解释对环境的干预。功能主义重新居住在同一解释框架里，把“自治的解释状态”等同于神经系统的组织状态。</p>
+
+  <p>作者说，关键不是功能主义直接受笛卡尔影响，而是它共享了“心灵/认知状态可在与环境隔离的情况下被充分刻画”的假设。这就是窄带界面理想化的认识论版本。</p>
+
+  <h3><span class="sn">10.5.2</span>内在状态 <span class="en">Inner States</span></h3>
+
+  <p>Burge 的 Work 对知觉实验与理论研究非常熟悉。作者聚焦于他如何 tacitly 跟随科学的理想化。只要 Burge 订阅<strong>近端性原则</strong>，他就继承了本章讨论的理想化：心灵与环境是分离系统，彼此以相对少的方式交互，因此特定知觉状态可仅用有机体内部因素充分刻画。这使 Burge 强化了心—世界分离，禁止内外相互渗透——正是析取论要反对的。</p>
+
+  <p>Burge 说：科学的基本原理引用一个共同因素，因为形成的知觉状态种类——包括个体看见/看错的意识状态种类——<strong>纯粹依赖</strong>于（a）近端刺激的登记，（b）个体先前的心理与物理状态，（c）从近端刺激登记到知觉状态形成的准决定论规律。这就是他所谓的科学“近端性原则”。真实与虚幻案例的差异，由“场合特定的远端输入”——从环境到同一近端刺激登记的通路——来个体化。共同因素可与不共享因素分离；科学把它们分开；解释知觉状态的形成，集中在共同因素上。</p>
+
+  <p>“近端刺激”是刺激在感觉器官的第一次接收，是刺激转导为神经活动 pattern 的产物。近端刺激（如落在视网膜上的光 pattern）与远端刺激（世界中通常被视为知觉目标的对象，如反光的表面）相对。比较真实/非真实案例时，Burge 假定在转导时刻前后有干净分界：近端刺激是本质因素（感知者内部，从转导往后）与非本质因素（远端）的绝对分界。真实与虚幻只在前者不同，因此对科学解释而言没有差异。析取论的错误，在 Burge 看来，是忽略近端因素同一性的重要性。</p>
+
+  <p>作者指出一个表面张力：第六章说，设定神经表征调用非近端研究策略，绕过近端因果解释，关注神经激活与远端原因的关系；这里却说知觉科学家（包括感觉神经科学家）承诺近端性原则。如何协调？她解释：Burge 的近端性原则只是一般因果解释约束的一个实例——近端原因 screen off 远端原因。若更远的原因 C 通过更近的中介原因 I 导致 E，则给定 I，C 的信息对 E 是冗余的。科学在解释“知觉状态如何形成”时，当然从近端机制出发；但在解释“这个状态表征什么/行为朝向什么”时，远端关系成为组织框架。两种解释目标不同，不必矛盾。</p>
+
+  <p>Haugeland 进一步批评“感觉转导是心—世界界面、运动转导是心—身界面”的假设。他主张，信号、代码、符号并不只是在界面处才开始；认知的“内在”与“外在”是连续交织的。作者用这个来支持自己的观点：窄带界面不是经验发现，而是为了让系统可分解而做的理想化。</p>
+
+  <h3><span class="sn">10.6</span>没有科学的哲学，没有简化的科学？ <span class="en">Philosophy without Science, Science without Simplification?</span></h3>
+
+  <p>Haugeland 写得好像“可分离心灵”的笛卡尔式理想化，在脑与神经系统的科学中是可丢弃的。他强调心与其余创造之间的界面是窄带的假设，并把它当作可被经验反驳的假说。他论证：神经解剖关于脑—身连接密度的观察，确认界面必须是宽带的；脑—身、身—环境之间交互的强度，反驳它们是与 Simon 意义上“组件”系统。因此，科学本身可以带我们超越笛卡尔主义。</p>
+
+  <p>作者担心的被忽略之处是：即便系统/过程的交融是可观察的经验事实，科学也不 feasible 去按面值接受所有这些宽带界面，并试图在理论/模型中表征它们。科学需要把研究对象限制在可咬的尺寸。当然，有一个长期且仍活跃的具身/嵌入认知科学研究传统；一些科学家（有时被哲学家激励）试图摆脱笛卡尔式理想化。但值得注意的是，这是少数派进路，有时难以获得承认。它持续被追求，证明它有经验事实基础——那些反对脑、心、身、环境可分离的现象。可同时，这种不愿用理想化扭曲覆盖观察的态度，导致可处理性与精确理论表述的损失，相比主流计算主义。</p>
+
+  <p>我们得到的图景是：科学被迫做某些简化，哲学更自由地摆脱它们，二者走上不同探究道路。但一个担忧随之而来：哲学在概念领域是否真的比科学少依赖简化？作者引 Cassirer 的话，说明形而上学理论化——有自己的精确性/确定性标准——也可能把心与身分成分离、对立的倾向。只要哲学像科学一样需要划定主题、澄清术语，它也会背上不能 justice 生命、经验、具身交织的概念图式。当代分析哲学大量依赖 cooked-up scenarios 与 toy models，读起来像把科学家偏好受控人工条件、难以置信的理想化而非未 contrived 情境的不确定性（那里量化不可用、变量目录不完整）的习惯，转移到了非经验领域。Whitehead 说：“你不能没有抽象地思考”，这对所有学科都成立。</p>
+
+  <p>关键点是：哲学不必承诺与科学相同的抽象。哲学不受“设计服务物质目的（预测、操纵生理效应）的概念工具”的约束，因此在如何抽象上有更多 latitude；它也能用不同于技术科学工具标准的标准，评价科学抽象。McDowell 拒绝“心灵自足”作为哲学焦虑的来源，就是例子；使用该抽象的科学家通常不会察觉这些焦虑。对抽象更广泛含义的敏感，是哲学最有价值的活动之一：它的角色是“抽象的批评者”（Whitehead）。</p>
+
+  <p>因此，我们不应接受“哲学必须背负与科学相同的抽象”，即便二者共享历史与知识文化。要记住第八章：科学（不同于哲学）与工程结合，这深刻塑造了它简化主题的特定方式。Bergson 在本节开头的话指出“清晰”与“有用”之间的 cozy 关联。我们有很多方式用概念简化、复杂化世界；哲学的自由，是选择不以可操作性为唯一标准。</p>
+
   <div class="table-wrap cheat">
     <table>
-      <thead><tr><th>维度</th><th>近可分解视角</th><th>整体耦合视角</th></tr></thead>
+      <thead><tr><th>节点</th><th>核心内容</th><th>关键人物/证据</th><th>结论</th></tr></thead>
       <tbody>
-        <tr><td class="id">基本图像</td><td>模块 + 弱连接</td><td>连续耦合的过程</td></tr>
-        <tr><td class="id">研究方法</td><td>分离、控制、局部干预</td><td>整体记录、情境操纵</td></tr>
-        <tr><td class="id">解释形式</td><td>机制分解</td><td>动力学、网络、情境嵌入</td></tr>
-        <tr><td class="id">风险</td><td>把方法论的隔离当本体论分离</td><td>难以给出可检验的机制</td></tr>
+        <tr><td class="id">10.1</td><td>二元论回归；心灵自足</td><td>Haugeland、计算上传</td><td>简化产生哲学副产品</td></tr>
+        <tr><td class="id">10.2</td><td>生物自然主义 vs 功能主义</td><td>Simon 的软/硬件分离</td><td>脑不是为基质无关而设计</td></tr>
+        <tr><td class="id">10.3</td><td>近可分解性、组件、制表匠论证</td><td>Simon、进化</td><td>组件属性是工程理想，不是自然必然</td></tr>
+        <tr><td class="id">10.4</td><td>窄带界面；功能主义仍是二元论</td><td>松果体、缸中之脑、Burnyeat</td><td>形式与质料相互依赖</td></tr>
+        <tr><td class="id">10.5</td><td>怀疑论；析取论；Burge 的近端性</td><td>McDowell、Burge</td><td>内外相互渗透 vs 近端分界</td></tr>
+        <tr><td class="id">10.6</td><td>哲学作为抽象的批评者</td><td>Whitehead、Cassirer、Bergson</td><td>哲学不必背负科学简化</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm rem">
-    <div class="thm-head"><span class="thm-kind">反方</span><span class="thm-title">不分解，就什么也解释不了</span></div>
-    <div class="thm-body">
-      <p>整体论者常说“一切连着一切”，但这句话如果没有可操作的分解，就几乎不产生知识。</p>
-      <p>Chirimuuta 完全同意。她不是要取消分解，而是要区分<strong>方法论的局部性</strong>与<strong>本体论的普遍性</strong>。你可以在研究中把环境当作外部变量，但不能因此断言心灵本质上与环境无关。她最终的立场是：哲学应保留自己的问题域，不能把神经科学的简化结果直接当作对心灵本性的最终裁决。</p>
-    </div>
-  </div>
-
   <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">笛卡尔式理想化的三个越界</span></div>
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">关于二元论与具身的四个误读</span></div>
     <div class="thm-body">
-      <p><strong>一、把“可分离”当“已分离”。</strong>实验能压低耦合，不代表耦合不存在；$\epsilon$ 小不等于 $\epsilon=0$。</p>
-      <p><strong>二、把“近可分解”当“完全可分解”。</strong>弱耦合的累积效应可能在长时间尺度上决定系统行为。</p>
-      <p><strong>三、把哲学问题还原为科学问题。</strong>神经科学能告诉我们机制，但不能独自决定“心灵是什么”这类概念问题。</p>
+      <p><strong>一、“二元论只是宗教残余”。</strong>作者说它反复以功能主义、计算主义、上传幻想回归；根源是“心灵自足”的理想化。</p>
+      <p><strong>二、“只要神经科学证明界面是宽带的，二元论就消失”。</strong>作者认为科学仍有压力做窄带理想化；哲学要独立识别它。</p>
+      <p><strong>三、“功能主义=亚里士多德 hylomorphism”。</strong>共享“形式/组织”语言，但功能主义让质料无关，hylomorphism 主张形式—质料相互依赖。</p>
+      <p><strong>四、“哲学独立=不要科学”。</strong>作者反对 walled garden；哲学要懂科学，只是不照搬其简化。</p>
     </div>
   </div>
 </div></section>
 
 <section id="synthesis" class="chapter"><div class="wrap">
-  <div class="sec-label">综合 · The Argument</div>
-  <h2><span class="num">11</span>三条论证链：从抽象到限度</h2>
-  <p class="lede">这本书不是十个独立案例的拼盘。它有一条路线：先建立关于简化的认识论，再用神经科学史检验它，最后把结论推向科学限度与哲学自主性。</p>
+  <div class="sec-label">Synthesis · 三条论证链</div>
+  <h2><span class="num">11</span>把全书串起来：三条链与一张地图</h2>
+  <p class="lede">十章可以压成三条互相咬合的论证链：复杂性如何迫使简化；简化如何迫使形式唯心论；制造如何同时成就与限制理解。把这三条链分开看，全书的立场就不再像“反科学”，而像一种谨慎的科学哲学。</p>
 
   <div class="chap-intro">
-    <p>读全书时，可以把它当成三次递进：<strong>第一编</strong>回答“知识如何可能”；<strong>第二编</strong>回答“简化如何运作”；<strong>第三编</strong>回答“它把科学与哲学带到了哪里”。三次递进共享一个动作：把“简单”从名词变成动词。</p>
-    <span class="tag">全书结构</span>
+    <p>这一节不引入新观点，只做结构整理。第一条链是<strong>本体论—方法论</strong>：脑的复杂性 → 简化技术 → 理想模式。第二条链是<strong>认识论</strong>：形式实在论失败 → 形式唯心论 → 透视多元论。第三条链是<strong>实践哲学</strong>：制造 → 理解/控制 → 限度。三条链在“理想模式”与“理解”两个节点交汇。</p>
+    <span class="tag">全书结构 · 复盘</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">第一编 · 框架</span><span class="chip">第二编 · 案例</span><span class="chip">第三编 · 后果</span><span class="chip">理想模式</span><span class="chip">黑箱化</span><span class="chip">视角化</span>
+    <span class="chip hot">复杂性→简化</span><span class="chip">实在论→唯心论</span><span class="chip">制造→理解</span><span class="chip">理想模式</span><span class="chip">限度</span>
   </div>
 
-  <div class="cards">
-    <div class="card">
-      <div class="k">Part I · Ch 1–2</div>
-      <h4>建立框架</h4>
-      <p>提出三种简化策略与“理想模式”，再用触觉实在论/形式观念论解释知识的形式。</p>
-    </div>
-    <div class="card">
-      <div class="k">Part II · Ch 3–7</div>
-      <h4>检验框架</h4>
-      <p>反射论、计算机类比、简单细胞、神经表征、赫拉克利特式大脑：每个案例都是一次简化成败的现场。</p>
-    </div>
-    <div class="card">
-      <div class="k">Part III · Ch 8–10</div>
-      <h4>推向后果</h4>
-      <p>预测与理解的分离、具体性错置与 AI 意识、笛卡尔式理想化与哲学自主。</p>
-    </div>
-  </div>
+  <h3><span class="sn">S1</span>链一：复杂性迫使简化</h3>
 
-  <div class="table-wrap cheat">
+  <p>起点是第一章的六个复杂性特征。它们不是“知识还不够”的清单，而是对象的构成方式：数量、异质性、时间变化、交互密度、语境依赖、组织深度。任何一个特征都足以让“完整表征”成为不可能；六个叠加，意味着科学必须选择。</p>
+
+  <p>选择的技术就是三种简化：数学化把对象投影为量；还原在实验室制造更简单的物质系统；类比用更熟悉的人造物安置陌生系统。三者共同生产<strong>理想模式</strong>：比对象更规则、更对称、更可计算的 pattern。第五章的简单细胞是典型：它不是自然中现成的种类，而是麻醉、刺激、单电极、平均、F1/F0 分类共同塑造的现象。第七章的神经流形同样是理想模式：降维把 100 维压到 10 维，得到可解释的结构。</p>
+
+  <p>这条链的结论不是“对象不存在”，而是：<em>科学对象是互动的产物</em>。世界的贡献与科学家的贡献无法干净分离。这就是触觉实在论的本体论版本。</p>
+
+  <h3><span class="sn">S2</span>链二：从形式实在论到形式唯心论</h3>
+
+  <p>如果我们承认理想模式是产物，那么“最好的理论近似为真地描述独立结构”的标准实在论就站不住。第二章把替代方案叫形式唯心论：形式不是物自体的结构，而是经验/知识得以可能的条件。康德的形式质料论提供了骨架：质料是被给予的，形式是认知活动贡献的。</p>
+
+  <p>这个立场不等于建构主义。世界仍然抵抗：某些操作失败，某些预测持续出错。它也不等于“所有视角一样好”：视角可以失去生命力、被取代。它只是否认“唯一正解已经写在世界里，等着被抄写”。于是有了透视多元论：多个研究传统可以瞄准同一系统，建立在不相容的简化假设上，产生彼此不可完全翻译的描述。</p>
+
+  <p>这条链在第四、六章具体化。计算机模型的字面解释是形式实在论：它把模型的计算结构当成脑内独立事实。类比解释是形式唯心论：模型与脑共享的是理想模式，相似性依赖于研究目的与技术。神经表征话语同样：它不是对脑内符号的直截发现，而是一种黑箱化中介、聚焦远端关系的简化策略。</p>
+
+  <h3><span class="sn">S3</span>链三：制造、理解与限度</h3>
+
+  <p>第三条链从维柯开始：可理解的是被制造的。神经科学通过实验制备、计算模型、类器官等代理系统理解脑。理解与控制是同一活动的两张脸：模型因为简单而可理解，也因为简单而可操作。</p>
+
+  <p>但制造不保证透明。第八章的转折是：当模型复杂到深度网络，制造者也不再能完全看懂。预测与理解出现权衡：最准确的模型最不可解释，最可解释的模型预测最差。三种 scenario——离婚、重定向、重新定义——都是对这个权衡的回应。第九章把这一点推到意识与通用智能：计算模型抽象掉的生物细节，可能正是意识与理解的条件；因此解释鸿沟不是神秘，而是简化的账单；因此“放大 ANN”不会自动产生 AGI。</p>
+
+  <p>第十章收束：把心灵当可分离模块，是科学简化在哲学中的回响。近可分解性让科学把环境—身体—心灵切成可管理的小块；这个操作产生二元论与怀疑论的哲学难题。哲学不必背负同样的简化；它可以做“抽象的批评者”。</p>
+
+  <div class="table-wrap">
     <table>
-      <thead><tr><th>章</th><th>核心问题</th><th>关键案例</th><th>一句话结论</th></tr></thead>
+      <thead><tr><th>章</th><th>案例</th><th>简化类型</th><th>生产出的理想模式</th><th>失败/代价</th></tr></thead>
       <tbody>
-        <tr><td class="id">1</td><td>简单性从哪来？</td><td>带通滤波、V1 通道</td><td>简单是被制造出来的</td></tr>
-        <tr><td class="id">2</td><td>知识如何可能？</td><td>触摸瓜、实验室操作</td><td>触觉实在论 + 形式观念论</td></tr>
-        <tr><td class="id">3</td><td>简化何时会误导？</td><td>反射论</td><td>实验室原子不是自然原子</td></tr>
-        <tr><td class="id">4</td><td>大脑是计算机吗？</td><td>Marr 的 LoG 模型</td><td>像，但不是</td></tr>
-        <tr><td class="id">5</td><td>简单细胞有多“自然”？</td><td>Hubel &amp; Wiesel</td><td>它是实验流水线的产物</td></tr>
-        <tr><td class="id">6</td><td>神经表征是什么？</td><td>脑机接口、潮汐</td><td>一种黑箱化的类比</td></tr>
-        <tr><td class="id">7</td><td>大脑不停变化，如何建模？</td><td>表征漂移、运动皮层</td><td>视角生产稳定层</td></tr>
-        <tr><td class="id">8</td><td>预测等于理解吗？</td><td>LN 模型 vs DCNN</td><td>两者可能彼此拉扯</td></tr>
-        <tr><td class="id">9</td><td>模型能回答意识问题吗？</td><td>AI 意识、机车类比</td><td>不能把抽象当具体</td></tr>
-        <tr><td class="id">10</td><td>心灵可以被切开研究吗？</td><td>Simon、硬件/软件</td><td>可以，但别把刀痕当本质</td></tr>
+        <tr><td class="id">3</td><td>反射论</td><td>分解为反射原子</td><td>简单反射</td><td>不稳定、生态效度低、工具目标也失败</td></tr>
+        <tr><td class="id">4</td><td>计算机类比</td><td>功能前景化、抽掉实现</td><td>计算结构</td><td>字面化导致本体论误判</td></tr>
+        <tr><td class="id">5</td><td>简单细胞</td><td>麻醉、人工刺激、单电极、分类</td><td>LN 简单细胞</td><td>只解释 15% 行为、自然刺激失败</td></tr>
+        <tr><td class="id">6</td><td>神经表征</td><td>黑箱化近端因果</td><td>远端表征关系</td><td>内容自然化困难、潮汐反驳</td></tr>
+        <tr><td class="id">7</td><td>运动皮层</td><td>调谐曲线/降维/动力系统</td><td>神经元调谐、神经流形</td><td>潜变量 reification、任务依赖</td></tr>
+        <tr><td class="id">8</td><td>深度学习</td><td>大规模拟合、设计规格</td><td>可预测模型/设计原则</td><td>预测—理解权衡</td></tr>
+        <tr><td class="id">9</td><td>AGI/意识</td><td>计算抽象</td><td>同构体、通用智能</td><td>解释鸿沟、具体性错置</td></tr>
+        <tr><td class="id">10</td><td>心—身</td><td>近可分解、窄带界面</td><td>自足心灵模块</td><td>二元论、怀疑论</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="thm warn">
-    <div class="thm-head"><span class="thm-kind">阅读提醒</span><span class="thm-title">这本书没有主张什么</span></div>
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">统一</span><span class="thm-title">三条链的交汇点：理想模式与理解</span></div>
     <div class="thm-body">
-      <p><strong>它不是反科学。</strong>简化是科学得以可能的条件；她要的是对简化条件的敏感，而不是让研究停摆。</p>
-      <p><strong>它不是“所有模型都同样假”。</strong>模型有优劣，有可检验的成功与失败。</p>
-      <p><strong>它不是“哲学可以取代科学”。</strong>她主张哲学的相对自主：不能从神经科学直接读出答案，但也不能无视它。</p>
+      <p><strong>理想模式</strong>是本体论/方法论的交汇：它既不是自然现成的种类，也不是任意虚构；它是互动产物，因而同时受世界与目的约束。</p>
+      <p><strong>理解</strong>是认识论/实践的交汇：它不是对物自体的镜映，而是“对有限认知者而言说得通、用得上”的知识。理解可以是非事实性的：模型不必真，却能让你做新事、问新问题。</p>
+      <p>把这两个概念抓住，全书就能被读成一句话：<em>神经科学通过制造理想模式来理解脑；这种理解是真实的成就，但不是对脑本身的完整揭示。</em></p>
+    </div>
+  </div>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">注意</span><span class="thm-title">这不是“相对主义三部曲”</span></div>
+    <div class="thm-body">
+      <p>三条链都不主张“任何说法一样好”。它们主张的是：知识有<strong>构成性的视角条件</strong>；这些条件不取消客观性，只取消“上帝视角”的客观性。世界仍然通过失败、抵抗、预测误差说话。</p>
+      <p>把这本书读成“反科学”，会错过它最核心的敬意：它认为神经科学的技术与概念成就非凡，正因如此，才值得精确地说明这些成就是<em>如何</em>达成的。</p>
     </div>
   </div>
 </div></section>
 
-<section id="summary" class="chapter"><div class="wrap">
-  <div class="sec-label">总结 · One Page</div>
-  <h2><span class="num">99</span>一页纸总结与概念地图</h2>
-  <p class="lede">如果只能带走一页，带走这一页：神经科学的知识，是它为自己制造的简单性；而这种简单性，既是它最强大的工具，也是它最需要被审视的地方。</p>
+<section id="objections" class="chapter"><div class="wrap">
+  <div class="sec-label">Debate · 反对意见与回应</div>
+  <h2><span class="num">12</span>八种反驳，以及作者会怎么答</h2>
+  <p class="lede">一本书的立场，最好通过它如何回应最强反驳来理解。下面八条不是稻草人，而是从作者自己的论证缝隙里长出来的问题。</p>
 
   <div class="chap-intro">
-    <p>下面给出十条结论，再用一张表串起核心概念，最后是一张全书论证地图。你应该能对任何模型问出三个问题：<strong>它删掉了什么？它把什么当成稳定层？它凭什么说自己不只是有用？</strong></p>
-    <span class="tag">复习 · 自测</span>
+    <p>这些回应不是逐字引用，而是根据全书论证重建的“作者会怎么答”。每条都标注它依赖哪一章；如果你不同意，至少能定位到争论发生在哪一层。</p>
+    <span class="tag">批判性阅读 · 跨章</span>
   </div>
 
   <div class="mapchips">
-    <span class="chip hot">十条结论</span><span class="chip">概念速查</span><span class="chip">自测</span><span class="chip">阅读路线</span><span class="chip">概念地图</span>
+    <span class="chip hot">相对主义</span><span class="chip">工具主义</span><span class="chip">生物自然主义</span><span class="chip">悲观主义</span><span class="chip">自我指涉</span>
   </div>
 
-  <h3><span class="sn">99.1</span>十条结论</h3>
-  <ol>
-    <li><strong>复杂性是起点。</strong>每个神经元都不同，每次活动都不完全重复；第一项工作是决定什么可以忽略。</li>
-    <li><strong>抽象是有目的的删减，理想化是明知虚假的简化。</strong>两者都不可避免，但必须被记录。</li>
-    <li><strong>简单性是被制造出来的。</strong>实验、测量与建模共同生产“理想模式”，它不是藏在脑中的隐藏本质。</li>
-    <li><strong>知识是触觉性的。</strong>我们通过扰动与干预认识对象；知识的形式包含仪器与目的。</li>
-    <li><strong>形式观念论不是唯心论。</strong>世界存在并抵抗，但我们只能认识它向我们呈现的形式。</li>
-    <li><strong>反射论展示了简化的失败方式。</strong>把实验室的反射弧当成神经系统的原子，就会把特殊案例误当普遍原理。</li>
-    <li><strong>计算模型是类比，不是本体论证明。</strong>模型可以极有生产力，同时大脑不必“真的是计算机”。</li>
-    <li><strong>神经表征是一种黑箱化的简化。</strong>它把复杂的中介因果链暂时括起来，以便研究远端关系。</li>
-    <li><strong>预测与理解可以分离。</strong>深度网络提高预测，却可能降低可理解性。</li>
-    <li><strong>哲学需要相对自主。</strong>神经科学提供机制，但不能独自裁决心灵的本性。</li>
-  </ol>
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反驳 1</span><span class="thm-title">“所有科学都简化，为什么单挑神经科学？”</span></div>
+    <div class="thm-body">
+      <p>作者会承认：简化是普遍的科学条件，不是神经科学独有。她选神经科学，是因为对象把简化推到了极限：脑的异质性、时间变化、语境依赖与组织深度，使“完整表征”不仅实践上难，原则上也可疑。物理系统可以“触底”到同质基本粒子；活系统不会。她的论点因此不是“神经科学特别不科学”，而是“神经科学特别清晰地展示了科学知识的构成条件”。</p>
+    </div>
+  </div>
 
-  <div class="table-wrap cheat">
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反驳 2</span><span class="thm-title">“这不就是工具主义？为什么还叫实在论？”</span></div>
+    <div class="thm-body">
+      <p>关键差别在“世界这一端”。工具主义可以接受“理论只是预测工具，不必关于世界”。触觉实在论坚持：知识有超出科学家共同体的基础；世界会抵抗、会让操作失败、会产生预测误差。实在论的最低承诺是“有一个不只是我们说了算的世界”，不是“理论镜映物自体”。作者认为，这两件事可以分开；分开后，实在论变得更可信，而不是更弱。</p>
+    </div>
+  </div>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反驳 3</span><span class="thm-title">“透视多元论最终就是相对主义”</span></div>
+    <div class="thm-body">
+      <p>作者会区分“多个视角”与“多个同样好的视角”。视角受三类约束：现象（某些 pattern 无法被忽略）、干预（某些操作会失败）、共同体批评（论证、预测、可重复性）。视角可以失去生命力、被取代；这正是第七章的论点。相对主义主张“没有独立于视角的评价标准”；作者主张“评价标准本身是视角内的，但视角之间仍可比较其敏感度、预测力、可操作性”。这是“多元论”，不是“怎么都行”。</p>
+    </div>
+  </div>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反驳 4</span><span class="thm-title">“既然统一理论不可能，神经科学不如放弃宏大目标”</span></div>
+    <div class="thm-body">
+      <p>作者明确说，她不给神经科学家开政策建议。她区分“局部成功”与“统一理论”：局部预测、治疗、机制发现是真实的；她反对的是把局部成功读成“脑本来就是模型说的那样”。而且，她承认科学家可能需要乐观才能坚持研究；她的读者是哲学家与想公平解释神经科学的人。诊断限度，不等于劝人停工。</p>
+    </div>
+  </div>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反驳 5</span><span class="thm-title">“生物自然主义太强：你怎么知道硅基永远不行？”</span></div>
+    <div class="thm-body">
+      <p>作者会先澄清“可能性”的类型：她不证明逻辑不可能，只主张<strong>法则学不可能</strong>——在我们所知的自然律与材料条件下，无机硅基系统不会产生意识。她的论证依赖“神经功能与材料/结构不可分离”：完美复制神经元输入—输出，达到维持认知所需精度，本身就需要一个类似神经元的物理系统，而不是一个模型。对方可以坚持逻辑可能性；作者说，那对“硅基永生”的实践期待没有多大用。</p>
+    </div>
+  </div>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反驳 6</span><span class="thm-title">“你自己也在简化，凭什么批评别人？”</span></div>
+    <div class="thm-body">
+      <p>作者主动承认这一点：第一章就说本书是对神经科学的一次带通滤波，选择把简化放在前景。她的批评不是“不要简化”，而是“不要忘记自己在简化”，尤其不要把简化产物本体化。自我指涉不构成反驳，因为她的立场是反教条式的：她也接受自己的框架可以被更合适的视角取代。唯一要求是一致：不要一边说所有知识都是视角，一边把自己的视角当上帝视角。</p>
+    </div>
+  </div>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反驳 7</span><span class="thm-title">“哲学脱离科学，不就变成文学批评？”</span></div>
+    <div class="thm-body">
+      <p>作者反对“哲学是墙内花园”。她说哲学要懂科学，甚至要比非自然主义哲学更懂科学，才能识别科学抽象在哪些地方扭曲了问题。但哲学不受“设计可操作概念工具”的约束，因此可以保留科学为了可处理性而删掉的区分（如心灵与世界的相互渗透）。它的角色是“抽象的批评者”，不是科学的替代者，也不是科学的附庸。这个位置需要双重能力：科学细节的尊重 + 概念后果的敏感。</p>
+    </div>
+  </div>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">反驳 8</span><span class="thm-title">“这本书太悲观，会打击神经科学”</span></div>
+    <div class="thm-body">
+      <p>作者会区分“认识论上的谨慎”与“心理上的悲观”。她说脑可能永远无法被一个统一理论穷尽，但局部知识仍然为真、仍然有用。她也承认，科学家可能需要更乐观的社会心理才能推进研究；但哲学的职责不是提供士气，而是提供准确的自我理解。真正危险的乐观，是把模型当成脑本身，然后用它去承诺意识上传、通用智能或万能治疗。谨慎的悲观，反而保护科学免受过度承诺的反噬。</p>
+    </div>
+  </div>
+
+  <div class="intuition">
+    <div class="ih">怎么用这一节</div>
+    <p>读任何一篇神经科学论文时，试着问四个问题：它简化了什么？它把什么当成“相关”？它的模型在哪个任务上成功、在哪个任务上会破裂？它有没有把模型结构说成脑内事实？这四个问题，就是全书的“便携版”。</p>
+  </div>
+</div></section>
+
+<section id="summary" class="chapter"><div class="wrap">
+  <div class="sec-label">Summary · 一页纸</div>
+  <h2><span class="num">99</span>一页纸总结、术语表与学习路线</h2>
+  <p class="lede">如果只能带走一句话：神经科学不是发现了一个简单的大脑，而是发明了一套把大脑变得可理解的方法；这套方法产生了真实的知識，也产生了真实的盲点。</p>
+
+  <div class="chap-intro">
+    <p>这一节是复习索引，不替代正文。先用一张表把十章压成十句话，再给术语表、七天路线、自测题与延伸阅读。读完全书后，回到这里，应该能用自己的话把每条串起来。</p>
+    <span class="tag">复习 · 术语 · 路线</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">十章一句话</span><span class="chip">术语表</span><span class="chip">七天路线</span><span class="chip">自测</span><span class="chip">延伸阅读</span>
+  </div>
+
+  <h3><span class="sn">99.1</span>十章一句话</h3>
+
+  <div class="table-wrap">
     <table>
-      <thead><tr><th>概念</th><th>一句话定义</th><th>最容易混淆的地方</th></tr></thead>
+      <thead><tr><th>章</th><th>一句话</th><th>关键概念</th></tr></thead>
       <tbody>
-        <tr><td class="id">抽象</td><td>省略目标系统中存在的细节</td><td>不是错误，而是知识条件</td></tr>
-        <tr><td class="id">理想化</td><td>明知虚假仍然采用表征</td><td>与抽象常无法干净区分</td></tr>
-        <tr><td class="id">理想模式</td><td>实验与建模共同稳定下来的规则现象</td><td>不是自然种类，也不是纯虚构</td></tr>
-        <tr><td class="id">触觉实在论</td><td>知识来自互动与操作</td><td>不是相对主义</td></tr>
-        <tr><td class="id">形式观念论</td><td>形式由认知者贡献，物自体不可知</td><td>不是贝克莱式唯心论</td></tr>
-        <tr><td class="id">黑箱化</td><td>暂时括起中介因果链</td><td>不等于中介不存在</td></tr>
-        <tr><td class="id">verum factum</td><td>可理解的是被制造出来的</td><td>不是“人造即真理”</td></tr>
-        <tr><td class="id">具体性错置</td><td>把抽象当具体，把模型当现实</td><td>科学可容忍，哲学不可</td></tr>
-        <tr><td class="id">近可分解</td><td>子系统内强耦合、子系统间弱耦合</td><td>不是完全可分解</td></tr>
-        <tr><td class="id">生物自然主义</td><td>意识依赖活着的神经系统的物质构成</td><td>不是二元论</td></tr>
+        <tr><td class="id">1</td><td>大脑太复杂，科学必须通过数学化、还原、类比来制造可理解的简单性。</td><td>带通滤波、理想模式、有学问的无知</td></tr>
+        <tr><td class="id">2</td><td>知识是互动的产物；形式由认知者贡献，因此我们只能认识关系中的世界。</td><td>触觉实在论、形式唯心论、透视主义</td></tr>
+        <tr><td class="id">3</td><td>反射论把实验室制造的反射当成自然原子，结果连工具性目标也没达成。</td><td>反射弧、生态效度、工具主义</td></tr>
+        <tr><td class="id">4</td><td>计算机类比极大提高了研究效率，但预测成功不证明脑在字面上是计算机。</td><td>字面/类比解释、功能前景化</td></tr>
+        <tr><td class="id">5</td><td>简单细胞是实验流水线造出的理想模式，却催生了 DCNN 与非事实性理解。</td><td>感受野、LN 模型、理想模式</td></tr>
+        <tr><td class="id">6</td><td>“表征”是黑箱化近端因果、聚焦远端关系的简化，不必先解决形而上学。</td><td>近端/远端、稳健性、潮汐反驳</td></tr>
+        <tr><td class="id">7</td><td>脑是过程；单神经元与群体两种视角，是对“稳定性放在哪里”的不同下注。</td><td>赫拉克利特、神经流形、视角</td></tr>
+        <tr><td class="id">8</td><td>制造是理解的条件；深度学习让预测与理解离婚，或迫使理解重定向/重新定义。</td><td>verum factum、预测—理解权衡</td></tr>
+        <tr><td class="id">9</td><td>把模型当脑是具体性错置；它生成解释鸿沟、AGI 幻象与“机器理解”的错觉。</td><td>解释鸿沟、精确同构、对抗样本</td></tr>
+        <tr><td class="id">10</td><td>二元论与怀疑论源于“心灵自足”的理想化；哲学应做抽象的批评者。</td><td>近可分解性、窄带界面、析取论</td></tr>
       </tbody>
     </table>
   </div>
 
-  <h3><span class="sn">99.2</span>三道自测</h3>
-  <p class="small">先自己回答，再展开对照。答案不追求唯一，重要的是能否指出自己的简化假设。</p>
+  <h3><span class="sn">99.2</span>术语表</h3>
 
-  <details>
-    <summary>1. 为什么说“简单细胞”是实验室的产物？</summary>
-    <div class="proof-body"><p>从野外的脑到可解释的线性模型，中间经过了麻醉、固定刺激、电极采样、平均与拟合等多重简化。简单细胞是这些条件共同稳定下来的理想模式。</p></div>
-  </details>
-
-  <details>
-    <summary>2. “大脑像计算机”与“大脑是计算机”差别在哪？</summary>
-    <div class="proof-body"><p>“像”只要求在某些任务上共享可描述的结构，允许差异存在；“是”则承诺共享同一本体论结构，并推出多重可实现性。</p></div>
-  </details>
-
-  <details>
-    <summary>3. 为什么“潮汐表征月亮”听起来很荒谬？</summary>
-    <div class="proof-body"><p>潮汐与月亮的关系虽稳定，却缺乏对远端目标的鲁棒性：修一堵墙就能改变局部潮位。神经表征则依赖系统朝向目标自我修正。</p></div>
-  </details>
-
-  <h3><span class="sn">99.3</span>三条阅读路线</h3>
-  <div class="cards">
-    <div class="card">
-      <div class="k">路线 A · 最快</div>
-      <h4>先读结论</h4>
-      <p>第 1 章 → 第 4 章 → 第 8 章 → 第 9 章 → 本页。抓住“简化—类比—限度”的主线。</p>
-    </div>
-    <div class="card">
-      <div class="k">路线 B · 哲学</div>
-      <h4>先读框架</h4>
-      <p>第 1–2 章 → 第 6 章 → 第 9–10 章。重点在触觉实在论与哲学自主。</p>
-    </div>
-    <div class="card">
-      <div class="k">路线 C · 科学</div>
-      <h4>先读案例</h4>
-      <p>第 3–5 章 → 第 7–8 章。把反射论、简单细胞、运动皮层与深度网络连成“实验简化史”。</p>
-    </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>中文</th><th>English</th><th>一句话定义</th></tr></thead>
+      <tbody>
+        <tr><td>抽象</td><td>abstraction</td><td>省略目标中实际存在的细节；反义词是“具体”。</td></tr>
+        <tr><td>理想化</td><td>idealization</td><td>明知虚假地表征目标；反义词是“实在”。</td></tr>
+        <tr><td>简化</td><td>simplification</td><td>使对象变得可理解、可计算、可操纵的选择性删减。</td></tr>
+        <tr><td>数学化</td><td>mathematization</td><td>把对象投影为数量关系；总是抽象，通常理想化。</td></tr>
+        <tr><td>还原</td><td>reduction</td><td>在物质上制造更简单的系统，并假定部分知识可拼回整体。</td></tr>
+        <tr><td>类比</td><td>analogy</td><td>用更熟悉、更简单的系统来推理陌生系统；含正面与负面类比。</td></tr>
+        <tr><td>模型</td><td>model</td><td>对目标的抽象/理想化表征；其简单性是设计出来的。</td></tr>
+        <tr><td>理想模式</td><td>ideal pattern</td><td>实验与数据处理共同造出的规则性；既非纯自然种类，也非纯虚构。</td></tr>
+        <tr><td>表征</td><td>representation</td><td>一个状态“关于”某物；在本书中被读作黑箱化中介的简化策略。</td></tr>
+        <tr><td>触觉实在论</td><td>haptic realism</td><td>知识来自与对象的互动；认知者的贡献不可消除，但世界仍有约束。</td></tr>
+        <tr><td>形式唯心论</td><td>formal idealism</td><td>形式是经验/知识的条件，不是物自体的独立结构。</td></tr>
+        <tr><td>形式实在论</td><td>formal realism</td><td>形式/结构独立于认知者而存在于世界中，等待被发现。</td></tr>
+        <tr><td>透视主义</td><td>perspectivism</td><td>知识来自特定视角；多个视角可瞄准同一对象而不可完全翻译。</td></tr>
+        <tr><td>近端/远端</td><td>proximal / distal</td><td>近端指感官转导处的刺激；远端指世界中的对象/事件。</td></tr>
+        <tr><td>近可分解性</td><td>near-decomposability</td><td>系统由半独立组件构成，组件内交互远多于组件间交互。</td></tr>
+        <tr><td>具体性错置</td><td>misplaced concreteness</td><td>把科学抽象当成具体实在，把模型当对象。</td></tr>
+        <tr><td>生物自然主义</td><td>biological naturalism</td><td>意识依赖神经系统的实际材料与活动，不能基质无关地复制。</td></tr>
+        <tr><td>非事实性理解</td><td>nonfactive understanding</td><td>不依赖获得目标全部真理的理解；简化模型也能提供。</td></tr>
+        <tr><td>有学问的无知</td><td>docta ignorantia</td><td>对超出有限心灵的对象，保持对“能知/不能知”的清醒意识。</td></tr>
+        <tr><td>先验</td><td>a priori</td><td>不依赖经验而使经验成为可能的条件；作者将其弱化为实践中的图式条件。</td></tr>
+        <tr><td>现象</td><td>phenomenon</td><td>经数据处理与理论组织后、可被模型解释的规则性。</td></tr>
+        <tr><td>奥卡姆剃刀</td><td>Ockham's razor</td><td>如无必要勿增实体；作者强调它不是真理的保证。</td></tr>
+      </tbody>
+    </table>
   </div>
 
-  <h3><span class="sn">99.4</span>全书概念地图</h3>
-  <figure>
-    <svg viewBox="0 0 900 500" role="img" aria-label="全书概念地图：从复杂大脑到简化策略、理想模式、模型、解释与限度">
-      <rect x="10" y="10" width="880" height="480" rx="16" fill="#faf6ec"/>
+  <h3><span class="sn">99.3</span>七天学习路线</h3>
 
-      <rect x="320" y="28" width="260" height="58" rx="10" fill="#f3ded7" stroke="#b23a26" stroke-width="1.5"/>
-      <text x="450" y="52" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#1c1b18">超复杂的大脑</text>
-      <text x="450" y="72" text-anchor="middle" font-family="sans-serif" font-size="11.5" fill="#726a5c">每个神经元都不同，每一刻都在变化</text>
+  <div class="cards">
+    <div class="card"><div class="k">Day 1</div><h4>问题与工具箱</h4><p>读第 1 章三节。重点掌握六种复杂性、三种简化、理想模式。用自己的话解释“带通滤波”为什么既是认知隐喻又是实验技术。</p></div>
+    <div class="card"><div class="k">Day 2</div><h4>认识论地基</h4><p>读第 2 章。画出形式实在论/形式唯心论/强建构论的三列对照。想清楚：触觉实在论为什么仍是实在论？</p></div>
+    <div class="card"><div class="k">Day 3</div><h4>两个失败/成功案例</h4><p>读第 3–4 章。比较反射论与计算机类比：它们各自把什么当“原子/单元”？失败在哪里？成功在哪里？</p></div>
+    <div class="card"><div class="k">Day 4</div><h4>理想模式与表征</h4><p>读第 5–6 章。复述实验→模型流水线五阶段；用“潮汐表征”思想实验检验表征话语的边界。</p></div>
+    <div class="card"><div class="k">Day 5</div><h4>时间性与视角</h4><p>读第 7 章。比较神经元稳定性与群体模式两种视角；解释为什么“神经流形”也是理想模式。</p></div>
+    <div class="card"><div class="k">Day 6</div><h4>限度与机器</h4><p>读第 8–9 章。列出预测—理解权衡的三种回应；用具体性错置诊断“AGI 只差规模”的论证。</p></div>
+    <div class="card"><div class="k">Day 7</div><h4>心身与收束</h4><p>读第 10 章与综合节。画三条论证链；用八条反驳自测，看哪条你最能替作者回答。</p></div>
+    <div class="card"><div class="k">复盘</div><h4>回到四个问题</h4><p>简化了什么？把什么当相关？在哪个任务上成功/破裂？有没有把模型当脑？</p></div>
+  </div>
 
-      <path d="M450 86 L450 108" stroke="#726a5c" stroke-width="1.5"/>
-      <path d="M445 104 L450 112 L455 104 Z" fill="#726a5c"/>
-      <text x="466" y="104" font-family="sans-serif" font-size="11" fill="#726a5c">必须简化</text>
+  <h3><span class="sn">99.4</span>自测：六个必须能回答的问题</h3>
 
-      <rect x="52" y="118" width="230" height="64" rx="10" fill="#dcebe7" stroke="#11645c" stroke-width="1.5"/>
-      <text x="167" y="143" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="#1c1b18">数学化</text>
-      <text x="167" y="163" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3b372f">方程、数量、可计算关系</text>
+  <ol>
+    <li>为什么作者说“简单细胞”是实验室的产物？如果它是产物，为什么仍能产生 DCNN？</li>
+    <li>“形式唯心论”与“贝克莱式唯心论”差在哪里？为什么作者说前者仍是一种实在论？</li>
+    <li>反射论的六条批评中，哪一条对工具主义版本仍然致命？为什么？</li>
+    <li>“潮汐表征”思想实验想说明什么？稳健性为什么是表征话语的必要条件？</li>
+    <li>预测—理解权衡是什么？Lillicrap 与 Kording 的“compactness”方案，作者为什么仍不满意？</li>
+    <li>“具体性错置”如何同时解释解释鸿沟、AGI 乐观与二元论？</li>
+  </ol>
 
-      <rect x="335" y="118" width="230" height="64" rx="10" fill="#f4e9cc" stroke="#9a6f13" stroke-width="1.5"/>
-      <text x="450" y="143" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="#1c1b18">还原 / 实验</text>
-      <text x="450" y="163" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3b372f">控制条件、制造更简单的系统</text>
+  <details>
+    <summary>参考答案要点（先自己写，再展开）</summary>
+    <div class="proof-body">
+      <p><strong>1.</strong> 简单细胞的特征由麻醉、人工刺激、单电极记录、试次平均与 F1/F0 分类共同塑造；它不是自然现成的稳定类型。但它作为理想模式，抓住了某些任务相关的规律，足以支持前馈层级模型与 DCNN 的工程实现。</p>
+      <p><strong>2.</strong> 贝克莱认为存在即被感知/由心灵构成；形式唯心论只说我们只能认识显现给我们的形式，世界仍独立存在并约束知识。因此它保留“世界这一端”，是最低限度的实在论。</p>
+      <p><strong>3.</strong> 生态效度/工具有效性：工具主义躲过本体论批评，但仍需证明简化在目标场景中好用；反射论连行为工程的目标也完成得不好。</p>
+      <p><strong>4.</strong> 它检验“仅远端性”是否足以证成表征：月球—潮汐是远端因果，却没有稳健的目标导向；神经活动在扰动后能恢复映射，才像“朝向对象”的表征。</p>
+      <p><strong>5.</strong> 最准确模型最不可解释，最可解释模型预测最差。Lillicrap–Kording 把理解寄托于 compact description/学习规则；作者指出生物学习不是离散阶段，学习规则在生物中未必比执行更透明。</p>
+      <p><strong>6.</strong> 三者都把模型/抽象当成具体实在：计算模型漏掉意识，却被当成认知本质（鸿沟）；专家系统在窄任务上的成功被当成通用智能的胚芽（AGI）；心灵被当成可分离模块（二元论）。</p>
+    </div>
+  </details>
 
-      <rect x="618" y="118" width="230" height="64" rx="10" fill="#dfe8f0" stroke="#2c567d" stroke-width="1.5"/>
-      <text x="733" y="143" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="#1c1b18">类比</text>
-      <text x="733" y="163" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3b372f">用机器、地图、编码来安置脑</text>
+  <h3><span class="sn">99.5</span>延伸阅读</h3>
 
-      <path d="M167 182 L167 202 L450 202" fill="none" stroke="#726a5c" stroke-width="1.3"/>
-      <path d="M450 182 L450 202" fill="none" stroke="#726a5c" stroke-width="1.3"/>
-      <path d="M733 182 L733 202 L450 202" fill="none" stroke="#726a5c" stroke-width="1.3"/>
-      <path d="M445 202 L450 210 L455 202 Z" fill="#726a5c"/>
-      <text x="450" y="226" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#726a5c">三者共同生产</text>
+  <p class="note">以下均为本书讨论或引用的真实著作，按主题排列；版本信息以常见版本为准，不追求 bibliographic 完备。</p>
 
-      <rect x="180" y="236" width="540" height="58" rx="10" fill="#ece4d4" stroke="#c4b7a0" stroke-width="1.5"/>
-      <text x="450" y="260" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#1c1b18">理想模式：比野外更规则、更可计算的现象</text>
-      <text x="450" y="280" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#726a5c">简单细胞 · 调谐曲线 · 反射弧 · 训练好的网络</text>
+  <ul class="clean">
+    <li>Chirimuuta, M. 2024. <em>The Brain Abstracted: Simplification in the History and Philosophy of Neuroscience</em>. Cambridge, MA: MIT Press.</li>
+    <li>Chirimuuta, M. 2015. <em>Outside Color: Perceptual Science and the Puzzle of Color in Philosophy</em>. Cambridge, MA: MIT Press.</li>
+    <li>Aristotle. <em>De Anima</em>. Translated by J. A. Smith. In <em>The Complete Works of Aristotle</em>, edited by J. Barnes. Princeton, NJ: Princeton University Press.</li>
+    <li>Kant, I. 1781/1787/1998. <em>Critique of Pure Reason</em>. Translated by P. Guyer and A. Wood. Cambridge: Cambridge University Press.</li>
+    <li>Hesse, M. 1962. <em>Models and Analogies in Science</em>. London: Sheed and Ward.</li>
+    <li>Hesse, M. 1966. <em>Models and Analogies in Science</em>. Notre Dame, IN: University of Notre Dame Press.</li>
+    <li>Cartwright, N. 1983. <em>How the Laws of Physics Lie</em>. Oxford: Oxford University Press.</li>
+    <li>Cartwright, N. 1999. <em>The Dappled World: A Study of the Boundaries of Science</em>. Cambridge: Cambridge University Press.</li>
+    <li>Goldstein, K. 1934/1939. <em>The Organism: A Holistic Approach to Biology</em>. New York: American Book Company.</li>
+    <li>Merleau-Ponty, M. 1942/1967. <em>The Structure of Behavior</em>. Translated by A. Fisher. Boston: Beacon Press.</li>
+    <li>Simon, H. A. 1969. <em>The Sciences of the Artificial</em>. Cambridge, MA: MIT Press.</li>
+    <li>Whitehead, A. N. 1925/1967. <em>Science and the Modern World</em>. New York: Free Press.</li>
+    <li>McDowell, J. 1996. <em>Mind and World</em>. Cambridge, MA: Harvard University Press.</li>
+    <li>Burge, T. 2010. <em>Origins of Objectivity</em>. Oxford: Oxford University Press.</li>
+    <li>Haugeland, J. 1998. <em>Having Thought: Essays in the Metaphysics of Mind</em>. Cambridge, MA: Harvard University Press.</li>
+    <li>Chalmers, D. 1996. <em>The Conscious Mind: In Search of a Fundamental Theory</em>. Oxford: Oxford University Press.</li>
+    <li>Schneider, S. 2019. <em>Artificial You: AI and the Future of Your Mind</em>. Princeton, NJ: Princeton University Press.</li>
+    <li>Dennett, D. 1991. <em>Consciousness Explained</em>. Boston: Little, Brown.</li>
+    <li>Potochnik, A. 2017. <em>Idealization and the Aims of Science</em>. Chicago: University of Chicago Press.</li>
+    <li>Elgin, C. 2017. <em>True Enough</em>. Cambridge, MA: MIT Press.</li>
+    <li>Massimi, M. 2022. <em>Perspectival Realism</em>. Oxford: Oxford University Press.</li>
+    <li>Dupré, J. 2012. <em>Processes of Life: Essays in the Philosophy of Biology</em>. Oxford: Oxford University Press.</li>
+    <li>Godfrey-Smith, P. 2016. <em>Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness</em>. New York: Farrar, Straus and Giroux.</li>
+    <li>Ramsey, W. 2007. <em>Representation Reconsidered</em>. Cambridge: Cambridge University Press.</li>
+    <li>Shea, N. 2018. <em>Representation in Cognitive Science</em>. Oxford: Oxford University Press.</li>
+    <li>Woodward, J. 2003. <em>Making Things Happen: A Theory of Causal Explanation</em>. Oxford: Oxford University Press.</li>
+    <li>Craver, C. 2007. <em>Explaining the Brain: Mechanisms and the Mosaic Unity of Neuroscience</em>. Oxford: Oxford University Press.</li>
+    <li>Bechtel, W., and R. Richardson. 2010. <em>Discovering Complexity: Decomposition and Localization as Strategies in Scientific Research</em>. Cambridge, MA: MIT Press.</li>
+    <li>Marr, D. 1982. <em>Vision: A Computational Investigation into the Human Representation and Processing of Visual Information</em>. San Francisco: W. H. Freeman.</li>
+    <li>Clark, A. 2016. <em>Surfing Uncertainty: Prediction, Action, and the Embodied Mind</em>. Oxford: Oxford University Press.</li>
+    <li>Hohwy, J. 2014. <em>The Predictive Mind</em>. Oxford: Oxford University Press.</li>
+    <li>Thompson, E. 2009. <em>Mind in Life: Biology, Phenomenology, and the Sciences of Mind</em>. Cambridge, MA: Harvard University Press.</li>
+    <li>Varela, F., E. Thompson, and E. Rosch. 1991. <em>The Embodied Mind: Cognitive Science and Human Experience</em>. Cambridge, MA: MIT Press.</li>
+    <li>Nussbaum, M., and A. Rorty, eds. 1992. <em>Essays on Aristotle's De Anima</em>. Oxford: Oxford University Press.</li>
+    <li>Horkheimer, M. 1937. "The Latest Attack on Metaphysics." In <em>Critical Theory: Selected Essays</em>. New York: Continuum.</li>
+    <li>Cassirer, E. 1910/1923. <em>Substance and Function</em>. Translated by W. Swabey and M. Swabey. Chicago: Open Court.</li>
+    <li>Nietzsche, F. 1887/1994. <em>On the Genealogy of Morality</em>. Translated by C. Diethe. Cambridge: Cambridge University Press.</li>
+    <li>Bergson, H. 1903/1912. <em>An Introduction to Metaphysics</em>. Translated by T. E. Hulme. New York: Putnam.</li>
+    <li>Vico, G. 1710/1988. <em>On the Most Ancient Wisdom of the Italians</em>. Translated by L. Palmer. Ithaca, NY: Cornell University Press.</li>
+    <li>Hubel, D. H., and T. N. Wiesel. 1962. "Receptive Fields, Binocular Interaction and Functional Architecture in the Cat's Visual Cortex." <em>Journal of Physiology</em> 160: 106–154.</li>
+    <li>Barlow, H. B. 1972. "Single Units and Sensation: A Neuron Doctrine for Perceptual Psychology?" <em>Perception</em> 1: 371–394.</li>
+    <li>Bogen, J., and J. Woodward. 1988. "Saving the Phenomena." <em>Philosophical Review</em> 97: 303–352.</li>
+    <li>Gao, P., and S. Ganguli. 2015. "On Simplicity and Complexity in the Brave New World of Large-Scale Neuroscience." <em>Current Opinion in Neurobiology</em> 32: 148–155.</li>
+    <li>Lillicrap, T. P., and K. P. Kording. 2019. "What Does It Mean to Understand a Neural Network?" <em>arXiv</em> preprint.</li>
+    <li>Hasson, U., C. Nastase, and A. Goldstein. 2020. "Direct Fit to Nature: An Evolutionary Perspective on Biological and Artificial Neural Networks." <em>Neuron</em> 105: 416–432.</li>
+    <li>Ilyas, A., et al. 2019. "Adversarial Examples Are Not Bugs, They Are Features." <em>Advances in Neural Information Processing Systems</em> 32.</li>
+  </ul>
 
-      <path d="M450 294 L450 316" stroke="#726a5c" stroke-width="1.5"/>
-      <path d="M445 312 L450 320 L455 312 Z" fill="#726a5c"/>
-
-      <rect x="110" y="326" width="310" height="62" rx="10" fill="#e8e2f0" stroke="#5a4a78" stroke-width="1.5"/>
-      <text x="265" y="351" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="#1c1b18">模型与表征</text>
-      <text x="265" y="371" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3b372f">计算模型、神经表征、黑箱化</text>
-
-      <rect x="480" y="326" width="310" height="62" rx="10" fill="#f3ded7" stroke="#b23a26" stroke-width="1.5"/>
-      <text x="635" y="351" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="700" fill="#1c1b18">解释与预测</text>
-      <text x="635" y="371" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3b372f">verum factum · 预测—理解权衡</text>
-
-      <path d="M265 388 L265 408 L450 408" fill="none" stroke="#726a5c" stroke-width="1.3"/>
-      <path d="M635 388 L635 408 L450 408" fill="none" stroke="#726a5c" stroke-width="1.3"/>
-      <path d="M445 408 L450 416 L455 408 Z" fill="#726a5c"/>
-
-      <rect x="110" y="424" width="680" height="52" rx="10" fill="#f4e9cc" stroke="#9a6f13" stroke-width="1.5"/>
-      <text x="450" y="446" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#1c1b18">限度：预测 ≠ 理解 · 模型 ≠ 大脑 · 方法论的隔离 ≠ 本体论的分离</text>
-      <text x="450" y="465" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3b372f">因此：哲学需要相对自主，科学需要对自己的简化保持清醒</text>
-
-      <path d="M790 450 C846 450, 846 250, 790 250" fill="none" stroke="#b23a26" stroke-width="1.3" stroke-dasharray="5 4"/>
-      <path d="M794 246 L786 250 L794 254 Z" fill="#b23a26"/>
-      <text x="806" y="340" text-anchor="middle" font-family="sans-serif" font-size="10.5" fill="#b23a26" transform="rotate(90 806 340)">反思回到起点</text>
-    </svg>
-    <figcaption><b>全书地图。</b>复杂性迫使简化；简化生产理想模式；理想模式支撑模型与解释；解释的成功又暴露限度。</figcaption>
-  </figure>
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">最后</span><span class="thm-title">把书合上之后</span></div>
+    <div class="thm-body">
+      <p>这本书最容易被误读成“神经科学不行”。更准确的读法是：神经科学行，但它的“行”有结构。它通过简化、制造、理想化来行；这些操作既是它的力量，也是它的边界。看清边界，不会削弱科学，反而让它的成就更可信。</p>
+      <p>下一次你看到“脑区 X 表征 Y”“模型解释 90% 方差”“AI 即将拥有意识”这类说法，先别急着接受或否定。问那四个问题：简化了什么？把什么当相关？在哪个任务上成功？有没有把模型当脑？</p>
+    </div>
+  </div>
 </div></section>
 
 </main>
@@ -1430,7 +2414,7 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="footer-grid">
       <div>
         <h5>关于本页</h5>
-        <p>基于 M. Chirimuuta 的《The Brain Abstracted》整理的中文学习版。</p>
+        <p>本页是基于原书的学习笔记与讲解。</p>
       </div>
       <div>
         <h5>怎么用</h5>
@@ -1438,7 +2422,7 @@ figcaption b{color:var(--ink2);font-weight:600}
       </div>
       <div>
         <h5>覆盖范围</h5>
-        <p>8 章 · 377 页 · 核心概念 + 例子 + 速查表</p>
+        <p></p>
       </div>
     </div>
     <p style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">

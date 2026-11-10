@@ -563,7 +563,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <h3><span class="sn">1.1</span>四个阶段，一条主线</h3>
 <p>图灵的写作可以粗分为四段。第一段是 1935–1939 年的逻辑工作：1936 年的 <em>On Computable Numbers, with an Application to the Entscheidungsproblem</em> 定义“机械计算”，构造通用机，并用对角线证明判定问题不可解；1937 年的 <em>A Correction</em> 修正了形式证明中的错误；同年的 <em>Computability and λ-definability</em> 与 <em>The p-function in λ-K Conversion</em> 把“可计算”与丘奇的 λ-可定义、克莱尼的一般递归联系起来；1938 年的 <em>Systems of Logic based on Ordinals</em> 则尝试用超限迭代克服哥德尔不完备。</p>
-<p>第二段是 1940–1945 年的战时工作。Part III 的 <em>Turing's Treatise on the Enigma</em> 不是一篇后来补写的回忆，而是 1940 年秋在布莱切利园写成的约 140 页打字稿，战后被称作“Prof's Book”。它先讲手工方法，再讲 Bombe 的机械逻辑，最后讲海军 Enigma 的双字母密钥系统。与它相邻的 <em>Minimum Cost Sequential Analysis</em> 把手上的统计实践写成理论：序贯检验、Bayes 因子、证据重量。</p>
+<p>第二段是 1939–1945 年的战时工作。Part III 的 <em>Turing's Treatise on the Enigma</em> 不是一篇后来补写的回忆，而是 1940 年秋在布莱切利园写成的约 140 页打字稿，战后被称作“Prof's Book”。它先讲手工方法，再讲 Bombe 的机械逻辑，最后讲海军 Enigma 的双字母密钥系统。与它相邻的 <em>Minimum Cost Sequential Analysis</em> 把手上的统计实践写成理论：序贯检验、Bayes 因子、证据重量。</p>
 <p>第三段是 1945–1950 年的机器建设。图灵在国家物理实验室（NPL）提出 ACE（Automatic Computing Engine）方案，1947 年 2 月 20 日给伦敦数学会讲 <em>The Automatic Computing Engine</em>，把 1936 年的通用机与真实的存储程序机器接上。1948 年他到曼彻斯特，写《Programmer's Handbook for the Manchester Electronic Computer Mark II》的“Programming Principles”，并在 1949 年 EDSAC 会议上提交 <em>Checking a Large Routine</em>，这是程序验证的早期尝试。</p>
 <p>第四段是 1948–1954 年的“机器能否学习/思考”和“生物如何长出形状”。1948 年的 <em>Intelligent Machinery</em> 报告提出无组织机器与“儿童机器”；1950 年的 <em>Computing Machinery and Intelligence</em> 把“机器能思考吗”换成模仿游戏；1952 年的 <em>The Chemical Basis of Morphogenesis</em> 用反应–扩散方程解释均匀组织如何自发失稳；1953–1954 年他又转向量子力学与广义相对论，留下 Gandy 书信中的“来自未见世界的消息”。</p>
 
@@ -644,7 +644,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 <p>这里有两个容易读错的点。第一，图灵用“circle-free”而不是“halts”：机器可以永远运行，只要它无限多次印出 0 或 1。第二，“可计算数”不要求机器把无限展开“算完”；它要求每一步由有限规则唯一决定，而且数字会不断产生。后来教材把“停机”当作中心概念，是为了教学方便；图灵原文的中心是“无限序列是否被不断印出”。</p>
 
 <h3><span class="sn">2.2</span>机器：五条动作与“格局”</h3>
-<p>图灵原文的机器没有“七元组”的现代写法。它由有限个 <b>m-configuration</b>（可理解为“心态/状态”）、一条分成方格的纸带、一个读写头组成。每一刻，机器只直接知道三件事：当前 m-configuration、扫描格上的符号、以及由前两者决定的下一步。三者合起来叫<b>格局 (configuration)</b>；加上整条纸带内容与读写头位置，叫<b>完全格局 (complete configuration)</b>。</p>
+<p>图灵原文的机器（后来被称为<b>图灵机 (Turing machine)</b>）没有“七元组”的现代写法。它由有限个 <b>m-configuration</b>（可理解为“心态/状态”）、一条分成方格的纸带、一个读写头组成。每一刻，机器只直接知道三件事：当前 m-configuration、扫描格上的符号、以及由前两者决定的下一步。三者合起来叫<b>格局 (configuration)</b>；加上整条纸带内容与读写头位置，叫<b>完全格局 (complete configuration)</b>。</p>
 <p>一步只能做一件局部的事：写一个符号、擦一个符号、左移一格、右移一格，或改变 m-configuration。图灵允许把“写并移动”写成一条缩写指令，但本质上仍是这些原子动作的组合。§9 的论证是：人做计算时，任何时刻只能观察有限个格子，只有有限种“心态”，一次只能改一个格子；因此上述限制不失一般性。</p>
 
 <div class="thm rem">
@@ -833,7 +833,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 <p>$D$ 的第 $i$ 个对角线项与 $M_i$ 的相反，所以 $D$ 不可能等于表中任何一行。可我们明明可以把 $D$ 编成机器、给它编号；矛盾。这个“翻转对角线”的表格，是理解不可判定性证明的万能图景。停机问题是这个图景的现代版本；图灵原文用的是 circle-free，但结构相同。</p>
 
 <h3><span class="sn">4.3</span>从“印 0”到“可证”：$\mathrm{Un}(M)$ 的构造</h3>
-<p>§11 的目标是：对每台机器 $M$，有效地写出一阶公式 $\mathrm{Un}(M)$，使得 $\mathrm{Un}(M)$ 可证当且仅当 $M$ 永不印 0。若判定问题有解，我们就能判定 $\mathrm{Un}(M)$ 是否可证，从而判定 $M$ 是否印 0，违反 §8。</p>
+<p>§11 的目标是：对每台机器 $M$，有效地写出一阶公式 $\mathrm{Un}(M)$，使得判定 $\mathrm{Un}(M)$ 是否可证就足以判定 $M$ 是否印 0；直观上 $\mathrm{Un}(M)$ 表达“$M$ 永不印 0”。若判定问题有解，我们就能判定 $\mathrm{Un}(M)$ 是否可证，从而判定 $M$ 是否印 0，违反 §8。</p>
 <p>公式的语言包含：$R_{S_j}(x,y)$ 表示“在完全格局 $x$ 中，第 $y$ 格上的符号是 $S_j$”；$I(x,y)$ 表示“第 $x$ 个格局中，读写头在第 $y$ 格”；$K_{q_i}(x)$ 表示“第 $x$ 个格局的 m-configuration 是 $q_i$”；$F(x,y)$ 表示“$y=x+1$”。$\mathrm{Un}(M)$ 由三部分合取：初始格局的描述、每一步的转移关系、以及“存在某个格局印出 0”的否定。前束形量词数为 4。</p>
 <p>这里的关键不是公式有多长，而是“机器的一步”可以被有限条原子公式精确描述。图灵在修正中补上的 $G(x,y)$ 就是为了让“前驱格局”可表达。形式化完成后，判定问题若有解，就能判定 $\mathrm{Un}(M)$ 的可证性；于是停机/印 0 问题有解；矛盾。</p>
 
@@ -1642,12 +1642,12 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <h3><span class="sn">14.2</span>无组织机器：随机连接 + 选择</h3>
 <p>图灵描述了一类由大量简单单元组成的网络。每个单元有两个输入、一个输出；输出为 0 当且仅当两个输入同时为 1，也就是 <b>NAND</b> 门。NAND 是函数完备的：用它可以搭出与、或、非，进而搭出任何布尔函数。图灵把这种随机连接的网络叫<b>无组织机器 (unorganised machine)</b>。</p>
-<p>他区分了两种类型：A 型的连接固定，B 型的连接可以被外部刺激修改。训练不是“调整权重”（图灵没有反向传播），而是<b>干涉 (interference)</b>：切断一些连接、接通另一些连接、或者改变单元的响应；再加上奖励与惩罚，让有用的子电路被保留下来。图灵把这比作“在随机布线的电话交换机里，找到一条能用的路径”。</p>
+<p>他区分了两种类型：A 型是纯粹的 NAND 网络，连接在构造时随机固定；B 型则把每条连接换成一个更复杂的连接，这种连接有三种状态——直通（同时交换 0/1）、恒为 1、以及在两种行为间交替——具体处于哪种状态由初始条件决定。因此 B 型可以通过“干涉”设置初始条件，把随机网络“组织”成有用的电路。训练不是“调整权重”（图灵没有反向传播），而是<b>干涉 (interference)</b>：用螺丝刀式地拆换部件，或用“纸面干涉”传递信息、改变连接状态；再加上奖励与惩罚，让有用的子电路被保留下来。图灵把这比作“在随机布线的电话交换机里，找到一条能用的路径”。</p>
 
 <div class="thm def">
 <div class="thm-head"><span class="thm-kind">定义</span><span class="thm-title">无组织机器（现代改写）</span><span class="thm-id">1948, §“Unorganised Machines”</span></div>
 <div class="thm-body">
-<p>由大量双输入 NAND 单元随机连接而成的网络。每个单元的输出是 $\neg(a\land b)$。A 型的连接固定；B 型的连接可由外部干预修改。训练 = 在随机网络中<b>选择并固定</b>有用的子电路，而不是从零设计每一个门。只要网络足够大、连接足够灵活，功能就可以从“随机连接 + 选择”中涌现。</p>
+<p>由大量双输入 NAND 单元随机连接而成的网络。每个单元的输出是 $\neg(a\land b)$。A 型的连接随机固定；B 型把每条连接换成带三种状态（直通/恒 1/交替）的连接，状态由初始条件决定，因而可通过干涉“组织”。训练 = 在随机网络中<b>选择并固定</b>有用的子电路，而不是从零设计每一个门。只要网络足够大、连接足够灵活，功能就可以从“随机连接 + 选择”中涌现。</p>
 </div>
 </div>
 
@@ -1669,7 +1669,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 <thead><tr><th>概念</th><th>图灵的说法</th><th>今天</th></tr></thead>
 <tbody>
 <tr><td class="id">无组织机器</td><td>随机 NAND 网络 + 干涉</td><td>随机网络 / 神经架构搜索</td></tr>
-<tr><td class="id">A 型 / B 型</td><td>固定连接 / 可修改连接</td><td>固定权重 / 可塑网络</td></tr>
+<tr><td class="id">A 型 / B 型</td><td>随机 NAND / 三状态连接</td><td>固定网络 / 可组织网络</td></tr>
 <tr><td class="id">儿童机器</td><td>先造可学习者，再教育</td><td>预训练 + 微调</td></tr>
 <tr><td class="id">教育</td><td>奖惩、示范、练习</td><td>监督 / 强化学习</td></tr>
 <tr><td class="id">智能</td><td>在可能性树中有效搜索</td><td>启发式搜索 / 规划</td></tr>
@@ -1812,7 +1812,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 <p>这个悖论今天被称为“量子芝诺效应 (quantum Zeno effect)”的近亲。图灵没有发表它；它只是书信里的一个想法。但它说明图灵在 1954 年仍在 actively 思考测量问题，而不是只做形态发生的数值计算。</p>
 
 <h3><span class="sn">16.4</span>Gandy 的信：一份“学术遗嘱”</h3>
-<p>1954 年 6 月，Gandy 写信给 Newman，讨论图灵遗稿的整理。信里列了七条：</p>
+<p>1954 年 6 月，Gandy 写信给 Newman，讨论图灵遗稿的整理。信里列了八条：</p>
 <ol>
 <li>图灵认为序数逻辑论文“从未得到应有的注意”（他不承认它难读）。信里特别提到：论文中第一次给出了用超限递归定义数论函数的方案；并说明“一个命题需要哪个序数才能证明”高度依赖序数的形式表示与超限归纳规则的形式。</li>
 <li>图灵重视《Practical Types》里“两个逻辑系统等价”的定义；他原本想让隐藏类型论成为类型论与集合论之间的桥。</li>
@@ -1821,6 +1821,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 <li>图灵留下了两人扑克（2-man I card poker）的策略，曾实战测试；Gandy 记得一晚下来自己输了几便士。</li>
 <li>Gandy 希望图灵有一天回到“让机器学习”的实践问题；NPL 的报告应该还在某处。</li>
 <li>1954 年春，图灵在“发明一种新量子力学”，自称“为了好玩”；随后是一串明信片。</li>
+<li>第 8 条是“Turing paradox”：连续观察会阻止系统演化，详见 §16.3。</li>
 </ol>
 <p>这封信的价值在于它把图灵后期分散的兴趣串起来：序数逻辑、类型论、数论、博弈、机器学习、量子力学。Gandy 不是在做传记神话，而是在为一个突然去世的朋友整理“哪些东西值得保存”。</p>
 
@@ -1920,7 +1921,53 @@ figcaption b{color:var(--ink2);font-weight:600}
 <p>《Appendix: Matters Arising from Earlier Volumes》列出几条容易被忽略的版本信息。第一，1946 年 12 月与 1947 年 1 月图灵与 J. H. Wilkinson 在军需部做的 ACE 讲座，报告由 T. H. Marshall 整理；图灵只讲了两讲，全文收在 MI pp. 1–86。第二，1948 年《Intelligent Machinery》报告有两个版本：1968 年《Cybernetics: Key Papers》版与 1969 年《Machine Intelligence 5》版；后者有误印，尤其是图表，所以引用时要核对原版。第三，《Intelligent Machinery, A Heretical Theory》是曼彻斯特的讲演，收在 Sara Turing 1959 年的传记里。第四，1951 年 5 月 15 日广播《Can Digital Computers Think?》与 1952 年 1 月 14 日四人讨论，是图灵公开解释机器智能的重要材料。第五，《Digital Computers Applied to Games》中“跳棋”部分由 Christopher Strachey 写，“NIM”由 Audrey Bates 写，不能全部归给图灵。</p>
 <p>这些说明看似琐碎，却直接影响引用：把 1969 年版的图误当作图灵原图，或把合著章节全部归给图灵，都是常见的二手错误。</p>
 
-<h3><span class="sn">17.5</span>最后一张“不要误读”清单</h3>
+<h3><span class="sn">17.5</span>英中术语对照（按主题）</h3>
+<p>下表不是“关键词堆”，而是读原文时的对照表：左边是论文里的英文术语，中间是本书使用的中文译名，右边是它主要出现的章节。图灵的术语有时与今天的用法不同，表中以原文为准。</p>
+<div class="table-wrap cheat"><table>
+<thead><tr><th>English</th><th>中文</th><th>章节</th></tr></thead>
+<tbody>
+<tr><td class="id">computable numbers</td><td>可计算数</td><td>2–3</td></tr>
+<tr><td class="id">computing machine</td><td>计算机器</td><td>2</td></tr>
+<tr><td class="id">m-configuration</td><td>机器状态（心态）</td><td>2–3</td></tr>
+<tr><td class="id">configuration / complete configuration</td><td>格局 / 完全格局</td><td>2</td></tr>
+<tr><td class="id">scanned symbol / square</td><td>扫描符号 / 方格</td><td>2</td></tr>
+<tr><td class="id">circle-free / circular</td><td>无限印数 / 有限印数</td><td>2–4</td></tr>
+<tr><td class="id">description number (D.N.)</td><td>描述数</td><td>2–4</td></tr>
+<tr><td class="id">universal machine</td><td>通用机</td><td>3</td></tr>
+<tr><td class="id">thesis</td><td>论题（丘奇-图灵）</td><td>4</td></tr>
+<tr><td class="id">Entscheidungsproblem</td><td>判定问题</td><td>4</td></tr>
+<tr><td class="id">well-formed formula</td><td>合式公式</td><td>3, 7–8</td></tr>
+<tr><td class="id">convertible (conv)</td><td>可转换</td><td>3</td></tr>
+<tr><td class="id">λ-definable</td><td>λ-可定义</td><td>3</td></tr>
+<tr><td class="id">general recursive</td><td>一般递归</td><td>3</td></tr>
+<tr><td class="id">incompleteness</td><td>不完备性</td><td>5</td></tr>
+<tr><td class="id">ordinal notation</td><td>序数记号</td><td>5–6</td></tr>
+<tr><td class="id">invariant / extent</td><td>不变 / 定理集</td><td>5</td></tr>
+<tr><td class="id">completeness</td><td>完备性</td><td>5</td></tr>
+<tr><td class="id">dual / proposition-like</td><td>对偶 / 命题式</td><td>5</td></tr>
+<tr><td class="id">type / individual</td><td>类型 / 个体</td><td>7–8</td></tr>
+<tr><td class="id">bracket / operator / scope</td><td>括号 / 算子 / 作用域</td><td>7</td></tr>
+<tr><td class="id">nested-type / concealed-type</td><td>嵌套类型 / 隐藏类型</td><td>8</td></tr>
+<tr><td class="id">noun-class</td><td>名词类（可证为集合的类）</td><td>8</td></tr>
+<tr><td class="id">axiom / constant / substitution</td><td>公理 / 常元 / 替换</td><td>7–8</td></tr>
+<tr><td class="id">provable / interpretable</td><td>可证 / 可解释</td><td>8</td></tr>
+<tr><td class="id">crib / menu / loop</td><td>猜测明文 / 约束图 / 闭环</td><td>9</td></tr>
+<tr><td class="id">plugboard / rotor / reflector</td><td>插线板 / 转子 / 反射器</td><td>9</td></tr>
+<tr><td class="id">Bombe / diagonal board</td><td>炸弹机 / 对角板</td><td>9</td></tr>
+<tr><td class="id">Banburismus / deciban</td><td>班伯里方法 / 分贝单位</td><td>10</td></tr>
+<tr><td class="id">sequential analysis</td><td>序贯分析</td><td>10</td></tr>
+<tr><td class="id">subroutine / store</td><td>子程序 / 存储</td><td>11–12</td></tr>
+<tr><td class="id">stored program</td><td>存储程序</td><td>11</td></tr>
+<tr><td class="id">handbook / programming</td><td>手册 / 编程</td><td>12</td></tr>
+<tr><td class="id">morphogen / diffusion</td><td>吗啡原 / 扩散</td><td>13</td></tr>
+<tr><td class="id">phyllotaxis</td><td>叶序</td><td>13</td></tr>
+<tr><td class="id">unorganised machine</td><td>无组织机器</td><td>14</td></tr>
+<tr><td class="id">child machine</td><td>儿童机器</td><td>14–15</td></tr>
+<tr><td class="id">imitation game / interrogator</td><td>模仿游戏 / 询问者</td><td>15</td></tr>
+</tbody>
+</table></div>
+
+<h3><span class="sn">17.6</span>最后一张“不要误读”清单</h3>
 <div class="thm warn">
 <div class="thm-head"><span class="thm-kind">总结</span><span class="thm-title">八个最常见的时代错置</span><span class="thm-id">全书复习</span></div>
 <div class="thm-body">
@@ -1935,7 +1982,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 </div>
 </div>
 
-<h3><span class="sn">17.6</span>覆盖说明</h3>
+<h3><span class="sn">17.7</span>覆盖说明</h3>
 <p>本教程覆盖本卷 TOC 中的 Part I、Part II、Part III 与书末材料；<em>Mechanical Intelligence</em> 与 <em>Morphogenesis</em> 的篇目按“Contents of Other Volumes”纳入第 11–15 节，并明确标注“其他卷”。公式按原始论文的数学内容重建；密码分析中的 crib、转子数与插线板组合数取自图灵论文的样例；形态发生中的数值算例标注为“构造例子”，不冒充 1952 年的历史参数。卷首的 <em>Frontispiece</em>、<em>Copyright</em>、<em>Acknowledgements</em> 属于版本信息，未逐页复述；<em>Bibliography</em> 与 <em>Index</em> 作为检索工具保留在原书。</p>
 
 <div class="intuition">

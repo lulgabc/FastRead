@@ -436,13 +436,13 @@ figcaption b{color:var(--ink2);font-weight:600}
     <div class="sb-title">Collected Works of Alan M. Turing, Vol. 3: Morphogenesis
       <span></span>
     </div>
-    <div class="sb-meta">159 页 · 16 个 section</div>
+    <div class="sb-meta">159 页 · 18 个 section</div>
   </div>
   <nav class="sb-nav" id="sbNav" aria-label="目录">
     <a class="nav-link" href="#top" data-sec="top"><span class="nav-num">00</span> <span>导读</span></a>
     <a class="nav-link" href="#ch1" data-sec="ch1"><span class="nav-num">1</span> <span>一部未完成的形态发生手稿</span></a>
     <a class="nav-link" href="#ch2" data-sec="ch2"><span class="nav-num">2</span> <span>把胚胎写成“状态”：形态素、反应与扩散</span></a>
-    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>对称破缺：两个细胞就够说明问题</span></a>
+    <a class="nav-link" href="#ch3" data-sec="ch3"><span class="nav-num">3</span> <span>对称破缺（symmetry breaking）：两个细胞就够说明问题</span></a>
     <a class="nav-link" href="#ch4" data-sec="ch4"><span class="nav-num">4</span> <span>环上的化学波：离散细胞与连续组织</span></a>
     <a class="nav-link" href="#ch5" data-sec="ch5"><span class="nav-num">5</span> <span>六种失稳与稳定性的代数</span></a>
     <a class="nav-link" href="#ch6" data-sec="ch6"><span class="nav-num">6</span> <span>个细胞：一次手算的数值实验</span></a>
@@ -455,6 +455,8 @@ figcaption b{color:var(--ink2);font-weight:600}
     <a class="nav-link" href="#ch13" data-sec="ch13"><span class="nav-num">13</span> <span>球对称解：长椭球、六刺球与二十面体</span></a>
     <a class="nav-link" href="#ch14" data-sec="ch14"><span class="nav-num">14</span> <span>雏菊：把方程带进一朵真花</span></a>
     <a class="nav-link" href="#ch15" data-sec="ch15"><span class="nav-num">15</span> <span>这套理论解释了什么，没解释什么</span></a>
+    <a class="nav-link" href="#ch16" data-sec="ch16"><span class="nav-num">16</span> <span>建模清单：把图灵的方程变成可运行的实验</span></a>
+    <a class="nav-link" href="#summary" data-sec="summary"><span class="nav-num">F</span> <span>总结</span></a>
   </nav>
   <div class="sb-foot"><span><span class="dot"></span>编号与原文一致</span><span id="pctSide">0%</span></div>
 </aside>
@@ -486,10 +488,10 @@ figcaption b{color:var(--ink2);font-weight:600}
       <div>
         <div class="hero-kicker">Collected Works · Volume 3 · Morphogenesis</div>
         <h1>形态发生的<br>化学基础<span class="en">The Chemical Basis of Morphogenesis</span></h1>
-        <p class="hero-sub">一个均匀的受精卵，为什么会长出条纹、斑点、触手和叶序？图灵在最后一篇生物学论文里给出一个反直觉的答案：<b>不是谁画好了图纸，而是均匀态自己失稳</b>。本页沿原文的数学线索，从两个形态素走到反应—扩散方程、色散关系、球面谐波、叶序点阵与雏菊手稿。</p>
+        <p class="hero-sub">一个均匀的受精卵，为什么会长出条纹、斑点、触手和叶序？图灵在最后一篇生物学论文里给出一个反直觉的答案：<b>不是谁画好了图纸，而是均匀态自己失稳</b>。本页沿原文的数学线索，从两个形态素走到反应—扩散（reaction–diffusion）方程、色散关系、球面谐波、叶序点阵与雏菊手稿。</p>
         <div class="hero-actions">
           <a class="btn" href="#ch1">从问题开始 →</a>
-          <a class="btn ghost" href="#ch15">直接看公式总表</a>
+          <a class="btn ghost" href="#summary">直接看公式总表</a>
         </div>
         <div class="hero-stats">
           <div class="hstat"><b>1952</b><span>论文发表</span></div>
@@ -710,8 +712,8 @@ figcaption b{color:var(--ink2);font-weight:600}
   <p><strong>Title Page</strong> 与 <strong>Copyright</strong> 页交代了版本信息：1992 年版权归 Elsevier Science Publishers B.V.；1952 年论文经英国皇家学会许可重印，原刊为 <em>Philosophical Transactions of the Royal Society of London</em> B 237 (1952) 37–72。正文中的页码标记仍保留原书页码，方便对照引用。</p>
 
   <h3><span class="sn">1.2</span>Preface 与 Chronology：一条被战争切开的学术轨迹</h3>
-  <p>总序作者 P. N. Furbank 是图灵的朋友与遗嘱执行人。他说明这套全集要收入图灵成熟期全部科学写作，包括大量未刊材料；四卷的分工与主编也在总序中列出。年表则把图灵的一生压缩成二十余条：1912 年 6 月 23 日生于伦敦；1931 年入剑桥大学国王学院；1934 年以优异成绩毕业；1935 年因中心极限定理的论文当选国王学院 Fellow；1936 年赴普林斯顿随 Alonzo Church 工作；1937 年发表《论可计算数及其在判定问题上的应用》；1939 年到政府密码学校报到，随后在 Bletchley Park 领导德国海军 Enigma 的破译；1945 年开始设计 ACE 计算机；1948 年到曼彻斯特大学；1950 年发表《计算机器与智能》；1951 年当选 FRS，并开始对形态发生发生兴趣；1952 年发表本卷核心论文；1954 年 6 月 7 日去世。</p>
-  <p>把年表与论文对照，会发现一个容易被忽略的事实：<em>形态发生是图灵在计算机与人工智能工作之后转向的题目</em>，但他没有把发育理解成“基因程序”，而是回到物理化学。Saunders 在导言中明确说，图灵本可以走当时流行的“程序”路线，也可以做元胞自动机，但他认为生物学的根本问题是<strong>图案与形式</strong>，而答案在物理和化学里。</p>
+  <p>总序作者 P. N. Furbank 是图灵的朋友与遗嘱执行人。他说明这套全集要收入图灵成熟期全部科学写作，包括大量未刊材料；四卷的分工与主编也在总序中列出。年表则把图灵的一生压缩成二十余条：1912 年 6 月 23 日生于伦敦；1931 年入剑桥大学国王学院；1934 年以优异成绩毕业；1935 年因中心极限定理的论文当选国王学院 Fellow；1936 年赴普林斯顿随 Alonzo Church 工作；1937 年发表《论可计算数及其在判定问题上的应用》；1939 年到政府密码学校报到，随后在 Bletchley Park 领导德国海军 Enigma 的破译；1945 年开始设计 ACE 计算机；1948 年到曼彻斯特大学；1950 年发表《计算机器与智能》；1951 年当选 FRS，并开始对形态发生（morphogenesis）发生兴趣；1952 年发表本卷核心论文；1954 年 6 月 7 日去世。</p>
+  <p>把年表与论文对照，会发现一个容易被忽略的事实：<em>形态发生（morphogenesis）是图灵在计算机与人工智能工作之后转向的题目</em>，但他没有把发育理解成“基因程序”，而是回到物理化学。Saunders 在导言中明确说，图灵本可以走当时流行的“程序”路线，也可以做元胞自动机，但他认为生物学的根本问题是<strong>图案与形式</strong>，而答案在物理和化学里。</p>
 
   <h3><span class="sn">1.3</span>Preface to this Volume：编者如何“拼回”一本书</h3>
   <p>Saunders 说明，本卷与其他三卷不同：其他卷大多收入已发表作品，本卷则有大量<strong>未刊手稿</strong>。图灵生前只发表了一篇生物学论文；叶序专著与雏菊提纲都因他突然去世而未定稿。手稿主要由 N. Hoskin 与 B. Richards 根据图灵的草稿和讲课笔记整理，有些部分则是图灵亲笔。Richards 还把他在图灵指导下完成的硕士论文整理成《球对称情形的一个解》，即本书第三部分。</p>
@@ -787,7 +789,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 <section id="ch2" class="chapter"><div class="wrap">
   <div class="sec-label">1952 论文 · §1–§3</div>
   <h2><span class="num">2</span>把胚胎写成“状态”：形态素、反应与扩散</h2>
-  <p class="lede">图灵的第一步不是写方程，而是定义什么叫“一个胚胎的状态”。他把状态拆成机械与化学两半：位置、速度、弹性、应力，以及每种形态素的浓度与扩散系数。然后他承认自己算不动完整的耦合系统，暂时冻结力学，只留下化学。这一步看似退让，实则决定了整篇论文的形状。</p>
+  <p class="lede">图灵的第一步不是写方程，而是定义什么叫“一个胚胎的状态”。他把状态拆成机械与化学两半：位置、速度、弹性、应力，以及每种形态素的浓度与扩散系数（diffusion coefficient）。然后他承认自己算不动完整的耦合系统，暂时冻结力学，只留下化学。这一步看似退让，实则决定了整篇论文的形状。</p>
 
   <div class="chap-intro">
     <p>本章对应原文 §1 A Model of the Embryo. Morphogens、§2 Mathematical Background Required、§3 Chemical Reactions。§1 给出模型与“形态素”的功能性定义；§2 复习线性常系数微分方程与复指数，为后文的 $e^{pt}$ 做准备；§3 说明菲克扩散与质量作用定律，并交代细胞模型里“充分搅拌”的近似。读懂这三节，后面的色散关系才不会变成凭空出现的代数。</p>
@@ -828,7 +830,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 
   <div class="intuition">
     <div class="ih">直觉 · 实部是“生”，虚部是“转”</div>
-    <p>把 $p=\alpha+i\beta$ 想成一个旋转的向量：$\alpha$ 控制它每转一圈变长还是变短，$\beta$ 控制它转多快。图灵斑图要求“长得起来但不转”——即 $\alpha&gt;0$、$\beta=0$，这样才得到静止的波；若 $\alpha&gt;0$、$\beta\ne0$，得到的是行波或振荡。很多后续争论就是把这两种情形混为一谈。</p>
+    <p>把 $p=\alpha+i\beta$ 想成一个旋转的向量：$\alpha$ 控制它每转一圈变长还是变短，$\beta$ 控制它转多快。图灵斑图（Turing pattern）要求“长得起来但不转”——即 $\alpha&gt;0$、$\beta=0$，这样才得到静止的波；若 $\alpha&gt;0$、$\beta\ne0$，得到的是行波或振荡。很多后续争论就是把这两种情形混为一谈。</p>
   </div>
 
   <h3><span class="sn">2.3</span>化学：菲克扩散与质量作用</h3>
@@ -898,7 +900,7 @@ figcaption b{color:var(--ink2);font-weight:600}
 
 <section id="ch3" class="chapter"><div class="wrap">
   <div class="sec-label">1952 论文 · §4–§5</div>
-  <h2><span class="num">3</span>对称破缺：两个细胞就够说明问题</h2>
+  <h2><span class="num">3</span>对称破缺（symmetry breaking）：两个细胞就够说明问题</h2>
   <p class="lede">球对称的胚胎为什么不会永远球对称？图灵先承认这个悖论，再指出它偷藏了一个前提：“偏差不重要，可以忽略。”偏差确实不决定图案的细节，却提供了启动失稳的种子。为了把这件事算清楚，他只用两个细胞、两种形态素和四个数字。</p>
 
   <div class="chap-intro">
@@ -950,7 +952,7 @@ figcaption b{color:var(--ink2);font-weight:600}
   <p>$$J=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}=\begin{pmatrix}5&amp;-6\\6&amp;-7\end{pmatrix}.$$</p>
   <p>它的迹 $a+d=-2&lt;0$，行列式 $ad-bc=-35+36=1&gt;0$，所以两个本征值实部为负，均匀态在<strong>没有扩散时是稳定的</strong>。这正是图灵机制的关键：不稳定的不是反应本身，而是“反应 + 差异扩散”。加上扩散后，$X$ 以 $\mu=0.5$ 流出，$Y$ 以 $\nu=4.5$ 流出；$Y$ 快得多，最终把稳定态推翻。</p>
 
-  <div class="thm thm theorem">
+  <div class="thm theorem">
     <div class="thm-head"><span class="thm-kind">判据</span><span class="thm-title">两细胞失稳的必要条件（直观版）</span><span class="thm-id">§4</span></div>
     <div class="thm-body">
       <p>若 $a+d&lt;0$、$ad-bc&gt;0$（无扩散稳定），则要让扩散制造失稳，至少需要：</p>
@@ -1154,7 +1156,7 @@ figcaption b{color:var(--ink2);font-weight:600}
   <p>$$p_\pm(U)=\frac{(a+d)-(\mu'+\nu')U}{2}\pm\sqrt{\frac{\left[(\mu'-\nu')U+(d-a)\right]^2}{4}+bc}.\tag{5.2}$$</p>
   <p>因为 $T(U)$ 通常为正（在 $a+d&lt;0$、$U\ge0$ 时），两根之和为负。若常数项 $C(U)&gt;0$，两根同号且都为负，稳定；若 $C(U)&lt;0$，两根异号，必有一个正根。因此<strong>失稳判据完全压缩到 $C(U)$ 的符号上</strong>。一次项只影响衰减快慢，不影响是否失稳。</p>
 
-  <div class="thm thm theorem">
+  <div class="thm theorem">
     <div class="thm-head"><span class="thm-kind">定理</span><span class="thm-title">两形态素图灵失稳的充要条件</span><span class="thm-id">§8–§9</span></div>
     <div class="thm-body">
       <p>设无扩散时均匀态稳定，即</p>
@@ -1164,7 +1166,7 @@ figcaption b{color:var(--ink2);font-weight:600}
       <p>$$\text{(ii)}\quad aD_Y+dD_X&gt;0,$$</p>
       <p>$$\text{(iii)}\quad \left(aD_Y+dD_X\right)^2&gt;4D_XD_Y(ad-bc).$$</p>
       <p>这里 $D_X,D_Y$ 是连续扩散系数；离散情形把 $D_X,D_Y$ 换成 $\mu,\nu$，把 $U$ 换成 $4\sin^2(\pi s/N)$。失稳波数构成区间 $U_1&lt;U&lt;U_2$，其中 $U_{1,2}$ 是 $C(U)=0$ 的正根。阈值处 $C$ 的最小值为零，临界值为</p>
-      <p>$$U_c=\frac{aD_Y+dD_X}{2D_XD_Y},\qquad k_c^2=U_c.$$</p>
+      <p>$$U_c=\sqrt{\frac{ad-bc}{D_XD_Y}},\qquad k_c^2=U_c.$$</p>
       <p>若用波长表示，$\lambda_c=2\pi/k_c$。</p>
     </div>
   </div>
@@ -1209,10 +1211,10 @@ figcaption b{color:var(--ink2);font-weight:600}
   <div class="thm ex">
     <div class="thm-head"><span class="thm-kind">例</span><span class="thm-title">图灵给出的几个参数例子</span><span class="thm-id">§8</span></div>
     <div class="thm-body">
-      <p><b>(a) 长波驻波：</b>取 $\mu=\nu=\tfrac12$、$b=c=1$、$a=d$。则 $p_s=a-\sin^2(\pi s/N)+1$，实部最大在 $s=0$。所有细胞同步失稳。</p>
-      <p><b>(b) 长波振荡：</b>取 $\mu=\nu=\tfrac12$、$b=-c=1$、$a=d$。则 $p_s=a-\sin^2(\pi s/N)\pm i$，实部最大仍在 $s=0$，但偏离是振荡的。</p>
+      <p><b>(a) 长波驻波：</b>取 $\mu=\nu=\tfrac12$、$b=c=1$、$a=d$。则 $p_s=a-2\sin^2(\pi s/N)\pm1$，实部最大在 $s=0$。所有细胞同步失稳。</p>
+      <p><b>(b) 长波振荡：</b>取 $\mu=\nu=\tfrac12$、$b=-c=1$、$a=d$。则 $p_s=a-2\sin^2(\pi s/N)\pm i$，实部最大仍在 $s=0$，但偏离是振荡的。</p>
       <p><b>(c) 短波驻波：</b>取 $\nu=0$、$\mu=1$、$d=1$、$a=-\tfrac12$、$b=-c=1$。增长率在 $\sin^2(\pi s/N)$ 最大时最大；$N$ 为偶数时相邻细胞反相，$N$ 为奇数时差异从零到最大渐变。</p>
-      <p><b>(d) 有限波长驻波：</b>取 $a=-\tfrac12$、$b=2.5$、$c=-1.25$、$d=1.5$、$\mu'=\nu'=1$，并令 $U=(2\pi\rho/N)^2\sin^2(\pi s/N)$。此时色散方程可化为 $(p-1)^2+(\tfrac12+\tfrac12U)(p-1)-\tfrac14(U-1)^2=0$，在 $U=1$ 处有 $p=1$；其他 $U$ 的两个根实部都为负。</p>
+      <p><b>(d) 有限波长驻波：</b>取 $a=-\tfrac12$、$b=2.5$、$c=-1.25$、$d=1.5$、$\mu'=\nu'=1$，并令 $U=(2\pi\rho/N)^2\sin^2(\pi s/N)$。此时色散方程可化为以 $p-1$ 为未知量的二次方程；在 $U=1$ 处有 $p=1$，其他 $U$ 的两个根实部都为负。</p>
     </div>
   </div>
 
@@ -1295,7 +1297,7 @@ C'     -&gt; X + C    速率 ∝ C'</code></pre>
   <p>$$a=-2,\quad b=-1.5625,\quad c=2,\quad d=1.5.$$</p>
   <p>扩散系数 $\mu=0.625$、$\nu=0.5$（按细胞间单位）。原文还给出由这些数推出的组合量：$(d-a)/\sqrt{-bc}=1.980$、$(\mu+\nu)/\sqrt{\mu\nu}=2.121$，以及 $p_0=-0.25\pm0.25i$、$p_2=-0.0648$、$p_3=-0.0034$、$p_4=-0.0118$。这些数值说明：$s=3$ 的模式最接近中性，$s=4$ 是最近的竞争者，$s=2$ 稍差。</p>
 
-  <div class="thm note">
+  <div class="thm rem">
     <div class="thm-head"><span class="thm-kind">读表提示</span><span class="thm-title">为什么 $p_3$ 是负数却仍能长？</span></div>
     <div class="thm-body">
       <p>表里的 $p$ 是在某个固定 $\gamma$（或某个固定参数）下算出的；图灵让 $\gamma$ 从负值慢慢升到正值，系统在某个时刻越过中性稳定，$p_3$ 由负变正。表记录的是“即将失稳”与“已经出现图案”两个阶段，不是同一个时刻的全部本征值。读这些数时要看<b>相对大小</b>：$p_3$ 比 $p_4$ 大一点点，所以三波瓣最终胜出，但四波瓣会在早期明显存在。</p>
@@ -1934,17 +1936,14 @@ def step(X, Y, dt, dx, Dx, Dy, f, g):
   <p><span class="small">Original §14 · The touching circles phyllotaxis</span></p>
   <p>van Iterson 1907 年提出：把叶片看成等大的圆，圆柱面上一层层紧密堆积，圆之间尽量接触。图灵先证明一个直观事实：最密堆积时，每个圆至少与两个圆接触。若没有格向量短到圆的直径 $\ell$，可以继续减小 $\eta$ 直到某个向量达到 $\ell$；然后再调角度，使第二个向量也达到 $\ell$。此时的格矩阵可写成</p>
   <p>$$\begin{pmatrix}\ell/\sin\psi_1&amp;\ell/\sin\psi_2\\ \ell\cos\psi_1/\sin\psi_1&amp;\ell\cos\psi_2/\sin\psi_2\end{pmatrix},$$</p>
-  <p>其中 $\pi/3\le|\psi_1-\psi_2|&lt;2\pi/3$。流动矩阵为</p>
-  <p>$$F=\frac{\mathrm{d}\log\rho}{\mathrm{d}t}\begin{pmatrix}1&amp;0\\ -\left(\tan\psi_1+\tan\psi_2\right)&amp;\tan\psi_1\tan\psi_2\end{pmatrix}.$$</p>
-  <p>要求 $F_{12}=0$，即</p>
+  <p>其中 $\pi/3\le|\psi_1-\psi_2|&lt;2\pi/3$。图灵进一步写出这一族的流动矩阵，并要求 $F_{12}=0$；这个条件化为</p>
   <p>$$\eta_1\tan\psi_1=\eta_2\tan\psi_2.$$</p>
   <p>当半径继续增大，第三个主向量也会达到 $\ell$，此时格称<strong>等边</strong>（equilateral）；$\psi_1-\psi_2$ 必为 $\pi/3$ 或 $2\pi/3$。在等边点，三个方向的角色可以循环互换；图灵证明，在连续变化的接触圆叶序中，从第一次出现等边三角形开始，“几何叶序假设”始终满足。这是他在 Part I 里最接近“证明斐波那契”的结果，但前提是接触圆模型本身。</p>
 
   <h3><span class="sn">11.6</span>§15 用扭转与其他坐标描述格</h3>
   <p><span class="small">Original §15 · The lattice described by its twist and other coordinates</span></p>
-  <p>任意叶序格可以分解成“理想格 + 有限流动”。理想格由叶面积 $\Delta$、参数 $K$（与塑时比有关）和一个扭转参数 $\chi$ 描述。图灵把矩阵写成</p>
-  <p>$$\Delta^{1/2}\begin{pmatrix}\omega^{\theta+1/2}&amp;\omega^{\theta-1/2}\\ 5^{1/4}&amp;5^{1/4}\\ -\omega^{-\theta-1/2}&amp;\omega^{-\theta+1/2}\end{pmatrix}\begin{pmatrix}1&amp;0\\ \chi&amp;1\end{pmatrix},$$</p>
-  <p>其中 $\theta$ 是周期为 1 的参数，$\chi$ 是扭转。$\theta$ 加 $1/2$ 会把格变成关于母线的镜像；$\chi$ 的几何意义是：它给所有格向量与母线的夹角的正切都加上同一个数。测量时，若两条副螺旋的角为 $\psi_n,\psi_{n+1}$，则</p>
+  <p>任意叶序格可以分解成“理想格 + 有限流动”。理想格由叶面积 $\Delta$、一个周期为 1 的相位参数 $\theta$ 和一个扭转参数 $\chi$ 描述；图灵在 (1.15.3)–(1.15.4) 中把矩阵写成“理想格矩阵 × 纯扭转 × 纯剪切”的乘积。这里不重复那个长矩阵，只保留几何意义。</p>
+  <p>$\theta$ 加 $1/2$ 会把格变成关于母线的镜像；$\chi$ 是扭转。$\theta$ 加 $1/2$ 会把格变成关于母线的镜像；$\chi$ 的几何意义是：它给所有格向量与母线的夹角的正切都加上同一个数。测量时，若两条副螺旋的角为 $\psi_n,\psi_{n+1}$，则</p>
   <p>$$\chi=\frac{\tan\psi_n+\omega\tan\psi_{n+1}}{1+\omega}.$$</p>
   <p>对高副螺旋数的等边格，$\tan\psi_n\approx(3\omega-1)/(2\sqrt3)$、$\tan\psi_{n+1}\approx\omega^{-3}/\sqrt3$，代入得 $\chi\approx0.341$。这个数在后面 §18 会成为否定“变分原理”的关键证据：真实植物很少看到 $\chi$ 达到 $0.1$。</p>
 
@@ -2184,15 +2183,11 @@ def step(X, Y, dt, dx, Dx, Dy, f, g):
     <li>$S_0,S_3,S_6,\dots$ 非零（三的倍数族）。</li>
   </ul>
   <p>此外，若某些 $L$ 积分有数值巧合，还会出现额外的混合解。为了去掉旋转自由度，取 $S_1=0$：若 $S_1\ne0$，总可以旋转坐标轴把 $S_1$ 消掉，得到同一个物理形状。</p>
-  <p>对 $n=2$，方程组只有三个；对 $n=4$ 有九个；对 $n=6$ 有十七个。Appendix 给出递推关系与校验公式，尤其是 $E_n^{0,0,0}$ 的闭式：</p>
-  <p>$$E_n^{0,0,0}=\frac{1}{3n+1}\left(\frac{1\cdot3\cdots(n-1)}{2\cdot4\cdots n}\right)^3\frac{2\cdot4\cdots(3n)}{1\cdot3\cdots(3n-1)}=\frac{1}{3n+1}\left(\frac{2}{3}\right)^3\frac{(3n/2)!}{(n/2)!}\frac{(3n)!}{}\cdots$$</p>
-  <p>（原文公式较长，核心是它只依赖 $n$，可用来校验数值积分。）</p>
+  <p>对 $n=2$，方程组只有三个；对 $n=4$ 有九个；对 $n=6$ 有十七个。Appendix 给出递推关系与校验公式，其中 $E_n^{0,0,0}$ 有只依赖 $n$ 的闭式（原文用三重阶乘比写出，并引用 Hobson 1931, p. 86）。实际计算时先由直接积分或该闭式定出 $E_n^{0,0,0}$，再解方程组；$n=4$ 用九个方程、$n=6$ 用十七个方程校验。</p>
 
   <h3><span class="sn">13.3</span>$n=2$：长椭球</h3>
   <p><span class="small">Original §2 · Solutions of the simultaneous equations</span></p>
-  <p>当 $n=2$ 时，最简单的解只有 $S_0\ne0$。方程给出</p>
-  <p>$$S_0=\left(E_2^{0,0,0}\right)^{-1}=\frac{7\sqrt5}{10},$$</p>
-  <p>于是</p>
+  <p>当 $n=2$ 时，最简单的解只有 $S_0\ne0$。解出 $S_0$ 后代入，得到</p>
   <p>$$U=S_0P_2^0(\cos\theta)=\frac74\left(3\cos^2\theta-1\right),\qquad V=S_0^2=\frac{49}{20}.$$</p>
   <p>这是<strong>长椭球</strong>（prolate spheroid），长轴沿 $\theta=0$。它的浓度在两端高、赤道低（或反之，取决于符号），形状像一颗拉长的球。</p>
   <p>若允许 $S_0$ 与 $S_2$ 同时非零，得到的解是</p>
@@ -2417,7 +2412,7 @@ def step(X, Y, dt, dx, Dx, Dy, f, g):
     <li><strong>图灵不是把形态发生化约为纯化学。</strong> 他明确承认力学与电学的重要，只是选择化学作为第一个可处理的层面；因为基因的作用大概是化学的。</li>
     <li><strong>“有没有细胞”不是关键。</strong> 1952 年论文同时给出离散细胞与连续组织两种模型，结论相似。这支持“图案形成不依赖细胞分割”的观点，也暗示细胞分化可能不是发育中唯一重要的事。</li>
     <li><strong>线性假设的辩护是启发式的。</strong> 图灵说早期线性图案与后期非线性图案“有很强的定性相似性”；他没有给证据，但后来的数值比较（Saunders 引 Murray 1981）确实发现很多定性行为相同。</li>
-    <li><strong>叶序没有解决。</strong> 图灵给出几何框架与化学方案，但没有完成从方程到黄金角的推导；三十五年后（编者写作时）仍未解决。</li>
+    <li><strong>叶序没有解决。</strong> 图灵给出几何框架与化学方案，但没有完成从方程到黄金角的推导；近四十年后（编者写作时）仍未解决。</li>
   </ul>
 
   <h3><span class="sn">15.2</span>证据分三级，不要混为一谈</h3>
@@ -2453,7 +2448,7 @@ def step(X, Y, dt, dx, Dx, Dy, f, g):
   <p>§5 的论证说明：若物理定律、初始受精卵集合、扰动统计都 F 对称，则成体的左右手分布也应 F 对称。真实生物不是。图灵提出的修补是分子手性、染色体不对称、受精卵极性等；这些效应只需在对称破缺的短窗口内起作用。现代发育生物学确实发现，纤毛的定向摆动、细胞骨架的手性、分子马达的定向运输都能打破镜像对称；但具体到某个器官，仍需逐例证明。</p>
   <p>这也说明“图灵模型不能解释手性”不是致命缺陷。一个机制不必解释所有现象；重要的是它解释了哪一类，以及能否被独立检验。把“不能解释手性”当成“整个理论错了”，是把“充分条件”与“必要条件”混为一谈。</p>
 
-  <h3><span class="sn">15.7</span>书末文献：一张最小的知识地图</h3>
+  <h3><span class="sn">15.7</span>REFERENCES：书末文献的知识地图</h3>
   <div class="table-wrap cheat"><table>
     <thead><tr><th>文献</th><th>主题</th><th>为什么重要</th></tr></thead>
     <tbody>
@@ -2500,6 +2495,287 @@ def step(X, Y, dt, dx, Dx, Dy, f, g):
       </ul>
     </div>
   </div>
+</div></section>
+
+<section id="ch16" class="chapter"><div class="wrap">
+  <div class="sec-label">方法 · 从方程到可复现实验</div>
+  <h2><span class="num">16</span>建模清单：把图灵的方程变成可运行的实验</h2>
+  <p class="lede">读懂公式不等于会做模型。真正的建模工作从量纲分析开始，经过离散化、稳定性检查、参数扫掠，最后落到“哪些预言能被实验否证”。这一章是一张操作清单，不是原文的复述；每一步都标出它在图灵文本中的根据。</p>
+
+  <div class="chap-intro">
+    <p>本章把 1952 年论文的 §6–§9 与 Part II 的方程整理成可执行流程：连续方程 → 无量纲化 → 离散化 → 线性稳定性 → 数值积分 → 后处理 → 验证。代码用 Python 写，只保留关键行；参数与单位明确标注。最后给出“什么时候不该用图灵模型”的判断标准，避免把一切斑点都归因于反应—扩散。</p>
+    <span class="tag">Methods · Reproducibility</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">量纲分析</span><span class="chip">离散化 discretization</span><span class="chip">CFL</span><span class="chip">参数扫掠</span><span class="chip">色散检验</span><span class="chip">可证伪</span>
+  </div>
+
+  <h3><span class="sn">16.1</span>第一步：写出方程与平衡点</h3>
+  <p>从最一般的两形态素系统开始：</p>
+  <p>$$\partial_tX=f(X,Y)+D_X\nabla^2X,\qquad \partial_tY=g(X,Y)+D_Y\nabla^2Y.$$</p>
+  <p>先解 $f(h,k)=g(h,k)=0$，并确认 $h,k\ge0$。然后算雅可比</p>
+  <p>$$a=f_X(h,k),\quad b=f_Y(h,k),\quad c=g_X(h,k),\quad d=g_Y(h,k).$$</p>
+  <p>检查无扩散稳定性：$a+d&lt;0$、$ad-bc&gt;0$。若不成立，图案不是扩散驱动的；后面的图灵条件没有意义。再检查 $bc&lt;0$、$aD_Y+dD_X&gt;0$、$(aD_Y+dD_X)^2&gt;4D_XD_Y(ad-bc)$。</p>
+
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">检查表</span><span class="thm-title">在写代码之前先算完这五步</span></div>
+    <div class="thm-body">
+      <ol>
+        <li>平衡点是否存在、是否非负；</li>
+        <li>无扩散是否稳定；</li>
+        <li>是否激活—抑制（$bc&lt;0$）；</li>
+        <li>扩散差异是否越过阈值；</li>
+        <li>失稳波段 $[k_1,k_2]$ 与峰值 $k_{\max}$ 在哪。</li>
+      </ol>
+      <p>这五步用纸笔就能做；如果它们不通过，调代码参数只会浪费时间。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">16.2</span>第二步：无量纲化，别让单位骗了你</h3>
+  <p>图灵用“特殊单位”不是随意：他把时间、长度、浓度缩放到 1，使方程只含少数无量纲组合。现代建模也应如此。取特征长度 $L$、特征时间 $T$、特征浓度 $C$，令</p>
+  <p>$$x=L\tilde x,\quad t=T\tilde t,\quad X=C\tilde X,\quad Y=C\tilde Y.$$</p>
+  <p>则</p>
+  <p>$$\partial_{\tilde t}\tilde X=\frac{T}{C}f(C\tilde X,C\tilde Y)+\frac{D_XT}{L^2}\tilde\nabla^2\tilde X.$$</p>
+  <p>定义 $\delta_X=D_XT/L^2$、$\delta_Y=D_YT/L^2$，以及无量纲反应参数。关键是无量纲比</p>
+  <p>$$\frac{D_Y}{D_X},\qquad \frac{L}{\sqrt{D_XT}},\qquad \frac{T}{\tau_{\text{reaction}}}.$$</p>
+  <p>图灵条件本质上是“扩散比足够大、区域足够大、反应时间与扩散时间匹配”。如果直接拿 cm²/s 与 1/s 混用，得到的波长可能差几个数量级。</p>
+
+  <h3><span class="sn">16.3</span>第三步：离散化与稳定性</h3>
+  <p>二维显式格式：</p>
+  <pre><code class="language-python">import numpy as np
+
+def lap(Z, dx):
+    return (np.roll(Z, 1, 0) + np.roll(Z, -1, 0)
+            + np.roll(Z, 1, 1) + np.roll(Z, -1, 1) - 4*Z) / dx**2
+
+def rhs(X, Y, Dx, Dy, dx, f, g):
+    return f(X, Y) + Dx*lap(X, dx), g(X, Y) + Dy*lap(Y, dx)
+
+def integrate(X, Y, dt, nsteps, Dx, Dy, dx, f, g):
+    for _ in range(nsteps):
+        k1x, k1y = rhs(X, Y, Dx, Dy, dx, f, g)
+        X, Y = X + dt*k1x, Y + dt*k1y
+    return X, Y</code></pre>
+  <p>稳定性条件：</p>
+  <p>$$\Delta t\le\frac{\Delta x^2}{4\max(D_X,D_Y)}\quad\text{（二维显式）}.$$</p>
+  <p>一维是 $\Delta t\le\Delta x^2/(2\max D)$。若用 ADI、隐式或谱方法，可以放宽这个限制，但实现更复杂。无论哪种，先用小网格跑 100 步，检查没有 NaN、没有高频振荡，再放大。</p>
+
+  <h3><span class="sn">16.4</span>第四步：边界条件与初始扰动</h3>
+  <p>图灵讨论了三种边界：周期（环）、无通量（Neumann，组织边界不漏液）、固定浓度（Dirichlet，与储库相连）。数值上：</p>
+  <ul>
+    <li><strong>周期</strong>：用 <code>np.roll</code>，首尾相接；</li>
+    <li><strong>Neumann</strong>：边界外复制相邻格（零梯度）；</li>
+    <li><strong>Dirichlet</strong>：边界固定为平衡值或给定值；</li>
+    <li><strong>Robin</strong>：$\alpha X+\beta\partial_nX=0$，用鬼点实现。</li>
+  </ul>
+  <p>初始条件不要用“完美均匀 + 单点脉冲”，那样会偏向某个波矢。用小幅随机噪声，或叠加多个波矢；重复多次，看统计。图灵在 §9 强调，噪声的相位随机，但增长率由方程决定；数值实验应尊重这一点。</p>
+
+  <h3><span class="sn">16.5</span>第五步：后处理与“色散检验”</h3>
+  <p>跑出图案后，不要只看图。做空间傅里叶变换，找峰值波数 $k_{\text{sim}}$，与线性理论的 $k_{\max}$ 比较：</p>
+  <pre><code class="language-python">F = np.abs(np.fft.fftshift(np.fft.fft2(X - X.mean())))
+ky, kx = np.meshgrid(np.fft.fftfreq(X.shape[0], d=dx),
+                     np.fft.fftfreq(X.shape[1], d=dx), indexing='ij')
+k = np.sqrt(kx**2 + ky**2)
+# 在 k 的环带上积分 F，找峰值
+</code></pre>
+  <p>若 $k_{\text{sim}}$ 与 $k_{\max}$ 差很远，先检查：网格是否足够细（$k_{\max}\Delta x\ll\pi$）；边界是否选错；非线性是否太强（图案进入饱和后波数会移动）；参数是否在阈值附近（附近波段很窄，容易被数值误差推走）。</p>
+
+  <h3><span class="sn">16.6</span>第六步：参数扫掠与相图</h3>
+  <p>图灵机制的行为由少数无量纲组合决定。建议做二维相图：横轴 $D_Y/D_X$，纵轴反应参数（例如 $a$ 或 $bc$），用颜色标出“稳定 / 条纹 / 斑点 / 振荡”。每一格跑一次短模拟，记录峰值波数与图案类型。这样能看出：</p>
+  <ul>
+    <li>阈值在哪里；</li>
+    <li>条纹与斑点的边界是否尖锐；</li>
+    <li>是否存在双稳态（同一参数下两种图案都能稳定）；</li>
+    <li>有限尺寸是否让图案在边界附近跳变。</li>
+  </ul>
+  <p>图灵在 1952 年论文里只能手算几个点；现代计算可以扫上千个点，但“相图”仍然只是模型的行为，不是生物的证据。</p>
+
+  <h3><span class="sn">16.7</span>第七步：可证伪的预言</h3>
+  <p>一个模型要算“科学”，至少要给出一个能被实验否证的预言。图灵机制常见的有：</p>
+  <div class="table-wrap cheat"><table>
+    <thead><tr><th>预言</th><th>实验操作</th><th>若不符合</th></tr></thead>
+    <tbody>
+      <tr><td>波长 $\lambda\propto\sqrt{D/k}$</td><td>改变温度/黏度/凝胶浓度，测图案间距</td><td>间距不变 → 可能不是反应—扩散</td></tr>
+      <tr><td>尺寸阈值</td><td>把组织切小，观察图案是否消失</td><td>小组织仍出图案 → 边界或机制不对</td></tr>
+      <tr><td>边界相位</td><td>改变边界条件，看极大值是否移动</td><td>极大值固定 → 可能有预图案模板</td></tr>
+      <tr><td>扩散比阈值</td><td>调节抑制剂扩散系数，找失稳临界</td><td>无阈值 → 机制不对</td></tr>
+      <tr><td>时间标度</td><td>测图案出现的时间随参数变化</td><td>与 $1/\Re p$ 不符 → 参数或模型不对</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3><span class="sn">16.8</span>什么时候不该用图灵模型</h3>
+  <p>以下几种情况要谨慎：</p>
+  <ul>
+    <li><strong>图案是细胞自主决定的</strong>：每个细胞按内部状态分化，不依赖邻居的扩散信号；</li>
+    <li><strong>图案由预先存在的模板决定</strong>：母体 mRNA、细胞骨架、机械应力预先铺好坐标；</li>
+    <li><strong>图案由相分离或细胞聚集决定</strong>：这些也能产生斑点，但数学结构不同；</li>
+    <li><strong>图案由力学屈曲决定</strong>：褶皱、折叠、管状收缩，不需要化学波长；</li>
+    <li><strong>图案是进化的“历史偶然”</strong>：没有普遍的物理机制，只有特定谱系的历史。</li>
+  </ul>
+  <p>图灵自己在 §13 说，生物现象通常非常复杂，他用的数学又相对初等，所以不能指望覆盖很多现象。这句话今天仍然适用：图灵模型是一个<strong>机制模板</strong>，不是万能解释。</p>
+
+  <div class="thm warn">
+    <div class="thm-head"><span class="thm-kind">常见误区</span><span class="thm-title">建模实践的五个坑</span></div>
+    <div class="thm-body">
+      <ul class="clean">
+        <li><b>先写代码，后想平衡点。</b> 很多“图案”其实是数值发散或边界伪影；先用纸笔确认平衡与稳定性。</li>
+        <li><b>用物理单位直接套离散方程。</b> $\mu$ 与 $D$ 差 $h^2$；先无量纲化。</li>
+        <li><b>只看一张图。</b> 图案对初始噪声、边界、网格敏感；至少跑 10 次，看统计。</li>
+        <li><b>把“模拟像”当成“机制对”。</b> 多个机制可以产生相似图案；必须做色散与标度检验。</li>
+        <li><b>忽略非线性饱和。</b> 线性模型会指数发散；若模拟没有饱和机制，图案幅度没有意义。</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="summary" class="chapter"><div class="wrap">
+  <div class="sec-label">Final · 一页纸</div>
+  <h2><span class="num">F</span>把整本书压成一条逻辑链</h2>
+  <p class="lede">如果只记住一件事，请记住这个顺序：<strong>均匀态 → 线性化 → 色散关系 → 允许模式 → 非线性选择</strong>。图灵 1952 年论文的全部论证都挂在这条链上；叶序与雏菊则是把它推到生长曲面与离散点阵的尝试。</p>
+
+  <div class="chap-intro">
+    <p>这一章是复习索引，不替代正文。先给五步逻辑链与公式总表，再给十问建模清单、术语表与学习路线。原文的六个失稳类型、球谐解、叶序几何与 Part II 的振幅方程，都在前面的章节展开；这里只保留“考试前最后看一眼”的内容。</p>
+    <span class="tag">Review · Formula sheet</span>
+  </div>
+
+  <div class="mapchips">
+    <span class="chip hot">逻辑链</span><span class="chip">公式总表</span><span class="chip">建模清单</span><span class="chip">术语表</span><span class="chip">自测</span>
+  </div>
+
+  <h3><span class="sn">F.1</span>五步逻辑链</h3>
+  <div class="cards">
+    <div class="card"><div class="k">Step 1</div><h4>找均匀平衡态</h4><p>解 $f(h,k)=g(h,k)=0$，确认 $h,k\ge0$。没有平衡点，后面的线性化无从谈起；平衡不等于稳定。</p></div>
+    <div class="card"><div class="k">Step 2</div><h4>线性化</h4><p>算雅可比 $a=f_X,b=f_Y,c=g_X,d=g_Y$。检查无扩散稳定性 $a+d&lt;0$、$ad-bc&gt;0$。若不稳定，图案不是扩散驱动的。</p></div>
+    <div class="card"><div class="k">Step 3</div><h4>色散关系</h4><p>代入 $e^{pt+i\mathbf{k}\cdot\mathbf{x}}$，解 $(p-a+D_Xk^2)(p-d+D_Yk^2)=bc$。找 $\Re p&gt;0$ 的波段与峰值。</p></div>
+    <div class="card"><div class="k">Step 4</div><h4>允许模式</h4><p>用区域本征值替换 $k^2$：环上 $4\sin^2(\pi s/N)$，球面 $n(n+1)/R^2$，区间 $(\pi n/L)^2$。离散化决定实际波长。</p></div>
+    <div class="card"><div class="k">Step 5</div><h4>非线性选择</h4><p>比较各模式增益，让三次项饱和；条纹、斑点、六边形在此分道扬镳。线性只给“谁先长”，非线性给“停在哪”。</p></div>
+  </div>
+
+  <h3><span class="sn">F.2</span>公式总表</h3>
+  <div class="table-wrap cheat"><table>
+    <thead><tr><th>对象</th><th>公式</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td>反应—扩散</td><td>$\partial_tX=f(X,Y)+D_X\nabla^2X$</td><td>连续组织的基本方程</td></tr>
+      <tr><td>离散环</td><td>$\dot X_r=f+\mu(X_{r+1}-2X_r+X_{r-1})$</td><td>$N$ 细胞模型；$\mu\approx D/h^2$</td></tr>
+      <tr><td>线性化</td><td>$\dot x=ax+by+D_X\nabla^2x$</td><td>$a=f_X$ 等四个边缘速率</td></tr>
+      <tr><td>色散关系</td><td>$(p-a+D_Xk^2)(p-d+D_Yk^2)=bc$</td><td>求增长率与失稳波段</td></tr>
+      <tr><td>无扩散稳定</td><td>$a+d&lt;0,\;ad-bc&gt;0$</td><td>先排除“自己就不稳定”</td></tr>
+      <tr><td>图灵条件</td><td>$bc&lt;0,\;aD_Y+dD_X&gt;0,\;(aD_Y+dD_X)^2&gt;4D_XD_Y(ad-bc)$</td><td>扩散驱动失稳</td></tr>
+      <tr><td>临界波数</td><td>$k_c^2=\sqrt{(ad-bc)/(D_XD_Y)}$</td><td>阈值处的波长</td></tr>
+      <tr><td>环上模式</td><td>$(p-a+4\mu\sin^2\frac{\pi s}{N})(p-d+4\nu\sin^2\frac{\pi s}{N})=bc$</td><td>离散波瓣选择</td></tr>
+      <tr><td>球面模式</td><td>$(p-a+D_X\frac{n(n+1)}{R^2})(p-d+D_Y\frac{n(n+1)}{R^2})=bc$</td><td>球谐图案</td></tr>
+      <tr><td>临界尺寸</td><td>$L_c\approx\pi/k_c$（无通量），$2\pi/k_c$（周期）</td><td>“长到够大才出图案”</td></tr>
+      <tr><td>球面临界半径</td><td>$R_c\approx\sqrt2/k_c$</td><td>$n=1$ 偶极</td></tr>
+      <tr><td>化学波长</td><td>$\lambda_0=2\pi\sqrt{D/k}$ 的量级</td><td>尺度估算</td></tr>
+      <tr><td>叶序角</td><td>$\alpha=[0;1,1,1,\dots]=1/\varphi$，$\theta\approx137.5^\circ$</td><td>斐波那契副螺旋</td></tr>
+      <tr><td>叶序格</td><td>$(\theta,z)=(\theta_0+n\alpha+rK,\ z_0+n\eta)$</td><td>螺旋坐标</td></tr>
+      <tr><td>主向量</td><td>$\mathbf{u},\mathbf{v}$ 构成锐角三角形；第三副螺旋数 $=|q_1\pm q_2|$</td><td>斐波那契递推</td></tr>
+      <tr><td>振幅方程</td><td>$\dot A=\mu A-gA^3$</td><td>超临界饱和；$g&lt;0$ 灾变</td></tr>
+      <tr><td>二维 CFL</td><td>$\Delta t\le\Delta x^2/(4\max D)$</td><td>显式差分稳定性</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3><span class="sn">F.3</span>十问建模清单</h3>
+  <p>拿到一个疑似图灵系统，按顺序问：</p>
+  <ol>
+    <li><strong>均匀态存在吗？</strong> 写出 $f(h,k)=g(h,k)=0$，确认浓度非负。</li>
+    <li><strong>无扩散时稳定吗？</strong> 检查 $a+d&lt;0$、$ad-bc&gt;0$；若否，图案不是扩散驱动的。</li>
+    <li><strong>是激活—抑制吗？</strong> 检查 $bc&lt;0$，画清 $X$ 与 $Y$ 的促进/抑制方向。</li>
+    <li><strong>扩散有差异吗？</strong> 算 $D_Y/D_X$，检查是否越过条件 (iii) 的阈值。</li>
+    <li><strong>失稳波段在哪？</strong> 解 $C(k^2)=0$，给出 $k_1,k_2$ 与峰值 $k_{\max}$。</li>
+    <li><strong>区域允许哪些模式？</strong> 用环、区间或球面的本征值离散化，不要直接用连续 $k$。</li>
+    <li><strong>波长与尺寸匹配吗？</strong> 用 $\lambda_0$ 估 $L_c$；若差一个数量级，先检查参数单位。</li>
+    <li><strong>边界条件是什么？</strong> 无通量、固定浓度还是周期？它决定相位与临界尺寸。</li>
+    <li><strong>非线性如何饱和？</strong> 给出三次项或等效机制；否则线性解会发散。</li>
+    <li><strong>有什么可检验预言？</strong> 至少给出一个：波长随 $D$ 变化、尺寸阈值或边界相位移动。</li>
+  </ol>
+
+  <h3><span class="sn">F.4</span>术语表（首次出现应带英文）</h3>
+  <div class="table-wrap cheat"><table>
+    <thead><tr><th>中文</th><th>English</th><th>一句话定义</th></tr></thead>
+    <tbody>
+      <tr><td>形态发生</td><td>morphogenesis</td><td>生物形态的发生与发育；图灵主要处理其中的图案形成。</td></tr>
+      <tr><td>形态素</td><td>morphogen</td><td>可扩散、参与反应、能影响发育的物质。</td></tr>
+      <tr><td>反应—扩散</td><td>reaction–diffusion</td><td>化学反应与菲克扩散耦合的系统。</td></tr>
+      <tr><td>对称破缺</td><td>symmetry breaking</td><td>均匀/对称态失稳，选择一个新图案。</td></tr>
+      <tr><td>图灵斑图</td><td>Turing pattern</td><td>由扩散驱动失稳产生的稳定空间周期图案。</td></tr>
+      <tr><td>扩散系数</td><td>diffusion coefficient</td><td>单位浓度梯度下的通量；$D$，量纲 cm²/s。</td></tr>
+      <tr><td>抑制剂</td><td>inhibitor</td><td>抑制激活子、且通常扩散更快的形态素。</td></tr>
+      <tr><td>激活剂</td><td>activator</td><td>自激活、促进自身与抑制剂产生的形态素。</td></tr>
+      <tr><td>稳定性分析</td><td>stability analysis</td><td>线性化后检查本征值实部是否为正。</td></tr>
+      <tr><td>离散化</td><td>discretization</td><td>把连续方程写成有限细胞/网格上的差分方程。</td></tr>
+      <tr><td>色散关系</td><td>dispersion relation</td><td>$p(k)$：增长率随波数的关系。</td></tr>
+      <tr><td>波瓣数</td><td>number of lobes</td><td>环上模态 $s$ 的极大值个数。</td></tr>
+      <tr><td>副螺旋</td><td>parastichy</td><td>叶序点阵中穿过叶片的螺旋线。</td></tr>
+      <tr><td>发散角</td><td>divergence angle</td><td>相邻叶片绕茎的角差。</td></tr>
+      <tr><td>塑时距离</td><td>plastochrone distance</td><td>相邻叶片沿茎面的间距 $\eta$。</td></tr>
+      <tr><td>联叶数</td><td>jugacy</td><td>同一水平高度的叶片数 $J$。</td></tr>
+      <tr><td>连分数</td><td>continued fraction</td><td>用部分商表示实数；收敛给出最佳有理逼近。</td></tr>
+      <tr><td>收敛</td><td>convergent</td><td>连分数截断得到的有理数 $p_n/q_n$。</td></tr>
+      <tr><td>球谐函数</td><td>spherical harmonic</td><td>球面拉普拉斯算子的本征函数。</td></tr>
+      <tr><td>原肠胚形成</td><td>gastrulation</td><td>囊胚内陷形成原肠胚的过程。</td></tr>
+      <tr><td>麻点</td><td>dappling</td><td>二维黑白斑块图案；图 2 的例子。</td></tr>
+      <tr><td>灾变失稳</td><td>catastrophic instability</td><td>非线性项使增长快于指数、有限时间发散。</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3><span class="sn">F.5</span>学习路线：三种读法</h3>
+  <div class="cards">
+    <div class="card"><div class="k">24 小时</div><h4>只抓主线</h4><p>读第 2–5 章：模型、两细胞、环上色散、六种失稳。记住“激活—抑制 + 差异扩散 + 区域离散化”三件事。跳过叶序的矩阵与连分数。</p></div>
+    <div class="card"><div class="k">一周</div><h4>数学与生物各一半</h4><p>加读第 6–9 章：20 细胞算例、球面、非线性、Wardlaw 合作稿。自己推一遍 $C(k^2)$ 的判别式，跑一个一维环的数值实验。</p></div>
+    <div class="card"><div class="k">一个月</div><h4>完整模式</h4><p>读第 10–15 章：叶序几何、连分数、流动矩阵、最优堆积、Part II 振幅方程、Richards 球谐解、雏菊手稿。最后用第 16 章的方法做一个可复现的小项目。</p></div>
+  </div>
+
+  <h3><span class="sn">F.6</span>自测：六个问题</h3>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q1</span>为什么 $D_X=D_Y$ 时不可能发生图灵失稳？</div>
+    <div class="quiz-opts">
+      <p>因为令 $q=p+Dk^2$，色散方程退化为无扩散的二次方程；若 $a+d&lt;0$、$ad-bc&gt;0$，两根实部都为负。扩散只是给所有模式加同一个阻尼，不能选择波数。</p>
+    </div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q2</span>环上 $s$ 与 $N-s$ 为什么不是两个图案？</div>
+    <div class="quiz-opts">
+      <p>因为 $\sin^2(\pi(N-s)/N)=\sin^2(\pi s/N)$，两者增长率相同；它们对应同一驻波的正弦/余弦相位，组合后是同一个实图案的平移。</p>
+    </div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q3</span>球面上 $n=1$ 的图案是什么？</div>
+    <div class="quiz-opts">
+      <p>偶极：$X-h=A'\cos\theta'$，关于某个新轴轴对称，一端高、一端低。它不是“一个斑点”。</p>
+    </div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q4</span>为什么原肠胚的轴方向可以随机？</div>
+    <div class="quiz-opts">
+      <p>因为 $n=1$ 的三个 $m$ 分量简并，初始扰动的方向决定新轴；方程只决定“有轴、两端不同”，不决定轴指向。若卵本身有固定极性，轴可以固定，但那是额外机制。</p>
+    </div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q5</span>叶序的连分数到底证明了什么？</div>
+    <div class="quiz-opts">
+      <p>它证明：若发散角是某个数，主副螺旋数对应它的连分数收敛；黄金角的收敛分母是斐波那契数。它不证明“植物为什么选黄金角”，那需要动力学。</p>
+    </div>
+  </div>
+  <div class="quiz">
+    <div class="quiz-q"><span class="qmark">Q6</span>为什么说“模拟出斑点”不等于“证明图灵机制”？</div>
+    <div class="quiz-opts">
+      <p>相分离、趋化、力学屈曲等也能产生斑点。必须核对色散关系、波长随扩散系数的标度、尺寸阈值与边界相位，才能把机制与其他解释区分开。</p>
+    </div>
+  </div>
+
+  <h3><span class="sn">F.7</span>如果只记三件事</h3>
+  <div class="thm rem">
+    <div class="thm-head"><span class="thm-kind">三句话</span><span class="thm-title">图灵生物学的核心</span></div>
+    <div class="thm-body">
+      <p><b>一、</b>图案不需要模板；均匀态失稳就够了，噪声只决定相位。</p>
+      <p><b>二、</b>失稳的关键不是“扩散”，而是“两种物质扩散得不一样快”，抑制子必须跑得比激活子远。</p>
+      <p><b>三、</b>线性理论给波长，几何给离散模式，非线性给最终形态；三者缺一，故事就不完整。</p>
+    </div>
+  </div>
+
+  <p>图灵在 1952 年论文结尾写道：这类模型大概不会给出图案形成的一般理论，只会给出个别情形；但这些情形足以照亮机制。七十多年后再看仍然准确：Turing 结构已在化学中被观察到，反应—扩散已成为发育建模的标准工具，而叶序与手性仍是开放问题。一个理论的价值，在于它把问题问成了可以计算的形式。</p>
 </div></section>
 
 </main>
