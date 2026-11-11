@@ -71,7 +71,8 @@ lines += [
     "## 使用说明",
     "",
     "- 直接双击 HTML 即可；侧栏目录、搜索、暗色模式、字号、证明折叠都在页面内。",
-    "- 顶部有「‹ ⌂ ›」：上一本 / 返回索引 / 下一本；关闭页面再打开会回到上次阅读位置。",
+    "- 顶部有「‹ 书库 ›」：上一本 / 返回索引 / 下一本；关闭页面再打开会回到上次阅读位置。",
+    "- 每节标题右侧的 ☆ 收藏该节（侧栏显示 ★）；选中正文可高亮，点击高亮即可移除。两者都只存在本机浏览器里。",
     f"- 每本都是单文件，约 {avg_mb} MB；{len(ROWS)} 本合计约 {total_mb} MB。",
     "- 原书 PDF 不在此仓库中；这里只保存学习版教程。",
     "- `books/Index-Books1.html`、`books/Index-Books2.html` 是两批生成时的原始索引。",
@@ -270,7 +271,7 @@ python3 tools/qa_tutorial.py books/New-Book-Tutorial.html --render
 python3 tools/build_index.py
 ```
 
-会重新生成 `README.md` 与 `index.html`，并给**所有**书刷新「上一本 / 索引 / 下一本」导航与阅读进度脚本。新书顺序由分类 + 标题自动计算，不需要改其它书。
+会重新生成 `README.md` 与 `index.html`，并给**所有**书刷新「上一本 / 书库 / 下一本」导航、阅读进度、书签与高亮脚本。新书顺序由分类 + 标题自动计算，不需要改其它书。
 
 提交前校验：
 
@@ -315,6 +316,7 @@ h1{font-size:clamp(36px,6vw,64px);line-height:1.05;margin:14px 0 8px;letter-spac
 input{width:min(420px,100%);height:42px;border:1px solid var(--line);border-radius:10px;background:var(--paper2);padding:0 14px;font-family:ui-sans-serif,system-ui;font-size:14px;color:var(--ink);outline:none}
 input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(17,100,92,.12)}
 .hint{font-family:ui-sans-serif,system-ui;font-size:12px;color:var(--muted)}
+.continue[hidden]{display:none}
 .continue{display:flex;align-items:center;gap:10px;margin:0 0 22px;padding:12px 15px;border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:10px;background:var(--paper2);font-family:ui-sans-serif,system-ui;font-size:13px}
 .continue a{color:inherit;text-decoration:none;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;flex:1}
 .continue b{font-weight:700}

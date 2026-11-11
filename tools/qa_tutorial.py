@@ -14,6 +14,39 @@ from pathlib import Path
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 
+def inspect(path: Path) -> dict:
+    """Static checks shared with tools/qa_all.py."""
+    s = path.read_text(encoding="utf-8")
+    ids = re.findall(r'\bid="([^"]+)"', s)
+    seen, dup = set(), set()
+    for i in ids:
+        if i in seen:
+            dup.add(i)
+        seen.add(i)
+    hrefs = re.findall(r'href="#([^"]+)"', s)
+    bad = sorted({h for h in hrefs if h not in seen})
+    placeholders = sorted(set(re.findall(r"\{\{[A-Z_]+\}\}", s)))
+    double_escaped = s.count("&amp;lt;") + s.count("&amp;gt;")
+    problems = []
+    if dup:
+        problems.append(f"duplicate ids: {sorted(dup)[:5]}")
+    if bad:
+        problems.append(f"broken anchors: {bad[:5]}")
+    if placeholders:
+        problems.append(f"unresolved placeholders: {placeholders[:5]}")
+    if double_escaped:
+        problems.append(f"double-escaped entities: {double_escaped}")
+    return {
+        "path": path,
+        "size_mb": path.stat().st_size / 1e6,
+        "sections": s.count("<section"),
+        "dup": sorted(dup),
+        "bad": bad,
+        "placeholders": placeholders,
+        "problems": problems,
+    }
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("file")
@@ -22,42 +55,27 @@ def main() -> None:
     p = Path(args.file)
     if not p.exists():
         sys.exit(f"not found: {p}")
-    s = p.read_text(encoding="utf-8")
 
-    ids = re.findall(r'\bid="([^"]+)"', s)
-    dup = sorted({x for x in ids if ids.count(x) > 1})
-    hrefs = re.findall(r'href="#([^"]+)"', s)
-    bad = sorted({h for h in hrefs if h not in ids})
-    placeholders = sorted(set(re.findall(r"\{\{[A-Z_]+\}\}", s)))
-    double_escaped = s.count("&amp;lt;") + s.count("&amp;gt;")
-
-    problems = []
-    if dup:
-        problems.append(f"duplicate ids: {dup[:5]}")
-    if bad:
-        problems.append(f"broken anchors: {bad[:5]}")
-    if placeholders:
-        problems.append(f"unresolved placeholders: {placeholders[:5]}")
-    if double_escaped:
-        problems.append(f"double-escaped entities: {double_escaped}")
-
+    r = inspect(p)
     print(f"file       : {p}")
-    print(f"size       : {p.stat().st_size / 1e6:.2f} MB")
-    print(f"sections   : {s.count('<section')}")
-    print(f"duplicate  : {dup or 'none'}")
-    print(f"bad anchors: {bad or 'none'}")
-    print(f"placeholders: {placeholders or 'none'}")
+    print(f"size       : {r['size_mb']:.2f} MB")
+    print(f"sections   : {r['sections']}")
+    print(f"duplicate  : {r['dup'] or 'none'}")
+    print(f"bad anchors: {r['bad'] or 'none'}")
+    print(f"placeholders: {r['placeholders'] or 'none'}")
+
+    problems = list(r["problems"])
 
     if args.render:
         if not Path(CHROME).exists():
             print("render     : SKIP (Chrome not found)")
         else:
             url = "file://" + str(p.resolve())
-            r = subprocess.run(
+            r2 = subprocess.run(
                 [CHROME, "--headless=new", "--disable-gpu",
                  "--virtual-time-budget=9000", "--dump-dom", url],
                 capture_output=True, text=True, timeout=120)
-            dom = r.stdout.split("<body", 1)[-1]
+            dom = r2.stdout.split("<body", 1)[-1]
             merr = dom.count("<merror")
             mjx = dom.count("<mjx-container")
             body = re.sub(r"<script.*?</script>", "", dom, flags=re.S)

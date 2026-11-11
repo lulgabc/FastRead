@@ -155,7 +155,7 @@ python3 tools/qa_tutorial.py books/Some-Book-Tutorial.html --render
 python3 tools/build_index.py
 ```
 
-会重建 `README.md` 和 `index.html`，并给**所有**书刷新「上一本 / 索引 / 下一本」导航与阅读进度脚本。新增一本书不需要手动改其它书；顺序由 `catalog.json` 的分类 + 标题决定。
+会重建 `README.md` 和 `index.html`，并给**所有**书刷新「上一本 / 书库 / 下一本」导航、阅读进度、书签与高亮脚本。新增一本书不需要手动改其它书；顺序由 `catalog.json` 的分类 + 标题决定。
 
 提交前先校验目录与文件是否一致：
 
