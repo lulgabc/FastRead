@@ -18,6 +18,11 @@ ORDER = [
 ]
 groups = {c: [r for r in ROWS if r["category"] == c] for c in ORDER}
 total_pages = sum(r["pages"] for r in ROWS)
+book_files = [ROOT / "books" / r["file"] for r in ROWS]
+total_bytes = sum(f.stat().st_size for f in book_files if f.exists())
+total_mb = round(total_bytes / 1024 / 1024)
+avg_mb = round(total_bytes / max(1, len(ROWS)) / 1024 / 1024, 1)
+category_count = sum(1 for c in ORDER if groups[c])
 
 # ---------- README ----------
 lines = [
@@ -50,7 +55,7 @@ lines += [
     "## 使用说明",
     "",
     "- 直接双击 HTML 即可；侧栏目录、搜索、暗色模式、字号、证明折叠都在页面内。",
-    "- 每本都是单文件，约 2.2–2.3 MB；43 本合计约 95 MB。",
+    f"- 每本都是单文件，约 {avg_mb} MB；{len(ROWS)} 本合计约 {total_mb} MB。",
     "- 原书 PDF 不在此仓库中；这里只保存学习版教程。",
     "- `books/Index-Books1.html`、`books/Index-Books2.html` 是两批生成时的原始索引。",
     "",
@@ -323,11 +328,11 @@ html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <title>FastRead · 私人阅读库</title><style>{CSS}</style></head><body><div class="wrap">
 <div class="kicker">FASTREAD · PRIVATE READING LIBRARY</div>
 <h1>私人阅读库</h1>
-<p class="sub">43 本技术书的中文单页教程：一条主线、关键例子、速查表与常见坑。每个文件都是独立 HTML，离线可读。</p>
+<p class="sub">{len(ROWS)} 本技术书的中文单页教程：一条主线、关键例子、速查表与常见坑。每个文件都是独立 HTML，离线可读。</p>
 <div class="stats">
   <div><b>{len(ROWS)}</b><span>本书</span></div>
   <div><b>{total_pages:,}</b><span>原书页数</span></div>
-  <div><b>9</b><span>主题分类</span></div>
+  <div><b>{category_count}</b><span>主题分类</span></div>
   <div><b>0</b><span>需要联网</span></div>
 </div>
 <div class="tools"><input id="q" type="search" placeholder="搜索书名、作者、主题…" aria-label="搜索"><span class="hint" id="hint">输入关键词过滤</span></div>
