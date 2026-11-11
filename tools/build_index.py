@@ -1,28 +1,46 @@
 #!/usr/bin/env python3
-"""Regenerate README.md and index.html from catalog.json."""
-import json
+"""Regenerate README.md and index.html from catalog.json.
+
+Also refreshes the in-book library navigation (prev/next/index) via
+tools/enhance_books.py, so adding a book only needs one command.
+
+Options:
+    --check       validate catalog.json + books/ consistency, then exit
+    --skip-books  do not touch the tutorial HTML files
+"""
+import argparse
+import subprocess
+import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import catalog_lib  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
-ROWS = json.load(open(ROOT / "catalog.json", encoding="utf-8"))
-ORDER = [
-    "数学 · 分析与代数",
-    "优化 · 金融 · 概率",
-    "逻辑 · 形式方法 · 理论计算机",
-    "机器学习 · 语言模型",
-    "系统 · 数据 · 网络",
-    "安全 · 二进制 · 逆向",
-    "数值计算 · 工程",
-    "认知科学 · 哲学",
-    "经济学",
-]
-groups = {c: [r for r in ROWS if r["category"] == c] for c in ORDER}
+ROWS = catalog_lib.load_rows()
+
+ap = argparse.ArgumentParser()
+ap.add_argument("--check", action="store_true", help="valider le catalogue et sortir")
+ap.add_argument("--skip-books", action="store_true", help="ne pas injecter la navigation")
+ARGS = ap.parse_args()
+
+if ARGS.check:
+    issues = catalog_lib.problems(ROWS)
+    if issues:
+        print(f"{len(issues)} problème(s) :")
+        for issue in issues:
+            print("  -", issue)
+        sys.exit(1)
+    print(f"catalogue OK : {len(ROWS)} livres")
+    sys.exit(0)
+
+groups = catalog_lib.groups(ROWS)
 total_pages = sum(r["pages"] for r in ROWS)
 book_files = [ROOT / "books" / r["file"] for r in ROWS]
 total_bytes = sum(f.stat().st_size for f in book_files if f.exists())
 total_mb = round(total_bytes / 1024 / 1024)
 avg_mb = round(total_bytes / max(1, len(ROWS)) / 1024 / 1024, 1)
-category_count = sum(1 for c in ORDER if groups[c])
+category_count = len(groups)
 
 # ---------- README ----------
 lines = [
@@ -41,11 +59,9 @@ lines = [
     "## 分类索引",
     "",
 ]
-for cat in ORDER:
-    if not groups[cat]:
-        continue
+for cat in groups:
     lines += [f"### {cat}", "", "| 教程 | 作者 | 页数 | 打开 |", "|---|---|---:|---|"]
-    for r in sorted(groups[cat], key=lambda x: x["title"]):
+    for r in groups[cat]:
         title = r["title"]
         if r.get("subtitle"):
             title += f"：{r['subtitle']}"
@@ -55,6 +71,7 @@ lines += [
     "## 使用说明",
     "",
     "- 直接双击 HTML 即可；侧栏目录、搜索、暗色模式、字号、证明折叠都在页面内。",
+    "- 顶部有「‹ ⌂ ›」：上一本 / 返回索引 / 下一本；关闭页面再打开会回到上次阅读位置。",
     f"- 每本都是单文件，约 {avg_mb} MB；{len(ROWS)} 本合计约 {total_mb} MB。",
     "- 原书 PDF 不在此仓库中；这里只保存学习版教程。",
     "- `books/Index-Books1.html`、`books/Index-Books2.html` 是两批生成时的原始索引。",
@@ -235,7 +252,7 @@ python3 tools/qa_tutorial.py books/New-Book-Tutorial.html --render
 }
 ```
 
-现有九类：
+可以直接使用现有九类之一；新分类会自动追加到末尾（要控制位置就加进 `tools/catalog_lib.py` 的 `ORDER`）：
 
 - 数学 · 分析与代数
 - 优化 · 金融 · 概率
@@ -253,7 +270,13 @@ python3 tools/qa_tutorial.py books/New-Book-Tutorial.html --render
 python3 tools/build_index.py
 ```
 
-会重新生成 `README.md` 与 `index.html`。
+会重新生成 `README.md` 与 `index.html`，并给**所有**书刷新「上一本 / 索引 / 下一本」导航与阅读进度脚本。新书顺序由分类 + 标题自动计算，不需要改其它书。
+
+提交前校验：
+
+```bash
+python3 tools/build_index.py --check
+```
 
 #### 7. 提交
 
@@ -292,6 +315,12 @@ h1{font-size:clamp(36px,6vw,64px);line-height:1.05;margin:14px 0 8px;letter-spac
 input{width:min(420px,100%);height:42px;border:1px solid var(--line);border-radius:10px;background:var(--paper2);padding:0 14px;font-family:ui-sans-serif,system-ui;font-size:14px;color:var(--ink);outline:none}
 input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(17,100,92,.12)}
 .hint{font-family:ui-sans-serif,system-ui;font-size:12px;color:var(--muted)}
+.continue{display:flex;align-items:center;gap:10px;margin:0 0 22px;padding:12px 15px;border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:10px;background:var(--paper2);font-family:ui-sans-serif,system-ui;font-size:13px}
+.continue a{color:inherit;text-decoration:none;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;flex:1}
+.continue b{font-weight:700}
+.continue span{color:var(--muted);font-size:12px}
+.continue button{border:0;background:transparent;color:var(--muted);cursor:pointer;font-size:13px;padding:2px 6px;border-radius:6px}
+.continue button:hover{background:var(--paper3);color:var(--ink)}
 h2{font-size:21px;margin:38px 0 14px;border-bottom:1px solid var(--line);padding-bottom:8px;display:flex;justify-content:space-between;align-items:baseline}
 h2 small{font-family:ui-sans-serif,system-ui;font-size:11px;color:var(--muted);font-weight:400}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
@@ -306,11 +335,9 @@ footer{margin-top:46px;padding-top:18px;border-top:1px solid var(--line);color:v
 .empty{display:none;color:var(--muted);font-family:ui-sans-serif,system-ui;font-size:14px;margin:30px 0}
 """
 parts = []
-for cat in ORDER:
-    if not groups[cat]:
-        continue
+for cat in groups:
     cards = []
-    for r in sorted(groups[cat], key=lambda x: x["title"]):
+    for r in groups[cat]:
         sub = f'<div class="s">{r["subtitle"]}</div>' if r.get("subtitle") else ""
         cards.append(
             f'<a class="card" href="books/{r["file"]}" data-search="{r["title"]} {r.get("subtitle","")} {r["author"]} {cat}">'
@@ -336,6 +363,7 @@ html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
   <div><b>0</b><span>需要联网</span></div>
 </div>
 <div class="tools"><input id="q" type="search" placeholder="搜索书名、作者、主题…" aria-label="搜索"><span class="hint" id="hint">输入关键词过滤</span></div>
+<div id="continue" class="continue" hidden></div>
 <div id="empty" class="empty">没有匹配的教程。</div>
 {"".join(parts)}
 <footer><span>FastRead · 私人阅读库</span><span><a href="README.md">README</a> · <a href="docs/ADDING-BOOKS.md">新增书籍</a> · <a href="skill/pdf-book-to-web-tutorial/SKILL.md">Skill</a></span></footer>
@@ -357,5 +385,32 @@ q.addEventListener('input',()=>{{
 }});
 </script>
 </body></html>"""
+CONTINUE_JS = """
+<script>
+(function(){
+  try{
+    var last=JSON.parse(localStorage.getItem('fastread:last')||'null');
+    if(!last||!last.file) return;
+    var box=document.getElementById('continue');
+    var link=document.createElement('a');
+    link.href='books/'+last.file+'.html';
+    var b=document.createElement('b');
+    b.textContent=String(last.title||last.file).replace(/ · 交互教程$/,'');
+    var meta=document.createElement('span');
+    meta.textContent='上次读到 '+Math.round((last.pct||0)*100)+'%';
+    link.appendChild(document.createTextNode('继续阅读：')); link.appendChild(b); link.appendChild(meta);
+    var clear=document.createElement('button');
+    clear.type='button'; clear.textContent='×'; clear.title='清除阅读记录';
+    clear.setAttribute('aria-label','清除阅读记录');
+    clear.addEventListener('click',function(){ try{localStorage.removeItem('fastread:last');}catch(e){} box.hidden=true; });
+    box.appendChild(link); box.appendChild(clear); box.hidden=false;
+  }catch(e){}
+})();
+</script>
+"""
+html = html.replace("</body>", CONTINUE_JS + "</body>", 1)
 (ROOT / "index.html").write_text(html, encoding="utf-8")
 print(f"wrote README.md and index.html ({len(ROWS)} books, {total_pages} pages)")
+
+if not ARGS.skip_books:
+    subprocess.run([sys.executable, str(ROOT / "tools" / "enhance_books.py")], check=True)

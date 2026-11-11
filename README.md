@@ -27,6 +27,19 @@
 | Linear Algebra for Computer Vision, Robotics, and Machine Learning：A Geometric and Computational Introduction | Jean Gallier & Jocelyn Quaintance | 788 | [HTML](books/Linear-Algebra-Vision-Robotics-ML-Tutorial.html) |
 | The Renormalization Group and Condensed Matter Physics | David R. Nelson & Grace H. Zhang | 329 | [HTML](books/Renormalization-Group-Tutorial.html) |
 
+### 数学 · 物理 · 理论
+
+| 教程 | 作者 | 页数 | 打开 |
+|---|---|---:|---|
+| Discrete Morse Theory：A combinatorial bridge between topology and algebra | Nicholas A. Scoville | 289 | [HTML](books/Discrete-Morse-Theory-Tutorial.html) |
+| Fashion, Faith, and Fantasy：In the New Physics of the Universe | Roger Penrose | 518 | [HTML](books/Fashion-Faith-Fantasy-Tutorial.html) |
+| Fly by Night Physics：How Physicists Use the Backs of Envelopes | A. Zee | 455 | [HTML](books/Fly-by-Night-Physics-Tutorial.html) |
+| General Relativity for the Gifted Amateur：A guided tour from Newton to black holes | Stephen Blundell & Tom Lancaster | 641 | [HTML](books/General-Relativity-Tutorial.html) |
+| Modern Classical Physics：Optics, fluids, plasmas, elasticity, relativity and statistical physics | Roger D. Blandford & Kip S. Thorne | 1552 | [HTML](books/Modern-Classical-Physics-Tutorial.html) |
+| Optimal Transport：Old and New | Cédric Villani | 997 | [HTML](books/Optimal-Transport-Tutorial.html) |
+| Symmetry, Shape and Space：An Introduction to Mathematics through Geometry | L. Christine Kinsey & Teresa E. Moore | 514 | [HTML](books/Symmetry-Shape-Space-Tutorial.html) |
+| Thermal Physics：An Introduction to Thermal Physics | Daniel V. Schroeder | 432 | [HTML](books/Thermal-Physics-Tutorial.html) |
+
 ### 优化 · 金融 · 概率
 
 | 教程 | 作者 | 页数 | 打开 |
@@ -58,8 +71,8 @@
 | 教程 | 作者 | 页数 | 打开 |
 |---|---|---:|---|
 | Build a Large Language Model：From Scratch | Sebastian Raschka | 370 | [HTML](books/Build-a-Large-Language-Model-Tutorial.html) |
-| Deep Learning with PyTorch：Training and Applying Deep Learning and Generative AI | Howard Huang et al. | 546 | [HTML](books/Deep-Learning-with-PyTorch-Tutorial.html) |
 | Deep Learning with Python：Third Edition | François Chollet & Matthew Watson | 650 | [HTML](books/Deep-Learning-with-Python-Tutorial.html) |
+| Deep Learning with PyTorch：Training and Applying Deep Learning and Generative AI | Howard Huang et al. | 546 | [HTML](books/Deep-Learning-with-PyTorch-Tutorial.html) |
 | Domain-Specific Small Language Models：Efficient AI for Local Deployment | Guglielmo Iozzia | 376 | [HTML](books/Domain-Specific-SLMs-Tutorial.html) |
 | Grokking AI Algorithms：How AI Solves Complex Problems | Rishal Hurbans | 594 | [HTML](books/Grokking-AI-Algorithms-Tutorial.html) |
 | Why Machines Learn：The Elegant Maths Behind Modern AI | Anil Ananthaswamy | 433 | [HTML](books/Why-Machines-Learn-Tutorial.html) |
@@ -108,6 +121,7 @@
 ## 使用说明
 
 - 直接双击 HTML 即可；侧栏目录、搜索、暗色模式、字号、证明折叠都在页面内。
+- 顶部有「‹ ⌂ ›」：上一本 / 返回索引 / 下一本；关闭页面再打开会回到上次阅读位置。
 - 每本都是单文件，约 2.3 MB；56 本合计约 127 MB。
 - 原书 PDF 不在此仓库中；这里只保存学习版教程。
 - `books/Index-Books1.html`、`books/Index-Books2.html` 是两批生成时的原始索引。
@@ -276,7 +290,7 @@ python3 tools/qa_tutorial.py books/New-Book-Tutorial.html --render
 }
 ```
 
-现有九类：
+可以直接使用现有九类之一；新分类会自动追加到末尾（要控制位置就加进 `tools/catalog_lib.py` 的 `ORDER`）：
 
 - 数学 · 分析与代数
 - 优化 · 金融 · 概率
@@ -294,7 +308,13 @@ python3 tools/qa_tutorial.py books/New-Book-Tutorial.html --render
 python3 tools/build_index.py
 ```
 
-会重新生成 `README.md` 与 `index.html`。
+会重新生成 `README.md` 与 `index.html`，并给**所有**书刷新「上一本 / 索引 / 下一本」导航与阅读进度脚本。新书顺序由分类 + 标题自动计算，不需要改其它书。
+
+提交前校验：
+
+```bash
+python3 tools/build_index.py --check
+```
 
 #### 7. 提交
 
