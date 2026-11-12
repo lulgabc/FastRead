@@ -342,6 +342,13 @@ def strip_block(text: str, start: str, end: str) -> str:
                   text, flags=re.S)
 
 
+def strip_nav(text: str) -> str:
+    # La nav est insérée inline après <div class="tools"> : on ne mange que
+    # l'indentation qui la suit, jamais le saut de ligne du contenu voisin.
+    return re.sub(r"\n*" + re.escape(NAV_START) + r".*?" + re.escape(NAV_END)
+                  + r"[ \t]*\n?", "", text, flags=re.S)
+
+
 def nav_block(prev_row, next_row) -> str:
     def link(cls, row, label, arrow):
         if not row:
@@ -361,15 +368,16 @@ def nav_block(prev_row, next_row) -> str:
 def enhance(path: Path, prev_row, next_row) -> bool:
     text = path.read_text(encoding="utf-8")
     original = text
-    for start, end in ((STYLE_START, STYLE_END), (NAV_START, NAV_END), (PROG_START, PROG_END)):
+    for start, end in ((STYLE_START, STYLE_END), (PROG_START, PROG_END)):
         text = strip_block(text, start, end)
+    text = strip_nav(text)
 
     if "</head>" not in text or '<div class="tools">' not in text or "</body>" not in text:
         print(f"  ! structure inattendue, ignoré : {path.name}")
         return False
 
     text = text.replace("</head>", "\n" + STYLE + "\n</head>", 1)
-    text = text.replace('<div class="tools">', '<div class="tools">' + nav_block(prev_row, next_row), 1)
+    text = text.replace('<div class="tools">', '<div class="tools">' + nav_block(prev_row, next_row) + '\n', 1)
     text = text.replace("</body>", "\n" + PROGRESS + "\n</body>", 1)
 
     if text == original:
