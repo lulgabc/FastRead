@@ -2,7 +2,7 @@
 
 私人阅读库：把技术书拆成**可读、可查、可自测**的中文单页教程。
 
-- **56 本**书 · **约 29,780 页**原书
+- **59 本**书 · **约 30,637 页**原书
 - 每个教程是一个独立 HTML 文件，MathJax 已内联，**断网可读**
 - 每本含：主线讲解、关键定义/定理/算法、例子、速查表、常见坑
 - 数学/理论书含定理盒与公式；系统/编程书含命令、代码与故障案例
@@ -56,6 +56,7 @@
 
 | 教程 | 作者 | 页数 | 打开 |
 |---|---|---:|---|
+| An Invitation to Mathematical Logic：A first course in model theory, computability and proof theory | David Marker | 359 | [HTML](books/Invitation-to-Mathematical-Logic-Tutorial.html) |
 | Collected Works of A. M. Turing | A. M. Turing | 307 | [HTML](books/Turing-Collected-Works-Tutorial.html) |
 | Computable Structure Theory：Computability, definability and algebraic structures | Rod Downey | 553 | [HTML](books/Computable-Structure-Theory-Tutorial.html) |
 | Decision Procedures：An Algorithmic Point of View | Daniel Kroening & Ofer Strichman | 369 | [HTML](books/Decision-Procedures-Tutorial.html) |
@@ -64,6 +65,8 @@
 | Handbook of Satisfiability：Theory, algorithms and applications of SAT | Armin Biere, Marijn Heule & Hans van Maaren | 1486 | [HTML](books/Handbook-of-Satisfiability-Tutorial.html) |
 | Logic for Programmers：Practical Logic for Working Developers | Hillel Wayne | 150 | [HTML](books/Logic-for-Programmers-Tutorial.html) |
 | Logic in Computer Science：Modelling and Reasoning about Systems | Michael Huth & Mark Ryan | 556 | [HTML](books/Logic-in-Computer-Science-Tutorial.html) |
+| Logic Without Gaps or Gluts：How to Solve the Paradoxes Without Sacrificing Classical Logic | Ben Burgis | 193 | [HTML](books/Logic-Without-Gaps-or-Gluts-Tutorial.html) |
+| Mathematical Logic：A graduate introduction to model theory, proof theory, recursion and set theory | Heinz-Dieter Ebbinghaus, Jörg Flum & Wolfgang Thomas | 305 | [HTML](books/Mathematical-Logic-Ebbinghaus-Tutorial.html) |
 | Principles of Model Checking | Christel Baier & Joost-Pieter Katoen | 994 | [HTML](books/Model-Checking-Tutorial.html) |
 
 ### 机器学习 · 语言模型
@@ -123,7 +126,7 @@
 - 直接双击 HTML 即可；侧栏目录、搜索、暗色模式、字号、证明折叠都在页面内。
 - 顶部有「‹ 书库 ›」：上一本 / 返回索引 / 下一本；关闭页面再打开会回到上次阅读位置。
 - 每节标题右侧的 ☆ 收藏该节（侧栏显示 ★）；选中正文可高亮，点击高亮即可移除。两者都只存在本机浏览器里。
-- 每本都是单文件，约 2.3 MB；56 本合计约 128 MB。
+- 每本都是单文件，约 2.3 MB；59 本合计约 135 MB。
 - 原书 PDF 不在此仓库中；这里只保存学习版教程。
 - `books/Index-Books1.html`、`books/Index-Books2.html` 是两批生成时的原始索引。
 

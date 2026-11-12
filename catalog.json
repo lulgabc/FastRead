@@ -502,5 +502,32 @@
     "pages": 994,
     "category": "逻辑 · 形式方法 · 理论计算机",
     "batch": "Books2"
+  },
+  {
+    "file": "Invitation-to-Mathematical-Logic-Tutorial.html",
+    "title": "An Invitation to Mathematical Logic",
+    "subtitle": "A first course in model theory, computability and proof theory",
+    "author": "David Marker",
+    "pages": 359,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books4"
+  },
+  {
+    "file": "Logic-Without-Gaps-or-Gluts-Tutorial.html",
+    "title": "Logic Without Gaps or Gluts",
+    "subtitle": "How to Solve the Paradoxes Without Sacrificing Classical Logic",
+    "author": "Ben Burgis",
+    "pages": 193,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books4"
+  },
+  {
+    "file": "Mathematical-Logic-Ebbinghaus-Tutorial.html",
+    "title": "Mathematical Logic",
+    "subtitle": "A graduate introduction to model theory, proof theory, recursion and set theory",
+    "author": "Heinz-Dieter Ebbinghaus, Jörg Flum & Wolfgang Thomas",
+    "pages": 305,
+    "category": "逻辑 · 形式方法 · 理论计算机",
+    "batch": "Books4"
   }
 ]
