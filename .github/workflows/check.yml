@@ -1,0 +1,29 @@
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Catalogue vs books/ consistency
+        run: python3 tools/build_index.py --check
+
+      - name: In-book navigation present
+        run: python3 tools/enhance_books.py --check
+
+      - name: Static QA of every tutorial
+        run: python3 tools/qa_all.py
+
+      - name: Generated files are up to date
+        run: |
+          python3 tools/build_index.py
+          git diff --exit-code
