@@ -35,6 +35,10 @@ STOP = {
     "at", "by", "from", "as", "is", "are", "be", "new", "book",
     "edition", "ed", "vol", "volume", "pdf", "epub", "ebook",
 }
+JUNK_TITLE = re.compile(
+    r"(^arxiv:|\bpii\b|^doi:|arxiv\.org|\[math\.|^untitled|^microsoft word|"
+    r"^document\b|^preprint\b)", re.I)
+
 NOISE_PARENS = re.compile(
     r"\((?:z-?library[^)]*|1lib[^)]*|z-lib[^)]*|libgen[^)]*|.*?\bedition\b.*?)\)",
     re.I,
@@ -67,7 +71,7 @@ EDITION = re.compile(r"\b(?:\d+(?:st|nd|rd|th)\s+Edition|Second Edition|Third Ed
 
 def parse_filename(path: Path) -> dict:
     """Split a typical Z-Library filename into (title, author)."""
-    stem = NOISE_PARENS.sub(" ", path.stem)
+    stem = NOISE_PARENS.sub(" ", path.stem).replace("+", " ")
     author = ""
     # Un groupe entre parenthèses qui ressemble à un nom = auteur/éditeur.
     for group in re.findall(r"\(([^()]*)\)", stem):
@@ -76,7 +80,8 @@ def parse_filename(path: Path) -> dict:
             author = author or re.sub(r"\s+", " ", group).strip()
     title = re.sub(r"\([^()]*\)", " ", stem)
     title = EDITION.sub(" ", title)
-    title = re.sub(r"\b(19|20)\d{2}\b", " ", title)
+    title = re.sub(r"(?<!\d)(19|20)\d{2}(?!\d)", " ", title)
+    title = title.replace("_", " ")
     title = re.sub(r"\s+", " ", title).strip(" -_,")
 
     # Coupe un sous-titre commercial, mais seulement s'il reste un vrai titre.
@@ -89,7 +94,7 @@ def parse_filename(path: Path) -> dict:
             if len(head.split()) >= 2:
                 title = head
                 break
-    return {"title": title, "author": author, "arxiv": parsed.get("arxiv", "")}
+    return {"title": title, "author": author}
 
 
 def file_meta(path: Path) -> dict:
@@ -104,7 +109,9 @@ def file_meta(path: Path) -> dict:
                 meta = doc.metadata or {}
                 meta_title = re.sub(r"\s+", " ", (meta.get("title") or "")).strip()
                 # Les métadonnées sont souvent vides ou polluées (nom de fichier).
-                if meta_title and 3 <= len(meta_title) <= 120 and "z-lib" not in meta_title.lower():
+                if (meta_title and 3 <= len(meta_title) <= 120
+                        and "z-lib" not in meta_title.lower()
+                        and not JUNK_TITLE.search(meta_title)):
                     title = meta_title
                 author = (meta.get("author") or "").strip() or author
                 first = doc[0].get_text("text") if len(doc) else ""
@@ -113,7 +120,7 @@ def file_meta(path: Path) -> dict:
                     parsed["arxiv"] = m.group(1)
         except Exception:
             pass
-    return {"title": title, "author": author}
+    return {"title": title, "author": author, "arxiv": parsed.get("arxiv", "")}
 
 
 def sha256(path: Path) -> str:

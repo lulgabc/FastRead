@@ -99,6 +99,131 @@ def arxiv_meta(arxiv: str) -> dict:
     }
 
 
+JUNK_TITLE = re.compile(
+    r"(^arxiv:|\bpii\b|^doi:|arxiv\.org|\[math\.|^untitled|^microsoft word|"
+    r"^document\b|^preprint\b)", re.I)
+
+
+def title_ok(t: str) -> bool:
+    t = normalise_space(t)
+    return bool(t) and 4 <= len(t) <= 250 and not JUNK_TITLE.search(t)
+
+
+def infer_year(meta: dict, arxiv: str, filename: str, full: str):
+    if arxiv:
+        yy = int(arxiv[:2])
+        return 2000 + yy if yy < 90 else 1900 + yy
+    m = re.search(r"(?<!\d)(19[5-9]\d|20[0-4]\d)(?!\d)", filename)
+    if m:
+        return int(m.group(1))
+    m = re.search(r"D:(\d{4})", meta.get("creationDate", "") or "")
+    if m and 1900 <= int(m.group(1)) <= 2100:
+        return int(m.group(1))
+    head = full[:5000]
+    m = re.search(r"(?:©|\(c\)|Copyright)\s*((?:19|20)\d{2})", head, re.I)
+    if m:
+        return int(m.group(1))
+    return None
+
+
+def infer_authors(doc, title: str) -> list:
+    """Noms sous le titre sur la première page (metadata souvent vide)."""
+    try:
+        blocks = doc[0].get_text("dict").get("blocks", [])
+    except Exception:
+        return []
+    lines = []
+    for block in blocks:
+        for line in block.get("lines", []):
+            spans = line.get("spans", [])
+            if not spans:
+                continue
+            text = normalise_space("".join(s.get("text", "") for s in spans))
+            size = max(float(s.get("size", 0)) for s in spans)
+            if text:
+                lines.append((size, text, line.get("bbox", (0, 0, 0, 0))))
+    if not lines:
+        return []
+    title_size = max(size for size, _, _ in lines)
+    target = normalise_space(title).lower()
+    start = 0
+    for i, (_s, t, _b) in enumerate(lines):
+        if target and (target in t.lower() or t.lower() in target) and len(t) > 8:
+            start = i + 1
+            break
+    out = []
+    for size, text, _b in lines[start:start + 8]:
+        low = text.lower()
+        if any(k in low for k in ("abstract", "keywords", "key words", "@", "http", "doi")):
+            break
+        if any(k in low for k in ("university", "department", "institute", "laboratory",
+                                  "school of", "college", "research center")):
+            continue
+        if size >= title_size * 0.45 and re.search(r"[A-Z][a-z]+", text):
+            out.append(text)
+        if len(out) >= 3:
+            break
+    if not out:
+        return []
+    joined = " ".join(out)
+    parts = re.split(r",| and |·|;", joined)
+    def clean_name(p: str) -> str:
+        p = normalise_space(p).replace("†", "").replace("‡", "")
+        p = re.sub(r"(?<=[A-Z])[a-z]$", "", p)          # « BAINBRIDGEt » → BAINBRIDGE
+        p = re.sub(r"\s*\d+$", "", p)                  # affiliations collées
+        return p.strip(" ,;")
+
+    names = [clean_name(p) for p in parts
+             if re.search(r"[A-Z][a-z]+ [A-Z]", p) and len(p) < 60]
+    return names[:12] if names else [joined[:120]]
+
+
+def extract_abstract(full: str) -> str:
+    head = "\n".join(full.split("===== PAGE ")[1:3])
+    head = re.sub(r"\bA\s+B\s+S\s+T\s+R\s+A\s+C\s+T\b", "ABSTRACT", head, flags=re.I)
+    m = re.search(r"\bABSTRACT\b\s*[—:-]?", head, re.I)
+    if not m:
+        # Rapports et preprints : « Executive Summary » joue le rôle d'abstract.
+        matches = list(re.finditer(
+            r"(?m)^\s*(?:\d+\.?\s*)?EXECUTIVE\s+SUMMARY\s*$", full, re.I))
+        for m in reversed(matches):
+            body = normalise_space(full[m.end():m.end() + 6000])
+            if ". . ." not in body[:200]:       # ignore la table des matières
+                return body[:1800]
+        return ""
+    body = head[m.end():]
+    stop = re.search(r"\n\s*(?:1[.\s]+)?(?:Introduction|Keywords?|Key words|©|1\s+[A-Z])",
+                     body, re.I)
+    if stop:
+        body = body[:stop.start()]
+    body = re.split(r"===== PAGE|\s*[∗†‡]", body)[0]
+    body = normalise_space(body).lstrip(" .,;:—-–")
+    return body[:5000]
+
+
+def count_refs(refs: str) -> int:
+    if not refs.strip():
+        return 0
+    # Étiquettes [1] ou [AW09] : le cas le plus fiable.
+    tags = re.findall(r"\[[A-Za-z0-9]{1,12}\]", refs)
+    if len(tags) >= 4:
+        return len(tags)
+    # Listes numérotées, même si les entrées sont collées sur une ligne.
+    nums = re.findall(r"(?m)^\s*\d{1,3}\.\s+[A-Z]", refs)
+    if len(nums) >= 4:
+        return len(nums)
+    # Entrées auteur-année, une par ligne (« Aerts, D., » ou « L. Albantakis »).
+    entries = re.findall(
+        r"(?m)^(?:(?:[A-Z]\.\s*){1,3}[A-Z][a-z]+|[A-Z][a-z]+,\s+[A-Z]\.)", refs)
+    if len(entries) >= 4:
+        return len(entries)
+    # Listes auteur-année : une année par entrée.
+    years = re.findall(r"\b(?:19|20)\d{2}[a-z]?\b", refs)
+    if len(years) >= 4:
+        return len(years)
+    return len([p for p in re.split(r"\n\s*\n", refs) if len(p.strip()) > 40])
+
+
 def infer_title_from_pdf(doc) -> tuple:
     """Largest-font line group on page 1, plus nearby author line."""
     try:
@@ -142,6 +267,10 @@ def detect_headings(lines):
         if not line or len(line) > 80:
             continue
         if line[0].islower() or BAD_CHARS & set(line):
+            continue
+        low = line.lower()
+        if (line.endswith("-") or low.startswith(("proceedings", "copyright", "preprint",
+                                                   "arxiv", "evaluation of man-machine"))):
             continue
         if line.endswith((".", ":", ";", ",")):
             continue
@@ -212,14 +341,23 @@ def main() -> None:
     doc = fitz.open(pdf_path)
     meta["pages"] = len(doc)
     md = doc.metadata or {}
+    first_pages = "\n".join(doc[i].get_text("text") for i in range(min(2, len(doc))))
+    m = re.search(r"arXiv:\s*(\d{4}\.\d{4,5})", first_pages)
+    if m and not meta.get("arxiv_id"):
+        meta["arxiv_id"] = m.group(1)
+
     title = normalise_space(md.get("title", ""))
+    guessed, guessed_authors = infer_title_from_pdf(doc)
+    if not title_ok(title):
+        title = guessed if title_ok(guessed) else pdf_path.stem
     authors = [a.strip() for a in re.split(r";|,| and ", md.get("author", "")) if a.strip()]
-    if not title or len(title) < 4:
-        guessed, guessed_authors = infer_title_from_pdf(doc)
-        title = title or guessed
-        authors = authors or guessed_authors
-    meta.setdefault("title", title or pdf_path.stem)
-    meta.setdefault("authors", authors)
+    if not authors:
+        authors = infer_authors(doc, title) or guessed_authors
+    title = re.sub(r"\s*[*†‡]+\s*$", "", title)
+    meta["title"] = title
+    meta["authors"] = [re.sub(r"(?<=[A-Z])[a-z]$", "", a).replace("†", "").replace("‡", "").strip()
+                       for a in authors]
+    meta["year"] = infer_year(md, meta.get("arxiv_id", ""), pdf_path.stem, first_pages)
 
     chunks = []
     for i, page in enumerate(doc):
@@ -228,8 +366,16 @@ def main() -> None:
     (out_dir / "full.txt").write_text(full, encoding="utf-8")
 
     # 1) Outline PDF quand il est utilisable (fréquent sur arXiv).
+    def outline_ok(t: str) -> bool:
+        t = normalise_space(t)
+        if not t or len(t) > 120 or t.endswith("-"):
+            return False
+        return not re.match(r"(?i)^(proceedings|copyright|preprint|arxiv|"
+                            r"evaluation of man-machine)\b", t)
+
     outline = [[l, normalise_space(t), int(p)]
-               for l, t, p in (doc.get_toc(simple=True) or []) if t and int(p) >= 1]
+               for l, t, p in (doc.get_toc(simple=True) or [])
+               if t and int(p) >= 1 and outline_ok(t)]
     if len(outline) >= 3:
         toc = outline
         for n, (_level, title, page) in enumerate(toc):
@@ -267,19 +413,14 @@ def main() -> None:
     flat = full.replace("===== PAGE", "\n===== PAGE")
     abstract = normalise_space(meta.get("abstract", ""))
     if not abstract:
-        m = re.search(r"\bAbstract\b(.*?)(?=\n\s*(?:\d+[.\s]+)?(?:Introduction|1\s+Introduction)\b)",
-                      flat, re.S | re.I)
-        abstract = normalise_space(m.group(1)) if m else ""
-        # Coupe les notes de bas de page et les marqueurs de page.
-        abstract = re.split(r"\s*[∗†‡]|===== PAGE", abstract)[0].strip()
-        abstract = re.sub(r"\s*\d+\s*$", "", abstract)
+        abstract = extract_abstract(full)
     meta["abstract"] = abstract
     (out_dir / "abstract.txt").write_text(abstract, encoding="utf-8")
 
     m = re.search(r"\bReferences\b(.*)$", flat, re.S | re.I)
     refs = m.group(1).strip() if m else ""
     (out_dir / "refs.txt").write_text(refs, encoding="utf-8")
-    meta["references"] = len(re.findall(r"^\s*(?:\[\d+\]|\d+\.)\s+\S", refs, re.M))
+    meta["references"] = count_refs(refs)
 
     (out_dir / "meta.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
