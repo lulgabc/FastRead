@@ -93,5 +93,24 @@
     "pages": 5,
     "sections": 4,
     "added": "2026-11-13"
+  },
+  {
+    "file": "From-Cacophony-to-Hierarchy.html",
+    "title": "From Cacophony to Hierarchy: A Principled Framework for Assessing AI Consciousness",
+    "authors": "Shamil Chandaria, Arvo Muñoz Morán, Fernando Rosas, Anil Seth, Henry Shevlin, Marcus Hutter et al.",
+    "venue": "arXiv preprint",
+    "year": 2026,
+    "arxiv": "2609.35618",
+    "doi": "",
+    "tags": [
+      "AI consciousness",
+      "ethics",
+      "report"
+    ],
+    "summary": "151 页报告：梳理意识理论的“喧哗”，提出评估 AI 意识归因的分层框架与判定指标。",
+    "source_url": "https://arxiv.org/abs/2609.35618",
+    "pages": 151,
+    "sections": 101,
+    "added": "2026-11-13"
   }
 ]
