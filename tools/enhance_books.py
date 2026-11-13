@@ -381,6 +381,9 @@ def enhance(path: Path, nav_html: str) -> bool:
 
     text = text.replace("</head>", "\n" + STYLE + "\n</head>", 1)
     text = text.replace('<div class="tools">', '<div class="tools">' + nav_html + '\n', 1)
+    # Un fichier fraîchement construit peut avoir une ligne vide après la nav ;
+    # on la normalise tout de suite pour rester idempotent en une passe.
+    text = re.sub(re.escape(NAV_END) + r"\n{2,}", NAV_END + "\n", text)
     text = text.replace("</body>", "\n" + PROGRESS + "\n</body>", 1)
 
     if text == original:

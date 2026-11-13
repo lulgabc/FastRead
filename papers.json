@@ -112,5 +112,25 @@
     "pages": 151,
     "sections": 101,
     "added": "2026-11-13"
+  },
+  {
+    "file": "InfraRSI.html",
+    "title": "InfraRSI: Harnessing Recursive Self-Improvement for Training Infrastructure",
+    "authors": "InfraRSI Team, Yuchuan Tian, Haocheng Mei, Ye Yuan, et al.",
+    "venue": "arXiv preprint",
+    "year": 2026,
+    "arxiv": "2611.11558",
+    "doi": "",
+    "tags": [
+      "LLM training",
+      "systems",
+      "auto-tuning",
+      "RSI"
+    ],
+    "summary": "把开放式指令变成可验证的训练优化：五阶段 agent 工作流、固定任务契约与五层验证器，防止 OOM、编译冲突与数值漂移。",
+    "source_url": "https://arxiv.org/abs/2611.11558",
+    "pages": 22,
+    "sections": 24,
+    "added": "2026-11-13"
   }
 ]
