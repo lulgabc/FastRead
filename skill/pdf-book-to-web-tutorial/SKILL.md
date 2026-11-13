@@ -10,6 +10,7 @@ description: Build a single self-contained interactive HTML tutorial from a long
 本 skill 附带一套已验证的流水线与可直接复用的 UI：
 
 - `scripts/extract_book.py`：PDF 或 EPUB → 带页码/文档标记的全文 + 按章拆分 + 结果清单
+- `scripts/extract_paper.py`：论文 PDF 或 arXiv/PDF URL → 元数据 + 摘要 + 分节文本（outline 优先，缺失时按标题启发式）
 - `scripts/build_tutorial.py`：`shell + sections` → 单文件（内联 CSS/JS/MathJax）
 - `scripts/check_coverage.py`：最终覆盖率检测（TOC、章节、术语、长度比），可生成缺口报告
 - `scripts/escape_math.py`：修复 `$...$` 里的 `<`/`>`/`&`（最容易毁掉整页的坑）
@@ -17,6 +18,26 @@ description: Build a single self-contained interactive HTML tutorial from a long
 - `references/pipeline.md`：分阶段细节、子代理提示词、内容配比
 - `references/qa-checklist.md`：浏览器自动检查 + 人工核对清单
 - `references/design-system.md`：版式、定理盒类型、交互约定
+
+---
+
+## 论文模式（paper）
+
+论文与书的流水线共用 UI 和构建器，但提取与结构不同：
+
+```bash
+python3 <skill>/scripts/extract_paper.py https://arxiv.org/abs/1706.03762 work/papers/attention
+# 或
+python3 <skill>/scripts/extract_paper.py paper.pdf work/papers/attention
+```
+
+- 自动读取 arXiv API（标题、作者、摘要、年份、DOI）或 PDF 元数据/首页大字号标题
+- 输出 `meta.json`、`full.txt`、`toc.json`、`abstract.txt`、`refs.txt`、`sections/`
+- 覆盖检测同样用 `check_coverage.py`；它会自动回退到 `sections/` 目录
+
+论文教程建议 10–13 个 section：问题 → 方法（公式与符号）→ 架构 → 训练 → 结果与消融 → 分析 → 局限 → 复现 → 术语/自测。**不要逐字翻译摘要**，要解释设计动机与数字。
+
+论文入库见 `docs/ADDING-PAPERS.md`（`papers.json` + `papers/index.html`）。
 
 ---
 

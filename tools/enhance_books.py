@@ -18,6 +18,7 @@ Usage:
 """
 import argparse
 import html
+import json
 import re
 import sys
 from pathlib import Path
@@ -101,7 +102,8 @@ PROGRESS = PROG_START + """
     var pct = max > 0 ? Math.min(1, Math.max(0, a.y / max)) : 0;
     try {
       localStorage.setItem(POS + file, JSON.stringify({ id: a.id, frac: frac, pct: pct, ts: Date.now() }));
-      localStorage.setItem(LAST, JSON.stringify({ file: file, title: document.title, pct: pct, ts: Date.now() }));
+      var dir = location.pathname.indexOf('/papers/') >= 0 ? 'papers/' : 'books/';
+      localStorage.setItem(LAST, JSON.stringify({ file: file, path: dir + file + '.html', title: document.title, pct: pct, ts: Date.now() }));
     } catch (e) { /* quota / mode privé */ }
   }
 
@@ -349,7 +351,7 @@ def strip_nav(text: str) -> str:
                   + r"[ \t]*\n?", "", text, flags=re.S)
 
 
-def nav_block(prev_row, next_row) -> str:
+def nav_block(prev_row, next_row, home_href, prev_label, next_label) -> str:
     def link(cls, row, label, arrow):
         if not row:
             return f'<span class="tool-btn {cls} is-off" aria-disabled="true">{arrow}</span>'
@@ -359,13 +361,14 @@ def nav_block(prev_row, next_row) -> str:
                 f'aria-label="{label}：{html.escape(name, quote=True)}">{arrow}</a>')
 
     return (NAV_START + '\n<nav class="fr-nav" aria-label="书库导航">'
-            + link("fr-prev", prev_row, "上一本", "‹")
-            + '<a class="tool-btn fr-home" href="../index.html" title="返回书库索引">书库</a>'
-            + link("fr-next", next_row, "下一本", "›")
+            + link("fr-prev", prev_row, prev_label, "‹")
+            + f'<a class="tool-btn fr-home" href="{html.escape(home_href, quote=True)}" '
+              f'title="返回索引">书库</a>'
+            + link("fr-next", next_row, next_label, "›")
             + '</nav>\n' + NAV_END)
 
 
-def enhance(path: Path, prev_row, next_row) -> bool:
+def enhance(path: Path, nav_html: str) -> bool:
     text = path.read_text(encoding="utf-8")
     original = text
     for start, end in ((STYLE_START, STYLE_END), (PROG_START, PROG_END)):
@@ -377,7 +380,7 @@ def enhance(path: Path, prev_row, next_row) -> bool:
         return False
 
     text = text.replace("</head>", "\n" + STYLE + "\n</head>", 1)
-    text = text.replace('<div class="tools">', '<div class="tools">' + nav_block(prev_row, next_row) + '\n', 1)
+    text = text.replace('<div class="tools">', '<div class="tools">' + nav_html + '\n', 1)
     text = text.replace("</body>", "\n" + PROGRESS + "\n</body>", 1)
 
     if text == original:
@@ -386,35 +389,54 @@ def enhance(path: Path, prev_row, next_row) -> bool:
     return True
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--check", action="store_true", help="ne rien écrire, signaler les fichiers sans nav")
-    args = ap.parse_args()
-
-    rows = [r for r in C.ordered_rows(C.load_rows()) if (C.ROOT / "books" / r["file"]).exists()]
-    changed = 0
-    missing = []
+def enhance_set(directory: str, rows, home_href: str, labels, check: bool):
+    changed, missing = 0, []
     for i, row in enumerate(rows):
-        path = C.ROOT / "books" / row["file"]
-        if args.check:
+        path = C.ROOT / directory / row["file"]
+        if not path.exists():
+            continue
+        if check:
             if NAV_START not in path.read_text(encoding="utf-8"):
                 missing.append(row["file"])
             continue
         prev_row = rows[i - 1] if i > 0 else None
         next_row = rows[i + 1] if i + 1 < len(rows) else None
-        if enhance(path, prev_row, next_row):
+        nav = nav_block(prev_row, next_row, home_href, labels[0], labels[1])
+        if enhance(path, nav):
             changed += 1
+    return changed, missing
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--check", action="store_true", help="ne rien écrire, signaler les fichiers sans nav")
+    args = ap.parse_args()
+
+    books = [r for r in C.ordered_rows(C.load_rows())
+             if (C.ROOT / "books" / r["file"]).exists()]
+    papers = []
+    papers_json = C.ROOT / "papers.json"
+    if papers_json.exists():
+        papers = [r for r in json.load(open(papers_json, encoding="utf-8"))
+                  if (C.ROOT / "papers" / r["file"]).exists()]
+        papers.sort(key=lambda r: (-int(r.get("year") or 0), r["title"].lower()))
 
     if args.check:
+        _, miss_books = enhance_set("books", books, "../index.html", ("上一本", "下一本"), True)
+        _, miss_papers = enhance_set("papers", papers, "index.html", ("上一篇", "下一篇"), True)
+        missing = miss_books + miss_papers
         if missing:
-            print(f"{len(missing)} livre(s) sans navigation :")
+            print(f"{len(missing)} fichier(s) sans navigation :")
             for name in missing[:10]:
                 print("  -", name)
             sys.exit(1)
-        print(f"navigation OK sur {len(rows)} livres")
+        print(f"navigation OK sur {len(books)} livres et {len(papers)} articles")
         return
 
-    print(f"navigation + reprise de lecture : {changed} fichier(s) mis à jour sur {len(rows)}")
+    changed_books, _ = enhance_set("books", books, "../index.html", ("上一本", "下一本"), False)
+    changed_papers, _ = enhance_set("papers", papers, "index.html", ("上一篇", "下一篇"), False)
+    print(f"navigation + reprise de lecture : {changed_books} livre(s), "
+          f"{changed_papers} article(s) mis à jour")
 
 
 if __name__ == "__main__":

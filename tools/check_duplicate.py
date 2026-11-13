@@ -28,6 +28,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "catalog.json"
+PAPERS = ROOT / "papers.json"
 
 STOP = {
     "a", "an", "the", "of", "and", "or", "for", "to", "in", "on", "with",
@@ -88,7 +89,7 @@ def parse_filename(path: Path) -> dict:
             if len(head.split()) >= 2:
                 title = head
                 break
-    return {"title": title, "author": author}
+    return {"title": title, "author": author, "arxiv": parsed.get("arxiv", "")}
 
 
 def file_meta(path: Path) -> dict:
@@ -106,6 +107,10 @@ def file_meta(path: Path) -> dict:
                 if meta_title and 3 <= len(meta_title) <= 120 and "z-lib" not in meta_title.lower():
                     title = meta_title
                 author = (meta.get("author") or "").strip() or author
+                first = doc[0].get_text("text") if len(doc) else ""
+                m = re.search(r"arXiv:\s*(\d{4}\.\d{4,5})", first or "")
+                if m:
+                    parsed["arxiv"] = m.group(1)
         except Exception:
             pass
     return {"title": title, "author": author}
@@ -162,6 +167,8 @@ def check_one(cand: dict, rows: list, threshold: float) -> dict:
     scored = []
     for row in rows:
         total, title = score(cand, row)
+        if cand.get("arxiv") and cand["arxiv"] == row.get("arxiv"):
+            total, title = 1.0, 1.0
         scored.append((total, title, row))
     scored.sort(key=lambda x: -x[0])
     best = scored[:3]
@@ -181,11 +188,14 @@ def report(res: dict) -> None:
     print(f"\n候选：{c['title']}" + (f" — {c['author']}" if c.get("author") else ""))
     if c.get("sha256"):
         print(f"sha256：{c['sha256'][:16]}…")
+    if c.get("arxiv"):
+        print(f"arXiv：{c['arxiv']}")
     print(f"判定：{res['verdict']}（最高分 {res['top']:.2f}）")
     if res["best"]:
         print("最接近的馆藏：")
         for total, title, row in res["best"]:
-            print(f"  {total:.2f}  {row['title']} — {row.get('author','')}  [{row['file']}]")
+            kind = "论文" if row.get("_kind") == "paper" else "书"
+            print(f"  {total:.2f}  [{kind}] {row['title']} — {row.get('author','')}  [{row['file']}]")
 
 
 def main() -> None:
@@ -193,17 +203,23 @@ def main() -> None:
     ap.add_argument("files", nargs="*", help="PDF/EPUB à vérifier")
     ap.add_argument("--title", help="titre si aucun fichier")
     ap.add_argument("--author", default="", help="auteur avec --title")
+    ap.add_argument("--arxiv", default="", help="identifiant arXiv (ex. 1706.03762)")
     ap.add_argument("--threshold", type=float, default=0.72,
                     help="seuil « possible doublon » (défaut 0.72)")
     ap.add_argument("--json", action="store_true", help="sortie JSON")
     args = ap.parse_args()
 
-    if not args.files and not args.title:
-        ap.error("fournir un fichier ou --title")
+    if not args.files and not args.title and not args.arxiv:
+        ap.error("fournir un fichier, --title ou --arxiv")
 
     if not CATALOG.exists():
         sys.exit("catalog.json introuvable")
-    rows = json.load(open(CATALOG, encoding="utf-8"))
+    rows = []
+    for r in json.load(open(CATALOG, encoding="utf-8")):
+        rows.append({**r, "_kind": "book"})
+    if PAPERS.exists():
+        for r in json.load(open(PAPERS, encoding="utf-8")):
+            rows.append({**r, "author": r.get("authors", ""), "_kind": "paper"})
 
     candidates = []
     for raw in args.files:
@@ -217,6 +233,8 @@ def main() -> None:
         candidates.append(meta)
     if args.title:
         candidates.append({"title": args.title, "author": args.author})
+    if args.arxiv:
+        candidates.append({"title": "", "author": "", "arxiv": args.arxiv.strip()})
 
     results = [check_one(c, rows, args.threshold) for c in candidates]
     if args.json:
@@ -224,7 +242,7 @@ def main() -> None:
     else:
         for res in results:
             report(res)
-        print(f"\n{len(rows)} livres dans la bibliothèque ; "
+        print(f"\n{len(rows)} entrées (livres + articles) ; "
               f"seuil « possible » = {args.threshold:.2f}")
 
     sys.exit(1 if any(r["code"] == 1 for r in results) else 0)

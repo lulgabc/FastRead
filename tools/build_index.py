@@ -9,6 +9,7 @@ Options:
     --skip-books  do not touch the tutorial HTML files
 """
 import argparse
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -18,6 +19,9 @@ import catalog_lib  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 ROWS = catalog_lib.load_rows()
+PAPERS = []
+if (ROOT / "papers.json").exists():
+    PAPERS = json.load(open(ROOT / "papers.json", encoding="utf-8"))
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--check", action="store_true", help="valider le catalogue et sortir")
@@ -55,6 +59,7 @@ lines = [
     "- 新转换默认**完整模式**：章节/小节/例子/代码全保留，不设字数上限，并用 `check_coverage.py` 验收",
     "",
     "打开 [`index.html`](index.html) 浏览卡片式索引，或直接打开 `books/` 下的文件。",
+    *([f"- 论文解读单独成区：[papers/index.html](papers/index.html)（{len(PAPERS)} 篇）"] if PAPERS else []),
     "",
     "## 分类索引",
     "",
@@ -321,6 +326,9 @@ h1{font-size:clamp(36px,6vw,64px);line-height:1.05;margin:14px 0 8px;letter-spac
 .stats{display:flex;gap:26px;flex-wrap:wrap;margin:20px 0 26px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:ui-sans-serif,system-ui}
 .stats b{display:block;font-size:20px}.stats span{font-size:10.5px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
 .tools{display:flex;gap:10px;align-items:center;margin:0 0 30px;flex-wrap:wrap}
+.goto{font-family:ui-sans-serif,system-ui;font-size:12.5px;color:var(--teal);text-decoration:none;
+border:1px solid var(--line);border-radius:9px;padding:9px 13px;background:var(--paper2)}
+.goto:hover{border-color:var(--teal);background:var(--paper3)}
 input{width:min(420px,100%);height:42px;border:1px solid var(--line);border-radius:10px;background:var(--paper2);padding:0 14px;font-family:ui-sans-serif,system-ui;font-size:14px;color:var(--ink);outline:none}
 input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(17,100,92,.12)}
 .hint{font-family:ui-sans-serif,system-ui;font-size:12px;color:var(--muted)}
@@ -360,6 +368,8 @@ for cat in groups:
         f'<div class="grid">{"".join(cards)}</div></section>'
     )
 
+paper_link = (f'<a class="goto" href="papers/index.html">论文解读 · {len(PAPERS)} 篇 →</a>'
+              if PAPERS else "")
 html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FastRead · 私人阅读库</title><style>{CSS}</style></head><body><div class="wrap">
@@ -372,11 +382,11 @@ html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
   <div><b>{category_count}</b><span>主题分类</span></div>
   <div><b>0</b><span>需要联网</span></div>
 </div>
-<div class="tools"><input id="q" type="search" placeholder="搜索书名、作者、主题…" aria-label="搜索"><span class="hint" id="hint">输入关键词过滤</span></div>
+<div class="tools"><input id="q" type="search" placeholder="搜索书名、作者、主题…" aria-label="搜索"><span class="hint" id="hint">输入关键词过滤</span>{paper_link}</div>
 <div id="continue" class="continue" hidden></div>
 <div id="empty" class="empty">没有匹配的教程。</div>
 {"".join(parts)}
-<footer><span>FastRead · 私人阅读库</span><span><a href="README.md">README</a> · <a href="docs/ADDING-BOOKS.md">新增书籍</a> · <a href="skill/pdf-book-to-web-tutorial/SKILL.md">Skill</a></span></footer>
+<footer><span>FastRead · 私人阅读库</span><span><a href="README.md">README</a> · <a href="docs/ADDING-BOOKS.md">新增书籍</a> · <a href="docs/ADDING-PAPERS.md">新增论文</a> · <a href="papers/index.html">论文解读</a> · <a href="skill/pdf-book-to-web-tutorial/SKILL.md">Skill</a></span></footer>
 </div>
 <script>
 const q=document.getElementById('q'), hint=document.getElementById('hint'), empty=document.getElementById('empty');
@@ -403,7 +413,7 @@ CONTINUE_JS = """
     if(!last||!last.file) return;
     var box=document.getElementById('continue');
     var link=document.createElement('a');
-    link.href='books/'+last.file+'.html';
+    link.href=last.path||('books/'+last.file+'.html');
     var b=document.createElement('b');
     b.textContent=String(last.title||last.file).replace(/ · 交互教程$/,'');
     var meta=document.createElement('span');

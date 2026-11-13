@@ -107,7 +107,10 @@ def title_coverage(title: str, tut_norm: str, tut_words: set, tut_han: set) -> f
 
 
 def read_chapters(work: Path):
+    # Les livres utilisent chapters/, les articles sections/.
     d = work / "chapters"
+    if not d.exists():
+        d = work / "sections"
     if not d.exists():
         return []
     files = sorted(d.glob("*.txt"))

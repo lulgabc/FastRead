@@ -21,8 +21,9 @@ def main() -> None:
     args = ap.parse_args()
 
     files = sorted((ROOT / "books").glob("*-Tutorial.html"))
+    files += sorted(p for p in (ROOT / "papers").glob("*.html") if p.name != "index.html")
     if not files:
-        sys.exit("no tutorials in books/")
+        sys.exit("no tutorials in books/ or papers/")
 
     failed = []
     for p in files:

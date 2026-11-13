@@ -1,0 +1,21 @@
+[
+  {
+    "file": "Attention-Is-All-You-Need.html",
+    "title": "Attention Is All You Need",
+    "authors": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin",
+    "venue": "NeurIPS 2017",
+    "year": 2017,
+    "arxiv": "1706.03762",
+    "doi": "",
+    "tags": [
+      "transformer",
+      "NLP",
+      "attention"
+    ],
+    "summary": "用纯注意力替代循环与卷积，提出 Transformer：8 头、6 层、d_model=512，WMT EN-DE 28.4 BLEU、EN-FR 41.8 BLEU。",
+    "source_url": "https://arxiv.org/abs/1706.03762",
+    "pages": 15,
+    "sections": 22,
+    "added": "2026-11-13"
+  }
+]

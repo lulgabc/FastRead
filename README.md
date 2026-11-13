@@ -9,6 +9,7 @@
 - 新转换默认**完整模式**：章节/小节/例子/代码全保留，不设字数上限，并用 `check_coverage.py` 验收
 
 打开 [`index.html`](index.html) 浏览卡片式索引，或直接打开 `books/` 下的文件。
+- 论文解读单独成区：[papers/index.html](papers/index.html)（1 篇）
 
 ## 分类索引
 

@@ -497,7 +497,7 @@ html[data-theme="night"] .fr-hl{background:rgba(214,171,84,.26)}
   <div class="brand-mini">Fundamentals of Stochastic Filtering</div>
   <div class="crumb" id="crumb">导读</div>
   <div class="tools"><!-- fastread:nav:start -->
-<nav class="fr-nav" aria-label="书库导航"><a class="tool-btn fr-prev" href="Financial-Mathematics-Tutorial.html" title="上一本：Financial Mathematics" aria-label="上一本：Financial Mathematics">‹</a><a class="tool-btn fr-home" href="../index.html" title="返回书库索引">书库</a><a class="tool-btn fr-next" href="Integer-Programming-Tutorial.html" title="下一本：Integer Programming" aria-label="下一本：Integer Programming">›</a></nav>
+<nav class="fr-nav" aria-label="书库导航"><a class="tool-btn fr-prev" href="Financial-Mathematics-Tutorial.html" title="上一本：Financial Mathematics" aria-label="上一本：Financial Mathematics">‹</a><a class="tool-btn fr-home" href="../index.html" title="返回索引">书库</a><a class="tool-btn fr-next" href="Integer-Programming-Tutorial.html" title="下一本：Integer Programming" aria-label="下一本：Integer Programming">›</a></nav>
 <!-- fastread:nav:end -->
 <div class="search-wrap">
       <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
@@ -2942,7 +2942,8 @@ window.MathJax = {
     var pct = max > 0 ? Math.min(1, Math.max(0, a.y / max)) : 0;
     try {
       localStorage.setItem(POS + file, JSON.stringify({ id: a.id, frac: frac, pct: pct, ts: Date.now() }));
-      localStorage.setItem(LAST, JSON.stringify({ file: file, title: document.title, pct: pct, ts: Date.now() }));
+      var dir = location.pathname.indexOf('/papers/') >= 0 ? 'papers/' : 'books/';
+      localStorage.setItem(LAST, JSON.stringify({ file: file, path: dir + file + '.html', title: document.title, pct: pct, ts: Date.now() }));
     } catch (e) { /* quota / mode privé */ }
   }
 

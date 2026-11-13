@@ -17,6 +17,9 @@ jobs:
       - name: Catalogue vs books/ consistency
         run: python3 tools/build_index.py --check
 
+      - name: Papers catalogue consistency
+        run: python3 tools/build_papers_index.py --check
+
       - name: In-book navigation present
         run: python3 tools/enhance_books.py --check
 
@@ -26,4 +29,5 @@ jobs:
       - name: Generated files are up to date
         run: |
           python3 tools/build_index.py
+          python3 tools/build_papers_index.py
           git diff --exit-code
