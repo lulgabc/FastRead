@@ -17,5 +17,81 @@
     "pages": 15,
     "sections": 22,
     "added": "2026-11-13"
+  },
+  {
+    "file": "The-Entangled-Loop.html",
+    "title": "The entangled loop: Emotion, interference and hierarchy in the architecture of consciousness",
+    "authors": "Morten L. Kringelbach",
+    "venue": "Neuroscience & Biobehavioral Reviews",
+    "year": 2026,
+    "arxiv": "",
+    "doi": "10.1016/j.neubiorev.2026.107063",
+    "tags": [
+      "consciousness",
+      "emotion",
+      "neuroscience"
+    ],
+    "summary": "提出情绪—干扰—层级的“纠缠三叶结”模型，用热力学与干涉解释意识的统一性与主观性。",
+    "source_url": "https://doi.org/10.1016/j.neubiorev.2026.107063",
+    "pages": 14,
+    "sections": 11,
+    "added": "2026-11-13"
+  },
+  {
+    "file": "First-Order-Homotopical-Logic.html",
+    "title": "First-Order Homotopical Logic",
+    "authors": "Joseph Helfer",
+    "venue": "arXiv preprint",
+    "year": 2019,
+    "arxiv": "1908.08944",
+    "doi": "",
+    "tags": [
+      "homotopy type theory",
+      "logic",
+      "category theory"
+    ],
+    "summary": "用同伦论语义解释一阶直觉主义逻辑：命题即空间、证明即路径，h∞-纤维化给出函子语义。",
+    "source_url": "https://arxiv.org/abs/1908.08944",
+    "pages": 54,
+    "sections": 22,
+    "added": "2026-11-13"
+  },
+  {
+    "file": "HVM2-Parallel-Evaluator.html",
+    "title": "HVM2: A Parallel Evaluator for Interaction Combinators",
+    "authors": "Victor Taelin",
+    "venue": "preprint",
+    "year": 2024,
+    "arxiv": "",
+    "doi": "",
+    "tags": [
+      "interaction combinators",
+      "parallel computing",
+      "runtime"
+    ],
+    "summary": "面向扩展交互组合子的并行求值器，编译到 C/CUDA，报告接近理想的加速比与内存布局设计。",
+    "source_url": "",
+    "pages": 25,
+    "sections": 45,
+    "added": "2026-11-13"
+  },
+  {
+    "file": "Ironies-of-Automation.html",
+    "title": "Ironies of Automation",
+    "authors": "Lisanne Bainbridge",
+    "venue": "Automatica",
+    "year": 1983,
+    "arxiv": "",
+    "doi": "10.1016/0005-1098(83)90046-8",
+    "tags": [
+      "automation",
+      "human factors",
+      "HCI"
+    ],
+    "summary": "自动化不会消除人的问题，反而带来监控、去技能化与“自动化意外”；1983 年的经典论证。",
+    "source_url": "https://doi.org/10.1016/0005-1098(83)90046-8",
+    "pages": 5,
+    "sections": 4,
+    "added": "2026-11-13"
   }
 ]

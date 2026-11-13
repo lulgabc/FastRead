@@ -123,7 +123,7 @@ python3 tools/build_index.py            # 刷新全站导航（含论文）
 python3 tools/qa_all.py                 # 书 + 论文一起检查
 ```
 
-`build_index.py` 会自动调用 `enhance_books.py`，给论文注入「上一篇 / 书库 / 下一篇」、阅读进度、书签和高亮；论文的“书库”指回 `papers/index.html`。
+`build_index.py` 会自动调用 `enhance_books.py`，给论文注入「上一篇 / 书库 / 下一篇」、阅读进度、书签和高亮；论文的“书库”指回 `papers/index.html`。站点结构是：`/index.html` 首页 → `/books/index.html` 与 `/papers/index.html` 两个独立索引。
 
 ## 7. 提交
 
