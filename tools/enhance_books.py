@@ -422,7 +422,7 @@ def main():
         papers.sort(key=lambda r: (-int(r.get("year") or 0), r["title"].lower()))
 
     if args.check:
-        _, miss_books = enhance_set("books", books, "../index.html", ("上一本", "下一本"), True)
+        _, miss_books = enhance_set("books", books, "../books/index.html", ("上一本", "下一本"), True)
         _, miss_papers = enhance_set("papers", papers, "index.html", ("上一篇", "下一篇"), True)
         missing = miss_books + miss_papers
         if missing:
@@ -433,7 +433,7 @@ def main():
         print(f"navigation OK sur {len(books)} livres et {len(papers)} articles")
         return
 
-    changed_books, _ = enhance_set("books", books, "../index.html", ("上一本", "下一本"), False)
+    changed_books, _ = enhance_set("books", books, "../books/index.html", ("上一本", "下一本"), False)
     changed_papers, _ = enhance_set("papers", papers, "index.html", ("上一篇", "下一篇"), False)
     print(f"navigation + reprise de lecture : {changed_books} livre(s), "
           f"{changed_papers} article(s) mis à jour")

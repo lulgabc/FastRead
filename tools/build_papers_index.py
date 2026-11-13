@@ -113,14 +113,15 @@ def main():
             f'<div class="meta">{venue}{arx}{tags}</div></a>')
 
     years = [int(r.get("year") or 0) for r in rows if r.get("year")]
-    span = f"{min(years)}–{max(years)}" if years else "—"
+    span = (str(years[0]) if min(years) == max(years)
+            else f"{min(years)}–{max(years)}") if years else "—"
     page = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FastRead · 论文解读</title><style>{CSS}</style></head><body><div class="wrap">
+<title>FastRead · 论文索引</title><style>{CSS}</style></head><body><div class="wrap">
 <div class="kicker">FASTREAD · PAPER NOTES</div>
 <h1>论文解读</h1>
 <p class="sub">把论文读成可复述的结构：问题、方法、实验、结论与局限。每篇一个独立 HTML，公式内联，断网可读。</p>
-<div class="crumb"><a href="../index.html">← 返回书库</a></div>
+<div class="crumb"><a href="../index.html">← 首页</a> · <a href="../books/index.html">书籍索引</a> · <b>论文索引</b></div>
 <div class="stats">
   <div><b>{len(rows)}</b><span>篇论文</span></div>
   <div><b>{span}</b><span>年份跨度</span></div>
@@ -131,8 +132,8 @@ def main():
 <span class="hint" id="hint">输入关键词过滤</span></div>
 <div id="empty" class="empty">没有匹配的论文。</div>
 <div class="grid" id="grid">{"".join(cards)}</div>
-<footer><span>FastRead · 论文解读</span><span><a href="../index.html">书库</a> ·
-<a href="../docs/ADDING-PAPERS.md">新增论文</a></span></footer>
+<footer><span>FastRead · 论文索引</span><span><a href="../index.html">首页</a> ·
+<a href="../books/index.html">书籍</a> · <a href="../docs/ADDING-PAPERS.md">新增论文</a></span></footer>
 </div>
 <script>
 const q=document.getElementById('q'),hint=document.getElementById('hint'),empty=document.getElementById('empty');

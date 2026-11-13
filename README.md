@@ -7,11 +7,11 @@
 - 每本含：主线讲解、关键定义/定理/算法、例子、速查表、常见坑
 - 数学/理论书含定理盒与公式；系统/编程书含命令、代码与故障案例
 - 新转换默认**完整模式**：章节/小节/例子/代码全保留，不设字数上限，并用 `check_coverage.py` 验收
+- **1 篇**论文解读 · [论文索引](papers/index.html)
 
-打开 [`index.html`](index.html) 浏览卡片式索引，或直接打开 `books/` 下的文件。
-- 论文解读单独成区：[papers/index.html](papers/index.html)（1 篇）
+打开 [`index.html`](index.html) 选择书籍或论文，也可以直接打开 `books/`、`papers/` 下的文件。
 
-## 分类索引
+## 书籍索引
 
 ### 数学 · 分析与代数
 
@@ -121,6 +121,14 @@
 |---|---|---:|---|
 | Chicago Price Theory | Sonia Jaffe, Robert Minton, Casey Mulligan & Kevin Murphy | 457 | [HTML](books/Chicago-Price-Theory-Tutorial.html) |
 | Human Action：A Treatise on Economics | Ludwig von Mises | 930 | [HTML](books/Human-Action-Tutorial.html) |
+
+## 论文索引
+
+| 论文 | 作者 | 会议/年份 | 打开 |
+|---|---|---|---|
+| Attention Is All You Need | Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin | NeurIPS 2017 | [HTML](papers/Attention-Is-All-You-Need.html) |
+
+论文索引页：[papers/index.html](papers/index.html)
 
 ## 使用说明
 

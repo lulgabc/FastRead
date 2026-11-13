@@ -57,11 +57,11 @@ lines = [
     "- 每本含：主线讲解、关键定义/定理/算法、例子、速查表、常见坑",
     "- 数学/理论书含定理盒与公式；系统/编程书含命令、代码与故障案例",
     "- 新转换默认**完整模式**：章节/小节/例子/代码全保留，不设字数上限，并用 `check_coverage.py` 验收",
+    *([f"- **{len(PAPERS)} 篇**论文解读 · [论文索引](papers/index.html)"] if PAPERS else []),
     "",
-    "打开 [`index.html`](index.html) 浏览卡片式索引，或直接打开 `books/` 下的文件。",
-    *([f"- 论文解读单独成区：[papers/index.html](papers/index.html)（{len(PAPERS)} 篇）"] if PAPERS else []),
+    "打开 [`index.html`](index.html) 选择书籍或论文，也可以直接打开 `books/`、`papers/` 下的文件。",
     "",
-    "## 分类索引",
+    "## 书籍索引",
     "",
 ]
 for cat in groups:
@@ -72,6 +72,17 @@ for cat in groups:
             title += f"：{r['subtitle']}"
         lines.append(f"| {title} | {r['author']} | {r['pages']} | [HTML](books/{r['file']}) |")
     lines.append("")
+
+if PAPERS:
+    lines += ["## 论文索引", "",
+              "| 论文 | 作者 | 会议/年份 | 打开 |", "|---|---|---|---|"]
+    for r in sorted(PAPERS, key=lambda x: (-int(x.get("year") or 0), x["title"])):
+        venue = str(r.get("venue", ""))
+        year = str(r.get("year", ""))
+        where = venue if year and year in venue else f"{venue} {year}".strip()
+        lines.append(f"| {r['title']} | {r.get('authors','')} | {where} | [HTML](papers/{r['file']}) |")
+    lines += ["", "论文索引页：[papers/index.html](papers/index.html)", ""]
+
 lines += [
     "## 使用说明",
     "",
@@ -332,6 +343,9 @@ border:1px solid var(--line);border-radius:9px;padding:9px 13px;background:var(-
 input{width:min(420px,100%);height:42px;border:1px solid var(--line);border-radius:10px;background:var(--paper2);padding:0 14px;font-family:ui-sans-serif,system-ui;font-size:14px;color:var(--ink);outline:none}
 input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(17,100,92,.12)}
 .hint{font-family:ui-sans-serif,system-ui;font-size:12px;color:var(--muted)}
+.crumb{font-family:ui-sans-serif,system-ui;font-size:12px;margin:0 0 14px;color:var(--muted)}
+.crumb a{color:var(--teal);text-decoration:none}
+footer a{color:var(--teal);text-decoration:none}
 .continue[hidden]{display:none}
 .continue{display:flex;align-items:center;gap:10px;margin:0 0 22px;padding:12px 15px;border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:10px;background:var(--paper2);font-family:ui-sans-serif,system-ui;font-size:13px}
 .continue a{color:inherit;text-decoration:none;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;flex:1}
@@ -358,7 +372,7 @@ for cat in groups:
     for r in groups[cat]:
         sub = f'<div class="s">{r["subtitle"]}</div>' if r.get("subtitle") else ""
         cards.append(
-            f'<a class="card" href="books/{r["file"]}" data-search="{r["title"]} {r.get("subtitle","")} {r["author"]} {cat}">'
+            f'<a class="card" href="{r["file"]}" data-search="{r["title"]} {r.get("subtitle","")} {r["author"]} {cat}">'
             f'<div class="t">{r["title"]}</div>{sub}'
             f'<div class="a">{r["author"]}</div>'
             f'<div class="meta"><span>{r["pages"]} 页</span><span class="tag">离线 HTML</span></div></a>'
@@ -368,13 +382,14 @@ for cat in groups:
         f'<div class="grid">{"".join(cards)}</div></section>'
     )
 
-paper_link = (f'<a class="goto" href="papers/index.html">论文解读 · {len(PAPERS)} 篇 →</a>'
+paper_link = (f'<a class="goto" href="../papers/index.html">论文解读 · {len(PAPERS)} 篇 →</a>'
               if PAPERS else "")
 html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FastRead · 私人阅读库</title><style>{CSS}</style></head><body><div class="wrap">
-<div class="kicker">FASTREAD · PRIVATE READING LIBRARY</div>
-<h1>私人阅读库</h1>
+<title>FastRead · 书籍索引</title><style>{CSS}</style></head><body><div class="wrap">
+<div class="crumb"><a href="../index.html">← 首页</a> · <b>书籍索引</b></div>
+<div class="kicker">FASTREAD · BOOKS</div>
+<h1>书籍索引</h1>
 <p class="sub">{len(ROWS)} 本技术书的中文单页教程：一条主线、关键例子、速查表与常见坑。每个文件都是独立 HTML，离线可读。</p>
 <div class="stats">
   <div><b>{len(ROWS)}</b><span>本书</span></div>
@@ -386,7 +401,7 @@ html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <div id="continue" class="continue" hidden></div>
 <div id="empty" class="empty">没有匹配的教程。</div>
 {"".join(parts)}
-<footer><span>FastRead · 私人阅读库</span><span><a href="README.md">README</a> · <a href="docs/ADDING-BOOKS.md">新增书籍</a> · <a href="docs/ADDING-PAPERS.md">新增论文</a> · <a href="papers/index.html">论文解读</a> · <a href="skill/pdf-book-to-web-tutorial/SKILL.md">Skill</a></span></footer>
+<footer><span>FastRead · 书籍索引</span><span><a href="../index.html">首页</a> · <a href="../README.md">README</a> · <a href="../docs/ADDING-BOOKS.md">新增书籍</a> · <a href="../papers/index.html">论文解读</a> · <a href="../skill/pdf-book-to-web-tutorial/SKILL.md">Skill</a></span></footer>
 </div>
 <script>
 const q=document.getElementById('q'), hint=document.getElementById('hint'), empty=document.getElementById('empty');
@@ -413,7 +428,8 @@ CONTINUE_JS = """
     if(!last||!last.file) return;
     var box=document.getElementById('continue');
     var link=document.createElement('a');
-    link.href=last.path||('books/'+last.file+'.html');
+    var rel=last.path||('books/'+last.file+'.html');
+    link.href=rel.indexOf('books/')===0?rel.slice(6):'../'+rel;
     var b=document.createElement('b');
     b.textContent=String(last.title||last.file).replace(/ · 交互教程$/,'');
     var meta=document.createElement('span');
@@ -429,8 +445,65 @@ CONTINUE_JS = """
 </script>
 """
 html = html.replace("</body>", CONTINUE_JS + "</body>", 1)
-(ROOT / "index.html").write_text(html, encoding="utf-8")
-print(f"wrote README.md and index.html ({len(ROWS)} books, {total_pages} pages)")
+(ROOT / "books" / "index.html").write_text(html, encoding="utf-8")
+
+LAND_CSS = """
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0 10px}
+.panel{display:block;background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 24px;
+text-decoration:none;color:inherit;transition:.15s}
+.panel:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(60,45,20,.1);border-color:#c4b7a0}
+.panel .k{font-family:ui-sans-serif,system-ui;font-size:10.5px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+.panel h2{border:0;margin:8px 0 6px;padding:0;font-size:25px}
+.panel .big{font-size:34px;font-weight:700;line-height:1}
+.panel p{color:var(--muted);font-size:13.5px;margin:8px 0 14px}
+.panel .go{font-family:ui-sans-serif,system-ui;font-size:12.5px;color:var(--teal)}
+.latest{margin-top:30px}
+.latest h3{font-size:15px;margin:0 0 10px;font-family:ui-sans-serif,system-ui}
+.latest a{display:block;padding:9px 0;border-top:1px solid var(--line);color:inherit;text-decoration:none;font-size:13.5px}
+.latest a span{color:var(--muted);font-family:ui-sans-serif,system-ui;font-size:11.5px;margin-left:8px}
+@media(max-width:760px){.panels{grid-template-columns:1fr}}
+"""
+
+def _where(p):
+    venue, year = str(p.get("venue", "")), str(p.get("year", ""))
+    return venue if year and year in venue else f"{venue} {year}".strip()
+
+latest = "".join(
+    f'<a href="papers/{p["file"]}">{p["title"]}<span>{_where(p)}</span></a>'
+    for p in sorted(PAPERS, key=lambda r: (-int(r.get("year") or 0), r["title"]))[:3])
+
+landing = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FastRead · 私人阅读库</title><style>{CSS}{LAND_CSS}</style></head><body><div class="wrap">
+<div class="kicker">FASTREAD · PRIVATE READING LIBRARY</div>
+<h1>私人阅读库</h1>
+<p class="sub">两条独立入口：书籍是系统教程，论文是单篇精读。每个页面都是独立 HTML，公式内联，断网可读。</p>
+<div class="stats">
+  <div><b>{len(ROWS)}</b><span>本书</span></div>
+  <div><b>{total_pages:,}</b><span>原书页数</span></div>
+  <div><b>{len(PAPERS)}</b><span>篇论文</span></div>
+  <div><b>0</b><span>需要联网</span></div>
+</div>
+<div class="panels">
+  <a class="panel" href="books/index.html">
+    <div class="k">BOOKS</div><h2>书籍索引</h2>
+    <div class="big">{len(ROWS)} 本</div>
+    <p>{category_count} 个主题分类，覆盖数学、物理、逻辑、机器学习、系统、安全、经济与认知科学。</p>
+    <div class="go">打开书籍索引 →</div>
+  </a>
+  <a class="panel" href="papers/index.html">
+    <div class="k">PAPERS</div><h2>论文解读</h2>
+    <div class="big">{len(PAPERS)} 篇</div>
+    <p>问题、方法、实验、局限与复现清单；按年份与标签检索，支持阅读进度、书签与高亮。</p>
+    <div class="go">打开论文索引 →</div>
+  </a>
+</div>
+{('<div class="latest"><h3>最近的论文解读</h3>' + latest + '</div>') if PAPERS else ''}
+<footer><span>FastRead · 私人阅读库</span><span><a href="README.md">README</a> · <a href="docs/ADDING-BOOKS.md">新增书籍</a> · <a href="docs/ADDING-PAPERS.md">新增论文</a> · <a href="skill/pdf-book-to-web-tutorial/SKILL.md">Skill</a></span></footer>
+</div></body></html>"""
+(ROOT / "index.html").write_text(landing, encoding="utf-8")
+print(f"wrote README.md, index.html (landing) and books/index.html "
+      f"({len(ROWS)} books, {len(PAPERS)} papers)")
 
 if not ARGS.skip_books:
     subprocess.run([sys.executable, str(ROOT / "tools" / "enhance_books.py")], check=True)
