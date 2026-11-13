@@ -202,7 +202,8 @@ mkdir -p ~/Downloads/FastRead-inbox
 
 2. 在 OpenCode 里说：
 
-> 用 `pdf-book-to-web-tutorial` 把 `~/Downloads/FastRead-inbox/` 下的 PDF 做成单页教程。  
+> 先用 `python3 tools/check_duplicate.py` 对 `~/Downloads/FastRead-inbox/` 里的每本书查重，已存在的跳过；  
+> 再用 `pdf-book-to-web-tutorial` 把剩下的 PDF 做成单页教程。  
 > 每本输出到 `~/Documents/Default Project/FastRead/books/<英文短名>-Tutorial.html`，  
 > 完整覆盖原书章节/小节/例子/代码，不设字数上限；  
 > 更新 `catalog.json`、`README.md`、`index.html`，  
@@ -339,6 +340,13 @@ git push
 更细的说明、常见坑和 QA 清单见 **[docs/ADDING-BOOKS.md](docs/ADDING-BOOKS.md)**。
 
 ## 维护
+
+**第 0 步：查重**（避免把同一本书做两遍）：
+
+```bash
+python3 tools/check_duplicate.py ~/Downloads/Books/新书.pdf
+# 退出码 0 = 没找到，可以转换；1 = 已存在/可能重复，先人工确认
+```
 
 新增教程：把 HTML 放进 `books/`，在 `catalog.json` 增加一条记录，然后运行：
 

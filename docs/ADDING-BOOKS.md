@@ -40,6 +40,19 @@ Agent 会按 skill 的流水线执行：提取 → 蓝图 → 章节笔记 → �
 
 ## 2. 手动流程（完全可控）
 
+### 2.0 查重（先做）
+
+```bash
+python3 tools/check_duplicate.py ~/Downloads/FastRead-inbox/某本书.pdf
+# 也可以只给标题/作者
+python3 tools/check_duplicate.py --title "Mathematical Logic" --author "Ebbinghaus"
+```
+
+- 退出码 **0**：没找到，可以继续转换
+- 退出码 **1**：已存在或可能重复，先人工确认，不要直接开工
+
+匹配使用 PDF/EPUB 元数据与文件名，比较标题词元、序列相似度和作者姓氏；输出会列出最接近的 3 本馆藏及分数。阈值默认 `0.72`，可用 `--threshold` 调整。
+
 ### 2.1 提取（PDF/EPUB）
 
 ```bash
